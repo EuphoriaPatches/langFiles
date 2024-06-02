@@ -1270,6 +1270,8 @@ option.E_SKY_COLORR=End Sky - Red
 option.E_SKY_COLORG=End Sky - Green
 option.E_SKY_COLORB=End Sky - Blue
 option.E_SKY_COLORI=End Sky - Intensity
+option.END_SKY_FOG_INFLUENCE=End Sky Fog Color Influence
+option.END_SKY_FOG_INFLUENCE.comment=Tweak how much the color of the fog of modded biomes affect the sky colors
 
 option.GLOWING_EMERALD_BLOCK=Emissive Emerald Block
 option.GLOWING_EMERALD_BLOCK.comment=Option to make Emerald blocks glow. §e[*]§r RP Support option must be set to Integrated PBR+
