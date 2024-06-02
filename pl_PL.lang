@@ -1270,6 +1270,8 @@ option.E_SKY_COLORR=Niebo Endu - Czerwień
 option.E_SKY_COLORG=Niebo Endu - Zieleń
 option.E_SKY_COLORB=Niebo Endu - Niebieskość
 option.E_SKY_COLORI=Niebo Endu - Natężenie
+option.END_SKY_FOG_INFLUENCE=Wpływ Koloru Mgły na Niebie
+option.END_SKY_FOG_INFLUENCE.comment=Kontroluje wpływ koloru mgły w zmodyfikowanych biomach na kolory nieba Endu.
 
 option.GLOWING_EMERALD_BLOCK=Świecący Blok Szmaragdu
 option.GLOWING_EMERALD_BLOCK.comment=Sprawia, że bloki szmaragdu emitują światło. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+.
