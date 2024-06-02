@@ -1926,7 +1926,7 @@ value.EMISSIVE_FLOWERS_TYPE.1=Cold Colors
 value.EMISSIVE_FLOWERS_TYPE.2=Warm Colors
 
 option.SPOOKY=Spooklementary
-option.SPOOKY.comment=Enabled lots of spooky features :)
+option.SPOOKY.comment=Enables lots of spooky features :)
 option.EYES=Eyes
 option.EYE_FREQUENCY=Eye Frequency
 option.EYE_SPEED=Eye Speed
