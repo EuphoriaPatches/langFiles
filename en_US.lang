@@ -151,7 +151,7 @@ screen.GLOWING_ORE_SETTINGS.comment=Settings to adjust emission of ore blocks.
 screen.GLOWING_STUFF_SETTINGS=Glowing Stuff
 screen.GLOWING_STUFF_SETTINGS.comment=Settings to adjust emission of miscellaneous blocks.
 
-screen.OTHER_IPBR_SETTINGS=Other
+screen.OTHER_IPBR_SETTINGS=Other IPBR Features
 screen.OTHER_IPBR_SETTINGS.comment=Miscellaneous IntegratedPBR+ settings.
 
 screen.CUSTOM_PBR_SETTINGS=labPBR/seuspbr Materials
@@ -471,7 +471,7 @@ option.WATER_FOAM_I=Water Foam Intensity
 option.WATER_FOAM_I.comment=Determines the opacity of foam seen on water edges. §e[*]§r This setting only works when Detail Quality is set to Medium or higher.
 
 option.WATER_ALPHA_MULT=Water Opacity Factor
-option.WATER_ALPHA_MULT.comment=Adjusts how opaque the water looks. §c[-]§r Extreme values will break the balance of water lighting.
+option.WATER_ALPHA_MULT.comment=Adjusts how opaque the water looks. §c[-]§r Extreme values will break the balance of water lighting. §e[*]§r This setting only works when Detail Quality is set to Medium or higher.
 
 option.WATER_FOG_MULT=Water Fog Factor
 option.WATER_FOG_MULT.comment=Adjusts how close the water fog looks. Higher values provide closer fog. §c[-]§r Extreme values will break the balance of water lighting.
@@ -932,7 +932,7 @@ option.DARK_OUTLINE_THICKNESS=Dark Outline Thickness
 option.DARK_OUTLINE_THICKNESS.comment=Determines the thickness of the Dark Outline effect. §c[-]§r Increasing this setting can impact performance.
 
 option.RAIN_PUDDLES=Rain Puddles
-option.RAIN_PUDDLES.comment=Adds water puddles to the terrain during rain. §e[*]§r RP Support option must be set to anything but Basic, and Block Reflection Quality must be set to Medium or higher. §c[-]§r Rain puddles can severely impact performance.
+option.RAIN_PUDDLES.comment=Adds water puddles to the terrain during rain. §c[-]§r Rain puddles can severely impact performance.
 value.RAIN_PUDDLES.0=OFF
 value.RAIN_PUDDLES.1=§aON - Puddles
 value.RAIN_PUDDLES.2=§aON - Full Coverage
