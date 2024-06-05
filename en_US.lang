@@ -1265,7 +1265,7 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE=Remove Night Clouds Amount
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Ammount of clouds which get removed during the night
 
 option.HIGH_QUALITY_CLOUDS=Higher Quality Clouds
-option.HIGH_QUALITY_CLOUDS.comment=Increases the quality of Clouds to more than is possible within the normal Complementary Settings. §c[-]§r Increasing this setting can impact performance.
+option.HIGH_QUALITY_CLOUDS.comment=Increases the quality of Clouds to more than is possible within the normal Complementary Settings. §c[-]§r Turning this setting on can impact performance.
 
 option.END_SMOKE=End Smoke
 option.END_SMOKE.comment=Someone left the fire unattended and now the End has smoke in the upper and lower void.

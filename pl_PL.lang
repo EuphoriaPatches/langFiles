@@ -76,7 +76,7 @@ option.info14.comment=Euphoria Patches, a także zwykłe Complementary używają
 
 option.info15=Euphoria Patches - kredyty
 value.info15.0=
-option.info15.comment=EminGT: Główny deweloper shaderów Complementary. Capt Tatsu - Opcja "Kolorowe Oświetlenie w Przestrzeni Ekranu". gri573 - Opcja "Efekty Wiru Endu", wskazówki i pomoc w wielu obszarach! To była ogromna pomoc. SixthSurge, WoMspace (pseudonim Sasha), Septonious, fayer3 - Zawsze można było na nich polegać, gdy potrzebowałem pomocy. Xonk za pomoc z efektami błyskawic i bycie niesamowitym. Elysia - Baner Euphoria Patches i znak wodny. dragoncat - Logo "Overimagined" i pomocne sugestie. TheNukeLore - Opcja "Rozdzielczość Normal Map ZintegrowanegoPBR". dbrighthd - Mnożnik Fresnela. Surisen (Ruri) - Chińskie Tłumaczenie. Acer (Alex) - Polskie Tłumaczenie, Wiele sugestii i przydatnych komentarzy. Helgust - Wstępny kod dla opcji "Proceduralnej Wody Pikselowanej". Specjalne Podziękowania: IMS, sp614x, coderbot, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
+option.info15.comment=EminGT: Główny deweloper shaderów Complementary. Capt Tatsu - Opcja "Kolorowe Oświetlenie w Przestrzeni Ekranu". gri573 - Opcja "Efekty Wiru Endu", wskazówki i pomoc w wielu obszarach! To była ogromna pomoc. SixthSurge, WoMspace (pseudonim Sasha), Septonious, fayer3 - Zawsze można było na nich polegać, gdy potrzebowałem pomocy. Xonk za pomoc z efektami błyskawic i bycie niesamowitym. Elysia - Baner Euphoria Patches i znak wodny. dragoncat - Logo "Overimagined" i pomocne sugestie. TheNukeLore - Opcja "Rozdzielczość Normal Map ZintegrowanegoPBR". dbrighthd - Mnożnik Fresnela. Surisen (Ruri) - Chińskie Tłumaczenie. Acer (Alex) - Polskie Tłumaczenie, Wiele sugestii i przydatnych komentarzy. Helgust - Wstępny kod dla opcji "Proceduralnej Wody Pikselowanej". Specjalne Podziękowania: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
 
 option.info16=Jak Wspierać Euphoria Patches
 value.info16.0=
@@ -471,7 +471,7 @@ option.WATER_FOAM_I=Natężęnie Piany Wodnej
 option.WATER_FOAM_I.comment=Określa nieprzezroczystość piany widocznej na krawędziach wody. §e[*]§r To ustawienie działa tylko wtedy, gdy Jakość Detali jest ustawiona na średnią lub wyższą.
 
 option.WATER_ALPHA_MULT=Współczynnik Nieprzezroczystości Wody
-option.WATER_ALPHA_MULT.comment=Dostosowuje stopień nieprzezroczystości wody. §c[-]§r Ekstremalne wartości zaburzą równowagę oświetlenia wody.
+option.WATER_ALPHA_MULT.comment=Dostosowuje stopień nieprzezroczystości wody. §c[-]§r Ekstremalne wartości zaburzą równowagę oświetlenia wody. §e[*]§r To ustawienie działa tylko wtedy, gdy Jakość Detali jest ustawiona na średnią lub wyższą.
 
 option.WATER_FOG_MULT=Współczynnik mgły wodnej
 option.WATER_FOG_MULT.comment=Dostosowuje zasięg widzenia podwodą. Wyższe wartości zbliżają mgłę. §c[-]§r Ekstremalne wartości zaburzą równowagę oświetlenia wody.
@@ -932,7 +932,7 @@ option.DARK_OUTLINE_THICKNESS=Grubość Ciemnego Konturu Świata
 option.DARK_OUTLINE_THICKNESS.comment=Określa grubość efektu ciemnego konturu. §c[-]§r Zwiększenie tego ustawienia może mieć wpływ na wydajność.
 
 option.RAIN_PUDDLES=Kałuże
-option.RAIN_PUDDLES.comment=Sprawia, że podczas deszczu na blokach pojawiają się kałuże. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na wartość inną niż Basic, a opcja Jakość Odbicia na Blokach musi być ustawiona na wartość Niska lub wyższą. §c[-]§r Kałuże mogą poważnie wpłynąć na wydajność.
+option.RAIN_PUDDLES.comment=Sprawia, że podczas deszczu na blokach pojawiają się kałuże. §c[-]§r To ustawienie może poważnie wpłynąć na wydajność.
 value.RAIN_PUDDLES.0=WYŁ.
 value.RAIN_PUDDLES.1=§aWŁ. - Kałuże
 value.RAIN_PUDDLES.2=§aWŁ. - Pełne Pokrycie
@@ -1263,6 +1263,9 @@ option.CLOUD_RENDER_DISTANCE.comment=Kontroluje jak daleko od gracza chmury będ
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Mniej Chmur w Nocy
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Kontroluje ilość chmur, które zostaną usunięte w nocy
+
+option.HIGH_QUALITY_CLOUDS=Wyższa Jakość Chmur
+option.HIGH_QUALITY_CLOUDS.comment=Zwiększa jakość chmur bardziej niż jest to możliwe w ustawieniach jakości. §c[-]§r Włączenie tego ustawienia może mieć wpływ na wydajność.
 
 option.END_SMOKE=Dym Endu
 option.END_SMOKE.comment=Ktoś zostawił piekarnik bez nadzoru i teraz cały End jest zadymiony.
