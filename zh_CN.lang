@@ -1265,7 +1265,7 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE=夜晚云层消除强度
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=在夜晚时云层被消除的数量.
 
 option.HIGH_QUALITY_CLOUDS=更高质量的云层
-option.HIGH_QUALITY_CLOUDS.comment=可将云层质量提升到正常 Complementary 设置无法达到的程度. §c[-]§r 拉高本选项的数值可能会影响性能.
+option.HIGH_QUALITY_CLOUDS.comment=可将云层质量提升到正常 Complementary 设置无法达到的程度. §c[-]§r 开启本选项可能会影响性能.
 
 option.END_SMOKE=末地烟云
 option.END_SMOKE.comment=有人纵火, 所以现在末地上层虚空和下层虚空都有烟云.
