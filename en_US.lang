@@ -76,7 +76,7 @@ option.info14.comment=Euphoria Patches and also Complementary Shaders use iris-e
 
 option.info15=Euphoria Patches Credits
 value.info15.0=
-option.info15.comment=EminGT: The main developer of Complementary. Capt Tatsu - Screenspace Multi-Colored Blocklight. gri573 - End Crystal Vortex effect, guidance and assistance in many areas! Has been a huge help. SixthSurge, WoMspace (aka Sasha), Septonious, fayer3 - Always assisted us when we needed some help. Xonk for the directional lightning bolts and being amazing. Elysia - Euphoria Patches banner and watermark. dragoncat - Overimagined logo and helpful suggestions. TheNukeLore - IntegratedPBR Normals Resolution. dbrighthd - Fresnel Multiplier. Surisen (Ruri) - Chinese Translation. Acer (Alex) - Polish Translation, a lot of suggestions and helpful feedback. Helgust - Initial Code for Pixelated Procedural Water Option. Special Thanks: IMS, sp614x, coderbot, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
+option.info15.comment=EminGT: The main developer of Complementary. Capt Tatsu - Screenspace Multi-Colored Blocklight. gri573 - End Crystal Vortex effect, guidance and assistance in many areas! Has been a huge help. SixthSurge, WoMspace (aka Sasha), Septonious, fayer3 - Always assisted us when we needed some help. Xonk for the directional lightning bolts and being amazing. Elysia - Euphoria Patches banner and watermark. dragoncat - Overimagined logo and helpful suggestions. TheNukeLore - IntegratedPBR Normals Resolution. dbrighthd - Fresnel Multiplier. Surisen (Ruri) - Chinese Translation. Acer (Alex) - Polish Translation, a lot of suggestions and helpful feedback. Helgust - Initial Code for Pixelated Procedural Water Option. Special Thanks: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
 
 option.info16=How to support Euphoria Patches
 value.info16.0=
@@ -1263,6 +1263,9 @@ option.CLOUD_RENDER_DISTANCE.comment=Option to change how far clouds render.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Remove Night Clouds Amount
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Ammount of clouds which get removed during the night
+
+option.HIGH_QUALITY_CLOUDS=Higher Quality Clouds
+option.HIGH_QUALITY_CLOUDS.comment=Increases the quality of Clouds to more than is possible within the normal Complementary Settings. §c[-]§r Increasing this setting can impact performance.
 
 option.END_SMOKE=End Smoke
 option.END_SMOKE.comment=Someone left the fire unattended and now the End has smoke in the upper and lower void.
