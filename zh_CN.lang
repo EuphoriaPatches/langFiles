@@ -76,7 +76,7 @@ option.info14.comment=Euphoria Patches 和 Complementary 光影同样都使用�
 
 option.info15=Euphoria Patches 致谢
 value.info15.0=
-option.info15.comment=EminGT: Complementary 光影的主要开发者. Capt Tatsu - 屏幕空间多色方块光功能实现. gri573 - 末地水晶涡流功能实现, 并在许多领域提供了指导和帮助! 帮了很多的忙. SixthSurge, WoMspace (又名 Sasha), Septonious, fayer3 - 总是在我们需要帮助的时候提供帮助. Xonk - 令人惊异的定向照明闪电束(史诗雷雨氛围功能实现). Elysia - Euphoria Patches 横幅及水印设计. dragoncat - Overimagined 的 logo 设计和许多有用的建议. TheNukeLore - 集成PBR法线分辨率功能实现. dbrighthd - 菲涅尔(Fresnel)倍率功能实现. Surisen (Ruri) - 中文选项翻译. Acer (Alex) - 很多有用建议和反馈. Helgust - 程序化像素风水面选项的原始代码. 特别致谢: IMS, sp614x, coderbot, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
+option.info15.comment=EminGT: Complementary 光影的主要开发者. Capt Tatsu - 屏幕空间多色方块光功能实现. gri573 - 末地水晶涡流功能实现, 并在许多领域提供了指导和帮助! 帮了很多的忙. SixthSurge, WoMspace (又名 Sasha), Septonious, fayer3 - 总是在我们需要帮助的时候提供帮助. Xonk - 令人惊异的定向照明闪电束(史诗雷雨氛围功能实现). Elysia - Euphoria Patches 横幅及水印设计. dragoncat - Overimagined 的 logo 设计和许多有用的建议. TheNukeLore - 集成PBR法线分辨率功能实现. dbrighthd - 菲涅尔(Fresnel)倍率功能实现. Surisen (Ruri) - 中文选项翻译. Acer (Alex) - 很多有用建议和反馈. Helgust - 程序化像素风水面选项的原始代码. 特别致谢: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
 
 option.info16=如何支持 Euphoria Patches
 value.info16.0=
@@ -142,7 +142,7 @@ screen.WORLD_BLUR_SETTINGS.comment=与炫酷的视界模糊效果相关的设置
 screen.MATERIAL_SETTINGS=材质
 screen.MATERIAL_SETTINGS.comment=与 Minecraft 的材质有关的设置.
 
-screen.IPBR_SETTINGS=集成PBR+ 材质
+screen.IPBR_SETTINGS=集成PBR+材质
 screen.IPBR_SETTINGS.comment=与 集成PBR+ 相关的功能设置.
 
 screen.GLOWING_ORE_SETTINGS=矿石发光
@@ -151,8 +151,8 @@ screen.GLOWING_ORE_SETTINGS.comment=集成PBR+ 中与矿石发光相关的功能
 screen.GLOWING_STUFF_SETTINGS=其他发光
 screen.GLOWING_STUFF_SETTINGS.comment=调节其他杂项方块发光相关的功能设置.
 
-screen.OTHER_IPBR_SETTINGS=其他
-screen.OTHER_IPBR_SETTINGS.comment=其他 集成PBR+ 杂项设置.
+screen.OTHER_IPBR_SETTINGS=其他集成PBR+功能
+screen.OTHER_IPBR_SETTINGS.comment=其他集成PBR+杂项设置.
 
 screen.CUSTOM_PBR_SETTINGS=labPBR/seuspbr 材质
 screen.CUSTOM_PBR_SETTINGS.comment=与 labPBR/seuspbr 相关的功能设置.
@@ -471,7 +471,7 @@ option.WATER_FOAM_I=水面边缘发泡强度
 option.WATER_FOAM_I.comment=调节可在水面边缘可见的发泡效果的不透明度. §e[*]§r 本选项仅在 细节质量 设置为 中 或者以上时生效.
 
 option.WATER_ALPHA_MULT=水体不透明度倍率
-option.WATER_ALPHA_MULT.comment=调节水体不透明度. §c[-]§r 极端数值会破坏水体照明平衡.
+option.WATER_ALPHA_MULT.comment=调节水体不透明度. §c[-]§r 极端数值会破坏水体照明平衡. §e[*]§r 本选项仅在 细节质量 设置为 中 或者以上时生效.
 
 option.WATER_FOG_MULT=水雾倍率
 option.WATER_FOG_MULT.comment=调节水体雾气的远近. 更高的数值会在近处产生更多雾气. §c[-]§r 极端数值会破坏水体照明平衡.
@@ -932,7 +932,7 @@ option.DARK_OUTLINE_THICKNESS=暗色描边宽度
 option.DARK_OUTLINE_THICKNESS.comment=确定暗色描边轮廓线效果的宽度. §c[-]§r 拉高本选项的数值可能会影响性能.
 
 option.RAIN_PUDDLES=雨水坑
-option.RAIN_PUDDLES.comment=在雨天时向地表添加雨水坑. §e[*]§r 资源包支持选项必须设置为除 §a基本§r 以外的任何选项, 并且 方块反射质量 选项数值需要设置为 中 或者以上.  §c[-]§r 雨水坑可能会严重影响性能.
+option.RAIN_PUDDLES.comment=在雨天时向地表添加雨水坑. §c[-]§r 雨水坑可能会严重影响性能.
 value.RAIN_PUDDLES.0=关
 value.RAIN_PUDDLES.1=§a开 - 水坑
 value.RAIN_PUDDLES.2=§a开 - 全覆盖
@@ -1264,12 +1264,17 @@ option.CLOUD_RENDER_DISTANCE.comment=用于改变云层渲染距离远近的选�
 option.NIGHT_CLOUD_UNBOUND_REMOVE=夜晚云层消除强度
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=在夜晚时云层被消除的数量.
 
+option.HIGH_QUALITY_CLOUDS=更高质量的云层
+option.HIGH_QUALITY_CLOUDS.comment=可将云层质量提升到正常 Complementary 设置无法达到的程度. §c[-]§r 拉高本选项的数值可能会影响性能.
+
 option.END_SMOKE=末地烟云
 option.END_SMOKE.comment=有人纵火, 所以现在末地上层虚空和下层虚空都有烟云.
 option.E_SKY_COLORR=末地天空 - 红色
 option.E_SKY_COLORG=末地天空 - 绿色
 option.E_SKY_COLORB=末地天空 - 蓝色
 option.E_SKY_COLORI=末地天空 - 强度
+option.END_SKY_FOG_INFLUENCE=末地天空雾气影响程度
+option.END_SKY_FOG_INFLUENCE.comment=调节模组生物群系的雾气颜色对末地天空颜色的影响程度.
 
 option.GLOWING_EMERALD_BLOCK=绿宝石块发光
 option.GLOWING_EMERALD_BLOCK.comment=使绿宝石块发光的选项. §e[*]§r 资源包支持选项需设置为集成PBR+.
@@ -1482,7 +1487,7 @@ option.RAIN_ATMOSPHERE=史诗雷雨氛围
 option.RAIN_ATMOSPHERE.comment=当闪电降下时显著提高雷雨天的氛围. §e[*]§r 在 Iris 上效果最佳.
 
 option.BLUE_SCREEN=蓝幕
-option.BLUE_SCREEN.comment=改变蓝色混凝土和蓝色羊毛的渲染方式, 使其变为蓝幕以便于视频剪辑. Tip 1: 关闭 泛光 选项来提高分离程度. Tip 2:在黄绿色的地毯下放置光源来获得照明效果. Tip 3: 关闭 抗锯齿 (FXAA) 然后设置位于 性能设置 中的 细节质量 选项值为极低来禁用所有降噪(抗锯齿)设置来获得完美像素分离效果.
+option.BLUE_SCREEN.comment=改变蓝色混凝土和蓝色羊毛的渲染方式, 使其变为蓝幕以便于视频剪辑. Tip 1: 关闭 泛光 选项来提高分离程度. Tip 2:在蓝色地毯下放置光源来获得照明效果. Tip 3: 关闭 抗锯齿 (FXAA) 然后设置位于 性能设置 中的 细节质量 选项值为极低来禁用所有降噪(抗锯齿)设置来获得完美像素分离效果.
 
 option.MIRROR_DIMENSION=翻转维度
 option.MIRROR_DIMENSION.comment=你已经理解了魔法的艺术, 并且有足够的勇气进入翻转维度.
