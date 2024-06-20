@@ -68,7 +68,7 @@ option.info12.comment=All Euphoria options are disabled by default and the user 
 
 option.info13=Euphoria Mod Support
 value.info13.0=
-option.info13.comment=Euphoria Patches aims to better support modded blocks than regular Complementary by having default modded block support (check block.properties). Light Source Detection with automatic applied emission. Foliage model detection with automatically applied SSS.
+option.info13.comment=Euphoria Patches aims to better support modded blocks than regular Complementary by having default modded block support (check block.properties). Light Source detection with automatic applied emission. Foliage model detection with automatically applied SSS.
 
 option.info14=Best Shader Loader
 value.info14.0=
@@ -76,16 +76,23 @@ option.info14.comment=Euphoria Patches and also Complementary Shaders use iris-e
 
 option.info15=Euphoria Patches Credits
 value.info15.0=
-option.info15.comment=EminGT: The main developer of Complementary. Capt Tatsu - Screenspace Multi-Colored Blocklight. gri573 - End Crystal Vortex effect, guidance and assistance in many areas! Has been a huge help. SixthSurge, WoMspace (aka Sasha), Septonious, fayer3 - Always assisted us when we needed some help. Xonk for the directional lightning bolts and being amazing. Elysia - Euphoria Patches banner and watermark. dragoncat - Overimagined logo and helpful suggestions. TheNukeLore - IntegratedPBR Normals Resolution. dbrighthd - Fresnel Multiplier. Surisen (Ruri) - Chinese Translation. Acer (Alex) - Polish Translation, a lot of suggestions and helpful feedback. Helgust - Initial Code for Pixelated Procedural Water Option. Special Thanks: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
+option.info15.comment=EminGT: The main developer of Complementary. Capt Tatsu - Screenspace Multi-Colored Blocklight. gri573 - End Crystal Vortex effect, guidance and assistance in many areas! Has been a huge help. SixthSurge, WoMspace (aka Sasha), Septonious, fayer3 - Always assisted us when we needed some help. Xonk for the directional lightning bolts and being amazing. Memokii - Euphoria Patches banner and watermark. dragoncat - Overimagined logo and helpful suggestions. TheNukeLore - IntegratedPBR Normals Resolution. dbrighthd - Fresnel Multiplier. Surisen (Ruri) - Chinese Translation. Acer (Alex) - Polish Translation, a lot of suggestions and helpful feedback. Helgust - Initial Code for Pixelated Procedural Water Option. Special Thanks: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
 
-option.info16=How to support Euphoria Patches
+option.info16=§nHow to support Euphoria Patches
 value.info16.0=
-option.info16.comment=You can support Euphoria Patches by being curious about new updates and sharing it with people, but you can also directly support SpacEagle17 on Patreon or Ko-Fi. www.patreon.com/SpacEagle17. www.ko-fi.com/spaceagle17. 
+option.info16.comment=You can support Euphoria Patches by being curious about new updates and sharing it with people, but you can also directly support SpacEagle17 on Patreon or Ko-Fi and access developer versions. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
+option.info17=Dev Versions: SpacEagle17 Patreon
+value.info17.0=
+option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access development versions. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+
+option.info18=For Complementary 5.2.2
+value.info18.0=
+option.info18.comment=Thank you for Installing Euphoria Patches :)
 
 #Style
 option.SHADER_STYLE=Visual Style
-option.SHADER_STYLE.comment=Determines the default visual style of the shader pack. §bReimagined§r: Complementing Minecraft while preserving its unique visual elements. §dUnbound§r: Reworking the visuals of Minecraft with a semi-realistic fantasy style. §e[*]§r Affected settings: Water Style, Cloud Style, Sun/Moon Style, Sun/Moon Angle, Aurora Style.
+option.SHADER_STYLE.comment=Determines the default visual style of the shader pack. §bReimagined§r: Complementing Minecraft while preserving its unique visual elements. §dUnbound§r: Reworking the visuals of Minecraft with a semi-realistic fantasy style. §e[*]§r Affected settings: Water Style, Cloud Style, Sun/Moon Style, Sun/Moon Angle, Aurora Style, Glowing Ores.
 value.SHADER_STYLE.1=§bReimagined
 value.SHADER_STYLE.4=§dUnbound
 
@@ -294,7 +301,7 @@ value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=Advanced Colored Lighting §e[*]§r
-option.COLORED_LIGHTING.comment=Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r Real-Time Shadows must be enabled for this to work. §a[+]§r This system also enables some other features which you can individually enable/disable in the "Other" -> "ACL Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each 2 chunk increment costs more than twice the performance of the previous tier.
+option.COLORED_LIGHTING.comment=Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Shadow Sample Quality" is OFF. §a[+]§r This system also enables some other features which you can individually enable/disable in the "Other" -> "ACL Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each 2 chunk increment costs more than twice the performance of the previous tier.
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§e4 Chunks
 value.COLORED_LIGHTING.192=§c6 Chunks
@@ -355,7 +362,7 @@ option.CLOUD_SHADOWS=Cloud Shadows
 option.CLOUD_SHADOWS.comment=Enables shadows that are cast from the clouds. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r Cloud shadows will be randomly generated if Cloud Style is set to "Unbound", because of the extra complexity of Unbound clouds.
 
 option.CLOUD_CLOSED_AREA_CHECK=Prevent Clouds in Interiors
-option.CLOUD_CLOSED_AREA_CHECK.comment=Does additional checks to remove clouds in closed areas. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r This setting will be treated as OFF if "Real-Time Shadows" are disabled.
+option.CLOUD_CLOSED_AREA_CHECK.comment=Does additional checks to remove clouds in closed areas. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r This setting will be disabled if "Shadow Sample Quality" is OFF.
 
 option.CLOUD_ALT1=Cloud Altitude
 option.CLOUD_ALT1.comment=Determines the world height which the clouds will appear at. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
@@ -762,7 +769,7 @@ option.AMBIENT_MULT=Shadow Light Multiplier
 option.AMBIENT_MULT.comment=Determines the amount of ambient lighting seen in shadows. §c[-]§r Drastically changing this setting can break the lighting balance.
 
 option.PLAYER_SHADOW=Player Shadow §e[*]§r
-option.PLAYER_SHADOW.comment=Determines if the player will cast a shadow or not. §e[*]§r This setting only works on Iris. §e[*]§r This setting will be treated as OFF if "Real-Time Shadows" are disabled.
+option.PLAYER_SHADOW.comment=Determines if the player will cast a shadow or not. §e[*]§r This setting only works on Iris. §e[*]§r This setting will be disabled if "Shadow Sample Quality" is OFF.
 value.PLAYER_SHADOW.-1=OFF
 value.PLAYER_SHADOW.1=ON
 
@@ -1066,7 +1073,7 @@ value.WATERMARK.3=& GUI Hidden & Hold Spider Eye
 option.WATERMARK_SIZE=Watermark Size
 
 screen.EUPHORIA_SETTINGS=§bEuphoria Patches Settings
-screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches.
+screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches. §bYou can support SpacEagle17 on Patreon or Ko-Fi and get new developer versions. §r§l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
     screen.ATMOSPHERE=Atmosphere
     screen.ATMOSPHERE.comment=Settings that relate to the atmosphere.
         screen.CLOUDS=Clouds
@@ -1082,6 +1089,8 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
             screen.END_BEAMS_SETTINGS.comment=Settings that relate to the Ender Beams.
             screen.END_STAR=End Star Settings
             screen.END_STAR.comment=Settings that relate to the End Stars.
+        screen.STARS_OVERWORLD=Stars
+        screen.RAIN_SETTINGS=Rain Settings
     screen.WORLD=World
     screen.WORLD.comment=Settings that relate to the world.
         screen.SPOOKY_SETTINGS=Spooklementary Settings
@@ -1162,6 +1171,7 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
     screen.POPULAR_SETTINGS=§bPopular Settings
         screen.POPULAR_SETTINGS_2=Page 2
         screen.POPULAR_SETTINGS_3=Page 3
+    screen.EP_VERSION=Euphoria Patches 1.3.2
 
 option.DAYLIGHT_CYCLE_COMPAT=World Time Animation
 option.DAYLIGHT_CYCLE_COMPAT.comment=ONLY use this if you play with the gamerule doDaylightCycle false. When enabled clouds and more animate in worlds with the daylight cycle off but they are no longer synced between players.
@@ -1295,8 +1305,8 @@ option.OVERWORLD_BEAMS_CONDITION.comment=By default they only appear during full
 value.OVERWORLD_BEAMS_CONDITION.0=Full Moon
 value.OVERWORLD_BEAMS_CONDITION.1=Every Night
 option.OVERWORLD_BEAMS_INTENSITY=Overworld Beams Intensity
-option.BEAMS_AMBIENT_INFLUENCE=Ambient Color Influence
-option.BEAMS_AMBIENT_INFLUENCE.comment=The beams will have the ambient color at 0.00 and the user defined color at 1.00.
+option.BEAMS_AMBIENT_INFLUENCE=Fog Color Influence
+option.BEAMS_AMBIENT_INFLUENCE.comment=The beams will have the Fog Color at 0.00 and the user defined color at 1.00.
 option.OW_BEAM_R=Overworld Beams - Red
 option.OW_BEAM_G=Overworld Beams - Green
 option.OW_BEAM_B=Overworld Beams - Blue
@@ -1337,6 +1347,7 @@ value.END_STAR_AMOUNT.0=Low
 value.END_STAR_AMOUNT.1=Normal
 value.END_STAR_AMOUNT.2=High
 value.END_STAR_AMOUNT.3=Very High
+value.END_STAR_AMOUNT.4=A LOT
 option.END_TWINKLING_STARS=Twinkling End Stars
 
 option.STAR_BRIGHTNESS=Star Brightness
@@ -1365,8 +1376,6 @@ value.STAR_BRIGHTNESS.23=2.0
 
 option.MORE_STARS_OVERWORLD=More Stars Overworld
 option.MORE_STARS_OVERWORLD.comment=Overwrites Complementary's star amount and sets it to a higher one. Applies to Overworld
-option.MORE_STARS_END=More Stars End
-option.MORE_STARS_END.comment=Overwrites Complementary's star amount and sets it to a higher one. Applies to End
 option.TWINKLING_STARS=Twinkling Stars
 option.TWINKLING_STARS.comment=Make the stars twinkle at you.
 option.STAR_SIZE=Star Size
@@ -1476,6 +1485,9 @@ value.END_PORTAL_VARIATION.1=Smudged Strings
 value.END_PORTAL_VARIATION.2=Flat
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
+option.END_PORTAL_BEAM=End Portal Side Beams
+option.END_PORTAL_BEAM.comment=Adds beams going up from the edges of the end portal. Similar to Minecraft Dungeons.
+
 option.SILHOUETTE=Silhouette
 option.SILHOUETTE.comment=When enabled makes blocks facing away from the sun black, useful for screenshots.
 value.SILHOUETTE.0=OFF
@@ -1520,6 +1532,7 @@ option.LAVA_NOISE_AMOUNT=Lava Noise Amount
 option.LAVA_NOISE_AMOUNT.comment=Change the amount of noise.
 
 option.LAVA_EDGE_EFFECT=Lava Edge Effect
+option.LAVA_EDGE_EFFECT.comment=Adds an edge to lava when it touches other blocks. §e[*]§r Advanced Colored Lighting must be enabled.
 
 option.NETHER_BRIGHTNESS=Nether Brightness
 option.NETHER_BRIGHTNESS.comment=Change the ambient brightness of the Nether.
@@ -1983,3 +1996,21 @@ option.CAVE_SMOKE=Cave Smoke
 option.CAVE_SMOKE.comment=Adds a smoke effect to the volumetric blocklight fog when in a cave. §c[-]§r This effect can impact performance. §e[*]§r Advanced Colored Lighting must be enabled.
 
 option.WAVING_SUGAR_CANE=Waving Sugar Cane
+
+option.SUN_GLARE_AMOUNT=Sun/Moon Glare Amount
+value.SUN_GLARE_AMOUNT.0=OFF
+
+option.DAYLIGHT_STARS=Daylight Stars
+option.DAYLIGHT_STARS.comment=Enables Stars during the day
+
+option.FROZEN_TIME=Frozen Time
+
+option.DARKER_DEPTH_OCEANS=Deeper Darker Oceans
+option.DARKER_DEPTH_OCEANS.comment=Light decreases with depth of the Ocean
+
+option.WEATHER_TEX_R=Weather Texture - Red
+option.WEATHER_TEX_G=Weather Texture - Green
+option.WEATHER_TEX_B=Weather Texture - Blue
+
+option.EMISSIVE_SOUL_SAND=Glowing Soul Sand Eyes
+option.EMISSIVE_SOUL_SAND.comment=Makes the eyes of the Soul Sand block glow when standing on it. §e[*]§r Needs IPBR enabled
