@@ -76,12 +76,19 @@ option.info14.comment=Euphoria Patches, a także zwykłe Complementary używają
 
 option.info15=Euphoria Patches - kredyty
 value.info15.0=
-option.info15.comment=EminGT: Główny deweloper shaderów Complementary. Capt Tatsu - Opcja "Kolorowe Oświetlenie w Przestrzeni Ekranu". gri573 - Opcja "Efekty Wiru Endu", wskazówki i pomoc w wielu obszarach! To była ogromna pomoc. SixthSurge, WoMspace (pseudonim Sasha), Septonious, fayer3 - Zawsze można było na nich polegać, gdy potrzebowałem pomocy. Xonk za pomoc z efektami błyskawic i bycie niesamowitym. Elysia - Baner Euphoria Patches i znak wodny. dragoncat - Logo "Overimagined" i pomocne sugestie. TheNukeLore - Opcja "Rozdzielczość Normal Map ZintegrowanegoPBR". dbrighthd - Mnożnik Fresnela. Surisen (Ruri) - Chińskie Tłumaczenie. Acer (Alex) - Polskie Tłumaczenie, Wiele sugestii i przydatnych komentarzy. Helgust - Wstępny kod dla opcji "Proceduralnej Wody Pikselowanej". Specjalne Podziękowania: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
+option.info15.comment=EminGT: Główny deweloper shaderów Complementary. Capt Tatsu - Opcja "Kolorowe Oświetlenie w Przestrzeni Ekranu". gri573 - Opcja "Efekty Wiru Endu", wskazówki i pomoc w wielu obszarach! To była ogromna pomoc. SixthSurge, WoMspace (pseudonim Sasha), Septonious, fayer3 - Zawsze można było na nich polegać, gdy potrzebowałem pomocy. Xonk za pomoc z efektami błyskawic i bycie niesamowitym. Memokii - Baner Euphoria Patches i znak wodny. dragoncat - Logo "Overimagined" i pomocne sugestie. TheNukeLore - Opcja "Rozdzielczość Normal Map ZintegrowanegoPBR". dbrighthd - Mnożnik Fresnela. Surisen (Ruri) - Chińskie Tłumaczenie. Acer (Alex) - Polskie Tłumaczenie, Wiele sugestii i przydatnych komentarzy. Helgust - Wstępny kod dla opcji "Proceduralnej Wody Pikselowanej". Specjalne Podziękowania: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
 
-option.info16=Jak Wspierać Euphoria Patches
+option.info16=§nJak Wspierać Euphoria Patches
 value.info16.0=
-option.info16.comment=Możesz wspierać Euphoria Patches, śledząc informacje o nowych aktualizacjach i dzieląc się nimi z innymi, ale możesz także bezpośrednio wspierać SpacEagle17 na Patreon lub Ko-Fi. www.patreon.com/SpacEagle17. www.ko-fi.com/spaceagle17. 
+option.info16.comment=Możesz wspierać Euphoria Patches, śledząc informacje o nowych aktualizacjach i dzieląc się nimi z innymi, ale możesz także bezpośrednio wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
 
+option.info17=Wersje Dev: SpacEagle17 Patreon
+value.info17.0=
+option.info17.comment=Możesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
+
+option.info18=Dla Complementary 5.2.2
+value.info18.0=
+option.info18.comment=Dziękujemy za wybranie Euphoria Patches :)
 
 #Style
 option.SHADER_STYLE=Styl Wizualny
@@ -977,16 +984,16 @@ option.MOON_PHASE_DARK=Natężęnie Księżyca w Nowiu
 option.MOON_PHASE_DARK.comment=Dostosowuje wpływ fazy księżyca podczas nowiu (najciemniejsza faza).
 
 option.CONNECTED_GLASS_EFFECT=Połączone Szkło
-option.CONNECTED_GLASS_EFFECT.comment=Sprawia, że wszystkie rodzaje szkła łączą się ze sobą. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §e[*]§r Ta funkcja zostanie automatycznie wyłączona, jeśli zainstalowany jest mod "Continuity".
+option.CONNECTED_GLASS_EFFECT.comment=Sprawia, że wszystkie rodzaje szkła łączą się ze sobą. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §e[*]§r Ta funkcja zostanie automatycznie wyłączona, jeśli zainstalowany jest mod "Continuity".
 
 option.PORTAL_EDGE_EFFECT=Świecące Krawędzie Portali
-option.PORTAL_EDGE_EFFECT.comment=Dodaje emisyjny efekt obramowania do portali Endu i Netheru. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
+option.PORTAL_EDGE_EFFECT.comment=Dodaje emisyjny efekt obramowania do portali Endu i Netheru. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
 
 option.PUDDLE_VOXELIZATION=Napraw Kałuże pod Szkłem
-option.PUDDLE_VOXELIZATION.comment=Zapobiega tworzeniu się kałuż w zamkniętych obszarach ze szklanymi dachami, gdy włączone są kałuże. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
+option.PUDDLE_VOXELIZATION.comment=Zapobiega tworzeniu się kałuż w zamkniętych obszarach ze szklanymi dachami, gdy włączone są kałuże. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
 
 option.COLORED_LIGHT_FOG=Wolumetryczna Mgła Świetlna
-option.COLORED_LIGHT_FOG.comment=Dodaje wolumetryczną mgłę do sceny, najbardziej widoczną w nocy lub pod ziemią. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
+option.COLORED_LIGHT_FOG.comment=Dodaje wolumetryczną mgłę do sceny, najbardziej widoczną w nocy lub pod ziemią. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
 
 option.COLORED_LIGHT_FOG_I=Natężęnie Mgły Świetlnej
 option.COLORED_LIGHT_FOG_I.comment=Określa jasność kolorowej mgły świetlnej.
@@ -1066,7 +1073,7 @@ value.WATERMARK.3=& Interfejs Schowany & Trzymaj Pajęcze Oko
 option.WATERMARK_SIZE=Rozmiar Znaku Wodnego
 
 screen.EUPHORIA_SETTINGS=§bUstawienia Euphoria Patches
-screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches.
+screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
     screen.ATMOSPHERE=Atmosfera
     screen.ATMOSPHERE.comment=Ustawienia które wpływają na atmosferę.
         screen.CLOUDS=Chmury
@@ -1082,6 +1089,8 @@ screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches.
             screen.END_BEAMS_SETTINGS.comment=Ustawienia związane z zorzą Ender.
             screen.END_STAR=Ustawienia Gwiazd Endu
             screen.END_STAR.comment=Ustawienia związane z gwiazdami wymiaru Endu.
+        screen.STARS_OVERWORLD=Gwiazdy
+        screen.RAIN_SETTINGS=Ustawienia Deszczu
     screen.WORLD=Świat
     screen.WORLD.comment=Ustawienia które wpływają na świat.
         screen.SPOOKY_SETTINGS=Ustawienia Spooklementary
@@ -1162,6 +1171,7 @@ screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches.
     screen.POPULAR_SETTINGS=§bPopularne Ustawienia
         screen.POPULAR_SETTINGS_2=2 Strona
         screen.POPULAR_SETTINGS_3=3 Strona
+screen.EP_VERSION=Euphoria Patches 1.3.2
 
 option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
 option.DAYLIGHT_CYCLE_COMPAT.comment=Używaj tej opcji TYLKO, jeśli grasz na serwerze z wyłączoną zasadą "doDaylightCycle". Po włączeniu tej opcji chmury i inne animacje w światach z wyłączonym cyklem dziennym nie są już synchronizowane między graczami.
@@ -1295,8 +1305,8 @@ option.OVERWORLD_BEAMS_CONDITION.comment=Domyślnie pojawiają się tylko podcza
 value.OVERWORLD_BEAMS_CONDITION.0=Pełnia
 value.OVERWORLD_BEAMS_CONDITION.1=Każdej Nocy
 option.OVERWORLD_BEAMS_INTENSITY=Natężenie Słupów Światłą
-option.BEAMS_AMBIENT_INFLUENCE=Wpływ Kolorów Otoczenia
-option.BEAMS_AMBIENT_INFLUENCE.comment=Słupy będą miały kolor otoczenia na poziomie 0.00 i kolor wybrany przez użytkownika na poziomie 1.00.
+option.BEAMS_AMBIENT_INFLUENCE=Wpływ Koloru Mgły
+option.BEAMS_AMBIENT_INFLUENCE.comment=Słupy będą miały kolor mgły na poziomie 0.00 i kolor wybrany przez użytkownika na poziomie 1.00.
 option.OW_BEAM_R=Słupy Światła - Czerwień
 option.OW_BEAM_G=Słupy Światła - Zieleń
 option.OW_BEAM_B=Słupy Światła - Niebieskość
@@ -1337,6 +1347,7 @@ value.END_STAR_AMOUNT.0=Mało
 value.END_STAR_AMOUNT.1=Umiarkowanie
 value.END_STAR_AMOUNT.2=Dużo
 value.END_STAR_AMOUNT.3=Bardzo Dużo
+value.END_STAR_AMOUNT.4=BARDZO DUŻO!
 option.END_TWINKLING_STARS=Migoczące Gwiazdy Endu
 
 option.STAR_BRIGHTNESS=Jasność Gwiazd
@@ -1365,8 +1376,6 @@ value.STAR_BRIGHTNESS.23=2.0
 
 option.MORE_STARS_OVERWORLD=Więcej Gwiazd na Powierzchni
 option.MORE_STARS_OVERWORLD.comment=Zastępuje ilość gwiazd na nocnym niebie dużo wyższą wartością. Dotyczy wymiaru Powierzchni.
-option.MORE_STARS_END=Więcej Gwiazd w Endzie
-option.MORE_STARS_END.comment=Zastępuje ilość gwiazd na niebie Endu dużo wyższą wartością. Dotyczy wymiaru Endu.
 option.TWINKLING_STARS=Migoczące Gwiazdy
 option.TWINKLING_STARS.comment=Niech gwiazdy mrugają do ciebie.
 option.STAR_SIZE=Rozmiar Gwiazd
@@ -1476,6 +1485,9 @@ value.END_PORTAL_VARIATION.1=Wyciek Oleju
 value.END_PORTAL_VARIATION.2=Płaski
 value.END_PORTAL_VARIATION.3=Pikselowana Salsa
 
+option.END_PORTAL_BEAM=Promienie Portalu Endu
+option.END_PORTAL_BEAM.comment=Sprawia, że portal endu emituje promienie światła dookoła. Podobnie jak w Minecraft Dungeons.
+
 option.SILHOUETTE=Sylwetka
 option.SILHOUETTE.comment=Po włączeniu sprawia, że bloki odwrócone od słońca stają się czarne, co jest przydatne podczas robienia zrzutów ekranu.
 value.SILHOUETTE.0=WYŁ.
@@ -1488,6 +1500,7 @@ option.RAIN_ATMOSPHERE.comment=Znacząco poprawia burze z piorunami. §e[*]§r D
 
 option.BLUE_SCREEN=Niebieski Ekran
 option.BLUE_SCREEN.comment=Przekształca "Niebieski Beton", "Niebieską Wełnę" i "Niebieski Dywan" w niebieskie ekrany do edycji wideo. Wskazówka 1: Wyłącz opcję "Blask", aby poprawić separację. Wskazówka 2: Umieść światła pod niebieskimi dywanami, aby je oświetlić. Wskazówka 3: Możesz wyłączyć antyaliasing (FXAA) i ustawić jakość detali na "ziemniak" w ustawieniach jakości, aby wyłączyć filtrowanie obrazu i uzyskać idealną separację pikseli.
+
 option.MIRROR_DIMENSION=Wymiar Lustrzany
 option.MIRROR_DIMENSION.comment=Nauczyłeś się czarnej magii i odważyłeś się, wkroczyć do wymiaru lustrzanego.
 
@@ -1519,6 +1532,7 @@ option.LAVA_NOISE_AMOUNT=Ilość Szumu Lawy
 option.LAVA_NOISE_AMOUNT.comment=Kontrolume ilość szumu generowanego przez preset lawy.
 
 option.LAVA_EDGE_EFFECT=Efekt Krawędzi Lawy
+option.LAVA_EDGE_EFFECT.comment=Dodaje krawędź do lawy, gdy jest w kontakcie z innymi blokami. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone.
 
 option.NETHER_BRIGHTNESS=Oświetlenie Netheru
 option.NETHER_BRIGHTNESS.comment=Zmień jasność otoczenia w Netherze.
@@ -1979,6 +1993,24 @@ option.COMP_WATER_TWEAKS=Korekty wody
 option.COMP_WATER_TWEAKS.comment=Poprawki kolorów wody wykonane automatycznie przez Shader
 
 option.CAVE_SMOKE=Dym w Jaskiniach
-option.CAVE_SMOKE.comment=Dodaje efekt dymu do wolumetrycznej mgły świetlnej w jaskiniach. §c[-]§r Ten efekt może mieć wpływ na wydajność. §e[*]§r Zaawansowane Kolorowe Oświetlenie musi być włączone.
+option.CAVE_SMOKE.comment=Dodaje efekt dymu do wolumetrycznej mgły świetlnej w jaskiniach. §c[-]§r Ten efekt może mieć wpływ na wydajność. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone.
 
 option.WAVING_SUGAR_CANE=Falująca Trzcina Cukrowa
+
+option.SUN_GLARE_AMOUNT=Intensywność Blasku Słońca/Księżyca
+value.SUN_GLARE_AMOUNT.0=WYŁ.
+
+option.DAYLIGHT_STARS=Gwiazdy w Dzień
+option.DAYLIGHT_STARS.comment=Włącza gwiazdy podczas dnia.
+
+option.FROZEN_TIME=Zatrzymany Czas
+
+option.DARKER_DEPTH_OCEANS=Ciemniejsze Głebokie Oceany
+option.DARKER_DEPTH_OCEANS.comment=Ilość światła zmniejsza się wraz z głebokością
+
+option.WEATHER_TEX_R=Kolor Deszczu - Czerwień
+option.WEATHER_TEX_G=Kolor Deszczu - Zieleń
+option.WEATHER_TEX_B=Kolor Deszczu - Niebieskość
+
+option.EMISSIVE_SOUL_SAND=Świecące Oczy Piasku Dusz
+option.EMISSIVE_SOUL_SAND.comment=Sprawia, że oczy bloku Piasku Duszy świecą, gdy się na nim stoi. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+.
