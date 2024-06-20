@@ -1485,8 +1485,8 @@ value.END_PORTAL_VARIATION.1=Smudged Strings
 value.END_PORTAL_VARIATION.2=Flat
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
-option.END_PORTAL_BEAM=End Portal Side Beams
-option.END_PORTAL_BEAM.comment=Adds beams going up from the edges of the end portal. Similar to Minecraft Dungeons.
+option.END_PORTAL_BEAM=End Portal Rays
+option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end portal. Similar to Minecraft Dungeons.
 
 option.SILHOUETTE=Silhouette
 option.SILHOUETTE.comment=When enabled makes blocks facing away from the sun black, useful for screenshots.
@@ -2013,4 +2013,4 @@ option.WEATHER_TEX_G=Weather Texture - Green
 option.WEATHER_TEX_B=Weather Texture - Blue
 
 option.EMISSIVE_SOUL_SAND=Glowing Soul Sand Eyes
-option.EMISSIVE_SOUL_SAND.comment=Makes the eyes of the Soul Sand block glow when standing on it. §e[*]§r Needs IPBR enabled
+option.EMISSIVE_SOUL_SAND.comment=Makes the eyes of the Soul Sand block glow when standing on it. §e[*]§r RP Support option must be set to Integrated PBR+
