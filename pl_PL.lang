@@ -1320,7 +1320,7 @@ value.END_CRYSTAL_VORTEX.1=Wir
 value.END_CRYSTAL_VORTEX.2=Wiązki Lecznicze
 value.END_CRYSTAL_VORTEX.3=Oba
 option.DRAGON_DEATH_EFFECT=Efekt Śmierci Smoka Endu
-option.DRAGON_DEATH_EFFECT.comment=Ustawienie, które zastępuje domyslną animacje śmerci smoka efektem wolumetrycznym. Ograniczenia można znaleźć w opisie ustawienia "Efekty Wiru Endu".
+option.DRAGON_DEATH_EFFECT.comment=Ustawienie, które zastępuje domyslną animacje śmerci smoka efektem wolumetrycznym. §4[***]§r Włącza §cCienie Mobów§r. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
 option.E_BEAMS_AMBIENT_INFLUENCE=Wpływ Kolorów Otoczenia
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=Zorza będą miały kolor otoczenia na poziomie 0.00 i kolor wybrany przez użytkownika na poziomie 1.00. Doesn't apply to Smocze Zorza Ender.
 option.E_BEAM_R=Zorza Ender - Czerwień
@@ -1486,7 +1486,7 @@ value.END_PORTAL_VARIATION.2=Płaski
 value.END_PORTAL_VARIATION.3=Pikselowana Salsa
 
 option.END_PORTAL_BEAM=Promienie Portalu Endu
-option.END_PORTAL_BEAM.comment=Sprawia, że portal endu emituje promienie światła dookoła. Podobnie jak w Minecraft Dungeons.
+option.END_PORTAL_BEAM.comment=Sprawia, że portal endu emituje promienie światła dookoła. Podobnie jak w Minecraft Dungeons. §4[***]§r Włącza §cCienie Mobów§r. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
 
 option.SILHOUETTE=Sylwetka
 option.SILHOUETTE.comment=Po włączeniu sprawia, że bloki odwrócone od słońca stają się czarne, co jest przydatne podczas robienia zrzutów ekranu.
