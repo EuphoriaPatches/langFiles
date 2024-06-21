@@ -1320,7 +1320,7 @@ value.END_CRYSTAL_VORTEX.1=仅涡流
 value.END_CRYSTAL_VORTEX.2=仅治疗光束
 value.END_CRYSTAL_VORTEX.3=两者
 option.DRAGON_DEATH_EFFECT=末影龙死亡效果 §e[Iris]§r
-option.DRAGON_DEATH_EFFECT.comment=用体积特效替换末影龙死亡特效的选项. 相关注意事项请查看 末地水晶涡流 选项.
+option.DRAGON_DEATH_EFFECT.comment=用体积特效替换末影龙死亡特效的选项. §4[***]§r 需启用 §c实体阴影§r. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 option.E_BEAMS_AMBIENT_INFLUENCE=环境色影响程度
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=当数值越接近 0.00 时星束的颜色越接近环境色, 当数值越接近 1.00 时星束的颜色越接近玩家自定义的颜色. 此设置不会影响龙战星束颜色.
 option.E_BEAM_R=末地星束 - 红色
@@ -1486,7 +1486,7 @@ value.END_PORTAL_VARIATION.2=Flat
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=末地传送门射束
-option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》.
+option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. §4[***]§r 需启用 §c实体阴影§r. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 
 option.SILHOUETTE=剪影模式
 value.SILHOUETTE.0=关
