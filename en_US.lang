@@ -82,9 +82,9 @@ option.info16=§nHow to support Euphoria Patches
 value.info16.0=
 option.info16.comment=You can support Euphoria Patches by being curious about new updates and sharing it with people, but you can also directly support SpacEagle17 on Patreon or Ko-Fi and access developer versions. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
-option.info17=Dev Versions: SpacEagle17 Patreon
+option.info17=Beta Version: SpacEagle17 Patreon
 value.info17.0=
-option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access development versions. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access exclusive development versions. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
 option.info18=For Complementary 5.2.2
 value.info18.0=
@@ -2014,3 +2014,6 @@ option.WEATHER_TEX_B=Weather Texture - Blue
 
 option.EMISSIVE_SOUL_SAND=Glowing Soul Sand Eyes
 option.EMISSIVE_SOUL_SAND.comment=Makes the eyes of the Soul Sand block glow when standing on it. §e[*]§r RP Support option must be set to Integrated PBR+
+
+option.BEACON_BEAM_EMISSION=Beacon Beam Emission
+option.BEACON_BEAM_EMISSION.comment=Change the emission strength of the beacon beam
