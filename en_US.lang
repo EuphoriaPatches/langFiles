@@ -2017,3 +2017,5 @@ option.EMISSIVE_SOUL_SAND.comment=Makes the eyes of the Soul Sand block glow whe
 
 option.BEACON_BEAM_EMISSION=Beacon Beam Emission
 option.BEACON_BEAM_EMISSION.comment=Change the emission strength of the beacon beam
+
+option.PINKER_CHERRY_LEAVES=Pinker Cherry Leaves
