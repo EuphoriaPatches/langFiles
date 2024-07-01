@@ -82,9 +82,9 @@ option.info16=§nJak Wspierać Euphoria Patches
 value.info16.0=
 option.info16.comment=Możesz wspierać Euphoria Patches, śledząc informacje o nowych aktualizacjach i dzieląc się nimi z innymi, ale możesz także bezpośrednio wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
 
-option.info17=Wersje Dev: SpacEagle17 Patreon
+option.info17=Wersje Beta: Patreon SpacEagle17
 value.info17.0=
-option.info17.comment=Możesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
+option.info17.comment=Możesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji beta. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
 
 option.info18=Dla Complementary 5.2.2
 value.info18.0=
@@ -2014,3 +2014,8 @@ option.WEATHER_TEX_B=Kolor Deszczu - Niebieskość
 
 option.EMISSIVE_SOUL_SAND=Świecące Oczy Piasku Dusz
 option.EMISSIVE_SOUL_SAND.comment=Sprawia, że oczy bloku Piasku Duszy świecą, gdy się na nim stoi. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+.
+
+option.BEACON_BEAM_EMISSION=Jasność Wiązki Magicznej Latarni
+option.BEACON_BEAM_EMISSION.comment=Zmień janość wiązki magicznej latarni
+
+option.PINKER_CHERRY_LEAVES=Różowsze Drzewa Wiśniowe
