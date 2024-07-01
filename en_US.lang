@@ -223,7 +223,7 @@ value.WATER_REFLECT_QUALITY.1=§ePotato
 value.WATER_REFLECT_QUALITY.2=§cMedium
 
 option.BLOCK_REFLECT_QUALITY=Block Reflection Quality §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §eHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eMedium§r: Sun/moon highlights + specular reflections. §aLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
+option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eMedium§r: Sun/moon highlights + specular reflections. §aLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
 value.BLOCK_REFLECT_QUALITY.0=§aOFF
 value.BLOCK_REFLECT_QUALITY.1=§eLow
 value.BLOCK_REFLECT_QUALITY.2=§cMedium
@@ -1486,7 +1486,7 @@ value.END_PORTAL_VARIATION.2=Flat
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=End Portal Rays
-option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end portal. Similar to Minecraft Dungeons. §4[***]§r Enables §cEntity Shadows§r. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
+option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end portal. Similar to Minecraft Dungeons. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
 
 option.SILHOUETTE=Silhouette
 option.SILHOUETTE.comment=When enabled makes blocks facing away from the sun black, useful for screenshots.
