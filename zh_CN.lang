@@ -82,9 +82,9 @@ option.info16=§n如何支持 Euphoria Patches
 value.info16.0=
 option.info16.comment=使用 Euphoria Patches 即是最好的支持. 向更多人推荐和介绍本光影, 保持对我们未来的更新内容的好奇和热情. 可以直接通过 Patreon 和 Ko-Fi 来给予金钱支持的同时获得开发版本的光影文件. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
 
-option.info17=开发版本获取: SpacEagle17 的 Patreon
+option.info17=测试版本: 从SpacEagle17的Patreon获取
 value.info17.0=
-option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得开发版本的光影文件. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
 option.info18=对应 Complementary r5.2.2 版本
 value.info18.0=
@@ -1485,8 +1485,8 @@ value.END_PORTAL_VARIATION.1=Smudged Strings
 value.END_PORTAL_VARIATION.2=Flat
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
-option.END_PORTAL_BEAM=末地传送门射束
-option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. §4[***]§r 需启用 §c实体阴影§r. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
+option.END_PORTAL_BEAM=末地传送门射束 §e[Iris]§r
+option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 
 option.SILHOUETTE=剪影模式
 value.SILHOUETTE.0=关
@@ -2014,3 +2014,8 @@ option.WEATHER_TEX_B=天气纹理 - 蓝
 
 option.EMISSIVE_SOUL_SAND=灵魂沙发光眼睛
 option.EMISSIVE_SOUL_SAND.comment=站在灵魂沙方块上时, 灵魂沙方块上会有发光的眼睛. §e[*]§r 资源包支持选项需设置为集成PBR+.
+
+option.BEACON_BEAM_EMISSION=信标光束强度
+option.BEACON_BEAM_EMISSION.comment=调节信标光束的发光强度.
+
+option.PINKER_CHERRY_LEAVES=更加粉红的樱花树叶
