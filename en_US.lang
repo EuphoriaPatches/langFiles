@@ -2013,7 +2013,7 @@ option.WEATHER_TEX_G=Weather Texture - Green
 option.WEATHER_TEX_B=Weather Texture - Blue
 
 option.EMISSIVE_SOUL_SAND=Glowing Soul Sand Eyes
-option.EMISSIVE_SOUL_SAND.comment=Makes the eyes of the Soul Sand block glow when standing on it. §e[*]§r RP Support option must be set to Integrated PBR+
+option.EMISSIVE_SOUL_SAND.comment=Makes the eyes of the Soul Sand block glow when standing on it. §e[*]§r RP Support option must be set to Integrated PBR+. Default Vanilla Texture Only.
 
 option.BEACON_BEAM_EMISSION=Beacon Beam Emission
 option.BEACON_BEAM_EMISSION.comment=Change the emission strength of the beacon beam
