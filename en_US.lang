@@ -1119,11 +1119,12 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
             screen.END_AMBIENT=End Ambient
             screen.FOG_BORDER_END=Border fog
             screen.FOG_BORDER_END.comment=Settings that relate to border fog.
-        screen.BLOCKLIGHT=Blocklight Settings
-        screen.BLOCKLIGHT.comment=Settings that relate to blocklight color.
-            screen.COLORED_LIGHT=Colored Lighting
-                screen.SSBL_SETTINGS=Screenspace Colored Blocklight
-                screen.ACL_SETTINGS=Advanced Colored Lighting
+        screen.LIGHT_SETTINGS=Light Settings
+            screen.BLOCKLIGHT=Blocklight Settings
+            screen.BLOCKLIGHT.comment=Settings that relate to blocklight color.
+                screen.COLORED_LIGHT=Colored Lighting
+                    screen.SSBL_SETTINGS=Screenspace Colored Blocklight
+                    screen.ACL_SETTINGS=Advanced Colored Lighting
         screen.OVERLAY_NOISE=Overlay Noise
             screen.MOSS_NOISE_SETTINGS=Moss Noise Settings
             screen.SAND_NOISE_SETTINGS=Sand Noise Settings
@@ -2020,3 +2021,8 @@ option.BEACON_BEAM_EMISSION=Beacon Beam Emission
 option.BEACON_BEAM_EMISSION.comment=Change the emission strength of the beacon beam
 
 option.PINKER_CHERRY_LEAVES=Pinker Cherry Leaves
+
+option.UPPER_LIGHTMAP_CURVE=Upper Lightmap Curve
+option.UPPER_LIGHTMAP_CURVE.comment=Change the Upper Lightmap Curve Intensity
+option.LOWER_LIGHTMAP_CURVE=Lower Lightmap Curve
+option.LOWER_LIGHTMAP_CURVE.comment=Change the Lower Lightmap Curve Intensity
