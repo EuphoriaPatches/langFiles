@@ -1135,8 +1135,7 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
         screen.WATER.comment=Settings that relate to water.
         screen.IPBR_REDSTONE=Integrated Redstone PBR
         screen.IPBR_REDSTONE.comment=Settings that relate to IntegratedPBR for redstone.
-        screen.IPBR_NORMALS=Auto Generated Normals
-        screen.IPBR_NORMALS.comment=Settings that relate to Auto Generated Normals.
+        screen.DIRECTIONAL_LIGHTMAP_NORMALS_SETTINGS=Lightmap Normals
         screen.LAVA_SETTINGS=Lava
         screen.LAVA_SETTINGS.comment=Settings that relate to hot burning lava.
         screen.END_ROD_SETTINGS=End Rod
@@ -1409,6 +1408,8 @@ option.COATED_TEXTURE_RES.comment=Change the resolution at which the Noise Coate
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=Lightmap Normals
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=Make the integrated normal maps work with blocklight. §e[*]§r RP Support option must be set to Integrated PBR+ and Auto Generated Normals have to be turned on
+option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH=Block Intensity
+option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Handheld Intensity
 
 option.CAVE_FOG=Cave Fog
 option.CAVE_FOG.comment=Turn cave fog on and off.
