@@ -1119,6 +1119,7 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的
             screen.END_AMBIENT=末地环境光
             screen.FOG_BORDER_END=边界雾
             screen.FOG_BORDER_END.comment=与边界雾相关的设置.
+        screen.LIGHT_SETTINGS=光源设置
         screen.BLOCKLIGHT=方块光设置
         screen.BLOCKLIGHT.comment=与方块光相关的设置.
             screen.COLORED_LIGHT=彩色照明
@@ -1408,6 +1409,8 @@ option.COATED_TEXTURE_RES.comment=调节噪点涂层纹理的渲染分辨率. §
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=光图法线
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=使集成法线贴图可以与方块光一同生效. §e[*]§r 资源包支持选项需设置为 集成PBR+ 且需启用 自动生成法线 选项.
+option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH=方块光源法线强度
+option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=手持光源法线强度
 
 option.CAVE_FOG=洞穴雾气
 option.CAVE_FOG.comment=关闭或开启洞穴雾气的设置.
@@ -2012,9 +2015,14 @@ option.WEATHER_TEX_G=天气纹理 - 绿
 option.WEATHER_TEX_B=天气纹理 - 蓝
 
 option.EMISSIVE_SOUL_SAND=灵魂沙发光眼睛
-option.EMISSIVE_SOUL_SAND.comment=站在灵魂沙方块上时, 灵魂沙方块上会有发光的眼睛. §e[*]§r 资源包支持选项需设置为集成PBR+.
+option.EMISSIVE_SOUL_SAND.comment=站在灵魂沙方块上时, 灵魂沙方块上会有发光的眼睛. §e[*]§r 资源包支持选项需设置为集成PBR+. 仅限默认的原版纹理.
 
 option.BEACON_BEAM_EMISSION=信标光束强度
 option.BEACON_BEAM_EMISSION.comment=调节信标光束的发光强度.
 
 option.PINKER_CHERRY_LEAVES=更加粉红的樱花树叶
+
+option.UPPER_LIGHTMAP_CURVE=光图曲线 - 上部
+option.UPPER_LIGHTMAP_CURVE.comment=调节光图亮部曲线的强度.
+option.LOWER_LIGHTMAP_CURVE=光图曲线 - 下部
+option.LOWER_LIGHTMAP_CURVE.comment=调节光图暗部曲线的强度.
