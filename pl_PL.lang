@@ -1119,11 +1119,12 @@ screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMo
             screen.END_AMBIENT=Klimat Endu
             screen.FOG_BORDER_END=Mgła Graniczna
             screen.FOG_BORDER_END.comment=Ustawienia związane z mgłą graniczną w Endzie.
-        screen.BLOCKLIGHT=Ustawienia Źródeł Światła
-        screen.BLOCKLIGHT.comment=Ustawienia związane z kolorem żródeł światła
-            screen.COLORED_LIGHT=Kolorowe Oświetlenie
-                screen.SSBL_SETTINGS=Kolorowe Oświetlenie w Przestrzeni Ekranu (SSBL)
-                screen.ACL_SETTINGS=Zaawansowane Kolorowe Oświetlenie
+        screen.LIGHT_SETTINGS=Ustawienia Światła
+            screen.BLOCKLIGHT=Ustawienia Źródeł Światła
+            screen.BLOCKLIGHT.comment=Ustawienia związane z kolorem żródeł światła
+                screen.COLORED_LIGHT=Kolorowe Oświetlenie
+                    screen.SSBL_SETTINGS=Kolorowe Oświetlenie w Przestrzeni Ekranu (SSBL)
+                    screen.ACL_SETTINGS=Zaawansowane Kolorowe Oświetlenie
         screen.OVERLAY_NOISE=Powlekane Tekstury
             screen.MOSS_NOISE_SETTINGS=Ustawienia Powłoki Mchu
             screen.SAND_NOISE_SETTINGS=Ustawienia Piaszczystej Powłoki
@@ -1408,6 +1409,8 @@ option.COATED_TEXTURE_RES.comment=Change the resolution at which the Noise Coate
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=Normalne od Źródeł Światła
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=Sprawia, że zintegrowane mapy normalne działają z blokami źródeł światła (Domyślnie działają tylko ze światłem słońca/księżyca). §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+, a opcja Generowane Normalne (GN) musi być włączona.
+option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH=Intensywność od Bloków
+option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Intensywność od Trzymanego Światła
 
 option.CAVE_FOG=Mgła w Jaskiniach
 option.CAVE_FOG.comment=Włącz lub wyłącz mgłe w jaskiniach.
@@ -2012,9 +2015,14 @@ option.WEATHER_TEX_G=Kolor Deszczu - Zieleń
 option.WEATHER_TEX_B=Kolor Deszczu - Niebieskość
 
 option.EMISSIVE_SOUL_SAND=Świecące Oczy Piasku Dusz
-option.EMISSIVE_SOUL_SAND.comment=Sprawia, że oczy bloku Piasku Duszy świecą, gdy się na nim stoi. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+.
+option.EMISSIVE_SOUL_SAND.comment=Sprawia, że oczy bloku Piasku Duszy świecą, gdy się na nim stoi. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+. Działa tylko z domyślnymi teksturami Minecraft.
 
 option.BEACON_BEAM_EMISSION=Jasność Wiązki Magicznej Latarni
 option.BEACON_BEAM_EMISSION.comment=Zmień janość wiązki magicznej latarni
 
 option.PINKER_CHERRY_LEAVES=Różowsze Drzewa Wiśniowe
+
+option.UPPER_LIGHTMAP_CURVE=Górna Krzywa Mapy Światła
+option.UPPER_LIGHTMAP_CURVE.comment=Zmień intensywność górnej krzywej mapy światła
+option.LOWER_LIGHTMAP_CURVE=Dolna Krzywa Mapy Światła
+option.LOWER_LIGHTMAP_CURVE.comment=Zmień intensywność dolnej krzywej mapy światła.
