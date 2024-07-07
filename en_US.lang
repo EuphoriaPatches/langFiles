@@ -1488,7 +1488,7 @@ value.END_PORTAL_VARIATION.2=Flat
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=End Portal Rays
-option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end portal. Similar to Minecraft Dungeons. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
+option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end portal. Similar to Minecraft Dungeons. §e[*]§r Advanced Colored Lighting must be enabled. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
 
 option.SILHOUETTE=Silhouette
 option.SILHOUETTE.comment=When enabled makes blocks facing away from the sun black, useful for screenshots.
