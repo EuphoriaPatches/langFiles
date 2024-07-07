@@ -1488,7 +1488,7 @@ value.END_PORTAL_VARIATION.2=Flat
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=末地传送门射束 §e[Iris]§r
-option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
+option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. §e[*]§r 需启用 高级彩色照明 选项. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 
 option.SILHOUETTE=剪影模式
 value.SILHOUETTE.0=关
