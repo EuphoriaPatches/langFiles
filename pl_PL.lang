@@ -1488,7 +1488,7 @@ value.END_PORTAL_VARIATION.2=Płaski
 value.END_PORTAL_VARIATION.3=Pikselowana Salsa
 
 option.END_PORTAL_BEAM=Promienie Portalu Endu
-option.END_PORTAL_BEAM.comment=Sprawia, że portal endu emituje promienie światła dookoła. Podobnie jak w Minecraft Dungeons. §4[***]§r Włącza §cCienie Mobów§r. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
+option.END_PORTAL_BEAM.comment=Sprawia, że portal endu emituje promienie światła dookoła. Podobnie jak w Minecraft Dungeons. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
 
 option.SILHOUETTE=Sylwetka
 option.SILHOUETTE.comment=Po włączeniu sprawia, że bloki odwrócone od słońca stają się czarne, co jest przydatne podczas robienia zrzutów ekranu.
