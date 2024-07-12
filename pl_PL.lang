@@ -1171,7 +1171,7 @@ screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMo
     screen.POPULAR_SETTINGS=§bPopularne Ustawienia
         screen.POPULAR_SETTINGS_2=2 Strona
         screen.POPULAR_SETTINGS_3=3 Strona
-screen.EP_VERSION=Euphoria Patches 1.3.2
+screen.EP_VERSION=Euphoria Patches 1.3.3
 
 option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
 option.DAYLIGHT_CYCLE_COMPAT.comment=Używaj tej opcji TYLKO, jeśli grasz na serwerze z wyłączoną zasadą "doDaylightCycle". Po włączeniu tej opcji chmury i inne animacje w światach z wyłączonym cyklem dziennym nie są już synchronizowane między graczami.
