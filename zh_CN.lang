@@ -1650,6 +1650,7 @@ option.AGX_R=AgX - 红色
 option.AGX_G=AgX - 绿色
 option.AGX_B=AgX - 蓝色
 option.AGX_POWER=AgX 强度
+option.AGX_SATURATION=AgX 蛙明灯饱和度
 
 option.COLOR_MULTIPLIER_COMPARISON=颜色倍率对比
 option.COLOR_MULTIPLIER_COMPARISON.comment=本选项可以用于更容易地将修改后的照明颜色倍率, 大气颜色倍率和光影默认色调进行对比.
