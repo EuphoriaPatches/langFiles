@@ -1694,6 +1694,7 @@ option.SEASON_LENGTH.comment=Zmienia czas trwania pór roku (w dniach Minecrafta
 value.SEASON_LENGTH.24000=1 dzień Minecrafta
 value.SEASON_LENGTH.72000=3 dni Minecrafta
 value.SEASON_LENGTH.168000=7 dni Minecrafta
+value.SEASON_LENGTH.192000=8 dni Minecrafta
 value.SEASON_LENGTH.336000=14 dni Minecrafta
 value.SEASON_LENGTH.576000=24 dni Minecrafta
 value.SEASON_LENGTH.672000=28 dni Minecrafta
