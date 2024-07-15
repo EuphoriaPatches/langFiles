@@ -1650,6 +1650,7 @@ option.AGX_R=AgX - Red
 option.AGX_G=AgX - Green
 option.AGX_B=AgX - Blue
 option.AGX_POWER=AgX Power
+option.AGX_SATURATION=AgX Saturation
 
 option.COLOR_MULTIPLIER_COMPARISON=Color Multiplier Comparison
 option.COLOR_MULTIPLIER_COMPARISON.comment=This option let's you easily compare the lighting and atmosphere color multiplier values to the default values of the shaderpack.
