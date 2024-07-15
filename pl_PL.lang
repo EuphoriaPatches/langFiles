@@ -1650,6 +1650,7 @@ option.AGX_R=AgX - Czerwień
 option.AGX_G=AgX - Zieleń
 option.AGX_B=AgX - Niebieskość
 option.AGX_POWER=AgX Moc
+option.AGX_SATURATION=AgX Nasycenie
 
 option.COLOR_MULTIPLIER_COMPARISON=Porównanie Mnożników Kolorów
 option.COLOR_MULTIPLIER_COMPARISON.comment=Ta opcja umożliwia łatwe porównanie wartości mnożników kolorów oświetlenia i atmosfery z domyślnymi wartościami shadera.
