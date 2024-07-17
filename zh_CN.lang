@@ -1061,7 +1061,7 @@ option.XLIGHT_I=方块光 - 强度 - 倍率
 ####### Euphoria Patches #######
 
 profile.SPACEAGLE17= §f۞ §kO§fSpacEagle17 的设置§f§kO
-profile.EUPHORIA=§dEuphoria §bPatches
+profile.POPULAR=§b最受欢迎的设置
 
 #WATERMARK
 option.WATERMARK=水印类型
