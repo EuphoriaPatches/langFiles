@@ -1776,7 +1776,7 @@ option.ATLAS_ROTATION.comment=:).
 option.NETHER_NOISE=Nether Sky Noise
 option.NETHER_NOISE.comment=Makes the Nether sky above the Nether roof more interesting.
 
-option.MCBL_MAIN_DEFINE=Multi-Colored Blocklight
+option.MCBL_MAIN_DEFINE=Euphoria Colored Lighting
 option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. §e[*]§rOnly works on 1.16.5 and above.
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=Screen-Space
