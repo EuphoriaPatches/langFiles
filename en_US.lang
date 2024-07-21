@@ -1752,6 +1752,9 @@ option.AUTUMN_NOISE_SIZE.comment=Size of the noise which produces the leaf color
 
 option.LEAVES_ON_GROUND=Leaves On The Ground
 
+option.AUTUMN_STRENGTH=Autumn Strength
+option.AUTUMN_STRENGTH.comment=Change the color overwrite in autumn.
+
 option.FLOWER_DENSITY=Flower Density
 option.FLOWER_SIZE=Flower Resolution
 option.FLOWER_AMOUNT=Flower Amount
