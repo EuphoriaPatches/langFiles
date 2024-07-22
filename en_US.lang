@@ -1373,6 +1373,16 @@ value.STAR_BRIGHTNESS.20=1.7
 value.STAR_BRIGHTNESS.21=1.8
 value.STAR_BRIGHTNESS.22=1.9
 value.STAR_BRIGHTNESS.23=2.0
+value.STAR_BRIGHTNESS.24=2.1
+value.STAR_BRIGHTNESS.25=2.2
+value.STAR_BRIGHTNESS.26=2.3
+value.STAR_BRIGHTNESS.27=2.4
+value.STAR_BRIGHTNESS.28=2.5
+value.STAR_BRIGHTNESS.29=2.6
+value.STAR_BRIGHTNESS.30=2.7
+value.STAR_BRIGHTNESS.31=2.8
+value.STAR_BRIGHTNESS.32=2.9
+value.STAR_BRIGHTNESS.33=3.0
 
 option.MORE_STARS_OVERWORLD=More Stars Overworld
 option.MORE_STARS_OVERWORLD.comment=Overwrites Complementary's star amount and sets it to a higher one. Applies to Overworld
@@ -2031,3 +2041,7 @@ option.UPPER_LIGHTMAP_CURVE=Upper Lightmap Curve
 option.UPPER_LIGHTMAP_CURVE.comment=Change the Upper Lightmap Curve Intensity
 option.LOWER_LIGHTMAP_CURVE=Lower Lightmap Curve
 option.LOWER_LIGHTMAP_CURVE.comment=Change the Lower Lightmap Curve Intensity
+
+option.ALTERNATIVE_AMETHYST_STYLE=Alternative Amethyst
+value.ALTERNATIVE_AMETHYST_STYLE.0=Default
+value.ALTERNATIVE_AMETHYST_STYLE.1=Shiny Pink
