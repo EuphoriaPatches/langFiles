@@ -76,7 +76,7 @@ option.info14.comment=Euphoria Patches 和 Complementary 光影同样都使用�
 
 option.info15=Euphoria Patches 致谢
 value.info15.0=
-option.info15.comment=EminGT: Complementary 光影的主要开发者. Capt Tatsu - 屏幕空间多色方块光功能实现. gri573 - 末地水晶涡流功能实现, 并在许多领域提供了指导和帮助! 帮了很多的忙. SixthSurge, WoMspace (又名 Sasha), Septonious, fayer3 - 总是在我们需要帮助的时候提供帮助. Xonk - 令人惊异的定向照明闪电束(史诗雷雨氛围功能实现). Elysia - Euphoria Patches 横幅及水印设计. dragoncat - Overimagined 的 logo 设计和许多有用的建议. TheNukeLore - 集成PBR法线分辨率功能实现. dbrighthd - 菲涅尔(Fresnel)倍率功能实现. Surisen (Ruri) - 中文选项翻译. Acer (Alex) - 很多有用建议和反馈. Helgust - 程序化像素风水面选项的原始代码. 特别致谢: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
+option.info15.comment=EminGT: Complementary 光影的主要开发者. Capt Tatsu - 屏幕空间彩色照明功能实现. gri573 - 末地水晶涡流功能实现, 并在许多领域提供了指导和帮助! 帮了很多的忙. SixthSurge, WoMspace (又名 Sasha), Septonious, fayer3 - 总是在我们需要帮助的时候提供帮助. Xonk - 令人惊异的定向照明闪电束(史诗雷雨氛围功能实现). Elysia - Euphoria Patches 横幅及水印设计. dragoncat - Overimagined 的 logo 设计和许多有用的建议. TheNukeLore - 集成PBR法线分辨率功能实现. dbrighthd - 菲涅尔(Fresnel)倍率功能实现. Surisen (Ruri) - 中文选项翻译. Acer (Alex) - 很多有用建议和反馈. Helgust - 程序化像素风水面选项的原始代码. 特别致谢: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
 
 option.info16=§n如何支持 Euphoria Patches
 value.info16.0=
@@ -1060,7 +1060,7 @@ option.XLIGHT_I=方块光 - 强度 - 倍率
 
 ####### Euphoria Patches #######
 
-profile.SPACEAGLE17= §f۞ §kO§fSpacEagle17 的设置§f§kO
+profile.SPACEAGLE17= §f۞ §kO§f调试 (请勿使用)§f§kO
 profile.POPULAR=§b最受欢迎的设置
 
 #WATERMARK
@@ -1123,7 +1123,7 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的
         screen.BLOCKLIGHT=方块光设置
         screen.BLOCKLIGHT.comment=与方块光相关的设置.
             screen.COLORED_LIGHT=彩色照明
-                screen.SSBL_SETTINGS=屏幕空间多色方块光
+                screen.SSBL_SETTINGS=屏幕空间彩色照明
                 screen.ACL_SETTINGS=高级彩色照明
         screen.OVERLAY_NOISE=噪声叠加
             screen.MOSS_NOISE_SETTINGS=苔藓噪点设置
@@ -1373,6 +1373,16 @@ value.STAR_BRIGHTNESS.20=1.7
 value.STAR_BRIGHTNESS.21=1.8
 value.STAR_BRIGHTNESS.22=1.9
 value.STAR_BRIGHTNESS.23=2.0
+value.STAR_BRIGHTNESS.24=2.1
+value.STAR_BRIGHTNESS.25=2.2
+value.STAR_BRIGHTNESS.26=2.3
+value.STAR_BRIGHTNESS.27=2.4
+value.STAR_BRIGHTNESS.28=2.5
+value.STAR_BRIGHTNESS.29=2.6
+value.STAR_BRIGHTNESS.30=2.7
+value.STAR_BRIGHTNESS.31=2.8
+value.STAR_BRIGHTNESS.32=2.9
+value.STAR_BRIGHTNESS.33=3.0
 
 option.MORE_STARS_OVERWORLD=繁星密布 - 主世界
 option.MORE_STARS_OVERWORLD.comment=覆写 Complementary 的星星数量并使其更多. 应用于主世界.
@@ -1650,7 +1660,7 @@ option.AGX_R=AgX - 红色
 option.AGX_G=AgX - 绿色
 option.AGX_B=AgX - 蓝色
 option.AGX_POWER=AgX 强度
-option.AGX_SATURATION=AgX 蛙明灯饱和度
+option.AGX_SATURATION=AgX 饱和度
 
 option.COLOR_MULTIPLIER_COMPARISON=颜色倍率对比
 option.COLOR_MULTIPLIER_COMPARISON.comment=本选项可以用于更容易地将修改后的照明颜色倍率, 大气颜色倍率和光影默认色调进行对比.
@@ -1752,6 +1762,9 @@ option.AUTUMN_NOISE_SIZE.comment=产生树叶渐变颜色的噪声尺寸
 
 option.LEAVES_ON_GROUND=落叶
 
+option.AUTUMN_STRENGTH=秋意浓度
+option.AUTUMN_STRENGTH.comment=调节秋天时群系色的覆写强度.
+
 option.FLOWER_DENSITY=春花密度
 option.FLOWER_SIZE=春花分辨率
 option.FLOWER_AMOUNT=春花数量
@@ -1776,15 +1789,15 @@ option.ATLAS_ROTATION.comment=:).
 option.NETHER_NOISE=下界天空噪声
 option.NETHER_NOISE.comment=让下界上层的天空顶部看起来更有趣一点.
 
-option.MCBL_MAIN_DEFINE=多色方块光
+option.MCBL_MAIN_DEFINE=Euphoria 彩色照明
 option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光. §e[*]§r本选项仅适用于 1.16.5 及以上版本.
 value.MCBL_MAIN_DEFINE.0=关
 value.MCBL_MAIN_DEFINE.1=屏幕空间
 
-option.MCBL_INFLUENCE=多色方块光影响程度
-option.MCBL_INFLUENCE.comment=控制多色方块光对默认方块光颜色的影响程度.
+option.MCBL_INFLUENCE=彩色照明影响程度
+option.MCBL_INFLUENCE.comment=调节彩色照明颜色对默认方块光颜色的影响程度.
 
-option.COLORED_CANDLES=多色方块光蜡烛
+option.COLORED_CANDLES=蜡烛彩色照明
 
 option.SSS_SNOW_ICE=冰雪方块次表面散射
 option.SSS_SNOW_ICE.comment=为雪方块和冰方块添加次表面散射效果.
@@ -2028,3 +2041,7 @@ option.UPPER_LIGHTMAP_CURVE=光图曲线 - 上部
 option.UPPER_LIGHTMAP_CURVE.comment=调节光图亮部曲线的强度.
 option.LOWER_LIGHTMAP_CURVE=光图曲线 - 下部
 option.LOWER_LIGHTMAP_CURVE.comment=调节光图暗部曲线的强度.
+
+option.ALTERNATIVE_AMETHYST_STYLE=替选紫水晶风格
+value.ALTERNATIVE_AMETHYST_STYLE.0=默认
+value.ALTERNATIVE_AMETHYST_STYLE.1=闪粉
