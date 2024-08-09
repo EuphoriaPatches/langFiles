@@ -2095,3 +2095,8 @@ option.LOWER_LIGHTMAP_CURVE.comment=Change the Lower Lightmap Curve Intensity
 option.ALTERNATIVE_AMETHYST_STYLE=Alternative Amethyst
 value.ALTERNATIVE_AMETHYST_STYLE.0=Default
 value.ALTERNATIVE_AMETHYST_STYLE.1=Shiny Pink
+
+option.SHOCKWAVE=Shockwave
+value.SHOCKWAVE.0=OFF
+value.SHOCKWAVE.1=Circle
+value.SHOCKWAVE.2=Square
