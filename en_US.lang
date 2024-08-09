@@ -158,7 +158,7 @@ screen.GLOWING_ORE_SETTINGS.comment=Settings to adjust emission of ore blocks.
 screen.GLOWING_STUFF_SETTINGS=Glowing Stuff
 screen.GLOWING_STUFF_SETTINGS.comment=Settings to adjust emission of miscellaneous blocks.
 
-screen.OTHER_IPBR_SETTINGS=Other IPBR Features
+screen.OTHER_IPBR_SETTINGS=Other IPBR+ Features
 screen.OTHER_IPBR_SETTINGS.comment=Miscellaneous IntegratedPBR+ settings.
 
 screen.CUSTOM_PBR_SETTINGS=labPBR/seuspbr Materials
@@ -229,7 +229,7 @@ value.BLOCK_REFLECT_QUALITY.1=§eLow
 value.BLOCK_REFLECT_QUALITY.2=§cMedium
 value.BLOCK_REFLECT_QUALITY.3=§cHigh
 
-option.SHADOW_QUALITY=Shadow Sample Quality
+option.SHADOW_QUALITY=Real-Time Shadows
 option.SHADOW_QUALITY.comment=Adjusts the quality of shadows. Every tier further reduces the shadow noise artifacts, options lower than §eHigh§r enable optimised shadows on leaves, §eVery Low§r significantly downgrades shadows in multiple ways, §aOFF§r completely disables shadows and light shafts.
 value.SHADOW_QUALITY.-1=§aOFF
 value.SHADOW_QUALITY.0=§eVery Low
@@ -240,7 +240,7 @@ value.SHADOW_QUALITY.4=§cVery High
 value.SHADOW_QUALITY.5=§4§lUltra
 
 option.LIGHTSHAFT_QUALI_DEFINE=Light Shaft Quality §e[*]§r
-option.LIGHTSHAFT_QUALI_DEFINE.comment=Adjusts the quality of light shafts. Every tier further reduces the light shaft noise artifacts. §e[*]§r Shadow Sample Quality setting must be set to anything but OFF for light shafts to work.
+option.LIGHTSHAFT_QUALI_DEFINE.comment=Adjusts the quality of light shafts. Every tier further reduces the light shaft noise artifacts. §e[*]§r "Real-Time Shadows" setting must be set to anything but OFF for light shafts to work.
 value.LIGHTSHAFT_QUALI_DEFINE.0=§aOFF
 value.LIGHTSHAFT_QUALI_DEFINE.1=§eLow
 value.LIGHTSHAFT_QUALI_DEFINE.2=§eMedium
@@ -301,7 +301,7 @@ value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=Advanced Colored Lighting §e[*]§r
-option.COLORED_LIGHTING.comment=Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Shadow Sample Quality" is OFF. §a[+]§r This system also enables some other features which you can individually enable/disable in the "Other" -> "ACL Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each 2 chunk increment costs more than twice the performance of the previous tier.
+option.COLORED_LIGHTING.comment=Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r This system also enables some other features which you can individually enable/disable in the "Other" -> "ACL Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each 2 chunk increment costs more than twice the performance of the previous tier.
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§e4 Chunks
 value.COLORED_LIGHTING.192=§c6 Chunks
@@ -362,7 +362,7 @@ option.CLOUD_SHADOWS=Cloud Shadows
 option.CLOUD_SHADOWS.comment=Enables shadows that are cast from the clouds. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r Cloud shadows will be randomly generated if Cloud Style is set to "Unbound", because of the extra complexity of Unbound clouds.
 
 option.CLOUD_CLOSED_AREA_CHECK=Prevent Clouds in Interiors
-option.CLOUD_CLOSED_AREA_CHECK.comment=Does additional checks to remove clouds in closed areas. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r This setting will be disabled if "Shadow Sample Quality" is OFF.
+option.CLOUD_CLOSED_AREA_CHECK.comment=Does additional checks to remove clouds in closed areas. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF.
 
 option.CLOUD_ALT1=Cloud Altitude
 option.CLOUD_ALT1.comment=Determines the world height which the clouds will appear at. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
@@ -604,7 +604,7 @@ option.WEATHER_TEX_OPACITY=Weather Texture Opacity
 option.WEATHER_TEX_OPACITY.comment=Adjusts the opacity of the rainfall/snowfall weather textures.
 
 option.SHADOW_SMOOTHING=Shadow Smoothing
-option.SHADOW_SMOOTHING.comment=Determines the sharpness of shadows. §c[-]§r Lowering this setting will increase shadow flickering and impact performance. §e[*]§r This setting only works if Shadow Sample Quality is set to Low or higher.
+option.SHADOW_SMOOTHING.comment=Determines the sharpness of shadows. §c[-]§r Lowering this setting will increase shadow flickering and impact performance. §e[*]§r This setting only works if "Real-Time Shadows" is set to Low or higher.
 value.SHADOW_SMOOTHING.4=Very Smooth
 value.SHADOW_SMOOTHING.3=Smooth
 value.SHADOW_SMOOTHING.2=Sharp §c[-]
@@ -720,6 +720,9 @@ value.CHROMA_ABERRATION.6=6 §c[-]
 value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
 
+option.IPBR_PARTICLE_FEATURES=IPBR+ Particle Features
+option.IPBR_PARTICLE_FEATURES.comment=Enables several features for particles, including things like glowing lava particles and better-colored water particles.
+
 option.FANCY_GLASS=Improved Glass
 option.FANCY_GLASS.comment=Improves the regular glass by adding a translucent layer to it. §c[-]§r Does not work on Iris because of a Sodium bug. §e[*]§r RP Support option must be set to Integrated PBR+.
 
@@ -769,7 +772,7 @@ option.AMBIENT_MULT=Shadow Light Multiplier
 option.AMBIENT_MULT.comment=Determines the amount of ambient lighting seen in shadows. §c[-]§r Drastically changing this setting can break the lighting balance.
 
 option.PLAYER_SHADOW=Player Shadow §e[*]§r
-option.PLAYER_SHADOW.comment=Determines if the player will cast a shadow or not. §e[*]§r This setting only works on Iris. §e[*]§r This setting will be disabled if "Shadow Sample Quality" is OFF.
+option.PLAYER_SHADOW.comment=Determines if the player will cast a shadow or not. §e[*]§r This setting only works on Iris. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF.
 value.PLAYER_SHADOW.-1=OFF
 value.PLAYER_SHADOW.1=ON
 
@@ -923,6 +926,9 @@ option.WAVING_WATER_VERTEX.comment=Adds movement to water position to simulate w
 option.WAVING_RAIN=Waving Rain/Snow Texture
 option.WAVING_RAIN.comment=Adds movement to falling rain and snow textures to make it look more dynamic.
 
+option.SPECIAL_PORTAL_EFFECTS=Special Portal Effects
+option.SPECIAL_PORTAL_EFFECTS.comment=Adds special animations and emission to Nether Portals, End Portals, and End Gateways.
+
 option.WORLD_OUTLINE=World Outline
 option.WORLD_OUTLINE.comment=Adds bright outlines around blocks. §c[-]§r This effect can impact performance.
 
@@ -991,6 +997,9 @@ option.PORTAL_EDGE_EFFECT.comment=Adds an emissive border effect to end and neth
 
 option.PUDDLE_VOXELIZATION=Fix Puddles Under Glass
 option.PUDDLE_VOXELIZATION.comment=Prevents rain puddles from forming in closed areas with glass roofs when the Rain Puddles setting is enabled. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings and your system supports it.
+
+option.COLORED_LIGHT_SATURATION=Colored Lighting Saturation
+option.COLORED_LIGHT_SATURATION.comment=Adjusts how saturated the colors produced from Advanced Colored Lighting will be. §e[*]§r It's not recommended to change this value, as the visuals are designed to look the most balanced with the default saturation.
 
 option.COLORED_LIGHT_FOG=Colored Light Fog
 option.COLORED_LIGHT_FOG.comment=Adds volumetric blocklight fog to the scene, most visible during the night or underground. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings and your system supports it. §c[-]§r This effect can severely impact performance.
@@ -1349,6 +1358,27 @@ value.END_STAR_AMOUNT.2=High
 value.END_STAR_AMOUNT.3=Very High
 value.END_STAR_AMOUNT.4=A LOT
 option.END_TWINKLING_STARS=Twinkling End Stars
+value.END_TWINKLING_STARS.0=OFF
+value.END_TWINKLING_STARS.1=0.1
+value.END_TWINKLING_STARS.2=0.2
+value.END_TWINKLING_STARS.3=0.3
+value.END_TWINKLING_STARS.4=0.4
+value.END_TWINKLING_STARS.5=0.5
+value.END_TWINKLING_STARS.6=0.6
+value.END_TWINKLING_STARS.7=0.7
+value.END_TWINKLING_STARS.8=0.8
+value.END_TWINKLING_STARS.9=0.9
+value.END_TWINKLING_STARS.10=1.0
+value.END_TWINKLING_STARS.11=1.1
+value.END_TWINKLING_STARS.12=1.2
+value.END_TWINKLING_STARS.13=1.3
+value.END_TWINKLING_STARS.14=1.4
+value.END_TWINKLING_STARS.15=1.5
+value.END_TWINKLING_STARS.16=1.6
+value.END_TWINKLING_STARS.17=1.7
+value.END_TWINKLING_STARS.18=1.8
+value.END_TWINKLING_STARS.19=1.9
+value.END_TWINKLING_STARS.20=2.0
 
 option.STAR_BRIGHTNESS=Star Brightness
 option.STAR_BRIGHTNESS.comment=Setting to adjust the star brightness.
@@ -1388,6 +1418,27 @@ option.MORE_STARS_OVERWORLD=More Stars Overworld
 option.MORE_STARS_OVERWORLD.comment=Overwrites Complementary's star amount and sets it to a higher one. Applies to Overworld
 option.TWINKLING_STARS=Twinkling Stars
 option.TWINKLING_STARS.comment=Make the stars twinkle at you.
+value.TWINKLING_STARS.0=OFF
+value.TWINKLING_STARS.1=0.1
+value.TWINKLING_STARS.2=0.2
+value.TWINKLING_STARS.3=0.3
+value.TWINKLING_STARS.4=0.4
+value.TWINKLING_STARS.5=0.5
+value.TWINKLING_STARS.6=0.6
+value.TWINKLING_STARS.7=0.7
+value.TWINKLING_STARS.8=0.8
+value.TWINKLING_STARS.9=0.9
+value.TWINKLING_STARS.10=1.0
+value.TWINKLING_STARS.11=1.1
+value.TWINKLING_STARS.12=1.2
+value.TWINKLING_STARS.13=1.3
+value.TWINKLING_STARS.14=1.4
+value.TWINKLING_STARS.15=1.5
+value.TWINKLING_STARS.16=1.6
+value.TWINKLING_STARS.17=1.7
+value.TWINKLING_STARS.18=1.8
+value.TWINKLING_STARS.19=1.9
+value.TWINKLING_STARS.20=2.0
 option.STAR_SIZE=Star Size
 option.STAR_SIZE.comment=Change the size of your stars.
 
@@ -1494,7 +1545,6 @@ option.END_PORTAL_VARIATION=End Portal Preset
 option.END_PORTAL_VARIATION.comment=Option to choose between different end portal presets. §e[*]§r RP Support option must be set to Integrated PBR+
 value.END_PORTAL_VARIATION.0=Complementary
 value.END_PORTAL_VARIATION.1=Smudged Strings
-value.END_PORTAL_VARIATION.2=Flat
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=End Portal Rays
