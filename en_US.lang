@@ -1548,7 +1548,7 @@ value.END_PORTAL_VARIATION.1=Smudged Strings
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=End Portal Rays
-option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end portal. Similar to Minecraft Dungeons. §e[*]§r Advanced Colored Lighting must be enabled. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
+option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end portal. Similar to Minecraft Dungeons. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
 
 option.SILHOUETTE=Silhouette
 option.SILHOUETTE.comment=When enabled makes blocks facing away from the sun black, useful for screenshots.
@@ -1594,7 +1594,7 @@ option.LAVA_NOISE_AMOUNT=Lava Noise Amount
 option.LAVA_NOISE_AMOUNT.comment=Change the amount of noise.
 
 option.LAVA_EDGE_EFFECT=Lava Edge Effect
-option.LAVA_EDGE_EFFECT.comment=Adds an edge to lava when it touches other blocks. §e[*]§r Advanced Colored Lighting must be enabled.
+option.LAVA_EDGE_EFFECT.comment=Adds an edge to lava when it touches other blocks. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings.
 
 option.NETHER_BRIGHTNESS=Nether Brightness
 option.NETHER_BRIGHTNESS.comment=Change the ambient brightness of the Nether.
@@ -2060,7 +2060,7 @@ option.COMP_WATER_TWEAKS=Complementary Water Tweaks
 option.COMP_WATER_TWEAKS.comment=Color tweaks to water done by the Shaderpack
 
 option.CAVE_SMOKE=Cave Smoke
-option.CAVE_SMOKE.comment=Adds a smoke effect to the volumetric blocklight fog when in a cave. §c[-]§r This effect can impact performance. §e[*]§r Advanced Colored Lighting must be enabled.
+option.CAVE_SMOKE.comment=Adds a smoke effect to the volumetric blocklight fog when in a cave. §c[-]§r This effect can impact performance. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings.
 
 option.WAVING_SUGAR_CANE=Waving Sugar Cane
 
