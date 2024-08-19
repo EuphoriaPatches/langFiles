@@ -1,5 +1,8 @@
 #shaders/lang/zh_CN.lang
 
+# COMMUNITY MADE TRANSLATION
+# Translation by Surisen (Ruri) - Translations might be outdated. SpacEagle17 can't guarantee that.
+
 #Profiles
 profile.POTATO=§a极低
 profile.VERYLOW=§a很低
@@ -60,7 +63,7 @@ option.info10.comment=EminGT: Complementary 光影的主要开发者. Capt Tatsu
 
 option.info11=§b什么是 Euphoria Patches ?
 value.info11.0=
-option.info11.comment=Euphoria Patches 是 Complementary 光影的一个附加, 由 SpacEagle17 和 isuewo 共同开发. 旨在通过更多定制功能和可选选项来扩展 Complementary 光影的功能.
+option.info11.comment=Euphoria Patches 是 Complementary 光影的一个附加, 由 SpacEagle17 共同开发. 旨在通过更多定制功能和可选选项来扩展 Complementary 光影的功能.
 
 option.info12=Euphoria Patches 设置
 value.info12.0=
@@ -1349,6 +1352,27 @@ value.END_STAR_AMOUNT.2=密集
 value.END_STAR_AMOUNT.3=非常密集
 value.END_STAR_AMOUNT.4=超级密集
 option.END_TWINKLING_STARS=末地繁星闪烁
+value.END_TWINKLING_STARS.0=关
+value.END_TWINKLING_STARS.1=0.1
+value.END_TWINKLING_STARS.2=0.2
+value.END_TWINKLING_STARS.3=0.3
+value.END_TWINKLING_STARS.4=0.4
+value.END_TWINKLING_STARS.5=0.5
+value.END_TWINKLING_STARS.6=0.6
+value.END_TWINKLING_STARS.7=0.7
+value.END_TWINKLING_STARS.8=0.8
+value.END_TWINKLING_STARS.9=0.9
+value.END_TWINKLING_STARS.10=1.0
+value.END_TWINKLING_STARS.11=1.1
+value.END_TWINKLING_STARS.12=1.2
+value.END_TWINKLING_STARS.13=1.3
+value.END_TWINKLING_STARS.14=1.4
+value.END_TWINKLING_STARS.15=1.5
+value.END_TWINKLING_STARS.16=1.6
+value.END_TWINKLING_STARS.17=1.7
+value.END_TWINKLING_STARS.18=1.8
+value.END_TWINKLING_STARS.19=1.9
+value.END_TWINKLING_STARS.20=2.0
 
 option.STAR_BRIGHTNESS=繁星亮度
 option.STAR_BRIGHTNESS.comment=调节夜空中星星的亮度.
@@ -1388,6 +1412,27 @@ option.MORE_STARS_OVERWORLD=繁星密布 - 主世界
 option.MORE_STARS_OVERWORLD.comment=覆写 Complementary 的星星数量并使其更多. 应用于主世界.
 option.TWINKLING_STARS=繁星闪烁
 option.TWINKLING_STARS.comment=让星星对你眨眼~
+value.TWINKLING_STARS.0=关
+value.TWINKLING_STARS.1=0.1
+value.TWINKLING_STARS.2=0.2
+value.TWINKLING_STARS.3=0.3
+value.TWINKLING_STARS.4=0.4
+value.TWINKLING_STARS.5=0.5
+value.TWINKLING_STARS.6=0.6
+value.TWINKLING_STARS.7=0.7
+value.TWINKLING_STARS.8=0.8
+value.TWINKLING_STARS.9=0.9
+value.TWINKLING_STARS.10=1.0
+value.TWINKLING_STARS.11=1.1
+value.TWINKLING_STARS.12=1.2
+value.TWINKLING_STARS.13=1.3
+value.TWINKLING_STARS.14=1.4
+value.TWINKLING_STARS.15=1.5
+value.TWINKLING_STARS.16=1.6
+value.TWINKLING_STARS.17=1.7
+value.TWINKLING_STARS.18=1.8
+value.TWINKLING_STARS.19=1.9
+value.TWINKLING_STARS.20=2.0
 option.STAR_SIZE=繁星尺寸
 option.STAR_SIZE.comment=调节夜空中星星的尺寸.
 
@@ -1494,7 +1539,6 @@ option.END_PORTAL_VARIATION=末地传送门预设
 option.END_PORTAL_VARIATION.comment=可供选择的不同风格的末地传送门预设. §e[*]§r 资源包支持选项需设置为集成PBR+.
 value.END_PORTAL_VARIATION.0=Complementary
 value.END_PORTAL_VARIATION.1=Smudged Strings
-value.END_PORTAL_VARIATION.2=Flat
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=末地传送门射束 §e[Iris]§r

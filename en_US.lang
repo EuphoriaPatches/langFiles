@@ -60,7 +60,7 @@ option.info10.comment=EminGT: The main developer of Complementary. Capt Tatsu: D
 
 option.info11=§bWhat is Euphoria Patches
 value.info11.0=
-option.info11.comment=Euphoria Patches is an add-on for Complementary Shaders, developed by SpacEagle17 and isuewo. It aims to extend Complementary with more optional handcrafted features and settings.
+option.info11.comment=Euphoria Patches is an add-on for Complementary Shaders, developed by SpacEagle17. It aims to extend Complementary with more optional handcrafted features and settings.
 
 option.info12=Euphoria Patches Settings
 value.info12.0=
@@ -663,8 +663,11 @@ value.IMAGE_SHARPENING.8=8x §c[-]
 value.IMAGE_SHARPENING.9=9x §c[-]
 value.IMAGE_SHARPENING.10=10x §c[-]
 
-option.LENSFLARE=Lens Flare
-option.LENSFLARE.comment=Adds camera lens reflection effect when towards the sun or moon. §c[-]§r This effect can severely impact performance.
+option.LENSFLARE_MODE=Lens Flare
+option.LENSFLARE_MODE.comment=Adds camera lens reflection effect when towards the sun or moon. §c[-]§r This effect can severely impact performance.
+value.LENSFLARE_MODE.0=OFF
+value.LENSFLARE_MODE.1=Sun Only
+value.LENSFLARE_MODE.2=Sun & Moon
 
 option.LENSFLARE_I=Lens Flare Intensity
 option.LENSFLARE_I.comment=Adjusts the strength of the Lens Flare effect.

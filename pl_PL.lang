@@ -1,5 +1,8 @@
 #shaders/lang/pl_PL.lang
 
+# COMMUNITY MADE TRANSLATION
+# Translation by Acer (Alex) - Translations might be outdated. SpacEagle17 can't guarantee that.
+
 #Profiles
 profile.POTATO=§aZiemniak
 profile.VERYLOW=§aBardzo Niski
@@ -60,7 +63,7 @@ option.info10.comment=EminGT: Główny deweloper shaderów Complementary. Capt T
 
 option.info11=Czym jest Euphoria Patches
 value.info11.0=
-option.info11.comment=Euphoria Patches jest dodatkiem do shaderów Complementary, stworzonym przez SpacEagle17 i isuewo. Ma on na celu rozszerzenie shaderów Complementary o więcej możliwości modyfikacji istniejących funkcji, a zarazem wiele zupełnie nowych funkcji, zbudowanych od podstaw. Wszystkie opcje Euphorii są domyślnie wyłączone, a użytkownik może zdecydować, co chce włączyć.
+option.info11.comment=Euphoria Patches jest dodatkiem do shaderów Complementary, stworzonym przez SpacEagle17. Ma on na celu rozszerzenie shaderów Complementary o więcej możliwości modyfikacji istniejących funkcji, a zarazem wiele zupełnie nowych funkcji, zbudowanych od podstaw. Wszystkie opcje Euphorii są domyślnie wyłączone, a użytkownik może zdecydować, co chce włączyć.
 
 option.info12= Ustawienia Euphoria Patches
 value.info12.0=
@@ -1349,6 +1352,27 @@ value.END_STAR_AMOUNT.2=Dużo
 value.END_STAR_AMOUNT.3=Bardzo Dużo
 value.END_STAR_AMOUNT.4=BARDZO DUŻO!
 option.END_TWINKLING_STARS=Migoczące Gwiazdy Endu
+value.END_TWINKLING_STARS.0=WYŁ.
+value.END_TWINKLING_STARS.1=0.1
+value.END_TWINKLING_STARS.2=0.2
+value.END_TWINKLING_STARS.3=0.3
+value.END_TWINKLING_STARS.4=0.4
+value.END_TWINKLING_STARS.5=0.5
+value.END_TWINKLING_STARS.6=0.6
+value.END_TWINKLING_STARS.7=0.7
+value.END_TWINKLING_STARS.8=0.8
+value.END_TWINKLING_STARS.9=0.9
+value.END_TWINKLING_STARS.10=1.0
+value.END_TWINKLING_STARS.11=1.1
+value.END_TWINKLING_STARS.12=1.2
+value.END_TWINKLING_STARS.13=1.3
+value.END_TWINKLING_STARS.14=1.4
+value.END_TWINKLING_STARS.15=1.5
+value.END_TWINKLING_STARS.16=1.6
+value.END_TWINKLING_STARS.17=1.7
+value.END_TWINKLING_STARS.18=1.8
+value.END_TWINKLING_STARS.19=1.9
+value.END_TWINKLING_STARS.20=2.0
 
 option.STAR_BRIGHTNESS=Jasność Gwiazd
 option.STAR_BRIGHTNESS.comment=Ustawienie umożliwiające regulację jasności gwiazd.
@@ -1388,6 +1412,27 @@ option.MORE_STARS_OVERWORLD=Więcej Gwiazd na Powierzchni
 option.MORE_STARS_OVERWORLD.comment=Zastępuje ilość gwiazd na nocnym niebie dużo wyższą wartością. Dotyczy wymiaru Powierzchni.
 option.TWINKLING_STARS=Migoczące Gwiazdy
 option.TWINKLING_STARS.comment=Niech gwiazdy mrugają do ciebie.
+value.TWINKLING_STARS.0=WYŁ.
+value.TWINKLING_STARS.1=0.1
+value.TWINKLING_STARS.2=0.2
+value.TWINKLING_STARS.3=0.3
+value.TWINKLING_STARS.4=0.4
+value.TWINKLING_STARS.5=0.5
+value.TWINKLING_STARS.6=0.6
+value.TWINKLING_STARS.7=0.7
+value.TWINKLING_STARS.8=0.8
+value.TWINKLING_STARS.9=0.9
+value.TWINKLING_STARS.10=1.0
+value.TWINKLING_STARS.11=1.1
+value.TWINKLING_STARS.12=1.2
+value.TWINKLING_STARS.13=1.3
+value.TWINKLING_STARS.14=1.4
+value.TWINKLING_STARS.15=1.5
+value.TWINKLING_STARS.16=1.6
+value.TWINKLING_STARS.17=1.7
+value.TWINKLING_STARS.18=1.8
+value.TWINKLING_STARS.19=1.9
+value.TWINKLING_STARS.20=2.0
 option.STAR_SIZE=Rozmiar Gwiazd
 option.STAR_SIZE.comment=Zmień rozmiar gwiazd.
 
@@ -1494,7 +1539,6 @@ option.END_PORTAL_VARIATION=Preset Portalu Endu
 option.END_PORTAL_VARIATION.comment=Opcja wyboru pomiędzy różnymi ustawieniami portalu endu. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+.
 value.END_PORTAL_VARIATION.0=Complementary
 value.END_PORTAL_VARIATION.1=Wyciek Oleju
-value.END_PORTAL_VARIATION.2=Płaski
 value.END_PORTAL_VARIATION.3=Pikselowana Salsa
 
 option.END_PORTAL_BEAM=Promienie Portalu Endu
