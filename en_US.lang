@@ -76,7 +76,7 @@ option.info14.comment=Euphoria Patches and also Complementary Shaders use iris-e
 
 option.info15=Euphoria Patches Credits
 value.info15.0=
-option.info15.comment=EminGT: The main developer of Complementary. Capt Tatsu - Screenspace Multi-Colored Blocklight. gri573 - End Crystal Vortex effect, guidance and assistance in many areas! Has been a huge help. SixthSurge, WoMspace (aka Sasha), Septonious, fayer3 - Always assisted us when we needed some help. Xonk for the directional lightning bolts and being amazing. Memokii - Euphoria Patches banner and watermark. dragoncat - Overimagined logo and helpful suggestions. TheNukeLore - IntegratedPBR Normals Resolution. dbrighthd - Fresnel Multiplier. Surisen (Ruri) - Chinese Translation. Acer (Alex) - Polish Translation, a lot of suggestions and helpful feedback. Helgust - Initial Code for Pixelated Procedural Water Option. Special Thanks: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
+option.info15.comment=The entire credits can be found in the Credits.txt file inside the shaders folder. isuewo - Former co-developer of Euphoria Patches. EminGT: The main developer of Complementary. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§nHow to support Euphoria Patches
 value.info16.0=

@@ -1,5 +1,8 @@
 #shaders/lang/ru_RU.lang
 
+# COMMUNITY MADE TRANSLATION
+# Translation by Folox_ - Translations might be outdated. SpacEagle17 can't guarantee that.
+
 #Profiles
 profile.POTATO=§aКартошка
 profile.VERYLOW=§aОчень Низкие
@@ -60,7 +63,7 @@ option.info10.comment=EminGT: Главный разработчик Complementar
 
 option.info11=§bЧто такое Euphoria Patches
 value.info11.0=
-option.info11.comment=Euphoria Patches - это дополнение для Complementary Shaders, разработанное SpacEagle17 и isuewo. Его цель - расширить Complementary дополнительными функциями и настройками.
+option.info11.comment=Euphoria Patches - это дополнение для Complementary Shaders, разработанное SpacEagle17. Его цель - расширить Complementary дополнительными функциями и настройками.
 
 option.info12=Настройки Euphoria Patches
 value.info12.0=
