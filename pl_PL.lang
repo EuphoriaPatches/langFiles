@@ -93,6 +93,14 @@ option.info18=Dla Complementary 5.2.2
 value.info18.0=
 option.info18.comment=Dziękujemy za wybranie Euphoria Patches :)
 
+option.info19=NEW UPDATE AVAILABLE
+value.info19.0=NEW_MOD_VERSION
+option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+
+option.info20=Current Version
+value.info20.0=0.3.4
+option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+
 #Style
 option.SHADER_STYLE=Styl Wizualny
 option.SHADER_STYLE.comment=Wpływa na domyślny styl wizualny pakietu shaderów. §bReimagined§r: Komplementuje domyślny styl Minecrafta zachowując wiele unikalnych elementów wizualnych. §dUnbound§r: Zmienia styl wizualny Minecrafta, zastępując go bardziej realistycznym stylem Fantasy. §e[*]§r Zmienione Ustawienia: Styl Wody, Styl Chmur, Styl Słońca & Księżyca, Kąt Słońca & Księżyca, Styl Zorzy Polarnej, Świecące Rudy.

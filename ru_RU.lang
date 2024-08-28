@@ -93,6 +93,14 @@ option.info18=Для Complementary 5.2.2
 value.info18.0=
 option.info18.comment=Спасибо за установку Euphoria Patches :)
 
+option.info19=NEW UPDATE AVAILABLE
+value.info19.0=NEW_MOD_VERSION
+option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+
+option.info20=Current Version
+value.info20.0=0.3.4
+option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+
 #Style
 option.SHADER_STYLE=Визуальный Стиль
 option.SHADER_STYLE.comment=Определяет визуальный стиль по умолчанию пакета шейдеров. §bReimagined§r: Дополняет Minecraft, сохраняя его уникальные визуальные элементы. §dUnbound§r: Переработка визуального оформления Minecraft в полуреалистичном фэнтезийном стиле. §e[*]§r Затронутые настройки: Стиль воды, Стиль облаков, Стиль солнца/луны, Угол солнца/луны, Стиль авроры, Светящиеся руды.

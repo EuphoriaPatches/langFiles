@@ -90,6 +90,14 @@ option.info18=For Complementary 5.2.2
 value.info18.0=
 option.info18.comment=Thank you for Installing Euphoria Patches :)
 
+option.info19=NEW UPDATE AVAILABLE
+value.info19.0=NEW_MOD_VERSION
+option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+
+option.info20=Current Version
+value.info20.0=0.3.4
+option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+
 #Style
 option.SHADER_STYLE=Visual Style
 option.SHADER_STYLE.comment=Determines the default visual style of the shader pack. §bReimagined§r: Complementing Minecraft while preserving its unique visual elements. §dUnbound§r: Reworking the visuals of Minecraft with a semi-realistic fantasy style. §e[*]§r Affected settings: Water Style, Cloud Style, Sun/Moon Style, Sun/Moon Angle, Aurora Style, Glowing Ores.
