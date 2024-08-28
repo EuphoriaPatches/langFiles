@@ -77,11 +77,11 @@ option.info14=Najlepszy Shader Loader
 value.info14.0=
 option.info14.comment=Euphoria Patches, a także zwykłe Complementary używają funkcji wyłacznych dla Iris, które nie będą działać na Optifine. Aby uzyskać najlepsze wrażenia z rozgrywki, zaleca się korzystanie z Iris. Na Forge "Oculus" jest na razie zalecany, ponieważ wydaje się obsługiwać większość funkcji Iris.
 
-option.info15=Euphoria Patches - kredyty
+option.info15=Euphoria Patches - twórcy
 value.info15.0=
 option.info15.comment=EminGT: Główny deweloper shaderów Complementary. Capt Tatsu - Opcja "Kolorowe Oświetlenie w Przestrzeni Ekranu". gri573 - Opcja "Efekty Wiru Endu", wskazówki i pomoc w wielu obszarach! To była ogromna pomoc. SixthSurge, WoMspace (pseudonim Sasha), Septonious, fayer3 - Zawsze można było na nich polegać, gdy potrzebowałem pomocy. Xonk za pomoc z efektami błyskawic i bycie niesamowitym. Memokii - Baner Euphoria Patches i znak wodny. dragoncat - Logo "Overimagined" i pomocne sugestie. TheNukeLore - Opcja "Rozdzielczość Normal Map ZintegrowanegoPBR". dbrighthd - Mnożnik Fresnela. Surisen (Ruri) - Chińskie Tłumaczenie. Acer (Alex) - Polskie Tłumaczenie, Wiele sugestii i przydatnych komentarzy. Helgust - Wstępny kod dla opcji "Proceduralnej Wody Pikselowanej". Specjalne Podziękowania: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
 
-option.info16=§nJak Wspierać Euphoria Patches
+option.info16=§nJak wesprzeć Euphoria Patches
 value.info16.0=
 option.info16.comment=Możesz wspierać Euphoria Patches, śledząc informacje o nowych aktualizacjach i dzieląc się nimi z innymi, ale możesz także bezpośrednio wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
 
@@ -93,17 +93,17 @@ option.info18=Dla Complementary 5.2.2
 value.info18.0=
 option.info18.comment=Dziękujemy za wybranie Euphoria Patches :)
 
-option.info19=NEW UPDATE AVAILABLE
+option.info19=NOWA WERSJA DOSTĘPNA
 value.info19.0=NEW_MOD_VERSION
-option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+option.info19.comment=Nowa wersja moda EuphoriaPatcher jest już dostępna. Pobierz ją z Modrinth: https://modrinth.com/mod/euphoria-patches.
 
-option.info20=Current Version
+option.info20=Zainstalowana wersja
 value.info20.0=0.3.4
-option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+option.info20.comment=Nowa wersja moda EuphoriaPatcher jest już dostępna. Pobierz ją z Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 #Style
 option.SHADER_STYLE=Styl Wizualny
-option.SHADER_STYLE.comment=Wpływa na domyślny styl wizualny pakietu shaderów. §bReimagined§r: Komplementuje domyślny styl Minecrafta zachowując wiele unikalnych elementów wizualnych. §dUnbound§r: Zmienia styl wizualny Minecrafta, zastępując go bardziej realistycznym stylem Fantasy. §e[*]§r Zmienione Ustawienia: Styl Wody, Styl Chmur, Styl Słońca & Księżyca, Kąt Słońca & Księżyca, Styl Zorzy Polarnej, Świecące Rudy.
+option.SHADER_STYLE.comment=Wpływa na styl wizualny pakietu shaderów. §bReimagined§r: Komplementuje domyślny styl Minecrafta zachowując wiele unikalnych elementów wizualnych. §dUnbound§r: Zmienia styl wizualny Minecrafta, zastępując go bardziej realistycznym stylem Fantasy. §e[*]§r Zmienione Ustawienia: Styl Wody, Styl Chmur, Styl Słońca & Księżyca, Kąt Słońca & Księżyca, Styl Zorzy Polarnej, Świecące Rudy.
 value.SHADER_STYLE.1=§bReimagined
 value.SHADER_STYLE.4=§dUnbound
 
