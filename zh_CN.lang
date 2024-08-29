@@ -2114,3 +2114,9 @@ option.SHOCKWAVE=冲击波
 value.SHOCKWAVE.0=关
 value.SHOCKWAVE.1=圆形
 value.SHOCKWAVE.2=方形
+
+option.STAR_LAYER=分星层
+value.STAR_LAYER.0=关
+value.STAR_LAYER.1=仅小星层
+value.STAR_LAYER.2=仅大星层
+value.STAR_LAYER.3=双星层
