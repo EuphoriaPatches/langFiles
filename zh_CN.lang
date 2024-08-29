@@ -1,7 +1,7 @@
 #shaders/lang/zh_CN.lang
 
-# COMMUNITY MADE TRANSLATION
-# Translation by Surisen (Ruri) - Translations might be outdated. SpacEagle17 can't guarantee that.
+# 社区贡献翻译
+# 本文档由 Surisen (Ruri) 翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证随时提供最新翻译.
 
 #Profiles
 profile.POTATO=§a极低
@@ -63,7 +63,7 @@ option.info10.comment=EminGT: Complementary 光影的主要开发者. Capt Tatsu
 
 option.info11=§b什么是 Euphoria Patches ?
 value.info11.0=
-option.info11.comment=Euphoria Patches 是 Complementary 光影的一个附加, 由 SpacEagle17 共同开发. 旨在通过更多定制功能和可选选项来扩展 Complementary 光影的功能.
+option.info11.comment=Euphoria Patches 是 Complementary 光影的一个附加, 由 SpacEagle17 开发. 旨在通过更多定制功能和可选选项来扩展 Complementary 光影的功能.
 
 option.info12=Euphoria Patches 设置
 value.info12.0=
@@ -79,7 +79,7 @@ option.info14.comment=Euphoria Patches 和 Complementary 光影同样都使用�
 
 option.info15=Euphoria Patches 致谢
 value.info15.0=
-option.info15.comment=EminGT: Complementary 光影的主要开发者. Capt Tatsu - 屏幕空间彩色照明功能实现. gri573 - 末地水晶涡流功能实现, 并在许多领域提供了指导和帮助! 帮了很多的忙. SixthSurge, WoMspace (又名 Sasha), Septonious, fayer3 - 总是在我们需要帮助的时候提供帮助. Xonk - 令人惊异的定向照明闪电束(史诗雷雨氛围功能实现). Elysia - Euphoria Patches 横幅及水印设计. dragoncat - Overimagined 的 logo 设计和许多有用的建议. TheNukeLore - 集成PBR法线分辨率功能实现. dbrighthd - 菲涅尔(Fresnel)倍率功能实现. Surisen (Ruri) - 中文选项翻译. Acer (Alex) - 很多有用建议和反馈. Helgust - 程序化像素风水面选项的原始代码. 特别致谢: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
+option.info15.comment=完整致谢名单可在光影文件夹里的 Credits.txt 文件中查看. isuewo - Euphoria Patches 的前合作开发者. EminGT: Complementary 的主开发者. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§n如何支持 Euphoria Patches
 value.info16.0=
@@ -93,13 +93,13 @@ option.info18=对应 Complementary r5.2.2 版本
 value.info18.0=
 option.info18.comment=感谢您安装 Euphoria Patches :)
 
-option.info19=NEW UPDATE AVAILABLE
+option.info19=有可用的更新
 value.info19.0=NEW_MOD_VERSION
-option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+option.info19.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载: https://modrinth.com/mod/euphoria-patches.
 
-option.info20=Current Version
+option.info20=当前版本
 value.info20.0=0.3.4
-option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+option.info20.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载: https://modrinth.com/mod/euphoria-patches.
 
 #Style
 option.SHADER_STYLE=视觉风格
@@ -240,7 +240,7 @@ value.BLOCK_REFLECT_QUALITY.1=§e低
 value.BLOCK_REFLECT_QUALITY.2=§c中
 value.BLOCK_REFLECT_QUALITY.3=§c高
 
-option.SHADOW_QUALITY=阴影采样质量
+option.SHADOW_QUALITY=实时阴影
 option.SHADOW_QUALITY.comment=调节阴影过滤的质量. 每提高一级配置都会进一步减少阴影的噪点伪影. 本选项在选择低于 §e高§r 的配置后会启用树叶阴影优化. §e很低§r 选项意味着会在多方面大幅降低阴影的质量. §a关§r 会完全禁用阴影和光轴.
 value.SHADOW_QUALITY.-1=§a关
 value.SHADOW_QUALITY.0=§e很低
@@ -251,7 +251,7 @@ value.SHADOW_QUALITY.4=§c很高
 value.SHADOW_QUALITY.5=§4极致
 
 option.LIGHTSHAFT_QUALI_DEFINE=光轴质量 §e[*]§r
-option.LIGHTSHAFT_QUALI_DEFINE.comment=调节光轴的质量. 每提高一级配置都会进一步减少光轴产生的噪音伪影. §e[*]§r 需将 阴影采样质量 选项设置为除 关 以外的任何值才能使光轴工作.
+option.LIGHTSHAFT_QUALI_DEFINE.comment=调节光轴的质量. 每提高一级配置都会进一步减少光轴产生的噪音伪影. §e[*]§r 需将 实时阴影 选项设置为除 关 以外的任何值才能使光轴工作.
 value.LIGHTSHAFT_QUALI_DEFINE.0=§a关
 value.LIGHTSHAFT_QUALI_DEFINE.1=§e低
 value.LIGHTSHAFT_QUALI_DEFINE.2=§e中
@@ -312,7 +312,7 @@ value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=高级彩色照明 §e[*]§r
-option.COLORED_LIGHTING.comment=使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 阴影采样质量 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级彩色照明独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每增加 2 区块的增量性能成本都会超过上一设定数值的两倍以上.
+option.COLORED_LIGHTING.comment=使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级彩色照明独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每增加 2 区块的增量性能成本都会超过上一设定数值的两倍以上.
 value.COLORED_LIGHTING.0=§a关
 value.COLORED_LIGHTING.128=§e4 区块
 value.COLORED_LIGHTING.192=§c6 区块
@@ -373,7 +373,7 @@ option.CLOUD_SHADOWS=云影
 option.CLOUD_SHADOWS.comment=启用从云层投下的阴影. §e[*]§r 本选项仅在 云层风格 设置为 Reimagined 或 Unbound 时生效. §e[*]§r 如果云层风格设置为 Unbound, 因为其复杂程度, 云影将会随机生成.
 
 option.CLOUD_CLOSED_AREA_CHECK=禁止云层出现在室内
-option.CLOUD_CLOSED_AREA_CHECK.comment=额外附加检测条件避免云层出现在室内. §e[*]§r 本选项仅在 云层风格 设置为 Reimagined 或 Unbound 时生效. §e[*]§r 本选项会在 阴影采样质量 选项被设置为关时自动禁用.
+option.CLOUD_CLOSED_AREA_CHECK.comment=额外附加检测条件避免云层出现在室内. §e[*]§r 本选项仅在 云层风格 设置为 Reimagined 或 Unbound 时生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用.
 
 option.CLOUD_ALT1=云层高度
 option.CLOUD_ALT1.comment=决定第一云层所在的高度. §e[*]§r 本选项仅在 云层风格 设置为 Reimagined 或 Unbound 时生效.
@@ -615,7 +615,7 @@ option.WEATHER_TEX_OPACITY=天气纹理不透明度
 option.WEATHER_TEX_OPACITY.comment=调节雨雪天气纹理的不透明度.
 
 option.SHADOW_SMOOTHING=阴影平滑度
-option.SHADOW_SMOOTHING.comment=调节阴影的锐利程度. §c[-]§r 调低本选项数值会提高阴影的闪烁并且影响性能. §e[*]§r 本选项仅当 阴影采样质量 设置为 低 或者以上时生效.
+option.SHADOW_SMOOTHING.comment=调节阴影的锐利程度. §c[-]§r 调低本选项数值会提高阴影的闪烁并且影响性能. §e[*]§r 本选项仅当 实时阴影 设置为 低 或者以上时生效.
 value.SHADOW_SMOOTHING.4=非常平滑
 value.SHADOW_SMOOTHING.3=平滑
 value.SHADOW_SMOOTHING.2=锐利 §c[-]
@@ -674,8 +674,11 @@ value.IMAGE_SHARPENING.8=8x §c[-]
 value.IMAGE_SHARPENING.9=9x §c[-]
 value.IMAGE_SHARPENING.10=10x §c[-]
 
-option.LENSFLARE=镜头眩光
-option.LENSFLARE.comment=当中心对着太阳月亮时给屏幕添加镜头眩光效果. §c[-]§r 本选项的效果可能会严重影响性能.
+option.LENSFLARE_MODE=镜头眩光
+option.LENSFLARE_MODE.comment=当中心对着太阳月亮时给屏幕添加镜头眩光效果. §c[-]§r 本选项的效果会严重影响性能.
+value.LENSFLARE_MODE.0=关
+value.LENSFLARE_MODE.1=仅太阳
+value.LENSFLARE_MODE.2=日月
 
 option.LENSFLARE_I=镜头眩光强度
 option.LENSFLARE_I.comment=调节镜头眩光效果的强度.
@@ -731,6 +734,9 @@ value.CHROMA_ABERRATION.6=6 §c[-]
 value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
 
+option.IPBR_PARTICLE_FEATURES=集成PBR+粒子功能
+option.IPBR_PARTICLE_FEATURES.comment=启用粒子的多个集成PBR+功能, 包括岩浆的发光粒子和有更好颜色的水粒子等.
+
 option.FANCY_GLASS=更好的玻璃
 option.FANCY_GLASS.comment=通过在普通玻璃上增加一个半透明层来增加质感. §c[-]§r 由于钠的问题,目前在 Iris 上不生效.  §e[*]§r 资源包支持选项需设置为集成PBR+.
 
@@ -780,7 +786,7 @@ option.AMBIENT_MULT=环境照明强度倍率
 option.AMBIENT_MULT.comment=决定在阴影中看到的其他环境照明的强度. §c[-]§r 大幅改变本选项数值会破坏照明平衡.
 
 option.PLAYER_SHADOW=玩家阴影 §e[*]§r
-option.PLAYER_SHADOW.comment=决定玩家能否会投射阴影. §e[*]§r 本选项仅当安装较新版本的 Iris 时生效. §e[*]§r 本选项会在 阴影采样质量 选项被设置为关时自动禁用.
+option.PLAYER_SHADOW.comment=决定玩家能否会投射阴影. §e[*]§r 本选项仅当安装较新版本的 Iris 时生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用.
 value.PLAYER_SHADOW.-1=关
 value.PLAYER_SHADOW.1=开
 
@@ -934,6 +940,9 @@ option.WAVING_WATER_VERTEX.comment=给水面添加摇晃运动模拟风的吹拂
 option.WAVING_RAIN=雨雪纹理摇晃
 option.WAVING_RAIN.comment=为下落的雨水和雪花粒子纹理添加运动效果使其看起来更加动态.
 
+option.SPECIAL_PORTAL_EFFECTS=传送门特殊效果
+option.SPECIAL_PORTAL_EFFECTS.comment=为下界传送门, 末地传送门, 末地折跃门添加的特殊动画和发光效果.
+
 option.WORLD_OUTLINE=视界描边
 option.WORLD_OUTLINE.comment=给所有方块添加明亮的描边. §c[-]§r 本选项的效果可能会影响性能.
 
@@ -1003,8 +1012,11 @@ option.PORTAL_EDGE_EFFECT.comment=为下界和末地传送门边缘添加发光�
 option.PUDDLE_VOXELIZATION=修复可在玻璃下方出现雨水坑的问题
 option.PUDDLE_VOXELIZATION.comment=启用 雨水坑 设置后, 防止在有玻璃屋顶的封闭区域形成雨水坑. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效.
 
+option.COLORED_LIGHT_SATURATION=彩色照明饱和度
+option.COLORED_LIGHT_SATURATION.comment=调节由 高级彩色照明 选项产生的照明颜色的饱和度. §e[*]§r 不推荐改变本选项的数值, 默认的饱和度是为了最平衡的视觉效果设计的.
+
 option.COLORED_LIGHT_FOG=彩色光雾
-option.COLORED_LIGHT_FOG.comment=向场景中添加体积方块光雾, 在地下或夜间最明显. §e[*]§r 本选项需启用位于 性能设置 中的 高级彩色照明 选项才能生效. §c[-]§r 本选项的效果会严重影响性能.
+option.COLORED_LIGHT_FOG.comment=向场景中添加体积方块光雾, 在地下或夜间最明显. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效. §c[-]§r 本选项的效果会严重影响性能.
 
 option.COLORED_LIGHT_FOG_I=光雾强度
 option.COLORED_LIGHT_FOG_I.comment=调节彩色光雾的亮度.
@@ -1550,7 +1562,7 @@ value.END_PORTAL_VARIATION.1=Smudged Strings
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=末地传送门射束 §e[Iris]§r
-option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. §e[*]§r 需启用 高级彩色照明 选项. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
+option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. §e[*]§r 本选项需启用位于 性能设置 中的 高级彩色照明 选项才能生效. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 
 option.SILHOUETTE=剪影模式
 value.SILHOUETTE.0=关
@@ -1596,7 +1608,7 @@ option.LAVA_NOISE_AMOUNT=岩浆噪声数量
 option.LAVA_NOISE_AMOUNT.comment=改变岩浆预设的噪声数量.
 
 option.LAVA_EDGE_EFFECT=岩浆边缘效果
-option.LAVA_EDGE_EFFECT.comment=当岩浆和其他方块接触时添加一道亮边. §e[*]§r 需启用 高级彩色照明 选项.
+option.LAVA_EDGE_EFFECT.comment=当岩浆和其他方块接触时添加一道亮边. §e[*]§r 本选项需启用位于 性能设置 中的 高级彩色照明 选项才能生效.
 
 option.NETHER_BRIGHTNESS=下界亮度
 option.NETHER_BRIGHTNESS.comment=调节下界环境光亮度.
@@ -2062,7 +2074,7 @@ option.COMP_WATER_TWEAKS=Complementary 水体调整
 option.COMP_WATER_TWEAKS.comment=提供一个 Complementary 光影的水体颜色调整的统一开关.
 
 option.CAVE_SMOKE=洞穴烟雾
-option.CAVE_SMOKE.comment=当位于洞穴中时为体积方块光雾添加烟雾效果. §c[-]§r 本选项的效果可能会影响性能. §e[*]§r 需启用 高级彩色照明 选项.
+option.CAVE_SMOKE.comment=当位于洞穴中时为体积方块光雾添加烟雾效果. §c[-]§r 本选项的效果可能会影响性能. §e[*]§r 本选项需启用位于 性能设置 中的 高级彩色照明 选项才能生效.
 
 option.WAVING_SUGAR_CANE=甘蔗摇晃
 
@@ -2097,3 +2109,8 @@ option.LOWER_LIGHTMAP_CURVE.comment=调节光图暗部曲线的强度.
 option.ALTERNATIVE_AMETHYST_STYLE=替选紫水晶风格
 value.ALTERNATIVE_AMETHYST_STYLE.0=默认
 value.ALTERNATIVE_AMETHYST_STYLE.1=闪粉
+
+option.SHOCKWAVE=冲击波
+value.SHOCKWAVE.0=关
+value.SHOCKWAVE.1=圆形
+value.SHOCKWAVE.2=方形
