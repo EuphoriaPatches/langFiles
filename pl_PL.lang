@@ -1,7 +1,7 @@
 #shaders/lang/pl_PL.lang
 
-# COMMUNITY MADE TRANSLATION
-# Translation by Acer (Alex) - Translations might be outdated. SpacEagle17 can't guarantee that.
+# TŁUMACZENIE WYKONANE PRZEZ SPOŁECZNOŚĆ
+# Tłumaczenie wykonane przez Acer (Alex) - Tłumaczenie może być nieaktualne. SpacEagle17 nie może tego zagwarantować.
 
 #Profiles
 profile.POTATO=§aZiemniak
@@ -16,15 +16,12 @@ profile.comment=Profile shaderów zmieniają ustawienia jakości z najbardziej z
 #Information
 screen.INFORMATION=Informacja
 screen.INFORMATION.comment=Ta sekcja zawiera przyciski, które służą wyłącznie do przekazywania informacji.
-
 option.info0=§bNajedź kursorem myszy na przycisk
 value.info0.0=
 option.info0.comment=Ta sekcja zawiera przyciski, które służą wyłącznie do przekazywania informacji.
-
 option.info1=Jak uzyskać więcej klatek na sekunde.
 value.info1.0=
 option.info1.comment=Wydajność w Minecrafcie to złożony temat, ponieważ wpływa na nią wiele rzeczy, ale możesz wypróbować następujące rozwiązania:. Zmniejsz zasięg renderowania, najlepiej między 6 a 16 chunków dla prawie każdego urządzenia. Zmniejsz "Profil" shadera, profile zostały dokładnie przetestowane pod kątem najlepszego stosunku jakości do wydajności. Więcej informacji zostanie dodanych później.
-
 option.info2=Jakie ustawienia są najlepsze
 value.info2.0=
 option.info2.comment=Najlepsze ustawienia są subiektywne, ale dla większości ludzi korzystanie z ustawień domyślnych będzie satysfakcjonujące. Ustawienia domyślne zostały ukształtowane przez lata ocen i opinii społeczności, przy jednoczesnym zwróceniu dużej uwagi na stosunek jakości do wydajności.  Ale nie krępuj się majsterkować przy poszczególnych ustawieniach, życzymy dobrej zabawy!
@@ -79,7 +76,7 @@ option.info14.comment=Euphoria Patches, a także zwykłe Complementary używają
 
 option.info15=Euphoria Patches - twórcy
 value.info15.0=
-option.info15.comment=EminGT: Główny deweloper shaderów Complementary. Capt Tatsu - Opcja "Kolorowe Oświetlenie w Przestrzeni Ekranu". gri573 - Opcja "Efekty Wiru Endu", wskazówki i pomoc w wielu obszarach! To była ogromna pomoc. SixthSurge, WoMspace (pseudonim Sasha), Septonious, fayer3 - Zawsze można było na nich polegać, gdy potrzebowałem pomocy. Xonk za pomoc z efektami błyskawic i bycie niesamowitym. Memokii - Baner Euphoria Patches i znak wodny. dragoncat - Logo "Overimagined" i pomocne sugestie. TheNukeLore - Opcja "Rozdzielczość Normal Map ZintegrowanegoPBR". dbrighthd - Mnożnik Fresnela. Surisen (Ruri) - Chińskie Tłumaczenie. Acer (Alex) - Polskie Tłumaczenie, Wiele sugestii i przydatnych komentarzy. Helgust - Wstępny kod dla opcji "Proceduralnej Wody Pikselowanej". Specjalne Podziękowania: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
+option.info15.comment= Pełna lista znajduje się w "credits.txt" w folderze shadera. isuewo dawny co-deweloper Euphoria Patches. EminGT: Główny deweloper shaderów Complementary. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§nJak wesprzeć Euphoria Patches
 value.info16.0=
@@ -240,7 +237,7 @@ value.BLOCK_REFLECT_QUALITY.1=§eNiska
 value.BLOCK_REFLECT_QUALITY.2=§cŚrednia
 value.BLOCK_REFLECT_QUALITY.3=§cWysoka
 
-option.SHADOW_QUALITY=Jakość Próbkowania Cieni
+option.SHADOW_QUALITY=Cienie w Czasie Rzeczywistym
 option.SHADOW_QUALITY.comment=Dostosowuje jakość cieni. Każdy poziom dodatkowo zmniejsza artefakty szumu w cieniach, opcje niższe niż §eWysokie§r włączają cienie na liściach wysokiej jakości, §eBardzo Niskie§r znacząco obniża jakość cieni na wiele sposobów, §aWYŁ.§r całkowicie wyłącza cienie i snopy światła.
 value.SHADOW_QUALITY.-1=§aWYŁ.
 value.SHADOW_QUALITY.0=§eBardzo Niska
@@ -251,7 +248,7 @@ value.SHADOW_QUALITY.4=§cBardzo Wysoka
 value.SHADOW_QUALITY.5=§4§lUltra
 
 option.LIGHTSHAFT_QUALI_DEFINE=Jakość Snopów Światła §e[*]§r
-option.LIGHTSHAFT_QUALI_DEFINE.comment=Dostosowuje jakość snopów światła. Każdy poziom dodatkowo redukuje artefakty szumu w snopach światła. §e[*]§r Aby snopy światła działały, ustawienie Jakości Próbkowania Cieni musi być ustawione na wartość inną niż "WYŁ."
+option.LIGHTSHAFT_QUALI_DEFINE.comment=Dostosowuje jakość snopów światła. Każdy poziom dodatkowo redukuje artefakty szumu w snopach światła. §e[*]§r Aby snopy światła działały, "Cienie w Czasie Rzeczywistym" muszą być właczone.
 value.LIGHTSHAFT_QUALI_DEFINE.0=§aWYŁ.
 value.LIGHTSHAFT_QUALI_DEFINE.1=§eNiska
 value.LIGHTSHAFT_QUALI_DEFINE.2=§eŚrednia
@@ -312,7 +309,7 @@ value.ANISOTROPIC_FILTER.8=§ex8
 value.ANISOTROPIC_FILTER.16=§4§lx16
 
 option.COLORED_LIGHTING=Zaawansowane Kolorowe Oświetlenie (ACL) §e[*]§r
-option.COLORED_LIGHTING.comment=Wykorzystuje wokselizację i techologie floodfill, aby dać źródłom światła odpowieni kolor, a także dodaje kilka nowych źródeł świateła. §e[*]§r Ta funkcja działa tylko na Iris i obsługiwanych komputerach. §e[*]§r Aby ta funkcja działała, "Jakość Próbkowania Cieni" nie może być wyłaczona. §a[+]§r To ustawienie włącza również kilka innych funkcji, które można indywidualnie włączyć/wyłączyć w menu "Inne" -> "Funkcje ACL".
+option.COLORED_LIGHTING.comment=Wykorzystuje wokselizację i techologie floodfill, aby dać źródłom światła odpowieni kolor, a także dodaje kilka nowych źródeł świateła. §e[*]§r Ta funkcja działa tylko na Iris i obsługiwanych komputerach. §e[*]§r Aby ta funkcja działała, "Cienie w Czasie Rzeczywistym" muszą być właczone. §a[+]§r To ustawienie włącza również kilka innych funkcji, które można indywidualnie włączyć/wyłączyć w menu "Inne" -> "Funkcje ACL".
 value.COLORED_LIGHTING.0=§aWYŁ.
 value.COLORED_LIGHTING.128=§e4 Chunki
 value.COLORED_LIGHTING.192=§c6 Chunków
@@ -373,7 +370,7 @@ option.CLOUD_SHADOWS=Cienie Chmur
 option.CLOUD_SHADOWS.comment=Włącza cienie rzucane przez chmury. §e[*]§r To ustawienie działa tylko ze stylami chmur "Reimagined" lub "Unbound". §e[*]§r Cienie chmur będą generowane losowo, jeśli styl chmur jest ustawiony na "Unbound", ze względu na dodatkową złożoność chmur Unbound.
 
 option.CLOUD_CLOSED_AREA_CHECK=Zapobiegaj chmurom we wnętrzach.
-option.CLOUD_CLOSED_AREA_CHECK.comment=Usuwa chmury z zamkniętych obszarów. §e[*]§r To ustawienie działa tylko ze stylami chmur "Reimagined" lub "Unbound". §e[*]§r To ustawienie będzie traktowane jako wyłaczone, jeśli "Jakość Próbkowania Cieni" jest wyłączona.
+option.CLOUD_CLOSED_AREA_CHECK.comment=Usuwa chmury z zamkniętych obszarów. §e[*]§r To ustawienie działa tylko ze stylami chmur "Reimagined" lub "Unbound". §e[*]§r Aby to ustawienie działało, "Cienie w Czasie Rzeczywistym" muszą być właczone.
 
 option.CLOUD_ALT1=Poziom Chmur
 option.CLOUD_ALT1.comment=Określa na jakiej wysokości będą pojawiać się chmury. §e[*]§r To ustawienie działa tylko ze stylami chmur "Reimagined" lub "Unbound".
@@ -615,7 +612,7 @@ option.WEATHER_TEX_OPACITY=Przezroczystość Cząteczek Pogodowych
 option.WEATHER_TEX_OPACITY.comment=Dostosowuje nieprzezroczystość tekstur deszczu/śniegu.
 
 option.SHADOW_SMOOTHING=Wygładzanie Cieni
-option.SHADOW_SMOOTHING.comment=Określa ostrość cieni. §c[-]§r Obniżenie tego ustawienia zwiększy migotanie cieni i wpłynie na wydajność. §e[*]§r To ustawienie działa tylko wtedy, gdy Jakość Próbkowania Cieni jest ustawione na minimum niską.
+option.SHADOW_SMOOTHING.comment=Określa ostrość cieni. §c[-]§r Obniżenie tego ustawienia zwiększy migotanie cieni i wpłynie na wydajność. §e[*]§r To ustawienie działa tylko wtedy, gdy "Cienie w Czasie Rzeczywistym" są ustawiene na jakość niską lub wyższą.
 value.SHADOW_SMOOTHING.4=Bardzo Gładkie
 value.SHADOW_SMOOTHING.3=Gładkie
 value.SHADOW_SMOOTHING.2=Ostre §c[-]
@@ -674,8 +671,11 @@ value.IMAGE_SHARPENING.8=8x §c[-]
 value.IMAGE_SHARPENING.9=9x §c[-]
 value.IMAGE_SHARPENING.10=10x §c[-]
 
-option.LENSFLARE=Odblaski Obiektywu
-option.LENSFLARE.comment=Dodaje efekt odbicia obiektywu kamery w kierunku słońca lub księżyca. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
+option.LENSFLARE_MODE=Odblaski Obiektywu
+option.LENSFLARE_MODE.comment=Dodaje efekt odbicia obiektywu kamery w kierunku słońca lub księżyca. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
+value.LENSFLARE_MODE.0=WYŁ
+value.LENSFLARE_MODE.1=Tylko Słońce
+value.LENSFLARE_MODE.2=Słońce & Księżyc
 
 option.LENSFLARE_I=Natężęnie Odblasków Obiektywu
 option.LENSFLARE_I.comment=Dostosowuje siłę efektu odblasku obiektywu.
@@ -730,6 +730,9 @@ value.CHROMA_ABERRATION.5=5 §c[-]
 value.CHROMA_ABERRATION.6=6 §c[-]
 value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
+
+option.IPBR_PARTICLE_FEATURES=Ustawienia ZintegrowanegoPBR+ Cząsteczek
+option.IPBR_PARTICLE_FEATURES.comment=Włącza kilka funkcji dla cząsteczek, w tym świecące cząsteczki lawy i ładniejsze cząsteczki wody.
 
 option.FANCY_GLASS=Ulepszone Szkło
 option.FANCY_GLASS.comment=Ulepsza zwykłe szkło, dodając do niego półprzezroczystą warstwę. §c[-]§r Nie działa na Iris z powodu problemów technicznych. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+.
@@ -934,6 +937,9 @@ option.WAVING_WATER_VERTEX.comment=Dodaje ruch do powierzchni wody w celu symula
 option.WAVING_RAIN=Falująca Cząsteczki Pogodowe
 option.WAVING_RAIN.comment=Dodaje ruch do tekstur padającego deszczu i śniegu, aby wyglądały bardziej dynamicznie.
 
+option.SPECIAL_PORTAL_EFFECTS=Specjalne Efekty Portali
+option.SPECIAL_PORTAL_EFFECTS.comment=Dodaje specjalne animacje i emisje do portali Netheru, portali endu i bram endu.
+
 option.WORLD_OUTLINE=Kontur Świata
 option.WORLD_OUTLINE.comment=Dodaje jasne kontury wokół bloków. §c[-]§r Ten efekt może mieć wpływ na wydajność.
 
@@ -1002,6 +1008,9 @@ option.PORTAL_EDGE_EFFECT.comment=Dodaje emisyjny efekt obramowania do portali E
 
 option.PUDDLE_VOXELIZATION=Napraw Kałuże pod Szkłem
 option.PUDDLE_VOXELIZATION.comment=Zapobiega tworzeniu się kałuż w zamkniętych obszarach ze szklanymi dachami, gdy włączone są kałuże. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
+
+option.COLORED_LIGHT_SATURATION=Nasycenie Kolorowego Światła
+option.COLORED_LIGHT_SATURATION.comment=Pozwala dostosować nasycenie kolorów Zaawansowanego Kolorowego Oświetlenia (ACL). §e[*]§r Nie zaleca się zmiany tej wartości, ponieważ grafika wygląda na najbardziej zrównoważoną przy domyślnym nasyceniu.
 
 option.COLORED_LIGHT_FOG=Wolumetryczna Mgła Świetlna
 option.COLORED_LIGHT_FOG.comment=Dodaje wolumetryczną mgłę do sceny, najbardziej widoczną w nocy lub pod ziemią. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
@@ -1550,7 +1559,7 @@ value.END_PORTAL_VARIATION.1=Wyciek Oleju
 value.END_PORTAL_VARIATION.3=Pikselowana Salsa
 
 option.END_PORTAL_BEAM=Promienie Portalu Endu
-option.END_PORTAL_BEAM.comment=Sprawia, że portal endu emituje promienie światła dookoła. Podobnie jak w Minecraft Dungeons. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
+option.END_PORTAL_BEAM.comment=Sprawia, że portal endu emituje promienie światła dookoła. Podobnie jak w Minecraft Dungeons. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone aby ta funkcja działała. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
 
 option.SILHOUETTE=Sylwetka
 option.SILHOUETTE.comment=Po włączeniu sprawia, że bloki odwrócone od słońca stają się czarne, co jest przydatne podczas robienia zrzutów ekranu.
@@ -1596,7 +1605,7 @@ option.LAVA_NOISE_AMOUNT=Ilość Szumu Lawy
 option.LAVA_NOISE_AMOUNT.comment=Kontrolume ilość szumu generowanego przez preset lawy.
 
 option.LAVA_EDGE_EFFECT=Efekt Krawędzi Lawy
-option.LAVA_EDGE_EFFECT.comment=Dodaje krawędź do lawy, gdy jest w kontakcie z innymi blokami. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone.
+option.LAVA_EDGE_EFFECT.comment=Dodaje krawędź do lawy, gdy jest w kontakcie z innymi blokami. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone aby ta funkcja działała.
 
 option.NETHER_BRIGHTNESS=Oświetlenie Netheru
 option.NETHER_BRIGHTNESS.comment=Zmień jasność otoczenia w Netherze.
@@ -2062,7 +2071,7 @@ option.COMP_WATER_TWEAKS=Korekty wody
 option.COMP_WATER_TWEAKS.comment=Poprawki kolorów wody wykonane automatycznie przez Shader
 
 option.CAVE_SMOKE=Dym w Jaskiniach
-option.CAVE_SMOKE.comment=Dodaje efekt dymu do wolumetrycznej mgły świetlnej w jaskiniach. §c[-]§r Ten efekt może mieć wpływ na wydajność. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone.
+option.CAVE_SMOKE.comment=Dodaje efekt dymu do wolumetrycznej mgły świetlnej w jaskiniach. §c[-]§r Ten efekt może mieć wpływ na wydajność. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone aby ta funkcja działała.
 
 option.WAVING_SUGAR_CANE=Falująca Trzcina Cukrowa
 
@@ -2097,3 +2106,14 @@ option.LOWER_LIGHTMAP_CURVE.comment=Zmień intensywność dolnej krzywej mapy ś
 option.ALTERNATIVE_AMETHYST_STYLE=Alternatywny Ametyst
 value.ALTERNATIVE_AMETHYST_STYLE.0=Styl Domyślny
 value.ALTERNATIVE_AMETHYST_STYLE.1=Lśniący Róż
+
+option.SHOCKWAVE=Fala Uderzeniowa
+value.SHOCKWAVE.0=WYŁ.
+value.SHOCKWAVE.1=Okrągła
+value.SHOCKWAVE.2=Kwadratowa
+
+option.STAR_LAYER=Warstwy Gwiazd
+value.STAR_LAYER.0=WYŁ.
+value.STAR_LAYER.1=Mniejsza Warstwa
+value.STAR_LAYER.2=Większa Warstwa
+value.STAR_LAYER.3=Obydwie Warstwy
