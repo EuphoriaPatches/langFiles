@@ -1,7 +1,7 @@
 #shaders/lang/ru_RU.lang
 
-# COMMUNITY MADE TRANSLATION
-# Translation by Folox_ - Translations might be outdated. SpacEagle17 can't guarantee that.
+# ПЕРЕВОД, ВЫПОЛНЕННЫЙ СООБЩЕСТВОМ
+# Перевод от Folox_(Nikita) - Возможно, переводы устарели. SpacEagle17 не может этого гарантировать.
 
 #Profiles
 profile.POTATO=§aКартошка
@@ -93,13 +93,13 @@ option.info18=Для Complementary 5.2.2
 value.info18.0=
 option.info18.comment=Спасибо за установку Euphoria Patches :)
 
-option.info19=NEW UPDATE AVAILABLE
+option.info19=ДОСТУПНО НОВОЕ ОБНОВЛЕНИЕ
 value.info19.0=NEW_MOD_VERSION
-option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+option.info19.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://modrinth.com/mod/euphoria-patches.
 
-option.info20=Current Version
+option.info20=Текущая Версия
 value.info20.0=0.3.4
-option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
+option.info20.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 #Style
 option.SHADER_STYLE=Визуальный Стиль
@@ -324,7 +324,7 @@ option.SSAO_I=Интенсивность Теней По Краям (SSAO)
 option.SSAO_I.comment=Определяет силу Screen-Space Ambient Occlusion (SSAO), которая добавляет дополнительные окружающие тени по краям сцены. §e[*]§r Эта настройка не будет работать, если SSAO отключена в «Настройках производительности».
 value.SSAO_I.0=§cВыкл
 
-option.VANILLAAO_I=Интенсивность теней по краям (Ванильный)
+option.VANILLAAO_I=Интенсивность Теней По Краям (Ванильный)
 option.VANILLAAO_I.comment=Определяет силу окружающего затенения в Minecraft, которое добавляет дополнительные тени по краям сцены.
 value.VANILLAAO_I.0=§cВыкл
 
@@ -344,7 +344,7 @@ option.ATM_FOG_DISTANCE.comment=Регулирует расстояние от �
 option.ATM_FOG_ALTITUDE=Высота Атмосферного Тумана
 option.ATM_FOG_ALTITUDE.comment=Определяет высоту, на которой атмосферный туман проявляется наиболее заметно.
 
-option.CAVE_FOG=Пещерный туман
+option.CAVE_FOG=Пещерный Туман
 option.CAVE_FOG.comment=Обеспечивает дополнительный туман в глубоких подземных областях.
 
 option.LIGHTSHAFT_BEHAVIOUR=Режим Светового Луча
@@ -674,8 +674,11 @@ value.IMAGE_SHARPENING.8=8x §c[-]
 value.IMAGE_SHARPENING.9=9x §c[-]
 value.IMAGE_SHARPENING.10=10x §c[-]
 
-option.LENSFLARE=Блики Объектива
-option.LENSFLARE.comment=Добавляет эффект отражения объектива камеры, когда он направлен на солнце или луну. §c[-]§r Этот эффект может сильно повлиять на производительность.
+option.LENSFLARE_MODE=Блик На Линзе
+option.LENSFLARE_MODE.comment=Добавляет эффект отражения объектива камеры, когда он направлен на солнце или луну. §c[-]§r Этот эффект может серьезно повлиять на производительность.
+value.LENSFLARE_MODE.0=Выкл
+value.LENSFLARE_MODE.1=Только Солнце
+value.LENSFLARE_MODE.2=Солнце & Луна
 
 option.LENSFLARE_I=Интенсивность Бликов Объектива
 option.LENSFLARE_I.comment=Регулирует силу эффекта «Блики Объектива».
@@ -730,6 +733,9 @@ value.CHROMA_ABERRATION.5=5 §c[-]
 value.CHROMA_ABERRATION.6=6 §c[-]
 value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
+
+option.IPBR_PARTICLE_FEATURES=Особенности IPBR+ Частиц
+option.IPBR_PARTICLE_FEATURES.comment=Включает в себя несколько функций для частиц, включая такие, как светящиеся частицы лавы и частицы воды лучшего цвета.
 
 option.FANCY_GLASS=Улучшенное Стекло
 option.FANCY_GLASS.comment=Улучшает качество обычного стекла, добавляя к нему полупрозрачный слой. §c[-]§r Не работает на Iris из-за ошибки Sodium §e[*]§для параметра поддержки RP необходимо установить значение Integrated PBR+.
@@ -934,6 +940,9 @@ option.WAVING_WATER_VERTEX.comment=Добавляет движение к пол
 option.WAVING_RAIN=Волнистая текстура Дождя/Снега
 option.WAVING_RAIN.comment=Добавляет движение к текстурам падающего дождя и снега, чтобы они выглядели более динамично.
  
+option.SPECIAL_PORTAL_EFFECTS=Специальные Эффекты Портала
+option.SPECIAL_PORTAL_EFFECTS.comment=Добавляет специальные анимации и излучение к порталам Незера, порталам Края и врата Края.
+
 option.WORLD_OUTLINE=Контур
 option.WORLD_OUTLINE.comment=Добавляет яркие контуры вокруг блоков. §c[-]§r Этот эффект может повлиять на производительность.
 
@@ -1003,6 +1012,9 @@ option.PORTAL_EDGE_EFFECT.comment=Добавляет эффект излучаю
 option.PUDDLE_VOXELIZATION=Устранение Луж Под Стеклом
 option.PUDDLE_VOXELIZATION.comment=Предотвращает образование дождевых луж в закрытых помещениях со стеклянными крышами, если включена настройка Rain Puddles. §e[*]§r Эта функция работает только в том случае, если в настройках производительности включена функция Улучшеное Цветное Освещение и ваша система поддерживает ее.
 
+option.COLORED_LIGHT_SATURATION=Насыщенность Цветного Освещения
+option.COLORED_LIGHT_SATURATION.comment=Настраивает степень насыщенности цветов, создаваемых с помощью Улучшенного Цветного Освещения. §e[*]§r Изменять это значение не рекомендуется, так как визуальные эффекты должны выглядеть наиболее сбалансированными при заданной по умолчанию насыщенности.
+
 option.COLORED_LIGHT_FOG=Цветной Туманный Свет
 option.COLORED_LIGHT_FOG.comment=Добавляет в сцену объемный блочный туман, наиболее заметный ночью или под землей. §e[*]§r Эта функция работает только в том случае, если в настройках производительности включена функция Улучшеное Цветное Освещение и ваша система поддерживает ее. §c[-]§r Этот эффект может сильно повлиять на производительность.
 
@@ -1071,7 +1083,7 @@ option.XLIGHT_I=Интенсивность Света Блоков
 
 ####### Euphoria Patches #######
 
-profile.SPACEAGLE17= §f۞ §kO§fНастройки SpacEagle17§f§kO
+profile.SPACEAGLE17= §f۞ §kO§fОТЛАДКА (Не Использовать)§f§kO
 profile.EUPHORIA=§dEuphoria §bPatches
 
 #WATERMARK
@@ -1182,7 +1194,7 @@ screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые па
     screen.POPULAR_SETTINGS=§bПопулярные Настройки
         screen.POPULAR_SETTINGS_2=Страница 2
         screen.POPULAR_SETTINGS_3=Страница 3
-    screen.EP_VERSION=Euphoria Patches 1.3.2
+    screen.EP_VERSION=Euphoria Patches 1.3.3
 
 option.DAYLIGHT_CYCLE_COMPAT=Анимация Мирового Времени
 option.DAYLIGHT_CYCLE_COMPAT.comment=используйте это, ТОЛЬКО если вы играете с параметром gamerule doDaylightCycle false. При включении этого параметра облака и другие объекты анимируются в мирах с выключенным дневным светом, но они больше не синхронизируются между игроками.
@@ -1228,7 +1240,7 @@ option.AURORA_DRAW_DISTANCE.comment=Дистанция Отрисовки Сия
 option.AURORA_INFLUENCE=Влияние Сияния
 option.AURORA_INFLUENCE.comment=Цвет северного Сияния влияет на облака и местность.
 
-option.AURORA_CLOUD_INFLUENCE_INTENSITY=Интенсивность Влияния на Облаков
+option.AURORA_CLOUD_INFLUENCE_INTENSITY=Интенсивность Влияния на Облака
 option.AURORA_CLOUD_INFLUENCE_INTENSITY.comment=Измените интенсивность воздействия Северного Сияния на облака.
 value.AURORA_CLOUD_INFLUENCE_INTENSITY.0.00=Выкл
 
@@ -1360,6 +1372,27 @@ value.END_STAR_AMOUNT.2=Высокое
 value.END_STAR_AMOUNT.3=Очень Высокое
 value.END_STAR_AMOUNT.4=НЕВЕРОЯТНО ВЫСОКОЕ
 option.END_TWINKLING_STARS=Мерцание Звёзд Края
+value.END_TWINKLING_STARS.0=Выкл.
+value.END_TWINKLING_STARS.1=0.1
+value.END_TWINKLING_STARS.2=0.2
+value.END_TWINKLING_STARS.3=0.3
+value.END_TWINKLING_STARS.4=0.4
+value.END_TWINKLING_STARS.5=0.5
+value.END_TWINKLING_STARS.6=0.6
+value.END_TWINKLING_STARS.7=0.7
+value.END_TWINKLING_STARS.8=0.8
+value.END_TWINKLING_STARS.9=0.9
+value.END_TWINKLING_STARS.10=1.0
+value.END_TWINKLING_STARS.11=1.1
+value.END_TWINKLING_STARS.12=1.2
+value.END_TWINKLING_STARS.13=1.3
+value.END_TWINKLING_STARS.14=1.4
+value.END_TWINKLING_STARS.15=1.5
+value.END_TWINKLING_STARS.16=1.6
+value.END_TWINKLING_STARS.17=1.7
+value.END_TWINKLING_STARS.18=1.8
+value.END_TWINKLING_STARS.19=1.9
+value.END_TWINKLING_STARS.20=2.0
 
 option.STAR_BRIGHTNESS=Яркость Звёзд
 option.STAR_BRIGHTNESS.comment=Настройка для регулировки яркости звезд.
@@ -1384,11 +1417,42 @@ value.STAR_BRIGHTNESS.20=1.7
 value.STAR_BRIGHTNESS.21=1.8
 value.STAR_BRIGHTNESS.22=1.9
 value.STAR_BRIGHTNESS.23=2.0
+value.STAR_BRIGHTNESS.24=2.1
+value.STAR_BRIGHTNESS.25=2.2
+value.STAR_BRIGHTNESS.26=2.3
+value.STAR_BRIGHTNESS.27=2.4
+value.STAR_BRIGHTNESS.28=2.5
+value.STAR_BRIGHTNESS.29=2.6
+value.STAR_BRIGHTNESS.30=2.7
+value.STAR_BRIGHTNESS.31=2.8
+value.STAR_BRIGHTNESS.32=2.9
+value.STAR_BRIGHTNESS.33=3.0
 
 option.MORE_STARS_OVERWORLD=Больше Звёзд В Верхнем Мире
 option.MORE_STARS_OVERWORLD.comment=Перезаписывает количество звезд Complementary и устанавливает его на более высокое значение. Применяется в Верхнем Мире.
 option.TWINKLING_STARS=Мерцающие Звёзды
 option.TWINKLING_STARS.comment=Заставьте звезды мерцать для вас.
+value.TWINKLING_STARS.0=Выкл.
+value.TWINKLING_STARS.1=0.1
+value.TWINKLING_STARS.2=0.2
+value.TWINKLING_STARS.3=0.3
+value.TWINKLING_STARS.4=0.4
+value.TWINKLING_STARS.5=0.5
+value.TWINKLING_STARS.6=0.6
+value.TWINKLING_STARS.7=0.7
+value.TWINKLING_STARS.8=0.8
+value.TWINKLING_STARS.9=0.9
+value.TWINKLING_STARS.10=1.0
+value.TWINKLING_STARS.11=1.1
+value.TWINKLING_STARS.12=1.2
+value.TWINKLING_STARS.13=1.3
+value.TWINKLING_STARS.14=1.4
+value.TWINKLING_STARS.15=1.5
+value.TWINKLING_STARS.16=1.6
+value.TWINKLING_STARS.17=1.7
+value.TWINKLING_STARS.18=1.8
+value.TWINKLING_STARS.19=1.9
+value.TWINKLING_STARS.20=2.0
 option.STAR_SIZE=Размер Звёзд
 option.STAR_SIZE.comment=Измените размер ваших звезд.
 
@@ -1705,6 +1769,7 @@ option.SEASON_LENGTH.comment=Измените продолжительность
 value.SEASON_LENGTH.24000=1 День Minecraft
 value.SEASON_LENGTH.72000=3 Дня Minecraft
 value.SEASON_LENGTH.168000=7 Дней Minecraft
+value.SEASON_LENGTH.192000=8 Дней Minecraft
 value.SEASON_LENGTH.336000=14 Дней Minecraft
 value.SEASON_LENGTH.576000=24 Дня Minecraft
 value.SEASON_LENGTH.672000=28 Дней Minecraft
@@ -1761,6 +1826,9 @@ option.AUTUMN_NOISE_SIZE.comment=Размер шума, который созд�
 
 option.LEAVES_ON_GROUND=Листья На Земле
 
+option.AUTUMN_STRENGTH=Сила Осени
+option.AUTUMN_STRENGTH.comment=Изменяет интенсивность осенней окраски растений.
+
 option.FLOWER_DENSITY=Плотность Цветка
 option.FLOWER_SIZE=Разрешение Цветка
 option.FLOWER_AMOUNT=Количество Цветков
@@ -1769,7 +1837,7 @@ option.SPRING_GREEN_INTENSITY=Интенсивность Весны
 
 option.SUMMER_STRENGTH=Сила Лета
 
-option.INTENSE_DEEP_DARK=Интенсивная Темных Глубин
+option.INTENSE_DEEP_DARK=Интенсивность Темных Глубин
 option.INTENSE_DEEP_DARK.comment=Делает Тёмные Глубины более насыщенной. §e[*]§r На игрока должен быть наложен эффект темноты.
 
 option.END_AMBIENT_INFLUENCE=Влияние Цвета Окружения
@@ -1810,7 +1878,7 @@ option.PURPLE_END_FIRE.comment=Делает связанные с огнем б�
 option.NO_RAIN_ABOVE_CLOUDS=Нет Дождя Над Облаками
 option.NO_RAIN_ABOVE_CLOUDS.comment=Отключает дождь над облаками. Не работает, если высота ванильных облаков была изменена при включенных ванильных облаках.
 
-option.WORLD_BLUR_SNEAK=Мир Расмывается при Подкрадывании
+option.WORLD_BLUR_SNEAK=Мир Расмывается При Подкрадывании
 option.WORLD_BLUR_SNEAK.comment=Активируйте опцию размытия мира только во время подкрадывания
 
 option.CLEAR_SKY_WHEN_RAINING=Более Чистое Небо При Дожде
@@ -2037,3 +2105,12 @@ option.UPPER_LIGHTMAP_CURVE=Верхняя Кривая Карты Освеще�
 option.UPPER_LIGHTMAP_CURVE.comment=Изменение интенсивности верхней кривой карты света
 option.LOWER_LIGHTMAP_CURVE=Нижняя Кривая Карты Освещения
 option.LOWER_LIGHTMAP_CURVE.comment=Изменение интенсивности нижней кривой карты света
+
+option.ALTERNATIVE_AMETHYST_STYLE=Альтернативный Аметист
+value.ALTERNATIVE_AMETHYST_STYLE.0=Стиль По Умолчанию
+value.ALTERNATIVE_AMETHYST_STYLE.1=Сияющий Розовый
+
+option.SHOCKWAVE=Ударная Волна
+value.SHOCKWAVE.0=Выкл
+value.SHOCKWAVE.1=Круг
+value.SHOCKWAVE.2=Квадрат
