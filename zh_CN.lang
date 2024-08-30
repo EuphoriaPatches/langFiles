@@ -1197,10 +1197,10 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的
     screen.EP_VERSION=Euphoria Patches 1.3.3
 
 option.DAYLIGHT_CYCLE_COMPAT=世界时间动画
-option.DAYLIGHT_CYCLE_COMPAT.comment=此选项仅为了让你在关闭世界日期循环 ( /gamerule doDaylightCycle false ) 后云层和其他动画效果仍然可以工作. 但这意味着多人游戏各玩家间的动画效果不再同步了.
+option.DAYLIGHT_CYCLE_COMPAT.comment=本选项提供了 "在关闭世界日期循环 ( /gamerule doDaylightCycle false ) 后云层和其他动画效果正常工作" 的选择. 但这意味着多人游戏各玩家间的动画效果不再同步了.
 
 option.AURORA_COLOR_PRESET=极光颜色预设
-option.AURORA_COLOR_PRESET.comment=选择默认的或定制的北极光颜色预设, varying选项意味着会在每月出现极光的夜晚, 北极光预设颜色会自动切换.
+option.AURORA_COLOR_PRESET.comment=选择默认的或定制的北极光颜色预设, 随机 (Varying) 选项意味着会在每 日/月 出现极光的夜晚, 北极光的颜色会在预设颜色中切换.
 value.AURORA_COLOR_PRESET.0=自定义
 value.AURORA_COLOR_PRESET.1=每日随机 §o§lVarying
 value.AURORA_COLOR_PRESET.2=每月随机 §o§lVarying
@@ -1301,7 +1301,7 @@ option.HIGH_QUALITY_CLOUDS=更高质量的云层
 option.HIGH_QUALITY_CLOUDS.comment=可将云层质量提升到正常 Complementary 设置无法达到的程度. §c[-]§r 开启本选项可能会影响性能.
 
 option.END_SMOKE=末地烟云
-option.END_SMOKE.comment=有人纵火, 所以现在末地上层虚空和下层虚空都有烟云.
+option.END_SMOKE.comment=有人纵火, 所以现在末地上下层虚空都有烟云.
 option.E_SKY_COLORR=末地天空 - 红色
 option.E_SKY_COLORG=末地天空 - 绿色
 option.E_SKY_COLORB=末地天空 - 蓝色
@@ -1457,7 +1457,7 @@ option.STAR_SIZE=繁星尺寸
 option.STAR_SIZE.comment=调节夜空中星星的尺寸.
 
 option.SITUATIONAL_ORES=情景式矿石
-option.SITUATIONAL_ORES.comment=矿石仅在没有天空光的时候亮起. §e[*]§r 需要启用矿石发光选项.
+option.SITUATIONAL_ORES.comment=矿石仅在没有天空光的时候亮起. §e[*]§r 需要启用 矿石发光 选项.
 
 option.GLOWING_RAW_BLOCKS=粗金属块发光
 
@@ -1480,7 +1480,7 @@ option.NORMAL_RES=生成法线分辨率
 option.NORMAL_RES.comment=调节集成法线渲染分辨率. §e[*]§r 资源包支持选项需设置为 集成PBR+ 的同时打开 自动生成法线 选项.
 
 option.COATED_TEXTURE_RES=噪点涂层分辨率
-option.COATED_TEXTURE_RES.comment=调节噪点涂层纹理的渲染分辨率. §e[*]§r 资源包支持选项需设置为 集成PBR+ 的同时打开 噪点涂层纹理 选项
+option.COATED_TEXTURE_RES.comment=调节噪点涂层纹理的渲染分辨率. §e[*]§r 资源包支持选项需设置为 集成PBR+ 的同时打开 噪点涂层纹理 选项.
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=光图法线
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=使集成法线贴图可以与方块光一同生效. §e[*]§r 资源包支持选项需设置为 集成PBR+ 且需启用 自动生成法线 选项.
@@ -1680,7 +1680,7 @@ option.TONEMAP_COMPARISON=色调比对模式
 option.TONEMAP_COMPARISON.comment=用来对比不同色调映射效果的设置.
 
 option.tonemap_left=左半屏幕色调映射方式
-option.tonemap_left.comment=改变使用的色调映射方式.
+option.tonemap_left.comment=改变左半屏幕使用的色调映射方式.
 value.tonemap_left.DoBSLTonemap=BSL/Complementary
 value.tonemap_left.ACESTonemap=ACES
 value.tonemap_left.ACESRedModified=ACES - 改善红色表现
@@ -1695,7 +1695,7 @@ value.tonemap_left.uchimura=Uchimura
 value.tonemap_left.agxTonemap=AgX
 
 option.tonemap_right=右半屏幕色调映射方式
-option.tonemap_right.comment=改变使用的色调映射方式.
+option.tonemap_right.comment=改变右半屏幕使用的色调映射方式.
 value.tonemap_right.DoBSLTonemap=BSL/Complementary
 value.tonemap_right.ACESTonemap=ACES
 value.tonemap_right.ACESRedModified=ACES - 改善红色表现
@@ -1713,7 +1713,7 @@ option.ACES_EXPOSURE=曝光
 option.ACES_EXPOSURE.comment=调节图像的整体亮度.
 
 option.ACES_WHITE=白色曲线
-option.ACES_WHITE.comment=调节色调图达到全白的容易程度.
+option.ACES_WHITE.comment=调节色调达到全白的容易程度.
 
 option.AGX_LOOK=AgX 外观
 value.AGX_LOOK.0=默认
@@ -1822,7 +1822,7 @@ value.LESS_LEAVES.0=关
 option.AUTUMN_CONDITION=仅森林群系
 
 option.AUTUMN_NOISE_SIZE=颜色噪声尺寸
-option.AUTUMN_NOISE_SIZE.comment=产生树叶渐变颜色的噪声尺寸
+option.AUTUMN_NOISE_SIZE.comment=产生树叶渐变颜色的噪声尺寸.
 
 option.LEAVES_ON_GROUND=落叶
 
@@ -1876,7 +1876,7 @@ option.PURPLE_END_FIRE=末地紫焰
 option.PURPLE_END_FIRE.comment=使末地中与火焰相关的方块, 实体, 粒子颜色呈末地紫色.
 
 option.NO_RAIN_ABOVE_CLOUDS=云端之上无雨雪
-option.NO_RAIN_ABOVE_CLOUDS.comment=禁用高于云层的雨雪粒子. 若当原版云层开启并且高度被修改的情况下不能很好的工作.
+option.NO_RAIN_ABOVE_CLOUDS.comment=禁用高于云层的雨雪粒子. 在原版云层开启并且高度被修改的情况下不能很好的工作.
 
 option.WORLD_BLUR_SNEAK=潜行(下蹲)时模糊视界
 option.WORLD_BLUR_SNEAK.comment=仅在潜行时激活视界模糊效果.
@@ -2115,7 +2115,7 @@ value.SHOCKWAVE.0=关
 value.SHOCKWAVE.1=圆形
 value.SHOCKWAVE.2=方形
 
-option.STAR_LAYER=分星层
+option.STAR_LAYER=错落星层
 value.STAR_LAYER.0=关
 value.STAR_LAYER.1=仅小星层
 value.STAR_LAYER.2=仅大星层
