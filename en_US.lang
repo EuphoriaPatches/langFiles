@@ -1109,7 +1109,9 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
             screen.END_BEAMS_SETTINGS.comment=Settings that relate to the Ender Beams.
             screen.END_STAR=End Star Settings
             screen.END_STAR.comment=Settings that relate to the End Stars.
+                screen.STAR_COLORS_END=End Star Colors
         screen.STARS_OVERWORLD=Stars
+            screen.STAR_COLORS_OW=Star Colors
         screen.RAIN_SETTINGS=Rain Settings
     screen.WORLD=World
     screen.WORLD.comment=Settings that relate to the world.
@@ -2117,3 +2119,41 @@ value.STAR_LAYER.0=OFF
 value.STAR_LAYER.1=Smaller Layer
 value.STAR_LAYER.2=Bigger Layer
 value.STAR_LAYER.3=Both Layers
+
+option.STAR_ROUNDNESS_END=Round Stars
+value.STAR_ROUNDNESS_END.0=OFF
+
+option.STAR_ROUNDNESS_OW=Round Stars
+value.STAR_ROUNDNESS_OW.0=OFF
+
+option.STAR_SOFTNESS_OW=Star Softness
+
+option.STAR_SOFTNESS_END=Star Softness
+
+option.STAR_COLOR_1_OW_R=Star 1 - R
+option.STAR_COLOR_1_OW_G=Star 1 - G
+option.STAR_COLOR_1_OW_B=Star 1 - B
+
+option.STAR_COLOR_2_OW_R=Star 2 - R
+option.STAR_COLOR_2_OW_G=Star 2 - G
+option.STAR_COLOR_2_OW_B=Star 2 - B
+
+option.STAR_COLOR_3_OW_R=Star 3 - R
+option.STAR_COLOR_3_OW_G=Star 3 - G
+option.STAR_COLOR_3_OW_B=Star 3 - B
+
+option.STAR_COLOR_VARIATION_OW=Star Color Variation
+
+option.STAR_COLOR_1_END_R=Star 1 - R
+option.STAR_COLOR_1_END_G=Star 1 - G
+option.STAR_COLOR_1_END_B=Star 1 - B
+
+option.STAR_COLOR_2_END_R=Star 2 - R
+option.STAR_COLOR_2_END_G=Star 2 - G
+option.STAR_COLOR_2_END_B=Star 2 - B
+
+option.STAR_COLOR_3_END_R=Star 3 - R
+option.STAR_COLOR_3_END_G=Star 3 - G
+option.STAR_COLOR_3_END_B=Star 3 - B
+
+option.STAR_COLOR_VARIATION_END=Star Color Variation
