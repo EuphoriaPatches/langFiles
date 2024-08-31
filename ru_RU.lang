@@ -1112,7 +1112,9 @@ screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые па
             screen.END_BEAMS_SETTINGS.comment=Настройки, связанные с лучами Края.
             screen.END_STAR=Настройки Звёзд Края
             screen.END_STAR.comment=Настройки, относящиеся к звёздам Края.
+                screen.STAR_COLORS_END=End Star Colors
         screen.STARS_OVERWORLD=Звёзды
+            screen.STAR_COLORS_OW=Star Colors
         screen.RAIN_SETTINGS=Настройки Дождя
     screen.WORLD=Мир
     screen.WORLD.comment=Настройки, связанные с окружающим миром.
@@ -2114,3 +2116,53 @@ option.SHOCKWAVE=Ударная Волна
 value.SHOCKWAVE.0=Выкл
 value.SHOCKWAVE.1=Круг
 value.SHOCKWAVE.2=Квадрат
+
+option.STAR_LAYER_OW=Звёздный Слой
+value.STAR_LAYER_OW.0=Выкл
+value.STAR_LAYER_OW.1=Меньший Слой
+value.STAR_LAYER_OW.2=Больший Слой
+value.STAR_LAYER_OW.3=Оба Слоя
+
+option.STAR_LAYER_END=Звёздный Слой
+value.STAR_LAYER_END.0=Выкл
+value.STAR_LAYER_END.1=Меньший Слой
+value.STAR_LAYER_END.2=Больший Слой
+value.STAR_LAYER_END.3=Оба Слоя
+
+option.STAR_ROUNDNESS_END=Круглые Звезды
+value.STAR_ROUNDNESS_END.0=Выкл
+
+option.STAR_ROUNDNESS_OW=Круглые Звезды
+value.STAR_ROUNDNESS_OW.0=Выкл
+
+option.STAR_SOFTNESS_OW=Мягкость Звезд
+
+option.STAR_SOFTNESS_END=Мягкость Звезд
+
+option.STAR_COLOR_1_OW_R=Звезда 1 - R
+option.STAR_COLOR_1_OW_G=Звезда 1 - G
+option.STAR_COLOR_1_OW_B=Звезда 1 - B
+
+option.STAR_COLOR_2_OW_R=Звезда 2 - R
+option.STAR_COLOR_2_OW_G=Звезда 2 - G
+option.STAR_COLOR_2_OW_B=Звезда 2 - B
+
+option.STAR_COLOR_3_OW_R=Звезда 3 - R
+option.STAR_COLOR_3_OW_G=Звезда 3 - G
+option.STAR_COLOR_3_OW_B=Звезда 3 - B
+
+option.STAR_COLOR_VARIATION_OW=Изменение Цвета Звезды
+
+option.STAR_COLOR_1_END_R=Звезда 1 - R
+option.STAR_COLOR_1_END_G=Звезда 1 - G
+option.STAR_COLOR_1_END_B=Звезда 1 - B
+
+option.STAR_COLOR_2_END_R=Звезда 2 - R
+option.STAR_COLOR_2_END_G=Звезда 2 - G
+option.STAR_COLOR_2_END_B=Звезда 2 - B
+
+option.STAR_COLOR_3_END_R=Звезда 3 - R
+option.STAR_COLOR_3_END_G=Звезда 3 - G
+option.STAR_COLOR_3_END_B=Звезда 3 - B
+
+option.STAR_COLOR_VARIATION_END=Изменение Цвета Звезды
