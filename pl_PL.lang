@@ -54,9 +54,9 @@ option.info9=Jak wspierać rozwój shaderów Complementary
 value.info9.0=
 option.info9.comment=Najlepszym sposobem na wsparcie rozwoju shaderów Complementary jest podzielenie się nim ze znajomymi lub w mediach społecznościowych, ale można też bezpośrednio wesprzeć dewelopera na Patreonie. www.patreon.com/emingt
 
-option.info10=Twórcy
+option.info10=Podziękowania
 value.info10.0=
-option.info10.comment=EminGT: Główny deweloper shaderów Complementary. Capt Tatsu: Deweloper shaderów BSL, dzięki jego hojności ten projekt wogóle istnieje. Specialne podziękowania: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap
+option.info10.comment=EminGT: Główny deweloper Complementary. Capt Tatsu: Deweloper BSL Shaders, jego hojność umożliwiła powstanie Complementary. Specjalne podziękowania dla: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap
 
 option.info11=Czym jest Euphoria Patches
 value.info11.0=
@@ -70,33 +70,33 @@ option.info13=Wsparcie dla modów w Euphoria Patches
 value.info13.0=
 option.info13.comment=Euphoria Patches ma na celu lepszą obsługę zmodyfikowanych bloków niż zwykłe Complementary poprzez domyślną obsługę zmodyfikowanych bloków (sprawdź block.properties). Wykrywanie źródeł światła i automatyczne dawanie im emisji. Wykrywanie modelów roślin i automatyczne zastosowanie SSS (rozpraszanie podpowierzchniowe).
 
-option.info14=Najlepszy Shader Loader
+option.info14=Najlepszy loader shaderów
 value.info14.0=
-option.info14.comment=Euphoria Patches, a także zwykłe Complementary używają funkcji wyłacznych dla Iris, które nie będą działać na Optifine. Aby uzyskać najlepsze wrażenia z rozgrywki, zaleca się korzystanie z Iris. Na Forge "Oculus" jest na razie zalecany, ponieważ wydaje się obsługiwać większość funkcji Iris.
+option.info14.comment=Euphoria Patches, a także zwykłe Complementary używają funkcji eksluzywnych dla Iris, które nie będą działać na OptiFine. Aby uzyskać najlepsze wrażenia z rozgrywki, zaleca się korzystanie z Iris. Korzystając z Forge, zalecany jest mod "Oculus", który zdaje się obsługiwać większość funkcji Iris.
 
-option.info15=Euphoria Patches - twórcy
+option.info15=Euphoria Patches - podziękowania
 value.info15.0=
 option.info15.comment= Pełna lista znajduje się w "credits.txt" w folderze shadera. isuewo dawny co-deweloper Euphoria Patches. EminGT: Główny deweloper shaderów Complementary. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§nJak wesprzeć Euphoria Patches
 value.info16.0=
-option.info16.comment=Możesz wspierać Euphoria Patches, śledząc informacje o nowych aktualizacjach i dzieląc się nimi z innymi, ale możesz także bezpośrednio wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
+option.info16.comment=Możesz wspierać Euphoria Patches, interesując się nowymi aktualizacjami i dzieląc się nimi z innymi, ale możesz też bezpośrednio wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do wersji deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
-option.info17=Wersje Beta: Patreon SpacEagle17
+option.info17=Wersja Beta: Patreon SpacEagle17
 value.info17.0=
-option.info17.comment=Możesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji beta. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
+option.info17.comment=Możesz wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do ekskluzywnych wersji deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
 option.info18=Dla Complementary 5.2.2
 value.info18.0=
 option.info18.comment=Dziękujemy za wybranie Euphoria Patches :)
 
-option.info19=NOWA WERSJA DOSTĘPNA
-value.info19.0=NEW_MOD_VERSION
-option.info19.comment=Nowa wersja moda EuphoriaPatcher jest już dostępna. Pobierz ją z Modrinth: https://modrinth.com/mod/euphoria-patches.
+option.info19=DOSTĘPNA NOWA AKTUALIZACJA
+value.info19.0=NOWA_WERSJA_MODA
+option.info19.comment=Dostępna jest nowa wersja moda EuphoriaPatcher. Pobierz ją z Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 option.info20=Zainstalowana wersja
 value.info20.0=0.3.4
-option.info20.comment=Nowa wersja moda EuphoriaPatcher jest już dostępna. Pobierz ją z Modrinth: https://modrinth.com/mod/euphoria-patches.
+option.info20.comment=Dostępna jest nowa wersja moda EuphoriaPatcher. Pobierz ją z Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 #Style
 option.SHADER_STYLE=Styl Wizualny
