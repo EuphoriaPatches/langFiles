@@ -2115,8 +2115,14 @@ value.SHOCKWAVE.0=关
 value.SHOCKWAVE.1=圆形
 value.SHOCKWAVE.2=方形
 
-option.STAR_LAYER=错落星层
-value.STAR_LAYER.0=关
-value.STAR_LAYER.1=仅小星层
-value.STAR_LAYER.2=仅大星层
-value.STAR_LAYER.3=双星层
+option.STAR_LAYER_OW=错落星层
+value.STAR_LAYER_OW.0=关
+value.STAR_LAYER_OW.1=仅小星层
+value.STAR_LAYER_OW.2=仅大星层
+value.STAR_LAYER_OW.3=双星层
+
+option.STAR_LAYER_END=错落星层
+value.STAR_LAYER_END.0=关
+value.STAR_LAYER_END.1=仅小星层
+value.STAR_LAYER_END.2=仅大星层
+value.STAR_LAYER_END.3=双星层

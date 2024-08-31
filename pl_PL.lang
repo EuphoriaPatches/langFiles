@@ -2112,8 +2112,14 @@ value.SHOCKWAVE.0=WYŁ.
 value.SHOCKWAVE.1=Okrągła
 value.SHOCKWAVE.2=Kwadratowa
 
-option.STAR_LAYER=Warstwy Gwiazd
-value.STAR_LAYER.0=WYŁ.
-value.STAR_LAYER.1=Mniejsza Warstwa
-value.STAR_LAYER.2=Większa Warstwa
-value.STAR_LAYER.3=Obydwie Warstwy
+option.STAR_LAYER_OW=Warstwy Gwiazd
+value.STAR_LAYER_OW.0=WYŁ.
+value.STAR_LAYER_OW.1=Mniejsza Warstwa
+value.STAR_LAYER_OW.2=Większa Warstwa
+value.STAR_LAYER_OW.3=Obydwie Warstwy
+
+option.STAR_LAYER_END=Warstwy Gwiazd
+value.STAR_LAYER_END.0=WYŁ.
+value.STAR_LAYER_END.1=Mniejsza Warstwa
+value.STAR_LAYER_END.2=Większa Warstwa
+value.STAR_LAYER_END.3=Obydwie Warstwy

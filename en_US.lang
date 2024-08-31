@@ -2114,11 +2114,17 @@ value.SHOCKWAVE.0=OFF
 value.SHOCKWAVE.1=Circle
 value.SHOCKWAVE.2=Square
 
-option.STAR_LAYER=Star Layer
-value.STAR_LAYER.0=OFF
-value.STAR_LAYER.1=Smaller Layer
-value.STAR_LAYER.2=Bigger Layer
-value.STAR_LAYER.3=Both Layers
+option.STAR_LAYER_OW=Star Layer
+value.STAR_LAYER_OW.0=OFF
+value.STAR_LAYER_OW.1=Smaller Layer
+value.STAR_LAYER_OW.2=Bigger Layer
+value.STAR_LAYER_OW.3=Both Layers
+
+option.STAR_LAYER_END=Star Layer
+value.STAR_LAYER_END.0=OFF
+value.STAR_LAYER_END.1=Smaller Layer
+value.STAR_LAYER_END.2=Bigger Layer
+value.STAR_LAYER_END.3=Both Layers
 
 option.STAR_ROUNDNESS_END=Round Stars
 value.STAR_ROUNDNESS_END.0=OFF
