@@ -169,7 +169,7 @@ screen.GLOWING_STUFF_SETTINGS.comment=Ustawienia dostosowujące emisję różnyc
 screen.OTHER_IPBR_SETTINGS=Inne
 screen.OTHER_IPBR_SETTINGS.comment=Pozostałe ustawienia ZintegrowanegoPBR+.
 
-screen.CUSTOM_PBR_SETTINGS=Materiały labPBR/seuspbr
+screen.CUSTOM_PBR_SETTINGS=Tekstury labPBR/seuspbr
 screen.CUSTOM_PBR_SETTINGS.comment=Ustawienia związane z funkcjami labPBR/seuspbr.
 
 screen.LIGHTING_SETTINGS=Oświetlenie
