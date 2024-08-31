@@ -1359,7 +1359,7 @@ option.BEAMS_NEAR_PLAYER=Zorza Ender Blisko Gracza
 option.BEAMS_NEAR_PLAYER.comment=Włącza lub wyłącza Zorze Endu w pobliżu gracza.
 
 option.END_STARS=Gwiazdy Endu
-option.END_STARS.comment=Włącz lub wyłąc gwiady w Endzie.
+option.END_STARS.comment=Włącz lub wyłącz gwiazdy w Endzie.
 option.END_STAR_BRIGHTNESS=Jasność Gwiazd Endu
 option.END_STAR_SIZE=Rozmiar Gwiazd Endu
 option.END_STAR_AMOUNT=Ilość Gwiazd Endu
