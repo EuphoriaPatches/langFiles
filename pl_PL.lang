@@ -91,7 +91,7 @@ value.info18.0=
 option.info18.comment=Dziękujemy za wybranie Euphoria Patches :)
 
 option.info19=DOSTĘPNA NOWA AKTUALIZACJA
-value.info19.0=NOWA_WERSJA_MODA
+value.info19.0=NEW_MOD_VERSION
 option.info19.comment=Dostępna jest nowa wersja moda EuphoriaPatcher. Pobierz ją z Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 option.info20=Zainstalowana wersja
@@ -133,13 +133,13 @@ screen.CLOUD_REIMAGINED_SETTINGS=Ustawienia Chmur w stylu Reimagined
 screen.FOG_SETTINGS=Mgła
 screen.FOG_SETTINGS.comment=Ustawienia związane z mgłą.
 
-screen.SUN_MOON_SETTINGS=Słońce / Księżyc
+screen.SUN_MOON_SETTINGS=Słońce/Księżyc
 screen.SUN_MOON_SETTINGS.comment=Ustawienia związane ze Słońcem i Księżycem
 
 screen.NETHER_SETTINGS=Wymiar Netheru
 screen.NETHER_SETTINGS.comment=Ustawienia związane z Netherem.
 
-screen.WEATHER_SETTINGS=Deszcz / Pogoda
+screen.WEATHER_SETTINGS=Deszcz/Pogoda
 screen.WEATHER_SETTINGS.comment=Ustawienia związane z warunkami pogodowymi.
 
 screen.CAMERA_SETTINGS=Ustawienia Kamery
@@ -169,7 +169,7 @@ screen.GLOWING_STUFF_SETTINGS.comment=Ustawienia dostosowujące emisję różnyc
 screen.OTHER_IPBR_SETTINGS=Inne
 screen.OTHER_IPBR_SETTINGS.comment=Pozostałe ustawienia ZintegrowanegoPBR+.
 
-screen.CUSTOM_PBR_SETTINGS=Materiały labPBR/seuspbr
+screen.CUSTOM_PBR_SETTINGS=Tekstury labPBR/seuspbr
 screen.CUSTOM_PBR_SETTINGS.comment=Ustawienia związane z funkcjami labPBR/seuspbr.
 
 screen.LIGHTING_SETTINGS=Oświetlenie
@@ -217,7 +217,7 @@ screen.WORLD_OUTLINE_SETTINGS.comment=Ustawienia dotyczące opcjonalnych efektó
 
 #Settings
 option.RP_MODE=Wsparcie Tekstur
-option.RP_MODE.comment=Zmienia wewnętrzne obliczenia które określają właściwości różnych bloków i materiałów. §bZintegrowane PBR+§r: Automatycznie obliczanie włąściwości PBR i dodatkowe efekty, wysoce zalecane w większości przypadków. §aPodstawowe§r: Brak efektów PBR. §elabPBR/seuspbr§r: Wykorzystuje ręcznie stworzone pakiety zasobów z materiałami PBR.
+option.RP_MODE.comment=Zmienia wewnętrzne obliczenia które określają właściwości różnych bloków i materiałów. §bZintegrowane PBR+§r: Automatycznie obliczanie właściwości PBR i dodatkowe efekty, wysoce zalecane w większości przypadków. §aPodstawowe§r: Brak efektów PBR. §elabPBR/seuspbr§r: Wykorzystuje ręcznie stworzone pakiety zasobów z materiałami PBR.
 value.RP_MODE.0=§aPodstawowe
 value.RP_MODE.1=§bZintegrowane PBR+
 value.RP_MODE.2=§eseuspbr (Wymagana Paczka Zasobów)
@@ -247,8 +247,8 @@ value.SHADOW_QUALITY.3=§eWysoka
 value.SHADOW_QUALITY.4=§cBardzo Wysoka
 value.SHADOW_QUALITY.5=§4§lUltra
 
-option.LIGHTSHAFT_QUALI_DEFINE=Jakość Snopów Światła §e[*]§r
-option.LIGHTSHAFT_QUALI_DEFINE.comment=Dostosowuje jakość snopów światła. Każdy poziom dodatkowo redukuje artefakty szumu w snopach światła. §e[*]§r Aby snopy światła działały, "Cienie w Czasie Rzeczywistym" muszą być właczone.
+option.LIGHTSHAFT_QUALI_DEFINE=Jakość Promieni Swiatła §e[*]§r
+option.LIGHTSHAFT_QUALI_DEFINE.comment=Dostosowuje jakość promieni światła. Każdy poziom dodatkowo redukuje artefakty szumu w promieniach światła. §e[*]§r Aby promienie światła działały, "Cienie w Czasie Rzeczywistym" muszą być włączone.
 value.LIGHTSHAFT_QUALI_DEFINE.0=§aWYŁ.
 value.LIGHTSHAFT_QUALI_DEFINE.1=§eNiska
 value.LIGHTSHAFT_QUALI_DEFINE.2=§eŚrednia
@@ -295,7 +295,7 @@ option.FXAA_DEFINE.comment=Włącza Fast Approximate Anti-Aliasing (FXAA), któr
 value.FXAA_DEFINE.-1=§aWYŁ.
 value.FXAA_DEFINE.1=§eWŁ.
 
-option.SSAO_QUALI_DEFINE=Jakość Cieni na Krawędziach (SSAO)
+option.SSAO_QUALI_DEFINE=Jakość Okluzji Otoczenia (SSAO)
 option.SSAO_QUALI_DEFINE.comment=Dostosowuje jakość Screen-Space Ambient Occlusion (SSAO), która dodaje dodatkowe cienie do krawędzi sceny. Każdy poziom dodatkowo redukuje artefakty szumu SSAO.
 value.SSAO_QUALI_DEFINE.0=§aWYŁ.
 value.SSAO_QUALI_DEFINE.2=§eŚrednia
@@ -317,11 +317,11 @@ value.COLORED_LIGHTING.256=§c8 Chunków
 value.COLORED_LIGHTING.384=§4§l12 Chunków
 value.COLORED_LIGHTING.512=§4§k-§r§4§l§n§o16 Chunków§r§4§k- §r§c[-]
 
-option.SSAO_I=Natężenie Cieni na Krawędziach (SSAO)
+option.SSAO_I=Ekranowa Okluzja Otoczenia (SSAO)
 option.SSAO_I.comment=Określa siłę Screen-Space Ambient Occlusion (SSAO), która dodaje dodatkowe cienie do krawędzi sceny. §e[*]§r To ustawienie nie będzie działać, jeśli SSAO jest wyłączone w "Ustawieniach Jakości".
 value.SSAO_I.0=§cWYŁ.
 
-option.VANILLAAO_I=Natężenie Cieni na Krawędziach (Vanilla)
+option.VANILLAAO_I=Okluzja Otoczenia (Vanilla)
 option.VANILLAAO_I.comment=Określa siłę wbudowanej okluzji otoczenia Minecrafta, która dodaje dodatkowe cienie do krawędzi sceny.
 value.VANILLAAO_I.0=§cWYŁ.
 
@@ -344,19 +344,19 @@ option.ATM_FOG_ALTITUDE.comment=Określa wysokość, na której mgła atmosferyc
 option.CAVE_FOG=Mgła w Jaskiniach
 option.CAVE_FOG.comment=Dodaje dodatkową mgłę głęboko pod ziemią.
 
-option.LIGHTSHAFT_BEHAVIOUR=Tryb Snopów Światłą
-option.LIGHTSHAFT_BEHAVIOUR.comment=Określa zachowanie snopów światła. §a[+]§r Snopy Światła Świadome Sceny automatycznie przechodzą między trybem zwykłym i ekstremalnym, aby osiągnąć najlepsze rezultaty. §c[-]§r Tryb ekstremalny nie jest zalecany do ogólnej rozgrywki i może poważnie wpłynąć na wydajność.
+option.LIGHTSHAFT_BEHAVIOUR=Tryb Promieni Światła
+option.LIGHTSHAFT_BEHAVIOUR.comment=Określa zachowanie promieni światła. §a[+]§r Promienie Światła Świadome Sceny automatycznie przełączają się między trybem normalnym a ekstremalnym, aby zapewnić najlepsze rezultaty. §c[-]§r Tryb ekstremalny nie jest zalecany do normalnej rozgrywki i może znacznie wpłynąć na wydajność.
 value.LIGHTSHAFT_BEHAVIOUR.0=§cWYŁ.
 value.LIGHTSHAFT_BEHAVIOUR.1=Świadome Sceny §a[+]
-value.LIGHTSHAFT_BEHAVIOUR.2=Zwykły
-value.LIGHTSHAFT_BEHAVIOUR.3=Extremalny §c[-]
+value.LIGHTSHAFT_BEHAVIOUR.2=Normalne
+value.LIGHTSHAFT_BEHAVIOUR.3=Ekstremalne §c[-]
 
-option.LIGHTSHAFT_SMOKE=Dym w Snopach Światła
-option.LIGHTSHAFT_SMOKE.comment=Dodaje wolumetryczny dym do snopów świetła. §c[-]§r Ten efekt może mieć wpływ na wydajność.
+option.LIGHTSHAFT_SMOKE=Dym w Promieniach Światła
+option.LIGHTSHAFT_SMOKE.comment=Dodaje wolumetryczny dym do promieni światła. §c[-]§r Ten efekt może wpłynąć na wydajność.
 
-option.LIGHTSHAFT_DAY_I=Mnożnik Snopów Światła w trakcie Dnia
-option.LIGHTSHAFT_NIGHT_I=Mnożnik Snopów Światła w trakcie Nocy
-option.LIGHTSHAFT_RAIN_I=Mnożnik Snopów Światła w trakcie Deszczu
+option.LIGHTSHAFT_DAY_I=Mnożnik Promieni Światła w Dzień
+option.LIGHTSHAFT_NIGHT_I=Mnożnik Promieni Światła w Nocy
+option.LIGHTSHAFT_RAIN_I=Mnożnik Promieni Światła podczas Deszczu
 
 option.CLOUD_STYLE_DEFINE=Styl Chmur
 option.CLOUD_STYLE_DEFINE.comment=Określa styl chmur. §e[*]§r "Styl Domyślny" oznacza, że ustawienie zostanie automatycznie określone przez ustawienie "Styl Wizualny" w głównym menu Opcji Shadera. §e[*]§r Styl "Vanilla" wymaga włączenia chmur w Ustawieniach Grafiki Minecrafta.
@@ -1359,7 +1359,7 @@ option.BEAMS_NEAR_PLAYER=Zorza Ender Blisko Gracza
 option.BEAMS_NEAR_PLAYER.comment=Włącza lub wyłącza Zorze Endu w pobliżu gracza.
 
 option.END_STARS=Gwiazdy Endu
-option.END_STARS.comment=Włącz lub wyłąc gwiady w Endzie.
+option.END_STARS.comment=Włącz lub wyłącz gwiazdy w Endzie.
 option.END_STAR_BRIGHTNESS=Jasność Gwiazd Endu
 option.END_STAR_SIZE=Rozmiar Gwiazd Endu
 option.END_STAR_AMOUNT=Ilość Gwiazd Endu
