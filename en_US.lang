@@ -2152,7 +2152,7 @@ option.STAR_COLOR_3_OW_R=Star 3 - Red
 option.STAR_COLOR_3_OW_G=Star 3 - Green
 option.STAR_COLOR_3_OW_B=Star 3 - Blue
 
-option.STAR_COLOR_VARIATION_OW=Color Variation
+option.STAR_COLOR_VARIATION_OW=Color Intensity
 
 option.STAR_COLOR_1_END_R=Star 1 - Red
 option.STAR_COLOR_1_END_G=Star 1 - Green
@@ -2166,4 +2166,4 @@ option.STAR_COLOR_3_END_R=Star 3 - Red
 option.STAR_COLOR_3_END_G=Star 3 - Green
 option.STAR_COLOR_3_END_B=Star 3 - Blue
 
-option.STAR_COLOR_VARIATION_END=Color Variation
+option.STAR_COLOR_VARIATION_END=Color Intensity
