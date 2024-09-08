@@ -93,12 +93,12 @@ option.info18=Для Complementary 5.2.2
 value.info18.0=
 option.info18.comment=Спасибо за установку Euphoria Patches :)
 
-option.info19=ДОСТУПНО НОВОЕ ОБНОВЛЕНИЕ
-value.info19.0=NEW_MOD_VERSION
+option.info19=§aДОСТУПНО НОВОЕ ОБНОВЛЕНИЕ
+value.info19.0=§aX.Y.Z
 option.info19.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://modrinth.com/mod/euphoria-patches.
 
-option.info20=Текущая Версия
-value.info20.0=0.3.4
+option.info20=§cТекущая Версия
+value.info20.0=§cX.Y.Z
 option.info20.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 #Style
@@ -1196,7 +1196,7 @@ screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые па
     screen.POPULAR_SETTINGS=§bПопулярные Настройки
         screen.POPULAR_SETTINGS_2=Страница 2
         screen.POPULAR_SETTINGS_3=Страница 3
-    screen.EP_VERSION=Euphoria Patches 1.3.3
+    screen.EP_VERSION=Euphoria Patches §d1.3.3
 
 option.DAYLIGHT_CYCLE_COMPAT=Анимация Мирового Времени
 option.DAYLIGHT_CYCLE_COMPAT.comment=используйте это, ТОЛЬКО если вы играете с параметром gamerule doDaylightCycle false. При включении этого параметра облака и другие объекты анимируются в мирах с выключенным дневным светом, но они больше не синхронизируются между игроками.

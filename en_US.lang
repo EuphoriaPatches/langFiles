@@ -86,16 +86,16 @@ option.info17=Beta Version: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access exclusive development versions. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
-option.info18=For Complementary 5.2.2
+option.info18=For Complementary r5.3
 value.info18.0=
 option.info18.comment=Thank you for Installing Euphoria Patches :)
 
-option.info19=NEW UPDATE AVAILABLE
-value.info19.0=NEW_MOD_VERSION
+option.info19=§aNEW UPDATE AVAILABLE
+value.info19.0=§aX.Y.Z
 option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
 
-option.info20=Current Version
-value.info20.0=0.3.4
+option.info20=§cCurrent Version
+value.info20.0=§cX.Y.Z
 option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 #Style
@@ -686,6 +686,9 @@ value.TAA_MODE.1=Smart & Subtle §a[+]
 value.TAA_MODE.2=Intense §e[*]
 value.TAA_MODE.0=OFF §c[-]
 
+option.DISTANT_LIGHT_BOKEH=Distant Light Bokeh
+option.DISTANT_LIGHT_BOKEH.comment=Makes distant light sources look scattered by applying a single pixel blur in the distance. §a[+]§r This effect benefits from IntegratedPBR+ (optional) by adjusting distant light sources for better looks.
+
 option.MOTION_BLURRING=Motion Blur
 option.MOTION_BLURRING.comment=Applies blur to the image when moving the camera.
 
@@ -731,11 +734,17 @@ value.CHROMA_ABERRATION.6=6 §c[-]
 value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
 
+option.IPBR_EMISSIVE_MODE=IPBR+ Emissive Mode
+option.IPBR_EMISSIVE_MODE.comment=Determines the handling of emissives within IntegratedPBR+. Choosing the labPBR or seuspbr options allow compatible resource packs to completely override IPBR+ emissives on blocks that have specular textures attached to them. §c[-]§r It's not recommended to change this setting unless you know what you are doing.
+value.IPBR_EMISSIVE_MODE.1=IPBR+ Only
+value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
+value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
+
 option.IPBR_PARTICLE_FEATURES=IPBR+ Particle Features
 option.IPBR_PARTICLE_FEATURES.comment=Enables several features for particles, including things like glowing lava particles and better-colored water particles.
 
 option.FANCY_GLASS=Improved Glass
-option.FANCY_GLASS.comment=Improves the regular glass by adding a translucent layer to it. §c[-]§r Does not work on Iris because of a Sodium bug. §e[*]§r RP Support option must be set to Integrated PBR+.
+option.FANCY_GLASS.comment=Improves the regular glass by adding a translucent layer to it. §c[-]§r Does not work on older Iris versions. §e[*]§r RP Support option must be set to Integrated PBR+.
 
 option.GREEN_SCREEN_LIME=Green Screen Lime Blocks
 option.GREEN_SCREEN_LIME.comment=Turns "Lime Concrete", "Lime Wool", and "Lime Carpet" into green screens for video editing. Tip 1: Turn off "Bloom" option to improve separation. Tip 2: Put lights under lime carpets for lighting. Tip 3: You can turn off Anti-Aliasing (FXAA) and set Detail Quality to Potato in Performance Settings to disable all filtering and get pixel-perfect separation.
@@ -1009,6 +1018,9 @@ option.PORTAL_EDGE_EFFECT.comment=Adds an emissive border effect to end and neth
 option.PUDDLE_VOXELIZATION=Fix Puddles Under Glass
 option.PUDDLE_VOXELIZATION.comment=Prevents rain puddles from forming in closed areas with glass roofs when the Rain Puddles setting is enabled. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings and your system supports it.
 
+option.COLORED_CANDLE_LIGHT=Colored Candle Lighting
+option.COLORED_CANDLE_LIGHT.comment=Makes lights cast by candles to be the same color as their bases. §e[*]§r The desaturated candle color variants will continue to use the usual fire color.
+
 option.COLORED_LIGHT_SATURATION=Colored Lighting Saturation
 option.COLORED_LIGHT_SATURATION.comment=Adjusts how saturated the colors produced from Advanced Colored Lighting will be. §e[*]§r It's not recommended to change this value, as the visuals are designed to look the most balanced with the default saturation.
 
@@ -1193,7 +1205,7 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
     screen.POPULAR_SETTINGS=§bPopular Settings
         screen.POPULAR_SETTINGS_2=Page 2
         screen.POPULAR_SETTINGS_3=Page 3
-    screen.EP_VERSION=Euphoria Patches 1.3.3
+    screen.EP_VERSION=Euphoria Patches §d1.3.3
 
 option.DAYLIGHT_CYCLE_COMPAT=World Time Animation
 option.DAYLIGHT_CYCLE_COMPAT.comment=ONLY use this if you play with the gamerule doDaylightCycle false. When enabled clouds and more animate in worlds with the daylight cycle off but they are no longer synced between players.
@@ -1865,8 +1877,6 @@ value.MCBL_MAIN_DEFINE.1=Screen-Space
 
 option.MCBL_INFLUENCE=Multi-Colored Blocklight Influence
 option.MCBL_INFLUENCE.comment=Controls how much the multi-colored blocklight affects the default blocklight color.
-
-option.COLORED_CANDLES=Multi-Colored Blocklight Candles
 
 option.SSS_SNOW_ICE=Snow and Ice SSS
 option.SSS_SNOW_ICE.comment=Adds subsurface scattering to snow and ice blocks.

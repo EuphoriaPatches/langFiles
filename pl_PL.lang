@@ -86,16 +86,16 @@ option.info17=Wersja Beta: Patreon SpacEagle17
 value.info17.0=
 option.info17.comment=Możesz wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do ekskluzywnych wersji deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
-option.info18=Dla Complementary 5.2.2
+option.info18=Dla Complementary 5.3
 value.info18.0=
 option.info18.comment=Dziękujemy za wybranie Euphoria Patches :)
 
-option.info19=DOSTĘPNA NOWA AKTUALIZACJA
-value.info19.0=NEW_MOD_VERSION
+option.info19=§aDOSTĘPNA NOWA AKTUALIZACJA
+value.info19.0=§aX.Y.Z
 option.info19.comment=Dostępna jest nowa wersja moda EuphoriaPatcher. Pobierz ją z Modrinth: https://modrinth.com/mod/euphoria-patches.
 
-option.info20=Zainstalowana wersja
-value.info20.0=0.3.4
+option.info20=§cZainstalowana wersja
+value.info20.0=§cX.Y.Z
 option.info20.comment=Dostępna jest nowa wersja moda EuphoriaPatcher. Pobierz ją z Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 #Style
@@ -1191,7 +1191,7 @@ screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMo
     screen.POPULAR_SETTINGS=§bPopularne Ustawienia
         screen.POPULAR_SETTINGS_2=2 Strona
         screen.POPULAR_SETTINGS_3=3 Strona
-screen.EP_VERSION=Euphoria Patches 1.3.3
+screen.EP_VERSION=Euphoria Patches §d1.3.3
 
 option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
 option.DAYLIGHT_CYCLE_COMPAT.comment=Używaj tej opcji TYLKO, jeśli grasz na serwerze z wyłączoną zasadą "doDaylightCycle". Po włączeniu tej opcji chmury i inne animacje w światach z wyłączonym cyklem dziennym nie są już synchronizowane między graczami.
