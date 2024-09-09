@@ -2136,12 +2136,14 @@ value.SHOCKWAVE.1=Круг
 value.SHOCKWAVE.2=Квадрат
 
 option.STAR_LAYER_OW=Звёздный Слой
+option.STAR_LAYER_OW.comment=Добавляет дополнительные звезды к текущим, большие или меньшие.
 value.STAR_LAYER_OW.0=Выкл
 value.STAR_LAYER_OW.1=Меньший Слой
 value.STAR_LAYER_OW.2=Больший Слой
 value.STAR_LAYER_OW.3=Оба Слоя
 
 option.STAR_LAYER_END=Звёздный Слой
+option.STAR_LAYER_END.comment=Добавляет дополнительные звезды к текущим, большие или меньшие.
 value.STAR_LAYER_END.0=Выкл
 value.STAR_LAYER_END.1=Меньший Слой
 value.STAR_LAYER_END.2=Больший Слой
@@ -2186,3 +2188,6 @@ option.STAR_COLOR_3_END_B=Звезда 3 - Синий
 
 option.STAR_COLOR_VARIATION_END=Интенсивность Цвета
 value.STAR_COLOR_VARIATION_END.0.0=Выкл
+
+option.SITUATIONAL_GLOWING_TRIMS=Ситуативное Свечение Отделки
+option.SITUATIONAL_GLOWING_TRIMS.comment=Отделка будет светиться только в пещерах и ночью. §e[*]§r Светящиеся Отделки должны быть включены, чтобы это сработало.
