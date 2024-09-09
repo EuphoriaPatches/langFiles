@@ -89,7 +89,7 @@ option.info17=Бета-версия: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=Вы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к эксклюзивным версиям разработки. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
-option.info18=Для Complementary 5.2.2
+option.info18=Для Complementary 5.3
 value.info18.0=
 option.info18.comment=Спасибо за установку Euphoria Patches :)
 
@@ -689,6 +689,9 @@ value.TAA_MODE.1=Умный и Утонченный §a[+]
 value.TAA_MODE.2=Интенсивный §e[*]
 value.TAA_MODE.0=Выкл §c[-]
 
+option.DISTANT_LIGHT_BOKEH=Боке Далекого Света
+option.DISTANT_LIGHT_BOKEH.comment=Заставляет отдаленные источники света выглядеть рассеянными, применяя однопиксельное размытие вдали. §a[+]§r Этот эффект использует преимущества IntegratedPBR+ (опционально), корректируя удаленные источники света для улучшения внешнего вида.
+
 option.MOTION_BLURRING=Размытие В Движении
 option.MOTION_BLURRING.comment=Применяет размытие к изображению при перемещении камеры.
 
@@ -734,11 +737,17 @@ value.CHROMA_ABERRATION.6=6 §c[-]
 value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
 
+option.IPBR_EMISSIVE_MODE=Режим Свечения IPBR+
+option.IPBR_EMISSIVE_MODE.comment=Определяет обработку исходящих данных в IntegratedPBR+. Выбор параметров labPBR или seuspbr позволяет совместимым пакетам ресурсов полностью переопределять исходящие данные IPBR+ для блоков, к которым прикреплены отражающие текстуры. §c[-]§r Не рекомендуется изменять эту настройку, если вы не знаете, что делаете.
+value.IPBR_EMISSIVE_MODE.1=Только IPBR+
+value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
+value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
+
 option.IPBR_PARTICLE_FEATURES=Особенности IPBR+ Частиц
 option.IPBR_PARTICLE_FEATURES.comment=Включает в себя несколько функций для частиц, включая такие, как светящиеся частицы лавы и частицы воды лучшего цвета.
 
 option.FANCY_GLASS=Улучшенное Стекло
-option.FANCY_GLASS.comment=Улучшает качество обычного стекла, добавляя к нему полупрозрачный слой. §c[-]§r Не работает на Iris из-за ошибки Sodium §e[*]§для параметра поддержки RP необходимо установить значение Integrated PBR+.
+option.FANCY_GLASS.comment=Улучшает качество обычного стекла, добавляя к нему полупрозрачный слой. §c[-]§r Не работает на старых версиях Iris §e[*]§для параметра поддержки RP необходимо установить значение Integrated PBR+.
 
 option.GREEN_SCREEN_LIME=Зелёный Хромакей
 option.GREEN_SCREEN_LIME.comment=Превращает «Лаймовый бетон», «Лаймовую шерсть» и «Лаймовый ковер» в зеленые экраны для видеомонтажа. Совет 1: отключите опцию «Размытость Свечения По Краям», чтобы улучшить разделение. Совет 2: Поместите лампы под лаймовые ковры для освещения. Совет 3: Вы можете отключить сглаживание (FXAA) и установить качество детализации на Картошку в Настройках Производительности, чтобы отключить все фильтры и получить идеальное разделение пикселей.
@@ -1011,6 +1020,9 @@ option.PORTAL_EDGE_EFFECT.comment=Добавляет эффект излучаю
 
 option.PUDDLE_VOXELIZATION=Устранение Луж Под Стеклом
 option.PUDDLE_VOXELIZATION.comment=Предотвращает образование дождевых луж в закрытых помещениях со стеклянными крышами, если включена настройка Rain Puddles. §e[*]§r Эта функция работает только в том случае, если в настройках производительности включена функция Улучшеное Цветное Освещение и ваша система поддерживает ее.
+
+option.COLORED_CANDLE_LIGHT=Цветной Свет Свеч
+option.COLORED_CANDLE_LIGHT.comment=Заставляет свет, отбрасываемый свечами, быть того же цвета, что и их основания. §e[*]§r Варианты обесцвеченных свечей будут продолжать использовать обычный цвет огня.
 
 option.COLORED_LIGHT_SATURATION=Насыщенность Цветного Освещения
 option.COLORED_LIGHT_SATURATION.comment=Настраивает степень насыщенности цветов, создаваемых с помощью Улучшенного Цветного Освещения. §e[*]§r Изменять это значение не рекомендуется, так как визуальные эффекты должны выглядеть наиболее сбалансированными при заданной по умолчанию насыщенности.
@@ -1840,6 +1852,8 @@ option.FLOWER_SIZE=Разрешение Цветка
 option.FLOWER_AMOUNT=Количество Цветков
 value.FLOWER_AMOUNT.0=Выкл
 option.SPRING_GREEN_INTENSITY=Интенсивность Весны
+option.EMISSIVE_SPRING_FLOWERS=Светящиеся Цветы
+option.EMISSIVE_SPRING_FLOWERS.comment=Опция отключения излучения от весенних цветов при использовании опции «Светящиеся Цветы» на странице настроек материала Euphoria
 
 option.SUMMER_STRENGTH=Сила Лета
 
@@ -1866,8 +1880,6 @@ value.MCBL_MAIN_DEFINE.1=Экранное Пространство
 
 option.MCBL_INFLUENCE=Влияние Многоцветного Света Блоков
 option.MCBL_INFLUENCE.comment=Контролирует, насколько сильно многоцветный блочный свет влияет на цвет блочного света по умолчанию.
-
-option.COLORED_CANDLES=Многоцветный Свет От Свечей
 
 option.SSS_SNOW_ICE=Снег И Лед SSS
 option.SSS_SNOW_ICE.comment=Добавляет подповерхностное рассеивание к блокам снега и льда.
@@ -2030,6 +2042,8 @@ value.EMISSIVE_FLOWERS_TYPE.0=Все
 value.EMISSIVE_FLOWERS_TYPE.1=Холодные Цвета
 value.EMISSIVE_FLOWERS_TYPE.2=Тёплые Цвета
 
+option.EMISSIVE_FLOWERS_STRENGTH=Интенсивность Свечения
+
 option.SPOOKY=Страшилка
 option.SPOOKY.comment=Включает множество жутких функций :)
 option.EYES=Глаза
@@ -2122,12 +2136,14 @@ value.SHOCKWAVE.1=Круг
 value.SHOCKWAVE.2=Квадрат
 
 option.STAR_LAYER_OW=Звёздный Слой
+option.STAR_LAYER_OW.comment=Добавляет дополнительные звезды к текущим, большие или меньшие.
 value.STAR_LAYER_OW.0=Выкл
 value.STAR_LAYER_OW.1=Меньший Слой
 value.STAR_LAYER_OW.2=Больший Слой
 value.STAR_LAYER_OW.3=Оба Слоя
 
 option.STAR_LAYER_END=Звёздный Слой
+option.STAR_LAYER_END.comment=Добавляет дополнительные звезды к текущим, большие или меньшие.
 value.STAR_LAYER_END.0=Выкл
 value.STAR_LAYER_END.1=Меньший Слой
 value.STAR_LAYER_END.2=Больший Слой
@@ -2155,7 +2171,8 @@ option.STAR_COLOR_3_OW_R=Звезда 3 - Красный
 option.STAR_COLOR_3_OW_G=Звезда 3 - Зелёный
 option.STAR_COLOR_3_OW_B=Звезда 3 - Синий
 
-option.STAR_COLOR_VARIATION_OW=Цветовая Гамма
+option.STAR_COLOR_VARIATION_OW=Интенсивность Цвета
+value.STAR_COLOR_VARIATION_OW.0.0=Выкл
 
 option.STAR_COLOR_1_END_R=Звезда 1 - Красный
 option.STAR_COLOR_1_END_G=Звезда 1 - Зелёный
@@ -2169,4 +2186,8 @@ option.STAR_COLOR_3_END_R=Звезда 3 - Красный
 option.STAR_COLOR_3_END_G=Звезда 3 - Зелёный
 option.STAR_COLOR_3_END_B=Звезда 3 - Синий
 
-option.STAR_COLOR_VARIATION_END=Цветовая Гамма
+option.STAR_COLOR_VARIATION_END=Интенсивность Цвета
+value.STAR_COLOR_VARIATION_END.0.0=Выкл
+
+option.SITUATIONAL_GLOWING_TRIMS=Ситуативное Свечение Отделки
+option.SITUATIONAL_GLOWING_TRIMS.comment=Отделка будет светиться только в пещерах и ночью. §e[*]§r Светящиеся Отделки должны быть включены, чтобы это сработало.
