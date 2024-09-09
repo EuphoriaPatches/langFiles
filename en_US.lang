@@ -2133,12 +2133,14 @@ value.SHOCKWAVE.1=Circle
 value.SHOCKWAVE.2=Square
 
 option.STAR_LAYER_OW=Star Layer
+option.STAR_LAYER_OW.comment=Adds additional stars to the current stars, larger or smaller ones
 value.STAR_LAYER_OW.0=OFF
 value.STAR_LAYER_OW.1=Smaller Layer
 value.STAR_LAYER_OW.2=Bigger Layer
 value.STAR_LAYER_OW.3=Both Layers
 
 option.STAR_LAYER_END=Star Layer
+option.STAR_LAYER_END.comment=Adds additional stars to the current stars, larger or smaller ones
 value.STAR_LAYER_END.0=OFF
 value.STAR_LAYER_END.1=Smaller Layer
 value.STAR_LAYER_END.2=Bigger Layer
@@ -2183,3 +2185,6 @@ option.STAR_COLOR_3_END_B=Star 3 - Blue
 
 option.STAR_COLOR_VARIATION_END=Color Intensity
 value.STAR_COLOR_VARIATION_END.0.0=OFF
+
+option.SITUATIONAL_GLOWING_TRIMS=Situational Glowing Trims
+option.SITUATIONAL_GLOWING_TRIMS.comment=Trims will only glow in caves and at night. §e[*]§r Glowing Trims must be enabled for this to work.
