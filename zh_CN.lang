@@ -89,16 +89,16 @@ option.info17=测试版本: 从SpacEagle17的Patreon获取
 value.info17.0=
 option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
-option.info18=对应 Complementary r5.2.2 版本
+option.info18=对应 Complementary r5.3 版本
 value.info18.0=
 option.info18.comment=感谢您安装 Euphoria Patches :)
 
 option.info19=§a有可用的更新
-value.info19.0=§aX.Y.Z
+value.info19.0=§cX.Y.Z §r->§a X.Y.Z
 option.info19.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载: https://modrinth.com/mod/euphoria-patches.
 
-option.info20=§c当前版本
-value.info20.0=§cX.Y.Z
+option.info20=
+value.info20.0=§amodrinth.com/mod/euphoria-patches
 option.info20.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载: https://modrinth.com/mod/euphoria-patches.
 
 #Style

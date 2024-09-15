@@ -89,16 +89,16 @@ option.info17=Бета-версия: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=Вы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к эксклюзивным версиям разработки. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
 
-option.info18=Для Complementary 5.3
+option.info18=Для Complementary r5.3
 value.info18.0=
 option.info18.comment=Спасибо за установку Euphoria Patches :)
 
-option.info19=§aДОСТУПНО НОВОЕ ОБНОВЛЕНИЕ
-value.info19.0=§aX.Y.Z
+option.info19=§aНОВОЕ ОБНОВЛЕНИЕ
+value.info19.0=§cX.Y.Z §r->§a X.Y.Z
 option.info19.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://modrinth.com/mod/euphoria-patches.
 
-option.info20=§cТекущая Версия
-value.info20.0=§cX.Y.Z
+option.info20=
+value.info20.0=§amodrinth.com/mod/euphoria-patches
 option.info20.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 #Style

@@ -90,12 +90,12 @@ option.info18=For Complementary r5.3
 value.info18.0=
 option.info18.comment=Thank you for Installing Euphoria Patches :)
 
-option.info19=§aNEW UPDATE AVAILABLE
-value.info19.0=§aX.Y.Z
+option.info19=§aNEW UPDATE
+value.info19.0=§cX.Y.Z §r->§a X.Y.Z
 option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
 
-option.info20=§cCurrent Version
-value.info20.0=§cX.Y.Z
+option.info20=
+value.info20.0=§amodrinth.com/mod/euphoria-patches
 option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://modrinth.com/mod/euphoria-patches.
 
 #Style
