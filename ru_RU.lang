@@ -83,11 +83,11 @@ option.info15.comment=EminGT: Главный разработчик Complementar
 
 option.info16=§nКак поддержать Euphoria Patches
 value.info16.0=
-option.info16.comment=Вы можете поддержать Euphoria Patches, интересуясь новыми обновлениями и делясь ими с людьми, но вы также можете напрямую поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к версиям для разработчиков. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+option.info16.comment=Вы можете поддержать Euphoria Patches, интересуясь новыми обновлениями и делясь ими с людьми, но вы также можете напрямую поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к версиям для разработчиков. §l§neuphoriapatches.com/support
 
 option.info17=Бета-версия: SpacEagle17 Patreon
 value.info17.0=
-option.info17.comment=Вы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к эксклюзивным версиям разработки. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+option.info17.comment=Вы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к эксклюзивным версиям разработки. §l§neuphoriapatches.com/support
 
 option.info18=Для Complementary r5.3
 value.info18.0=
@@ -1108,7 +1108,7 @@ value.WATERMARK.3=& Скрытый Интерфейс & Держать Глаз 
 option.WATERMARK_SIZE=Размер Водяного Знака
 
 screen.EUPHORIA_SETTINGS=§bНастройки Euphoria Patches
-screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые патчами Euphoria. §bВы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить новые версии для разработчиков. §r§l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
+screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые патчами Euphoria. §bВы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить новые версии для разработчиков. §r§l§neuphoriapatches.com/support 
     screen.ATMOSPHERE=Атмосфера
     screen.ATMOSPHERE.comment=Настройки, связанные с атмосферой.
         screen.CLOUDS=Облака

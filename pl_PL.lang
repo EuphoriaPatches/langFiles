@@ -80,11 +80,11 @@ option.info15.comment= Pełna lista znajduje się w "credits.txt" w folderze sha
 
 option.info16=§nJak wesprzeć Euphoria Patches
 value.info16.0=
-option.info16.comment=Możesz wspierać Euphoria Patches, interesując się nowymi aktualizacjami i dzieląc się nimi z innymi, ale możesz też bezpośrednio wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do wersji deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+option.info16.comment=Możesz wspierać Euphoria Patches, interesując się nowymi aktualizacjami i dzieląc się nimi z innymi, ale możesz też bezpośrednio wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do wersji deweloperskich. §l§neuphoriapatches.com/support
 
 option.info17=Wersja Beta: Patreon SpacEagle17
 value.info17.0=
-option.info17.comment=Możesz wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do ekskluzywnych wersji deweloperskich. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+option.info17.comment=Możesz wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do ekskluzywnych wersji deweloperskich. §l§neuphoriapatches.com/support
 
 option.info18=Dla Complementary r5.3
 value.info18.0=
@@ -1093,7 +1093,7 @@ value.WATERMARK.3=& Interfejs Schowany & Trzymaj Pajęcze Oko
 option.WATERMARK_SIZE=Rozmiar Znaku Wodnego
 
 screen.EUPHORIA_SETTINGS=§bUstawienia Euphoria Patches
-screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
+screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§l§neuphoriapatches.com/support 
     screen.ATMOSPHERE=Atmosfera
     screen.ATMOSPHERE.comment=Ustawienia które wpływają na atmosferę.
         screen.CLOUDS=Chmury

@@ -83,11 +83,11 @@ option.info15.comment=完整致谢名单可在光影文件夹里的 Credits.txt 
 
 option.info16=§n如何支持 Euphoria Patches
 value.info16.0=
-option.info16.comment=使用 Euphoria Patches 即是最好的支持. 向更多人推荐和介绍本光影, 保持对我们未来的更新内容的好奇和热情. 可以直接通过 Patreon 和 Ko-Fi 来给予金钱支持的同时获得开发版本的光影文件. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
+option.info16.comment=使用 Euphoria Patches 即是最好的支持. 向更多人推荐和介绍本光影, 保持对我们未来的更新内容的好奇和热情. 可以直接通过 Patreon 和 Ko-Fi 来给予金钱支持的同时获得开发版本的光影文件. §l§neuphoriapatches.com/support 
 
 option.info17=测试版本: 从SpacEagle17的Patreon获取
 value.info17.0=
-option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本. §l§neuphoriapatches.com/support
 
 option.info18=对应 Complementary r5.3 版本
 value.info18.0=
@@ -1096,7 +1096,7 @@ value.WATERMARK.3=& 隐藏 GUI 且手持蜘蛛眼时
 option.WATERMARK_SIZE=水印大小
 
 screen.EUPHORIA_SETTINGS=§bEuphoria Patches 相关设置
-screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的设置. §b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
+screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的设置. §b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§l§neuphoriapatches.com/support 
     screen.ATMOSPHERE=大气
     screen.ATMOSPHERE.comment=与大气相关的设置.
         screen.CLOUDS=云层

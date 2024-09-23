@@ -80,11 +80,11 @@ option.info15.comment=The entire credits can be found in the Credits.txt file in
 
 option.info16=§nHow to support Euphoria Patches
 value.info16.0=
-option.info16.comment=You can support Euphoria Patches by being curious about new updates and sharing it with people, but you can also directly support SpacEagle17 on Patreon or Ko-Fi and access developer versions. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+option.info16.comment=You can support Euphoria Patches by being curious about new updates and sharing it with people, but you can also directly support SpacEagle17 on Patreon or Ko-Fi and access developer versions. §l§neuphoriapatches.com/support
 
 option.info17=Beta Version: SpacEagle17 Patreon
 value.info17.0=
-option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access exclusive development versions. §l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17.
+option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access exclusive development versions. §l§neuphoriapatches.com/support
 
 option.info18=For Complementary r5.3
 value.info18.0=
@@ -1105,7 +1105,7 @@ value.WATERMARK.3=& GUI Hidden & Hold Spider Eye
 option.WATERMARK_SIZE=Watermark Size
 
 screen.EUPHORIA_SETTINGS=§bEuphoria Patches Settings
-screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches. §bYou can support SpacEagle17 on Patreon or Ko-Fi and get new developer versions. §r§l§nwww.patreon.com/SpacEagle17. §l§nwww.ko-fi.com/spaceagle17. 
+screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches. §bYou can support SpacEagle17 on Patreon or Ko-Fi and get new developer versions. §r§l§neuphoriapatches.com/support 
     screen.ATMOSPHERE=Atmosphere
     screen.ATMOSPHERE.comment=Settings that relate to the atmosphere.
         screen.CLOUDS=Clouds
