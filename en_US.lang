@@ -1850,7 +1850,7 @@ option.FLOWER_AMOUNT=Flower Amount
 value.FLOWER_AMOUNT.0=OFF
 option.SPRING_GREEN_INTENSITY=Spring Intensity
 option.EMISSIVE_SPRING_FLOWERS=Emissive Flowers
-option.EMISSIVE_SPRING_FLOWERS.comment=Option to turn emission from spirng flowers off if using the Emissive Flowers Option found in the Euphoria Material settings page
+option.EMISSIVE_SPRING_FLOWERS.comment=Option to turn emission from spring flowers off if using the Emissive Flowers Option found in the Euphoria Material settings page
 
 option.SUMMER_STRENGTH=Summer Strength
 
