@@ -1208,7 +1208,7 @@ screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые па
     screen.POPULAR_SETTINGS=§bПопулярные Настройки
         screen.POPULAR_SETTINGS_2=Страница 2
         screen.POPULAR_SETTINGS_3=Страница 3
-    screen.EP_VERSION=Euphoria Patches §d1.3.3
+    screen.EP_VERSION=Euphoria Patches §d1.4.0
 
 option.DAYLIGHT_CYCLE_COMPAT=Анимация Мирового Времени
 option.DAYLIGHT_CYCLE_COMPAT.comment=используйте это, ТОЛЬКО если вы играете с параметром gamerule doDaylightCycle false. При включении этого параметра облака и другие объекты анимируются в мирах с выключенным дневным светом, но они больше не синхронизируются между игроками.
