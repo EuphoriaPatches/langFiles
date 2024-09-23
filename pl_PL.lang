@@ -11,7 +11,7 @@ profile.MEDIUM=§aŚredni
 profile.HIGH=§eWysoki (Domyślne)
 profile.VERYHIGH=§cBardzo Wysoki
 profile.ULTRA=§4§lUltra
-profile.comment=Profile shaderów zmieniają ustawienia jakości z najbardziej zoptymalizowanym stosunkiem jakości wizualnej do wydajności. §e[*]§r Zaleca się użycie jednego z tych profili, chyba że wiesz, co robisz. §e[*]§r Wszystkie ustawienia zmieniane przez profil można znaleść w menu "Ustawienia Jakości".
+profile.comment=Profile shaderów zmieniają ustawienia jakości z najbardziej zoptymalizowanym stosunkiem jakości wizualnej do wydajności. §e[*]§r Zaleca się użycie jednego z tych profili, chyba że wiesz, co robisz. §e[*]§r Wszystkie ustawienia zmieniane przez profil można znaleść w menu "Ustawienia Jakości". Profil "Popularne Ustawienia" automatycznie właczy ulubione ustawienia społeczności.
 
 #Information
 screen.INFORMATION=Informacja
@@ -686,6 +686,9 @@ value.TAA_MODE.1=Sprytny & Subtelny §a[+]
 value.TAA_MODE.2=Intensywny §e[*]
 value.TAA_MODE.0=WYŁ. §c[-]
 
+option.DISTANT_LIGHT_BOKEH=Bokeh Odległego Światła
+option.DISTANT_LIGHT_BOKEH.comment=Sprawia, że odległe źródła światła wyglądają na rozproszone poprzez zastosowanie rozmycia pojedynczego piksela. §a[+]§r Ten efekt korzysta ze ZintegrowanegoPBR+ (opcjonalnie), dostosowując odległe źródła światła w celu uzyskania lepszego wyglądu.
+
 option.MOTION_BLURRING=Rozmycie w Ruchu
 option.MOTION_BLURRING.comment=Rozmycie obrazu podczas poruszania kamerą.
 
@@ -731,11 +734,17 @@ value.CHROMA_ABERRATION.6=6 §c[-]
 value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
 
+option.IPBR_EMISSIVE_MODE=Tryb Emisyji IPBR+
+option.IPBR_EMISSIVE_MODE.comment=Określa sposób obsługi emisji w ZintegrowanymPBR+. Wybranie opcji labPBR lub seuspbr pozwala kompatybilnym pakietom zasobów całkowicie zastąpić emisje IPBR+ na blokach, które mają dołączone tekstury lustrzane. §c[-]§r Nie zaleca się zmiany tego ustawienia, chyba że wiesz, co robisz.
+value.IPBR_EMISSIVE_MODE.1=Tylko IPBR+
+value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
+value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
+
 option.IPBR_PARTICLE_FEATURES=Ustawienia ZintegrowanegoPBR+ Cząsteczek
 option.IPBR_PARTICLE_FEATURES.comment=Włącza kilka funkcji dla cząsteczek, w tym świecące cząsteczki lawy i ładniejsze cząsteczki wody.
 
 option.FANCY_GLASS=Ulepszone Szkło
-option.FANCY_GLASS.comment=Ulepsza zwykłe szkło, dodając do niego półprzezroczystą warstwę. §c[-]§r Nie działa na Iris z powodu problemów technicznych. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+.
+option.FANCY_GLASS.comment=Ulepsza zwykłe szkło, dodając do niego półprzezroczystą warstwę. §c[-]§r Nie działa na starszych wersjach Iris (przed wersją 1.8). §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+.
 
 option.GREEN_SCREEN_LIME=Zielony ekran
 option.GREEN_SCREEN_LIME.comment=Zmienia "Jasnozielony Beton", "Jasnozielona Wełna" i "Jasnozielony Dywan" w zielone ekrany do edycji wideo. Wskazówka 1: Wyłącz opcję "Blask", aby poprawić separację. Wskazówka 2: Umieść światła pod jasnozielonymi dywanami, aby je oświetlić. Wskazówka 3: Możesz wyłączyć antyaliasing (FXAA) i ustawić jakość detali na "ziemniak" w ustawieniach jakości, aby wyłączyć filtrowanie obrazu i uzyskać idealną separację pikseli.
@@ -1009,6 +1018,9 @@ option.PORTAL_EDGE_EFFECT.comment=Dodaje emisyjny efekt obramowania do portali E
 option.PUDDLE_VOXELIZATION=Napraw Kałuże pod Szkłem
 option.PUDDLE_VOXELIZATION.comment=Zapobiega tworzeniu się kałuż w zamkniętych obszarach ze szklanymi dachami, gdy włączone są kałuże. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
 
+option.COLORED_CANDLE_LIGHT=Kolorowe Świece
+option.COLORED_CANDLE_LIGHT.comment=Sprawia, że światło emitowane przez świece mają ten sam kolor co ich podstawy. §e[*]§r Świece bez kolorowej podstawy nadal będą używać zwykłego koloru ognia.
+
 option.COLORED_LIGHT_SATURATION=Nasycenie Kolorowego Światła
 option.COLORED_LIGHT_SATURATION.comment=Pozwala dostosować nasycenie kolorów Zaawansowanego Kolorowego Oświetlenia (ACL). §e[*]§r Nie zaleca się zmiany tej wartości, ponieważ grafika wygląda na najbardziej zrównoważoną przy domyślnym nasyceniu.
 
@@ -1109,7 +1121,9 @@ screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMo
             screen.END_BEAMS_SETTINGS.comment=Ustawienia związane z zorzą Ender.
             screen.END_STAR=Ustawienia Gwiazd Endu
             screen.END_STAR.comment=Ustawienia związane z gwiazdami wymiaru Endu.
+                screen.STAR_COLORS_END=Kolory Gwiazd Endu
         screen.STARS_OVERWORLD=Gwiazdy
+            screen.STAR_COLORS_OW=Kolory Gwiazd
         screen.RAIN_SETTINGS=Ustawienia Deszczu
     screen.WORLD=Świat
     screen.WORLD.comment=Ustawienia które wpływają na świat.
@@ -1427,6 +1441,10 @@ value.STAR_BRIGHTNESS.33=3.0
 
 option.MORE_STARS_OVERWORLD=Więcej Gwiazd na Powierzchni
 option.MORE_STARS_OVERWORLD.comment=Zastępuje ilość gwiazd na nocnym niebie dużo wyższą wartością. Dotyczy wymiaru Powierzchni.
+value.MORE_STARS_OVERWORLD.0=WYŁ.
+value.MORE_STARS_OVERWORLD.1=Dużo
+value.MORE_STARS_OVERWORLD.2=Za Dużo
+
 option.TWINKLING_STARS=Migoczące Gwiazdy
 option.TWINKLING_STARS.comment=Niech gwiazdy mrugają do ciebie.
 value.TWINKLING_STARS.0=WYŁ.
@@ -1831,6 +1849,8 @@ option.FLOWER_SIZE=Rozdzielczość Kwiatów
 option.FLOWER_AMOUNT=Ilość Kwiatów
 value.FLOWER_AMOUNT.0=WYŁ.
 option.SPRING_GREEN_INTENSITY=Intensywność Wiosny
+option.EMISSIVE_SPRING_FLOWERS=Świecące Kwiaty
+option.EMISSIVE_SPRING_FLOWERS.comment=Opcja wyłączenia emisji ze wiosennych kwiatów w przypadku korzystania z opcji Świecące Kwiaty dostępnej na stronie ustawień materiałów Euphoria.
 
 option.SUMMER_STRENGTH=Intensywność Lata
 
@@ -2019,6 +2039,8 @@ value.EMISSIVE_FLOWERS_TYPE.0=Wszystkie
 value.EMISSIVE_FLOWERS_TYPE.1=Zimne Kolory
 value.EMISSIVE_FLOWERS_TYPE.2=Ciepłe Kolory
 
+option.EMISSIVE_FLOWERS_STRENGTH=Jasność
+
 option.SPOOKY=Spooklementary
 option.SPOOKY.comment=Włączona wiele przerażających  funkcji :)
 option.EYES=Oczy
@@ -2111,13 +2133,58 @@ value.SHOCKWAVE.1=Okrągła
 value.SHOCKWAVE.2=Kwadratowa
 
 option.STAR_LAYER_OW=Warstwy Gwiazd
+option.STAR_LAYER_OW.comment=Dodaje dodatkowe gwiazdy do nocnego nieba, większe lub mniejsze.
 value.STAR_LAYER_OW.0=WYŁ.
 value.STAR_LAYER_OW.1=Mniejsza Warstwa
 value.STAR_LAYER_OW.2=Większa Warstwa
 value.STAR_LAYER_OW.3=Obydwie Warstwy
 
 option.STAR_LAYER_END=Warstwy Gwiazd
+option.STAR_LAYER_END.comment=Dodaje dodatkowe gwiazdy do nieba w endzie, większe lub mniejsze.
 value.STAR_LAYER_END.0=WYŁ.
 value.STAR_LAYER_END.1=Mniejsza Warstwa
 value.STAR_LAYER_END.2=Większa Warstwa
 value.STAR_LAYER_END.3=Obydwie Warstwy
+
+option.STAR_ROUNDNESS_END=Okrągłe Gwiazdy
+value.STAR_ROUNDNESS_END.0=WYŁ.
+
+option.STAR_ROUNDNESS_OW=Okrągłe Gwiazdy
+value.STAR_ROUNDNESS_OW.0=WYŁ.
+
+option.STAR_SOFTNESS_OW=Zmiękczenie Gwiazd
+
+option.STAR_SOFTNESS_END=Zmiękczenie Gwiazd
+
+option.STAR_COLOR_1_OW_R=Gwiazdy 1 - Czerwone
+option.STAR_COLOR_1_OW_G=Gwiazdy 1 - Zielone
+option.STAR_COLOR_1_OW_B=Gwiazdy 1 - Niebieskie
+
+option.STAR_COLOR_2_OW_R=Gwiazdy 2 - Czerwone
+option.STAR_COLOR_2_OW_G=Gwiazdy 2 - Zielone
+option.STAR_COLOR_2_OW_B=Gwiazdy 2 - Niebieskie
+
+option.STAR_COLOR_3_OW_R=Gwiazdy 3 - Czerwone
+option.STAR_COLOR_3_OW_G=Gwiazdy 3 - Zielone
+option.STAR_COLOR_3_OW_B=Gwiazdy 3 - Niebieskie
+
+option.STAR_COLOR_VARIATION_OW=Nasycenie Kolorów
+value.STAR_COLOR_VARIATION_OW.0.0=WYŁ.
+
+option.STAR_COLOR_1_END_R=Gwiazdy 1 - Czerwone
+option.STAR_COLOR_1_END_G=Gwiazdy 1 - Zielone
+option.STAR_COLOR_1_END_B=Gwiazdy 1 - Niebieskie
+
+option.STAR_COLOR_2_END_R=Gwiazdy 2 - Czerwone
+option.STAR_COLOR_2_END_G=Gwiazdy 2 - Zielone
+option.STAR_COLOR_2_END_B=Gwiazdy 2 - Niebieskie
+
+option.STAR_COLOR_3_END_R=Gwiazdy 3 - Czerwone
+option.STAR_COLOR_3_END_G=Gwiazdy 3 - Zielone
+option.STAR_COLOR_3_END_B=Gwiazdy 3 - Niebieskie
+
+option.STAR_COLOR_VARIATION_END=Nasycenie Kolorów
+value.STAR_COLOR_VARIATION_END.0.0=WYŁ.
+
+option.SITUATIONAL_GLOWING_TRIMS=Wykończenia Świadome Otoczenia
+option.SITUATIONAL_GLOWING_TRIMS.comment=Wykończenia zbroi będą się świecić tylko w jaskiniach i w nocy. §e[*]§r Świecące Wykończenia Zbroi muszą być włączone, aby ta opcja działała.
