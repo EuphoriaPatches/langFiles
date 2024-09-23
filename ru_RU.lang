@@ -95,11 +95,11 @@ option.info18.comment=Спасибо за установку Euphoria Patches :)
 
 option.info19=§aНОВОЕ ОБНОВЛЕНИЕ
 value.info19.0=§cX.Y.Z §r->§a X.Y.Z
-option.info19.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://modrinth.com/mod/euphoria-patches.
+option.info19.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://euphoriapatches.com/download.
 
 option.info20=
-value.info20.0=§amodrinth.com/mod/euphoria-patches
-option.info20.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://modrinth.com/mod/euphoria-patches.
+value.info20.0=§aeuphoriapatches.com/download
+option.info20.comment=Доступна новая версия мода EuphoriaPatcher. Загрузите ее с Modrinth: https://euphoriapatches.com/download.
 
 #Style
 option.SHADER_STYLE=Визуальный Стиль

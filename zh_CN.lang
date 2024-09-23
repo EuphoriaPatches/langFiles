@@ -95,11 +95,11 @@ option.info18.comment=感谢您安装 Euphoria Patches :)
 
 option.info19=§a有可用的更新
 value.info19.0=§cX.Y.Z §r->§a X.Y.Z
-option.info19.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载: https://modrinth.com/mod/euphoria-patches.
+option.info19.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载: https://euphoriapatches.com/download.
 
 option.info20=
-value.info20.0=§amodrinth.com/mod/euphoria-patches
-option.info20.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载: https://modrinth.com/mod/euphoria-patches.
+value.info20.0=§aeuphoriapatches.com/download
+option.info20.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载: https://euphoriapatches.com/download.
 
 #Style
 option.SHADER_STYLE=视觉风格
