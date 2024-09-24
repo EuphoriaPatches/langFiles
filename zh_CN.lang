@@ -1208,7 +1208,7 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的
     screen.POPULAR_SETTINGS=§b最受欢迎的设置
         screen.POPULAR_SETTINGS_2=第二页
         screen.POPULAR_SETTINGS_3=第三页
-    screen.EP_VERSION=Euphoria Patches §d1.4.0
+    screen.EP_VERSION=Euphoria Patches §d1.4.1
 
 option.DAYLIGHT_CYCLE_COMPAT=世界时间动画
 option.DAYLIGHT_CYCLE_COMPAT.comment=本选项提供了 "在关闭世界日期循环 ( /gamerule doDaylightCycle false ) 后云层和其他动画效果正常工作" 的选择. 但这意味着多人游戏各玩家间的动画效果不再同步了.
