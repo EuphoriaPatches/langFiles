@@ -11,7 +11,7 @@ profile.MEDIUM=§a中
 profile.HIGH=§e高(默认)
 profile.VERYHIGH=§c很高
 profile.ULTRA=§4极致
-profile.comment=光影配置以最优化的视觉效果和性能比改变性能设置. §e[*]§r 除非你明确知道自己在做什么, 否则建议用任意预设配置来进行性能设置. §e[*]§r 所有受影响的设置都可以在 性能设置 菜单中找到. Euphoria Patches 配置会启用根据社区调研得出的公认最受喜欢的设置.
+profile.comment=光影配置以最优化的视觉效果和性能比改变性能设置. §e[*]§r 除非你明确知道自己在做什么, 否则建议用任意预设配置来进行性能设置. §e[*]§r 所有受影响的设置都可以在 性能设置 菜单中找到. 最受欢迎的设置 配置会启用根据社区调研得出的公认最受喜欢的设置.
 
 #Information
 screen.INFORMATION=一些提示信息
@@ -689,6 +689,9 @@ value.TAA_MODE.1=智能 & 轻量
 value.TAA_MODE.2=强效 §c[-]
 value.TAA_MODE.0=关 §c[-]
 
+option.DISTANT_LIGHT_BOKEH=远处光源虚化
+option.DISTANT_LIGHT_BOKEH.comment=通过应用一个单像素模糊使距离玩家有一定距离的光源看起来有点虚散的感觉 §a[+]§r 本选项的效果在启用 集成PBR+ (可选) 后因调节远处光源而使得效果更好.
+
 option.MOTION_BLURRING=运动模糊
 option.MOTION_BLURRING.comment=当镜头移动的时候向画面应用模糊.
 
@@ -734,11 +737,17 @@ value.CHROMA_ABERRATION.6=6 §c[-]
 value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
 
+option.IPBR_EMISSIVE_MODE=集成PBR+自发光模式
+option.IPBR_EMISSIVE_MODE.comment=选择集成PBR+自发光的处理模式. 选择 labPBR 或 seuspbr 时允许在使用兼容的资源包时使方块的集成PBR+自发光效果被资源包内对应的高光贴图效果完全覆盖. §c[-]§r 除非知道自己在做什么, 否则不推荐改变这个选项的默认数值.
+value.IPBR_EMISSIVE_MODE.1=IPBR+ Only
+value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
+value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
+
 option.IPBR_PARTICLE_FEATURES=集成PBR+粒子功能
 option.IPBR_PARTICLE_FEATURES.comment=启用粒子的多个集成PBR+功能, 包括岩浆的发光粒子和有更好颜色的水粒子等.
 
 option.FANCY_GLASS=更好的玻璃
-option.FANCY_GLASS.comment=通过在普通玻璃上增加一个半透明层来增加质感. §c[-]§r 由于钠的问题,目前在 Iris 上不生效.  §e[*]§r 资源包支持选项需设置为集成PBR+.
+option.FANCY_GLASS.comment=通过在普通玻璃上增加一个半透明层来增加质感. §c[-]§r 在较旧版本的 Iris 上不生效.  §e[*]§r 资源包支持选项需设置为集成PBR+.
 
 option.GREEN_SCREEN_LIME=绿幕 - 黄绿色方块
 option.GREEN_SCREEN_LIME.comment=把 黄绿色混凝土, 黄绿色羊毛, 黄绿色地毯 转换为便于视频剪辑的绿幕. 提示一: 关闭泛光以提高和其他区域的分离程度. 提示二: 在黄绿色地毯下放置光源. 提示三: 可以关闭抗锯齿 (FXAA) 并且在性能设置里把细节质量设置为极低来禁用所有的过滤, 以得到完美像素分离效果.
@@ -1012,6 +1021,9 @@ option.PORTAL_EDGE_EFFECT.comment=为下界和末地传送门边缘添加发光�
 option.PUDDLE_VOXELIZATION=修复可在玻璃下方出现雨水坑的问题
 option.PUDDLE_VOXELIZATION.comment=启用 雨水坑 设置后, 防止在有玻璃屋顶的封闭区域形成雨水坑. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效.
 
+option.COLORED_CANDLE_LIGHT=彩色蜡烛光
+option.COLORED_CANDLE_LIGHT.comment=使蜡烛投射的照明颜色与它们的底座颜色一致. §e[*]§r 低饱和度颜色的蜡烛变种仍使用以往使用的火焰颜色.
+
 option.COLORED_LIGHT_SATURATION=彩色照明饱和度
 option.COLORED_LIGHT_SATURATION.comment=调节由 高级彩色照明 选项产生的照明颜色的饱和度. §e[*]§r 不推荐改变本选项的数值, 默认的饱和度是为了最平衡的视觉效果设计的.
 
@@ -1084,7 +1096,7 @@ option.XLIGHT_I=方块光 - 强度 - 倍率
 ####### Euphoria Patches #######
 
 profile.SPACEAGLE17= §f۞ §kO§f调试 (请勿使用)§f§kO
-profile.POPULAR=§b最受欢迎的设置
+profile.POPULAR=§b最受欢迎§d的设置
 
 #WATERMARK
 option.WATERMARK=水印类型
@@ -1112,7 +1124,9 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的
             screen.END_BEAMS_SETTINGS.comment=关于末地星束的设置.
             screen.END_STAR=星空设置 - 末地
             screen.END_STAR.comment=关于末地星空的设置.
+                screen.STAR_COLORS_END=末地星星颜色
         screen.STARS_OVERWORLD=星空设置 - 主世界
+            screen.STAR_COLORS_OW=星星颜色
         screen.RAIN_SETTINGS=雨天设置
     screen.WORLD=世界
     screen.WORLD.comment=关于世界的设置.
@@ -1430,6 +1444,10 @@ value.STAR_BRIGHTNESS.33=3.0
 
 option.MORE_STARS_OVERWORLD=繁星密布 - 主世界
 option.MORE_STARS_OVERWORLD.comment=覆写 Complementary 的星星数量并使其更多. 应用于主世界.
+value.MORE_STARS_OVERWORLD.0=关
+value.MORE_STARS_OVERWORLD.1=很多
+value.MORE_STARS_OVERWORLD.2=过多
+
 option.TWINKLING_STARS=繁星闪烁
 option.TWINKLING_STARS.comment=让星星对你眨眼~
 value.TWINKLING_STARS.0=关
@@ -1834,6 +1852,8 @@ option.FLOWER_SIZE=春花分辨率
 option.FLOWER_AMOUNT=春花数量
 value.FLOWER_AMOUNT.0=关
 option.SPRING_GREEN_INTENSITY=春天强度
+option.EMISSIVE_SPRING_FLOWERS=春花伴随发光
+option.EMISSIVE_SPRING_FLOWERS.comment=如果启用了 Euphoria 材质设置页面中的 花朵发光选项, 本选项提供一个单独关闭春季中草方块上随机花朵发光的选择.
 
 option.SUMMER_STRENGTH=夏天强度
 
@@ -2024,6 +2044,8 @@ value.EMISSIVE_FLOWERS_TYPE.0=全部
 value.EMISSIVE_FLOWERS_TYPE.1=冷色
 value.EMISSIVE_FLOWERS_TYPE.2=暖色
 
+option.EMISSIVE_FLOWERS_STRENGTH=发光强度
+
 option.SPOOKY=Spooklementary
 option.SPOOKY.comment=启用大量恐怖效果 :)
 option.EYES=眼睛
@@ -2115,14 +2137,57 @@ value.SHOCKWAVE.0=关
 value.SHOCKWAVE.1=圆形
 value.SHOCKWAVE.2=方形
 
-option.STAR_LAYER_OW=错落星层
+option.STAR_LAYER_OW=错落星层 - 主世界
 value.STAR_LAYER_OW.0=关
 value.STAR_LAYER_OW.1=仅小星层
 value.STAR_LAYER_OW.2=仅大星层
 value.STAR_LAYER_OW.3=双星层
 
-option.STAR_LAYER_END=错落星层
+option.STAR_LAYER_END=错落星层 - 末地
 value.STAR_LAYER_END.0=关
 value.STAR_LAYER_END.1=仅小星层
 value.STAR_LAYER_END.2=仅大星层
 value.STAR_LAYER_END.3=双星层
+
+option.STAR_ROUNDNESS_END=星星圆润度 - 末地
+value.STAR_ROUNDNESS_END.0=关
+
+option.STAR_ROUNDNESS_OW=星星圆润度 - 主世界
+value.STAR_ROUNDNESS_OW.0=关
+
+option.STAR_SOFTNESS_OW=星星柔和度 - 主世界
+
+option.STAR_SOFTNESS_END=星星柔和度 - 末地
+
+option.STAR_COLOR_1_OW_R=Ⅰ类星星 - 红色
+option.STAR_COLOR_1_OW_G=Ⅰ类星星 - 绿色
+option.STAR_COLOR_1_OW_B=Ⅰ类星星 - 蓝色
+
+option.STAR_COLOR_2_OW_R=Ⅱ类星星 - 红色
+option.STAR_COLOR_2_OW_G=Ⅱ类星星 - 绿色
+option.STAR_COLOR_2_OW_B=Ⅱ类星星 - 蓝色
+
+option.STAR_COLOR_3_OW_R=Ⅲ类星星 - 红色
+option.STAR_COLOR_3_OW_G=Ⅲ类星星 - 绿色
+option.STAR_COLOR_3_OW_B=Ⅲ类星星 - 蓝色
+
+option.STAR_COLOR_VARIATION_OW=颜色强度 - 主世界
+value.STAR_COLOR_VARIATION_OW.0.0=关
+
+option.STAR_COLOR_1_END_R=Ⅰ类星星 - 红色
+option.STAR_COLOR_1_END_G=Ⅰ类星星 - 绿色
+option.STAR_COLOR_1_END_B=Ⅰ类星星 - 蓝色
+
+option.STAR_COLOR_2_END_R=Ⅱ类星星 - 红色
+option.STAR_COLOR_2_END_G=Ⅱ类星星 - 绿色
+option.STAR_COLOR_2_END_B=Ⅱ类星星 - 蓝色
+
+option.STAR_COLOR_3_END_R=Ⅲ类星星 - 红色
+option.STAR_COLOR_3_END_G=Ⅲ类星星 - 绿色
+option.STAR_COLOR_3_END_B=Ⅲ类星星 - 蓝色
+
+option.STAR_COLOR_VARIATION_END=颜色强度 - 末地
+value.STAR_COLOR_VARIATION_END.0.0=关
+
+option.SITUATIONAL_GLOWING_TRIMS=情景式盔甲纹饰发光
+option.SITUATIONAL_GLOWING_TRIMS.comment=盔甲纹饰仅会在洞穴和夜晚时发光. §e[*]§r 本选项需启用 盔甲纹饰发光 选项才能生效.
