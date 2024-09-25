@@ -6,8 +6,8 @@
     "step1After": "(nie rozpakowywuj, modyfikuj i nie zmieniaj nazwy pliku).",
     "substep1_1": "Działa z Complementary",
     "or": "lub",
-    "step2Before": "Pobierz najnowszą",
-    "step2After": "wersje moda i skopiuj ją do folderu modów",
+    "step2Before": "Pobierz najnowszą wersje moda",
+    "step2After": "i skopiuj go do folderu modów",
     "step3": "Uruchom gre używając jednego z tych mod loaderów: Fabric | Quilt | Forge | NeoForge",
     "step4": "Shadery Complementary + Euphoria Patches pojawią się w twoim folderze shaderpacków",
 
@@ -16,7 +16,7 @@
     "downloadPageButton": "Przejdź Na Stronę Pobierania",
 
     "installerMethodTitle": "Metoda Instalatora",
-    "installerStep1Before": "Idź do",
+    "installerStep1Before": "Odwiedź stronę",
     "installerStep1After": "i pobierz instalator",
     "installerStep2": "Otwórz instalator, klikając dwukrotnie pobrany plik",
     "installerStep3": "Teraz kliknij 'Advanced Settings'",
