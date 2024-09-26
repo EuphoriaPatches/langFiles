@@ -1,7 +1,7 @@
 {
-    "pageTitle": "Como Instalar Euphoria Patches",
+    "pageTitle": "Cómo Instalar Euphoria Patches",
 
-    "modMethodTitle": "El Metodo Mod",
+    "modMethodTitle": "El Método Mod",
     "step1": "Descarga la versión de Complementary Shaders necesaria y colócala en la carpeta de shaderpacks",
     "step1After": "(no lo descomprimas, modifiques o renombres).",
     "substep1_1": "Funciona con Complementary",
@@ -15,7 +15,7 @@
 
     "downloadPageButton": "Ir a la Página de Descargas",
 
-    "installerMethodTitle": "El Metodo del Instalador",
+    "installerMethodTitle": "El Método del Instalador",
     "installerStep1Before": "Ve a la página",
     "installerStep1After": "y descarga el instalador.",
     "installerStep2": "Abre el instalador haciendo doble clic en el archivo descargado",
