@@ -1,0 +1,25 @@
+{
+    "pageTitle": "Comment installer Euphoria Patches",
+
+    "modMethodTitle": "Avec un mod",
+    "step1": "Récupérez la version de Complementary requise et mettez-la dans votre dossier de shaders",
+    "step1After": "(ne le dézippez, modifiez ou renommez pas).",
+    "substep1_1": "Fonctionne avec Complementary",
+    "or": "ou",
+    "step2Before": "Récupérez la dernière version de",
+    "step2After": "et mettez-la dans votre dossier de mods.",
+    "step3": "Lancez le jeu avec au choix : Fabric | Quilt | Forge | NeoForge",
+    "step4": "Complementary Shaders + Euphoria Patches va alors apparaître dans votre dossier de shaders",
+
+    "unsupportedVersions": "Pour les versions de Minecraft non supportées, utilisez le patcher avec une version plus récente de Minecraft, générez Euphoria Patches et copiez ensuite le shader généré vers l'instance non supportée.",
+
+    "downloadPageButton": "Allez à la page Downloads",
+
+    "installerMethodTitle": "Avec l'installateur",
+    "installerStep1Before": "Allez sur",
+    "installerStep1After": "et téléchargez l'installateur.",
+    "installerStep2": "Ouvrez l'installateur en double-cliquant sur le fichier téléchargé",
+    "installerStep3": "Maintenant, cliquez sur 'Advanced Settings'",
+    "installerStep4": "Cochez la case 'Install Euphoria Patches'",
+    "installerStep5": "Cliquez sur installer, Complementary Shaders + Euphoria Patches apparaîtra alors dans votre dossier de shaders"
+}
