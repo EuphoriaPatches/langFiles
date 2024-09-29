@@ -1,0 +1,27 @@
+{
+    "isRightToLeft": true,
+    
+    "pageTitle": "Euphoria Patches איך להוריד את",
+
+    "modMethodTitle": "שיטת המוד",
+    "step1": "shaderpacksושימו את זה בתיקיית ה Complementary תשיגו את הגרסה הדרושה של",
+    "step1After": ".(שינוי שם או כל שינו אחר ,unzip אנא אל תבצעו)",
+    "substep1_1": "Complementary עובד עם",
+    "or": "או",
+    "step2Before": ".modsשל קובץ המוד ושימו אותו בתיקיית ה",
+    "step2After": "תשיגו את הגרסה העדכנית",
+    "step3": "Fabric | Quilt | Forge | NeoForge :תריצו את המשחק עם איזה אחד מהם",
+    "step4": "שלכם shaderpacksאמורים להופיע בתיקיית ה Complementary Shaders + Euphoria Patches",
+
+    "unsupportedVersions": ".ואז תעתיקו את התיקייה של השיידרפאק שנוצרה לתוך הגרסה הישנה לאחר מכן Euphoria Patches לגרסות מיינקראפט שאינן נתמכות, תשתמשו בפאצ'ר עם גרסת מיינקראפט עדכנית יותר, תיצרו",
+
+    "downloadPageButton": "תלכו לעמוד ההורדות",
+
+    "installerMethodTitle": "שיטת ההתקנה",
+    "installerStep1Before": ".ותורידו את המתקין",
+    "installerStep1After": "לכו ל",
+    "installerStep2": "פתחו את המתקין על ידי לחיצה כפולה על הקובץ המורד",
+    "installerStep3": "'Advanced Settings' עכשיו תלחצו על",
+    "installerStep4": "'Install Euphoria Patches' תסמנו את תיבת הסימון",
+    "installerStep5": "שלכם עכשיו shaderpacksאמורים להופיע בתיקיית ה Complementary Shaders + Euphoria Patches ,תלחצו על כפתור ההתקנה,"
+}
