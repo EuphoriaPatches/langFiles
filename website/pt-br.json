@@ -19,7 +19,7 @@
     "installerStep1Before": "Acesse",
     "installerStep1After": "e baixe o instalador.",
     "installerStep2": "Abra o instalador com dois cliques no arquivo baixado.",
-    "installerStep3": "Clique em 'Configurações Avançadas'.",
-    "installerStep4": "Marque a opção 'Instalar Patches Euphoria'.",
-    "installerStep5": "Clique em 'Instalar'. Complementary Shaders e Euphoria Patches agora aparecerão na sua pasta shaderpacks."
+    "installerStep3": "Clique em 'Advanced Settings'.",
+    "installerStep4": "Marque a opção 'Install Euphoria Patches'.",
+    "installerStep5": "Clique em 'Install'. Complementary Shaders e Euphoria Patches agora aparecerão na sua pasta shaderpacks."
 }
