@@ -1,0 +1,27 @@
+{
+    "isRightToLeft": false,
+
+    "pageTitle": "Euphoria Patches Nasıl İndirilir",
+
+    "modMethodTitle": "Mod Yolu",
+    "step1": "İlk öncelikle gerekli olan Complementary versiyonunu indirin ve shaderpacks klasörüne koyun.",
+    "step1After": "(dosyayı zipten çıkarmayın,kurcalamayın veya ismini değiştirmeyin).",
+    "substep1_1": "Complementary ile çalışır",
+    "or": "yada",
+    "step2Before": "Son ",
+    "step2After": "sürümünü indirip, mod dosyasını mod klasörüne atın.",
+    "step3": "Oyunu bunlardan biriyle başlatın: Fabric | Quilt | Forge | NeoForge",
+    "step4": "Complementary Shaders + Euphoria Patches artık shaderpack klasörünüzde gözükecek",
+
+    "unsupportedVersions": "Desteklenmeyen Minecraft sürümleri için, patcher'i daha yeni Minecraft sürümüyle kullanın, Euphoria Patches'i yükleyin ve ardından oluşturulan shaderpack klasörünü desteklenmeyen örneğe kopyalayın.",
+
+    "downloadPageButton": "İndirme Sayfasına Git",
+
+    "installerMethodTitle": "Yükleyici Yolu",
+    "installerStep1Before": "İndirmek için",
+    "installerStep1After": "linkine gidin ve yükleyiciyi indirin.",
+    "installerStep2": "İndirdiğiniz dosyayı açmak için çift tıklayın.",
+    "installerStep3": "Şimdi 'Advanced Settings'a tıklayın.",
+    "installerStep4": "'Install Euphoria Patches' kutucuğuna tıklayarak işaretleyin. Ardından 'Done'a tıklayın.",
+    "installerStep5": "'Install'a tıklayın. Complementary Shaders + Euphoria Patches artık shaderpack klasörünüzde gözükecek."
+}
