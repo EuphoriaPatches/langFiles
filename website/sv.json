@@ -1,0 +1,27 @@
+{
+    "isRightToLeft": false,
+
+    "pageTitle": "Hur du laddar ner Euphoria Patches",
+
+    "modMethodTitle": "Mod Metoden",
+    "step1": "Ladda ner den lämpliga versionen av Complementary och sätt den i din shaderpack mapp",
+    "step1After": "(Packa inte upp, Ändra inte eller döp inte om).",
+    "substep1_1": "Fungerar med Complementary",
+    "or": "eller",
+    "step2Before": "Skaffa den senaste",
+    "step2After": "mod filen och sätt den i din mod mapp.",
+    "step3": "Starta spelet med antingen: Fabric | Quilt | Forge | NeoForge",
+    "step4": "Complementary Shaders + Euphoria Patches kommer nu synas i din shadepack mapp",
+
+    "unsupportedVersions": "För versioner som inte stöds, används Euphoria Patches med en version som stöds, detta kommer generera en fungerande version av Euphoria Patches som du sedan kan kopiera till din shadepack mapp av den versionen som inte stöds.",
+
+    "downloadPageButton": "Gå till Nedladdnings sidan",
+
+    "installerMethodTitle": "Program metoden",
+    "installerStep1Before": "Gå till",
+    "installerStep1After": "och ladda ner Programmet.",
+    "installerStep2": "Öppna Programmet genom att dubbel klicka på den nedladdade filen.",
+    "installerStep3": "Tryck sedan på 'Advanced Settings'",
+    "installerStep4": "Klicka i 'Install Euphoria Patches' checkboxen",
+    "installerStep5": "Tryck sedan på 'install', Complementary Shaders + Euphoria Patches kommer nu genereras i din shaderpack mapp"
+}
