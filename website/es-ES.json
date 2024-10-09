@@ -17,6 +17,9 @@
 
     "downloadPageButton": "Ir a la Página de Descargas",
 
+    "supportDevelopment1": "¿Obtener acceso a versiones beta exclusivas y apoyar el desarrollo?",
+    "supportDevelopment2": "¡Accede a las versiones beta ahora!",
+
     "installerMethodTitle": "El Método del Instalador",
     "installerStep1Before": "Ve a la página",
     "installerStep1After": "y descarga el instalador.",
