@@ -11,7 +11,7 @@
     "step2Before": "Récupérez la dernière version de",
     "step2After": "et mettez-la dans votre dossier de mods.",
     "step3": "Lancez le jeu avec au choix : Fabric | Quilt | Forge | NeoForge",
-    "step4": "Complementary Shaders + Euphoria Patches va alors apparaître dans votre dossier de shaders",
+    "step4": "va alors apparaître dans votre dossier de shaders",
 
     "unsupportedVersions": "Pour les versions de Minecraft non supportées, utilisez le patcher avec une version plus récente de Minecraft, générez Euphoria Patches et copiez ensuite le shader généré vers l'instance non supportée.",
 

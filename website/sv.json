@@ -11,7 +11,7 @@
     "step2Before": "Skaffa den senaste",
     "step2After": "mod filen och sätt den i din mod mapp.",
     "step3": "Starta spelet med antingen: Fabric | Quilt | Forge | NeoForge",
-    "step4": "Complementary Shaders + Euphoria Patches kommer nu synas i din shadepack mapp",
+    "step4": "kommer nu synas i din shadepack mapp",
 
     "unsupportedVersions": "För versioner som inte stöds, används Euphoria Patches med en version som stöds, detta kommer generera en fungerande version av Euphoria Patches som du sedan kan kopiera till din shadepack mapp av den versionen som inte stöds.",
 

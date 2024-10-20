@@ -11,7 +11,7 @@
     "step2Before": "Obtenha a versão mais recente do",
     "step2After": "e coloque o arquivo do mod na pasta mods.",
     "step3": "Inicie o jogo com: Fabric | Quilt | Forge | NeoForge",
-    "step4": "Complementary Shaders + Euphoria Patches agora aparecerão na sua pasta de shaders.",
+    "step4": "agora aparecerão na sua pasta de shaders.",
 
     "unsupportedVersions": "Para versões não suportadas do Minecraft, use o patcher com uma versão mais recente do Minecraft, gere os Euphoria Patches e copie a pasta shaderpack gerada para a instância não suportada.",
 

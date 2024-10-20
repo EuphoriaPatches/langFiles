@@ -11,7 +11,7 @@
     "step2Before": "Lade die neueste",
     "step2After": "Mod-Datei herunter und lege sie in deinen Mods-Ordner.",
     "step3": "Starte das Spiel mit entweder: Fabric | Quilt | Forge | NeoForge",
-    "step4": "Complementary Shaders + Euphoria Patches wird jetzt in deinem Shaderpacks-Ordner angezeigt",
+    "step4": "wird jetzt in deinem Shaderpacks-Ordner angezeigt",
 
     "unsupportedVersions": "Für nicht unterstützte Minecraft-Versionen verwende den Patcher mit einer neueren Minecraft-Version, generiere Euphoria Patches und kopiere dann den generierten Shaderpack-Ordner in die nicht unterstützte Instanz.",
 

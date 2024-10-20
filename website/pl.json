@@ -11,7 +11,7 @@
     "step2Before": "Pobierz najnowszą wersje moda",
     "step2After": "i skopiuj go do folderu modów",
     "step3": "Uruchom gre używając jednego z tych mod loaderów: Fabric | Quilt | Forge | NeoForge",
-    "step4": "Shadery Complementary + Euphoria Patches pojawią się w twoim folderze shaderpacków",
+    "step4": "pojawią się w twoim folderze shaderpacków",
 
     "unsupportedVersions": "W przypadku nieobsługiwanych wersji Minecrafta należy użyć patchera z nowszą wersją Minecrafta, wygenerować Euphoria Patches, a następnie skopiować wygenerowany folder do nieobsługiwanej instancji.",
 

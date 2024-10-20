@@ -11,7 +11,7 @@
     "step2Before": "获取最新版本的",
     "step2After": "模组文件并将其放在你的 mods 文件夹中",
     "step3": "通过任意一种模组加载器启动游戏: Fabric | Quilt | Forge | NeoForge",
-    "step4": "Complementary Shaders + Euphoria Patches 现在会出现在你的 shaderpacks 文件夹",
+    "step4": "现在会出现在你的 shaderpacks 文件夹",
 
     "unsupportedVersions": "对于模组不支持的 Minecraft 版本，可使用模组在支持的 Minecraft 版本生成 Euphoria Patches 后将生成的得到的光影文件夹复制到模组不支持的 Minecraft 版本实例中",
 
