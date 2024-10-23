@@ -1104,8 +1104,8 @@ value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - GUI非表示
 value.WATERMARK.3=& GUI非表示 & クモの目を持つと表示  
 option.WATERMARK_SIZE=ウォーターマークサイズ
 
-screen.EUPHORIA_SETTINGS=§bEuphoria パッチ設定
-screen.EUPHORIA_SETTINGS.comment=Euphoria パッチによって追加される設定です。§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。§r§l§neuphoriapatches.com/support
+screen.EUPHORIA_SETTINGS=§bEuphoria Patches設定
+screen.EUPHORIA_SETTINGS.comment=Euphoria Patchesによって追加される設定です。§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。§r§l§neuphoriapatches.com/support
     screen.ATMOSPHERE=大気
     screen.ATMOSPHERE.comment=大気に関連する設定です。
         screen.CLOUDS=雲
@@ -1205,7 +1205,7 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria パッチによって追加される�
     screen.POPULAR_SETTINGS=§b人気の設定
         screen.POPULAR_SETTINGS_2=ページ 2
         screen.POPULAR_SETTINGS_3=ページ 3
-    screen.EP_VERSION=Euphoria パッチ §d1.4.1
+    screen.EP_VERSION=Euphoria Patches §d1.4.1
 
 option.DAYLIGHT_CYCLE_COMPAT=ワールドタイムアニメーション
 option.DAYLIGHT_CYCLE_COMPAT.comment=この設定は、gameruleでdoDaylightCycleをfalseにしている場合にのみ使用してください。有効にすると、雲などが昼夜サイクルがオフのワールドでもアニメーションしますが、プレイヤー間で同期されなくなります。
