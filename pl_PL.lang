@@ -58,7 +58,7 @@ option.info10=Podziękowania
 value.info10.0=
 option.info10.comment=EminGT: Główny deweloper Complementary. Capt Tatsu: Deweloper BSL Shaders, jego hojność umożliwiła powstanie Complementary. Specjalne podziękowania dla: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap
 
-option.info11=Czym jest Euphoria Patches
+option.info11=§dCzym jest Euphoria Patches
 value.info11.0=
 option.info11.comment=Euphoria Patches jest dodatkiem do shaderów Complementary, stworzonym przez SpacEagle17. Ma on na celu rozszerzenie shaderów Complementary o więcej możliwości modyfikacji istniejących funkcji, a zarazem wiele zupełnie nowych funkcji, zbudowanych od podstaw. Wszystkie opcje Euphorii są domyślnie wyłączone, a użytkownik może zdecydować, co chce włączyć.
 
@@ -1098,13 +1098,13 @@ profile.POPULAR=§bPopularne §dUstawienia
 #WATERMARK
 option.WATERMARK=Complementary
 option.WATERMARK.comment=Euphoria Patches to dzieło miłości, troski i frustracji, mające na celu dopełnienie wrażeń z rozgrywki w Minecrafta w najlepiej jak to możliwe, pracując na fundacjach postawionych przez podstawowy Complementary Shaderpack. Zapraszamy do dołączenia do miłej społeczności Complementary tutaj: www.complementary.dev/discord. Znak wodny autorstwa Elysia
-value.WATERMARK.0=& §bEuphoria §rPatches
+value.WATERMARK.0=& §dEuphoria §rPatches
 value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches
 value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - Interfejs Schowany
 value.WATERMARK.3=& Interfejs Schowany & Trzymaj Pajęcze Oko
 option.WATERMARK_SIZE=Rozmiar Znaku Wodnego
 
-screen.EUPHORIA_SETTINGS=§bUstawienia Euphoria Patches
+screen.EUPHORIA_SETTINGS=§dUstawienia Euphoria Patches
 screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§l§neuphoriapatches.com/support 
     screen.ATMOSPHERE=Atmosfera
     screen.ATMOSPHERE.comment=Ustawienia które wpływają na atmosferę.
@@ -1202,7 +1202,7 @@ screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMo
     screen.FUN.comment=Zabawmy się trochę.
         screen.WORLD_CURVATURE_SETTINGS=Krzywizna Świata
         screen.WORLD_CURVATURE_SETTINGS.comment=Ustawienia związane z krzywizną świata.
-    screen.POPULAR_SETTINGS=§bPopularne Ustawienia
+    screen.POPULAR_SETTINGS=§dPopularne Ustawienia
         screen.POPULAR_SETTINGS_2=2 Strona
         screen.POPULAR_SETTINGS_3=3 Strona
 screen.EP_VERSION=Euphoria Patches 1.4.1

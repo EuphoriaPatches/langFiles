@@ -61,7 +61,7 @@ option.info10=Заслуга
 value.info10.0=
 option.info10.comment=EminGT: Главный разработчик Complementary. Capt Tatsu: Разработчик BSL Shaders, благодаря его щедрости стало возможным создание Complementary. Отдельное спасибо: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap
 
-option.info11=§bЧто такое Euphoria Patches
+option.info11=§dЧто такое Euphoria Patches
 value.info11.0=
 option.info11.comment=Euphoria Patches - это дополнение для Complementary Shaders, разработанное SpacEagle17. Его цель - расширить Complementary дополнительными функциями и настройками.
 
@@ -1101,13 +1101,13 @@ profile.POPULAR=§bПопулярные §dНастройки
 #WATERMARK
 option.WATERMARK=Complementary
 option.WATERMARK.comment=Euphoria Patches - это творение любви, заботы и разочарований, призванное наилучшим образом дополнить уникальный опыт Minecraft, а также дополнить удивительный шейдерпак Complementary. Пожалуйста, не стесняйтесь присоединиться к прекрасному сообществу Complementary здесь: www.complementary.dev/discord. Водяной знак от Elysia
-value.WATERMARK.0=& §bEuphoria §rPatches
+value.WATERMARK.0=& §dEuphoria §rPatches
 value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches
 value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - Скрытый Интерфейс
 value.WATERMARK.3=& Скрытый Интерфейс & Держать Глаз Паука
 option.WATERMARK_SIZE=Размер Водяного Знака
 
-screen.EUPHORIA_SETTINGS=§bНастройки Euphoria Patches
+screen.EUPHORIA_SETTINGS=§dНастройки Euphoria Patches
 screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые патчами Euphoria. §bВы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить новые версии для разработчиков. §r§l§neuphoriapatches.com/support 
     screen.ATMOSPHERE=Атмосфера
     screen.ATMOSPHERE.comment=Настройки, связанные с атмосферой.
@@ -1205,7 +1205,7 @@ screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые па
     screen.FUN.comment=Давай немного повеселимся.
         screen.WORLD_CURVATURE_SETTINGS=Кривизна Мира
         screen.WORLD_CURVATURE_SETTINGS.comment=Настройки, связанные с кривизной окружающего мира.
-    screen.POPULAR_SETTINGS=§bПопулярные Настройки
+    screen.POPULAR_SETTINGS=§dПопулярные Настройки
         screen.POPULAR_SETTINGS_2=Страница 2
         screen.POPULAR_SETTINGS_3=Страница 3
     screen.EP_VERSION=Euphoria Patches §d1.4.1

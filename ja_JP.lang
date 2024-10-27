@@ -58,7 +58,7 @@ option.info10=クレジット
 value.info10.0=  
 option.info10.comment=EminGT: Complementaryのメイン開発者。Capt Tatsu: BSLシェーダーの開発者であり、彼の寛大さがComplementaryの実現を可能にしました。スペシャルサンクス: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap  
 
-option.info11=§bEuphoria Patchesとは  
+option.info11=§dEuphoria Patchesとは  
 value.info11.0=  
 option.info11.comment=Euphoria Patchesは、SpacEagle17によって開発されたComplementary Shadersのアドオンです。Complementaryに、より多くの手作り機能と設定を追加することを目的としています。  
 
@@ -1098,13 +1098,13 @@ profile.POPULAR=§bPopular §dSettings
 #WATERMARK
 option.WATERMARK=Complementary  
 option.WATERMARK.comment=Euphoria Patchesは愛情とケア、そしてフラストレーションから生まれた作品であり、素晴らしいComplementary Shaderpackに追加要素を加えつつ、独自のMinecraft体験を最適に補完することを目的としています。ぜひ、素敵なComplementaryコミュニティに参加してください: www.complementary.dev/discord。ウォーターマーク作成者: Elysia  
-value.WATERMARK.0=& §bEuphoria §rPatches  
+value.WATERMARK.0=& §dEuphoria §rPatches  
 value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches  
 value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - GUI非表示  
 value.WATERMARK.3=& GUI非表示 & クモの目を持つと表示  
 option.WATERMARK_SIZE=ウォーターマークサイズ
 
-screen.EUPHORIA_SETTINGS=§bEuphoria Patches設定
+screen.EUPHORIA_SETTINGS=§dEuphoria Patches設定
 screen.EUPHORIA_SETTINGS.comment=Euphoria Patchesによって追加される設定です。§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。§r§l§neuphoriapatches.com/support
     screen.ATMOSPHERE=大気
     screen.ATMOSPHERE.comment=大気に関連する設定です。
@@ -1202,7 +1202,7 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria Patchesによって追加される設�
     screen.FUN.comment=楽しくやりましょう。
         screen.WORLD_CURVATURE_SETTINGS=世界の曲率
         screen.WORLD_CURVATURE_SETTINGS.comment=世界の曲率に関連する設定です。
-    screen.POPULAR_SETTINGS=§b人気の設定
+    screen.POPULAR_SETTINGS=§d人気の設定
         screen.POPULAR_SETTINGS_2=ページ 2
         screen.POPULAR_SETTINGS_3=ページ 3
     screen.EP_VERSION=Euphoria Patches §d1.4.1

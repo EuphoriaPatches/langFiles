@@ -61,7 +61,7 @@ option.info10=致谢
 value.info10.0=
 option.info10.comment=EminGT: Complementary 光影的主要开发者. Capt Tatsu: BSL 光影的开发者, 没有他的慷慨, 最初的 Complementary 不可能出现. 特别致谢: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap
 
-option.info11=§b什么是 Euphoria Patches ?
+option.info11=§d什么是 Euphoria Patches ?
 value.info11.0=
 option.info11.comment=Euphoria Patches 是 Complementary 光影的一个附加, 由 SpacEagle17 开发. 旨在通过更多定制功能和可选选项来扩展 Complementary 光影的功能.
 
@@ -1101,13 +1101,13 @@ profile.POPULAR=§b最受欢迎§d的设置
 #WATERMARK
 option.WATERMARK=水印类型
 option.WATERMARK.comment=Euphoria Patches 是一个充满爱, 关怀和挫折的创作; 旨在通过向 Complementary Reimagined 添加有趣的功能, 尽可能以最好的方式补充独特的 Minecraft 体验. 你随时能加入友爱的 Complementary 社区. Discord链接: www.complementary.dev/discord. 水印由 Elysia 制作.
-value.WATERMARK.0=& §bEuphoria §rPatches
+value.WATERMARK.0=& §dEuphoria §rPatches
 value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches
 value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - 隐藏 GUI 时
 value.WATERMARK.3=& 隐藏 GUI 且手持蜘蛛眼时
 option.WATERMARK_SIZE=水印大小
 
-screen.EUPHORIA_SETTINGS=§bEuphoria Patches 相关设置
+screen.EUPHORIA_SETTINGS=§dEuphoria Patches 相关设置
 screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的设置. §b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§l§neuphoriapatches.com/support 
     screen.ATMOSPHERE=大气
     screen.ATMOSPHERE.comment=与大气相关的设置.
@@ -1205,7 +1205,7 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的
     screen.FUN.comment=让我们来做点有意思的功能!
         screen.WORLD_CURVATURE_SETTINGS=世界曲率
         screen.WORLD_CURVATURE_SETTINGS.comment=与世界曲率相关的设置.
-    screen.POPULAR_SETTINGS=§b最受欢迎的设置
+    screen.POPULAR_SETTINGS=§d最受欢迎的设置
         screen.POPULAR_SETTINGS_2=第二页
         screen.POPULAR_SETTINGS_3=第三页
     screen.EP_VERSION=Euphoria Patches §d1.4.1

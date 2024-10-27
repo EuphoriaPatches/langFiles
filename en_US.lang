@@ -58,7 +58,7 @@ option.info10=Credits
 value.info10.0=
 option.info10.comment=EminGT: The main developer of Complementary. Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap
 
-option.info11=§bWhat is Euphoria Patches
+option.info11=§dWhat is Euphoria Patches
 value.info11.0=
 option.info11.comment=Euphoria Patches is an add-on for Complementary Shaders, developed by SpacEagle17. It aims to extend Complementary with more optional handcrafted features and settings.
 
@@ -1098,13 +1098,13 @@ profile.POPULAR=§bPopular §dSettings
 #WATERMARK
 option.WATERMARK=Complementary
 option.WATERMARK.comment=Euphoria Patches is a creation of love, care and frustration, meant to complement the unique Minecraft experience in the best way possible while adding onto the amazing Complementary Shaderpack. Please feel free to join the lovely Complementary community here: www.complementary.dev/discord. Watermark by Elysia
-value.WATERMARK.0=& §bEuphoria §rPatches
+value.WATERMARK.0=& §dEuphoria §rPatches
 value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches
 value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - GUI Hidden
 value.WATERMARK.3=& GUI Hidden & Hold Spider Eye
 option.WATERMARK_SIZE=Watermark Size
 
-screen.EUPHORIA_SETTINGS=§bEuphoria Patches Settings
+screen.EUPHORIA_SETTINGS=§dEuphoria Patches Settings
 screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches. §bYou can support SpacEagle17 on Patreon or Ko-Fi and get new developer versions. §r§l§neuphoriapatches.com/support 
     screen.ATMOSPHERE=Atmosphere
     screen.ATMOSPHERE.comment=Settings that relate to the atmosphere.
@@ -1202,7 +1202,7 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
     screen.FUN.comment=Let's have some fun.
         screen.WORLD_CURVATURE_SETTINGS=World Curvature
         screen.WORLD_CURVATURE_SETTINGS.comment=Settings that relate to World Curvature.
-    screen.POPULAR_SETTINGS=§bPopular Settings
+    screen.POPULAR_SETTINGS=§dPopular Settings
         screen.POPULAR_SETTINGS_2=Page 2
         screen.POPULAR_SETTINGS_3=Page 3
     screen.EP_VERSION=Euphoria Patches §d1.4.1
