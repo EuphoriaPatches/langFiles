@@ -1205,7 +1205,7 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
     screen.POPULAR_SETTINGS=§dPopular Settings
         screen.POPULAR_SETTINGS_2=Page 2
         screen.POPULAR_SETTINGS_3=Page 3
-    screen.EP_VERSION=Euphoria Patches §d1.4.1
+    screen.EP_VERSION=Euphoria Patches §d1.4.2
 
 option.DAYLIGHT_CYCLE_COMPAT=World Time Animation
 option.DAYLIGHT_CYCLE_COMPAT.comment=ONLY use this if you play with the gamerule doDaylightCycle false. When enabled clouds and more animate in worlds with the daylight cycle off but they are no longer synced between players.
@@ -2191,3 +2191,6 @@ value.STAR_COLOR_VARIATION_END.0.0=OFF
 
 option.SITUATIONAL_GLOWING_TRIMS=Situational Glowing Trims
 option.SITUATIONAL_GLOWING_TRIMS.comment=Trims will only glow in caves and at night. §e[*]§r Glowing Trims must be enabled for this to work.
+
+option.DO_IPBR_LIGHTS=ACL IPBR Lights
+option.DO_IPBR_LIGHTS.comment=This option makes the non-light sources in the game emmit light if it is emissive via the shader. (Recomended: On)
