@@ -8,7 +8,7 @@ profile.MEDIUM=§aПосередній
 profile.HIGH=§eВисокий (за замовч.)
 profile.VERYHIGH=§cДуже високий
 profile.ULTRA=§4§lУльтра
-profile.comment=Профілі шейдерів змінюють налаштування продуктивности з максимально оптимізованим співвідношенням візуальної точности та продуктивности. §e[*]§r It's рекомендовано використовувати один із цих профілів для налаштувань, якщо ви не знаєте, що робите. §e[*]§r Усі параметри, яких це стосується, можна знайти в меню «налаштування продуктивности»
+profile.comment=Профілі шейдерів змінюють налаштування продуктивности з максимально оптимізованим співвідношенням візуальної точности та продуктивности. §e[*]§r Рекомендовано використовувати один із цих профілів для налаштувань, якщо ви не знаєте, що робите. §e[*]§r Усі параметри, яких це стосується, можна знайти в меню «налаштування продуктивности»
 
 #Information
 screen.INFORMATION=Інформація
@@ -1125,6 +1125,7 @@ screen.EUPHORIA_SETTINGS.comment=Налаштування, додані Euphoria
         screen.STARS_OVERWORLD=Зірки
             screen.STAR_COLORS_OW=Колір зірок
         screen.RAIN_SETTINGS=Налаштування дощу
+        screen.NIGHT_DESATURATION_SETTINGS=Знебарвлення темряви
     screen.WORLD=Світ
     screen.WORLD.comment=Налаштування, які стосуються світу
         screen.SPOOKY_SETTINGS=Налаштування страхоповнення
@@ -1265,13 +1266,13 @@ value.CLOUD_ROUNDNESS.0.05=Кубічні §e[*]§r
 value.CLOUD_ROUNDNESS.0.125=Збалансовані
 value.CLOUD_ROUNDNESS.0.2=Круглі
 option.CLOUD_ROUNDNESS.comment=Змінює вигляд хмар. §e[*]§r Менша округлість призводить до більшої кількости шумових артефактів
-option.CLOUD_SHADOW_ROUNDNESS=округлість тіні хмар
+option.CLOUD_SHADOW_ROUNDNESS=Округлість тіні хмар
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Додат. кубічні
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Кубічні
 value.CLOUD_SHADOW_ROUNDNESS.0.35=Круглі
 option.CLOUD_SHADOW_ROUNDNESS.comment=Змінює вигляд круглих тіней від хмар
-option.CLOUD_NARROWNESS=Вузікість хмар
-value.CLOUD_NARROWNESS.0.1=Ульра тонкі
+option.CLOUD_NARROWNESS=Вузькість хмар
+value.CLOUD_NARROWNESS.0.1=Ультра тонкі
 value.CLOUD_NARROWNESS.0.075=Тонкі
 value.CLOUD_NARROWNESS.0.05=Посередні
 value.CLOUD_NARROWNESS.0.025=Широкі
@@ -1302,7 +1303,7 @@ value.RAINBOW_CLOUD.8=Зона дії 80%
 value.RAINBOW_CLOUD.9=Зона дії 90%
 value.RAINBOW_CLOUD.10=Зона дії 100%
 
-option.CLOUD_RENDER_DISTANCE=Дальність промав. хмар
+option.CLOUD_RENDER_DISTANCE=Дальність промал. хмар
 option.CLOUD_RENDER_DISTANCE.comment=Визначає дальність промальовування хмар
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Видалити кі-сть хмар вночі
@@ -2194,3 +2195,17 @@ option.SITUATIONAL_GLOWING_TRIMS.comment=Орнаменти обладунків
 
 option.DO_IPBR_LIGHTS=ACL IPBR світла
 option.DO_IPBR_LIGHTS.comment=Це змушує джерела світла в грі випромінювати світло, якщо воно випромінюється через шейдер (рекомендовано: УВІМК.)
+
+option.NIGHT_DESATURATION=Знебарвлення темряви
+value.NIGHT_DESATURATION.0=ВИМК.
+value.NIGHT_DESATURATION.300=Чорний/білий
+option.NIGHT_DESATURATION.comment=Знебарвлює середовище в темних областях
+
+option.NIGHT_CAVE_DESATURATION=Знебарвлення печер
+option.NIGHT_CAVE_DESATURATION.comment=Знебарвлює середовище в печерах
+value.NIGHT_CAVE_DESATURATION.0=ВИМК.
+
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=Видалити ближнє світло
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=Усуває ефект десатурації поблизу джерел світла
+option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=Видалити в руці
+option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=Усуває ефект десатурації під час тримання в руці джерела світла
