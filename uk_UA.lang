@@ -1205,7 +1205,7 @@ screen.EUPHORIA_SETTINGS.comment=Налаштування, додані Euphoria
     screen.POPULAR_SETTINGS=§dПопулярні налаштування
         screen.POPULAR_SETTINGS_2=Сторінка 2
         screen.POPULAR_SETTINGS_3=Сторінка 3
-    screen.EP_VERSION=Euphoria Patches §d1.4.3
+    screen.EP_VERSION=Euphoria Patches §d1.4.4
 
 option.DAYLIGHT_CYCLE_COMPAT=Час анімації світу
 option.DAYLIGHT_CYCLE_COMPAT.comment=Використовуйте це ТІЛЬКИ, якщо ігрове правилом doDaylightCycle встановлене на false. Якщо ввімкнути хмари та інше, вони анімуються у світах із вимкненим циклом денного світла, але вони більше не синхронізуються між гравцями

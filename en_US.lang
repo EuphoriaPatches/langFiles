@@ -1206,7 +1206,7 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
     screen.POPULAR_SETTINGS=§dPopular Settings
         screen.POPULAR_SETTINGS_2=Page 2
         screen.POPULAR_SETTINGS_3=Page 3
-    screen.EP_VERSION=Euphoria Patches §d1.4.3
+    screen.EP_VERSION=Euphoria Patches §d1.4.4
 
 option.DAYLIGHT_CYCLE_COMPAT=World Time Animation
 option.DAYLIGHT_CYCLE_COMPAT.comment=ONLY use this if you play with the gamerule doDaylightCycle false. When enabled clouds and more animate in worlds with the daylight cycle off but they are no longer synced between players.
