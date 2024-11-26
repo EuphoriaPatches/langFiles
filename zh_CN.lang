@@ -1128,6 +1128,7 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的
         screen.STARS_OVERWORLD=星空设置 - 主世界
             screen.STAR_COLORS_OW=星星颜色
         screen.RAIN_SETTINGS=雨天设置
+        screen.NIGHT_DESATURATION_SETTINGS= 暗处去饱和
     screen.WORLD=世界
     screen.WORLD.comment=关于世界的设置.
         screen.SPOOKY_SETTINGS=Spooklementary 设置
@@ -2194,3 +2195,20 @@ value.STAR_COLOR_VARIATION_END.0.0=关
 
 option.SITUATIONAL_GLOWING_TRIMS=情景式盔甲纹饰发光
 option.SITUATIONAL_GLOWING_TRIMS.comment=盔甲纹饰仅会在洞穴和夜晚时发光. §e[*]§r 本选项需启用 盔甲纹饰发光 选项才能生效.
+
+option.DO_IPBR_LIGHTS=高级彩色照明集成PBR光源
+option.DO_IPBR_LIGHTS.comment=通过本选项启用或关闭 "通过光影使游戏中非光源类方块发出光" 的效果. (推荐开启)
+
+option.NIGHT_DESATURATION=暗处去饱和
+value.NIGHT_DESATURATION.0=关
+value.NIGHT_DESATURATION.300=黑/白
+option.NIGHT_DESATURATION.comment=对黑暗区域的环境降低色彩饱和度.
+
+option.NIGHT_CAVE_DESATURATION=洞穴去饱和
+option.NIGHT_CAVE_DESATURATION.comment=对洞穴环境的色彩去饱和.
+value.NIGHT_CAVE_DESATURATION.0=关
+
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=光源近处效果移除
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=移除靠近光源区域的去饱和效果.
+option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=手持光源时移除效果
+option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=当手持光源时移除去饱和效果.
