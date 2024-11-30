@@ -1205,7 +1205,7 @@ screen.EUPHORIA_SETTINGS.comment=Euphoria Patchesによって追加される設�
     screen.POPULAR_SETTINGS=§d人気の設定
         screen.POPULAR_SETTINGS_2=ページ 2
         screen.POPULAR_SETTINGS_3=ページ 3
-    screen.EP_VERSION=Euphoria Patches §d1.4.3
+    screen.EP_VERSION=Euphoria Patches §d1.4.4
 
 option.DAYLIGHT_CYCLE_COMPAT=ワールドタイムアニメーション
 option.DAYLIGHT_CYCLE_COMPAT.comment=この設定は、gameruleでdoDaylightCycleをfalseにしている場合にのみ使用してください。有効にすると、雲などが昼夜サイクルがオフのワールドでもアニメーションしますが、プレイヤー間で同期されなくなります。

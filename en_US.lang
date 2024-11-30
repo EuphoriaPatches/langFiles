@@ -1125,6 +1125,7 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
         screen.STARS_OVERWORLD=Stars
             screen.STAR_COLORS_OW=Star Colors
         screen.RAIN_SETTINGS=Rain Settings
+        screen.NIGHT_DESATURATION_SETTINGS= Darkness Desaturation
     screen.WORLD=World
     screen.WORLD.comment=Settings that relate to the world.
         screen.SPOOKY_SETTINGS=Spooklementary Settings
@@ -1205,7 +1206,7 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
     screen.POPULAR_SETTINGS=§dPopular Settings
         screen.POPULAR_SETTINGS_2=Page 2
         screen.POPULAR_SETTINGS_3=Page 3
-    screen.EP_VERSION=Euphoria Patches §d1.4.3
+    screen.EP_VERSION=Euphoria Patches §d1.4.4
 
 option.DAYLIGHT_CYCLE_COMPAT=World Time Animation
 option.DAYLIGHT_CYCLE_COMPAT.comment=ONLY use this if you play with the gamerule doDaylightCycle false. When enabled clouds and more animate in worlds with the daylight cycle off but they are no longer synced between players.
@@ -2194,3 +2195,17 @@ option.SITUATIONAL_GLOWING_TRIMS.comment=Trims will only glow in caves and at ni
 
 option.DO_IPBR_LIGHTS=ACL IPBR Lights
 option.DO_IPBR_LIGHTS.comment=This option makes the non-light sources in the game emmit light if it is emissive via the shader. (Recomended: On)
+
+option.NIGHT_DESATURATION=Darkness Desaturation
+value.NIGHT_DESATURATION.0=OFF
+value.NIGHT_DESATURATION.300=Black/White
+option.NIGHT_DESATURATION.comment=Desaturates the colors of the environment in dark areas.
+
+option.NIGHT_CAVE_DESATURATION=Cave Desaturation
+option.NIGHT_CAVE_DESATURATION.comment=Desaturates the colors of the environment in caves.
+value.NIGHT_CAVE_DESATURATION.0=OFF
+
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=Remove Near Lights
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=Removes the desaturation effect near light sources.
+option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=Remove With Handheld Light
+option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=Removes the desaturation effect when holding a light source.
