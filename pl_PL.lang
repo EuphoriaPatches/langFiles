@@ -792,7 +792,7 @@ option.AMBIENT_MULT=Mnożnik Jasności Cieni
 option.AMBIENT_MULT.comment=Określa jak jasne są cienie. §c[-]§r Drastyczna zmiana tego ustawienia może zakłócić balans oświetlenia.
 
 option.PLAYER_SHADOW=Cień Gracza §e[*]§r
-option.PLAYER_SHADOW.comment=Określa, czy gracz będzie rzucał cień, czy nie. §e[*]§r To ustawienie działa tylko na Iris. §e[*]§r To ustawienie będzie traktowane jako WYŁĄCZONE, jeśli "Jakość Próbkowania Cieni" jest wyłączona.
+option.PLAYER_SHADOW.comment=Określa, czy gracz będzie rzucał cień, czy nie. §e[*]§r To ustawienie działa tylko na Iris. §e[*]§r To ustawienie będzie traktowane jako WYŁĄCZONE, jeśli "Cienie w Czasie Rzeczywistym" są wyłączone.
 value.PLAYER_SHADOW.-1=WYŁ.
 value.PLAYER_SHADOW.1=WŁ.
 
@@ -2062,7 +2062,7 @@ option.DISTANCE_MIN_LIGHT.comment=Przyciemnia jaskinie wraz ze wzrostem odległo
 option.EMISSIVE_DRAGON_EGG=Świecące smocze jajo
 
 option.VANILLA_ENTITY_SHADOWS=Cienie Mobów Vanilla
-option.VANILLA_ENTITY_SHADOWS.comment=Włącza wbudowane cienie pod mobami, gdy "Jakość Próbkowania Cieni" jest wyłączona.
+option.VANILLA_ENTITY_SHADOWS.comment=Włącza wbudowane cienie pod mobami, gdy "Cienie w Czasie Rzeczywistym" są wyłączone.
 
 option.FROGLIGHT_SATURATION=Nasycenie Żabich Lamp
 value.FROGLIGHT_SATURATION.1=Domyślne
@@ -2191,3 +2191,6 @@ value.STAR_COLOR_VARIATION_END.0.0=WYŁ.
 
 option.SITUATIONAL_GLOWING_TRIMS=Wykończenia Świadome Otoczenia
 option.SITUATIONAL_GLOWING_TRIMS.comment=Wykończenia zbroi będą się świecić tylko w jaskiniach i w nocy. §e[*]§r Świecące Wykończenia Zbroi muszą być włączone, aby ta opcja działała.
+
+option.DO_IPBR_LIGHTS=Światła ACL IPBR
+option.DO_IPBR_LIGHTS.comment=Ta opcja sprawia, bloki które nie są źródłami światła, emitują światło za pomocą shadera. (Zalecane: Włączone)
