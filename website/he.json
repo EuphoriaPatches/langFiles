@@ -1,27 +1,27 @@
 {
     "isRightToLeft": true,
     
-    "pageTitle": "Euphoria Patches איך להוריד את",
+    "pageTitle": "Euphoria Patches איך מורידים את",
 
-    "modMethodTitle": "שיטת המוד",
-    "step1": "shaderpacksושימו את זה בתיקיית ה Complementary תשיגו את הגרסה הדרושה של",
-    "step1After": ".(שינוי שם או כל שינו אחר ,unzip אנא אל תבצעו)",
-    "substep1_1": "Complementary עובד עם",
+    "modMethodTitle": "שימוש במוד",
+    "step1": "shaderpacksושימו אותה בתיקיית ה Complementary הורידו את הגרסה המתאימה של",
+    "step1After": ".(נא לא לחלץ את הקובץ, לשנות את שמו, או לבצע בו כל שינוי אחר)",
+    "substep1_1": "עובד עם Complementary",
     "or": "או",
-    "step2Before": ".modsשל קובץ המוד ושימו אותו בתיקיית ה",
-    "step2After": "תשיגו את הגרסה העדכנית",
-    "step3": "Fabric | Quilt | Forge | NeoForge :תריצו את המשחק עם איזה אחד מהם",
-    "step4": "אמורים להופיע בתיקיית השיידרפאקס שלכם עכשיו.",
+    "step2Before": ".mods ושימו אותו בתיקיית ה",
+    "step2After": "תשיגו את הגרסה העדכנית של המוד",
+    "step3": "Fabric | Quilt | Forge | NeoForge :פתחו את המשחק עם אחד מהבאים",
+    "step4": "אמור עכשיו להופיע בתקיית השיידרס שלכם.",
 
-    "unsupportedVersions": "לגרסות מיינקראפט שאינן נתמכות, תשתמשו בפאצ'ר עם גרסה עדכנית יותר ותיצרו Euphoria Patches ואז תעתיקו את התיקייה של השיידרפאק שנוצרה לתוך הגרסה הישנה.",
+    "unsupportedVersions": "עבור גרסאות מיינקראפט שאינן נתמכות, עקבו אחרי הצעדים עם גרסת מיינקראפט עדכנית והעתיקו את הקובץ שנוצר לגרסה הישנה",
 
-    "downloadPageButton": "תלכו לעמוד ההורדות",
+    "downloadPageButton": "לעמוד ההורדות",
 
-    "installerMethodTitle": "שיטת ההתקנה",
+    "installerMethodTitle": "שימוש בקובץ ההתקנה",
     "installerStep1Before": " לכו ל",
-    "installerStep1After": "ותורידו את המתקין." ,
-    "installerStep2": "פתחו את המתקין על ידי לחיצה כפולה על הקובץ המורד",
+    "installerStep1After": "ותורידו את הקובץ." ,
+    "installerStep2": "פתחו את הקובץ שהורד על ידי לחיצה כפולה",
     "installerStep3": "'Advanced Settings' עכשיו תלחצו על",
-    "installerStep4": "'Install Euphoria Patches' תסמנו את תיבת הסימון",
-    "installerStep5": "Complementary Shaders + Euphoria Patches אמורים להופיע בתיקיית השיידרפאקס שלכם עכשיו."
+    "installerStep4": "'Install Euphoria Patches' תסמנו את  ב-וי את ",
+    "installerStep5": "Complementary Shaders + Euphoria Patches אמור עכשיו להופיע בתקיית השיידרס שלכם."
 }
