@@ -86,7 +86,7 @@ option.info17=Beta Version: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access exclusive development versions. §l§neuphoriapatches.com/support
 
-option.info18=For Complementary r5.3
+option.info18=For Complementary r5.4
 value.info18.0=
 option.info18.comment=Thank you for Installing Euphoria Patches :)
 
@@ -198,6 +198,7 @@ screen.WATER_SETTINGS=Water
 screen.WATER_SETTINGS.comment=Settings that are about water.
 
 screen.WATER_COLOR_SETTINGS=Water Surface Color
+
 screen.UNDERWATER_COLOR_SETTINGS=Underwater Color
 
 screen.WATER_WAVE_SETTINGS=Waving Water Normals §e[*]§r
@@ -353,6 +354,9 @@ value.LIGHTSHAFT_BEHAVIOUR.3=Extreme §c[-]
 
 option.LIGHTSHAFT_SMOKE=Light Shaft Smoke
 option.LIGHTSHAFT_SMOKE.comment=Adds volumetric smoke to the light shafts. §c[-]§r This effect can impact performance.
+
+option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Special Pale Garden Shafts
+option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Makes light shafts look extra spicy in the "Pale Garden" biome.
 
 option.LIGHTSHAFT_DAY_I=Light Shaft Day Multiplier
 option.LIGHTSHAFT_NIGHT_I=Light Shaft Night Multiplier
@@ -2051,7 +2055,7 @@ option.EYES=Eyes
 option.EYE_FREQUENCY=Eye Frequency
 option.EYE_SPEED=Eye Speed
 option.EYE_RED_PROBABILITY=Red Eyes Probability
-option.BLOOD_MOON=Blood Mood
+option.BLOOD_MOON=Blood Moon
 value.BLOOD_MOON.0=OFF
 value.BLOOD_MOON.1=ON - Full Moon
 value.BLOOD_MOON.2=ON - Every Night
@@ -2209,3 +2213,9 @@ option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=Remove Near Lights
 option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=Removes the desaturation effect near light sources.
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=Remove With Handheld Light
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=Removes the desaturation effect when holding a light source.
+option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=Remove With Night Vision
+option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=Removes the desaturation effect when using night vision.
+
+option.DELTARUNE_BATTLE_BACKGROUND=DeltaRune Battle Background
+value.DELTARUNE_BATTLE_BACKGROUND.1=ON - Sky Only
+value.DELTARUNE_BATTLE_BACKGROUND.2=ON - Except Entities
