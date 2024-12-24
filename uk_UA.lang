@@ -198,6 +198,7 @@ screen.WATER_SETTINGS=Вода
 screen.WATER_SETTINGS.comment=Налаштування, які стосуються води
 
 screen.WATER_COLOR_SETTINGS=Колір поверхні води
+
 screen.UNDERWATER_COLOR_SETTINGS=Колір підводою
 
 screen.WATER_WAVE_SETTINGS=Хвилі на воді §e[*]§r
@@ -351,8 +352,11 @@ value.LIGHTSHAFT_BEHAVIOUR.1=Свідомий §a[+]
 value.LIGHTSHAFT_BEHAVIOUR.2=Звичний
 value.LIGHTSHAFT_BEHAVIOUR.3=Екстремальний §c[-]
 
-option.LIGHTSHAFT_SMOKE=Дим світлових потоків
+option.LIGHTSHAFT_SMOKE=Світлові потоки диму
 option.LIGHTSHAFT_SMOKE.comment=Додає об'ємний дим у світлові потоки. §c[-]§r Цей ефект може вплинути на продуктивність
+
+option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Спец. світлові потоки блідого саду
+option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Робить світлові потоки надзвичайно специфічними в блідого саду
 
 option.LIGHTSHAFT_DAY_I=Множник вдень
 option.LIGHTSHAFT_NIGHT_I=Множник вночі
@@ -2206,6 +2210,12 @@ option.NIGHT_CAVE_DESATURATION.comment=Знебарвлює середовище
 value.NIGHT_CAVE_DESATURATION.0=ВИМК.
 
 option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=Видалити ближнє світло
-option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=Усуває ефект десатурації поблизу джерел світла
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=Усуває ефект знебарвлення поблизу джерел світла
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=Видалити в руці
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=Усуває ефект десатурації під час тримання в руці джерела світла
+option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=Видалити з нічним баченням
+option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=Усуває ефект знебарвлення з нічним баченням
+
+option.DELTARUNE_BATTLE_BACKGROUND=Бойове тло DeltaRune
+value.DELTARUNE_BATTLE_BACKGROUND.1=УВІМК. - лише небо
+value.DELTARUNE_BATTLE_BACKGROUND.2=УВІМК. - крім сутностей
