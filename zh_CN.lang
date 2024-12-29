@@ -89,7 +89,7 @@ option.info17=测试版本: 从SpacEagle17的Patreon获取
 value.info17.0=
 option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本. §l§neuphoriapatches.com/support
 
-option.info18=对应 Complementary r5.3 版本
+option.info18=对应 Complementary r5.4 版本
 value.info18.0=
 option.info18.comment=感谢您安装 Euphoria Patches :)
 
@@ -197,10 +197,14 @@ screen.MOON_PHASE_INF_SETTINGS.comment=由不同月相影响夜晚照明的设�
 screen.ACL_FEATURES_SETTINGS=高级彩色照明独占特性 §e[*]§r
 screen.ACL_FEATURES_SETTINGS.comment=与 高级彩色照明 相关的独占功能设置. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效.
 
+screen.PIXELATED_LIGHTING_SETTINGS=像素化照明
+screen.PIXELATED_LIGHTING_SETTINGS.comment=使特定照明效果像素化的设置.
+
 screen.WATER_SETTINGS=水体
 screen.WATER_SETTINGS.comment=与水体效果相关的设置.
 
 screen.WATER_COLOR_SETTINGS=水面颜色
+
 screen.UNDERWATER_COLOR_SETTINGS=水下颜色
 
 screen.WATER_WAVE_SETTINGS=水面法线摇晃 §e[*]§r
@@ -356,6 +360,9 @@ value.LIGHTSHAFT_BEHAVIOUR.3=极限 §c[-]
 
 option.LIGHTSHAFT_SMOKE=光轴烟雾
 option.LIGHTSHAFT_SMOKE.comment=为光轴添加体积烟雾效果. §c[-]§r 本选项的效果可能会影响性能.
+
+option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=苍白之园特殊光轴
+option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=使在 "苍白之园" 群系中的光轴看起来更加刺目.
 
 option.LIGHTSHAFT_DAY_I=光轴 - 白天 - 倍率
 option.LIGHTSHAFT_NIGHT_I=光轴 - 夜晚 - 倍率
@@ -621,14 +628,24 @@ value.SHADOW_SMOOTHING.3=平滑
 value.SHADOW_SMOOTHING.2=锐利 §c[-]
 value.SHADOW_SMOOTHING.1=非常锐利 §c[-]
 
-option.PIXEL_SHADOW=像素化阴影
-option.PIXEL_SHADOW.comment=将世界坐标放置在网格上, 使阴影像素化. §e[*]§r 此设置不影响性能.
-value.PIXEL_SHADOW.0=关
-value.PIXEL_SHADOW.8=8x8 §e[*]
-value.PIXEL_SHADOW.16=16x16 §e[*]
-value.PIXEL_SHADOW.32=32x32 §e[*]
-value.PIXEL_SHADOW.64=64x64 §e[*]
-value.PIXEL_SHADOW.128=128x128 §e[*]
+option.PIXELATED_SHADOWS=像素化阴影
+option.PIXELATED_SHADOWS.comment=将世界坐标放置在网格上, 使阴影像素化. §e[*]§r 此设置不影响性能.
+
+option.PIXELATED_BLOCKLIGHT=像素化方块照明
+option.PIXELATED_BLOCKLIGHT.comment=使自光源投射的光照效果像素化.
+
+option.PIXELATED_AO=像素化边缘阴影(AO)
+option.PIXELATED_AO.comment=使 Minecraft 的原版环境光遮蔽效果像素化.
+
+option.PIXEL_SCALE=像素化缩放比例
+option.PIXEL_SCALE.comment=对纹理分辨率的缩放倍率.
+value.PIXEL_SCALE.-2=0.25x
+value.PIXEL_SCALE.-1=0.5x
+value.PIXEL_SCALE.1=1x
+value.PIXEL_SCALE.2=2x
+value.PIXEL_SCALE.3=4x
+value.PIXEL_SCALE.4=8x
+value.PIXEL_SCALE.5=16x
 
 option.BLOOM=泛光
 option.BLOOM.comment=启用在亮部或湿润区域附近的辉光模糊效果.
@@ -2212,3 +2229,9 @@ option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=光源近处效果移除
 option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=移除靠近光源区域的去饱和效果.
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=手持光源时移除效果
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=当手持光源时移除去饱和效果.
+option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=夜视状态时移除效果
+option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=当自身处于夜视状态时移除去饱和效果.
+
+option.DELTARUNE_BATTLE_BACKGROUND=三角符文(DeltaRune) 战斗背景
+value.DELTARUNE_BATTLE_BACKGROUND.1=开 - 仅天空
+value.DELTARUNE_BATTLE_BACKGROUND.2=开 - 剔除实体
