@@ -1789,17 +1789,8 @@ value.SEASON_START.3=Spring
 
 option.SEASON_LENGTH=Season Duration
 option.SEASON_LENGTH.comment=Change the duration of a season in Minecraft Days.
-value.SEASON_LENGTH.24000=1 Minecraft Day
-value.SEASON_LENGTH.72000=3 Minecraft Days
-value.SEASON_LENGTH.168000=7 Minecraft Days
-value.SEASON_LENGTH.192000=8 Minecraft Days
-value.SEASON_LENGTH.336000=14 Minecraft Days
-value.SEASON_LENGTH.576000=24 Minecraft Days
-value.SEASON_LENGTH.672000=28 Minecraft Days
-value.SEASON_LENGTH.720000=30 Minecraft Days
-value.SEASON_LENGTH.1440000=60 Minecraft Days
-value.SEASON_LENGTH.2184000=91 Minecraft Days
-value.SEASON_LENGTH.2880000=120 Minecraft Days
+value.SEASON_LENGTH.1=1 Minecraft Day
+suffix.SEASON_LENGTH=\ Minecraft Days
 
 option.SEASON_TRANSITION_START=Transition Start
 option.SEASON_TRANSITION_START.comment=The transition to the next season will start when this percentage of the season passed.
