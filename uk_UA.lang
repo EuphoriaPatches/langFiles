@@ -78,13 +78,13 @@ option.info15=Згадки і подяки Euphoria Patches
 value.info15.0=
 option.info15.comment=Усі титри можна знайти на сторінці https://www.euphoriapatches.com/credits. isuewo - колишній співрозробник Euphoria Patches. EminGT: головний розробник Complementary. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust
 
-option.info16=§nЯк підтримати Euphoria Patches
+option.info16=§d§nЯк підтримати Euphoria Patches
 value.info16.0=
-option.info16.comment=Ми можете підтримати Euphoria Patches цікавлячись новими оновленнями та ділячись ними з людьми, але ви також можете безпосередньо підтримувати SpacEagle17 на Patreon або Ko-Fi і отримати версію для розробників. §l§neuphoriapatches.com/support
+option.info16.comment=Ми можете підтримати Euphoria Patches цікавлячись новими оновленнями та ділячись ними з людьми, але ви також можете безпосередньо підтримувати SpacEagle17 на Patreon або Ko-Fi і отримати версію для розробників. §d§l§neuphoriapatches.com/support
 
 option.info17=Бета-версія: SpacEagle17 Patreon
 value.info17.0=
-option.info17.comment=Ви можете підтримати SpacEagle17 на Patreon або Ko-Fi і отримати версію для розробників. §l§neuphoriapatches.com/support
+option.info17.comment=Ви можете підтримати SpacEagle17 на Patreon або Ko-Fi і отримати версію для розробників. §d§l§neuphoriapatches.com/support
 
 option.info18=Для Complementary r5.4
 value.info18.0=
@@ -1109,7 +1109,7 @@ value.WATERMARK.3=&Приховано і тримати око павука
 option.WATERMARK_SIZE=Розмір вотермарка
 
 screen.EUPHORIA_SETTINGS=§dНалаштування Euphoria Patches
-screen.EUPHORIA_SETTINGS.comment=Налаштування, додані Euphoria Patches. §bВи можете підтримати SpacEagle17 на Patreon або Ko-Fi та отримувати нові версії для розробників. §r§l§neuphoriapatches.com/support 
+screen.EUPHORIA_SETTINGS.comment=Налаштування, додані Euphoria Patches. §bВи можете підтримати SpacEagle17 на Patreon або Ko-Fi та отримувати нові версії для розробників. §r§d§l§neuphoriapatches.com/support 
 screen.ATMOSPHERE=Атмосфера
 screen.ATMOSPHERE.comment=Налаштування, які стосуються атмосфери
 screen.CLOUDS=Хмари
@@ -1211,6 +1211,7 @@ screen.POPULAR_SETTINGS=§dПопулярні налаштування
 screen.POPULAR_SETTINGS_2=Сторінка 2
 screen.POPULAR_SETTINGS_3=Сторінка 3
 screen.EP_VERSION=Euphoria Patches §d1.5.0
+screen.EP_VERSION.comment=§bВи можете підтримати SpacEagle17 на Patreon або Ko-Fi та отримувати нові версії для розробників. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=Час анімації світу
 option.DAYLIGHT_CYCLE_COMPAT.comment=Використовуйте це ТІЛЬКИ, якщо ігрове правилом doDaylightCycle встановлене на false. Якщо увімкнути хмари та інше, вони анімуються у світах із вимкненим циклом денного світла, але вони більше не синхронізуються між гравцями

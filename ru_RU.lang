@@ -81,13 +81,13 @@ option.info15=Заслуга Euphoria Patches
 value.info15.0=
 option.info15.comment=EminGT: Главный разработчик Complementary. Capt Tatsu - Экранное пространство с разноцветным блочным освещением. gri573 - Вихревой эффект Кристала Края, руководство и помощь во многих областях! Оказал огромную помощь. SixthSurge, WoMspace (aka Sasha), Septonious, fayer3 - всегда помогали нам, когда мы нуждались в помощи. Xonk - за направленные молнии и за то, что он просто замечательный. Memokii - баннер и водяной знак Euphoria Patches. dragoncat - Перевоплощенный логотип и полезные предложения. TheNukeLore - разрешение нормалей IntegratedPBR. dbrighthd - множитель Френеля. Surisen (Ruri) - Китайский перевод. Acer (Alex) - Польский перевод, много предложений и полезных отзывов. Helgust - Начальный код для пикселизированной процедурной воды. Отдельное спасибо: IMS, sp614x, coderbot, motyl, Tigerblood, Renko, Baconbacon123, Slooshie, Chareflex77
 
-option.info16=§nКак поддержать Euphoria Patches
+option.info16=§d§nКак поддержать Euphoria Patches
 value.info16.0=
-option.info16.comment=Вы можете поддержать Euphoria Patches, интересуясь новыми обновлениями и делясь ими с людьми, но вы также можете напрямую поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к версиям для разработчиков. §l§neuphoriapatches.com/support
+option.info16.comment=Вы можете поддержать Euphoria Patches, интересуясь новыми обновлениями и делясь ими с людьми, но вы также можете напрямую поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к версиям для разработчиков. §d§l§neuphoriapatches.com/support
 
 option.info17=Бета-версия: SpacEagle17 Patreon
 value.info17.0=
-option.info17.comment=Вы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к эксклюзивным версиям разработки. §l§neuphoriapatches.com/support
+option.info17.comment=Вы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить доступ к эксклюзивным версиям разработки. §d§l§neuphoriapatches.com/support
 
 option.info18=Для Complementary r5.4
 value.info18.0=
@@ -1108,7 +1108,7 @@ value.WATERMARK.3=& Скрытый Интерфейс & Держать Глаз 
 option.WATERMARK_SIZE=Размер Водяного Знака
 
 screen.EUPHORIA_SETTINGS=§dНастройки Euphoria Patches
-screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые патчами Euphoria. §bВы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить новые версии для разработчиков. §r§l§neuphoriapatches.com/support 
+screen.EUPHORIA_SETTINGS.comment=Настройки, добавляемые патчами Euphoria. §bВы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить новые версии для разработчиков. §r§d§l§neuphoriapatches.com/support 
 screen.ATMOSPHERE=Атмосфера
 screen.ATMOSPHERE.comment=Настройки, связанные с атмосферой.
 screen.CLOUDS=Облака
@@ -1209,6 +1209,7 @@ screen.POPULAR_SETTINGS=§dПопулярные Настройки
 screen.POPULAR_SETTINGS_2=Страница 2
 screen.POPULAR_SETTINGS_3=Страница 3
 screen.EP_VERSION=Euphoria Patches §d1.5.0
+screen.EP_VERSION.comment=§bВы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить новые версии для разработчиков. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=Анимация Мирового Времени
 option.DAYLIGHT_CYCLE_COMPAT.comment=используйте это, ТОЛЬКО если вы играете с параметром gamerule doDaylightCycle false. При включении этого параметра облака и другие объекты анимируются в мирах с выключенным дневным светом, но они больше не синхронизируются между игроками.

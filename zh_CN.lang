@@ -81,13 +81,13 @@ option.info15=Euphoria Patches 致谢
 value.info15.0=
 option.info15.comment=完整致谢名单可在光影文件夹里的 Credits.txt 文件中查看. isuewo - Euphoria Patches 的前合作开发者. EminGT: Complementary 的主开发者. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
-option.info16=§n如何支持 Euphoria Patches
+option.info16=§d§n如何支持 Euphoria Patches
 value.info16.0=
-option.info16.comment=使用 Euphoria Patches 即是最好的支持. 向更多人推荐和介绍本光影, 保持对我们未来的更新内容的好奇和热情. 可以直接通过 Patreon 和 Ko-Fi 来给予金钱支持的同时获得开发版本的光影文件. §l§neuphoriapatches.com/support 
+option.info16.comment=使用 Euphoria Patches 即是最好的支持. 向更多人推荐和介绍本光影, 保持对我们未来的更新内容的好奇和热情. 可以直接通过 Patreon 和 Ko-Fi 来给予金钱支持的同时获得开发版本的光影文件. §d§l§neuphoriapatches.com/support 
 
 option.info17=测试版本: 从SpacEagle17的Patreon获取
 value.info17.0=
-option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本. §l§neuphoriapatches.com/support
+option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本. §d§l§neuphoriapatches.com/support
 
 option.info18=对应 Complementary r5.4 版本
 value.info18.0=
@@ -1125,7 +1125,7 @@ value.WATERMARK.3=& 隐藏 GUI 且手持蜘蛛眼时
 option.WATERMARK_SIZE=水印大小
 
 screen.EUPHORIA_SETTINGS=§dEuphoria Patches 相关设置
-screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的设置. §b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§l§neuphoriapatches.com/support 
+screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的设置. §b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support 
 screen.ATMOSPHERE=大气
 screen.ATMOSPHERE.comment=与大气相关的设置.
 screen.CLOUDS=云层
@@ -1227,6 +1227,7 @@ screen.POPULAR_SETTINGS=§d最受欢迎的设置
 screen.POPULAR_SETTINGS_2=第二页
 screen.POPULAR_SETTINGS_3=第三页
 screen.EP_VERSION=Euphoria Patches §d1.5.0
+screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=世界时间动画
 option.DAYLIGHT_CYCLE_COMPAT.comment=本选项提供了 "在关闭世界日期循环 ( /gamerule doDaylightCycle false ) 后云层和其他动画效果正常工作" 的选择. 但这意味着多人游戏各玩家间的动画效果不再同步了.

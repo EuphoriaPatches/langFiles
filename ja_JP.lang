@@ -78,13 +78,13 @@ option.info15=Euphoria Patchesのクレジット
 value.info15.0=  
 option.info15.comment=クレジットの全文は、shadersフォルダ内のCredits.txtファイルに記載されています。isuewo - Euphoria Patchesの元共同開発者。EminGT: Complementaryのメイン開発者。Capt Tatsu, gri573, SixthSurge, WoMspace (別名Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust。  
 
-option.info16=§nEuphoria Patchesをサポートする方法  
+option.info16=§d§nEuphoria Patchesをサポートする方法  
 value.info16.0=  
-option.info16.comment=Euphoria Patchesをサポートする方法は、アップデートに興味を持ち、他の人に共有することですが、PatreonやKo-FiでSpacEagle17を直接サポートし、開発バージョンにアクセスすることもできます。§l§neuphoriapatches.com/support  
+option.info16.comment=Euphoria Patchesをサポートする方法は、アップデートに興味を持ち、他の人に共有することですが、PatreonやKo-FiでSpacEagle17を直接サポートし、開発バージョンにアクセスすることもできます。§d§l§neuphoriapatches.com/support  
 
 option.info17=ベータ版: SpacEagle17 Patreon  
 value.info17.0=  
-option.info17.comment=PatreonやKo-FiでSpacEagle17をサポートし、独占開発バージョンにアクセスできます。§l§neuphoriapatches.com/support  
+option.info17.comment=PatreonやKo-FiでSpacEagle17をサポートし、独占開発バージョンにアクセスできます。§d§l§neuphoriapatches.com/support  
 
 option.info18=Complementary r5.4用  
 value.info18.0=  
@@ -1105,7 +1105,7 @@ value.WATERMARK.3=& GUI非表示 & クモの目を持つと表示
 option.WATERMARK_SIZE=ウォーターマークサイズ
 
 screen.EUPHORIA_SETTINGS=§dEuphoria Patches設定
-screen.EUPHORIA_SETTINGS.comment=Euphoria Patchesによって追加される設定です。§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。§r§l§neuphoriapatches.com/support
+screen.EUPHORIA_SETTINGS.comment=Euphoria Patchesによって追加される設定です。§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。§r§d§l§neuphoriapatches.com/support
 screen.ATMOSPHERE=大気
 screen.ATMOSPHERE.comment=大気に関連する設定です。
 screen.CLOUDS=雲
@@ -1206,6 +1206,7 @@ screen.POPULAR_SETTINGS=§d人気の設定
 screen.POPULAR_SETTINGS_2=ページ 2
 screen.POPULAR_SETTINGS_3=ページ 3
 screen.EP_VERSION=Euphoria Patches §d1.5.0
+screen.EP_VERSION.comment=§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。§r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=ワールドタイムアニメーション
 option.DAYLIGHT_CYCLE_COMPAT.comment=この設定は、gameruleでdoDaylightCycleをfalseにしている場合にのみ使用してください。有効にすると、雲などが昼夜サイクルがオフのワールドでもアニメーションしますが、プレイヤー間で同期されなくなります。
