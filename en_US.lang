@@ -194,6 +194,9 @@ screen.MOON_PHASE_INF_SETTINGS.comment=Settings to determine how different moon 
 screen.ACL_FEATURES_SETTINGS=ACL Exclusive Features §e[*]§r
 screen.ACL_FEATURES_SETTINGS.comment=Settings that are about features exclusive to Advanced Colored Lighting. §e[*]§r These features only work if Advanced Colored Lighting is enabled in Performance Settings and your system supports it.
 
+screen.PIXELATED_LIGHTING_SETTINGS=Pixelated Lighting
+screen.PIXELATED_LIGHTING_SETTINGS.comment=Settings to make certain lighting effects pixelated.
+
 screen.WATER_SETTINGS=Water
 screen.WATER_SETTINGS.comment=Settings that are about water.
 
@@ -622,14 +625,24 @@ value.SHADOW_SMOOTHING.3=Smooth
 value.SHADOW_SMOOTHING.2=Sharp §c[-]
 value.SHADOW_SMOOTHING.1=Very Sharp §c[-]
 
-option.PIXEL_SHADOW=Pixelated Shadows
-option.PIXEL_SHADOW.comment=Modifies the world coordinates on a grid to make shadows pixelated. §e[*]§r This setting does not affect performance.
-value.PIXEL_SHADOW.0=OFF
-value.PIXEL_SHADOW.8=8x8 §e[*]
-value.PIXEL_SHADOW.16=16x16 §e[*]
-value.PIXEL_SHADOW.32=32x32 §e[*]
-value.PIXEL_SHADOW.64=64x64 §e[*]
-value.PIXEL_SHADOW.128=128x128 §e[*]
+option.PIXELATED_SHADOWS=Pixelated Shadows
+option.PIXELATED_SHADOWS.comment=Makes shadows cast from the sun and moon look pixelated.
+
+option.PIXELATED_BLOCKLIGHT=Pixelated Blocklight
+option.PIXELATED_BLOCKLIGHT.comment=Makes the lighting cast by light source blocks look pixelated.
+
+option.PIXELATED_AO=Pixelated Edge Shadows
+option.PIXELATED_AO.comment=Makes Minecraft's vanilla ambient occlusion look pixelated.
+
+option.PIXEL_SCALE=Pixelation Scale
+option.PIXEL_SCALE.comment=Scaling done on the textures resolution.
+value.PIXEL_SCALE.-2=0.25x
+value.PIXEL_SCALE.-1=0.5x
+value.PIXEL_SCALE.1=1x
+value.PIXEL_SCALE.2=2x
+value.PIXEL_SCALE.3=4x
+value.PIXEL_SCALE.4=8x
+value.PIXEL_SCALE.5=16x
 
 option.BLOOM=Bloom
 option.BLOOM.comment=Enables blurry glow from bright objects and humidity.
@@ -2192,9 +2205,19 @@ option.DO_IPBR_LIGHTS=ACL IPBR Lights
 option.DO_IPBR_LIGHTS.comment=This option makes the non-light sources in the game emmit light if it is emissive via the shader. (Recomended: On)
 
 option.NIGHT_DESATURATION=Darkness Desaturation
-value.NIGHT_DESATURATION.0=OFF
-value.NIGHT_DESATURATION.300=Black/White
 option.NIGHT_DESATURATION.comment=Desaturates the colors of the environment in dark areas.
+
+option.NIGHT_DESATURATION_OW=Overwold Intensity
+value.NIGHT_DESATURATION_OW.0=OFF
+value.NIGHT_DESATURATION_OW.300=Black/White
+
+option.NIGHT_DESATURATION_NETHER=Nether Intensity
+value.NIGHT_DESATURATION_NETHER.0=OFF
+value.NIGHT_DESATURATION_NETHER.300=Black/White
+
+option.NIGHT_DESATURATION_END=End Intensity
+value.NIGHT_DESATURATION_END.0=OFF
+value.NIGHT_DESATURATION_END.300=Black/White
 
 option.NIGHT_CAVE_DESATURATION=Cave Desaturation
 option.NIGHT_CAVE_DESATURATION.comment=Desaturates the colors of the environment in caves.
