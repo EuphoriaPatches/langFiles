@@ -2208,7 +2208,7 @@ option.DO_IPBR_LIGHTS.comment=This option makes the non-light sources in the gam
 option.NIGHT_DESATURATION=Darkness Desaturation
 option.NIGHT_DESATURATION.comment=Desaturates the colors of the environment in dark areas.
 
-option.NIGHT_DESATURATION_OW=Overwold Intensity
+option.NIGHT_DESATURATION_OW=Overworld Intensity
 value.NIGHT_DESATURATION_OW.0=OFF
 value.NIGHT_DESATURATION_OW.300=Black/White
 
