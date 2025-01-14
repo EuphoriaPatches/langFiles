@@ -8,6 +8,7 @@ profile.MEDIUM=§aMedium
 profile.HIGH=§eHigh (Default)
 profile.VERYHIGH=§cVery High
 profile.ULTRA=§4§lUltra
+profile.COMPLEMENTARY=§4§l§n§oComplementary
 profile.comment=Shader profiles change performance settings with the most optimised visual fidelity to performance ratio. §e[*]§r It's recommended to use one of these profiles for your settings unless you know what you are doing. §e[*]§r All affected settings can all be found in the "Performance Settings" menu. The Popular Settings Profile enables the community's favorite settings.
 
 #Information
@@ -260,7 +261,7 @@ value.LIGHTSHAFT_QUALI_DEFINE.3=§cHigh
 value.LIGHTSHAFT_QUALI_DEFINE.4=§4§lVery High
 
 option.shadowDistance=Shadow Distance
-option.shadowDistance.comment=Adjusts the distance from the player which real-time shadows are rendered. §e[*]§r The value is internally capped at Render Distance. §c[-]§r Lower values may cause excessive Light Shaft leaking.
+option.shadowDistance.comment=Adjusts the distance from the player which real-time shadows are rendered. §e[*]§r The value is internally capped at Render Distance. §e[*]§r It's recommended to set this value to about 80% of your render distance for best performance and coverage. §c[-]§r Lower values may cause excessive Light Shaft leaking.
 value.shadowDistance.64.0=§a4 Chunks §c[-]
 value.shadowDistance.80.0=§a5 Chunks §c[-]
 value.shadowDistance.96.0=§a6 Chunks §c[-]
@@ -273,7 +274,7 @@ value.shadowDistance.256.0=§c16 Chunks
 value.shadowDistance.320.0=§c20 Chunks
 value.shadowDistance.384.0=§4§l24 Chunks
 value.shadowDistance.512.0=§4§l32 Chunks
-value.shadowDistance.768.0=§4§k-§r§4§l§n§o48 Chunks§r§4§k-
+value.shadowDistance.768.0=§4§l§n§o48 Chunks
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 Chunks§r§4§k-
 
 option.ENTITY_SHADOWS_DEFINE=Entity Shadows
@@ -313,13 +314,15 @@ value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=Advanced Colored Lighting §e[*]§r
-option.COLORED_LIGHTING.comment=Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r This system also enables some other features which you can individually enable/disable in the "Other" -> "ACL Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each 2 chunk increment costs more than twice the performance of the previous tier.
+option.COLORED_LIGHTING.comment=Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r This system also enables some other features which you can individually enable/disable in the "Other" -> "ACL Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each increment can cost more than twice the performance of the previous tier.
 value.COLORED_LIGHTING.0=§aOFF
-value.COLORED_LIGHTING.128=§e4 Chunks
+value.COLORED_LIGHTING.128=§c4 Chunks
 value.COLORED_LIGHTING.192=§c6 Chunks
-value.COLORED_LIGHTING.256=§c8 Chunks
+value.COLORED_LIGHTING.256=§4§l8 Chunks
 value.COLORED_LIGHTING.384=§4§l12 Chunks
-value.COLORED_LIGHTING.512=§4§k-§r§4§l§n§o16 Chunks§r§4§k- §r§c[-]
+value.COLORED_LIGHTING.512=§4§l§n§o16 Chunks
+value.COLORED_LIGHTING.768=§4§l§n§o24 Chunks §r§c[-]
+value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunks§r§4§k- §r§c[-]
 
 option.SSAO_I=Edge Shadow Intensity (SSAO)
 option.SSAO_I.comment=Determines the strength of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. §e[*]§r This setting won't work if SSAO is disabled in "Performance Settings".
@@ -975,6 +978,9 @@ option.WORLD_OUTLINE_THICKNESS.comment=Determines the thickness of the World Out
 option.WORLD_OUTLINE_I=World Outline Brightness
 option.WORLD_OUTLINE_I.comment=Determines how intense the World Outline effect will be.
 
+option.WORLD_OUTLINE_ON_ENTITIES=World Outline on Entities
+option.WORLD_OUTLINE_ON_ENTITIES.comment=Determines if the World Outline effect will apply to entities or not. §c[-]§r This setting may not work perfectly with some custom PBR resource packs.
+
 option.DARK_OUTLINE=Dark Outline
 option.DARK_OUTLINE.comment=Adds dark outlines around blocks. §c[-]§r This effect can impact performance.
 
@@ -1123,6 +1129,7 @@ option.WATERMARK_SIZE=Watermark Size
 
 screen.EUPHORIA_SETTINGS=§dEuphoria Patches Settings
 screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches. §bYou can support SpacEagle17 on Patreon or Ko-Fi and get new Exclusive Beta Versions. §r§d§l§neuphoriapatches.com/support 
+
 screen.ATMOSPHERE=Atmosphere
 screen.ATMOSPHERE.comment=Settings that relate to the atmosphere.
 screen.CLOUDS=Clouds
@@ -1143,6 +1150,7 @@ screen.STARS_OVERWORLD=Stars
 screen.STAR_COLORS_OW=Star Colors
 screen.RAIN_SETTINGS=Rain Settings
 screen.NIGHT_DESATURATION_SETTINGS= Darkness Desaturation
+
 screen.WORLD=World
 screen.WORLD.comment=Settings that relate to the world.
 screen.SPOOKY_SETTINGS=Spooklementary Settings
@@ -1180,6 +1188,7 @@ screen.ACL_SETTINGS=Advanced Colored Lighting
 screen.OVERLAY_NOISE=Overlay Noise
 screen.MOSS_NOISE_SETTINGS=Moss Noise Settings
 screen.SAND_NOISE_SETTINGS=Sand Noise Settings
+
 screen.MATERIALS=Materials
 screen.MATERIALS.comment=Settings that relate to materials.
 screen.EMISSIVE_MATERIALS=Emissive Materials
@@ -1193,6 +1202,14 @@ screen.LAVA_SETTINGS=Lava
 screen.LAVA_SETTINGS.comment=Settings that relate to hot burning lava.
 screen.END_ROD_SETTINGS=End Rod
 screen.END_ROD_SETTINGS.comment=Settings that relate to end rods.
+screen.FOLIAGE_SETTINGS=Foliage
+screen.FOLIAGE_SETTINGS.comment=Settings that relate to foliage.
+screen.PORTAL_SETTINGS=Portal Settings
+screen.PORTAL_SETTINGS.comment=Settings that relate to portals.
+screen.MISC_SETTINGS=Miscellaneous
+screen.MISC_SETTINGS.comment=Settings which don't fit into any other category.
+screen.MISC_EMISSIVE_SETTINGS=Miscellaneous Emissive
+
 screen.CAMERA=Camera
 screen.CAMERA.comment=Settings that relate to the Camera.
 screen.TONEMAP_SETTINGS_EUPHORIA=Tonemap Settings Euphoria
@@ -1216,10 +1233,12 @@ screen.LETTERBOX_SETTINGS=Letterbox Settings
 screen.GRID_SETTINGS=Grid Settings
 screen.WATERMARK_SETTINGS=Watermark Settings
 screen.DOF_SETTINGS=Depth Of Field Settings
+
 screen.FUN=Fun
 screen.FUN.comment=Let's have some fun.
 screen.WORLD_CURVATURE_SETTINGS=World Curvature
 screen.WORLD_CURVATURE_SETTINGS.comment=Settings that relate to World Curvature.
+
 screen.POPULAR_SETTINGS=§dPopular Settings
 screen.POPULAR_SETTINGS_2=Page 2
 screen.POPULAR_SETTINGS_3=Page 3
