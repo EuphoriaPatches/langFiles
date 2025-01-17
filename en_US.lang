@@ -202,7 +202,6 @@ screen.WATER_SETTINGS=Water
 screen.WATER_SETTINGS.comment=Settings that are about water.
 
 screen.WATER_COLOR_SETTINGS=Water Surface Color
-
 screen.UNDERWATER_COLOR_SETTINGS=Underwater Color
 
 screen.WATER_WAVE_SETTINGS=Waving Water Normals §e[*]§r
@@ -1149,7 +1148,7 @@ screen.STAR_COLORS_END=End Star Colors
 screen.STARS_OVERWORLD=Stars
 screen.STAR_COLORS_OW=Star Colors
 screen.RAIN_SETTINGS=Rain Settings
-screen.NIGHT_DESATURATION_SETTINGS= Darkness Desaturation
+screen.NIGHT_DESATURATION_SETTINGS=Darkness Desaturation
 
 screen.WORLD=World
 screen.WORLD.comment=Settings that relate to the world.

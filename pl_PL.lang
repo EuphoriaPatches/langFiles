@@ -11,6 +11,7 @@ profile.MEDIUM=§aŚredni
 profile.HIGH=§eWysoki (Domyślne)
 profile.VERYHIGH=§cBardzo Wysoki
 profile.ULTRA=§4§lUltra
+profile.COMPLEMENTARY=§4§l§n§oComplementary
 profile.comment=Profile shaderów zmieniają ustawienia jakości z najbardziej zoptymalizowanym stosunkiem jakości wizualnej do wydajności. §e[*]§r Zaleca się użycie jednego z tych profili, chyba że wiesz, co robisz. §e[*]§r Wszystkie ustawienia zmieniane przez profil można znaleść w menu "Ustawienia Jakości". Profil "Popularne Ustawienia" automatycznie właczy ulubione ustawienia społeczności.
 
 #Information
@@ -80,11 +81,11 @@ option.info15.comment= Pełna lista znajduje się w "credits.txt" w folderze sha
 
 option.info16=§d§nJak wesprzeć Euphoria Patches
 value.info16.0=
-option.info16.comment=Możesz wspierać Euphoria Patches, interesując się nowymi aktualizacjami i dzieląc się nimi z innymi, ale możesz też bezpośrednio wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do wersji deweloperskich. §d§d§l§neuphoriapatches.com/support
+option.info16.comment=Możesz wspierać Euphoria Patches, interesując się nowymi aktualizacjami i dzieląc się nimi z innymi, ale możesz też bezpośrednio wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do wersji Beta. §d§d§l§neuphoriapatches.com/support
 
-option.info17=Wersja Beta: Patreon SpacEagle17
+option.info17=Wersje Beta: Patreon SpacEagle17
 value.info17.0=
-option.info17.comment=Możesz wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do ekskluzywnych wersji deweloperskich. §d§d§l§neuphoriapatches.com/support
+option.info17.comment=Możesz wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do ekskluzywnych wersji Beta. §d§d§l§neuphoriapatches.com/support
 
 option.info18=Dla Complementary r5.4
 value.info18.0=
@@ -193,6 +194,9 @@ screen.MOON_PHASE_INF_SETTINGS.comment=Ustawienia określające wpływ różnych
 
 screen.ACL_FEATURES_SETTINGS=Funkcje ACL §e[*]§r
 screen.ACL_FEATURES_SETTINGS.comment=Ustawienia dotyczące funkcji Zaawansowanego Kolorowego Oświetlenia (ACL). §e[*]§r Te funkcje działają tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w Ustawieniach Jakości i twój komputer/shader loader je obsługuje.
+
+screen.PIXELATED_LIGHTING_SETTINGS=Zpikselowane Oświetlenie
+screen.PIXELATED_LIGHTING_SETTINGS.comment=Ustawienia powodujące pikselizację niektórych efektów.
 
 screen.WATER_SETTINGS=Woda
 screen.WATER_SETTINGS.comment=Ustawienia dotyczące wody.
@@ -311,11 +315,13 @@ value.ANISOTROPIC_FILTER.16=§4§lx16
 option.COLORED_LIGHTING=Zaawansowane Kolorowe Oświetlenie (ACL) §e[*]§r
 option.COLORED_LIGHTING.comment=Wykorzystuje wokselizację i techologie floodfill, aby dać źródłom światła odpowieni kolor, a także dodaje kilka nowych źródeł świateła. §e[*]§r Ta funkcja działa tylko na Iris i obsługiwanych komputerach. §e[*]§r Aby ta funkcja działała, "Cienie w Czasie Rzeczywistym" muszą być właczone. §a[+]§r To ustawienie włącza również kilka innych funkcji, które można indywidualnie włączyć/wyłączyć w menu "Inne" -> "Funkcje ACL".
 value.COLORED_LIGHTING.0=§aWYŁ.
-value.COLORED_LIGHTING.128=§e4 Chunki
+value.COLORED_LIGHTING.128=§c4 Chunki
 value.COLORED_LIGHTING.192=§c6 Chunków
-value.COLORED_LIGHTING.256=§c8 Chunków
+value.COLORED_LIGHTING.256=§4§l8 Chunków
 value.COLORED_LIGHTING.384=§4§l12 Chunków
-value.COLORED_LIGHTING.512=§4§k-§r§4§l§n§o16 Chunków§r§4§k- §r§c[-]
+value.COLORED_LIGHTING.512=§4§l§n§o16 Chunków
+value.COLORED_LIGHTING.768=§4§l§n§o24 Chunki §r§c[-]
+value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunki§r§4§k- §r§c[-]
 
 option.SSAO_I=Natężenie Cieni na Krawędziach (SSAO)
 option.SSAO_I.comment=Określa siłę Screen-Space Ambient Occlusion (SSAO), która dodaje dodatkowe cienie do krawędzi sceny. §e[*]§r To ustawienie nie będzie działać, jeśli SSAO jest wyłączone w "Ustawieniach Jakości".
@@ -353,6 +359,9 @@ value.LIGHTSHAFT_BEHAVIOUR.3=Extremalny §c[-]
 
 option.LIGHTSHAFT_SMOKE=Dym w Snopach Światła
 option.LIGHTSHAFT_SMOKE.comment=Dodaje wolumetryczny dym do snopów świetła. §c[-]§r Ten efekt może mieć wpływ na wydajność.
+
+option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Specjalne Snopy Świała w Bladym Ogrodzie
+option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Sprawia, że snopy światła wyglądają wyjątkowo w biomie „Blady Ogród”.
 
 option.LIGHTSHAFT_DAY_I=Mnożnik Snopów Światła w trakcie Dnia
 option.LIGHTSHAFT_NIGHT_I=Mnożnik Snopów Światła w trakcie Nocy
@@ -618,14 +627,24 @@ value.SHADOW_SMOOTHING.3=Gładkie
 value.SHADOW_SMOOTHING.2=Ostre §c[-]
 value.SHADOW_SMOOTHING.1=Bardzo Ostre §c[-]
 
-option.PIXEL_SHADOW=Cienie Pikselowane
-option.PIXEL_SHADOW.comment=Modyfikuje współrzędne świata na siatce, aby cienie były rozpikselowane. §e[*]§r To ustawienie nie wpływa na wydajność.
-value.PIXEL_SHADOW.0=WYŁ.
-value.PIXEL_SHADOW.8=8x8 §e[*]
-value.PIXEL_SHADOW.16=16x16 §e[*]
-value.PIXEL_SHADOW.32=32x32 §e[*]
-value.PIXEL_SHADOW.64=64x64 §e[*]
-value.PIXEL_SHADOW.128=128x128 §e[*]
+option.PIXELATED_SHADOWS=Cienie Pikselowane
+option.PIXELATED_SHADOWS.comment=Sprawia, że cienie rzucane przez słońce i księżyc wyglądają na rozpikselowane.
+
+option.PIXELATED_BLOCKLIGHT=Pikselowane Źródła Światła
+option.PIXELATED_BLOCKLIGHT.comment=Sprawia, że oświetlenie rzucane przez świecące bloki wygląda na rozpikselowane.
+
+option.PIXELATED_AO=Pikselowane Cienie Krawędziowe
+option.PIXELATED_AO.comment=Sprawia, że cienie krawędziowe w Minecrafcie wyglądaja na rozpikselowaną.
+
+option.PIXEL_SCALE=Skala Pikselozy
+option.PIXEL_SCALE.comment=Skalowanie robione na teksturach.
+value.PIXEL_SCALE.-2=0.25x
+value.PIXEL_SCALE.-1=0.5x
+value.PIXEL_SCALE.1=1x
+value.PIXEL_SCALE.2=2x
+value.PIXEL_SCALE.3=4x
+value.PIXEL_SCALE.4=8x
+value.PIXEL_SCALE.5=16x
 
 option.BLOOM=Blask
 option.BLOOM.comment=Umożliwia rozmycie blasku jasnych obiektów i wilgoci.
@@ -958,6 +977,9 @@ option.WORLD_OUTLINE_THICKNESS.comment=Określa grubość efektu konturu świata
 option.WORLD_OUTLINE_I=Jasność Konturu Świata
 option.WORLD_OUTLINE_I.comment=Określa intensywność efektu konturów świata.
 
+option.WORLD_OUTLINE_ON_ENTITIES=Kontur Świata na Mobach
+option.WORLD_OUTLINE_ON_ENTITIES.comment=Określa, czy efekt konturu świata będzie widoczny na mobach, czy nie. §c[-]§r To ustawienie może nie działać z niektórymi pakietami zasobów PBR.
+
 option.DARK_OUTLINE=Ciemny Kontur Świata
 option.DARK_OUTLINE.comment=Dodaje ciemne kontury wokół bloków. §c[-]§r Ten efekt może mieć wpływ na wydajność.
 
@@ -1106,6 +1128,7 @@ option.WATERMARK_SIZE=Rozmiar Znaku Wodnego
 
 screen.EUPHORIA_SETTINGS=§dUstawienia Euphoria Patches
 screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support 
+
 screen.ATMOSPHERE=Atmosfera
 screen.ATMOSPHERE.comment=Ustawienia które wpływają na atmosferę.
 screen.CLOUDS=Chmury
@@ -1125,6 +1148,8 @@ screen.STAR_COLORS_END=Kolory Gwiazd Endu
 screen.STARS_OVERWORLD=Gwiazdy
 screen.STAR_COLORS_OW=Kolory Gwiazd
 screen.RAIN_SETTINGS=Ustawienia Deszczu
+screen.NIGHT_DESATURATION_SETTINGS=Widzenie Zmierzchowe
+
 screen.WORLD=Świat
 screen.WORLD.comment=Ustawienia które wpływają na świat.
 screen.SPOOKY_SETTINGS=Ustawienia Spooklementary
@@ -1162,6 +1187,7 @@ screen.ACL_SETTINGS=Zaawansowane Kolorowe Oświetlenie
 screen.OVERLAY_NOISE=Powlekane Tekstury
 screen.MOSS_NOISE_SETTINGS=Ustawienia Powłoki Mchu
 screen.SAND_NOISE_SETTINGS=Ustawienia Piaszczystej Powłoki
+
 screen.MATERIALS=Materiały
 screen.MATERIALS.comment=Ustawienia związane z materiałami.
 screen.EMISSIVE_MATERIALS=Emisyjne Materiały
@@ -1175,6 +1201,14 @@ screen.LAVA_SETTINGS=Lawa
 screen.LAVA_SETTINGS.comment=Ustawienia związane z lawą.
 screen.END_ROD_SETTINGS=Słupek Endu
 screen.END_ROD_SETTINGS.comment=Ustawienia związane ze Słupkiem Endu
+screen.FOLIAGE_SETTINGS=Rośliny
+screen.FOLIAGE_SETTINGS.comment=Ustawienia związane ze roślinami.
+screen.PORTAL_SETTINGS=Portale
+screen.PORTAL_SETTINGS.comment=Ustawienia związane z portalami.
+screen.MISC_SETTINGS=Ogólne
+screen.MISC_SETTINGS.comment=Ustawienia które nie pasują do rzadnej kategorii.
+screen.MISC_EMISSIVE_SETTINGS=Ogólne Emisyjne
+
 screen.CAMERA=Ustawienia Kamery
 screen.CAMERA.comment=Ustawienia związane z kamerą.
 screen.TONEMAP_SETTINGS_EUPHORIA=Balans Kolorów Euphoria
@@ -1198,10 +1232,12 @@ screen.LETTERBOX_SETTINGS=Ustawienia Letterbox
 screen.GRID_SETTINGS=Ustawienia Siatki Aparatu
 screen.WATERMARK_SETTINGS=Ustawienia Znaku Wodnego
 screen.DOF_SETTINGS=Ustawienia Głębi Ostrości
+
 screen.FUN=Zabawa
 screen.FUN.comment=Zabawmy się trochę.
 screen.WORLD_CURVATURE_SETTINGS=Krzywizna Świata
 screen.WORLD_CURVATURE_SETTINGS.comment=Ustawienia związane z krzywizną świata.
+
 screen.POPULAR_SETTINGS=§dPopularne Ustawienia
 screen.POPULAR_SETTINGS_2=2 Strona
 screen.POPULAR_SETTINGS_3=3 Strona
@@ -1783,19 +1819,10 @@ value.SEASON_START.1=Jesień
 value.SEASON_START.2=Zima
 value.SEASON_START.3=Wiosna
 
-option.SEASON_LENGTH=Czas Pór Roku
+option.SEASON_LENGTH=Długość Pór Roku
 option.SEASON_LENGTH.comment=Zmienia czas trwania pór roku (w dniach Minecrafta.)
-value.SEASON_LENGTH.24000=1 dzień Minecrafta
-value.SEASON_LENGTH.72000=3 dni Minecrafta
-value.SEASON_LENGTH.168000=7 dni Minecrafta
-value.SEASON_LENGTH.192000=8 dni Minecrafta
-value.SEASON_LENGTH.336000=14 dni Minecrafta
-value.SEASON_LENGTH.576000=24 dni Minecrafta
-value.SEASON_LENGTH.672000=28 dni Minecrafta
-value.SEASON_LENGTH.720000=30 dni Minecrafta
-value.SEASON_LENGTH.1440000=60 dni Minecrafta
-value.SEASON_LENGTH.2184000=91 dni Minecrafta
-value.SEASON_LENGTH.2880000=120 dni Minecrafta
+value.SEASON_LENGTH.1=1 dzień Minecrafta
+suffix.SEASON_LENGTH=\ dni Minecrafta
 
 option.SEASON_TRANSITION_START=Początek Tranzycji
 option.SEASON_TRANSITION_START.comment=Przejście do następnej pory roky rozpocznie się, gdy minie ten procent obecnej pory roku.
@@ -2195,3 +2222,34 @@ option.SITUATIONAL_GLOWING_TRIMS.comment=Wykończenia zbroi będą się świeci�
 
 option.DO_IPBR_LIGHTS=Światła ACL IPBR
 option.DO_IPBR_LIGHTS.comment=Ta opcja sprawia, bloki które nie są źródłami światła, emitują światło za pomocą shadera. (Zalecane: Włączone)
+
+option.NIGHT_DESATURATION=Widzenie Zmierzchowe
+option.NIGHT_DESATURATION.comment=Zmniejsza nasycenie kolorów otoczenia w ciemnych obszarach.
+
+option.NIGHT_DESATURATION_OW=Natężenie na Powierzchni
+value.NIGHT_DESATURATION_OW.0=WYŁ.
+value.NIGHT_DESATURATION_OW.300=Czarno/Biało
+
+option.NIGHT_DESATURATION_NETHER=Natężenie w Netherze
+value.NIGHT_DESATURATION_NETHER.0=WYŁ.
+value.NIGHT_DESATURATION_NETHER.300=Czarno/Biało
+
+option.NIGHT_DESATURATION_END=Natężenie w Endzie
+value.NIGHT_DESATURATION_END.0=WYŁ.
+value.NIGHT_DESATURATION_END.300=Czarno/Biało
+
+option.NIGHT_CAVE_DESATURATION=Natężenie w Jaskiniach
+option.NIGHT_CAVE_DESATURATION.comment=Desaturuje kolory otoczenia w jaskiniach.
+value.NIGHT_CAVE_DESATURATION.0=WYŁ.
+
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=Usuń Przy Źródłach Światła
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=Usuwa efekt desaturacji w pobliżu źródeł światła.
+option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=Usuń Przy Światle Ręcznym
+option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=Usuwa efekt desaturacji podczas trzymania źródła światła.
+option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=Usuń Z Noktowizją
+option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=Usuwa efekt desaturacji podczas korzystania z noktowizji.
+
+option.DELTARUNE_BATTLE_BACKGROUND=Tło Bitwy z DeltaRune
+value.DELTARUNE_BATTLE_BACKGROUND.0=WYŁ.
+value.DELTARUNE_BATTLE_BACKGROUND.1=WŁ. - Tylko Niebo
+value.DELTARUNE_BATTLE_BACKGROUND.2=WŁ. - Z Wyjątkiem Mobów
