@@ -2250,7 +2250,7 @@ option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=Remove With Night Vision
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=Removes the desaturation effect when using night vision.
 option.PURKINJE_RENDER_DISTANCE_FADE=Render Distance Fade
 
-option.DELTARUNE_BATTLE_BACKGROUND=DeltaRune Battle Background
+option.DELTARUNE_BATTLE_BACKGROUND=Deltarune Battle Background
 value.DELTARUNE_BATTLE_BACKGROUND.0=OFF
 value.DELTARUNE_BATTLE_BACKGROUND.1=ON - Sky Only
 value.DELTARUNE_BATTLE_BACKGROUND.2=ON - Except Entities
