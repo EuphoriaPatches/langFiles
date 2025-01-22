@@ -1241,7 +1241,7 @@ screen.WORLD_CURVATURE_SETTINGS.comment=Ustawienia związane z krzywizną świat
 screen.POPULAR_SETTINGS=§dPopularne Ustawienia
 screen.POPULAR_SETTINGS_2=2 Strona
 screen.POPULAR_SETTINGS_3=3 Strona
-screen.EP_VERSION=Euphoria Patches §d1.5.0
+screen.EP_VERSION=Euphoria Patches §d1.5.1
 screen.EP_VERSION.comment=§bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
