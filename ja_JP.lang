@@ -1205,7 +1205,7 @@ screen.WORLD_CURVATURE_SETTINGS.comment=世界の曲率に関連する設定で�
 screen.POPULAR_SETTINGS=§d人気の設定
 screen.POPULAR_SETTINGS_2=ページ 2
 screen.POPULAR_SETTINGS_3=ページ 3
-screen.EP_VERSION=Euphoria Patches §d1.5.1
+screen.EP_VERSION=Euphoria Patches §d1.5.2
 screen.EP_VERSION.comment=§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。§r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=ワールドタイムアニメーション
