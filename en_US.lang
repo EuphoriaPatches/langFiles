@@ -1385,13 +1385,13 @@ option.OW_BEAM_B=Overworld Beams - Blue
 option.END_BEAMS=Ender Beams
 option.END_BEAMS.comment=Setting which enables nebula like beams in the End.
 option.END_CRYSTAL_VORTEX=End Crystal Vortex
-option.END_CRYSTAL_VORTEX.comment=Setting which enables energy beams going up from end crystals in the end. §4[***]§r Enables §cEntity Shadows§r. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings and your system supports it. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
+option.END_CRYSTAL_VORTEX.comment=Setting which enables energy beams going up from end crystals in the end. §4[***]§r Enables §cEntity Shadows§r. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
 value.END_CRYSTAL_VORTEX.0=OFF
 value.END_CRYSTAL_VORTEX.1=Vortex
 value.END_CRYSTAL_VORTEX.2=Healing Beam
 value.END_CRYSTAL_VORTEX.3=Both
 option.DRAGON_DEATH_EFFECT=Dragon Death Effect
-option.DRAGON_DEATH_EFFECT.comment=Setting which replaces the dragon's dying beams with a volumetric effect. §4[***]§r Enables §cEntity Shadows§r. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings and your system supports it. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
+option.DRAGON_DEATH_EFFECT.comment=Setting which replaces the dragon's dying beams with a volumetric effect. §4[***]§r Enables §cEntity Shadows§r. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
 option.E_BEAMS_AMBIENT_INFLUENCE=Ambient Color Influence
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=The beams will have the ambient color at 0.00 and the user defined color at 1.00. Doesn't apply to Dragon Ender Beams.
 option.E_BEAM_R=Ender Beams - Red
@@ -1617,7 +1617,7 @@ value.END_PORTAL_VARIATION.1=Smudged Strings
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=End Portal Rays
-option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end portal. Similar to Minecraft Dungeons. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
+option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end portal. Similar to Minecraft Dungeons. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
 
 option.SILHOUETTE=Silhouette
 option.SILHOUETTE.comment=When enabled makes blocks facing away from the sun black, useful for screenshots.
