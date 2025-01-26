@@ -2001,8 +2001,8 @@ option.TILT_SHIFT2=Нахил Y
 option.TILT_SHIFT2.comment=Вертикальний ефект нахилу
 value.TILT_SHIFT2.0=ВИМК.
 
-option.DOF_VIEW_FOCUS=Фокус погляду ГР
-option.DOF_VIEW_FOCUS.comment=Робить видимою площину фокусування ГР, коли видимий графічний інтерфейс
+option.DOF_VIEW_FOCUS_NEW=Фокус погляду ГР
+option.DOF_VIEW_FOCUS_NEW.comment=Робить видимою площину фокусування ГР, коли видимий графічний інтерфейс
 
 option.LET_THERE_BE_COLORS=ХАЙ БУДУТЬ КОЛЬОРИ
 

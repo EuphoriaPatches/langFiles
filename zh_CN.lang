@@ -2025,8 +2025,8 @@ option.TILT_SHIFT2=移轴倾角 - Y 轴
 option.TILT_SHIFT2.comment=移轴效果 - 倾角方向: 垂直.  §e译者注§r:. 目前的移轴镜头只实现了倾角功能, 偏移功能尚未实现.
 value.TILT_SHIFT2.0=关
 
-option.DOF_VIEW_FOCUS=景深焦平面视图
-option.DOF_VIEW_FOCUS.comment=在 GUI 未隐藏时显示景深焦平面.
+option.DOF_VIEW_FOCUS_NEW=景深焦平面视图
+option.DOF_VIEW_FOCUS_NEW.comment=在 GUI 未隐藏时显示景深焦平面.
 
 option.LET_THERE_BE_COLORS=五 彩 缤 纷
 

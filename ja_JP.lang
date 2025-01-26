@@ -1992,8 +1992,8 @@ option.TILT_SHIFT2=ティルトY
 option.TILT_SHIFT2.comment=ティルトシフト効果 - 垂直方向
 value.TILT_SHIFT2.0=オフ
 
-option.DOF_VIEW_FOCUS=DOFフォーカスビュー
-option.DOF_VIEW_FOCUS.comment=GUIが表示されているとき、DOFの焦点面を可視化します
+option.DOF_VIEW_FOCUS_NEW=DOFフォーカスビュー
+option.DOF_VIEW_FOCUS_NEW.comment=GUIが表示されているとき、DOFの焦点面を可視化します
 
 option.LET_THERE_BE_COLORS=カラーを表示
 

@@ -2019,8 +2019,8 @@ option.TILT_SHIFT2=Tilt Y
 option.TILT_SHIFT2.comment=Tilt-Shift Effect - Vertical
 value.TILT_SHIFT2.0=OFF
 
-option.DOF_VIEW_FOCUS=§cDOF Focus Plane (Do Not Use)
-option.DOF_VIEW_FOCUS.comment=Makes the Focus Plane of DOF visible when the GUI visible
+option.DOF_VIEW_FOCUS_NEW=§cDOF Focus Plane (Do Not Use)
+option.DOF_VIEW_FOCUS_NEW.comment=Makes the Focus Plane of DOF visible when the GUI visible
 
 option.LET_THERE_BE_COLORS=LET THERE BE COLORS
 

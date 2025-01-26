@@ -1995,8 +1995,8 @@ option.TILT_SHIFT2=Вертикальный Наклон
 option.TILT_SHIFT2.comment=Эффект наклона - вертикальный
 value.TILT_SHIFT2.0=Выкл
 
-option.DOF_VIEW_FOCUS=Фокусный Взгляд ГР
-option.DOF_VIEW_FOCUS.comment=Делает плоскость фокусировки глубины резкости видимой при видимом интерфейсе
+option.DOF_VIEW_FOCUS_NEW=Фокусный Взгляд ГР
+option.DOF_VIEW_FOCUS_NEW.comment=Делает плоскость фокусировки глубины резкости видимой при видимом интерфейсе
 
 option.LET_THERE_BE_COLORS=ПУСТЬ БУДУТ ЦВЕТА
 

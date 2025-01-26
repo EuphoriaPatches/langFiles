@@ -2019,8 +2019,8 @@ option.TILT_SHIFT2=Tilt Y
 option.TILT_SHIFT2.comment=Efekt Tilt-Shift - Oś Pionowa
 value.TILT_SHIFT2.0=WYŁ.
 
-option.DOF_VIEW_FOCUS=Wizualizacja Głebi Ostrości
-option.DOF_VIEW_FOCUS.comment=Sprawia, że płaszczyzna ostrości jest widoczna, gdy widoczny jest interfejs użytkownika.
+option.DOF_VIEW_FOCUS_NEW=Wizualizacja Głebi Ostrości
+option.DOF_VIEW_FOCUS_NEW.comment=Sprawia, że płaszczyzna ostrości jest widoczna, gdy widoczny jest interfejs użytkownika.
 
 option.LET_THERE_BE_COLORS=NIECH STANIE SIĘ KOLOROWOŚĆ
 
