@@ -2063,7 +2063,7 @@ value.GRID_CONDITION.2=Holding Spyglass
 option.EMISSIVE_FLOWERS=Emissive Flowers
 value.EMISSIVE_FLOWERS.0=OFF
 value.EMISSIVE_FLOWERS.1=ON
-value.EMISSIVE_FLOWERS.2=ON - While Raining
+value.EMISSIVE_FLOWERS.2=ON - Dark or Raining
 
 option.EMISSIVE_FLOWERS_TYPE=Emissive Flower Type
 value.EMISSIVE_FLOWERS_TYPE.0=All
