@@ -71,13 +71,13 @@ option.info13=Euphoria Mod Support
 value.info13.0=
 option.info13.comment=Euphoria Patches aims to better support modded blocks than regular Complementary by having default modded block support (check block.properties). Light Source detection with automatic applied emission. Foliage model detection with automatically applied SSS.
 
-option.info14=Best Shader Loader
+option.info14=Join the community
 value.info14.0=
-option.info14.comment=Euphoria Patches and also Complementary Shaders use iris-exclusive features which don't work on optifine. For the optimal experience, Iris is recommended. On Forge Oculus is for now recommended as it seems to support most iris-exclusive features.
+option.info14.comment=Join the Euphoria Patches Discord server for question, a fun community, and to stay up-to-date with the latest news. §d§l§neuphoriapatches.com/discord
 
 option.info15=Euphoria Patches Credits
 value.info15.0=
-option.info15.comment=The entire credits can be found in the Credits.txt file inside the shaders folder. isuewo - Former co-developer of Euphoria Patches. EminGT: The main developer of Complementary. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
+option.info15.comment=The entire credits can be found at §deuphoriapatches.com/credits§r. isuewo - Former co-developer of Euphoria Patches. EminGT: The main developer of Complementary. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§d§nHow to support Euphoria Patches
 value.info16.0=
@@ -98,6 +98,10 @@ option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Dow
 option.info20=
 value.info20.0=§aeuphoriapatches.com/download
 option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://euphoriapatches.com/download.
+
+option.info21=Frequently Asked Questions
+value.info21.0=
+option.info21.comment=Check out the FAQ page to find answers to common questions. §d§l§neuphoriapatches.com/faq
 
 #Style
 option.SHADER_STYLE=Visual Style
