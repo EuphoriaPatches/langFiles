@@ -74,13 +74,13 @@ option.info13=Euphoria 额外模组方块支持
 value.info13.0=
 option.info13.comment=Euphoria Patches 旨在通过默认置入更多模组的方块 ID 实现比普通 Complementary 更好的模组方块兼容 (请查看 block.properties). 自动应用自发光的光源方块检测. 自动应用次表面散射的植物模型检测.
 
-option.info14=推荐使用光影加载器: §e[Iris]§r
+option.info14=加入社区
 value.info14.0=
-option.info14.comment=Euphoria Patches 和 Complementary 光影同样都使用了 OptiFine 暂时没有的 Iris-独占特性. 为了获取最佳体验, 推荐使用 Iris 光影加载器. 在 Forge 平台上, 目前只推荐使用支持大多数 Iris 独占特性的, 且版本较新的 Oculus 模组.
+option.info14.comment=如果想提问, 了解 Euphoria Patches 的最新消息, 可以加入这个有趣的 Discord 服务器. §d§l§neuphoriapatches.com/discord
 
 option.info15=Euphoria Patches 致谢
 value.info15.0=
-option.info15.comment=完整致谢名单可在光影文件夹里的 Credits.txt 文件中查看. isuewo - Euphoria Patches 的前合作开发者. EminGT: Complementary 的主开发者. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
+option.info15.comment=完整致谢名单可以访问 §deuphoriapatches.com/credits§r 来查看. isuewo - Euphoria Patches 的前合作开发者. EminGT: Complementary 的主开发者. Capt Tatsu, gri573, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§d§n如何支持 Euphoria Patches
 value.info16.0=
@@ -101,6 +101,10 @@ option.info19.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载
 option.info20=
 value.info20.0=§aeuphoriapatches.com/download
 option.info20.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载: https://euphoriapatches.com/download.
+
+option.info21=常见问题解答
+value.info21.0=
+option.info21.comment=请查看 FAQ 页面去查找常见问题的解答. §d§l§neuphoriapatches.com/faq
 
 #Style
 option.SHADER_STYLE=视觉风格
@@ -205,7 +209,6 @@ screen.WATER_SETTINGS=水体
 screen.WATER_SETTINGS.comment=与水体效果相关的设置.
 
 screen.WATER_COLOR_SETTINGS=水面颜色
-
 screen.UNDERWATER_COLOR_SETTINGS=水下颜色
 
 screen.WATER_WAVE_SETTINGS=水面法线摇晃 §e[*]§r
@@ -1152,7 +1155,7 @@ screen.STAR_COLORS_END=末地星星颜色
 screen.STARS_OVERWORLD=星空设置 - 主世界
 screen.STAR_COLORS_OW=星星颜色
 screen.RAIN_SETTINGS=雨天设置
-screen.NIGHT_DESATURATION_SETTINGS= 暗处去饱和
+screen.NIGHT_DESATURATION_SETTINGS=暗处去饱和
 
 screen.WORLD=世界
 screen.WORLD.comment=关于世界的设置.
@@ -1389,13 +1392,13 @@ option.OW_BEAM_B=主世界星束 - 蓝色
 option.END_BEAMS=末地星束
 option.END_BEAMS.comment=启用在末地天空上方像出现的如同光束一般的星云.
 option.END_CRYSTAL_VORTEX=末地水晶涡流 §e[Iris]§r
-option.END_CRYSTAL_VORTEX.comment=用于开启在末地维度中从末地水晶旋转上升的能量涡流和治疗光束的设置. §4[***]§r 需启用 §c实体阴影§r. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
+option.END_CRYSTAL_VORTEX.comment=用于开启在末地维度中从末地水晶旋转上升的能量涡流和治疗光束的设置. §4[***]§r 需启用 §c实体阴影§r. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 value.END_CRYSTAL_VORTEX.0=关
 value.END_CRYSTAL_VORTEX.1=仅涡流
 value.END_CRYSTAL_VORTEX.2=仅治疗光束
 value.END_CRYSTAL_VORTEX.3=两者
 option.DRAGON_DEATH_EFFECT=末影龙死亡效果 §e[Iris]§r
-option.DRAGON_DEATH_EFFECT.comment=用体积特效替换末影龙死亡特效的选项. §4[***]§r 需启用 §c实体阴影§r. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
+option.DRAGON_DEATH_EFFECT.comment=用体积特效替换末影龙死亡特效的选项. §4[***]§r 需启用 §c实体阴影§r. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 option.E_BEAMS_AMBIENT_INFLUENCE=环境色影响程度
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=当数值越接近 0.00 时星束的颜色越接近环境色, 当数值越接近 1.00 时星束的颜色越接近玩家自定义的颜色. 此设置不会影响龙战星束颜色.
 option.E_BEAM_R=末地星束 - 红色
@@ -1621,7 +1624,7 @@ value.END_PORTAL_VARIATION.1=Smudged Strings
 value.END_PORTAL_VARIATION.3=Pixelated Salsa
 
 option.END_PORTAL_BEAM=末地传送门射束 §e[Iris]§r
-option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. §e[*]§r 本选项需启用位于 性能设置 中的 高级彩色照明 选项才能生效. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
+option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 
 option.SILHOUETTE=剪影模式
 value.SILHOUETTE.0=关
@@ -2025,7 +2028,7 @@ option.TILT_SHIFT2=移轴倾角 - Y 轴
 option.TILT_SHIFT2.comment=移轴效果 - 倾角方向: 垂直.  §e译者注§r:. 目前的移轴镜头只实现了倾角功能, 偏移功能尚未实现.
 value.TILT_SHIFT2.0=关
 
-option.DOF_VIEW_FOCUS_NEW=景深焦平面视图
+option.DOF_VIEW_FOCUS_NEW=§c景深焦平面 (请勿使用)
 option.DOF_VIEW_FOCUS_NEW.comment=在 GUI 未隐藏时显示景深焦平面.
 
 option.LET_THERE_BE_COLORS=五 彩 缤 纷
@@ -2068,8 +2071,8 @@ value.GRID_CONDITION.2=手持望远镜时
 
 option.EMISSIVE_FLOWERS=花朵发光
 value.EMISSIVE_FLOWERS.0=关
-value.EMISSIVE_FLOWERS.1=开 - 夜晚
-value.EMISSIVE_FLOWERS.2=开 - 雨天
+value.EMISSIVE_FLOWERS.1=开
+value.EMISSIVE_FLOWERS.2=开 - 暗处或雨天
 
 option.EMISSIVE_FLOWERS_TYPE=发光花朵类型
 value.EMISSIVE_FLOWERS_TYPE.0=全部
@@ -2252,8 +2255,9 @@ option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=手持光源时移除效果
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=当手持光源时移除去饱和效果.
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=夜视状态时移除效果
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=当自身处于夜视状态时移除去饱和效果.
+option.PURKINJE_RENDER_DISTANCE_FADE=随渲染距离淡出
 
-option.DELTARUNE_BATTLE_BACKGROUND=三角符文(DeltaRune) 战斗背景
+option.DELTARUNE_BATTLE_BACKGROUND=三角符文(Deltarune) 战斗背景
 value.DELTARUNE_BATTLE_BACKGROUND.0=关
 value.DELTARUNE_BATTLE_BACKGROUND.1=开 - 仅天空
 value.DELTARUNE_BATTLE_BACKGROUND.2=开 - 剔除实体
