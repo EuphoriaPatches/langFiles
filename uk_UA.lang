@@ -71,9 +71,9 @@ option.info13=Підтримка модів Euphoria
 value.info13.0=
 option.info13.comment=Euphoria Patches має на меті кращу підтримку блоків з модів, ніж Complementary завдяки підтримці блоків з модів за замовчуванням(див. block.properties). Виявлення джерела світла з автоматичним застосуванням випромінювання. Виявлення моделі листя з автоматичним застосуванням SSS
 
-option.info14=Найкращій завантажувач шейдерів
+option.info14=Приєднуйтесь до спільноти
 value.info14.0=
-option.info14.comment=Euphoria Patches і Complementary використовують ексклюзивні функції Iris, які не працюють в Optifine. Для отримання оптимального досвіду рекомендується Iris. На Forge наразі рекомендовано Oculus, оскільки він, здається, підтримує більшість ексклюзивних функцій Iris
+option.info14.comment=Приєднуйтеся до Discord-сервера Euphoria Patches, аби задати питання або просто доєднатися до спільноти, і бути в курсі останніх оновлень. §d§l§neuphoriapatches.com/discord
 
 option.info15=Згадки і подяки Euphoria Patches
 value.info15.0=
@@ -98,6 +98,10 @@ option.info19.comment=Нова версія EuphoriaPatcher доступна. З
 option.info20=
 value.info20.0=§aeuphoriapatches.com/download
 option.info20.comment=Нова версія EuphoriaPatcher доступна. Завантажити: https://euphoriapatches.com/download
+
+option.info21=Часті запитання
+value.info21.0=
+option.info21.comment=Перегляньте сторінку питання-відповіть, щоб, можливо, знайти відповіть на своє питання. §d§l§neuphoriapatches.com/faq
 
 #Style
 option.SHADER_STYLE=Візуальний стиль
