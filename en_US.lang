@@ -15,6 +15,9 @@ profile.comment=Shader profiles change performance settings with the most optimi
 screen.INFORMATION=Information
 screen.INFORMATION.comment=This section contains buttons that only exist to provide information.
 
+screen.INFORMATION2=Complementary Information
+screen.INFORMATION2.comment=This section contains buttons that only exist to provide information.
+
 option.info0=§bHover your mouse on a button
 value.info0.0=
 option.info0.comment=This section contains buttons that only exist to provide information.
@@ -1975,7 +1978,8 @@ option.VERTICAL_SCROLL_FREQUENCY=Scroll Frequency
 option.VERTICAL_STUTTER_FREQUENCY=Stutter Frequency
 
 option.PIXELATE_SCREEN=Pixelate
-option.PIXEL_SIZE_SCREEN=Pixel Size
+option.PIXELATED_SCREEN_SIZE=Pixel Size
+option.PIXELATED_SCREEN_SMOOTHNESS=Smoothness
 
 option.SCANLINE=Scanline
 value.SCANLINE.0=OFF
