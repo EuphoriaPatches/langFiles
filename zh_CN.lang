@@ -1248,7 +1248,7 @@ screen.WORLD_CURVATURE_SETTINGS.comment=与世界曲率相关的设置.
 screen.POPULAR_SETTINGS=§d最受欢迎的设置
 screen.POPULAR_SETTINGS_2=第二页
 screen.POPULAR_SETTINGS_3=第三页
-screen.EP_VERSION=Euphoria Patches §d1.5.2
+screen.EP_VERSION=Euphoria Patches §d1.5.3
 screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=世界时间动画
