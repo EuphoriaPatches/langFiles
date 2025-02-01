@@ -1944,7 +1944,7 @@ option.VERTICAL_SCROLL_FREQUENCY=スクロールの頻度
 option.VERTICAL_STUTTER_FREQUENCY=スタッターの頻度
 
 option.PIXELATE_SCREEN=ピクセル化
-option.PIXEL_SIZE_SCREEN=ピクセルサイズ
+option.PIXELATED_SCREEN_SIZE=ピクセルサイズ
 
 option.SCANLINE=スキャンライン
 value.SCANLINE.0=オフ

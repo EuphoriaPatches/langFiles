@@ -1971,7 +1971,7 @@ option.VERTICAL_SCROLL_FREQUENCY=Częstotliwość Przewijania
 option.VERTICAL_STUTTER_FREQUENCY=Częstotliwość Zacinania Się
 
 option.PIXELATE_SCREEN=Pikseloza
-option.PIXEL_SIZE_SCREEN=Rozmiar Pikseli
+option.PIXELATED_SCREEN_SIZE=Rozmiar Pikseli
 
 option.SCANLINE=Linia Skanowania
 value.SCANLINE.0=WYŁ.

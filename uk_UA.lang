@@ -1975,7 +1975,7 @@ option.VERTICAL_SCROLL_FREQUENCY=Частота прокрутки
 option.VERTICAL_STUTTER_FREQUENCY=Частота фрізів
 
 option.PIXELATE_SCREEN=Піксельний
-option.PIXEL_SIZE_SCREEN=Розмір пікселя
+option.PIXELATED_SCREEN_SIZE=Розмір пікселя
 
 option.SCANLINE=Сканування
 value.SCANLINE.0=ВИМК.
