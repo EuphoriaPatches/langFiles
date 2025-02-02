@@ -15,8 +15,11 @@ profile.COMPLEMENTARY=§4§l§n§oComplementary
 profile.comment=光影配置以最优化的视觉效果和性能比改变性能设置. §e[*]§r 除非你明确知道自己在做什么, 否则建议用任意预设配置来进行性能设置. §e[*]§r 所有受影响的设置都可以在 性能设置 菜单中找到. 最受欢迎的设置 配置会启用根据社区调研得出的公认最受喜欢的设置.
 
 #Information
-screen.INFORMATION=一些提示信息
+screen.INFORMATION=提示信息
 screen.INFORMATION.comment=此部分包含的选项按钮仅用于展示信息.
+
+screen.INFORMATION2=Complementary 提示信息
+screen.INFORMATION2.comment=此部分包含的选项按钮仅用于展示信息.
 
 option.info0=§b悬停你的鼠标指针在这些按钮上
 value.info0.0=
@@ -1981,6 +1984,7 @@ option.VERTICAL_STUTTER_FREQUENCY=卡顿频率
 
 option.PIXELATE_SCREEN=像素化
 option.PIXELATED_SCREEN_SIZE=像素大小
+option.PIXELATED_SCREEN_SMOOTHNESS=平滑度
 
 option.SCANLINE=扫描线
 value.SCANLINE.0=关
