@@ -1887,8 +1887,8 @@ option.FLOWER_SIZE=Розділ. здат. квітів
 option.FLOWER_AMOUNT=Кількість квітів
 value.FLOWER_AMOUNT.0=ВИМК.
 option.SPRING_GREEN_INTENSITY=Інтенсивність весни
-option.EMISSIVE_SPRING_FLOWERS=Сяйні квіти
-option.EMISSIVE_SPRING_FLOWERS.comment=Можливість вимкнути сяяння весняних квітів, якщо використовуються «сяйні квіти» на сторінці налаштувань маеріалів Euphoria
+option.EMISSIVE_SPRING_FLOWERS=Сяйні весняні квіти
+option.EMISSIVE_SPRING_FLOWERS.comment=Вмикає сяяння від сезонних весняних квітів, якщо використовуються «сяйні квіти» на сторінці налаштувань матеріалів Euphoria
 
 option.SUMMER_STRENGTH=Сила літа
 
