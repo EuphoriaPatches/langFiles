@@ -2134,8 +2134,11 @@ option.CAVE_SMOKE.comment=Додає ефект диму до об’ємног�
 
 option.WAVING_SUGAR_CANE=Похитування цукрової тростини
 
-option.SUN_GLARE_AMOUNT=Кількість відблисків сонця і місяця
+option.SUN_GLARE_AMOUNT=Кількість відблисків сонця
 value.SUN_GLARE_AMOUNT.0=ВИМК.
+
+option.MOON_GLARE_AMOUNT=Кількість відблисків місяця
+value.MOON_GLARE_AMOUNT.0=ВИМК.
 
 option.DAYLIGHT_STARS=Денні зірки
 option.DAYLIGHT_STARS.comment=Вмикає зірки вдень
@@ -2256,7 +2259,9 @@ option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=Видалити в руці
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=Усуває ефект знебарвлення під час тримання в руці джерела світла
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=Видалити з нічним баченням
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=Усуває ефект знебарвлення з нічним баченням
-option.PURKINJE_RENDER_DISTANCE_FADE=Дальність промал. зникання
+option.PURKINJE_RENDER_DISTANCE_FADE=Дальн. промал. зникання
+option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=Дальн. промал. зникання Незеру
+option.PURKINJE_RENDER_DISTANCE_FADE_END=Дальн. промал. зникання Енду
 
 option.DELTARUNE_BATTLE_BACKGROUND=Бойове тло Deltarune
 value.DELTARUNE_BATTLE_BACKGROUND.0=ВИМК.
