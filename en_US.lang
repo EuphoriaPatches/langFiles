@@ -2134,8 +2134,11 @@ option.CAVE_SMOKE.comment=Adds a smoke effect to the volumetric blocklight fog w
 
 option.WAVING_SUGAR_CANE=Waving Sugar Cane
 
-option.SUN_GLARE_AMOUNT=Sun/Moon Glare Amount
+option.SUN_GLARE_AMOUNT=Sun Glare Amount
 value.SUN_GLARE_AMOUNT.0=OFF
+
+option.MOON_GLARE_AMOUNT=Moon Glare Amount
+value.MOON_GLARE_AMOUNT.0=OFF
 
 option.DAYLIGHT_STARS=Daylight Stars
 option.DAYLIGHT_STARS.comment=Enables Stars during the day
