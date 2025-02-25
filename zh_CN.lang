@@ -2139,8 +2139,11 @@ option.CAVE_SMOKE.comment=当位于洞穴中时为体积方块光雾添加烟雾
 
 option.WAVING_SUGAR_CANE=甘蔗摇晃
 
-option.SUN_GLARE_AMOUNT=日月眩光强度
+option.SUN_GLARE_AMOUNT=太阳眩光强度
 value.SUN_GLARE_AMOUNT.0=关
+
+option.MOON_GLARE_AMOUNT=月亮眩光强度
+value.MOON_GLARE_AMOUNT.0=关
 
 option.DAYLIGHT_STARS=白日繁星
 option.DAYLIGHT_STARS.comment=使星空在白天可见.
@@ -2260,6 +2263,8 @@ option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=当手持光源时移除
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=夜视状态时移除效果
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=当自身处于夜视状态时移除去饱和效果.
 option.PURKINJE_RENDER_DISTANCE_FADE=随渲染距离淡出
+option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=随渲染距离淡出 - 下界
+option.PURKINJE_RENDER_DISTANCE_FADE_END=随渲染距离淡出 - 末地
 
 option.DELTARUNE_BATTLE_BACKGROUND=三角符文(Deltarune) 战斗背景
 value.DELTARUNE_BATTLE_BACKGROUND.0=关
