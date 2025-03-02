@@ -13,17 +13,17 @@
     "step3": "Запустіть гру з одним із: Fabric | Quilt | Forge | NeoForge",
     "step4": "теперь з'явиться в теці shaderpacks",
 
-    "unsupportedVersions": "Для непідтримуваних версій Minecraft, використовуйте патчер з більш новою версією Minecraft, згенеруйте Euphoria Patches і скопіюйте згенеровану теку shaderpack в непідтримуваний екземпляр",
+    "unsupportedVersions": "Для непідтримуваних версій Minecraft, використовуйте патчер з більш новою версією Minecraft, згенеруйте Euphoria Patches і скопіюйте створену теку shaderpack в непідтримуваний екземпляр",
 
     "downloadPageButton": "Перейти на сторінку завантажень",
 
-    "supportDevelopment1": "Якщо ви хочете отримати ексклюзивну тестову версію — підтримайте розробку!",
-    "supportDevelopment2": "Отримайте тестову версію зараз!",
+    "supportDevelopment1": "Якщо ви хочете отримати ранню ексклюзивну версію? Підтримайте розробку!",
+    "supportDevelopment2": "Отримайте ексклюзивні бета-збірки зараз!",
 
-    "installerMethodTitle": "Метод: інсталятор",
+    "installerMethodTitle": "Метод: установлювач",
     "installerStep1Before": "Перейти до",
-    "installerStep1After": "і завантажити інсталятор.",
-    "installerStep2": "Відкрийте інсталятор подвійним натисканням по завантаженому файлу",
+    "installerStep1After": "і завантажите установлювач.",
+    "installerStep2": "Відкрийте установлювач подвійним натисканням по завантаженому файлу",
     "installerStep3": "Натисніть на «Advanced Settings»",
     "installerStep4": "Виберіть прапорець «Install Euphoria Patches»",
     "installerStep5": "Натисніть установити і файл «Complementary Shaders + Euphoria Patches» повинен з'явитися у теці shaderpacks"
