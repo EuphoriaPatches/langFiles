@@ -2279,4 +2279,7 @@ value.DELTARUNE_BATTLE_BACKGROUND.2=ON - Except Entities
 
 option.END_CRYSTAL_EMISSION=End Crystal Emission
 option.SEA_LANTERN_SHADING=Sea Lantern Shading
-option.SEA_LANTERN_SHADING.comment=Option to remove the shading on the sea lanterns. §a[+]§r Recommended to be disabled if using Connected Textures. 
+option.SEA_LANTERN_SHADING.comment=Option to remove the shading on the sea lanterns. §a[+]§r Recommended to be disabled if using Connected Textures.
+
+option.CLEAR_WATER_SPOTS=Clear Water Spots
+option.CLEAR_WATER_SPOTS.comment=Adds clear spots to the water to add some variety. §e[*]§r Requires a type of wavy waves, either Unbound or Reimagined + Waves.
