@@ -834,6 +834,10 @@ option.ENTITY_GN_AND_CT.comment=Decides if Generated Normals and Coated Textures
 option.GENERATED_NORMAL_MULT=Generated Normal Strength
 option.GENERATED_NORMAL_MULT.comment=Adjusts the strength of auto-generated bumpy details on surfaces.
 
+option.GENERATED_NORMAL_ENTITY_MULT=Gen. Normals on Entities
+option.GENERATED_NORMAL_ENTITY_MULT.comment=Adjusts the strength of auto-generated bumpy details on entities.
+value.GENERATED_NORMAL_ENTITY_MULT.0=Default
+
 option.COATED_TEXTURE_MULT=Coated Texture Strength
 option.COATED_TEXTURE_MULT.comment=Adjusts the strength of auto-generated dusty details on textures.
 
@@ -1244,6 +1248,8 @@ screen.FUN=Fun
 screen.FUN.comment=Let's have some fun.
 screen.WORLD_CURVATURE_SETTINGS=World Curvature
 screen.WORLD_CURVATURE_SETTINGS.comment=Settings that relate to World Curvature.
+screen.RANDOM_BLOCKLIGHT_SETTINGS=Random Blocklight
+screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Settings that relate to Random Blocklight.
 
 screen.POPULAR_SETTINGS=§dPopular Settings
 screen.POPULAR_SETTINGS_2=Page 2
@@ -1533,7 +1539,9 @@ option.SHADER_WATER.comment=A toggle to turn the shader water on or off.
 option.WATER_GENERATED_NORMALS=Water Generated Normals
 
 option.RANDOM_BLOCKLIGHT=Random Colored Blocklight
+option.RANDOM_BLOCKLIGHT.comment=Randomizes the color of the blocklight depending on world coordinates, puraly a fun setting.
 option.RANDOM_BLOCKLIGHT_SIZE=Random Colored Blocklight Size
+option.RANDOM_BLOCKLIGHT_SIZE.comment=Change the color size of the random colored blocklight effect.
 
 option.NORMAL_RES=Normals Resolution
 option.NORMAL_RES.comment=Change the resolution at which the integrated normal maps render. §e[*]§r RP Support option must be set to Integrated PBR+ and Auto Generated Normals have to be turned on
@@ -1889,6 +1897,7 @@ value.FLOWER_AMOUNT.0=OFF
 option.SPRING_GREEN_INTENSITY=Spring Intensity
 option.EMISSIVE_SPRING_FLOWERS=Emissive Spring Flowers
 option.EMISSIVE_SPRING_FLOWERS.comment=Option to turn emission from seasons spring flowers on if using the Emissive Flowers Option found in the Euphoria Material settings page
+option.DISABLE_SPRING_IN_DRY_BIOMES=Disable In Dry Biomes
 
 option.SUMMER_STRENGTH=Summer Strength
 
@@ -2267,3 +2276,7 @@ option.DELTARUNE_BATTLE_BACKGROUND=Deltarune Battle Background
 value.DELTARUNE_BATTLE_BACKGROUND.0=OFF
 value.DELTARUNE_BATTLE_BACKGROUND.1=ON - Sky Only
 value.DELTARUNE_BATTLE_BACKGROUND.2=ON - Except Entities
+
+option.END_CRYSTAL_EMISSION=End Crystal Emission
+option.SEA_LANTERN_SHADING=Sea Lantern Shading
+option.SEA_LANTERN_SHADING.comment=Option to remove the shading on the sea lanterns. §a[+]§r Recommended to be disabled if using Connected Textures. 
