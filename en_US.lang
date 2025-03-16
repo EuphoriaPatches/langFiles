@@ -1539,7 +1539,7 @@ option.SHADER_WATER.comment=A toggle to turn the shader water on or off.
 option.WATER_GENERATED_NORMALS=Water Generated Normals
 
 option.RANDOM_BLOCKLIGHT=Random Colored Blocklight
-option.RANDOM_BLOCKLIGHT.comment=Randomizes the color of the blocklight depending on world coordinates, puraly a fun setting.
+option.RANDOM_BLOCKLIGHT.comment=Randomizes the color of the blocklight depending on world coordinates, purely a fun setting.
 option.RANDOM_BLOCKLIGHT_SIZE=Random Colored Blocklight Size
 option.RANDOM_BLOCKLIGHT_SIZE.comment=Change the color size of the random colored blocklight effect.
 
@@ -1551,7 +1551,7 @@ option.COATED_TEXTURE_RES.comment=Change the resolution at which the Noise Coate
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=Lightmap Normals
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=Make the integrated normal maps work with blocklight. §e[*]§r RP Support option must be set to Integrated PBR+ and Auto Generated Normals have to be turned on
-option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH=Block Intensity
+option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=Block Intensity
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Handheld Intensity
 
 option.CAVE_FOG=Cave Fog
@@ -1921,6 +1921,7 @@ option.MCBL_MAIN_DEFINE=Euphoria Colored Lighting
 option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. §e[*]§rOnly works on 1.16.5 and above.
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=Screen-Space
+value.MCBL_MAIN_DEFINE.2=ACL + Screen-Space
 
 option.MCBL_INFLUENCE=Multi-Colored Blocklight Influence
 option.MCBL_INFLUENCE.comment=Controls how much the multi-colored blocklight affects the default blocklight color.
@@ -2237,6 +2238,8 @@ option.STAR_COLOR_3_END_B=Star 3 - Blue
 option.STAR_COLOR_VARIATION_END=Color Intensity
 value.STAR_COLOR_VARIATION_END.0.0=OFF
 
+option.STARS_BOTH_HEMISPHERES=Stars Below Horizon
+
 option.SITUATIONAL_GLOWING_TRIMS=Situational Glowing Trims
 option.SITUATIONAL_GLOWING_TRIMS.comment=Trims will only glow in caves and at night. §e[*]§r Glowing Trims must be enabled for this to work.
 
@@ -2283,3 +2286,7 @@ option.SEA_LANTERN_SHADING.comment=Option to remove the shading on the sea lante
 
 option.CLEAR_WATER_SPOTS=Clear Water Spots
 option.CLEAR_WATER_SPOTS.comment=Adds clear spots to the water to add some variety. §e[*]§r Requires a type of wavy waves, either Unbound or Reimagined + Waves.
+
+option.ACL_ORE_INTENSITY=ACL Ore Intensity
+option.ACL_ORE_INTENSITY.comment=Change the ACL light intensity of ores.
+value.ACL_ORE_INTENSITY.0.0=OFF

@@ -1503,7 +1503,7 @@ option.COATED_TEXTURE_RES.comment=Измените разрешение, в ко
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=Нормали Карты Освещения
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=Заставьте интегрированные карты нормалей работать с светом блоков. §e[*]§r Опция поддержки RP должна быть установлена на Integrated PBR+, а Авто Генерация Нормалей должна быть включена.
-option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH=Интенсивность Блока
+option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=Интенсивность Блока
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Интенсивность От Удерживаемого Света
 
 option.CAVE_FOG=Пещерный Туман

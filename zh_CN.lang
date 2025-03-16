@@ -1546,7 +1546,7 @@ option.COATED_TEXTURE_RES.comment=调节噪点涂层纹理的渲染分辨率. §
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=光图法线
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=使集成法线贴图可以与方块光一同生效. §e[*]§r 资源包支持选项需设置为 集成PBR+ 且需启用 自动生成法线 选项.
-option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH=方块光源法线强度
+option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=方块光源法线强度
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=手持光源法线强度
 
 option.CAVE_FOG=洞穴雾气
