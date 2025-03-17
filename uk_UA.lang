@@ -1551,7 +1551,7 @@ option.COATED_TEXTURE_RES.comment=Змінює роздільну здатніс
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=Нерівності світлових мап
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=Змушує інтегровані мапи нерівностей працювати з джерелами світла. §e[*]§r Підтримка ПР має бути Integrated PBR+ і «генерувація нерівностей» увімкнено
-option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH=Інтенсивність блоків
+option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=Інтенсивність блоків
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Ручна інтенсивність
 
 option.CAVE_FOG=Печерний туман

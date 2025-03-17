@@ -1536,7 +1536,7 @@ option.COATED_TEXTURE_RES.comment=Change the resolution at which the Noise Coate
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=Normalne od Źródeł Światła
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=Sprawia, że zintegrowane mapy normalne działają z blokami źródeł światła (Domyślnie działają tylko ze światłem słońca/księżyca). §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+, a opcja Generowane Normalne (GN) musi być włączona.
-option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH=Intensywność od Bloków
+option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=Intensywność od Bloków
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Intensywność od Trzymanego Światła
 
 option.CAVE_FOG=Mgła w Jaskiniach

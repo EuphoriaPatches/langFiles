@@ -1500,7 +1500,7 @@ option.COATED_TEXTURE_RES.comment=ノイズコーティングされたテクス�
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=ライトマップ法線
 option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=統合された法線マップをブロック光に対応させます。§e[*]§r RPサポートオプションはIntegrated PBR+に設定されており、自動生成法線がオンになっている必要があります。
-option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH=ブロックの強度
+option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=ブロックの強度
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=手持ちの強度
 
 option.CAVE_FOG=洞窟の霧
