@@ -840,6 +840,10 @@ option.GENERATED_NORMAL_MULT.comment=调节自动生成的表面凹凸的强度.
 option.COATED_TEXTURE_MULT=噪点涂层纹理强度
 option.COATED_TEXTURE_MULT.comment=调节纹理上自动生成的的灰尘细节程度.
 
+option.GENERATED_NORMAL_ENTITY_MULT=实体法线生成强度
+option.GENERATED_NORMAL_ENTITY_MULT.comment=调节在实体上自动生成的凹凸细节的强度.
+value.GENERATED_NORMAL_ENTITY_MULT.0=默认
+
 option.GLOWING_ORE_MASTER=§e矿石发光
 option.GLOWING_ORE_MASTER.comment=启用矿石发光功能. §e[*]§r 若不启用, 本选项以下设置均不会生效.
 value.GLOWING_ORE_MASTER.0=§c关
@@ -1247,6 +1251,8 @@ screen.FUN=趣设
 screen.FUN.comment=让我们来做点有意思的功能!
 screen.WORLD_CURVATURE_SETTINGS=世界曲率
 screen.WORLD_CURVATURE_SETTINGS.comment=与世界曲率相关的设置.
+screen.RANDOM_BLOCKLIGHT_SETTINGS=随机彩色方块光
+screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=与随机彩色方块光相关的设置.
 
 screen.POPULAR_SETTINGS=§d最受欢迎的设置
 screen.POPULAR_SETTINGS_2=第二页
@@ -1536,7 +1542,9 @@ option.SHADER_WATER.comment=一个切换光影风格水体的开关.
 option.WATER_GENERATED_NORMALS=水体生成法线.
 
 option.RANDOM_BLOCKLIGHT=随机彩色方块光
+option.RANDOM_BLOCKLIGHT.comment=根据世界坐标对方块光随机应用颜色, 纯娱乐设置.
 option.RANDOM_BLOCKLIGHT_SIZE=随机彩色方块光尺度
+option.RANDOM_BLOCKLIGHT_SIZE.comment=调节随机彩色方块光随机化的规模尺度.
 
 option.NORMAL_RES=生成法线分辨率
 option.NORMAL_RES.comment=调节集成法线渲染分辨率. §e[*]§r 资源包支持选项需设置为 集成PBR+ 的同时打开 自动生成法线 选项.
@@ -1892,6 +1900,7 @@ value.FLOWER_AMOUNT.0=关
 option.SPRING_GREEN_INTENSITY=春天强度
 option.EMISSIVE_SPRING_FLOWERS=春花伴随发光
 option.EMISSIVE_SPRING_FLOWERS.comment=如果启用了 Euphoria 材质设置页面中的 花朵发光选项, 本选项提供一个单独关闭春季中草方块上随机花朵发光的选择.
+option.DISABLE_SPRING_IN_DRY_BIOMES=在干燥生物群系禁用
 
 option.SUMMER_STRENGTH=夏天强度
 
@@ -1915,6 +1924,7 @@ option.MCBL_MAIN_DEFINE=Euphoria 彩色照明
 option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光. §e[*]§r本选项仅适用于 1.16.5 及以上版本.
 value.MCBL_MAIN_DEFINE.0=关
 value.MCBL_MAIN_DEFINE.1=屏幕空间
+value.MCBL_MAIN_DEFINE.2=高级彩色照明 + 屏幕空间
 
 option.MCBL_INFLUENCE=彩色照明影响程度
 option.MCBL_INFLUENCE.comment=调节彩色照明颜色对默认方块光颜色的影响程度.
@@ -2231,6 +2241,8 @@ option.STAR_COLOR_3_END_B=Ⅲ类星星 - 蓝色
 option.STAR_COLOR_VARIATION_END=颜色强度 - 末地
 value.STAR_COLOR_VARIATION_END.0.0=关
 
+option.STARS_BOTH_HEMISPHERES=完整星空
+
 option.SITUATIONAL_GLOWING_TRIMS=情景式盔甲纹饰发光
 option.SITUATIONAL_GLOWING_TRIMS.comment=盔甲纹饰仅会在洞穴和夜晚时发光. §e[*]§r 本选项需启用 盔甲纹饰发光 选项才能生效.
 
@@ -2270,3 +2282,14 @@ option.DELTARUNE_BATTLE_BACKGROUND=三角符文(Deltarune) 战斗背景
 value.DELTARUNE_BATTLE_BACKGROUND.0=关
 value.DELTARUNE_BATTLE_BACKGROUND.1=开 - 仅天空
 value.DELTARUNE_BATTLE_BACKGROUND.2=开 - 剔除实体
+
+option.END_CRYSTAL_EMISSION=末地水晶发光亮度
+option.SEA_LANTERN_SHADING=海晶灯阴影
+option.SEA_LANTERN_SHADING.comment=提供一个将海晶灯阴影移除的选项. §a[+]§r 建议在使用连接纹理时禁用.
+
+option.CLEAR_WATER_SPOTS=水斑
+option.CLEAR_WATER_SPOTS.comment=为水体添加透明斑点以增加水面细节. §e[*]§r 需要任意一种类型的水体波浪, Unbound 或者 Reimagined + 水波.
+
+option.ACL_ORE_INTENSITY=矿石高级彩色照明强度
+option.ACL_ORE_INTENSITY.comment=调节矿石的高级彩色照明强度.
+value.ACL_ORE_INTENSITY.0.0=关
