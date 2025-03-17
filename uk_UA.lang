@@ -1539,7 +1539,7 @@ option.SHADER_WATER.comment=Перемикач, щоб увімкнути або
 option.WATER_GENERATED_NORMALS=Нерівності створені водою
 
 option.RANDOM_BLOCKLIGHT=Випад. колір джерел світла
-option.RANDOM_BLOCKLIGHT.comment=Робить віпадковим колір світла блоків залежно від світових координат, суто веселий параметр
+option.RANDOM_BLOCKLIGHT.comment=Робить випадковим колір світла блоків залежно від світових координат, суто веселий параметр
 option.RANDOM_BLOCKLIGHT_SIZE=Розмір випад. колірів світла блоків
 option.RANDOM_BLOCKLIGHT_SIZE.comment=Змінює розмір кольору ефекту світла блоків випадкових кольорів
 
