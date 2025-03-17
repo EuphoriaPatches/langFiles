@@ -1159,7 +1159,7 @@ screen.STAR_COLORS_END=Колір зірок Енду
 screen.STARS_OVERWORLD=Зірки
 screen.STAR_COLORS_OW=Колір зірок
 screen.RAIN_SETTINGS=Налаштування дощу
-screen.NIGHT_DESATURATIONSETTINGS=Знебарвлення темряви
+screen.NIGHT_DESATURATION_SETTINGS=Знебарвлення темряви
 
 screen.WORLD=Світ
 screen.WORLD.comment=Налаштування, які стосуються світу
