@@ -2183,6 +2183,7 @@ option.SHOCKWAVE=Shockwave
 value.SHOCKWAVE.0=OFF
 value.SHOCKWAVE.1=Circle
 value.SHOCKWAVE.2=Square
+option.SHOCKWAVE.comment=Crouch and find out!
 
 option.STAR_LAYER_OW=Star Layer
 option.STAR_LAYER_OW.comment=Adds additional stars to the current stars, larger or smaller ones
@@ -2238,7 +2239,8 @@ option.STAR_COLOR_3_END_B=Star 3 - Blue
 option.STAR_COLOR_VARIATION_END=Color Intensity
 value.STAR_COLOR_VARIATION_END.0.0=OFF
 
-option.STARS_BOTH_HEMISPHERES=Stars Below Horizon
+option.CELESTIAL_BOTH_HEMISPHERES=Full Sky Celestials
+option.CELESTIAL_BOTH_HEMISPHERES.comment=Renders celestial objects (stars, sun, moon, nebula) across the entire sky rather than just above the horizon, creating a more immersive skybox effect.
 
 option.SITUATIONAL_GLOWING_TRIMS=Situational Glowing Trims
 option.SITUATIONAL_GLOWING_TRIMS.comment=Trims will only glow in caves and at night. §e[*]§r Glowing Trims must be enabled for this to work.
