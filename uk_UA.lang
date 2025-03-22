@@ -1920,7 +1920,8 @@ option.NETHER_NOISE.comment=Робить небо Незеру над стеле
 option.MCBL_MAIN_DEFINE=Кольорове освітлення Euphoria
 option.MCBL_MAIN_DEFINE.comment=Вмикає багатокольорові джерела світла. §e[*]§rЛише 1.16.5 і вище
 value.MCBL_MAIN_DEFINE.0=ВИМК.
-value.MCBL_MAIN_DEFINE.1=Екран-простір
+value.MCBL_MAIN_DEFINE.1=Екраний простір
+value.MCBL_MAIN_DEFINE.2=ACL + екраний простір
 
 option.MCBL_INFLUENCE=Вплив багатокол. джерел світла
 option.MCBL_INFLUENCE.comment=Визначає, наскільки різнокольорове підсвічування впливає на колір блоку за замовчуванням
@@ -2182,6 +2183,7 @@ option.SHOCKWAVE=Ударна хвиля
 value.SHOCKWAVE.0=ВИМК.
 value.SHOCKWAVE.1=Кругла
 value.SHOCKWAVE.2=Квадратна
+option.SHOCKWAVE.comment=Присядь і дізнайся!
 
 option.STAR_LAYER_OW=Шар зірок
 option.STAR_LAYER_OW.comment=Додає додаткові зірки до поточних зірок, на більших або менших шарах
@@ -2237,6 +2239,9 @@ option.STAR_COLOR_3_END_B=Зірка 3 - синій
 option.STAR_COLOR_VARIATION_END=Інтенсивність кольору
 value.STAR_COLOR_VARIATION_END.0.0=ВИМК.
 
+option.CELESTIAL_BOTH_HEMISPHERES=Повне небо небожителів
+option.CELESTIAL_BOTH_HEMISPHERES.comment=Відображає небесні об’єкти (зірки, сонце, місяць, туманності) по всьому небу, а не над горизонтом, створюючи більш захоплюючий ефект неба
+
 option.SITUATIONAL_GLOWING_TRIMS=Ситуативні сяйні орнаменти обладунків
 option.SITUATIONAL_GLOWING_TRIMS.comment=Орнаменти обладунків сяятимуть лише в печерах і вночі. §e[*]§r Сяйні орнаменти обладунків мають бути увімкні
 
@@ -2279,7 +2284,11 @@ value.DELTARUNE_BATTLE_BACKGROUND.2=УВІМК. - крім сутностей
 
 option.END_CRYSTAL_EMISSION=Сяяння кристалу Енду
 option.SEA_LANTERN_SHADING=Затінення морського ліхтя
-option.SEA_LANTERN_SHADING.comment=Можливість видалити затінення на морських ліхтарях. §a[+]§r Рекомендовано вимкнути, якщо використовуються підключені текстури.
+option.SEA_LANTERN_SHADING.comment=Можливість видалити затінення на морських ліхтарях. §a[+]§r Рекомендовано вимкнути, якщо використовуються підключені текстури
 
 option.CLEAR_WATER_SPOTS=Прозорі водні плями
-option.CLEAR_WATER_SPOTS.comment=Додає прозорі плями у воду, щоб додати різноманітності. §e[*]§r Потрібен тип хвилястих хвиль: Непов'язаний або Переосмислений + хвилі.
+option.CLEAR_WATER_SPOTS.comment=Додає прозорі плями у воду, щоб додати різноманітності. §e[*]§r Потрібен тип хвилястих хвиль: Непов'язаний або Переосмислений + хвилі
+
+option.ACL_ORE_INTENSITY=Інтенсивність руд ACL
+option.ACL_ORE_INTENSITY.comment=Зміна інтенсивності світла ACL руд
+value.ACL_ORE_INTENSITY.0.0=ВИМК.
