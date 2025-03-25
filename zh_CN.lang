@@ -93,7 +93,7 @@ option.info17=测试版本: 从SpacEagle17的Patreon获取
 value.info17.0=
 option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本. §d§l§neuphoriapatches.com/support
 
-option.info18=对应 Complementary r5.4 版本
+option.info18=对应 Complementary r5.5 版本
 value.info18.0=
 option.info18.comment=感谢您安装 Euphoria Patches :)
 
@@ -1257,7 +1257,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=与随机彩色方块光相关的设�
 screen.POPULAR_SETTINGS=§d最受欢迎的设置
 screen.POPULAR_SETTINGS_2=第二页
 screen.POPULAR_SETTINGS_3=第三页
-screen.EP_VERSION=Euphoria Patches §d1.5.3
+screen.EP_VERSION=Euphoria Patches §d1.6.0
 screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=世界时间动画

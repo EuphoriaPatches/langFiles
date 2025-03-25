@@ -90,7 +90,7 @@ option.info17=ベータ版: SpacEagle17のPatreon
 value.info17.0=
 option.info17.comment=PatreonやKo-FiでSpacEagle17をサポートして限定開発バージョンにアクセスできます。. §d§l§neuphoriapatches.com/support
 
-option.info18=Complementary r5.4用
+option.info18=Complementary r5.5用
 value.info18.0=
 option.info18.comment=Euphoria Patchesをご利用いただきありがとうございます :)
 
@@ -1254,7 +1254,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=ランダムブロック光源に関�
 screen.POPULAR_SETTINGS=§d人気の設定
 screen.POPULAR_SETTINGS_2=ページ 2
 screen.POPULAR_SETTINGS_3=ページ 3
-screen.EP_VERSION=Euphoria Patches §d1.5.3
+screen.EP_VERSION=Euphoria Patches §d1.6.0
 screen.EP_VERSION.comment=§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。. §r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=ワールド時間アニメーション
