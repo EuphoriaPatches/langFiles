@@ -2283,9 +2283,7 @@ value.DELTARUNE_BATTLE_BACKGROUND.0=关
 value.DELTARUNE_BATTLE_BACKGROUND.1=开 - 仅天空
 value.DELTARUNE_BATTLE_BACKGROUND.2=开 - 剔除实体
 
-option.END_CRYSTAL_EMISSION=末地水晶发光亮度
-option.SEA_LANTERN_SHADING=海晶灯阴影
-option.SEA_LANTERN_SHADING.comment=提供一个将海晶灯阴影移除的选项. §a[+]§r 建议在使用连接纹理时禁用.
+option.END_CRYSTAL_EMISSION=末地水晶发光亮度.
 
 option.CLEAR_WATER_SPOTS=水斑
 option.CLEAR_WATER_SPOTS.comment=为水体添加透明斑点以增加水面细节. §e[*]§r 需要任意一种类型的水体波浪, Unbound 或者 Reimagined + 水波.

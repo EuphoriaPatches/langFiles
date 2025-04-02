@@ -2283,8 +2283,6 @@ value.DELTARUNE_BATTLE_BACKGROUND.1=ON - 空のみ
 value.DELTARUNE_BATTLE_BACKGROUND.2=ON - エンティティ以外
 
 option.END_CRYSTAL_EMISSION=エンドクリスタルの発光
-option.SEA_LANTERN_SHADING=シーランタンのシェーディング
-option.SEA_LANTERN_SHADING.comment=シーランタンのシェーディングを削除するオプションです。. §a[+]§r 連結テクスチャを使用している場合は無効にすることが推奨されます。
 
 option.CLEAR_WATER_SPOTS=クリアな水のスポット
 option.CLEAR_WATER_SPOTS.comment=水にクリアなスポットを追加し、多少のバリエーションを追加します。. §e[*]§r 水の波が有効(UnboundまたはReimagined + 波)である必要があります。

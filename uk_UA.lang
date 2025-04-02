@@ -2283,8 +2283,6 @@ value.DELTARUNE_BATTLE_BACKGROUND.1=УВІМК. - лише небо
 value.DELTARUNE_BATTLE_BACKGROUND.2=УВІМК. - крім сутностей
 
 option.END_CRYSTAL_EMISSION=Сяяння кристалу Енду
-option.SEA_LANTERN_SHADING=Затінення морського ліхтя
-option.SEA_LANTERN_SHADING.comment=Можливість видалити затінення на морських ліхтарях. §a[+]§r Рекомендовано вимкнути, якщо використовуються підключені текстури
 
 option.CLEAR_WATER_SPOTS=Прозорі водні плями
 option.CLEAR_WATER_SPOTS.comment=Додає прозорі плями у воду, щоб додати різноманітності. §e[*]§r Потрібен тип хвилястих хвиль: Непов'язаний або Переосмислений + хвилі
