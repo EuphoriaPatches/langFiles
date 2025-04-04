@@ -1156,6 +1156,8 @@ screen.STARS_OVERWORLD=Stars
 screen.STAR_COLORS_OW=Star Colors
 screen.RAIN_SETTINGS=Rain Settings
 screen.NIGHT_DESATURATION_SETTINGS=Darkness Desaturation
+screen.MOON_PHASED_DESATURATION_SETTINGS=Moon Phased Night Desaturation
+screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Adjusts the amount of desaturation based on the current phase of the moon.
 
 screen.WORLD=World
 screen.WORLD.comment=Settings that relate to the world.
@@ -2272,6 +2274,24 @@ option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=Removes the desaturation e
 option.PURKINJE_RENDER_DISTANCE_FADE=Render Distance Fade
 option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=Nether Render Distance Fade
 option.PURKINJE_RENDER_DISTANCE_FADE_END=End Render Distance Fade
+
+option.MOON_PHASE_INF_PURKINJE=Moon Phased Night Desaturation
+option.MOON_PHASED_DESATURATION_SETTINGS.comment=Adjusts the amount of desaturation based on the current phase of the moon.
+
+option.MOON_PHASE_FULL_PURKINJE=Full Moon
+option.MOON_PHASE_FULL_PURKINJE.comment=Desaturation strength during the Full Moon phase (brightest phase).
+value.MOON_PHASE_FULL_PURKINJE.0=OFF
+value.MOON_PHASE_FULL_PURKINJE.300=Black/White
+
+option.MOON_PHASE_PARTIAL_PURKINJE=Partial Moon
+option.MOON_PHASE_PARTIAL_PURKINJE.comment=Desaturation strength during all moon phases between Full Moon and Dark Moon. This is the phase you will see the most in Minecraft.
+value.MOON_PHASE_PARTIAL_PURKINJE.0=OFF
+value.MOON_PHASE_PARTIAL_PURKINJE.300=Black/White
+
+option.MOON_PHASE_DARK_PURKINJE=Dark Moon
+option.MOON_PHASE_DARK_PURKINJE.comment=Desaturation strength during New Moon (darkest phase).
+value.MOON_PHASE_DARK_PURKINJE.0=OFF
+value.MOON_PHASE_DARK_PURKINJE.300=Black/White
 
 option.DELTARUNE_BATTLE_BACKGROUND=Deltarune Battle Background
 value.DELTARUNE_BATTLE_BACKGROUND.0=OFF
