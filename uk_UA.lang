@@ -766,6 +766,9 @@ value.IPBR_EMISSIVE_MODE.1=Лише IPBR+
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 
+option.IPBR_COMPATIBILITY_MODE=Режим сумісності IPBR+
+option.IPBR_COMPATIBILITY_MODE.comment=Змінює спосіб обчислення деяких функцій IPBR+, щоб вони були менш агресивними, щоб спричиняти менше проблем із пакетами ресурсів або модами
+
 option.IPBR_PARTICLE_FEATURES=Функції частинок IPBR+
 option.IPBR_PARTICLE_FEATURES.comment=Вмикає кілька функцій для частинок, зокрема частинки лави, що світяться, і частинки води з кращим кольором
 
@@ -804,15 +807,8 @@ option.COLOR_CODED_PROGRAMS.comment=Показує, які шейдерні пр
 option.GLOWING_COLORED_PARTICLES=Сила сяйних частинок §c[-]§r
 option.GLOWING_COLORED_PARTICLES.comment=Змушує всі технічно «забарвлені» частинки бути сяйними. §c[-]§r Це не рекомендовано для загального ігрового процесу, оскільки він змушує багато частинок світитися, якщо вони виготовлені з матеріалів, які взагалі не повинні світитися
 
-option.MINIMUM_LIGHT_MODE=Печерне освітлення
-option.MINIMUM_LIGHT_MODE.comment=Додає додаткове освітлення в місця, де немає сонячного світла. §a[+]§r «За замовчуванням» визначає освітлення відповідно до повзунка «яскравість» у налаштуваннях відео. §c[-]§r Різка зміна цього параметра може порушити баланс освітлення
-value.MINIMUM_LIGHT_MODE.0=Дуже темне
-value.MINIMUM_LIGHT_MODE.1=Темне
-value.MINIMUM_LIGHT_MODE.2=За замовч.§a[+]
-value.MINIMUM_LIGHT_MODE.3=Яскраве
-value.MINIMUM_LIGHT_MODE.4=Дуже яскраве
-value.MINIMUM_LIGHT_MODE.5=Ультра §c[-]
-value.MINIMUM_LIGHT_MODE.6=Екстремальне §c[-]
+option.MINIMUM_LIGHT_MODE=Множник печерн. освіт.
+option.MINIMUM_LIGHT_MODE.comment=Додає додаткове освітлення до областей, які не мають світла від неба. §e[*]§r На освітлення печери також впливає повзунок «Яскравість» у налаштуваннях відео. §c[-]§r Різка зміна цього параметра може порушити баланс освітлення
 
 option.AMBIENT_MULT=Множник освітлення тіней
 option.AMBIENT_MULT.comment=Визначає кількість навколишнього освітлення, видимого в тіні. §c[-]§r Різка зміна цього параметра може порушити баланс освітлення
