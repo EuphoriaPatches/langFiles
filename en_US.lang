@@ -2306,3 +2306,5 @@ option.CLEAR_WATER_SPOTS.comment=Adds clear spots to the water to add some varie
 option.ACL_ORE_INTENSITY=ACL Ore Intensity
 option.ACL_ORE_INTENSITY.comment=Change the ACL light intensity of ores.
 value.ACL_ORE_INTENSITY.0.0=OFF
+
+option.ENTITIES_ARE_LIGHT=Entities Are Light
