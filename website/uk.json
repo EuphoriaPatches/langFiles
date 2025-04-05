@@ -15,6 +15,9 @@
 
     "unsupportedVersions": "Для непідтримуваних версій Minecraft, використовуйте патчер з більш новою версією Minecraft, згенеруйте Euphoria Patches і скопіюйте створену теку shaderpack в непідтримуваний екземпляр",
 
+    "discordContact": "Виникли проблеми з установкою?",
+    "discordContactLink": "Приєднайтеся до нашої спільноти Discord",
+
     "downloadPageButton": "Перейти на сторінку завантажень",
 
     "supportDevelopment1": "Якщо ви хочете отримати ранню ексклюзивну версію? Підтримайте розробку!",
