@@ -1156,6 +1156,8 @@ screen.STARS_OVERWORLD=Зірки
 screen.STAR_COLORS_OW=Колір зірок
 screen.RAIN_SETTINGS=Налаштування дощу
 screen.NIGHT_DESATURATION_SETTINGS=Знебарвлення темряви
+screen.MOON_PHASED_DESATURATION_SETTINGS=Нічне знебарв. фаз місяця
+screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Налаштування, які стосуються знебарвлення на основі поточної фази місяця
 
 screen.WORLD=Світ
 screen.WORLD.comment=Налаштування, які стосуються світу
@@ -2273,6 +2275,24 @@ option.PURKINJE_RENDER_DISTANCE_FADE=Дальн. промал. зникання
 option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=Дальн. промал. зникання Незеру
 option.PURKINJE_RENDER_DISTANCE_FADE_END=Дальн. промал. зникання Енду
 
+option.MOON_PHASE_INF_PURKINJE=Moon Phased Night Desaturation
+option.MOON_PHASED_DESATURATION_SETTINGS.comment=Adjusts the amount of desaturation based on the current phase of the moon.
+
+option.MOON_PHASE_FULL_PURKINJE=Повня
+option.MOON_PHASE_FULL_PURKINJE.comment=Сила знебарвлення під час фази повного місяця (найяскравіша фаза)
+value.MOON_PHASE_FULL_PURKINJE.0=ВИМК.
+value.MOON_PHASE_FULL_PURKINJE.300=Чорний/білий
+
+option.MOON_PHASE_PARTIAL_PURKINJE=Частковий
+option.MOON_PHASE_PARTIAL_PURKINJE.comment=Сила знебарвлення протягом усіх фаз місяця між повнею і молодиком. Це фаза, яку ви найчастіше побачите в Minecraft
+value.MOON_PHASE_PARTIAL_PURKINJE.0=ВИМК.
+value.MOON_PHASE_PARTIAL_PURKINJE.300=Чорний/білий
+
+option.MOON_PHASE_DARK_PURKINJE=Молодик
+option.MOON_PHASE_DARK_PURKINJE.comment=Сила знебарвлення під час молодика (найтемніша фаза)
+value.MOON_PHASE_DARK_PURKINJE.0=ВИМК.
+value.MOON_PHASE_DARK_PURKINJE.300=Чорний/білий
+
 option.DELTARUNE_BATTLE_BACKGROUND=Бойове тло Deltarune
 value.DELTARUNE_BATTLE_BACKGROUND.0=ВИМК.
 value.DELTARUNE_BATTLE_BACKGROUND.1=УВІМК. - лише небо
@@ -2286,3 +2306,5 @@ option.CLEAR_WATER_SPOTS.comment=Додає прозорі плями у вод�
 option.ACL_ORE_INTENSITY=Інтенсивність руд ACL
 option.ACL_ORE_INTENSITY.comment=Зміна інтенсивності світла ACL руд
 value.ACL_ORE_INTENSITY.0.0=ВИМК.
+
+option.ENTITIES_ARE_LIGHT=Сутності є світлом
