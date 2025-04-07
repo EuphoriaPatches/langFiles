@@ -1141,6 +1141,7 @@ screen.ATMOSPHERE.comment=Налаштування, які стосуються 
 screen.CLOUDS=Хмари
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Переосмислені хмари
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Непов'язані хмари
+screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Подвійні непов'язані хмари
 screen.AURORA_SETTINGS=Північне сяйво
 screen.AURORA_SETTINGS.comment=Налаштування, які стосуються північного сяйва
 screen.AURORA_COLOR_SETTINGS=Налаштування кольору північного сяйва
@@ -1358,6 +1359,17 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Кількість хмар, які в
 
 option.HIGH_QUALITY_CLOUDS=Висока якість хмар
 option.HIGH_QUALITY_CLOUDS.comment=Підвищує якість хмар, їб буде більше, ніж у межах звичайних налаштуваннях Complementary. §c[-]§r Увімкнення цього параметра може вплинути на продуктивність
+
+option.DOUBLE_UNBOUND_CLOUDS=Подвійні непов'язані хмари
+option.DOUBLE_UNBOUND_CLOUDS.comment=Дозволяє промальовування другого шару непов'язаних хмар. §c[-]§r Це може вплинути на продуктивність
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Вершина 2 шару хмар
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Визначає висоту, на якій з’являться хмари другого шару
+option.CLOUD_UNBOUND_LAYER2_HEIGHT=Висота 2 шару хмар
+option.CLOUD_UNBOUND_LAYER2_SIZE=Розмір 2 шару хмар
+option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Визначає розмір хмар другого шару
+option.CLOUD_UNBOUND_LAYER2_AMOUNT=Кількість 2 шару хмар
+option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Визначає кількість хмар другого шару
+option.CLOUD_UNBOUND_LAYER2_SPEED_MULT=Швидкість 2 шару хмар
 
 option.END_SMOKE=Дим
 option.END_SMOKE.comment=О ні, хтось залишив вогонь без нагляду, і тепер Енд димить згори і знизу!
@@ -1884,6 +1896,10 @@ option.AUTUMN_NOISE_SIZE=Розмір кольору шуму
 option.AUTUMN_NOISE_SIZE.comment=Розмір шуму, який створює градієнт кольору листя
 
 option.LEAVES_ON_GROUND=Листя на землі
+option.LEAVES_ON_GROUND.comment=Восени листя буде на землі
+
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS=Додаткове листя в лісах
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS.comment=Більше листя буде на землі в лісах
 
 option.AUTUMN_STRENGTH=Сила осені
 option.AUTUMN_STRENGTH.comment=Змінює колір, що перезаписується восени
