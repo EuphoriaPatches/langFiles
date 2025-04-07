@@ -1141,6 +1141,7 @@ screen.ATMOSPHERE.comment=Settings that relate to the atmosphere.
 screen.CLOUDS=Clouds
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Reimagined Clouds
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Unbound Clouds
+screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Double Unbound Clouds
 screen.AURORA_SETTINGS=Aurora Borealis
 screen.AURORA_SETTINGS.comment=Settings that relate to the Aurora Borealis.
 screen.AURORA_COLOR_SETTINGS=Aurora Color Settings
@@ -1358,6 +1359,17 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Ammount of clouds which get removed du
 
 option.HIGH_QUALITY_CLOUDS=Higher Quality Clouds
 option.HIGH_QUALITY_CLOUDS.comment=Increases the quality of Clouds to more than is possible within the normal Complementary Settings. §c[-]§r Turning this setting on can impact performance.
+
+option.DOUBLE_UNBOUND_CLOUDS=Double Unbound Clouds
+option.DOUBLE_UNBOUND_CLOUDS.comment=Enables a second layer of unbound clouds to be rendered. §c[-]§r This setting can impact performance.
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Cloud Layer 2 Altitude
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Determines the world height which the second layer clouds will appear at.
+option.CLOUD_UNBOUND_LAYER2_HEIGHT=Cloud Layer 2 Height
+option.CLOUD_UNBOUND_LAYER2_SIZE=Cloud Layer 2 Size
+option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Determines the size of the second layer clouds.
+option.CLOUD_UNBOUND_LAYER2_AMOUNT=Cloud Layer 2 Amount
+option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Determines the amount of the second layer clouds.
+option.CLOUD_UNBOUND_LAYER2_SPEED_MULT=Cloud Layer 2 Speed Multiplier
 
 option.END_SMOKE=End Smoke
 option.END_SMOKE.comment=Someone left the fire unattended and now the End has smoke in the upper and lower void.
@@ -1884,6 +1896,10 @@ option.AUTUMN_NOISE_SIZE=Color Noise Size
 option.AUTUMN_NOISE_SIZE.comment=Size of the noise which produces the leaf color gradient
 
 option.LEAVES_ON_GROUND=Leaves On The Ground
+option.LEAVES_ON_GROUND.comment=Leaves will be on the ground in autumn.
+
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS=Extra Floor Leaves In Forests
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS.comment=More leaves will be on the ground in forests.
 
 option.AUTUMN_STRENGTH=Autumn Strength
 option.AUTUMN_STRENGTH.comment=Change the color overwrite in autumn.
