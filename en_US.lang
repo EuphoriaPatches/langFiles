@@ -1360,6 +1360,8 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Ammount of clouds which get removed du
 option.HIGH_QUALITY_CLOUDS=Higher Quality Clouds
 option.HIGH_QUALITY_CLOUDS.comment=Increases the quality of Clouds to more than is possible within the normal Complementary Settings. §c[-]§r Turning this setting on can impact performance.
 
+option.CLOUD_LAYER2_SPEED_MULT=Cloud Layer 2 Speed Multiplier
+
 option.DOUBLE_UNBOUND_CLOUDS=Double Unbound Clouds
 option.DOUBLE_UNBOUND_CLOUDS.comment=Enables a second layer of unbound clouds to be rendered. §c[-]§r This setting can impact performance.
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Cloud Layer 2 Altitude
@@ -1369,7 +1371,6 @@ option.CLOUD_UNBOUND_LAYER2_SIZE=Cloud Layer 2 Size
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Determines the size of the second layer clouds.
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=Cloud Layer 2 Amount
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Determines the amount of the second layer clouds.
-option.CLOUD_UNBOUND_LAYER2_SPEED_MULT=Cloud Layer 2 Speed Multiplier
 
 option.END_SMOKE=End Smoke
 option.END_SMOKE.comment=Someone left the fire unattended and now the End has smoke in the upper and lower void.
