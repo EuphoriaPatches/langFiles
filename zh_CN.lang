@@ -35,7 +35,7 @@ option.info2.comment=最佳设置其实是很主观的, 但对于绝大多数人
 
 option.info3=什么是配置文件和视觉风格
 value.info3.0=
-option.info3.comment=至少在本光影里, 配置文件 设置会改变 性能设置 菜单中的选项, 并且不会影响那些基于玩家个人偏好的设置. 视觉风格 选项会改变很多基于玩家个人偏好的那些 默认风格 值, 但其实它对性能影响不大.
+option.info3.comment=至少在本光影里, 配置文件 设置会改变 性能设置 菜单中的选项, 并且不会影响那些基于玩家个人偏好的设置. 视觉风格 选项会改变很多位于 偏好 设置选项里的 由所选风格决定 值, 但其实它对性能影响不大.
 
 option.info4=什么是资源包支持
 value.info4.0=
@@ -292,7 +292,7 @@ value.ENTITY_SHADOWS_DEFINE.-1=§a关
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§o开§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=细节质量
-option.DETAIL_QUALITY.comment=调节影响性能的几个功能. 调节以下几个方面的质量: TAA, 照明调整, 夜空星云, 末地星束, 天空效果反射, 雨水坑精确度.
+option.DETAIL_QUALITY.comment=调节影响性能的几个功能. 调节以下几个方面的质量: TAA, 照明调整, 夜空星云, 末地星束, 天空效果反射, 雨水坑精确度, 摇晃效果.
 value.DETAIL_QUALITY.0=§a极低
 value.DETAIL_QUALITY.2=§e中
 value.DETAIL_QUALITY.3=§c高
@@ -378,8 +378,8 @@ option.LIGHTSHAFT_NIGHT_I=光轴 - 夜晚 - 倍率
 option.LIGHTSHAFT_RAIN_I=光轴 - 雨天 - 倍率
 
 option.CLOUD_STYLE_DEFINE=云层风格
-option.CLOUD_STYLE_DEFINE.comment=选择云层的视觉风格. §e[*]§r 默认风格 意味着本选项会随着光影设置菜单主页里的 视觉风格 选项自动切换风格. §e[*]§r 原版 风格需要在视频设置中打开云层.
-value.CLOUD_STYLE_DEFINE.-1=默认风格
+option.CLOUD_STYLE_DEFINE.comment=选择云层的视觉风格. §e[*]§r 由所选风格决定 意味着本选项会随着光影设置菜单主页里的 视觉风格 选项自动切换风格. §e[*]§r 原版 风格需要在视频设置中打开云层.
+value.CLOUD_STYLE_DEFINE.-1=由所选风格决定
 value.CLOUD_STYLE_DEFINE.0=§c关
 value.CLOUD_STYLE_DEFINE.1=Reimagined
 value.CLOUD_STYLE_DEFINE.3=Unbound
@@ -486,8 +486,8 @@ option.GR_BB=颜色分级 - 蓝色到蓝色
 option.GR_BC=颜色分级 - 蓝色曲线
 
 option.WATER_STYLE_DEFINE=水体风格
-option.WATER_STYLE_DEFINE.comment=选择水体的视觉风格. §e[*]§r 默认风格 意味着本选项会随着光影的配置菜单主页里的 视觉风格 选项自动切换风格. §e[*]§r 原版 风格需要在视频设置中打开云层.
-value.WATER_STYLE_DEFINE.-1=默认风格
+option.WATER_STYLE_DEFINE.comment=选择水体的视觉风格. §e[*]§r 由所选风格决定 意味着本选项会随着光影的配置菜单主页里的 视觉风格 选项自动切换风格. §e[*]§r 原版 风格需要在视频设置中打开云层.
+value.WATER_STYLE_DEFINE.-1=由所选风格决定
 value.WATER_STYLE_DEFINE.1=Reimagined
 value.WATER_STYLE_DEFINE.2=Reimagined + 水波
 value.WATER_STYLE_DEFINE.3=Unbound
@@ -546,8 +546,8 @@ option.WATER_SIZE_MULT=水波大小
 option.WATER_SIZE_MULT.comment=调节在水外看到的指向性水面波浪(法线)的大小.
 
 option.SUN_ANGLE=日月斜角
-option.SUN_ANGLE.comment=调节日月相对于世界在正午时偏转的角度. §a[+]§r Reimagined的照明模型被特别优化到日月角度为 0° 时和其他角度效果一样好.
-value.SUN_ANGLE.-1=默认角度
+option.SUN_ANGLE.comment=调节日月相对于世界在正午时偏转的角度. §a[+]§r Reimagined 的照明模型被特别优化到日月角度为 0° 时和其他角度效果一样好.
+value.SUN_ANGLE.-1=由所选风格决定
 value.SUN_ANGLE.60=60
 value.SUN_ANGLE.55=55
 value.SUN_ANGLE.50=50
@@ -576,7 +576,7 @@ value.SUN_ANGLE.-60=-60
 
 option.SUN_MOON_STYLE_DEFINE=日月风格
 option.SUN_MOON_STYLE_DEFINE.comment=选择太阳和月亮的视觉风格. §e[*]§r 由于太阳,月亮和天空盒的差异和限制,这一设置有可能不与某些资源包的正确互动.
-value.SUN_MOON_STYLE_DEFINE.-1=默认风格
+value.SUN_MOON_STYLE_DEFINE.-1=由所选风格决定
 value.SUN_MOON_STYLE_DEFINE.1=Reimagined
 value.SUN_MOON_STYLE_DEFINE.2=Unbound
 value.SUN_MOON_STYLE_DEFINE.3=Unbound - 较小
@@ -600,13 +600,13 @@ value.RAINBOWS.3=保持开启
 
 option.AURORA_STYLE_DEFINE=北极光风格
 option.AURORA_STYLE_DEFINE.comment=选择出现在夜空中的北极光的视觉风格.
-value.AURORA_STYLE_DEFINE.-1=默认风格
+value.AURORA_STYLE_DEFINE.-1=由所选风格决定
 value.AURORA_STYLE_DEFINE.0=§c关
 value.AURORA_STYLE_DEFINE.1=Reimagined
 value.AURORA_STYLE_DEFINE.2=Unbound
 
 option.AURORA_CONDITION=极光出现情景
-option.AURORA_CONDITION.comment=决定出现北极光的条件. §e[*]§r 无论如何设置, 极光仅在夜晚出现.
+option.AURORA_CONDITION.comment=极光出现情景设置决定出现北极光的条件. §e[*]§r 无论如何设置, 极光仅在夜晚出现.
 value.AURORA_CONDITION.0=每个夜晚
 value.AURORA_CONDITION.1=满月夜晚
 value.AURORA_CONDITION.2=积雪生物群系的每个夜晚
@@ -769,6 +769,9 @@ value.IPBR_EMISSIVE_MODE.1=IPBR+ Only
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 
+option.IPBR_COMPATIBILITY_MODE=集成PBR+兼容模式
+option.IPBR_COMPATIBILITY_MODE.comment=更改部分集成PBR+功能的计算方式来, 避免使用激进的实现方法, 以减少对部分资源包和模组造成的问题.
+
 option.IPBR_PARTICLE_FEATURES=集成PBR+粒子功能
 option.IPBR_PARTICLE_FEATURES.comment=启用粒子的多个集成PBR+功能, 包括岩浆的发光粒子和有更好颜色的水粒子等.
 
@@ -807,15 +810,8 @@ option.COLOR_CODED_PROGRAMS.comment=显示用于渲染几何的着色器程序. 
 option.GLOWING_COLORED_PARTICLES=强制粒子发光 §c[-]§r
 option.GLOWING_COLORED_PARTICLES.comment=使所有技术层面上属于 "有色" 的粒子发光. §c[-]§r 本选项不适合正常游玩中开启, 因为它会使很多 (原始构成材质不发光的) 粒子发光.
 
-option.MINIMUM_LIGHT_MODE=洞穴照明
-option.MINIMUM_LIGHT_MODE.comment=为没有天空光的区域额外提升亮度. §a[+]§r 默认 选项根据视频设置中的 亮度 滑块决定洞穴等封闭区域内的照明. §c[-]§r 大幅改变本选项数值会破坏照明平衡.
-value.MINIMUM_LIGHT_MODE.0=非常黑暗
-value.MINIMUM_LIGHT_MODE.1=暗
-value.MINIMUM_LIGHT_MODE.2=默认 §a[+]
-value.MINIMUM_LIGHT_MODE.3=亮
-value.MINIMUM_LIGHT_MODE.4=非常明亮
-value.MINIMUM_LIGHT_MODE.5=超级明亮 §c[-]
-value.MINIMUM_LIGHT_MODE.6=极致明亮 §c[-]
+option.CAVE_LIGHTING=洞穴照明倍率
+option.CAVE_LIGHTING.comment=为没有天空光的区域额外提升亮度. §a[+]§r 本选项也同样受视频设置中的亮度滑块影响. §c[-]§r 大幅改变本选项数值会破坏照明平衡.
 
 option.AMBIENT_MULT=环境照明强度倍率
 option.AMBIENT_MULT.comment=决定在阴影中看到的其他环境照明的强度. §c[-]§r 大幅改变本选项数值会破坏照明平衡.
@@ -845,9 +841,9 @@ option.GENERATED_NORMAL_ENTITY_MULT.comment=调节在实体上自动生成的凹
 value.GENERATED_NORMAL_ENTITY_MULT.0=默认
 
 option.GLOWING_ORE_MASTER=§e矿石发光
-option.GLOWING_ORE_MASTER.comment=启用矿石发光功能. §e[*]§r 若不启用, 本选项以下设置均不会生效.
+option.GLOWING_ORE_MASTER.comment=启用矿石发光功能. §e[*]§r 选择 由所选风格决定 选项会使矿石发光功能仅在 视觉风格 设置为 Unbound 的时候生效. §e[*]§r 若不启用, 本选项以下设置均不会生效.
 value.GLOWING_ORE_MASTER.0=§c关
-value.GLOWING_ORE_MASTER.1=默认 [*]
+value.GLOWING_ORE_MASTER.1=由所选风格决定 [*]
 value.GLOWING_ORE_MASTER.2=§a开
 
 option.GLOWING_ORE_MULT=矿石发光强度
@@ -973,7 +969,7 @@ option.WAVING_LAVA.comment=为岩浆添加持续的运动效果. §e[*]§r 岩�
 option.WAVING_LILY_PAD=睡莲摇晃
 option.WAVING_LILY_PAD.comment=给睡莲和青蛙卵添加摇晃的效果模拟水波影响.
 
-option.WAVING_WATER_VERTEX=水面纹理摇晃
+option.WAVING_WATER_VERTEX=水面高度摇晃
 option.WAVING_WATER_VERTEX.comment=给水面添加摇晃运动模拟风的吹拂. §e[*]§r 本设置与 水波强度 选项无关.
 
 option.WAVING_RAIN=雨雪纹理摇晃
@@ -1148,6 +1144,7 @@ screen.ATMOSPHERE.comment=与大气相关的设置.
 screen.CLOUDS=云层
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Reimagined 风格云层
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Unbound 风格云层
+screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=双层 Unbound 风格云层
 screen.AURORA_SETTINGS=北极光
 screen.AURORA_SETTINGS.comment=关于北极光的设置.
 screen.AURORA_COLOR_SETTINGS=北极光颜色
@@ -1163,6 +1160,8 @@ screen.STARS_OVERWORLD=星空设置 - 主世界
 screen.STAR_COLORS_OW=星星颜色
 screen.RAIN_SETTINGS=雨天设置
 screen.NIGHT_DESATURATION_SETTINGS=暗处去饱和
+screen.MOON_PHASED_DESATURATION_SETTINGS=基于月相去饱和
+screen.MOON_PHASED_DESATURATION_SETTINGS.comment=根据当前夜晚的月相调节去饱和效果的强度.
 
 screen.WORLD=世界
 screen.WORLD.comment=关于世界的设置.
@@ -1363,6 +1362,18 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=在夜晚时云层被消除的数量.
 
 option.HIGH_QUALITY_CLOUDS=更高质量的云层
 option.HIGH_QUALITY_CLOUDS.comment=可将云层质量提升到正常 Complementary 设置无法达到的程度. §c[-]§r 开启本选项可能会影响性能.
+
+option.CLOUD_LAYER2_SPEED_MULT=第二云层速度倍率
+
+option.DOUBLE_UNBOUND_CLOUDS=双层 Unbond 风格云层
+option.DOUBLE_UNBOUND_CLOUDS.comment=渲染第二层 Unbond 风格云层. §c[-]§r 本选项会影响性能.
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=第二云层高度
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=决定第二云层出现的世界高度.
+option.CLOUD_UNBOUND_LAYER2_HEIGHT=第二云层自身高度
+option.CLOUD_UNBOUND_LAYER2_SIZE=第二云层自身大小
+option.CLOUD_UNBOUND_LAYER2_SIZE.comment=决定第二云层自身大小.
+option.CLOUD_UNBOUND_LAYER2_AMOUNT=第二云层数量
+option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=决定第二云层的数量.
 
 option.END_SMOKE=末地烟云
 option.END_SMOKE.comment=有人纵火, 所以现在末地上下层虚空都有烟云.
@@ -1889,6 +1900,10 @@ option.AUTUMN_NOISE_SIZE=颜色噪声尺寸
 option.AUTUMN_NOISE_SIZE.comment=产生树叶渐变颜色的噪声尺寸.
 
 option.LEAVES_ON_GROUND=落叶
+option.LEAVES_ON_GROUND.comment=在秋季地面会出现落叶.
+
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS=森林群系额外落叶
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS.comment=在森林中地面会出现更多落叶.
 
 option.AUTUMN_STRENGTH=秋意浓度
 option.AUTUMN_STRENGTH.comment=调节秋天时群系色的覆写强度.
@@ -2188,6 +2203,7 @@ option.SHOCKWAVE=冲击波
 value.SHOCKWAVE.0=关
 value.SHOCKWAVE.1=圆形
 value.SHOCKWAVE.2=方形
+option.SHOCKWAVE.comment=蹲一下!
 
 option.STAR_LAYER_OW=错落星层 - 主世界
 value.STAR_LAYER_OW.0=关
@@ -2241,7 +2257,8 @@ option.STAR_COLOR_3_END_B=Ⅲ类星星 - 蓝色
 option.STAR_COLOR_VARIATION_END=颜色强度 - 末地
 value.STAR_COLOR_VARIATION_END.0.0=关
 
-option.STARS_BOTH_HEMISPHERES=完整星空
+option.CELESTIAL_BOTH_HEMISPHERES=完整天空盒
+option.CELESTIAL_BOTH_HEMISPHERES.comment=使天体 (星空, 太阳, 月亮, 极光) 横跨整个天空渲染而不是仅限于地平线之上, 创造更沉浸的天空盒效果.
 
 option.SITUATIONAL_GLOWING_TRIMS=情景式盔甲纹饰发光
 option.SITUATIONAL_GLOWING_TRIMS.comment=盔甲纹饰仅会在洞穴和夜晚时发光. §e[*]§r 本选项需启用 盔甲纹饰发光 选项才能生效.
@@ -2278,6 +2295,24 @@ option.PURKINJE_RENDER_DISTANCE_FADE=随渲染距离淡出
 option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=随渲染距离淡出 - 下界
 option.PURKINJE_RENDER_DISTANCE_FADE_END=随渲染距离淡出 - 末地
 
+option.MOON_PHASE_INF_PURKINJE=基于月相去饱和
+option.MOON_PHASED_DESATURATION_SETTINGS.comment=根据当前夜晚的月相调节去饱和效果的强度.
+
+option.MOON_PHASE_FULL_PURKINJE=满月时
+option.MOON_PHASE_FULL_PURKINJE.comment=满月阶段的去饱和强度 (最亮的月相阶段).
+value.MOON_PHASE_FULL_PURKINJE.0=关
+value.MOON_PHASE_FULL_PURKINJE.300=黑/白e
+
+option.MOON_PHASE_PARTIAL_PURKINJE=其他月相
+option.MOON_PHASE_PARTIAL_PURKINJE.comment=满月和新月之间所有月相的去饱和强度. 在 Minecraft 中最常见到的月相.
+value.MOON_PHASE_PARTIAL_PURKINJE.0=关
+value.MOON_PHASE_PARTIAL_PURKINJE.300=黑/白
+
+option.MOON_PHASE_DARK_PURKINJE=新月时
+option.MOON_PHASE_DARK_PURKINJE.comment=新月阶段的去饱和强度 (最暗的月相阶段).
+value.MOON_PHASE_DARK_PURKINJE.0=关
+value.MOON_PHASE_DARK_PURKINJE.300=黑/白
+
 option.DELTARUNE_BATTLE_BACKGROUND=三角符文(Deltarune) 战斗背景
 value.DELTARUNE_BATTLE_BACKGROUND.0=关
 value.DELTARUNE_BATTLE_BACKGROUND.1=开 - 仅天空
@@ -2291,3 +2326,5 @@ option.CLEAR_WATER_SPOTS.comment=为水体添加透明斑点以增加水面细�
 option.ACL_ORE_INTENSITY=矿石高级彩色照明强度
 option.ACL_ORE_INTENSITY.comment=调节矿石的高级彩色照明强度.
 value.ACL_ORE_INTENSITY.0.0=关
+
+option.ENTITIES_ARE_LIGHT=实体也可以是闪电
