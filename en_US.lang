@@ -32,7 +32,7 @@ option.info2.comment=Best settings are subjective, but using the default setting
 
 option.info3=What is Profile or Visual Style
 value.info3.0=
-option.info3.comment="Profile" setting changes the settings found in the "Performance Settings" menu, while not affecting any preference-based settings. "Visual Style" changes the "Default Style" values that exist on many preference-based settings, but it does not impact performance by an important amount.
+option.info3.comment="Profile" setting changes the settings found in the "Performance Settings" menu, while not affecting any preference-based settings. "Visual Style" changes the "Set by Style" values that exist on many preference-based settings, but it does not impact performance by an important amount.
 
 option.info4=What is RP Support
 value.info4.0=
@@ -375,8 +375,8 @@ option.LIGHTSHAFT_NIGHT_I=Light Shaft Night Multiplier
 option.LIGHTSHAFT_RAIN_I=Light Shaft Rain Multiplier
 
 option.CLOUD_STYLE_DEFINE=Cloud Style
-option.CLOUD_STYLE_DEFINE.comment=Determines the style of clouds. §e[*]§r "Default Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options. §e[*]§r The "Vanilla" style requires clouds to be enabled in Video Settings.
-value.CLOUD_STYLE_DEFINE.-1=Default Style
+option.CLOUD_STYLE_DEFINE.comment=Determines the style of clouds. §e[*]§r "Set by Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options. §e[*]§r The "Vanilla" style requires clouds to be enabled in Video Settings.
+value.CLOUD_STYLE_DEFINE.-1=Set by Style
 value.CLOUD_STYLE_DEFINE.0=§cOFF
 value.CLOUD_STYLE_DEFINE.1=Reimagined
 value.CLOUD_STYLE_DEFINE.3=Unbound
@@ -483,8 +483,8 @@ option.GR_BB=Blue to Blue
 option.GR_BC=Blue Curve
 
 option.WATER_STYLE_DEFINE=Water Style
-option.WATER_STYLE_DEFINE.comment=Determines the style of water. §e[*]§r "Default Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options.
-value.WATER_STYLE_DEFINE.-1=Default Style
+option.WATER_STYLE_DEFINE.comment=Determines the style of water. §e[*]§r "Set by Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options.
+value.WATER_STYLE_DEFINE.-1=Set by Style
 value.WATER_STYLE_DEFINE.1=Reimagined
 value.WATER_STYLE_DEFINE.2=Reimagined + Waves
 value.WATER_STYLE_DEFINE.3=Unbound
@@ -544,7 +544,7 @@ option.WATER_SIZE_MULT.comment=Adjusts how big the surface-direction waves (norm
 
 option.SUN_ANGLE=Sun/Moon Angle
 option.SUN_ANGLE.comment=Adjusts the angle of sun/moon relative to the world during noon. §a[+]§r Reimagined's lighting model is specially designed to make the "0" sun angle work just as well as others.
-value.SUN_ANGLE.-1=Default Style
+value.SUN_ANGLE.-1=Set by Style
 value.SUN_ANGLE.60=60
 value.SUN_ANGLE.55=55
 value.SUN_ANGLE.50=50
@@ -573,7 +573,7 @@ value.SUN_ANGLE.-60=-60
 
 option.SUN_MOON_STYLE_DEFINE=Sun/Moon Style
 option.SUN_MOON_STYLE_DEFINE.comment=Determines the style of sun/moon. §e[*]§r This setting might interact incorrectly with some resource packs due to the limitations of sun/moon/skybox differentiation.
-value.SUN_MOON_STYLE_DEFINE.-1=Default Style
+value.SUN_MOON_STYLE_DEFINE.-1=Set by Style
 value.SUN_MOON_STYLE_DEFINE.1=Reimagined
 value.SUN_MOON_STYLE_DEFINE.2=Unbound
 value.SUN_MOON_STYLE_DEFINE.3=Unbound - Smaller
@@ -597,13 +597,13 @@ value.RAINBOWS.3=Always
 
 option.AURORA_STYLE_DEFINE=Aurora Borealis Style
 option.AURORA_STYLE_DEFINE.comment=Determines the style of northern lights that appear in the night sky.
-value.AURORA_STYLE_DEFINE.-1=Default Style
+value.AURORA_STYLE_DEFINE.-1=Set by Style
 value.AURORA_STYLE_DEFINE.0=§cOFF
 value.AURORA_STYLE_DEFINE.1=Reimagined
 value.AURORA_STYLE_DEFINE.2=Unbound
 
-option.AURORA_CONDITION=Aurora
-option.AURORA_CONDITION.comment=Determines the condition(s) for the Aurora Borealis to appear. §e[*]§r Aurora Borealis will only appear during night regardless of this setting
+option.AURORA_CONDITION=Aurora C.
+option.AURORA_CONDITION.comment=Aurora Condition setting determines the condition(s) for the Aurora Borealis to appear. §e[*]§r Aurora Borealis will only appear during night regardless of this setting
 value.AURORA_CONDITION.0=Every Night
 value.AURORA_CONDITION.1=Full Moon
 value.AURORA_CONDITION.2=Snowy Biome
@@ -838,9 +838,9 @@ option.COATED_TEXTURE_MULT=Coated Texture Strength
 option.COATED_TEXTURE_MULT.comment=Adjusts the strength of auto-generated dusty details on textures.
 
 option.GLOWING_ORE_MASTER=§eEnable Glowing Ores
-option.GLOWING_ORE_MASTER.comment=Enables the functionality of glowing ores. §e[*]§r Choosing "Default" will only enable glowing ores if the "Visual Style" is set to "Unbound". §e[*]§r The settings below won't work if this option isn't enabled.
+option.GLOWING_ORE_MASTER.comment=Enables the functionality of glowing ores. §e[*]§r Choosing "Set By Style" will only enable glowing ores if the "Visual Style" is set to "Unbound". §e[*]§r The settings below won't work if this option isn't enabled.
 value.GLOWING_ORE_MASTER.0=§cOFF
-value.GLOWING_ORE_MASTER.1=Default [*]
+value.GLOWING_ORE_MASTER.1=Set By Style
 value.GLOWING_ORE_MASTER.2=§aON
 
 option.GLOWING_ORE_MULT=Ore Glow Strength
@@ -966,7 +966,7 @@ option.WAVING_LAVA.comment=Adds constant movement to lava. §e[*]§r Lava waving
 option.WAVING_LILY_PAD=Waving Lily Pad
 option.WAVING_LILY_PAD.comment=Adds movement to lily pads and frogspawn to simulate impact from water waves.
 
-option.WAVING_WATER_VERTEX=Waving Water Texture
+option.WAVING_WATER_VERTEX=Waving Water Height
 option.WAVING_WATER_VERTEX.comment=Adds movement to water position to simulate wind. §e[*]§r This option is not related to the "Water Wave Strength" setting.
 
 option.WAVING_RAIN=Waving Rain/Snow Texture
