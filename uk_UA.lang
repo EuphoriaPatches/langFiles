@@ -1360,7 +1360,7 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Кількість хмар, які в
 option.HIGH_QUALITY_CLOUDS=Висока якість хмар
 option.HIGH_QUALITY_CLOUDS.comment=Підвищує якість хмар, їб буде більше, ніж у межах звичайних налаштуваннях Complementary. §c[-]§r Увімкнення цього параметра може вплинути на продуктивність
 
-option.CLOUD_UNBOUND_LAYER2_SPEED_MULT=Швидкість 2 шару хмар
+option.CLOUD_LAYER2_SPEED_MULT=Швидкість 2 шару хмар
 
 option.DOUBLE_UNBOUND_CLOUDS=Подвійні непов'язані хмари
 option.DOUBLE_UNBOUND_CLOUDS.comment=Дозволяє промальовування другого шару непов'язаних хмар. §c[-]§r Це може вплинути на продуктивність
