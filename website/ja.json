@@ -1,30 +1,33 @@
 {
-  "isRightToLeft": false,
+    "isRightToLeft": false,
 
-  "pageTitle": "Euphoria Patchesの導入方法",
+    "pageTitle": "Euphoria Patchesの導入方法",
 
-  "modMethodTitle": "Modを使う",
-  "step1": "前提となるバージョンのComplementaryをダウンロードし、shaderpacksフォルダに入れる。",
-  "step1After": "(解凍や名前の変更をしたり、改変を加えたりしないでください)",
-  "substep1_1": "対応Complementaryバージョン: ",
-  "or": "または",
-  "step2Before": "最新の",
-  "step2After": "Modファイルをダウンロードし、modsフォルダに入れる。",
-  "step3": "Fabric | Quilt | Forge | NeoForgeのいずれかでゲームを起動する。",
-  "step4": "がshaderpacksフォルダに生成されます。",
+    "modMethodTitle": "Modを使う",
+    "step1": "前提となるバージョンのComplementaryをダウンロードし、shaderpacksフォルダに入れる。",
+    "step1After": "(解凍や名前の変更をしたり、改変を加えたりしないでください)",
+    "substep1_1": "対応Complementaryバージョン: ",
+    "or": "または",
+    "step2Before": "最新の",
+    "step2After": "Modファイルをダウンロードし、modsフォルダに入れる。",
+    "step3": "Fabric | Quilt | Forge | NeoForgeのいずれかでゲームを起動する。",
+    "step4": "がshaderpacksフォルダに生成されます。",
 
-  "unsupportedVersions": "Modが未対応のMinecraftのバージョンについては、対応しているバージョンのMinecraftでEuphoriaPatcher Modを使用した後、生成されたファイルを未対応バージョンのMinecraftのshaderpackフォルダにコピーしてください。",
+    "unsupportedVersions": "Modが未対応のMinecraftのバージョンについては、対応しているバージョンのMinecraftでEuphoriaPatcher Modを使用した後、生成されたファイルを未対応バージョンのMinecraftのshaderpackフォルダにコピーしてください。",
 
-  "downloadPageButton": "ダウンロードページに移動",
+    "discordContact": "インストールでお困りですか？",
+    "discordContactLink": "Discordコミュニティに参加しましょう",
 
-  "supportDevelopment1": "開発を支援し、早期開発バージョンへアクセスしたいですか？",
-  "supportDevelopment2": "プレビューバージョンをゲットしましょう！",
+    "downloadPageButton": "ダウンロードページに移動",
 
-  "installerMethodTitle": "インストーラーを使う",
-  "installerStep1Before": "​",
-  "installerStep1After": "からインストーラーをダウンロードする。",
-  "installerStep2": "ダウンロードしたファイルをダブルクリックして、インストーラーを起動する。",
-  "installerStep3": "'Advanced Settings'をクリックする。",
-  "installerStep4": "'Install Euphoria Patches'にチェックを入れる。",
-  "installerStep5": "'Install'をクリックすると、Complementary Shaders + Euphoria Patchesがshaderpacksフォルダに生成されます。"
+    "supportDevelopment1": "開発を支援し、早期開発バージョンへアクセスしたいですか？",
+    "supportDevelopment2": "プレビューバージョンをゲットしましょう！",
+
+    "installerMethodTitle": "インストーラーを使う",
+    "installerStep1Before": "​",
+    "installerStep1After": "からインストーラーをダウンロードする。",
+    "installerStep2": "ダウンロードしたファイルをダブルクリックして、インストーラーを起動する。",
+    "installerStep3": "'Advanced Settings'をクリックする。",
+    "installerStep4": "'Install Euphoria Patches'にチェックを入れる。",
+    "installerStep5": "'Install'をクリックすると、Complementary Shaders + Euphoria Patchesがshaderpacksフォルダに生成されます。"
 }
