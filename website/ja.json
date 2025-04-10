@@ -15,6 +15,9 @@
 
     "unsupportedVersions": "Modが未対応のMinecraftのバージョンについては、対応しているバージョンのMinecraftでEuphoriaPatcher Modを使用した後、生成されたファイルを未対応バージョンのMinecraftのshaderpackフォルダにコピーしてください。",
 
+    "discordContact": "インストールでお困りですか？",
+    "discordContactLink": "Discordコミュニティに参加しましょう",
+
     "downloadPageButton": "ダウンロードページに移動",
 
     "supportDevelopment1": "開発を支援し、早期開発バージョンへアクセスしたいですか？",

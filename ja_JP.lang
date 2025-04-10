@@ -32,7 +32,7 @@ option.info2.comment=最適な設定が何かは主観的ですが、デフォ�
 
 option.info3=プロファイルとビジュアルスタイル
 value.info3.0=
-option.info3.comment=「プロファイル」設定は「パフォーマンス設定」メニューの設定のみを変更し、ビジュアルスタイルなどの個人設定には影響を与えません。. 「ビジュアルスタイル」は、多くの個人設定の「デフォルトスタイル」値を変更しますが、パフォーマンスには大きな影響を与えません。
+option.info3.comment=「プロファイル」設定は「パフォーマンス設定」メニューの設定のみを変更し、ビジュアルスタイルなどの個人設定には影響を与えません。. 「ビジュアルスタイル」は、多くの個人設定にある「スタイル依存」に設定された値を変更しますが、パフォーマンスには大きな影響を与えません。
 
 option.info4=RPサポートとは
 value.info4.0=
@@ -289,7 +289,7 @@ value.ENTITY_SHADOWS_DEFINE.-1=§aOFF
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oON§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=細部の品質
-option.DETAIL_QUALITY.comment=パフォーマンスに影響を与えるいくつかの小さな要素を調整します。. 調整対象: 水のマテリアル、TAA、ライティングの微調整、星雲、ネザーストーム、エンダービーム、空の反射効果、水溜まりの精度。
+option.DETAIL_QUALITY.comment=パフォーマンスに影響を与えるいくつかの小さな要素を調整します。. 調整対象: 水のマテリアル、TAA、ライティングの微調整、星雲、ネザーストーム、エンダービーム、空の反射効果、水溜まりの精度、揺れの効果。
 value.DETAIL_QUALITY.0=§aパフォーマンス
 value.DETAIL_QUALITY.2=§e中
 value.DETAIL_QUALITY.3=§c高
@@ -375,8 +375,8 @@ option.LIGHTSHAFT_NIGHT_I=光芒 夜間の倍率
 option.LIGHTSHAFT_RAIN_I=光芒 雨天時の倍率
 
 option.CLOUD_STYLE_DEFINE=雲のスタイル
-option.CLOUD_STYLE_DEFINE.comment=雲のスタイルを決定します。. §e[*]§r「デフォルトスタイル」とは、シェーダーオプションのメインメニューにある「ビジュアルスタイル」設定によって自動的に決定されることを意味します。. §e[*]§r「バニラ」スタイルは、ビデオ設定で雲が有効になっている必要があります。
-value.CLOUD_STYLE_DEFINE.-1=デフォルトスタイル
+option.CLOUD_STYLE_DEFINE.comment=雲のスタイルを決定します。. §e[*]§r「スタイル依存」とは、シェーダーオプションのメインメニューにある「ビジュアルスタイル」設定によって自動的に決定されることを意味します。. §e[*]§r「バニラ」スタイルは、ビデオ設定で雲が有効になっている必要があります。
+value.CLOUD_STYLE_DEFINE.-1=スタイル依存
 value.CLOUD_STYLE_DEFINE.0=§cOFF
 value.CLOUD_STYLE_DEFINE.1=Reimagined
 value.CLOUD_STYLE_DEFINE.3=Unbound
@@ -483,8 +483,8 @@ option.GR_BB=青を青に
 option.GR_BC=青のカーブ
 
 option.WATER_STYLE_DEFINE=水のスタイル
-option.WATER_STYLE_DEFINE.comment=水のスタイルを決定します。. §e[*]§r「デフォルトスタイル」とは、シェーダーオプションのメインメニューにある「ビジュアルスタイル」設定によって自動的に決定されることを意味します。
-value.WATER_STYLE_DEFINE.-1=デフォルトスタイル
+option.WATER_STYLE_DEFINE.comment=水のスタイルを決定します。. §e[*]§r「スタイル依存」とは、シェーダーオプションのメインメニューにある「ビジュアルスタイル」設定によって自動的に決定されることを意味します。
+value.WATER_STYLE_DEFINE.-1=スタイル依存
 value.WATER_STYLE_DEFINE.1=Reimagined
 value.WATER_STYLE_DEFINE.2=Reimagined + 波
 value.WATER_STYLE_DEFINE.3=Unbound
@@ -544,7 +544,7 @@ option.WATER_SIZE_MULT.comment=水面で見られる表面方向の波(法線)�
 
 option.SUN_ANGLE=太陽/月の角度
 option.SUN_ANGLE.comment=正午時点でのワールドに対する太陽/月の角度を調整します。. §a[+]§r Reimaginedのライティングモデルは、太陽の角度が「0」でも他の角度と同等に機能するように特別に設計されています。
-value.SUN_ANGLE.-1=デフォルトスタイル
+value.SUN_ANGLE.-1=スタイル依存
 value.SUN_ANGLE.60=60
 value.SUN_ANGLE.55=55
 value.SUN_ANGLE.50=50
@@ -573,7 +573,7 @@ value.SUN_ANGLE.-60=-60
 
 option.SUN_MOON_STYLE_DEFINE=太陽/月のスタイル
 option.SUN_MOON_STYLE_DEFINE.comment=太陽/月のスタイルを決定します。. §e[*]§r 太陽/月/空の区別に制限があるため、一部のリソースパックと正しく動作しない場合があります。
-value.SUN_MOON_STYLE_DEFINE.-1=デフォルトスタイル
+value.SUN_MOON_STYLE_DEFINE.-1=スタイル依存
 value.SUN_MOON_STYLE_DEFINE.1=Reimagined
 value.SUN_MOON_STYLE_DEFINE.2=Unbound
 value.SUN_MOON_STYLE_DEFINE.3=Unbound - 小さめ
@@ -597,7 +597,7 @@ value.RAINBOWS.3=常に
 
 option.AURORA_STYLE_DEFINE=オーロラのスタイル
 option.AURORA_STYLE_DEFINE.comment=夜空に現れるオーロラのスタイルを決定します。
-value.AURORA_STYLE_DEFINE.-1=デフォルトスタイル
+value.AURORA_STYLE_DEFINE.-1=スタイル依存
 value.AURORA_STYLE_DEFINE.0=§c無効
 value.AURORA_STYLE_DEFINE.1=Reimagined
 value.AURORA_STYLE_DEFINE.2=Unbound
@@ -766,6 +766,9 @@ value.IPBR_EMISSIVE_MODE.1=IPBR+ のみ
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 
+option.IPBR_COMPATIBILITY_MODE=IPBR+ 互換性モード
+option.IPBR_COMPATIBILITY_MODE.comment=IPBR+の機能の計算方式を調整し、リソースパックやModでの問題を削減します。
+
 option.IPBR_PARTICLE_FEATURES=IPBR+ パーティクル機能
 option.IPBR_PARTICLE_FEATURES.comment=輝く溶岩パーティクルや、より色鮮やかな水パーティクルなどの機能を含む、いくつかのパーティクル機能を有効にします。
 
@@ -804,15 +807,8 @@ option.COLOR_CODED_PROGRAMS.comment=ジオメトリをレンダリングする�
 option.GLOWING_COLORED_PARTICLES=パーティクルを強制的に発光 §c[-]§r
 option.GLOWING_COLORED_PARTICLES.comment=技術的に「色が付いている」すべてのパーティクルを発光させます。. §c[-]§r このオプションは、発光するべきでない素材でできたパーティクルの多くが発光してしまうため、一般的なゲームプレイには推奨されません。
 
-option.MINIMUM_LIGHT_MODE=洞窟のライティング
-option.MINIMUM_LIGHT_MODE.comment=日光が届かないエリアに追加のライティングを加えます。. §a[+]§r 「デフォルト」オプションはビデオ設定の「明るさ」スライダーに従ってライティングを決定します。. §c[-]§r この設定を大幅に変更すると、光のバランスが崩れる可能性があります。
-value.MINIMUM_LIGHT_MODE.0=非常に暗い
-value.MINIMUM_LIGHT_MODE.1=暗い
-value.MINIMUM_LIGHT_MODE.2=デフォルト §a[+]
-value.MINIMUM_LIGHT_MODE.3=明るい
-value.MINIMUM_LIGHT_MODE.4=非常に明るい
-value.MINIMUM_LIGHT_MODE.5=極めて明るい §c[-]
-value.MINIMUM_LIGHT_MODE.6=極端に明るい §c[-]
+option.CAVE_LIGHTING=洞窟のライティング倍率
+option.CAVE_LIGHTING.comment=日光が届かないエリアに追加のライティングを加えます。. §e[*]§r 洞窟のライティングはビデオを設定の「明るさ」スライダーによっても影響を受けます。. §c[-]§r この設定を大幅に変更すると、光のバランスが崩れる可能性があります。
 
 option.AMBIENT_MULT=影の光量倍率
 option.AMBIENT_MULT.comment=影の中に表示される環境光の量を決定します。. §c[-]§r この設定を大幅に変更すると、光のバランスが崩れる可能性があります。
@@ -842,9 +838,9 @@ option.COATED_TEXTURE_MULT=コーティングテクスチャ 強度
 option.COATED_TEXTURE_MULT.comment=自動生成された埃っぽいディテールの強度を調整します。
 
 option.GLOWING_ORE_MASTER=§e光る鉱石を有効にする
-option.GLOWING_ORE_MASTER.comment=光る鉱石の機能を有効にします。. §e[*]§r 「デフォルト」を選択すると、「ビジュアルスタイル」が「Unbound」に設定されている場合のみ光る鉱石が有効になります。. §e[*]§r 以下の設定は、このオプションが有効になっていない場合は動作しません。
+option.GLOWING_ORE_MASTER.comment=光る鉱石の機能を有効にします。. §e[*]§r 「スタイル依存」を選択すると、「ビジュアルスタイル」が「Unbound」に設定されている場合のみ光る鉱石が有効になります。. §e[*]§r 以下の設定は、このオプションが有効になっていない場合は動作しません。
 value.GLOWING_ORE_MASTER.0=§cOFF
-value.GLOWING_ORE_MASTER.1=デフォルト [*]
+value.GLOWING_ORE_MASTER.1=スタイル依存
 value.GLOWING_ORE_MASTER.2=§aON
 
 option.GLOWING_ORE_MULT=鉱石の発光強度
@@ -970,7 +966,7 @@ option.WAVING_LAVA.comment=溶岩に一定の動きを追加します。. §e[*]
 option.WAVING_LILY_PAD=揺れるスイレンの葉
 option.WAVING_LILY_PAD.comment=スイレンの葉やカエルの卵に動きを追加し、水の波の影響をシミュレートします。
 
-option.WAVING_WATER_VERTEX=揺れる水のテクスチャ
+option.WAVING_WATER_VERTEX=揺れる水位
 option.WAVING_WATER_VERTEX.comment=水の位置に動きを追加し、風をシミュレートします。. §e[*]§r このオプションは「水の波の強さ」の設定には関連しません。
 
 option.WAVING_RAIN=揺れる雨/雪のテクスチャ
@@ -1145,6 +1141,7 @@ screen.ATMOSPHERE.comment=環境に関する設定です。
 screen.CLOUDS=雲
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Reimaginedの雲
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Unboundの雲
+screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=二層Unbound雲
 screen.AURORA_SETTINGS=オーロラ
 screen.AURORA_SETTINGS.comment=オーロラに関する設定です。
 screen.AURORA_COLOR_SETTINGS=オーロラの色設定
@@ -1160,6 +1157,8 @@ screen.STARS_OVERWORLD=星
 screen.STAR_COLORS_OW=星の色
 screen.RAIN_SETTINGS=雨の設定
 screen.NIGHT_DESATURATION_SETTINGS=暗闇での彩度低下
+screen.MOON_PHASED_DESATURATION_SETTINGS=月相に応じた暗闇での彩度低下
+screen.MOON_PHASED_DESATURATION_SETTINGS.comment=現在の月の満ち欠けに応じて、彩度低下の程度を調整します。
 
 screen.WORLD=ワールド
 screen.WORLD.comment=ワールドに関する設定です。
@@ -1360,6 +1359,18 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=夜間に削除される雲の量を�
 
 option.HIGH_QUALITY_CLOUDS=高品質な雲
 option.HIGH_QUALITY_CLOUDS.comment=雲の品質を通常のComplementary設定以上に引き上げます。. §c[-]§r この設定を有効にするとパフォーマンスに影響する可能性があります。
+
+option.CLOUD_LAYER2_SPEED_MULT=二層目の雲の速度倍率
+
+option.DOUBLE_UNBOUND_CLOUDS=二層Unbound雲
+option.DOUBLE_UNBOUND_CLOUDS.comment=二層目のUnbound雲のレンダリングを有効にします。. §c[-]§r この設定を有効にするとパフォーマンスに影響する可能性があります。
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=二層目の雲の高度
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=二層目の雲が表示されるワールドの高さを決定します。
+option.CLOUD_UNBOUND_LAYER2_HEIGHT=二層目の雲の高さ
+option.CLOUD_UNBOUND_LAYER2_SIZE=二層目の雲の大きさ
+option.CLOUD_UNBOUND_LAYER2_SIZE.comment=二層目の雲の大きさを決定します。
+option.CLOUD_UNBOUND_LAYER2_AMOUNT=二層目の雲の量
+option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=二層目の雲の量を決定します。
 
 option.END_SMOKE=ジ・エンドの煙
 option.END_SMOKE.comment=誰かが火を放置してしまい、ジ・エンドに上下の虚空に煙が漂っています。
@@ -1886,6 +1897,10 @@ option.AUTUMN_NOISE_SIZE=色ノイズのサイズ
 option.AUTUMN_NOISE_SIZE.comment=葉の色のグラデーションの元になるノイズのサイズ
 
 option.LEAVES_ON_GROUND=地面の葉
+option.LEAVES_ON_GROUND.comment=秋の間、地面に葉が表れます。
+
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS=森で地面の葉を追加
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS.comment=森でより多くの葉が表れます。
 
 option.AUTUMN_STRENGTH=秋の強度
 option.AUTUMN_STRENGTH.comment=秋における色の上書きを変更します。
@@ -2277,6 +2292,24 @@ option.PURKINJE_RENDER_DISTANCE_FADE=描写距離でフェード
 option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=ネザー 描写距離でフェード
 option.PURKINJE_RENDER_DISTANCE_FADE_END=ジ・エンド 描写距離でフェード
 
+option.MOON_PHASE_INF_PURKINJE=月相に応じた暗闇での彩度低下
+option.MOON_PHASED_DESATURATION_SETTINGS.comment=現在の月の満ち欠けに応じて、彩度低下の程度を調整します。
+
+option.MOON_PHASE_FULL_PURKINJE=満月
+option.MOON_PHASE_FULL_PURKINJE.comment=満月(最も明るい段階)での彩度低下の強度を調整します。
+value.MOON_PHASE_FULL_PURKINJE.0=OFF
+value.MOON_PHASE_FULL_PURKINJE.300=白黒
+
+option.MOON_PHASE_PARTIAL_PURKINJE=部分月
+option.MOON_PHASE_PARTIAL_PURKINJE.comment=満月から暗月までのすべての月相での彩度低下の強度を調整します。. これはMinecraftで最もよく見られる段階です。
+value.MOON_PHASE_PARTIAL_PURKINJE.0=OFF
+value.MOON_PHASE_PARTIAL_PURKINJE.300=白黒
+
+option.MOON_PHASE_DARK_PURKINJE=新月
+option.MOON_PHASE_DARK_PURKINJE.comment=新月(最も暗い段階)での彩度低下の強度を調整します。
+value.MOON_PHASE_DARK_PURKINJE.0=OFF
+value.MOON_PHASE_DARK_PURKINJE.300=白黒
+
 option.DELTARUNE_BATTLE_BACKGROUND=Deltarune 戦闘バックグランド
 value.DELTARUNE_BATTLE_BACKGROUND.0=OFF
 value.DELTARUNE_BATTLE_BACKGROUND.1=ON - 空のみ
@@ -2290,3 +2323,5 @@ option.CLEAR_WATER_SPOTS.comment=水にクリアなスポットを追加し、�
 option.ACL_ORE_INTENSITY=ACL鉱石の強度
 option.ACL_ORE_INTENSITY.comment=鉱石におけるACLの光の強度を変更します。
 value.ACL_ORE_INTENSITY.0.0=OFF
+
+option.ENTITIES_ARE_LIGHT=光るエンティティ
