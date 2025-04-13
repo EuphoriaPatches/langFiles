@@ -1194,6 +1194,7 @@ screen.BLOCKLIGHT.comment=Settings that relate to blocklight color.
 screen.COLORED_LIGHT=Colored Lighting
 screen.SSBL_SETTINGS=Screenspace Colored Blocklight
 screen.ACL_SETTINGS=Advanced Colored Lighting
+screen.LIGHTMAP_CURVES_SETTINGS=Lightmap Curves
 screen.OVERLAY_NOISE=Overlay Noise
 screen.MOSS_NOISE_SETTINGS=Moss Noise Settings
 screen.SAND_NOISE_SETTINGS=Sand Noise Settings
@@ -2185,6 +2186,8 @@ option.BEACON_BEAM_EMISSION.comment=Change the emission strength of the beacon b
 
 option.PINKER_CHERRY_LEAVES=Pinker Cherry Leaves
 
+option.LIGHTMAP_CURVES=Lightmap Curves
+option.LIGHTMAP_CURVES.comment=Change the lightmap curves of the world.
 option.UPPER_LIGHTMAP_CURVE=Upper Lightmap Curve
 option.UPPER_LIGHTMAP_CURVE.comment=Change the Upper Lightmap Curve Intensity
 option.LOWER_LIGHTMAP_CURVE=Lower Lightmap Curve
