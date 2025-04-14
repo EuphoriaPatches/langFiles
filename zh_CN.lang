@@ -1961,8 +1961,8 @@ option.PURPLE_END_FIRE.comment=使末地中与火焰相关的方块, 实体, 粒
 option.NO_RAIN_ABOVE_CLOUDS=云端之上无雨雪
 option.NO_RAIN_ABOVE_CLOUDS.comment=禁用高于云层的雨雪粒子. 在原版云层开启并且高度被修改的情况下不能很好的工作.
 
-option.WORLD_BLUR_SNEAK=潜行(下蹲)时模糊视界
-option.WORLD_BLUR_SNEAK.comment=仅在潜行时激活视界模糊效果.
+option.DOF_SNEAKING=潜行(下蹲)时模糊视界
+option.DOF_SNEAKING.comment=仅在潜行时激活视界模糊效果.
 
 option.CLEAR_SKY_WHEN_RAINING=清澈雨天
 option.CLEAR_SKY_WHEN_RAINING.comment=使得星星和其他天空效果在雨天时略微可见.
@@ -2057,8 +2057,8 @@ option.TILT_SHIFT2=移轴倾角 - Y 轴
 option.TILT_SHIFT2.comment=移轴效果 - 倾角方向: 垂直.  §e译者注§r:. 目前的移轴镜头只实现了倾角功能, 偏移功能尚未实现.
 value.TILT_SHIFT2.0=关
 
-option.DOF_VIEW_FOCUS_NEW=§c景深焦平面 (请勿使用)
-option.DOF_VIEW_FOCUS_NEW.comment=在 GUI 未隐藏时显示景深焦平面.
+option.DOF_VIEW_FOCUS_NEW2=§c景深焦平面 (请勿使用)
+option.DOF_VIEW_FOCUS_NEW2.comment=在 GUI 未隐藏时显示景深焦平面.
 
 option.LET_THERE_BE_COLORS=五 彩 缤 纷
 

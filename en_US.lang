@@ -1957,8 +1957,8 @@ option.PURPLE_END_FIRE.comment=Makes fire related blocks, entities and particles
 option.NO_RAIN_ABOVE_CLOUDS=No Rain Above Clouds
 option.NO_RAIN_ABOVE_CLOUDS.comment=Disables rain above the clouds. Doesn't work well if the vanilla cloud height was changed with the vanilla clouds enabled.
 
-option.WORLD_BLUR_SNEAK=World Blur While Sneaking
-option.WORLD_BLUR_SNEAK.comment=Only activate the world blur option while sneaking
+option.DOF_SNEAKING=DoF Sneaking & Spyglass
+option.DOF_SNEAKING.comment=Only activate the world blur option while sneaking and holding a spyglass.
 
 option.CLEAR_SKY_WHEN_RAINING=Clearer Sky During Rain
 option.CLEAR_SKY_WHEN_RAINING.comment=Make stars and other sky effects slightly visible while raining.
@@ -2053,8 +2053,8 @@ option.TILT_SHIFT2=Tilt Y
 option.TILT_SHIFT2.comment=Tilt-Shift Effect - Vertical
 value.TILT_SHIFT2.0=OFF
 
-option.DOF_VIEW_FOCUS_NEW=§cDOF Focus Plane (Do Not Use)
-option.DOF_VIEW_FOCUS_NEW.comment=Makes the Focus Plane of DOF visible when the GUI visible
+option.DOF_VIEW_FOCUS_NEW2=§cDOF Focus Plane & Spyglass
+option.DOF_VIEW_FOCUS_NEW2.comment=Makes the Focus Plane of DOF visible when the GUI visible and the player is holding a spyglass.
 
 option.LET_THERE_BE_COLORS=LET THERE BE COLORS
 

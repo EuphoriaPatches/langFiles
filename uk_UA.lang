@@ -1957,8 +1957,8 @@ option.PURPLE_END_FIRE.comment=Робить пов’язані з вогнем 
 option.NO_RAIN_ABOVE_CLOUDS=Без дощу вище хмар
 option.NO_RAIN_ABOVE_CLOUDS.comment=Прибирає дощ над хмарами. Не працює належним чином, якщо висоту ванілльних хмар було змінено з увімкненою ванілльними хмарами
 
-option.WORLD_BLUR_SNEAK=Розмиття світу при підкрадані
-option.WORLD_BLUR_SNEAK.comment=Активує опцію розмиття світу лише під час підкрадані
+option.DOF_SNEAKING=Розмиття світу при підкрадані
+option.DOF_SNEAKING.comment=Активує опцію розмиття світу лише під час підкрадані
 
 option.CLEAR_SKY_WHEN_RAINING=Ясніше небо під час дощу
 option.CLEAR_SKY_WHEN_RAINING.comment=Робить зірки та інші ефекти неба трохи видимими під час дощу
@@ -2053,8 +2053,8 @@ option.TILT_SHIFT2=Нахил Y
 option.TILT_SHIFT2.comment=Вертикальний ефект нахилу
 value.TILT_SHIFT2.0=ВИМК.
 
-option.DOF_VIEW_FOCUS_NEW=Фокус межі ГР(не чіпати)
-option.DOF_VIEW_FOCUS_NEW.comment=Робить видимою площину фокусування глибини різкости, коли видимий графічний інтерфейс
+option.DOF_VIEW_FOCUS_NEW2=Фокус межі ГР(не чіпати)
+option.DOF_VIEW_FOCUS_NEW2.comment=Робить видимою площину фокусування глибини різкости, коли видимий графічний інтерфейс
 
 option.LET_THERE_BE_COLORS=ХАЙ БУДУТЬ КОЛЬОРИ
 

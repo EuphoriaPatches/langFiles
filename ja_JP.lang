@@ -1956,8 +1956,8 @@ option.PURPLE_END_FIRE.comment=ジ・エンドで火に関するブロック、�
 option.NO_RAIN_ABOVE_CLOUDS=雲の上では雨が降らない
 option.NO_RAIN_ABOVE_CLOUDS.comment=雲の上で雨が降らないようにします。. バニラの雲の高さが変更され、バニラの雲が有効になっている場合はうまく機能しません。
 
-option.WORLD_BLUR_SNEAK=スニーク中のワールドブラー
-option.WORLD_BLUR_SNEAK.comment=スニークしている間のみワールドブラーオプションを有効にします。
+option.DOF_SNEAKING=スニーク中のワールドブラー
+option.DOF_SNEAKING.comment=スニークしている間のみワールドブラーオプションを有効にします。
 
 option.CLEAR_SKY_WHEN_RAINING=雨の間の空をクリアに
 option.CLEAR_SKY_WHEN_RAINING.comment=雨が降っている間に星や他の空の効果がわずかに見えるようにします。
@@ -2052,8 +2052,8 @@ option.TILT_SHIFT2=ティルトY
 option.TILT_SHIFT2.comment=ティルトシフト効果 - 垂直方向
 value.TILT_SHIFT2.0=OFF
 
-option.DOF_VIEW_FOCUS_NEW=§c被写界深度の焦点面 (使わないで)
-option.DOF_VIEW_FOCUS_NEW.comment=GUIが表示されているとき、被写界深度の焦点面を可視化します。
+option.DOF_VIEW_FOCUS_NEW2=§c被写界深度の焦点面 (使わないで)
+option.DOF_VIEW_FOCUS_NEW2.comment=GUIが表示されているとき、被写界深度の焦点面を可視化します。
 
 option.LET_THERE_BE_COLORS=カラーを表示
 

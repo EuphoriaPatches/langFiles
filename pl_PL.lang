@@ -1924,8 +1924,8 @@ option.PURPLE_END_FIRE.comment=Sprawia, że ogniste bloki, moby i cząsteczki st
 option.NO_RAIN_ABOVE_CLOUDS=Brak Deszczu Ponad Chmurami
 option.NO_RAIN_ABOVE_CLOUDS.comment=Wyłącza deszcz nad chmurami. Nie działa dobrze, jeśli wysokość chmur vanilla została zmieniona przy włączonych chmurach vanilla.
 
-option.WORLD_BLUR_SNEAK=Efekty Rozmycia podczas Kucania
-option.WORLD_BLUR_SNEAK.comment=Aktywuje efekty rozmycia podczas skradania się.
+option.DOF_SNEAKING=Efekty Rozmycia podczas Kucania
+option.DOF_SNEAKING.comment=Aktywuje efekty rozmycia podczas skradania się.
 
 option.CLEAR_SKY_WHEN_RAINING=Przejrzyste Niebo Podczas Deszczu
 option.CLEAR_SKY_WHEN_RAINING.comment=Sprawia gwiazdy i inne efekty na niebie są troche bardziej widoczne podczas deszczu.
@@ -2019,8 +2019,8 @@ option.TILT_SHIFT2=Tilt Y
 option.TILT_SHIFT2.comment=Efekt Tilt-Shift - Oś Pionowa
 value.TILT_SHIFT2.0=WYŁ.
 
-option.DOF_VIEW_FOCUS_NEW=Wizualizacja Głebi Ostrości
-option.DOF_VIEW_FOCUS_NEW.comment=Sprawia, że płaszczyzna ostrości jest widoczna, gdy widoczny jest interfejs użytkownika.
+option.DOF_VIEW_FOCUS_NEW2=Wizualizacja Głebi Ostrości
+option.DOF_VIEW_FOCUS_NEW2.comment=Sprawia, że płaszczyzna ostrości jest widoczna, gdy widoczny jest interfejs użytkownika.
 
 option.LET_THERE_BE_COLORS=NIECH STANIE SIĘ KOLOROWOŚĆ
 
