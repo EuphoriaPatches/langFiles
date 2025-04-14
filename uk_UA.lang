@@ -1194,6 +1194,7 @@ screen.BLOCKLIGHT.comment=Налаштування, які стосуються 
 screen.COLORED_LIGHT=Кольорове освітлення
 screen.SSBL_SETTINGS=Екраний простір джерел світла
 screen.ACL_SETTINGS=Розширене кольорове освітлення
+screen.LIGHTMAP_CURVES_SETTINGS=Криві мапи світла
 screen.OVERLAY_NOISE=Накладання шуму
 screen.MOSS_NOISE_SETTINGS=Налаштування шуму моху
 screen.SAND_NOISE_SETTINGS=Налаштування шуму піску
@@ -2185,6 +2186,8 @@ option.BEACON_BEAM_EMISSION.comment=Змінює силу сяяння пром�
 
 option.PINKER_CHERRY_LEAVES=Рожевіше листя вишні
 
+option.LIGHTMAP_CURVES=Криві мапи світла
+option.LIGHTMAP_CURVES.comment=Змінює криві мапи світла світу
 option.UPPER_LIGHTMAP_CURVE=Верхня крива мапи світла
 option.UPPER_LIGHTMAP_CURVE.comment=Змінює інтенсивність верхньої кривої мапи світла
 option.LOWER_LIGHTMAP_CURVE=Нижня крива мапи світла
