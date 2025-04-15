@@ -2328,3 +2328,6 @@ option.ACL_ORE_INTENSITY.comment=Change the ACL light intensity of ores.
 value.ACL_ORE_INTENSITY.0.0=OFF
 
 option.ENTITIES_ARE_LIGHT=Entities Are Light
+
+option.WATER_CAUSTIC_STRENGTH=Water Caustic Strength
+option.WATER_CAUSTIC_STRENGTH.comment=Change the strength of the caustic effect in water.
