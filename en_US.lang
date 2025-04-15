@@ -1691,6 +1691,9 @@ option.LAVA_NOISE_AMOUNT.comment=Change the amount of noise.
 
 option.LAVA_EDGE_EFFECT=Lava Edge Effect
 option.LAVA_EDGE_EFFECT.comment=Adds an edge to lava when it touches other blocks. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings.
+value.LAVA_EDGE_EFFECT.0=OFF
+value.LAVA_EDGE_EFFECT.1=ON - Bright
+value.LAVA_EDGE_EFFECT.2=ON - Dark
 
 option.NETHER_BRIGHTNESS=Nether Brightness
 option.NETHER_BRIGHTNESS.comment=Change the ambient brightness of the Nether.
