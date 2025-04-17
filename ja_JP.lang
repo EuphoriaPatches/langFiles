@@ -1194,6 +1194,7 @@ screen.BLOCKLIGHT.comment=ブロック光源の色に関する設定です。
 screen.COLORED_LIGHT=色付き照明
 screen.SSBL_SETTINGS=スクリーンスペースの色付き照明
 screen.ACL_SETTINGS=高度な色付き照明 (ACL)
+screen.LIGHTMAP_CURVES_SETTINGS=ライトマップカーブ
 screen.OVERLAY_NOISE=オーバーレイノイズ
 screen.MOSS_NOISE_SETTINGS=苔のノイズ設定
 screen.SAND_NOISE_SETTINGS=砂のノイズ設定
@@ -1690,6 +1691,9 @@ option.LAVA_NOISE_AMOUNT.comment=ノイズの量を変更します。
 
 option.LAVA_EDGE_EFFECT=溶岩の端の効果
 option.LAVA_EDGE_EFFECT.comment=溶岩が他のブロックに触れると、端に効果を追加します。. §e[*]§r この機能はパフォーマンス設定で高度な色付き照明が有効になっている場合にのみ動作します。
+value.LAVA_EDGE_EFFECT.0=OFF
+value.LAVA_EDGE_EFFECT.1=ON - 明るい
+value.LAVA_EDGE_EFFECT.2=ON - 暗い
 
 option.NETHER_BRIGHTNESS=ネザーの明るさ
 option.NETHER_BRIGHTNESS.comment=ネザーの環境光の明るさを変更します。
@@ -1956,8 +1960,8 @@ option.PURPLE_END_FIRE.comment=ジ・エンドで火に関するブロック、�
 option.NO_RAIN_ABOVE_CLOUDS=雲の上では雨が降らない
 option.NO_RAIN_ABOVE_CLOUDS.comment=雲の上で雨が降らないようにします。. バニラの雲の高さが変更され、バニラの雲が有効になっている場合はうまく機能しません。
 
-option.DOF_SNEAKING=スニーク中のワールドブラー
-option.DOF_SNEAKING.comment=スニークしている間のみワールドブラーオプションを有効にします。
+option.DOF_SNEAKING=被写界深度 スニーク中 & 望遠鏡
+option.DOF_SNEAKING.comment=スニークしている、かつ望遠鏡を手に持っている間のみワールドブラーオプションを有効にします。
 
 option.CLEAR_SKY_WHEN_RAINING=雨の間の空をクリアに
 option.CLEAR_SKY_WHEN_RAINING.comment=雨が降っている間に星や他の空の効果がわずかに見えるようにします。
@@ -2052,8 +2056,8 @@ option.TILT_SHIFT2=ティルトY
 option.TILT_SHIFT2.comment=ティルトシフト効果 - 垂直方向
 value.TILT_SHIFT2.0=OFF
 
-option.DOF_VIEW_FOCUS_NEW2=§c被写界深度の焦点面 (使わないで)
-option.DOF_VIEW_FOCUS_NEW2.comment=GUIが表示されているとき、被写界深度の焦点面を可視化します。
+option.DOF_VIEW_FOCUS_NEW2=§c被写界深度の焦点面 & 望遠鏡
+option.DOF_VIEW_FOCUS_NEW2.comment=GUIが表示されている、かつ望遠鏡を手に持っているとき、被写界深度の焦点面を可視化します。
 
 option.LET_THERE_BE_COLORS=カラーを表示
 
@@ -2185,6 +2189,8 @@ option.BEACON_BEAM_EMISSION.comment=ビーコンビームの発光強度を変�
 
 option.PINKER_CHERRY_LEAVES=よりピンクな桜の葉
 
+option.LIGHTMAP_CURVES=ライトマップカーブ
+option.LIGHTMAP_CURVES.comment=ワールドのライトマップカーブを変更します。
 option.UPPER_LIGHTMAP_CURVE=上部ライトマップカーブ
 option.UPPER_LIGHTMAP_CURVE.comment=上部ライトマップカーブの強度を変更します。
 option.LOWER_LIGHTMAP_CURVE=下部ライトマップカーブ
@@ -2325,3 +2331,6 @@ option.ACL_ORE_INTENSITY.comment=鉱石におけるACLの光の強度を変更�
 value.ACL_ORE_INTENSITY.0.0=OFF
 
 option.ENTITIES_ARE_LIGHT=光るエンティティ
+
+option.WATER_CAUSTIC_STRENGTH=水のコースティクスの強度
+option.WATER_CAUSTIC_STRENGTH.comment=水のコースティクス効果の強度を変更します。
