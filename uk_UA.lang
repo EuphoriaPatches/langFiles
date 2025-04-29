@@ -90,7 +90,7 @@ option.info17=Бета-версія: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=Ви можете підтримати SpacEagle17 на Patreon або Ko-Fi і отримати версію для розробників. §l§neuphoriapatches.com/support
 
-option.info18=Для Complementary r5.5
+option.info18=Для Complementary r5.5.1
 value.info18.0=
 option.info18.comment=Дякую за встановлення Euphoria Patches :)
 
@@ -1254,7 +1254,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Параметри, які стосу�
 screen.POPULAR_SETTINGS=§dПопулярні налаштування
 screen.POPULAR_SETTINGS_2=Сторінка 2
 screen.POPULAR_SETTINGS_3=Сторінка 3
-screen.EP_VERSION=Euphoria Patches §d1.6.0
+screen.EP_VERSION=Euphoria Patches §d1.6.1
 screen.EP_VERSION.comment=§bІи можете підтримати SpacEagle17 на Patreon або Ko-Fi і отримати за це нові ексклюзивні бета-збірки. §r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=Час анімації світу
