@@ -1197,6 +1197,7 @@ screen.BLOCKLIGHT.comment=与方块光相关的设置.
 screen.COLORED_LIGHT=彩色照明
 screen.SSBL_SETTINGS=屏幕空间彩色照明
 screen.ACL_SETTINGS=高级彩色照明
+screen.LIGHTMAP_CURVES_SETTINGS=光图曲线
 screen.OVERLAY_NOISE=噪声叠加
 screen.MOSS_NOISE_SETTINGS=苔藓噪点设置
 screen.SAND_NOISE_SETTINGS=沙粒噪点设置
@@ -1693,6 +1694,9 @@ option.LAVA_NOISE_AMOUNT.comment=改变岩浆预设的噪声数量.
 
 option.LAVA_EDGE_EFFECT=岩浆边缘效果
 option.LAVA_EDGE_EFFECT.comment=当岩浆和其他方块接触时添加一道亮边. §e[*]§r 本选项需启用位于 性能设置 中的 高级彩色照明 选项才能生效.
+value.LAVA_EDGE_EFFECT.0=关
+value.LAVA_EDGE_EFFECT.1=开 - 亮色
+value.LAVA_EDGE_EFFECT.2=开 - 暗色
 
 option.NETHER_BRIGHTNESS=下界亮度
 option.NETHER_BRIGHTNESS.comment=调节下界环境光亮度.
@@ -1961,8 +1965,8 @@ option.PURPLE_END_FIRE.comment=使末地中与火焰相关的方块, 实体, 粒
 option.NO_RAIN_ABOVE_CLOUDS=云端之上无雨雪
 option.NO_RAIN_ABOVE_CLOUDS.comment=禁用高于云层的雨雪粒子. 在原版云层开启并且高度被修改的情况下不能很好的工作.
 
-option.DOF_SNEAKING=潜行(下蹲)时模糊视界
-option.DOF_SNEAKING.comment=仅在潜行时激活视界模糊效果.
+option.DOF_SNEAKING=在下蹲且手持望远镜时模糊视界
+option.DOF_SNEAKING.comment=仅在潜行(下蹲)且手持望远镜时激活视界模糊效果.
 
 option.CLEAR_SKY_WHEN_RAINING=清澈雨天
 option.CLEAR_SKY_WHEN_RAINING.comment=使得星星和其他天空效果在雨天时略微可见.
@@ -2057,8 +2061,8 @@ option.TILT_SHIFT2=移轴倾角 - Y 轴
 option.TILT_SHIFT2.comment=移轴效果 - 倾角方向: 垂直.  §e译者注§r:. 目前的移轴镜头只实现了倾角功能, 偏移功能尚未实现.
 value.TILT_SHIFT2.0=关
 
-option.DOF_VIEW_FOCUS_NEW2=§c景深焦平面 (请勿使用)
-option.DOF_VIEW_FOCUS_NEW2.comment=在 GUI 未隐藏时显示景深焦平面.
+option.DOF_VIEW_FOCUS_NEW2=§c景深焦平面
+option.DOF_VIEW_FOCUS_NEW2.comment=在 GUI 未隐藏且手持望远镜时显示景深焦平面.
 
 option.LET_THERE_BE_COLORS=五 彩 缤 纷
 
@@ -2190,6 +2194,8 @@ option.BEACON_BEAM_EMISSION.comment=调节信标光束的发光强度.
 
 option.PINKER_CHERRY_LEAVES=更加粉红的樱花树叶
 
+option.LIGHTMAP_CURVES=光图曲线
+option.LIGHTMAP_CURVES.comment=调节在世界中渲染的光照贴图亮度曲线.
 option.UPPER_LIGHTMAP_CURVE=光图曲线 - 上部
 option.UPPER_LIGHTMAP_CURVE.comment=调节光图亮部曲线的强度.
 option.LOWER_LIGHTMAP_CURVE=光图曲线 - 下部
@@ -2328,3 +2334,6 @@ option.ACL_ORE_INTENSITY.comment=调节矿石的高级彩色照明强度.
 value.ACL_ORE_INTENSITY.0.0=关
 
 option.ENTITIES_ARE_LIGHT=实体也可以是闪电
+
+option.WATER_CAUSTIC_STRENGTH=水体焦散强度
+option.WATER_CAUSTIC_STRENGTH.comment=调节水体焦散效果的强度.
