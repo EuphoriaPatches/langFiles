@@ -3,6 +3,10 @@
 # 社区贡献翻译
 # 本文档由 Surisen (Ruri) 翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证随时提供最新翻译.
 
+# 额外键
+screen.FOG_BORDER_OVERWORLD=边界迷雾
+screen.FOG_BORDER_OVERWORLD.comment=与边界雾相关的设置.
+
 #Profiles
 profile.POTATO=§a极低
 profile.VERYLOW=§a很低
@@ -323,7 +327,7 @@ value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=高级彩色照明 §e[*]§r
-option.COLORED_LIGHTING.comment=使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级彩色照明独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上.
+option.COLORED_LIGHTING.comment=Complementary 功能. 使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级彩色照明独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上.
 value.COLORED_LIGHTING.0=§a关
 value.COLORED_LIGHTING.128=§c4 区块
 value.COLORED_LIGHTING.192=§c6 区块
@@ -1185,11 +1189,11 @@ screen.AUTUMN=秋天设置
 screen.SPRING=春天设置
 screen.SUMMER=夏天设置
 screen.NETHER_WORLD=下界
-screen.FOG_BORDER_NETHER=边界雾
+screen.FOG_BORDER_NETHER=边界迷雾
 screen.FOG_BORDER_NETHER.comment=与边界雾相关的设置.
 screen.END_WORLD=末地
 screen.END_AMBIENT=末地环境光
-screen.FOG_BORDER_END=边界雾
+screen.FOG_BORDER_END=边界迷雾
 screen.FOG_BORDER_END.comment=与边界雾相关的设置.
 screen.LIGHT_SETTINGS=光源设置
 screen.BLOCKLIGHT=方块光设置
@@ -1940,7 +1944,7 @@ option.NETHER_NOISE=下界天空噪声
 option.NETHER_NOISE.comment=让下界上层的天空顶部看起来更有趣一点.
 
 option.MCBL_MAIN_DEFINE=Euphoria 彩色照明
-option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光. §e[*]§r本选项仅适用于 1.16.5 及以上版本.
+option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光. 把本选项设置为 高级彩色照明 + 屏幕空间 来使得屏幕空间彩色照明系统与 高级彩色照明 一同生效. §e[*]§r本选项仅在 1.16.5 及以上的版本或者使用了 Angelica 模组的情况下生效.
 value.MCBL_MAIN_DEFINE.0=关
 value.MCBL_MAIN_DEFINE.1=屏幕空间
 value.MCBL_MAIN_DEFINE.2=高级彩色照明 + 屏幕空间
@@ -2020,10 +2024,10 @@ value.SCANLINE.0=关
 option.SCANLINE_FREQUENCY=扫描线频率
 option.SCANLINE_SPEED=扫描线速度
 option.SCANLINE_AMOUNT=扫描线大小
-option.SCANLINE_MONOCHROME=单色
-option.SCANLINE_DIRECTION=扫描线方向
-value.SCANLINE_DIRECTION.0=水平
-value.SCANLINE_DIRECTION.1=垂直
+option.SCANLINE_NEW_MONOCHROME=单色
+value.SCANLINE_NEW_MONOCHROME.true=是
+value.SCANLINE_NEW_MONOCHROME.false=否
+option.SCANLINE_NEW_DIRECTION=扫描线方向
 option.SCANLINE_R=红色倍率
 option.SCANLINE_G=绿色倍率
 option.SCANLINE_B=蓝色倍率
@@ -2151,6 +2155,9 @@ value.GLITTER_RAIN.2=开 - 保持开启
 option.HAND_BLOCKLIGHT_FLICKERING=手持方块光源闪烁
 value.HAND_BLOCKLIGHT_FLICKERING.0=关
 
+option.PIXELATED_HANDHELD_LIGHT=像素化手持光源
+option.PIXELATED_HANDHELD_LIGHT.comment=像素化手持光源效果.
+
 option.SSS_STRENGTH=次表面散射
 value.SSS_STRENGTH.0=关
 value.SSS_STRENGTH.1=开
@@ -2159,6 +2166,9 @@ option.PIXEL_WATER=程序化像素风水体
 option.PIXEL_WATER.comment=程序化生成像素化的水体纹理.
 value.PIXEL_WATER.0=关
 value.PIXEL_WATER.1=开
+
+option.PIXELATED_WATER_REFLECTIONS=像素化水体反射
+option.PIXELATED_WATER_REFLECTIONS.comment=像素化水体反射效果.
 
 option.COMP_WATER_TWEAKS=Complementary 水体调整
 option.COMP_WATER_TWEAKS.comment=提供一个 Complementary 光影的水体颜色调整的统一开关.
@@ -2337,3 +2347,6 @@ option.ENTITIES_ARE_LIGHT=实体也可以是闪电
 
 option.WATER_CAUSTIC_STRENGTH=水体焦散强度
 option.WATER_CAUSTIC_STRENGTH.comment=调节水体焦散效果的强度.
+
+option.ROUGHNESS_MULTIPLIER=粗糙度倍率
+option.ROUGHNESS_MULTIPLIER.comment=调节粗糙材质的粗糙度.
