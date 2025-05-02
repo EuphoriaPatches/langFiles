@@ -2146,6 +2146,9 @@ value.GLITTER_RAIN.2=ON - Always
 option.HAND_BLOCKLIGHT_FLICKERING=Handheld Blocklight Flickering
 value.HAND_BLOCKLIGHT_FLICKERING.0=OFF
 
+option.PIXELATED_HANDHELD_LIGHT=Pixelated Handheld Light
+option.PIXELATED_HANDHELD_LIGHT.comment=Pixelate the handheld light texture.
+
 option.SSS_STRENGTH=Subsurface Scattering
 value.SSS_STRENGTH.0=OFF
 value.SSS_STRENGTH.1=ON
@@ -2154,6 +2157,9 @@ option.PIXEL_WATER=Procedural Pixel Water
 option.PIXEL_WATER.comment=Generated procedural pixelated water texture.
 value.PIXEL_WATER.0=OFF
 value.PIXEL_WATER.1=ON
+
+option.PIXELATED_WATER_REFLECTIONS=Pixelated Water Reflections
+option.PIXELATED_WATER_REFLECTIONS.comment=Pixelate the water reflections.
 
 option.COMP_WATER_TWEAKS=Complementary Water Tweaks
 option.COMP_WATER_TWEAKS.comment=Color tweaks to water done by the Shaderpack
