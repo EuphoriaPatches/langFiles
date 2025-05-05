@@ -611,7 +611,7 @@ value.AURORA_CONDITION.3=雪のバイオームでの満月
 value.AURORA_CONDITION.4=満月または雪のバイオーム
 
 option.NIGHT_NEBULA=星雲
-option.NIGHT_NEBULA.comment=夜空に銀河風の星雲を追加します。星雲はプロシージャル生成され、毎晩異なる外観になります。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。
+option.NIGHT_NEBULA.comment=夜空に銀河風の星雲を追加します。星雲は自動生成され、毎晩異なる外観になります。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。
 
 option.NIGHT_NEBULA_I=星雲の明るさ
 option.NIGHT_NEBULA_I.comment=星雲の明るさを調整します。
@@ -1541,7 +1541,7 @@ option.GLOWING_RAW_BLOCKS=光る原石ブロック
 option.EMISSION_MULTIPLIER=発光倍率
 option.EMISSION_MULTIPLIER.comment=発光の倍率を調整します。
 
-option.UNDERWATER_DISTORTION_STRENGTH=水中歪みの強さ
+option.UNDERWATER_DISTORTION_STRENGTH=水中の歪みの強さ
 option.UNDERWATER_DISTORTION_STRENGTH.comment=水中の歪みの強さを変更する設定です。
 option.FRESNEL_MULTIPLIER=水面反射の強さ
 option.FRESNEL_MULTIPLIER.comment=水面の反射強度を変更する設定です。
@@ -1888,7 +1888,7 @@ option.SNOW_TRANSPARENCY=雪の透明度
 option.SNOW_TRANSPARENCY.comment=雪の透明度を変更します。
 
 option.SSS_SEASON_SNOW=季節の雪 SSS
-option.SSS_SEASON_SNOW.comment=季節オプションから雪にサブサーフェススキャッタリングを追加します。
+option.SSS_SEASON_SNOW.comment=季節オプションから雪にサブサーフェス・スキャッタリングを追加します。
 
 option.WINTER_GREEN_AMOUNT=冬の緑の量
 
@@ -1946,7 +1946,7 @@ option.MCBL_INFLUENCE=複数色付きブロック光源の影響
 option.MCBL_INFLUENCE.comment=複数色付きブロック光源が、デフォルトのブロック光源の色にどれだけ影響を与えるかを制御します。
 
 option.SSS_SNOW_ICE=雪と氷のSSS
-option.SSS_SNOW_ICE.comment=雪や氷ブロックにサブサーフェススキャッタリングを追加します。
+option.SSS_SNOW_ICE.comment=雪や氷ブロックにサブサーフェス・スキャッタリングを追加します。
 
 option.BEDROCK_NOISE=岩盤ノイズ
 option.BEDROCK_NOISE.comment=ネザーやオーバーワールドで岩盤の下にノイズ効果を追加します。
@@ -2146,12 +2146,12 @@ value.GLITTER_RAIN.2=ON - 常時
 option.HAND_BLOCKLIGHT_FLICKERING=手持ちブロック光源の点滅
 value.HAND_BLOCKLIGHT_FLICKERING.0=OFF
 
-option.SSS_STRENGTH=サブサーフェススキャッタリング
+option.SSS_STRENGTH=サブサーフェス・スキャッタリング
 value.SSS_STRENGTH.0=OFF
 value.SSS_STRENGTH.1=ON
 
-option.PIXEL_WATER=プロシージャルピクセル水
-option.PIXEL_WATER.comment=プロシージャルに生成されたピクセル化された水のテクスチャ。
+option.PIXEL_WATER=自動生成ピクセル水
+option.PIXEL_WATER.comment=自動生成されたピクセル化された水のテクスチャ。
 value.PIXEL_WATER.0=OFF
 value.PIXEL_WATER.1=ON
 
@@ -2159,7 +2159,7 @@ option.COMP_WATER_TWEAKS=Complementaryの水の調整
 option.COMP_WATER_TWEAKS.comment=シェーダーによる水の色調整。
 
 option.CAVE_SMOKE=洞窟の煙
-option.CAVE_SMOKE.comment=洞窟内で立体ブロック光源の霧に煙の効果を追加します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。. §e[*]§r この機能は、パフォーマンス設定で「高度な色付き照明」が有効な場合にのみ動作します。
+option.CAVE_SMOKE.comment=洞窟内でブロック光源の立体霧に煙の効果を追加します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。. §e[*]§r この機能は、パフォーマンス設定で「高度な色付き照明」が有効な場合にのみ動作します。
 
 option.WAVING_SUGAR_CANE=揺れるサトウキビ
 
