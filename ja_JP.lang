@@ -320,7 +320,7 @@ value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=高度な色付き照明 (ACL) §e[*]§
-option.COLORED_LIGHTING.comment=ボクセル化とFlood Fillライティングを使用してブロック光源に色を追加し. さらに追加でいくつかの光源を追加します。. §e[*]§r この機能はIrisとサポートされているプラットフォームでのみ動作します。. §e[*]§r この設定は「動的な影」が無効の場合、無効になります。. §a[+]§r このシステムは、他の機能を個別に有効/無効にできる「その他」 ->「ACL専用機能」メニューも有効にします。. §c[-]§r この効果の高いチャンク値はパフォーマンスに予想以上の影響を与え、2チャンクごとの増加ごとに前の段階の2倍以上のパフォーマンスコストがかかる場合があります。
+option.COLORED_LIGHTING.comment=Complementary Shadersの機能です。. ボクセル化とFlood Fillライティングを使用してブロック光源に色を追加し. さらに追加でいくつかの光源を追加します。. §e[*]§r この機能はIrisとサポートされているプラットフォームでのみ動作します。. §e[*]§r この設定は「動的な影」が無効の場合、無効になります。. §a[+]§r このシステムは、他の機能を個別に有効/無効にできる「その他」 ->「ACL専用機能」メニューも有効にします。. §c[-]§r この効果の高いチャンク値はパフォーマンスに予想以上の影響を与え、2チャンクごとの増加ごとに前の段階の2倍以上のパフォーマンスコストがかかる場合があります。
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§c4チャンク
 value.COLORED_LIGHTING.192=§c6チャンク
@@ -611,7 +611,7 @@ value.AURORA_CONDITION.3=雪のバイオームでの満月
 value.AURORA_CONDITION.4=満月または雪のバイオーム
 
 option.NIGHT_NEBULA=星雲
-option.NIGHT_NEBULA.comment=夜空に銀河風の星雲を追加します。星雲はプロシージャル生成され、毎晩異なる外観になります。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。
+option.NIGHT_NEBULA.comment=夜空に銀河風の星雲を追加します。星雲は自動生成され、毎晩異なる外観になります。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。
 
 option.NIGHT_NEBULA_I=星雲の明るさ
 option.NIGHT_NEBULA_I.comment=星雲の明るさを調整します。
@@ -1402,7 +1402,7 @@ value.OVERWORLD_BEAMS_CONDITION.0=満月
 value.OVERWORLD_BEAMS_CONDITION.1=毎晩
 option.OVERWORLD_BEAMS_INTENSITY=オーバーワールドビームの強度
 option.BEAMS_AMBIENT_INFLUENCE=霧色の影響
-option.BEAMS_AMBIENT_INFLUENCE.comment=ビームは、0.00では霧の色に、1.00ではユーザーが定義した色になります。
+option.BEAMS_AMBIENT_INFLUENCE.comment=ビームは、1.00では霧の色に、0.00ではユーザーが定義した色になります。
 option.OW_BEAM_R=オーバーワールドビーム - 赤
 option.OW_BEAM_G=オーバーワールドビーム - 緑
 option.OW_BEAM_B=オーバーワールドビーム - 青
@@ -1418,7 +1418,7 @@ value.END_CRYSTAL_VORTEX.3=両方
 option.DRAGON_DEATH_EFFECT=ドラゴン死亡エフェクト
 option.DRAGON_DEATH_EFFECT.comment=ドラゴンの死亡時のビームを立体効果に置き換える設定です。. §4[***]§r §cエンティティの影§rが有効になります。. [§e*§r] Irisでのみ動作します。. [§e*§r] MacOSでは動作しません。
 option.E_BEAMS_AMBIENT_INFLUENCE=環境色の影響
-option.E_BEAMS_AMBIENT_INFLUENCE.comment=ビームの色は0.00で環境色になり、1.00でユーザー定義の色になります。. ドラゴンのエンダービームには適用されません。
+option.E_BEAMS_AMBIENT_INFLUENCE.comment=ビームの色は1.00で環境色になり、0.00でユーザー定義の色になります。. ドラゴンのエンダービームには適用されません。
 option.E_BEAM_R=エンダービーム - 赤
 option.E_BEAM_G=エンダービーム - 緑
 option.E_BEAM_B=エンダービーム - 青
@@ -1541,7 +1541,7 @@ option.GLOWING_RAW_BLOCKS=光る原石ブロック
 option.EMISSION_MULTIPLIER=発光倍率
 option.EMISSION_MULTIPLIER.comment=発光の倍率を調整します。
 
-option.UNDERWATER_DISTORTION_STRENGTH=水中歪みの強さ
+option.UNDERWATER_DISTORTION_STRENGTH=水中の歪みの強さ
 option.UNDERWATER_DISTORTION_STRENGTH.comment=水中の歪みの強さを変更する設定です。
 option.FRESNEL_MULTIPLIER=水面反射の強さ
 option.FRESNEL_MULTIPLIER.comment=水面の反射強度を変更する設定です。
@@ -1888,7 +1888,7 @@ option.SNOW_TRANSPARENCY=雪の透明度
 option.SNOW_TRANSPARENCY.comment=雪の透明度を変更します。
 
 option.SSS_SEASON_SNOW=季節の雪 SSS
-option.SSS_SEASON_SNOW.comment=季節オプションから雪にサブサーフェススキャッタリングを追加します。
+option.SSS_SEASON_SNOW.comment=季節オプションから雪にサブサーフェス・スキャッタリングを追加します。
 
 option.WINTER_GREEN_AMOUNT=冬の緑の量
 
@@ -1937,7 +1937,7 @@ option.NETHER_NOISE=ネザーの空ノイズ
 option.NETHER_NOISE.comment=ネザーの天井の上の空をより興味深くします。
 
 option.MCBL_MAIN_DEFINE=Euphoria色付き照明
-option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. §e[*]§r 1.16.5以降でのみ動作します。
+option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. 「ACL + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色付き照明」が適用されます。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=スクリーンスペース
 value.MCBL_MAIN_DEFINE.2=ACL + スクリーンスペース
@@ -1946,7 +1946,7 @@ option.MCBL_INFLUENCE=複数色付きブロック光源の影響
 option.MCBL_INFLUENCE.comment=複数色付きブロック光源が、デフォルトのブロック光源の色にどれだけ影響を与えるかを制御します。
 
 option.SSS_SNOW_ICE=雪と氷のSSS
-option.SSS_SNOW_ICE.comment=雪や氷ブロックにサブサーフェススキャッタリングを追加します。
+option.SSS_SNOW_ICE.comment=雪や氷ブロックにサブサーフェス・スキャッタリングを追加します。
 
 option.BEDROCK_NOISE=岩盤ノイズ
 option.BEDROCK_NOISE.comment=ネザーやオーバーワールドで岩盤の下にノイズ効果を追加します。
@@ -2146,20 +2146,26 @@ value.GLITTER_RAIN.2=ON - 常時
 option.HAND_BLOCKLIGHT_FLICKERING=手持ちブロック光源の点滅
 value.HAND_BLOCKLIGHT_FLICKERING.0=OFF
 
-option.SSS_STRENGTH=サブサーフェススキャッタリング
+option.PIXELATED_HANDHELD_LIGHT=ピクセル化された手持ち光源
+option.PIXELATED_HANDHELD_LIGHT.comment=手持ち光源のテクスチャをピクセル化します。
+
+option.SSS_STRENGTH=サブサーフェス・スキャッタリング
 value.SSS_STRENGTH.0=OFF
 value.SSS_STRENGTH.1=ON
 
-option.PIXEL_WATER=プロシージャルピクセル水
-option.PIXEL_WATER.comment=プロシージャルに生成されたピクセル化された水のテクスチャ。
+option.PIXEL_WATER=自動生成ピクセル水
+option.PIXEL_WATER.comment=自動生成されたピクセル化された水のテクスチャ。
 value.PIXEL_WATER.0=OFF
 value.PIXEL_WATER.1=ON
+
+option.PIXELATED_WATER_REFLECTIONS=ピクセル化された水の反射
+option.PIXELATED_WATER_REFLECTIONS.comment=水の反射をピクセル化します。
 
 option.COMP_WATER_TWEAKS=Complementaryの水の調整
 option.COMP_WATER_TWEAKS.comment=シェーダーによる水の色調整。
 
 option.CAVE_SMOKE=洞窟の煙
-option.CAVE_SMOKE.comment=洞窟内で立体ブロック光源の霧に煙の効果を追加します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。. §e[*]§r この機能は、パフォーマンス設定で「高度な色付き照明」が有効な場合にのみ動作します。
+option.CAVE_SMOKE.comment=洞窟内でブロック光源の立体霧に煙の効果を追加します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。. §e[*]§r この機能は、パフォーマンス設定で「高度な色付き照明」が有効な場合にのみ動作します。
 
 option.WAVING_SUGAR_CANE=揺れるサトウキビ
 
@@ -2334,3 +2340,6 @@ option.ENTITIES_ARE_LIGHT=光るエンティティ
 
 option.WATER_CAUSTIC_STRENGTH=水のコースティクスの強度
 option.WATER_CAUSTIC_STRENGTH.comment=水のコースティクス効果の強度を変更します。
+
+option.ROUGHNESS_MULTIPLIER=粗さ(ラフネス)の倍率
+option.ROUGHNESS_MULTIPLIER.comment=マテリアルの粗さ(ラフネス)を変更します。
