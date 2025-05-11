@@ -320,7 +320,7 @@ value.ANISOTROPIC_FILTER.8=§ex8
 value.ANISOTROPIC_FILTER.16=§4§lx16
 
 option.COLORED_LIGHTING=Zaawansowane Kolorowe Oświetlenie (ACL) §e[*]§r
-option.COLORED_LIGHTING.comment=Wykorzystuje wokselizację i techologie floodfill, aby dać źródłom światła odpowieni kolor, a także dodaje kilka nowych źródeł świateła. §e[*]§r Ta funkcja działa tylko na Iris i obsługiwanych komputerach. §e[*]§r Aby ta funkcja działała, "Cienie w Czasie Rzeczywistym" muszą być właczone. §a[+]§r To ustawienie włącza również kilka innych funkcji, które można indywidualnie włączyć/wyłączyć w menu "Inne" -> "Funkcje ACL".
+option.COLORED_LIGHTING.comment=Funkcja z Complementary. Wykorzystuje wokselizację i techologie floodfill, aby dać źródłom światła odpowieni kolor, a także dodaje kilka nowych źródeł świateła. §e[*]§r Ta funkcja działa tylko na Iris i obsługiwanych komputerach. §e[*]§r Aby ta funkcja działała, "Cienie w Czasie Rzeczywistym" muszą być właczone. §a[+]§r To ustawienie włącza również kilka innych funkcji, które można indywidualnie włączyć/wyłączyć w menu "Inne" -> "Funkcje ACL".
 value.COLORED_LIGHTING.0=§aWYŁ.
 value.COLORED_LIGHTING.128=§c4 Chunki
 value.COLORED_LIGHTING.192=§c6 Chunków
@@ -1402,7 +1402,7 @@ value.OVERWORLD_BEAMS_CONDITION.0=Pełnia
 value.OVERWORLD_BEAMS_CONDITION.1=Każdej Nocy
 option.OVERWORLD_BEAMS_INTENSITY=Natężenie Słupów Światłą
 option.BEAMS_AMBIENT_INFLUENCE=Wpływ Koloru Mgły
-option.BEAMS_AMBIENT_INFLUENCE.comment=Słupy będą miały kolor mgły na poziomie 0.00 i kolor wybrany przez użytkownika na poziomie 1.00.
+option.BEAMS_AMBIENT_INFLUENCE.comment=Słupy będą miały kolor mgły na poziomie 1.00 i kolor wybrany przez użytkownika na poziomie 0.00.
 option.OW_BEAM_R=Słupy Światła - Czerwień
 option.OW_BEAM_G=Słupy Światła - Zieleń
 option.OW_BEAM_B=Słupy Światła - Niebieskość
@@ -1418,7 +1418,7 @@ value.END_CRYSTAL_VORTEX.3=Oba
 option.DRAGON_DEATH_EFFECT=Efekt Śmierci Smoka Endu
 option.DRAGON_DEATH_EFFECT.comment=Ustawienie, które zastępuje domyslną animacje śmerci smoka efektem wolumetrycznym. §4[***]§r Włącza §cCienie Mobów§r. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w Ustawieniach Jakości i twój komputer/shader loader je obsługuje. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
 option.E_BEAMS_AMBIENT_INFLUENCE=Wpływ Kolorów Otoczenia
-option.E_BEAMS_AMBIENT_INFLUENCE.comment=Zorza będą miały kolor otoczenia na poziomie 0.00 i kolor wybrany przez użytkownika na poziomie 1.00. Doesn't apply to Smocze Zorza Ender.
+option.E_BEAMS_AMBIENT_INFLUENCE.comment=Zorza będą miały kolor otoczenia na poziomie 1.00 i kolor wybrany przez użytkownika na poziomie 0.00. Doesn't apply to Smocze Zorza Ender.
 option.E_BEAM_R=Zorza Ender - Czerwień
 option.E_BEAM_G=Zorza Ender - Zieleń
 option.E_BEAM_B=Zorza Ender - Niebieskość
@@ -1937,7 +1937,7 @@ option.NETHER_NOISE=Szum na Niebie Netheru
 option.NETHER_NOISE.comment=Sprawia, że niebo Netheru jest bardziej interesujące.
 
 option.MCBL_MAIN_DEFINE=Kolorowe Oświetlenie Euphoria
-option.MCBL_MAIN_DEFINE.comment=Włączą wielokolorowe źródła światła. §e[*]§r Działą tylko na Iris 1.16.5 lub wyżej.
+option.MCBL_MAIN_DEFINE.comment=Włączą wielokolorowe źródła światła. Ustaw na ACL + Przestrzeń Ekranu, aby używać systemu przestrzeni ekranu wraz z Zaawansowanym Kolorowym Oświetleniem (ACL). §e[*]§r Działą tylko na Iris 1.16.5 lub wyżej, albo z modem "Angelica" .
 value.MCBL_MAIN_DEFINE.0=WYŁ.
 value.MCBL_MAIN_DEFINE.1=W Przestrzeni Ekranu
 value.MCBL_MAIN_DEFINE.2=ACL + Przestrzeń Ekranu
@@ -2007,8 +2007,8 @@ option.VERTICAL_SCROLL_FREQUENCY=Częstotliwość Przewijania
 option.VERTICAL_STUTTER_FREQUENCY=Częstotliwość Zacinania Się
 
 option.PIXELATE_SCREEN=Pikseloza
-option.PIXELATED_SCREEN_SIZE=Rozmiar Pikseli
-option.PIXELATED_SCREEN_SMOOTHNESS=Gładkość
+option._SCREEN_SIZE=Rozmiar Pikseli
+option._SCREEN_SMOOTHNESS=Gładkość
 
 option.SCANLINE=Linia Skanowania
 value.SCANLINE.0=WYŁ.
@@ -2146,6 +2146,9 @@ value.GLITTER_RAIN.2=WŁ. - Zawsze
 option.HAND_BLOCKLIGHT_FLICKERING=Migoczące Światło Ręczne
 value.HAND_BLOCKLIGHT_FLICKERING.0=WYŁ.
 
+option._HANDHELD_LIGHT=Pikselowane Światło Ręczne
+option.PIXELATED_HANDHELD_LIGHT.comment=Pikseluj teksturę światła ręcznego.
+
 option.SSS_STRENGTH=Rozpraszanie Podpowierzchniowe (SSS)
 value.SSS_STRENGTH.0=WYŁ.
 value.SSS_STRENGTH.1=WŁ.
@@ -2154,6 +2157,9 @@ option.PIXEL_WATER=Proceduralna Woda Pikselowana
 option.PIXEL_WATER.comment=Wygenerowana proceduralnie pikselowana tekstura wody.
 value.PIXEL_WATER.0=WYŁ.
 value.PIXEL_WATER.1=WŁ.
+
+option.PIXELATED_WATER_REFLECTIONS=Pikselowane Odbicia Wody
+option.PIXELATED_WATER_REFLECTIONS.comment=Pikseluje odbicia na wodzie.
 
 option.COMP_WATER_TWEAKS=Korekty wody
 option.COMP_WATER_TWEAKS.comment=Poprawki kolorów wody wykonane automatycznie przez Shader
@@ -2334,3 +2340,6 @@ option.ENTITIES_ARE_LIGHT=Moby się Świecą
 
 option.WATER_CAUSTIC_STRENGTH=Siła Kaustyki Wody
 option.WATER_CAUSTIC_STRENGTH.comment=Zmień siłę kaustyki wody.
+
+option.ROUGHNESS_MULTIPLIER=Mnożnik Chropowatości
+option.ROUGHNESS_MULTIPLIER.comment=Zmień chropowatość materiałów.
