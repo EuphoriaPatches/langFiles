@@ -1208,7 +1208,7 @@ screen.WORLD_CURVATURE_SETTINGS.comment=Настройки, связанные �
 screen.POPULAR_SETTINGS=§dПопулярные Настройки
 screen.POPULAR_SETTINGS_2=Страница 2
 screen.POPULAR_SETTINGS_3=Страница 3
-screen.EP_VERSION=Euphoria Patches §d1.6.2
+screen.EP_VERSION=Euphoria Patches §d1.6.3
 screen.EP_VERSION.comment=§bВы можете поддержать SpacEagle17 на Patreon или Ko-Fi и получить новые версии для разработчиков. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=Анимация Мирового Времени

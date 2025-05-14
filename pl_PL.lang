@@ -1254,7 +1254,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Losowe ustawienia związane ze źród�
 screen.POPULAR_SETTINGS=§dPopularne Ustawienia
 screen.POPULAR_SETTINGS_2=2 Strona
 screen.POPULAR_SETTINGS_3=3 Strona
-screen.EP_VERSION=Euphoria Patches §d1.6.2
+screen.EP_VERSION=Euphoria Patches §d1.6.3
 screen.EP_VERSION.comment=§bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
