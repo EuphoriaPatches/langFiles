@@ -2345,4 +2345,4 @@ option.ROUGHNESS_MULTIPLIER=Roughness Multiplier
 option.ROUGHNESS_MULTIPLIER.comment=Change the roughness of the materials.
 
 option.SHADOW_SATURATION=Shadow Saturation
-option.SHADOW_SATURATION.comment=Change the saturation of the shadows and light shafts.
+option.SHADOW_SATURATION.comment=Change the saturation of the shadows and light shafts. §e[*]§r This setting only works if "Real-Time Shadows" is set to Low or higher.
