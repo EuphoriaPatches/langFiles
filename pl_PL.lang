@@ -2343,3 +2343,6 @@ option.WATER_CAUSTIC_STRENGTH.comment=Zmień siłę kaustyki wody.
 
 option.ROUGHNESS_MULTIPLIER=Mnożnik Chropowatości
 option.ROUGHNESS_MULTIPLIER.comment=Zmień chropowatość materiałów.
+
+option.SHADOW_SATURATION=Nasycenie Cieni
+option.SHADOW_SATURATION.comment=Zmień nasycenie cieni i snopów światła. §e[*]§r Cienie w Czasie Rzeczywistym muszą być ustawione na jakość "Niskią" lub wyższą.
