@@ -2031,8 +2031,9 @@ option.HALFTONE_ANGLE=Dots Angle
 
 option.SPEED_LINES=Speed Lines
 value.SPEED_LINES.0=OFF
-value.SPEED_LINES.1=ON - While Sprinting
-value.SPEED_LINES.2=ON
+value.SPEED_LINES.1=ON - While Fast
+value.SPEED_LINES.2=ON - While Fast & Sprinting
+value.SPEED_LINES.3=ON
 option.SPEED_LINES_TRANSPARENCY=Speed Lines Transparency
 option.SPEED_LINES_SPEED=Intensity
 option.SPEED_LINE_THICKNESS=Line Size
