@@ -2345,4 +2345,4 @@ option.ROUGHNESS_MULTIPLIER=Множник шорсткости
 option.ROUGHNESS_MULTIPLIER.comment=Змінює шорсткість матеріалів
 
 option.SHADOW_SATURATION=Насиченість тіні
-option.SHADOW_SATURATION.comment=Змінює насиченість тіней і світлових потоків
+option.SHADOW_SATURATION.comment=Змінює насиченість тіней і світлових потоків. §e[*]§r Цей параметр працює, лише якщо для «Тіні в реальному часі» установлено значення «низько» або вище
