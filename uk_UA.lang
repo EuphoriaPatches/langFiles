@@ -2031,8 +2031,9 @@ option.HALFTONE_ANGLE=Кут точки
 
 option.SPEED_LINES=Швидкість ліній
 value.SPEED_LINES.0=ВИМК.
-value.SPEED_LINES.1=При бігу
-value.SPEED_LINES.2=УВІМК.
+value.SPEED_LINES.1=Коли швидко
+value.SPEED_LINES.2=Коли швидко і біг
+value.SPEED_LINES.3=УВІМК.
 option.SPEED_LINES_TRANSPARENCY=Прозорість швидкости ліній
 option.SPEED_LINES_SPEED=Інтенсивність
 option.SPEED_LINE_THICKNESS=Розмір лінії
