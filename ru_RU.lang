@@ -395,8 +395,8 @@ option.CLOUD_ALT1=Высота облаков
 option.CLOUD_ALT1.comment=Определяет мировую высоту, на которой будут появляться облака. §e[*]§r Работает только со стилями облаков Reimagined или Unbound.
 
 option.CLOUD_SPEED_MULT=Скорость облаков
-option.CLOUD_SPEED_MULT.comment=Определяет, с какой скоростью будут двигаться облака. «Синхронизированы с мировым временем» использует мировое время Minecraft для продвижения позиций облаков; это позволяет облакам выглядеть одинаково у игроков на одном сервере. §e[*]§r Работает только со стилями облаков Reimagined или Unbound.
-value.CLOUD_SPEED_MULT.100=Синхронизированы с мировым временем
+option.CLOUD_SPEED_MULT.comment=Определяет, с какой скоростью будут двигаться облака. «Синхронизация с миром» использует мировое время Minecraft для продвижения позиций облаков; это позволяет облакам выглядеть одинаково у игроков на одном сервере. §e[*]§r Работает только со стилями облаков Reimagined или Unbound.
+value.CLOUD_SPEED_MULT.100=Синхронизация с миром
 
 option.CLOUD_R=Множитель красного для облаков
 option.CLOUD_G=Множитель зелёного для облаков
@@ -798,7 +798,7 @@ option.SNOWY_WORLD=Заснеженный мир
 option.SNOWY_WORLD.comment=Покрывает весь мир снегом.
 
 option.SHOW_LIGHT_LEVEL=Показывать уровни освещённости
-option.SHOW_LIGHT_LEVEL.comment=В Верхнем мире: жёлтый означает, что монстры могут появляться ночью; красный — всегда. В Незере и Энде: жёлтый означает, что появляться могут лишь некоторые мобы, красный — все. §e[*]§r Отключите плавное освещение для точности.
+option.SHOW_LIGHT_LEVEL.comment=В обычном мире: жёлтый означает, что монстры могут появляться ночью; красный — всегда. В Незере и Энде: жёлтый означает, что появляться могут лишь некоторые мобы, красный — все. §e[*]§r Отключите плавное освещение для точности.
 value.SHOW_LIGHT_LEVEL.0=Нет
 value.SHOW_LIGHT_LEVEL.1=Паучиий глаз в руке
 value.SHOW_LIGHT_LEVEL.2=Источник света в руке
@@ -1168,9 +1168,9 @@ screen.WORLD.comment=Настройки игрового мира.
 screen.SPOOKY_SETTINGS=Настройки Spooklementary
 screen.EYES_SETTINGS=Настройки глаз
 screen.BLOOD_MOON_SETTINGS=Настройки кровавой луны
-screen.OVERWORLD_WORLD=Верхний мир
-screen.OVERWORLD_BEAM=Лучи в Верхнем мире
-screen.OVERWORLD_BEAM.comment=Параметры лучей в Верхнем мире.
+screen.OVERWORLD_WORLD=Обычный мир
+screen.OVERWORLD_BEAM=Лучи в обычном мире
+screen.OVERWORLD_BEAM.comment=Параметры лучей в обычном мире.
 screen.FOG=Туман
 screen.FOG.comment=Настройки тумана.
 screen.FOG_CAVE=Пещерный туман
@@ -1397,18 +1397,18 @@ option.GLOWING_WART.comment=Анимированное свечение блок
 option.GLOWING_NETHER_TREES=Свечение грибов Незера
 option.GLOWING_NETHER_TREES.comment=Стволы багровых и искажённых грибов светятся.
 
-option.OVERWORLD_BEAMS=Лучи Верхнего мира
-option.OVERWORLD_BEAMS.comment=Ночные туманные лучи в Верхнем мире.
+option.OVERWORLD_BEAMS=Лучи обычного мира
+option.OVERWORLD_BEAMS.comment=Ночные туманные лучи в обычном мире.
 option.OVERWORLD_BEAMS_CONDITION=Условие появления
 option.OVERWORLD_BEAMS_CONDITION.comment=По умолчанию только в полнолуние.
 value.OVERWORLD_BEAMS_CONDITION.0=Полнолуние
 value.OVERWORLD_BEAMS_CONDITION.1=Каждую ночь
-option.OVERWORLD_BEAMS_INTENSITY=Интенсивность лучей Верхнего мира
+option.OVERWORLD_BEAMS_INTENSITY=Интенсивность лучей обычного мира
 option.BEAMS_AMBIENT_INFLUENCE=Влияние цвета тумана
 option.BEAMS_AMBIENT_INFLUENCE.comment=Лучи принимают цвет тумана при значении 1.00 и пользовательский цвет при 0.00.
-option.OW_BEAM_R=Красный лучей Верхнего мира
-option.OW_BEAM_G=Зелёный лучей Верхнего мира
-option.OW_BEAM_B=Синий лучей Верхнего мира
+option.OW_BEAM_R=Красный лучей обычного мира
+option.OW_BEAM_G=Зелёный лучей обычного мира
+option.OW_BEAM_B=Синий лучей обычного мира
 
 option.END_BEAMS=Эндер-лучи
 option.END_BEAMS.comment=Туманные лучи в измерении Энда.
@@ -1504,7 +1504,7 @@ value.STAR_BRIGHTNESS.31=2.8
 value.STAR_BRIGHTNESS.32=2.9
 value.STAR_BRIGHTNESS.33=3.0
 
-option.MORE_STARS_OVERWORLD=Больше звёзд в Верхнем мире
+option.MORE_STARS_OVERWORLD=Больше звёзд в обычном мире
 option.MORE_STARS_OVERWORLD.comment=Увеличивает количество звёзд сверх стандартных настроек.
 value.MORE_STARS_OVERWORLD.0=Нет
 value.MORE_STARS_OVERWORLD.1=Много
@@ -1587,7 +1587,7 @@ option.RADIOACTIVE_ATMOSPHERIC_FOG=Радиоактивный атмосферн
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=Опасный для здоровья эффект. Заметнее ночью.
 
 option.BORDER_FOG_DISTANCE_OVERWORLD=Дальность граничного тумана
-option.BORDER_FOG_DISTANCE_OVERWORLD.comment=Настройка для Верхнего мира.
+option.BORDER_FOG_DISTANCE_OVERWORLD.comment=Настройка для обычного мира.
 value.BORDER_FOG_DISTANCE_OVERWORLD.1=0.25
 value.BORDER_FOG_DISTANCE_OVERWORLD.2=0.40
 value.BORDER_FOG_DISTANCE_OVERWORLD.3=0.50
@@ -1599,7 +1599,7 @@ value.BORDER_FOG_DISTANCE_OVERWORLD.500=2.00
 value.BORDER_FOG_DISTANCE_OVERWORLD.1000=2.50
 
 option.BORDER_FOG_DENSITY_OVERWORLD=Плотность граничного тумана
-option.BORDER_FOG_DENSITY_OVERWORLD.comment=Для Верхнего мира.
+option.BORDER_FOG_DENSITY_OVERWORLD.comment=Для обычного мира.
 
 option.BORDER_FOG_DISTANCE_NETHER=Дальность граничного тумана
 option.BORDER_FOG_DISTANCE_NETHER.comment=Для Незера.
@@ -1638,15 +1638,15 @@ value.NETHER_PORTAL_VARIATION.1=Complementary
 value.NETHER_PORTAL_VARIATION.2=Фиолетовая пустота
 
 option.BIOME_COLORED_NETHER_PORTALS=Порталы-хамелеоны
-option.BIOME_COLORED_NETHER_PORTALS.comment=Цвет порталов в Незере зависит от биома.
+option.BIOME_COLORED_NETHER_PORTALS.comment=Цвет порталов в измерении Незера зависит от биома.
 
-option.END_PORTAL_VARIATION=Предустановка порталов Энда
+option.END_PORTAL_VARIATION=Предустановка портала в Энд
 option.END_PORTAL_VARIATION.comment=Выбор стиля портала в Энд. §e[*]§r Требуется встроенный PBR+.
 value.END_PORTAL_VARIATION.0=Complementary
 value.END_PORTAL_VARIATION.1=Размытые нити
 value.END_PORTAL_VARIATION.3=Пиксельная сальса
 
-option.END_PORTAL_BEAM=Лучи портала Энда
+option.END_PORTAL_BEAM=Лучи портала в Энд
 option.END_PORTAL_BEAM.comment=Добавляет световые лучи (как в Minecraft Dungeons). §e[*]§r Работает только на Iris. [§e*§r] Не работает на MacOS.
 
 option.SILHOUETTE=Силуэты
@@ -1666,7 +1666,7 @@ option.MIRROR_DIMENSION=Зеркальное измерение
 option.MIRROR_DIMENSION.comment=Магический эффект отражённого мира.
 
 option.WORLD_CURVATURE=Кривизна мира
-option.OVERWORLD_CURVATURE_SIZE=Кривизна Верхнего мира
+option.OVERWORLD_CURVATURE_SIZE=Кривизна обычного мира
 option.NETHER_CURVATURE_SIZE=Кривизна Незера
 option.END_CURVATURE_SIZE=Кривизна Энда
 
@@ -1706,7 +1706,7 @@ option.END_ROD_COLOR_PROFILE.comment=Цвет стержней Энда, исп�
 value.END_ROD_COLOR_PROFILE.0=Complementary
 value.END_ROD_COLOR_PROFILE.1=Пользовательский
 value.END_ROD_COLOR_PROFILE.2=Радуга
-value.END_ROD_COLOR_PROFILE.3=Радуга (только Верхний мир)
+value.END_ROD_COLOR_PROFILE.3=Радуга (только обычный мир)
 option.END_ROD_R=Красный стержня Энда
 option.END_ROD_G=Зелёный стержня Энда
 option.END_ROD_B=Синий стержня Энда
@@ -1890,8 +1890,8 @@ option.MELTING_RADIUS.comment=Радиус, в котором снег тает 
 option.SNOW_TRANSPARENCY=Прозрачность снега
 option.SNOW_TRANSPARENCY.comment=Настройка прозрачности снега.
 
-option.SSS_SEASON_SNOW=Подповерхностное рассеяние снега
-option.SSS_SEASON_SNOW.comment=Добавляет подповерхностное рассеяние к сезонному снегу.
+option.SSS_SEASON_SNOW=Подповерхностное рассеивание снега
+option.SSS_SEASON_SNOW.comment=Добавляет подповерхностное рассеивание к сезонному снегу.
 
 option.WINTER_GREEN_AMOUNT=Количество зелени зимой
 
@@ -1949,10 +1949,10 @@ option.MCBL_INFLUENCE=Влияние многоцветного блочного
 option.MCBL_INFLUENCE.comment=Регулирует влияние многоцветного блочного освещения на стандартный блочный свет.
 
 option.SSS_SNOW_ICE=ПпР снега и льда
-option.SSS_SNOW_ICE.comment=Добавляет подповерхностное рассеяние (SSS) для снега и льда.
+option.SSS_SNOW_ICE.comment=Добавляет подповерхностное рассеивание (SSS) для снега и льда.
 
 option.BEDROCK_NOISE=Шум бедрока
-option.BEDROCK_NOISE.comment=Добавляет эффект шума под бедроком в Незере и Верхнем мире.
+option.BEDROCK_NOISE.comment=Добавляет эффект шума под бедроком в Незере и обычном мире.
 
 option.SOUL_SAND_VALLEY_OVERHAUL=Улучшение долины песка душ
 option.SOUL_SAND_VALLEY_OVERHAUL.comment=Делает огненные блоки, сущности и частицы синими в долине песка душ.
@@ -2153,7 +2153,7 @@ value.HAND_BLOCKLIGHT_FLICKERING.0=Нет
 option.PIXELATED_HANDHELD_LIGHT=Пиксельный свет в руке
 option.PIXELATED_HANDHELD_LIGHT.comment=Пикселизирует текстуру источника света в руке.
 
-option.SSS_STRENGTH=Подповерхностное рассеяние
+option.SSS_STRENGTH=Подповерхностное рассеивание
 value.SSS_STRENGTH.0=Нет
 value.SSS_STRENGTH.1=Да
 
@@ -2240,32 +2240,32 @@ option.STAR_SOFTNESS_OW=Мягкость звёзд
 
 option.STAR_SOFTNESS_END=Мягкость звёзд
 
-option.STAR_COLOR_1_OW_R=Красный звезды 1
-option.STAR_COLOR_1_OW_G=Зелёный звезды 1
-option.STAR_COLOR_1_OW_B=Синий звезды 1
+option.STAR_COLOR_1_OW_R=Красный звёзд 1
+option.STAR_COLOR_1_OW_G=Зелёный звёзд 1
+option.STAR_COLOR_1_OW_B=Синий звёзд 1
 
-option.STAR_COLOR_2_OW_R=Красный звезды 2
-option.STAR_COLOR_2_OW_G=Зелёный звезды 2
-option.STAR_COLOR_2_OW_B=Синий звезды 2
+option.STAR_COLOR_2_OW_R=Красный звёзд 2
+option.STAR_COLOR_2_OW_G=Зелёный звёзд 2
+option.STAR_COLOR_2_OW_B=Синий звёзд 2
 
-option.STAR_COLOR_3_OW_R=Красный звезды 3
-option.STAR_COLOR_3_OW_G=Зелёный звезды 3
-option.STAR_COLOR_3_OW_B=Синий звезды 3
+option.STAR_COLOR_3_OW_R=Красный звёзд 3
+option.STAR_COLOR_3_OW_G=Зелёный звёзд 3
+option.STAR_COLOR_3_OW_B=Синий звёзд 3
 
 option.STAR_COLOR_VARIATION_OW=Интенсивность цвета
 value.STAR_COLOR_VARIATION_OW.0.0=Нет
 
-option.STAR_COLOR_1_END_R=Красный звезды 1
-option.STAR_COLOR_1_END_G=Зелёный звезды 1
-option.STAR_COLOR_1_END_B=Синий звезды 1
+option.STAR_COLOR_1_END_R=Красный звёзд 1
+option.STAR_COLOR_1_END_G=Зелёный звёзд 1
+option.STAR_COLOR_1_END_B=Синий звёзд 1
 
-option.STAR_COLOR_2_END_R=Красный звезды 2
-option.STAR_COLOR_2_END_G=Зелёный звезды 2
-option.STAR_COLOR_2_END_B=Синий звезды 2
+option.STAR_COLOR_2_END_R=Красный звёзд 2
+option.STAR_COLOR_2_END_G=Зелёный звёзд 2
+option.STAR_COLOR_2_END_B=Синий звёзд 2
 
-option.STAR_COLOR_3_END_R=Красный звезды 3
-option.STAR_COLOR_3_END_G=Зелёный звезды 3
-option.STAR_COLOR_3_END_B=Синий звезды 3
+option.STAR_COLOR_3_END_R=Красный звёзд 3
+option.STAR_COLOR_3_END_G=Зелёный звёзд 3
+option.STAR_COLOR_3_END_B=Синий звёзд 3
 
 option.STAR_COLOR_VARIATION_END=Интенсивность цвета
 value.STAR_COLOR_VARIATION_END.0.0=Нет
@@ -2282,7 +2282,7 @@ option.DO_IPBR_LIGHTS.comment=Позволяет другим источника
 option.NIGHT_DESATURATION=Обесцвечивание темноты
 option.NIGHT_DESATURATION.comment=Уменьшает насыщенность цветов в тёмных областях.
 
-option.NIGHT_DESATURATION_OW=Интенсивность Верхнего мира
+option.NIGHT_DESATURATION_OW=Интенсивность обычного мира
 value.NIGHT_DESATURATION_OW.0=Нет
 value.NIGHT_DESATURATION_OW.300=Чёрно-белое
 
