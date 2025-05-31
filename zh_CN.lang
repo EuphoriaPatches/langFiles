@@ -361,7 +361,7 @@ option.ATM_FOG_DISTANCE.comment=调节大气雾起始处与镜头的距离. §e[
 option.ATM_FOG_ALTITUDE=大气雾高度
 option.ATM_FOG_ALTITUDE.comment=调节大气雾密度达到最大时的起始高度.
 
-option.CAVE_FOG=洞穴雾气
+option.CAVE_FOG=洞穴烟雾
 option.CAVE_FOG.comment=在深入地下的区域启用额外的雾气.
 
 option.LIGHTSHAFT_BEHAVIOUR=光轴模式
@@ -1575,11 +1575,11 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=手持光源法线强度
 
 option.CAVE_FOG=洞穴雾气
 option.CAVE_FOG.comment=关闭或开启洞穴雾气的设置.
-option.CAVE_FOG_R=洞穴雾气 - 红色
-option.CAVE_FOG_G=洞穴雾气 - 绿色
-option.CAVE_FOG_B=洞穴雾气 - 蓝色
-option.CAVE_FOG_I=洞穴雾气 - 强度
-option.CAVE_FOG_DENSITY=洞穴雾气 密度
+option.CAVE_FOG_R=洞穴烟雾 - 红色
+option.CAVE_FOG_G=洞穴烟雾 - 绿色
+option.CAVE_FOG_B=洞穴烟雾 - 蓝色
+option.CAVE_FOG_I=洞穴烟雾 - 强度
+option.CAVE_FOG_DENSITY=洞穴烟雾 密度
 
 option.ATMOSPHERIC_FOG=大气雾
 option.ATMOSPHERIC_FOG_R= 大气雾 - 红色
@@ -1678,9 +1678,9 @@ option.LAVA_VARIATION=岩浆预设
 option.LAVA_VARIATION.comment=让你所在区域的岩浆更躁动的预设. 来选择吧!
 value.LAVA_VARIATION.0=Complementary
 value.LAVA_VARIATION.1=自适应噪声 (推荐)
-value.LAVA_VARIATION.3=Blushing Hotness
-value.LAVA_VARIATION.4=Molten Cheese
-value.LAVA_VARIATION.5=Dark Islands
+value.LAVA_VARIATION.2=Blushing Hotness
+value.LAVA_VARIATION.3=Molten Cheese
+value.LAVA_VARIATION.4=Dark Islands
 
 option.LAVA_TEMPERATURE=岩浆色温
 option.LAVA_TEMPERATURE.comment=改变岩浆的色温, 让它更红或者更白.
@@ -1760,7 +1760,7 @@ value.tonemap.ACESTonemap=ACES
 value.tonemap.ACESRedModified=ACES - 改善红色表现
 value.tonemap.BurgessTonemap=Burgess
 value.tonemap.LottesTonemap=Lottes
-value.tonemap.uncharted2_tonemap_partial=Uncharted 2
+value.tonemap.uncharted2_tonemap_partial=Uncharted 2 - Partial
 value.tonemap.uncharted2_filmic=Uncharted 2 - Filmic
 value.tonemap.reinhard2=Reinhard2
 value.tonemap.filmic=Filmic
@@ -2041,7 +2041,8 @@ option.HALFTONE_ANGLE=点角度
 option.SPEED_LINES=速度效果
 value.SPEED_LINES.0=关
 value.SPEED_LINES.1=开 - 冲刺时
-value.SPEED_LINES.2=开
+value.SPEED_LINES.2=开 - 冲刺 & 高速运动时
+value.SPEED_LINES.3=开
 option.SPEED_LINES_TRANSPARENCY=速度效果透明度
 option.SPEED_LINES_SPEED=强度
 option.SPEED_LINE_THICKNESS=线条大小
@@ -2350,3 +2351,6 @@ option.WATER_CAUSTIC_STRENGTH.comment=调节水体焦散效果的强度.
 
 option.ROUGHNESS_MULTIPLIER=粗糙度倍率
 option.ROUGHNESS_MULTIPLIER.comment=调节粗糙材质的粗糙度.
+
+option.SHADOW_SATURATION=阴影饱和度
+option.SHADOW_SATURATION.comment=调节阴影和光轴的饱和度. §e[*]§r 本选项仅在 "实时阴影" 选项设置为 低 或者更高的值时生效.
