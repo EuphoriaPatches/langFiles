@@ -29,5 +29,5 @@
     "installerStep2": "Відкрийте установлювач подвійним натисканням по завантаженому файлу",
     "installerStep3": "Натисніть на «Advanced Settings»",
     "installerStep4": "Виберіть прапорець «Install Euphoria Patches»",
-    "installerStep5": "Натисніть установити і файл «Complementary Shaders + Euphoria Patches» повинен з'явитися у теці shaderpacks"
+    "installerStep5": "Натисніть установити і запустіть гру, тоді файл «Complementary Shaders + Euphoria Patches» повинен з'явитися у теці shaderpacks"
 }
