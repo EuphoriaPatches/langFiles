@@ -5,7 +5,7 @@
 
     "modMethodTitle": "The Mod Method",
     "step1": "Get the required Complementary version and put it in the shaderpacks folder",
-    "step1After": "(don't unzip, modify or rename it).",
+    "step1After": "(don't modify it).",
     "substep1_1": "Works with Complementary",
     "or": "or",
     "step2Before": "Get the latest",
@@ -18,7 +18,7 @@
     "discordContact": "Having trouble with installation?",
     "discordContactLink": "Join our Discord community",
 
-    "downloadPageButton": "Go To The Downloads Page",
+    "downloadPageButton": "Download",
 
     "supportDevelopment1": "Support development and get access to early exclusive updates?",
     "supportDevelopment2": "Get the Preview Versions now!",
