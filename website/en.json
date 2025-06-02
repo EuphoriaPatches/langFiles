@@ -32,7 +32,7 @@
 
     "windowsInstallerButton": "Windows Installer",
     "javaInstallerButton": "Java JAR",
-    "complementaryInstallerButton": "Download Complementary Installer",
+    "complementaryInstallerButton": "Download Installer",
     "complementaryWebsiteButton": "Visit Complementary Website",
     "orDivider": "OR"
 }
