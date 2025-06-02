@@ -24,10 +24,15 @@
     "supportDevelopment2": "Get the Preview Versions now!",
 
     "installerMethodTitle": "The Installer Method",
-    "installerStep1Before": "Go to",
-    "installerStep1After": "and download the installer.",
+    "installerStep1After": "Download the Complementary Installer.",
     "installerStep2": "Open the installer by double-clicking the downloaded file",
     "installerStep3": "Now click on 'Advanced Settings'",
     "installerStep4": "Check the 'Install Euphoria Patches' checkbox",
-    "installerStep5": "Click on install and launch the game, Complementary Shaders + Euphoria Patches will now appear in your shaderpacks folder"
+    "installerStep5": "Click on install and launch the game, Complementary Shaders + Euphoria Patches will now appear in your shaderpacks folder",
+
+    "windowsInstallerButton": "Windows Installer",
+    "javaInstallerButton": "Java JAR",
+    "complementaryInstallerButton": "Download Complementary Installer",
+    "complementaryWebsiteButton": "Visit Complementary Website",
+    "orDivider": "OR"
 }
