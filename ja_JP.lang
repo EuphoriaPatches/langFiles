@@ -1753,7 +1753,7 @@ value.tonemap.ACESTonemap=ACES
 value.tonemap.ACESRedModified=ACES Red Modified
 value.tonemap.BurgessTonemap=Burgess
 value.tonemap.LottesTonemap=Lottes
-value.tonemap.uncharted2_tonemap_partial=Uncharted 2
+value.tonemap.uncharted2_tonemap_partial=Uncharted 2 - 部分的
 value.tonemap.uncharted2_filmic=Uncharted 2 - フィルミック
 value.tonemap.reinhard2=Reinhard2
 value.tonemap.filmic=Filmic
@@ -2031,8 +2031,9 @@ option.HALFTONE_ANGLE=ドットの角度
 
 option.SPEED_LINES=スピード線
 value.SPEED_LINES.0=OFF
-value.SPEED_LINES.1=ON - ダッシュ中
-value.SPEED_LINES.2=ON
+value.SPEED_LINES.1=ON - 高速
+value.SPEED_LINES.2=ON - 高速 & ダッシュ中
+value.SPEED_LINES.3=ON
 option.SPEED_LINES_TRANSPARENCY=スピード線の透明度
 option.SPEED_LINES_SPEED=強度
 option.SPEED_LINE_THICKNESS=線の太さ
@@ -2343,3 +2344,6 @@ option.WATER_CAUSTIC_STRENGTH.comment=水のコースティクス効果の強度
 
 option.ROUGHNESS_MULTIPLIER=粗さ(ラフネス)の倍率
 option.ROUGHNESS_MULTIPLIER.comment=マテリアルの粗さ(ラフネス)を変更します。
+
+option.SHADOW_SATURATION=影の彩度
+option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。
