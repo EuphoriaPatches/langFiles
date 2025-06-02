@@ -24,10 +24,14 @@
     "supportDevelopment2": "プレビューバージョンをゲットしましょう！",
 
     "installerMethodTitle": "インストーラーを使う",
-    "installerStep1Before": "​",
-    "installerStep1After": "からインストーラーをダウンロードする。",
+    "installerStep1After": "Complementaryインストーラーをダウンロードする。",
     "installerStep2": "ダウンロードしたファイルをダブルクリックして、インストーラーを起動する。",
     "installerStep3": "'Advanced Settings'をクリックする。",
     "installerStep4": "'Install Euphoria Patches'にチェックを入れる。",
-    "installerStep5": "'Install'をクリックすると、Complementary Shaders + Euphoria Patchesがshaderpacksフォルダに生成されます。"
+    "installerStep5": "'Install'をクリックしてゲームを起動すると、Complementary Shaders + Euphoria Patchesがshaderpacksフォルダに生成されます。",
+
+    "windowsInstallerButton": "Windows<br>インストーラー",
+    "javaInstallerButton": "Java JAR",
+    "complementaryInstallerButton": "ダウンロード",
+    "complementaryWebsiteButton": "Complementary公式サイト"
 }
