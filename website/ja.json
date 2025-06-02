@@ -5,7 +5,7 @@
 
     "modMethodTitle": "Modを使う",
     "step1": "前提となるバージョンのComplementaryをダウンロードし、shaderpacksフォルダに入れる。",
-    "step1After": "(解凍や名前の変更をしたり、改変を加えたりしないでください)",
+    "step1After": "(ファイルを改変しないでください)",
     "substep1_1": "対応Complementaryバージョン: ",
     "or": "または",
     "step2Before": "最新の",
@@ -18,7 +18,7 @@
     "discordContact": "インストールでお困りですか？",
     "discordContactLink": "Discordコミュニティに参加しましょう",
 
-    "downloadPageButton": "ダウンロードページに移動",
+    "downloadPageButton": "ダウンロード",
 
     "supportDevelopment1": "開発を支援し、早期開発バージョンへアクセスしたいですか？",
     "supportDevelopment2": "プレビューバージョンをゲットしましょう！",
@@ -30,8 +30,8 @@
     "installerStep4": "'Install Euphoria Patches'にチェックを入れる。",
     "installerStep5": "'Install'をクリックしてゲームを起動すると、Complementary Shaders + Euphoria Patchesがshaderpacksフォルダに生成されます。",
 
-    "windowsInstallerButton": "Windows<br>インストーラー",
+    "windowsInstallerButton": "Windowsインストーラー",
     "javaInstallerButton": "Java JAR",
     "complementaryInstallerButton": "ダウンロード",
-    "complementaryWebsiteButton": "Complementary公式サイト"
+    "complementaryWebsiteButton": "Complementary公式サイトに移動"
 }
