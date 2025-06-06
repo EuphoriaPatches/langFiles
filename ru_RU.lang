@@ -1257,7 +1257,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Случайные цветовые в
 screen.POPULAR_SETTINGS=§dПопулярные настройки
 screen.POPULAR_SETTINGS_2=Страница 2
 screen.POPULAR_SETTINGS_3=Страница 3
-screen.EP_VERSION=Euphoria Patches §d1.6.4
+screen.EP_VERSION=Euphoria Patches §d1.7.0
 screen.EP_VERSION.comment=§bПоддержите SpacEagle17 на Patreon/Ko-Fi для доступа к бета-версиям. §r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=Анимация времени суток

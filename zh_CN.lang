@@ -1261,7 +1261,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=与随机彩色方块光相关的设�
 screen.POPULAR_SETTINGS=§d最受欢迎的设置
 screen.POPULAR_SETTINGS_2=第二页
 screen.POPULAR_SETTINGS_3=第三页
-screen.EP_VERSION=Euphoria Patches §d1.6.4
+screen.EP_VERSION=Euphoria Patches §d1.7.0
 screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=世界时间动画
