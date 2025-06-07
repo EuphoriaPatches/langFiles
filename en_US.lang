@@ -1172,6 +1172,7 @@ screen.END_STAR=End Star Settings
 screen.END_STAR.comment=Settings that relate to the End Stars.
 screen.STAR_COLORS_END=End Star Colors
 screen.STARS_OVERWORLD=Stars
+screen.SHOOTING_STARS_SETTINGS=Shooting Stars
 screen.STAR_COLORS_OW=Star Colors
 screen.RAIN_SETTINGS=Rain Settings
 screen.NIGHT_DESATURATION_SETTINGS=Darkness Desaturation
@@ -2287,6 +2288,19 @@ value.STAR_COLOR_VARIATION_END.0.0=OFF
 
 option.CELESTIAL_BOTH_HEMISPHERES=Full Sky Celestials
 option.CELESTIAL_BOTH_HEMISPHERES.comment=Renders celestial objects (stars, sun, moon, nebula) across the entire sky rather than just above the horizon, creating a more immersive skybox effect.
+
+option.SHOOTING_STARS=Shooting Stars
+option.SHOOTING_STARS_SIZE=Size
+option.SHOOTING_STARS_SIZE.comment=Change the size of the shooting stars. The bigger the setting the bigger the shooting stars will be.
+option.SHOOTING_STARS_SPEED=Speed
+option.SHOOTING_STARS_CHANCE=Chance
+option.SHOOTING_STARS_CHANCE.comment=Chance of a shooting star spawning - the higher the setting the more frequent shooting stars will appear.
+option.SHOOTING_STARS_COUNT=Amount
+option.SHOOTING_STARS_COUNT.comment=How many shooting stars will appear at once in the sky
+option.SHOOTING_STARS_LINE_THICKNESS=Line Width
+option.SHOOTING_STARS_LINE_THICKNESS.comment=Change the width of the shooting stars line.
+option.SHOOTING_STARS_TRAIL_LENGTH=Line Length
+option.SHOOTING_STARS_TRAIL_LENGTH.comment=Change the length of the shooting stars line.
 
 option.SITUATIONAL_GLOWING_TRIMS=Situational Glowing Trims
 option.SITUATIONAL_GLOWING_TRIMS.comment=Trims will only glow in caves and at night. §e[*]§r Glowing Trims must be enabled for this to work.
