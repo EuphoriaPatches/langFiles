@@ -2366,7 +2366,6 @@ option.SMOKE_PARTICLE_OPACITY=Smoke Particle Opacity
 
 option.END_SUN_ANGLE=End Sun Angle
 option.END_SUN_ANGLE.comment=Adjusts the angle of sun/moon relative to the world during noon.
-value.END_SUN_ANGLE.-1=Set by Style
 value.END_SUN_ANGLE.60=60
 value.END_SUN_ANGLE.50=50
 value.END_SUN_ANGLE.40=40
