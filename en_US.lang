@@ -106,6 +106,10 @@ option.info21=Frequently Asked Questions
 value.info21.0=
 option.info21.comment=Check out the FAQ page to find answers to common questions. §d§l§neuphoriapatches.com/faq
 
+option.info22=§dMore Settings via Scrolling
+value.info22.0=
+option.info22.comment=On big GUI sizes it is possible that some settings are hidden, scrolling down will reveal them.
+
 #Style
 option.SHADER_STYLE=Visual Style
 option.SHADER_STYLE.comment=Determines the default visual style of the shader pack. §bReimagined§r: Complementing Minecraft while preserving its unique visual elements. §dUnbound§r: Reworking the visuals of Minecraft with a semi-realistic fantasy style. §e[*]§r Affected settings: Water Style, Cloud Style, Sun/Moon Style, Sun/Moon Angle, Aurora Style, Glowing Ores.
