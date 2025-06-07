@@ -571,24 +571,6 @@ value.SUN_ANGLE.-50=-50
 value.SUN_ANGLE.-55=-55
 value.SUN_ANGLE.-60=-60
 
-
-option.END_SUN_ANGLE=End Sun Angle
-option.END_SUN_ANGLE.comment=Adjusts the angle of sun/moon relative to the world during noon.
-value.END_SUN_ANGLE.-1=Set by Style
-value.END_SUN_ANGLE.60=60
-value.END_SUN_ANGLE.50=50
-value.END_SUN_ANGLE.40=40
-value.END_SUN_ANGLE.30=30
-value.END_SUN_ANGLE.20=20
-value.END_SUN_ANGLE.10=10
-value.END_SUN_ANGLE.0=0 §r(§bDefault§r)
-value.END_SUN_ANGLE.-10=-10
-value.END_SUN_ANGLE.-20=-20
-value.END_SUN_ANGLE.-30=-30
-value.END_SUN_ANGLE.-40=-40
-value.END_SUN_ANGLE.-50=-50
-value.END_SUN_ANGLE.-60=-60
-
 option.SUN_MOON_STYLE_DEFINE=Sun/Moon Style
 option.SUN_MOON_STYLE_DEFINE.comment=Determines the style of sun/moon. §e[*]§r This setting might interact incorrectly with some resource packs due to the limitations of sun/moon/skybox differentiation.
 value.SUN_MOON_STYLE_DEFINE.-1=Set by Style
@@ -2381,3 +2363,20 @@ option.SHADOW_SATURATION=Shadow Saturation
 option.SHADOW_SATURATION.comment=Change the saturation of the shadows and light shafts. §e[*]§r This setting only works if "Real-Time Shadows" is set to Low or higher.
 
 option.SMOKE_PARTICLE_OPACITY=Smoke Particle Opacity
+
+option.END_SUN_ANGLE=End Sun Angle
+option.END_SUN_ANGLE.comment=Adjusts the angle of sun/moon relative to the world during noon.
+value.END_SUN_ANGLE.-1=Set by Style
+value.END_SUN_ANGLE.60=60
+value.END_SUN_ANGLE.50=50
+value.END_SUN_ANGLE.40=40
+value.END_SUN_ANGLE.30=30
+value.END_SUN_ANGLE.20=20
+value.END_SUN_ANGLE.10=10
+value.END_SUN_ANGLE.0=0 §r(§bDefault§r)
+value.END_SUN_ANGLE.-10=-10
+value.END_SUN_ANGLE.-20=-20
+value.END_SUN_ANGLE.-30=-30
+value.END_SUN_ANGLE.-40=-40
+value.END_SUN_ANGLE.-50=-50
+value.END_SUN_ANGLE.-60=-60
