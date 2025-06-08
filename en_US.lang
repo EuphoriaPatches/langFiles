@@ -1940,6 +1940,8 @@ option.ATLAS_ROTATION.comment=:).
 
 option.NETHER_NOISE=Nether Sky Noise
 option.NETHER_NOISE.comment=Makes the Nether sky above the Nether roof more interesting.
+value.NETHER_NOISE.0=OFF
+value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria Colored Lighting
 option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACL + Screen-Space to use the screen-space system alongside Advanced Colored Lighting. §e[*]§rOnly works on 1.16.5 and above or on Angelica.
