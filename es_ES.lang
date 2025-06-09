@@ -72,109 +72,108 @@ option.info12.comment=Todos los ajustes de Euphoria están deshabilitados por de
 
 option.info13=Soporte de Euphoria Mod
 value.info13.0=
-option.info13.comment=
-Euphoria Patches aims to better support modded blocks than regular Complementary by having default modded block support (check block.properties). Light Source detection with automatic applied emission. Foliage model detection with automatically applied SSS.
+option.info13.comment=Euphoria Patches ofrece una mejor compatibilidad con bloques modificados que Complementary por defecto, ya que cuentan con: 1) Compatibilidad predeterminada con bloques modificados (consulte block.properties). 2) Detección de fuente de luz con emisión automática. 3) Detección de modelo de follaje con SSS automático.
 
-option.info14=Join the community
+option.info14=Únete a nuestra Comunidad!
 value.info14.0=
-option.info14.comment=Join the Euphoria Patches Discord server for question, a fun community, and to stay up-to-date with the latest news. §d§l§neuphoriapatches.com/discord
+option.info14.comment=Únete al servidor de Discord de Euphoria Patches para preguntas, conectar con una comunidad divertida, y estar al día con las últimas actualizaciones. §d§l§neuphoriapatches.com/discord
 
-option.info15=Euphoria Patches Credits
+option.info15=Euphoria Patches, Créditos y Agradecimiendos
 value.info15.0=
-option.info15.comment=The entire credits can be found at §deuphoriapatches.com/credits§r. isuewo - Former co-developer of Euphoria Patches. EminGT: The main developer of Complementary. Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
+option.info15.comment=La lista completa de agradecimientos se puede encontrar en §deuphoriapatches.com/credits§r. isuewo - Antiguo co-desarrollador de Euphoria Patches. EminGT: desarrollador principal de Complementary.  Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
-option.info16=§d§nHow to support Euphoria Patches
+option.info16=§d§nCómo apoyar a Euphoria Patches
 value.info16.0=
-option.info16.comment=You can support Euphoria Patches by being curious about new updates and sharing it with people, but you can also directly support SpacEagle17 on Patreon or Ko-Fi and access Exclusive Beta Versions. §d§l§neuphoriapatches.com/support
+option.info16.comment=Puedes apoyar a Euphoria Patches curioseando un poco las nuevas actualizaciones que vayan surgiendo y compartiéndolas con la gente, pero también puedes apoyar directamente a SpacEagle17 en Patreon o Ko-Fi y acceder a versiones beta exclusivas. §d§l§neuphoriapatches.com/support
 
 option.info17=Beta Version: SpacEagle17 Patreon
 value.info17.0=
-option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access exclusive development versions. §d§l§neuphoriapatches.com/support
+option.info17.comment=Puedes apoyar a SpacEagle17 en Patreon o en Ko-Fi y acceder a versiones de desarrollo exclusivas. §d§l§neuphoriapatches.com/support
 
-option.info18=For Complementary r5.5.1
+option.info18=Para Complementary r5.5.1
 value.info18.0=
-option.info18.comment=Thank you for Installing Euphoria Patches :)
+option.info18.comment=Gracias por instalar Euphoria Patches :]
 
-option.info19=§aNEW UPDATE
+option.info19=§aNUEVA ACTUALIZACIÓN
 value.info19.0=§cX.Y.Z §r->§a X.Y.Z
-option.info19.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://euphoriapatches.com/download.
+option.info19.comment=¡Una nueva versión del Mod EuphoriaPatcher está disponible! Descárgala desde Modrinth: https://euphoriapatches.com/download.
 
 option.info20=
 value.info20.0=§aeuphoriapatches.com/download
-option.info20.comment=A new version of the EuphoriaPatcher Mod is available. Download it from Modrinth: https://euphoriapatches.com/download.
+option.info20.comment=¡Una nueva versión del Mod EuphoriaPatcher está disponible! Descárgala desde Modrinth: https://euphoriapatches.com/download.
 
-option.info21=Frequently Asked Questions
+option.info21=Preguntas Frecuentes
 value.info21.0=
-option.info21.comment=Check out the FAQ page to find answers to common questions. §d§l§neuphoriapatches.com/faq
+option.info21.comment=Consulta la página de preguntas frecuentes para encontrar respuestas a preguntas comunes. §d§l§neuphoriapatches.com/faq
 
-option.info22=§dMore Settings via Scrolling
+option.info22=§dMás ajustes haciendo "Scroll"
 value.info22.0=
-option.info22.comment=On big GUI sizes it is possible that some settings are hidden, scrolling down will reveal them.
+option.info22.comment=En menús con tamaños de GUI grandes es posible que algunos ajustes estén ocultos. Al desplazarse hacia abajo se revelarán.
 
 #Style
-option.SHADER_STYLE=Visual Style
-option.SHADER_STYLE.comment=Determines the default visual style of the shader pack. §bReimagined§r: Complementing Minecraft while preserving its unique visual elements. §dUnbound§r: Reworking the visuals of Minecraft with a semi-realistic fantasy style. §e[*]§r Affected settings: Water Style, Cloud Style, Sun/Moon Style, Sun/Moon Angle, Aurora Style, Glowing Ores.
-value.SHADER_STYLE.1=§bReimagined
-value.SHADER_STYLE.4=§dUnbound
+option.SHADER_STYLE=Estilo Visual
+option.SHADER_STYLE.comment=Determina el estilo visual predeterminado del paquete de shaders. §bReimaginado§r: Complementa Minecraft mientras conserva sus elementos visuales únicos. §dDesligado§r: Reelabora (deesliga, desenlaza, desvincula) el aspecto visual de Minecraft con un estilo de fantasía semirrealista. §e[*]§r Configuraciones afectadas: Estilo del agua, Estilo de las nubes, Estilo del sol y la luna, Ángulo del sol y la luna, Estilo de la aurora, Minerales brillantes.
+value.SHADER_STYLE.1=§bReimaginado
+value.SHADER_STYLE.4=§dDesligado
 
 #Screens
-screen.PERFORMANCE_SETTINGS=§ePerformance Settings§r
-screen.PERFORMANCE_SETTINGS.comment=Settings that directly relate to the performance, and get changed by the different shader profiles.
+screen.PERFORMANCE_SETTINGS=§eAjustes de rendimiento§r
+screen.PERFORMANCE_SETTINGS.comment=Ajustes que afectan directamente al rendimiento, y que son cambiados por los perfiles de shader por defecto
 
-screen.ATMOSPHERE_SETTINGS=Atmosphere
-screen.ATMOSPHERE_SETTINGS.comment=Settings that relate to the atmosphere.
+screen.ATMOSPHERE_SETTINGS=Atmósfera
+screen.ATMOSPHERE_SETTINGS.comment=Ajustes relacionados a la atmósfera.
 
-screen.ATM_COLOR_SETTINGS=Atmosphere Color Multipliers
-screen.ATM_COLOR_SETTINGS.comment=Enables customization of atmosphere colors that are mostly seen in the sky and fog.
+screen.ATM_COLOR_SETTINGS=Multiplicadores de Color de la Atmósfera
+screen.ATM_COLOR_SETTINGS.comment=Habilita la personlización de colores atmosféricos que principalmente se ven en la niebla y en el cielo.
 
-screen.MORNING_ATM_MULTS=Sunrise/Sunset Time
-screen.NOON_ATM_MULTS=Noon Time
-screen.NIGHT_ATM_MULTS=Night Time
-screen.RAIN_ATM_MULTS=Rainy Weather
-screen.NETHER_ATM_MULTS=The Nether Dimension
-screen.END_ATM_MULTS=The End Dimension
+screen.MORNING_ATM_MULTS=Hora de salida/puesta del sol
+screen.NOON_ATM_MULTS=Hora del mediodía
+screen.NIGHT_ATM_MULTS=Hora de la noche
+screen.RAIN_ATM_MULTS=Tiempo lluvioso
+screen.NETHER_ATM_MULTS=La dimensión del Nether (Inframundo)
+screen.END_ATM_MULTS=La dimensión del Fin (End).
 
-screen.CLOUD_SETTINGS=Clouds
-screen.CLOUD_SETTINGS.comment=Settings that relate to the clouds.
+screen.CLOUD_SETTINGS=Nubes
+screen.CLOUD_SETTINGS.comment=Ajustes relacionados a las nubes.
 
-screen.CLOUD_COLOR_SETTINGS=Cloud Color
-screen.CLOUD_COLOR_SETTINGS.comment=Settings to change the color of the clouds.
+screen.CLOUD_COLOR_SETTINGS=Color de las nubes.
+screen.CLOUD_COLOR_SETTINGS.comment=Ajustes para cambiar el color de las nubes.
 
-screen.CLOUD_UNBOUND_SETTINGS=Unbound Cloud Settings
-screen.CLOUD_REIMAGINED_SETTINGS=Reimagined Cloud Settings
+screen.CLOUD_UNBOUND_SETTINGS=Ajustes de las nubes en el Estilo Desligado
+screen.CLOUD_REIMAGINED_SETTINGS=Ajustes de las nubes en el Estilo Reimaginado
 
-screen.FOG_SETTINGS=Fog
-screen.FOG_SETTINGS.comment=Settings that relate to the various types of fog.
+screen.FOG_SETTINGS=Niebla
+screen.FOG_SETTINGS.comment=Ajustes relacionados a los diferentes tipos de niebla.
 
-screen.SUN_MOON_SETTINGS=Sun / Moon
-screen.SUN_MOON_SETTINGS.comment=Settings that relate to the sun and moon.
+screen.SUN_MOON_SETTINGS=Sol y Luna
+screen.SUN_MOON_SETTINGS.comment=Ajustes relacionados al Sol y la Luna.
 
-screen.NETHER_SETTINGS=The Nether Dimension
-screen.NETHER_SETTINGS.comment=Settings that relate to the Nether dimension.
+screen.NETHER_SETTINGS=La dimensión del Nether
+screen.NETHER_SETTINGS.comment=Ajustes relacionados a la dimensión del Nether.
 
-screen.WEATHER_SETTINGS=Rain / Weather
-screen.WEATHER_SETTINGS.comment=Settings that relate to weather conditions
+screen.WEATHER_SETTINGS=Lluvia y Clima
+screen.WEATHER_SETTINGS.comment=Ajustes relacionados a las condiciones climatológicas.
 
-screen.CAMERA_SETTINGS=Camera
-screen.CAMERA_SETTINGS.comment=Settings that relate to the view/camera.
+screen.CAMERA_SETTINGS=Cámara
+screen.CAMERA_SETTINGS.comment=Ajustes relacionados a la forma de vista y la cámara.
 
-screen.TONEMAP_SETTINGS=Color Balance
-screen.TONEMAP_SETTINGS.comment=Settings that determine the color balance of the visuals.
+screen.TONEMAP_SETTINGS=Balance de color
+screen.TONEMAP_SETTINGS.comment=Ajustes que determinan el balance de color visualmente.
 
-screen.COLORGRADING_SETTINGS=Color Grading
-screen.COLORGRADING_SETTINGS.comment=Settings to mix up the final color channels.
+screen.COLORGRADING_SETTINGS=Gradiente de color
+screen.COLORGRADING_SETTINGS.comment=Ajustes que mezclan los canales de colores finales.
 
-screen.WORLD_BLUR_SETTINGS=World Blur
-screen.WORLD_BLUR_SETTINGS.comment=Settings that relate to fancy world blurring effects.
+screen.WORLD_BLUR_SETTINGS=Difumninado del mundo
+screen.WORLD_BLUR_SETTINGS.comment=Ajustes relacionados a efectos de difuminación del mundo.
 
-screen.MATERIAL_SETTINGS=Materials
-screen.MATERIAL_SETTINGS.comment=Settings that are related to the materials of Minecraft.
+screen.MATERIAL_SETTINGS=Materiales
+screen.MATERIAL_SETTINGS.comment=Ajustes relacionados a los materiales de Minecraft.
 
-screen.IPBR_SETTINGS=IntegratedPBR+ Materials
-screen.IPBR_SETTINGS.comment=Settings that are related to the features of IntegratedPBR+.
+screen.IPBR_SETTINGS=Materiales de IntegratedPBR+
+screen.IPBR_SETTINGS.comment=Ajustes relacionados a las características de IntegratedPBR+.
 
-screen.GLOWING_ORE_SETTINGS=Glowing Ores
-screen.GLOWING_ORE_SETTINGS.comment=Settings to adjust emission of ore blocks.
+screen.GLOWING_ORE_SETTINGS=Ores brillantes
+screen.GLOWING_ORE_SETTINGS.comment=Ajustes para regular la emisión de luz de los bloques de ores.
 
 screen.GLOWING_STUFF_SETTINGS=Glowing Stuff
 screen.GLOWING_STUFF_SETTINGS.comment=Settings to adjust emission of miscellaneous blocks.
@@ -217,7 +216,7 @@ screen.WATER_COLOR_SETTINGS=Water Surface Color
 screen.UNDERWATER_COLOR_SETTINGS=Underwater Color
 
 screen.WATER_WAVE_SETTINGS=Waving Water Normals §e[*]§r
-screen.WATER_WAVE_SETTINGS.comment=Settings to customise the surface-direction waves (normals) seen on water. §e[*]§r These settings only work when the Water Style is set to "Reimagined + Waves" or "Unbound".
+screen.WATER_WAVE_SETTINGS.comment=Settings to customise the surface-direction waves (normals) seen on water. §e[*]§r These settings only work when the Water Style is set to "Reimaginado + Waves" or "Desligado".
 
 screen.WAVING_SETTINGS=Waving Textures
 screen.WAVING_SETTINGS.comment=Settings that are about waving textures.
@@ -300,7 +299,7 @@ value.DETAIL_QUALITY.2=§eMedium
 value.DETAIL_QUALITY.3=§cHigh
 
 option.CLOUD_QUALITY=Cloud Quality
-option.CLOUD_QUALITY.comment=Adjusts the lighting, detail, and sample quality of Reimagined/Unbound cloud styles. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
+option.CLOUD_QUALITY.comment=Adjusts the lighting, detail, and sample quality of Reimaginado/Desligado cloud styles. §e[*]§r This setting only works with the "Reimaginado" or "Desligado" Cloud Styles.
 value.CLOUD_QUALITY.0=§aOFF
 value.CLOUD_QUALITY.1=§aLow
 value.CLOUD_QUALITY.2=§eMedium
@@ -383,21 +382,21 @@ option.CLOUD_STYLE_DEFINE=Cloud Style
 option.CLOUD_STYLE_DEFINE.comment=Determines the style of clouds. §e[*]§r "Set by Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options. §e[*]§r The "Vanilla" style requires clouds to be enabled in Video Settings.
 value.CLOUD_STYLE_DEFINE.-1=Set by Style
 value.CLOUD_STYLE_DEFINE.0=§cOFF
-value.CLOUD_STYLE_DEFINE.1=Reimagined
-value.CLOUD_STYLE_DEFINE.3=Unbound
+value.CLOUD_STYLE_DEFINE.1=Reimaginado
+value.CLOUD_STYLE_DEFINE.3=Desligado
 value.CLOUD_STYLE_DEFINE.50=Vanilla §e[*]
 
 option.CLOUD_SHADOWS=Cloud Shadows
-option.CLOUD_SHADOWS.comment=Enables shadows that are cast from the clouds. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r Cloud shadows will be randomly generated if Cloud Style is set to "Unbound", because of the extra complexity of Unbound clouds.
+option.CLOUD_SHADOWS.comment=Enables shadows that are cast from the clouds. §e[*]§r This setting only works with the "Reimaginado" or "Desligado" Cloud Styles. §e[*]§r Cloud shadows will be randomly generated if Cloud Style is set to "Desligado", because of the extra complexity of Desligado clouds.
 
 option.CLOUD_CLOSED_AREA_CHECK=Prevent Clouds in Interiors
-option.CLOUD_CLOSED_AREA_CHECK.comment=Does additional checks to remove clouds in closed areas. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF.
+option.CLOUD_CLOSED_AREA_CHECK.comment=Does additional checks to remove clouds in closed areas. §e[*]§r This setting only works with the "Reimaginado" or "Desligado" Cloud Styles. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF.
 
 option.CLOUD_ALT1=Cloud Altitude
-option.CLOUD_ALT1.comment=Determines the world height which the clouds will appear at. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
+option.CLOUD_ALT1.comment=Determines the world height which the clouds will appear at. §e[*]§r This setting only works with the "Reimaginado" or "Desligado" Cloud Styles.
 
 option.CLOUD_SPEED_MULT=Cloud Speed
-option.CLOUD_SPEED_MULT.comment=Determines how fast the clouds are going to move. "Synced to World Time" setting uses Minecraft world time to advance the cloud positions; this allows for clouds to appear the same between players in the same server. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
+option.CLOUD_SPEED_MULT.comment=Determines how fast the clouds are going to move. "Synced to World Time" setting uses Minecraft world time to advance the cloud positions; this allows for clouds to appear the same between players in the same server. §e[*]§r This setting only works with the "Reimaginado" or "Desligado" Cloud Styles.
 value.CLOUD_SPEED_MULT.100=Synced to World Time
 
 option.CLOUD_R=Cloud Red Multiplier
@@ -405,20 +404,20 @@ option.CLOUD_G=Cloud Green Multiplier
 option.CLOUD_B=Cloud Blue Multiplier
 
 option.CLOUD_UNBOUND_AMOUNT=Cloud Amount
-option.CLOUD_UNBOUND_AMOUNT.comment=Adjusts the amount of Unbound clouds.
+option.CLOUD_UNBOUND_AMOUNT.comment=Adjusts the amount of Desligado clouds.
 
 option.CLOUD_UNBOUND_SIZE_MULT=Cloud Smallness
-option.CLOUD_UNBOUND_SIZE_MULT.comment=Adjusts the size of Unbound clouds. Higher values produce smaller clouds.
+option.CLOUD_UNBOUND_SIZE_MULT.comment=Adjusts the size of Desligado clouds. Higher values produce smaller clouds.
 
 option.CLOUD_UNBOUND_RAIN_ADD=Rain Cloud Addition
 option.CLOUD_UNBOUND_RAIN_ADD.comment=Adjusts the cloud amount increase that gets applied during rain/snow.
 prefix.CLOUD_UNBOUND_RAIN_ADD=+
 
-option.DOUBLE_REIM_CLOUDS=Double Reimagined Clouds
-option.DOUBLE_REIM_CLOUDS.comment=Enables a secondary Reimagined cloud layer. §e[*]§r This setting only works with the "Reimagined" Cloud Style.
+option.DOUBLE_REIM_CLOUDS=Double Reimaginado Clouds
+option.DOUBLE_REIM_CLOUDS.comment=Enables a secondary Reimaginado cloud layer. §e[*]§r This setting only works with the "Reimaginado" Cloud Style.
 
 option.CLOUD_ALT2=Cloud Layer 2 Altitude
-option.CLOUD_ALT2.comment=Determines the world height which the second layer clouds will appear at. §e[*]§r This setting only works when the "Double Reimagined Clouds" option is enabled with the "Reimagined" Cloud Style.
+option.CLOUD_ALT2.comment=Determines the world height which the second layer clouds will appear at. §e[*]§r This setting only works when the "Double Reimaginado Clouds" option is enabled with the "Reimaginado" Cloud Style.
 
 option.NETHER_STORM=Nether Storm
 option.NETHER_STORM.comment=Adds a smoke-like volumetric effect to the Nether dimension. §c[-]§r This effect can impact performance.
@@ -490,15 +489,15 @@ option.GR_BC=Blue Curve
 option.WATER_STYLE_DEFINE=Water Style
 option.WATER_STYLE_DEFINE.comment=Determines the style of water. §e[*]§r "Set by Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options.
 value.WATER_STYLE_DEFINE.-1=Set by Style
-value.WATER_STYLE_DEFINE.1=Reimagined
-value.WATER_STYLE_DEFINE.2=Reimagined + Waves
-value.WATER_STYLE_DEFINE.3=Unbound
+value.WATER_STYLE_DEFINE.1=Reimaginado
+value.WATER_STYLE_DEFINE.2=Reimaginado + Waves
+value.WATER_STYLE_DEFINE.3=Desligado
 
 option.WATER_CAUSTIC_STYLE_DEFINE=Water Caustic Style
 option.WATER_CAUSTIC_STYLE_DEFINE.comment=Determines the style of water shadows, also known as water caustics.
 value.WATER_CAUSTIC_STYLE_DEFINE.-1=Same as Water
-value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
-value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
+value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimaginado
+value.WATER_CAUSTIC_STYLE_DEFINE.3=Desligado
 
 option.WATER_REFRACTION_INTENSITY=Water Refraction Intensity §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=Adjusts the intensity of water refraction and underwater distortion. §e[*]§r This setting only fully works when Detail Quality is set to "High", or else it will only affect the subtle underwater distortion.
@@ -548,7 +547,7 @@ option.WATER_SIZE_MULT=Wave Size
 option.WATER_SIZE_MULT.comment=Adjusts how big the surface-direction waves (normals) look on water.
 
 option.SUN_ANGLE=Sun/Moon Angle
-option.SUN_ANGLE.comment=Adjusts the angle of sun/moon relative to the world during noon. §a[+]§r Reimagined's lighting model is specially designed to make the "0" sun angle work just as well as others.
+option.SUN_ANGLE.comment=Adjusts the angle of sun/moon relative to the world during noon. §a[+]§r Reimaginado's lighting model is specially designed to make the "0" sun angle work just as well as others.
 value.SUN_ANGLE.-1=Set by Style
 value.SUN_ANGLE.60=60
 value.SUN_ANGLE.55=55
@@ -562,7 +561,7 @@ value.SUN_ANGLE.20=20
 value.SUN_ANGLE.15=15
 value.SUN_ANGLE.10=10
 value.SUN_ANGLE.5=5
-value.SUN_ANGLE.0=0 §r(§bReimagined§r)
+value.SUN_ANGLE.0=0 §r(§bReimaginado§r)
 value.SUN_ANGLE.-5=-5
 value.SUN_ANGLE.-10=-10
 value.SUN_ANGLE.-15=-15
@@ -570,7 +569,7 @@ value.SUN_ANGLE.-20=-20
 value.SUN_ANGLE.-25=-25
 value.SUN_ANGLE.-30=-30
 value.SUN_ANGLE.-35=-35
-value.SUN_ANGLE.-40=-40 §r(§dUnbound§r)
+value.SUN_ANGLE.-40=-40 §r(§dDesligado§r)
 value.SUN_ANGLE.-45=-45
 value.SUN_ANGLE.-50=-50
 value.SUN_ANGLE.-55=-55
@@ -579,9 +578,9 @@ value.SUN_ANGLE.-60=-60
 option.SUN_MOON_STYLE_DEFINE=Sun/Moon Style
 option.SUN_MOON_STYLE_DEFINE.comment=Determines the style of sun/moon. §e[*]§r This setting might interact incorrectly with some resource packs due to the limitations of sun/moon/skybox differentiation.
 value.SUN_MOON_STYLE_DEFINE.-1=Set by Style
-value.SUN_MOON_STYLE_DEFINE.1=Reimagined
-value.SUN_MOON_STYLE_DEFINE.2=Unbound
-value.SUN_MOON_STYLE_DEFINE.3=Unbound - Smaller
+value.SUN_MOON_STYLE_DEFINE.1=Reimaginado
+value.SUN_MOON_STYLE_DEFINE.2=Desligado
+value.SUN_MOON_STYLE_DEFINE.3=Desligado - Smaller
 
 option.SUN_MOON_HORIZON=Sun/Moon Horizon
 option.SUN_MOON_HORIZON.comment=Prevents the sun/moon from appearing below the horizon line.
@@ -604,8 +603,8 @@ option.AURORA_STYLE_DEFINE=Aurora Borealis Style
 option.AURORA_STYLE_DEFINE.comment=Determines the style of northern lights that appear in the night sky.
 value.AURORA_STYLE_DEFINE.-1=Set by Style
 value.AURORA_STYLE_DEFINE.0=§cOFF
-value.AURORA_STYLE_DEFINE.1=Reimagined
-value.AURORA_STYLE_DEFINE.2=Unbound
+value.AURORA_STYLE_DEFINE.1=Reimaginado
+value.AURORA_STYLE_DEFINE.2=Desligado
 
 option.AURORA_CONDITION=Aurora C.
 option.AURORA_CONDITION.comment=Aurora Condition setting determines the condition(s) for the Aurora Borealis to appear. §e[*]§r Aurora Borealis will only appear during night regardless of this setting
@@ -843,7 +842,7 @@ option.COATED_TEXTURE_MULT=Coated Texture Strength
 option.COATED_TEXTURE_MULT.comment=Adjusts the strength of auto-generated dusty details on textures.
 
 option.GLOWING_ORE_MASTER=§eEnable Glowing Ores
-option.GLOWING_ORE_MASTER.comment=Enables the functionality of glowing ores. §e[*]§r Choosing "Set By Style" will only enable glowing ores if the "Visual Style" is set to "Unbound". §e[*]§r The settings below won't work if this option isn't enabled.
+option.GLOWING_ORE_MASTER.comment=Enables the functionality of glowing ores. §e[*]§r Choosing "Set By Style" will only enable glowing ores if the "Visual Style" is set to "Desligado". §e[*]§r The settings below won't work if this option isn't enabled.
 value.GLOWING_ORE_MASTER.0=§cOFF
 value.GLOWING_ORE_MASTER.1=Set By Style
 value.GLOWING_ORE_MASTER.2=§aON
@@ -1144,9 +1143,9 @@ screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches
 screen.ATMOSPHERE=Atmosphere
 screen.ATMOSPHERE.comment=Settings that relate to the atmosphere.
 screen.CLOUDS=Clouds
-screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Reimagined Clouds
-screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Unbound Clouds
-screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Double Unbound Clouds
+screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Reimaginado Clouds
+screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Desligado Clouds
+screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Double Desligado Clouds
 screen.AURORA_SETTINGS=Aurora Borealis
 screen.AURORA_SETTINGS.comment=Settings that relate to the Aurora Borealis.
 screen.AURORA_COLOR_SETTINGS=Aurora Color Settings
@@ -1369,8 +1368,8 @@ option.HIGH_QUALITY_CLOUDS.comment=Increases the quality of Clouds to more than 
 
 option.CLOUD_LAYER2_SPEED_MULT=Cloud Layer 2 Speed Multiplier
 
-option.DOUBLE_UNBOUND_CLOUDS=Double Unbound Clouds
-option.DOUBLE_UNBOUND_CLOUDS.comment=Enables a second layer of unbound clouds to be rendered. §c[-]§r This setting can impact performance.
+option.DOUBLE_UNBOUND_CLOUDS=Double Desligado Clouds
+option.DOUBLE_UNBOUND_CLOUDS.comment=Enables a second layer of Desligado clouds to be rendered. §c[-]§r This setting can impact performance.
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Cloud Layer 2 Altitude
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Determines the world height which the second layer clouds will appear at.
 option.CLOUD_UNBOUND_LAYER2_HEIGHT=Cloud Layer 2 Height
@@ -2352,7 +2351,7 @@ value.DELTARUNE_BATTLE_BACKGROUND.2=ON - Except Entities
 option.END_CRYSTAL_EMISSION=End Crystal Emission
 
 option.CLEAR_WATER_SPOTS=Clear Water Spots
-option.CLEAR_WATER_SPOTS.comment=Adds clear spots to the water to add some variety. §e[*]§r Requires a type of wavy waves, either Unbound or Reimagined + Waves.
+option.CLEAR_WATER_SPOTS.comment=Adds clear spots to the water to add some variety. §e[*]§r Requires a type of wavy waves, either Desligado or Reimaginado + Waves.
 
 option.ACL_ORE_INTENSITY=ACL Ore Intensity
 option.ACL_ORE_INTENSITY.comment=Change the ACL light intensity of ores.
