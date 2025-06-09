@@ -87,7 +87,7 @@ option.info14.comment=如果想提问, 了解 Euphoria Patches 的最新消息, 
 
 option.info15=Euphoria Patches 致谢
 value.info15.0=
-option.info15.comment=完整致谢名单可以访问 §deuphoriapatches.com/credits§r 来查看. isuewo - Euphoria Patches 的前合作开发者. EminGT: Complementary 的主开发者. Capt Tatsu, gri573, FoZy STYLE, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
+option.info15.comment=完整致谢名单可以访问 §deuphoriapatches.com/credits§r 来查看. isuewo - Euphoria Patches 的前合作开发者. EminGT: Complementary 的主开发者. Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§d§n如何支持 Euphoria Patches
 value.info16.0=
@@ -112,6 +112,10 @@ option.info20.comment=EuphoriaPatcher 模组有新的版本. 从 Modrinth 下载
 option.info21=常见问题解答
 value.info21.0=
 option.info21.comment=请查看 FAQ 页面去查找常见问题的解答. §d§l§neuphoriapatches.com/faq
+
+option.info22=§d滚动菜单以查看更多设置
+value.info22.0=
+option.info22.comment=使用较大的 GUI 尺寸时, 部分设置可能被隐藏, 向下滚动将显示它们.
 
 #Style
 option.SHADER_STYLE=视觉风格
@@ -1161,6 +1165,7 @@ screen.END_STAR=星空设置 - 末地
 screen.END_STAR.comment=关于末地星空的设置.
 screen.STAR_COLORS_END=末地星星颜色
 screen.STARS_OVERWORLD=星空设置 - 主世界
+screen.SHOOTING_STARS_SETTINGS=流星
 screen.STAR_COLORS_OW=星星颜色
 screen.RAIN_SETTINGS=雨天设置
 screen.NIGHT_DESATURATION_SETTINGS=暗处去饱和
@@ -1942,6 +1947,8 @@ option.ATLAS_ROTATION.comment=:).
 
 option.NETHER_NOISE=下界天空噪声
 option.NETHER_NOISE.comment=让下界上层的天空顶部看起来更有趣一点.
+value.NETHER_NOISE.0=关
+value.NETHER_NOISE.1=开
 
 option.MCBL_MAIN_DEFINE=Euphoria 彩色照明
 option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光. 把本选项设置为 高级彩色照明 + 屏幕空间 来使得屏幕空间彩色照明系统与 高级彩色照明 一同生效. §e[*]§r本选项仅在 1.16.5 及以上的版本或者使用了 Angelica 模组的情况下生效.
@@ -2277,6 +2284,19 @@ value.STAR_COLOR_VARIATION_END.0.0=关
 option.CELESTIAL_BOTH_HEMISPHERES=完整天空盒
 option.CELESTIAL_BOTH_HEMISPHERES.comment=使天体 (星空, 太阳, 月亮, 极光) 横跨整个天空渲染而不是仅限于地平线之上, 创造更沉浸的天空盒效果.
 
+option.SHOOTING_STARS=流星
+option.SHOOTING_STARS_SIZE=大小
+option.SHOOTING_STARS_SIZE.comment=调节流星尺寸. 设置越高的数值, 流星本体越大.
+option.SHOOTING_STARS_SPEED=速度
+option.SHOOTING_STARS_CHANCE=几率
+option.SHOOTING_STARS_CHANCE.comment=流星出现的概率. 设置越高的数值, 流星出现的频率越高.
+option.SHOOTING_STARS_COUNT=数量
+option.SHOOTING_STARS_COUNT.comment=天空中可以同时出现的流星数量.
+option.SHOOTING_STARS_LINE_THICKNESS=线宽
+option.SHOOTING_STARS_LINE_THICKNESS.comment=调节流星拖尾的宽度.
+option.SHOOTING_STARS_TRAIL_LENGTH=线长
+option.SHOOTING_STARS_TRAIL_LENGTH.comment=调节流星拖尾的长度.
+
 option.SITUATIONAL_GLOWING_TRIMS=情景式盔甲纹饰发光
 option.SITUATIONAL_GLOWING_TRIMS.comment=盔甲纹饰仅会在洞穴和夜晚时发光. §e[*]§r 本选项需启用 盔甲纹饰发光 选项才能生效.
 
@@ -2354,3 +2374,21 @@ option.ROUGHNESS_MULTIPLIER.comment=调节粗糙材质的粗糙度.
 
 option.SHADOW_SATURATION=阴影饱和度
 option.SHADOW_SATURATION.comment=调节阴影和光轴的饱和度. §e[*]§r 本选项仅在 "实时阴影" 选项设置为 低 或者更高的值时生效.
+
+option.SMOKE_PARTICLE_OPACITY=烟雾粒子不透明度
+
+option.END_SUN_ANGLE=末地日月斜角
+option.END_SUN_ANGLE.comment=调节末地中日月在正午时相对于世界的角度.
+value.END_SUN_ANGLE.60=60
+value.END_SUN_ANGLE.50=50
+value.END_SUN_ANGLE.40=40
+value.END_SUN_ANGLE.30=30
+value.END_SUN_ANGLE.20=20
+value.END_SUN_ANGLE.10=10
+value.END_SUN_ANGLE.0=0 §r(§b默认§r)
+value.END_SUN_ANGLE.-10=-10
+value.END_SUN_ANGLE.-20=-20
+value.END_SUN_ANGLE.-30=-30
+value.END_SUN_ANGLE.-40=-40
+value.END_SUN_ANGLE.-50=-50
+value.END_SUN_ANGLE.-60=-60
