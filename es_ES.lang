@@ -112,7 +112,7 @@ option.info22.comment=En menús con tamaños de GUI grandes es posible que algun
 
 #Style
 option.SHADER_STYLE=Estilo Visual
-option.SHADER_STYLE.comment=Determina el estilo visual predeterminado del paquete de shaders. §bReimaginado§r: Complementa Minecraft mientras conserva sus elementos visuales únicos. §dDesligado§r: Reelabora (deesliga, desenlaza, desvincula) el aspecto visual de Minecraft con un estilo de fantasía semirrealista. §e[*]§r Configuraciones afectadas: Estilo del agua, Estilo de las nubes, Estilo del sol y la luna, Ángulo del sol y la luna, Estilo de la aurora, Minerales brillantes.
+option.SHADER_STYLE.comment=Determina el estilo visual predeterminado del paquete de shaders. §bReimaginado§r: Complementa Minecraft mientras conserva sus elementos visuales únicos (Reimagined). §dDesligado§r: Reelabora (desliga, desenlaza, desvincula, UNBOUND en inglés) el aspecto visual de Minecraft con un estilo de fantasía semirrealista. §e[*]§r Configuraciones afectadas: Estilo del agua, Estilo de las nubes, Estilo del sol y la luna, Ángulo del sol y la luna, Estilo de la aurora, Minerales brillantes.
 value.SHADER_STYLE.1=§bReimaginado
 value.SHADER_STYLE.4=§dDesligado
 
