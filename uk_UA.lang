@@ -106,6 +106,10 @@ option.info21=Часті запитання
 value.info21.0=
 option.info21.comment=Перегляньте сторінку частих питань, щоб, можливо, знайти відповіть на своє питання. §d§l§neuphoriapatches.com/faq
 
+option.info22=§dПрокручування
+value.info22.0=
+option.info22.comment=На великих розмірах інтерфейсу можливо, що деякі налаштування приховані, прокручування вниз відкриє їх
+
 #Style
 option.SHADER_STYLE=Візуальний стиль
 option.SHADER_STYLE.comment=Визначає стандартний візуальний стиль пакета шейдерів. §bПереосмислений§r: доповнює Minecraft, зберігаючи його унікальні візуальні елементи. §dНепов'язаний§r: переробка звичайного стилю у напівреалістичний стиль фентезі. §e[*]§r Впливає на: стиль води, хмар, сонця і місяця, полярного сяйва, кут сонця і місяця, сяйні руди
@@ -570,24 +574,6 @@ value.SUN_ANGLE.-45=-45
 value.SUN_ANGLE.-50=-50
 value.SUN_ANGLE.-55=-55
 value.SUN_ANGLE.-60=-60
-
-
-option.END_SUN_ANGLE=Кінцевий сонячний кут
-option.END_SUN_ANGLE.comment=Коригує кут сонця/місяця відносно світу опівдні
-value.END_SUN_ANGLE.-1=Поточний стиль
-value.END_SUN_ANGLE.60=60
-value.END_SUN_ANGLE.50=50
-value.END_SUN_ANGLE.40=40
-value.END_SUN_ANGLE.30=30
-value.END_SUN_ANGLE.20=20
-value.END_SUN_ANGLE.10=10
-value.END_SUN_ANGLE.0=0 §r(§bУсталено§r)
-value.END_SUN_ANGLE.-10=-10
-value.END_SUN_ANGLE.-20=-20
-value.END_SUN_ANGLE.-30=-30
-value.END_SUN_ANGLE.-40=-40
-value.END_SUN_ANGLE.-50=-50
-value.END_SUN_ANGLE.-60=-60
 
 option.SUN_MOON_STYLE_DEFINE=Стиль сонця і місяця
 option.SUN_MOON_STYLE_DEFINE.comment=Визначає стиль сонця і місяця. §e[*]§r Це може некоректно взаємодіяти з деякими пакетами ресурсів через обмеження диференціації сонця, місяця, неба
@@ -1172,6 +1158,7 @@ screen.END_STAR=Налаштування зірок Енду
 screen.END_STAR.comment=Налаштування, які стосуються зірок Енду
 screen.STAR_COLORS_END=Колір зірок Енду
 screen.STARS_OVERWORLD=Зірки
+screen.SHOOTING_STARS_SETTINGS=Падаючі зірки
 screen.STAR_COLORS_OW=Колір зірок
 screen.RAIN_SETTINGS=Налаштування дощу
 screen.NIGHT_DESATURATION_SETTINGS=Знебарвлення темряви
@@ -1953,6 +1940,8 @@ option.ATLAS_ROTATION.comment=:)
 
 option.NETHER_NOISE=Шум неба Незеру
 option.NETHER_NOISE.comment=Робить небо Незеру над стелею… цікавішим…
+value.NETHER_NOISE.0=УВІМК.
+value.NETHER_NOISE.1=ВИМК.
 
 option.MCBL_MAIN_DEFINE=Кольорове освітлення Euphoria
 option.MCBL_MAIN_DEFINE.comment=Вмикає багатокольорові джерела світла. Установіть ACL + Screen-Space, щоб використовувати систему екранного простору разом із РКО. §e[*]§rЛише 1.16.5 і вище
@@ -2288,8 +2277,21 @@ value.STAR_COLOR_VARIATION_END.0.0=ВИМК.
 option.CELESTIAL_BOTH_HEMISPHERES=Повне небо небожителів
 option.CELESTIAL_BOTH_HEMISPHERES.comment=Відображає небесні об’єкти (зірки, сонце, місяць, туманності) по всьому небу, а не над горизонтом, створюючи більш захоплюючий ефект неба
 
+option.SHOOTING_STARS=Падаючі зірки
+option.SHOOTING_STARS_SIZE=Розмір
+option.SHOOTING_STARS_SIZE.comment=Змінює розмір падаючих зірок. Чим більше значення, тим більшими будуть падаючі зірки
+option.SHOOTING_STARS_SPEED=Швидкість
+option.SHOOTING_STARS_CHANCE=Шанс
+option.SHOOTING_STARS_CHANCE.comment=Імовірність появи падаючої зірки — чим вище значення, тим частіше з'являтимуться падаючі зірки
+option.SHOOTING_STARS_COUNT=Сума
+option.SHOOTING_STARS_COUNT.comment=Скільки падаючих зірок з'явиться на небі одночасно
+option.SHOOTING_STARS_LINE_THICKNESS=Ширина лінії
+option.SHOOTING_STARS_LINE_THICKNESS.comment=Змінює ширину лінії падаючих зірок
+option.SHOOTING_STARS_TRAIL_LENGTH=Довжина лінії
+option.SHOOTING_STARS_TRAIL_LENGTH.comment=Змінює довжину лінії падаючих зірок
+
 option.SITUATIONAL_GLOWING_TRIMS=Ситуативні сяйні орнаменти обладунків
-option.SITUATIONAL_GLOWING_TRIMS.comment=Орнаменти обладунків сяятимуть лише в печерах і вночі. §e[*]§r Сяйні орнаменти обладунків мають бути увімкні
+option.SITUATIONAL_GLOWING_TRIMS.comment=Орнаменти обладунків сяятимуть лише в печерах і вночі. §e[*]§r Сяйні орнаменти обладунків мають бути увімкнені
 
 option.DO_IPBR_LIGHTS=РКО IPBR світла
 option.DO_IPBR_LIGHTS.comment=Це змушує джерела світла в грі випромінювати світло, якщо воно випромінюється через шейдери (рекомендовано: УВІМК.)
@@ -2367,3 +2369,19 @@ option.SHADOW_SATURATION=Насиченість тіні
 option.SHADOW_SATURATION.comment=Змінює насиченість тіней і світлових потоків. §e[*]§r Цей параметр працює, лише якщо для «Тіні в реальному часі» установлено значення «низько» або вище
 
 option.SMOKE_PARTICLE_OPACITY=Непрозорість частинок диму
+
+option.END_SUN_ANGLE=Кінцевий сонячний кут
+option.END_SUN_ANGLE.comment=Коригує кут сонця/місяця відносно світу опівдні
+value.END_SUN_ANGLE.60=60
+value.END_SUN_ANGLE.50=50
+value.END_SUN_ANGLE.40=40
+value.END_SUN_ANGLE.30=30
+value.END_SUN_ANGLE.20=20
+value.END_SUN_ANGLE.10=10
+value.END_SUN_ANGLE.0=0 §r(§bУсталено§r)
+value.END_SUN_ANGLE.-10=-10
+value.END_SUN_ANGLE.-20=-20
+value.END_SUN_ANGLE.-30=-30
+value.END_SUN_ANGLE.-40=-40
+value.END_SUN_ANGLE.-50=-50
+value.END_SUN_ANGLE.-60=-60
