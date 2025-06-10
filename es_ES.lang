@@ -216,36 +216,35 @@ screen.WATER_SETTINGS.comment=Ajustes relacionados con el agua.
 screen.WATER_COLOR_SETTINGS=Color de la Superficie del Agua
 screen.UNDERWATER_COLOR_SETTINGS=Color Submarino
 
-screen.WATER_WAVE_SETTINGS=Normales de agua ondulantes
-Waving Water Normals §e[*]§r
-screen.WATER_WAVE_SETTINGS.comment=Settings to customise the surface-direction waves (normals) seen on water. §e[*]§r These settings only work when the Water Style is set to "Reimaginado + Waves" or "Desligado".
+screen.WATER_WAVE_SETTINGS=Normales de agua ondulantes §e[*]§r
+screen.WATER_WAVE_SETTINGS.comment=Ajustes para personalizar la direción superficial de las ondas (normales) vistas en el agua. §e[*]§r Estos ajustes sólo funcionan cuando el Estilo del Agua está puesto en "Reimaginado y Ondas" o en "Desligado"
 
-screen.WAVING_SETTINGS=Waving Textures
-screen.WAVING_SETTINGS.comment=Settings that are about waving textures.
+screen.WAVING_SETTINGS=Texturas "ondulantes"
+screen.WAVING_SETTINGS.comment=Ajustes relacionados con las texturas ondulantes (Waving Textures).
 
-screen.OTHER_SETTINGS=Other
-screen.OTHER_SETTINGS.comment=Settings that don't fit into any other category.
+screen.OTHER_SETTINGS=Otros
+screen.OTHER_SETTINGS.comment=Ajustes que no se pueden relacionar con ninguna otra categoría específica.
 
-screen.SELECT_OUTLINE_SETTINGS=Selection Outline
-screen.SELECT_OUTLINE_SETTINGS.comment=Settings that change the block selection outline.
+screen.SELECT_OUTLINE_SETTINGS=Borde de Selección (Outline)
+screen.SELECT_OUTLINE_SETTINGS.comment=Ajustes que cambian el borde de selección de los bloques (Outline).
 
-screen.WORLD_OUTLINE_SETTINGS=World Outline
-screen.WORLD_OUTLINE_SETTINGS.comment=Settings that are about optional outline effects.
+screen.WORLD_OUTLINE_SETTINGS=Borde del mundo
+screen.WORLD_OUTLINE_SETTINGS.comment=Ajustes de efectos de borde opcionales (World Outline).
 
 #Settings
-option.RP_MODE=RP Support
-option.RP_MODE.comment=Changes many internal calculations to determine how different blocks and materials will be rendered. §bIntegrated PBR+§r: Calculated PBR and extra effects, highly recommended for most use cases. §aBasic§r: No PBR or extra effects. §elabPBR/seuspbr§r: Materials using the required PBR resource packs.
+option.RP_MODE=Soporte de PR
+option.RP_MODE.comment=Cambia muchos cálculos internos para determinar cómo los diferentes bloques y materiales se renderizarán. A) §bIntegrated PBR+§r: "PBR" calculado con efectos adicionales; muy recomendado para la mayoría de los casos. B) §aBasic§r: (Básico) Sin PBR ni efectos adicionales. C) §elabPBR/seuspbr§r: Materiales usando los paquetes de recursos (PR, RP) de PBR que se requieran.
 value.RP_MODE.0=§aBasic
 value.RP_MODE.1=§bIntegrated PBR+
-value.RP_MODE.2=§eseuspbr (RP Required)
-value.RP_MODE.3=§elabPBR (RP Required)
+value.RP_MODE.2=§eseuspbr (PR requerido)
+value.RP_MODE.3=§elabPBR (PR requerido)
 
-option.WATER_REFLECT_QUALITY=Water Reflection Quality
-option.WATER_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on translucents. §cMedium§r: Screenspace ray-traced reflections on water and translucents. §ePotato§r: Replaces water and translucent reflections with a faster method, may look incorrect in some situations. §aOFF§r: No reflections.
-value.WATER_REFLECT_QUALITY.-1=§aOFF
-value.WATER_REFLECT_QUALITY.0=§aSky only
-value.WATER_REFLECT_QUALITY.1=§ePotato
-value.WATER_REFLECT_QUALITY.2=§cMedium
+option.WATER_REFLECT_QUALITY=Calidad de Reflejos en el Agua
+option.WATER_REFLECT_QUALITY.comment=Ajusta la calidad visual de los reflejos que aparecen en translúcidos. A) §cMedio§r: Reflejos trazados por rayos en el espacio de pantalla sobre el agua y los translúcidos. B) §eTostadora§r: Reemplaza el agua y los reflejos translúcidos con un método más rápido; pero puede parecer incorrecto en algunas situaciones. §aAPAGADO§r: Sin reflejos.
+value.WATER_REFLECT_QUALITY.-1=§aAPAGADO
+value.WATER_REFLECT_QUALITY.0=§aSólo cielo
+value.WATER_REFLECT_QUALITY.1=§eTostadora
+value.WATER_REFLECT_QUALITY.2=§cMedio
 
 option.BLOCK_REFLECT_QUALITY=Block Reflection Quality §e[*]§r
 option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eMedium§r: Sun/moon highlights + specular reflections. §aLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
