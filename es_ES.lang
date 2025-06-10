@@ -179,44 +179,45 @@ screen.GLOWING_STUFF_SETTINGS=Cosas Brillantes
 Glowing Stuff
 screen.GLOWING_STUFF_SETTINGS.comment=Ajustes para ajustar la emisión luminiscente de varios bloques.
 
-screen.OTHER_IPBR_SETTINGS=Other IPBR+ Features
-screen.OTHER_IPBR_SETTINGS.comment=Miscellaneous IntegratedPBR+ settings.
+screen.OTHER_IPBR_SETTINGS=Otras funcionalidades de IPBR+
+screen.OTHER_IPBR_SETTINGS.comment=Varios ajustes de IntegratedPBR+.
 
-screen.CUSTOM_PBR_SETTINGS=labPBR/seuspbr Materials
-screen.CUSTOM_PBR_SETTINGS.comment=Settings that are related to the features of labPBR/seuspbr.
+screen.CUSTOM_PBR_SETTINGS=Materiales de labPBR/seuspbr
+screen.CUSTOM_PBR_SETTINGS.comment=Ajustes relacionados a las funciones de labPBR/seuspbr.
 
-screen.LIGHTING_SETTINGS=Lighting
-screen.LIGHTING_SETTINGS.comment=Settings that are related to lighting.
+screen.LIGHTING_SETTINGS=Iluminación
+screen.LIGHTING_SETTINGS.comment=Ajustes relacionados a la iluminación.
 
-screen.LIGHT_COLOR_SETTINGS=Lighting Color Multipliers
-screen.LIGHT_COLOR_SETTINGS.comment=Enables customization of lighting colors that are seen on all surfaces.
+screen.LIGHT_COLOR_SETTINGS=Multi. de color de la iluminación
+screen.LIGHT_COLOR_SETTINGS.comment=(Multiplicadores) Habilita la personalización de los colores de la iluminación que se ven en todas las superficies.
 
-screen.MORNING_LIGHT_MULTS=Sunrise/Sunset Time
-screen.NOON_LIGHT_MULTS=Noon Time
-screen.NIGHT_LIGHT_MULTS=Night Time
-screen.RAIN_LIGHT_MULTS=Rainy Weather
-screen.NETHER_LIGHT_MULTS=The Nether Dimension
-screen.END_LIGHT_MULTS=The End Dimension
+screen.MORNING_LIGHT_MULTS=Hora de salida/puesta del sol
+screen.NOON_LIGHT_MULTS=Hora del mediodía
+screen.NIGHT_LIGHT_MULTS=Hora de la noche
+screen.RAIN_LIGHT_MULTS=Tiempo lluvioso
+screen.NETHER_LIGHT_MULTS=La dimensión del Nether (Inframundo)
+screen.END_LIGHT_MULTS=La dimensión del Fin (End)
 
-screen.BLOCKLIGHT_COLOR_SETTINGS=Blocklight Color §e[*]§r
-screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Settings to adjust the color emitted from light source blocks. §e[*]§r These color settings won't affect most lights if the Advanced Colored Lighting setting is enabled, except for the Blocklight Intensity slider.
+screen.BLOCKLIGHT_COLOR_SETTINGS=Colores de bloques de luz §e[*]§r
+screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Ajustes para ajustar el color emitido de bloques fuentes de luz. §e[*]§r Estos ajustes no afectarán a la mayoría de las luces si el ajuste Iluminación de Colores Avanzada (ICA, ACL en inglés) está activada, excepto para el deslizador de control de intensidad de Blocklight (Bloques de luz).
 
-screen.MOON_PHASE_INF_SETTINGS=Moon Phase Influence
-screen.MOON_PHASE_INF_SETTINGS.comment=Settings to determine how different moon phases affect the night lighting.
+screen.MOON_PHASE_INF_SETTINGS=Influencia de la Fase Lunar
+screen.MOON_PHASE_INF_SETTINGS.comment=Ajustes para determinar cómo las diferentes Fases Lunares afectan a la luz de la noche.
 
-screen.ACL_FEATURES_SETTINGS=ACL Exclusive Features §e[*]§r
-screen.ACL_FEATURES_SETTINGS.comment=Settings that are about features exclusive to Advanced Colored Lighting. §e[*]§r These features only work if Advanced Colored Lighting is enabled in Performance Settings and your system supports it.
+screen.ACL_FEATURES_SETTINGS=Funciones exclusivas de ICA §e[*]§r
+screen.ACL_FEATURES_SETTINGS.comment=Ajustes que son exclusivos a las funciones de ICA (Iluminación de Colores Avanzada). §e[*]§r Estas funciones sólo funcionan si ICA está habilitado en el menú de Ajustes de Rendimiento y si tu sistema lo admite.
 
-screen.PIXELATED_LIGHTING_SETTINGS=Pixelated Lighting
-screen.PIXELATED_LIGHTING_SETTINGS.comment=Settings to make certain lighting effects pixelated.
+screen.PIXELATED_LIGHTING_SETTINGS=Luz Pixelada.
+screen.PIXELATED_LIGHTING_SETTINGS.comment=Ajustes para hacer ciertos efectos de luz pixelados.
 
-screen.WATER_SETTINGS=Water
-screen.WATER_SETTINGS.comment=Settings that are about water.
+screen.WATER_SETTINGS=Agua
+screen.WATER_SETTINGS.comment=Ajustes relacionados con el agua.
 
-screen.WATER_COLOR_SETTINGS=Water Surface Color
-screen.UNDERWATER_COLOR_SETTINGS=Underwater Color
+screen.WATER_COLOR_SETTINGS=Color de la Superficie del Agua
+screen.UNDERWATER_COLOR_SETTINGS=Color Submarino
 
-screen.WATER_WAVE_SETTINGS=Waving Water Normals §e[*]§r
+screen.WATER_WAVE_SETTINGS=Normales de agua ondulantes
+Waving Water Normals §e[*]§r
 screen.WATER_WAVE_SETTINGS.comment=Settings to customise the surface-direction waves (normals) seen on water. §e[*]§r These settings only work when the Water Style is set to "Reimaginado + Waves" or "Desligado".
 
 screen.WAVING_SETTINGS=Waving Textures
