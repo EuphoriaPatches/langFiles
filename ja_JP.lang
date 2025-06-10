@@ -80,7 +80,7 @@ option.info14.comment=Euphoria PatchesのDiscordサーバーに参加して質�
 
 option.info15=Euphoria Patchesのクレジット
 value.info15.0=
-option.info15.comment=クレジットの全文は、§deuphoriapatches.com/credits§rに記載されています。. isuewo - Euphoria Patchesの元共同開発者。. EminGT: Complementaryのメイン開発者。. Capt Tatsu, gri573, FoZy STYLE, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
+option.info15.comment=クレジットの全文は、§deuphoriapatches.com/credits§rに記載されています。. isuewo - Euphoria Patchesの元共同開発者。. EminGT: Complementaryのメイン開発者。. Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§d§nEuphoria Patchesをサポートする方法
 value.info16.0=
@@ -105,6 +105,10 @@ option.info20.comment=EuphoriaPatcher Modの新しいバージョンが利用可
 option.info21=よくある質問
 value.info21.0=
 option.info21.comment=FAQページを参照してよくある質問への解答を確認してください。. §d§l§neuphoriapatches.com/faq
+
+option.info22=§dスクロールしてさらに設定を表示
+value.info22.0=
+option.info22.comment=GUIのサイズが大きいと、一部の設定が隠れてしまうことがあります。. 下にスクロールして表示しましょう。
 
 #Style
 option.SHADER_STYLE=ビジュアルスタイル
@@ -1154,6 +1158,7 @@ screen.END_STAR=ジ・エンドの星の設定
 screen.END_STAR.comment=ジ・エンドの星に関する設定です。
 screen.STAR_COLORS_END=ジ・エンドの星の色
 screen.STARS_OVERWORLD=星
+screen.SHOOTING_STARS_SETTINGS=流れ星
 screen.STAR_COLORS_OW=星の色
 screen.RAIN_SETTINGS=雨の設定
 screen.NIGHT_DESATURATION_SETTINGS=暗闇での彩度低下
@@ -1935,6 +1940,8 @@ option.ATLAS_ROTATION.comment=:).
 
 option.NETHER_NOISE=ネザーの空ノイズ
 option.NETHER_NOISE.comment=ネザーの天井の上の空をより興味深くします。
+value.NETHER_NOISE.0=OFF
+value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria色付き照明
 option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. 「ACL + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色付き照明」が適用されます。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。
@@ -2270,6 +2277,19 @@ value.STAR_COLOR_VARIATION_END.0.0=OFF
 option.CELESTIAL_BOTH_HEMISPHERES=満天の天体
 option.CELESTIAL_BOTH_HEMISPHERES.comment=地平線の上部だけでなく、空全体に天体オブジェクト(星、太陽、月、星雲)を描画し、より没入感のある空を作り出します。
 
+option.SHOOTING_STARS=流れ星
+option.SHOOTING_STARS_SIZE=大きさ
+option.SHOOTING_STARS_SIZE.comment=流れ星の大きさを変更します。. この値が大きいほど流れ星も大きくなります。
+option.SHOOTING_STARS_SPEED=スピード
+option.SHOOTING_STARS_CHANCE=確率
+option.SHOOTING_STARS_CHANCE.comment=流れ星が出現する確率です。. この値が大きいほど流れ星の出現頻度が増加します。
+option.SHOOTING_STARS_COUNT=量
+option.SHOOTING_STARS_COUNT.comment=同時に空に存在できる流れ星の数です。
+option.SHOOTING_STARS_LINE_THICKNESS=線の太さ
+option.SHOOTING_STARS_LINE_THICKNESS.comment=流れ星の線の太さを変更します。
+option.SHOOTING_STARS_TRAIL_LENGTH=線の長さ
+option.SHOOTING_STARS_TRAIL_LENGTH.comment=流れ星の線の長さを変更します。
+
 option.SITUATIONAL_GLOWING_TRIMS=条件付き発光トリム
 option.SITUATIONAL_GLOWING_TRIMS.comment=トリムは洞窟内や夜間のみ発光します。. §e[*]§r 発光トリムが有効になっている必要があります。
 
@@ -2347,3 +2367,21 @@ option.ROUGHNESS_MULTIPLIER.comment=マテリアルの粗さ(ラフネス)を変
 
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。
+
+option.SMOKE_PARTICLE_OPACITY=煙パーティクル 透明度
+
+option.END_SUN_ANGLE=ジ・エンドの太陽の角度
+option.END_SUN_ANGLE.comment=正午時点でのワールドに対する太陽/月の角度を調整します。
+value.END_SUN_ANGLE.60=60
+value.END_SUN_ANGLE.50=50
+value.END_SUN_ANGLE.40=40
+value.END_SUN_ANGLE.30=30
+value.END_SUN_ANGLE.20=20
+value.END_SUN_ANGLE.10=10
+value.END_SUN_ANGLE.0=0 §r(§bデフォルト§r)
+value.END_SUN_ANGLE.-10=-10
+value.END_SUN_ANGLE.-20=-20
+value.END_SUN_ANGLE.-30=-30
+value.END_SUN_ANGLE.-40=-40
+value.END_SUN_ANGLE.-50=-50
+value.END_SUN_ANGLE.-60=-60
