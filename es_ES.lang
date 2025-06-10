@@ -176,7 +176,6 @@ screen.GLOWING_ORE_SETTINGS=Ores brillantes
 screen.GLOWING_ORE_SETTINGS.comment=Ajustes para regular la emisión de luz de los bloques de ores.
 
 screen.GLOWING_STUFF_SETTINGS=Cosas Brillantes
-Glowing Stuff
 screen.GLOWING_STUFF_SETTINGS.comment=Ajustes para ajustar la emisión luminiscente de varios bloques.
 
 screen.OTHER_IPBR_SETTINGS=Otras funcionalidades de IPBR+
