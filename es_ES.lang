@@ -293,38 +293,39 @@ value.ENTITY_SHADOWS_DEFINE.-1=§aDESACTIVADAS
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oACTIVADAS§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Calidad de Detalles
-option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, Ender Beams, sky effect reflections, rain puddle accuracy, waving effect
-value.DETAIL_QUALITY.0=§aPotato
-value.DETAIL_QUALITY.2=§eMedio
-value.DETAIL_QUALITY.3=§cAlto
+option.DETAIL_QUALITY.comment=Ajusta varios pequeños ajustes que afectan el rendimiento. Ajusta la calidad de: Material acuático (agua), TAA, ajustes de iluminación, Nebulosa Nocturna (Night Nebula), Tormenta del Nether (Nether Storm), Rayos del End (Ender Beams), reflejos del cielo, precisión del charco de lluvia y efecto de ondulación.
+value.DETAIL_QUALITY.0=§aPatata
+value.DETAIL_QUALITY.2=§eMedia
+value.DETAIL_QUALITY.3=§cAlta
 
-option.CLOUD_QUALITY=Cloud Quality
-option.CLOUD_QUALITY.comment=Adjusts the lighting, detail, and sample quality of Reimaginado/Desligado cloud styles. §e[*]§r This setting only works with the "Reimaginado" or "Desligado" Cloud Styles.
+option.CLOUD_QUALITY=Calidad de las Nubes
+option.CLOUD_QUALITY.comment=Ajusta la iluminación, el detalle y la calidad de los estilos de las nubes de "Reimaginado" o de "Desligado". §e[*]§r Esta configuración solo funciona con los estilos de nube dichos, "Reimaginado" o "Desligado".
 value.CLOUD_QUALITY.0=§aDESACTIVADO
-value.CLOUD_QUALITY.1=§aLow
-value.CLOUD_QUALITY.2=§eMedio
-value.CLOUD_QUALITY.3=§cAlto
+value.CLOUD_QUALITY.1=§aBaja
+value.CLOUD_QUALITY.2=§eMedia
+value.CLOUD_QUALITY.3=§cAlta
 
-option.FXAA_DEFINE=Anti-Aliasing (FXAA)
-option.FXAA_DEFINE.comment=Enables Fast Approximate Anti-Aliasing (FXAA), which is basically an effect that produces smoother image.
+option.FXAA_DEFINE=Suavizado de Bordes (FXAA)
+option.FXAA_DEFINE.comment=Habilita el Suavizado Aproximado Rápido (Fast Approximate Anti-Aliasing, FXAA), que es básicamente un efecto que produce una imagen más suave, con menos bordes punzantes.
 value.FXAA_DEFINE.-1=§aDESACTIVADO
-value.FXAA_DEFINE.1=§eON
+value.FXAA_DEFINE.1=§eACTIVADO
 
-option.SSAO_QUALI_DEFINE=Edge Shadow (SSAO) Quality
-option.SSAO_QUALI_DEFINE.comment=Adjusts the quality of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. Every tier further reduces the ssao noise artifacts.
+option.SSAO_QUALI_DEFINE=Calidad de sombra de borde (SSAO)
+Edge Shadow (SSAO) Quality
+option.SSAO_QUALI_DEFINE.comment=(Edge Shadow [SSAO] Quality) Ajusta la calidad de la Oclusión Ambiental del Espacio de Pantalla (Screen-Space Ambient Occlusion, SSAO), que añade sombreado ambiental adicional a los bordes de la escena. Cada nivel reduce aún más los artefactos de ruido de SSAO.
 value.SSAO_QUALI_DEFINE.0=§aDESACTIVADO
-value.SSAO_QUALI_DEFINE.2=§eMedio
-value.SSAO_QUALI_DEFINE.3=§cAlto
+value.SSAO_QUALI_DEFINE.2=§eMedia
+value.SSAO_QUALI_DEFINE.3=§cAlta
 
-option.ANISOTROPIC_FILTER=Texture Filtering
-option.ANISOTROPIC_FILTER.comment=Improves the quality of mipmapped textures using Anisotropic Filtering. §e[*]§r Make sure your "Mipmap Levels" video setting is set to Maximum (4) or you won't get good results.
+option.ANISOTROPIC_FILTER=Filtrado de texturas
+option.ANISOTROPIC_FILTER.comment=(Texture Filtering) Mejora la calidad de las texturas mipmap mediante el Filtrado Anisotrópico (Anisotropic Filtering). §e[*]§r Asegúrate de que la configuración de vídeo "Niveles de Mipmap" esté establecida en Máximo (4) o no se obtendrán buenos resultados.
 value.ANISOTROPIC_FILTER.0=§aDESACTIVADO
 value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
-option.COLORED_LIGHTING=Advanced Colored Lighting §e[*]§r
-option.COLORED_LIGHTING.comment=Complementary Shaders Feature. Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r This system also enables some other features which you can individually enable/disable in the "Other" -> "ACL Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each increment can cost more than twice the performance of the previous tier.
+option.COLORED_LIGHTING=Iluminación de Colores Avanzada (ICA) §e[*]§r
+option.COLORED_LIGHTING.comment=Función del Complementary Shaders. Utiliza voxelización e iluminación de relleno (floodfill lighting) para añadir color a la luz de bloque, además de introducir nuevas luces. §e[*]§r Esta función sólo funciona en Iris y plataformas compatibles. §e[*]§r Esta configuración se desactivará si "Sombras en Tiempo Real" está desactivada. §a[+]§r Este sistema también habilita otras funciones que se pueden activar o desactivar individualmente en el menú "Otros" -> "Funciones de ICA". §c[-]§r Los valores altos de chuncks para este ajuste afectan el rendimiento mucho más de lo esperado; cada incremento puede costar más del doble del rendimiento del nivel anterior.
 value.COLORED_LIGHTING.0=§aDESACTIVADO
 value.COLORED_LIGHTING.128=§c4 Chunks
 value.COLORED_LIGHTING.192=§c6 Chunks
@@ -334,34 +335,34 @@ value.COLORED_LIGHTING.512=§4§l§n§o16 Chunks
 value.COLORED_LIGHTING.768=§4§l§n§o24 Chunks §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunks§r§4§k- §r§c[-]
 
-option.SSAO_I=Edge Shadow Intensity (SSAO)
-option.SSAO_I.comment=Determines the strength of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. §e[*]§r This setting won't work if SSAO is disabled in "Performance Settings".
+option.SSAO_I=Intensidad de Sombra del Borde (SSAO)
+option.SSAO_I.comment=Determina la intensidad de la Oclusión Ambiental del Espacio de Pantalla (Screen-Space Ambient Occlusion, SSAO), que añade sombreado ambiental adicional a los bordes de la escena. §e[*]§r Esta configuración no funcionará si SSAO está deshabilitado (menú "Configuración de Rendimiento").
 value.SSAO_I.0=§cDESACTIVADO
 
-option.VANILLAAO_I=Edge Shadow Intensity (Vanilla)
-option.VANILLAAO_I.comment=Determines the strength of Minecraft's ambient occlusion which adds extra ambient shadowing to the edges of the scene.
+option.VANILLAAO_I=Intensidad de Sombra de Borde (Vanilla)
+option.VANILLAAO_I.comment=Determina la fuerza de la Oclusión Ambiental de Minecraft, que añade sombreado ambiental adicional a los bordes de la escena.
 value.VANILLAAO_I.0=§cDESACTIVADO
 
-option.BORDER_FOG=Border Fog
-option.BORDER_FOG.comment=Intense fog on the edges of the loaded world to hide chunk borders. §e[*]§r It's recommended to disable Border Fog when playing with less than 8 chunks of render distance.
+option.BORDER_FOG=Niebla de Borde
+option.BORDER_FOG.comment=Niebla intensa en los bordes del mundo cargado para ocultar los bordes de los fragmentos. §e[*]§r Se recomienda desactivarlo cuando se juega con menos de 8 chunks de Distancia de Renderizado.
 
-option.ATM_FOG_MULT=Atmospheric Fog
-option.ATM_FOG_MULT.comment=Adjusts the intensity of altitude-based fog.
-value.ATM_FOG_MULT.0.50=Very Subtle
-value.ATM_FOG_MULT.0.65=Subtle
+option.ATM_FOG_MULT=Niebla Atmosférica
+option.ATM_FOG_MULT.comment=Ajusta la intensidad de la niebla, que se determina en función de la altitud.
+value.ATM_FOG_MULT.0.50=Muy Sutil
+value.ATM_FOG_MULT.0.65=Sutil
 value.ATM_FOG_MULT.0.80=Normal
-value.ATM_FOG_MULT.0.95=Intense
+value.ATM_FOG_MULT.0.95=Intenso
 
-option.ATM_FOG_DISTANCE=Atmospheric Fog Distance
-option.ATM_FOG_DISTANCE.comment=Adjusts the distance from the camera that the atmospheric fog starts to appear. §e[*]§r Note that the fog distance also gets automatically adjusted by the Render Distance setting in Video Settings.
+option.ATM_FOG_DISTANCE=Distancia de la Niebla Atmosférica
+option.ATM_FOG_DISTANCE.comment=Ajusta la distancia desde la cámara a la que comienza a aparecer la Niebla Atmosférica. §e[*]§r Hay que tener en cuenta que la distancia de la niebla también se ajusta automáticamente mediante la configuración de Distancia de Renderizado en Configuración Visual (Video Settings).
 
-option.ATM_FOG_ALTITUDE=Atmospheric Fog Altitude
-option.ATM_FOG_ALTITUDE.comment=Determines the altitude that the atmospheric fog appears the most prominently.
+option.ATM_FOG_ALTITUDE=Altitud de la Niebla Atmosférica
+option.ATM_FOG_ALTITUDE.comment=Determina la altitud en la que la Niebla Atmosférica aparece con mayor intensidad.
 
-option.CAVE_FOG=Cave Fog
-option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
+option.CAVE_FOG=Niebla de Cueva
+option.CAVE_FOG.comment=Habilita niebla adicional en áreas subterráneas profundas (cuevas profundas, etc).
 
-option.LIGHTSHAFT_BEHAVIOUR=Light Shaft Mode
+option.LIGHTSHAFT_BEHAVIOUR=Modo de Eje de Luz (shaft)
 option.LIGHTSHAFT_BEHAVIOUR.comment=Determines the behaviour of light shafts. §a[+]§r Scene Aware Light Shafts automatically transition between regular and extreme modes to provide the best results. §c[-]§r Extreme mode is not recommended for general gameplay, and it can severely impact performance.
 value.LIGHTSHAFT_BEHAVIOUR.0=§cDESACTIVADO
 value.LIGHTSHAFT_BEHAVIOUR.1=Scene Aware §a[+]
