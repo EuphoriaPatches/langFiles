@@ -136,7 +136,7 @@ screen.END_ATM_MULTS=La dimensión del Fin (End).
 screen.CLOUD_SETTINGS=Nubes
 screen.CLOUD_SETTINGS.comment=Ajustes relacionados a las nubes.
 
-screen.CLOUD_COLOR_SETTINGS=Color de las nubes.
+screen.CLOUD_COLOR_SETTINGS=Color de las nubes
 screen.CLOUD_COLOR_SETTINGS.comment=Ajustes para cambiar el color de las nubes.
 
 screen.CLOUD_UNBOUND_SETTINGS=Ajustes de las nubes en el Estilo Desligado
@@ -206,7 +206,7 @@ screen.MOON_PHASE_INF_SETTINGS.comment=Ajustes para determinar cómo las diferen
 screen.ACL_FEATURES_SETTINGS=Funciones exclusivas de ICA §e[*]§r
 screen.ACL_FEATURES_SETTINGS.comment=Ajustes que son exclusivos a las funciones de ICA (Iluminación de Colores Avanzada). §e[*]§r Estas funciones sólo funcionan si ICA está habilitado en el menú de Ajustes de Rendimiento y si tu sistema lo admite.
 
-screen.PIXELATED_LIGHTING_SETTINGS=Luz Pixelada.
+screen.PIXELATED_LIGHTING_SETTINGS=Luz Pixelada
 screen.PIXELATED_LIGHTING_SETTINGS.comment=Ajustes para hacer ciertos efectos de luz pixelados.
 
 screen.WATER_SETTINGS=Agua
@@ -246,11 +246,12 @@ value.WATER_REFLECT_QUALITY.1=§eTostadora
 value.WATER_REFLECT_QUALITY.2=§cMedio
 
 option.BLOCK_REFLECT_QUALITY=Calidad de Reflejos de Bloques §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eMedio§r: Sun/moon highlights + specular reflections. §aLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
-value.BLOCK_REFLECT_QUALITY.0=§aOFF
-value.BLOCK_REFLECT_QUALITY.1=§eLow
+option.BLOCK_REFLECT_QUALITY.comment=Ajusta la calidad visual de los reflejos que aparecen en materiales sólidos (bloques). §cAlto§r: Reflejos de sol/luna + reflejos especulares más suaves usando un filtro temporal. §eMedio§r: Reflejos de sol/luna + reflejos especulares. §aBajo§r: Solo reflejos de sol/luna. §e[*]§r La opción de Soporte de RP debe estar configurada en cualquier valor excepto Básico para que aparezcan los reflejos especulares.
+Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eMedio§r: Sun/moon highlights + specular reflections. §aLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
+value.BLOCK_REFLECT_QUALITY.0=§aAPAGADO
+value.BLOCK_REFLECT_QUALITY.1=§eBajo
 value.BLOCK_REFLECT_QUALITY.2=§cMedio
-value.BLOCK_REFLECT_QUALITY.3=§cHigh
+value.BLOCK_REFLECT_QUALITY.3=§cAlto
 
 option.SHADOW_QUALITY=Real-Time Shadows
 option.SHADOW_QUALITY.comment=Adjusts the quality of shadows. Every tier further reduces the shadow noise artifacts, options lower than §eHigh§r enable optimised shadows on leaves, §eVery Low§r significantly downgrades shadows in multiple ways, §aOFF§r completely disables shadows and light shafts.
