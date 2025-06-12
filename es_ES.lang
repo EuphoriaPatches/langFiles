@@ -239,40 +239,39 @@ value.RP_MODE.2=§eseuspbr (PR requerido)
 value.RP_MODE.3=§elabPBR (PR requerido)
 
 option.WATER_REFLECT_QUALITY=Calidad de Reflejos en el Agua
-option.WATER_REFLECT_QUALITY.comment=Ajusta la calidad visual de los reflejos que aparecen en translúcidos. A) §cMedio§r: Reflejos trazados por rayos en el espacio de pantalla sobre el agua y los translúcidos. B) §eTostadora§r: Reemplaza el agua y los reflejos translúcidos con un método más rápido; pero puede parecer incorrecto en algunas situaciones. §aAPAGADO§r: Sin reflejos.
-value.WATER_REFLECT_QUALITY.-1=§aAPAGADO
+option.WATER_REFLECT_QUALITY.comment=Ajusta la calidad visual de los reflejos que aparecen en translúcidos. A) §cMedio§r: Reflejos trazados por rayos en el espacio de pantalla sobre el agua y los translúcidos. B) §eTostadora§r: Reemplaza el agua y los reflejos translúcidos con un método más rápido; pero puede parecer incorrecto en algunas situaciones. §aDESACTIVADO§r: Sin reflejos.
+value.WATER_REFLECT_QUALITY.-1=§aDESACTIVADO
 value.WATER_REFLECT_QUALITY.0=§aSólo cielo
 value.WATER_REFLECT_QUALITY.1=§eTostadora
 value.WATER_REFLECT_QUALITY.2=§cMedio
 
 option.BLOCK_REFLECT_QUALITY=Calidad de Reflejos de Bloques §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=Ajusta la calidad visual de los reflejos que aparecen en materiales sólidos (bloques). §cAlto§r: Reflejos de sol/luna + reflejos especulares más suaves usando un filtro temporal. §eMedio§r: Reflejos de sol/luna + reflejos especulares. §aBajo§r: Solo reflejos de sol/luna. §e[*]§r La opción de Soporte de RP debe estar configurada en cualquier valor excepto Básico para que aparezcan los reflejos especulares.
-Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eMedio§r: Sun/moon highlights + specular reflections. §aLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
-value.BLOCK_REFLECT_QUALITY.0=§aAPAGADO
-value.BLOCK_REFLECT_QUALITY.1=§eBajo
-value.BLOCK_REFLECT_QUALITY.2=§cMedio
-value.BLOCK_REFLECT_QUALITY.3=§cAlto
+option.BLOCK_REFLECT_QUALITY.comment=Ajusta la calidad visual de los reflejos que aparecen en materiales sólidos (bloques). §cAlto§r: Reflejos de sol y la luna con reflejos especulares más suaves usando un filtro temporal. §eMedio§r: Reflejos de sol y la luna + reflejos especulares. §aBásico§r: Solo reflejos de sol y la luna. §e[*]§r La opción de Soporte de PR debe estar configurada en cualquier valor excepto en Básico para que aparezcan los reflejos especulares.
+value.BLOCK_REFLECT_QUALITY.0=§aDESACTIVADO
+value.BLOCK_REFLECT_QUALITY.1=§eBásica
+value.BLOCK_REFLECT_QUALITY.2=§cMedia
+value.BLOCK_REFLECT_QUALITY.3=§cAlta
 
-option.SHADOW_QUALITY=Real-Time Shadows
-option.SHADOW_QUALITY.comment=Adjusts the quality of shadows. Every tier further reduces the shadow noise artifacts, options lower than §eHigh§r enable optimised shadows on leaves, §eVery Low§r significantly downgrades shadows in multiple ways, §aOFF§r completely disables shadows and light shafts.
-value.SHADOW_QUALITY.-1=§aOFF
-value.SHADOW_QUALITY.0=§eVery Low
-value.SHADOW_QUALITY.1=§eLow
+option.SHADOW_QUALITY=Sombras en Tiempo Real
+option.SHADOW_QUALITY.comment=Ajusta la calidad de las sombras. Cada nivel reduce aún más los artefactos de ruido de sombras. Las opciones inferiores a "Alto" optimizan las sombras en las hojas; "Muy Bajo" reduce significativamente las sombras de diversas maneras; "DESACTIVADO" desactiva por completo las sombras y los rayos de luz.
+value.SHADOW_QUALITY.-1=§aDESACTIVADO
+value.SHADOW_QUALITY.0=§eMuy Bajo
+value.SHADOW_QUALITY.1=§eBajo
 value.SHADOW_QUALITY.2=§eMedio
-value.SHADOW_QUALITY.3=§eHigh
-value.SHADOW_QUALITY.4=§cVery High
+value.SHADOW_QUALITY.3=§eAlto
+value.SHADOW_QUALITY.4=§cMuy Alto
 value.SHADOW_QUALITY.5=§4§lUltra
 
-option.LIGHTSHAFT_QUALI_DEFINE=Light Shaft Quality §e[*]§r
-option.LIGHTSHAFT_QUALI_DEFINE.comment=Adjusts the quality of light shafts. Every tier further reduces the light shaft noise artifacts. §e[*]§r "Real-Time Shadows" setting must be set to anything but OFF for light shafts to work.
-value.LIGHTSHAFT_QUALI_DEFINE.0=§aOFF
-value.LIGHTSHAFT_QUALI_DEFINE.1=§eLow
-value.LIGHTSHAFT_QUALI_DEFINE.2=§eMedio
-value.LIGHTSHAFT_QUALI_DEFINE.3=§cHigh
-value.LIGHTSHAFT_QUALI_DEFINE.4=§4§lVery High
+option.LIGHTSHAFT_QUALI_DEFINE=Calidad del Eje de Luz §e[*]§r
+option.LIGHTSHAFT_QUALI_DEFINE.comment=Ajusta la calidad de los rayos de luz. Cada nivel reduce aún más los artefactos de ruido de los rayos de luz. §e[*]§r La opción "Sombras en Tiempo Real" debe estar en cualquier valor (excepto cuando está DESACTIVADO) para que los rayos de luz funcionen.
+value.LIGHTSHAFT_QUALI_DEFINE.0=§aDESACTIVADO
+value.LIGHTSHAFT_QUALI_DEFINE.1=§eBaja
+value.LIGHTSHAFT_QUALI_DEFINE.2=§eMedia
+value.LIGHTSHAFT_QUALI_DEFINE.3=§cAlta
+value.LIGHTSHAFT_QUALI_DEFINE.4=§4§lMuy Alta
 
-option.shadowDistance=Shadow Distance
-option.shadowDistance.comment=Adjusts the distance from the player which real-time shadows are rendered. §e[*]§r The value is internally capped at Render Distance. §e[*]§r It's recommended to set this value to about 80% of your render distance for best performance and coverage. §c[-]§r Lower values may cause excessive Light Shaft leaking.
+option.shadowDistance=Distancia de Sombras
+option.shadowDistance.comment=Ajusta la distancia desde el jugador a la que se renderizan las sombras en tiempo real. §e[*]§r El valor está limitado internamente a la Distancia de Renderizado. §e[*]§r Se recomienda establecer este valor en aproximadamente el 80 % de la Distancia de Renderizado para obtener un mejor rendimiento y cobertura. §c[-]§r Los valores más bajos pueden provocar una fuga excesiva del eje de luz.
 value.shadowDistance.64.0=§a4 Chunks §c[-]
 value.shadowDistance.80.0=§a5 Chunks §c[-]
 value.shadowDistance.96.0=§a6 Chunks §c[-]
@@ -288,45 +287,45 @@ value.shadowDistance.512.0=§4§l32 Chunks
 value.shadowDistance.768.0=§4§l§n§o48 Chunks
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 Chunks§r§4§k-
 
-option.ENTITY_SHADOWS_DEFINE=Entity Shadows
-option.ENTITY_SHADOWS_DEFINE.comment=Enables the ability for entities and block entities to cast shadows. §c[-]§r Entity Shadows impact performance way more than expected, costing more than 50% of your fps in some cases.
-value.ENTITY_SHADOWS_DEFINE.-1=§aOFF
-value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oON§r§4§k- §r§c[-]
+option.ENTITY_SHADOWS_DEFINE=Sombras de Entidades
+option.ENTITY_SHADOWS_DEFINE.comment=Activa las sombras de las entidades y los bloques entidades. §c[-]§r Las Sombras de Entidades afectan al rendimiento mucho más de lo previsto, costando más del 50% de los FPS en ciertos casos.
+value.ENTITY_SHADOWS_DEFINE.-1=§aDESACTIVADAS
+value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oACTIVADAS§r§4§k- §r§c[-]
 
-option.DETAIL_QUALITY=Detail Quality
+option.DETAIL_QUALITY=Calidad de Detalles
 option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, Ender Beams, sky effect reflections, rain puddle accuracy, waving effect
 value.DETAIL_QUALITY.0=§aPotato
 value.DETAIL_QUALITY.2=§eMedio
-value.DETAIL_QUALITY.3=§cHigh
+value.DETAIL_QUALITY.3=§cAlto
 
 option.CLOUD_QUALITY=Cloud Quality
 option.CLOUD_QUALITY.comment=Adjusts the lighting, detail, and sample quality of Reimaginado/Desligado cloud styles. §e[*]§r This setting only works with the "Reimaginado" or "Desligado" Cloud Styles.
-value.CLOUD_QUALITY.0=§aOFF
+value.CLOUD_QUALITY.0=§aDESACTIVADO
 value.CLOUD_QUALITY.1=§aLow
 value.CLOUD_QUALITY.2=§eMedio
-value.CLOUD_QUALITY.3=§cHigh
+value.CLOUD_QUALITY.3=§cAlto
 
 option.FXAA_DEFINE=Anti-Aliasing (FXAA)
 option.FXAA_DEFINE.comment=Enables Fast Approximate Anti-Aliasing (FXAA), which is basically an effect that produces smoother image.
-value.FXAA_DEFINE.-1=§aOFF
+value.FXAA_DEFINE.-1=§aDESACTIVADO
 value.FXAA_DEFINE.1=§eON
 
 option.SSAO_QUALI_DEFINE=Edge Shadow (SSAO) Quality
 option.SSAO_QUALI_DEFINE.comment=Adjusts the quality of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. Every tier further reduces the ssao noise artifacts.
-value.SSAO_QUALI_DEFINE.0=§aOFF
+value.SSAO_QUALI_DEFINE.0=§aDESACTIVADO
 value.SSAO_QUALI_DEFINE.2=§eMedio
-value.SSAO_QUALI_DEFINE.3=§cHigh
+value.SSAO_QUALI_DEFINE.3=§cAlto
 
 option.ANISOTROPIC_FILTER=Texture Filtering
 option.ANISOTROPIC_FILTER.comment=Improves the quality of mipmapped textures using Anisotropic Filtering. §e[*]§r Make sure your "Mipmap Levels" video setting is set to Maximum (4) or you won't get good results.
-value.ANISOTROPIC_FILTER.0=§aOFF
+value.ANISOTROPIC_FILTER.0=§aDESACTIVADO
 value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=Advanced Colored Lighting §e[*]§r
 option.COLORED_LIGHTING.comment=Complementary Shaders Feature. Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r This system also enables some other features which you can individually enable/disable in the "Other" -> "ACL Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each increment can cost more than twice the performance of the previous tier.
-value.COLORED_LIGHTING.0=§aOFF
+value.COLORED_LIGHTING.0=§aDESACTIVADO
 value.COLORED_LIGHTING.128=§c4 Chunks
 value.COLORED_LIGHTING.192=§c6 Chunks
 value.COLORED_LIGHTING.256=§4§l8 Chunks
@@ -337,11 +336,11 @@ value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunks§r§4§k- §r§c[-]
 
 option.SSAO_I=Edge Shadow Intensity (SSAO)
 option.SSAO_I.comment=Determines the strength of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. §e[*]§r This setting won't work if SSAO is disabled in "Performance Settings".
-value.SSAO_I.0=§cOFF
+value.SSAO_I.0=§cDESACTIVADO
 
 option.VANILLAAO_I=Edge Shadow Intensity (Vanilla)
 option.VANILLAAO_I.comment=Determines the strength of Minecraft's ambient occlusion which adds extra ambient shadowing to the edges of the scene.
-value.VANILLAAO_I.0=§cOFF
+value.VANILLAAO_I.0=§cDESACTIVADO
 
 option.BORDER_FOG=Border Fog
 option.BORDER_FOG.comment=Intense fog on the edges of the loaded world to hide chunk borders. §e[*]§r It's recommended to disable Border Fog when playing with less than 8 chunks of render distance.
@@ -364,7 +363,7 @@ option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
 
 option.LIGHTSHAFT_BEHAVIOUR=Light Shaft Mode
 option.LIGHTSHAFT_BEHAVIOUR.comment=Determines the behaviour of light shafts. §a[+]§r Scene Aware Light Shafts automatically transition between regular and extreme modes to provide the best results. §c[-]§r Extreme mode is not recommended for general gameplay, and it can severely impact performance.
-value.LIGHTSHAFT_BEHAVIOUR.0=§cOFF
+value.LIGHTSHAFT_BEHAVIOUR.0=§cDESACTIVADO
 value.LIGHTSHAFT_BEHAVIOUR.1=Scene Aware §a[+]
 value.LIGHTSHAFT_BEHAVIOUR.2=Regular
 value.LIGHTSHAFT_BEHAVIOUR.3=Extreme §c[-]
@@ -382,7 +381,7 @@ option.LIGHTSHAFT_RAIN_I=Light Shaft Rain Multiplier
 option.CLOUD_STYLE_DEFINE=Cloud Style
 option.CLOUD_STYLE_DEFINE.comment=Determines the style of clouds. §e[*]§r "Set by Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options. §e[*]§r The "Vanilla" style requires clouds to be enabled in Video Settings.
 value.CLOUD_STYLE_DEFINE.-1=Set by Style
-value.CLOUD_STYLE_DEFINE.0=§cOFF
+value.CLOUD_STYLE_DEFINE.0=§cDESACTIVADO
 value.CLOUD_STYLE_DEFINE.1=Reimaginado
 value.CLOUD_STYLE_DEFINE.3=Desligado
 value.CLOUD_STYLE_DEFINE.50=Vanilla §e[*]
@@ -592,18 +591,18 @@ option.SUN_MOON_DURING_RAIN.comment=Determines if the sun and moon will be visib
 option.NIGHT_STAR_AMOUNT=Night Star Amount
 option.NIGHT_STAR_AMOUNT.comment=Determines the amount of stars in the night sky.
 value.NIGHT_STAR_AMOUNT.2=Normal
-value.NIGHT_STAR_AMOUNT.3=High
+value.NIGHT_STAR_AMOUNT.3=Alto
 
 option.RAINBOWS=Rainbows
 option.RAINBOWS.comment=Enables rainbows that appear at the opposite side of the sun during the morning/evening.
-value.RAINBOWS.0=OFF
+value.RAINBOWS.0=DESACTIVADO
 value.RAINBOWS.1=After Rain
 value.RAINBOWS.3=Always
 
 option.AURORA_STYLE_DEFINE=Aurora Borealis Style
 option.AURORA_STYLE_DEFINE.comment=Determines the style of northern lights that appear in the night sky.
 value.AURORA_STYLE_DEFINE.-1=Set by Style
-value.AURORA_STYLE_DEFINE.0=§cOFF
+value.AURORA_STYLE_DEFINE.0=§cDESACTIVADO
 value.AURORA_STYLE_DEFINE.1=Reimaginado
 value.AURORA_STYLE_DEFINE.2=Desligado
 
@@ -690,7 +689,7 @@ value.BLOOM_STRENGTH.10.00=§cInsane
 
 option.IMAGE_SHARPENING=Image Sharpening
 option.IMAGE_SHARPENING.comment=Makes the image sharper using a filter. §c[-]§r Too much sharpening might cause visual artifacts like aliasing, flickering, noise, and subtle brightness changes.
-value.IMAGE_SHARPENING.0=OFF
+value.IMAGE_SHARPENING.0=DESACTIVADO
 value.IMAGE_SHARPENING.1=1x
 value.IMAGE_SHARPENING.2=2x
 value.IMAGE_SHARPENING.3=3x
@@ -704,7 +703,7 @@ value.IMAGE_SHARPENING.10=10x §c[-]
 
 option.LENSFLARE_MODE=Lens Flare
 option.LENSFLARE_MODE.comment=Adds camera lens reflection effect when towards the sun or moon. §c[-]§r This effect can severely impact performance.
-value.LENSFLARE_MODE.0=OFF
+value.LENSFLARE_MODE.0=DESACTIVADO
 value.LENSFLARE_MODE.1=Sun Only
 value.LENSFLARE_MODE.2=Sun & Moon
 
@@ -715,7 +714,7 @@ option.TAA_MODE=Temporal Filter
 option.TAA_MODE.comment=Determines the behaviour of temporal anti aliasing. Smart & Subtle §a[+]§r: Temporal filter is applied in small amounts to the image in a way that won't cause artifacts. Intense §e[*]§r: Provides better anti-aliasing, but it will cause extra smudging and flickering; it might be the better choice at a higher frame rate and resolution. OFF §c[-]§r: Turning this off will cause worse performance and worse effect quality.
 value.TAA_MODE.1=Smart & Subtle §a[+]
 value.TAA_MODE.2=Intense §e[*]
-value.TAA_MODE.0=OFF §c[-]
+value.TAA_MODE.0=DESACTIVADO §c[-]
 
 option.DISTANT_LIGHT_BOKEH=Distant Light Bokeh
 option.DISTANT_LIGHT_BOKEH.comment=Makes distant light sources look scattered by applying a single pixel blur in the distance. §a[+]§r This effect benefits from IntegratedPBR+ (optional) by adjusting distant light sources for better looks.
@@ -728,7 +727,7 @@ option.MOTION_BLURRING_STRENGTH.comment=Adjusts the intensity of motion blur.
 
 option.WORLD_BLUR=§eWorld Blur
 option.WORLD_BLUR.comment=Enables world blurring. Distance Blur: Blur gets applied like fog, depending on the distance from the camera. Depth of Field: Blurring happens depending on the focus point of the camera. §c[-]§r This effect can severely impact performance.
-value.WORLD_BLUR.0=OFF
+value.WORLD_BLUR.0=DESACTIVADO
 value.WORLD_BLUR.1=Distance Blur
 value.WORLD_BLUR.2=Depth of Field
 
@@ -785,7 +784,7 @@ option.GREEN_SCREEN_LIME.comment=Turns "Lime Concrete", "Lime Wool", and "Lime C
 
 option.HAND_SWAYING=Hand Sway
 option.HAND_SWAYING.comment=Adds slow movement to the player hand to simulate a breathing animation.
-value.HAND_SWAYING.0=OFF
+value.HAND_SWAYING.0=DESACTIVADO
 value.HAND_SWAYING.1=Subtle
 value.HAND_SWAYING.2=Normal
 value.HAND_SWAYING.3=Intense
@@ -801,7 +800,7 @@ option.SNOWY_WORLD.comment=Makes the entire world covered with snow.
 
 option.SHOW_LIGHT_LEVEL=Show Light Levels
 option.SHOW_LIGHT_LEVEL.comment=In Overworld: Yellow means mobs can spawn during night time, red means mobs can spawn anytime. In Nether or End: Yellow means some mobs can spawn, red means all mobs can spawn. §e[*]§r Disable Smooth Lighting for precise results.
-value.SHOW_LIGHT_LEVEL.0=OFF
+value.SHOW_LIGHT_LEVEL.0=DESACTIVADO
 value.SHOW_LIGHT_LEVEL.1=Hold Spider Eye
 value.SHOW_LIGHT_LEVEL.2=Hold Light Source
 value.SHOW_LIGHT_LEVEL.3=Always ON
@@ -820,7 +819,7 @@ option.AMBIENT_MULT.comment=Determines the amount of ambient lighting seen in sh
 
 option.PLAYER_SHADOW=Player Shadow §e[*]§r
 option.PLAYER_SHADOW.comment=Determines if the player will cast a shadow or not. §e[*]§r This setting only works on Iris. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF.
-value.PLAYER_SHADOW.-1=OFF
+value.PLAYER_SHADOW.-1=DESACTIVADO
 value.PLAYER_SHADOW.1=ON
 
 option.GENERATED_NORMALS=Generated Normals
@@ -844,7 +843,7 @@ option.COATED_TEXTURE_MULT.comment=Adjusts the strength of auto-generated dusty 
 
 option.GLOWING_ORE_MASTER=§eEnable Glowing Ores
 option.GLOWING_ORE_MASTER.comment=Enables the functionality of glowing ores. §e[*]§r Choosing "Set By Style" will only enable glowing ores if the "Visual Style" is set to "Desligado". §e[*]§r The settings below won't work if this option isn't enabled.
-value.GLOWING_ORE_MASTER.0=§cOFF
+value.GLOWING_ORE_MASTER.0=§cDESACTIVADO
 value.GLOWING_ORE_MASTER.1=Set By Style
 value.GLOWING_ORE_MASTER.2=§aON
 
@@ -867,12 +866,12 @@ option.GLOWING_ORE_MODDED=Glowing Modded Ores §e[*]§r
 option.GLOWING_ORE_MODDED.comment=§e[*]§r You can add modded ore IDs to "Complementary-->shaders-->block.properties" file in order to make them glow. You can open block.properties using any text editor like notepad, and then add modded ore block IDs next to "block.10024=".
 
 option.GLOWING_AMETHYST=Glowing Amethyst
-value.GLOWING_AMETHYST.0=§cOFF
+value.GLOWING_AMETHYST.0=§cDESACTIVADO
 value.GLOWING_AMETHYST.1=Crystal
 value.GLOWING_AMETHYST.2=Crystal & Block
 
 option.GLOWING_LICHEN=Glowing Glow Lichen
-value.GLOWING_LICHEN.0=§cOFF
+value.GLOWING_LICHEN.0=§cDESACTIVADO
 value.GLOWING_LICHEN.1=In Closed Areas
 value.GLOWING_LICHEN.2=Always
 
@@ -891,7 +890,7 @@ option.CUSTOM_EMISSION_INTENSITY.comment=Adjusts the intensity of glowing surfac
 
 option.POM=Parallax Occlusion Mapping
 option.POM.comment=Enables 3D effect on surfaces. §c[-]§r This effect can severely impact performance. §e[*]§r RP Support option must be set to labPBR/seuspbr, and a compatible resource pack must be used.
-value.POM.false=OFF
+value.POM.false=DESACTIVADO
 value.POM.true=ON §c[-]
 
 option.POM_DEPTH=POM Depth
@@ -923,20 +922,20 @@ option.POM_ALLOW_CUTOUT.comment=Makes POM be able to work on cutout block sectio
 
 option.DIRECTIONAL_BLOCKLIGHT=Directional Blocklight
 option.DIRECTIONAL_BLOCKLIGHT.comment=Adds depth to blocklight depending on the surface normal. §c[-]§r May cause visual artifacts in some situations. §c[-]§r This effect can impact performance. §e[*]§r RP Support option must be set to labPBR/seuspbr, and a compatible resource pack must be used.
-value.DIRECTIONAL_BLOCKLIGHT.0=OFF
+value.DIRECTIONAL_BLOCKLIGHT.0=DESACTIVADO
 value.DIRECTIONAL_BLOCKLIGHT.3=Subtle §c[-]
 value.DIRECTIONAL_BLOCKLIGHT.7=Normal §c[-]
 value.DIRECTIONAL_BLOCKLIGHT.11=Intense §c[-]
 
 option.HELD_LIGHTING_MODE=Dynamic Handheld Lighting
 option.HELD_LIGHTING_MODE.comment=Allows handheld light sources to cast light onto the scene.
-value.HELD_LIGHTING_MODE.0=§cOFF
+value.HELD_LIGHTING_MODE.0=§cDESACTIVADO
 value.HELD_LIGHTING_MODE.1=Subtle
 value.HELD_LIGHTING_MODE.2=Normal
 
 option.BLOCKLIGHT_FLICKERING=Blocklight Flickering
 option.BLOCKLIGHT_FLICKERING.comment=Adds a flickering effect to the light cast from blocks.
-value.BLOCKLIGHT_FLICKERING.0=OFF
+value.BLOCKLIGHT_FLICKERING.0=DESACTIVADO
 
 option.WAVING_SPEED=Waving Speed
 option.WAVING_SPEED.comment=Adjusts how quickly the waving effects happen.
@@ -1000,7 +999,7 @@ option.DARK_OUTLINE_THICKNESS.comment=Determines the thickness of the Dark Outli
 
 option.RAIN_PUDDLES=Rain Puddles
 option.RAIN_PUDDLES.comment=Adds water puddles to the terrain during rain. §c[-]§r Rain puddles can severely impact performance.
-value.RAIN_PUDDLES.0=OFF
+value.RAIN_PUDDLES.0=DESACTIVADO
 value.RAIN_PUDDLES.1=§aON - Puddles
 value.RAIN_PUDDLES.2=§aON - Full Coverage
 value.RAIN_PUDDLES.3=§aON - §cAlways§a Puddles
@@ -1011,7 +1010,7 @@ option.UNDERWATER_DISTORTION.comment=Adds subtle refraction to the screen when t
 
 option.SELECT_OUTLINE=Selection Outline
 option.SELECT_OUTLINE.comment=Determines the color of the block selection outline.
-value.SELECT_OUTLINE.0=§cOFF
+value.SELECT_OUTLINE.0=§cDESACTIVADO
 value.SELECT_OUTLINE.1=Default
 value.SELECT_OUTLINE.2=Rainbow
 value.SELECT_OUTLINE.3=Select Color
@@ -1309,11 +1308,11 @@ option.AURORA_INFLUENCE.comment=Makes the Aurora color affect the clouds and the
 
 option.AURORA_CLOUD_INFLUENCE_INTENSITY=Cloud Influence Intensity
 option.AURORA_CLOUD_INFLUENCE_INTENSITY.comment=Change the intensity the aurora affects the clouds.
-value.AURORA_CLOUD_INFLUENCE_INTENSITY.0.00=OFF
+value.AURORA_CLOUD_INFLUENCE_INTENSITY.0.00=DESACTIVADO
 
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY=Terrain Influence Intensity
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY.comment=Change the intensity the aurora affects the terrain.
-value.AURORA_TERRAIN_INFLUENCE_INTENSITY.0.00=OFF
+value.AURORA_TERRAIN_INFLUENCE_INTENSITY.0.00=DESACTIVADO
 
 option.CLOUD_ROUNDNESS=Cloud Roundness §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=Extra Boxy §e[*]§r
@@ -1342,11 +1341,11 @@ value.CLOUD_DIRECTION.1=West-East
 value.CLOUD_DIRECTION.2=North-South
 option.INCREASED_RAIN_STRENGTH=Increased Rain Strength
 option.INCREASED_RAIN_STRENGTH.comment=Makes wind related animations faster when raining. §c[-]§r This setting being enabled causes clouds and other related wind animations to quickly change when it begins or stops to rain, not fixable. Not recommended.
-value.INCREASED_RAIN_STRENGTH.0=OFF
+value.INCREASED_RAIN_STRENGTH.0=DESACTIVADO
 value.INCREASED_RAIN_STRENGTH.1=Fast Transition
 value.INCREASED_RAIN_STRENGTH.2=No Transition
 option.RAINBOW_CLOUD=Rainbow Clouds
-value.RAINBOW_CLOUD.0=OFF
+value.RAINBOW_CLOUD.0=DESACTIVADO
 value.RAINBOW_CLOUD.1=10% Coverage
 value.RAINBOW_CLOUD.2=20% Coverage
 value.RAINBOW_CLOUD.3=30% Coverage
@@ -1417,7 +1416,7 @@ option.END_BEAMS=Ender Beams
 option.END_BEAMS.comment=Setting which enables nebula like beams in the End.
 option.END_CRYSTAL_VORTEX=End Crystal Vortex
 option.END_CRYSTAL_VORTEX.comment=Setting which enables energy beams going up from end crystals in the end. §4[***]§r Enables §cEntity Shadows§r. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
-value.END_CRYSTAL_VORTEX.0=OFF
+value.END_CRYSTAL_VORTEX.0=DESACTIVADO
 value.END_CRYSTAL_VORTEX.1=Vortex
 value.END_CRYSTAL_VORTEX.2=Healing Beam
 value.END_CRYSTAL_VORTEX.3=Both
@@ -1440,18 +1439,18 @@ option.E_DRAGON_BEAM_I.comment=The Ender Beam color during the dragon fight - In
 option.BEAMS_NEAR_PLAYER=End Beams Near Player
 option.BEAMS_NEAR_PLAYER.comment=Enables or disables end beams near the player.
 
-option.END_STARS=End Stars
-option.END_STARS.comment=Enable or disable the stars in the End.
-option.END_STAR_BRIGHTNESS=End Star Brightness
-option.END_STAR_SIZE=End Star Size
-option.END_STAR_AMOUNT=End Star Amount
-value.END_STAR_AMOUNT.0=Low
+option.END_STARS=Estrellas del End
+option.END_STARS.comment=Activar o desactivar las estrellas en el End.
+option.END_STAR_BRIGHTNESS=Brillo de las Estrellas del End
+option.END_STAR_SIZE=Tamaño de las Estrellas del End
+option.END_STAR_AMOUNT=Cantidad de Estrellas del End
+value.END_STAR_AMOUNT.0=Pocas
 value.END_STAR_AMOUNT.1=Normal
-value.END_STAR_AMOUNT.2=High
-value.END_STAR_AMOUNT.3=Very High
-value.END_STAR_AMOUNT.4=A LOT
-option.END_TWINKLING_STARS=Twinkling End Stars
-value.END_TWINKLING_STARS.0=OFF
+value.END_STAR_AMOUNT.2=Muchas
+value.END_STAR_AMOUNT.3=Muchísimas
+value.END_STAR_AMOUNT.4=DEMASIADAS
+option.END_TWINKLING_STARS=Centelleo de las Estrellas del End
+value.END_TWINKLING_STARS.0=DESACTIVADO
 value.END_TWINKLING_STARS.1=0.1
 value.END_TWINKLING_STARS.2=0.2
 value.END_TWINKLING_STARS.3=0.3
@@ -1473,9 +1472,9 @@ value.END_TWINKLING_STARS.18=1.8
 value.END_TWINKLING_STARS.19=1.9
 value.END_TWINKLING_STARS.20=2.0
 
-option.STAR_BRIGHTNESS=Star Brightness
-option.STAR_BRIGHTNESS.comment=Setting to adjust the star brightness.
-value.STAR_BRIGHTNESS.3=OFF
+option.STAR_BRIGHTNESS=Brillo de las Estrellas.
+option.STAR_BRIGHTNESS.comment=Ajuste del brillo de las estrellas.
+value.STAR_BRIGHTNESS.3=DESACTIVADO
 value.STAR_BRIGHTNESS.4=0.1
 value.STAR_BRIGHTNESS.5=0.2
 value.STAR_BRIGHTNESS.6=0.3
@@ -1508,14 +1507,14 @@ value.STAR_BRIGHTNESS.32=2.9
 value.STAR_BRIGHTNESS.33=3.0
 
 option.MORE_STARS_OVERWORLD=More Stars Overworld
-option.MORE_STARS_OVERWORLD.comment=Overwrites Complementary's star amount and sets it to a higher one. Applies to Overworld
-value.MORE_STARS_OVERWORLD.0=OFF
+option.MORE_STARS_OVERWORLD.comment=Overwrites Complementary's star amount and sets it to a higher one. Applies to Overworld.
+value.MORE_STARS_OVERWORLD.0=DESACTIVADO
 value.MORE_STARS_OVERWORLD.1=A lot
 value.MORE_STARS_OVERWORLD.2=Too Much
 
-option.TWINKLING_STARS=Twinkling Stars
-option.TWINKLING_STARS.comment=Make the stars twinkle at you.
-value.TWINKLING_STARS.0=OFF
+option.TWINKLING_STARS=Estrellas Centelleantes
+option.TWINKLING_STARS.comment=Las estrellas centellean / resplandecen al mirarte.
+value.TWINKLING_STARS.0=DESACTIVADO
 value.TWINKLING_STARS.1=0.1
 value.TWINKLING_STARS.2=0.2
 value.TWINKLING_STARS.3=0.3
@@ -1536,8 +1535,8 @@ value.TWINKLING_STARS.17=1.7
 value.TWINKLING_STARS.18=1.8
 value.TWINKLING_STARS.19=1.9
 value.TWINKLING_STARS.20=2.0
-option.STAR_SIZE=Star Size
-option.STAR_SIZE.comment=Change the size of your stars.
+option.STAR_SIZE=Tamaño de las Estrellas
+option.STAR_SIZE.comment=Cambia el tamaño de tus estrellas.
 
 option.SITUATIONAL_ORES=Situational Ores
 option.SITUATIONAL_ORES.comment=Ores will only glow in caves and at night. §e[*]§r Glowing Ores must be enabled for this to work.
@@ -1552,7 +1551,7 @@ option.UNDERWATER_DISTORTION_STRENGTH.comment=Setting to alter the Underwater Di
 option.FRESNEL_MULTIPLIER=Underwater Surface Reflection Strength
 option.FRESNEL_MULTIPLIER.comment=A setting which changes the underwater reflection strength of the water surface.
 option.SHADER_WATER=Shader Water
-option.SHADER_WATER.comment=A toggle to turn the shader water on or off.
+option.SHADER_WATER.comment=A toggle to turn the shader water on or DESACTIVADO.
 
 option.WATER_GENERATED_NORMALS=Water Generated Normals
 
@@ -1654,7 +1653,7 @@ option.END_PORTAL_BEAM.comment=Adds rays of light around the edges of the end po
 
 option.SILHOUETTE=Silhouette
 option.SILHOUETTE.comment=When enabled makes blocks facing away from the sun black, useful for screenshots.
-value.SILHOUETTE.0=OFF
+value.SILHOUETTE.0=DESACTIVADO
 value.SILHOUETTE.1=Only at Night
 value.SILHOUETTE.2=Always On
 option.SILHOUETTE_BRIGHTNESS=Silhouette Brightness
@@ -1663,7 +1662,7 @@ option.RAIN_ATMOSPHERE=Epic Thunderstorm
 option.RAIN_ATMOSPHERE.comment=Improves thunderstorms significantly when a lightning bolt strikes. §e[*]§r Works much better with Iris
 
 option.BLUE_SCREEN=Blue Screen
-option.BLUE_SCREEN.comment=Turns "Blue Concrete", "Blue Wool", and "Blue Carpet" into blue screens for video editing. Tip 1: Turn off "Bloom" option to improve separation. Tip 2: Put lights under blue carpets for lighting. Tip 3: You can turn off Anti-Aliasing (FXAA) and set Detail Quality to Potato in Performance Settings to disable all filtering and get pixel-perfect separation.
+option.BLUE_SCREEN.comment=Turns "Blue Concrete", "Blue Wool", and "Blue Carpet" into blue screens for video editing. Tip 1: Turn DESACTIVADO "Bloom" option to improve separation. Tip 2: Put lights under blue carpets for lighting. Tip 3: You can turn off Anti-Aliasing (FXAA) and set Detail Quality to Potato in Performance Settings to disable all filtering and get pixel-perfect separation.
 
 option.MIRROR_DIMENSION=Mirror Dimension
 option.MIRROR_DIMENSION.comment=You have learned the art of magic and are brave enough to enter the mirror dimension.
@@ -1697,7 +1696,7 @@ option.LAVA_NOISE_AMOUNT.comment=Change the amount of noise.
 
 option.LAVA_EDGE_EFFECT=Lava Edge Effect
 option.LAVA_EDGE_EFFECT.comment=Adds an edge to lava when it touches other blocks. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings.
-value.LAVA_EDGE_EFFECT.0=OFF
+value.LAVA_EDGE_EFFECT.0=DESACTIVADO
 value.LAVA_EDGE_EFFECT.1=ON - Bright
 value.LAVA_EDGE_EFFECT.2=ON - Dark
 
@@ -1722,7 +1721,7 @@ value.RAINBOW_END_ROD_COORD_OFFSET.7=Medio
 value.RAINBOW_END_ROD_COORD_OFFSET.11=Strong
 value.RAINBOW_END_ROD_COORD_OFFSET.13=Very Strong
 option.END_ROD_RAINBOW_ANIMATE=Rainbow Speed
-value.END_ROD_RAINBOW_ANIMATE.0.0=OFF
+value.END_ROD_RAINBOW_ANIMATE.0.0=DESACTIVADO
 
 option.REDSTONE_IPBR=Redstone IntegratedPBR
 option.REDSTONE_IPBR.comment=This option makes red pixels on redstone related blocks emissive. Works best with redstone resource packs. §e[*]§r RP Support option must be set to Integrated PBR+
@@ -1737,7 +1736,7 @@ option.REDSTONE_IPBR_I.comment=Change the emissive strength of Redstone Integrat
 
 option.LETTERBOXING=Letterboxes
 option.LETTERBOXING.comment=Adds black bars to the top and bottom of the window.
-value.LETTERBOXING.0=OFF
+value.LETTERBOXING.0=DESACTIVADO
 value.LETTERBOXING.1=ON
 value.LETTERBOXING.2=ON - While Sneaking
 
@@ -1834,14 +1833,14 @@ option.EMIN_BOAT.comment=Ride boats like Emin intended.
 
 option.MONOTONE_WORLD=Monotone World
 option.MONOTONE_WORLD.comment=Make the world colorless! Wuuuuw!
-value.MONOTONE_WORLD.0=OFF
+value.MONOTONE_WORLD.0=DESACTIVADO
 value.MONOTONE_WORLD.1=White
 value.MONOTONE_WORLD.2=Black
 value.MONOTONE_WORLD.3=Gray
 
 option.SEASONS=Seasons
 option.SEASONS.comment=Changes the colors of the environment based on the worldTime. In the winter there's also snow! §e[*]§r RP Support option is recommended to be set to Integrated PBR+
-value.SEASONS.0=OFF
+value.SEASONS.0=DESACTIVADO
 value.SEASONS.1=Cycling
 value.SEASONS.2=Summer
 value.SEASONS.3=Autumn
@@ -1899,7 +1898,7 @@ option.SSS_SEASON_SNOW.comment=Adds subsurface scattering to the snow from the s
 option.WINTER_GREEN_AMOUNT=Winter Green Amount
 
 option.LESS_LEAVES=Less Leaves
-value.LESS_LEAVES.0=OFF
+value.LESS_LEAVES.0=DESACTIVADO
 
 option.AUTUMN_CONDITION=Only In Forest
 
@@ -1918,7 +1917,7 @@ option.AUTUMN_STRENGTH.comment=Change the color overwrite in autumn.
 option.FLOWER_DENSITY=Flower Density
 option.FLOWER_SIZE=Flower Resolution
 option.FLOWER_AMOUNT=Flower Amount
-value.FLOWER_AMOUNT.0=OFF
+value.FLOWER_AMOUNT.0=DESACTIVADO
 option.SPRING_GREEN_INTENSITY=Spring Intensity
 option.EMISSIVE_SPRING_FLOWERS=Emissive Spring Flowers
 option.EMISSIVE_SPRING_FLOWERS.comment=Option to turn emission from seasons spring flowers on if using the Emissive Flowers Option found in the Euphoria Material settings page
@@ -1941,12 +1940,12 @@ option.ATLAS_ROTATION.comment=:).
 
 option.NETHER_NOISE=Nether Sky Noise
 option.NETHER_NOISE.comment=Makes the Nether sky above the Nether roof more interesting.
-value.NETHER_NOISE.0=OFF
+value.NETHER_NOISE.0=DESACTIVADO
 value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria Colored Lighting
 option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACL + Screen-Space to use the screen-space system alongside Advanced Colored Lighting. §e[*]§rOnly works on 1.16.5 and above or on Angelica.
-value.MCBL_MAIN_DEFINE.0=OFF
+value.MCBL_MAIN_DEFINE.0=DESACTIVADO
 value.MCBL_MAIN_DEFINE.1=Screen-Space
 value.MCBL_MAIN_DEFINE.2=ACL + Screen-Space
 
@@ -1978,7 +1977,7 @@ option.RETRO_ON=Retro Global Toggle
 
 option.RETRO_LOOK=Retro Look
 option.RETRO_LOOK.comment=Change betwen different retro presets.
-value.RETRO_LOOK.0=OFF
+value.RETRO_LOOK.0=DESACTIVADO
 value.RETRO_LOOK.1=Outlines
 value.RETRO_LOOK.2=Outlines - Night Vision Only
 
@@ -1994,23 +1993,23 @@ option.BORDER_AMOUNT=Border Amount
 option.SCREEN_ROUNDNESS=Screen Roundness
 
 option.STATIC_NOISE=Static Noise
-value.STATIC_NOISE.0=OFF
+value.STATIC_NOISE.0=DESACTIVADO
 option.MIN_STATIC_STRENGTH=Minimum Strength
 option.MAX_STATIC_STRENGTH=Maximum Strength
 option.STATIC_SPEED=Static Noise Speed
 
 option.HORIZONTAL_NOISE=Horizontal Noise
-value.HORIZONTAL_NOISE.0=OFF
+value.HORIZONTAL_NOISE.0=DESACTIVADO
 option.HORIZONTAL_NOISE_INTENSITY=Horizontal Noise Intensity
 option.HORIZONTAL_NOISE_SPEED=Horizontal Noise Speed
 
 option.VERTICAL_SCREEN_DISPLACEMENT=Vertical Screen Displacement
 option.VERTICAL_EDGE_GLITCH=Edge Glitch Intensity
-value.VERTICAL_EDGE_GLITCH.1.00=OFF
+value.VERTICAL_EDGE_GLITCH.1.00=DESACTIVADO
 option.VERTICAL_SCROLL_SPEED=Scroll Speed
-value.VERTICAL_SCROLL_SPEED.0.00=OFF
+value.VERTICAL_SCROLL_SPEED.0.00=DESACTIVADO
 option.VERTICAL_STUTTER_SPEED=Stutter Speed
-value.VERTICAL_STUTTER_SPEED.0.00=OFF
+value.VERTICAL_STUTTER_SPEED.0.00=DESACTIVADO
 option.VERTICAL_SCROLL_FREQUENCY=Scroll Frequency
 option.VERTICAL_STUTTER_FREQUENCY=Stutter Frequency
 
@@ -2019,7 +2018,7 @@ option.PIXELATED_SCREEN_SIZE=Pixel Size
 option.PIXELATED_SCREEN_SMOOTHNESS=Smoothness
 
 option.SCANLINE=Scanline
-value.SCANLINE.0=OFF
+value.SCANLINE.0=DESACTIVADO
 option.SCANLINE_FREQUENCY=Scanline Frequency
 option.SCANLINE_SPEED=Scanline Speed
 option.SCANLINE_AMOUNT=Scanline Amount
@@ -2038,7 +2037,7 @@ option.HALFTONE_SCALE=Dots Scale
 option.HALFTONE_ANGLE=Dots Angle
 
 option.SPEED_LINES=Speed Lines
-value.SPEED_LINES.0=OFF
+value.SPEED_LINES.0=DESACTIVADO
 value.SPEED_LINES.1=ON - While Fast
 value.SPEED_LINES.2=ON - While Fast & Sprinting
 value.SPEED_LINES.3=ON
@@ -2047,23 +2046,23 @@ option.SPEED_LINES_SPEED=Intensity
 option.SPEED_LINE_THICKNESS=Line Size
 
 option.CAMERA_NOISE_OVERLAY=Camera Noise Overlay
-value.CAMERA_NOISE_OVERLAY.0=OFF
+value.CAMERA_NOISE_OVERLAY.0=DESACTIVADO
 value.CAMERA_NOISE_OVERLAY.1=Noise 1
 option.CAMERA_NOISE_OVERLAY_INTENSITY=Noise Intensity
 
 option.LONG_EXPOSURE=Long Exposure
 option.LONG_EXPOSURE.comment=Disable the GUI by pressing F1 and stand still. The Celestial mode is specifically made to improve the look of stars and bright objects while objects in the Temporal mode would fade over time. 
-value.LONG_EXPOSURE.0=OFF
+value.LONG_EXPOSURE.0=DESACTIVADO
 value.LONG_EXPOSURE.1=Celestial Accumulation
 value.LONG_EXPOSURE.2=Temporal Weighting
 
 option.TILT_SHIFT=Tilt X
 option.TILT_SHIFT.comment=Tilt-Shift Effect - Horizontal
-value.TILT_SHIFT.0=OFF
+value.TILT_SHIFT.0=DESACTIVADO
 
 option.TILT_SHIFT2=Tilt Y
 option.TILT_SHIFT2.comment=Tilt-Shift Effect - Vertical
-value.TILT_SHIFT2.0=OFF
+value.TILT_SHIFT2.0=DESACTIVADO
 
 option.DOF_VIEW_FOCUS_NEW2=§cDOF Focus Plane & Spyglass
 option.DOF_VIEW_FOCUS_NEW2.comment=Makes the Focus Plane of DOF visible when the GUI visible and the player is holding a spyglass.
@@ -2098,16 +2097,16 @@ option.SAND_SIDE_INTENSITY=Sand On Walls Intensity
 option.SAND_NOISE_DISTANCE=Sand Noise Distance
 
 option.MAIN_GRID_INTERVAL=Main Grid
-value.MAIN_GRID_INTERVAL.1=OFF
+value.MAIN_GRID_INTERVAL.1=DESACTIVADO
 option.SUB_GRID_INTERVAL=Sub-Grid
-value.SUB_GRID_INTERVAL.1=OFF
+value.SUB_GRID_INTERVAL.1=DESACTIVADO
 option.GRID_CONDITION=Grid Condition
 value.GRID_CONDITION.0=No Condition
 value.GRID_CONDITION.1=Sneaking
 value.GRID_CONDITION.2=Holding Spyglass
 
 option.EMISSIVE_FLOWERS=Emissive Flowers
-value.EMISSIVE_FLOWERS.0=OFF
+value.EMISSIVE_FLOWERS.0=DESACTIVADO
 value.EMISSIVE_FLOWERS.1=ON
 value.EMISSIVE_FLOWERS.2=ON - Dark or Raining
 
@@ -2125,7 +2124,7 @@ option.EYE_FREQUENCY=Eye Frequency
 option.EYE_SPEED=Eye Speed
 option.EYE_RED_PROBABILITY=Red Eyes Probability
 option.BLOOD_MOON=Blood Moon
-value.BLOOD_MOON.0=OFF
+value.BLOOD_MOON.0=DESACTIVADO
 value.BLOOD_MOON.1=ON - Full Moon
 value.BLOOD_MOON.2=ON - Every Night
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Emissive Blood Moon Flowers
@@ -2148,23 +2147,23 @@ option.RENKO_CUT.comment=Earned in a fair fight in the Complisseum
 
 option.GLITTER_RAIN=Glitter Rain
 option.GLITTER_RAIN.comment=Sprinkle those raindrops with glitter and spend the day sparkling
-value.GLITTER_RAIN.0=OFF
+value.GLITTER_RAIN.0=DESACTIVADO
 value.GLITTER_RAIN.1=ON - Random Time
 value.GLITTER_RAIN.2=ON - Always
 
 option.HAND_BLOCKLIGHT_FLICKERING=Handheld Blocklight Flickering
-value.HAND_BLOCKLIGHT_FLICKERING.0=OFF
+value.HAND_BLOCKLIGHT_FLICKERING.0=DESACTIVADO
 
 option.PIXELATED_HANDHELD_LIGHT=Pixelated Handheld Light
 option.PIXELATED_HANDHELD_LIGHT.comment=Pixelate the handheld light texture.
 
 option.SSS_STRENGTH=Subsurface Scattering
-value.SSS_STRENGTH.0=OFF
+value.SSS_STRENGTH.0=DESACTIVADO
 value.SSS_STRENGTH.1=ON
 
 option.PIXEL_WATER=Procedural Pixel Water
 option.PIXEL_WATER.comment=Generated procedural pixelated water texture.
-value.PIXEL_WATER.0=OFF
+value.PIXEL_WATER.0=DESACTIVADO
 value.PIXEL_WATER.1=ON
 
 option.PIXELATED_WATER_REFLECTIONS=Pixelated Water Reflections
@@ -2179,10 +2178,10 @@ option.CAVE_SMOKE.comment=Adds a smoke effect to the volumetric blocklight fog w
 option.WAVING_SUGAR_CANE=Waving Sugar Cane
 
 option.SUN_GLARE_AMOUNT=Sun Glare Amount
-value.SUN_GLARE_AMOUNT.0=OFF
+value.SUN_GLARE_AMOUNT.0=DESACTIVADO
 
 option.MOON_GLARE_AMOUNT=Moon Glare Amount
-value.MOON_GLARE_AMOUNT.0=OFF
+value.MOON_GLARE_AMOUNT.0=DESACTIVADO
 
 option.DAYLIGHT_STARS=Daylight Stars
 option.DAYLIGHT_STARS.comment=Enables Stars during the day
@@ -2216,30 +2215,30 @@ value.ALTERNATIVE_AMETHYST_STYLE.0=Default
 value.ALTERNATIVE_AMETHYST_STYLE.1=Shiny Pink
 
 option.SHOCKWAVE=Shockwave
-value.SHOCKWAVE.0=OFF
+value.SHOCKWAVE.0=DESACTIVADO
 value.SHOCKWAVE.1=Circle
 value.SHOCKWAVE.2=Square
 option.SHOCKWAVE.comment=Crouch and find out!
 
 option.STAR_LAYER_OW=Star Layer
 option.STAR_LAYER_OW.comment=Adds additional stars to the current stars, larger or smaller ones
-value.STAR_LAYER_OW.0=OFF
+value.STAR_LAYER_OW.0=DESACTIVADO
 value.STAR_LAYER_OW.1=Smaller Layer
 value.STAR_LAYER_OW.2=Bigger Layer
 value.STAR_LAYER_OW.3=Both Layers
 
 option.STAR_LAYER_END=Star Layer
 option.STAR_LAYER_END.comment=Adds additional stars to the current stars, larger or smaller ones
-value.STAR_LAYER_END.0=OFF
+value.STAR_LAYER_END.0=DESACTIVADO
 value.STAR_LAYER_END.1=Smaller Layer
 value.STAR_LAYER_END.2=Bigger Layer
 value.STAR_LAYER_END.3=Both Layers
 
 option.STAR_ROUNDNESS_END=Round Stars
-value.STAR_ROUNDNESS_END.0=OFF
+value.STAR_ROUNDNESS_END.0=DESACTIVADO
 
 option.STAR_ROUNDNESS_OW=Round Stars
-value.STAR_ROUNDNESS_OW.0=OFF
+value.STAR_ROUNDNESS_OW.0=DESACTIVADO
 
 option.STAR_SOFTNESS_OW=Star Softness
 
@@ -2258,7 +2257,7 @@ option.STAR_COLOR_3_OW_G=Star 3 - Green
 option.STAR_COLOR_3_OW_B=Star 3 - Blue
 
 option.STAR_COLOR_VARIATION_OW=Color Intensity
-value.STAR_COLOR_VARIATION_OW.0.0=OFF
+value.STAR_COLOR_VARIATION_OW.0.0=DESACTIVADO
 
 option.STAR_COLOR_1_END_R=Star 1 - Rojo
 option.STAR_COLOR_1_END_G=Star 1 - Green
@@ -2273,7 +2272,7 @@ option.STAR_COLOR_3_END_G=Star 3 - Green
 option.STAR_COLOR_3_END_B=Star 3 - Blue
 
 option.STAR_COLOR_VARIATION_END=Color Intensity
-value.STAR_COLOR_VARIATION_END.0.0=OFF
+value.STAR_COLOR_VARIATION_END.0.0=DESACTIVADO
 
 option.CELESTIAL_BOTH_HEMISPHERES=Full Sky Celestials
 option.CELESTIAL_BOTH_HEMISPHERES.comment=Renders celestial objects (stars, sun, moon, nebula) across the entire sky rather than just above the horizon, creating a more immersive skybox effect.
@@ -2301,20 +2300,20 @@ option.NIGHT_DESATURATION=Darkness Desaturation
 option.NIGHT_DESATURATION.comment=Desaturates the colors of the environment in dark areas.
 
 option.NIGHT_DESATURATION_OW=Overworld Intensity
-value.NIGHT_DESATURATION_OW.0=OFF
+value.NIGHT_DESATURATION_OW.0=DESACTIVADO
 value.NIGHT_DESATURATION_OW.300=Black/White
 
 option.NIGHT_DESATURATION_NETHER=Nether Intensity
-value.NIGHT_DESATURATION_NETHER.0=OFF
+value.NIGHT_DESATURATION_NETHER.0=DESACTIVADO
 value.NIGHT_DESATURATION_NETHER.300=Black/White
 
 option.NIGHT_DESATURATION_END=End Intensity
-value.NIGHT_DESATURATION_END.0=OFF
+value.NIGHT_DESATURATION_END.0=DESACTIVADO
 value.NIGHT_DESATURATION_END.300=Black/White
 
 option.NIGHT_CAVE_DESATURATION=Cave Desaturation
 option.NIGHT_CAVE_DESATURATION.comment=Desaturates the colors of the environment in caves.
-value.NIGHT_CAVE_DESATURATION.0=OFF
+value.NIGHT_CAVE_DESATURATION.0=DESACTIVADO
 
 option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=Remove Near Lights
 option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=Removes the desaturation effect near light sources.
@@ -2331,21 +2330,21 @@ option.MOON_PHASED_DESATURATION_SETTINGS.comment=Adjusts the amount of desaturat
 
 option.MOON_PHASE_FULL_PURKINJE=Full Moon
 option.MOON_PHASE_FULL_PURKINJE.comment=Desaturation strength during the Full Moon phase (brightest phase).
-value.MOON_PHASE_FULL_PURKINJE.0=OFF
+value.MOON_PHASE_FULL_PURKINJE.0=DESACTIVADO
 value.MOON_PHASE_FULL_PURKINJE.300=Black/White
 
 option.MOON_PHASE_PARTIAL_PURKINJE=Partial Moon
 option.MOON_PHASE_PARTIAL_PURKINJE.comment=Desaturation strength during all moon phases between Full Moon and Dark Moon. This is the phase you will see the most in Minecraft.
-value.MOON_PHASE_PARTIAL_PURKINJE.0=OFF
+value.MOON_PHASE_PARTIAL_PURKINJE.0=DESACTIVADO
 value.MOON_PHASE_PARTIAL_PURKINJE.300=Black/White
 
 option.MOON_PHASE_DARK_PURKINJE=Dark Moon
 option.MOON_PHASE_DARK_PURKINJE.comment=Desaturation strength during New Moon (darkest phase).
-value.MOON_PHASE_DARK_PURKINJE.0=OFF
+value.MOON_PHASE_DARK_PURKINJE.0=DESACTIVADO
 value.MOON_PHASE_DARK_PURKINJE.300=Black/White
 
 option.DELTARUNE_BATTLE_BACKGROUND=Deltarune Battle Background
-value.DELTARUNE_BATTLE_BACKGROUND.0=OFF
+value.DELTARUNE_BATTLE_BACKGROUND.0=DESACTIVADO
 value.DELTARUNE_BATTLE_BACKGROUND.1=ON - Sky Only
 value.DELTARUNE_BATTLE_BACKGROUND.2=ON - Except Entities
 
@@ -2356,7 +2355,7 @@ option.CLEAR_WATER_SPOTS.comment=Adds clear spots to the water to add some varie
 
 option.ACL_ORE_INTENSITY=ACL Ore Intensity
 option.ACL_ORE_INTENSITY.comment=Change the ACL light intensity of ores.
-value.ACL_ORE_INTENSITY.0.0=OFF
+value.ACL_ORE_INTENSITY.0.0=DESACTIVADO
 
 option.ENTITIES_ARE_LIGHT=Entities Are Light
 
