@@ -245,11 +245,11 @@ value.WATER_REFLECT_QUALITY.0=§aSólo cielo
 value.WATER_REFLECT_QUALITY.1=§eTostadora
 value.WATER_REFLECT_QUALITY.2=§cMedio
 
-option.BLOCK_REFLECT_QUALITY=Block Reflection Quality §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eMedium§r: Sun/moon highlights + specular reflections. §aLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
+option.BLOCK_REFLECT_QUALITY=Calidad de Reflejos de Bloques §e[*]§r
+option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eMedio§r: Sun/moon highlights + specular reflections. §aLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
 value.BLOCK_REFLECT_QUALITY.0=§aOFF
 value.BLOCK_REFLECT_QUALITY.1=§eLow
-value.BLOCK_REFLECT_QUALITY.2=§cMedium
+value.BLOCK_REFLECT_QUALITY.2=§cMedio
 value.BLOCK_REFLECT_QUALITY.3=§cHigh
 
 option.SHADOW_QUALITY=Real-Time Shadows
@@ -257,7 +257,7 @@ option.SHADOW_QUALITY.comment=Adjusts the quality of shadows. Every tier further
 value.SHADOW_QUALITY.-1=§aOFF
 value.SHADOW_QUALITY.0=§eVery Low
 value.SHADOW_QUALITY.1=§eLow
-value.SHADOW_QUALITY.2=§eMedium
+value.SHADOW_QUALITY.2=§eMedio
 value.SHADOW_QUALITY.3=§eHigh
 value.SHADOW_QUALITY.4=§cVery High
 value.SHADOW_QUALITY.5=§4§lUltra
@@ -266,7 +266,7 @@ option.LIGHTSHAFT_QUALI_DEFINE=Light Shaft Quality §e[*]§r
 option.LIGHTSHAFT_QUALI_DEFINE.comment=Adjusts the quality of light shafts. Every tier further reduces the light shaft noise artifacts. §e[*]§r "Real-Time Shadows" setting must be set to anything but OFF for light shafts to work.
 value.LIGHTSHAFT_QUALI_DEFINE.0=§aOFF
 value.LIGHTSHAFT_QUALI_DEFINE.1=§eLow
-value.LIGHTSHAFT_QUALI_DEFINE.2=§eMedium
+value.LIGHTSHAFT_QUALI_DEFINE.2=§eMedio
 value.LIGHTSHAFT_QUALI_DEFINE.3=§cHigh
 value.LIGHTSHAFT_QUALI_DEFINE.4=§4§lVery High
 
@@ -295,14 +295,14 @@ value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oON§r§4§k- §r§c[-]
 option.DETAIL_QUALITY=Detail Quality
 option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, Ender Beams, sky effect reflections, rain puddle accuracy, waving effect
 value.DETAIL_QUALITY.0=§aPotato
-value.DETAIL_QUALITY.2=§eMedium
+value.DETAIL_QUALITY.2=§eMedio
 value.DETAIL_QUALITY.3=§cHigh
 
 option.CLOUD_QUALITY=Cloud Quality
 option.CLOUD_QUALITY.comment=Adjusts the lighting, detail, and sample quality of Reimaginado/Desligado cloud styles. §e[*]§r This setting only works with the "Reimaginado" or "Desligado" Cloud Styles.
 value.CLOUD_QUALITY.0=§aOFF
 value.CLOUD_QUALITY.1=§aLow
-value.CLOUD_QUALITY.2=§eMedium
+value.CLOUD_QUALITY.2=§eMedio
 value.CLOUD_QUALITY.3=§cHigh
 
 option.FXAA_DEFINE=Anti-Aliasing (FXAA)
@@ -313,7 +313,7 @@ value.FXAA_DEFINE.1=§eON
 option.SSAO_QUALI_DEFINE=Edge Shadow (SSAO) Quality
 option.SSAO_QUALI_DEFINE.comment=Adjusts the quality of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. Every tier further reduces the ssao noise artifacts.
 value.SSAO_QUALI_DEFINE.0=§aOFF
-value.SSAO_QUALI_DEFINE.2=§eMedium
+value.SSAO_QUALI_DEFINE.2=§eMedio
 value.SSAO_QUALI_DEFINE.3=§cHigh
 
 option.ANISOTROPIC_FILTER=Texture Filtering
@@ -503,10 +503,10 @@ option.WATER_REFRACTION_INTENSITY=Water Refraction Intensity §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=Adjusts the intensity of water refraction and underwater distortion. §e[*]§r This setting only fully works when Detail Quality is set to "High", or else it will only affect the subtle underwater distortion.
 
 option.WATER_FOAM_I=Water Foam Intensity
-option.WATER_FOAM_I.comment=Determines the opacity of foam seen on water edges. §e[*]§r This setting only works when Detail Quality is set to Medium or higher.
+option.WATER_FOAM_I.comment=Determines the opacity of foam seen on water edges. §e[*]§r This setting only works when Detail Quality is set to Medio or higher.
 
 option.WATER_ALPHA_MULT=Water Opacity Factor
-option.WATER_ALPHA_MULT.comment=Adjusts how opaque the water looks. §c[-]§r Extreme values will break the balance of water lighting. §e[*]§r This setting only works when Detail Quality is set to Medium or higher.
+option.WATER_ALPHA_MULT.comment=Adjusts how opaque the water looks. §c[-]§r Extreme values will break the balance of water lighting. §e[*]§r This setting only works when Detail Quality is set to Medio or higher.
 
 option.WATER_FOG_MULT=Water Fog Factor
 option.WATER_FOG_MULT.comment=Adjusts how close the water fog looks. Higher values provide closer fog. §c[-]§r Extreme values will break the balance of water lighting.
@@ -590,7 +590,7 @@ option.SUN_MOON_DURING_RAIN.comment=Determines if the sun and moon will be visib
 
 option.NIGHT_STAR_AMOUNT=Night Star Amount
 option.NIGHT_STAR_AMOUNT.comment=Determines the amount of stars in the night sky.
-value.NIGHT_STAR_AMOUNT.2=Medium
+value.NIGHT_STAR_AMOUNT.2=Normal
 value.NIGHT_STAR_AMOUNT.3=High
 
 option.RAINBOWS=Rainbows
@@ -1328,7 +1328,7 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=Change how round cloud shadows appear.
 option.CLOUD_NARROWNESS=Cloud Narrowness
 value.CLOUD_NARROWNESS.0.1=Ultra Slim
 value.CLOUD_NARROWNESS.0.075=Slim
-value.CLOUD_NARROWNESS.0.05=Medium
+value.CLOUD_NARROWNESS.0.05=Normal
 value.CLOUD_NARROWNESS.0.025=Wide
 option.CLOUD_NARROWNESS.comment=Change how narrow the clouds appear on the horizontal scale.
 
@@ -1717,7 +1717,7 @@ option.RAINBOW_END_ROD_COORD_OFFSET=Rainbow Colors Offset
 value.RAINBOW_END_ROD_COORD_OFFSET.0=All Synced
 value.RAINBOW_END_ROD_COORD_OFFSET.3=Minimal
 value.RAINBOW_END_ROD_COORD_OFFSET.5=Default
-value.RAINBOW_END_ROD_COORD_OFFSET.7=Medium
+value.RAINBOW_END_ROD_COORD_OFFSET.7=Medio
 value.RAINBOW_END_ROD_COORD_OFFSET.11=Strong
 value.RAINBOW_END_ROD_COORD_OFFSET.13=Very Strong
 option.END_ROD_RAINBOW_ANIMATE=Rainbow Speed
