@@ -1164,6 +1164,8 @@ screen.RAIN_SETTINGS=Налаштування дощу
 screen.NIGHT_DESATURATION_SETTINGS=Знебарвлення темряви
 screen.MOON_PHASED_DESATURATION_SETTINGS=Нічне знебарв. фаз місяця
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Налаштування, які стосуються знебарвлення на основі поточної фази місяця
+screen.NIGHT_NEBULA_SETTINGS=Нічна туманність
+screen.NIGHT_NEBULA_COLOR_SETTINGS=Налаштуванння кольору
 
 screen.WORLD=Світ
 screen.WORLD.comment=Налаштування, які стосуються світу
@@ -2385,3 +2387,26 @@ value.END_SUN_ANGLE.-30=-30
 value.END_SUN_ANGLE.-40=-40
 value.END_SUN_ANGLE.-50=-50
 value.END_SUN_ANGLE.-60=-60
+
+option.PIXELATED_NEBULA=Нерівності туманности
+значення.PIXELATED_NEBULA.0=ВИМК.
+option.NEBULA_ZOOM_LEVEL=Рівень масштабування
+option.NEBULA_ZOOM_LEVEL.comment=Змінити масштаб туманности в небі
+option.NEBULA_AMOUNT=Кылькысть
+option.NEBULA_AMOUNT.comment=Змінити ступінь покриття неба туманностями
+option.NEBULA_PATTERN_WARP=Зкручення
+option.NEBULA_PATTERN_WARP.comment=Змінює ступінь спотворення туманностей
+value.NEBULA_PATTERN_WARP.0=ВИМК.
+option.NEBULA_HORIZON_STRENGTH=Видимість горизонту
+option.NEBULA_HORIZON_STRENGTH.comment=Змінити ступінь видимости туманностей на горизонті
+value.NEBULA_HORIZON_STRENGTH.10=Усталено
+
+option.NEBULA_R_1=Червоний туманности 1
+option.NEBULA_G_1=Зелений туманности 1
+option.NEBULA_B_1=Синій туманности 1
+option.NEBULA_R_2=Червоний туманности 2
+option.NEBULA_G_2=Зелений туманности 2
+option.NEBULA_B_2=Синій туманности 2
+option.NEBULA_R_3=Червоний туманности 2
+option.NEBULA_G_3=Зелений туманности 3
+option.NEBULA_B_3=Синій туманности 3
