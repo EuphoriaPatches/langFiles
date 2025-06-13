@@ -1164,6 +1164,8 @@ screen.RAIN_SETTINGS=Rain Settings
 screen.NIGHT_DESATURATION_SETTINGS=Darkness Desaturation
 screen.MOON_PHASED_DESATURATION_SETTINGS=Moon Phased Night Desaturation
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Adjusts the amount of desaturation based on the current phase of the moon.
+screen.NIGHT_NEBULA_SETTINGS=Night Nebula
+screen.NIGHT_NEBULA_COLOR_SETTINGS=Color Settings
 
 screen.WORLD=World
 screen.WORLD.comment=Settings that relate to the world.
@@ -2385,3 +2387,26 @@ value.END_SUN_ANGLE.-30=-30
 value.END_SUN_ANGLE.-40=-40
 value.END_SUN_ANGLE.-50=-50
 value.END_SUN_ANGLE.-60=-60
+
+option.PIXELATED_NEBULA=Pixelated Nebula
+value.PIXELATED_NEBULA.0=OFF
+option.NEBULA_ZOOM_LEVEL=Zoom Level
+option.NEBULA_ZOOM_LEVEL.comment=Change how zoomed in the nebula is in the sky.
+option.NEBULA_AMOUNT=Amount
+option.NEBULA_AMOUNT.comment=Change how much the nebulae cover the sky.
+option.NEBULA_PATTERN_WARP=Distortion
+option.NEBULA_PATTERN_WARP.comment=Change how distorted the nebulae are.
+value.NEBULA_PATTERN_WARP.0=OFF
+option.NEBULA_HORIZON_STRENGTH=Horizon Visibility
+option.NEBULA_HORIZON_STRENGTH.comment=Change how much the nebulae are visible at the horizon.
+value.NEBULA_HORIZON_STRENGTH.10=Default
+
+option.NEBULA_R_1=Nebula 1 - Red
+option.NEBULA_G_1=Nebula 1 - Green
+option.NEBULA_B_1=Nebula 1 - Blue
+option.NEBULA_R_2=Nebula 2 - Red
+option.NEBULA_G_2=Nebula 2 - Green
+option.NEBULA_B_2=Nebula 2 - Blue
+option.NEBULA_R_3=Nebula 3 - Red
+option.NEBULA_G_3=Nebula 3 - Green
+option.NEBULA_B_3=Nebula 3 - Blue
