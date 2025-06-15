@@ -109,6 +109,10 @@ option.info21=Частые вопросы
 value.info21.0=
 option.info21.comment=Ответы на частые вопросы: §d§l§neuphoriapatches.com/faq
 
+option.info22=§dДополнительные настройки при прокрутке
+value.info22.0=
+option.info22.comment=При больших размерах интерфейса некоторые настройки могут быть скрыты — прокрутите вниз, чтобы увидеть их.
+
 #Style
 option.SHADER_STYLE=Визуальный стиль
 option.SHADER_STYLE.comment=Определяет базовый визуальный стиль. §bReimagined§r: сохраняет уникальные элементы Minecraft. §dUnbound§r: переработанный стиль с элементами фэнтези. §e[*]§r Затрагиваемые настройки: стиль воды, облаков, солнца и луны, угол солнца и луны, стиль свечения руд.
@@ -1157,11 +1161,14 @@ screen.END_STAR=Звёзды Энда
 screen.END_STAR.comment=Настройки звёзд Энда.
 screen.STAR_COLORS_END=Цвета звёзд Энда
 screen.STARS_OVERWORLD=Звёзды
+screen.SHOOTING_STARS_SETTINGS=Падающие звёзды
 screen.STAR_COLORS_OW=Цвета звёзд
 screen.RAIN_SETTINGS=Настройки дождя
 screen.NIGHT_DESATURATION_SETTINGS=Обесцвечивание темноты
 screen.MOON_PHASED_DESATURATION_SETTINGS=Фазовое обесцвечивание
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Интенсивность обесцвечивания в зависимости от фазы луны.
+screen.NIGHT_NEBULA_SETTINGS=Ночные туманности
+screen.NIGHT_NEBULA_COLOR_SETTINGS=Настройки цвета
 
 screen.WORLD=Мир
 screen.WORLD.comment=Настройки игрового мира.
@@ -1536,7 +1543,7 @@ value.TWINKLING_STARS.20=2.0
 option.STAR_SIZE=Размер звёзд
 option.STAR_SIZE.comment=Изменяет видимый размер звёзд.
 
-option.SITUATIONAL_ORES=Ситуационные руды
+option.SITUATIONAL_ORES=Условное свечение руд
 option.SITUATIONAL_ORES.comment=Руды светятся только в пещерах и ночью. §e[*]§r Требует включения «Свечения руд».
 
 option.GLOWING_RAW_BLOCKS=Свечение необработанных блоков
@@ -1938,6 +1945,8 @@ option.ATLAS_ROTATION.comment=:)
 
 option.NETHER_NOISE=Шум неба Незера
 option.NETHER_NOISE.comment=Добавляет визуальный шум к небу над крышей Незера.
+value.NETHER_NOISE.0=Нет
+value.NETHER_NOISE.1=Да
 
 option.MCBL_MAIN_DEFINE=Цветное освещение Euphoria
 option.MCBL_MAIN_DEFINE.comment=Включает многоцветное блоковое освещение. Режим «РЦО + экранное пространство» сочетает метод с «Расширенным цветным освещением». §e[*]§r Работает только на 1.16.5+ или с Angelica.
@@ -2273,6 +2282,19 @@ value.STAR_COLOR_VARIATION_END.0.0=Нет
 option.CELESTIAL_BOTH_HEMISPHERES=Полное небо
 option.CELESTIAL_BOTH_HEMISPHERES.comment=Отображает небесные объекты (звёзды, солнце, луну, туманности) по всему небу, создавая более глубокий эффект небосвода.
 
+option.SHOOTING_STARS=Падающие звёзды
+option.SHOOTING_STARS_SIZE=Размер
+option.SHOOTING_STARS_SIZE.comment=Размер падающих звёзд. Чем выше значение, тем крупнее звёзды.
+option.SHOOTING_STARS_SPEED=Скорость
+option.SHOOTING_STARS_CHANCE=Частота
+option.SHOOTING_STARS_CHANCE.comment=Шанс появления звёзд — чем выше значение, тем чаще они появляются.
+option.SHOOTING_STARS_COUNT=Количество
+option.SHOOTING_STARS_COUNT.comment=Сколько падающих звёзд могут одновременно отображаться на небе.
+option.SHOOTING_STARS_LINE_THICKNESS=Толщина хвоста
+option.SHOOTING_STARS_LINE_THICKNESS.comment=Толщина хвоста падающей звезды.
+option.SHOOTING_STARS_TRAIL_LENGTH=Длина хвоста
+option.SHOOTING_STARS_TRAIL_LENGTH.comment=Длина хвоста падающей звезды.
+
 option.SITUATIONAL_GLOWING_TRIMS=Условное свечение отделки
 option.SITUATIONAL_GLOWING_TRIMS.comment=Отделка брони светится только в пещерах и ночью. §e[*]§r Требуется включить «Свечение отделки брони».
 
@@ -2350,3 +2372,44 @@ option.ROUGHNESS_MULTIPLIER.comment=Настройка шероховатост�
 
 option.SHADOW_SATURATION=Насыщенность теней
 option.SHADOW_SATURATION.comment=Настройка насыщенности теней и световых лучей. §e[*]§r Работает при включении «Теней в реальном времени».
+
+option.SMOKE_PARTICLE_OPACITY=Непрозрачность частиц дыма
+
+option.END_SUN_ANGLE=Угол солнца в Энде
+option.END_SUN_ANGLE.comment=Угол солнца и луны относительно мира в зените (в полдень).
+value.END_SUN_ANGLE.60=60
+value.END_SUN_ANGLE.50=50
+value.END_SUN_ANGLE.40=40
+value.END_SUN_ANGLE.30=30
+value.END_SUN_ANGLE.20=20
+value.END_SUN_ANGLE.10=10
+value.END_SUN_ANGLE.0=0 §r(§bПо умолчанию§r)
+value.END_SUN_ANGLE.-10=-10
+value.END_SUN_ANGLE.-20=-20
+value.END_SUN_ANGLE.-30=-30
+value.END_SUN_ANGLE.-40=-40
+value.END_SUN_ANGLE.-50=-50
+value.END_SUN_ANGLE.-60=-60
+
+option.PIXELATED_NEBULA=Пиксельная туманность
+value.PIXELATED_NEBULA.0=Нет
+option.NEBULA_ZOOM_LEVEL=Уровень масштаба
+option.NEBULA_ZOOM_LEVEL.comment=Увеличение туманности на небе.
+option.NEBULA_AMOUNT=Плотность
+option.NEBULA_AMOUNT.comment=Покрытие неба туманностями.
+option.NEBULA_PATTERN_WARP=Завихрения
+option.NEBULA_PATTERN_WARP.comment=Интенсивность искажений туманностей.
+value.NEBULA_PATTERN_WARP.0=Нет
+option.NEBULA_HORIZON_STRENGTH=Видимость у горизонта
+option.NEBULA_HORIZON_STRENGTH.comment=Видимость туманностей у линии горизонта.
+value.NEBULA_HORIZON_STRENGTH.10=По умолчанию
+
+option.NEBULA_R_1=Красный туманности 1
+option.NEBULA_G_1=Зелёный туманности 1
+option.NEBULA_B_1=Синий туманности 1
+option.NEBULA_R_2=Красный туманности 2
+option.NEBULA_G_2=Зелёный туманности 2
+option.NEBULA_B_2=Синий туманности 2
+option.NEBULA_R_3=Красный туманности 3
+option.NEBULA_G_3=Зелёный туманности 3
+option.NEBULA_B_3=Синий туманности 3
