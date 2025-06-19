@@ -31,7 +31,7 @@
     "installerStep5": "Click on install and launch the game, Complementary Shaders + Euphoria Patches will now appear in your shaderpacks folder",
 
     "windowsInstallerButton": "Windows Installer",
-    "javaInstallerButton": "Java JAR",
+    "javaInstallerButton": "Universal JAR",
     "complementaryInstallerButton": "Download Installer",
     "complementaryWebsiteButton": "Visit Complementary Website"
 }
