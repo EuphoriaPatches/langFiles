@@ -31,7 +31,7 @@
     "installerStep5": "Натисніть установити і запустіть гру, тоді файл «Complementary Shaders + Euphoria Patches» повинен з'явитися у теці shaderpacks",
 
     "windowsInstallerButton": "Установлювач Windows",
-    "javaInstallerButton": "Java JAR",
+    "javaInstallerButton": "Універсальний JAR",
     "complementaryInstallerButton": "Завантажити установлювач",
     "complementaryWebsiteButton": "Відвідати сайт Complementary"
 }
