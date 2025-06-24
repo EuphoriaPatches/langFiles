@@ -363,16 +363,19 @@ option.CAVE_FOG=Niebla de Cueva
 option.CAVE_FOG.comment=Habilita niebla adicional en áreas subterráneas profundas (cuevas profundas, etc).
 
 option.LIGHTSHAFT_BEHAVIOUR=Modo de Eje de Luz (shaft)
-option.LIGHTSHAFT_BEHAVIOUR.comment=Determines the behaviour of light shafts. §a[+]§r Scene Aware Light Shafts automatically transition between regular and extreme modes to provide the best results. §c[-]§r Extreme mode is not recommended for general gameplay, and it can severely impact performance.
+option.LIGHTSHAFT_BEHAVIOUR.comment=Determina el comportamiento de los rayos de luz. §a[+]§r El modo Sensible a la Escena cambian automáticamente los rayos de luz entre los modos normal y extremo para proporcionar los mejores resultados. §c[-]§r El modo extremo no se recomienda para el juego en general y puede afectar gravemente el rendimiento.
+Determines the behaviour of light shafts. §a[+]§r Scene Aware Light Shafts automatically transition between regular and extreme modes to provide the best results. §c[-]§r Extreme mode is not recommended for general gameplay, and it can severely impact performance.
 value.LIGHTSHAFT_BEHAVIOUR.0=§cDESACTIVADO
-value.LIGHTSHAFT_BEHAVIOUR.1=Scene Aware §a[+]
-value.LIGHTSHAFT_BEHAVIOUR.2=Regular
-value.LIGHTSHAFT_BEHAVIOUR.3=Extreme §c[-]
+value.LIGHTSHAFT_BEHAVIOUR.1=Sensible a la Escena §a[+]
+value.LIGHTSHAFT_BEHAVIOUR.2=Normal
+value.LIGHTSHAFT_BEHAVIOUR.3=Extremo §c[-]
 
-option.LIGHTSHAFT_SMOKE=Light Shaft Smoke
-option.LIGHTSHAFT_SMOKE.comment=Adds volumetric smoke to the light shafts. §c[-]§r This effect can impact performance.
+option.LIGHTSHAFT_SMOKE=Humo del eje de luz
+Light Shaft Smoke
+option.LIGHTSHAFT_SMOKE.comment=Añade humo volumétrico a los ejes de luz. §c[-]§r Este ajuste puede afectar al rendimiento.
 
-option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Special Pale Garden Shafts
+option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Ejes especiales de jardín pálido
+Special Pale Garden Shafts
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Makes light shafts look extra spicy in the "Pale Garden" biome.
 
 option.LIGHTSHAFT_DAY_I=Light Shaft Day Multiplier
