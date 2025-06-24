@@ -364,7 +364,6 @@ option.CAVE_FOG.comment=Habilita niebla adicional en áreas subterráneas profun
 
 option.LIGHTSHAFT_BEHAVIOUR=Modo de Eje de Luz (shaft)
 option.LIGHTSHAFT_BEHAVIOUR.comment=Determina el comportamiento de los rayos de luz. §a[+]§r El modo Sensible a la Escena cambian automáticamente los rayos de luz entre los modos normal y extremo para proporcionar los mejores resultados. §c[-]§r El modo extremo no se recomienda para el juego en general y puede afectar gravemente el rendimiento.
-Determines the behaviour of light shafts. §a[+]§r Scene Aware Light Shafts automatically transition between regular and extreme modes to provide the best results. §c[-]§r Extreme mode is not recommended for general gameplay, and it can severely impact performance.
 value.LIGHTSHAFT_BEHAVIOUR.0=§cDESACTIVADO
 value.LIGHTSHAFT_BEHAVIOUR.1=Sensible a la Escena §a[+]
 value.LIGHTSHAFT_BEHAVIOUR.2=Normal
