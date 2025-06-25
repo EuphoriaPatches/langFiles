@@ -1215,7 +1215,7 @@ screen.BLOCKLIGHT=Blocklight Settings
 screen.BLOCKLIGHT.comment=Settings that relate to blocklight color.
 screen.COLORED_LIGHT=Colored Lighting
 screen.SSBL_SETTINGS=Screenspace Colored Blocklight
-screen.ACT_SETTINGS=Advanced Colored Lighting
+screen.ACT_SETTINGS=Advanced Colored Tracing
 screen.LIGHTMAP_CURVES_SETTINGS=Lightmap Curves
 screen.OVERLAY_NOISE=Overlay Noise
 screen.MOSS_NOISE_SETTINGS=Moss Noise Settings
@@ -1712,7 +1712,7 @@ option.LAVA_NOISE_AMOUNT=Lava Noise Amount
 option.LAVA_NOISE_AMOUNT.comment=Change the amount of noise.
 
 option.LAVA_EDGE_EFFECT=Lava Edge Effect
-option.LAVA_EDGE_EFFECT.comment=Adds an edge to lava when it touches other blocks. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings.
+option.LAVA_EDGE_EFFECT.comment=Adds an edge to lava when it touches other blocks. §e[*]§r This feature only works if Advanced Colored Tracing is enabled in Performance Settings.
 value.LAVA_EDGE_EFFECT.0=OFF
 value.LAVA_EDGE_EFFECT.1=ON - Bright
 value.LAVA_EDGE_EFFECT.2=ON - Dark
@@ -1961,7 +1961,7 @@ value.NETHER_NOISE.0=OFF
 value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria Colored Lighting
-option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACT + Screen-Space to use the screen-space system alongside Advanced Colored Lighting. §e[*]§rOnly works on 1.16.5 and above or on Angelica.
+option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACT + Screen-Space to use the screen-space system alongside Advanced Colored Tracing. §e[*]§rOnly works on 1.16.5 and above or on Angelica.
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=Screen-Space
 value.MCBL_MAIN_DEFINE.2=ACT + Screen-Space
@@ -2190,7 +2190,7 @@ option.COMP_WATER_TWEAKS=Complementary Water Tweaks
 option.COMP_WATER_TWEAKS.comment=Color tweaks to water done by the Shaderpack
 
 option.CAVE_SMOKE=Cave Smoke
-option.CAVE_SMOKE.comment=Adds a smoke effect to the volumetric blocklight fog when in a cave. §c[-]§r This effect can impact performance. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings.
+option.CAVE_SMOKE.comment=Adds a smoke effect to the volumetric blocklight fog when in a cave. §c[-]§r This effect can impact performance. §e[*]§r This feature only works if Advanced Colored Tracing is enabled in Performance Settings.
 
 option.WAVING_SUGAR_CANE=Waving Sugar Cane
 
