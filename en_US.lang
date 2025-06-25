@@ -334,7 +334,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 Chunks §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunks§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=World-Space Reflections §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=Calculates reflections in world-space rather than screen-space. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §e[*]§r The maximum distance of this effect depends on the Advanced Color Tracing distance. §c[-]§r This effect can severely impact performance especially with higher Advanced Color Tracing distances.
+option.WORLD_SPACE_REFLECTIONS.comment=Calculates reflections in world-space rather than screen-space. §c[-]§r Likely breaks with modded blocks. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §e[*]§r The maximum distance of this effect depends on the Advanced Color Tracing distance. §c[-]§r This effect can severely impact performance especially with higher Advanced Color Tracing distances.
 value.WORLD_SPACE_REFLECTIONS.-1=§aOFF
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oON
 
