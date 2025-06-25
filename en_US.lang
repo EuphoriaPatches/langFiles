@@ -198,13 +198,13 @@ screen.NETHER_LIGHT_MULTS=The Nether Dimension
 screen.END_LIGHT_MULTS=The End Dimension
 
 screen.BLOCKLIGHT_COLOR_SETTINGS=Blocklight Color §e[*]§r
-screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Settings to adjust the color emitted from light source blocks. §e[*]§r These color settings won't affect most lights if the Advanced Colored Lighting setting is enabled, except for the Blocklight Intensity slider.
+screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Settings to adjust the color emitted from light source blocks. §e[*]§r These color settings won't affect most lights if the Advanced Color Tracing setting is enabled, except for the Blocklight Intensity slider.
 
 screen.MOON_PHASE_INF_SETTINGS=Moon Phase Influence
 screen.MOON_PHASE_INF_SETTINGS.comment=Settings to determine how different moon phases affect the night lighting.
 
-screen.ACL_FEATURES_SETTINGS=ACL Exclusive Features §e[*]§r
-screen.ACL_FEATURES_SETTINGS.comment=Settings that are about features exclusive to Advanced Colored Lighting. §e[*]§r These features only work if Advanced Colored Lighting is enabled in Performance Settings and your system supports it.
+screen.ACT_FEATURES_SETTINGS=ACT Exclusive Features §e[*]§r
+screen.ACT_FEATURES_SETTINGS.comment=Settings that are about features exclusive to Advanced Color Tracing. §e[*]§r These features only work if Advanced Color Tracing is on in Performance Settings and your system supports it.
 
 screen.PIXELATED_LIGHTING_SETTINGS=Pixelated Lighting
 screen.PIXELATED_LIGHTING_SETTINGS.comment=Settings to make certain lighting effects pixelated.
@@ -246,10 +246,9 @@ value.WATER_REFLECT_QUALITY.1=§ePotato
 value.WATER_REFLECT_QUALITY.2=§cMedium
 
 option.BLOCK_REFLECT_QUALITY=Block Reflection Quality §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eMedium§r: Sun/moon highlights + specular reflections. §aLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
+option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
 value.BLOCK_REFLECT_QUALITY.0=§aOFF
 value.BLOCK_REFLECT_QUALITY.1=§eLow
-value.BLOCK_REFLECT_QUALITY.2=§cMedium
 value.BLOCK_REFLECT_QUALITY.3=§cHigh
 
 option.SHADOW_QUALITY=Real-Time Shadows
@@ -287,7 +286,7 @@ value.shadowDistance.512.0=§4§l32 Chunks
 value.shadowDistance.768.0=§4§l§n§o48 Chunks
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 Chunks§r§4§k-
 
-option.ENTITY_SHADOWS_DEFINE=Entity Shadows
+option.ENTITY_SHADOWS_DEFINE=Entity Shadows §c[-]§r
 option.ENTITY_SHADOWS_DEFINE.comment=Enables the ability for entities and block entities to cast shadows. §c[-]§r Entity Shadows impact performance way more than expected, costing more than 50% of your fps in some cases.
 value.ENTITY_SHADOWS_DEFINE.-1=§aOFF
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oON§r§4§k- §r§c[-]
@@ -323,8 +322,8 @@ value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
-option.COLORED_LIGHTING=Advanced Colored Lighting §e[*]§r
-option.COLORED_LIGHTING.comment=Complementary Shaders Feature. Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r This system also enables some other features which you can individually enable/disable in the "Other" -> "ACL Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each increment can cost more than twice the performance of the previous tier.
+option.COLORED_LIGHTING=Advanced Color Tracing §e[*]§r
+option.COLORED_LIGHTING.comment=Complementary Shaders Feature. Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r The Advanced Color Tracing system also enables some other features which you can individually enable/disable in the "Other" -> "ACT Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each increment can cost more than twice the performance of the previous tier.
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§c4 Chunks
 value.COLORED_LIGHTING.192=§c6 Chunks
@@ -333,6 +332,16 @@ value.COLORED_LIGHTING.384=§4§l12 Chunks
 value.COLORED_LIGHTING.512=§4§l§n§o16 Chunks
 value.COLORED_LIGHTING.768=§4§l§n§o24 Chunks §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunks§r§4§k- §r§c[-]
+
+option.WORLD_SPACE_REFLECTIONS=World-Space Reflections §e[*]§r
+option.WORLD_SPACE_REFLECTIONS.comment=Calculates reflections in world-space rather than screen-space. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §e[*]§r The maximum distance of this effect depends on the Advanced Color Tracing distance. §c[-]§r This effect can severely impact performance especially with higher Advanced Color Tracing distances.
+value.WORLD_SPACE_REFLECTIONS.-1=§aOFF
+value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oON
+
+option.WORLD_SPACE_REF_MODE=WSR Mode §e[*]§r
+option.WORLD_SPACE_REF_MODE.comment=Determines the operation mode of world-space reflections. §e[*]§r The "WSR Only" mode is good for eliminating all screen-space reflection artifacts as it only shows the world-space reflections, but the "WSR + SSR" mode is better for getting more total detail in the reflections as screen-space reflections have access to all the details that are on the screen without being limited to blocks or a set distance.
+value.WORLD_SPACE_REF_MODE.1=WSR Only
+value.WORLD_SPACE_REF_MODE.2=WSR + SSR
 
 option.SSAO_I=Edge Shadow Intensity (SSAO)
 option.SSAO_I.comment=Determines the strength of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. §e[*]§r This setting won't work if SSAO is disabled in "Performance Settings".
@@ -979,6 +988,12 @@ option.WAVING_RAIN.comment=Adds movement to falling rain and snow textures to ma
 option.SPECIAL_PORTAL_EFFECTS=Special Portal Effects
 option.SPECIAL_PORTAL_EFFECTS.comment=Adds special animations and emission to Nether Portals, End Portals, and End Gateways.
 
+option.REFLECTION_RES_DIVIDE=Half Resolution Reflections
+option.REFLECTION_RES_DIVIDE.comment=Makes PBR reflections on blocks (and the world-space reflections if you have that setting enabled) render in half resolution to gain performance.
+value.REFLECTION_RES_DIVIDE.1=§cOFF
+value.REFLECTION_RES_DIVIDE.2=ON
+
+
 option.WORLD_OUTLINE=World Outline
 option.WORLD_OUTLINE.comment=Adds bright outlines around blocks. §c[-]§r This effect can impact performance.
 
@@ -1043,22 +1058,22 @@ option.MOON_PHASE_DARK=Dark Moon Intensity
 option.MOON_PHASE_DARK.comment=Adjusts the moon phase influence during New Moon (darkest phase).
 
 option.CONNECTED_GLASS_EFFECT=Connected Glass
-option.CONNECTED_GLASS_EFFECT.comment=Makes all types of glass connect to each other. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings and your system supports it. §e[*]§r This feature will be automatically disable itself if the "Continuity" mod is installed.
+option.CONNECTED_GLASS_EFFECT.comment=Makes all types of glass connect to each other. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §e[*]§r This feature will be automatically disable itself if the "Continuity" mod is installed.
 
 option.PORTAL_EDGE_EFFECT=Glowing Portal Edges
-option.PORTAL_EDGE_EFFECT.comment=Adds an emissive border effect to end and nether portals. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings and your system supports it.
+option.PORTAL_EDGE_EFFECT.comment=Adds an emissive border effect to end and nether portals. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it.
 
 option.PUDDLE_VOXELIZATION=Fix Puddles Under Glass
-option.PUDDLE_VOXELIZATION.comment=Prevents rain puddles from forming in closed areas with glass roofs when the Rain Puddles setting is enabled. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings and your system supports it.
+option.PUDDLE_VOXELIZATION.comment=Prevents rain puddles from forming in closed areas with glass roofs when the Rain Puddles setting is enabled. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it.
 
 option.COLORED_CANDLE_LIGHT=Colored Candle Lighting
 option.COLORED_CANDLE_LIGHT.comment=Makes lights cast by candles to be the same color as their bases. §e[*]§r The desaturated candle color variants will continue to use the usual fire color.
 
 option.COLORED_LIGHT_SATURATION=Colored Lighting Saturation
-option.COLORED_LIGHT_SATURATION.comment=Adjusts how saturated the colors produced from Advanced Colored Lighting will be. §e[*]§r It's not recommended to change this value, as the visuals are designed to look the most balanced with the default saturation.
+option.COLORED_LIGHT_SATURATION.comment=Adjusts how saturated the colors produced from Advanced Color Tracing will be. §e[*]§r It's not recommended to change this value, as the visuals are designed to look the most balanced with the default saturation.
 
 option.COLORED_LIGHT_FOG=Colored Light Fog
-option.COLORED_LIGHT_FOG.comment=Adds volumetric blocklight fog to the scene, most visible during the night or underground. §e[*]§r This feature only works if Advanced Colored Lighting is enabled in Performance Settings and your system supports it. §c[-]§r This effect can severely impact performance.
+option.COLORED_LIGHT_FOG.comment=Adds volumetric blocklight fog to the scene, most visible during the night or underground. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §c[-]§r This effect can severely impact performance.
 
 option.COLORED_LIGHT_FOG_I=Light Fog Intensity
 option.COLORED_LIGHT_FOG_I.comment=Determines the brightness of the Colored Light Fog.
@@ -1200,7 +1215,7 @@ screen.BLOCKLIGHT=Blocklight Settings
 screen.BLOCKLIGHT.comment=Settings that relate to blocklight color.
 screen.COLORED_LIGHT=Colored Lighting
 screen.SSBL_SETTINGS=Screenspace Colored Blocklight
-screen.ACL_SETTINGS=Advanced Colored Lighting
+screen.ACT_SETTINGS=Advanced Colored Lighting
 screen.LIGHTMAP_CURVES_SETTINGS=Lightmap Curves
 screen.OVERLAY_NOISE=Overlay Noise
 screen.MOSS_NOISE_SETTINGS=Moss Noise Settings
@@ -1946,10 +1961,10 @@ value.NETHER_NOISE.0=OFF
 value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria Colored Lighting
-option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACL + Screen-Space to use the screen-space system alongside Advanced Colored Lighting. §e[*]§rOnly works on 1.16.5 and above or on Angelica.
+option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACT + Screen-Space to use the screen-space system alongside Advanced Colored Lighting. §e[*]§rOnly works on 1.16.5 and above or on Angelica.
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=Screen-Space
-value.MCBL_MAIN_DEFINE.2=ACL + Screen-Space
+value.MCBL_MAIN_DEFINE.2=ACT + Screen-Space
 
 option.MCBL_INFLUENCE=Multi-Colored Blocklight Influence
 option.MCBL_INFLUENCE.comment=Controls how much the multi-colored blocklight affects the default blocklight color.
@@ -2295,7 +2310,7 @@ option.SHOOTING_STARS_TRAIL_LENGTH.comment=Change the length of the shooting sta
 option.SITUATIONAL_GLOWING_TRIMS=Situational Glowing Trims
 option.SITUATIONAL_GLOWING_TRIMS.comment=Trims will only glow in caves and at night. §e[*]§r Glowing Trims must be enabled for this to work.
 
-option.DO_IPBR_LIGHTS=ACL IPBR Lights
+option.DO_IPBR_LIGHTS=ACT IPBR Lights
 option.DO_IPBR_LIGHTS.comment=This option makes the non-light sources in the game emmit light if it is emissive via the shader. (Recomended: On)
 
 option.NIGHT_DESATURATION=Darkness Desaturation
@@ -2355,9 +2370,9 @@ option.END_CRYSTAL_EMISSION=End Crystal Emission
 option.CLEAR_WATER_SPOTS=Clear Water Spots
 option.CLEAR_WATER_SPOTS.comment=Adds clear spots to the water to add some variety. §e[*]§r Requires a type of wavy waves, either Unbound or Reimagined + Waves.
 
-option.ACL_ORE_INTENSITY=ACL Ore Intensity
-option.ACL_ORE_INTENSITY.comment=Change the ACL light intensity of ores.
-value.ACL_ORE_INTENSITY.0.0=OFF
+option.ACT_ORE_INTENSITY=ACT Ore Intensity
+option.ACT_ORE_INTENSITY.comment=Change the ACT light intensity of ores.
+value.ACT_ORE_INTENSITY.0.0=OFF
 
 option.ENTITIES_ARE_LIGHT=Entities Are Light
 
