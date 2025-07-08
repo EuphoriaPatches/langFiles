@@ -36,7 +36,7 @@ option.info3.comment=«Профіль» змінює налаштування у
 
 option.info4=Що таке підтримка ПР
 value.info4.0=
-option.info4.comment=Підтримка пакетів ресурсів визначає, як пакет шейдерів обробляє різні блоки. Наприклад, §bIntegratedPBR+§r розглядає золоті блоки як відбиваючі речі, тоді як §elabPBR§r або §eseuspbr§r вимагають встановлення пакета ресурсів, щоб повідомити це шейдеру. Якщо встановити «підтримка ПР» на §aБазова§r, жоден блок не буде «особливим», окрім кількох винятків, таких як вода.
+option.info4.comment=Підтримка пакетів ресурсів визначає, як пакет шейдерів обробляє різні блоки. Наприклад, §bIntegratedPBR+§r розглядає золоті блоки як відбивальні речі, тоді як §elabPBR§r або §eseuspbr§r вимагають встановлення пакета ресурсів, щоб повідомити це шейдеру. Якщо встановити «підтримка ПР» на §aБазова§r, жоден блок не буде «особливим», окрім кількох винятків, таких як вода.
 
 option.info5=Як виправити проблеми з модом
 value.info5.0=
@@ -961,7 +961,7 @@ option.NO_WAVING_INDOORS=Коливання в кімнатах
 option.NO_WAVING_INDOORS.comment=Запобігає коливанню блоків у закритих приміщеннях за допомогою сонячного світла. §c[-]§r Увімкнення цього може викликати проблеми з деякими пакетами ресурсів або модами.
 
 option.WAVING_I_RAIN_MULT=Множник коливання дощу
-option.WAVING_I_RAIN_MULT.comment=Збільшує швидкість та інтенсивність коливання під час дощу. §c[-]§r Занадто велика інтенсивність коливання може призвести до того, що коливаючі блоки затискаються в інші блоки та виходять з них. §c[-]§r Це може вплинути на продуктивність, якщо його значення перевищує 100.
+option.WAVING_I_RAIN_MULT.comment=Збільшує швидкість та інтенсивність коливання під час дощу. §c[-]§r Занадто велика інтенсивність коливання може призвести до того, що коливальні блоки затискаються в інші блоки та виходять з них. §c[-]§r Це може вплинути на продуктивність, якщо його значення перевищує 100.
 value.WAVING_I.125=125 §c[-]
 value.WAVING_I.150=150 §c[-]
 value.WAVING_I.175=175 §c[-]
@@ -1173,7 +1173,7 @@ screen.END_STAR=Налаштування зірок Енду
 screen.END_STAR.comment=Налаштування, які стосуються зірок Енду.
 screen.STAR_COLORS_END=Колір зірок Енду
 screen.STARS_OVERWORLD=Зірки
-screen.SHOOTING_STARS_SETTINGS=Падаючі зірки
+screen.SHOOTING_STARS_SETTINGS=Падучі зірки
 screen.STAR_COLORS_OW=Колір зірок
 screen.RAIN_SETTINGS=Налаштування дощу
 screen.NIGHT_DESATURATION_SETTINGS=Знебарвлення темряви
@@ -1231,7 +1231,7 @@ screen.IPBR_REDSTONE=Редстоун Integrated PBR
 screen.IPBR_REDSTONE.comment=Налаштування, які стосуються IntegratedPBR для редстоуну.
 screen.DIRECTIONAL_LIGHTMAP_NORMALS_SETTINGS=Мапи нерівностей світла
 screen.LAVA_SETTINGS=Лава
-screen.LAVA_SETTINGS.comment=Налаштування, які стосуються гарячої палаючої лави.
+screen.LAVA_SETTINGS.comment=Налаштування, які стосуються гарячої розпеченої лави.
 screen.END_ROD_SETTINGS=Стрижень Енду
 screen.END_ROD_SETTINGS.comment=Налаштування, які стосуються стрижня Енду.
 screen.FOLIAGE_SETTINGS=Рослинність
@@ -1836,7 +1836,7 @@ option.AGX_SATURATION=Насиченість AgX
 option.COLOR_MULTIPLIER_COMPARISON=Порівняння множників кольорів
 option.COLOR_MULTIPLIER_COMPARISON.comment=Це дає змогу легко порівняти значення множника кольору освітлення та атмосфери з усталеними значеннями пакета шейдерів.
 
-option.REFLECTIVE_WORLD=Світловідбиваючий світ
+option.REFLECTIVE_WORLD=Світловідбивальний світ
 option.REFLECTIVE_WORLD.comment=Весь світ — дзеркало, але ти не можеш побачити себе. RIP.
 
 option.WAVE_EVERYTHING=Хвилесвіт
@@ -2294,18 +2294,18 @@ value.STAR_COLOR_VARIATION_END.0.0=ВИМК.
 option.CELESTIAL_BOTH_HEMISPHERES=Повне небо небожителів
 option.CELESTIAL_BOTH_HEMISPHERES.comment=Відображає небесні об’єкти (зірки, сонце, місяць, туманності) по всьому небу, а не над горизонтом, створюючи більш захоплюючий ефект неба.
 
-option.SHOOTING_STARS=Падаючі зірки
+option.SHOOTING_STARS=Падучі зірки
 option.SHOOTING_STARS_SIZE=Розмір
-option.SHOOTING_STARS_SIZE.comment=Змінює розмір падаючих зірок. Чим більше значення, тим більшими будуть падаючі зірки.
+option.SHOOTING_STARS_SIZE.comment=Змінює розмір падучих зірок. Чим більше значення, тим більшими будуть падучі зірки.
 option.SHOOTING_STARS_SPEED=Швидкість
 option.SHOOTING_STARS_CHANCE=Шанс
-option.SHOOTING_STARS_CHANCE.comment=Імовірність появи падаючої зірки — чим вище значення, тим частіше з'являтимуться падаючі зірки.
+option.SHOOTING_STARS_CHANCE.comment=Імовірність появи падучої зірки — чим вище значення, тим частіше з'являтимуться падучі зірки.
 option.SHOOTING_STARS_COUNT=Сума
-option.SHOOTING_STARS_COUNT.comment=Скільки падаючих зірок з'явиться на небі одночасно.
+option.SHOOTING_STARS_COUNT.comment=Скільки падучих зірок з'явиться на небі одночасно.
 option.SHOOTING_STARS_LINE_THICKNESS=Ширина лінії
-option.SHOOTING_STARS_LINE_THICKNESS.comment=Змінює ширину лінії падаючих зірок.
+option.SHOOTING_STARS_LINE_THICKNESS.comment=Змінює ширину лінії падучих зірок.
 option.SHOOTING_STARS_TRAIL_LENGTH=Довжина лінії
-option.SHOOTING_STARS_TRAIL_LENGTH.comment=Змінює довжину лінії падаючих зірок.
+option.SHOOTING_STARS_TRAIL_LENGTH.comment=Змінює довжину лінії падучих зірок.
 
 option.SITUATIONAL_GLOWING_TRIMS=Ситуативні сяйні орнаменти обладунків
 option.SITUATIONAL_GLOWING_TRIMS.comment=Орнаменти обладунків сяятимуть лише в печерах і вночі. §e[*]§r Сяйні орнаменти обладунків мають бути увімкнені.
@@ -2426,8 +2426,8 @@ option.NEBULA_R_3=Червоний туманности 2
 option.NEBULA_G_3=Зелений туманности 3
 option.NEBULA_B_3=Синій туманности 3
 
-option.SCANLINE_NEW_MONOCHROME=Монохромний колір
-option.SCANLINE_NEW_DIRECTION=Напрямок скануючих ліній
+option.SCANLINE_NEW_MONOCHROME=Однобарвність
+option.SCANLINE_NEW_DIRECTION=Напрямок сканувальних ліній
 value.SCANLINE_NEW_DIRECTION.false=Горизонтальний
 value.SCANLINE_NEW_DIRECTION.true=Вертикальний
 value.PIXELATED_NEBULA.0=ВИМК.
