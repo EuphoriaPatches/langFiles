@@ -2171,9 +2171,6 @@ value.GLITTER_RAIN.2=ON - Always
 option.HAND_BLOCKLIGHT_FLICKERING=Handheld Blocklight Flickering
 value.HAND_BLOCKLIGHT_FLICKERING.0=OFF
 
-option.PIXELATED_HANDHELD_LIGHT=Pixelated Handheld Light
-option.PIXELATED_HANDHELD_LIGHT.comment=Pixelate the handheld light texture.
-
 option.SSS_STRENGTH=Subsurface Scattering
 value.SSS_STRENGTH.0=OFF
 value.SSS_STRENGTH.1=ON
