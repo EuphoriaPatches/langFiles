@@ -2171,9 +2171,6 @@ value.GLITTER_RAIN.2=Завжди
 option.HAND_BLOCKLIGHT_FLICKERING=Мерехтіння світла у руці
 value.HAND_BLOCKLIGHT_FLICKERING.0=ВИМК.
 
-option.PIXELATED_HANDHELD_LIGHT=Піксельне світло у руці
-option.PIXELATED_HANDHELD_LIGHT.comment=Піксельна текстура світла у руці.
-
 option.SSS_STRENGTH=Підповерхневе розсіювання
 value.SSS_STRENGTH.0=ВИМК.
 value.SSS_STRENGTH.1=УВІМК.
