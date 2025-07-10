@@ -1400,7 +1400,7 @@ option.END_SMOKE.comment=О ні, хтось залишив вогонь без 
 option.E_SKY_COLORR=Червоний неба Енду
 option.E_SKY_COLORG=Зелений неба Енду
 option.E_SKY_COLORB=Синій неба Енду
-option.E_SKY_COLORI=Ін
+option.E_SKY_COLORI=Інтенсивність неба Енду
 option.END_SKY_FOG_INFLUENCE=Вплив кольору неба на туман
 option.END_SKY_FOG_INFLUENCE.comment=Визначає, наскільки колір туману біомів модів впливає на кольори неба.
 
@@ -2171,9 +2171,6 @@ value.GLITTER_RAIN.2=Завжди
 option.HAND_BLOCKLIGHT_FLICKERING=Мерехтіння світла у руці
 value.HAND_BLOCKLIGHT_FLICKERING.0=ВИМК.
 
-option.PIXELATED_HANDHELD_LIGHT=Піксельне світло у руці
-option.PIXELATED_HANDHELD_LIGHT.comment=Піксельна текстура світла у руці.
-
 option.SSS_STRENGTH=Підповерхневе розсіювання
 value.SSS_STRENGTH.0=ВИМК.
 value.SSS_STRENGTH.1=УВІМК.
@@ -2404,7 +2401,7 @@ value.END_SUN_ANGLE.-50=-50
 value.END_SUN_ANGLE.-60=-60
 
 option.PIXELATED_NEBULA=Нерівності туманности
-значення.PIXELATED_NEBULA.0=ВИМК.
+value.PIXELATED_NEBULA.0=ВИМК.
 option.NEBULA_ZOOM_LEVEL=Рівень масштабування
 option.NEBULA_ZOOM_LEVEL.comment=Змінити масштаб туманности в небі.
 option.NEBULA_AMOUNT=Кількість
