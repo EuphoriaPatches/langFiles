@@ -323,7 +323,7 @@ value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
-option.COLORED_LIGHTING=高度な色付き照明 (ACL) §e[*]§
+option.COLORED_LIGHTING=高度な色付き照明 (ACT) §e[*]§
 option.COLORED_LIGHTING.comment=Complementary Shadersの機能です。. ボクセル化とFlood Fillライティングを使用してブロック光源に色を追加し. さらに追加でいくつかの光源を追加します。. §e[*]§r この機能はIrisとサポートされているプラットフォームでのみ動作します。. §e[*]§r この設定は「動的な影」が無効の場合、無効になります。. §a[+]§r このシステムは、他の機能を個別に有効/無効にできる「その他」 ->「ACL専用機能」メニューも有効にします。. §c[-]§r この効果の高いチャンク値はパフォーマンスに予想以上の影響を与え、2チャンクごとの増加ごとに前の段階の2倍以上のパフォーマンスコストがかかる場合があります。
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§c4チャンク
@@ -1198,7 +1198,7 @@ screen.BLOCKLIGHT=ブロック光源の設定
 screen.BLOCKLIGHT.comment=ブロック光源の色に関する設定です。
 screen.COLORED_LIGHT=色付き照明
 screen.SSBL_SETTINGS=スクリーンスペースの色付き照明
-screen.ACL_SETTINGS=高度な色付き照明 (ACL)
+screen.ACT_SETTINGS=高度な色付き照明 (ACT)
 screen.LIGHTMAP_CURVES_SETTINGS=ライトマップカーブ
 screen.OVERLAY_NOISE=オーバーレイノイズ
 screen.MOSS_NOISE_SETTINGS=苔のノイズ設定
@@ -1944,10 +1944,10 @@ value.NETHER_NOISE.0=OFF
 value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria色付き照明
-option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. 「ACL + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色付き照明」が適用されます。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。
+option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. 「ACT + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色付き照明」が適用されます。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=スクリーンスペース
-value.MCBL_MAIN_DEFINE.2=ACL + スクリーンスペース
+value.MCBL_MAIN_DEFINE.2=ACT + スクリーンスペース
 
 option.MCBL_INFLUENCE=複数色付きブロック光源の影響
 option.MCBL_INFLUENCE.comment=複数色付きブロック光源が、デフォルトのブロック光源の色にどれだけ影響を与えるかを制御します。
@@ -2293,7 +2293,7 @@ option.SHOOTING_STARS_TRAIL_LENGTH.comment=流れ星の線の長さを変更し�
 option.SITUATIONAL_GLOWING_TRIMS=条件付き発光トリム
 option.SITUATIONAL_GLOWING_TRIMS.comment=トリムは洞窟内や夜間のみ発光します。. §e[*]§r 発光トリムが有効になっている必要があります。
 
-option.DO_IPBR_LIGHTS=ACL IPBR発光
+option.DO_IPBR_LIGHTS=ACT IPBR発光
 option.DO_IPBR_LIGHTS.comment=このオプションを有効にすると、光源ではないブロックでも発光性であれば光を放つようになります。. (推奨: ON)
 
 option.NIGHT_DESATURATION=暗闇での彩度低下
@@ -2353,9 +2353,9 @@ option.END_CRYSTAL_EMISSION=エンドクリスタルの発光
 option.CLEAR_WATER_SPOTS=クリアな水のスポット
 option.CLEAR_WATER_SPOTS.comment=水にクリアなスポットを追加し、多少のバリエーションを追加します。. §e[*]§r 水の波が有効(UnboundまたはReimagined + 波)である必要があります。
 
-option.ACL_ORE_INTENSITY=ACL鉱石の強度
-option.ACL_ORE_INTENSITY.comment=鉱石におけるACLの光の強度を変更します。
-value.ACL_ORE_INTENSITY.0.0=OFF
+option.ACT_ORE_INTENSITY=ACL鉱石の強度
+option.ACT_ORE_INTENSITY.comment=鉱石におけるACLの光の強度を変更します。
+value.ACT_ORE_INTENSITY.0.0=OFF
 
 option.ENTITIES_ARE_LIGHT=光るエンティティ
 

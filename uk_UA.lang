@@ -2427,4 +2427,3 @@ option.SCANLINE_NEW_MONOCHROME=Однобарвність
 option.SCANLINE_NEW_DIRECTION=Напрямок сканувальних ліній
 value.SCANLINE_NEW_DIRECTION.false=Горизонтальний
 value.SCANLINE_NEW_DIRECTION.true=Вертикальний
-value.PIXELATED_NEBULA.0=ВИМК.

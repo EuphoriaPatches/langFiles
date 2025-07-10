@@ -194,13 +194,13 @@ screen.NETHER_LIGHT_MULTS=Wymiar Netheru
 screen.END_LIGHT_MULTS=Wymiar Endu
 
 screen.BLOCKLIGHT_COLOR_SETTINGS=Kolor Źródeł Światła §e[*]§r
-screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Ustawienia dostosowujące kolor emitowany przez bloki będące źródłami światła. §e[*]§r Te ustawienia nie będą miały wpływu na większość bloków, jeśli włączone jest ustawienie Zaawansowane Kolorowe Oświetlenie (ACL).
+screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Ustawienia dostosowujące kolor emitowany przez bloki będące źródłami światła. §e[*]§r Te ustawienia nie będą miały wpływu na większość bloków, jeśli włączone jest ustawienie Zaawansowane Kolorowe Oświetlenie (ACT).
 
 screen.MOON_PHASE_INF_SETTINGS=Wpływ Fazy Księżyca
 screen.MOON_PHASE_INF_SETTINGS.comment=Ustawienia określające wpływ różnych faz księżyca na oświetlenie nocne.
 
-screen.ACL_FEATURES_SETTINGS=Funkcje ACL §e[*]§r
-screen.ACL_FEATURES_SETTINGS.comment=Ustawienia dotyczące funkcji Zaawansowanego Kolorowego Oświetlenia (ACL). §e[*]§r Te funkcje działają tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w Ustawieniach Jakości i twój komputer/shader loader je obsługuje.
+screen.ACL_FEATURES_SETTINGS=Funkcje ACT §e[*]§r
+screen.ACL_FEATURES_SETTINGS.comment=Ustawienia dotyczące funkcji Zaawansowanego Kolorowego Oświetlenia (ACT). §e[*]§r Te funkcje działają tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACT) jest włączone w Ustawieniach Jakości i twój komputer/shader loader je obsługuje.
 
 screen.PIXELATED_LIGHTING_SETTINGS=Zpikselowane Oświetlenie
 screen.PIXELATED_LIGHTING_SETTINGS.comment=Ustawienia powodujące pikselizację niektórych efektów.
@@ -319,8 +319,8 @@ value.ANISOTROPIC_FILTER.4=§ex4
 value.ANISOTROPIC_FILTER.8=§ex8
 value.ANISOTROPIC_FILTER.16=§4§lx16
 
-option.COLORED_LIGHTING=Zaawansowane Kolorowe Oświetlenie (ACL) §e[*]§r
-option.COLORED_LIGHTING.comment=Funkcja z Complementary. Wykorzystuje wokselizację i techologie floodfill, aby dać źródłom światła odpowieni kolor, a także dodaje kilka nowych źródeł świateła. §e[*]§r Ta funkcja działa tylko na Iris i obsługiwanych komputerach. §e[*]§r Aby ta funkcja działała, "Cienie w Czasie Rzeczywistym" muszą być właczone. §a[+]§r To ustawienie włącza również kilka innych funkcji, które można indywidualnie włączyć/wyłączyć w menu "Inne" -> "Funkcje ACL".
+option.COLORED_LIGHTING=Zaawansowane Kolorowe Oświetlenie (ACT) §e[*]§r
+option.COLORED_LIGHTING.comment=Funkcja z Complementary. Wykorzystuje wokselizację i techologie floodfill, aby dać źródłom światła odpowieni kolor, a także dodaje kilka nowych źródeł świateła. §e[*]§r Ta funkcja działa tylko na Iris i obsługiwanych komputerach. §e[*]§r Aby ta funkcja działała, "Cienie w Czasie Rzeczywistym" muszą być właczone. §a[+]§r To ustawienie włącza również kilka innych funkcji, które można indywidualnie włączyć/wyłączyć w menu "Inne" -> "Funkcje ACT".
 value.COLORED_LIGHTING.0=§aWYŁ.
 value.COLORED_LIGHTING.128=§c4 Chunki
 value.COLORED_LIGHTING.192=§c6 Chunków
@@ -1039,22 +1039,22 @@ option.MOON_PHASE_DARK=Natężęnie Księżyca w Nowiu
 option.MOON_PHASE_DARK.comment=Dostosowuje wpływ fazy księżyca podczas nowiu (najciemniejsza faza).
 
 option.CONNECTED_GLASS_EFFECT=Połączone Szkło
-option.CONNECTED_GLASS_EFFECT.comment=Sprawia, że wszystkie rodzaje szkła łączą się ze sobą. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §e[*]§r Ta funkcja zostanie automatycznie wyłączona, jeśli zainstalowany jest mod "Continuity".
+option.CONNECTED_GLASS_EFFECT.comment=Sprawia, że wszystkie rodzaje szkła łączą się ze sobą. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACT) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §e[*]§r Ta funkcja zostanie automatycznie wyłączona, jeśli zainstalowany jest mod "Continuity".
 
 option.PORTAL_EDGE_EFFECT=Świecące Krawędzie Portali
-option.PORTAL_EDGE_EFFECT.comment=Dodaje emisyjny efekt obramowania do portali Endu i Netheru. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
+option.PORTAL_EDGE_EFFECT.comment=Dodaje emisyjny efekt obramowania do portali Endu i Netheru. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACT) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
 
 option.PUDDLE_VOXELIZATION=Napraw Kałuże pod Szkłem
-option.PUDDLE_VOXELIZATION.comment=Zapobiega tworzeniu się kałuż w zamkniętych obszarach ze szklanymi dachami, gdy włączone są kałuże. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
+option.PUDDLE_VOXELIZATION.comment=Zapobiega tworzeniu się kałuż w zamkniętych obszarach ze szklanymi dachami, gdy włączone są kałuże. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACT) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję.
 
 option.COLORED_CANDLE_LIGHT=Kolorowe Świece
 option.COLORED_CANDLE_LIGHT.comment=Sprawia, że światło emitowane przez świece mają ten sam kolor co ich podstawy. §e[*]§r Świece bez kolorowej podstawy nadal będą używać zwykłego koloru ognia.
 
 option.COLORED_LIGHT_SATURATION=Nasycenie Kolorowego Światła
-option.COLORED_LIGHT_SATURATION.comment=Pozwala dostosować nasycenie kolorów Zaawansowanego Kolorowego Oświetlenia (ACL). §e[*]§r Nie zaleca się zmiany tej wartości, ponieważ grafika wygląda na najbardziej zrównoważoną przy domyślnym nasyceniu.
+option.COLORED_LIGHT_SATURATION.comment=Pozwala dostosować nasycenie kolorów Zaawansowanego Kolorowego Oświetlenia (ACT). §e[*]§r Nie zaleca się zmiany tej wartości, ponieważ grafika wygląda na najbardziej zrównoważoną przy domyślnym nasyceniu.
 
 option.COLORED_LIGHT_FOG=Wolumetryczna Mgła Świetlna
-option.COLORED_LIGHT_FOG.comment=Dodaje wolumetryczną mgłę do sceny, najbardziej widoczną w nocy lub pod ziemią. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
+option.COLORED_LIGHT_FOG.comment=Dodaje wolumetryczną mgłę do sceny, najbardziej widoczną w nocy lub pod ziemią. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACT) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
 
 option.COLORED_LIGHT_FOG_I=Natężęnie Mgły Świetlnej
 option.COLORED_LIGHT_FOG_I.comment=Określa jasność kolorowej mgły świetlnej.
@@ -1193,7 +1193,7 @@ screen.BLOCKLIGHT=Ustawienia Źródeł Światła
 screen.BLOCKLIGHT.comment=Ustawienia związane z kolorem żródeł światła
 screen.COLORED_LIGHT=Kolorowe Oświetlenie
 screen.SSBL_SETTINGS=Kolorowe Oświetlenie w Przestrzeni Ekranu (SSBL)
-screen.ACL_SETTINGS=Zaawansowane Kolorowe Oświetlenie
+screen.ACT_SETTINGS=Zaawansowane Kolorowe Oświetlenie
 screen.LIGHTMAP_CURVES_SETTINGS=Krzywe mapy światła
 screen.OVERLAY_NOISE=Powlekane Tekstury
 screen.MOSS_NOISE_SETTINGS=Ustawienia Powłoki Mchu
@@ -1410,13 +1410,13 @@ option.OW_BEAM_B=Słupy Światła - Niebieskość
 option.END_BEAMS=Zorza Ender
 option.END_BEAMS.comment=Ustawienie, które włącza przypominające mgławicę zorze we Endzie.
 option.END_CRYSTAL_VORTEX=Efekty Wiru Endu
-option.END_CRYSTAL_VORTEX.comment=Ustawienie, które włącza wiązki energii eminujące z kryształów endu. §4[***]§r Włącza §cCienie Mobów§r. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w Ustawieniach Jakości i twój komputer/shader loader je obsługuje. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
+option.END_CRYSTAL_VORTEX.comment=Ustawienie, które włącza wiązki energii eminujące z kryształów endu. §4[***]§r Włącza §cCienie Mobów§r. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACT) jest włączone w Ustawieniach Jakości i twój komputer/shader loader je obsługuje. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
 value.END_CRYSTAL_VORTEX.0=WYŁ.
 value.END_CRYSTAL_VORTEX.1=Wir
 value.END_CRYSTAL_VORTEX.2=Wiązki Lecznicze
 value.END_CRYSTAL_VORTEX.3=Oba
 option.DRAGON_DEATH_EFFECT=Efekt Śmierci Smoka Endu
-option.DRAGON_DEATH_EFFECT.comment=Ustawienie, które zastępuje domyslną animacje śmerci smoka efektem wolumetrycznym. §4[***]§r Włącza §cCienie Mobów§r. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACL) jest włączone w Ustawieniach Jakości i twój komputer/shader loader je obsługuje. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
+option.DRAGON_DEATH_EFFECT.comment=Ustawienie, które zastępuje domyslną animacje śmerci smoka efektem wolumetrycznym. §4[***]§r Włącza §cCienie Mobów§r. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACT) jest włączone w Ustawieniach Jakości i twój komputer/shader loader je obsługuje. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
 option.E_BEAMS_AMBIENT_INFLUENCE=Wpływ Kolorów Otoczenia
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=Zorza będą miały kolor otoczenia na poziomie 1.00 i kolor wybrany przez użytkownika na poziomie 0.00. Doesn't apply to Smocze Zorza Ender.
 option.E_BEAM_R=Zorza Ender - Czerwień
@@ -1644,7 +1644,7 @@ value.END_PORTAL_VARIATION.1=Wyciek Oleju
 value.END_PORTAL_VARIATION.3=Pikselowana Salsa
 
 option.END_PORTAL_BEAM=Promienie Portalu Endu
-option.END_PORTAL_BEAM.comment=Sprawia, że portal endu emituje promienie światła dookoła. Podobnie jak w Minecraft Dungeons. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone aby ta funkcja działała. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
+option.END_PORTAL_BEAM.comment=Sprawia, że portal endu emituje promienie światła dookoła. Podobnie jak w Minecraft Dungeons. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACT) musi być włączone aby ta funkcja działała. [§e*§r] Działa tylko na Iris. [§e*§r] nie działa na MacOS.
 
 option.SILHOUETTE=Sylwetka
 option.SILHOUETTE.comment=Po włączeniu sprawia, że bloki odwrócone od słońca stają się czarne, co jest przydatne podczas robienia zrzutów ekranu.
@@ -1690,7 +1690,7 @@ option.LAVA_NOISE_AMOUNT=Ilość Szumu Lawy
 option.LAVA_NOISE_AMOUNT.comment=Kontrolume ilość szumu generowanego przez preset lawy.
 
 option.LAVA_EDGE_EFFECT=Efekt Krawędzi Lawy
-option.LAVA_EDGE_EFFECT.comment=Dodaje krawędź do lawy, gdy jest w kontakcie z innymi blokami. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone aby ta funkcja działała.
+option.LAVA_EDGE_EFFECT.comment=Dodaje krawędź do lawy, gdy jest w kontakcie z innymi blokami. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACT) musi być włączone aby ta funkcja działała.
 value.LAVA_EDGE_EFFECT.0=WYŁ.
 value.LAVA_EDGE_EFFECT.1=WŁ. - Jasna
 value.LAVA_EDGE_EFFECT.2=WŁ. - Ciemna
@@ -1937,10 +1937,10 @@ option.NETHER_NOISE=Szum na Niebie Netheru
 option.NETHER_NOISE.comment=Sprawia, że niebo Netheru jest bardziej interesujące.
 
 option.MCBL_MAIN_DEFINE=Kolorowe Oświetlenie Euphoria
-option.MCBL_MAIN_DEFINE.comment=Włączą wielokolorowe źródła światła. Ustaw na ACL + Przestrzeń Ekranu, aby używać systemu przestrzeni ekranu wraz z Zaawansowanym Kolorowym Oświetleniem (ACL). §e[*]§r Działą tylko na Iris 1.16.5 lub wyżej, albo z modem "Angelica" .
+option.MCBL_MAIN_DEFINE.comment=Włączą wielokolorowe źródła światła. Ustaw na ACT + Przestrzeń Ekranu, aby używać systemu przestrzeni ekranu wraz z Zaawansowanym Kolorowym Oświetleniem (ACT). §e[*]§r Działą tylko na Iris 1.16.5 lub wyżej, albo z modem "Angelica" .
 value.MCBL_MAIN_DEFINE.0=WYŁ.
 value.MCBL_MAIN_DEFINE.1=W Przestrzeni Ekranu
-value.MCBL_MAIN_DEFINE.2=ACL + Przestrzeń Ekranu
+value.MCBL_MAIN_DEFINE.2=ACT + Przestrzeń Ekranu
 
 option.MCBL_INFLUENCE=Wpływ Wielokolorowych Źródeł Światła
 option.MCBL_INFLUENCE.comment=Kontroluje, w jakim stopniu wielokolorowe źródła światła wpłyną na domyślny kolor źródeł światła.
@@ -2165,7 +2165,7 @@ option.COMP_WATER_TWEAKS=Korekty wody
 option.COMP_WATER_TWEAKS.comment=Poprawki kolorów wody wykonane automatycznie przez Shader
 
 option.CAVE_SMOKE=Dym w Jaskiniach
-option.CAVE_SMOKE.comment=Dodaje efekt dymu do wolumetrycznej mgły świetlnej w jaskiniach. §c[-]§r Ten efekt może mieć wpływ na wydajność. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACL) musi być włączone aby ta funkcja działała.
+option.CAVE_SMOKE.comment=Dodaje efekt dymu do wolumetrycznej mgły świetlnej w jaskiniach. §c[-]§r Ten efekt może mieć wpływ na wydajność. §e[*]§r Zaawansowane Kolorowe Oświetlenie (ACT) musi być włączone aby ta funkcja działała.
 
 option.WAVING_SUGAR_CANE=Falująca Trzcina Cukrowa
 
@@ -2272,7 +2272,7 @@ option.CELESTIAL_BOTH_HEMISPHERES.comment=Renderuje obiekty niebieskie (gwiazdy,
 option.SITUATIONAL_GLOWING_TRIMS=Wykończenia Świadome Otoczenia
 option.SITUATIONAL_GLOWING_TRIMS.comment=Wykończenia zbroi będą się świecić tylko w jaskiniach i w nocy. §e[*]§r Świecące Wykończenia Zbroi muszą być włączone, aby ta opcja działała.
 
-option.DO_IPBR_LIGHTS=Światła ACL IPBR
+option.DO_IPBR_LIGHTS=Światła ACT IPBR
 option.DO_IPBR_LIGHTS.comment=Ta opcja sprawia, bloki które nie są źródłami światła, emitują światło za pomocą shadera. (Zalecane: Włączone)
 
 option.NIGHT_DESATURATION=Widzenie Zmierzchowe
@@ -2332,9 +2332,9 @@ option.END_CRYSTAL_EMISSION=Emisja Kryształów Endu
 option.CLEAR_WATER_SPOTS=Obszary Spokojnej Wody
 option.CLEAR_WATER_SPOTS.comment=Dodaje obszary bez fal, aby urozmaicić wygląd wody. §e[*]§r Wymaga rodzaju fal, albo Unbound albo Reimagined + Fale.
 
-option.ACL_ORE_INTENSITY=Intensywność Rud ACL
-option.ACL_ORE_INTENSITY.comment=Zmienia intensywność świecenia rud z Zaawansowanym Kolorowym Oświetleniem (ACL).
-value.ACL_ORE_INTENSITY.0.0=OFF
+option.ACT_ORE_INTENSITY=Intensywność Rud ACT
+option.ACT_ORE_INTENSITY.comment=Zmienia intensywność świecenia rud z Zaawansowanym Kolorowym Oświetleniem (ACT).
+value.ACT_ORE_INTENSITY.0.0=OFF
 
 option.ENTITIES_ARE_LIGHT=Moby się Świecą
 

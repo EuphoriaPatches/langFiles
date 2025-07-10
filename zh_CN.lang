@@ -210,8 +210,8 @@ screen.BLOCKLIGHT_COLOR_SETTINGS.comment=调节光源方块发出光的颜色的
 screen.MOON_PHASE_INF_SETTINGS=月相影响
 screen.MOON_PHASE_INF_SETTINGS.comment=由不同月相影响夜晚照明的设置. 月相: 月亮的阴晴圆缺.
 
-screen.ACL_FEATURES_SETTINGS=高级彩色照明独占特性 §e[*]§r
-screen.ACL_FEATURES_SETTINGS.comment=与 高级彩色照明 相关的独占功能设置. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效.
+screen.ACT_FEATURES_SETTINGS=高级彩色照明独占特性 §e[*]§r
+screen.ACT_FEATURES_SETTINGS.comment=与 高级彩色照明 相关的独占功能设置. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效.
 
 screen.PIXELATED_LIGHTING_SETTINGS=像素化照明
 screen.PIXELATED_LIGHTING_SETTINGS.comment=使特定照明效果像素化的设置.
@@ -1205,7 +1205,7 @@ screen.BLOCKLIGHT=方块光设置
 screen.BLOCKLIGHT.comment=与方块光相关的设置.
 screen.COLORED_LIGHT=彩色照明
 screen.SSBL_SETTINGS=屏幕空间彩色照明
-screen.ACL_SETTINGS=高级彩色照明
+screen.ACT_SETTINGS=高级彩色照明
 screen.LIGHTMAP_CURVES_SETTINGS=光图曲线
 screen.OVERLAY_NOISE=噪声叠加
 screen.MOSS_NOISE_SETTINGS=苔藓噪点设置
@@ -2360,9 +2360,9 @@ option.END_CRYSTAL_EMISSION=末地水晶发光亮度.
 option.CLEAR_WATER_SPOTS=水斑
 option.CLEAR_WATER_SPOTS.comment=为水体添加透明斑点以增加水面细节. §e[*]§r 需要任意一种类型的水体波浪, Unbound 或者 Reimagined + 水波.
 
-option.ACL_ORE_INTENSITY=矿石高级彩色照明强度
-option.ACL_ORE_INTENSITY.comment=调节矿石的高级彩色照明强度.
-value.ACL_ORE_INTENSITY.0.0=关
+option.ACT_ORE_INTENSITY=矿石高级彩色照明强度
+option.ACT_ORE_INTENSITY.comment=调节矿石的高级彩色照明强度.
+value.ACT_ORE_INTENSITY.0.0=关
 
 option.ENTITIES_ARE_LIGHT=实体也可以是闪电
 
