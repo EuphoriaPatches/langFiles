@@ -215,7 +215,7 @@ screen.PIXELATED_LIGHTING_SETTINGS.comment=Настройки пикселиза
 screen.WATER_SETTINGS=Вода
 screen.WATER_SETTINGS.comment=Параметры водных эффектов.
 
-screen.WATER_COLOR_SETTINGS=Цвет поверхности воды
+screen.WATER_COLOR_SETTINGS=Множитель цвета воды
 screen.UNDERWATER_COLOR_SETTINGS=Цвет под водой
 
 screen.WATER_WAVE_SETTINGS=Волны на воде §e[*]§r
@@ -461,7 +461,7 @@ value.NETHER_VIEW_LIMIT.99999.0=Без ограничений §c[-]
 
 option.NETHER_COLOR_MODE=Цветовая схема
 option.NETHER_COLOR_MODE.comment=Определяет, как будут обрабатываться цвета окружения в Незере. Постоянная: цвета не будут меняться между биомами. На основе биома: цвета будут меняться в зависимости от биома. На основе биома (модифицированая): в зависимости от биома, но цвета были изменены, чтобы лучше соответствовать визуальному стилю Complementary.
-value.NETHER_COLOR_MODE.3=На основе биома (модифицированая)
+value.NETHER_COLOR_MODE.3=На основе биома (модиф.)
 value.NETHER_COLOR_MODE.2=На основе биома
 value.NETHER_COLOR_MODE.0=Постоянная
 
@@ -527,9 +527,9 @@ option.WATERCOLOR_R=Множитель красного для водной по
 option.WATERCOLOR_G=Множитель зелёного для водной поверхности
 option.WATERCOLOR_B=Множитель синего для водной поверхности
 
-option.WATERCOLOR_MODE=Режим цвета воды
+option.WATERCOLOR_MODE=Цвет воды
 option.WATERCOLOR_MODE.comment=Определяет принцип окрашивания воды. Постоянный: цвет не зависит от биома. На основе биома: цвет меняется в зависимости от биома. На основе биома (ограниченный): цвет меняется в зависимости от биома и предотвращает неестественные цвета в некоторых биомах. §e[*]§r Не работает корректно на версиях Minecraft ниже 1.13.
-value.WATERCOLOR_MODE.3=На основе биома (ограниченный)
+value.WATERCOLOR_MODE.3=На основе биома (огранич.)
 value.WATERCOLOR_MODE.2=На основе биома
 value.WATERCOLOR_MODE.0=Постоянный
 
@@ -722,7 +722,7 @@ value.LENSFLARE_MODE.2=Солнце и луна
 option.LENSFLARE_I=Яркость бликов
 option.LENSFLARE_I.comment=Регулирует силу эффекта бликов.
 
-option.TAA_MODE=Временной фильтр
+option.TAA_MODE=Фильтр TAA
 option.TAA_MODE.comment=Управляет временным сглаживанием. Умный и мягкий §a[+]§r: временной фильтр применяется в небольших количествах и минимизирует артефакты. Интенсивный §e[*]§r: обеспечивает лучшее сглаживание, но приводит к дополнительным размытиям и мерцанию; быть может, это лучший выбор при более высокой частоте кадров и разрешении экрана. Нет §c[-]§r ухудшит производительность и качество эффектов.
 value.TAA_MODE.1=Умный и мягкий §a[+]
 value.TAA_MODE.2=Интенсивный §e[*]
@@ -1231,7 +1231,7 @@ screen.WATER=Вода
 screen.WATER.comment=Настройки водных эффектов.
 screen.IPBR_REDSTONE=Встроенный PBR для редстоуна
 screen.IPBR_REDSTONE.comment=Настройки встроенного PBR для редстоуна.
-screen.DIRECTIONAL_LIGHTMAP_NORMALS_SETTINGS=Нормали карты овсещения
+screen.DIRECTIONAL_LIGHTMAP_NORMALS_SETTINGS=Нормали карты освещения
 screen.LAVA_SETTINGS=Лава
 screen.LAVA_SETTINGS.comment=Настройки эффектов лавы.
 screen.END_ROD_SETTINGS=Стержень Энда
