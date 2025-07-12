@@ -2376,8 +2376,11 @@ option.ENTITIES_ARE_LIGHT=Сутності є світлом
 option.WATER_CAUSTIC_STRENGTH=Сила каустики води
 option.WATER_CAUSTIC_STRENGTH.comment=Змінює силу ефекту каустики води.
 
-option.ROUGHNESS_MULTIPLIER=Множник шорсткости
-option.ROUGHNESS_MULTIPLIER.comment=Змінює шорсткість матеріалів.
+option.ROUGHNESS_MULTIPLIER=Маска шорсткости
+option.ROUGHNESS_MULTIPLIER.comment=Змінює де матеріали шорсткіші.
+
+option.ROUGHNESS_INTENSITY=Інтенсивність шорсткости
+option.ROUGHNESS_INTENSITY.comment=Змінює шорсткість матеріалів і робить їх більш-менш блискучими.
 
 option.SHADOW_SATURATION=Насиченість тіні
 option.SHADOW_SATURATION.comment=Змінює насиченість тіней і світлових потоків. §e[*]§r Цей параметр працює, лише якщо для «Тіні в реальному часі» установлено значення «низько» або вище.
