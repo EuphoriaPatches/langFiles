@@ -2376,8 +2376,11 @@ option.ENTITIES_ARE_LIGHT=Entities Are Light
 option.WATER_CAUSTIC_STRENGTH=Water Caustic Strength
 option.WATER_CAUSTIC_STRENGTH.comment=Change the strength of the caustic effect in water.
 
-option.ROUGHNESS_MULTIPLIER=Roughness Multiplier
-option.ROUGHNESS_MULTIPLIER.comment=Change the roughness of the materials.
+option.ROUGHNESS_MULTIPLIER=Roughness Mask
+option.ROUGHNESS_MULTIPLIER.comment=Change where materials are rough.
+
+option.ROUGHNESS_INTENSITY=Roughness Intensity
+option.ROUGHNESS_INTENSITY.comment=Change the roughness of the materials and make the more or less shiny.
 
 option.SHADOW_SATURATION=Shadow Saturation
 option.SHADOW_SATURATION.comment=Change the saturation of the shadows and light shafts. §e[*]§r This setting only works if "Real-Time Shadows" is set to Low or higher.
