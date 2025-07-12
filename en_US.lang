@@ -1349,6 +1349,9 @@ value.CLOUD_NARROWNESS.0.05=Medium
 value.CLOUD_NARROWNESS.0.025=Wide
 option.CLOUD_NARROWNESS.comment=Change how narrow the clouds appear on the horizontal scale.
 
+option.CLOUD_SHADOW_UNBOUND_SIZE=Cloud Shadow Size
+option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Determines the size of the cloud shadows.
+
 option.CLOUD_STRETCH=Cloud Height
 option.CLOUD_TRANSPARENCY=Cloud Transparency
 option.CLOUD_DIRECTION=Cloud Direction
