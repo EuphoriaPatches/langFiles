@@ -2151,6 +2151,7 @@ option.EMISSIVE_BLOOD_MOON_FLOWERS=Emissive Blood Moon Flowers
 
 option.DISTANCE_MIN_LIGHT=Cave Lighting Fade
 option.DISTANCE_MIN_LIGHT.comment=Makes the caves darker with increased distance from the player. Improves the look of caves with a higher Cave Lighting setting.
+value.DISTANCE_MIN_LIGHT.0=OFF
 
 option.EMISSIVE_DRAGON_EGG=Emissive Dragon Egg
 
@@ -2207,6 +2208,7 @@ option.FROZEN_TIME=Frozen Time
 
 option.DARKER_DEPTH_OCEANS=Deeper Darker Oceans
 option.DARKER_DEPTH_OCEANS.comment=Light decreases with depth of the Ocean
+value.DARKER_DEPTH_OCEANS.0=OFF
 
 option.WEATHER_TEX_R=Weather Texture - Red
 option.WEATHER_TEX_G=Weather Texture - Green
