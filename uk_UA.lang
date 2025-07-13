@@ -2151,6 +2151,7 @@ option.EMISSIVE_BLOOD_MOON_FLOWERS=Сяйні квіти при кривавом
 
 option.DISTANCE_MIN_LIGHT=Зникання печерного освітлення
 option.DISTANCE_MIN_LIGHT.comment=Робить печери темнішими зі збільшенням відстані від гравця. Покращує зовнішній вигляд печер за допомогою вищого значеня печерного освітлення.
+value.DISTANCE_MIN_LIGHT.0=ВИМК.
 
 option.EMISSIVE_DRAGON_EGG=Сяйне яйце дракона
 
@@ -2205,8 +2206,9 @@ option.DAYLIGHT_STARS.comment=Вмикає зірки вдень.
 
 option.FROZEN_TIME=Стоп-час
 
-option.DARKER_DEPTH_OCEANS=Глибший темніший океан
+option.DARKER_DEPTH_OCEANS=Темніший глибокий океан
 option.DARKER_DEPTH_OCEANS.comment=Світло зменшується з глибиною океану.
+value.DARKER_DEPTH_OCEANS.0=ВИМК.
 
 option.WEATHER_TEX_R=Червоний текстури погоди
 option.WEATHER_TEX_G=Зелений текстури погоди
