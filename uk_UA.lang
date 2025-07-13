@@ -1349,6 +1349,9 @@ value.CLOUD_NARROWNESS.0.05=Посередня
 value.CLOUD_NARROWNESS.0.025=Широка
 option.CLOUD_NARROWNESS.comment=Змінює вузькість хмар на горизонтальній шкалі.
 
+option.CLOUD_SHADOW_UNBOUND_SIZE=Розмір тіней хмар
+option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Змінює розмір тіні хмар.
+
 option.CLOUD_STRETCH=Висота хмар
 option.CLOUD_TRANSPARENCY=Прозорість хмар
 option.CLOUD_DIRECTION=Напрямок
