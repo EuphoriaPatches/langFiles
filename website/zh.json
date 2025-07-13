@@ -15,13 +15,23 @@
 
     "unsupportedVersions": "对于模组不支持的 Minecraft 版本，可使用模组在支持的 Minecraft 版本生成 Euphoria Patches 后将生成的得到的光影文件夹复制到模组不支持的 Minecraft 版本实例中",
 
+    "discordContact": "在安装过程中遇到问题?",
+    "discordContactLink": "加入我们的 Discord 社区!",
+
     "downloadPageButton": "前往下载页面",
 
+    "supportDevelopment1": "想要支持开发并获取早期独家更新?",
+    "supportDevelopment2": "马上获取预览版本!",
+
     "installerMethodTitle": "通过安装器安装的方法",
-    "installerStep1Before": "前往",
-    "installerStep1After": "然后下载安装器",
+    "installerStep1After": "下载 Complementary 安装器",
     "installerStep2": "通过鼠标左键双击下载的文件启动安装器",
-    "installerStep3": "接着点击 'Advanced Settings'",
+    "installerStep3": "点击 'Advanced Settings'",
     "installerStep4": "选中 'Install Euphoria Patches' 复选框",
-    "installerStep5": "点击 install, Complementary Shaders + Euphoria Patches 现在会出现在你的 shaderpacks 文件夹"
+    "installerStep5": "点击 install 然后启动游戏, Complementary Shaders + Euphoria Patches 现在会出现在你的 shaderpacks 文件夹",
+
+    "windowsInstallerButton": "Windows 安装器",
+    "javaInstallerButton": "通用 JAR",
+    "complementaryInstallerButton": "下载安装器",
+    "complementaryWebsiteButton": "浏览 Complementary 官方网站"
 }
