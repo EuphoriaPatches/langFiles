@@ -205,13 +205,13 @@ screen.NETHER_LIGHT_MULTS=下界维度
 screen.END_LIGHT_MULTS=末地维度
 
 screen.BLOCKLIGHT_COLOR_SETTINGS=方块光颜色 §e[*]§r
-screen.BLOCKLIGHT_COLOR_SETTINGS.comment=调节光源方块发出光的颜色的设置. §e[*]§r 若启用了 高级彩色照明 选项, 则本选项设置的颜色不会影响除了 方块光强度 滑块以外的大部分的光源.
+screen.BLOCKLIGHT_COLOR_SETTINGS.comment=调节光源方块发出光的颜色的设置. §e[*]§r 若启用了 高级颜色追踪 选项, 则本选项设置的颜色不会影响除了 方块光强度 滑块以外的大部分的光源.
 
 screen.MOON_PHASE_INF_SETTINGS=月相影响
 screen.MOON_PHASE_INF_SETTINGS.comment=由不同月相影响夜晚照明的设置. 月相: 月亮的阴晴圆缺.
 
-screen.ACT_FEATURES_SETTINGS=高级彩色照明独占特性 §e[*]§r
-screen.ACT_FEATURES_SETTINGS.comment=与 高级彩色照明 相关的独占功能设置. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效.
+screen.ACT_FEATURES_SETTINGS=高级颜色追踪独占特性 §e[*]§r
+screen.ACT_FEATURES_SETTINGS.comment=与 高级颜色追踪 相关的独占功能设置. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效.
 
 screen.PIXELATED_LIGHTING_SETTINGS=像素化照明
 screen.PIXELATED_LIGHTING_SETTINGS.comment=使特定照明效果像素化的设置.
@@ -253,10 +253,9 @@ value.WATER_REFLECT_QUALITY.1=§e极低
 value.WATER_REFLECT_QUALITY.2=§c中
 
 option.BLOCK_REFLECT_QUALITY=方块反射质量 §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=调节出现在普通方块上的反射的视觉质量. §c高§r: 开启太阳/月亮高光反射, 且使用时间性过滤器使高光反射平滑. §c中§r: 太阳/月亮高光 + 高光反射. §e低§r: 仅太阳/. §e[*]§r 资源包支持 选项必须设置为除 §a基本§r 选项外的任何选项, 才能出现高光反射.
+option.BLOCK_REFLECT_QUALITY.comment=调节出现在普通方块上的反射的视觉质量. §c高§r: 开启太阳/月亮高光反射, 且使用时间性过滤器使高光反射平滑. §e低§r: 仅太阳/月亮高光. §e[*]§r 资源包支持 选项必须设置为除 §a基本§r 选项外的任何选项, 才能出现高光反射.
 value.BLOCK_REFLECT_QUALITY.0=§a关
 value.BLOCK_REFLECT_QUALITY.1=§e低
-value.BLOCK_REFLECT_QUALITY.2=§c中
 value.BLOCK_REFLECT_QUALITY.3=§c高
 
 option.SHADOW_QUALITY=实时阴影
@@ -294,7 +293,7 @@ value.shadowDistance.512.0=§4§l32 区块
 value.shadowDistance.768.0=§4§l§n§o48 区块
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 区块§r§4§k-
 
-option.ENTITY_SHADOWS_DEFINE=实体阴影
+option.ENTITY_SHADOWS_DEFINE=实体阴影 §c[-]§r
 option.ENTITY_SHADOWS_DEFINE.comment=启用实体和方块实体投射阴影的能力. §c[-]§r 实体阴影对性能的影响超出预期, 在某些情况下会损失超过 50% 的 fps.
 value.ENTITY_SHADOWS_DEFINE.-1=§a关
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§o开§r§4§k- §r§c[-]
@@ -330,8 +329,8 @@ value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
-option.COLORED_LIGHTING=高级彩色照明 §e[*]§r
-option.COLORED_LIGHTING.comment=Complementary 功能. 使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级彩色照明独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上.
+option.COLORED_LIGHTING=高级颜色追踪 §e[*]§r
+option.COLORED_LIGHTING.comment=Complementary 功能. 使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级颜色追踪独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上.
 value.COLORED_LIGHTING.0=§a关
 value.COLORED_LIGHTING.128=§c4 区块
 value.COLORED_LIGHTING.192=§c6 区块
@@ -340,6 +339,16 @@ value.COLORED_LIGHTING.384=§4§l12 区块
 value.COLORED_LIGHTING.512=§4§l§n§o16 区块
 value.COLORED_LIGHTING.768=§4§l§n§o24 区块 §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 区块§r§4§k- §r§c[-]
+
+option.WORLD_SPACE_REFLECTIONS=世界空间反射 (WSR) §e[*]§r
+option.WORLD_SPACE_REFLECTIONS.comment=在世界空间中计算反射. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效. §e[*]§r 最大反射渲染距离取决于 高级颜色追踪 设置的距离. §c[-]§r 本选项的启用会严重影响性能, 尤其是 高级颜色追踪 设置的距离过高时.
+value.WORLD_SPACE_REFLECTIONS.-1=§a关
+value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§o开
+
+option.WORLD_SPACE_REF_MODE=WSR 模式 §e[*]§r
+option.WORLD_SPACE_REF_MODE.comment=选择世界空间反射的作用模式. §e[*]§r "仅 WSR" 模式通过仅渲染世界空间反射的内容来避免屏幕空间反射的瑕疵. "WSR + SSR" 总体上可在反射中获得更多细节, 因为屏幕空间反射可以不受方块或设定距离的限制而访问屏幕上的所有细节.
+value.WORLD_SPACE_REF_MODE.1=仅 WSR
+value.WORLD_SPACE_REF_MODE.2=WSR + SSR
 
 option.SSAO_I=边缘阴影 (SSAO) 强度
 option.SSAO_I.comment=决定屏幕空间环境光遮蔽 (SSAO) 的强度 §e[*]§r 如在 性能设置 里禁用 SSAO, 则本选项不生效.
@@ -986,6 +995,11 @@ option.WAVING_RAIN.comment=为下落的雨水和雪花粒子纹理添加运动�
 option.SPECIAL_PORTAL_EFFECTS=传送门特殊效果
 option.SPECIAL_PORTAL_EFFECTS.comment=为下界传送门, 末地传送门, 末地折跃门添加的特殊动画和发光效果.
 
+option.REFLECTION_RES_DIVIDE=半分辨率反射
+option.REFLECTION_RES_DIVIDE.comment=使得方块上基于物理的的反射 (及世界空间反射[若已启用]) 以半分辨率来渲染, 以此获得更好的性能表现.
+value.REFLECTION_RES_DIVIDE.1=§c关
+value.REFLECTION_RES_DIVIDE.2=开
+
 option.WORLD_OUTLINE=视界描边
 option.WORLD_OUTLINE.comment=给所有方块添加明亮的描边. §c[-]§r 本选项的效果可能会影响性能.
 
@@ -1050,22 +1064,22 @@ option.MOON_PHASE_DARK=新月强度
 option.MOON_PHASE_DARK.comment=调节新月阶段的月相影响 (朔月).
 
 option.CONNECTED_GLASS_EFFECT=玻璃纹理连接
-option.CONNECTED_GLASS_EFFECT.comment=使所有类型的玻璃的纹理相互连接. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效. §e[*]§r 本选项的功能会在已安装 "Continuity" 模组时自动禁用.
+option.CONNECTED_GLASS_EFFECT.comment=使所有类型的玻璃的纹理相互连接. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效. §e[*]§r 本选项的功能会在已安装 "Continuity" 模组时自动禁用.
 
 option.PORTAL_EDGE_EFFECT=传送门边缘发光
-option.PORTAL_EDGE_EFFECT.comment=为下界和末地传送门边缘添加发光效果. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效.
+option.PORTAL_EDGE_EFFECT.comment=为下界和末地传送门边缘添加发光效果. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效.
 
 option.PUDDLE_VOXELIZATION=修复可在玻璃下方出现雨水坑的问题
-option.PUDDLE_VOXELIZATION.comment=启用 雨水坑 设置后, 防止在有玻璃屋顶的封闭区域形成雨水坑. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效.
+option.PUDDLE_VOXELIZATION.comment=启用 雨水坑 设置后, 防止在有玻璃屋顶的封闭区域形成雨水坑. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效.
 
 option.COLORED_CANDLE_LIGHT=彩色蜡烛光
 option.COLORED_CANDLE_LIGHT.comment=使蜡烛投射的照明颜色与它们的底座颜色一致. §e[*]§r 低饱和度颜色的蜡烛变种仍使用以往使用的火焰颜色.
 
 option.COLORED_LIGHT_SATURATION=彩色照明饱和度
-option.COLORED_LIGHT_SATURATION.comment=调节由 高级彩色照明 选项产生的照明颜色的饱和度. §e[*]§r 不推荐改变本选项的数值, 默认的饱和度是为了最平衡的视觉效果设计的.
+option.COLORED_LIGHT_SATURATION.comment=调节由 高级颜色追踪 选项产生的照明颜色的饱和度. §e[*]§r 不推荐改变本选项的数值, 默认的饱和度是为了最平衡的视觉效果设计的.
 
 option.COLORED_LIGHT_FOG=彩色光雾
-option.COLORED_LIGHT_FOG.comment=向场景中添加体积方块光雾, 在地下或夜间最明显. §e[*]§r 这些功能只有在 性能设置 中启用 高级彩色照明 选项并且仅当运行光影所用的设备支持它时才能生效. §c[-]§r 本选项的效果会严重影响性能.
+option.COLORED_LIGHT_FOG.comment=向场景中添加体积方块光雾, 在地下或夜间最明显. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效. §c[-]§r 本选项的效果会严重影响性能.
 
 option.COLORED_LIGHT_FOG_I=光雾强度
 option.COLORED_LIGHT_FOG_I.comment=调节彩色光雾的亮度.
@@ -1171,6 +1185,8 @@ screen.RAIN_SETTINGS=雨天设置
 screen.NIGHT_DESATURATION_SETTINGS=暗处去饱和
 screen.MOON_PHASED_DESATURATION_SETTINGS=基于月相去饱和
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=根据当前夜晚的月相调节去饱和效果的强度.
+screen.NIGHT_NEBULA_SETTINGS=夜空星云
+screen.NIGHT_NEBULA_COLOR_SETTINGS=夜空星云颜色设置
 
 screen.WORLD=世界
 screen.WORLD.comment=关于世界的设置.
@@ -1205,7 +1221,7 @@ screen.BLOCKLIGHT=方块光设置
 screen.BLOCKLIGHT.comment=与方块光相关的设置.
 screen.COLORED_LIGHT=彩色照明
 screen.SSBL_SETTINGS=屏幕空间彩色照明
-screen.ACT_SETTINGS=高级彩色照明
+screen.ACT_SETTINGS=高级颜色追踪
 screen.LIGHTMAP_CURVES_SETTINGS=光图曲线
 screen.OVERLAY_NOISE=噪声叠加
 screen.MOSS_NOISE_SETTINGS=苔藓噪点设置
@@ -1338,6 +1354,9 @@ value.CLOUD_NARROWNESS.0.075=0.67x
 value.CLOUD_NARROWNESS.0.05=1x
 value.CLOUD_NARROWNESS.0.025=2x
 option.CLOUD_NARROWNESS.comment=更改云在水平比例上的显示宽窄.
+
+option.CLOUD_SHADOW_UNBOUND_SIZE=云影尺寸
+option.CLOUD_SHADOW_UNBOUND_SIZE.comment=调节云层阴影的大小.
 
 option.CLOUD_STRETCH=云块高度
 option.CLOUD_TRANSPARENCY=云层透明度
@@ -1702,7 +1721,7 @@ option.LAVA_NOISE_AMOUNT=岩浆噪声数量
 option.LAVA_NOISE_AMOUNT.comment=改变岩浆预设的噪声数量.
 
 option.LAVA_EDGE_EFFECT=岩浆边缘效果
-option.LAVA_EDGE_EFFECT.comment=当岩浆和其他方块接触时添加一道亮边. §e[*]§r 本选项需启用位于 性能设置 中的 高级彩色照明 选项才能生效.
+option.LAVA_EDGE_EFFECT.comment=当岩浆和其他方块接触时添加一道亮边. §e[*]§r 本选项需启用位于 性能设置 中的 高级颜色追踪 选项才能生效.
 value.LAVA_EDGE_EFFECT.0=关
 value.LAVA_EDGE_EFFECT.1=开 - 亮色
 value.LAVA_EDGE_EFFECT.2=开 - 暗色
@@ -1951,10 +1970,10 @@ value.NETHER_NOISE.0=关
 value.NETHER_NOISE.1=开
 
 option.MCBL_MAIN_DEFINE=Euphoria 彩色照明
-option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光. 把本选项设置为 高级彩色照明 + 屏幕空间 来使得屏幕空间彩色照明系统与 高级彩色照明 一同生效. §e[*]§r本选项仅在 1.16.5 及以上的版本或者使用了 Angelica 模组的情况下生效.
+option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光. 把本选项设置为 高级颜色追踪 + 屏幕空间 来使得屏幕空间彩色照明系统与 高级颜色追踪 一同生效. §e[*]§r本选项仅在 1.16.5 及以上的版本或者使用了 Angelica 模组的情况下生效.
 value.MCBL_MAIN_DEFINE.0=关
 value.MCBL_MAIN_DEFINE.1=屏幕空间
-value.MCBL_MAIN_DEFINE.2=高级彩色照明 + 屏幕空间
+value.MCBL_MAIN_DEFINE.2=高级颜色追踪 + 屏幕空间
 
 option.MCBL_INFLUENCE=彩色照明影响程度
 option.MCBL_INFLUENCE.comment=调节彩色照明颜色对默认方块光颜色的影响程度.
@@ -2163,9 +2182,6 @@ value.GLITTER_RAIN.2=开 - 保持开启
 option.HAND_BLOCKLIGHT_FLICKERING=手持方块光源闪烁
 value.HAND_BLOCKLIGHT_FLICKERING.0=关
 
-option.PIXELATED_HANDHELD_LIGHT=像素化手持光源
-option.PIXELATED_HANDHELD_LIGHT.comment=像素化手持光源效果.
-
 option.SSS_STRENGTH=次表面散射
 value.SSS_STRENGTH.0=关
 value.SSS_STRENGTH.1=开
@@ -2182,7 +2198,7 @@ option.COMP_WATER_TWEAKS=Complementary 水体调整
 option.COMP_WATER_TWEAKS.comment=提供一个 Complementary 光影的水体颜色调整的统一开关.
 
 option.CAVE_SMOKE=洞穴烟雾
-option.CAVE_SMOKE.comment=当位于洞穴中时为体积方块光雾添加烟雾效果. §c[-]§r 本选项的效果可能会影响性能. §e[*]§r 本选项需启用位于 性能设置 中的 高级彩色照明 选项才能生效.
+option.CAVE_SMOKE.comment=当位于洞穴中时为体积方块光雾添加烟雾效果. §c[-]§r 本选项的效果可能会影响性能. §e[*]§r 本选项需启用位于 性能设置 中的 高级颜色追踪 选项才能生效.
 
 option.WAVING_SUGAR_CANE=甘蔗摇晃
 
@@ -2300,7 +2316,7 @@ option.SHOOTING_STARS_TRAIL_LENGTH.comment=调节流星拖尾的长度.
 option.SITUATIONAL_GLOWING_TRIMS=情景式盔甲纹饰发光
 option.SITUATIONAL_GLOWING_TRIMS.comment=盔甲纹饰仅会在洞穴和夜晚时发光. §e[*]§r 本选项需启用 盔甲纹饰发光 选项才能生效.
 
-option.DO_IPBR_LIGHTS=高级彩色照明集成PBR光源
+option.DO_IPBR_LIGHTS=高级颜色追踪集成PBR光源
 option.DO_IPBR_LIGHTS.comment=通过本选项启用或关闭 "通过光影使游戏中非光源类方块发出光" 的效果. (推荐开启)
 
 option.NIGHT_DESATURATION=暗处去饱和
@@ -2360,8 +2376,8 @@ option.END_CRYSTAL_EMISSION=末地水晶发光亮度.
 option.CLEAR_WATER_SPOTS=水斑
 option.CLEAR_WATER_SPOTS.comment=为水体添加透明斑点以增加水面细节. §e[*]§r 需要任意一种类型的水体波浪, Unbound 或者 Reimagined + 水波.
 
-option.ACT_ORE_INTENSITY=矿石高级彩色照明强度
-option.ACT_ORE_INTENSITY.comment=调节矿石的高级彩色照明强度.
+option.ACT_ORE_INTENSITY=矿石高级颜色追踪强度
+option.ACT_ORE_INTENSITY.comment=调节矿石的高级颜色追踪强度.
 value.ACT_ORE_INTENSITY.0.0=关
 
 option.ENTITIES_ARE_LIGHT=实体也可以是闪电
@@ -2369,8 +2385,11 @@ option.ENTITIES_ARE_LIGHT=实体也可以是闪电
 option.WATER_CAUSTIC_STRENGTH=水体焦散强度
 option.WATER_CAUSTIC_STRENGTH.comment=调节水体焦散效果的强度.
 
-option.ROUGHNESS_MULTIPLIER=粗糙度倍率
-option.ROUGHNESS_MULTIPLIER.comment=调节粗糙材质的粗糙度.
+option.ROUGHNESS_MULTIPLIER=粗糙度蒙版
+option.ROUGHNESS_MULTIPLIER.comment=选择方块的材质粗糙的范围.
+
+option.ROUGHNESS_INTENSITY=粗糙度强度
+option.ROUGHNESS_INTENSITY.comment=调节材质的粗糙程度, 使其更多或者更少光泽.
 
 option.SHADOW_SATURATION=阴影饱和度
 option.SHADOW_SATURATION.comment=调节阴影和光轴的饱和度. §e[*]§r 本选项仅在 "实时阴影" 选项设置为 低 或者更高的值时生效.
@@ -2392,3 +2411,26 @@ value.END_SUN_ANGLE.-30=-30
 value.END_SUN_ANGLE.-40=-40
 value.END_SUN_ANGLE.-50=-50
 value.END_SUN_ANGLE.-60=-60
+
+option.PIXELATED_NEBULA=像素化夜空星云
+value.PIXELATED_NEBULA.0=关
+option.NEBULA_ZOOM_LEVEL=缩放等级
+option.NEBULA_ZOOM_LEVEL.comment=调节星云在天空中的放大程度.
+option.NEBULA_AMOUNT=数量
+option.NEBULA_AMOUNT.comment=调节星云覆盖天空的程度.
+option.NEBULA_PATTERN_WARP=扭曲
+option.NEBULA_PATTERN_WARP.comment=调节星云的扭曲程度.
+value.NEBULA_PATTERN_WARP.0=关
+option.NEBULA_HORIZON_STRENGTH=地平线可见性
+option.NEBULA_HORIZON_STRENGTH.comment=调节星云在地平线上的可见程度.
+value.NEBULA_HORIZON_STRENGTH.10=默认
+
+option.NEBULA_R_1=星云区域 1 - 红色
+option.NEBULA_G_1=星云区域 1 - 绿色
+option.NEBULA_B_1=星云区域 1 - 蓝色
+option.NEBULA_R_2=星云区域 2 - 红色
+option.NEBULA_G_2=星云区域 2 - 绿色
+option.NEBULA_B_2=星云区域 2 - 蓝色
+option.NEBULA_R_3=星云区域 3 - 红色
+option.NEBULA_G_3=星云区域 3 - 绿色
+option.NEBULA_B_3=星云区域 3 - 蓝色
