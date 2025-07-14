@@ -5,7 +5,7 @@
 
     "modMethodTitle": "Die Mod-Methode",
     "step1": "Lade die erforderliche Complementary-Version herunter und lege sie im Shaderpacks-Ordner ab",
-    "step1After": "(nicht entpacken, ändern oder umbenennen).",
+    "step1After": "(nicht verändern).",
     "substep1_1": "Funktioniert mit Complementary",
     "or": "oder",
     "step2Before": "Lade die neueste",
@@ -13,18 +13,25 @@
     "step3": "Starte das Spiel mit entweder: Fabric | Quilt | Forge | NeoForge",
     "step4": "wird jetzt in deinem Shaderpacks-Ordner angezeigt",
 
-    "unsupportedVersions": "Für nicht unterstützte Minecraft-Versionen verwende den Patcher mit einer neueren Minecraft-Version, generiere Euphoria Patches und kopiere dann den generierten Shaderpack-Ordner in die nicht unterstützte Instanz.",
+    "unsupportedVersions": "Für nicht unterstützte Minecraft-Versionen verwende den Patcher mit einer neueren Minecraft-Version, generiere Euphoria Patches und kopiere anschließend den generierten Shaderpack-Ordner in die nicht unterstützte Instanz.",
 
-    "downloadPageButton": "Zur Download Seite",
+    "discordContact": "Probleme bei der Installation?",
+    "discordContactLink": "Tritt unserer Discord-Community bei",
 
-    "supportDevelopment1": "Entwicklung unterstützten und Zugang zu exklusiven Preview Versionen erhalten?",
-    "supportDevelopment2": "Jetzt Zugang zu exklusiven Versionen erhalten!",
+    "downloadPageButton": "Zur Download-Seite",
+
+    "supportDevelopment1": "Du möchtest die Entwicklung unterstützen und frühzeitigen Zugang zu exklusiven Updates erhalten?",
+    "supportDevelopment2": "Erhalte jetzt die Preview-Versionen!",
 
     "installerMethodTitle": "Die Installationsmethode",
-    "installerStep1Before": "Gehe zu",
-    "installerStep1After": "und lade den Installer herunter.",
+    "installerStep1After": "Lade den Complementary Installer herunter.",
     "installerStep2": "Öffne den Installer, indem du auf die heruntergeladene Datei doppelklickst",
     "installerStep3": "Klicke jetzt auf 'Advanced Settings'",
-    "installerStep4": "Klicke die Checkbox 'Install Euphoria Patche'",
-    "installerStep5": "Klicke auf Installieren, Complementary Shaders + Euphoria Patches wird jetzt in deinem Shaderpacks-Ordner angezeigt"
+    "installerStep4": "Aktiviere die Checkbox 'Install Euphoria Patches'",
+    "installerStep5": "Klicke auf Installieren und starte das Spiel – Complementary Shaders + Euphoria Patches wird jetzt in deinem Shaderpacks-Ordner angezeigt",
+
+    "windowsInstallerButton": "Windows Installer",
+    "javaInstallerButton": "Universelle JAR",
+    "complementaryInstallerButton": "Installer herunterladen",
+    "complementaryWebsiteButton": "Complementary Website besuchen"
 }
