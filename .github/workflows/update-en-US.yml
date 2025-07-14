@@ -1,0 +1,109 @@
+name: Update en_US.lang File
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Every UTC midnight
+  workflow_dispatch:     # Allow manual trigger
+  push:
+    paths:
+      - '.github/workflows/update-en-US.yml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true  # Cancel old runs to prevent queueing
+
+jobs:
+  update-en-us-lang:
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.check-changes.outputs.has_changes || 'false' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Fetch latest en_US.lang file
+        env:
+          GITHUB_TOKEN: ${{ secrets.PRIVATE_REPO_PAT }}
+        run: |
+          # Create temp directory
+          mkdir -p temp_euphoria
+          
+          # Clone the private Euphoria-Patches repository
+          git clone --depth 1 https://$GITHUB_TOKEN@github.com/EuphoriaPatches/Euphoria-Patches.git temp_euphoria
+          
+          # Copy the en_US.lang file from shaders/lang/ to root directory
+          if [ -f temp_euphoria/shaders/lang/en_US.lang ]; then
+            cp -v temp_euphoria/shaders/lang/en_US.lang ./en_US.lang
+            echo "Successfully copied en_US.lang file"
+          else
+            echo "Error: en_US.lang file not found in temp_euphoria/shaders/lang/"
+            exit 1
+          fi
+          
+          # Clean up
+          rm -rf temp_euphoria
+      
+      # Check if there were changes to en_US.lang
+      - name: Check for en_US.lang changes
+        id: check-changes
+        run: |
+          if [ "$(git status --porcelain en_US.lang | wc -l)" -gt "0" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "en_US.lang file changes detected"
+            git diff en_US.lang || true
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in en_US.lang file"
+          fi
+      
+      # Upload en_US.lang as an artifact if changed
+      - name: Upload en_US.lang artifact
+        if: steps.check-changes.outputs.has_changes == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: en-us-lang-file
+          path: en_US.lang
+          retention-days: 1
+
+  commit-and-push:
+    runs-on: ubuntu-latest
+    needs: [update-en-us-lang]
+    if: needs.update-en-us-lang.outputs.has_changes == 'true'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      # Download the updated en_US.lang file
+      - name: Download en_US.lang file
+        uses: actions/download-artifact@v4
+        with:
+          name: en-us-lang-file
+          path: ./
+      
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+      
+      - name: Stage and commit en_US.lang changes
+        run: |
+          echo "Staging en_US.lang file changes"
+          git add en_US.lang
+          
+          # Only commit if there are staged changes
+          git diff --quiet --staged || {
+            echo "Committing en_US.lang changes to the repository"
+            git commit -m "Update en_US.lang file [skip ci]"
+            
+            # Try pushing with retries
+            MAX_RETRIES=5
+            RETRY_COUNT=0
+            
+            until git push || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              echo "Push failed, retrying (Attempt $RETRY_COUNT/$MAX_RETRIES)..."
+              git pull --rebase
+            done
+            
+            echo "Successfully pushed en_US.lang changes"
+          }
