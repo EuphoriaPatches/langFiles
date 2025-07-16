@@ -2424,3 +2424,6 @@ option.NEBULA_B_2=Синий туманности 2
 option.NEBULA_R_3=Красный туманности 3
 option.NEBULA_G_3=Зелёный туманности 3
 option.NEBULA_B_3=Синий туманности 3
+
+option.END_CENTER_LIGHTING=Освещение центра Энда
+option.END_CENTER_LIGHTING.comment=Изменяет освещение в центре Энда.
