@@ -2430,3 +2430,6 @@ option.NEBULA_B_2=Nebula 2 - Blue
 option.NEBULA_R_3=Nebula 3 - Red
 option.NEBULA_G_3=Nebula 3 - Green
 option.NEBULA_B_3=Nebula 3 - Blue
+
+option.END_CENTER_LIGHTING=End Center Lighting
+option.END_CENTER_LIGHTING.comment=Changes the lighting of the center of the End.
