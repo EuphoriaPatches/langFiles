@@ -2434,7 +2434,8 @@ option.NEBULA_B_3=Синій туманности 3
 option.END_CENTER_LIGHTING=Центральне освітлення Енду
 option.END_CENTER_LIGHTING.comment=Змінює освітлення центра Енду.
 
-option.SCANLINE_NEW_MONOCHROME=Однобарвність
-option.SCANLINE_NEW_DIRECTION=Напрямок сканувальних ліній
-value.SCANLINE_NEW_DIRECTION.false=Горизонтальний
-value.SCANLINE_NEW_DIRECTION.true=Вертикальний
+value.END_CENTER_LIGHTING.0=ВИМК.
+
+option.END_CENTER_LIGHTING_R=Червоний освітлення
+option.END_CENTER_LIGHTING_G=Зелений освітлення
+option.END_CENTER_LIGHTING_B=Синій освітлення
