@@ -1210,7 +1210,8 @@ screen.END_WORLD=Енд
 screen.END_AMBIENT=Середовище Енду
 screen.FOG_BORDER_END=Межа туману
 screen.FOG_BORDER_END.comment=Налаштування, які стосуються межі туману.
-screen.LIGHT_SETTINGS=Налаштування світда
+screen.END_CENTER_LIGHTING_SETTINGS=Центральне освітлення Енду
+screen.LIGHT_SETTINGS=Налаштування світла
 screen.BLOCKLIGHT=Налаштування джерел світла
 screen.BLOCKLIGHT.comment=Налаштування, які стосуються блоків-джерел світла.
 screen.COLORED_LIGHT=Кольорове освітлення
@@ -2433,8 +2434,8 @@ option.NEBULA_B_3=Синій туманности 3
 
 option.END_CENTER_LIGHTING=Центральне освітлення Енду
 option.END_CENTER_LIGHTING.comment=Змінює освітлення центра Енду.
+value.END_CENTER_LIGHTING.0=ВИМК.
 
-option.SCANLINE_NEW_MONOCHROME=Однобарвність
-option.SCANLINE_NEW_DIRECTION=Напрямок сканувальних ліній
-value.SCANLINE_NEW_DIRECTION.false=Горизонтальний
-value.SCANLINE_NEW_DIRECTION.true=Вертикальний
+option.END_CENTER_LIGHTING_R=Червоний освітлення
+option.END_CENTER_LIGHTING_G=Зелений освітлення
+option.END_CENTER_LIGHTING_B=Синій освітлення
