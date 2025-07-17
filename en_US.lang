@@ -1210,6 +1210,7 @@ screen.END_WORLD=End
 screen.END_AMBIENT=End Ambient
 screen.FOG_BORDER_END=Border fog
 screen.FOG_BORDER_END.comment=Settings that relate to border fog.
+screen.END_CENTER_LIGHTING_SETTINGS=End Center Lighting
 screen.LIGHT_SETTINGS=Light Settings
 screen.BLOCKLIGHT=Blocklight Settings
 screen.BLOCKLIGHT.comment=Settings that relate to blocklight color.
@@ -2433,3 +2434,8 @@ option.NEBULA_B_3=Nebula 3 - Blue
 
 option.END_CENTER_LIGHTING=End Center Lighting
 option.END_CENTER_LIGHTING.comment=Changes the lighting of the center of the End.
+value.END_CENTER_LIGHTING.0=OFF
+
+option.END_CENTER_LIGHTING_R=Lighting - Red
+option.END_CENTER_LIGHTING_G=Lighting - Green
+option.END_CENTER_LIGHTING_B=Lighting - Blue
