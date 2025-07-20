@@ -1967,7 +1967,7 @@ value.NETHER_NOISE.1=ВИМК.
 option.MCBL_MAIN_DEFINE=Кольорове освітлення Euphoria
 option.MCBL_MAIN_DEFINE.comment=Вмикає багатокольорові джерела світла. Установіть РКТ + простір екрана, щоб використовувати систему простору екрана разом із РКТ. §e[*]§r Лише 1.16.5 і вище.
 value.MCBL_MAIN_DEFINE.0=ВИМК.
-value.MCBL_MAIN_DEFINE.1=Gростір екрана
+value.MCBL_MAIN_DEFINE.1=Простір екрана
 value.MCBL_MAIN_DEFINE.2=РКТ + простір екрана
 
 option.MCBL_INFLUENCE=Вплив багатокол. джерел світла
