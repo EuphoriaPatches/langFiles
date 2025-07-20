@@ -1992,7 +1992,6 @@ option.RAIN_FADE_TIMER.comment=Изменяет время, необходимо
 option.DOF_SNEAKING=Размытие на приседе и в подзорной трубе
 option.DOF_SNEAKING.comment=Активирует размытие мира только на приседе и при использовании подзорной трубы.
 
-
 option.CLEAR_SKY_WHEN_RAINING=Ясное небо во время дождя
 option.CLEAR_SKY_WHEN_RAINING.comment=Делает звёзды и другие небесные эффекты видимыми во время дождя.
 
