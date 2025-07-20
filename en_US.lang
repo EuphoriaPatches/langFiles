@@ -1988,6 +1988,9 @@ option.PURPLE_END_FIRE.comment=Makes fire related blocks, entities and particles
 option.NO_RAIN_ABOVE_CLOUDS=No Rain Above Clouds
 option.NO_RAIN_ABOVE_CLOUDS.comment=Disables rain above the clouds. Doesn't work well if the vanilla cloud height was changed with the vanilla clouds enabled.
 
+option.RAIN_FADE_TIMER=Rain Fade Timer
+option.RAIN_FADE_TIMER.comment=Change the time it takes for rain related effects to fade in and out. Affected effects are clouds, rain puddles, fog, rainbow and more. 
+
 option.DOF_SNEAKING=DoF Sneaking & Spyglass
 option.DOF_SNEAKING.comment=Only activate the world blur option while sneaking and holding a spyglass.
 
