@@ -1212,10 +1212,13 @@ screen.SUMMER=夏天设置
 screen.NETHER_WORLD=下界
 screen.FOG_BORDER_NETHER=边界迷雾
 screen.FOG_BORDER_NETHER.comment=与边界雾相关的设置.
+screen.HEAT_DISTORTION_SETTINGS=热失真
+screen.HEAT_DISTORTION_SETTINGS.comment=与热失真相关的设置.
 screen.END_WORLD=末地
 screen.END_AMBIENT=末地环境光
 screen.FOG_BORDER_END=边界迷雾
 screen.FOG_BORDER_END.comment=与边界雾相关的设置.
+screen.END_CENTER_LIGHTING_SETTINGS=末地中心光源
 screen.LIGHT_SETTINGS=光源设置
 screen.BLOCKLIGHT=方块光设置
 screen.BLOCKLIGHT.comment=与方块光相关的设置.
@@ -1995,6 +1998,9 @@ option.PURPLE_END_FIRE.comment=使末地中与火焰相关的方块, 实体, 粒
 option.NO_RAIN_ABOVE_CLOUDS=云端之上无雨雪
 option.NO_RAIN_ABOVE_CLOUDS.comment=禁用高于云层的雨雪粒子. 在原版云层开启并且高度被修改的情况下不能很好的工作.
 
+option.RAIN_FADE_TIMER=降雨聚散时间
+option.RAIN_FADE_TIMER.comment=调节降雨相关效果淡入淡出的所需时间. 受影响的效果有云层, 雨水坑, 雾气, 彩虹等. 
+
 option.DOF_SNEAKING=在下蹲且手持望远镜时模糊视界
 option.DOF_SNEAKING.comment=仅在潜行(下蹲)且手持望远镜时激活视界模糊效果.
 
@@ -2159,6 +2165,7 @@ option.EMISSIVE_BLOOD_MOON_FLOWERS=血月花朵发光
 
 option.DISTANCE_MIN_LIGHT=洞穴照明衰减
 option.DISTANCE_MIN_LIGHT.comment=在洞穴中距离使玩家越远的区域越暗. 通过更高的洞穴照明设置改善洞穴效果.
+value.DISTANCE_MIN_LIGHT.0=关
 
 option.EMISSIVE_DRAGON_EGG=龙蛋发光
 
@@ -2215,6 +2222,7 @@ option.FROZEN_TIME=冻结时间
 
 option.DARKER_DEPTH_OCEANS=越深越暗的海洋
 option.DARKER_DEPTH_OCEANS.comment=在海洋中时随着所处深度的增加光线不断减少.
+value.DARKER_DEPTH_OCEANS.0=关
 
 option.WEATHER_TEX_R=天气纹理 - 红
 option.WEATHER_TEX_G=天气纹理 - 绿
@@ -2434,3 +2442,22 @@ option.NEBULA_B_2=星云区域 2 - 蓝色
 option.NEBULA_R_3=星云区域 3 - 红色
 option.NEBULA_G_3=星云区域 3 - 绿色
 option.NEBULA_B_3=星云区域 3 - 蓝色
+
+option.END_CENTER_LIGHTING=末地中心光源
+option.END_CENTER_LIGHTING.comment=更改末地中心的照明效果.
+value.END_CENTER_LIGHTING.0=关
+
+option.END_CENTER_LIGHTING_R=照明颜色 - 红
+option.END_CENTER_LIGHTING_G=照明颜色 - 绿
+option.END_CENTER_LIGHTING_B=照明颜色 - 蓝
+
+option.NETHER_HEAT_DISTORTION=热失真
+option.NETHER_HEAT_DISTORTION.comment=为下界添加热失真效果.
+value.NETHER_HEAT_DISTORTION.0=关
+option.NETHER_HEAT_DISTORTION_STRENGTH=强度
+option.NETHER_HEAT_DISTORTION_STRENGTH.comment=调节热失真效果的强度.
+option.NETHER_HEAT_DISTORTION_SCALE=比例
+option.NETHER_HEAT_DISTORTION_SCALE.comment=调节热失真效果的比例.
+
+option.BLOCKLIGHT_CAUSTICS=方块光源焦散线
+option.BLOCKLIGHT_CAUSTICS.comment=位于水下时为方块光源周围添加焦散线效果.
