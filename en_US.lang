@@ -1206,6 +1206,8 @@ screen.SUMMER=Summer Settings
 screen.NETHER_WORLD=Nether
 screen.FOG_BORDER_NETHER=Border fog
 screen.FOG_BORDER_NETHER.comment=Settings that relate to border fog.
+screen.HEAT_DISTORTION_SETTINGS=Heat Distortion
+screen.HEAT_DISTORTION_SETTINGS.comment=Settings that relate to heat distortion.
 screen.END_WORLD=End
 screen.END_AMBIENT=End Ambient
 screen.FOG_BORDER_END=Border fog
@@ -2442,3 +2444,14 @@ value.END_CENTER_LIGHTING.0=OFF
 option.END_CENTER_LIGHTING_R=Lighting - Red
 option.END_CENTER_LIGHTING_G=Lighting - Green
 option.END_CENTER_LIGHTING_B=Lighting - Blue
+
+option.NETHER_HEAT_DISTORTION=Heat Distortion
+option.NETHER_HEAT_DISTORTION.comment=Adds a heat distortion effect to the Nether.
+value.NETHER_HEAT_DISTORTION.0=OFF
+option.NETHER_HEAT_DISTORTION_STRENGTH=Strength
+option.NETHER_HEAT_DISTORTION_STRENGTH.comment=Change the strength of the heat distortion effect.
+option.NETHER_HEAT_DISTORTION_SCALE=Scale
+option.NETHER_HEAT_DISTORTION_SCALE.comment=Change the scale of the heat distortion effect.
+
+option.BLOCKLIGHT_CAUSTICS=Blocklight Caustics
+option.BLOCKLIGHT_CAUSTICS.comment=Adds a caustic effect to the blocklight when underwater.
