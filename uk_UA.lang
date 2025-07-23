@@ -1206,6 +1206,8 @@ screen.SUMMER=Налаштування літа
 screen.NETHER_WORLD=Незер
 screen.FOG_BORDER_NETHER=Межа туману
 screen.FOG_BORDER_NETHER.comment=Налаштування, які стосуються межі туману.
+screen.HEAT_DISTORTION_SETTINGS=Теплове спотворення
+screen.HEAT_DISTORTION_SETTINGS.comment=Налаштування, які стосуються теплових спотворень.
 screen.END_WORLD=Енд
 screen.END_AMBIENT=Середовище Енду
 screen.FOG_BORDER_END=Межа туману
@@ -2442,3 +2444,14 @@ value.END_CENTER_LIGHTING.0=ВИМК.
 option.END_CENTER_LIGHTING_R=Червоний освітлення
 option.END_CENTER_LIGHTING_G=Зелений освітлення
 option.END_CENTER_LIGHTING_B=Синій освітлення
+
+option.NETHER_HEAT_DISTORTION=Теплове спотворення
+option.NETHER_HEAT_DISTORTION.comment=Додає ефект теплового викривлення до Незеру.
+значення.NETHER_HEAT_DISTORTION.0=ВИМК.
+option.NETHER_HEAT_DISTORTION_STRENGTH=Сила
+option.NETHER_HEAT_DISTORTION_STRENGTH.comment=Змінює силу ефекту теплового спотворення.
+option.NETHER_HEAT_DISTORTION_SCALE=Масштаб
+option.NETHER_HEAT_DISTORTION_SCALE.comment=Змінює масштаб ефекту теплового спотворення.
+
+option.BLOCKLIGHT_CAUSTICS=Каустика світла блоків
+option.BLOCKLIGHT_CAUSTICS.comment=Додає каустичний ефект світла блоків під водою.
