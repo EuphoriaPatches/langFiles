@@ -2448,8 +2448,8 @@ option.END_CENTER_LIGHTING_B=Lighting - Blue
 option.NETHER_HEAT_DISTORTION=Heat Distortion
 option.NETHER_HEAT_DISTORTION.comment=Adds a heat distortion effect to the Nether.
 value.NETHER_HEAT_DISTORTION.0=OFF
-option.NETHER_HEAT_DISTORTION_STRENGTH=Strength
-option.NETHER_HEAT_DISTORTION_STRENGTH.comment=Change the strength of the heat distortion effect.
+option.NETHER_HEAT_DISTORTION_SPEED=Speed
+option.NETHER_HEAT_DISTORTION_SPEED.comment=Change the speed of the heat distortion effect.
 option.NETHER_HEAT_DISTORTION_SCALE=Scale
 option.NETHER_HEAT_DISTORTION_SCALE.comment=Change the scale of the heat distortion effect.
 
