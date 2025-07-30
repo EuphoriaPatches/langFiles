@@ -15,13 +15,23 @@
 
     "unsupportedVersions": "Para versões não suportadas do Minecraft, use o patcher com uma versão mais recente do Minecraft, gere os Euphoria Patches e copie a pasta shaderpack gerada para a instância não suportada.",
 
+    "discordContact": "Tendo Problemas com a instalação?",
+    "discordContactLink": "Junte-se a nossa comunidade do Discord",
+    
     "downloadPageButton": "Ir para a página de Download",
 
+    "supportDevelopment1": "Apoie o desenvolvimento e tenha acesso antecipado a atualizações exclusivas?",
+    "supportDevelopment2": "Obtenha as versões de prévia agora!"
+
     "installerMethodTitle": "Método de Instalação via Instalador",
-    "installerStep1Before": "Acesse",
     "installerStep1After": "e baixe o instalador.",
     "installerStep2": "Abra o instalador com dois cliques no arquivo baixado.",
     "installerStep3": "Clique em 'Advanced Settings'.",
     "installerStep4": "Marque a opção 'Install Euphoria Patches'.",
     "installerStep5": "Clique em 'Install'. Complementary Shaders e Euphoria Patches agora aparecerão na sua pasta shaderpacks."
+
+    "windowsInstallerButton": "Instalador para Windows",
+    "javaInstallerButton": "JAR Universal",
+    "complementaryInstallerButton": "Baixar Instalador",
+    "complementaryWebsiteButton": "Visitar Site Complementary"
 }
