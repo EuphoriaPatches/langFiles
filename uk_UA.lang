@@ -1824,9 +1824,10 @@ value.tonemap_right.agxTonemap=AgX
 
 option.ACES_EXPOSURE=Виставлення
 option.ACES_EXPOSURE.comment=Регулює загальну яскравість зображення.
-
 option.ACES_WHITE=Крива білого
 option.ACES_WHITE.comment=Визначає, наскільки легко кольори досягають повного білого.
+option.ACES_BRIGHTNESS_ROLLOFF=Зменшення яскравости
+option.ACES_BRIGHTNESS_ROLLOFF.comment=Коригує спад яскравости для мапи тонів ACES.
 
 option.AGX_LOOK=Вигляд AgX
 value.AGX_LOOK.0=Усталений
