@@ -1824,9 +1824,10 @@ value.tonemap_right.agxTonemap=AgX
 
 option.ACES_EXPOSURE=Exposure
 option.ACES_EXPOSURE.comment=Adjusts the overall brightness of the image.
-
 option.ACES_WHITE=White Curve
 option.ACES_WHITE.comment=Adjusts how easily the colors reach to full white.
+option.ACES_BRIGHTNESS_ROLLOFF=Brightness Rolloff
+option.ACES_BRIGHTNESS_ROLLOFF.comment=Adjusts the brightness rolloff for the ACES tonemap.
 
 option.AGX_LOOK=AgX Look
 value.AGX_LOOK.0=Default
