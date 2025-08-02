@@ -1181,6 +1181,7 @@ screen.MOON_PHASED_DESATURATION_SETTINGS=Desaturação Noturna por Fase da Lua
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Ajuda a ajustar a quantidade de desaturação conforme a fase atual da lua.
 screen.NIGHT_NEBULA_SETTINGS=Nébulas Noturnas
 screen.NIGHT_NEBULA_COLOR_SETTINGS=Configurações de Cor
+screen.NEBULA_STAR_SETTINGS=Configurações da Nebulosa Estelar
 
 screen.WORLD=Mundo
 screen.WORLD.comment=Configurações relacionadas ao mundo.
@@ -1824,9 +1825,10 @@ value.tonemap_right.agxTonemap-AgX
 
 option.ACES_EXPOSURE=Exposição
 option.ACES_EXPOSURE.comment=Ajuda a ajustar o brilho geral da imagem.
-
 option.ACES_WHITE=Curva de Branco
 option.ACES_WHITE.comment=Ajuda a ajustar o quão facilmente as cores atingem o branco total.
+option.ACES_BRIGHTNESS_ROLLOFF=Queda de Brilho
+option.ACES_BRIGHTNESS_ROLLOFF.comment=Ajusta a queda de brilho para o mapeamento de tons ACES.
 
 option.AGX_LOOK=Visual AgX
 value.AGX_LOOK.0=Padrão
@@ -2436,6 +2438,18 @@ option.NEBULA_B_2=Nébula 2 - Azul
 option.NEBULA_R_3=Nébula 3 - Vermelho
 option.NEBULA_G_3=Nébula 3 - Verde
 option.NEBULA_B_3=Nébula 3 - Azul
+
+option.NEBULA_ONLY_STARS=Apenas Estrelas
+option.NEBULA_ONLY_STARS.comment=Remove a parte colorida das nebulosas e mostra apenas as estrelas dentro delas.
+
+option.NEBULA_STAR_BRIGHTNESS=Brilho das Estrelas da Nebulosa
+option.NEBULA_STAR_BRIGHTNESS.comment=Altera o brilho das estrelas dentro das nebulosas.
+
+option.NEBULA_STAR_SIZE=Tamanho das Estrelas da Nebulosa
+option.NEBULA_STAR_SIZE.comment=Altera o tamanho das estrelas dentro das nebulosas.
+
+option.NEBULA_STAR_AMOUNT=Quantidade de Estrelas da Nebulosa
+option.NEBULA_STAR_AMOUNT.comment=Altera a quantidade de estrelas dentro das nebulosas.
 
 option.END_CENTER_LIGHTING=Iluminação Central do End
 option.END_CENTER_LIGHTING.comment=Altera a iluminação do centro do End.
