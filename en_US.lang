@@ -1181,6 +1181,7 @@ screen.MOON_PHASED_DESATURATION_SETTINGS=Moon Phased Night Desaturation
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Adjusts the amount of desaturation based on the current phase of the moon.
 screen.NIGHT_NEBULA_SETTINGS=Night Nebula
 screen.NIGHT_NEBULA_COLOR_SETTINGS=Color Settings
+screen.NEBULA_STAR_SETTINGS=Nebula Star Settings
 
 screen.WORLD=World
 screen.WORLD.comment=Settings that relate to the world.
@@ -2437,6 +2438,18 @@ option.NEBULA_B_2=Nebula 2 - Blue
 option.NEBULA_R_3=Nebula 3 - Red
 option.NEBULA_G_3=Nebula 3 - Green
 option.NEBULA_B_3=Nebula 3 - Blue
+
+option.NEBULA_ONLY_STARS=Only Stars
+option.NEBULA_ONLY_STARS.comment=Removes the colorful part of the nebulae and only shows the stars within them.
+
+option.NEBULA_STAR_BRIGHTNESS=Nebula Star Brightness
+option.NEBULA_STAR_BRIGHTNESS.comment=Change the brightness of the stars within the nebulae.
+
+option.NEBULA_STAR_SIZE=Nebula Star Size
+option.NEBULA_STAR_SIZE.comment=Change the size of the stars within the nebulae
+
+option.NEBULA_STAR_AMOUNT=Nebula Star Amount
+option.NEBULA_STAR_AMOUNT.comment=Change the amount of stars within the nebulae.
 
 option.END_CENTER_LIGHTING=End Center Lighting
 option.END_CENTER_LIGHTING.comment=Changes the lighting of the center of the End.
