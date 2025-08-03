@@ -2439,6 +2439,8 @@ option.NEBULA_R_3=Nebula 3 - Red
 option.NEBULA_G_3=Nebula 3 - Green
 option.NEBULA_B_3=Nebula 3 - Blue
 
+option.NEBULA_SATURATION=Saturation
+
 option.NEBULA_ONLY_STARS=Only Stars
 option.NEBULA_ONLY_STARS.comment=Removes the colorful part of the nebulae and only shows the stars within them.
 
