@@ -1,4 +1,4 @@
-name: Update en_US.lang File
+name: Update en_US.lang and Website en.json
 
 on:
   schedule:
@@ -65,45 +65,101 @@ jobs:
           path: en_US.lang
           retention-days: 1
 
+  update-website-en-json:
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.check-changes.outputs.has_changes || 'false' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch website en.json translation
+        run: |
+          # Create temp directory
+          mkdir -p temp_website
+          
+          # Clone the EuphoriaPatches.github.io repository
+          git clone --depth 1 https://github.com/EuphoriaPatches/EuphoriaPatches.github.io.git temp_website
+          
+          # Copy the en.json file to website/ directory
+          mkdir -p website
+          if [ -f temp_website/how-to-install/translations/en.json ]; then
+            cp -v temp_website/how-to-install/translations/en.json website/en.json
+            echo "Successfully copied en.json file"
+          else
+            echo "Error: en.json file not found in temp_website/how-to-install/translations/"
+            exit 1
+          fi
+          
+          # Clean up
+          rm -rf temp_website
+
+      # Check if there were changes to website/en.json
+      - name: Check for website/en.json changes
+        id: check-changes
+        run: |
+          if [ "$(git status --porcelain website/en.json | wc -l)" -gt "0" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "website/en.json file changes detected"
+            git diff website/en.json || true
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in website/en.json file"
+          fi
+
+      # Upload website/en.json as an artifact if changed
+      - name: Upload website/en.json artifact
+        if: steps.check-changes.outputs.has_changes == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-en-json
+          path: website/en.json
+          retention-days: 1
+
   commit-and-push:
     runs-on: ubuntu-latest
-    needs: [update-en-us-lang]
-    if: needs.update-en-us-lang.outputs.has_changes == 'true'
+    needs: [update-en-us-lang, update-website-en-json]
+    if: |
+      always() &&
+      (needs.update-en-us-lang.outputs.has_changes == 'true' ||
+       needs.update-website-en-json.outputs.has_changes == 'true')
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
-      # Download the updated en_US.lang file
+
       - name: Download en_US.lang file
+        if: needs.update-en-us-lang.outputs.has_changes == 'true'
         uses: actions/download-artifact@v4
         with:
           name: en-us-lang-file
           path: ./
-      
+
+      - name: Download website/en.json file
+        if: needs.update-website-en-json.outputs.has_changes == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: website-en-json
+          path: ./
+
       - name: Configure Git
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-      
-      - name: Stage and commit en_US.lang changes
+
+      - name: Stage files if changed
         run: |
-          echo "Staging en_US.lang file changes"
-          git add en_US.lang
-          
-          # Only commit if there are staged changes
+          git add en_US.lang || true
+          git add website/en.json || true
+
+      - name: Commit and push changes
+        run: |
           git diff --quiet --staged || {
-            echo "Committing en_US.lang changes to the repository"
-            git commit -m "Update en_US.lang file [skip ci]"
-            
-            # Try pushing with retries
+            git commit -m "Update en_US.lang and/or website/en.json [skip ci]"
             MAX_RETRIES=5
             RETRY_COUNT=0
-            
             until git push || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
               RETRY_COUNT=$((RETRY_COUNT + 1))
               echo "Push failed, retrying (Attempt $RETRY_COUNT/$MAX_RETRIES)..."
               git pull --rebase
             done
-            
-            echo "Successfully pushed en_US.lang changes"
           }
