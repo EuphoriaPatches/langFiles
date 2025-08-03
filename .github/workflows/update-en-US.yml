@@ -159,8 +159,26 @@ jobs:
 
       - name: Commit and push changes
         run: |
+          # Determine which files are staged
+          MSG=""
+          if git diff --cached --name-only | grep -q "^en_US.lang$"; then
+            MSG="Update en_US.lang"
+          fi
+          if git diff --cached --name-only | grep -q "^website/en.json$"; then
+            if [ -n "$MSG" ]; then
+              MSG="$MSG and website/en.json"
+            else
+              MSG="Update website/en.json"
+            fi
+          fi
+          if [ -z "$MSG" ]; then
+            MSG="Update language files"
+          fi
+          MSG="$MSG [skip ci]"
+
+          # Only commit if there are staged changes
           git diff --quiet --staged || {
-            git commit -m "Update en_US.lang and/or website/en.json [skip ci]"
+            git commit -m "$MSG"
             MAX_RETRIES=5
             RETRY_COUNT=0
             until git push || [ $RETRY_COUNT -ge $MAX_RETRIES ]; do
