@@ -33,6 +33,5 @@
     "windowsInstallerButton": "Windows Installer",
     "javaInstallerButton": "Universal JAR",
     "complementaryInstallerButton": "Download Installer",
-    "complementaryWebsiteButton": "Visit Complementary Website",
-    "test": "aaa"
+    "complementaryWebsiteButton": "Visit Complementary Website"
 }
