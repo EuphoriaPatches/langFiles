@@ -151,6 +151,12 @@ jobs:
           git add en_US.lang || true
           git add website/en.json || true
 
+      - name: Debug Git Status
+        run: |
+          git status
+          git diff
+          git diff --staged
+
       - name: Commit and push changes
         run: |
           git diff --quiet --staged || {
