@@ -2439,6 +2439,8 @@ option.NEBULA_R_3=Червоний туманности 3
 option.NEBULA_G_3=Зелений туманности 3
 option.NEBULA_B_3=Синій туманности 3
 
+option.NEBULA_SATURATION=Насиченість
+
 option.NEBULA_ONLY_STARS=Лише зірки
 option.NEBULA_ONLY_STARS.comment=Видаляє кольорову частину туманностей і показує лише зірки всередині них.
 
