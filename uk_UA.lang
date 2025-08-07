@@ -1663,8 +1663,11 @@ value.NETHER_PORTAL_VARIATION.0=Усталений
 value.NETHER_PORTAL_VARIATION.1=Complementary
 value.NETHER_PORTAL_VARIATION.2=Фіолетова порожнеча
 
-option.BIOME_COLORED_NETHER_PORTALS=Хамелеон портал у Незер
+option.BIOME_COLORED_NETHER_PORTALS=Портал-хамелеон Незеру
 option.BIOME_COLORED_NETHER_PORTALS.comment=Портали Незеру будуть позначені кольором залежно від біома, в якому ви зараз перебуваєте.
+
+option.NETHER_PORTAL_NOISE=Шум порталу Незеру
+option.NETHER_PORTAL_NOISE.comment=Додає шум до текстури порталу Незеру, роблячи його більш динамічним.
 
 option.END_PORTAL_VARIATION=Пресет порталу Енду
 option.END_PORTAL_VARIATION.comment=Можливість вибору між різними пресетами порталу в Енд. §e[*]§r Підтримка ПР має бути Integrated PBR+.
