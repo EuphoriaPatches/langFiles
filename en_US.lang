@@ -1666,6 +1666,9 @@ value.NETHER_PORTAL_VARIATION.2=Purple Void
 option.BIOME_COLORED_NETHER_PORTALS=Chameleon Nether Portals
 option.BIOME_COLORED_NETHER_PORTALS.comment=Nether portals in the Nether will be color-coded depending on the biome you're currently in.
 
+option.NETHER_PORTAL_NOISE=Nether Portal Noise
+option.NETHER_PORTAL_NOISE.comment=Adds noise to the Nether Portal texture, making it look more dynamic.
+
 option.END_PORTAL_VARIATION=End Portal Preset
 option.END_PORTAL_VARIATION.comment=Option to choose between different end portal presets. §e[*]§r RP Support option must be set to Integrated PBR+
 value.END_PORTAL_VARIATION.0=Complementary
