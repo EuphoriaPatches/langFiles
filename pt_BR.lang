@@ -1666,6 +1666,9 @@ value.NETHER_PORTAL_VARIATION.2=Purple Void
 option.BIOME_COLORED_NETHER_PORTALS=Portais do Nether Camaleão
 option.BIOME_COLORED_NETHER_PORTALS.comment=Portais do Nether no Nether terão cor diferente dependendo do bioma em que você está.
 
+option.NETHER_PORTAL_NOISE=Ruído do Portal do Nether
+option.NETHER_PORTAL_NOISE.comment=Adiciona ruído à textura do Portal do Nether, tornando-o mais dinâmico.
+
 option.END_PORTAL_VARIATION=Predefinição do Portal do End
 option.END_PORTAL_VARIATION.comment=Opção para escolher entre diferentes predefinições de portal do End. §e[*]§r O suporte a RP deve estar em Integrated PBR+
 value.END_PORTAL_VARIATION.0=Complementary
@@ -2438,6 +2441,8 @@ option.NEBULA_B_2=Nébula 2 - Azul
 option.NEBULA_R_3=Nébula 3 - Vermelho
 option.NEBULA_G_3=Nébula 3 - Verde
 option.NEBULA_B_3=Nébula 3 - Azul
+
+option.NEBULA_SATURATION=Saturação
 
 option.NEBULA_ONLY_STARS=Apenas Estrelas
 option.NEBULA_ONLY_STARS.comment=Remove a parte colorida das nebulosas e mostra apenas as estrelas dentro delas.
