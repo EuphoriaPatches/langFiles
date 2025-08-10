@@ -1269,6 +1269,7 @@ screen.LETTERBOX_SETTINGS=Letterbox Settings
 screen.GRID_SETTINGS=Grid Settings
 screen.WATERMARK_SETTINGS=Watermark Settings
 screen.DOF_SETTINGS=Depth Of Field Settings
+screen.DOF_SHAPE_SETTINGS=Shape Settings
 
 screen.FUN=Fun
 screen.FUN.comment=Let's have some fun.
@@ -2097,6 +2098,25 @@ value.TILT_SHIFT2.0=OFF
 
 option.DOF_VIEW_FOCUS_NEW2=§cDOF Focus Plane & Spyglass
 option.DOF_VIEW_FOCUS_NEW2.comment=Makes the Focus Plane of DOF visible when the GUI visible and the player is holding a spyglass.
+
+option.DOF_SHAPE=Shape
+option.DOF_SHAPE.comment=Depth of Field Shape
+value.DOF_SHAPE.0=Original
+value.DOF_SHAPE.3=Triangle
+value.DOF_SHAPE.4=Square
+value.DOF_SHAPE.5=Pentagon
+value.DOF_SHAPE.6=Hexagon
+value.DOF_SHAPE.7=Heptagon
+value.DOF_SHAPE.8=Octagon
+
+option.DOF_POLYGON_SAMPLES=Polygon Samples
+option.DOF_POLYGON_SAMPLES.comment=Number of samples to take for polygon shapes. The higher the value, the smoother the shape will be. §c[-]§r Performance decreases with higher values.
+
+option.DOF_POLYGON_RINGS=Ring Amount
+option.DOF_POLYGON_RINGS.comment=Number of rings to use for polygon shapes. The higher the value, the smoother the shape will be. §c[-]§r Performance decreases with higher values.
+
+option.DOF_SHAPE_ROTATION_DEGREES=Rotation
+option.DOF_SHAPE_ROTATION_DEGREES.comment=Rotation of the depth of field shape in degrees.
 
 option.LET_THERE_BE_COLORS=LET THERE BE COLORS
 
