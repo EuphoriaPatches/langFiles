@@ -1269,6 +1269,7 @@ screen.LETTERBOX_SETTINGS=Налаштування звужування
 screen.GRID_SETTINGS=Налаштування сітки
 screen.WATERMARK_SETTINGS=Налаштування вотермарка
 screen.DOF_SETTINGS=Налаштування глибини різкости
+screen.DOF_SHAPE_SETTINGS=Налаштування форми
 
 screen.FUN=Забава
 screen.FUN.comment=Давай розважимося :D.
@@ -2097,6 +2098,25 @@ value.TILT_SHIFT2.0=ВИМК.
 
 option.DOF_VIEW_FOCUS_NEW2=Фокус межі ГР і підзорної труби
 option.DOF_VIEW_FOCUS_NEW2.comment=Робить видимою площину фокусування глибини різкости, коли видимий графічний інтерфейс і використовується підзорна труба.
+
+option.DOF_SHAPE=Форма
+option.DOF_SHAPE.comment=Глибина поля форми
+value.DOF_SHAPE.0=Оригінал
+value.DOF_SHAPE.3=Трикутник
+value.DOF_SHAPE.4=Квадрат
+value.DOF_SHAPE.5=П'ятикутник
+value.DOF_SHAPE.6=Шестикутник
+value.DOF_SHAPE.7=Семикутник
+value.DOF_SHAPE.8=Восьмикутник
+
+option.DOF_POLYGON_SAMPLES=Зразки багатокутників
+option.DOF_POLYGON_SAMPLES.comment=Кількість зразків для багатокутних форм. Чим вище значення, тим гладкішою буде форма. §c[-]§r Продуктивність знижується з вищими значеннями.
+
+option.DOF_POLYGON_RINGS=Кількість кілець
+option.DOF_POLYGON_RINGS.comment=Кількість кілець для багатокутних форм. Чим вище значення, тим гладкішою буде форма. §c[-]§r Продуктивність знижується з вищими значеннями.
+
+option.DOF_SHAPE_ROTATION_DEGREES=Обертання
+option.DOF_SHAPE_ROTATION_DEGREES.comment=Обертання форми глибини різкости в градусах.
 
 option.LET_THERE_BE_COLORS=ХАЙ БУДУТЬ КОЛЬОРИ
 
