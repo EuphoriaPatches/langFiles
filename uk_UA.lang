@@ -1270,6 +1270,8 @@ screen.GRID_SETTINGS=Налаштування сітки
 screen.WATERMARK_SETTINGS=Налаштування вотермарка
 screen.DOF_SETTINGS=Налаштування глибини різкости
 screen.DOF_SHAPE_SETTINGS=Налаштування форми
+screen.LENS_FLARE_SETTINGS=Налаштування відблиску об'єктива
+screen.LENS_FLARE_SETTINGS.comment=Налаштування, що стосуються відблисків єктива.
 
 screen.FUN=Забава
 screen.FUN.comment=Давай розважимося :D.
@@ -2494,3 +2496,20 @@ option.NETHER_HEAT_DISTORTION_SCALE.comment=Змінює масштаб ефек
 
 option.BLOCKLIGHT_CAUSTICS=Каустика світла блоків
 option.BLOCKLIGHT_CAUSTICS.comment=Додає каустичний ефект світла блоків під водою.
+
+option.LENS_FLARE_SHAPE=Форма відблиску об'єктива
+option.LENS_FLARE_SHAPE.comment=Змінює форму відблисків.
+value.LENS_FLARE_SHAPE.0=Усталена
+value.LENS_FLARE_SHAPE.3=Трикутник
+value.LENS_FLARE_SHAPE.4=Квадрат
+value.LENS_FLARE_SHAPE.5=П'ятикутник
+value.LENS_FLARE_SHAPE.6=Шестикутник
+value.LENS_FLARE_SHAPE.7=Семикутник
+value.LENS_FLARE_SHAPE.8=Восьмикутник
+
+option.LENS_FLARE_SHAPE_ROTATION=Оберт. форми відблиску об’єктива
+option.LENS_FLARE_SHAPE_ROTATION.comment=Змінює обертання форм відблиску об'єктива.
+
+option.ANAMORPHIC_LENS_FLARE=Анаморфний відблиск
+option.ANAMORPHIC_LENS_FLARE.comment=Умикає або вимкнути анаморфотні відблиски.
+value.ANAMORPHIC_LENS_FLARE.0=ВИМК.
