@@ -1270,6 +1270,8 @@ screen.GRID_SETTINGS=Grid Settings
 screen.WATERMARK_SETTINGS=Watermark Settings
 screen.DOF_SETTINGS=Depth Of Field Settings
 screen.DOF_SHAPE_SETTINGS=Shape Settings
+screen.LENS_FLARE_SETTINGS=Lens Flare Settings
+screen.LENS_FLARE_SETTINGS.comment=Settings that relate to lens flares.
 
 screen.FUN=Fun
 screen.FUN.comment=Let's have some fun.
@@ -2494,3 +2496,20 @@ option.NETHER_HEAT_DISTORTION_SCALE.comment=Change the scale of the heat distort
 
 option.BLOCKLIGHT_CAUSTICS=Blocklight Caustics
 option.BLOCKLIGHT_CAUSTICS.comment=Adds a caustic effect to the blocklight when underwater.
+
+option.LENS_FLARE_SHAPE=Lens Flare Shape
+option.LENS_FLARE_SHAPE.comment=Change the shape of the lens flares.
+value.LENS_FLARE_SHAPE.0=Default
+value.LENS_FLARE_SHAPE.3=Triangle
+value.LENS_FLARE_SHAPE.4=Square
+value.LENS_FLARE_SHAPE.5=Pentagon
+value.LENS_FLARE_SHAPE.6=Hexagon
+value.LENS_FLARE_SHAPE.7=Heptagon
+value.LENS_FLARE_SHAPE.8=Octagon
+
+option.LENS_FLARE_SHAPE_ROTATION=Lens Flare Shape Rotation
+option.LENS_FLARE_SHAPE_ROTATION.comment=Change the rotation of the lens flare shapes.
+
+option.ANAMORPHIC_LENS_FLARE=Anamorphic Lens Flare
+option.ANAMORPHIC_LENS_FLARE.comment=Enable or disable anamorphic lens flares.
+value.ANAMORPHIC_LENS_FLARE.0=OFF
