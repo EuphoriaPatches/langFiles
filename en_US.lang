@@ -1405,6 +1405,9 @@ option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Determines the size of the second layer
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=Cloud Layer 2 Amount
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Determines the amount of the second layer clouds.
 
+option.CLOUD_SUN_MOON_SHADING=Sun/Moon Shading
+option.CLOUD_SUN_MOON_SHADING.comment=Enables shading for the sun and moon on the clouds.
+
 option.END_SMOKE=End Smoke
 option.END_SMOKE.comment=Someone left the fire unattended and now the End has smoke in the upper and lower void.
 option.E_SKY_COLORR=End Sky - Red
