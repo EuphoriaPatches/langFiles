@@ -1405,6 +1405,9 @@ option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Визначає розмір хмар 
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=Кількість 2 шару хмар
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Визначає кількість хмар другого шару.
 
+option.CLOUD_SUN_MOON_SHADING=Затінення Сонця та Місяця
+option.CLOUD_SUN_MOON_SHADING.comment=Умикає затінення сонця та місяця на хмарах.
+
 option.END_SMOKE=Дим
 option.END_SMOKE.comment=О ні, хтось залишив вогонь без нагляду, і тепер Енд димить згори і знизу!
 option.E_SKY_COLORR=Червоний неба Енду
