@@ -1323,7 +1323,7 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=Zmienia stopień zaokrąglenia cieni chmur
 option.CLOUD_NARROWNESS=Wąskość Chmur
 value.CLOUD_NARROWNESS.0.1=Ultra Smukłe
 value.CLOUD_NARROWNESS.0.075=Smukłe
-value.CLOUD_NARROWNESS.0.05=Normalne
+value.CLOUD_NARROWNESS.0.07=Normalne
 value.CLOUD_NARROWNESS.0.025=Szerokie
 option.CLOUD_NARROWNESS.comment=Zmienia, jak wąskie są chmury na osi poziomej.
 

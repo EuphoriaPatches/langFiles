@@ -1349,7 +1349,7 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=Форма теней от облаков.
 option.CLOUD_NARROWNESS=Узость облаков
 value.CLOUD_NARROWNESS.0.1=Очень узкие
 value.CLOUD_NARROWNESS.0.075=Узкие
-value.CLOUD_NARROWNESS.0.05=Средние
+value.CLOUD_NARROWNESS.0.07=Средние
 value.CLOUD_NARROWNESS.0.025=Широкие
 option.CLOUD_NARROWNESS.comment=Горизонтальный масштаб облаков.
 

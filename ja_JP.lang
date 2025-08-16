@@ -1328,7 +1328,7 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=雲の影の丸み具合を変更します
 option.CLOUD_NARROWNESS=雲の細さ
 value.CLOUD_NARROWNESS.0.1=超スリム
 value.CLOUD_NARROWNESS.0.075=スリム
-value.CLOUD_NARROWNESS.0.05=中間
+value.CLOUD_NARROWNESS.0.07=中間
 value.CLOUD_NARROWNESS.0.025=幅広
 option.CLOUD_NARROWNESS.comment=雲の水平スケールでの細さを変更します。
 

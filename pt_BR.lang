@@ -1349,7 +1349,7 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=Altere o quão arredondadas as sombras das
 option.CLOUD_NARROWNESS=Estreitamento das Nuvens
 value.CLOUD_NARROWNESS.0.1=Ultra Fina
 value.CLOUD_NARROWNESS.0.075=Fina
-value.CLOUD_NARROWNESS.0.05=Média
+value.CLOUD_NARROWNESS.0.07=Média
 value.CLOUD_NARROWNESS.0.025=Larga
 option.CLOUD_NARROWNESS.comment=Altere o quão estreitas as nuvens aparecem na escala horizontal.
 

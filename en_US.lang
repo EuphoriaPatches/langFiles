@@ -462,17 +462,11 @@ value.NETHER_COLOR_MODE.3=Biome Based (Modified)
 value.NETHER_COLOR_MODE.2=Biome Based
 value.NETHER_COLOR_MODE.0=Constant
 
-option.T_EXPOSURE=General Brightness
-option.T_EXPOSURE.comment=Also known as "Tonemap Exposure". Adjusts the overall brightness of the whole image.
+option.TM_EXPOSURE=General Brightness
+option.TM_EXPOSURE.comment=Also known as "Tonemap Exposure". Adjusts the overall brightness of the whole image.
 
-option.TM_WHITE_CURVE=White Brightness
-option.TM_WHITE_CURVE.comment=Also known as "Tonemap White Curve". Adjusts how easily the colors reach to full white.
-
-option.T_UPPER_CURVE=Contrast of Brighter Colors
-option.T_UPPER_CURVE.comment=Also known as "Tonemap Upper Curve". Adjusts contrast of brighter colors.
-
-option.T_LOWER_CURVE=Contrast of Darker Colors
-option.T_LOWER_CURVE.comment=Also known as "Tonemap Lower Curve". Adjusts contrast of darker colors.
+option.TM_CONTRAST=General Contrast
+option.TM_CONTRAST.comment=Adjusts the darkness of dark colors and brightness of bright colors.
 
 option.T_SATURATION=Saturation
 option.T_SATURATION.comment=Adjusts overall colorfulness of the image.
@@ -779,8 +773,8 @@ value.IPBR_EMISSIVE_MODE.1=IPBR+ Only
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 
-option.IPBR_COMPATIBILITY_MODE=IPBR+ Compatibility Mode
-option.IPBR_COMPATIBILITY_MODE.comment=Changes how some IPBR+ features are calculated to be less aggressive in order to cause less problems with resource packs, or mods.
+option.IPBR_COMPAT_MODE_DEFINE=IPBR+ Compatibility Mode
+option.IPBR_COMPAT_MODE_DEFINE.comment=Changes how some IPBR+ features are calculated to be less aggressive in order to cause less problems with resource packs, or mods.
 
 option.IPBR_PARTICLE_FEATURES=IPBR+ Particle Features
 option.IPBR_PARTICLE_FEATURES.comment=Enables several features for particles, including things like glowing lava particles and better-colored water particles.
@@ -990,9 +984,8 @@ option.SPECIAL_PORTAL_EFFECTS.comment=Adds special animations and emission to Ne
 
 option.REFLECTION_RES_DIVIDE=Half Resolution Reflections
 option.REFLECTION_RES_DIVIDE.comment=Makes PBR reflections on blocks (and the world-space reflections if you have that setting enabled) render in half resolution to gain performance.
-value.REFLECTION_RES_DIVIDE.1=§cOFF
+value.REFLECTION_RES_DIVIDE.1=OFF
 value.REFLECTION_RES_DIVIDE.2=ON
-
 
 option.WORLD_OUTLINE=World Outline
 option.WORLD_OUTLINE.comment=Adds bright outlines around blocks. §c[-]§r This effect can impact performance.
@@ -1352,7 +1345,7 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=Change how round cloud shadows appear.
 option.CLOUD_NARROWNESS=Cloud Narrowness
 value.CLOUD_NARROWNESS.0.1=Ultra Slim
 value.CLOUD_NARROWNESS.0.075=Slim
-value.CLOUD_NARROWNESS.0.05=Medium
+value.CLOUD_NARROWNESS.0.07=Medium
 value.CLOUD_NARROWNESS.0.025=Wide
 option.CLOUD_NARROWNESS.comment=Change how narrow the clouds appear on the horizontal scale.
 
@@ -1363,7 +1356,11 @@ option.CLOUD_STRETCH=Cloud Height
 option.CLOUD_TRANSPARENCY=Cloud Transparency
 option.CLOUD_DIRECTION=Cloud Direction
 option.CLOUD_DIRECTION.comment=Changes the direction in which the clouds move.
-option.CLOUD_MINECRAFT_TEXTURE=Minecraft Cloud Texture
+option.CLOUD_TEXTURE=Minecraft Cloud Texture
+value.CLOUD_TEXTURE.0=Default
+value.CLOUD_TEXTURE.1=Old Minecraft
+value.CLOUD_TEXTURE.2=Old Complementary
+
 value.CLOUD_DIRECTION.1=West-East
 value.CLOUD_DIRECTION.2=North-South
 option.RAINBOW_CLOUD=Rainbow Clouds
@@ -1781,6 +1778,7 @@ option.BAD_APPLE.comment=Makes the screen black with the exception of entities, 
 
 option.tonemap=Tonemap
 option.tonemap.comment=Changes which tonemap is used.
+value.tonemap.DoCompTonemap=Complementary Default
 value.tonemap.DoBSLTonemap=BSL/Complementary
 value.tonemap.ACESTonemap=ACES
 value.tonemap.ACESRedModified=ACES Red Modified
@@ -1799,6 +1797,7 @@ option.TONEMAP_COMPARISON.comment=Option to compare tonemaps
 
 option.tonemap_left=Tonemap Left
 option.tonemap_left.comment=Changes which tonemap is used.
+value.tonemap_left.DoCompTonemap=Complementary Default
 value.tonemap_left.DoBSLTonemap=BSL/Complementary
 value.tonemap_left.ACESTonemap=ACES
 value.tonemap_left.ACESRedModified=ACES Red Modified
@@ -1814,6 +1813,7 @@ value.tonemap_left.agxTonemap=AgX
 
 option.tonemap_right=Tonemap Right
 option.tonemap_right.comment=Changes which tonemap is used.
+value.tonemap_right.DoCompTonemap=Complementary Default
 value.tonemap_right.DoBSLTonemap=BSL/Complementary
 value.tonemap_right.ACESTonemap=ACES
 value.tonemap_right.ACESRedModified=ACES Red Modified

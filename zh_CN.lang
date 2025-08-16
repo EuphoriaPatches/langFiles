@@ -1354,7 +1354,7 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=调节云层阴影的圆润程度.
 option.CLOUD_NARROWNESS=云层水平缩放
 value.CLOUD_NARROWNESS.0.1=0.20x
 value.CLOUD_NARROWNESS.0.075=0.67x
-value.CLOUD_NARROWNESS.0.05=1x
+value.CLOUD_NARROWNESS.0.07=1x
 value.CLOUD_NARROWNESS.0.025=2x
 option.CLOUD_NARROWNESS.comment=更改云在水平比例上的显示宽窄.
 

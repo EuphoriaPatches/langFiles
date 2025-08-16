@@ -1352,7 +1352,7 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=Змінює вигляд круглих �
 option.CLOUD_NARROWNESS=Вузькість хмар
 value.CLOUD_NARROWNESS.0.1=Ультра тонка
 value.CLOUD_NARROWNESS.0.075=Тонка
-value.CLOUD_NARROWNESS.0.05=Посередня
+value.CLOUD_NARROWNESS.0.07=Посередня
 value.CLOUD_NARROWNESS.0.025=Широка
 option.CLOUD_NARROWNESS.comment=Змінює вузькість хмар на горизонтальній шкалі.
 
