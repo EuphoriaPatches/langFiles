@@ -322,7 +322,7 @@ value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
-option.COLORED_LIGHTING=高度な色トレーシング (ACT) §e[*]§
+option.COLORED_LIGHTING=高度な色トレーシング (ACT) §e[*]§r
 option.COLORED_LIGHTING.comment=Complementary Shadersの機能です。. ボクセル化とFlood Fillライティングを使用してブロック光源に色を追加し. さらに追加でいくつかの光源を追加します。. §e[*]§r この機能はIrisとサポートされているプラットフォームでのみ動作します。. §e[*]§r この設定は「動的な影」が無効の場合、無効になります。. §a[+]§r 高度な色トレーシングシステムは、他の機能を個別に有効/無効にできる「その他」 ->「ACT専用機能」メニューも有効にします。. §c[-]§r この効果の高いチャンク値はパフォーマンスに予想以上の影響を与え、2チャンクごとの増加ごとに前の段階の2倍以上のパフォーマンスコストがかかる場合があります。
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§c4チャンク
@@ -396,7 +396,7 @@ value.CLOUD_STYLE_DEFINE.3=Unbound
 value.CLOUD_STYLE_DEFINE.50=バニラ §e[*]
 
 option.CLOUD_SHADOWS=雲の影
-option.CLOUD_SHADOWS.comment=雲によって投影される影を有効にします。. §e[*]§r この設定は「Reimagined」または「Unbound」スタイルの雲でのみ機能します。. §e[*]§r「Unbound」スタイルの場合、雲の影は複雑さによりランダムに生成されます。
+option.CLOUD_SHADOWS.comment=雲によって投影される影を有効にします。. §e[*]§r この設定は「Reimagined」または「Unbound」スタイルの雲でのみ機能します。. §e[*]§r 雲のスタイルが「Unbound」の場合は、Unbound雲の複雑さのため影はランダム生成されます。
 
 option.CLOUD_CLOSED_AREA_CHECK=室内の雲を防ぐ
 option.CLOUD_CLOSED_AREA_CHECK.comment=閉じたエリア内で雲が現れないようにする追加チェックを行います。. §e[*]§r この設定は「Reimagined」または「Unbound」スタイルの雲でのみ機能します。. §e[*]§r この設定は「動的な影」が無効の場合無効になります。
@@ -866,7 +866,7 @@ option.GLOWING_ORE_NETHERGOLD=光るネザー金鉱石
 option.GLOWING_ORE_GILDEDBLACKSTONE=光るきらめくブラックストーン
 option.GLOWING_ORE_ANCIENTDEBRIS=光る古代の残骸
 option.GLOWING_ORE_MODDED=光るModの鉱石 §e[*]§r
-option.GLOWING_ORE_MODDED.comment=§e[*]§r Modの鉱石IDを「Complementary-->shaders-->block.properties」ファイルに追加することで、発光させることができます。. block.propertiesは、メモ帳などのテキストエディタで開き、Modの鉱石IDを「block.10024=」の後に追加します。
+option.GLOWING_ORE_MODDED.comment=§e[*]§r Modの鉱石IDを「Complementary-->shaders-->block.properties」ファイルに追加することで、発光させることができます。. block.propertiesをメモ帳などのテキストエディタで開き、Modの鉱石IDを「block.10024=」の後に追加してください。
 
 option.GLOWING_AMETHYST=光るアメジスト
 value.GLOWING_AMETHYST.0=§cOFF
@@ -1232,7 +1232,7 @@ screen.LAVA_SETTINGS.comment=灼熱の溶岩に関する設定です。
 screen.END_ROD_SETTINGS=エンドロッド
 screen.END_ROD_SETTINGS.comment=エンドロッドに関する設定です。
 screen.FOLIAGE_SETTINGS=植物
-screen.FOLIAGE_SETTINGS.comment=植物に関する設定です
+screen.FOLIAGE_SETTINGS.comment=植物に関する設定です。
 screen.PORTAL_SETTINGS=ポータルの設定
 screen.PORTAL_SETTINGS.comment=ポータルに関する設定です。
 screen.MISC_SETTINGS=その他
@@ -1793,7 +1793,7 @@ value.tonemap.uchimura=Uchimura
 value.tonemap.agxTonemap=AgX
 
 option.TONEMAP_COMPARISON=トーンマップ比較
-option.TONEMAP_COMPARISON.comment=トーンマップを比較するオプション
+option.TONEMAP_COMPARISON.comment=トーンマップを比較するオプション。
 
 option.tonemap_left=左側のトーンマップ
 option.tonemap_left.comment=使用するトーンマップを変更します。
@@ -1932,7 +1932,7 @@ value.LESS_LEAVES.0=OFF
 option.AUTUMN_CONDITION=森林にのみ適用
 
 option.AUTUMN_NOISE_SIZE=色ノイズのサイズ
-option.AUTUMN_NOISE_SIZE.comment=葉の色のグラデーションの元になるノイズのサイズ
+option.AUTUMN_NOISE_SIZE.comment=葉の色のグラデーションの元になるノイズのサイズ。
 
 option.LEAVES_ON_GROUND=地面の葉
 option.LEAVES_ON_GROUND.comment=秋の間、地面に葉が表れます。
@@ -1997,7 +1997,7 @@ option.NO_RAIN_ABOVE_CLOUDS=雲の上では雨が降らない
 option.NO_RAIN_ABOVE_CLOUDS.comment=雲の上で雨が降らないようにします。. バニラの雲の高さが変更され、バニラの雲が有効になっている場合はうまく機能しません。
 
 option.RAIN_FADE_TIMER=雨のフェード時間
-option.RAIN_FADE_TIMER.comment=雨関連のエフェクトがフェードイン/フェードアウトするのにかかる時間を変更します。. 影響されるエフェクト: 雲、水溜まり、霧、虹など
+option.RAIN_FADE_TIMER.comment=雨関連のエフェクトがフェードイン/フェードアウトするのにかかる時間を変更します。. 影響されるエフェクト: 雲、水溜まり、霧、虹など。
 
 option.DOF_SNEAKING=被写界深度 スニーク中 & 望遠鏡
 option.DOF_SNEAKING.comment=スニークしている、かつ望遠鏡を手に持っている間のみワールドブラーオプションを有効にします。
@@ -2118,7 +2118,7 @@ option.DOF_POLYGON_RINGS.comment=ポリゴン形状に使用するリングの�
 option.DOF_SHAPE_ROTATION_DEGREES=回転
 option.DOF_SHAPE_ROTATION_DEGREES.comment=被写界深度の形状の回転角度(度)です。
 
-option.LET_THERE_BE_COLORS=カラーを表示
+option.LET_THERE_BE_COLORS=神は「色彩あれ」と言われた
 
 option.MOSS_NOISE=苔のノイズ
 option.MOSS_SIZE=ピクセルサイズ
@@ -2194,11 +2194,11 @@ value.FROGLIGHT_SATURATION.1=デフォルト
 value.FROGLIGHT_SATURATION.2=2倍
 value.FROGLIGHT_SATURATION.3=3倍
 
-option.RENKO_CUT=RP Renko監督版
+option.RENKO_CUT=EP Renko監督版
 option.RENKO_CUT.comment=Complisseumでの正当な戦いによって手に入れた。
 
 option.GLITTER_RAIN=グリッターの雨
-option.GLITTER_RAIN.comment=雨粒にグリッターを散りばめて、輝く一日を過ごそう
+option.GLITTER_RAIN.comment=雨粒にグリッターを散りばめて、輝く一日を過ごそう。
 value.GLITTER_RAIN.0=OFF
 value.GLITTER_RAIN.1=ON - ランダムな時間
 value.GLITTER_RAIN.2=ON - 常時
