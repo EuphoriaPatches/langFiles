@@ -198,13 +198,13 @@ screen.NETHER_LIGHT_MULTS=ネザー
 screen.END_LIGHT_MULTS=ジ・エンド
 
 screen.BLOCKLIGHT_COLOR_SETTINGS=ブロック光源の色 §e[*]§r
-screen.BLOCKLIGHT_COLOR_SETTINGS.comment=光源ブロックから放たれる光の色を調整するための設定です。. §e[*]§r 「高度な色付き光源」設定が有効な場合、これらの色設定はブロック光源の強度スライダーを除き、ほとんどの光源に影響しません。
+screen.BLOCKLIGHT_COLOR_SETTINGS.comment=光源ブロックから放たれる光の色を調整するための設定です。. §e[*]§r 「高度な色トレーシング」設定が有効な場合、これらの色設定はブロック光源の強度スライダーを除き、ほとんどの光源に影響しません。
 
 screen.MOON_PHASE_INF_SETTINGS=月相の影響
 screen.MOON_PHASE_INF_SETTINGS.comment=月の満ち欠けが夜間のライティングにどのように影響するかを決定する設定です。
 
-screen.ACL_FEATURES_SETTINGS=ACL専用機能 §e[*]§r
-screen.ACL_FEATURES_SETTINGS.comment=「高度な色付き光源」の専用機能に関する設定です。. §e[*]§r これらの機能は、パフォーマンス設定で「高度な色付き光源」が有効、かつシステムが対応している場合のみ動作します。
+screen.ACT_FEATURES_SETTINGS=ACT専用機能 §e[*]§r
+screen.ACT_FEATURES_SETTINGS.comment=「高度な色トレーシング」の専用機能に関する設定です。. §e[*]§r これらの機能は、パフォーマンス設定で「高度な色トレーシング」が有効、かつシステムが対応している場合のみ動作します。
 
 screen.PIXELATED_LIGHTING_SETTINGS=ピクセル化されたライティング
 screen.PIXELATED_LIGHTING_SETTINGS.comment=特定のライティング効果をピクセル化するための設定です。
@@ -246,10 +246,9 @@ value.WATER_REFLECT_QUALITY.1=§e超低
 value.WATER_REFLECT_QUALITY.2=§c中
 
 option.BLOCK_REFLECT_QUALITY=ブロック反射の品質 §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=固体素材に表示される反射の品質を調整します。. §c高§r: 太陽/月のハイライト + 時間軸フィルタを使用したより滑らかな鏡面反射。. §e中§r: 太陽/月のハイライト + 鏡面反射。. §a低§r: 太陽/月のハイライトのみ。. §e[*]§r 鏡面反射を表示するには、RPサポートオプションをBasic以外に設定する必要があります。
+option.BLOCK_REFLECT_QUALITY.comment=固体素材に表示される反射の品質を調整します。. §c高§r: 太陽/月のハイライト + 時間軸フィルタを使用したより滑らかな鏡面反射。. §e低§r: 太陽/月のハイライトのみ。. §e[*]§r 鏡面反射を表示するには、RPサポートオプションをBasic以外に設定する必要があります。
 value.BLOCK_REFLECT_QUALITY.0=§aOFF
 value.BLOCK_REFLECT_QUALITY.1=§e低
-value.BLOCK_REFLECT_QUALITY.2=§c中
 value.BLOCK_REFLECT_QUALITY.3=§c高
 
 option.SHADOW_QUALITY=動的な影
@@ -287,7 +286,7 @@ value.shadowDistance.512.0=§4§l32チャンク
 value.shadowDistance.768.0=§4§l§n§o48 チャンク
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64チャンク§r§4§k-
 
-option.ENTITY_SHADOWS_DEFINE=エンティティの影
+option.ENTITY_SHADOWS_DEFINE=エンティティの影 §c[-]§r
 option.ENTITY_SHADOWS_DEFINE.comment=エンティティやブロックエンティティが影を投影できるようにします。. §c[-]§r エンティティの影はパフォーマンスに予想以上の影響を与え、場合によってはfpsが50%以上低下することがあります。
 value.ENTITY_SHADOWS_DEFINE.-1=§aOFF
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oON§r§4§k- §r§c[-]
@@ -323,8 +322,8 @@ value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
-option.COLORED_LIGHTING=高度な色付き照明 (ACT) §e[*]§
-option.COLORED_LIGHTING.comment=Complementary Shadersの機能です。. ボクセル化とFlood Fillライティングを使用してブロック光源に色を追加し. さらに追加でいくつかの光源を追加します。. §e[*]§r この機能はIrisとサポートされているプラットフォームでのみ動作します。. §e[*]§r この設定は「動的な影」が無効の場合、無効になります。. §a[+]§r このシステムは、他の機能を個別に有効/無効にできる「その他」 ->「ACL専用機能」メニューも有効にします。. §c[-]§r この効果の高いチャンク値はパフォーマンスに予想以上の影響を与え、2チャンクごとの増加ごとに前の段階の2倍以上のパフォーマンスコストがかかる場合があります。
+option.COLORED_LIGHTING=高度な色トレーシング (ACT) §e[*]§
+option.COLORED_LIGHTING.comment=Complementary Shadersの機能です。. ボクセル化とFlood Fillライティングを使用してブロック光源に色を追加し. さらに追加でいくつかの光源を追加します。. §e[*]§r この機能はIrisとサポートされているプラットフォームでのみ動作します。. §e[*]§r この設定は「動的な影」が無効の場合、無効になります。. §a[+]§r 高度な色トレーシングシステムは、他の機能を個別に有効/無効にできる「その他」 ->「ACT専用機能」メニューも有効にします。. §c[-]§r この効果の高いチャンク値はパフォーマンスに予想以上の影響を与え、2チャンクごとの増加ごとに前の段階の2倍以上のパフォーマンスコストがかかる場合があります。
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§c4チャンク
 value.COLORED_LIGHTING.192=§c6チャンク
@@ -333,6 +332,16 @@ value.COLORED_LIGHTING.384=§4§l12チャンク
 value.COLORED_LIGHTING.512=§4§l§n§o16チャンク
 value.COLORED_LIGHTING.768=§4§l§n§o24チャンク §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32チャンク§r§4§k- §r§c[-]
+
+option.WORLD_SPACE_REFLECTIONS=ワールドスペース反射 (WSR) §e[*]§r
+option.WORLD_SPACE_REFLECTIONS.comment=反射の計算方式をスクリーンスペースからワールドスペースに変更します。. §c[-]§r おそらくModブロックでは動作しません。. §e[*]§r この機能は「パフォーマンス設定」で高度な色トレーシングが有効で、かつシステムが対応している場合にのみ動作します。. §e[*]§r この効果の最大距離は、高度な色トレーシングの距離に依存します。. §c[-]§r この効果は、特に高度な色トレーシングの効果距離が長い場合において、パフォーマンスに大きく影響を与える可能性があります。
+value.WORLD_SPACE_REFLECTIONS.-1=§aOFF
+value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oON
+
+option.WORLD_SPACE_REF_MODE=WSRモード §e[*]§r
+option.WORLD_SPACE_REF_MODE.comment=ワールドスペース反射の動作方法を決定します。. §e[*]§r 「WSRのみ」モードはワールドスペース反射のみを有効にするため、スクリーンスペース反射による視覚的なノイズを全て除去できますが、スクリーンスペース反射は効果距離やブロックに限定されない画面内の全ての情報にアクセスできるため、全体的なディテールは「WSR + SSR」モードがより優れています。
+value.WORLD_SPACE_REF_MODE.1=WSRのみ
+value.WORLD_SPACE_REF_MODE.2=WSR + SSR
 
 option.SSAO_I=エッジシャドウの強度 (SSAO)
 option.SSAO_I.comment=シーンのエッジに追加の環境影を加えるSSAOの強度を決定します。. §e[*]§r この設定は、「パフォーマンス設定」でSSAOが無効になっている場合、機能しません。
@@ -453,17 +462,11 @@ value.NETHER_COLOR_MODE.3=バイオーム別 (カスタム)
 value.NETHER_COLOR_MODE.2=バイオーム別
 value.NETHER_COLOR_MODE.0=一定
 
-option.T_EXPOSURE=全体的な明るさ
-option.T_EXPOSURE.comment=「露出補正」とも呼ばれ、画像全体の明るさを調整します。
+option.TM_EXPOSURE=全体的な明るさ
+option.TM_EXPOSURE.comment=「露出補正」とも呼ばれ、画像全体の明るさを調整します。
 
-option.TM_WHITE_CURVE=白の明るさ
-option.TM_WHITE_CURVE.comment=色がどれだけ簡単に完全な白に達するかを調整します。
-
-option.T_UPPER_CURVE=明るい色のコントラスト
-option.T_UPPER_CURVE.comment=明るい色のコントラストを調整します。
-
-option.T_LOWER_CURVE=暗い色のコントラスト
-option.T_LOWER_CURVE.comment=暗い色のコントラストを調整します。
+option.TM_CONTRAST=全体的なコントラスト
+option.TM_CONTRAST.comment=暗い色の暗さと、明るい色の明るさを調整します。
 
 option.T_SATURATION=彩度
 option.T_SATURATION.comment=画像全体の色鮮やかさを調整します。
@@ -770,8 +773,8 @@ value.IPBR_EMISSIVE_MODE.1=IPBR+ のみ
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 
-option.IPBR_COMPATIBILITY_MODE=IPBR+ 互換性モード
-option.IPBR_COMPATIBILITY_MODE.comment=IPBR+の機能の計算方式を調整し、リソースパックやModでの問題を削減します。
+option.IPBR_COMPAT_MODE_DEFINE=IPBR+ 互換性モード
+option.IPBR_COMPAT_MODE_DEFINE.comment=IPBR+の機能の計算方式を調整し、リソースパックやModでの問題を削減します。
 
 option.IPBR_PARTICLE_FEATURES=IPBR+ パーティクル機能
 option.IPBR_PARTICLE_FEATURES.comment=輝く溶岩パーティクルや、より色鮮やかな水パーティクルなどの機能を含む、いくつかのパーティクル機能を有効にします。
@@ -979,6 +982,11 @@ option.WAVING_RAIN.comment=降ってくる雨や雪のテクスチャに動き�
 option.SPECIAL_PORTAL_EFFECTS=特殊なポータルエフェクト
 option.SPECIAL_PORTAL_EFFECTS.comment=ネザーポータル、エンドポータル、エンドゲートウェイに特別なアニメーションと発光効果を追加します。
 
+option.REFLECTION_RES_DIVIDE=半解像度の反射
+option.REFLECTION_RES_DIVIDE.comment=ブロックのPBR反射、およびワールドスペース反射(有効になっている場合)を半分の解像度で描写することで、パフォーマンスを増加させます。
+value.REFLECTION_RES_DIVIDE.1=OFF
+value.REFLECTION_RES_DIVIDE.2=ON
+
 option.WORLD_OUTLINE=ワールドアウトライン
 option.WORLD_OUTLINE.comment=ブロックの周りに明るい枠線を追加します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。
 
@@ -1043,22 +1051,22 @@ option.MOON_PHASE_DARK=新月の強度
 option.MOON_PHASE_DARK.comment=新月(最も暗い段階)での月相の影響を調整します。
 
 option.CONNECTED_GLASS_EFFECT=連結ガラス
-option.CONNECTED_GLASS_EFFECT.comment=すべての種類のガラスが互いに連結するようにします。. §e[*]§r この機能は、「パフォーマンス設定」で高度な色付き照明が有効で、かつシステムが対応している場合にのみ動作します。. §e[*]§r この機能は「Continuity」Modがインストールされている場合、自動的に無効になります。
+option.CONNECTED_GLASS_EFFECT.comment=すべての種類のガラスが互いに連結するようにします。. §e[*]§r この機能は、「パフォーマンス設定」で高度な色トレーシングが有効で、かつシステムが対応している場合にのみ動作します。. §e[*]§r この機能は「Continuity」Modがインストールされている場合、自動的に無効になります。
 
 option.PORTAL_EDGE_EFFECT=光るポータルの縁
-option.PORTAL_EDGE_EFFECT.comment=エンドポータルやネザーポータルに光る縁のエフェクトを追加します。. §e[*]§r この機能は、「パフォーマンス設定」で高度な色付き照明が有効で、かつシステムが対応している場合にのみ動作します。
+option.PORTAL_EDGE_EFFECT.comment=エンドポータルやネザーポータルに光る縁のエフェクトを追加します。. §e[*]§r この機能は、「パフォーマンス設定」で高度な色トレーシングが有効で、かつシステムが対応している場合にのみ動作します。
 
 option.PUDDLE_VOXELIZATION=ガラス下の水溜まりを修正
-option.PUDDLE_VOXELIZATION.comment=水溜まり設定が有効な場合、ガラス屋根がある閉じたエリアに水溜まりができないようにします。. §e[*]§r この機能は、「パフォーマンス設定」で高度な色付き照明が有効で、かつシステムが対応している場合にのみ動作します。
+option.PUDDLE_VOXELIZATION.comment=水溜まり設定が有効な場合、ガラス屋根がある閉じたエリアに水溜まりができないようにします。. §e[*]§r この機能は、「パフォーマンス設定」で高度な色トレーシングが有効で、かつシステムが対応している場合にのみ動作します。
 
 option.COLORED_CANDLE_LIGHT=色付きろうそくの光
 option.COLORED_CANDLE_LIGHT.comment=ろうそくの光が、その土台の色と同じになるようにします。. §e[*]§r 彩度の低い色のろうそくのバリエーションは、引き続き通常の火の色を使用します。
 
 option.COLORED_LIGHT_SATURATION=色付き照明 彩度
-option.COLORED_LIGHT_SATURATION.comment=高度な色付き照明によって生成された色の彩度を調整します。. §e[*]§r デフォルトの彩度で最もバランスの取れた視覚効果が得られるよう設計されているため、この値を変更することは推奨されません。
+option.COLORED_LIGHT_SATURATION.comment=高度な色トレーシングによって生成された色の彩度を調整します。. §e[*]§r デフォルトの彩度で最もバランスの取れた視覚効果が得られるよう設計されているため、この値を変更することは推奨されません。
 
 option.COLORED_LIGHT_FOG=色付きの光の霧
-option.COLORED_LIGHT_FOG.comment=ブロック光源の立体霧をシーンに追加します。特に夜間や地下で顕著に見られます。. §e[*]§r この機能は、「パフォーマンス設定」で高度な色付き照明が有効で、かつシステムが対応している場合にのみ動作します。. §c[-]§r この効果はパフォーマンスに大きな影響を与える可能性があります。
+option.COLORED_LIGHT_FOG.comment=ブロック光源の立体霧をシーンに追加します。特に夜間や地下で顕著に見られます。. §e[*]§r この機能は、「パフォーマンス設定」で高度な色トレーシングが有効で、かつシステムが対応している場合にのみ動作します。. §c[-]§r この効果はパフォーマンスに大きな影響を与える可能性があります。
 
 option.COLORED_LIGHT_FOG_I=光の霧の強度
 option.COLORED_LIGHT_FOG_I.comment=色付き光の霧の明るさを調整します。
@@ -1164,6 +1172,9 @@ screen.RAIN_SETTINGS=雨の設定
 screen.NIGHT_DESATURATION_SETTINGS=暗闇での彩度低下
 screen.MOON_PHASED_DESATURATION_SETTINGS=月相に応じた暗闇での彩度低下
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=現在の月の満ち欠けに応じて、彩度低下の程度を調整します。
+screen.NIGHT_NEBULA_SETTINGS=星雲
+screen.NIGHT_NEBULA_COLOR_SETTINGS=色設定
+screen.NEBULA_STAR_SETTINGS=星雲の星設定
 
 screen.WORLD=ワールド
 screen.WORLD.comment=ワールドに関する設定です。
@@ -1189,16 +1200,19 @@ screen.SUMMER=夏の設定
 screen.NETHER_WORLD=ネザー
 screen.FOG_BORDER_NETHER=境界の霧
 screen.FOG_BORDER_NETHER.comment=境界の霧に関する設定です。
+screen.HEAT_DISTORTION_SETTINGS=陽炎
+screen.HEAT_DISTORTION_SETTINGS.comment=陽炎(熱による光の揺らぎ)に関する設定です。
 screen.END_WORLD=ジ・エンド
 screen.END_AMBIENT=ジ・エンドの環境
 screen.FOG_BORDER_END=境界の霧
 screen.FOG_BORDER_END.comment=境界の霧に関する設定です。
+screen.END_CENTER_LIGHTING_SETTINGS=ジ・エンド中央のライティング
 screen.LIGHT_SETTINGS=光の設定
 screen.BLOCKLIGHT=ブロック光源の設定
 screen.BLOCKLIGHT.comment=ブロック光源の色に関する設定です。
 screen.COLORED_LIGHT=色付き照明
 screen.SSBL_SETTINGS=スクリーンスペースの色付き照明
-screen.ACT_SETTINGS=高度な色付き照明 (ACT)
+screen.ACT_SETTINGS=高度な色トレーシング (ACT)
 screen.LIGHTMAP_CURVES_SETTINGS=ライトマップカーブ
 screen.OVERLAY_NOISE=オーバーレイノイズ
 screen.MOSS_NOISE_SETTINGS=苔のノイズ設定
@@ -1248,6 +1262,9 @@ screen.LETTERBOX_SETTINGS=レターボックス設定
 screen.GRID_SETTINGS=グリッド設定
 screen.WATERMARK_SETTINGS=ウォーターマーク設定
 screen.DOF_SETTINGS=被写界深度設定
+screen.DOF_SHAPE_SETTINGS=形状設定
+screen.LENS_FLARE_SETTINGS=レンズフレア設定
+screen.LENS_FLARE_SETTINGS.comment=レンズフレアに関する設定です。
 
 screen.FUN=お遊び
 screen.FUN.comment=楽しくいこう。
@@ -1332,18 +1349,20 @@ value.CLOUD_NARROWNESS.0.07=中間
 value.CLOUD_NARROWNESS.0.025=幅広
 option.CLOUD_NARROWNESS.comment=雲の水平スケールでの細さを変更します。
 
+option.CLOUD_SHADOW_UNBOUND_SIZE=雲の影の大きさ
+option.CLOUD_SHADOW_UNBOUND_SIZE.comment=雲の影の大きさを決定します。
+
 option.CLOUD_STRETCH=雲の高さ
 option.CLOUD_TRANSPARENCY=雲の透明度
 option.CLOUD_DIRECTION=雲の移動方向
 option.CLOUD_DIRECTION.comment=雲が移動する方向を変更します。
-option.CLOUD_MINECRAFT_TEXTURE=Minecraftの雲のテクスチャ
+option.CLOUD_TEXTURE=Minecraftの雲のテクスチャ
+value.CLOUD_TEXTURE.0=デフォルト
+value.CLOUD_TEXTURE.1=古いMinecraft
+value.CLOUD_TEXTURE.2=古いComplementary
+
 value.CLOUD_DIRECTION.1=西-東
 value.CLOUD_DIRECTION.2=北-南
-option.INCREASED_RAIN_STRENGTH=雨強度の増加
-option.INCREASED_RAIN_STRENGTH.comment=雨が降っているとき、風関連のアニメーションを速くします。. §c[-]§r この設定を有効にすると、雨が降り始めたり止んだりするときに、雲やその他の風関連アニメーションが急激に変化します。修正はできないため推奨されません。
-value.INCREASED_RAIN_STRENGTH.0=OFF
-value.INCREASED_RAIN_STRENGTH.1=高速遷移
-value.INCREASED_RAIN_STRENGTH.2=遷移なし
 option.RAINBOW_CLOUD=虹色の雲
 value.RAINBOW_CLOUD.0=OFF
 value.RAINBOW_CLOUD.1=10%の範囲
@@ -1377,6 +1396,9 @@ option.CLOUD_UNBOUND_LAYER2_SIZE=二層目の雲の大きさ
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=二層目の雲の大きさを決定します。
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=二層目の雲の量
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=二層目の雲の量を決定します。
+
+option.CLOUD_SUN_MOON_SHADING=太陽/月の陰影
+option.CLOUD_SUN_MOON_SHADING.comment=太陽と月が雲に作る陰影を有効にします。
 
 option.END_SMOKE=ジ・エンドの煙
 option.END_SMOKE.comment=誰かが火を放置してしまい、ジ・エンドに上下の虚空に煙が漂っています。
@@ -1642,6 +1664,9 @@ value.NETHER_PORTAL_VARIATION.2=パープルヴォイド
 option.BIOME_COLORED_NETHER_PORTALS=カメレオンネザーポータル
 option.BIOME_COLORED_NETHER_PORTALS.comment=ネザー内のポータルが現在のバイオームに応じて色分けされます。
 
+option.NETHER_PORTAL_NOISE=ネザーポータルのノイズ
+option.NETHER_PORTAL_NOISE.comment=ネザーポータルのテクスチャにノイズを追加し、よりダイナミックに見せます。
+
 option.END_PORTAL_VARIATION=エンドポータル プリセット
 option.END_PORTAL_VARIATION.comment=異なるエンドポータルのプリセットを選択するオプションです。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。
 value.END_PORTAL_VARIATION.0=Complementary
@@ -1695,7 +1720,7 @@ option.LAVA_NOISE_AMOUNT=溶岩ノイズの量
 option.LAVA_NOISE_AMOUNT.comment=ノイズの量を変更します。
 
 option.LAVA_EDGE_EFFECT=溶岩の端の効果
-option.LAVA_EDGE_EFFECT.comment=溶岩が他のブロックに触れると、端に効果を追加します。. §e[*]§r この機能はパフォーマンス設定で高度な色付き照明が有効になっている場合にのみ動作します。
+option.LAVA_EDGE_EFFECT.comment=溶岩が他のブロックに触れると、端に効果を追加します。. §e[*]§r この機能はパフォーマンス設定で高度な色トレーシングが有効になっている場合にのみ動作します。
 value.LAVA_EDGE_EFFECT.0=OFF
 value.LAVA_EDGE_EFFECT.1=ON - 明るい
 value.LAVA_EDGE_EFFECT.2=ON - 暗い
@@ -1753,6 +1778,7 @@ option.BAD_APPLE.comment=画面を黒くし、エンティティのみを白く�
 
 option.tonemap=トーンマップ
 option.tonemap.comment=使用するトーンマップを変更します。
+value.tonemap.DoCompTonemap=Complementary デフォルト
 value.tonemap.DoBSLTonemap=BSL/Complementary
 value.tonemap.ACESTonemap=ACES
 value.tonemap.ACESRedModified=ACES Red Modified
@@ -1771,6 +1797,7 @@ option.TONEMAP_COMPARISON.comment=トーンマップを比較するオプショ�
 
 option.tonemap_left=左側のトーンマップ
 option.tonemap_left.comment=使用するトーンマップを変更します。
+value.tonemap.DoCompTonemap=Complementary デフォルト
 value.tonemap_left.DoBSLTonemap=BSL/Complementary
 value.tonemap_left.ACESTonemap=ACES
 value.tonemap_left.ACESRedModified=ACES Red Modified
@@ -1786,6 +1813,7 @@ value.tonemap_left.agxTonemap=AgX
 
 option.tonemap_right=右側のトーンマップ
 option.tonemap_right.comment=使用するトーンマップを変更します。
+value.tonemap.DoCompTonemap=Complementary デフォルト
 value.tonemap_right.DoBSLTonemap=BSL/Complementary
 value.tonemap_right.ACESTonemap=ACES
 value.tonemap_right.ACESRedModified=ACES Red Modified
@@ -1801,9 +1829,10 @@ value.tonemap_right.agxTonemap=AgX
 
 option.ACES_EXPOSURE=露出
 option.ACES_EXPOSURE.comment=画像全体の明るさを調整します。
-
 option.ACES_WHITE=ホワイトカーブ
 option.ACES_WHITE.comment=色が完全な白に到達するまでの調整を行います。
+option.ACES_BRIGHTNESS_ROLLOFF=輝度の減衰
+option.ACES_BRIGHTNESS_ROLLOFF.comment=ACESトーンマップにおける輝度の減衰度合いを調整します。
 
 option.AGX_LOOK=AgXの見た目
 value.AGX_LOOK.0=デフォルト
@@ -1944,7 +1973,7 @@ value.NETHER_NOISE.0=OFF
 value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria色付き照明
-option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. 「ACT + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色付き照明」が適用されます。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。
+option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. 「ACT + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色トレーシング」が適用されます。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=スクリーンスペース
 value.MCBL_MAIN_DEFINE.2=ACT + スクリーンスペース
@@ -1966,6 +1995,9 @@ option.PURPLE_END_FIRE.comment=ジ・エンドで火に関するブロック、�
 
 option.NO_RAIN_ABOVE_CLOUDS=雲の上では雨が降らない
 option.NO_RAIN_ABOVE_CLOUDS.comment=雲の上で雨が降らないようにします。. バニラの雲の高さが変更され、バニラの雲が有効になっている場合はうまく機能しません。
+
+option.RAIN_FADE_TIMER=雨のフェード時間
+option.RAIN_FADE_TIMER.comment=雨関連のエフェクトがフェードイン/フェードアウトするのにかかる時間を変更します。. 影響されるエフェクト: 雲、水溜まり、霧、虹など
 
 option.DOF_SNEAKING=被写界深度 スニーク中 & 望遠鏡
 option.DOF_SNEAKING.comment=スニークしている、かつ望遠鏡を手に持っている間のみワールドブラーオプションを有効にします。
@@ -2067,6 +2099,25 @@ value.TILT_SHIFT2.0=OFF
 option.DOF_VIEW_FOCUS_NEW2=§c被写界深度の焦点面 & 望遠鏡
 option.DOF_VIEW_FOCUS_NEW2.comment=GUIが表示されている、かつ望遠鏡を手に持っているとき、被写界深度の焦点面を可視化します。
 
+option.DOF_SHAPE=形状
+option.DOF_SHAPE.comment=被写界深度の形状。
+value.DOF_SHAPE.0=デフォルト
+value.DOF_SHAPE.3=三角形
+value.DOF_SHAPE.4=四角形
+value.DOF_SHAPE.5=五角形
+value.DOF_SHAPE.6=六角形
+value.DOF_SHAPE.7=七角形
+value.DOF_SHAPE.8=八角形
+
+option.DOF_POLYGON_SAMPLES=ポリゴンのサンプル数
+option.DOF_POLYGON_SAMPLES.comment=ポリゴン形状のサンプル数です。. 値が高いほど形状が滑らかになります。. §c[-]§r 高い値ではパフォーマンスが低下します。
+
+option.DOF_POLYGON_RINGS=リング数
+option.DOF_POLYGON_RINGS.comment=ポリゴン形状に使用するリングの数です。. 値が高いほど形状が滑らかになります。. §c[-]§r 高い値ではパフォーマンスが低下します。
+
+option.DOF_SHAPE_ROTATION_DEGREES=回転
+option.DOF_SHAPE_ROTATION_DEGREES.comment=被写界深度の形状の回転角度(度)です。
+
 option.LET_THERE_BE_COLORS=カラーを表示
 
 option.MOSS_NOISE=苔のノイズ
@@ -2131,6 +2182,7 @@ option.EMISSIVE_BLOOD_MOON_FLOWERS=光るブラッドムーンの花
 
 option.DISTANCE_MIN_LIGHT=洞窟のライティングをフェード
 option.DISTANCE_MIN_LIGHT.comment=プレイヤーからの距離が増えるにつれて洞窟が暗くなります。. より高い洞窟のライティング設定と組み合わせると、洞窟の見た目が向上します。
+value.DISTANCE_MIN_LIGHT.0=OFF
 
 option.EMISSIVE_DRAGON_EGG=光るドラゴンの卵
 
@@ -2154,9 +2206,6 @@ value.GLITTER_RAIN.2=ON - 常時
 option.HAND_BLOCKLIGHT_FLICKERING=手持ちブロック光源の点滅
 value.HAND_BLOCKLIGHT_FLICKERING.0=OFF
 
-option.PIXELATED_HANDHELD_LIGHT=ピクセル化された手持ち光源
-option.PIXELATED_HANDHELD_LIGHT.comment=手持ち光源のテクスチャをピクセル化します。
-
 option.SSS_STRENGTH=サブサーフェス・スキャッタリング
 value.SSS_STRENGTH.0=OFF
 value.SSS_STRENGTH.1=ON
@@ -2173,7 +2222,7 @@ option.COMP_WATER_TWEAKS=Complementaryの水の調整
 option.COMP_WATER_TWEAKS.comment=シェーダーによる水の色調整。
 
 option.CAVE_SMOKE=洞窟の煙
-option.CAVE_SMOKE.comment=洞窟内でブロック光源の立体霧に煙の効果を追加します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。. §e[*]§r この機能は、パフォーマンス設定で「高度な色付き照明」が有効な場合にのみ動作します。
+option.CAVE_SMOKE.comment=洞窟内でブロック光源の立体霧に煙の効果を追加します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。. §e[*]§r この機能は、パフォーマンス設定で「高度な色トレーシング」が有効な場合にのみ動作します。
 
 option.WAVING_SUGAR_CANE=揺れるサトウキビ
 
@@ -2190,6 +2239,7 @@ option.FROZEN_TIME=時間停止
 
 option.DARKER_DEPTH_OCEANS=深く暗い海
 option.DARKER_DEPTH_OCEANS.comment=海の深さに応じて光が減少します。
+value.DARKER_DEPTH_OCEANS.0=OFF
 
 option.WEATHER_TEX_R=天候テクスチャ - 赤
 option.WEATHER_TEX_G=天候テクスチャ - 緑
@@ -2353,8 +2403,8 @@ option.END_CRYSTAL_EMISSION=エンドクリスタルの発光
 option.CLEAR_WATER_SPOTS=クリアな水のスポット
 option.CLEAR_WATER_SPOTS.comment=水にクリアなスポットを追加し、多少のバリエーションを追加します。. §e[*]§r 水の波が有効(UnboundまたはReimagined + 波)である必要があります。
 
-option.ACT_ORE_INTENSITY=ACL鉱石の強度
-option.ACT_ORE_INTENSITY.comment=鉱石におけるACLの光の強度を変更します。
+option.ACT_ORE_INTENSITY=ACT鉱石の強度
+option.ACT_ORE_INTENSITY.comment=鉱石におけるACTの光の強度を変更します。
 value.ACT_ORE_INTENSITY.0.0=OFF
 
 option.ENTITIES_ARE_LIGHT=光るエンティティ
@@ -2362,8 +2412,11 @@ option.ENTITIES_ARE_LIGHT=光るエンティティ
 option.WATER_CAUSTIC_STRENGTH=水のコースティクスの強度
 option.WATER_CAUSTIC_STRENGTH.comment=水のコースティクス効果の強度を変更します。
 
-option.ROUGHNESS_MULTIPLIER=粗さ(ラフネス)の倍率
-option.ROUGHNESS_MULTIPLIER.comment=マテリアルの粗さ(ラフネス)を変更します。
+option.ROUGHNESS_MULTIPLIER=粗さマスク
+option.ROUGHNESS_MULTIPLIER.comment=マテリアルに粗さ(ラフネス)がある部分を変更します。
+
+option.ROUGHNESS_INTENSITY=粗さの強度
+option.ROUGHNESS_INTENSITY.comment=マテリアルの粗さ(ラフネス)を変更することで、光沢の度合いを調整します。
 
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。
@@ -2385,3 +2438,76 @@ value.END_SUN_ANGLE.-30=-30
 value.END_SUN_ANGLE.-40=-40
 value.END_SUN_ANGLE.-50=-50
 value.END_SUN_ANGLE.-60=-60
+
+option.PIXELATED_NEBULA=ピクセル化された星雲
+value.PIXELATED_NEBULA.0=OFF
+option.NEBULA_ZOOM_LEVEL=ズームレベル
+option.NEBULA_ZOOM_LEVEL.comment=空の星雲がどれくらいズームされて見えるかを変更します。
+option.NEBULA_AMOUNT=量
+option.NEBULA_AMOUNT.comment=星雲が空を覆う割合を変更します。
+option.NEBULA_PATTERN_WARP=ねじれ
+option.NEBULA_PATTERN_WARP.comment=星雲がどれくらい歪んでいるかを変更します。
+value.NEBULA_PATTERN_WARP.0=OFF
+option.NEBULA_HORIZON_STRENGTH=地平線の視認性
+option.NEBULA_HORIZON_STRENGTH.comment=地平線の星雲がどれくらい見えるかを変更します。
+value.NEBULA_HORIZON_STRENGTH.10=デフォルト
+
+option.NEBULA_R_1=星雲1 - 赤
+option.NEBULA_G_1=星雲1 - 緑
+option.NEBULA_B_1=星雲1 - 青
+option.NEBULA_R_2=星雲2 - 赤
+option.NEBULA_G_2=星雲2 - 緑
+option.NEBULA_B_2=星雲2 - 青
+option.NEBULA_R_3=星雲3 - 赤
+option.NEBULA_G_3=星雲3 - 緑
+option.NEBULA_B_3=星雲3 - 青
+
+option.NEBULA_SATURATION=彩度
+
+option.NEBULA_ONLY_STARS=星のみ
+option.NEBULA_ONLY_STARS.comment=星雲のカラフルな部分を削除し、内部の星のみを表示します。
+
+option.NEBULA_STAR_BRIGHTNESS=星雲の星 明るさ
+option.NEBULA_STAR_BRIGHTNESS.comment=星雲内の星の明るさを変更します。
+
+option.NEBULA_STAR_SIZE=星雲の星 大きさ
+option.NEBULA_STAR_SIZE.comment=星雲内の星の大きさを変更します。
+
+option.NEBULA_STAR_AMOUNT=星雲の星 量
+option.NEBULA_STAR_AMOUNT.comment=星雲内の星の大きさを変更します。
+
+option.END_CENTER_LIGHTING=ジ・エンド中央のライティング
+option.END_CENTER_LIGHTING.comment=ジ・エンドの中央のライティングを変更します。
+value.END_CENTER_LIGHTING.0=OFF
+
+option.END_CENTER_LIGHTING_R=ライティング - 赤
+option.END_CENTER_LIGHTING_G=ライティング - 緑
+option.END_CENTER_LIGHTING_B=ライティング - 青
+
+option.NETHER_HEAT_DISTORTION=陽炎
+option.NETHER_HEAT_DISTORTION.comment=ネザーに陽炎(熱による光の揺らぎ)効果を追加します。
+value.NETHER_HEAT_DISTORTION.0=OFF
+option.NETHER_HEAT_DISTORTION_SPEED=速度
+option.NETHER_HEAT_DISTORTION_SPEED.comment=陽炎効果の速度を変更します。
+option.NETHER_HEAT_DISTORTION_SCALE=スケール
+option.NETHER_HEAT_DISTORTION_SCALE.comment=陽炎効果のスケールを変更します。
+
+option.BLOCKLIGHT_CAUSTICS=ブロック光源のコースティクス
+option.BLOCKLIGHT_CAUSTICS.comment=水中にいるとき、ブロック光源にコースティクス効果を追加します。
+
+option.LENS_FLARE_SHAPE=レンズフレアの形状
+option.LENS_FLARE_SHAPE.comment=レンズフレアの形状を変更します。
+value.LENS_FLARE_SHAPE.0=デフォルト
+value.LENS_FLARE_SHAPE.3=三角形
+value.LENS_FLARE_SHAPE.4=四角形
+value.LENS_FLARE_SHAPE.5=五角形
+value.LENS_FLARE_SHAPE.6=六角形
+value.LENS_FLARE_SHAPE.7=七角形
+value.LENS_FLARE_SHAPE.8=八角形
+
+option.LENS_FLARE_SHAPE_ROTATION=レンズフレアの形状の回転
+option.LENS_FLARE_SHAPE_ROTATION.comment=レンズフレアの形状の回転を変更します。
+
+option.ANAMORPHIC_LENS_FLARE=アナモルフィックレンズフレア
+option.ANAMORPHIC_LENS_FLARE.comment=アナモルフィックレンズフレアを有効または無効にします。
+value.ANAMORPHIC_LENS_FLARE.0=OFF
