@@ -31,7 +31,7 @@
     "installerStep5": "'Install'をクリックしてゲームを起動すると、Complementary Shaders + Euphoria Patchesがshaderpacksフォルダに生成されます。",
 
     "windowsInstallerButton": "Windowsインストーラー",
-    "javaInstallerButton": "Java JAR",
+    "javaInstallerButton": "汎用JAR",
     "complementaryInstallerButton": "ダウンロード",
     "complementaryWebsiteButton": "Complementary公式サイトに移動"
 }
