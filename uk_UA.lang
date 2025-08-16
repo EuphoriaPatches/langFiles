@@ -462,17 +462,11 @@ value.NETHER_COLOR_MODE.3=Біом (модиф.)
 value.NETHER_COLOR_MODE.2=Біом
 value.NETHER_COLOR_MODE.0=Незмінний
 
-option.T_EXPOSURE=Загальна яскравість
-option.T_EXPOSURE.comment=Також відомий як «експозиція мапи тональної». Визначає загальну яскравість всього зображення.
+option.TM_EXPOSURE=Загальна яскравість
+option.TM_EXPOSURE.comment=Також відомий як «експозиція мапи тональної». Визначає загальну яскравість всього зображення.
 
-option.TM_WHITE_CURVE=Біла яскравість
-option.TM_WHITE_CURVE.comment=Також відомий як «біла крива мапи тонів». Визначає, наскільки легко кольори досягають повного білого.
-
-option.T_UPPER_CURVE=Контраст яскравіших кольорів
-option.T_UPPER_CURVE.comment=Також відомий як «верхня крива мапи тонів». Визначає контраст яскравіших кольорів.
-
-option.T_LOWER_CURVE=Контраст темних кольорів
-option.T_LOWER_CURVE.comment=Також відомий як «нижня крива мапи тонів». Визначає контрастність темніших кольорів.
+option.TM_CONTRAST=Загальний контраст
+option.TM_CONTRAST.comment=Регулює темність темних кольорів і яскравість яскравих кольорів.
 
 option.T_SATURATION=Насиченість
 option.T_SATURATION.comment=Визначає загальну забарвленість зображення.
@@ -779,8 +773,8 @@ value.IPBR_EMISSIVE_MODE.1=Лише IPBR+
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 
-option.IPBR_COMPATIBILITY_MODE=Режим сумісности IPBR+
-option.IPBR_COMPATIBILITY_MODE.comment=Змінює спосіб обчислення деяких функцій IPBR+, щоб вони були менш агресивними, щоб спричиняти менше проблем із пакетами ресурсів або модами.
+option.IPBR_COMPAT_MODE_DEFINE=Режим сумісности IPBR+
+option.IPBR_COMPAT_MODE_DEFINE.comment=Змінює спосіб обчислення деяких функцій IPBR+, щоб вони були менш агресивними, щоб спричиняти менше проблем із пакетами ресурсів або модами.
 
 option.IPBR_PARTICLE_FEATURES=Функції частинок IPBR+
 option.IPBR_PARTICLE_FEATURES.comment=Умикає кілька функцій для частинок, зокрема частинки лави, що світяться, і частинки води з кращим кольором.
@@ -990,9 +984,8 @@ option.SPECIAL_PORTAL_EFFECTS.comment=Додає спеціальні аніма
 
 option.REFLECTION_RES_DIVIDE=Половин. розд. здат. відблисків
 option.REFLECTION_RES_DIVIDE.comment=Змушує промальовувати PBR на блоках (і відблиски простору світу, якщо в вас увімкнуто це) у половинній роздільній здатности для підвищення продуктивности.
-value.REFLECTION_RES_DIVIDE.1=§cВИМК.
+value.REFLECTION_RES_DIVIDE.1=ВИМК.
 value.REFLECTION_RES_DIVIDE.2=УВІМК.
-
 
 option.WORLD_OUTLINE=Контур світу
 option.WORLD_OUTLINE.comment=Додає яскраві контури для блоків. §c[-]§r Це може вплинути на продуктивність.
@@ -1363,7 +1356,11 @@ option.CLOUD_STRETCH=Висота хмар
 option.CLOUD_TRANSPARENCY=Прозорість хмар
 option.CLOUD_DIRECTION=Напрямок
 option.CLOUD_DIRECTION.comment=Змінює напрямок руху хмар.
-option.CLOUD_MINECRAFT_TEXTURE=Текстура хмар
+option.CLOUD_TEXTURE=Текстура хмар
+value.CLOUD_TEXTURE.0=Усталено
+value.CLOUD_TEXTURE.1=Старий Minecraft
+value.CLOUD_TEXTURE.2=Старий Complementary
+
 value.CLOUD_DIRECTION.1=Захід-схід
 value.CLOUD_DIRECTION.2=Північ-південь
 option.RAINBOW_CLOUD=Веселкові хмари
@@ -1781,6 +1778,7 @@ option.BAD_APPLE.comment=Робить екран чорним, за винятк
 
 option.tonemap=Мапа тонів
 option.tonemap.comment=Змінює використовувану мапу тонів.
+value.tonemap.DoCompTonemap=Complementary усталено
 value.tonemap.DoBSLTonemap=BSL/Complementary
 value.tonemap.ACESTonemap=ACES
 value.tonemap.ACESRedModified=Модифікатор червоного ACES
@@ -1799,6 +1797,7 @@ option.TONEMAP_COMPARISON.comment=Можливість порівняння ма
 
 option.tonemap_left=Ліво мапи тонів
 option.tonemap_left.comment=Змінює використовувану мапу тонів.
+value.tonemap_left.DoCompTonemap=Complementary усталено
 value.tonemap_left.DoBSLTonemap=BSL/Complementary
 value.tonemap_left.ACESTonemap=ACES
 value.tonemap_left.ACESRedModified=Модифікатор червоного ACES
@@ -1814,6 +1813,7 @@ value.tonemap_left.agxTonemap=AgX
 
 option.tonemap_right=Право мапи тонів
 option.tonemap_right.comment=Змінює використовувану мапу тонів.
+value.tonemap_right.DoCompTonemap=Complementary усталено
 value.tonemap_right.DoBSLTonemap=BSL/Complementary
 value.tonemap_right.ACESTonemap=ACES
 value.tonemap_right.ACESRedModified=Модифікатор червоного ACES
