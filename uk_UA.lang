@@ -465,6 +465,15 @@ value.NETHER_COLOR_MODE.0=Незмінний
 option.TM_EXPOSURE=Загальна яскравість
 option.TM_EXPOSURE.comment=Також відомий як «експозиція мапи тональної». Визначає загальну яскравість всього зображення.
 
+option.TM_WHITE_CURVE=Біла яскравість
+option.TM_WHITE_CURVE.comment=Також відомий як «біла крива мапи тонів». Визначає, наскільки легко кольори досягають повного білого.
+
+option.T_UPPER_CURVE=Контраст яскравіших кольорів
+option.T_UPPER_CURVE.comment=Також відомий як «верхня крива мапи тонів». Визначає контраст яскравіших кольорів.
+
+option.T_LOWER_CURVE=Контраст темних кольорів
+option.T_LOWER_CURVE.comment=Також відомий як «нижня крива мапи тонів». Визначає контрастність темніших кольорів.
+
 option.TM_CONTRAST=Загальний контраст
 option.TM_CONTRAST.comment=Регулює темність темних кольорів і яскравість яскравих кольорів.
 
@@ -1247,6 +1256,8 @@ screen.ACES=Налаштування ACES
 screen.ACES.comment=Налаштування, які стосуються мапи тонів ACES.
 screen.AGX_SETTINGS=Налаштування AgX
 screen.AGX_SETTINGS.comment=Налаштування, які стосуються мапи тонів AgX.
+screen.BSL_SETTINGS=налаштування BSL
+screen.BSL_SETTINGS.comment=Налаштування, які стосуються мапи тонів BSL.
 screen.CAMERA_EFFECTS=Ефекти камери
 screen.RETRO_SETTINGS=Ретро-налаштування
 screen.STATIC_NOISE_SETTINGS=Налаштування статичного шуму
