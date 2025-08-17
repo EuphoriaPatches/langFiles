@@ -465,6 +465,15 @@ value.NETHER_COLOR_MODE.0=Constant
 option.TM_EXPOSURE=General Brightness
 option.TM_EXPOSURE.comment=Also known as "Tonemap Exposure". Adjusts the overall brightness of the whole image.
 
+option.TM_WHITE_CURVE=White Brightness
+option.TM_WHITE_CURVE.comment=Also known as "Tonemap White Curve". Adjusts how easily the colors reach to full white.
+
+option.T_UPPER_CURVE=Contrast of Brighter Colors
+option.T_UPPER_CURVE.comment=Also known as "Tonemap Upper Curve". Adjusts contrast of brighter colors.
+
+option.T_LOWER_CURVE=Contrast of Darker Colors
+option.T_LOWER_CURVE.comment=Also known as "Tonemap Lower Curve". Adjusts contrast of darker colors.
+
 option.TM_CONTRAST=General Contrast
 option.TM_CONTRAST.comment=Adjusts the darkness of dark colors and brightness of bright colors.
 
@@ -1247,6 +1256,8 @@ screen.ACES=ACES Settings
 screen.ACES.comment=Settings for the ACES Tonemap.
 screen.AGX_SETTINGS=AgX Settings
 screen.AGX_SETTINGS.comment=Settings for the AgX Tonemap.
+screen.BSL_SETTINGS=BSL Settings
+screen.BSL_SETTINGS.comment=Settings for the BSL Tonemap.
 screen.CAMERA_EFFECTS=Camera Effects
 screen.RETRO_SETTINGS=Retro Settings
 screen.STATIC_NOISE_SETTINGS=Static Noise Settings
