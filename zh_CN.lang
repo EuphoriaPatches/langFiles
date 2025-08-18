@@ -469,8 +469,8 @@ value.NETHER_COLOR_MODE.3=基于群系 (微调)
 value.NETHER_COLOR_MODE.2=基于群系
 value.NETHER_COLOR_MODE.0=恒定
 
-option.T_EXPOSURE=总体亮度
-option.T_EXPOSURE.comment=又名 Tonemap 曝光. 调节整幅图像的整体亮度.
+option.TM_EXPOSURE=总体亮度
+option.TM_EXPOSURE.comment=又名 Tonemap 曝光. 调节整幅图像的整体亮度.
 
 option.TM_WHITE_CURVE=亮部亮度
 option.TM_WHITE_CURVE.comment=又名 Tonemap 白色曲线. 调节颜色达到全白的难易程度.
@@ -480,6 +480,9 @@ option.T_UPPER_CURVE.comment=又名 Tonemap 上部曲线. 调节较亮颜色的�
 
 option.T_LOWER_CURVE=暗色对比度
 option.T_LOWER_CURVE.comment=又名 Tonemap 下部曲线. 调节较深颜色的对比度.
+
+option.TM_CONTRAST=整体对比度
+option.TM_CONTRAST.comment=调节暗色的暗度和亮色的亮度.
 
 option.T_SATURATION=饱和度
 option.T_SATURATION.comment=调节图像的整体色彩鲜艳程度.
@@ -786,8 +789,8 @@ value.IPBR_EMISSIVE_MODE.1=IPBR+ Only
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 
-option.IPBR_COMPATIBILITY_MODE=集成PBR+兼容模式
-option.IPBR_COMPATIBILITY_MODE.comment=更改部分集成PBR+功能的计算方式来, 避免使用激进的实现方法, 以减少对部分资源包和模组造成的问题.
+option.IPBR_COMPAT_MODE_DEFINE=集成PBR+兼容模式
+option.IPBR_COMPAT_MODE_DEFINE.comment=更改部分集成PBR+功能的计算方式来, 避免使用激进的实现方法, 以减少对部分资源包和模组造成的问题.
 
 option.IPBR_PARTICLE_FEATURES=集成PBR+粒子功能
 option.IPBR_PARTICLE_FEATURES.comment=启用粒子的多个集成PBR+功能, 包括岩浆的发光粒子和有更好颜色的水粒子等.
@@ -997,7 +1000,7 @@ option.SPECIAL_PORTAL_EFFECTS.comment=为下界传送门, 末地传送门, 末�
 
 option.REFLECTION_RES_DIVIDE=半分辨率反射
 option.REFLECTION_RES_DIVIDE.comment=使得方块上基于物理的的反射 (及世界空间反射[若已启用]) 以半分辨率来渲染, 以此获得更好的性能表现.
-value.REFLECTION_RES_DIVIDE.1=§c关
+value.REFLECTION_RES_DIVIDE.1=关
 value.REFLECTION_RES_DIVIDE.2=开
 
 option.WORLD_OUTLINE=视界描边
@@ -1187,6 +1190,7 @@ screen.MOON_PHASED_DESATURATION_SETTINGS=基于月相去饱和
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=根据当前夜晚的月相调节去饱和效果的强度.
 screen.NIGHT_NEBULA_SETTINGS=夜空星云
 screen.NIGHT_NEBULA_COLOR_SETTINGS=夜空星云颜色设置
+screen.NEBULA_STAR_SETTINGS=星云星星设置
 
 screen.WORLD=世界
 screen.WORLD.comment=关于世界的设置.
@@ -1259,6 +1263,8 @@ screen.ACES=ACES 色调映射设置
 screen.ACES.comment=关于 ACES 色调映射的设置.
 screen.AGX_SETTINGS=AgX 设置
 screen.AGX_SETTINGS.comment=AgX 色调设置.
+screen.BSL_SETTINGS=BSL 设置
+screen.BSL_SETTINGS.comment=BSL 色调设置.
 screen.CAMERA_EFFECTS=镜头效果
 screen.RETRO_SETTINGS=复古设置
 screen.STATIC_NOISE_SETTINGS=静噪设置
@@ -1274,6 +1280,9 @@ screen.LETTERBOX_SETTINGS=信封(宽屏)模式设置
 screen.GRID_SETTINGS=网格设置
 screen.WATERMARK_SETTINGS=水印设置
 screen.DOF_SETTINGS=景深设置
+screen.DOF_SHAPE_SETTINGS=形状设置
+screen.LENS_FLARE_SETTINGS=镜头眩光设置
+screen.LENS_FLARE_SETTINGS.comment=与镜头眩光相关的设置.
 
 screen.FUN=趣设
 screen.FUN.comment=让我们来做点有意思的功能!
@@ -1366,13 +1375,12 @@ option.CLOUD_TRANSPARENCY=云层透明度
 option.CLOUD_DIRECTION=云层流动方向
 option.CLOUD_DIRECTION.comment=改变云层移动的方向.
 option.CLOUD_MINECRAFT_TEXTURE=Minecraft 云层分布图
+value.CLOUD_TEXTURE.0=默认
+value.CLOUD_TEXTURE.1=经典原版
+value.CLOUD_TEXTURE.2=经典 Complementary
+
 value.CLOUD_DIRECTION.1=西 - 东
 value.CLOUD_DIRECTION.2=北 - 南
-option.INCREASED_RAIN_STRENGTH=降雨强度增强
-option.INCREASED_RAIN_STRENGTH.comment=使与风效应相关的动画在雨天时更快. §c[-]§r 启用本选项后, 当开始或停止下雨时, 云层流动速度会变得异常快, 无法修复. 不推荐开启.
-value.INCREASED_RAIN_STRENGTH.0=关
-value.INCREASED_RAIN_STRENGTH.1=快速过渡
-value.INCREASED_RAIN_STRENGTH.2=无过渡
 option.RAINBOW_CLOUD=彩虹云层
 value.RAINBOW_CLOUD.0=关
 value.RAINBOW_CLOUD.1=10% 覆盖率
@@ -1406,6 +1414,9 @@ option.CLOUD_UNBOUND_LAYER2_SIZE=第二云层自身大小
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=决定第二云层自身大小.
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=第二云层数量
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=决定第二云层的数量.
+
+option.CLOUD_SUN_MOON_SHADING=日月对云层照明
+option.CLOUD_SUN_MOON_SHADING.comment=启用太阳和月亮对云层的照明效果.
 
 option.END_SMOKE=末地烟云
 option.END_SMOKE.comment=有人纵火, 所以现在末地上下层虚空都有烟云.
@@ -1671,6 +1682,9 @@ value.NETHER_PORTAL_VARIATION.2=Purple Void
 option.BIOME_COLORED_NETHER_PORTALS=变色龙地狱门
 option.BIOME_COLORED_NETHER_PORTALS.comment=下界传送门的颜色将由玩家所处群系的颜色编码变色.
 
+option.NETHER_PORTAL_NOISE=下界传送门噪声
+option.NETHER_PORTAL_NOISE.comment=为下界传送门纹理添加噪声, 使其看起来更动态.
+
 option.END_PORTAL_VARIATION=末地传送门预设
 option.END_PORTAL_VARIATION.comment=可供选择的不同风格的末地传送门预设. §e[*]§r 资源包支持选项需设置为集成PBR+.
 value.END_PORTAL_VARIATION.0=Complementary
@@ -1782,6 +1796,7 @@ option.BAD_APPLE.comment=使实体除外的屏幕部分显示黑色, 实体显�
 
 option.tonemap=色调映射
 option.tonemap.comment=改变使用的色调映射方式.
+value.tonemap.DoCompTonemap=Complementary 默认
 value.tonemap.DoBSLTonemap=BSL/Complementary
 value.tonemap.ACESTonemap=ACES
 value.tonemap.ACESRedModified=ACES - 改善红色表现
@@ -1800,6 +1815,7 @@ option.TONEMAP_COMPARISON.comment=用来对比不同色调映射效果的设置.
 
 option.tonemap_left=左半屏幕色调映射方式
 option.tonemap_left.comment=改变左半屏幕使用的色调映射方式.
+value.tonemap_left.DoCompTonemap=Complementary 默认
 value.tonemap_left.DoBSLTonemap=BSL/Complementary
 value.tonemap_left.ACESTonemap=ACES
 value.tonemap_left.ACESRedModified=ACES - 改善红色表现
@@ -1815,6 +1831,7 @@ value.tonemap_left.agxTonemap=AgX
 
 option.tonemap_right=右半屏幕色调映射方式
 option.tonemap_right.comment=改变右半屏幕使用的色调映射方式.
+value.tonemap_right.DoCompTonemap=Complementary 默认
 value.tonemap_right.DoBSLTonemap=BSL/Complementary
 value.tonemap_right.ACESTonemap=ACES
 value.tonemap_right.ACESRedModified=ACES - 改善红色表现
@@ -1830,9 +1847,10 @@ value.tonemap_right.agxTonemap=AgX
 
 option.ACES_EXPOSURE=曝光
 option.ACES_EXPOSURE.comment=调节图像的整体亮度.
-
 option.ACES_WHITE=白色曲线
 option.ACES_WHITE.comment=调节色调达到全白的容易程度.
+option.ACES_BRIGHTNESS_ROLLOFF=亮度滚降
+option.ACES_BRIGHTNESS_ROLLOFF.comment=调节 ACES 色调的亮度滚降.
 
 option.AGX_LOOK=AgX 外观
 value.AGX_LOOK.0=默认
@@ -2100,6 +2118,25 @@ value.TILT_SHIFT2.0=关
 
 option.DOF_VIEW_FOCUS_NEW2=§c景深焦平面
 option.DOF_VIEW_FOCUS_NEW2.comment=在 GUI 未隐藏且手持望远镜时显示景深焦平面.
+
+option.DOF_SHAPE=虚化形状
+option.DOF_SHAPE.comment=景深虚化形状
+value.DOF_SHAPE.0=原始
+value.DOF_SHAPE.3=三角形
+value.DOF_SHAPE.4=正方形
+value.DOF_SHAPE.5=五边形
+value.DOF_SHAPE.6=六边形
+value.DOF_SHAPE.7=七边形
+value.DOF_SHAPE.8=八边形
+
+option.DOF_POLYGON_SAMPLES=多边形采样值
+option.DOF_POLYGON_SAMPLES.comment=用于取得多边形虚化的采样值数量. 设置越高的数值, 多边形的形状越平滑. §c[-]§r 性能随着设置更高的值而降低.
+
+option.DOF_POLYGON_RINGS=圈数
+option.DOF_POLYGON_RINGS.comment=用于组成多边形形状的圈数. 设置越高的数值, 多边形的形状越平滑. §c[-]§r 性能随着设置更高的值而降低.
+
+option.DOF_SHAPE_ROTATION_DEGREES=旋转
+option.DOF_SHAPE_ROTATION_DEGREES.comment=以 ° 为单位旋转景深虚化出的多边形.
 
 option.LET_THERE_BE_COLORS=五 彩 缤 纷
 
@@ -2443,6 +2480,20 @@ option.NEBULA_R_3=星云区域 3 - 红色
 option.NEBULA_G_3=星云区域 3 - 绿色
 option.NEBULA_B_3=星云区域 3 - 蓝色
 
+option.NEBULA_SATURATION=星云饱和度
+
+option.NEBULA_ONLY_STARS=隐云展星
+option.NEBULA_ONLY_STARS.comment=移除星云的色彩部分, 仅渲染其中的星星.
+
+option.NEBULA_STAR_BRIGHTNESS=星云星星亮度
+option.NEBULA_STAR_BRIGHTNESS.comment=调节星云内星星的亮度.
+
+option.NEBULA_STAR_SIZE=星云星星大小
+option.NEBULA_STAR_SIZE.comment=调节星云内星星的尺寸.
+
+option.NEBULA_STAR_AMOUNT=星云星星数量
+option.NEBULA_STAR_AMOUNT.comment=调节星云内星星的数量.
+
 option.END_CENTER_LIGHTING=末地中心光源
 option.END_CENTER_LIGHTING.comment=更改末地中心的照明效果.
 value.END_CENTER_LIGHTING.0=关
@@ -2454,10 +2505,27 @@ option.END_CENTER_LIGHTING_B=照明颜色 - 蓝
 option.NETHER_HEAT_DISTORTION=热失真
 option.NETHER_HEAT_DISTORTION.comment=为下界添加热失真效果.
 value.NETHER_HEAT_DISTORTION.0=关
-option.NETHER_HEAT_DISTORTION_STRENGTH=强度
-option.NETHER_HEAT_DISTORTION_STRENGTH.comment=调节热失真效果的强度.
+option.NETHER_HEAT_DISTORTION_SPEED=速度
+option.NETHER_HEAT_DISTORTION_SPEED.comment=调节热失真效果的速度.
 option.NETHER_HEAT_DISTORTION_SCALE=比例
 option.NETHER_HEAT_DISTORTION_SCALE.comment=调节热失真效果的比例.
 
 option.BLOCKLIGHT_CAUSTICS=方块光源焦散线
 option.BLOCKLIGHT_CAUSTICS.comment=位于水下时为方块光源周围添加焦散线效果.
+
+option.LENS_FLARE_SHAPE=镜头眩光形状
+option.LENS_FLARE_SHAPE.comment=调节镜头眩光的形状.
+value.LENS_FLARE_SHAPE.0=默认
+value.LENS_FLARE_SHAPE.3=三角形
+value.LENS_FLARE_SHAPE.4=正方形
+value.LENS_FLARE_SHAPE.5=五边形
+value.LENS_FLARE_SHAPE.6=六边形
+value.LENS_FLARE_SHAPE.7=七边形
+value.LENS_FLARE_SHAPE.8=八边形
+
+option.LENS_FLARE_SHAPE_ROTATION=镜头眩光形状旋转
+option.LENS_FLARE_SHAPE_ROTATION.comment=旋转镜头眩光形状.
+
+option.ANAMORPHIC_LENS_FLARE=镜头眩光畸变
+option.ANAMORPHIC_LENS_FLARE.comment=调节镜头眩光畸变强度.
+value.ANAMORPHIC_LENS_FLARE.0=关
