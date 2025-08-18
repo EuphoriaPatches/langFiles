@@ -466,19 +466,22 @@ option.T_EXPOSURE=Brilho em Geral
 option.T_EXPOSURE.comment=option.TONEMAP_EXPOSURE=Também conhecido como "Exposição Tonemap". Ajusta o brilho geral de toda a imagem.
 
 option.TM_WHITE_CURVE=Brilho do Branco
-option.TM_WHITE_CURVE.comment=Também conhecido como "Curva de Branco do Tonemap". Ajusta o quão facilmente as cores atingem o branco total.
+option.TM_WHITE_CURVE.comment=Também conhecido como "Curva de Branco do Tonemap". Ajusta quão facilmente as cores chegam ao branco total.
 
-option.T_UPPER_CURVE=Contraste das Cores Claras
+option.T_UPPER_CURVE=Contraste das Cores Mais Claras
 option.T_UPPER_CURVE.comment=Também conhecido como "Curva Superior do Tonemap". Ajusta o contraste das cores mais claras.
 
-option.T_LOWER_CURVE=Contraste das Cores Escuras
+option.T_LOWER_CURVE=Contraste das Cores Mais Escuras
 option.T_LOWER_CURVE.comment=Também conhecido como "Curva Inferior do Tonemap". Ajusta o contraste das cores mais escuras.
 
-option.T_SATURATION=Saturação
-option.T_SATURATION.comment=Ajuda a ajustar a intensidade geral das cores da imagem.
+option.TM_CONTRAST=Contraste Geral
+option.TM_CONTRAST.comment=Ajusta a escuridão das cores escuras e o brilho das cores claras.
 
-option.T_VIBRANCE=Saturação de Cores Pálidas
-option.T_VIBRANCE.comment=Também conhecido como "Vivacidade". Ajusta a intensidade das cores da imagem, mas pixels já coloridos são menos afetados.
+option.T_SATURATION=Saturação
+option.T_SATURATION.comment=Ajusta a intensidade geral das cores da imagem.
+
+option.T_VIBRANCE=Saturação das Cores Pálidas
+option.T_VIBRANCE.comment=Também conhecido como "Vibrance". Ajusta a intensidade das cores da imagem, mas pixels que já são coloridos são menos afetados.
 
 option.COLORGRADING=§eCorreção de Cor
 option.COLORGRADING.comment=Ativa configurações para misturar livremente os canais de cor finais.
@@ -993,7 +996,6 @@ option.REFLECTION_RES_DIVIDE.comment=Faz com que os reflexos PBR em blocos (e os
 value.REFLECTION_RES_DIVIDE.1=§cDESLIGADO
 value.REFLECTION_RES_DIVIDE.2=LIGADO
 
-
 option.WORLD_OUTLINE=Contorno do Mundo
 option.WORLD_OUTLINE.comment=Adiciona contornos brilhantes aos blocos. §c[-]§r Pode impactar o desempenho.
 
@@ -1254,6 +1256,8 @@ screen.ACES=Configurações ACES
 screen.ACES.comment=Configurações para o Tonemap ACES.
 screen.AGX_SETTINGS=Configurações AgX
 screen.AGX_SETTINGS.comment=Configurações para o Tonemap AgX.
+screen.BSL_SETTINGS=Configurações BSL
+screen.BSL_SETTINGS.comment=Configurações para o Tonemap BSL.
 screen.CAMERA_EFFECTS=Efeitos de Câmera
 screen.RETRO_SETTINGS=Configurações Retrô
 screen.STATIC_NOISE_SETTINGS=Configurações de Ruído Estático
@@ -1269,6 +1273,9 @@ screen.LETTERBOX_SETTINGS=Configurações de Letterbox
 screen.GRID_SETTINGS=Configurações de Grade
 screen.WATERMARK_SETTINGS=Configurações de Marca d'Água
 screen.DOF_SETTINGS=Configurações de Profundidade de Campo
+screen.DOF_SHAPE_SETTINGS=Configurações de Forma
+screen.LENS_FLARE_SETTINGS=Configurações de Lens Flare
+screen.LENS_FLARE_SETTINGS.comment=Configurações relacionadas aos lens flares.
 
 screen.FUN=Diversão
 screen.FUN.comment=Vamos se diverti um pouco.
@@ -1356,18 +1363,17 @@ option.CLOUD_NARROWNESS.comment=Altere o quão estreitas as nuvens aparecem na e
 option.CLOUD_SHADOW_UNBOUND_SIZE=Tamanho da Sombra das Nuvens
 option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Determina o tamanho das sombras
 
-option.CLOUD_STRETCH=Altura das nuvens
-option.CLOUD_TRANSPARENCY=Transparêmcia das nuvens
+option.CLOUD_STRETCH=Altura das Nuvens
+option.CLOUD_TRANSPARENCY=Transparência das Nuvens
 option.CLOUD_DIRECTION=Direção das Nuvens
-option.CLOUD_DIRECTION.comment=Muda a direção em que as nuvens se movem.
-option.CLOUD_MINECRAFT_TEXTURE=Textura das nuvens do Minecraft.
+option.CLOUD_DIRECTION.comment=Altera a direção em que as nuvens se movem.
+option.CLOUD_TEXTURE=Textura das Nuvens do Minecraft
+value.CLOUD_TEXTURE.0=Padrão
+value.CLOUD_TEXTURE.1=Minecraft Antigo
+value.CLOUD_TEXTURE.2=Complementary Antigo
+
 value.CLOUD_DIRECTION.1=Oeste-Leste
 value.CLOUD_DIRECTION.2=Norte-Sul
-option.INCREASED_RAIN_STRENGTH=Força de Chuva Aumentada
-option.INCREASED_RAIN_STRENGTH.comment=Deixa as animações relacionadas ao vento mais rápidas durante a chuva. §c[-]§r Com esta opção ativada, nuvens e outras animações de vento mudam rapidamente ao começar ou parar de chover, sem correção possível. Não recomendado.
-value.INCREASED_RAIN_STRENGTH.0=DESLIGADO
-value.INCREASED_RAIN_STRENGTH.1=Transição Rápida
-value.INCREASED_RAIN_STRENGTH.2=Sem Transição
 option.RAINBOW_CLOUD=Nuvens Arco-Íris
 value.RAINBOW_CLOUD.0=DESLIGADO
 value.RAINBOW_CLOUD.1=10% de Cobertura
@@ -1393,14 +1399,17 @@ option.HIGH_QUALITY_CLOUDS.comment=Aumenta a qualidade das nuvens mais que o pos
 option.CLOUD_LAYER2_SPEED_MULT=Cloud Layer 2 Speed Multiplier
 
 option.DOUBLE_UNBOUND_CLOUDS=Double Unbound Clouds
-option.DOUBLE_UNBOUND_CLOUDS.comment=Ativa a renderização de uma segunda camada de nuvens unbound. §c[-]§r Esta opção pode impactar o desempenho.
-option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Altitude da Camada 2 de Nuvens
-option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Define a altura no mundo em que a segunda camada de nuvens irá aparecer.
-option.CLOUD_UNBOUND_LAYER2_HEIGHT=Altura da Camada 2 de Nuvens
-option.CLOUD_UNBOUND_LAYER2_SIZE=Tamanho da Camada 2 de Nuvens
-option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Define o tamanho da segunda camada de nuvens.
-option.CLOUD_UNBOUND_LAYER2_AMOUNT=Quantidade da Camada 2 de Nuvens
-option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Define a quantidade da segunda camada de nuvens.
+option.DOUBLE_UNBOUND_CLOUDS.comment=Enables a second layer of unbound clouds to be rendered. §c[-]§r This setting can impact performance.
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Cloud Layer 2 Altitude
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Determines the world height which the second layer clouds will appear at.
+option.CLOUD_UNBOUND_LAYER2_HEIGHT=Cloud Layer 2 Height
+option.CLOUD_UNBOUND_LAYER2_SIZE=Cloud Layer 2 Size
+option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Determines the size of the second layer clouds.
+option.CLOUD_UNBOUND_LAYER2_AMOUNT=Cloud Layer 2 Amount
+option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Determines the amount of the second layer clouds.
+
+option.CLOUD_SUN_MOON_SHADING=Sombreamento do Sol/Lua
+option.CLOUD_SUN_MOON_SHADING.comment=Ativa o sombreamento do sol e da lua nas nuvens.
 
 option.END_SMOKE=Fumaça do End
 option.END_SMOKE.comment=Alguém deixou o fogo sem supervisão e agora o End tem fumaça no vazio superior e inferior.
@@ -1780,6 +1789,7 @@ option.BAD_APPLE.comment=Deixa a tela preta com exceção das entidades, que fic
 
 option.tonemap=Tonemap
 option.tonemap.comment=Altera qual tonemap é usado.
+value.tonemap.DoCompTonemap=Complementary Padrão
 value.tonemap.DoBSLTonemap=BSL/Complementary
 value.tonemap.ACESTonemap=ACES
 value.tonemap.ACESRedModified=ACES Red Modificado
@@ -1798,6 +1808,7 @@ option.TONEMAP_COMPARISON.comment=Opção para comparar tonemaps
 
 option.tonemap_left=Tonemap Esquerdo
 option.tonemap_left.comment=Altera qual tonemap é usado.
+value.tonemap_left.DoCompTonemap=Complementary Padrão
 value.tonemap_left.DoBSLTonemap=BSL/Complementary
 value.tonemap_left.ACESTonemap=ACES
 value.tonemap_left.ACESRedModified=ACES Red Modificado
@@ -1813,6 +1824,7 @@ value.tonemap_left.agxTonemap=AgX
 
 option.tonemap_right=Tonemap Direito
 option.tonemap_right.comment=Altera qual tonemap é usado.
+value.tonemap_right.DoCompTonemap=Complementary Padrão
 value.tonemap_right.DoBSLTonemap=BSL/Complementary
 value.tonemap_right.ACESTonemap=ACES
 value.tonemap_right.ACESRedModified=ACES Red Modificado
@@ -2098,7 +2110,26 @@ value.TILT_SHIFT2.0=DESLIGADO
 option.DOF_VIEW_FOCUS_NEW2=§cPlano de Foco DOF & Luneta
 option.DOF_VIEW_FOCUS_NEW2.comment=Mostra o Plano de Foco do DOF quando a interface está visível e o jogador está segurando uma luneta.
 
-option.LET_THERE_BE_COLORS=LET THERE BE COLORS
+option.DOF_SHAPE=Forma
+option.DOF_SHAPE.comment=Forma da Profundidade de Campo
+value.DOF_SHAPE.0=Original
+value.DOF_SHAPE.3=Triângulo
+value.DOF_SHAPE.4=Quadrado
+value.DOF_SHAPE.5=Pentágono
+value.DOF_SHAPE.6=Hexágono
+value.DOF_SHAPE.7=Heptágono
+value.DOF_SHAPE.8=Octógono
+
+option.DOF_POLYGON_SAMPLES=Amostras do Polígono
+option.DOF_POLYGON_SAMPLES.comment=Número de amostras usadas para formas poligonais. Quanto maior o valor, mais suave será a forma. §c[-]§r O desempenho diminui com valores mais altos.
+
+option.DOF_POLYGON_RINGS=Quantidade de Anéis
+option.DOF_POLYGON_RINGS.comment=Número de anéis usados para formas poligonais. Quanto maior o valor, mais suave será a forma. §c[-]§r O desempenho diminui com valores mais altos.
+
+option.DOF_SHAPE_ROTATION_DEGREES=Rotação
+option.DOF_SHAPE_ROTATION_DEGREES.comment=Rotação da forma da profundidade de campo em graus.
+
+option.LET_THERE_BE_COLORS=QUE HAJA CORES
 
 option.MOSS_NOISE=Ruído do Musgo
 option.MOSS_SIZE=Tamanho do Pixel
@@ -2474,3 +2505,20 @@ option.NETHER_HEAT_DISTORTION_SCALE.comment=Altere a escala do efeito de distor�
 
 option.BLOCKLIGHT_CAUSTICS=Caústica da Luz de Bloco
 option.BLOCKLIGHT_CAUSTICS.comment=Adiciona efeito caustico à luz de bloco quando submerso.
+
+option.LENS_FLARE_SHAPE=Forma do Lens Flare
+option.LENS_FLARE_SHAPE.comment=Altera a forma dos lens flares.
+value.LENS_FLARE_SHAPE.0=Padrão
+value.LENS_FLARE_SHAPE.3=Triângulo
+value.LENS_FLARE_SHAPE.4=Quadrado
+value.LENS_FLARE_SHAPE.5=Pentágono
+value.LENS_FLARE_SHAPE.6=Hexágono
+value.LENS_FLARE_SHAPE.7=Heptágono
+value.LENS_FLARE_SHAPE.8=Octógono
+
+option.LENS_FLARE_SHAPE_ROTATION=Rotação da Forma do Lens Flare
+option.LENS_FLARE_SHAPE_ROTATION.comment=Altera a rotação das formas do lens flare.
+
+option.ANAMORPHIC_LENS_FLARE=Lens Flare Anamórfico
+option.ANAMORPHIC_LENS_FLARE.comment=Ativa ou desativa os lens flares anamórficos.
+value.ANAMORPHIC_LENS_FLARE.0=DESLIGADO
