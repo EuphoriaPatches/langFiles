@@ -1666,6 +1666,10 @@ value.BORDER_FOG_DISTANCE_END.1000=2.50
 option.BORDER_FOG_DENSITY_END=Densidade da Névoa de Borda (End)
 option.BORDER_FOG_DENSITY_END.comment=Altere a densidade da névoa de borda do End.
 
+option.BORDER_FOG_NETHER=Névoa da Borda do Nether
+option.BORDER_FOG_END=Névoa da Borda do End
+option.BORDER_FOG_OVERWORLD=Névoa da Borda do Overworld
+
 option.NETHER_PORTAL_VARIATION=Predefinição do Portal do Nether
 option.NETHER_PORTAL_VARIATION.comment=Opção para escolher entre diferentes predefinições de portal do Nether. §e[*]§r O suporte a RP deve estar em Integrated PBR+
 value.NETHER_PORTAL_VARIATION.0=Vanilla
@@ -2486,6 +2490,14 @@ option.NEBULA_STAR_SIZE.comment=Altera o tamanho das estrelas dentro das nebulos
 
 option.NEBULA_STAR_AMOUNT=Quantidade de Estrelas da Nebulosa
 option.NEBULA_STAR_AMOUNT.comment=Altera a quantidade de estrelas dentro das nebulosas.
+
+option.NEBULA_MOON_CONDITION=Condição da Lua para Nebulosa
+option.NEBULA_MOON_CONDITION.comment=Altera a condição da fase da lua para as nebulosas.
+value.NEBULA_MOON_CONDITION.0=Sempre
+value.NEBULA_MOON_CONDITION.1=Lua Nova
+value.NEBULA_MOON_CONDITION.2=Lua Cheia
+value.NEBULA_MOON_CONDITION.3=Luas Parciais
+value.NEBULA_MOON_CONDITION.4=Aleatório
 
 option.END_CENTER_LIGHTING=Iluminação Central do End
 option.END_CENTER_LIGHTING.comment=Altera a iluminação do centro do End.
