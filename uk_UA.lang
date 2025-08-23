@@ -1666,6 +1666,10 @@ value.BORDER_FOG_DISTANCE_END.1000=2.50
 option.BORDER_FOG_DENSITY_END=Щільність межі туману
 option.BORDER_FOG_DENSITY_END.comment=Визначає щільність межі туману в Енді.
 
+option.BORDER_FOG_NETHER=Межа туману Незеру
+option.BORDER_FOG_END=Межа туману Енду
+option.BORDER_FOG_OVERWORLD=Межа туману Верхнього світу
+
 option.NETHER_PORTAL_VARIATION=Пресет порталу Незеру
 option.NETHER_PORTAL_VARIATION.comment=Можливість вибору між різними пресетами порталу в Незер. §e[*]§r Підтримка ПР має бути Integrated PBR+.
 value.NETHER_PORTAL_VARIATION.0=Усталений
@@ -2486,6 +2490,14 @@ option.NEBULA_STAR_SIZE.comment=Змінює розмір зірок у тума
 
 option.NEBULA_STAR_AMOUNT=Кількість зірок туманности
 option.NEBULA_STAR_AMOUNT.comment=Змінює кількість зірок у туманностях.
+
+option.NEBULA_MOON_CONDITION=Умови Місяця туманности
+option.NEBULA_MOON_CONDITION.comment=Змінює стан фаз Місяця для туманностей.
+value.NEBULA_MOON_CONDITION.0=Завжди
+value.NEBULA_MOON_CONDITION.1=Молодик
+value.NEBULA_MOON_CONDITION.2=Повня
+value.NEBULA_MOON_CONDITION.3=Часткові Місяці
+value.NEBULA_MOON_CONDITION.4=Випадково
 
 option.END_CENTER_LIGHTING=Центральне освітлення Енду
 option.END_CENTER_LIGHTING.comment=Змінює освітлення центра Енду.
