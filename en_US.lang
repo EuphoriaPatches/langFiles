@@ -1666,6 +1666,10 @@ value.BORDER_FOG_DISTANCE_END.1000=2.50
 option.BORDER_FOG_DENSITY_END=Border Fog Density
 option.BORDER_FOG_DENSITY_END.comment=Adjust the border fog density of the End.
 
+option.BORDER_FOG_NETHER=Nether Border Fog
+option.BORDER_FOG_END=End Border Fog
+option.BORDER_FOG_OVERWORLD=Overworld Border Fog
+
 option.NETHER_PORTAL_VARIATION=Nether Portal Preset
 option.NETHER_PORTAL_VARIATION.comment=Option to choose between different nether portal presets. §e[*]§r RP Support option must be set to Integrated PBR+
 value.NETHER_PORTAL_VARIATION.0=Vanilla
@@ -2486,6 +2490,14 @@ option.NEBULA_STAR_SIZE.comment=Change the size of the stars within the nebulae
 
 option.NEBULA_STAR_AMOUNT=Nebula Star Amount
 option.NEBULA_STAR_AMOUNT.comment=Change the amount of stars within the nebulae.
+
+option.NEBULA_MOON_CONDITION=Nebula Moon Condition
+option.NEBULA_MOON_CONDITION.comment=Change the moon phase condition for the nebulae.
+value.NEBULA_MOON_CONDITION.0=Always
+value.NEBULA_MOON_CONDITION.1=New Moon
+value.NEBULA_MOON_CONDITION.2=Full Moon
+value.NEBULA_MOON_CONDITION.3=Partial Moons
+value.NEBULA_MOON_CONDITION.4=Random
 
 option.END_CENTER_LIGHTING=End Center Lighting
 option.END_CENTER_LIGHTING.comment=Changes the lighting of the center of the End.
