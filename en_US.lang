@@ -292,7 +292,7 @@ value.ENTITY_SHADOWS_DEFINE.-1=§aOFF
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oON§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=§eDetail Quality§r
-option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, Ender Beams, sky effect reflections, rain puddle accuracy, waving effect
+option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, Ender Beams, sky effect reflections, rain puddle accuracy, waving effect, motion blur
 value.DETAIL_QUALITY.0=§aPotato
 value.DETAIL_QUALITY.2=§eMedium
 value.DETAIL_QUALITY.3=§cHigh
@@ -632,8 +632,10 @@ value.AURORA_CONDITION.2=Snowy Biome
 value.AURORA_CONDITION.3=Full Moon in Snowy Biome
 value.AURORA_CONDITION.4=Full Moon or Snowy Biome
 
-option.NIGHT_NEBULA=§eNight Nebulae§r
-option.NIGHT_NEBULA.comment=Adds galaxy-style nebulae to the night sky. The nebulae are procedurally generated, and they will look different every night. §c[-]§r This effect can impact performance. §e[*]§r "Nebulae" isn't a typo, it's the plural of Nebula =D
+option.NIGHT_NEBULAE=§eNight Nebulae§r
+option.NIGHT_NEBULAE.comment=Adds galaxy-style nebulae to the night sky. The nebulae are procedurally generated, and they will look different every night. §c[-]§r This effect can impact performance. §e[*]§r "Nebulae" isn't a typo, it's the plural of Nebula =D
+value.NIGHT_NEBULAE.-1=OFF
+value.NIGHT_NEBULAE.1=§eON
 
 option.NIGHT_NEBULA_I=Night Nebula Brightness
 option.NIGHT_NEBULA_I.comment=Adjusts the brightness of Night Nebulae.
@@ -739,8 +741,10 @@ value.TAA_MODE.0=§cOFF [-]
 option.DISTANT_LIGHT_BOKEH=Distant Light Bokeh
 option.DISTANT_LIGHT_BOKEH.comment=Makes distant light sources look scattered by applying a single pixel blur in the distance. §a[+]§r This effect benefits from IntegratedPBR+ (optional) by adjusting distant light sources for better looks.
 
-option.MOTION_BLURRING=§eMotion Blur§r
-option.MOTION_BLURRING.comment=Applies blur to the image when moving the camera. §c[-]§r This effect can impact performance.
+option.MOTION_BLUR_EFFECT=§eMotion Blur§r
+option.MOTION_BLUR_EFFECT.comment=Applies blur to the image when moving the camera. §c[-]§r This effect can impact performance.
+value.MOTION_BLUR_EFFECT.-1=OFF
+value.MOTION_BLUR_EFFECT.1=§eON
 
 option.MOTION_BLURRING_STRENGTH=Motion Blur Strength
 option.MOTION_BLURRING_STRENGTH.comment=Adjusts the intensity of motion blur.
@@ -1000,7 +1004,7 @@ option.SPECIAL_PORTAL_EFFECTS=Special Portal Effects
 option.SPECIAL_PORTAL_EFFECTS.comment=Adds special animations and emission to Nether Portals, End Portals, and End Gateways.
 
 option.REFLECTION_RES=§eReflection Resolution§r
-option.REFLECTION_RES.comment=Changes the resolution of PBR reflections on blocks (and the world-space reflections if you have that setting enabled) to gain performance. §c[-]§r "Full" resolution reflections can impact performance way more than expected in some situations.
+option.REFLECTION_RES.comment=Changes the resolution of PBR reflections on blocks (and the world-space reflections if you have that setting enabled) to gain performance. §c[-]§r "Full" resolution reflections can impact performance way more than expected in some situations. §e[*]§r This feature does not work on Optifine.
 value.REFLECTION_RES.1.0=§4§l§n§oFull
 value.REFLECTION_RES.0.5=§aHalf
 
