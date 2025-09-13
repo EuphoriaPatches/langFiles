@@ -292,7 +292,7 @@ value.ENTITY_SHADOWS_DEFINE.-1=Desativado
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oATIVADO§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Qualidade dos Detalhes
-option.DETAIL_QUALITY.comment=Ajusta diversos pequenos aspectos que afetam o desempenho. Altera a qualidade de: material da água, TAA, ajustes de iluminação, Nebulosa Noturna, Tempestade do Nether, Feixes do Ender, reflexos do céu, precisão das poças de chuva e efeito de ondulação.
+option.DETAIL_QUALITY.comment=Ajusta várias pequenas coisas que afetam o desempenho. Ajusta a qualidade de: material da água, TAA, ajustes de iluminação, Névoa Noturna, Tempestade do Nether, Feixes do Ender, reflexos dos efeitos do céu, precisão das poças de chuva, efeito de ondulação, desfoque de movimento
 value.DETAIL_QUALITY.0=§aBatata
 value.DETAIL_QUALITY.2=§eResolução Média
 value.DETAIL_QUALITY.3=§cResolução Alta
@@ -632,10 +632,10 @@ option.NIGHT_NEBULA.comment=Adiciona nébulas ao estilo de galáxia no céu notu
 option.NIGHT_NEBULA_I=Brilho das Nébulas Noturnas
 option.NIGHT_NEBULA_I.comment=Ajuda a ajustar o brilho das Nébulas Noturnas.
 
-option.RAIN_STYLE=Estilo do Clima Chuvoso
-option.RAIN_STYLE.comment=Determina o estilo do clima chuvoso.
-value.RAIN_STYLE.1=Leve & Mais Quente
-value.RAIN_STYLE.2=Pesado & Mais Frio
+option.NIGHT_NEBULAE=§eNévoas Noturnas§r
+option.NIGHT_NEBULAE.comment=Adiciona névoas em estilo de galáxia ao céu noturno. As névoas são geradas de forma procedural e terão uma aparência diferente a cada noite. §c[-]§r Este efeito pode impactar o desempenho. §e[*]§r "Nebulae" não é um erro de digitação, é o plural de Nebula =D
+value.NIGHT_NEBULAE.-1=DESLIGADO
+value.NIGHT_NEBULAE.1=§eLIGADO
 
 option.SPECIAL_BIOME_WEATHER=Clima Especial Frio/Seco
 option.SPECIAL_BIOME_WEATHER.comment=Altera o equilíbrio da atmosfera em biomas frios e secos para dar a sensação de nevasca ou tempestade de areia.
@@ -740,8 +740,11 @@ option.MOTION_BLURRING_STRENGTH.comment=Ajuda a ajustar a intensidade do desfoqu
 option.WORLD_BLUR=§eDesfoque do Mundo
 option.WORLD_BLUR.comment=Ativa o desfoque do mundo. Desfoque de Distância: O desfoque é aplicado como neblina, dependendo da distância da câmera. Profundidade de Campo: O desfoque depende do ponto de foco da câmera. §c[-]§r Este efeito pode impactar bastante o desempenho.
 value.WORLD_BLUR.0=DESLIGADO
-value.WORLD_BLUR.1=Desfoque de Distância
-value.WORLD_BLUR.2=Profundidade de Campo
+
+option.MOTION_BLUR_EFFECT=§eDesfoque de Movimento§r
+option.MOTION_BLUR_EFFECT.comment=Aplica desfoque à imagem ao mover a câmera. §c[-]§r Este efeito pode impactar o desempenho.
+value.MOTION_BLUR_EFFECT.-1=DESLIGADO
+value.MOTION_BLUR_EFFECT.1=§eLIGADO
 
 option.WB_FOV_SCALED=Desfoque Escalado pelo FOV
 option.WB_FOV_SCALED.comment=Escala o Desfoque do Mundo conforme o Campo de Visão da câmera. O desfoque ficará mais intenso ao dar zoom com esta opção ativada.
@@ -1001,7 +1004,7 @@ option.WORLD_OUTLINE.comment=Adiciona contornos brilhantes aos blocos. §c[-]§r
 
 option.WORLD_OUTLINE_THICKNESS=Espessura do Contorno do Mundo
 option.WORLD_OUTLINE_THICKNESS.comment=Define a espessura do efeito de contorno do mundo. §c[-]§r Aumentar pode impactar o desempenho.
-
+option.REFLECTION_RES.comment=Altera a resolução das reflexões PBR nos blocos (e as reflexões em espaço de mundo, se você tiver essa configuração ativada) para ganhar desempenho. §c[-]§r Reflexões em resolução "Completa" podem impactar o desempenho muito mais do que o esperado em algumas situações. §e[*]§r Este recurso não funciona no Optifine.
 option.WORLD_OUTLINE_I=Brilho do Contorno do Mundo
 option.WORLD_OUTLINE_I.comment=Define a intensidade do efeito de contorno do mundo.
 
@@ -2534,3 +2537,4 @@ option.LENS_FLARE_SHAPE_ROTATION.comment=Altera a rotação das formas do lens f
 option.ANAMORPHIC_LENS_FLARE=Lens Flare Anamórfico
 option.ANAMORPHIC_LENS_FLARE.comment=Ativa ou desativa os lens flares anamórficos.
 value.ANAMORPHIC_LENS_FLARE.0=DESLIGADO
+
