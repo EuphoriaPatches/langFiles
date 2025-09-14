@@ -483,6 +483,12 @@ option.T_SATURATION.comment=Ajusta a intensidade geral das cores da imagem.
 option.T_VIBRANCE=Saturação das Cores Pálidas
 option.T_VIBRANCE.comment=Também conhecido como "Vibrance". Ajusta a intensidade das cores da imagem, mas pixels que já são coloridos são menos afetados.
 
+option.TM_DARK_DESATURATION=Desaturação da Escuridão
+option.TM_DARK_DESATURATION.comment=Ajusta a intensidade do efeito de apagamento de cores que será aplicado às áreas mais escuras.
+
+option.TM_WHITE_PATH=Alcance do Branco
+option.TM_WHITE_PATH.comment=Ajusta a facilidade com que as cores mais claras chegam ao branco.
+
 option.COLORGRADING=§eCorreção de Cor
 option.COLORGRADING.comment=Ativa configurações para misturar livremente os canais de cor finais.
 option.GR_RR=Vermelho para Vermelho
@@ -560,7 +566,7 @@ option.WATER_SIZE_MULT.comment=Ajuda a ajustar o tamanho das ondas superficiais 
 
 option.SUN_ANGLE=Ângulo do Sol/Lua
 option.SUN_ANGLE.comment=Ajuda a ajustar o ângulo do sol/lua em relação ao mundo durante o meio-dia. §a[+]§r O modelo de iluminação Reimagined foi especialmente projetado para fazer o ângulo "0" funcionar tão bem quanto os outros.
-value.SUN_ANGLE.-1=Definido pelo Estilo
+value.SUN_ANGLE.-1=Definido pelo o estilo
 value.SUN_ANGLE.60=60
 value.SUN_ANGLE.55=55
 value.SUN_ANGLE.50=50
@@ -628,6 +634,8 @@ value.AURORA_CONDITION.4=Lua Cheia ou Bioma Nevado
 
 option.NIGHT_NEBULA=Nébulas Noturnas
 option.NIGHT_NEBULA.comment=Adiciona nébulas ao estilo de galáxia no céu noturno. As nébulas são geradas proceduralmente e parecerão diferentes a cada noite. §c[-]§r Este efeito pode impactar o desempenho. §e[*]§r "Nébulas" não é um erro de digitação, é o plural de Nebulosa =D
+value.NIGHT_NEBULAE.-1=OFF
+value.NIGHT_NEBULAE.1=§eON
 
 option.NIGHT_NEBULA_I=Brilho das Nébulas Noturnas
 option.NIGHT_NEBULA_I.comment=Ajuda a ajustar o brilho das Nébulas Noturnas.
@@ -671,6 +679,8 @@ value.PIXEL_SCALE.5=16x
 
 option.BLOOM=Brilho Suave
 option.BLOOM.comment=Ativa o brilho borrado de objetos luminosos e umidade.
+value.BLOOM_ENABLED.-1=OFF
+value.BLOOM_ENABLED.1=§eON
 
 option.BLOOM_STRENGTH=Intensidade do Brilho Suave
 option.BLOOM_STRENGTH.comment=Determina a intensidade do brilho em objetos luminosos e o efeito de brilho causado por chuva/umidade em cavernas. §c[-]§r Muito brilho pode deixar a imagem mais borrada e clara do que o desejado, especialmente em condições úmidas.
@@ -733,6 +743,8 @@ option.DISTANT_LIGHT_BOKEH.comment=Faz fontes de luz distantes parecerem dispers
 
 option.MOTION_BLURRING=Desfoque de Movimento
 option.MOTION_BLURRING.comment=Aplica desfoque à imagem ao mover a câmera.
+value.MOTION_BLUR_EFFECT.-1=OFF
+value.MOTION_BLUR_EFFECT.1=§eON
 
 option.MOTION_BLURRING_STRENGTH=Intensidade do Desfoque de Movimento
 option.MOTION_BLURRING_STRENGTH.comment=Ajuda a ajustar a intensidade do desfoque de movimento.
@@ -740,11 +752,8 @@ option.MOTION_BLURRING_STRENGTH.comment=Ajuda a ajustar a intensidade do desfoqu
 option.WORLD_BLUR=§eDesfoque do Mundo
 option.WORLD_BLUR.comment=Ativa o desfoque do mundo. Desfoque de Distância: O desfoque é aplicado como neblina, dependendo da distância da câmera. Profundidade de Campo: O desfoque depende do ponto de foco da câmera. §c[-]§r Este efeito pode impactar bastante o desempenho.
 value.WORLD_BLUR.0=DESLIGADO
-
-option.MOTION_BLUR_EFFECT=§eDesfoque de Movimento§r
-option.MOTION_BLUR_EFFECT.comment=Aplica desfoque à imagem ao mover a câmera. §c[-]§r Este efeito pode impactar o desempenho.
-value.MOTION_BLUR_EFFECT.-1=DESLIGADO
-value.MOTION_BLUR_EFFECT.1=§eLIGADO
+value.WORLD_BLUR.1=§cDesfoque de Distância
+value.WORLD_BLUR.2=§cProfundidade de Campo
 
 option.WB_FOV_SCALED=Desfoque Escalado pelo FOV
 option.WB_FOV_SCALED.comment=Escala o Desfoque do Mundo conforme o Campo de Visão da câmera. O desfoque ficará mais intenso ao dar zoom com esta opção ativada.
@@ -2537,4 +2546,3 @@ option.LENS_FLARE_SHAPE_ROTATION.comment=Altera a rotação das formas do lens f
 option.ANAMORPHIC_LENS_FLARE=Lens Flare Anamórfico
 option.ANAMORPHIC_LENS_FLARE.comment=Ativa ou desativa os lens flares anamórficos.
 value.ANAMORPHIC_LENS_FLARE.0=DESLIGADO
-
