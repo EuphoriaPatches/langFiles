@@ -2549,3 +2549,6 @@ option.LENS_FLARE_SHAPE_ROTATION.comment=Change the rotation of the lens flare s
 option.ANAMORPHIC_LENS_FLARE=Anamorphic Lens Flare
 option.ANAMORPHIC_LENS_FLARE.comment=Enable or disable anamorphic lens flares.
 value.ANAMORPHIC_LENS_FLARE.0=OFF
+
+option.WATER_CAULDRON_COLOR_OVERRIDE=Water Cauldron Color Override
+option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Prevents custom water surface colors settings from affecting water cauldrons.
