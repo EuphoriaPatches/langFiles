@@ -40,7 +40,7 @@ option.info4.comment=RP Support option determines how the shader pack treats the
 
 option.info5=What are yellow settings
 value.info5.0=
-option.info5.comment=A setting with a yellow name means that the setting impacts performance by a measurable amount. If enabling it results in a red option text, it means that the performance cost is very high.
+option.info5.comment=A setting with a yellow name means that the setting impacts performance by a measurable amount despite not being in the "Performance Settings" category. If enabling it results in a red option text, it means that the performance cost is very high.
 
 option.info6=
 value.info6.0=
@@ -238,20 +238,20 @@ value.RP_MODE.1=§bIntegrated PBR+
 value.RP_MODE.2=§eseuspbr (RP Required)
 value.RP_MODE.3=§elabPBR (RP Required)
 
-option.WATER_REFLECT_QUALITY=§eWater Reflection Quality§r
+option.WATER_REFLECT_QUALITY=Water Reflection Quality
 option.WATER_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on translucents. §cMedium§r: Screenspace ray-traced reflections on water and translucents. §ePotato§r: Replaces water and translucent reflections with a faster method, may look incorrect in some situations. §aOFF§r: No reflections.
 value.WATER_REFLECT_QUALITY.-1=§aOFF
 value.WATER_REFLECT_QUALITY.0=§aSky only
 value.WATER_REFLECT_QUALITY.1=§ePotato
 value.WATER_REFLECT_QUALITY.2=§cMedium
 
-option.BLOCK_REFLECT_QUALITY=§eBlock Reflection Quality [*]§r
+option.BLOCK_REFLECT_QUALITY=Block Reflection Quality §e[*]§r
 option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
 value.BLOCK_REFLECT_QUALITY.0=§aOFF
 value.BLOCK_REFLECT_QUALITY.1=§eLow
 value.BLOCK_REFLECT_QUALITY.3=§cHigh
 
-option.SHADOW_QUALITY=§eReal-Time Shadows§r
+option.SHADOW_QUALITY=Real-Time Shadows
 option.SHADOW_QUALITY.comment=Adjusts the quality of shadows. Every tier further reduces the shadow noise artifacts, options lower than §eHigh§r enable optimised shadows on leaves, §eVery Low§r significantly downgrades shadows in multiple ways, §aOFF§r completely disables shadows and light shafts.
 value.SHADOW_QUALITY.-1=§aOFF
 value.SHADOW_QUALITY.0=§eVery Low
@@ -261,7 +261,7 @@ value.SHADOW_QUALITY.3=§eHigh
 value.SHADOW_QUALITY.4=§cVery High
 value.SHADOW_QUALITY.5=§4§lUltra
 
-option.LIGHTSHAFT_QUALI_DEFINE=§eLight Shaft Quality [*]§r
+option.LIGHTSHAFT_QUALI_DEFINE=Light Shaft Quality §e[*]§r
 option.LIGHTSHAFT_QUALI_DEFINE.comment=Adjusts the quality of light shafts. Every tier further reduces the light shaft noise artifacts. §e[*]§r "Real-Time Shadows" setting must be set to anything but OFF for light shafts to work.
 value.LIGHTSHAFT_QUALI_DEFINE.0=§aOFF
 value.LIGHTSHAFT_QUALI_DEFINE.1=§eLow
@@ -269,8 +269,8 @@ value.LIGHTSHAFT_QUALI_DEFINE.2=§eMedium
 value.LIGHTSHAFT_QUALI_DEFINE.3=§cHigh
 value.LIGHTSHAFT_QUALI_DEFINE.4=§4§lVery High
 
-option.shadowDistance=§eShadow Distance§r
-option.shadowDistance.comment=Adjusts the distance from the player which real-time shadows are rendered. §e[*]§r The value is internally capped at Render Distance. §e[*]§r It's recommended to set this value to about 80% of your render distance for best performance and coverage. §c[-]§r Lower values may cause excessive Light Shaft leaking.
+option.shadowDistance=Shadow Distance
+option.shadowDistance.comment=Adjusts the distance from the player which real-time shadows are rendered. §c[-]§r Lower values may cause excessive Light Shaft leaking.
 value.shadowDistance.64.0=§a4 Chunks §c[-]
 value.shadowDistance.80.0=§a5 Chunks §c[-]
 value.shadowDistance.96.0=§a6 Chunks §c[-]
@@ -291,38 +291,38 @@ option.ENTITY_SHADOWS_DEFINE.comment=Enables the ability for entities and block 
 value.ENTITY_SHADOWS_DEFINE.-1=§aOFF
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oON§r§4§k- §r§c[-]
 
-option.DETAIL_QUALITY=§eDetail Quality§r
+option.DETAIL_QUALITY=Detail Quality
 option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, Ender Beams, sky effect reflections, rain puddle accuracy, waving effect, motion blur
 value.DETAIL_QUALITY.0=§aPotato
 value.DETAIL_QUALITY.2=§eMedium
 value.DETAIL_QUALITY.3=§cHigh
 
-option.CLOUD_QUALITY=§eCloud Quality§r
+option.CLOUD_QUALITY=Cloud Quality
 option.CLOUD_QUALITY.comment=Adjusts the lighting, detail, and sample quality of Reimagined/Unbound cloud styles. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
 value.CLOUD_QUALITY.0=§aOFF
 value.CLOUD_QUALITY.1=§aLow
 value.CLOUD_QUALITY.2=§eMedium
 value.CLOUD_QUALITY.3=§cHigh
 
-option.FXAA_DEFINE=§eAnti-Aliasing (FXAA)§r
+option.FXAA_DEFINE=Anti-Aliasing (FXAA)
 option.FXAA_DEFINE.comment=Enables Fast Approximate Anti-Aliasing (FXAA), which is basically an effect that produces smoother image.
 value.FXAA_DEFINE.-1=§aOFF
 value.FXAA_DEFINE.1=§eON
 
-option.SSAO_QUALI_DEFINE=§eEdge Shadow (SSAO) Quality§r
+option.SSAO_QUALI_DEFINE=Edge Shadow (SSAO) Quality
 option.SSAO_QUALI_DEFINE.comment=Adjusts the quality of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. Every tier further reduces the ssao noise artifacts.
 value.SSAO_QUALI_DEFINE.0=§aOFF
 value.SSAO_QUALI_DEFINE.2=§eMedium
 value.SSAO_QUALI_DEFINE.3=§cHigh
 
-option.ANISOTROPIC_FILTER=§eTexture Filtering§r
+option.ANISOTROPIC_FILTER=Texture Filtering
 option.ANISOTROPIC_FILTER.comment=Improves the quality of mipmapped textures using Anisotropic Filtering. §e[*]§r Make sure your "Mipmap Levels" video setting is set to Maximum (4) or you won't get good results.
 value.ANISOTROPIC_FILTER.0=§aOFF
 value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
-option.COLORED_LIGHTING=§eAdvanced Color Tracing [*]§r
+option.COLORED_LIGHTING=Advanced Color Tracing §e[*]§r
 option.COLORED_LIGHTING.comment=Complementary Shaders Feature. Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r The Advanced Color Tracing system also enables some other features which you can individually enable/disable in the "Other" -> "ACT Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each increment can cost more than twice the performance of the previous tier.
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§c4 Chunks
@@ -333,7 +333,7 @@ value.COLORED_LIGHTING.512=§4§l§n§o16 Chunks
 value.COLORED_LIGHTING.768=§4§l§n§o24 Chunks §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunks§r§4§k- §r§c[-]
 
-option.WORLD_SPACE_REFLECTIONS=§eWorld-Space Reflections [*]§r
+option.WORLD_SPACE_REFLECTIONS=World-Space Reflections §e[*]§r
 option.WORLD_SPACE_REFLECTIONS.comment=Calculates reflections in world-space rather than screen-space. §c[-]§r Likely breaks with modded blocks. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §e[*]§r The maximum distance of this effect depends on the Advanced Color Tracing distance. §c[-]§r This effect can severely impact performance especially with higher Advanced Color Tracing distances.
 value.WORLD_SPACE_REFLECTIONS.-1=§aOFF
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oON
@@ -608,8 +608,11 @@ option.SUN_MOON_DURING_RAIN.comment=Determines if the sun and moon will be visib
 
 option.NIGHT_STAR_AMOUNT=Night Star Amount
 option.NIGHT_STAR_AMOUNT.comment=Determines the amount of stars in the night sky.
+value.NIGHT_STAR_AMOUNT.0=Off
+value.NIGHT_STAR_AMOUNT.1=Low
 value.NIGHT_STAR_AMOUNT.2=Medium
 value.NIGHT_STAR_AMOUNT.3=High
+value.NIGHT_STAR_AMOUNT.4=Very High
 
 option.RAINBOWS=Rainbows
 option.RAINBOWS.comment=Enables rainbows that appear at the opposite side of the sun during the morning/evening.
