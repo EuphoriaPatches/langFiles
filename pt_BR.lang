@@ -632,7 +632,7 @@ value.AURORA_CONDITION.2=Bioma Nevado
 value.AURORA_CONDITION.3=Lua Cheia em Bioma Nevado
 value.AURORA_CONDITION.4=Lua Cheia ou Bioma Nevado
 
-option.NIGHT_NEBULA=Nébulas Noturnas
+option.NIGHT_NEBULAE=Nébulas Noturnas
 option.NIGHT_NEBULA.comment=Adiciona nébulas ao estilo de galáxia no céu noturno. As nébulas são geradas proceduralmente e parecerão diferentes a cada noite. §c[-]§r Este efeito pode impactar o desempenho. §e[*]§r "Nébulas" não é um erro de digitação, é o plural de Nebulosa =D
 value.NIGHT_NEBULAE.-1=OFF
 value.NIGHT_NEBULAE.1=§eON
@@ -677,7 +677,7 @@ value.PIXEL_SCALE.3=4x
 value.PIXEL_SCALE.4=8x
 value.PIXEL_SCALE.5=16x
 
-option.BLOOM=Brilho Suave
+option.BLOOM_ENABLED=Brilho Suave
 option.BLOOM.comment=Ativa o brilho borrado de objetos luminosos e umidade.
 value.BLOOM_ENABLED.-1=OFF
 value.BLOOM_ENABLED.1=§eON
@@ -741,7 +741,7 @@ value.TAA_MODE.0=DESLIGADO §c[-]
 option.DISTANT_LIGHT_BOKEH=Bokeh de Luz Distante
 option.DISTANT_LIGHT_BOKEH.comment=Faz fontes de luz distantes parecerem dispersas aplicando um leve desfoque à distância. §a[+]§r Este efeito é melhorado com IntegratedPBR+ (opcional), ajustando as luzes distantes para melhor aparência.
 
-option.MOTION_BLURRING=Desfoque de Movimento
+option.MOTION_BLUR_EFFECT=Desfoque de Movimento
 option.MOTION_BLURRING.comment=Aplica desfoque à imagem ao mover a câmera.
 value.MOTION_BLUR_EFFECT.-1=OFF
 value.MOTION_BLUR_EFFECT.1=§eON

@@ -610,7 +610,7 @@ value.AURORA_CONDITION.2=Zimny Biom
 value.AURORA_CONDITION.3=Księżyc w Pełni w Zimnym Biomie
 value.AURORA_CONDITION.4=Księżyc w Pełni lub Zimny Biom
 
-option.NIGHT_NEBULA=Nocne Mgławice
+option.NIGHT_NEBULAE=Nocne Mgławice
 option.NIGHT_NEBULA.comment=Dodaje gwiezdne mgławice do nocnego nieba. Mgławice są generowane proceduralnie i każdej nocy będą wyglądać inaczej. §c[-]§r Ten efekt może mieć wpływ na wydajność. §e[*]§r Orginalnie był tutaj żarcik o literówce w słowie "Mgławice" ale to się nie tłumaczy na polski więc po prostu powiem "2137" =D
 
 option.NIGHT_NEBULA_I=Jasność Nocnych Mgławic
@@ -653,7 +653,7 @@ value.PIXEL_SCALE.3=4x
 value.PIXEL_SCALE.4=8x
 value.PIXEL_SCALE.5=16x
 
-option.BLOOM=Blask
+option.BLOOM_ENABLED=Blask
 option.BLOOM.comment=Umożliwia rozmycie blasku jasnych obiektów i wilgoci.
 
 option.BLOOM_STRENGTH=Natężęnie Blasku
@@ -715,7 +715,7 @@ value.TAA_MODE.0=WYŁ. §c[-]
 option.DISTANT_LIGHT_BOKEH=Bokeh Odległego Światła
 option.DISTANT_LIGHT_BOKEH.comment=Sprawia, że odległe źródła światła wyglądają na rozproszone poprzez zastosowanie rozmycia pojedynczego piksela. §a[+]§r Ten efekt korzysta ze ZintegrowanegoPBR+ (opcjonalnie), dostosowując odległe źródła światła w celu uzyskania lepszego wyglądu.
 
-option.MOTION_BLURRING=Rozmycie w Ruchu
+option.MOTION_BLUR_EFFECT=Rozmycie w Ruchu
 option.MOTION_BLURRING.comment=Rozmycie obrazu podczas poruszania kamerą.
 
 option.MOTION_BLURRING_STRENGTH=Siła Rozmycia Ruchu

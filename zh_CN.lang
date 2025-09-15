@@ -683,7 +683,7 @@ value.PIXEL_SCALE.3=4x
 value.PIXEL_SCALE.4=8x
 value.PIXEL_SCALE.5=16x
 
-option.BLOOM=§e泛光§r
+option.BLOOM_ENABLED=§e泛光§r
 option.BLOOM.comment=启用在亮部或湿润区域附近的辉光模糊效果.
 value.BLOOM_ENABLED.-1=关
 value.BLOOM_ENABLED.1=§e开

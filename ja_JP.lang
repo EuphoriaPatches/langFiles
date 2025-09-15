@@ -617,7 +617,7 @@ value.AURORA_CONDITION.2=雪のバイオーム
 value.AURORA_CONDITION.3=雪のバイオームでの満月
 value.AURORA_CONDITION.4=満月または雪のバイオーム
 
-option.NIGHT_NEBULA=星雲
+option.NIGHT_NEBULAE=星雲
 option.NIGHT_NEBULA.comment=夜空に銀河風の星雲を追加します。星雲は自動生成され、毎晩異なる外観になります。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。
 
 option.NIGHT_NEBULA_I=星雲の明るさ
@@ -660,7 +660,7 @@ value.PIXEL_SCALE.3=4x
 value.PIXEL_SCALE.4=8x
 value.PIXEL_SCALE.5=16x
 
-option.BLOOM=ブルーム
+option.BLOOM_ENABLED=ブルーム
 option.BLOOM.comment=明るい物体や湿気による、ぼやけた光の表現を有効にします。
 
 option.BLOOM_STRENGTH=ブルームの強さ
@@ -722,7 +722,7 @@ value.TAA_MODE.0=OFF §c[-]
 option.DISTANT_LIGHT_BOKEH=遠景の光ボケ
 option.DISTANT_LIGHT_BOKEH.comment=遠方の光源に1ピクセルのぼかしを適用し、拡散しているように見せます。. §a[+]§r この効果は、IntegratedPBR+ (任意)を使用することで遠方の光源を調整し、見栄えを良くすることができます。
 
-option.MOTION_BLURRING=モーションブラー
+option.MOTION_BLUR_EFFECT=モーションブラー
 option.MOTION_BLURRING.comment=カメラを動かしたときに画像にぼかしを適用します。
 
 option.MOTION_BLURRING_STRENGTH=モーションブラーの強さ

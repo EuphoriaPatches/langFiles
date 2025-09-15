@@ -680,7 +680,7 @@ value.PIXEL_SCALE.3=4x
 value.PIXEL_SCALE.4=8x
 value.PIXEL_SCALE.5=16x
 
-option.BLOOM=§eСвітіння§r
+option.BLOOM_ENABLED=§eСвітіння§r
 option.BLOOM.comment=Забезпечує розмите світіння від яскравих предметів і вологости.
 value.BLOOM_ENABLED.-1=ВИМК.
 value.BLOOM_ENABLED.1=§eУВІМК.

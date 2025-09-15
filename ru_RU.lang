@@ -620,7 +620,7 @@ value.AURORA_CONDITION.2=Снежный биом
 value.AURORA_CONDITION.3=Полнолуние в снежном биоме
 value.AURORA_CONDITION.4=Полнолуние или снежный биом
 
-option.NIGHT_NEBULA=Ночные туманности
+option.NIGHT_NEBULAE=Ночные туманности
 option.NIGHT_NEBULA.comment=Добавляет в ночное небо галактические туманности, генерируемые процедурно и каждую ночь они выглядящие по-разному. §c[-]§r Влияет на производительность.
 
 option.NIGHT_NEBULA_I=Яркость ночных туманностей
@@ -663,7 +663,7 @@ value.PIXEL_SCALE.3=4×
 value.PIXEL_SCALE.4=8×
 value.PIXEL_SCALE.5=16×
 
-option.BLOOM=Свечение
+option.BLOOM_ENABLED=Свечение
 option.BLOOM.comment=Добавляет размытое свечение (bloom) ярким объектам и влажным поверхностям.
 
 option.BLOOM_STRENGTH=Яркость свечения
@@ -725,7 +725,7 @@ value.TAA_MODE.0=Нет §c[-]
 option.DISTANT_LIGHT_BOKEH=Размытие дальних огней
 option.DISTANT_LIGHT_BOKEH.comment=Добавляет размытие удалённым источникам света, применяя размытие в один пиксель на расстоянии. §a[+]§r Совместимо с опциональным встроенным PBR+, позволяющему регулировать дальние источники света для улучшения картинки.
 
-option.MOTION_BLURRING=Размытие в движении
+option.MOTION_BLUR_EFFECT=Размытие в движении
 option.MOTION_BLURRING.comment=Добавляет размытие при движении камеры.
 
 option.MOTION_BLURRING_STRENGTH=Сила размытия в движении
