@@ -2549,3 +2549,6 @@ option.LENS_FLARE_SHAPE_ROTATION.comment=Змінює обертання фор�
 option.ANAMORPHIC_LENS_FLARE=Анаморфний відблиск
 option.ANAMORPHIC_LENS_FLARE.comment=Умикає або вимкнути анаморфотні відблиски.
 value.ANAMORPHIC_LENS_FLARE.0=ВИМК.
+
+option.WATER_CAULDRON_COLOR_OVERRIDE=Перевизначення кольору казана води
+option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Запобігає впливу користувацьких налаштувань кольорів поверхні води на казани.
