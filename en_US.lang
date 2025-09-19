@@ -1167,6 +1167,7 @@ value.WATERMARK.0=& §dEuphoria §rPatches
 value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches
 value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - GUI Hidden
 value.WATERMARK.3=& GUI Hidden & Hold Spider Eye
+value.WATERMARK.4=Black/White
 option.WATERMARK_SIZE=Watermark Size
 
 screen.EUPHORIA_SETTINGS=§dEuphoria Patches Settings
