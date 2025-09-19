@@ -608,8 +608,11 @@ option.SUN_MOON_DURING_RAIN.comment=Define se o sol e a lua ficarão visíveis d
 
 option.NIGHT_STAR_AMOUNT=Quantidade de Estrelas à Noite
 option.NIGHT_STAR_AMOUNT.comment=Define a quantidade de estrelas no céu noturno.
+value.NIGHT_STAR_AMOUNT.0=OFF
+value.NIGHT_STAR_AMOUNT.1=Baixa
 value.NIGHT_STAR_AMOUNT.2=Média
 value.NIGHT_STAR_AMOUNT.3=Alta
+value.NIGHT_STAR_AMOUNT.4=Muito Alto
 
 option.RAINBOWS=Arco-íris
 option.RAINBOWS.comment=Ativa arco-íris que aparecem no lado oposto ao sol durante a manhã/entardecer.
@@ -1164,6 +1167,7 @@ value.WATERMARK.0=& §dEuphoria §rPatches
 value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches
 value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - Esconder GUI
 value.WATERMARK.3=& Esconder GUI & Manter o olho da aranha
+value.WATERMARK.4=Preto/Branco
 option.WATERMARK_SIZE=Tamanho da Marca d'agua
 
 screen.EUPHORIA_SETTINGS=§dConfiguração do Euphoria Patches 
@@ -2546,3 +2550,6 @@ option.LENS_FLARE_SHAPE_ROTATION.comment=Altera a rotação das formas do lens f
 option.ANAMORPHIC_LENS_FLARE=Lens Flare Anamórfico
 option.ANAMORPHIC_LENS_FLARE.comment=Ativa ou desativa os lens flares anamórficos.
 value.ANAMORPHIC_LENS_FLARE.0=DESLIGADO
+
+option.WATER_CAULDRON_COLOR_OVERRIDE=Substituir a cor da água no caldeirão
+option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Impede que as configurações de cores personalizadas da superfície da água afetem os caldeirões com água.
