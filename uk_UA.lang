@@ -1167,6 +1167,7 @@ value.WATERMARK.0=&§dEuphoria §rPatches
 value.WATERMARK.1=&§cE§6u§ep§aho§br§9i§da §rPatches
 value.WATERMARK.2=&§cE§6u§ep§aho§br§9i§da §rPatches — прихов.
 value.WATERMARK.3=&Приховано і тримати око павука
+value.WATERMARK.4=Чорний/білий
 option.WATERMARK_SIZE=Розмір вотермарка
 
 screen.EUPHORIA_SETTINGS=§dНалаштування Euphoria Patches
