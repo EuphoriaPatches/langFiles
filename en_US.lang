@@ -246,7 +246,7 @@ value.WATER_REFLECT_QUALITY.1=§ePotato
 value.WATER_REFLECT_QUALITY.2=§cMedium
 
 option.BLOCK_REFLECT_QUALITY=Block Reflection Quality §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + smoother specular reflections using a temporal filter. §eLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
+option.BLOCK_REFLECT_QUALITY.comment=Adjusts the visual quality of reflections that appear on solid materials. §cHigh§r: Sun/moon highlights + advanced specular reflections. §eLow§r: Sun/moon highlights only. §e[*]§r RP Support option must be set to anything but Basic for any specular reflections to appear.
 value.BLOCK_REFLECT_QUALITY.0=§aOFF
 value.BLOCK_REFLECT_QUALITY.1=§eLow
 value.BLOCK_REFLECT_QUALITY.3=§cHigh
@@ -286,10 +286,11 @@ value.shadowDistance.512.0=§4§l32 Chunks
 value.shadowDistance.768.0=§4§l§n§o48 Chunks
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 Chunks§r§4§k-
 
-option.ENTITY_SHADOWS_DEFINE=§eEntity Shadows §c[-]§r
-option.ENTITY_SHADOWS_DEFINE.comment=Enables the ability for entities and block entities to cast shadows. §c[-]§r Entity Shadows impact performance way more than expected, costing more than 50% of your fps in some cases.
-value.ENTITY_SHADOWS_DEFINE.-1=§aOFF
-value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oON§r§4§k- §r§c[-]
+option.ENTITY_SHADOW=Entity Shadows
+option.ENTITY_SHADOW.comment=Enables the ability for entities and block entities to cast shadows. §c[-]§r Entity Shadows impact performance way more than expected, costing more than 50% of your fps in some cases.
+value.ENTITY_SHADOW.-1=§aOFF
+value.ENTITY_SHADOW.1=§cRegular Entities
+value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oFull§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Detail Quality
 option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, Ender Beams, sky effect reflections, rain puddle accuracy, waving effect, motion blur
@@ -323,7 +324,7 @@ value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=Advanced Color Tracing §e[*]§r
-option.COLORED_LIGHTING.comment=Complementary Shaders Feature. Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r The Advanced Color Tracing system also enables some other features which you can individually enable/disable in the "Other" -> "ACT Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each increment can cost more than twice the performance of the previous tier.
+option.COLORED_LIGHTING.comment=Complementary Shaders Feature. Uses voxelization and floodfill lighting to add color to blocklight, alongside introducing some new lights. §e[*]§r This feature only works on Iris and supported platforms. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF. §a[+]§r The Advanced Color Tracing system also enables some other features which you can individually enable/disable in the "Other" -> "ACT Features" menu. §c[-]§r High chunk values for this effect impact performance way more than expected, each increment can cost more than twice the performance of the previous tier. §c[-]§r Colored lighting can produce some light color leaking issues when dealing with non-full blocks or modded blocks.
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§c4 Chunks
 value.COLORED_LIGHTING.192=§c6 Chunks
@@ -334,7 +335,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 Chunks §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunks§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=World-Space Reflections §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=Calculates reflections in world-space rather than screen-space. §c[-]§r Likely breaks with modded blocks. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §e[*]§r The maximum distance of this effect depends on the Advanced Color Tracing distance. §c[-]§r This effect can severely impact performance especially with higher Advanced Color Tracing distances.
+option.WORLD_SPACE_REFLECTIONS.comment=Calculates reflections in world-space rather than screen-space. §c[-]§r Likely breaks with modded blocks. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §e[*]§r The maximum distance of this effect depends on the Advanced Color Tracing distance, but it is internally capped at 16 chunks for technical reasons. §c[-]§r This effect can severely impact performance especially with higher Advanced Color Tracing distances. §c[-]§r World-space reflections can completely break after changing resource packs, but it will be fixed after restarting your game. §c[-]§r World-space reflections can cause intense flickering with mods, or resource packs that use higher than 16x resolution for any block textures. 
 value.WORLD_SPACE_REFLECTIONS.-1=§aOFF
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oON
 
