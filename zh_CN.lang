@@ -4,8 +4,8 @@
 # 本文档由 Surisen (Ruri) 翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证随时提供最新翻译.
 
 # 额外键
-screen.FOG_BORDER_OVERWORLD=边界迷雾
-screen.FOG_BORDER_OVERWORLD.comment=与边界雾相关的设置.
+screen.FOG_BORDER_OVERWORLD=边界雾气
+screen.FOG_BORDER_OVERWORLD.comment=与边界雾气相关的设置.
 
 option.BORDER_FOG_DENSITY_OVERWORLD=边界雾气密度
 option.BORDER_FOG_DENSITY_OVERWORLD.comment=调节末地的边界雾气密度.
@@ -1226,22 +1226,22 @@ screen.FOG_CAVE=洞穴雾气
 screen.FOG_CAVE.comment=与洞穴雾气相关的设置.
 screen.FOG_ATMOSPHERIC=大气雾
 screen.FOG_ATMOSPHERIC.comment=与大气雾相关的设置.
-screen.FOG_BORDER=边界雾
-screen.FOG_BORDER.comment=与边界雾相关的设置.
+screen.FOG_BORDER=边界雾气
+screen.FOG_BORDER.comment=与边界雾气相关的设置.
 screen.SEASON=季节
 screen.WINTER=冬天设置
 screen.AUTUMN=秋天设置
 screen.SPRING=春天设置
 screen.SUMMER=夏天设置
 screen.NETHER_WORLD=下界
-screen.FOG_BORDER_NETHER=边界迷雾
-screen.FOG_BORDER_NETHER.comment=与边界雾相关的设置.
+screen.FOG_BORDER_NETHER=边界雾气
+screen.FOG_BORDER_NETHER.comment=与边界雾气相关的设置.
 screen.HEAT_DISTORTION_SETTINGS=热失真
 screen.HEAT_DISTORTION_SETTINGS.comment=与热失真相关的设置.
 screen.END_WORLD=末地
 screen.END_AMBIENT=末地环境光
-screen.FOG_BORDER_END=边界迷雾
-screen.FOG_BORDER_END.comment=与边界雾相关的设置.
+screen.FOG_BORDER_END=边界雾气
+screen.FOG_BORDER_END.comment=与边界雾气相关的设置.
 screen.END_CENTER_LIGHTING_SETTINGS=末地中心光源
 screen.LIGHT_SETTINGS=光源设置
 screen.BLOCKLIGHT=方块光设置
@@ -1660,12 +1660,12 @@ value.BORDER_FOG_DISTANCE_OVERWORLD.100=1.75
 value.BORDER_FOG_DISTANCE_OVERWORLD.500=2.00
 value.BORDER_FOG_DISTANCE_OVERWORLD.1000=2.50
 
-option.BORDER_FOG_DENSITY_END=边界雾密度
+option.BORDER_FOG_DENSITY_END=边界雾气密度
 option.BORDER_FOG_DENSITY_END.comment=调节主世界的边界雾密度.
 
-option.BORDER_FOG_NETHER=下界边界雾
-option.BORDER_FOG_END=末地边界雾
-option.BORDER_FOG_OVERWORLD=主世界边界雾
+option.BORDER_FOG_NETHER=下界边界雾气
+option.BORDER_FOG_END=末地边界雾气
+option.BORDER_FOG_OVERWORLD=主世界边界雾气
 
 option.BORDER_FOG_DISTANCE_NETHER=边界雾气距离
 option.BORDER_FOG_DISTANCE_NETHER.comment=调节下界的边界雾气距离.
@@ -1694,8 +1694,8 @@ value.BORDER_FOG_DISTANCE_END.100=1.75
 value.BORDER_FOG_DISTANCE_END.500=2.00
 value.BORDER_FOG_DISTANCE_END.1000=2.50
 
-option.BORDER_FOG_DENSITY_END=边界雾密度
-option.BORDER_FOG_DENSITY_END.comment=调节末地的边界雾密度.
+option.BORDER_FOG_DENSITY_END=边界雾气密度
+option.BORDER_FOG_DENSITY_END.comment=调节末地的边界雾气密度.
 
 option.NETHER_PORTAL_VARIATION=下界传送门预设
 option.NETHER_PORTAL_VARIATION.comment=可供选择的不同风格的下界传送门预设. §e[*]§r 资源包支持选项需设置为集成PBR+.
