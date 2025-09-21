@@ -289,6 +289,7 @@ value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 Chunks§r§4§k-
 option.ENTITY_SHADOWS_DEFINE=Sombras de Entidades
 option.ENTITY_SHADOWS_DEFINE.comment=Ativa a capacidade de entidades e blocos com entidade projetarem sombras. §c[-]§r As sombras de entidades impactam o desempenho muito mais do que o esperado, podendo reduzir mais de 50% dos seus FPS em alguns casos.
 value.ENTITY_SHADOWS_DEFINE.-1=Desativado
+value.ENTITY_SHADOW.1=§cEntidades Normal
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oATIVADO§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Qualidade dos Detalhes
@@ -1473,16 +1474,16 @@ option.DRAGON_DEATH_EFFECT=Efeito de Morte do Dragão
 option.DRAGON_DEATH_EFFECT.comment=Configuração que substitui os feixes da morte do dragão por um efeito volumétrico. §4[***]§r Ativa §cSombras de Entidades§r. [§e*§r] Funciona apenas no Iris. [§e*§r] Não funciona no MacOS.
 option.E_BEAMS_AMBIENT_INFLUENCE=Influência da Cor Ambiente
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=Os feixes terão a cor ambiente em 1.00 e a cor definida pelo usuário em 0.00. Não se aplica aos Feixes do Dragão.
-option.E_BEAM_R=Feixes do End - Vermelho
-option.E_BEAM_G=Feixes do End - Verde
-option.E_BEAM_B=Feixes do End - Azul
+option.E_BEAM_R_NEW=Feixes do Ender - Vermelho
+option.E_BEAM_G_NEW=Feixes do Ender - Verde
+option.E_BEAM_B_NEW=Feixes do Ender - Azul
 option.E_BEAM_I=Feixes do End - Intensidade
-option.E_DRAGON_BEAM_R=Feixes do Dragão do End - Vermelho
-option.E_DRAGON_BEAM_R.comment=Cor do Feixe do End durante a luta com o dragão - Vermelho.
-option.E_DRAGON_BEAM_G=Feixes do Dragão do End - Verde
-option.E_DRAGON_BEAM_G.comment=Cor do Feixe do End durante a luta com o dragão - Verde.
-option.E_DRAGON_BEAM_B=Feixes do Dragão do End - Azul
-option.E_DRAGON_BEAM_B.comment=Cor do Feixe do End durante a luta com o dragão - Azul.
+option.E_DRAGON_BEAM_R_NEW=Feixes do Dragão do Ender - Vermelho
+option.E_DRAGON_BEAM_R_NEW.comment=A cor do Feixe do Ender durante a luta contra o dragão - Vermelho.
+option.E_DRAGON_BEAM_G_NEW=Feixes do Dragão do Ender - Verde
+option.E_DRAGON_BEAM_G_NEW.comment=A cor do Feixe do Ender durante a luta contra o dragão - Verde.
+option.E_DRAGON_BEAM_B_NEW=Feixes do Dragão do Ender - Azul
+option.E_DRAGON_BEAM_B_NEW.comment=A cor do Feixe do Ender durante a luta contra o dragão - Azul.
 option.E_DRAGON_BEAM_I=Feixes do Dragão do End - Intensidade
 option.E_DRAGON_BEAM_I.comment=Intensidade do Feixe do End durante a luta com o dragão.
 option.BEAMS_NEAR_PLAYER=Feixes do End Perto do Jogador
@@ -1990,9 +1991,9 @@ option.INTENSE_DEEP_DARK.comment=Deixa o deep dark mais intenso. §e[*]§r O jog
 
 option.END_AMBIENT_INFLUENCE=Influência da Cor Ambiente
 option.END_AMBIENT_INFLUENCE.comment=A cor ambiente é 0.00 padrão e definida pelo usuário em 1.00.
-option.END_AMBIENT_R=Cor Ambiente - Vermelho
-option.END_AMBIENT_G=Cor Ambiente - Verde
-option.END_AMBIENT_B=Cor Ambiente - Azul
+option.END_AMBIENT_R_NEW=Cor Ambiente - Vermelho
+option.END_AMBIENT_G_NEW=Cor Ambiente - Verde
+option.END_AMBIENT_B_NEW=Cor Ambiente - Azul
 option.END_AMBIENT_I=Cor Ambiente - Intensidade
 
 option.ATLAS_ROTATION=Rotação do Atlas
@@ -2553,3 +2554,4 @@ value.ANAMORPHIC_LENS_FLARE.0=DESLIGADO
 
 option.WATER_CAULDRON_COLOR_OVERRIDE=Substituir a cor da água no caldeirão
 option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Impede que as configurações de cores personalizadas da superfície da água afetem os caldeirões com água.
+
