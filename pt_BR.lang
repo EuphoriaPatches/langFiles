@@ -1991,9 +1991,9 @@ option.INTENSE_DEEP_DARK.comment=Deixa o deep dark mais intenso. §e[*]§r O jog
 
 option.END_AMBIENT_INFLUENCE=Influência da Cor Ambiente
 option.END_AMBIENT_INFLUENCE.comment=A cor ambiente é 0.00 padrão e definida pelo usuário em 1.00.
-option.END_AMBIENT_R=Cor Ambiente - Vermelho
-option.END_AMBIENT_G=Cor Ambiente - Verde
-option.END_AMBIENT_B=Cor Ambiente - Azul
+option.END_AMBIENT_R_NEW=Cor Ambiente - Vermelho
+option.END_AMBIENT_G_NEW=Cor Ambiente - Verde
+option.END_AMBIENT_B_NEW=Cor Ambiente - Azul
 option.END_AMBIENT_I=Cor Ambiente - Intensidade
 
 option.ATLAS_ROTATION=Rotação do Atlas
@@ -2554,3 +2554,4 @@ value.ANAMORPHIC_LENS_FLARE.0=DESLIGADO
 
 option.WATER_CAULDRON_COLOR_OVERRIDE=Substituir a cor da água no caldeirão
 option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Impede que as configurações de cores personalizadas da superfície da água afetem os caldeirões com água.
+
