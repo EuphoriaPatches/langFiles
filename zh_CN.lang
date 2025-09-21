@@ -3,6 +3,13 @@
 # 社区贡献翻译
 # 本文档由 Surisen (Ruri) 翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证随时提供最新翻译.
 
+# 额外键
+screen.FOG_BORDER_OVERWORLD=边界雾气
+screen.FOG_BORDER_OVERWORLD.comment=与边界雾气相关的设置.
+
+option.BORDER_FOG_DENSITY_OVERWORLD=边界雾气密度
+option.BORDER_FOG_DENSITY_OVERWORLD.comment=调节末地的边界雾气密度.
+
 #Profiles
 profile.POTATO=§a极低
 profile.VERYLOW=§a很低
@@ -249,7 +256,7 @@ value.WATER_REFLECT_QUALITY.1=§e极低
 value.WATER_REFLECT_QUALITY.2=§c中
 
 option.BLOCK_REFLECT_QUALITY=方块反射质量 §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=调节出现在普通方块上的反射的视觉质量. §c高§r: 开启太阳/月亮高光反射, 且使用时间性过滤器使高光反射平滑. §e低§r: 仅太阳/月亮高光. §e[*]§r 资源包支持 选项必须设置为除 §a基本§r 选项外的任何选项, 才能出现高光反射.
+option.BLOCK_REFLECT_QUALITY.comment=调节出现在普通方块上的反射的视觉质量. §c高§r: 开启太阳/月亮高光反射, 高级高光反射. §e低§r: 仅太阳/月亮高光. §e[*]§r 资源包支持 选项必须设置为除 §a基本§r 选项外的任何选项, 才能出现高光反射.
 value.BLOCK_REFLECT_QUALITY.0=§a关
 value.BLOCK_REFLECT_QUALITY.1=§e低
 value.BLOCK_REFLECT_QUALITY.3=§c高
@@ -289,10 +296,11 @@ value.shadowDistance.512.0=§4§l32 区块
 value.shadowDistance.768.0=§4§l§n§o48 区块
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 区块§r§4§k-
 
-option.ENTITY_SHADOWS_DEFINE=§e实体阴影 §c[-]§r
-option.ENTITY_SHADOWS_DEFINE.comment=启用实体和方块实体投射阴影的能力. §c[-]§r 实体阴影对性能的影响超出预期, 在某些情况下会损失超过 50% 的 fps.
-value.ENTITY_SHADOWS_DEFINE.-1=§a关
-value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§o开§r§4§k- §r§c[-]
+option.ENTITY_SHADOW=实体阴影
+option.ENTITY_SHADOW.comment=启用实体和方块实体投射阴影的能力. §c[-]§r 实体阴影对性能的影响超出预期, 在某些情况下会损失超过 50% 的 fps.
+value.ENTITY_SHADOW.-1=§a关
+value.ENTITY_SHADOW.1=§c普通实体
+value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§o完全§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=细节质量
 option.DETAIL_QUALITY.comment=调节影响性能的几个功能. 调节以下几个方面的质量: TAA, 照明调整, 夜空星云, 末地星束, 天空效果反射, 雨水坑精确度, 摇晃效果, 运动模糊.
@@ -326,7 +334,7 @@ value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=高级颜色追踪 §e[*]§r
-option.COLORED_LIGHTING.comment=Complementary 功能. 使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级颜色追踪独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上.
+option.COLORED_LIGHTING.comment=使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级颜色追踪独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上. §c[-]§r 彩色照明会在遇到不完整方块和模组方块时产生泄漏问题.
 value.COLORED_LIGHTING.0=§a关
 value.COLORED_LIGHTING.128=§c4 区块
 value.COLORED_LIGHTING.192=§c6 区块
@@ -337,7 +345,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 区块 §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 区块§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=世界空间反射 (WSR) §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=在世界空间中计算反射. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效. §e[*]§r 最大反射渲染距离取决于 高级颜色追踪 设置的距离. §c[-]§r 本选项的启用会严重影响性能, 尤其是 高级颜色追踪 设置的距离过高时.
+option.WORLD_SPACE_REFLECTIONS.comment=在世界空间中计算反射. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效. §e[*]§r 最大反射渲染距离取决于 高级颜色追踪 设置的距离, 但因技术原因, 在内部该效果实际最大生效距离上限为 16 区块. §c[-]§r 本选项的启用会严重影响性能, 尤其是 高级颜色追踪 设置的距离过高时. §c[-]§r 世界空间反射会在改变资源包时完全失效, 但可以通过重启游戏修复. §c[-]§r 世界空间反射可能会在模组或资源包中使用非 16x 分辨率的方块纹理的情况下导致部分方块反射出现疯狂闪烁的问题. 
 value.WORLD_SPACE_REFLECTIONS.-1=§a关
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§o开
 
@@ -638,8 +646,8 @@ value.AURORA_CONDITION.2=积雪生物群系的每个夜晚
 value.AURORA_CONDITION.3=积雪生物群系的满月夜晚
 value.AURORA_CONDITION.4=满月或积雪生物群系的夜晚
 
-option.NIGHT_NEBULE=§e夜空星云§r
-option.NIGHT_NEBULE.comment=在夜空添加一层星系风格的星云. 星云由算法生成, 每晚看都起来不太一样. §c[-]§r 本选项的效果可能会影响性能. §e[*]§r 原文 Nebulae (星云) 并不是错别字, 是 Nebula 的复数形式 =D.
+option.NIGHT_NEBULAE=§e夜空星云§r
+option.NIGHT_NEBULAE.comment=在夜空添加一层星系风格的星云. 星云由算法生成, 每晚看都起来不太一样. §c[-]§r 本选项的效果可能会影响性能. §e[*]§r 原文 Nebulae (星云) 并不是错别字, 是 Nebula 的复数形式 =D.
 value.NIGHT_NEBULAE.-1=关
 value.NIGHT_NEBULAE.1=§e开
 
@@ -684,7 +692,7 @@ value.PIXEL_SCALE.4=8x
 value.PIXEL_SCALE.5=16x
 
 option.BLOOM_ENABLED=§e泛光§r
-option.BLOOM.comment=启用在亮部或湿润区域附近的辉光模糊效果.
+option.BLOOM_ENABLED.comment=启用在亮部或湿润区域附近的辉光模糊效果.  §c[-]§r 本选项的效果会影响性能.
 value.BLOOM_ENABLED.-1=关
 value.BLOOM_ENABLED.1=§e开
 
@@ -1170,6 +1178,7 @@ value.WATERMARK.0=& §dEuphoria §rPatches
 value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches
 value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - 隐藏 GUI 时
 value.WATERMARK.3=& 隐藏 GUI 且手持蜘蛛眼时
+value.WATERMARK.4=黑/白
 option.WATERMARK_SIZE=水印大小
 
 screen.EUPHORIA_SETTINGS=§dEuphoria Patches 相关设置
@@ -1217,22 +1226,22 @@ screen.FOG_CAVE=洞穴雾气
 screen.FOG_CAVE.comment=与洞穴雾气相关的设置.
 screen.FOG_ATMOSPHERIC=大气雾
 screen.FOG_ATMOSPHERIC.comment=与大气雾相关的设置.
-screen.FOG_BORDER=边界雾
-screen.FOG_BORDER.comment=与边界雾相关的设置.
+screen.FOG_BORDER=边界雾气
+screen.FOG_BORDER.comment=与边界雾气相关的设置.
 screen.SEASON=季节
 screen.WINTER=冬天设置
 screen.AUTUMN=秋天设置
 screen.SPRING=春天设置
 screen.SUMMER=夏天设置
 screen.NETHER_WORLD=下界
-screen.FOG_BORDER_NETHER=边界迷雾
-screen.FOG_BORDER_NETHER.comment=与边界雾相关的设置.
+screen.FOG_BORDER_NETHER=边界雾气
+screen.FOG_BORDER_NETHER.comment=与边界雾气相关的设置.
 screen.HEAT_DISTORTION_SETTINGS=热失真
 screen.HEAT_DISTORTION_SETTINGS.comment=与热失真相关的设置.
 screen.END_WORLD=末地
 screen.END_AMBIENT=末地环境光
-screen.FOG_BORDER_END=边界迷雾
-screen.FOG_BORDER_END.comment=与边界雾相关的设置.
+screen.FOG_BORDER_END=边界雾气
+screen.FOG_BORDER_END.comment=与边界雾气相关的设置.
 screen.END_CENTER_LIGHTING_SETTINGS=末地中心光源
 screen.LIGHT_SETTINGS=光源设置
 screen.BLOCKLIGHT=方块光设置
@@ -1475,16 +1484,16 @@ option.DRAGON_DEATH_EFFECT=末影龙死亡效果 §e[Iris]§r
 option.DRAGON_DEATH_EFFECT.comment=用体积特效替换末影龙死亡特效的选项. §4[***]§r 需启用 §c实体阴影§r. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 option.E_BEAMS_AMBIENT_INFLUENCE=环境色影响程度
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=设置的数值越接近 1.00 时星束的颜色越接近环境色, 设置的数值越接近 0.00 时星束的颜色越接近玩家自定义的颜色. 此设置不会影响龙战星束颜色.
-option.E_BEAM_R=末地星束 - 红色
-option.E_BEAM_G=末地星束 - 绿色
-option.E_BEAM_B=末地星束 - 蓝色
+option.E_BEAM_R_NEW=末地星束 - 红色
+option.E_BEAM_G_NEW=末地星束 - 绿色
+option.E_BEAM_B_NEW=末地星束 - 蓝色
 option.E_BEAM_I=末地星束 - 强度
-option.E_DRAGON_BEAM_R=龙战末地星束 - 红色
-option.E_DRAGON_BEAM_R.comment=龙战过程中的末地星束颜色 - 红色.
-option.E_DRAGON_BEAM_G=龙战末地星束 - 绿色
-option.E_DRAGON_BEAM_G.comment=龙战过程中的末地星束颜色 - 绿色.
-option.E_DRAGON_BEAM_B=龙战末地星束 - 蓝色
-option.E_DRAGON_BEAM_B.comment=龙战过程中的末地星束颜色 - 蓝色.
+option.E_DRAGON_BEAM_R_NEW=龙战末地星束 - 红色
+option.E_DRAGON_BEAM_R_NEW.comment=龙战过程中的末地星束颜色 - 红色.
+option.E_DRAGON_BEAM_G_NEW=龙战末地星束 - 绿色
+option.E_DRAGON_BEAM_G_NEW.comment=龙战过程中的末地星束颜色 - 绿色.
+option.E_DRAGON_BEAM_B_NEW=龙战末地星束 - 蓝色
+option.E_DRAGON_BEAM_B_NEW.comment=龙战过程中的末地星束颜色 - 蓝色.
 option.E_DRAGON_BEAM_I=龙战末地星束 - 强度
 option.E_DRAGON_BEAM_I.comment=龙战过程中的末地星束颜色 - 强度.
 option.BEAMS_NEAR_PLAYER=末地星束靠近玩家
@@ -1651,12 +1660,12 @@ value.BORDER_FOG_DISTANCE_OVERWORLD.100=1.75
 value.BORDER_FOG_DISTANCE_OVERWORLD.500=2.00
 value.BORDER_FOG_DISTANCE_OVERWORLD.1000=2.50
 
-option.BORDER_FOG_DENSITY_END=边界雾密度
+option.BORDER_FOG_DENSITY_END=边界雾气密度
 option.BORDER_FOG_DENSITY_END.comment=调节主世界的边界雾密度.
 
-option.BORDER_FOG_NETHER=下界边界雾
-option.BORDER_FOG_END=末地边界雾
-option.BORDER_FOG_OVERWORLD=主世界边界雾
+option.BORDER_FOG_NETHER=下界边界雾气
+option.BORDER_FOG_END=末地边界雾气
+option.BORDER_FOG_OVERWORLD=主世界边界雾气
 
 option.BORDER_FOG_DISTANCE_NETHER=边界雾气距离
 option.BORDER_FOG_DISTANCE_NETHER.comment=调节下界的边界雾气距离.
@@ -1685,8 +1694,8 @@ value.BORDER_FOG_DISTANCE_END.100=1.75
 value.BORDER_FOG_DISTANCE_END.500=2.00
 value.BORDER_FOG_DISTANCE_END.1000=2.50
 
-option.BORDER_FOG_DENSITY_END=边界雾密度
-option.BORDER_FOG_DENSITY_END.comment=调节末地的边界雾密度.
+option.BORDER_FOG_DENSITY_END=边界雾气密度
+option.BORDER_FOG_DENSITY_END.comment=调节末地的边界雾气密度.
 
 option.NETHER_PORTAL_VARIATION=下界传送门预设
 option.NETHER_PORTAL_VARIATION.comment=可供选择的不同风格的下界传送门预设. §e[*]§r 资源包支持选项需设置为集成PBR+.
@@ -1992,9 +2001,9 @@ option.INTENSE_DEEP_DARK.comment=改进的深暗效果. §e[*]§r 需要玩家�
 
 option.END_AMBIENT_INFLUENCE=环境色影响程度
 option.END_AMBIENT_INFLUENCE.comment=当数值越接近 0.00 时星束的颜色越接近环境色, 当数值越接近 1.00 时星束的颜色越接近玩家自定义的颜色.
-option.END_AMBIENT_R=环境色 - 红色
-option.END_AMBIENT_G=环境色 - 绿色
-option.END_AMBIENT_B=环境色 - 蓝色
+option.END_AMBIENT_R_NEW=环境色 - 红色
+option.END_AMBIENT_G_NEW=环境色 - 绿色
+option.END_AMBIENT_B_NEW=环境色 - 蓝色
 option.END_AMBIENT_I=环境色 - 强度
 
 option.ATLAS_ROTATION=图集轮转
@@ -2552,3 +2561,6 @@ option.LENS_FLARE_SHAPE_ROTATION.comment=旋转镜头眩光形状.
 option.ANAMORPHIC_LENS_FLARE=镜头眩光畸变
 option.ANAMORPHIC_LENS_FLARE.comment=调节镜头眩光畸变强度.
 value.ANAMORPHIC_LENS_FLARE.0=关
+
+option.WATER_CAULDRON_COLOR_OVERRIDE=盛水炼药锅颜色覆盖
+option.WATER_CAULDRON_COLOR_OVERRIDE.comment=防止自定义水面颜色设置影响装有水的炼药锅.
