@@ -2556,4 +2556,4 @@ option.WATER_CAULDRON_COLOR_OVERRIDE=Перевизначення кольору
 option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Запобігає впливу користувацьких налаштувань кольорів поверхні води на казани.
 
 option.END_FLASH_SHADOW=Тінь спахала Енду
-option.END_FLASH_SHADOW.comment=Тіні в Енді будуть спроєктовані зі  спалахів Енду замість кута Сонця Енду. §e[*]§r Ця функція працює лише на Iris та лише 1.21.9+
+option.END_FLASH_SHADOW.comment=Тіні в Енді будуть спроєктовані зі  спалахів Енду замість кута Сонця Енду. §e[*]§r Ця функція працює лише на Iris та лише 1.21.9+.
