@@ -2105,7 +2105,7 @@ value.SPEED_LINES.0=ВИМК.
 value.SPEED_LINES.1=Коли швидко
 value.SPEED_LINES.2=Коли швидко і біг
 value.SPEED_LINES.3=УВІМК.
-option.SPEED_LINES_TRANSPARENCY=Прозорість швидкости ліній
+option.SPEED_LINES_TRANSPARENCY=Непрозорість швидкости ліній
 option.SPEED_LINES_SPEED=Інтенсивність
 option.SPEED_LINE_THICKNESS=Розмір лінії
 
@@ -2554,3 +2554,6 @@ value.ANAMORPHIC_LENS_FLARE.0=ВИМК.
 
 option.WATER_CAULDRON_COLOR_OVERRIDE=Перевизначення кольору казана води
 option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Запобігає впливу користувацьких налаштувань кольорів поверхні води на казани.
+
+option.END_FLASH_SHADOW=Тінь спахала Енду
+option.END_FLASH_SHADOW.comment=Тіні в Енді будуть спроєктовані зі  спалахів Енду замість кута Сонця Енду. §e[*]§r Ця функція працює лише на Iris та лише 1.21.9+
