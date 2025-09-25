@@ -2105,7 +2105,7 @@ value.SPEED_LINES.0=OFF
 value.SPEED_LINES.1=ON - While Fast
 value.SPEED_LINES.2=ON - While Fast & Sprinting
 value.SPEED_LINES.3=ON
-option.SPEED_LINES_TRANSPARENCY=Speed Lines Transparency
+option.SPEED_LINES_TRANSPARENCY=Speed Lines Opacity
 option.SPEED_LINES_SPEED=Intensity
 option.SPEED_LINE_THICKNESS=Line Size
 
@@ -2554,3 +2554,6 @@ value.ANAMORPHIC_LENS_FLARE.0=OFF
 
 option.WATER_CAULDRON_COLOR_OVERRIDE=Water Cauldron Color Override
 option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Prevents custom water surface colors settings from affecting water cauldrons.
+
+option.END_FLASH_SHADOW=End Flash Shadows
+option.END_FLASH_SHADOW.comment=Shadows in the End will be projected from the End flashes instead of the End Sun Angle. §e[*]§r This feature only works on Iris on 1.21.9+
