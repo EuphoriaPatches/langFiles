@@ -1430,9 +1430,9 @@ option.CLOUD_SUN_MOON_SHADING.comment=Enables shading for the sun and moon on th
 
 option.END_SMOKE=End Smoke
 option.END_SMOKE.comment=Someone left the fire unattended and now the End has smoke in the upper and lower void.
-option.E_SKY_COLORR=End Sky - Red
-option.E_SKY_COLORG=End Sky - Green
-option.E_SKY_COLORB=End Sky - Blue
+option.E_SKY_COLORR_NEW=End Sky - Red
+option.E_SKY_COLORG_NEW=End Sky - Green
+option.E_SKY_COLORB_NEW=End Sky - Blue
 option.E_SKY_COLORI=End Sky - Intensity
 option.END_SKY_FOG_INFLUENCE=End Sky Fog Color Influence
 option.END_SKY_FOG_INFLUENCE.comment=Tweak how much the color of the fog of modded biomes affect the sky colors
