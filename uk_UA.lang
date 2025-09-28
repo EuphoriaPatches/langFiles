@@ -1430,9 +1430,9 @@ option.CLOUD_SUN_MOON_SHADING.comment=Умикає затінення сонця
 
 option.END_SMOKE=Дим
 option.END_SMOKE.comment=О ні, хтось залишив вогонь без нагляду, і тепер Енд димить згори і знизу!
-option.E_SKY_COLORR=Червоний неба Енду
-option.E_SKY_COLORG=Зелений неба Енду
-option.E_SKY_COLORB=Синій неба Енду
+option.E_SKY_COLORR_NEW=Червоний неба Енду
+option.E_SKY_COLORG_NEW=Зелений неба Енду
+option.E_SKY_COLORB_NEW=Синій неба Енду
 option.E_SKY_COLORI=Інтенсивність неба Енду
 option.END_SKY_FOG_INFLUENCE=Уплив кольору неба на туман
 option.END_SKY_FOG_INFLUENCE.comment=Визначає, наскільки колір туману біомів модів упливає на кольори неба.
