@@ -2557,3 +2557,9 @@ option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Prevents custom water surface color
 
 option.END_FLASH_SHADOW=End Flash Shadows
 option.END_FLASH_SHADOW.comment=Shadows in the End will be projected from the End flashes instead of the End Sun Angle. §e[*]§r This feature only works on Iris on 1.21.9+
+
+option.EP_END_FLASH=End Flash
+option.EP_END_FLASH.comment=Changes the End Flash type, either the default one or the custom Euphoria one or both. §e[*]§r This feature only works on Iris on 1.21.9+
+value.EP_END_FLASH.0=Default Only
+value.EP_END_FLASH.1=Euphoria Only
+value.EP_END_FLASH.2=Both
