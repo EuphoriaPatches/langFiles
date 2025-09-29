@@ -1430,9 +1430,9 @@ option.CLOUD_SUN_MOON_SHADING.comment=Ativa o sombreamento do sol e da lua nas n
 
 option.END_SMOKE=Fumaça do End
 option.END_SMOKE.comment=Alguém deixou o fogo sem supervisão e agora o End tem fumaça no vazio superior e inferior.
-option.E_SKY_COLORR=Céu do End - Vermelho
-option.E_SKY_COLORG=Céu do End - Verde
-option.E_SKY_COLORB=Céu do End - Azul
+option.E_SKY_COLORR_NEW=Céu do End - Vermelho
+option.E_SKY_COLORG_NEW=Céu do End - Verde
+option.E_SKY_COLORB_NEW=Céu do End - Azul
 option.E_SKY_COLORI=Céu do End - Intensidade
 option.END_SKY_FOG_INFLUENCE=Influência da Cor da Névoa do Céu do End
 option.END_SKY_FOG_INFLUENCE.comment=Altere o quanto a cor da névoa de biomas de mods afeta as cores do céu
@@ -2557,3 +2557,4 @@ option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Impede que as configurações de co
 
 option.END_FLASH_SHADOW=Sombra dos Flashes do End
 option.END_FLASH_SHADOW.comment=No End, as sombras serão projetadas a partir dos flashes em vez do ângulo do Sol do End. §e[*]§r Este recurso funciona apenas no Iris a partir da versão 1.21.9+
+
