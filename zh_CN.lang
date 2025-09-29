@@ -3,13 +3,6 @@
 # 社区贡献翻译
 # 本文档由 Surisen (Ruri) 翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证随时提供最新翻译.
 
-# 额外键
-screen.FOG_BORDER_OVERWORLD=边界雾气
-screen.FOG_BORDER_OVERWORLD.comment=与边界雾气相关的设置.
-
-option.BORDER_FOG_DENSITY_OVERWORLD=边界雾气密度
-option.BORDER_FOG_DENSITY_OVERWORLD.comment=调节末地的边界雾气密度.
-
 #Profiles
 profile.POTATO=§a极低
 profile.VERYLOW=§a很低
@@ -362,7 +355,7 @@ option.VANILLAAO_I=原版边缘阴影 (AO) 强度
 option.VANILLAAO_I.comment=决定 Minecraft 的环境光遮蔽强度.
 value.VANILLAAO_I.0=§c关
 
-option.BORDER_FOG=边界迷雾
+option.BORDER_FOG=边界雾气
 option.BORDER_FOG.comment=在已加载的世界的边缘有强烈的雾气, 以隐藏加载区块的边界. §e[*]§r 当视距低于8区块时推荐关闭本选项.
 
 option.ATM_FOG_MULT=大气雾
@@ -1226,8 +1219,8 @@ screen.FOG_CAVE=洞穴雾气
 screen.FOG_CAVE.comment=与洞穴雾气相关的设置.
 screen.FOG_ATMOSPHERIC=大气雾
 screen.FOG_ATMOSPHERIC.comment=与大气雾相关的设置.
-screen.FOG_BORDER=边界雾气
-screen.FOG_BORDER.comment=与边界雾气相关的设置.
+screen.FOG_BORDER_OVERWORLD=边界雾气
+screen.FOG_BORDER_OVERWORLD.comment=与边界雾气相关的设置.
 screen.SEASON=季节
 screen.WINTER=冬天设置
 screen.AUTUMN=秋天设置
@@ -1440,9 +1433,9 @@ option.CLOUD_SUN_MOON_SHADING.comment=启用太阳和月亮对云层的照明效
 
 option.END_SMOKE=末地烟云
 option.END_SMOKE.comment=有人纵火, 所以现在末地上下层虚空都有烟云.
-option.E_SKY_COLORR=末地天空 - 红色
-option.E_SKY_COLORG=末地天空 - 绿色
-option.E_SKY_COLORB=末地天空 - 蓝色
+option.E_SKY_COLORR_NEW=末地天空 - 红色
+option.E_SKY_COLORG_NEW=末地天空 - 绿色
+option.E_SKY_COLORB_NEW=末地天空 - 蓝色
 option.E_SKY_COLORI=末地天空 - 强度
 option.END_SKY_FOG_INFLUENCE=末地天空雾气影响程度
 option.END_SKY_FOG_INFLUENCE.comment=调节模组生物群系的雾气颜色对末地天空颜色的影响程度.
@@ -1660,12 +1653,8 @@ value.BORDER_FOG_DISTANCE_OVERWORLD.100=1.75
 value.BORDER_FOG_DISTANCE_OVERWORLD.500=2.00
 value.BORDER_FOG_DISTANCE_OVERWORLD.1000=2.50
 
-option.BORDER_FOG_DENSITY_END=边界雾气密度
-option.BORDER_FOG_DENSITY_END.comment=调节主世界的边界雾密度.
-
-option.BORDER_FOG_NETHER=下界边界雾气
-option.BORDER_FOG_END=末地边界雾气
-option.BORDER_FOG_OVERWORLD=主世界边界雾气
+option.BORDER_FOG_DENSITY_OVERWORLD=边界雾气密度
+option.BORDER_FOG_DENSITY_OVERWORLD.comment=调节主世界的边界雾密度.
 
 option.BORDER_FOG_DISTANCE_NETHER=边界雾气距离
 option.BORDER_FOG_DISTANCE_NETHER.comment=调节下界的边界雾气距离.
@@ -1679,8 +1668,8 @@ value.BORDER_FOG_DISTANCE_NETHER.100=1.75
 value.BORDER_FOG_DISTANCE_NETHER.500=2.00
 value.BORDER_FOG_DISTANCE_NETHER.1000=2.50
 
-option.BORDER_FOG_DENSITY_NETHER=边界雾密度
-option.BORDER_FOG_DENSITY_NETHER.comment=调节下界的边界雾密度.
+option.BORDER_FOG_DENSITY_NETHER=边界雾气密度
+option.BORDER_FOG_DENSITY_NETHER.comment=调节下界的边界雾气密度.
 
 option.BORDER_FOG_DISTANCE_END=边界雾气距离
 option.BORDER_FOG_DISTANCE_END.comment=调节末地的边界雾气距离.
@@ -1696,6 +1685,10 @@ value.BORDER_FOG_DISTANCE_END.1000=2.50
 
 option.BORDER_FOG_DENSITY_END=边界雾气密度
 option.BORDER_FOG_DENSITY_END.comment=调节末地的边界雾气密度.
+
+option.BORDER_FOG_NETHER=下界边界雾气
+option.BORDER_FOG_END=末地边界雾气
+option.BORDER_FOG_OVERWORLD=主世界边界雾气
 
 option.NETHER_PORTAL_VARIATION=下界传送门预设
 option.NETHER_PORTAL_VARIATION.comment=可供选择的不同风格的下界传送门预设. §e[*]§r 资源包支持选项需设置为集成PBR+.
@@ -1719,10 +1712,10 @@ option.END_PORTAL_BEAM=末地传送门射束 §e[Iris]§r
 option.END_PORTAL_BEAM.comment=在末地传送门的边缘添加光束. 类似于《我的世界：地下城》. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
 
 option.SILHOUETTE=剪影模式
+option.SILHOUETTE.comment=启用此选项后, 使方块背向太阳面颜色渐黑, 对截图有帮助.
 value.SILHOUETTE.0=关
 value.SILHOUETTE.1=仅在夜晚启用
 value.SILHOUETTE.2=保持开启
-option.SILHOUETTE.comment=启用此选项后, 使方块背向太阳面颜色渐黑, 对截图有帮助.
 option.SILHOUETTE_BRIGHTNESS=剪影亮度
 
 option.RAIN_ATMOSPHERE=史诗雷雨氛围
@@ -2023,8 +2016,6 @@ value.MCBL_MAIN_DEFINE.2=高级颜色追踪 + 屏幕空间
 option.MCBL_INFLUENCE=彩色照明影响程度
 option.MCBL_INFLUENCE.comment=调节彩色照明颜色对默认方块光颜色的影响程度.
 
-option.COLORED_CANDLES=蜡烛彩色照明
-
 option.SSS_SNOW_ICE=冰雪方块次表面散射
 option.SSS_SNOW_ICE.comment=为雪方块和冰方块添加次表面散射效果.
 
@@ -2099,9 +2090,9 @@ option.SCANLINE_FREQUENCY=扫描线频率
 option.SCANLINE_SPEED=扫描线速度
 option.SCANLINE_AMOUNT=扫描线大小
 option.SCANLINE_NEW_MONOCHROME=单色
-value.SCANLINE_NEW_MONOCHROME.true=是
-value.SCANLINE_NEW_MONOCHROME.false=否
 option.SCANLINE_NEW_DIRECTION=扫描线方向
+value.SCANLINE_NEW_DIRECTION.false=水平
+value.SCANLINE_NEW_DIRECTION.true=垂直
 option.SCANLINE_R=红色倍率
 option.SCANLINE_G=绿色倍率
 option.SCANLINE_B=蓝色倍率
@@ -2117,7 +2108,7 @@ value.SPEED_LINES.0=关
 value.SPEED_LINES.1=开 - 冲刺时
 value.SPEED_LINES.2=开 - 冲刺 & 高速运动时
 value.SPEED_LINES.3=开
-option.SPEED_LINES_TRANSPARENCY=速度效果透明度
+option.SPEED_LINES_TRANSPARENCY=速度效果不透明度
 option.SPEED_LINES_SPEED=强度
 option.SPEED_LINE_THICKNESS=线条大小
 
@@ -2315,12 +2306,14 @@ value.SHOCKWAVE.2=方形
 option.SHOCKWAVE.comment=蹲一下!
 
 option.STAR_LAYER_OW=错落星层 - 主世界
+option.STAR_LAYER_OW.comment=为当前的星空额外添加不同远近, 不同大小的星层.
 value.STAR_LAYER_OW.0=关
 value.STAR_LAYER_OW.1=仅小星层
 value.STAR_LAYER_OW.2=仅大星层
 value.STAR_LAYER_OW.3=双星层
 
 option.STAR_LAYER_END=错落星层 - 末地
+option.STAR_LAYER_END.comment=为当前的星空添加额外不同远近, 不同大小的星层.
 value.STAR_LAYER_END.0=关
 value.STAR_LAYER_END.1=仅小星层
 value.STAR_LAYER_END.2=仅大星层
@@ -2564,3 +2557,12 @@ value.ANAMORPHIC_LENS_FLARE.0=关
 
 option.WATER_CAULDRON_COLOR_OVERRIDE=盛水炼药锅颜色覆盖
 option.WATER_CAULDRON_COLOR_OVERRIDE.comment=防止自定义水面颜色设置影响装有水的炼药锅.
+
+option.END_FLASH_SHADOW=末地闪光阴影 §e[Iris]§r
+option.END_FLASH_SHADOW.comment=阴影根据末地闪光事件所投射, 而不是由末地日月斜角选项控制. §e[*]§r 本选项仅在 1.21.9+ 的版本种安装 Iris 时生效.
+
+option.EP_END_FLASH=末地闪光类型 §e[Iris]§r
+option.EP_END_FLASH.comment=修改末地闪光类型, 同时启用 默认类型 和 Euphoria 类型 或者只选择其一. §e[*]§r 本选项仅在 1.21.9+ 的版本种安装 Iris 时生效.
+value.EP_END_FLASH.0=仅默认类型
+value.EP_END_FLASH.1=仅 Euphoria 类型
+value.EP_END_FLASH.2=两者
