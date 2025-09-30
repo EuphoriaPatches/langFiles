@@ -1734,7 +1734,7 @@ option.LAVA_VARIATION.comment=Гарячі пресети в вашому рег
 value.LAVA_VARIATION.0=Complementary
 value.LAVA_VARIATION.1=Адаптивний шум (раджу)
 value.LAVA_VARIATION.2=Рум'яна гарячість
-value.LAVA_VARIATION.3=Розплавлений сир
+value.LAVA_VARIATION.3=Розтоплений сир
 value.LAVA_VARIATION.4=Темні острови
 
 option.LAVA_TEMPERATURE=Температура лави
@@ -1947,7 +1947,7 @@ option.SNOW_SIZE=Розділ. здат. снігу
 option.SNOW_SIZE.comment=Змінює роздільну здатність або розмір шуму.
 value.SNOW_SIZE.0=Авто
 
-option.MELTING_RADIUS=Радіус плавлення
+option.MELTING_RADIUS=Радіус топлення
 option.MELTING_RADIUS.comment=Зміна радіуса танення снігу навколо джерел світла.
 
 option.SNOW_TRANSPARENCY=Прозорість снігу
