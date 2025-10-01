@@ -1302,6 +1302,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS=Random Blocklight
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Settings that relate to Random Blocklight.
 
 screen.POPULAR_SETTINGS=§dPopular Settings
+screen.POPULAR_SETTINGS.comment=These are some of the most popular settings in Euphoria Patches. Apart from Advanced Colored Tracing (which is needed for a lot of effects), all options in here are exclusive to Euphoria Patches and cannot be found in the Original Complementary Shaderpack.
 screen.POPULAR_SETTINGS_2=Page 2
 screen.POPULAR_SETTINGS_3=Page 3
 screen.EP_VERSION=Euphoria Patches §d1.7.0
@@ -1458,9 +1459,9 @@ value.OVERWORLD_BEAMS_CONDITION.1=Every Night
 option.OVERWORLD_BEAMS_INTENSITY=Overworld Beams Intensity
 option.BEAMS_AMBIENT_INFLUENCE=Fog Color Influence
 option.BEAMS_AMBIENT_INFLUENCE.comment=The beams will have the Fog Color at 1.00 and the user defined color at 0.00.
-option.OW_BEAM_R=Overworld Beams - Red
-option.OW_BEAM_G=Overworld Beams - Green
-option.OW_BEAM_B=Overworld Beams - Blue
+option.OW_BEAM_R_NEW=Overworld Beams - Red
+option.OW_BEAM_G_NEW=Overworld Beams - Green
+option.OW_BEAM_B_NEW=Overworld Beams - Blue
 
 option.END_BEAMS=Ender Beams
 option.END_BEAMS.comment=Setting which enables nebula like beams in the End.
@@ -1623,16 +1624,16 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Handheld Intensity
 
 option.CAVE_FOG=Cave Fog
 option.CAVE_FOG.comment=Turn cave fog on and off.
-option.CAVE_FOG_R=Cave Fog - Red
-option.CAVE_FOG_G=Cave Fog - Green
-option.CAVE_FOG_B=Cave Fog - Blue
+option.CAVE_FOG_R_NEW=Cave Fog - Red
+option.CAVE_FOG_G_NEW=Cave Fog - Green
+option.CAVE_FOG_B_NEW=Cave Fog - Blue
 option.CAVE_FOG_I=Cave Fog - Intensity
 option.CAVE_FOG_DENSITY=Cave Fog Density
 
 option.ATMOSPHERIC_FOG=Atmospheric Fog
-option.ATMOSPHERIC_FOG_R= Atmospheric Fog - Red
-option.ATMOSPHERIC_FOG_G= Atmospheric Fog - Green
-option.ATMOSPHERIC_FOG_B= Atmospheric Fog - Blue
+option.ATMOSPHERIC_FOG_R_NEW= Atmospheric Fog - Red
+option.ATMOSPHERIC_FOG_G_NEW= Atmospheric Fog - Green
+option.ATMOSPHERIC_FOG_B_NEW= Atmospheric Fog - Blue
 option.ATMOSPHERIC_FOG_I= Atmospheric Fog - Intensity
 option.ATMOSPHERIC_FOG_DENSITY=Atmospheric Fog Density
 option.RADIOACTIVE_ATMOSPHERIC_FOG=Radioactive Atmospheric Fog
