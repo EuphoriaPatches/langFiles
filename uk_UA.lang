@@ -1302,6 +1302,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS=Випадкове світло блоків
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Параметри, які стосуються випадкового світла блоків.
 
 screen.POPULAR_SETTINGS=§dПопулярні налаштування
+screen.POPULAR_SETTINGS.comment=Це деякі з найпопулярніших налаштувань у Euphoria Patches. Окрім розширеноuj кольоровоuj трасування (яка потрібна для багатьох ефектів), усі параметри тут є ексклюзивними для Euphoria Patches, і їх неможливо знайти в оригінальному пакеті шейдерів Complementary.
 screen.POPULAR_SETTINGS_2=Сторінка 2
 screen.POPULAR_SETTINGS_3=Сторінка 3
 screen.EP_VERSION=Euphoria Patches §d1.7.0
@@ -1458,9 +1459,9 @@ value.OVERWORLD_BEAMS_CONDITION.1=Щоночі
 option.OVERWORLD_BEAMS_INTENSITY=Інтенс. променів Верхнього світу
 option.BEAMS_AMBIENT_INFLUENCE=Уплив кольору на туман
 option.BEAMS_AMBIENT_INFLUENCE.comment=Промені матимуть колір туману 1.00 і визначений користувачем колір 0.00.
-option.OW_BEAM_R=Червоний променів Верхнього світу
-option.OW_BEAM_G=Зелений променів Верхнього світу
-option.OW_BEAM_B=Синій променів Верхнього світу
+option.OW_BEAM_R_NEW=Червоний променів Верхнього світу
+option.OW_BEAM_G_NEW=Зелений променів Верхнього світу
+option.OW_BEAM_B_NEW=Синій променів Верхнього світу
 
 option.END_BEAMS=Промені Енду
 option.END_BEAMS.comment=Налаштування, яке вмикає туманноподібні промені в Енді.
@@ -1623,16 +1624,16 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Інтенсивність
 
 option.CAVE_FOG=Печерний туман
 option.CAVE_FOG.comment=Умикає або вимикає печерний туман.
-option.CAVE_FOG_R=Червоний печерного туману
-option.CAVE_FOG_G=Зелений печерного туману
-option.CAVE_FOG_B=Синій печерного туману
+option.CAVE_FOG_R_NEW=Червоний печерного туману
+option.CAVE_FOG_G_NEW=Зелений печерного туману
+option.CAVE_FOG_B_NEW=Синій печерного туману
 option.CAVE_FOG_I=Інтенсивність печерного туману
 option.CAVE_FOG_DENSITY=Щільність печерного туману
 
 option.ATMOSPHERIC_FOG=Атмосферний туман
-option.ATMOSPHERIC_FOG_R=Червоний атмосферного туману
-option.ATMOSPHERIC_FOG_G=Зелений атмосферного туману
-option.ATMOSPHERIC_FOG_B=Синій атмосферного туману
+option.ATMOSPHERIC_FOG_R_NEW=Червоний атмосферного туману
+option.ATMOSPHERIC_FOG_G_NEW=Зелений атмосферного туману
+option.ATMOSPHERIC_FOG_B_NEW=Синій атмосферного туману
 option.ATMOSPHERIC_FOG_I=Інтенсивність атмосферного туману
 option.ATMOSPHERIC_FOG_DENSITY=Щільність атмосферного туману
 option.RADIOACTIVE_ATMOSPHERIC_FOG=Радіоактивний атмосферний туман
