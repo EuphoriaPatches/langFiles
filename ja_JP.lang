@@ -1302,6 +1302,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS=ランダムブロック光源
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=ランダムブロック光源に関する設定です。
 
 screen.POPULAR_SETTINGS=§d人気の設定
+screen.POPULAR_SETTINGS.comment=これらはEuphoria Patchesの最も人気な設定の一部です。. 多数のエフェクトに必要となる「高度な色トレーシング」を除き、ここにある全ての設定はEuphoria Patches限定で、オリジナルのComplementaryシェーダーには存在しません。
 screen.POPULAR_SETTINGS_2=ページ 2
 screen.POPULAR_SETTINGS_3=ページ 3
 screen.EP_VERSION=Euphoria Patches §d1.7.0
@@ -1458,9 +1459,9 @@ value.OVERWORLD_BEAMS_CONDITION.1=毎晩
 option.OVERWORLD_BEAMS_INTENSITY=オーバーワールドビームの強度
 option.BEAMS_AMBIENT_INFLUENCE=霧色の影響
 option.BEAMS_AMBIENT_INFLUENCE.comment=ビームは、1.00では霧の色に、0.00ではユーザーが定義した色になります。
-option.OW_BEAM_R=オーバーワールドビーム - 赤
-option.OW_BEAM_G=オーバーワールドビーム - 緑
-option.OW_BEAM_B=オーバーワールドビーム - 青
+option.OW_BEAM_R_NEW=オーバーワールドビーム - 赤
+option.OW_BEAM_G_NEW=オーバーワールドビーム - 緑
+option.OW_BEAM_B_NEW=オーバーワールドビーム - 青
 
 option.END_BEAMS=エンダービーム
 option.END_BEAMS.comment=ジ・エンドで星雲のようなビームを有効にする設定です。
@@ -1623,16 +1624,16 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=手持ち光源の強度
 
 option.CAVE_FOG=洞窟の霧
 option.CAVE_FOG.comment=洞窟の霧を有効または無効にします。
-option.CAVE_FOG_R=洞窟の霧 - 赤
-option.CAVE_FOG_G=洞窟の霧 - 緑
-option.CAVE_FOG_B=洞窟の霧 - 青
+option.CAVE_FOG_R_NEW=洞窟の霧 - 赤
+option.CAVE_FOG_G_NEW=洞窟の霧 - 緑
+option.CAVE_FOG_B_NEW=洞窟の霧 - 青
 option.CAVE_FOG_I=洞窟の霧 - 強度
 option.CAVE_FOG_DENSITY=洞窟の霧 - 密度
 
 option.ATMOSPHERIC_FOG=大気中の霧
-option.ATMOSPHERIC_FOG_R=大気中の霧 - 赤
-option.ATMOSPHERIC_FOG_G=大気中の霧 - 緑
-option.ATMOSPHERIC_FOG_B=大気中の霧 - 青
+option.ATMOSPHERIC_FOG_R_NEW=大気中の霧 - 赤
+option.ATMOSPHERIC_FOG_G_NEW=大気中の霧 - 緑
+option.ATMOSPHERIC_FOG_B_NEW=大気中の霧 - 青
 option.ATMOSPHERIC_FOG_I=大気中の霧 - 強度
 option.ATMOSPHERIC_FOG_DENSITY=大気中の霧 - 密度
 option.RADIOACTIVE_ATMOSPHERIC_FOG=放射性の大気中の霧
