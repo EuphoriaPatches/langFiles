@@ -865,12 +865,12 @@ option.ENTITY_GN_AND_CT.comment=决定自动生成的法线和噪点涂层纹理
 option.GENERATED_NORMAL_MULT=自动生成法线强度
 option.GENERATED_NORMAL_MULT.comment=调节自动生成的表面凹凸的强度.
 
-option.COATED_TEXTURE_MULT=噪点涂层纹理强度
-option.COATED_TEXTURE_MULT.comment=调节纹理上自动生成的的灰尘细节程度.
-
 option.GENERATED_NORMAL_ENTITY_MULT=实体法线生成强度
 option.GENERATED_NORMAL_ENTITY_MULT.comment=调节在实体上自动生成的凹凸细节的强度.
 value.GENERATED_NORMAL_ENTITY_MULT.0=默认
+
+option.COATED_TEXTURE_MULT=噪点涂层纹理强度
+option.COATED_TEXTURE_MULT.comment=调节纹理上自动生成的的灰尘细节程度.
 
 option.GLOWING_ORE_MASTER=§e矿石发光
 option.GLOWING_ORE_MASTER.comment=启用矿石发光功能. §e[*]§r 选择 由所选风格决定 选项会使矿石发光功能仅在 视觉风格 设置为 Unbound 的时候生效. §e[*]§r 若不启用, 本选项以下设置均不会生效.
@@ -1305,6 +1305,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS=随机彩色方块光
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=与随机彩色方块光相关的设置.
 
 screen.POPULAR_SETTINGS=§d最受欢迎的设置
+screen.POPULAR_SETTINGS.comment=Euphoria Patches 中最受欢迎的一些设置. 除开 高级颜色追踪 选项外(因为它是许多其他效选项的前置需求), 所有在此栏目中的选项都是 Euphoria Patches 独家选项.
 screen.POPULAR_SETTINGS_2=第二页
 screen.POPULAR_SETTINGS_3=第三页
 screen.EP_VERSION=Euphoria Patches §d1.7.0
@@ -1387,7 +1388,7 @@ option.CLOUD_STRETCH=云块高度
 option.CLOUD_TRANSPARENCY=云层透明度
 option.CLOUD_DIRECTION=云层流动方向
 option.CLOUD_DIRECTION.comment=改变云层移动的方向.
-option.CLOUD_MINECRAFT_TEXTURE=Minecraft 云层分布图
+option.CLOUD_TEXTURE=Minecraft 云层分布图
 value.CLOUD_TEXTURE.0=默认
 value.CLOUD_TEXTURE.1=经典原版
 value.CLOUD_TEXTURE.2=经典 Complementary
@@ -1461,9 +1462,9 @@ value.OVERWORLD_BEAMS_CONDITION.1=无条件
 option.OVERWORLD_BEAMS_INTENSITY=主世界星束强度
 option.BEAMS_AMBIENT_INFLUENCE=雾气影响程度
 option.BEAMS_AMBIENT_INFLUENCE.comment=设置的数值越接近 1.00 时星束的颜色越接近雾气颜色, 设置的数值越接近 0.00 时星束的颜色越接近玩家自定义的颜色.
-option.OW_BEAM_R=主世界星束 - 红色
-option.OW_BEAM_G=主世界星束 - 绿色
-option.OW_BEAM_B=主世界星束 - 蓝色
+option.OW_BEAM_R_NEW=主世界星束 - 红色
+option.OW_BEAM_G_NEW=主世界星束 - 绿色
+option.OW_BEAM_B_NEW=主世界星束 - 蓝色
 
 option.END_BEAMS=末地星束
 option.END_BEAMS.comment=启用在末地天空上方像出现的如同光束一般的星云.
@@ -1626,16 +1627,16 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=手持光源法线强度
 
 option.CAVE_FOG=洞穴雾气
 option.CAVE_FOG.comment=关闭或开启洞穴雾气的设置.
-option.CAVE_FOG_R=洞穴烟雾 - 红色
-option.CAVE_FOG_G=洞穴烟雾 - 绿色
-option.CAVE_FOG_B=洞穴烟雾 - 蓝色
+option.CAVE_FOG_R_NEW=洞穴烟雾 - 红色
+option.CAVE_FOG_G_NEW=洞穴烟雾 - 绿色
+option.CAVE_FOG_B_NEW=洞穴烟雾 - 蓝色
 option.CAVE_FOG_I=洞穴烟雾 - 强度
 option.CAVE_FOG_DENSITY=洞穴烟雾 密度
 
 option.ATMOSPHERIC_FOG=大气雾
-option.ATMOSPHERIC_FOG_R= 大气雾 - 红色
-option.ATMOSPHERIC_FOG_G= 大气雾 - 绿色
-option.ATMOSPHERIC_FOG_B= 大气雾 - 蓝色
+option.ATMOSPHERIC_FOG_R_NEW= 大气雾 - 红色
+option.ATMOSPHERIC_FOG_G_NEW= 大气雾 - 绿色
+option.ATMOSPHERIC_FOG_B_NEW= 大气雾 - 蓝色
 option.ATMOSPHERIC_FOG_I= 大气雾 - 强度
 option.ATMOSPHERIC_FOG_DENSITY=大气雾 密度
 option.RADIOACTIVE_ATMOSPHERIC_FOG=放射性大气雾
@@ -2436,7 +2437,7 @@ value.DELTARUNE_BATTLE_BACKGROUND.2=开 - 剔除实体
 option.END_CRYSTAL_EMISSION=末地水晶发光亮度.
 
 option.CLEAR_WATER_SPOTS=水斑
-option.CLEAR_WATER_SPOTS.comment=为水体添加透明斑点以增加水面细节. §e[*]§r 需要任意一种类型的水体波浪, Unbound 或者 Reimagined + 水波.
+option.CLEAR_WATER_SPOTS.comment=为水体添加透明斑点以增加水面细节. §e[*]§r 需启用任意一种类型的水体波浪, Unbound 或者 Reimagined + 水波.
 
 option.ACT_ORE_INTENSITY=矿石高级颜色追踪强度
 option.ACT_ORE_INTENSITY.comment=调节矿石的高级颜色追踪强度.
@@ -2559,10 +2560,10 @@ option.WATER_CAULDRON_COLOR_OVERRIDE=盛水炼药锅颜色覆盖
 option.WATER_CAULDRON_COLOR_OVERRIDE.comment=防止自定义水面颜色设置影响装有水的炼药锅.
 
 option.END_FLASH_SHADOW=末地闪光阴影 §e[Iris]§r
-option.END_FLASH_SHADOW.comment=阴影根据末地闪光事件所投射, 而不是由末地日月斜角选项控制. §e[*]§r 本选项仅在 1.21.9+ 的版本种安装 Iris 时生效.
+option.END_FLASH_SHADOW.comment=阴影根据末地闪光事件所投射, 而不是由末地日月斜角选项控制. §e[*]§r 本选项仅在 1.21.9+ 的版本中安装 Iris 时生效.
 
 option.EP_END_FLASH=末地闪光类型 §e[Iris]§r
-option.EP_END_FLASH.comment=修改末地闪光类型, 同时启用 默认类型 和 Euphoria 类型 或者只选择其一. §e[*]§r 本选项仅在 1.21.9+ 的版本种安装 Iris 时生效.
+option.EP_END_FLASH.comment=修改末地闪光类型, 同时启用 默认类型 和 Euphoria 类型 或者只选择其一. §e[*]§r 本选项仅在 1.21.9+ 的版本中安装 Iris 时生效.
 value.EP_END_FLASH.0=仅默认类型
 value.EP_END_FLASH.1=仅 Euphoria 类型
 value.EP_END_FLASH.2=两者
