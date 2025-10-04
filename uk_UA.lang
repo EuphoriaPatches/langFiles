@@ -1302,7 +1302,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS=Випадкове світло блоків
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Параметри, які стосуються випадкового світла блоків.
 
 screen.POPULAR_SETTINGS=§dПопулярні налаштування
-screen.POPULAR_SETTINGS.comment=Це деякі з найпопулярніших налаштувань у Euphoria Patches. Окрім розширеноuj кольоровоuj трасування (яка потрібна для багатьох ефектів), усі параметри тут є ексклюзивними для Euphoria Patches, і їх неможливо знайти в оригінальному пакеті шейдерів Complementary.
+screen.POPULAR_SETTINGS.comment=Це де1.7.1 найпопулярніших налаштувань у Euphoria Patches. Окрім розширеноuj кольоровоuj трасування (яка потрібна для багатьох ефектів), усі параметри тут є ексклюзивними для Euphoria Patches, і їх неможливо знайти в оригінальному пакеті шейдерів Complementary.
 screen.POPULAR_SETTINGS_2=Сторінка 2
 screen.POPULAR_SETTINGS_3=Сторінка 3
 screen.EP_VERSION=Euphoria Patches §d1.7.0

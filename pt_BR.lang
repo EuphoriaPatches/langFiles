@@ -1299,7 +1299,7 @@ screen.FUN.comment=Vamos se diverti um pouco.
 screen.WORLD_CURVATURE_SETTINGS=Curvatura do Mundo
 screen.WORLD_CURVATURE_SETTINGS.comment=Configurações relacionadas á curvatura do mundo.
 screen.RANDOM_BLOCKLIGHT_SETTINGS=Luz de Bloco Aleatória
-screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Configurações relacionadas à Luz de Bloco Aleatória.
+screen.RANDOM_BLOCKLIGHT_SETTINGS.com1.7.1Configurações relacionadas à Luz de Bloco Aleatória.
 
 screen.POPULAR_SETTINGS=§dConfigurações Populares
 screen.POPULAR_SETTINGS_2=Página 2
@@ -2557,4 +2557,3 @@ option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Impede que as configurações de co
 
 option.END_FLASH_SHADOW=Sombra dos Flashes do End
 option.END_FLASH_SHADOW.comment=No End, as sombras serão projetadas a partir dos flashes em vez do ângulo do Sol do End. §e[*]§r Este recurso funciona apenas no Iris a partir da versão 1.21.9+
-
