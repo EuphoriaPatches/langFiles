@@ -1299,12 +1299,12 @@ screen.FUN.comment=Vamos se diverti um pouco.
 screen.WORLD_CURVATURE_SETTINGS=Curvatura do Mundo
 screen.WORLD_CURVATURE_SETTINGS.comment=Configurações relacionadas á curvatura do mundo.
 screen.RANDOM_BLOCKLIGHT_SETTINGS=Luz de Bloco Aleatória
-screen.RANDOM_BLOCKLIGHT_SETTINGS.com1.7.1Configurações relacionadas à Luz de Bloco Aleatória.
+screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Configurações relacionadas à Luz de Bloco Aleatória.
 
 screen.POPULAR_SETTINGS=§dConfigurações Populares
 screen.POPULAR_SETTINGS_2=Página 2
 screen.POPULAR_SETTINGS_3=Página 3
-screen.EP_VERSION=Euphoria Patches §d1.7.0
+screen.EP_VERSION=Euphoria Patches §d1.7.1
 screen.EP_VERSION.comment=§bVocê pode apoiar o SpacEagle17 no Patreon ou Ko-Fi e receber novas versões beta exclusivas.
 
 option.DAYLIGHT_CYCLE_COMPAT=Animação do Tempo Mundial

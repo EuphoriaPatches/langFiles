@@ -1274,7 +1274,7 @@ screen.TONEMAP_SETTINGS_EUPHORIA=Настройки тональной карт�
 screen.TONEMAP_SETTINGS_EUPHORIA_SPECIFIC=Специфические настройки тональной карты
 screen.ACES=Настройки ACES
 screen.ACES.comment=Параметры тонального отображения академической системы кодирования цвета (ACES).
-screen.AGX_SETTINGS=Настройки AgX1.7.1
+screen.AGX_SETTINGS=Настройки AgX
 screen.AGX_SETTINGS.comment=Параметры тонального отображения AgX.
 screen.BSL_SETTINGS=Настройки BSL
 screen.BSL_SETTINGS.comment=Настройки для тональной карты BSL.
@@ -1308,7 +1308,7 @@ screen.POPULAR_SETTINGS=§dПопулярные настройки
 screen.POPULAR_SETTINGS.comment=Это одни из самых популярных настроек в Euphoria Patches. За исключением «Продвинутой цветовой трассировки» (необходимой для многих эффектов), все эти опции являются эксклюзивными для Euphoria Patches и не могут быть найдены в оригинальных шейдерах Complementary.
 screen.POPULAR_SETTINGS_2=Страница 2
 screen.POPULAR_SETTINGS_3=Страница 3
-screen.EP_VERSION=Euphoria Patches §d1.7.0
+screen.EP_VERSION=Euphoria Patches §d1.7.1
 screen.EP_VERSION.comment=§bПоддержите SpacEagle17 на Patreon/Ko-Fi для доступа к бета-версиям. §r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=Анимация времени суток
