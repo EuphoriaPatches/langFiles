@@ -1302,6 +1302,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS=Luz de Bloco Aleatória
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Configurações relacionadas à Luz de Bloco Aleatória.
 
 screen.POPULAR_SETTINGS=§dConfigurações Populares
+screen.POPULAR_SETTINGS.comment=Estas são algumas das configurações mais populares no Euphoria Patches. Exceto o Advanced Colored Tracing (que é necessário para muitos efeitos), todas as opções aqui são exclusivas do Euphoria Patches e não podem ser encontradas no Shaderpack Complementary Original.
 screen.POPULAR_SETTINGS_2=Página 2
 screen.POPULAR_SETTINGS_3=Página 3
 screen.EP_VERSION=Euphoria Patches §d1.7.1
@@ -1458,9 +1459,9 @@ value.OVERWORLD_BEAMS_CONDITION.1=Todas as Noites
 option.OVERWORLD_BEAMS_INTENSITY=Intensidade dos Feixes do Overworld
 option.BEAMS_AMBIENT_INFLUENCE=Influência da Cor da Névoa
 option.BEAMS_AMBIENT_INFLUENCE.comment=Os feixes terão a cor da névoa em 1.00 e a cor definida pelo usuário em 0.00.
-option.OW_BEAM_R=Feixes do Overworld - Vermelho
-option.OW_BEAM_G=Feixes do Overworld - Verde
-option.OW_BEAM_B=Feixes do Overworld - Azul
+option.OW_BEAM_R_NEW=Feixes do Overworld - Vermelho
+option.OW_BEAM_G_NEW=Feixes do Overworld - Verde
+option.OW_BEAM_B_NEW=Feixes do Overworld - Azul
 
 option.END_BEAMS=Feixes do End
 option.END_BEAMS.comment=Configuração que ativa feixes semelhantes a nébulas no End.
@@ -1623,16 +1624,16 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Intensidade na Mão
 
 option.CAVE_FOG=Névoa de Caverna
 option.CAVE_FOG.comment=Ativa ou desativa a névoa em cavernas.
-option.CAVE_FOG_R=Névoa de Caverna - Vermelho
-option.CAVE_FOG_G=Névoa de Caverna - Verde
-option.CAVE_FOG_B=Névoa de Caverna - Azul
+option.CAVE_FOG_R_NEW=Névoa de Caverna - Vermelho
+option.CAVE_FOG_G_NEW=Névoa de Caverna - Verde
+option.CAVE_FOG_B_NEW=Névoa de Caverna - Azul
 option.CAVE_FOG_I=Névoa de Caverna - Intensidade
 option.CAVE_FOG_DENSITY=Densidade da Névoa de Caverna
 
 option.ATMOSPHERIC_FOG=Névoa Atmosférica
-option.ATMOSPHERIC_FOG_R=Névoa Atmosférica - Vermelho
-option.ATMOSPHERIC_FOG_G=Névoa Atmosférica - Verde
-option.ATMOSPHERIC_FOG_B=Névoa Atmosférica - Azul
+option.ATMOSPHERIC_FOG_R_NEW=Névoa Atmosférica - Vermelho
+option.ATMOSPHERIC_FOG_G_NEW=Névoa Atmosférica - Verde
+option.ATMOSPHERIC_FOG_B_NEW=Névoa Atmosférica - Azul
 option.ATMOSPHERIC_FOG_I=Névoa Atmosférica - Intensidade
 option.ATMOSPHERIC_FOG_DENSITY=Densidade da Névoa Atmosférica
 option.RADIOACTIVE_ATMOSPHERIC_FOG=Névoa Atmosférica Radioativa
@@ -2557,3 +2558,9 @@ option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Impede que as configurações de co
 
 option.END_FLASH_SHADOW=Sombra dos Flashes do End
 option.END_FLASH_SHADOW.comment=No End, as sombras serão projetadas a partir dos flashes em vez do ângulo do Sol do End. §e[*]§r Este recurso funciona apenas no Iris a partir da versão 1.21.9+
+
+option.EP_END_FLASH=Flash do End
+option.EP_END_FLASH.comment=Altera o tipo de End Flash, podendo ser o padrão, o personalizado Euphoria ou ambos. §e[*]§r Este recurso só funciona no Iris na versão 1.21.9 ou superior.
+value.EP_END_FLASH.0=Padrão apenas
+value.EP_END_FLASH.1=Euphoria apenas
+value.EP_END_FLASH.2=Ambos
