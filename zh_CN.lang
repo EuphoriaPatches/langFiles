@@ -290,7 +290,7 @@ value.shadowDistance.768.0=§4§l§n§o48 区块
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 区块§r§4§k-
 
 option.ENTITY_SHADOW=实体阴影
-option.ENTITY_SHADOW.comment=启用实体和方块实体投射阴影的能力. §c[-]§r 实体阴影对性能的影响超出预期, 在某些情况下会损失超过 50% 的 fps.
+option.ENTITY_SHADOW.comment=使实体和方块实体可以投射阴影. "普通实体" 仅包含动物和怪物, 但 "完全" 选项会同时包含如箱子这类的方块实体.  §c[-]§r 实体阴影对性能的影响超出预期, 在某些情况下会损失超过 50% 的 fps.
 value.ENTITY_SHADOW.-1=§a关
 value.ENTITY_SHADOW.1=§c普通实体
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§o完全§r§4§k- §r§c[-]
