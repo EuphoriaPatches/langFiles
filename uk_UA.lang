@@ -1737,6 +1737,7 @@ value.LAVA_VARIATION.1=Адаптивний шум (раджу)
 value.LAVA_VARIATION.2=Рум'яна гарячість
 value.LAVA_VARIATION.3=Розтоплений сир
 value.LAVA_VARIATION.4=Темні острови
+value.LAVA_VARIATION.5=Хаотичне течін.
 
 option.LAVA_TEMPERATURE=Температура лави
 option.LAVA_TEMPERATURE.comment=Змінює температуру лави, робить її більш червоною або білою.
