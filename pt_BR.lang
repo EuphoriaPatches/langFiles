@@ -287,7 +287,7 @@ value.shadowDistance.768.0=§4§l§n§o48 Chunks
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 Chunks§r§4§k-
 
 option.ENTITY_SHADOWS_DEFINE=Sombras de Entidades
-option.ENTITY_SHADOWS_DEFINE.comment=Ativa a capacidade de entidades e blocos com entidade projetarem sombras. §c[-]§r As sombras de entidades impactam o desempenho muito mais do que o esperado, podendo reduzir mais de 50% dos seus FPS em alguns casos.
+option.ENTITY_SHADOW.comment=Ativa as sombras projetadas por entidades e blocos-entidade. As "Entidades Regulares" incluem coisas como animais e monstros, enquanto a opção "Completa" também inclui blocos-entidade, como baús. §c[-]§r As sombras de entidades afetam o desempenho muito mais do que o esperado, podendo reduzir mais de 50% dos seus FPS em alguns casos.
 value.ENTITY_SHADOWS_DEFINE.-1=Desativado
 value.ENTITY_SHADOW.1=§cEntidades Normal
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oATIVADO§r§4§k- §r§c[-]
@@ -2564,3 +2564,4 @@ option.EP_END_FLASH.comment=Altera o tipo de End Flash, podendo ser o padrão, o
 value.EP_END_FLASH.0=Padrão apenas
 value.EP_END_FLASH.1=Euphoria apenas
 value.EP_END_FLASH.2=Ambos
+
