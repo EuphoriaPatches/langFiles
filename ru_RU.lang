@@ -1740,6 +1740,7 @@ value.LAVA_VARIATION.1=Адаптивный шум (рекомендуется)
 value.LAVA_VARIATION.2=Пылающий румянец
 value.LAVA_VARIATION.3=Расплавленный сыр
 value.LAVA_VARIATION.4=Тёмные острова
+value.LAVA_VARIATION.5=Беспорядочный поток
 
 option.LAVA_TEMPERATURE=Температура лавы
 option.LAVA_TEMPERATURE.comment=Сдвигает цветовую гамму в красно-белые тона.
