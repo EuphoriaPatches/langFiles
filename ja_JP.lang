@@ -287,7 +287,7 @@ value.shadowDistance.768.0=§4§l§n§o48 チャンク
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64チャンク§r§4§k-
 
 option.ENTITY_SHADOW=エンティティの影
-option.ENTITY_SHADOW.comment=エンティティやブロックエンティティが影を投影できるようにします。. §c[-]§r エンティティの影はパフォーマンスに予想以上の影響を与え、場合によってはfpsが50%以上低下することがあります。
+option.ENTITY_SHADOW.comment=エンティティやブロックエンティティから投影される影を有効にします。. 「通常のエンティティ」には動物やモンスターといったものが含まれますが、「完全」オプションにはチェストといったブロックエンティティも含まれます。. §c[-]§r エンティティの影はパフォーマンスに予想以上の影響を与え、場合によってはfpsが50%以上低下することがあります。
 value.ENTITY_SHADOW.-1=§aOFF
 value.ENTITY_SHADOW.1=§c通常のエンティティ
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§o完全§r§4§k- §r§c[-]
@@ -1737,6 +1737,7 @@ value.LAVA_VARIATION.1=アダプティブノイズ (推奨)
 value.LAVA_VARIATION.2=ほてった魅力
 value.LAVA_VARIATION.3=とろけるチーズ
 value.LAVA_VARIATION.4=暗黒の島々
+value.LAVA_VARIATION.5=カオスな流れ
 
 option.LAVA_TEMPERATURE=溶岩の温度
 option.LAVA_TEMPERATURE.comment=溶岩の温度を変更し、赤みや白さを調整します。
