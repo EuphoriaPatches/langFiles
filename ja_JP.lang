@@ -96,11 +96,11 @@ option.info18.comment=Euphoria Patchesをご利用いただきありがとう�
 
 option.info19=§a新しいアップデート
 value.info19.0=§cX.Y.Z §r->§a X.Y.Z
-option.info19.comment=EuphoriaPatcher Modの新しいバージョンが利用可能です。Modrinthからダウンロードしてください: https://euphoriapatches.com/download
+option.info19.comment=EuphoriaPatcher Modの新しいバージョンが利用可能です。. Modrinthからダウンロードしてください: https://euphoriapatches.com/download
 
 option.info20=
 value.info20.0=§aeuphoriapatches.com/download
-option.info20.comment=EuphoriaPatcher Modの新しいバージョンが利用可能です。Modrinthからダウンロードしてください: https://euphoriapatches.com/download
+option.info20.comment=EuphoriaPatcher Modの新しいバージョンが利用可能です。. Modrinthからダウンロードしてください: https://euphoriapatches.com/download
 
 option.info21=よくある質問
 value.info21.0=
@@ -287,7 +287,7 @@ value.shadowDistance.768.0=§4§l§n§o48 チャンク
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64チャンク§r§4§k-
 
 option.ENTITY_SHADOW=エンティティの影
-option.ENTITY_SHADOW.comment=エンティティやブロックエンティティが影を投影できるようにします。. §c[-]§r エンティティの影はパフォーマンスに予想以上の影響を与え、場合によってはfpsが50%以上低下することがあります。
+option.ENTITY_SHADOW.comment=エンティティやブロックエンティティから投影される影を有効にします。. 「通常のエンティティ」には動物やモンスターといったものが含まれますが、「完全」オプションにはチェストといったブロックエンティティも含まれます。. §c[-]§r エンティティの影はパフォーマンスに予想以上の影響を与え、場合によってはfpsが50%以上低下することがあります。
 value.ENTITY_SHADOW.-1=§aOFF
 value.ENTITY_SHADOW.1=§c通常のエンティティ
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§o完全§r§4§k- §r§c[-]
@@ -324,7 +324,7 @@ value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=高度な色トレーシング (ACT) §e[*]§r
-option.COLORED_LIGHTING.comment=Complementary Shadersの機能です。. ボクセル化とFlood Fillライティングを使用してブロック光源に色を追加し. さらに追加でいくつかの光源を追加します。. §e[*]§r この機能はIrisとサポートされているプラットフォームでのみ動作します。. §e[*]§r この設定は「動的な影」が無効の場合、無効になります。. §a[+]§r 高度な色トレーシングシステムは、他の機能を個別に有効/無効にできる「その他」 ->「ACT専用機能」メニューも有効にします。. §c[-]§r この効果の高いチャンク値はパフォーマンスに予想以上の影響を与え、2チャンクごとの増加ごとに前の段階の2倍以上のパフォーマンスコストがかかる場合があります。. §c[-]§r 色付き照明は、非フルブロックやModブロックを処理する際に、光漏れの問題を発生させる場合があります。
+option.COLORED_LIGHTING.comment=Complementary Shadersの機能です。. ボクセル化とFlood Fillライティングを使用してブロック光源に色を追加し. さらに追加でいくつかの光源を追加します。. §e[*]§r この機能はIrisとサポートされているプラットフォームでのみ動作します。. §e[*]§r この設定は「動的な影」が無効の場合、無効になります。. §a[+]§r 高度な色トレーシングシステムは、他の機能を個別に有効/無効にできる「その他」 ->「ACT専用機能」メニューも有効にします。. §c[-]§r この効果の高いチャンク値はパフォーマンスに予想以上の影響を与え、2チャンクごとの増加ごとに前の段階の2倍以上のパフォーマンスコストがかかる場合があります。. §c[-]§r 色付き照明は、非フルブロックやModブロックを処理する際に、光漏れの問題を発生させる場合があります。
 value.COLORED_LIGHTING.0=§aOFF
 value.COLORED_LIGHTING.128=§c4チャンク
 value.COLORED_LIGHTING.192=§c6チャンク
@@ -340,7 +340,7 @@ value.WORLD_SPACE_REFLECTIONS.-1=§aOFF
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oON
 
 option.WORLD_SPACE_REF_MODE=WSRモード §e[*]§r
-option.WORLD_SPACE_REF_MODE.comment=ワールドスペース反射の動作方法を決定します。. §e[*]§r 「WSRのみ」モードはワールドスペース反射のみを有効にするため、スクリーンスペース反射による視覚的なノイズを全て除去できますが、スクリーンスペース反射は効果距離やブロックに限定されない画面内の全ての情報にアクセスできるため、全体的なディテールは「WSR + SSR」モードがより優れています。
+option.WORLD_SPACE_REF_MODE.comment=ワールドスペース反射の動作方法を決定します。. §e[*]§r 「WSRのみ」モードはワールドスペース反射のみを有効にするため、スクリーンスペース反射による視覚的なノイズを全て除去できますが、スクリーンスペース反射は効果距離やブロックに限定されない画面内の全ての情報にアクセスできるため、全体的なディテールは「WSR + SSR」モードがより優れています。
 value.WORLD_SPACE_REF_MODE.1=WSRのみ
 value.WORLD_SPACE_REF_MODE.2=WSR + SSR
 
@@ -535,7 +535,7 @@ option.WATERCOLOR_G=水面 緑色倍率
 option.WATERCOLOR_B=水面 青色倍率
 
 option.WATERCOLOR_MODE=カラーモード
-option.WATERCOLOR_MODE.comment=水の色がどのように処理されるかを決定します。. 一定: バイオームによって水の色は変わりません。バイオーム別: バイオームに応じて色が変化します。. バイオーム別 (調整): バイオームに基づきますが、特定のバイオームで水面の色が不自然になるのを防ぎます。. §e[*]§r この設定は、Minecraftバージョン1.13未満では正しく機能しません。
+option.WATERCOLOR_MODE.comment=水の色がどのように処理されるかを決定します。. 一定: バイオームによって水の色は変わりません。. バイオーム別: バイオームに応じて色が変化します。. バイオーム別 (調整): バイオームに基づきますが、特定のバイオームで水面の色が不自然になるのを防ぎます。. §e[*]§r この設定は、Minecraftバージョン1.13未満では正しく機能しません。
 value.WATERCOLOR_MODE.3=バイオーム別 (調整)
 value.WATERCOLOR_MODE.2=バイオーム別
 value.WATERCOLOR_MODE.0=一定
@@ -1737,6 +1737,7 @@ value.LAVA_VARIATION.1=アダプティブノイズ (推奨)
 value.LAVA_VARIATION.2=ほてった魅力
 value.LAVA_VARIATION.3=とろけるチーズ
 value.LAVA_VARIATION.4=暗黒の島々
+value.LAVA_VARIATION.5=カオスな流れ
 
 option.LAVA_TEMPERATURE=溶岩の温度
 option.LAVA_TEMPERATURE.comment=溶岩の温度を変更し、赤みや白さを調整します。
