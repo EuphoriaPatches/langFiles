@@ -1737,6 +1737,7 @@ value.LAVA_VARIATION.1=Adaptive Noise (Recomendado)
 value.LAVA_VARIATION.2=Blushing Hotness
 value.LAVA_VARIATION.3=Molten Cheese
 value.LAVA_VARIATION.4=Dark Island
+value.LAVA_VARIATION.5=Chaotic Flow
 
 option.LAVA_TEMPERATURE=Temperatura da Lava
 option.LAVA_TEMPERATURE.comment=Altere a temperatura da lava, deixando-a mais vermelha ou mais branca.
