@@ -2007,7 +2007,7 @@ value.NETHER_NOISE.0=OFF
 value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria Colored Lighting
-option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACT + Screen-Space to use the screen-space system alongside Advanced Colored Tracing. §e[*]§rOnly works on 1.16.5 and above or on Angelica.
+option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACT + Screen-Space to use the screen-space system alongside Advanced Colored Tracing. ACT + SSBL + Dynamic Lighting Support can produce incorrect results in modded environments - should only be used in vanilla with a dynamic lighting mod. §e[*]§rOnly works on 1.16.5 and above or on Angelica.
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=Screen-Space
 value.MCBL_MAIN_DEFINE.2=ACT + Screen-Space
