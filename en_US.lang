@@ -2011,6 +2011,7 @@ option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACT 
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=Screen-Space
 value.MCBL_MAIN_DEFINE.2=ACT + Screen-Space
+value.MCBL_MAIN_DEFINE.3=ACT + SSBL + Dynamic Lighting Support
 
 option.MCBL_INFLUENCE=Multi-Colored Blocklight Influence
 option.MCBL_INFLUENCE.comment=Controls how much the multi-colored blocklight affects the default blocklight color.
