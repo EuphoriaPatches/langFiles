@@ -2011,6 +2011,7 @@ option.MCBL_MAIN_DEFINE.comment=Ativa a iluminação multicolorida de blocos. Us
 value.MCBL_MAIN_DEFINE.0=DESLIGADO
 value.MCBL_MAIN_DEFINE.1=Screen-Space
 value.MCBL_MAIN_DEFINE.2=ACT + Screen-Space
+value.MCBL_MAIN_DEFINE.3=ACT + SSBL + Suporte a Iluminação Dinâmica
 
 option.MCBL_INFLUENCE=Influência da Luz de Bloco Multicolorida
 option.MCBL_INFLUENCE.comment=Controla o quanto a luz de bloco multicolorida afeta a cor padrão da luz de bloco.
