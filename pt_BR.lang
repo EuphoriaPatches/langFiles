@@ -2007,7 +2007,7 @@ value.NETHER_NOISE.0=DESLIGADO
 value.NETHER_NOISE.1=LIGADO
 
 option.MCBL_MAIN_DEFINE=Iluminação Colorida Euphoria
-option.MCBL_MAIN_DEFINE.comment=Ativa luz de bloco multicolorida. Defina como ACT + Screen-Space para usar o sistema de tela junto com Advanced Colored Tracing. §e[*]§rFunciona apenas no 1.16.5+ ou Angelica.
+option.MCBL_MAIN_DEFINE.comment=Ativa a iluminação multicolorida de blocos. Use "ACT + Screen-Space" para combinar o sistema em screen-space com o Advanced Colored Tracing. A combinação ACT + SSBL + Dynamic Lighting Support pode gerar resultados incorretos em ambientes com mods — recomendado usar apenas no vanilla com um mod de iluminação dinâmica. §e[*]§r Funciona apenas na versão 1.16.5 ou superior, ou no Angelica.
 value.MCBL_MAIN_DEFINE.0=DESLIGADO
 value.MCBL_MAIN_DEFINE.1=Screen-Space
 value.MCBL_MAIN_DEFINE.2=ACT + Screen-Space
