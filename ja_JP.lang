@@ -2007,10 +2007,11 @@ value.NETHER_NOISE.0=OFF
 value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria色付き照明
-option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. 「ACT + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色トレーシング」が適用されます。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。
+option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. 「ACT + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色トレーシング」が適用されます。. ACT + SSBL + 動的光源サポートは、MOD環境で間違った結果になることがあるため、バニラに動的光源MODを入れた環境でのみ使用してください。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=スクリーンスペース
 value.MCBL_MAIN_DEFINE.2=ACT + スクリーンスペース
+value.MCBL_MAIN_DEFINE.3=ACT + SSBL + 動的光源サポート
 
 option.MCBL_INFLUENCE=複数色付きブロック光源の影響
 option.MCBL_INFLUENCE.comment=複数色付きブロック光源が、デフォルトのブロック光源の色にどれだけ影響を与えるかを制御します。
