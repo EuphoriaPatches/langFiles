@@ -2527,6 +2527,9 @@ option.END_CENTER_LIGHTING_R=Lighting - Red
 option.END_CENTER_LIGHTING_G=Lighting - Green
 option.END_CENTER_LIGHTING_B=Lighting - Blue
 
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT=Affects Blocklight
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT.comment=Changes the color of the blocklight in the End based on the center lighting color.
+
 option.NETHER_HEAT_DISTORTION=Heat Distortion
 option.NETHER_HEAT_DISTORTION.comment=Adds a heat distortion effect to the Nether.
 value.NETHER_HEAT_DISTORTION.0=OFF
