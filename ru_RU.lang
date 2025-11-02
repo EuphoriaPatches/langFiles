@@ -299,7 +299,7 @@ option.DETAIL_QUALITY=Качество деталей
 option.DETAIL_QUALITY.comment=Настраивает несколько мелких параметров, влияющих на производительность. Влияет на: материал воды, временное сглаживание (TAA), настройки освещения, ночную туманность, шторм Незера, лучи Энда, эффекты отражения неба, точность дождевых луж, эффект колыхания.
 value.DETAIL_QUALITY.0=§aКартошка
 value.DETAIL_QUALITY.2=§eСреднее
-value.DETAIL_QUALITY.3=§cвысокое
+value.DETAIL_QUALITY.3=§cВысокое
 
 option.CLOUD_QUALITY=Качество облаков
 option.CLOUD_QUALITY.comment=Настраивает освещение, детализацию и качество выборки стилей облаков Reimagined или Unbound. §e[*]§r Работает только со стилями облаков Reimagined или Unbound.
@@ -314,7 +314,7 @@ value.FXAA_DEFINE.-1=§aНет
 value.FXAA_DEFINE.1=§eДа
 
 option.SSAO_QUALI_DEFINE=Качество SSAO
-option.SSAO_QUALI_DEFINE.comment=Настраивает качество окружающего затенения экранном пространстве (SSAO), которая добавляет теневые эффекты по краям объектов. Более высокие уровни дополнительно уменьшает шумовые артефакты SSAO.
+option.SSAO_QUALI_DEFINE.comment=Настраивает качество окружающего затенения в экранном пространстве (SSAO), которая добавляет теневые эффекты по краям объектов. Более высокие уровни дополнительно уменьшает шумовые артефакты SSAO.
 value.SSAO_QUALI_DEFINE.0=§aНет
 value.SSAO_QUALI_DEFINE.2=§eСреднее
 value.SSAO_QUALI_DEFINE.3=§cВысокое
@@ -348,7 +348,7 @@ value.WORLD_SPACE_REF_MODE.1=Только WSR
 value.WORLD_SPACE_REF_MODE.2=WSR + SSR
 
 option.SSAO_I=Интенсивность SSAO
-option.SSAO_I.comment=Определяет силу окружающего затенения экранном пространстве (SSAO), добавляющего тени по краям объектов. §e[*]§r Не работает, если SSAO отключён в «Настройках производительности».
+option.SSAO_I.comment=Определяет силу окружающего затенения в экранном пространстве (SSAO), добавляющего тени по краям объектов. §e[*]§r Не работает, если SSAO отключён в «Настройках производительности».
 value.SSAO_I.0=§cНет
 
 option.VANILLAAO_I=Интенсивность ванильного ОЗ
@@ -433,7 +433,7 @@ option.CLOUD_ALT2=Высота второго слоя
 option.CLOUD_ALT2.comment=Определяет мировую высоту, на которой будут появляться облака второго слоя. §e[*]§r Активируется с опцией «Двойные облака Reimagined».
 
 option.NETHER_STORM=Шторм Незера
-option.NETHER_STORM.comment=Добавляет объёмный эффект дыма, в измерении Незера. §c[-]§r Влияет на производительность.
+option.NETHER_STORM.comment=Добавляет объёмный эффект дыма в измерении Незера. §c[-]§r Влияет на производительность.
 
 option.NETHER_STORM_I=Непрозрачность шторма Незера
 option.NETHER_STORM_I.comment=Регулирует непрозрачность шторма Незера.
@@ -461,7 +461,7 @@ value.NETHER_VIEW_LIMIT.1024.0=64 чанка §c[-]
 value.NETHER_VIEW_LIMIT.99999.0=Без ограничений §c[-]
 
 option.NETHER_COLOR_MODE=Цветовая схема
-option.NETHER_COLOR_MODE.comment=Определяет, как будут обрабатываться цвета окружения в Незере. Постоянная: цвета не будут меняться между биомами. На основе биома: цвета будут меняться в зависимости от биома. На основе биома (модифицированая): в зависимости от биома, но цвета были изменены, чтобы лучше соответствовать визуальному стилю Complementary.
+option.NETHER_COLOR_MODE.comment=Определяет, как будут обрабатываться цвета окружения в Незере. Постоянная: цвета не будут меняться между биомами. На основе биома: цвета будут меняться в зависимости от биома. На основе биома (модифицированная): в зависимости от биома, но цвета были изменены, чтобы лучше соответствовать визуальному стилю Complementary.
 value.NETHER_COLOR_MODE.3=На основе биома (модиф.)
 value.NETHER_COLOR_MODE.2=На основе биома
 value.NETHER_COLOR_MODE.0=Постоянная
@@ -598,7 +598,7 @@ value.SUN_ANGLE.-55=-55
 value.SUN_ANGLE.-60=-60
 
 option.SUN_MOON_STYLE_DEFINE=Стиль солнца и луны
-option.SUN_MOON_STYLE_DEFINE.comment=Определяет стиль солцна и луны. §e[*]§r Может конфликтовать с некоторыми наборами ресурсов из-за разграничением текстур солцна, луны и небосвода.
+option.SUN_MOON_STYLE_DEFINE.comment=Определяет стиль солнца и луны. §e[*]§r Может конфликтовать с некоторыми наборами ресурсов из-за разграничением текстур солцна, луны и небосвода.
 value.SUN_MOON_STYLE_DEFINE.-1=Определяется стилем
 value.SUN_MOON_STYLE_DEFINE.1=Reimagined
 value.SUN_MOON_STYLE_DEFINE.2=Unbound
@@ -668,7 +668,7 @@ value.SHADOW_SMOOTHING.1=Очень резкие §c[-]
 option.PIXELATED_SHADOWS=Пиксельные тени
 option.PIXELATED_SHADOWS.comment=Делает тени от солнца и луны пиксельными.
 
-option.PIXELATED_BLOCKLIGHT=Пиксельный блочного свет
+option.PIXELATED_BLOCKLIGHT=Пиксельный блочный свет
 option.PIXELATED_BLOCKLIGHT.comment=Пикселизирует освещение от источников света.
 
 option.PIXELATED_AO=Пиксельное затенение
@@ -832,7 +832,7 @@ option.SNOWY_WORLD.comment=Покрывает весь мир снегом.
 option.SHOW_LIGHT_LEVEL=Показывать уровни освещённости
 option.SHOW_LIGHT_LEVEL.comment=В обычном мире: жёлтый означает, что монстры могут появляться ночью; красный — всегда. В Незере и Энде: жёлтый означает, что появляться могут лишь некоторые мобы, красный — все. §e[*]§r Отключите плавное освещение для точности.
 value.SHOW_LIGHT_LEVEL.0=Нет
-value.SHOW_LIGHT_LEVEL.1=Паучиий глаз в руке
+value.SHOW_LIGHT_LEVEL.1=Паучий глаз в руке
 value.SHOW_LIGHT_LEVEL.2=Источник света в руке
 value.SHOW_LIGHT_LEVEL.3=Всегда
 
@@ -984,10 +984,10 @@ option.NO_WAVING_INDOORS.comment=Отключает колыхания в зак
 
 option.WAVING_I_RAIN_MULT=Множитель колыхания при дожде
 option.WAVING_I_RAIN_MULT.comment=Усиливает колыхания во время дождя. §c[-]§r Слишком большая интенсивность колыхания может привести к пересечению колышащихся блоков с другими. §c[-]§r Значения выше 100% снижают FPS.
-value.WAVING_I.125=125 §c[-]
-value.WAVING_I.150=150 §c[-]
-value.WAVING_I.175=175 §c[-]
-value.WAVING_I.200=200 §c[-]
+value.WAVING_I.125=125% §c[-]
+value.WAVING_I.150=150% §c[-]
+value.WAVING_I.175=175% §c[-]
+value.WAVING_I.200=200% §c[-]
 
 option.WAVING_FOLIAGE=Колыхание травы
 option.WAVING_FOLIAGE.comment=Добавляет анимацию движения травы и растений для симуляции ветра.
@@ -1030,8 +1030,8 @@ option.WORLD_OUTLINE_ON_ENTITIES.comment=Применяет эффект к мо
 option.DARK_OUTLINE=Тёмные контуры
 option.DARK_OUTLINE.comment=Тёмные границы вокруг блоков. §c[-]§r Влияет на производительность.
 
-option.DARK_OUTLINE_THICKNESS=Толщина тёмных контура
-option.DARK_OUTLINE_THICKNESS.comment=пределяет толщину эффекта тёмного контура мира. §c[-]§r Увеличение снижает производительность.
+option.DARK_OUTLINE_THICKNESS=Толщина тёмных контуров
+option.DARK_OUTLINE_THICKNESS.comment=Определяет толщину эффекта тёмного контура мира. §c[-]§r Увеличение снижает производительность.
 
 option.RAIN_PUDDLES=Дождевые лужи
 option.RAIN_PUDDLES.comment=Добавляет лужи во время дождя. §c[-]§r Сильно нагружает производительность.
@@ -1061,13 +1061,13 @@ option.SELECT_OUTLINE_G=Зелёный для контура
 option.SELECT_OUTLINE_B=Синий для контура
 
 option.MOON_PHASE_INF_LIGHT=Влияние фаз луны на освещение
-option.MOON_PHASE_INF_LIGHT.comment=Включает зависимость яркости ночного освещения зависит от фазы луны.
+option.MOON_PHASE_INF_LIGHT.comment=Включает зависимость яркости ночного освещения от фазы луны.
 
 option.MOON_PHASE_INF_ATMOSPHERE=Влияние фаз на атмосферу
 option.MOON_PHASE_INF_ATMOSPHERE.comment=Заставляет фазы луны менять яркость ночной атмосферы.
 
 option.MOON_PHASE_INF_REFLECTION=Влияние фаз на отражения
-option.MOON_PHASE_INF_REFLECTION.comment=Заставляет яркость лунных отражений зависить от фазы луны.
+option.MOON_PHASE_INF_REFLECTION.comment=Заставляет яркость лунных отражений зависеть от фазы луны.
 
 option.MOON_PHASE_FULL=Яркость полнолуния
 option.MOON_PHASE_FULL.comment=Настройка для фазы полнолуния.
@@ -1079,13 +1079,13 @@ option.MOON_PHASE_DARK=Яркость новолуния
 option.MOON_PHASE_DARK.comment=Настройка для фазы новолуния.
 
 option.CONNECTED_GLASS_EFFECT=Соединённое стекло
-option.CONNECTED_GLASS_EFFECT.comment=Заставляет стеклянные блоки визуально соединяться. §e[*]§r Работают только, если «Продвинутая цветовая трассировка» включена в «Настройках производительности» и поддерживается вашей системой. §e[*]§r Автоматически отключается при наличии мода Continuity.
+option.CONNECTED_GLASS_EFFECT.comment=Заставляет стеклянные блоки визуально соединяться. §e[*]§r Работает только, если «Продвинутая цветовая трассировка» включена в «Настройках производительности» и поддерживается вашей системой. §e[*]§r Автоматически отключается при наличии мода Continuity.
 
 option.PORTAL_EDGE_EFFECT=Свечение краёв порталов
-option.PORTAL_EDGE_EFFECT.comment=Добавляет светящиеся границы порталам. §e[*]§r Работают только, если «Продвинутая цветовая трассировка» включена в «Настройках производительности» и поддерживается вашей системой.
+option.PORTAL_EDGE_EFFECT.comment=Добавляет светящиеся границы порталам. §e[*]§r Работает только, если «Продвинутая цветовая трассировка» включена в «Настройках производительности» и поддерживается вашей системой.
 
 option.PUDDLE_VOXELIZATION=Исправление луж под стеклом
-option.PUDDLE_VOXELIZATION.comment=Предотвращает появление луж в закрытых помещениях со стеклянными крышами, если включены «Дождевые лужи». §e[*]§r Работают только, если «Продвинутая цветовая трассировка» включена в «Настройках производительности» и поддерживается вашей системой.
+option.PUDDLE_VOXELIZATION.comment=Предотвращает появление луж в закрытых помещениях со стеклянными крышами, если включены «Дождевые лужи». §e[*]§r Работает только, если «Продвинутая цветовая трассировка» включена в «Настройках производительности» и поддерживается вашей системой.
 
 option.COLORED_CANDLE_LIGHT=Цветное свечение свечей
 option.COLORED_CANDLE_LIGHT.comment=Цвет света соответствует основе свечи. §e[*]§r Не влияет на бледные варианты свечей.
@@ -1094,7 +1094,7 @@ option.COLORED_LIGHT_SATURATION=Насыщенность цветного све
 option.COLORED_LIGHT_SATURATION.comment=Регулирует интенсивность цветов ПЦТ. §e[*]§r Рекомендуется значение по умолчанию, поскольку визуальные эффекты спроектированы таким образом, чтобы они выглядели наиболее сбалансированными с учётом насыщенности по умолчанию.
 
 option.COLORED_LIGHT_FOG=Цветной световой туман
-option.COLORED_LIGHT_FOG.comment=Добавляет объёмный туман от источников света, наиболее заметный ночью или под землей. §e[*]§r Работают только, если «Продвинутая цветовая трассировка» включена в «Настройках производительности» и поддерживается вашей системой. §c[-]§r Сильно нагружает производительность.
+option.COLORED_LIGHT_FOG.comment=Добавляет объёмный туман от источников света, наиболее заметный ночью или под землей. §e[*]§r Работает только, если «Продвинутая цветовая трассировка» включена в «Настройках производительности» и поддерживается вашей системой. §c[-]§r Сильно нагружает производительность.
 
 option.COLORED_LIGHT_FOG_I=Яркость светового тумана
 option.COLORED_LIGHT_FOG_I.comment=Интенсивность цветного тумана.
@@ -2014,6 +2014,7 @@ option.MCBL_MAIN_DEFINE.comment=Включает многоцветное бло
 value.MCBL_MAIN_DEFINE.0=
 value.MCBL_MAIN_DEFINE.1=Экранное пространство
 value.MCBL_MAIN_DEFINE.2=ПЦТ + экранное пространство
+value.MCBL_MAIN_DEFINE.3=ПЦТ + экр. пр. + дин. освещ.
 
 option.MCBL_INFLUENCE=Влияние многоцветного блочного освещения
 option.MCBL_INFLUENCE.comment=Регулирует влияние многоцветного блочного освещения на стандартный блочный свет.
@@ -2528,6 +2529,9 @@ value.END_CENTER_LIGHTING.0=Нет
 option.END_CENTER_LIGHTING_R=Красный для освещения
 option.END_CENTER_LIGHTING_G=Зелёный для освещения
 option.END_CENTER_LIGHTING_B=Синий для освещения
+
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT=Влияет на блочное освещение
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT.comment=Изменяет цвет блочного освещения в Энде в зависимости от цвета освещения центра.
 
 option.NETHER_HEAT_DISTORTION=Искажение от жары
 option.NETHER_HEAT_DISTORTION.comment=Добавляет эффект искажения от жары в Незере.
