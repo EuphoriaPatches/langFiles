@@ -40,7 +40,7 @@ option.info4.comment=Підтримка пакетів ресурсів керу
 
 option.info5=Що за жовті параметри
 value.info5.0=
-option.info5.comment=Параметр із жовтою назвою означає, що параметр упливає на продуктивність вимірюваною величиною незважаючи на відсутність у категорії «Продуктивність». Якщо його ввімкнення призводить до червоного тексту параметра, це означає, що вартість продуктивности дуже висока.
+option.info5.comment=Параметр із жовтою назвою означає, що параметр впливає на продуктивність вимірюваною величиною незважаючи на відсутність у категорії «Продуктивність». Якщо його ввімкнення призводить до червоного тексту параметра, це означає, що вартість продуктивности дуже висока.
 
 option.info6=
 value.info6.0=
@@ -112,7 +112,7 @@ option.info22.comment=На великих розмірах інтерфейсу 
 
 #Style
 option.SHADER_STYLE=Візуальний стиль
-option.SHADER_STYLE.comment=Керує стандартним візуальним стилем пакета шейдерів. §bПереосмислений§r: доповнює Minecraft, зберігаючи його унікальні візуальні елементи. §dНепов'язаний§r: переробка звичайного стилю в напівреалістичний стиль фентезі. §e[*]§r Упливає на: стиль води, хмар, Сонця і Місяця, полярного сяйва, кут Сонця і Місяця, сяйні руди.
+option.SHADER_STYLE.comment=Керує стандартним візуальним стилем пакета шейдерів. §bПереосмислений§r: доповнює Minecraft, зберігаючи його унікальні візуальні елементи. §dНепов'язаний§r: переробка звичайного стилю в напівреалістичний стиль фентезі. §e[*]§r Впливає на: стиль води, хмар, Сонця і Місяця, полярного сяйва, кут Сонця і Місяця, сяйні руди.
 value.SHADER_STYLE.1=§bПереосмислений
 value.SHADER_STYLE.4=§dНепов'язаний
 
@@ -200,7 +200,7 @@ screen.END_LIGHT_MULTS=Енд
 screen.BLOCKLIGHT_COLOR_SETTINGS=Колір світла блоків §e[*]§r
 screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Налаштування кольору світла, випромінюваного блоками, які є джерелами світла. §e[*]§r Ці налаштування кольорів не впливатимуть на більшість джерел світла, якщо ввімкнено розширене кольорове трасування, за винятком повзунка «інтенсивність» в цьому розділі.
 
-screen.MOON_PHASE_INF_SETTINGS=Уплив фаз Місяця
+screen.MOON_PHASE_INF_SETTINGS=Вплив фаз Місяця
 screen.MOON_PHASE_INF_SETTINGS.comment=Налаштування які стосуються впливу різних фаз Місяця на освітлення вночі.
 
 screen.ACT_FEATURES_SETTINGS=Ексклюзивні функції РКТ §e[*]§r
@@ -840,7 +840,7 @@ option.GLOWING_COLORED_PARTICLES=Сила сяйних частинок §c[-]§
 option.GLOWING_COLORED_PARTICLES.comment=Змушує всі технічно «забарвлені» частинки бути сяйними. §c[-]§r Це не рекомендовано для загального ігрового процесу, оскільки він змушує багато частинок світитися, якщо вони виготовлені з матеріалів, які взагалі не повинні світитися.
 
 option.CAVE_LIGHTING=Множник печерного освіт.
-option.CAVE_LIGHTING.comment=Додає додаткове освітлення до областей, які не мають світла від неба. §e[*]§r На освітлення печери також упливає повзунок «Яскравість» в налаштуваннях відео. §c[-]§r Різка зміна цього параметра може порушити баланс освітлення.
+option.CAVE_LIGHTING.comment=Додає додаткове освітлення до областей, які не мають світла від неба. §e[*]§r На освітлення печери також впливає повзунок «Яскравість» в налаштуваннях відео. §c[-]§r Різка зміна цього параметра може порушити баланс освітлення.
 
 option.AMBIENT_MULT=Множник освітлення тіней
 option.AMBIENT_MULT.comment=Керує кількістю навколишнього освітлення, видимого в тіні. §c[-]§r Різка зміна цього параметра може порушити баланс освітлення.
@@ -1349,7 +1349,7 @@ option.AURORA_SIZE.comment=Щільність контролює видиму в
 option.AURORA_DRAW_DISTANCE=Дальність поляр. сяйва
 option.AURORA_DRAW_DISTANCE.comment=Керує дальністю промальовування полярного сяйва.
 
-option.AURORA_INFLUENCE=Уплив поляр. сяйва
+option.AURORA_INFLUENCE=Вплив поляр. сяйва
 option.AURORA_INFLUENCE.comment=Розповсюджує вплив кольору полярного сяйва на хмари та територію.
 
 option.AURORA_CLOUD_INFLUENCE_INTENSITY=Інтенс. впливу на хмари
@@ -1435,8 +1435,8 @@ option.E_SKY_COLORR_NEW=Червоний неба Енду
 option.E_SKY_COLORG_NEW=Зелений неба Енду
 option.E_SKY_COLORB_NEW=Синій неба Енду
 option.E_SKY_COLORI=Інтенсивність неба Енду
-option.END_SKY_FOG_INFLUENCE=Уплив кольору неба на туман
-option.END_SKY_FOG_INFLUENCE.comment=Керує тим, наскільки колір туману біомів модів упливає на кольори неба.
+option.END_SKY_FOG_INFLUENCE=Вплив кольору неба на туман
+option.END_SKY_FOG_INFLUENCE.comment=Керує тим, наскільки колір туману біомів модів впливає на кольори неба.
 
 option.GLOWING_EMERALD_BLOCK=Сяйна смарагдова руда
 option.GLOWING_EMERALD_BLOCK.comment=Сяйна смарагдова руда. §e[*]§r Підтримка ПР має бути Integrated PBR+.
@@ -1457,7 +1457,7 @@ option.OVERWORLD_BEAMS_CONDITION.comment=Усталено вони з'являю
 value.OVERWORLD_BEAMS_CONDITION.0=Повня
 value.OVERWORLD_BEAMS_CONDITION.1=Щоночі
 option.OVERWORLD_BEAMS_INTENSITY=Інтенс. променів Верхнього світу
-option.BEAMS_AMBIENT_INFLUENCE=Уплив кольору на туман
+option.BEAMS_AMBIENT_INFLUENCE=Вплив кольору на туман
 option.BEAMS_AMBIENT_INFLUENCE.comment=Промені матимуть колір туману 1.00 та вказаний користувачем колір 0.00.
 option.OW_BEAM_R_NEW=Червоний променів Верхнього світу
 option.OW_BEAM_G_NEW=Зелений променів Верхнього світу
@@ -1473,7 +1473,7 @@ value.END_CRYSTAL_VORTEX.2=Промінь зцілення
 value.END_CRYSTAL_VORTEX.3=Обидва
 option.DRAGON_DEATH_EFFECT=Ефект смерті дракона
 option.DRAGON_DEATH_EFFECT.comment=Налаштування, яке замінює промені смерті дракона об'ємним ефектом. §4[***]§r Умикає §cтіні сутностей§r. [§e*§r] Лише Iris. [§e*§r] Не працює в MacOS.
-option.E_BEAMS_AMBIENT_INFLUENCE=Уплив кольору на середовище
+option.E_BEAMS_AMBIENT_INFLUENCE=Вплив кольору на середовище
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=Промені матимуть навколишній колір 1.00 та вказаний користувачем колір 0.00. Не стосується променів дракона Енду.
 option.E_BEAM_R_NEW=Червоний променів Енду
 option.E_BEAM_R_NEW=Зелений променів Енду
@@ -1991,7 +1991,7 @@ option.SUMMER_STRENGTH=Сила літа
 option.INTENSE_DEEP_DARK=Інтенсивність темних глибин
 option.INTENSE_DEEP_DARK.comment=Робить темні глибини інтенсивнішими. §e[*]§r Гравець повинен мати ефект темряви.
 
-option.END_AMBIENT_INFLUENCE=Уплив кольору середовища
+option.END_AMBIENT_INFLUENCE=Вплив кольору середовища
 option.END_AMBIENT_INFLUENCE.comment=Усталений колір навколишнього середовища 0,00, а користувач указав 1,00.
 option.END_AMBIENT_R_NEW=Червоний середовища
 option.END_AMBIENT_G_NEW=Зелений середовища
@@ -2013,7 +2013,7 @@ value.MCBL_MAIN_DEFINE.1=Простір екрана
 value.MCBL_MAIN_DEFINE.2=РКТ + простір екрана
 value.MCBL_MAIN_DEFINE.3=ACT + SSBL + підтримка динамічного світла
 
-option.MCBL_INFLUENCE=Уплив багатокол. джерел світла
+option.MCBL_INFLUENCE=Вплив багатокол. джерел світла
 option.MCBL_INFLUENCE.comment=Керує тим, наскільки різнокольорове світло впливає на колір блока усталено.
 
 option.SSS_SNOW_ICE=Сніг і лід SSS
@@ -2032,7 +2032,7 @@ option.NO_RAIN_ABOVE_CLOUDS=Без дощу вище хмар
 option.NO_RAIN_ABOVE_CLOUDS.comment=Прибирає дощ над хмарами. Не працює належним чином, якщо висоту усталених хмар було змінено з увімкненими усталеними хмарами.
 
 option.RAIN_FADE_TIMER=Таймер зникнення дощу
-option.RAIN_FADE_TIMER.comment=Змінює час, потрібний для згасання ефектів дощу. Упливають ефекти хмар, дощові калюжі, туман, веселка тощо.
+option.RAIN_FADE_TIMER.comment=Змінює час, потрібний для згасання ефектів дощу. Впливають ефекти хмар, дощові калюжі, туман, веселка тощо.
 
 option.DOF_SNEAKING=ГР підкрадання і підзоної труби
 option.DOF_SNEAKING.comment=Активує опцію розмиття світу лише під час підкрадання і використання підзорної труби.
@@ -2526,6 +2526,9 @@ value.END_CENTER_LIGHTING.0=ВИМК.
 option.END_CENTER_LIGHTING_R=Червоний освітлення
 option.END_CENTER_LIGHTING_G=Зелений освітлення
 option.END_CENTER_LIGHTING_B=Синій освітлення
+
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT=Вплив на світло блоків
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT.comment=Змінює колір підсвічування в Енді на основі кольору свтла центру.
 
 option.NETHER_HEAT_DISTORTION=Теплове спотворення
 option.NETHER_HEAT_DISTORTION.comment=Додає ефект теплового викривлення до Незеру.
