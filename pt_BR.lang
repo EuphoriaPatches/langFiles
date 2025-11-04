@@ -2527,6 +2527,9 @@ option.END_CENTER_LIGHTING_R=Iluminação - Vermelho
 option.END_CENTER_LIGHTING_G=Iluminação - Verde
 option.END_CENTER_LIGHTING_B=Iluminação - Azul
 
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT=Afecta a luz de blocos
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT.comment=Altera a cor da luz de blocos no End com base na cor da iluminação central.
+
 option.NETHER_HEAT_DISTORTION=Distorção de Calor
 option.NETHER_HEAT_DISTORTION.comment=Adiciona efeito de distorção de calor ao Nether.
 value.NETHER_HEAT_DISTORTION.0=DESLIGADO
