@@ -1557,12 +1557,6 @@ value.STAR_BRIGHTNESS.31=2.8
 value.STAR_BRIGHTNESS.32=2.9
 value.STAR_BRIGHTNESS.33=3.0
 
-option.MORE_STARS_OVERWORLD=More Stars Overworld
-option.MORE_STARS_OVERWORLD.comment=Overwrites Complementary's star amount and sets it to a higher one. Applies to Overworld
-value.MORE_STARS_OVERWORLD.0=OFF
-value.MORE_STARS_OVERWORLD.1=A lot
-value.MORE_STARS_OVERWORLD.2=Too Much
-
 option.TWINKLING_STARS=Twinkling Stars
 option.TWINKLING_STARS.comment=Make the stars twinkle at you.
 value.TWINKLING_STARS.0=OFF
