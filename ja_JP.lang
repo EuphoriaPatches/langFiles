@@ -1557,12 +1557,6 @@ value.STAR_BRIGHTNESS.31=2.8
 value.STAR_BRIGHTNESS.32=2.9
 value.STAR_BRIGHTNESS.33=3.0
 
-option.MORE_STARS_OVERWORLD=オーバーワールドの星を増やす
-option.MORE_STARS_OVERWORLD.comment=Complementaryの星の数を上書きし、より多くに設定します。オーバーワールドに適用されます。
-value.MORE_STARS_OVERWORLD.0=OFF
-value.MORE_STARS_OVERWORLD.1=たくさん
-value.MORE_STARS_OVERWORLD.2=多すぎ
-
 option.TWINKLING_STARS=煌めく星
 option.TWINKLING_STARS.comment=星を煌めかせます。
 value.TWINKLING_STARS.0=OFF
@@ -2526,6 +2520,9 @@ value.END_CENTER_LIGHTING.0=OFF
 option.END_CENTER_LIGHTING_R=ライティング - 赤
 option.END_CENTER_LIGHTING_G=ライティング - 緑
 option.END_CENTER_LIGHTING_B=ライティング - 青
+
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT=ブロック光源への影響
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT.comment=ジ・エンドでのブロック光源の色を中央のライティングの色に応じて変更します。
 
 option.NETHER_HEAT_DISTORTION=陽炎
 option.NETHER_HEAT_DISTORTION.comment=ネザーに陽炎(熱による光の揺らぎ)効果を追加します。
