@@ -1557,12 +1557,6 @@ value.STAR_BRIGHTNESS.31=2.8
 value.STAR_BRIGHTNESS.32=2.9
 value.STAR_BRIGHTNESS.33=3.0
 
-option.MORE_STARS_OVERWORLD=Більше зірок
-option.MORE_STARS_OVERWORLD.comment=Перезаписує кількість зірок Complementary та встановлює для неї вищу. Застосовується до Верхнього світу.
-value.MORE_STARS_OVERWORLD.0=ВИМК.
-value.MORE_STARS_OVERWORLD.1=Багато
-value.MORE_STARS_OVERWORLD.2=Занадто багато
-
 option.TWINKLING_STARS=Мерехтіння
 option.TWINKLING_STARS.comment=Зірки перед вами будуть мерехтіти.
 value.TWINKLING_STARS.0=ВИМК.
