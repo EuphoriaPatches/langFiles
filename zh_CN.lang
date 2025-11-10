@@ -1308,7 +1308,7 @@ screen.POPULAR_SETTINGS=§d最受欢迎的设置
 screen.POPULAR_SETTINGS.comment=Euphoria Patches 中最受欢迎的一些设置. 除开 高级颜色追踪 选项外(因为它是许多其他效选项的前置需求), 所有在此栏目中的选项都是 Euphoria Patches 独家选项.
 screen.POPULAR_SETTINGS_2=第二页
 screen.POPULAR_SETTINGS_3=第三页
-screen.EP_VERSION=Euphoria Patches §d1.7.5
+screen.EP_VERSION=Euphoria Patches §d1.7.6
 screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=世界时间动画
