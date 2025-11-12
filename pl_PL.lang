@@ -1305,7 +1305,7 @@ screen.POPULAR_SETTINGS=§dPopularne Ustawienia
 screen.POPULAR_SETTINGS.comment=screen.POPULAR_SETTINGS.comment=Oto niektóre z najpopularniejszych ustawień w Euphoria Patches. Poza Zaawansowanym Kolorowym Oświetleniem (niezbędnym dla wielu efektów) wszystkie opcje tutaj są dostępne wyłączne dla Euphoria Patches i nie można ich znaleźć w oryginalnym pakiecie Complementary.
 screen.POPULAR_SETTINGS_2=2 Strona
 screen.POPULAR_SETTINGS_3=3 Strona
-screen.EP_VERSION=Euphoria Patches §d1.7.6
+screen.EP_VERSION=Euphoria Patches §d1.7.7
 screen.EP_VERSION.comment=§bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support 
 
 option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
