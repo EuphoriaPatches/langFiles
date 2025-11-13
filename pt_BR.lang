@@ -1524,7 +1524,8 @@ value.END_TWINKLING_STARS.19=1.9
 value.END_TWINKLING_STARS.20=2.0
 
 option.STAR_BRIGHTNESS=Brilho das Estrelas
-option.STAR_BRIGHTNESS.comment=Configuração para ajustar o brilho dasvalue.STAR_BRIGHTNESS.3=OFF
+option.STAR_BRIGHTNESS.comment=Configuração para ajustar o brilho das
+value.STAR_BRIGHTNESS.3=OFF
 value.STAR_BRIGHTNESS.4=0.1
 value.STAR_BRIGHTNESS.5=0.2
 value.STAR_BRIGHTNESS.6=0.3
@@ -1556,13 +1557,7 @@ value.STAR_BRIGHTNESS.31=2.8
 value.STAR_BRIGHTNESS.32=2.9
 value.STAR_BRIGHTNESS.33=3.0
 
-option.MORE_STARS_OVERWORLD=Mais Estrelas no Overworld
-option.MORE_STARS_OVERWORLD.comment=Substitui a quantidade de estrelas do Complementary e define para um valor maior. Aplica-se ao Overworld.
-value.MORE_STARS_OVERWORLD.0=DESLIGADO
-value.MORE_STARS_OVERWORLD.1=Muitas
-value.MORE_STARS_OVERWORLD.2=Demais
-
-option.TWINKLING_STARS=Estrelas Piscando
+option.TWINKLING_STARS=Estrelas Cintilantes
 option.TWINKLING_STARS.comment=Faz as estrelas piscarem para você.
 value.TWINKLING_STARS.0=DESLIGADO
 value.TWINKLING_STARS.1=0.1
@@ -2569,3 +2564,4 @@ option.EP_END_FLASH.comment=Altera o tipo de End Flash, podendo ser o padrão, o
 value.EP_END_FLASH.0=Padrão apenas
 value.EP_END_FLASH.1=Euphoria apenas
 value.EP_END_FLASH.2=Ambos
+
