@@ -1305,7 +1305,7 @@ screen.POPULAR_SETTINGS=§d人気の設定
 screen.POPULAR_SETTINGS.comment=これらはEuphoria Patchesの最も人気な設定の一部です。. 多数のエフェクトに必要となる「高度な色トレーシング」を除き、ここにある全ての設定はEuphoria Patches限定で、オリジナルのComplementaryシェーダーには存在しません。
 screen.POPULAR_SETTINGS_2=ページ 2
 screen.POPULAR_SETTINGS_3=ページ 3
-screen.EP_VERSION=Euphoria Patches §d1.7.7
+screen.EP_VERSION=Euphoria Patches §d1.7.8
 screen.EP_VERSION.comment=§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。. §r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=ワールド時間アニメーション
