@@ -1580,7 +1580,6 @@ value.TWINKLING_STARS.17=1.7
 value.TWINKLING_STARS.18=1.8
 value.TWINKLING_STARS.19=1.9
 value.TWINKLING_STARS.20=2.0
-
 option.STAR_SIZE=Tamanho das Estrelas
 option.STAR_SIZE.comment=Altere o tamanho das Estrelas
 
@@ -2564,3 +2563,4 @@ option.EP_END_FLASH.comment=Altera o tipo de End Flash, podendo ser o padrão, o
 value.EP_END_FLASH.0=Padrão apenas
 value.EP_END_FLASH.1=Euphoria apenas
 value.EP_END_FLASH.2=Ambos
+
