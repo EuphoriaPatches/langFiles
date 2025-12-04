@@ -1305,7 +1305,7 @@ screen.POPULAR_SETTINGS=§dConfigurações Populares
 screen.POPULAR_SETTINGS.comment=Estas são algumas das configurações mais populares no Euphoria Patches. Exceto o Advanced Colored Tracing (que é necessário para muitos efeitos), todas as opções aqui são exclusivas do Euphoria Patches e não podem ser encontradas no Shaderpack Complementary Original.
 screen.POPULAR_SETTINGS_2=Página 2
 screen.POPULAR_SETTINGS_3=Página 3
-screen.EP_VERSION=Euphoria Patches §d1.7.8
+screen.EP_VERSION=Euphoria Patches §d1.8.0
 screen.EP_VERSION.comment=§bVocê pode apoiar o SpacEagle17 no Patreon ou Ko-Fi e receber novas versões beta exclusivas.
 
 option.DAYLIGHT_CYCLE_COMPAT=Animação do Tempo Mundial
@@ -2563,4 +2563,3 @@ option.EP_END_FLASH.comment=Altera o tipo de End Flash, podendo ser o padrão, o
 value.EP_END_FLASH.0=Padrão apenas
 value.EP_END_FLASH.1=Euphoria apenas
 value.EP_END_FLASH.2=Ambos
-
