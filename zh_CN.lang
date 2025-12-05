@@ -347,6 +347,11 @@ option.WORLD_SPACE_REF_MODE.comment=选择世界空间反射的作用模式. §e
 value.WORLD_SPACE_REF_MODE.1=仅 WSR
 value.WORLD_SPACE_REF_MODE.2=WSR + SSR
 
+option.WORLD_SPACE_PLAYER_REF=世界空间 [玩家] 反射
+option.WORLD_SPACE_PLAYER_REF.comment=使当前玩家的玩家模型可以参与世界空间反射.
+value.WORLD_SPACE_PLAYER_REF.-1=关
+value.WORLD_SPACE_PLAYER_REF.1=开
+
 option.SSAO_I=边缘阴影 (SSAO) 强度
 option.SSAO_I.comment=决定屏幕空间环境光遮蔽 (SSAO) 的强度 §e[*]§r 如在 性能设置 里禁用 SSAO, 则本选项不生效.
 value.SSAO_I.0=§c关
@@ -812,6 +817,9 @@ option.FANCY_GLASS.comment=通过在普通玻璃上增加一个半透明层来�
 
 option.GREEN_SCREEN_LIME=绿幕 - 黄绿色方块
 option.GREEN_SCREEN_LIME.comment=把 黄绿色混凝土, 黄绿色羊毛, 黄绿色地毯 转换为便于视频剪辑的绿幕. 提示一: 关闭泛光以提高和其他区域的分离程度. 提示二: 在黄绿色地毯下放置光源. 提示三: 可以关闭抗锯齿 (FXAA) 并且在性能设置里把细节质量设置为极低来禁用所有的过滤, 以得到完美像素分离效果.
+
+option.MIRROR_TINTED_GLASS=镜面遮光玻璃
+option.MIRROR_TINTED_GLASS.comment=增加遮光玻璃的反射率和不透明度. 启用世界空间发射以获得最好的结果.
 
 option.HAND_SWAYING=手部摇晃
 option.HAND_SWAYING.comment=为玩家的手添加缓慢的摇晃效果, 以模拟呼吸效果.
@@ -1560,12 +1568,6 @@ value.STAR_BRIGHTNESS.31=2.8
 value.STAR_BRIGHTNESS.32=2.9
 value.STAR_BRIGHTNESS.33=3.0
 
-option.MORE_STARS_OVERWORLD=繁星密布 - 主世界
-option.MORE_STARS_OVERWORLD.comment=覆写 Complementary 的星星数量并使其更多. 应用于主世界.
-value.MORE_STARS_OVERWORLD.0=关
-value.MORE_STARS_OVERWORLD.1=很多
-value.MORE_STARS_OVERWORLD.2=过多
-
 option.TWINKLING_STARS=繁星闪烁
 option.TWINKLING_STARS.comment=让星星对你眨眼~
 value.TWINKLING_STARS.0=关
@@ -1740,6 +1742,7 @@ value.LAVA_VARIATION.1=自适应噪声 (推荐)
 value.LAVA_VARIATION.2=Blushing Hotness
 value.LAVA_VARIATION.3=Molten Cheese
 value.LAVA_VARIATION.4=Dark Islands
+value.LAVA_VARIATION.5=Chaotic Flow
 
 option.LAVA_TEMPERATURE=岩浆色温
 option.LAVA_TEMPERATURE.comment=改变岩浆的色温, 让它更红或者更白.
@@ -2009,10 +2012,11 @@ value.NETHER_NOISE.0=关
 value.NETHER_NOISE.1=开
 
 option.MCBL_MAIN_DEFINE=Euphoria 彩色照明
-option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光. 把本选项设置为 高级颜色追踪 + 屏幕空间 来使得屏幕空间彩色照明系统与 高级颜色追踪 一同生效. §e[*]§r本选项仅在 1.16.5 及以上的版本或者使用了 Angelica 模组的情况下生效.
+option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光. 把本选项设置为 高级颜色追踪 + 屏幕空间 来使得屏幕空间彩色照明系统与 高级颜色追踪 一同生效. 高级颜色追踪 + 屏幕空间 + 动态光源支持 会在多模组环境产生不正确的画面 - 应仅在 原版 + 动态光源 模组情况下启用本选项. §e[*]§r本选项仅在 1.16.5 及以上的版本或者使用了 Angelica 模组的情况下生效.
 value.MCBL_MAIN_DEFINE.0=关
 value.MCBL_MAIN_DEFINE.1=屏幕空间
 value.MCBL_MAIN_DEFINE.2=高级颜色追踪 + 屏幕空间
+value.MCBL_MAIN_DEFINE.3=高级颜色追踪 + 屏幕空间 + 动态光源支持
 
 option.MCBL_INFLUENCE=彩色照明影响程度
 option.MCBL_INFLUENCE.comment=调节彩色照明颜色对默认方块光颜色的影响程度.
@@ -2527,6 +2531,9 @@ value.END_CENTER_LIGHTING.0=关
 option.END_CENTER_LIGHTING_R=照明颜色 - 红
 option.END_CENTER_LIGHTING_G=照明颜色 - 绿
 option.END_CENTER_LIGHTING_B=照明颜色 - 蓝
+
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT=影响方块光源颜色
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT.comment=基于末地中心光源颜色来改变在末地维度中的方块光源颜色.
 
 option.NETHER_HEAT_DISTORTION=热失真
 option.NETHER_HEAT_DISTORTION.comment=为下界添加热失真效果.
