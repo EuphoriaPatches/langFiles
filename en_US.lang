@@ -344,6 +344,11 @@ option.WORLD_SPACE_REF_MODE.comment=Determines the operation mode of world-space
 value.WORLD_SPACE_REF_MODE.1=WSR Only
 value.WORLD_SPACE_REF_MODE.2=WSR + SSR
 
+option.WORLD_SPACE_PLAYER_REF=WS Player Reflections
+option.WORLD_SPACE_PLAYER_REF.comment=Makes the current player's own player model reflected inside world-space reflections.
+value.WORLD_SPACE_PLAYER_REF.-1=OFF
+value.WORLD_SPACE_PLAYER_REF.1=ON
+
 option.SSAO_I=Edge Shadow Intensity (SSAO)
 option.SSAO_I.comment=Determines the strength of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. §e[*]§r This setting won't work if SSAO is disabled in "Performance Settings".
 value.SSAO_I.0=§cOFF
@@ -809,6 +814,9 @@ option.FANCY_GLASS.comment=Improves the regular glass by adding a translucent la
 
 option.GREEN_SCREEN_LIME=Green Screen Lime Blocks
 option.GREEN_SCREEN_LIME.comment=Turns "Lime Concrete", "Lime Wool", and "Lime Carpet" into green screens for video editing. Tip 1: Turn off "Bloom" option to improve separation. Tip 2: Put lights under lime carpets for lighting. Tip 3: You can turn off Anti-Aliasing (FXAA) and set Detail Quality to Potato in Performance Settings to disable all filtering and get pixel-perfect separation.
+
+option.MIRROR_TINTED_GLASS=Mirror-like Tinted Glass
+option.MIRROR_TINTED_GLASS.comment=Increases the reflectiveness and opacity of Tinted Glass blocks. Enable World-Space Reflections for best results.
 
 option.HAND_SWAYING=Hand Sway
 option.HAND_SWAYING.comment=Adds slow movement to the player hand to simulate a breathing animation.
