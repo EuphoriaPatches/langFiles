@@ -90,7 +90,7 @@ option.info17=Versões Beta: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=Você pode apoiar o SpacEagle17 no Patreon ou Ko-Fi, e tenha o acesso exclusivo de versões em desenvolvimento. acesse: §d§l§neuphoriapatches.com/support
 
-option.info18=Para Complementary r5.5.1
+option.info18=For Complementary r5.7
 value.info18.0=
 option.info18.comment=Obrigado por instalar o   §5Euphoria Patches§r :)
 
@@ -343,6 +343,11 @@ option.WORLD_SPACE_REF_MODE=Modo WSR §e[*]§r
 option.WORLD_SPACE_REF_MODE.comment=Define o modo de operação das reflexões em espaço do mundo. §e[*]§r O modo "Apenas WSR" é bom para eliminar todos os artefatos de reflexo em espaço de tela, pois mostra apenas os reflexos em espaço do mundo, mas o modo "WSR + SSR" é melhor para obter mais detalhes totais nos reflexos, já que os reflexos em espaço de tela têm acesso a todos os detalhes que estão na tela sem serem limitados a blocos ou uma distância definida.
 value.WORLD_SPACE_REF_MODE.1=Apenas WSR
 value.WORLD_SPACE_REF_MODE.2=WSR
+
+option.WORLD_SPACE_PLAYER_REF = Reflexos do Jogador no Mundo
+option.WORLD_SPACE_PLAYER_REF.comment = Faz o modelo do próprio jogador aparecer refletido nas reflexões do espaço mundial.
+value.WORLD_SPACE_PLAYER_REF.-1=DESATIVADO
+value.WORLD_SPACE_PLAYER_REF.1=LIGADO
 
 option.SSAO_I=Intensidade da Sombra de Borda (SSAO)
 option.SSAO_I.comment=Define a intensidade da Oclusão de Ambiente em Espaço de Tela (SSAO), que adiciona sombras extras nas bordas da cena. §e[*]§r Esta configuração não funcionará se SSAO estiver desativado em "Configurações de Desempenho".
@@ -809,6 +814,9 @@ option.FANCY_GLASS.comment=Melhora o vidro comum adicionando uma camada translú
 
 option.GREEN_SCREEN_LIME=Blocos de Chroma Key Verde Limão
 option.GREEN_SCREEN_LIME.comment=Transforma "Concreto Verde Limão", "Lã Verde Limão" e "Carpete Verde Limão" em chroma key para edição de vídeo. Dica 1: Desative "Brilho Suave" para melhorar a separação. Dica 2: Coloque luzes sob os carpetes para iluminação. Dica 3: Você pode desativar o Anti-Aliasing (FXAA) e definir a Qualidade de Detalhe como Batata nas Configurações de Desempenho para desativar todos os filtros e obter separação perfeita de pixels.
+
+option.MIRROR_TINTED_GLASS = Vidro Escurecido com Efeito de Espelho
+option.MIRROR_TINTED_GLASS.comment = Aumenta a refletividade e a opacidade dos blocos de Vidro Escurecido. Ative as Reflexões em World-Space para obter o melhor resultado.
 
 option.HAND_SWAYING=Movimento da Mão
 option.HAND_SWAYING.comment=Adiciona movimento lento à mão do jogador para simular respiração.
@@ -2563,3 +2571,6 @@ option.EP_END_FLASH.comment=Altera o tipo de End Flash, podendo ser o padrão, o
 value.EP_END_FLASH.0=Padrão apenas
 value.EP_END_FLASH.1=Euphoria apenas
 value.EP_END_FLASH.2=Ambos
+
+option.MIRROR_TINTED_GLASS_OPAQUE = Vidro Escurecido Opaco
+option.MIRROR_TINTED_GLASS_OPAQUE.comment = Deixa os blocos de vidro escurecido totalmente opacos (principalmente para uso como espelhos).
