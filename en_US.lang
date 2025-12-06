@@ -2571,3 +2571,6 @@ option.EP_END_FLASH.comment=Changes the End Flash type, either the default one o
 value.EP_END_FLASH.0=Default Only
 value.EP_END_FLASH.1=Euphoria Only
 value.EP_END_FLASH.2=Both
+
+option.MIRROR_TINTED_GLASS_OPAQUE=Opaque Tinted Glass
+option.MIRROR_TINTED_GLASS_OPAQUE.comment=Makes tinted glass blocks opaque (mainly for mirrors).
