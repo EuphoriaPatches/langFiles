@@ -1,27 +1,27 @@
 {
-    "isRightToLeft": true,
-    
-    "pageTitle": "Euphoria Patches איך מורידים את",
+  "isRightToLeft": true,
 
-    "modMethodTitle": "שימוש במוד",
-    "step1": "shaderpacksושימו אותה בתיקיית ה Complementary הורידו את הגרסה המתאימה של",
-    "step1After": ".(נא לא לחלץ את הקובץ, לשנות את שמו, או לבצע בו כל שינוי אחר)",
-    "substep1_1": "עובד עם Complementary",
-    "or": "או",
-    "step2Before": ".mods ושימו אותו בתיקיית ה",
-    "step2After": "תשיגו את הגרסה העדכנית של המוד",
-    "step3": "Fabric | Quilt | Forge | NeoForge :פתחו את המשחק עם אחד מהבאים",
-    "step4": "אמור עכשיו להופיע בתקיית השיידרס שלכם.",
+  "pageTitle": "Euphoria Patches איך מורידים את",
 
-    "unsupportedVersions": "עבור גרסאות מיינקראפט שאינן נתמכות, עקבו אחרי הצעדים עם גרסת מיינקראפט עדכנית והעתיקו את הקובץ שנוצר לגרסה הישנה",
+  "modMethodTitle": "שימוש במוד",
+  "step1": "shaderpacksושימו אותה בתיקיית ה Complementary הורידו את הגרסה המתאימה של",
+  "step1After": ".(נא לא לחלץ את הקובץ, לשנות את שמו, או לבצע בו כל שינוי אחר)",
+  "substep1_1": "עובד עם Complementary",
+  "or": "או",
+  "step2Before": ".mods ושימו אותו בתיקיית ה",
+  "step2After": "תשיגו את הגרסה העדכנית של המוד",
+  "step3": "Fabric | Quilt | Forge | NeoForge :פתחו את המשחק עם אחד מהבאים",
+  "step4": "אמור עכשיו להופיע בתקיית השיידרס שלכם.",
 
-    "downloadPageButton": "לעמוד ההורדות",
+  "unsupportedVersions": "עבור גרסאות מיינקראפט שאינן נתמכות, עקבו אחרי הצעדים עם גרסת מיינקראפט עדכנית והעתיקו את הקובץ שנוצר לגרסה הישנה",
 
-    "installerMethodTitle": "שימוש בקובץ ההתקנה",
-    "installerStep1Before": " לכו ל",
-    "installerStep1After": "ותורידו את הקובץ." ,
-    "installerStep2": "פתחו את הקובץ שהורד על ידי לחיצה כפולה",
-    "installerStep3": "'Advanced Settings' עכשיו תלחצו על",
-    "installerStep4": "'Install Euphoria Patches' תסמנו את  ב-וי את ",
-    "installerStep5": "Complementary Shaders + Euphoria Patches אמור עכשיו להופיע בתקיית השיידרס שלכם."
+  "downloadPageButton": "לעמוד ההורדות",
+
+  "installerMethodTitle": "שימוש בקובץ ההתקנה",
+  "installerStep1Before": " לכו ל",
+  "installerStep1After": "ותורידו את הקובץ.",
+  "installerStep2": "פתחו את הקובץ שהורד על ידי לחיצה כפולה",
+  "installerStep3": "'Advanced Settings' עכשיו תלחצו על",
+  "installerStep4": "'Install Euphoria Patches' תסמנו את  ב-וי את ",
+  "installerStep5": "Complementary Shaders + Euphoria Patches אמור עכשיו להופיע בתקיית השיידרס שלכם."
 }

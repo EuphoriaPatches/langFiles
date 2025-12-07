@@ -1,30 +1,30 @@
 {
-    "isRightToLeft": false,
+  "isRightToLeft": false,
 
-    "pageTitle": "Cómo Instalar Euphoria Patches",
+  "pageTitle": "Cómo Instalar Euphoria Patches",
 
-    "modMethodTitle": "El Método Mod",
-    "step1": "Descarga la versión de Complementary Shaders necesaria y colócala en la carpeta de shaderpacks",
-    "step1After": "(no lo descomprimas, modifiques o renombres).",
-    "substep1_1": "Funciona con Complementary",
-    "or": "o",
-    "step2Before": "Descarga la última versión de",
-    "step2After": "y colócala en tu carpeta de mods.",
-    "step3": "Lanza el juego con uno de los siguientes: Fabric | Quilt | Forge | NeoForge",
-    "step4": "ahora aparecerá en tu carpeta de shaderpacks",
+  "modMethodTitle": "El Método Mod",
+  "step1": "Descarga la versión de Complementary Shaders necesaria y colócala en la carpeta de shaderpacks",
+  "step1After": "(no lo descomprimas, modifiques o renombres).",
+  "substep1_1": "Funciona con Complementary",
+  "or": "o",
+  "step2Before": "Descarga la última versión de",
+  "step2After": "y colócala en tu carpeta de mods.",
+  "step3": "Lanza el juego con uno de los siguientes: Fabric | Quilt | Forge | NeoForge",
+  "step4": "ahora aparecerá en tu carpeta de shaderpacks",
 
-    "unsupportedVersions": "Para versiones de Minecraft no soportadas, usa el mod con una versión más nueva de Minecraft, genera Euphoria Patches y luego copia la carpeta de shaderpack generada a la instancia no soportada.",
+  "unsupportedVersions": "Para versiones de Minecraft no soportadas, usa el mod con una versión más nueva de Minecraft, genera Euphoria Patches y luego copia la carpeta de shaderpack generada a la instancia no soportada.",
 
-    "downloadPageButton": "Ir a la Página de Descargas",
+  "downloadPageButton": "Ir a la Página de Descargas",
 
-    "supportDevelopment1": "¿Obtener acceso a versiones beta exclusivas y apoyar el desarrollo?",
-    "supportDevelopment2": "¡Accede a las versiones beta ahora!",
+  "supportDevelopment1": "¿Obtener acceso a versiones beta exclusivas y apoyar el desarrollo?",
+  "supportDevelopment2": "¡Accede a las versiones beta ahora!",
 
-    "installerMethodTitle": "El Método del Instalador",
-    "installerStep1Before": "Ve a la página",
-    "installerStep1After": "y descarga el instalador.",
-    "installerStep2": "Abre el instalador haciendo doble clic en el archivo descargado",
-    "installerStep3": "Ahora haz clic en 'Advanced Settings'",
-    "installerStep4": "Marca la casilla 'Install Euphoria Patches'",
-    "installerStep5": "Haz clic en instalar, Complementary Shaders + Euphoria Patches ahora aparecerá en tu carpeta de shaderpacks"
+  "installerMethodTitle": "El Método del Instalador",
+  "installerStep1Before": "Ve a la página",
+  "installerStep1After": "y descarga el instalador.",
+  "installerStep2": "Abre el instalador haciendo doble clic en el archivo descargado",
+  "installerStep3": "Ahora haz clic en 'Advanced Settings'",
+  "installerStep4": "Marca la casilla 'Install Euphoria Patches'",
+  "installerStep5": "Haz clic en instalar, Complementary Shaders + Euphoria Patches ahora aparecerá en tu carpeta de shaderpacks"
 }
