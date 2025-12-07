@@ -1188,6 +1188,7 @@ screen.CLOUDS=Clouds
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Reimagined Clouds
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Unbound Clouds
 screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Double Unbound Clouds
+screen.CLOUD_SHADING_SETTINGS=Cloud Shading
 screen.AURORA_SETTINGS=Aurora Borealis
 screen.AURORA_SETTINGS.comment=Settings that relate to the Aurora Borealis.
 screen.AURORA_COLOR_SETTINGS=Aurora Color Settings
@@ -1379,12 +1380,8 @@ value.CLOUD_SHADOW_ROUNDNESS.0.15=Extra Boxy
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Boxy
 value.CLOUD_SHADOW_ROUNDNESS.0.35=Round
 option.CLOUD_SHADOW_ROUNDNESS.comment=Change how round cloud shadows appear.
-option.CLOUD_NARROWNESS=Cloud Narrowness
-value.CLOUD_NARROWNESS.0.1=Ultra Slim
-value.CLOUD_NARROWNESS.0.075=Slim
-value.CLOUD_NARROWNESS.0.07=Medium
-value.CLOUD_NARROWNESS.0.025=Wide
-option.CLOUD_NARROWNESS.comment=Change how narrow the clouds appear on the horizontal scale.
+option.CLOUD_NARROWNESS=Cloud Width
+option.CLOUD_NARROWNESS.comment=Change how wide the clouds appear horizontally.
 
 option.CLOUD_SHADOW_UNBOUND_SIZE=Cloud Shadow Size
 option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Determines the size of the cloud shadows.
@@ -1415,6 +1412,18 @@ value.RAINBOW_CLOUD.10=100% Coverage
 
 option.CLOUD_RENDER_DISTANCE=Cloud Render Distance
 option.CLOUD_RENDER_DISTANCE.comment=Option to change how far clouds render.
+
+option.CLOUD_SHADING_AMOUNT=Cloud Shading Amount
+option.CLOUD_SHADING_AMOUNT.comment=Determines how much the clouds get shaded.
+
+option.INVERTED_CLOUD_SHADING=Inverted Cloud Shading
+option.INVERTED_CLOUD_SHADING.comment=Inverts the cloud shading effect.
+
+option.CLOUD_LIGHT_MULTIPLIER=Cloud Light Multiplier
+option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting side of the clouds.
+
+option.CLOUD_AMBIENT_MULTIPLIER=Cloud Ambient Light Multiplier
+option.CLOUD_AMBIENT_MULTIPLIER.comment=Multiplies the brightness of the ambient light side of the clouds.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Remove Night Clouds Amount
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Ammount of clouds which get removed during the night
