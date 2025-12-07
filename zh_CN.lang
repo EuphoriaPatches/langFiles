@@ -87,7 +87,7 @@ option.info15.comment=完整致谢名单可以访问 §deuphoriapatches.com/cred
 
 option.info16=§d§n如何支持 Euphoria Patches
 value.info16.0=
-option.info16.comment=使用 Euphoria Patches 即是最好的支持. 向更多人推荐和介绍本光影, 保持对我们未来的更新内容的好奇和热情. 可以直接通过 Patreon 和 Ko-Fi 来给予金钱支持的同时获得开发版本的光影文件. §d§l§neuphoriapatches.com/support 
+option.info16.comment=使用 Euphoria Patches 即是最好的支持. 向更多人推荐和介绍本光影, 保持对我们未来的更新内容的好奇和热情. 可以直接通过 Patreon 和 Ko-Fi 来给予金钱支持的同时获得开发版本的光影文件. §d§l§neuphoriapatches.com/support
 
 option.info17=测试版本: 从SpacEagle17的Patreon获取
 value.info17.0=
@@ -338,7 +338,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 区块 §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 区块§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=世界空间反射 (WSR) §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=在世界空间中计算反射. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效. §e[*]§r 最大反射渲染距离取决于 高级颜色追踪 设置的距离, 但因技术原因, 在内部该效果实际最大生效距离上限为 16 区块. §c[-]§r 本选项的启用会严重影响性能, 尤其是 高级颜色追踪 设置的距离过高时. §c[-]§r 世界空间反射会在改变资源包时完全失效, 但可以通过重启游戏修复. §c[-]§r 世界空间反射可能会在模组或资源包中使用非 16x 分辨率的方块纹理的情况下导致部分方块反射出现疯狂闪烁的问题. 
+option.WORLD_SPACE_REFLECTIONS.comment=在世界空间中计算反射. §e[*]§r 这些功能只有在 性能设置 中启用 高级颜色追踪 选项并且仅当运行光影所用的设备支持它时才能生效. §e[*]§r 最大反射渲染距离取决于 高级颜色追踪 设置的距离, 但因技术原因, 在内部该效果实际最大生效距离上限为 16 区块. §c[-]§r 本选项的启用会严重影响性能, 尤其是 高级颜色追踪 设置的距离过高时. §c[-]§r 世界空间反射会在改变资源包时完全失效, 但可以通过重启游戏修复. §c[-]§r 世界空间反射可能会在模组或资源包中使用非 16x 分辨率的方块纹理的情况下导致部分方块反射出现疯狂闪烁的问题.
 value.WORLD_SPACE_REFLECTIONS.-1=§a关
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§o开
 
@@ -1183,7 +1183,7 @@ value.WATERMARK.4=黑/白
 option.WATERMARK_SIZE=水印大小
 
 screen.EUPHORIA_SETTINGS=§dEuphoria Patches 相关设置
-screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的设置. §b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support 
+screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的设置. §b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support
 
 screen.ATMOSPHERE=大气
 screen.ATMOSPHERE.comment=与大气相关的设置.
@@ -1317,7 +1317,7 @@ screen.POPULAR_SETTINGS.comment=Euphoria Patches 中最受欢迎的一些设置.
 screen.POPULAR_SETTINGS_2=第二页
 screen.POPULAR_SETTINGS_3=第三页
 screen.EP_VERSION=Euphoria Patches §d1.8.0
-screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support 
+screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=世界时间动画
 option.DAYLIGHT_CYCLE_COMPAT.comment=本选项提供了 "在关闭世界日期循环 ( /gamerule doDaylightCycle false ) 后云层和其他动画效果正常工作" 的选择. 但这意味着多人游戏各玩家间的动画效果不再同步了.
@@ -2037,7 +2037,7 @@ option.NO_RAIN_ABOVE_CLOUDS=云端之上无雨雪
 option.NO_RAIN_ABOVE_CLOUDS.comment=禁用高于云层的雨雪粒子. 在原版云层开启并且高度被修改的情况下不能很好的工作.
 
 option.RAIN_FADE_TIMER=降雨聚散时间
-option.RAIN_FADE_TIMER.comment=调节降雨相关效果淡入淡出的所需时间. 受影响的效果有云层, 雨水坑, 雾气, 彩虹等. 
+option.RAIN_FADE_TIMER.comment=调节降雨相关效果淡入淡出的所需时间. 受影响的效果有云层, 雨水坑, 雾气, 彩虹等.
 
 option.DOF_SNEAKING=在下蹲且手持望远镜时模糊视界
 option.DOF_SNEAKING.comment=仅在潜行(下蹲)且手持望远镜时激活视界模糊效果.

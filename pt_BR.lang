@@ -148,7 +148,7 @@ screen.FOG_SETTINGS.comment=Configurações relacionadas aos diversos tipos de n
 screen.SUN_MOON_SETTINGS=Sol / Lua
 screen.SUN_MOON_SETTINGS.comment=Configurações que estão relacionadas ao Sol e a Lua.
 
-screen.NETHER_SETTINGS=Dimensão do Nether 
+screen.NETHER_SETTINGS=Dimensão do Nether
 screen.NETHER_SETTINGS.comment=Configurações que estão relacionadas á dimensão do Nether.
 
 screen.WEATHER_SETTINGS=Chuva / Clima
@@ -251,7 +251,7 @@ value.BLOCK_REFLECT_QUALITY.0=Desativado
 value.BLOCK_REFLECT_QUALITY.1=Resolução Baixa
 value.BLOCK_REFLECT_QUALITY.2=§cMedium
 
-option.SHADOW_QUALITY=Sombras em Tempo-Real 
+option.SHADOW_QUALITY=Sombras em Tempo-Real
 option.SHADOW_QUALITY.comment=Ajusta  a qualidades das sombras.Cada nível adicional reduz ainda mais os artefatos de ruído nas sombras. As opções abaixo de §eAlto§r ativam sombras otimizadas em folhagens. A configuração §eResolução Muito Baixo§r compromete significativamente a qualidade das sombras de diversas maneiras, enquanto a opção §aDESATIVADO§r desativa completamente as sombras e os feixes de luz.
 value.SHADOW_QUALITY.-1=Desativado
 value.SHADOW_QUALITY.0=§eResolução Muito Baixa
@@ -269,7 +269,7 @@ value.LIGHTSHAFT_QUALI_DEFINE.2=§eResolução Média
 value.LIGHTSHAFT_QUALI_DEFINE.3=§cResolução Alta
 value.LIGHTSHAFT_QUALI_DEFINE.4=§4§lResolução Muito Alta
 
-option.shadowDistance=Distância da Sombra 
+option.shadowDistance=Distância da Sombra
 option.shadowDistance.comment=Ajusta a distância a partir do jogador na qual as sombras em tempo real são renderizadas. §e[*]§r O valor é limitado internamente pela Distância de Renderização. §e[*]§r Recomenda-se definir este valor em cerca de 80% da sua distância de renderização para obter o melhor desempenho e cobertura. §c[-]§r Valores mais baixos podem causar vazamento excessivo de feixes de luz.
 value.shadowDistance.64.0=§a4 Chunks §c[-]
 value.shadowDistance.80.0=§a5 Chunks §c[-]
@@ -1167,7 +1167,7 @@ option.XLIGHT_I=Multiplicador de Intensidade da Luz de Bloco
 ####### Euphoria Patches #######
 
 profile.SPACEAGLE17= §f۞ §kO§fDEBUG (Não Use)§f§kO
-profile.POPULAR=§bPopular §dSettings 
+profile.POPULAR=§bPopular §dSettings
 
 #WATERMARK
 option.WATERMARK=Complementary
@@ -1179,7 +1179,7 @@ value.WATERMARK.3=& Esconder GUI & Manter o olho da aranha
 value.WATERMARK.4=Preto/Branco
 option.WATERMARK_SIZE=Tamanho da Marca d'agua
 
-screen.EUPHORIA_SETTINGS=§dConfiguração do Euphoria Patches 
+screen.EUPHORIA_SETTINGS=§dConfiguração do Euphoria Patches
 screen.EUPHORIA_SETTINGS.comment=Configurações adicionadas pelo Euphoria Patches. §bVocê pode apoiar o SpacEagle17 no Patreon ou Ko-Fi e receber novas versões beta exclusivas. §r§d§l§neuphoriapatches.com/support
 
 screen.ATMOSPHERE=Atmosfera
@@ -1228,7 +1228,7 @@ screen.FOG_BORDER_OVERWORLD=Névoa de Borda
 screen.FOG_BORDER_OVERWORLD.comment=Configurações relacionadas à névoa de borda.
 screen.SEASON=Estações do Ano
 screen.WINTER=Configurações do inverno
-screen.AUTUMN=Configurações de Outono 
+screen.AUTUMN=Configurações de Outono
 screen.SPRING=Configurações da Primavera
 screen.SUMMER=configurações do Verão
 screen.NETHER_WORLD=Nether

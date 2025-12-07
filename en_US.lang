@@ -335,7 +335,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 Chunks §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunks§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=World-Space Reflections §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=Calculates reflections in world-space rather than screen-space. §c[-]§r Likely breaks with modded blocks. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §e[*]§r The maximum distance of this effect depends on the Advanced Color Tracing distance, but it is internally capped at 16 chunks for technical reasons. §c[-]§r This effect can severely impact performance especially with higher Advanced Color Tracing distances. §c[-]§r World-space reflections can completely break after changing resource packs, but it will be fixed after restarting your game. §c[-]§r World-space reflections can cause intense flickering with mods, or resource packs that use higher than 16x resolution for any block textures. 
+option.WORLD_SPACE_REFLECTIONS.comment=Calculates reflections in world-space rather than screen-space. §c[-]§r Likely breaks with modded blocks. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §e[*]§r The maximum distance of this effect depends on the Advanced Color Tracing distance, but it is internally capped at 16 chunks for technical reasons. §c[-]§r This effect can severely impact performance especially with higher Advanced Color Tracing distances. §c[-]§r World-space reflections can completely break after changing resource packs, but it will be fixed after restarting your game. §c[-]§r World-space reflections can cause intense flickering with mods, or resource packs that use higher than 16x resolution for any block textures.
 value.WORLD_SPACE_REFLECTIONS.-1=§aOFF
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oON
 
@@ -1180,7 +1180,7 @@ value.WATERMARK.4=Black/White
 option.WATERMARK_SIZE=Watermark Size
 
 screen.EUPHORIA_SETTINGS=§dEuphoria Patches Settings
-screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches. §bYou can support SpacEagle17 on Patreon or Ko-Fi and get new Exclusive Beta Versions. §r§d§l§neuphoriapatches.com/support 
+screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches. §bYou can support SpacEagle17 on Patreon or Ko-Fi and get new Exclusive Beta Versions. §r§d§l§neuphoriapatches.com/support
 
 screen.ATMOSPHERE=Atmosphere
 screen.ATMOSPHERE.comment=Settings that relate to the atmosphere.
@@ -2043,7 +2043,7 @@ option.NO_RAIN_ABOVE_CLOUDS=No Rain Above Clouds
 option.NO_RAIN_ABOVE_CLOUDS.comment=Disables rain above the clouds. Doesn't work well if the vanilla cloud height was changed with the vanilla clouds enabled.
 
 option.RAIN_FADE_TIMER=Rain Fade Timer
-option.RAIN_FADE_TIMER.comment=Change the time it takes for rain related effects to fade in and out. Affected effects are clouds, rain puddles, fog, rainbow and more. 
+option.RAIN_FADE_TIMER.comment=Change the time it takes for rain related effects to fade in and out. Affected effects are clouds, rain puddles, fog, rainbow and more.
 
 option.DOF_SNEAKING=DoF Sneaking & Spyglass
 option.DOF_SNEAKING.comment=Only activate the world blur option while sneaking and holding a spyglass.
@@ -2129,7 +2129,7 @@ value.CAMERA_NOISE_OVERLAY.1=Noise 1
 option.CAMERA_NOISE_OVERLAY_INTENSITY=Noise Intensity
 
 option.LONG_EXPOSURE=Long Exposure
-option.LONG_EXPOSURE.comment=Disable the GUI by pressing F1 and stand still. The Celestial mode is specifically made to improve the look of stars and bright objects while objects in the Temporal mode would fade over time. 
+option.LONG_EXPOSURE.comment=Disable the GUI by pressing F1 and stand still. The Celestial mode is specifically made to improve the look of stars and bright objects while objects in the Temporal mode would fade over time.
 value.LONG_EXPOSURE.0=OFF
 value.LONG_EXPOSURE.1=Celestial Accumulation
 value.LONG_EXPOSURE.2=Temporal Weighting

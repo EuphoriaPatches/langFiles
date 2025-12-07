@@ -335,7 +335,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 Chunki §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunki§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=Odbicia w Przestrzeni Świata §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=Oblicza odbicia w przestrzeni świata (WSR), a zamiast w przestrzeni ekranu (SSR). §c[-]§r Nie działa z blokami dodanymi przez mody. §e[*]§r Ta funkcja działa tylko wtedy, gdy w Ustawieniach Jakości włączona jest opcja Zaawansowane Kolorowe Oświetlenie (ACT), a twój komputer ją obsługuje. §e[*]§r Maksymalny zasięg tego ustawienia zależy od odległości zaawansowanego kolorowego oświetlenia, ale z przyczyn technicznych jest wewnętrznie ograniczony do 16 chunków. §c[-]§r Efekt ten może mieć poważny wpływ na wydajność, zwłaszcza przy większych odległościach zaawansowanego kolorowego oświetlenia. §c[-]§r Odbicia w przestrzeni świata mogą całkowicie przestać działać po zmianie pakietów zasobów, rozwiązanie problemu wymaga ponownego uruchomienia gry. §c[-]§r Odbicia w przestrzeni świata mogą powodować intensywne migotanie w przypadku modów lub pakietów zasobów, które używają rozdzielczości wyższej niż 16x dla tekstur bloków. 
+option.WORLD_SPACE_REFLECTIONS.comment=Oblicza odbicia w przestrzeni świata (WSR), a zamiast w przestrzeni ekranu (SSR). §c[-]§r Nie działa z blokami dodanymi przez mody. §e[*]§r Ta funkcja działa tylko wtedy, gdy w Ustawieniach Jakości włączona jest opcja Zaawansowane Kolorowe Oświetlenie (ACT), a twój komputer ją obsługuje. §e[*]§r Maksymalny zasięg tego ustawienia zależy od odległości zaawansowanego kolorowego oświetlenia, ale z przyczyn technicznych jest wewnętrznie ograniczony do 16 chunków. §c[-]§r Efekt ten może mieć poważny wpływ na wydajność, zwłaszcza przy większych odległościach zaawansowanego kolorowego oświetlenia. §c[-]§r Odbicia w przestrzeni świata mogą całkowicie przestać działać po zmianie pakietów zasobów, rozwiązanie problemu wymaga ponownego uruchomienia gry. §c[-]§r Odbicia w przestrzeni świata mogą powodować intensywne migotanie w przypadku modów lub pakietów zasobów, które używają rozdzielczości wyższej niż 16x dla tekstur bloków.
 value.WORLD_SPACE_REFLECTIONS.-1=§aWYŁ.
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oWŁ.
 
@@ -442,7 +442,7 @@ option.NETHER_STORM_HEIGHT=Górny Limit Burzy Netheru
 option.NETHER_STORM_HEIGHT.comment=Określa maksymalną wysokość, na jakiej uformuje się burza Netheru. Zmniejszenie tej wartości spowoduje, że Burza Netheru zbierze się w pobliżu "Poziomu Startowego Burzy Netheru".
 
 option.NETHER_VIEW_LIMIT=§eZasięg widzenia w Netherze§r
-option.NETHER_VIEW_LIMIT.comment=Określa maksymalną odległość widzenia Netherze. §e[*]§r Wartość jest automatycznie ograniczona do zasięgu renderowania. §c[-]§r Zwiększenie wartości tego ustawienia może wpłynąć na wydajność, gdy włączona jest opcja "Burza Netheru". 
+option.NETHER_VIEW_LIMIT.comment=Określa maksymalną odległość widzenia Netherze. §e[*]§r Wartość jest automatycznie ograniczona do zasięgu renderowania. §c[-]§r Zwiększenie wartości tego ustawienia może wpłynąć na wydajność, gdy włączona jest opcja "Burza Netheru".
 value.NETHER_VIEW_LIMIT.96.0=6 Chunków
 value.NETHER_VIEW_LIMIT.112.0=7 Chunków
 value.NETHER_VIEW_LIMIT.128.0=8 Chunków
@@ -1172,7 +1172,7 @@ value.WATERMARK.4=Czarno/Biały
 option.WATERMARK_SIZE=Rozmiar Znaku Wodnego
 
 screen.EUPHORIA_SETTINGS=§dUstawienia Euphoria Patches
-screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support 
+screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support
 
 screen.ATMOSPHERE=Atmosfera
 screen.ATMOSPHERE.comment=Ustawienia które wpływają na atmosferę.
@@ -1200,7 +1200,7 @@ screen.MOON_PHASED_DESATURATION_SETTINGS=Wpływ Fazy Księżyca (Widzenie Zmierz
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Dostosowuje stopień desaturacji kolorów na podstawie bieżącej fazy księżyca.
 screen.NIGHT_NEBULA_SETTINGS=Nocne Mgławice
 screen.NIGHT_NEBULA_COLOR_SETTINGS=Ustawienia Koloru
-screen.NEBULA_STAR_SETTINGS=Ustawienia Gwiazd 
+screen.NEBULA_STAR_SETTINGS=Ustawienia Gwiazd
 
 screen.WORLD=Świat
 screen.WORLD.comment=Ustawienia które wpływają na świat.
@@ -1306,7 +1306,7 @@ screen.POPULAR_SETTINGS.comment=screen.POPULAR_SETTINGS.comment=Oto niektóre z 
 screen.POPULAR_SETTINGS_2=2 Strona
 screen.POPULAR_SETTINGS_3=3 Strona
 screen.EP_VERSION=Euphoria Patches §d1.8.0
-screen.EP_VERSION.comment=§bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support 
+screen.EP_VERSION.comment=§bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
 option.DAYLIGHT_CYCLE_COMPAT.comment=Używaj tej opcji TYLKO, jeśli grasz na serwerze z wyłączoną zasadą "doDaylightCycle". Po włączeniu tej opcji chmury i inne animacje w światach z wyłączonym cyklem dziennym nie są już synchronizowane między graczami.
@@ -1370,7 +1370,7 @@ option.CLOUD_SHADOW_ROUNDNESS=Krągłość Cieni Chmur
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Bardzo Kwadratowe
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Kwadratowe
 value.CLOUD_SHADOW_ROUNDNESS.0.35=Okrągłe
-option.CLOUD_SHADOW_ROUNDNESS.comment=Zmienia stopień zaokrąglenia cieni chmur. 
+option.CLOUD_SHADOW_ROUNDNESS.comment=Zmienia stopień zaokrąglenia cieni chmur.
 option.CLOUD_NARROWNESS=Wąskość Chmur
 value.CLOUD_NARROWNESS.0.1=Ultra Smukłe
 value.CLOUD_NARROWNESS.0.075=Smukłe
@@ -1418,7 +1418,7 @@ option.CLOUD_LAYER2_SPEED_MULT=Mnożnik prędkości warstwy 2 chmur
 
 option.DOUBLE_UNBOUND_CLOUDS=Podwójne Chmury Unbound
 option.DOUBLE_UNBOUND_CLOUDS.comment=Włącza drugą warstwe chmur Unbound. §c[-]§r To ustawienie może mieć wpływ na wydajność.
-option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Pułąp Chmur 2 Warstwy 
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Pułąp Chmur 2 Warstwy
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Określa pułap, na którym znajduje się druga warstwa chmur.
 option.CLOUD_UNBOUND_LAYER2_HEIGHT=Grubość Chmur 2 Warstwy
 option. CLOUD_UNBOUND_LAYER2_SIZE=Rozmiar Chmur 2 Warstywu
@@ -1936,7 +1936,7 @@ option.SEASON_COLOR_DESATURATION.commnet=Desaturuje kolory otoczenia.
 option.SNOW_CONDITION=Warunek Pojawienia się Śniegu
 option.SNOW_CONDITION.comment=Określa warunki pojawienia się śniegu.
 value.SNOW_CONDITION.0=Zimny Biom & Padający Śnieg
-value.SNOW_CONDITION.1=Zimny Biom 
+value.SNOW_CONDITION.1=Zimny Biom
 value.SNOW_CONDITION.2=Wszędzie
 
 option.SNOW_NOISE_INTENSITY=Intensywność Śniegu
@@ -2030,7 +2030,7 @@ option.NO_RAIN_ABOVE_CLOUDS=Brak Deszczu Ponad Chmurami
 option.NO_RAIN_ABOVE_CLOUDS.comment=Wyłącza deszcz nad chmurami. Nie działa dobrze, jeśli wysokość chmur vanilla została zmieniona przy włączonych chmurach vanilla.
 
 option.RAIN_FADE_TIMER=Okres Przemijania Deszczu
-option.RAIN_FADE_TIMER.comment=Zmienia czas potrzebny do pojawienia się i zaniknięcia efektów związanych z deszczem. Efekty, na które ma to wpływ, to chmury, kałuże deszczowe, mgła, tęcza i inne. 
+option.RAIN_FADE_TIMER.comment=Zmienia czas potrzebny do pojawienia się i zaniknięcia efektów związanych z deszczem. Efekty, na które ma to wpływ, to chmury, kałuże deszczowe, mgła, tęcza i inne.
 
 option.DOF_SNEAKING=Efekty Rozmycia Podczas Kucania z Lunetą
 option.DOF_SNEAKING.comment=Aktywuje efekty rozmycia podczas skradania się jeśli gracz trzyma lunete.
@@ -2116,7 +2116,7 @@ value.CAMERA_NOISE_OVERLAY.1=Szum 1
 option.CAMERA_NOISE_OVERLAY_INTENSITY=Natężęnie Szumu
 
 option.LONG_EXPOSURE=Długa Ekspozycja
-option.LONG_EXPOSURE.comment=Wyłącz interfejs użytkownika, naciskając F1 i nie ruszaj się. Tryb Kumulacji został specjalnie stworzony, aby poprawić wygląd gwiazd i inych jasnych obiektów, podczas gdy obiekty w trybie Wagi Czasowej blakną z czasem. 
+option.LONG_EXPOSURE.comment=Wyłącz interfejs użytkownika, naciskając F1 i nie ruszaj się. Tryb Kumulacji został specjalnie stworzony, aby poprawić wygląd gwiazd i inych jasnych obiektów, podczas gdy obiekty w trybie Wagi Czasowej blakną z czasem.
 value.LONG_EXPOSURE.0=WYŁ.
 value.LONG_EXPOSURE.1=Kumulacja Niebiosa
 value.LONG_EXPOSURE.2=Waga Czasowa
@@ -2133,7 +2133,7 @@ option.DOF_VIEW_FOCUS_NEW2=Wizualizacja Głebi Ostrości
 option.DOF_VIEW_FOCUS_NEW2.comment=Sprawia, że płaszczyzna ostrości jest widoczna, gdy widoczny jest interfejs użytkownika oraz gracz trzyma lunete.
 
 option.DOF_SHAPE=Kształt
-option.DOF_SHAPE.comment=Kształt głębi ostrości 
+option.DOF_SHAPE.comment=Kształt głębi ostrości
 value.DOF_SHAPE.0=Oryginalny
 value.DOF_SHAPE.3=Trójkąt
 value.DOF_SHAPE.4=Kwadrat
