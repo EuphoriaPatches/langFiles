@@ -1425,6 +1425,9 @@ option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting sid
 option.CLOUD_AMBIENT_MULTIPLIER=Cloud Ambient Light Multiplier
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Multiplies the brightness of the ambient light side of the clouds.
 
+option.ROTATE_REIMAGINED_CLOUDS_90=Rotate Clouds 90°
+option.ROTATE_REIMAGINED_CLOUDS_90.comment=Rotates the reimagined clouds by 90 degrees.
+
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Remove Night Clouds Amount
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Ammount of clouds which get removed during the night
 
