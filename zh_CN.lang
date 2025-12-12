@@ -1191,8 +1191,10 @@ screen.CLOUDS=云层
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Reimagined 风格云层
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Unbound 风格云层
 screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=双层 Unbound 风格云层
+screen.CLOUD_SHADING_SETTINGS=云层明暗
 screen.AURORA_SETTINGS=北极光
 screen.AURORA_SETTINGS.comment=关于北极光的设置.
+screen.AURORA_INFLUENCE_SETTINGS=极光回响
 screen.AURORA_COLOR_SETTINGS=北极光颜色
 screen.AURORA_COLOR_SETTINGS.comment=关于北极光颜色的设置.
 screen.END_SKY=末地天空
@@ -1371,6 +1373,19 @@ option.AURORA_TERRAIN_INFLUENCE_INTENSITY=影响地表强度
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY.comment=改变极光影响地表颜色的强度.
 value.AURORA_TERRAIN_INFLUENCE_INTENSITY.0.00=关
 
+option.RANDOM_AURORA=极光出现概率
+option.RANDOM_AURORA.comment=设置每晚极光出现的概率. 仍遵循 Complementary 设置里的极光出现条件.
+value.RANDOM_AURORA.0=默认
+value.RANDOM_AURORA.1=10%
+value.RANDOM_AURORA.2=20%
+value.RANDOM_AURORA.3=30%
+value.RANDOM_AURORA.4=40%
+value.RANDOM_AURORA.5=50%
+value.RANDOM_AURORA.6=60%
+value.RANDOM_AURORA.7=70%
+value.RANDOM_AURORA.8=80%
+value.RANDOM_AURORA.9=90%
+
 option.CLOUD_ROUNDNESS=云层圆润度 §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=超方正 §e[*]§r
 value.CLOUD_ROUNDNESS.0.05=方正 §e[*]§r
@@ -1383,10 +1398,6 @@ value.CLOUD_SHADOW_ROUNDNESS.0.25=方正
 value.CLOUD_SHADOW_ROUNDNESS.0.35=圆润
 option.CLOUD_SHADOW_ROUNDNESS.comment=调节云层阴影的圆润程度.
 option.CLOUD_NARROWNESS=云层水平缩放
-value.CLOUD_NARROWNESS.0.1=0.20x
-value.CLOUD_NARROWNESS.0.075=0.67x
-value.CLOUD_NARROWNESS.0.07=1x
-value.CLOUD_NARROWNESS.0.025=2x
 option.CLOUD_NARROWNESS.comment=更改云在水平比例上的显示宽窄.
 
 option.CLOUD_SHADOW_UNBOUND_SIZE=云影尺寸
@@ -1418,6 +1429,21 @@ value.RAINBOW_CLOUD.10=100% 覆盖率
 
 option.CLOUD_RENDER_DISTANCE=云层渲染距离
 option.CLOUD_RENDER_DISTANCE.comment=用于改变云层渲染距离远近的选项.
+
+option.CLOUD_SHADING_AMOUNT=云层明暗强度
+option.CLOUD_SHADING_AMOUNT.comment=决定云层自身明暗对比强度.
+
+option.INVERTED_CLOUD_SHADING=反转云层明暗关系
+option.INVERTED_CLOUD_SHADING.comment=反转云层自身的明暗关系.
+
+option.CLOUD_LIGHT_MULTIPLIER=云层亮度 - 亮面
+option.CLOUD_LIGHT_MULTIPLIER.comment=云层亮面的亮度倍率.
+
+option.CLOUD_AMBIENT_MULTIPLIER=云层亮度 - 环境光面
+option.CLOUD_AMBIENT_MULTIPLIER.comment=云层仅受环境光影响一侧的亮度倍率.
+
+option.ROTATE_REIMAGINED_CLOUDS_90=90°旋转云图
+option.ROTATE_REIMAGINED_CLOUDS_90.comment=旋转 Reimagined 风格云层 90°.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=夜晚云层消除强度
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=在夜晚时云层被消除的数量.
@@ -2574,3 +2600,6 @@ option.EP_END_FLASH.comment=修改末地闪光类型, 同时启用 默认类型 
 value.EP_END_FLASH.0=仅默认类型
 value.EP_END_FLASH.1=仅 Euphoria 类型
 value.EP_END_FLASH.2=两者
+
+option.MIRROR_TINTED_GLASS_OPAQUE=不透明遮光玻璃
+option.MIRROR_TINTED_GLASS_OPAQUE.comment=使遮光玻璃方块不透明 (主要便于模拟镜子).
