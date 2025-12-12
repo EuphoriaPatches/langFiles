@@ -1191,6 +1191,7 @@ screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Double Unbound Clouds
 screen.CLOUD_SHADING_SETTINGS=Cloud Shading
 screen.AURORA_SETTINGS=Aurora Borealis
 screen.AURORA_SETTINGS.comment=Settings that relate to the Aurora Borealis.
+screen.AURORA_INFLUENCE_SETTINGS=Aurora Influence
 screen.AURORA_COLOR_SETTINGS=Aurora Color Settings
 screen.AURORA_COLOR_SETTINGS.comment=Settings that relate to the color of the Aurora Borealis.
 screen.END_SKY=End Sky
@@ -1368,6 +1369,19 @@ value.AURORA_CLOUD_INFLUENCE_INTENSITY.0.00=OFF
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY=Terrain Influence Intensity
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY.comment=Change the intensity the aurora affects the terrain.
 value.AURORA_TERRAIN_INFLUENCE_INTENSITY.0.00=OFF
+
+option.RANDOM_AURORA=Random Aurora Visibility
+option.RANDOM_AURORA.comment=Changes how probable it is for the aurora to appear each night. Still respects the normal aurora conditions in Complementary Settings.
+value.RANDOM_AURORA.0=Default
+value.RANDOM_AURORA.1=10% Chance
+value.RANDOM_AURORA.2=20% Chance
+value.RANDOM_AURORA.3=30% Chance
+value.RANDOM_AURORA.4=40% Chance
+value.RANDOM_AURORA.5=50% Chance
+value.RANDOM_AURORA.6=60% Chance
+value.RANDOM_AURORA.7=70% Chance
+value.RANDOM_AURORA.8=80% Chance
+value.RANDOM_AURORA.9=90% Chance
 
 option.CLOUD_ROUNDNESS=Cloud Roundness §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=Extra Boxy §e[*]§r
