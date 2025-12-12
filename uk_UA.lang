@@ -1191,6 +1191,7 @@ screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Подвійні непов'язані х�
 screen.CLOUD_SHADING_SETTINGS=Затінення хмар
 screen.AURORA_SETTINGS=Полярне сяйво
 screen.AURORA_SETTINGS.comment=Налаштування, які стосуються полярного сяйва.
+screen.AURORA_INFLUENCE_SETTINGS=Вплив поляр. сяйва
 screen.AURORA_COLOR_SETTINGS=Налаштування кольору поляр. сяйва
 screen.AURORA_COLOR_SETTINGS.comment=Налаштування, які стосуються кольору полярного сяйва.
 screen.END_SKY=Небо Енду
@@ -1368,6 +1369,19 @@ value.AURORA_CLOUD_INFLUENCE_INTENSITY.0.00=ВИМК.
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY=Інтенс. впливу на територію
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY.comment=Зміна інтенсивности впливу полярного сяйва на територію.
 value.AURORA_TERRAIN_INFLUENCE_INTENSITY.0.00=ВИМК.
+
+option.RANDOM_AURORA=Випадкова видим. поляр. сяйва
+option.RANDOM_AURORA.comment=Змінює ймовірність появи полярного сяйва щоночі. Усе ще поважає звичайні умови полярного сяйва в додаткових налаштуваннях.
+value.RANDOM_AURORA.0=Усталена
+value.RANDOM_AURORA.1=Шанс 10%
+value.RANDOM_AURORA.2=Шанс 20%
+value.RANDOM_AURORA.3=Шанс 30%
+value.RANDOM_AURORA.4=Шанс 40%
+value.RANDOM_AURORA.5=Шанс 50%
+value.RANDOM_AURORA.6=Шанс 60%
+value.RANDOM_AURORA.7=Шанс 70%
+value.RANDOM_AURORA.8=Шанс 80%
+value.RANDOM_AURORA.9=Шанс 90%
 
 option.CLOUD_ROUNDNESS=Округлість хмар §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=Додат. кубічні §e[*]§r
