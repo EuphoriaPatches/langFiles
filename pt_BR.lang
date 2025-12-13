@@ -1188,6 +1188,7 @@ screen.CLOUDS=Nuvens
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Nuvens Reimaginadas
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Nuvens Sem Limites
 screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Nuvens Duplas Sem Limites
+screen.CLOUD_SHADING_SETTINGS=Sombreamento das Nuvens
 screen.AURORA_SETTINGS=Aurora Boreal
 screen.AURORA_SETTINGS.comment=Configurações relacionadas à Aurora Boreal.
 screen.AURORA_COLOR_SETTINGS=Configurações de Cor da Aurora
@@ -1379,12 +1380,8 @@ value.CLOUD_SHADOW_ROUNDNESS.0.15=Super Quadrada
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Quadrada
 value.CLOUD_SHADOW_ROUNDNESS.0.35=Arredondada
 option.CLOUD_SHADOW_ROUNDNESS.comment=Altere o quão arredondadas as sombras das nuvens aparecem.
-option.CLOUD_NARROWNESS=Estreitamento das Nuvens
-value.CLOUD_NARROWNESS.0.1=Ultra Fina
-value.CLOUD_NARROWNESS.0.075=Fina
-value.CLOUD_NARROWNESS.0.07=Média
-value.CLOUD_NARROWNESS.0.025=Larga
-option.CLOUD_NARROWNESS.comment=Altere o quão estreitas as nuvens aparecem na escala horizontal.
+option.CLOUD_NARROWNESS=Largura das Nuvens
+option.CLOUD_NARROWNESS.comment=Altera o quão largas as nuvens aparecem horizontalmente.
 
 option.CLOUD_SHADOW_UNBOUND_SIZE=Tamanho da Sombra das Nuvens
 option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Determina o tamanho das sombras
@@ -1415,6 +1412,18 @@ value.RAINBOW_CLOUD.10=100% de Cobertura
 
 option.CLOUD_RENDER_DISTANCE=Distância de Renderização das nuvens
 option.CLOUD_RENDER_DISTANCE.comment=Opção que muda o quão longe as nuvens podem renderizar.
+
+option.CLOUD_SHADING_AMOUNT=Intensidade do Sombreamento das Nuvens
+option.CLOUD_SHADING_AMOUNT.comment=Define o quanto as nuvens recebem sombreamento.
+
+option.INVERTED_CLOUD_SHADING=Sombreamento de Nuvens Invertido
+option.INVERTED_CLOUD_SHADING.comment=Inverte o efeito de sombreamento das nuvens.
+
+option.CLOUD_LIGHT_MULTIPLIER=Multiplicador de Luz das Nuvens
+option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplica o brilho do lado iluminado das nuvens.
+
+option.CLOUD_AMBIENT_MULTIPLIER=Multiplicador de Luz Ambiente das Nuvens
+option.CLOUD_AMBIENT_MULTIPLIER.comment=Multiplica o brilho do lado de luz ambiente das nuvens.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Remover a Quantidades de nuvens á noiteRemove Night Clouds Amount
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Quantidade de nuvens que são removidas durante á noite
@@ -2574,3 +2583,4 @@ value.EP_END_FLASH.2=Ambos
 
 option.MIRROR_TINTED_GLASS_OPAQUE = Vidro Escurecido Opaco
 option.MIRROR_TINTED_GLASS_OPAQUE.comment = Deixa os blocos de vidro escurecido totalmente opacos (principalmente para uso como espelhos).
+
