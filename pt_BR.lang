@@ -19,7 +19,7 @@ screen.INFORMATION2=Informação do Complementary
 screen.INFORMATION2.comment=Esta seção contém apenas botões que existem para fornecer informações.
 
 option.info0=§bPasse o mouse sobre um botão.
-value.info0.0=
+value.info0.1=
 option.info0.comment=Esta seção contém apenas botões que existem para fornecer informações.
 
 option.info1=Como deixar o jogo com mais desempenho.
@@ -2600,6 +2600,7 @@ value.EP_END_FLASH.2=Ambos
 
 option.MIRROR_TINTED_GLASS_OPAQUE = Vidro Escurecido Opaco
 option.MIRROR_TINTED_GLASS_OPAQUE.comment = Deixa os blocos de vidro escurecido totalmente opacos (principalmente para uso como espelhos).
+
 
 
 
