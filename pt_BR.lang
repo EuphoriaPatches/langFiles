@@ -1191,6 +1191,7 @@ screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Nuvens Duplas Sem Limites
 screen.CLOUD_SHADING_SETTINGS=Sombreamento das Nuvens
 screen.AURORA_SETTINGS=Aurora Boreal
 screen.AURORA_SETTINGS.comment=Configurações relacionadas à Aurora Boreal.
+screen.AURORA_INFLUENCE_SETTINGS=Influência da Aurora
 screen.AURORA_COLOR_SETTINGS=Configurações de Cor da Aurora
 screen.AURORA_COLOR_SETTINGS.comment=Configurações relacionadas à cor da Aurora Boreal.
 screen.END_SKY=Céu do End
@@ -1368,6 +1369,19 @@ value.AURORA_CLOUD_INFLUENCE_INTENSITY.0.00=DESLIGADO
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY=Intensidade da Influência no Terreno
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY.comment=Altere a intensidade com que a aurora afeta o terreno.
 value.AURORA_TERRAIN_INFLUENCE_INTENSITY.0.00=DESLIGADO
+
+option.RANDOM_AURORA=Visibilidade Aleatória da Aurora
+option.RANDOM_AURORA.comment=Altera a probabilidade de a aurora aparecer a cada noite. Ainda respeita as condições normais de aurora nas Configurações do Complementary.
+value.RANDOM_AURORA.0=Padrão
+value.RANDOM_AURORA.1=10% de Chance
+value.RANDOM_AURORA.2=20% de Chance
+value.RANDOM_AURORA.3=30% de Chance
+value.RANDOM_AURORA.4=40% de Chance
+value.RANDOM_AURORA.5=50% de Chance
+value.RANDOM_AURORA.6=60% de Chance
+value.RANDOM_AURORA.7=70% de Chance
+value.RANDOM_AURORA.8=80% de Chance
+value.RANDOM_AURORA.9=90% de Chance
 
 option.CLOUD_ROUNDNESS=Arredondamento das Nuvens §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=Super Quadrada §e[*]§r
@@ -2586,5 +2600,6 @@ value.EP_END_FLASH.2=Ambos
 
 option.MIRROR_TINTED_GLASS_OPAQUE = Vidro Escurecido Opaco
 option.MIRROR_TINTED_GLASS_OPAQUE.comment = Deixa os blocos de vidro escurecido totalmente opacos (principalmente para uso como espelhos).
+
 
 
