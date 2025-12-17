@@ -1381,6 +1381,20 @@ value.RANDOM_AURORA.7=70% Chance
 value.RANDOM_AURORA.8=80% Chance
 value.RANDOM_AURORA.9=90% Chance
 
+option.AURORA_NOISE_SCALE=Aurora Noise Scale
+option.AURORA_NOISE_SCALE.comment=Changes the scale of the noise used in the aurora effect.
+
+option.AURORA_PATTERN_WARP=Swirliness
+option.AURORA_PATTERN_WARP.comment=Changes how much the aurora swirls and warps.
+value.AURORA_PATTERN_WARP.0=OFF
+
+option.AURORA_SATURATION=Aurora Saturation
+option.AURORA_SATURATION.comment=Changes the saturation of the aurora colors.
+value.AURORA_SATURATION.10=Default
+
+option.AURORA_COLOR_MIX_POWER=Layer Mixer
+option.AURORA_COLOR_MIX_POWER.comment=Changes which layer of the aurora is the most prominent one.
+
 option.CLOUD_ROUNDNESS=Cloud Roundness §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=Extra Boxy §e[*]§r
 value.CLOUD_ROUNDNESS.0.05=Boxy §e[*]§r
