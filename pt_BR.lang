@@ -1322,23 +1322,23 @@ option.DAYLIGHT_CYCLE_COMPAT=Animação do Tempo Mundial
 option.DAYLIGHT_CYCLE_COMPAT.comment=USE apenas se você joga com o gamerule doDaylightCycle false. Quando ativado, nuvens e outros animam em mundos com o ciclo do dia desativado, mas não ficam mais sincronizados entre os jogadores.
 
 option.AURORA_COLOR_PRESET=Predefinição de Cor da Aurora
-option.AURORA_COLOR_PRESET.comment=Escolha entre visual padrão/auroras coloridas personalizadas, auroras coloridas variáveis (mudam a cada dia/mês no Minecraft) ou predefinições de cor.
+option.AURORA_COLOR_PRESET.comment=Escolha entre o visual padrão ou auroras personalizadas, auroras com cores variadas que mudam a cada dia ou mês do Minecraft, presets de cores ou o modo suave diário, onde a cor muda gradualmente durante a noite.
+value.AURORA_COLOR_PRESET.-1=§o§lVariável - Suave Diário
+
 value.AURORA_COLOR_PRESET.0=Personalizado
 value.AURORA_COLOR_PRESET.1=§o§lVariável - Diário
 value.AURORA_COLOR_PRESET.2=§o§lVariável - Mensal
-value.AURORA_COLOR_PRESET.3=§cB§6l§ca§6z§ei§6n§eg
-value.AURORA_COLOR_PRESET.4=§cG§4h§bo§3s§bt
-value.AURORA_COLOR_PRESET.5=§9Ne§5bu§dl§5a
-value.AURORA_COLOR_PRESET.6=§9v§b4
-value.AURORA_COLOR_PRESET.7=§6E§dn§5d
-value.AURORA_COLOR_PRESET.8=§bI§3c§9e
-value.AURORA_COLOR_PRESET.9=§cWa§6t§ce§a§6r§am§2e§al§2on
-value.AURORA_COLOR_PRESET.10=§bEt§3h§be§dr§3e§dal
-value.AURORA_COLOR_PRESET.11=§bPe§3r§bm§3af§cr§3o§cst
-value.AURORA_COLOR_PRESET.12=§dP§5i§dn§5k
-value.AURORA_COLOR_PRESET.13=§aThe §5Joker
-value.AURORA_COLOR_PRESET.14=§cBlood §bBath
-value.AURORA_COLOR_PRESET.15=§bMist§9ico
+value.AURORA_COLOR_PRESET.3=§9Legacy§b Complementary v4
+value.AURORA_COLOR_PRESET.4=§bPe§3r§bm§3af§cr§3o§cst
+value.AURORA_COLOR_PRESET.5=§dBlossoming §5Lights
+value.AURORA_COLOR_PRESET.6=§9Ne§5bu§dl§5a
+value.AURORA_COLOR_PRESET.8=§aFeixe de Luz Verde
+value.AURORA_COLOR_PRESET.9=§bEt§3h§be§dr§3e§dal
+value.AURORA_COLOR_PRESET.10=§bGlacial §9Blessing
+value.AURORA_COLOR_PRESET.11=§5Mysti§9ca§bl
+value.AURORA_COLOR_PRESET.12=§cWa§6t§ce§a§6r§am§2e§al§2on
+value.AURORA_COLOR_PRESET.13=§cBlood §bBath
+value.AURORA_COLOR_PRESET.14=§cG§4h§bo§3s§bt
 
 option.RGB_AURORA=Aurora RGB
 option.RGB_AURORA.comment=Seja um Gamer Épico com Auroras §4R§2G§9B §rAuroras.
@@ -1382,6 +1382,20 @@ value.RANDOM_AURORA.6=60% de Chance
 value.RANDOM_AURORA.7=70% de Chance
 value.RANDOM_AURORA.8=80% de Chance
 value.RANDOM_AURORA.9=90% de Chance
+
+option.AURORA_NOISE_SCALE=Detalhe da Aurora
+option.AURORA_NOISE_SCALE.comment=Controla o nível de detalhe e granulação da aurora.
+
+option.AURORA_PATTERN_WARP=Efeito Espiral
+option.AURORA_PATTERN_WARP.comment=Define o quanto a aurora se retorce e cria movimentos em espiral.
+value.AURORA_PATTERN_WARP.0=DESATIVADO
+
+option.AURORA_SATURATION=Vibração das Cores
+option.AURORA_SATURATION.comment=Ajusta a intensidade e o impacto das cores da aurora.
+value.AURORA_SATURATION.10=PADRÃO
+
+option.AURORA_COLOR_MIX_POWER=Camada Dominante
+option.AURORA_COLOR_MIX_POWER.comment=Escolhe qual camada da aurora fica mais forte na tela.
 
 option.CLOUD_ROUNDNESS=Arredondamento das Nuvens §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=Super Quadrada §e[*]§r
@@ -2600,6 +2614,7 @@ value.EP_END_FLASH.2=Ambos
 
 option.MIRROR_TINTED_GLASS_OPAQUE = Vidro Escurecido Opaco
 option.MIRROR_TINTED_GLASS_OPAQUE.comment = Deixa os blocos de vidro escurecido totalmente opacos (principalmente para uso como espelhos).
+
 
 
 
