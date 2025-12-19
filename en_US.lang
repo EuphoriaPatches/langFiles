@@ -1394,7 +1394,7 @@ option.AURORA_SATURATION=Aurora Saturation
 option.AURORA_SATURATION.comment=Changes the saturation of the aurora colors.
 value.AURORA_SATURATION.10=Default
 
-option.AURORA_COLOR_MIX_POWER=Layer Mixer
+option.AURORA_COLOR_MIX_POWER=Dominant Layer
 option.AURORA_COLOR_MIX_POWER.comment=Changes which layer of the aurora is the most prominent one.
 
 option.CLOUD_ROUNDNESS=Cloud Roundness §e[*]§r
