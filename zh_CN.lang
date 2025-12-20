@@ -1325,23 +1325,23 @@ option.DAYLIGHT_CYCLE_COMPAT=世界时间动画
 option.DAYLIGHT_CYCLE_COMPAT.comment=本选项提供了 "在关闭世界日期循环 ( /gamerule doDaylightCycle false ) 后云层和其他动画效果正常工作" 的选择. 但这意味着多人游戏各玩家间的动画效果不再同步了.
 
 option.AURORA_COLOR_PRESET=极光颜色预设
-option.AURORA_COLOR_PRESET.comment=选择默认的或定制的北极光颜色预设, 随机 (Varying) 选项意味着会在每 日/月 出现极光的夜晚, 北极光的颜色会在预设颜色中切换.
+option.AURORA_COLOR_PRESET.comment=选择默认的或定制的北极光颜色预设, 随机 (Varying) 选项意味着会在每 日/月 出现极光的夜晚, 北极光的颜色会在预设颜色中切换. 或者选择整晚随机且平滑渐变每日颜色预设.
+value.AURORA_COLOR_PRESET.-1=平滑随机 §o§lVarying
 value.AURORA_COLOR_PRESET.0=自定义
 value.AURORA_COLOR_PRESET.1=每日随机 §o§lVarying
 value.AURORA_COLOR_PRESET.2=每月随机 §o§lVarying
-value.AURORA_COLOR_PRESET.3=炎热 §cB§6l§ca§6z§ei§6n§eg
-value.AURORA_COLOR_PRESET.4=幽灵 §cG§4h§bo§3s§bt
-value.AURORA_COLOR_PRESET.5=星云 §9Ne§5bu§dl§5a
-value.AURORA_COLOR_PRESET.6=Complementary §9v§b4
-value.AURORA_COLOR_PRESET.7=末地风 §6E§dn§5d
-value.AURORA_COLOR_PRESET.8=冰 §bI§3c§9e
-value.AURORA_COLOR_PRESET.9=西瓜 §cWa§6t§ce§a§6r§am§2e§al§2on
-value.AURORA_COLOR_PRESET.10=空灵 §bEt§3h§be§dr§3e§dal
-value.AURORA_COLOR_PRESET.11=冻土 §bPe§3r§bm§3af§cr§3o§cst
-value.AURORA_COLOR_PRESET.12=甜心 §dP§5i§dn§5k
-value.AURORA_COLOR_PRESET.13=小丑 §aThe §5Joker
-value.AURORA_COLOR_PRESET.14=血浴 §cBlood §bBath
-value.AURORA_COLOR_PRESET.15=神秘 §bMysti§9cal
+value.AURORA_COLOR_PRESET.3=§9经典§b Complementary v4
+value.AURORA_COLOR_PRESET.4=§b冻§c土
+value.AURORA_COLOR_PRESET.5=§d绽§5光
+value.AURORA_COLOR_PRESET.6=§9星§d云
+value.AURORA_COLOR_PRESET.7=§5天§3舞
+value.AURORA_COLOR_PRESET.8=§a绿色闪光
+value.AURORA_COLOR_PRESET.9=§b空§d灵
+value.AURORA_COLOR_PRESET.10=§b冰§9赐
+value.AURORA_COLOR_PRESET.11=§5神§9秘
+value.AURORA_COLOR_PRESET.12=§c西§2瓜
+value.AURORA_COLOR_PRESET.13=§c血§b浴
+value.AURORA_COLOR_PRESET.14=§4幽§3灵
 
 option.RGB_AURORA=§4R§2G§9B§f北极光
 option.RGB_AURORA.comment=带着你的 §4R§2G§9B §r极光成为史诗!
@@ -1385,6 +1385,20 @@ value.RANDOM_AURORA.6=60%
 value.RANDOM_AURORA.7=70%
 value.RANDOM_AURORA.8=80%
 value.RANDOM_AURORA.9=90%
+
+option.AURORA_NOISE_SCALE=极光噪声比例
+option.AURORA_NOISE_SCALE.comment=调节极光效果使用的噪声的比例.
+
+option.AURORA_PATTERN_WARP=极光涡旋强度
+option.AURORA_PATTERN_WARP.comment=调节极光旋转和扭曲的强度.
+value.AURORA_PATTERN_WARP.0=关
+
+option.AURORA_SATURATION=极光饱和度
+option.AURORA_SATURATION.comment=调节极光颜色的饱和度.
+value.AURORA_SATURATION.10=默认
+
+option.AURORA_COLOR_MIX_POWER=上层 ← 重点层 → 下层
+option.AURORA_COLOR_MIX_POWER.comment=选择最为突出的极光层.
 
 option.CLOUD_ROUNDNESS=云层圆润度 §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=超方正 §e[*]§r
