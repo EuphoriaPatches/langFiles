@@ -1179,7 +1179,7 @@ value.WATERMARK.3=&Приховано і тримати око павука
 value.WATERMARK.4=Чорний/білий
 option.WATERMARK_SIZE=Розмір вотермарка
 
-screen.EUPHORIA_SETTINGS=§dНалаштування Euphoria Patches
+screen.EUPHORIA_SETTINGS=§dНалаштування Euphoria Patches >
 screen.EUPHORIA_SETTINGS.comment=Налаштування, додані Euphoria Patches. §bВи можете підтримати SpacEagle17 на Patreon або Ko-Fi та отримувати за це ексклюзивні бета-збірки. §r§l§neuphoriapatches.com/support.
 
 screen.ATMOSPHERE=Атмосфера
@@ -1322,7 +1322,8 @@ option.DAYLIGHT_CYCLE_COMPAT=Час анімації світу
 option.DAYLIGHT_CYCLE_COMPAT.comment=Використовуйте це ТІЛЬКИ, якщо ігрове правилом doDaylightCycle установлене на false. Якщо ввімкнути хмари та інше, вони анімуються в світах із вимкненим циклом денного світла, але вони більше не синхронізуються між гравцями.
 
 option.AURORA_COLOR_PRESET=Пресет кольору поляр. сяйва
-option.AURORA_COLOR_PRESET.comment=Виберіть між типовим виглядом і спеціальними кольоровими полярного сяйвами, різнокольоровими полярними сяйвами, коли колір полярного сяйва змінюється кожного ігрового дня або Місяця, або попередні налаштування кольорів.
+option.AURORA_COLOR_PRESET.comment=Вибирайте між типовим виглядом/спеціальними кольоровими полярними сяйвами, різнокольоровими полярними сяйвами, де колір полярного сяйва змінюється кожного дня/місяця Minecraft, або попередні налаштування кольорів. Або гладкий щоденний, який плавно змінює колір протягом ночі.
+value.AURORA_COLOR_PRESET.-1=§o§lРізне — плавно щодня
 value.AURORA_COLOR_PRESET.0=Корист.
 value.AURORA_COLOR_PRESET.1=§o§lЗмінна — денний
 value.AURORA_COLOR_PRESET.2=§o§lЗмінна — нічний
@@ -1331,12 +1332,13 @@ value.AURORA_COLOR_PRESET.4=§bВі§3чн§bа §3мер§cзл§3о§cта
 value.AURORA_COLOR_PRESET.5=§dКвітуче §5світло
 value.AURORA_COLOR_PRESET.6=§9Тум§5ан§dні§5сть
 value.AURORA_COLOR_PRESET.7=§5Небесний §3танець
-value.AURORA_COLOR_PRESET.8=§bЕ§3т§bе§dр§3н§dий
-value.AURORA_COLOR_PRESET.9=§bЛьодовикове §9благо
-value.AURORA_COLOR_PRESET.10=§5Міс§9ти§bчний
-value.AURORA_COLOR_PRESET.11=§cК§6а§cв§aу§6н§aо§2в§aи§2oй
-value.AURORA_COLOR_PRESET.12=§cКривава §bванна
-value.AURORA_COLOR_PRESET.13=§cПр§4и§bв§3и§bд
+value.AURORA_COLOR_PRESET.8=§aGreen Flash
+value.AURORA_COLOR_PRESET.9=§bЕ§3т§bе§dр§3н§dий
+value.AURORA_COLOR_PRESET.10=§bЛьодовикове §9благо
+value.AURORA_COLOR_PRESET.11=§5Міс§9ти§bчний
+value.AURORA_COLOR_PRESET.12=§cК§6а§cв§aу§6н§aо§2в§aи§2oй
+value.AURORA_COLOR_PRESET.13=§cКривава §bванна
+value.AURORA_COLOR_PRESET.14=§cПр§4и§bв§3и§bд
 
 option.RGB_AURORA=RGB поляр. сяйва
 option.RGB_AURORA.comment=Станьте епічним гравцем із полярним сяйвом §4R§2G§9B§r.
@@ -1380,6 +1382,20 @@ value.RANDOM_AURORA.6=Шанс 60%
 value.RANDOM_AURORA.7=Шанс 70%
 value.RANDOM_AURORA.8=Шанс 80%
 value.RANDOM_AURORA.9=Шанс 90%
+
+option.AURORA_NOISE_SCALE=Шкала шуму поляр. сяйва
+option.AURORA_NOISE_SCALE.comment=Змінює масштаб шуму, який використовується в ефекті полярного сяйва.
+
+option.AURORA_PATTERN_WARP=Вихряність
+option.AURORA_PATTERN_WARP.comment=Змінює ступінь обертання та викривлення полярного сяйва.
+value.AURORA_PATTERN_WARP.0=ВИМК
+
+option.AURORA_SATURATION=Насиченість полярного сяйва
+option.AURORA_SATURATION.comment=Змінює насиченість кольорів полярного сяйва.
+value.AURORA_SATURATION.10=За замовчуванням
+
+option.AURORA_COLOR_MIX_POWER=Домінантний лаш
+option.AURORA_COLOR_MIX_POWER.comment=Змінює, який шар полярного сяйва є найбільш помітним.
 
 option.CLOUD_ROUNDNESS=Округлість хмар §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=Додат. кубічні §e[*]§r
