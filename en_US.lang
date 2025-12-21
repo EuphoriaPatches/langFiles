@@ -1179,7 +1179,7 @@ value.WATERMARK.3=& GUI Hidden & Hold Spider Eye
 value.WATERMARK.4=Black/White
 option.WATERMARK_SIZE=Watermark Size
 
-screen.EUPHORIA_SETTINGS=§dEuphoria Patches Settings
+screen.EUPHORIA_SETTINGS=§dConfigure Euphoria Patches >
 screen.EUPHORIA_SETTINGS.comment=Settings that are added by the Euphoria Patches. §bYou can support SpacEagle17 on Patreon or Ko-Fi and get new Exclusive Beta Versions. §r§d§l§neuphoriapatches.com/support
 
 screen.ATMOSPHERE=Atmosphere
