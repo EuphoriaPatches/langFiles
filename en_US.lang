@@ -626,6 +626,12 @@ value.RAINBOWS.0=OFF
 value.RAINBOWS.1=After Rain
 value.RAINBOWS.3=Always
 
+option.RAINBOW_STYLE_DEFINE=Rainbow Style
+option.RAINBOW_STYLE_DEFINE.comment=Determines the style of rainbows. §e[*]§r "Set by Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options.
+value.RAINBOW_STYLE_DEFINE.-1=Set by Style
+value.RAINBOW_STYLE_DEFINE.1=Reimagined
+value.RAINBOW_STYLE_DEFINE.4=Unbound
+
 option.AURORA_STYLE_DEFINE=Aurora Borealis Style
 option.AURORA_STYLE_DEFINE.comment=Determines the style of northern lights that appear in the night sky.
 value.AURORA_STYLE_DEFINE.-1=Set by Style
@@ -1214,8 +1220,6 @@ screen.NEBULA_STAR_SETTINGS=Nebula Star Settings
 
 screen.WORLD=World
 screen.WORLD.comment=Settings that relate to the world.
-screen.SPOOKY_SETTINGS=Spooklementary Settings
-screen.EYES_SETTINGS=Eyes Settings
 screen.BLOOD_MOON_SETTINGS=Blood Moon Settings
 screen.OVERWORLD_WORLD=Overworld
 screen.OVERWORLD_BEAM=Overworld Beams
@@ -2244,18 +2248,6 @@ value.EMISSIVE_FLOWERS_TYPE.1=Cold Colors
 value.EMISSIVE_FLOWERS_TYPE.2=Warm Colors
 
 option.EMISSIVE_FLOWERS_STRENGTH=Glow Intensity
-
-option.SPOOKY=Spooklementary
-option.SPOOKY.comment=Enables lots of spooky features :)
-option.EYES=Eyes
-option.EYE_FREQUENCY=Eye Frequency
-option.EYE_SPEED=Eye Speed
-option.EYE_RED_PROBABILITY=Red Eyes Probability
-option.BLOOD_MOON=Blood Moon
-value.BLOOD_MOON.0=OFF
-value.BLOOD_MOON.1=ON - Full Moon
-value.BLOOD_MOON.2=ON - Every Night
-option.EMISSIVE_BLOOD_MOON_FLOWERS=Emissive Blood Moon Flowers
 
 option.DISTANCE_MIN_LIGHT=Cave Lighting Fade
 option.DISTANCE_MIN_LIGHT.comment=Makes the caves darker with increased distance from the player. Improves the look of caves with a higher Cave Lighting setting.
