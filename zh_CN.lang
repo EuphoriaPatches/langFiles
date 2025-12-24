@@ -629,6 +629,12 @@ value.RAINBOWS.0=关
 value.RAINBOWS.1=雨后
 value.RAINBOWS.3=保持开启
 
+option.RAINBOW_STYLE_DEFINE=彩虹风格
+option.RAINBOW_STYLE_DEFINE.comment=选择彩虹风格样式.  §e[*]§r 由所选风格决定 意味着本选项会随着光影设置菜单主页里的 视觉风格 选项自动切换风格.
+value.RAINBOW_STYLE_DEFINE.-1=由所选风格决定
+value.RAINBOW_STYLE_DEFINE.1=Reimagined
+value.RAINBOW_STYLE_DEFINE.4=Unbound
+
 option.AURORA_STYLE_DEFINE=北极光风格
 option.AURORA_STYLE_DEFINE.comment=选择出现在夜空中的北极光的视觉风格.
 value.AURORA_STYLE_DEFINE.-1=由所选风格决定
@@ -1182,7 +1188,7 @@ value.WATERMARK.3=& 隐藏 GUI 且手持蜘蛛眼时
 value.WATERMARK.4=黑/白
 option.WATERMARK_SIZE=水印大小
 
-screen.EUPHORIA_SETTINGS=§dEuphoria Patches 相关设置
+screen.EUPHORIA_SETTINGS=§d配置 Euphoria Patches >
 screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的设置. §b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support
 
 screen.ATMOSPHERE=大气
@@ -1217,8 +1223,6 @@ screen.NEBULA_STAR_SETTINGS=星云星星设置
 
 screen.WORLD=世界
 screen.WORLD.comment=关于世界的设置.
-screen.SPOOKY_SETTINGS=Spooklementary 设置
-screen.EYES_SETTINGS=眼睛设置
 screen.BLOOD_MOON_SETTINGS=血月设置
 screen.OVERWORLD_WORLD=主世界
 screen.OVERWORLD_BEAM=主世界星束
@@ -2247,18 +2251,6 @@ value.EMISSIVE_FLOWERS_TYPE.1=冷色
 value.EMISSIVE_FLOWERS_TYPE.2=暖色
 
 option.EMISSIVE_FLOWERS_STRENGTH=发光强度
-
-option.SPOOKY=Spooklementary
-option.SPOOKY.comment=启用大量恐怖效果 :)
-option.EYES=眼睛
-option.EYE_FREQUENCY=眼睛频率
-option.EYE_SPEED=眼睛速度
-option.EYE_RED_PROBABILITY=红色眼睛出现概率
-option.BLOOD_MOON=血月
-value.BLOOD_MOON.0=关
-value.BLOOD_MOON.1=开 - 满月
-value.BLOOD_MOON.2=开 - 每晚
-option.EMISSIVE_BLOOD_MOON_FLOWERS=血月花朵发光
 
 option.DISTANCE_MIN_LIGHT=洞穴照明衰减
 option.DISTANCE_MIN_LIGHT.comment=在洞穴中距离使玩家越远的区域越暗. 通过更高的洞穴照明设置改善洞穴效果.
