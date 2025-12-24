@@ -1188,7 +1188,7 @@ value.WATERMARK.3=& 隐藏 GUI 且手持蜘蛛眼时
 value.WATERMARK.4=黑/白
 option.WATERMARK_SIZE=水印大小
 
-screen.EUPHORIA_SETTINGS=§d点此配置 > Euphoria Patches
+screen.EUPHORIA_SETTINGS=§d配置 Euphoria Patches >
 screen.EUPHORIA_SETTINGS.comment=Euphoria Patches 为 Reimagined 额外添加的设置. §b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support
 
 screen.ATMOSPHERE=大气
