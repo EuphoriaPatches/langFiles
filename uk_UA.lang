@@ -626,6 +626,12 @@ value.RAINBOWS.0=ВИМК.
 value.RAINBOWS.1=Після дощу
 value.RAINBOWS.3=Завжди
 
+option.RAINBOW_STYLE_DEFINE=Стиль веселки
+option.RAINBOW_STYLE_DEFINE.comment=Керує стилем веселок. §e[*]§r «Поточний стиль» означає, що параметр автоматично керуватиметься параметром «Візуальний стиль» у головному меню налаштувань шейдера.
+value.RAINBOW_STYLE_DEFINE.-1=Поточний силь
+value.RAINBOW_STYLE_DEFINE.1=Переосмислений
+value.RAINBOW_STYLE_DEFINE.4=Непов'язаний
+
 option.AURORA_STYLE_DEFINE=Стиль полярного сяйва
 option.AURORA_STYLE_DEFINE.comment=Керує стилем полярного сяйва, яке з'являється на нічному небі.
 value.AURORA_STYLE_DEFINE.-1=Поточний стиль
@@ -1214,8 +1220,6 @@ screen.NEBULA_STAR_SETTINGS=Налаштування зірок туманнос
 
 screen.WORLD=Світ
 screen.WORLD.comment=Налаштування, які стосуються світу.
-screen.SPOOKY_SETTINGS=Налаштування страхоповнення
-screen.EYES_SETTINGS=Налаштування очей
 screen.BLOOD_MOON_SETTINGS=Налаштування кривавої Місяця
 screen.OVERWORLD_WORLD=Верхній світ
 screen.OVERWORLD_BEAM=Промені Верхнього світу
@@ -2244,18 +2248,6 @@ value.EMISSIVE_FLOWERS_TYPE.1=Холодні кольори
 value.EMISSIVE_FLOWERS_TYPE.2=Теплі кольори
 
 option.EMISSIVE_FLOWERS_STRENGTH=Інтенсивність сяяння
-
-option.SPOOKY=Страхоповнення
-option.SPOOKY.comment=Умикає багато страшних функцій :).
-option.EYES=Очі
-option.EYE_FREQUENCY=Частота очей
-option.EYE_SPEED=Швидкість очей
-option.EYE_RED_PROBABILITY=Ймовірність червоних очей
-option.BLOOD_MOON=Кривавий Місяця
-value.BLOOD_MOON.0=ВИМК.
-value.BLOOD_MOON.1=Повня
-value.BLOOD_MOON.2=Завжди ніч
-option.EMISSIVE_BLOOD_MOON_FLOWERS=Сяйні квіти кривавого Місяця
 
 option.DISTANCE_MIN_LIGHT=Зникання печерного освітлення
 option.DISTANCE_MIN_LIGHT.comment=Робить печери темнішими зі збільшенням відстані від гравця. Покращує зовнішній вигляд печер за допомогою вищого значення печерного освітлення.
