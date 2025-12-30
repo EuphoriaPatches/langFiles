@@ -2606,3 +2606,7 @@ value.EP_END_FLASH.2=Both
 
 option.MIRROR_TINTED_GLASS_OPAQUE=Opaque Tinted Glass
 option.MIRROR_TINTED_GLASS_OPAQUE.comment=Makes tinted glass blocks opaque (mainly for mirrors).
+
+option.COLORED_LIGHT_FOG_RAIN_I=Colored Light Fog Rain Intensity
+option.COLORED_LIGHT_FOG_RAIN_I.comment=Change the intensity of the colored light fog during rain.
+value.COLORED_LIGHT_FOG_RAIN_I.0=Default
