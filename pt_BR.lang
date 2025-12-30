@@ -626,6 +626,12 @@ value.RAINBOWS.0=DESATIVADO
 value.RAINBOWS.1=Após a Chuva
 value.RAINBOWS.3=Sempre
 
+option.RAINBOW_STYLE_DEFINE=Estilo do Arco-Íris
+option.RAINBOW_STYLE_DEFINE.comment=Define o estilo dos arco-íris. §e[*]§r "Definido pelo Estilo" significa que essa configuração será determinada automaticamente pela opção "Estilo Visual" no menu principal de Opções de Shader.
+value.RAINBOW_STYLE_DEFINE.-1=Definido pelo Estilo
+value.RAINBOW_STYLE_DEFINE.1=Reimaginado
+value.RAINBOW_STYLE_DEFINE.4=Sem Limites
+
 option.AURORA_STYLE_DEFINE=Estilo da Aurora Boreal
 option.AURORA_STYLE_DEFINE.comment=Determina o estilo das luzes do norte que aparecem no céu noturno.
 value.AURORA_STYLE_DEFINE.-1=Definido pelo Estilo
@@ -1214,8 +1220,6 @@ screen.NEBULA_STAR_SETTINGS=Configurações da Nebulosa Estelar
 
 screen.WORLD=Mundo
 screen.WORLD.comment=Configurações relacionadas ao mundo.
-screen.SPOOKY_SETTINGS=Configurações do Spooklementary
-screen.EYES_SETTINGS=Configurações dos Olhos
 screen.BLOOD_MOON_SETTINGS=Configurações da Lua de Sangue
 screen.OVERWORLD_WORLD=Overworld
 screen.OVERWORLD_BEAM=Feixes do Overworld
@@ -2244,19 +2248,7 @@ value.EMISSIVE_FLOWERS_TYPE.1=Cores Frias
 value.EMISSIVE_FLOWERS_TYPE.2=Cores Quentes
 
 option.EMISSIVE_FLOWERS_STRENGTH=Intensidade do Brilho
-
-option.SPOOKY=Spooklementary
-option.SPOOKY.comment=Ativa vários recursos assustadores :)
-option.EYES=Olhos
-option.EYE_FREQUENCY=Frequência dos Olhos
-option.EYE_SPEED=Velocidade dos Olhos
-option.EYE_RED_PROBABILITY=Probabilidade de Olhos Vermelhos
-option.BLOOD_MOON=Lua de Sangue
-value.BLOOD_MOON.0=DESLIGADO
-value.BLOOD_MOON.1=LIGADO - Lua Cheia
-value.BLOOD_MOON.2=LIGADO - Todas as Noites
-option.EMISSIVE_BLOOD_MOON_FLOWERS=Flores Emissivas da Lua de Sangue
-
+  
 option.DISTANCE_MIN_LIGHT=Escurecimento de Cavernas por Distância
 option.DISTANCE_MIN_LIGHT.comment=Deixa as cavernas mais escuras conforme aumenta a distância do jogador. Melhora o visual das cavernas com uma configuração de iluminação de caverna mais alta.
 value.DISTANCE_MIN_LIGHT.0=DESLIGADO
@@ -2615,8 +2607,6 @@ value.EP_END_FLASH.2=Ambos
 option.MIRROR_TINTED_GLASS_OPAQUE = Vidro Escurecido Opaco
 option.MIRROR_TINTED_GLASS_OPAQUE.comment = Deixa os blocos de vidro escurecido totalmente opacos (principalmente para uso como espelhos).
 
-
-
-
-
-
+option.COLORED_LIGHT_FOG_RAIN_I=Intensidade da Névoa de Luz Colorida (Chuva)
+option.COLORED_LIGHT_FOG_RAIN_I.comment=Ajusta o quão forte fica a névoa de luz colorida enquanto chove.
+value.COLORED_LIGHT_FOG_RAIN_I.0=Padrão
