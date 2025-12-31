@@ -1296,6 +1296,8 @@ screen.HORIZONTAL_NOISE_SETTINGS=Налаштування горизонталь
 screen.VERTICAL_SCREEN_DISPLACEMENT_SETTINGS=Налаштування вертикального переміщення екрана
 screen.PIXELATE_SCREEN_SETTINGS=Налаштування пікселізації
 screen.SCANLINE_SETTINGS=Налаштування сканування
+screen.DITHERING_SETTINGS=Налаштування розсипчастости
+screen.PALETTE_SETTINGS=Налаштування палітри
 screen.HALFTONE_SETTINGS=Налаштування півтону
 screen.SPEED_LINES_SETTINGS=Налаштування швидкости лінії
 screen.CAMERA_NOISE_OVERLAY_SETTINGS=Налаштування накладання шуму
@@ -2126,9 +2128,44 @@ value.VERTICAL_STUTTER_SPEED.0.00=ВИМК.
 option.VERTICAL_SCROLL_FREQUENCY=Частота прокрутки
 option.VERTICAL_STUTTER_FREQUENCY=Частота зависань
 
-option.PIXELATE_SCREEN=Піксельний
 option.PIXELATED_SCREEN_SIZE=Розмір пікселя
-option.PIXELATED_SCREEN_SMOOTHNESS=Гладкість
+option.PIXELATED_SCREEN_SIZE.comment=Умикає ефект пікселізації екрана та змінює розмір пікселів.
+значення.PIXELATED_SCREEN_SIZE.0=ВИМК.
+option.PIXELATED_SCREEN_SMOOTHNESS=Гладкість пікселів
+option.PIXELATED_SCREEN_SMOOTHNESS.comment=Змінює плавність ефекту піксельного екрана. Вищі значення посилюють змішування пікселів.
+option.COLOR_LEVELS=Постеризація
+option.COLOR_LEVELS.comment=Зменшує кількість кольорів у зображенні, щоб надати йому більш ретро вигляду.
+option.POSTERIZE_STRENGTH=Ступінь постеризації
+option.POSTERIZE_STRENGTH.comment=Змінює ступінь ефекту постеризації.
+value.POSTERIZE_STRENGTH.0.0=ВИМК.
+
+option.PALETTE_SWAP=Палітра
+option.PALETTE1R=Колір1 червоний
+option.PALETTE1G=Колір1 зелений
+option.PALETTE1B=Колір1 синій
+option.PALETTE2R=Колір2 червоний
+option.PALETTE2G=Колір2 зелений
+option.PALETTE2B=Колір2 синій
+option.PALETTE3R=Колір3 червоний
+option.PALETTE3G=Колір3 зелений
+option.PALETTE3B=Колір3 синій
+option.PALETTE4R=Колір4 червоний
+option.PALETTE4G=Колір4 зелений
+option.PALETTE4B=Колір4 синій
+option.PALETTE5R=Колір5 червоний
+option.PALETTE5G=Колір5 зелений
+option.PALETTE5B=Колір5 синій
+option.PALETTE6R=Колір6 червоний
+option.PALETTE6G=Колір6 зелений
+option.PALETTE6B=Колір6 синій
+option.USE_TEXTURE_PALETTE=Палітра текстур
+option.USE_TEXTURE_PALETTE.comment=Використовує зображення PNG палітри з теки palettes замість зображення налаштувань GUI.
+value.USE_TEXTURE_PALETTE.0=ВИМК.
+
+option.SCREEN_DITHERING=Розсипчастість
+option.SCREEN_DITHERING.comment=Додає розмитість до екрана, щоб імітувати більше кольорів, ніж дозволяє палітра.
+option.SCREEN_DITHER_AMOUNT=Кількітсь розсипчастости
+option.SCREEN_DITHER_I=Інтенсивність розсипчастости
 
 option.SCANLINE=Сканування
 value.SCANLINE.0=ВИМК.
@@ -2606,3 +2643,7 @@ value.EP_END_FLASH.2=Обидва
 
 option.MIRROR_TINTED_GLASS_OPAQUE=Непрозоре тоноване скло
 option.MIRROR_TINTED_GLASS_OPAQUE.comment=Робить блоки тонованого скла непрозорими (переважно для дзеркал).
+
+option.COLORED_LIGHT_FOG_RAIN_I=Інтен. дощу за кольор. світл. туману
+option.COLORED_LIGHT_FOG_RAIN_I.comment=Змінює інтенсивність кольорового світла туману під час дощу.
+value.COLORED_LIGHT_FOG_RAIN_I.0=Усталена
