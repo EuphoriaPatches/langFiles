@@ -424,8 +424,8 @@ option.CLOUD_B=云层 - 蓝色倍率
 option.CLOUD_UNBOUND_AMOUNT=云层数量
 option.CLOUD_UNBOUND_AMOUNT.comment=调节 Unbound 云层风格的云数量.
 
-option.CLOUD_UNBOUND_SIZE_MULT=云层大小
-option.CLOUD_UNBOUND_SIZE_MULT.comment=调节 Unbound 云层风格的云大小. 值越高云越小.
+option.CLOUD_UNBOUND_SIZE_MULT=云层大小 §c[-]§r
+option.CLOUD_UNBOUND_SIZE_MULT.comment=调节 Unbound 云层风格的云大小. 值越高云越小.  §c[-]§r 改变本设置会禁用 "玩家在相同服务器时同步云层动画" 功能.
 
 option.CLOUD_UNBOUND_RAIN_ADD=雨云增量
 option.CLOUD_UNBOUND_RAIN_ADD.comment=调节雨/雪天气时云层的增量.
@@ -1298,6 +1298,8 @@ screen.STATIC_NOISE_SETTINGS=静噪设置
 screen.HORIZONTAL_NOISE_SETTINGS=水平噪点设置
 screen.VERTICAL_SCREEN_DISPLACEMENT_SETTINGS=垂直屏幕偏移设置
 screen.PIXELATE_SCREEN_SETTINGS=像素化设置
+screen.DITHERING_SETTINGS=抖动设置
+screen.PALETTE_SETTINGS=色板设置
 screen.SCANLINE_SETTINGS=扫描线设置
 screen.HALFTONE_SETTINGS=半调设置
 screen.SPEED_LINES_SETTINGS=速度效果设置
@@ -2129,9 +2131,44 @@ value.VERTICAL_STUTTER_SPEED.0.00=关
 option.VERTICAL_SCROLL_FREQUENCY=滚动频率
 option.VERTICAL_STUTTER_FREQUENCY=卡顿频率
 
-option.PIXELATE_SCREEN=像素化
 option.PIXELATED_SCREEN_SIZE=像素大小
-option.PIXELATED_SCREEN_SMOOTHNESS=平滑度
+option.PIXELATED_SCREEN_SIZE.comment=激活一个屏幕像素化效果并且允许调节像素大小.
+value.PIXELATED_SCREEN_SIZE.0=关
+option.PIXELATED_SCREEN_SMOOTHNESS=像素平滑度
+option.PIXELATED_SCREEN_SMOOTHNESS.comment=调节屏幕像素化效果的平滑度. 值越高, 像素间越平滑融洽.
+option.COLOR_LEVELS=海报化
+option.COLOR_LEVELS.comment=减少图像中的颜色数量来创造更复古的图像效果.
+option.POSTERIZE_STRENGTH=海报化强度
+option.POSTERIZE_STRENGTH.comment=调节海报化效果的强度.
+value.POSTERIZE_STRENGTH.0.0=关
+
+option.PALETTE_SWAP=色板
+option.PALETTE1R=颜色1 红色
+option.PALETTE1G=颜色1 绿色
+option.PALETTE1B=颜色1 蓝色
+option.PALETTE2R=颜色2 红色
+option.PALETTE2G=颜色2 绿色
+option.PALETTE2B=颜色2 蓝色
+option.PALETTE3R=颜色3 红色
+option.PALETTE3G=颜色3 绿色
+option.PALETTE3B=颜色3 蓝色
+option.PALETTE4R=颜色4 红色
+option.PALETTE4G=颜色4 绿色
+option.PALETTE4B=颜色4 蓝色
+option.PALETTE5R=颜色5 红色
+option.PALETTE5G=颜色5 绿色
+option.PALETTE5B=颜色5 蓝色
+option.PALETTE6R=颜色6 红色
+option.PALETTE6G=颜色6 绿色
+option.PALETTE6B=颜色6 蓝色
+option.USE_TEXTURE_PALETTE=纹理调色板
+option.USE_TEXTURE_PALETTE.comment=使用调色板文件夹中的 PNG 色板文件而非自定义设置.
+value.USE_TEXTURE_PALETTE.0=关
+
+option.SCREEN_DITHERING=抖动
+option.SCREEN_DITHERING.comment=为屏幕图像添加抖动来模拟比调色板允许的更多的颜色.
+option.SCREEN_DITHER_AMOUNT=抖动量
+option.SCREEN_DITHER_I=抖动强度
 
 option.SCANLINE=扫描线
 value.SCANLINE.0=关
@@ -2609,3 +2646,7 @@ value.EP_END_FLASH.2=两者
 
 option.MIRROR_TINTED_GLASS_OPAQUE=不透明遮光玻璃
 option.MIRROR_TINTED_GLASS_OPAQUE.comment=使遮光玻璃方块不透明 (主要便于模拟镜子).
+
+option.COLORED_LIGHT_FOG_RAIN_I=彩色光雾强度 - 雨天
+option.COLORED_LIGHT_FOG_RAIN_I.comment=调节雨天时彩色光雾的亮度.
+value.COLORED_LIGHT_FOG_RAIN_I.0=默认
