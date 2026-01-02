@@ -421,8 +421,8 @@ option.CLOUD_B=Cloud Blue Multiplier
 option.CLOUD_UNBOUND_AMOUNT=Cloud Amount
 option.CLOUD_UNBOUND_AMOUNT.comment=Adjusts the amount of Unbound clouds.
 
-option.CLOUD_UNBOUND_SIZE_MULT=Cloud Smallness
-option.CLOUD_UNBOUND_SIZE_MULT.comment=Adjusts the size of Unbound clouds. Higher values produce smaller clouds.
+option.CLOUD_UNBOUND_SIZE_MULT=Cloud Smallness §c[-]§r
+option.CLOUD_UNBOUND_SIZE_MULT.comment=Adjusts the size of Unbound clouds. Higher values produce smaller clouds. §c[-]§r Changing this setting will disable the "sync clouds between players in the same server" feature of Complementary.
 
 option.CLOUD_UNBOUND_RAIN_ADD=Rain Cloud Addition
 option.CLOUD_UNBOUND_RAIN_ADD.comment=Adjusts the cloud amount increase that gets applied during rain/snow.
