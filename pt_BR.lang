@@ -421,8 +421,8 @@ option.CLOUD_B=Multiplicador de Azul das Nuvens
 option.CLOUD_UNBOUND_AMOUNT=Quantidade de Nuvens Sem Limites
 option.CLOUD_UNBOUND_AMOUNT.comment=Ajuda a ajustar a quantidade de nuvens do tipo "Sem Limites".
 
-option.CLOUD_UNBOUND_SIZE_MULT=Tamanho das Nuvens Sem Limites
-option.CLOUD_UNBOUND_SIZE_MULT.comment=Ajuda a ajustar o tamanho das nuvens "Sem Limites". Valores maiores produzem nuvens menores.
+option.CLOUD_UNBOUND_SIZE_MULT=Redução do Tamanho das Nuvens §c[-]§r
+option.CLOUD_UNBOUND_SIZE_MULT.comment=Ajusta o tamanho das nuvens livres. Valores maiores deixam as nuvens menores. §c[-]§r Alterar esta opção desativa o recurso "sincronizar nuvens entre jogadores no mesmo servidor" do Complementary.
 
 option.CLOUD_UNBOUND_RAIN_ADD=Aumento de Nuvens na Chuva
 option.CLOUD_UNBOUND_RAIN_ADD.comment=Define o aumento da quantidade de nuvens durante chuva/neve.
@@ -1295,6 +1295,8 @@ screen.STATIC_NOISE_SETTINGS=Configurações de Ruído Estático
 screen.HORIZONTAL_NOISE_SETTINGS=Configurações de Ruído Horizontal
 screen.VERTICAL_SCREEN_DISPLACEMENT_SETTINGS=Configurações de Deslocamento Vertical da Tela
 screen.PIXELATE_SCREEN_SETTINGS=Configurações de Pixelização
+screen.DITHERING_SETTINGS=Configurações de Dithering
+screen.PALETTE_SETTINGS=Configurações de Paleta
 screen.SCANLINE_SETTINGS=Configurações de Scanline
 screen.HALFTONE_SETTINGS=Configurações de Meio-Tom
 screen.SPEED_LINES_SETTINGS=Configurações de Linhas de Velocidade
@@ -2126,9 +2128,44 @@ value.VERTICAL_STUTTER_SPEED.0.00=DESLIGADO
 option.VERTICAL_SCROLL_FREQUENCY=Frequência de Rolagem
 option.VERTICAL_STUTTER_FREQUENCY=Frequência do Stutter
 
-option.PIXELATE_SCREEN=Pixelizar
 option.PIXELATED_SCREEN_SIZE=Tamanho do Pixel
-option.PIXELATED_SCREEN_SMOOTHNESS=Suavidade
+option.PIXELATED_SCREEN_SIZE.comment=Ativa um efeito de pixelização na tela e altera o tamanho dos pixels.
+value.PIXELATED_SCREEN_SIZE.0=DESLIGADO
+option.PIXELATED_SCREEN_SMOOTHNESS=Suavização dos Pixels
+option.PIXELATED_SCREEN_SMOOTHNESS.comment=Altera a suavidade do efeito de pixelização. Valores maiores fazem os pixels se misturarem mais.
+option.COLOR_LEVELS=Posterização
+option.COLOR_LEVELS.comment=Reduz a quantidade de cores da imagem para dar um visual mais retrô.
+option.POSTERIZE_STRENGTH=Intensidade da Posterização
+option.POSTERIZE_STRENGTH.comment=Define o quão forte é o efeito de posterização.
+value.POSTERIZE_STRENGTH.0.0=DESLIGADO
+
+option.PALETTE_SWAP=Paleta
+option.PALETTE1R=Color1 Red
+option.PALETTE1G=Color1 Green
+option.PALETTE1B=Color1 Blue
+option.PALETTE2R=Color2 Red
+option.PALETTE2G=Color2 Green
+option.PALETTE2B=Color2 Blue
+option.PALETTE3R=Color3 Red
+option.PALETTE3G=Color3 Green
+option.PALETTE3B=Color3 Blue
+option.PALETTE4R=Color4 Red
+option.PALETTE4G=Color4 Green
+option.PALETTE4B=Color4 Blue
+option.PALETTE5R=Color5 Red
+option.PALETTE5G=Color5 Green
+option.PALETTE5B=Color5 Blue
+option.PALETTE6R=Color6 Red
+option.PALETTE6G=Color6 Green
+option.PALETTE6B=Color6 Blue
+option.USE_TEXTURE_PALETTE=Paleta por Textura
+option.USE_TEXTURE_PALETTE.comment=Usa a imagem PNG da paleta na pasta palettes em vez da configurada na interface.
+value.USE_TEXTURE_PALETTE.0=Desligado
+
+option.SCREEN_DITHERING=Dithering
+option.SCREEN_DITHERING.comment=Adiciona dithering à tela para simular mais cores do que a paleta permite.
+option.SCREEN_DITHER_AMOUNT=Quantidade de Dithering
+option.SCREEN_DITHER_I=Intensidade do Dithering
 
 option.SCANLINE=Scanline
 value.SCANLINE.0=DESLIGADO
@@ -2610,3 +2647,4 @@ option.MIRROR_TINTED_GLASS_OPAQUE.comment = Deixa os blocos de vidro escurecido 
 option.COLORED_LIGHT_FOG_RAIN_I=Intensidade da Névoa de Luz Colorida (Chuva)
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Ajusta o quão forte fica a névoa de luz colorida enquanto chove.
 value.COLORED_LIGHT_FOG_RAIN_I.0=Padrão
+
