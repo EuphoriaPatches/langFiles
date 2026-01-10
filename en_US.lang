@@ -641,6 +641,7 @@ value.AURORA_STYLE_DEFINE.2=Unbound
 
 option.AURORA_CONDITION=Aurora C.
 option.AURORA_CONDITION.comment=Aurora Condition setting determines the condition(s) for the Aurora Borealis to appear. §e[*]§r Aurora Borealis will only appear during night regardless of this setting
+value.AURORA_CONDITION.-1=Always Except New Moon
 value.AURORA_CONDITION.0=Every Night
 value.AURORA_CONDITION.1=Full Moon
 value.AURORA_CONDITION.2=Snowy Biome
