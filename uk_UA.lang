@@ -641,6 +641,7 @@ value.AURORA_STYLE_DEFINE.2=Непов'язаний
 
 option.AURORA_CONDITION=Умови поляр. сяйва
 option.AURORA_CONDITION.comment=Умови стану полярного сяйва керує умовою(-ами) появи полярного сяйва. §e[*]§r Полярного сяйво з'являтиметься лише вночі незалежно від цього налаштування.
+value.AURORA_CONDITION.-1=Крім молодика
 value.AURORA_CONDITION.0=Щоночі
 value.AURORA_CONDITION.1=Повня
 value.AURORA_CONDITION.2=Сніжний біоми
