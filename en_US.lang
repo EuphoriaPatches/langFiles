@@ -2125,7 +2125,7 @@ option.SOUL_SAND_VALLEY_OVERHAUL=Soul Sand Valley Overhaul
 option.SOUL_SAND_VALLEY_OVERHAUL.comment=Makes fire related blocks, entities and particles blue in the soul sand valley.
 
 option.PURPLE_END_FIRE=Purple End Fire
-option.PURPLE_END_FIRE.comment=Makes fire related blocks, entities and particles purple in the End.
+option.PURPLE_END_FIRE.comment=Makes fire related blocks, entities and particles purple in the End. §e[*]§r RP Support option must be set to Integrated PBR+ for best results.
 
 option.NO_RAIN_ABOVE_CLOUDS=No Rain Above Clouds
 option.NO_RAIN_ABOVE_CLOUDS.comment=Disables rain above the clouds. Doesn't work well if the vanilla cloud height was changed with the vanilla clouds enabled.
@@ -2642,7 +2642,7 @@ value.NEBULA_MOON_CONDITION.3=Partial Moons
 value.NEBULA_MOON_CONDITION.4=Random
 
 option.END_CENTER_LIGHTING=End Center Lighting
-option.END_CENTER_LIGHTING.comment=Changes the lighting of the center of the End.
+option.END_CENTER_LIGHTING.comment=Changes the lighting of the center of the End. §e[*]§r This feature only works on 1.9+
 value.END_CENTER_LIGHTING.0=OFF
 
 option.END_CENTER_LIGHTING_R=Lighting - Red
