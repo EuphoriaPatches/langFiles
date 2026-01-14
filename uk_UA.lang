@@ -1423,7 +1423,8 @@ option.CLOUD_SHADOW_UNBOUND_SIZE=Розмір тіней хмар
 option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Змінює розмір тіні хмар.
 
 option.CLOUD_STRETCH=Висота хмар
-option.CLOUD_TRANSPARENCY=Прозорість хмар
+option.CLOUD_TRANSPARENCY=Непрозоріст хмар
+option.CLOUD_TRANSPARENCY.comment=Зінює непрозорість хмар.
 option.CLOUD_DIRECTION=Напрямок
 option.CLOUD_DIRECTION.comment=Змінює напрямок руху хмар.
 option.CLOUD_TEXTURE=Текстура хмар
@@ -1481,8 +1482,8 @@ option.CLOUD_UNBOUND_LAYER2_SIZE=Розмір 2 шару хмар
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Керує розміром непов'язаних хмар другого шару.
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=Кількість 2 шару хмар
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Керує кількістю непов'язаних хмар другого шару.
-option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=Прозорість 2 шару хмар
-option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=Керує прозорістю незв'язаних хмар другого шару.
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=Непрозорість 2 шару хмар
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=Керує непрозорістю незв'язаних хмар другого шару.
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.0=0.0
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.1=0.05
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.2=0.10
@@ -1508,7 +1509,8 @@ value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_REIMAGINED_LAYER2_HEIGHT=Висота 2 шару хмар
 option.CLOUD_REIMAGINED_LAYER2_HEIGHT.comment=керує висотою переосмислених хмар другого шару.
-option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=Прозорість 2 шару хмар
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=Непрозорість 2 шару хмар
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.comment=Керує непрозорістю переосмислених хмар другого шару.
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.0=0.0
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.1=0.05
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.2=0.10
@@ -2642,7 +2644,7 @@ value.NEBULA_MOON_CONDITION.3=Часткові Місяці
 value.NEBULA_MOON_CONDITION.4=Випадково
 
 option.END_CENTER_LIGHTING=Центральне освітлення Енду
-option.END_CENTER_LIGHTING.comment=Змінює освітлення центра Енду. §e[*]§r Працює лише на 1.9+
+option.END_CENTER_LIGHTING.comment=Змінює освітлення центра Енду. §e[*]§r Працює лише на Minecraft 1.9+.
 value.END_CENTER_LIGHTING.0=ВИМК.
 
 option.END_CENTER_LIGHTING_R=Червоний освітлення
