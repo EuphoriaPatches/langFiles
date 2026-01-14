@@ -1423,7 +1423,8 @@ option.CLOUD_SHADOW_UNBOUND_SIZE=Cloud Shadow Size
 option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Determines the size of the cloud shadows.
 
 option.CLOUD_STRETCH=Cloud Height
-option.CLOUD_TRANSPARENCY=Cloud Transparency
+option.CLOUD_TRANSPARENCY=Cloud Opacity
+option.CLOUD_TRANSPARENCY.comment=Changes the opacity of the clouds.
 option.CLOUD_DIRECTION=Cloud Direction
 option.CLOUD_DIRECTION.comment=Changes the direction in which the clouds move.
 option.CLOUD_TEXTURE=Minecraft Cloud Texture
@@ -1481,8 +1482,8 @@ option.CLOUD_UNBOUND_LAYER2_SIZE=Cloud Layer 2 Size
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Determines the size of the second layer of unbound clouds.
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=Cloud Layer 2 Amount
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Determines the amount of the second layer of unbound clouds.
-option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=Cloud Layer 2 Transparency
-option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=Determines the transparency of the second layer of unbound clouds.
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=Cloud Layer 2 Opacity
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=Determines the opacity of the second layer of unbound clouds.
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.0=0.0
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.1=0.05
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.2=0.10
@@ -1508,7 +1509,8 @@ value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_REIMAGINED_LAYER2_HEIGHT=Cloud Layer 2 Height
 option.CLOUD_REIMAGINED_LAYER2_HEIGHT.comment=Determines the height of the second layer of reimagined clouds.
-option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=Cloud Layer 2 Transparency
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=Cloud Layer 2 Opacity
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.comment=Determines the opacity of the second layer of reimagined clouds.
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.0=0.0
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.1=0.05
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.2=0.10
@@ -2642,7 +2644,7 @@ value.NEBULA_MOON_CONDITION.3=Partial Moons
 value.NEBULA_MOON_CONDITION.4=Random
 
 option.END_CENTER_LIGHTING=End Center Lighting
-option.END_CENTER_LIGHTING.comment=Changes the lighting of the center of the End. §e[*]§r This feature only works on 1.9+
+option.END_CENTER_LIGHTING.comment=Changes the lighting of the center of the End. §e[*]§r This feature only works on Minecraft 1.9+
 value.END_CENTER_LIGHTING.0=OFF
 
 option.END_CENTER_LIGHTING_R=Lighting - Red
