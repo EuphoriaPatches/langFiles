@@ -640,7 +640,8 @@ value.AURORA_STYLE_DEFINE.1=Reimagined
 value.AURORA_STYLE_DEFINE.2=Unbound
 
 option.AURORA_CONDITION=Condição da Aurora
-option.AURORA_CONDITION.comment=A configuração da Condição da Aurora determina a(s) condição(ões) para a Aurora Boreal aparecer. §e[*]§r A Aurora Boreal só aparecerá durante a noite, independentemente desta configuração
+option.AURORA_CONDITION.comment=A configuração da Condição da Aurora determina a(s) condição(ões) para a Aurora Boreal aparecer. §e[*]§r A Aurora Boreal só aparecerá durante a noite, independentemente desta configuração.
+value.AURORA_CONDITION.-1=Sempre (exceto Lua Nova)
 value.AURORA_CONDITION.0=Todas as Noites
 value.AURORA_CONDITION.1=Lua Cheia
 value.AURORA_CONDITION.2=Bioma Nevado
@@ -1192,6 +1193,7 @@ screen.ATMOSPHERE=Atmosfera
 screen.ATMOSPHERE.comment=Configurações relacionadas à atmosfera.
 screen.CLOUDS=Nuvens
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Nuvens Reimaginadas
+screen.CLOUD_REIMAGINED_SECOND_LAYER_SETTINGS=Camada Secundária de Nuvens
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Nuvens Sem Limites
 screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Nuvens Duplas Sem Limites
 screen.CLOUD_SHADING_SETTINGS=Sombreamento das Nuvens
@@ -1421,7 +1423,8 @@ option.CLOUD_SHADOW_UNBOUND_SIZE=Tamanho da Sombra das Nuvens
 option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Determina o tamanho das sombras
 
 option.CLOUD_STRETCH=Altura das Nuvens
-option.CLOUD_TRANSPARENCY=Transparência das Nuvens
+option.CLOUD_TRANSPARENCY=Opacidade das Nuvens
+option.CLOUD_TRANSPARENCY.comment=Altera a opacidade das nuvens.
 option.CLOUD_DIRECTION=Direção das Nuvens
 option.CLOUD_DIRECTION.comment=Altera a direção em que as nuvens se movem.
 option.CLOUD_TEXTURE=Textura das Nuvens do Minecraft
@@ -1470,15 +1473,65 @@ option.HIGH_QUALITY_CLOUDS.comment=Aumenta a qualidade das nuvens mais que o pos
 
 option.CLOUD_LAYER2_SPEED_MULT=Cloud Layer 2 Speed Multiplier
 
-option.DOUBLE_UNBOUND_CLOUDS=Double Unbound Clouds
-option.DOUBLE_UNBOUND_CLOUDS.comment=Enables a second layer of unbound clouds to be rendered. §c[-]§r This setting can impact performance.
-option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Cloud Layer 2 Altitude
-option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Determines the world height which the second layer clouds will appear at.
-option.CLOUD_UNBOUND_LAYER2_HEIGHT=Cloud Layer 2 Height
-option.CLOUD_UNBOUND_LAYER2_SIZE=Cloud Layer 2 Size
-option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Determines the size of the second layer clouds.
-option.CLOUD_UNBOUND_LAYER2_AMOUNT=Cloud Layer 2 Amount
-option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Determines the amount of the second layer clouds.
+option.DOUBLE_UNBOUND_CLOUDS=Nuvens Unbound Duplas
+option.DOUBLE_UNBOUND_CLOUDS.comment=Ativa a renderização de uma segunda camada de nuvens livres. §c[-]§r Esta configuração pode impactar o desempenho.
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Altitude da Camada de Nuvens 2
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Define a altura do mundo em que a segunda camada de nuvens aparecerá.
+option.CLOUD_UNBOUND_LAYER2_HEIGHT=Altura da Camada de Nuvens 2
+option.CLOUD_UNBOUND_LAYER2_SIZE=Tamanho da Camada de Nuvens 2
+option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Define o tamanho da segunda camada de nuvens do Unbound.
+option.CLOUD_UNBOUND_LAYER2_AMOUNT=Quantidade da Camada de Nuvens 2
+option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Define a quantidade da segunda camada de nuvens livres.
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=Opacidade da Camada de Nuvens 2
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=Define a opacidade da segunda camada de nuvens Unbound.
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.0=0.0
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.1=0.05
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.2=0.10
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.3=0.15
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.4=0.20
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.5=0.25
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.6=0.30
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.7=0.35
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.8=0.40
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.9=0.45
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.10=0.50
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.11=0.55
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.12=0.60
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.13=0.65
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.14=0.70
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.15=0.75
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.16=0.80
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.17=0.85
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.18=0.90
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.19=0.95
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.20=1.00
+
+
+option.CLOUD_REIMAGINED_LAYER2_HEIGHT=Altura da Camada de Nuvens 2
+option.CLOUD_REIMAGINED_LAYER2_HEIGHT.comment=Define a altura da segunda camada de nuvens reimaginadas.
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=Opacidade da Camada de Nuvens 2
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.comment=Define a opacidade da segunda camada de nuvens reimaginadas.
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.0=0.0
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.1=0.05
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.2=0.10
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.3=0.15
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.4=0.20
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.5=0.25
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.6=0.30
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.7=0.35
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.8=0.40
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.9=0.45
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.10=0.50
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.11=0.55
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.12=0.60
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.13=0.65
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.14=0.70
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.15=0.75
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.16=0.80
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.17=0.85
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.18=0.90
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.19=0.95
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_SUN_MOON_SHADING=Sombreamento do Sol/Lua
 option.CLOUD_SUN_MOON_SHADING.comment=Ativa o sombreamento do sol e da lua nas nuvens.
@@ -2074,7 +2127,7 @@ option.SOUL_SAND_VALLEY_OVERHAUL=Reforma do Vale da Areia das Almas
 option.SOUL_SAND_VALLEY_OVERHAUL.comment=Deixa blocos, entidades e partículas de fogo azuis no vale da areia das almas.
 
 option.PURPLE_END_FIRE=Fogo Roxo do End
-option.PURPLE_END_FIRE.comment=Deixa blocos, entidades e partículas de fogo roxos no End.
+option.PURPLE_END_FIRE.comment=Torna roxos os blocos, entidades e partículas relacionadas ao fogo no End. §e[*]§r A opção de suporte a RP deve estar definida como PBR+ Integrado para melhores resultados.
 
 option.NO_RAIN_ABOVE_CLOUDS=Sem Chuva Acima das Nuvens
 option.NO_RAIN_ABOVE_CLOUDS.comment=Desativa a chuva acima das nuvens. Não funciona bem se a altura das nuvens vanilla foi alterada com as nuvens vanilla ativadas.
@@ -2591,7 +2644,7 @@ value.NEBULA_MOON_CONDITION.3=Luas Parciais
 value.NEBULA_MOON_CONDITION.4=Aleatório
 
 option.END_CENTER_LIGHTING=Iluminação Central do End
-option.END_CENTER_LIGHTING.comment=Altera a iluminação do centro do End.
+option.END_CENTER_LIGHTING.comment=Altera a iluminação do centro do End. §e[*]§r Este recurso funciona apenas no Minecraft 1.9+.
 value.END_CENTER_LIGHTING.0=DESLIGADO
 
 option.END_CENTER_LIGHTING_R=Iluminação - Vermelho
@@ -2647,4 +2700,3 @@ option.MIRROR_TINTED_GLASS_OPAQUE.comment = Deixa os blocos de vidro escurecido 
 option.COLORED_LIGHT_FOG_RAIN_I=Intensidade da Névoa de Luz Colorida (Chuva)
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Ajusta o quão forte fica a névoa de luz colorida enquanto chove.
 value.COLORED_LIGHT_FOG_RAIN_I.0=Padrão
-
