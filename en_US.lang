@@ -2642,6 +2642,7 @@ value.NEBULA_MOON_CONDITION.1=New Moon
 value.NEBULA_MOON_CONDITION.2=Full Moon
 value.NEBULA_MOON_CONDITION.3=Partial Moons
 value.NEBULA_MOON_CONDITION.4=Random
+value.NEBULA_MOON_CONDITION.5=Always Except New Moon
 
 option.END_CENTER_LIGHTING=End Center Lighting
 option.END_CENTER_LIGHTING.comment=Changes the lighting of the center of the End. §e[*]§r This feature only works on Minecraft 1.9+
