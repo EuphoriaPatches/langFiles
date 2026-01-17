@@ -1462,8 +1462,8 @@ option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplica o brilho do lado iluminado das 
 option.CLOUD_AMBIENT_MULTIPLIER=Multiplicador de Luz Ambiente das Nuvens
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Multiplica o brilho do lado de luz ambiente das nuvens.
 
-option.ROTATE_REIMAGINED_CLOUDS_90=Girar Nuvens em 90°
-option.ROTATE_REIMAGINED_CLOUDS_90.comment=Gira as nuvens reimaginadas em 90 graus.
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Girar Nuvens em 90°
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Gira as nuvens reimaginadas em 90 graus.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Remover a Quantidades de nuvens á noiteRemove Night Clouds Amount
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Quantidade de nuvens que são removidas durante á noite
@@ -2338,7 +2338,7 @@ value.EMISSIVE_FLOWERS_TYPE.1=Cores Frias
 value.EMISSIVE_FLOWERS_TYPE.2=Cores Quentes
 
 option.EMISSIVE_FLOWERS_STRENGTH=Intensidade do Brilho
-  
+
 option.DISTANCE_MIN_LIGHT=Escurecimento de Cavernas por Distância
 option.DISTANCE_MIN_LIGHT.comment=Deixa as cavernas mais escuras conforme aumenta a distância do jogador. Melhora o visual das cavernas com uma configuração de iluminação de caverna mais alta.
 value.DISTANCE_MIN_LIGHT.0=DESLIGADO

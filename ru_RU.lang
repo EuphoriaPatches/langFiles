@@ -1428,8 +1428,8 @@ option.CLOUD_LIGHT_MULTIPLIER.comment=Увеличивает яркость ос
 option.CLOUD_AMBIENT_MULTIPLIER=Множитель окружающего света в облаках
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Увеличивает яркость стороны облаков, освещённой окружающим светом.
 
-option.ROTATE_REIMAGINED_CLOUDS_90=Повернуть облака на 90°
-option.ROTATE_REIMAGINED_CLOUDS_90.comment=Поворачивает облака Reimagined на 90 градусов.
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Повернуть облака на 90°
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Поворачивает облака Reimagined на 90 градусов.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Удаление ночных облаков
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Процент облаков, удаляемых ночью.

@@ -1462,8 +1462,8 @@ option.CLOUD_LIGHT_MULTIPLIER.comment=Збільшує яскравість ст
 option.CLOUD_AMBIENT_MULTIPLIER=Множник навколишнього освітлення хмар
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Збільшує яскравість сторони зовнішнього освітлення хмар.
 
-option.ROTATE_REIMAGINED_CLOUDS_90=Обернути хмари на 90°
-option.ROTATE_REIMAGINED_CLOUDS_90.comment=Обертає переосмислені хмари на 90 градусів.
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Обернути хмари на 90°
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Обертає переосмислені хмари на 90 градусів.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Видалити кі-сть хмар уночі
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Кількість хмар, які видаляються протягом ночі.

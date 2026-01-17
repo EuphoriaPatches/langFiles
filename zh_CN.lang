@@ -1464,8 +1464,8 @@ option.CLOUD_LIGHT_MULTIPLIER.comment=云层亮面的亮度倍率.
 option.CLOUD_AMBIENT_MULTIPLIER=云层亮度 - 环境光面
 option.CLOUD_AMBIENT_MULTIPLIER.comment=云层仅受环境光影响一侧的亮度倍率.
 
-option.ROTATE_REIMAGINED_CLOUDS_90=90°旋转云图
-option.ROTATE_REIMAGINED_CLOUDS_90.comment=旋转 Reimagined 风格云层 90°.
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW=90°旋转云图
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=旋转 Reimagined 风格云层 90°.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=夜晚云层消除强度
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=在夜晚时云层被消除的数量.
