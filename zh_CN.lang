@@ -820,7 +820,7 @@ option.IPBR_PARTICLE_FEATURES=集成PBR+粒子功能
 option.IPBR_PARTICLE_FEATURES.comment=启用粒子的多个集成PBR+功能, 包括岩浆的发光粒子和有更好颜色的水粒子等.
 
 option.FANCY_GLASS=更好的玻璃
-option.FANCY_GLASS.comment=通过在普通玻璃上增加一个半透明层来增加质感. §c[-]§r 在较旧版本的 Iris 上不生效.  §e[*]§r 资源包支持选项需设置为集成PBR+.
+option.FANCY_GLASS.comment=通过在普通玻璃上增加一个半透明层来增加质感. §c[-]§r 在较旧版本的 Iris 上不生效. §e[*]§r 资源包支持选项需设置为集成PBR+.
 
 option.GREEN_SCREEN_LIME=绿幕 - 黄绿色方块
 option.GREEN_SCREEN_LIME.comment=把 黄绿色混凝土, 黄绿色羊毛, 黄绿色地毯 转换为便于视频剪辑的绿幕. 提示一: 关闭泛光以提高和其他区域的分离程度. 提示二: 在黄绿色地毯下放置光源. 提示三: 可以关闭抗锯齿 (FXAA) 并且在性能设置里把细节质量设置为极低来禁用所有的过滤, 以得到完美像素分离效果.
@@ -1426,7 +1426,8 @@ option.CLOUD_SHADOW_UNBOUND_SIZE=云影尺寸
 option.CLOUD_SHADOW_UNBOUND_SIZE.comment=调节云层阴影的大小.
 
 option.CLOUD_STRETCH=云块高度
-option.CLOUD_TRANSPARENCY=云层透明度
+option.CLOUD_TRANSPARENCY=云层不透明度
+option.CLOUD_TRANSPARENCY.comment=调节云层不透明度.
 option.CLOUD_DIRECTION=云层流动方向
 option.CLOUD_DIRECTION.comment=改变云层移动的方向.
 option.CLOUD_TEXTURE=Minecraft 云层分布图
@@ -1485,8 +1486,8 @@ option.CLOUD_UNBOUND_LAYER2_SIZE=第二层 Unbond 云层自身大小
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=决定第二层 Unbond 云层自身大小.
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=第二层 Unbond 云层数量
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=决定第二层 Unbond 云层的数量.
-option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=第二层 Unbond 云层透明度
-option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=决定第二层 Unbond 云层的透明度.
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=第二层 Unbond 云层不透明度
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=决定第二层 Unbond 云层的不透明度.
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.0=0.0
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.1=0.05
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.2=0.10
@@ -1511,8 +1512,8 @@ value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_REIMAGINED_LAYER2_HEIGHT=第二云层自身高度
 option.CLOUD_REIMAGINED_LAYER2_HEIGHT.comment=决定第二 Reimagined 云层自身高度
-option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=第二层 Reimagined 云层透明度
-option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.comment=决定第二 Reimagined 云层的透明度.
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=第二层 Reimagined 云层不透明度
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.comment=决定第二 Reimagined 云层的不透明度.
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.0=0.0
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.1=0.05
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.2=0.10
@@ -1537,6 +1538,10 @@ value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_SUN_MOON_SHADING=日月对云层照明
 option.CLOUD_SUN_MOON_SHADING.comment=启用太阳和月亮对云层的照明效果.
+value.CLOUD_SUN_MOON_SHADING.0=关
+value.CLOUD_SUN_MOON_SHADING.1=仅月亮
+value.CLOUD_SUN_MOON_SHADING.2=仅太阳
+value.CLOUD_SUN_MOON_SHADING.3=两者
 
 option.END_SMOKE=末地烟云
 option.END_SMOKE.comment=有人纵火, 所以现在末地上下层虚空都有烟云.
@@ -2644,6 +2649,7 @@ value.NEBULA_MOON_CONDITION.1=新月
 value.NEBULA_MOON_CONDITION.2=满月
 value.NEBULA_MOON_CONDITION.3=其他月相
 value.NEBULA_MOON_CONDITION.4=随机
+value.NEBULA_MOON_CONDITION.5=除新月之外的每个月相
 
 option.END_CENTER_LIGHTING=末地中心光源
 option.END_CENTER_LIGHTING.comment=更改末地中心的照明效果. §e[*]§r 本选项仅在 MC 1.9+ 的版本中生效.
@@ -2702,3 +2708,11 @@ option.MIRROR_TINTED_GLASS_OPAQUE.comment=使遮光玻璃方块不透明 (主要
 option.COLORED_LIGHT_FOG_RAIN_I=彩色光雾强度 - 雨天
 option.COLORED_LIGHT_FOG_RAIN_I.comment=调节雨天时彩色光雾的亮度.
 value.COLORED_LIGHT_FOG_RAIN_I.0=默认
+
+option.BLOOD_MOON=血月
+value.BLOOD_MOON.0=关
+value.BLOOD_MOON.1=每天
+suffix.BLOOD_MOON=天1次
+option.BLOOD_MOON.comment=启用血月, 由玩家设定每次血月出现的间隔天数.
+option.EMISSIVE_BLOOD_MOON_FLOWERS=血月红花发光
+option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=血月期间使红色花朵发光. §e[*]§r 资源包支持选项需设置为集成PBR+.
