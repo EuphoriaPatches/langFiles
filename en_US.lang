@@ -1535,6 +1535,10 @@ value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_SUN_MOON_SHADING=Sun/Moon Shading
 option.CLOUD_SUN_MOON_SHADING.comment=Enables shading for the sun and moon on the clouds.
+value.CLOUD_SUN_MOON_SHADING.0=OFF
+value.CLOUD_SUN_MOON_SHADING.1=Moon Only
+value.CLOUD_SUN_MOON_SHADING.2=Sun Only
+value.CLOUD_SUN_MOON_SHADING.3=Both
 
 option.END_SMOKE=End Smoke
 option.END_SMOKE.comment=Someone left the fire unattended and now the End has smoke in the upper and lower void.
@@ -2701,3 +2705,11 @@ option.MIRROR_TINTED_GLASS_OPAQUE.comment=Makes tinted glass blocks opaque (main
 option.COLORED_LIGHT_FOG_RAIN_I=Colored Light Fog Rain Intensity
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Change the intensity of the colored light fog during rain.
 value.COLORED_LIGHT_FOG_RAIN_I.0=Default
+
+option.BLOOD_MOON=Blood Moon
+value.BLOOD_MOON.0=OFF
+value.BLOOD_MOON.1=1 Minecraft Night
+suffix.BLOOD_MOON=\ Minecraft Nights
+option.BLOOD_MOON.comment=Enables Blood Moons that occur the amount of Minecraft days the user has set in this option.
+option.EMISSIVE_BLOOD_MOON_FLOWERS=Emissive Blood Moon Flowers
+option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Makes red flowers glow during Blood Moons. §e[*]§r RP Support option must be set to Integrated PBR+.
