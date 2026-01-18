@@ -1535,6 +1535,10 @@ value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_SUN_MOON_SHADING=Затінення Сонця та Місяця
 option.CLOUD_SUN_MOON_SHADING.comment=Умикає затінення сонця та місяця на хмарах.
+value.CLOUD_SUN_MOON_SHADING.0=ВИМК.
+value.CLOUD_SUN_MOON_SHADING.1=Лише Місяць
+value.CLOUD_SUN_MOON_SHADING.2=Лише Сонце
+value.CLOUD_SUN_MOON_SHADING.3=УВІМК.
 
 option.END_SMOKE=Дим
 option.END_SMOKE.comment=О ні, хтось залишив вогонь без нагляду, і тепер Енд димить згори і знизу!
@@ -2642,6 +2646,7 @@ value.NEBULA_MOON_CONDITION.1=Молодик
 value.NEBULA_MOON_CONDITION.2=Повня
 value.NEBULA_MOON_CONDITION.3=Часткові Місяці
 value.NEBULA_MOON_CONDITION.4=Випадково
+value.NEBULA_MOON_CONDITION.5=Завжди, крім молодика
 
 option.END_CENTER_LIGHTING=Центральне освітлення Енду
 option.END_CENTER_LIGHTING.comment=Змінює освітлення центра Енду. §e[*]§r Працює лише на Minecraft 1.9+.
@@ -2700,3 +2705,11 @@ option.MIRROR_TINTED_GLASS_OPAQUE.comment=Робить блоки тонован
 option.COLORED_LIGHT_FOG_RAIN_I=Інтен. дощу за кольор. світл. туману
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Змінює інтенсивність кольорового світла туману під час дощу.
 value.COLORED_LIGHT_FOG_RAIN_I.0=Усталена
+
+option.BLOOD_MOON=Кривавий місяць
+value.BLOOD_MOON.0=ВИМК.
+value.BLOOD_MOON.1=1 ігрова ніч
+suffix.BLOOD_MOON=\ ігрових ночей
+option.BLOOD_MOON.comment=Умикає криваві місяці, які відбуваються протягом кількости днів Minecraft, які користувач встановив у цьому параметрі.
+option.EMISSIVE_BLOOD_MOON_FLOWERS=Випром. квіти кривавого Місяця
+option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Змушує червоні квіти світитися під час кривавих Місяців. §e[*]§r Для параметра «Підтримка ПР» має бути встановлено значення Integrated PBR+.
