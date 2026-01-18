@@ -166,6 +166,9 @@ screen.COLORGRADING_SETTINGS.comment=Settings to mix up the final color channels
 screen.WORLD_BLUR_SETTINGS=World Blur
 screen.WORLD_BLUR_SETTINGS.comment=Settings that relate to fancy world blurring effects.
 
+screen.TAA_SETTINGS=Temporal Filter Settings
+screen.TAA_SETTINGS.comment=Settings to determine the behaviour of temporal anti aliasing.
+
 screen.MATERIAL_SETTINGS=Materials
 screen.MATERIAL_SETTINGS.comment=Settings that are related to the materials of Minecraft.
 
@@ -197,8 +200,8 @@ screen.RAIN_LIGHT_MULTS=Rainy Weather
 screen.NETHER_LIGHT_MULTS=The Nether Dimension
 screen.END_LIGHT_MULTS=The End Dimension
 
-screen.BLOCKLIGHT_COLOR_SETTINGS=Blocklight Color §e[*]§r
-screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Settings to adjust the color emitted from light source blocks. §e[*]§r These color settings won't affect most lights if the Advanced Color Tracing setting is enabled, except for the Blocklight Intensity slider.
+screen.BLOCKLIGHT_SETTINGS=Blocklight §e[*]§r
+screen.BLOCKLIGHT_SETTINGS.comment=Settings to adjust the lighting emitted from light source blocks. §e[*]§r The red/green/blue color settings won't affect most lights if the Advanced Color Tracing setting is enabled.
 
 screen.MOON_PHASE_INF_SETTINGS=Moon Phase Influence
 screen.MOON_PHASE_INF_SETTINGS.comment=Settings to determine how different moon phases affect the night lighting.
@@ -351,11 +354,11 @@ value.WORLD_SPACE_PLAYER_REF.1=ON
 
 option.SSAO_I=Edge Shadow Intensity (SSAO)
 option.SSAO_I.comment=Determines the strength of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. §e[*]§r This setting won't work if SSAO is disabled in "Performance Settings".
-value.SSAO_I.0=§cOFF
+value.SSAO_I.0=OFF
 
 option.VANILLAAO_I=Edge Shadow Intensity (Vanilla)
 option.VANILLAAO_I.comment=Determines the strength of Minecraft's ambient occlusion which adds extra ambient shadowing to the edges of the scene.
-value.VANILLAAO_I.0=§cOFF
+value.VANILLAAO_I.0=OFF
 
 option.BORDER_FOG=Border Fog
 option.BORDER_FOG.comment=Intense fog on the edges of the loaded world to hide chunk borders. §e[*]§r It's recommended to disable Border Fog when playing with less than 8 chunks of render distance.
@@ -378,7 +381,7 @@ option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
 
 option.LIGHTSHAFT_BEHAVIOUR=Light Shaft Mode
 option.LIGHTSHAFT_BEHAVIOUR.comment=Determines the behaviour of light shafts. §a[+]§r Scene Aware Light Shafts automatically transition between regular and extreme modes to provide the best results. §c[-]§r Extreme mode is not recommended for general gameplay, and it can severely impact performance.
-value.LIGHTSHAFT_BEHAVIOUR.0=§cOFF
+value.LIGHTSHAFT_BEHAVIOUR.0=OFF
 value.LIGHTSHAFT_BEHAVIOUR.1=Scene Aware §a[+]
 value.LIGHTSHAFT_BEHAVIOUR.2=Regular
 value.LIGHTSHAFT_BEHAVIOUR.3=Extreme §c[-]
@@ -393,10 +396,13 @@ option.LIGHTSHAFT_DAY_I=Light Shaft Day Multiplier
 option.LIGHTSHAFT_NIGHT_I=Light Shaft Night Multiplier
 option.LIGHTSHAFT_RAIN_I=Light Shaft Rain Multiplier
 
+option.LIGHTSHAFT_SUNSET_SATURATION=Light Shaft Sunset Color
+option.LIGHTSHAFT_SUNSET_SATURATION.comment=Adjusts the extra color saturation given to the color of light shafts at sunrise and sunset times. Higher values are going to produce a red-ish orange, while lower values are going to shift it towards yellow.
+
 option.CLOUD_STYLE_DEFINE=Cloud Style
 option.CLOUD_STYLE_DEFINE.comment=Determines the style of clouds. §e[*]§r "Set by Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options. §e[*]§r The "Vanilla" style requires clouds to be enabled in Video Settings.
 value.CLOUD_STYLE_DEFINE.-1=Set by Style
-value.CLOUD_STYLE_DEFINE.0=§cOFF
+value.CLOUD_STYLE_DEFINE.0=OFF
 value.CLOUD_STYLE_DEFINE.1=Reimagined
 value.CLOUD_STYLE_DEFINE.3=Unbound
 value.CLOUD_STYLE_DEFINE.50=Vanilla §e[*]
@@ -609,8 +615,8 @@ value.SUN_MOON_STYLE_DEFINE.3=Unbound - Smaller
 option.SUN_MOON_HORIZON=Sun/Moon Horizon
 option.SUN_MOON_HORIZON.comment=Prevents the sun/moon from appearing below the horizon line.
 
-option.SUN_MOON_DURING_RAIN=Sun/Moon During Rain
-option.SUN_MOON_DURING_RAIN.comment=Determines if the sun and moon will be visible during rain or not.
+option.SUN_MOON_DURING_RAIN=Sun/Moon During Rain. §e[*]§r
+option.SUN_MOON_DURING_RAIN.comment=Determines if the sun and moon will be visible during rain or not. §e[*]§r This setting also changes the balance of lighting during rain.
 
 option.NIGHT_STAR_AMOUNT=Night Star Amount
 option.NIGHT_STAR_AMOUNT.comment=Determines the amount of stars in the night sky.
@@ -635,7 +641,7 @@ value.RAINBOW_STYLE_DEFINE.4=Unbound
 option.AURORA_STYLE_DEFINE=Aurora Borealis Style
 option.AURORA_STYLE_DEFINE.comment=Determines the style of northern lights that appear in the night sky.
 value.AURORA_STYLE_DEFINE.-1=Set by Style
-value.AURORA_STYLE_DEFINE.0=§cOFF
+value.AURORA_STYLE_DEFINE.0=OFF
 value.AURORA_STYLE_DEFINE.1=Reimagined
 value.AURORA_STYLE_DEFINE.2=Unbound
 
@@ -748,11 +754,41 @@ value.LENSFLARE_MODE.2=§cSun & Moon
 option.LENSFLARE_I=Lens Flare Intensity
 option.LENSFLARE_I.comment=Adjusts the strength of the Lens Flare effect.
 
-option.TAA_MODE=§eTemporal Filter§r
-option.TAA_MODE.comment=Determines the behaviour of temporal anti aliasing. Smart & Subtle §a[+]§r: Temporal filter is applied in small amounts to the image in a way that won't cause artifacts. Intense §e[*]§r: Provides better anti-aliasing, but it will cause extra smudging and flickering; it might be the better choice at a higher frame rate and resolution. OFF §c[-]§r: Turning this off will cause worse performance and worse effect quality.
-value.TAA_MODE.1=Smart & Subtle §a[+]
-value.TAA_MODE.2=Intense §e[*]
+option.TAA_MODE=§eTemporal Filtering§r
+option.TAA_MODE.comment=Enables temporal anti aliasing which helps smooth out grainy effects, improves performance by reducing the sample counts of some heavier effects, and can reduce aliasing with the right settings. §c[-]§r: Turning this off will cause worse performance and worse effect quality.
 value.TAA_MODE.0=§cOFF [-]
+value.TAA_MODE.1=ON §a[+]
+
+option.TAA_SMOOTHING=Temporal Smoothing
+option.TAA_SMOOTHING.comment=Adjusts the amount of smoothing that the Temporal Filter will apply. Higher values produce a blurrier image but reduce flickering and graining. The difference won't be noticeable when standing still.
+value.TAA_SMOOTHING.2=Low
+value.TAA_SMOOTHING.3=Medium
+value.TAA_SMOOTHING.4=High
+
+option.TAA_JITTER=Temporal Jitter §e[*]§r
+option.TAA_JITTER.comment=Jittering helps the Temporal Filter to better anti-aliase the image, but has some drawbacks. §e[*]§r Higher values will improve anti-aliasing, but will also cause a lot of flickering and blur at the same time. §e[*]§r High Temporal Smoothing is recommended with Full jitter. §c[-]§r Turning jitter off will eliminate anti-aliasing benefits.
+value.TAA_JITTER.0=OFF §c[-]
+value.TAA_JITTER.1=Low
+value.TAA_JITTER.2=Medium
+value.TAA_JITTER.3=Full §e[*]
+
+option.TAA_MOVEMENT_IMPROVEMENT_FILTER=Catmull-Rom Sampling
+option.TAA_MOVEMENT_IMPROVEMENT_FILTER.comment=Reduces the blurriness of Temporal Filter by using a more advanced sampling method.
+value.TAA_MOVEMENT_IMPROVEMENT_FILTER.0=OFF §c[-]
+value.TAA_MOVEMENT_IMPROVEMENT_FILTER.1=ON
+
+option.FXAA_STRENGTH=FXAA Strength
+option.FXAA_STRENGTH.comment=Adjusts the intensity of the FXAA effect. Higher values will produce better anti-aliasing at the cost of a blurrier image.
+value.FXAA_STRENGTH.-1=OFF
+
+option.FXAA_TAA_INTERACTION=Reduce FXAA While Moving
+option.FXAA_TAA_INTERACTION.comment=Reduces the strength of FXAA when the camera is moving. Higher values produce a sharper image but also produce more flickering.
+value.FXAA_TAA_INTERACTION.0=OFF
+value.FXAA_TAA_INTERACTION.2=20
+value.FXAA_TAA_INTERACTION.4=40
+value.FXAA_TAA_INTERACTION.6=60
+value.FXAA_TAA_INTERACTION.8=80
+value.FXAA_TAA_INTERACTION.10=100
 
 option.DISTANT_LIGHT_BOKEH=Distant Light Bokeh
 option.DISTANT_LIGHT_BOKEH.comment=Makes distant light sources look scattered by applying a single pixel blur in the distance. §a[+]§r This effect benefits from IntegratedPBR+ (optional) by adjusting distant light sources for better looks.
@@ -886,7 +922,7 @@ option.COATED_TEXTURE_MULT.comment=Adjusts the strength of auto-generated dusty 
 
 option.GLOWING_ORE_MASTER=§eEnable Glowing Ores
 option.GLOWING_ORE_MASTER.comment=Enables the functionality of glowing ores. §e[*]§r Choosing "Set By Style" will only enable glowing ores if the "Visual Style" is set to "Unbound". §e[*]§r The settings below won't work if this option isn't enabled.
-value.GLOWING_ORE_MASTER.0=§cOFF
+value.GLOWING_ORE_MASTER.0=OFF
 value.GLOWING_ORE_MASTER.1=Set By Style
 value.GLOWING_ORE_MASTER.2=§aON
 
@@ -909,12 +945,12 @@ option.GLOWING_ORE_MODDED=Glowing Modded Ores §e[*]§r
 option.GLOWING_ORE_MODDED.comment=§e[*]§r You can add modded ore IDs to "Complementary-->shaders-->block.properties" file in order to make them glow. You can open block.properties using any text editor like notepad, and then add modded ore block IDs next to "block.10024=".
 
 option.GLOWING_AMETHYST=Glowing Amethyst
-value.GLOWING_AMETHYST.0=§cOFF
+value.GLOWING_AMETHYST.0=OFF
 value.GLOWING_AMETHYST.1=Crystal
 value.GLOWING_AMETHYST.2=Crystal & Block
 
 option.GLOWING_LICHEN=Glowing Glow Lichen
-value.GLOWING_LICHEN.0=§cOFF
+value.GLOWING_LICHEN.0=OFF
 value.GLOWING_LICHEN.1=In Closed Areas
 value.GLOWING_LICHEN.2=Always
 
@@ -972,7 +1008,7 @@ value.DIRECTIONAL_BLOCKLIGHT.11=Intense §c[-]
 
 option.HELD_LIGHTING_MODE=Dynamic Handheld Lighting
 option.HELD_LIGHTING_MODE.comment=Allows handheld light sources to cast light onto the scene.
-value.HELD_LIGHTING_MODE.0=§cOFF
+value.HELD_LIGHTING_MODE.0=OFF
 value.HELD_LIGHTING_MODE.1=Subtle
 value.HELD_LIGHTING_MODE.2=Normal
 
@@ -1058,7 +1094,7 @@ option.UNDERWATER_DISTORTION.comment=Adds subtle refraction to the screen when t
 
 option.SELECT_OUTLINE=Selection Outline
 option.SELECT_OUTLINE.comment=Determines the color of the block selection outline.
-value.SELECT_OUTLINE.0=§cOFF
+value.SELECT_OUTLINE.0=OFF
 value.SELECT_OUTLINE.1=Default
 value.SELECT_OUTLINE.2=Rainbow
 value.SELECT_OUTLINE.3=Select Color
@@ -1170,6 +1206,9 @@ option.XLIGHT_R=Blocklight Red Multiplier
 option.XLIGHT_G=Blocklight Green Multiplier
 option.XLIGHT_B=Blocklight Blue Multiplier
 option.XLIGHT_I=Blocklight Intensity
+
+option.XLIGHT_CURVE=Blocklight Contrast
+option.XLIGHT_CURVE.comment=Adjusts how quickly the intensity of blocklight fades away as it travels distance away from the light source.
 
 ####### Euphoria Patches #######
 
