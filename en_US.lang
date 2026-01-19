@@ -2746,8 +2746,9 @@ option.COLORED_LIGHT_FOG_RAIN_I.comment=Change the intensity of the colored ligh
 value.COLORED_LIGHT_FOG_RAIN_I.0=Default
 
 option.BLOOD_MOON=Blood Moon
+option.BLOOD_MOON.comment=Enables Blood Moons that occur the amount of Minecraft days the user has set in this option. Blood Moons don't happen on the first night if set to anything above Every Night. Blood Moond don't happen on new moons if set to anything above Every Night.
 value.BLOOD_MOON.0=OFF
-value.BLOOD_MOON.1=1 Minecraft Night
+value.BLOOD_MOON.1=Every Night
 suffix.BLOOD_MOON=\ Minecraft Nights
 option.BLOOD_MOON.comment=Enables Blood Moons that occur the amount of Minecraft days the user has set in this option.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Emissive Blood Moon Flowers
