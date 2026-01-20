@@ -166,6 +166,9 @@ screen.COLORGRADING_SETTINGS.comment=最終的なカラーチャンネルをミ�
 screen.WORLD_BLUR_SETTINGS=ワールドブラー
 screen.WORLD_BLUR_SETTINGS.comment=ワールド全体にかかるぼかし効果に関する設定です。
 
+screen.TAA_SETTINGS=時間軸フィルタの設定
+screen.TAA_SETTINGS.comment=Temporal Anti-Aliasing(TAA)の動作を決定する設定です。
+
 screen.MATERIAL_SETTINGS=マテリアル
 screen.MATERIAL_SETTINGS.comment=Minecraftのマテリアルに関する設定です。
 
@@ -197,8 +200,8 @@ screen.RAIN_LIGHT_MULTS=雨
 screen.NETHER_LIGHT_MULTS=ネザー
 screen.END_LIGHT_MULTS=ジ・エンド
 
-screen.BLOCKLIGHT_COLOR_SETTINGS=ブロック光源の色 §e[*]§r
-screen.BLOCKLIGHT_COLOR_SETTINGS.comment=光源ブロックから放たれる光の色を調整するための設定です。. §e[*]§r 「高度な色トレーシング」設定が有効な場合、これらの色設定はブロック光源の強度スライダーを除き、ほとんどの光源に影響しません。
+screen.BLOCKLIGHT_SETTINGS=ブロック光源 §e[*]§r
+screen.BLOCKLIGHT_SETTINGS.comment=光源ブロックから放たれる光を調整するための設定です。. §e[*]§r 「高度な色トレーシング」設定が有効な場合、赤/青/緑の色設定はほとんどの光源に影響しません。
 
 screen.MOON_PHASE_INF_SETTINGS=月相の影響
 screen.MOON_PHASE_INF_SETTINGS.comment=月の満ち欠けが夜間のライティングにどのように影響するかを決定する設定です。
@@ -344,13 +347,18 @@ option.WORLD_SPACE_REF_MODE.comment=ワールドスペース反射の動作方�
 value.WORLD_SPACE_REF_MODE.1=WSRのみ
 value.WORLD_SPACE_REF_MODE.2=WSR + SSR
 
+option.WORLD_SPACE_PLAYER_REF=プレイヤーのWSR
+option.WORLD_SPACE_PLAYER_REF.comment=現在のプレイヤーのプレイヤーモデルがワールドスペース反射で反射されるようにします。
+value.WORLD_SPACE_PLAYER_REF.-1=OFF
+value.WORLD_SPACE_PLAYER_REF.1=ON
+
 option.SSAO_I=エッジシャドウの強度 (SSAO)
 option.SSAO_I.comment=シーンのエッジに追加の環境影を加えるSSAOの強度を決定します。. §e[*]§r この設定は、「パフォーマンス設定」でSSAOが無効になっている場合、機能しません。
-value.SSAO_I.0=§cOFF
+value.SSAO_I.0=OFF
 
 option.VANILLAAO_I=エッジシャドウの強度 (バニラ)
 option.VANILLAAO_I.comment=Minecraftの環境遮蔽によって、シーンのエッジに追加の環境影を加える強度を決定します。
-value.VANILLAAO_I.0=§cOFF
+value.VANILLAAO_I.0=OFF
 
 option.BORDER_FOG=境界の霧
 option.BORDER_FOG.comment=読み込み済みのワールドの端に濃い霧を追加して、チャンクの境界を隠します。. §e[*]§r 描写距離が8チャンク未満の場合は、境界の霧を無効にすることをお勧めします。
@@ -373,7 +381,7 @@ option.CAVE_FOG.comment=地下深くのエリアで追加の霧を有効にし�
 
 option.LIGHTSHAFT_BEHAVIOUR=光芒設定
 option.LIGHTSHAFT_BEHAVIOUR.comment=光芒の挙動を決定します。. §a[+]§r「シーン認識」は、「通常」と「エクストリーム」の間を自動的に切り替え、最適な結果を提供します。. §c[-]§r 「エクストリーム」は通常のゲームプレイには推奨されず、パフォーマンスに大きく影響を与える可能性があります。
-value.LIGHTSHAFT_BEHAVIOUR.0=§cOFF
+value.LIGHTSHAFT_BEHAVIOUR.0=OFF
 value.LIGHTSHAFT_BEHAVIOUR.1=シーン認識 §a[+]
 value.LIGHTSHAFT_BEHAVIOUR.2=通常
 value.LIGHTSHAFT_BEHAVIOUR.3=エクストリーム §c[-]
@@ -388,10 +396,13 @@ option.LIGHTSHAFT_DAY_I=光芒 昼間の倍率
 option.LIGHTSHAFT_NIGHT_I=光芒 夜間の倍率
 option.LIGHTSHAFT_RAIN_I=光芒 雨天時の倍率
 
+option.LIGHTSHAFT_SUNSET_SATURATION=光芒 日の出/日の入りの色
+option.LIGHTSHAFT_SUNSET_SATURATION.comment=日の出と日の入りの時間の光芒に追加する彩度を調整します。. 高い値では赤みがかったオレンジに、低い値ではより黄色に近づきます。
+
 option.CLOUD_STYLE_DEFINE=雲のスタイル
 option.CLOUD_STYLE_DEFINE.comment=雲のスタイルを決定します。. §e[*]§r「スタイル依存」とは、シェーダーオプションのメインメニューにある「ビジュアルスタイル」設定によって自動的に決定されることを意味します。. §e[*]§r「バニラ」スタイルは、ビデオ設定で雲が有効になっている必要があります。
 value.CLOUD_STYLE_DEFINE.-1=スタイル依存
-value.CLOUD_STYLE_DEFINE.0=§cOFF
+value.CLOUD_STYLE_DEFINE.0=OFF
 value.CLOUD_STYLE_DEFINE.1=Reimagined
 value.CLOUD_STYLE_DEFINE.3=Unbound
 value.CLOUD_STYLE_DEFINE.50=バニラ §e[*]
@@ -416,8 +427,8 @@ option.CLOUD_B=雲 青色倍率
 option.CLOUD_UNBOUND_AMOUNT=雲の量
 option.CLOUD_UNBOUND_AMOUNT.comment=Unboundスタイルの雲の量を調整します。
 
-option.CLOUD_UNBOUND_SIZE_MULT=雲の大きさ
-option.CLOUD_UNBOUND_SIZE_MULT.comment=Unboundスタイルの雲の大きさを調整します。値が高いほど小さな雲が生成されます。
+option.CLOUD_UNBOUND_SIZE_MULT=雲の大きさ §c[-]§r
+option.CLOUD_UNBOUND_SIZE_MULT.comment=Unboundスタイルの雲の大きさを調整します。値が高いほど小さな雲が生成されます。. §c[-]§r この設定を変更するとComplementaryの「同じサーバーにいるプレイヤー同士で雲を同期する」機能が無効になります。
 
 option.CLOUD_UNBOUND_RAIN_ADD=追加の雨雲
 option.CLOUD_UNBOUND_RAIN_ADD.comment=雨や雪の際に適用される雲の増加量を調整します。
@@ -604,8 +615,8 @@ value.SUN_MOON_STYLE_DEFINE.3=Unbound - 小さめ
 option.SUN_MOON_HORIZON=太陽/月の地平線
 option.SUN_MOON_HORIZON.comment=太陽/月が地平線の下に現れるのを防ぎます。
 
-option.SUN_MOON_DURING_RAIN=雨天時の太陽/月
-option.SUN_MOON_DURING_RAIN.comment=雨天時に太陽と月を表示するかどうかを決定します。
+option.SUN_MOON_DURING_RAIN=雨天時の太陽/月 §e[*]§r
+option.SUN_MOON_DURING_RAIN.comment=雨天時に太陽と月を表示するかどうかを決定します。. §e[*]§r この設定は雨天時の光のバランスも変更します。
 
 option.NIGHT_STAR_AMOUNT=夜の星の数
 option.NIGHT_STAR_AMOUNT.comment=夜空に現れる星の数を決定します。
@@ -621,15 +632,22 @@ value.RAINBOWS.0=OFF
 value.RAINBOWS.1=雨の後
 value.RAINBOWS.3=常に
 
+option.RAINBOW_STYLE_DEFINE=虹のスタイル
+option.RAINBOW_STYLE_DEFINE.comment=虹のスタイルを決定します。. §e[*]§r 「スタイル依存」とは、シェーダーオプションのメインメニューにある「ビジュアルスタイル」設定によって自動的に決定されることを意味します。
+value.RAINBOW_STYLE_DEFINE.-1=スタイル依存
+value.RAINBOW_STYLE_DEFINE.1=Reimagined
+value.RAINBOW_STYLE_DEFINE.4=Unbound
+
 option.AURORA_STYLE_DEFINE=オーロラのスタイル
 option.AURORA_STYLE_DEFINE.comment=夜空に現れるオーロラのスタイルを決定します。
 value.AURORA_STYLE_DEFINE.-1=スタイル依存
-value.AURORA_STYLE_DEFINE.0=§c無効
+value.AURORA_STYLE_DEFINE.0=OFF
 value.AURORA_STYLE_DEFINE.1=Reimagined
 value.AURORA_STYLE_DEFINE.2=Unbound
 
 option.AURORA_CONDITION=オーロラの条件
 option.AURORA_CONDITION.comment=オーロラが現れる条件を決定します。. §e[*]§r オーロラは、この設定に関係なく夜間にのみ表示されます。
+value.AURORA_CONDITION.-1=新月以外
 value.AURORA_CONDITION.0=毎晩
 value.AURORA_CONDITION.1=満月
 value.AURORA_CONDITION.2=雪のバイオーム
@@ -737,10 +755,40 @@ option.LENSFLARE_I=レンズフレアの強さ
 option.LENSFLARE_I.comment=レンズフレア効果の強さを調整します。
 
 option.TAA_MODE=§e時間軸フィルタ§r
-option.TAA_MODE.comment=Temporal Anti-Aliasing(TAA)の動作を決定します。. スマート & 控えめ §a[+]§r: 小さな量で画像に適用され、アーティファクトを引き起こしません。. 強め §e[*]§r: より優れたアンチエイリアスを提供しますが、追加のぼやけやちらつきを引き起こします。高フレームレートや高解像度時に適しているかもしれません。. OFF §c[-]§r: 無効にすると、パフォーマンスや効果の品質が低下します。
-value.TAA_MODE.1=スマート & 控え目 §a[+]
-value.TAA_MODE.2=強め §e[*]
+option.TAA_MODE.comment=Temporal Anti-Aliasing(TAA)を有効にすることでノイズを減らし、一部のエフェクトのサンプル数を減らすことでパフォーマンスを向上させ、正しい設定を使用すればジャギー(ギザギザ感)を減らすことができます。. §c[-]§r: 無効にすると、パフォーマンスや効果の品質が低下します。
 value.TAA_MODE.0=§cOFF [-]
+value.TAA_MODE.1=ON §a[+]
+
+option.TAA_SMOOTHING=滑らかさ
+option.TAA_SMOOTHING.comment=時間軸フィルタが適用するスムージングの量を調整します。. 高い値では画像がよりぼやけますが、ちらつきとノイズを減らすことができます。. 静止している間は目に見える違いはありません。
+value.TAA_SMOOTHING.2=低
+value.TAA_SMOOTHING.3=中
+value.TAA_SMOOTHING.4=高
+
+option.TAA_JITTER=ジッタリング §e[*]§r
+option.TAA_JITTER.comment=時間軸フィルタのアンチエイリアス効果の向上に役立ちますが、いくつか欠点もあります。. §e[*]§r 高い値ではアンチエイリアス効果が向上しますが、より多くのちらつきと画像のぼやけが発生します。. §e[*]§r 「完全」を使用する場合は滑らかさを「高」に設定することが推奨されます。. §c[-]§r この設定を無効にするとアンチエイリアス効果がなくなります。
+value.TAA_JITTER.0=OFF §c[-]
+value.TAA_JITTER.1=低
+value.TAA_JITTER.2=中
+value.TAA_JITTER.3=完全 §e[*]
+
+option.TAA_MOVEMENT_IMPROVEMENT_FILTER=Catmull-Romサンプリング
+option.TAA_MOVEMENT_IMPROVEMENT_FILTER.comment=より高度なサンプリング方法を使用することで、時間軸フィルタによるぼやけを減らします。
+value.TAA_MOVEMENT_IMPROVEMENT_FILTER.0=OFF §c[-]
+value.TAA_MOVEMENT_IMPROVEMENT_FILTER.1=ON
+
+option.FXAA_STRENGTH=FXAAの強度
+option.FXAA_STRENGTH.comment=FXAA効果の強度を調整します。. 高い値ではより画像がぼやけますが、代わりにより良いアンチエイリアス効果が得られます。
+value.FXAA_STRENGTH.-1=OFF
+
+option.FXAA_TAA_INTERACTION=移動中はFXAAを減らす
+option.FXAA_TAA_INTERACTION.comment=カメラが動いている間のFXAAの強度を減らします。. 高い値ではよりちらつきが発生しますが、代わりによりシャープな画像が得られます。
+value.FXAA_TAA_INTERACTION.0=OFF
+value.FXAA_TAA_INTERACTION.2=20
+value.FXAA_TAA_INTERACTION.4=40
+value.FXAA_TAA_INTERACTION.6=60
+value.FXAA_TAA_INTERACTION.8=80
+value.FXAA_TAA_INTERACTION.10=100
 
 option.DISTANT_LIGHT_BOKEH=遠景の光ボケ
 option.DISTANT_LIGHT_BOKEH.comment=遠方の光源に1ピクセルのぼかしを適用し、拡散しているように見せます。. §a[+]§r この効果は、IntegratedPBR+ (任意)を使用することで遠方の光源を調整し、見栄えを良くすることができます。
@@ -810,6 +858,9 @@ option.FANCY_GLASS.comment=通常のガラスに半透明の層を追加する�
 option.GREEN_SCREEN_LIME=グリーンスクリーン用黄緑色ブロック
 option.GREEN_SCREEN_LIME.comment=「黄緑色のコンクリート」「黄緑色の羊毛」「黄緑色のカーペット」を動画編集用のグリーンスクリーンに変えます。. ヒント1: 「ブルーム」オプションを無効にすると、分離が改善されます. ヒント2: 黄緑色のカーペットの下に光源を置いて照明を確保します。. ヒント3: アンチエイリアシング(FXAA)を無効にし、パフォーマンス設定で「細部の品質」を「パフォーマンス」に設定すると、フィルタリングが全て無効化され、ピクセルパーフェクトな分離が可能です。
 
+option.MIRROR_TINTED_GLASS=鏡面遮光ガラス
+option.MIRROR_TINTED_GLASS.comment=遮光ガラスの反射性と不透明度を増加させます。. 最適な結果を得るにはワールドスペース反射を有効にしてください。
+
 option.HAND_SWAYING=手の揺れ
 option.HAND_SWAYING.comment=プレイヤーの手にゆっくりとした動きを加えて、呼吸アニメーションをシミュレートします。
 value.HAND_SWAYING.0=OFF
@@ -871,7 +922,7 @@ option.COATED_TEXTURE_MULT.comment=自動生成された埃っぽいディテー
 
 option.GLOWING_ORE_MASTER=§e光る鉱石を有効にする
 option.GLOWING_ORE_MASTER.comment=光る鉱石の機能を有効にします。. §e[*]§r 「スタイル依存」を選択すると、「ビジュアルスタイル」が「Unbound」に設定されている場合のみ光る鉱石が有効になります。. §e[*]§r 以下の設定は、このオプションが有効になっていない場合は動作しません。
-value.GLOWING_ORE_MASTER.0=§cOFF
+value.GLOWING_ORE_MASTER.0=OFF
 value.GLOWING_ORE_MASTER.1=スタイル依存
 value.GLOWING_ORE_MASTER.2=§aON
 
@@ -894,12 +945,12 @@ option.GLOWING_ORE_MODDED=光るModの鉱石 §e[*]§r
 option.GLOWING_ORE_MODDED.comment=§e[*]§r Modの鉱石IDを「Complementary-->shaders-->block.properties」ファイルに追加することで、発光させることができます。. block.propertiesをメモ帳などのテキストエディタで開き、Modの鉱石IDを「block.10024=」の後に追加してください。
 
 option.GLOWING_AMETHYST=光るアメジスト
-value.GLOWING_AMETHYST.0=§cOFF
+value.GLOWING_AMETHYST.0=OFF
 value.GLOWING_AMETHYST.1=クリスタル
 value.GLOWING_AMETHYST.2=クリスタル & ブロック
 
 option.GLOWING_LICHEN=光るツタ
-value.GLOWING_LICHEN.0=§cOFF
+value.GLOWING_LICHEN.0=OFF
 value.GLOWING_LICHEN.1=閉じたエリア内で発光
 value.GLOWING_LICHEN.2=常に発光
 
@@ -957,7 +1008,7 @@ value.DIRECTIONAL_BLOCKLIGHT.11=強め §c[-]
 
 option.HELD_LIGHTING_MODE=動的手持ち光源
 option.HELD_LIGHTING_MODE.comment=手に持っている光源がシーンに光を投影できるようにします。
-value.HELD_LIGHTING_MODE.0=§cOFF
+value.HELD_LIGHTING_MODE.0=OFF
 value.HELD_LIGHTING_MODE.1=控えめ
 value.HELD_LIGHTING_MODE.2=通常
 
@@ -1043,7 +1094,7 @@ option.UNDERWATER_DISTORTION.comment=カメラが水中にあるときに、画�
 
 option.SELECT_OUTLINE=選択アウトライン
 option.SELECT_OUTLINE.comment=ブロックの選択の枠線の色を決定します。
-value.SELECT_OUTLINE.0=§cOFF
+value.SELECT_OUTLINE.0=OFF
 value.SELECT_OUTLINE.1=デフォルト
 value.SELECT_OUTLINE.2=虹
 value.SELECT_OUTLINE.3=指定色
@@ -1156,6 +1207,9 @@ option.XLIGHT_G=ブロック光源 緑色倍率
 option.XLIGHT_B=ブロック光源 青色倍率
 option.XLIGHT_I=ブロック光源 強度
 
+option.XLIGHT_CURVE=ブロック光源 コントラスト
+option.XLIGHT_CURVE.comment=光源から離れるにつれて、光源ブロックの光の強度が減衰する速さを調整します。
+
 ####### Euphoria Patches #######
 
 profile.SPACEAGLE17= §f۞ §kO§fデバッグ (使わないで)§f§kO
@@ -1171,17 +1225,20 @@ value.WATERMARK.3=& GUI非表示 & クモの目を持つと表示
 value.WATERMARK.4=白黒
 option.WATERMARK_SIZE=ウォーターマークのサイズ
 
-screen.EUPHORIA_SETTINGS=§dEuphoria Patches設定
+screen.EUPHORIA_SETTINGS=§dEuphoria Patches設定 >
 screen.EUPHORIA_SETTINGS.comment=Euphoria Patchesによって追加される設定です。. §bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。. §r§d§l§neuphoriapatches.com/support
 
 screen.ATMOSPHERE=環境
 screen.ATMOSPHERE.comment=環境に関する設定です。
 screen.CLOUDS=雲
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Reimaginedの雲
+screen.CLOUD_REIMAGINED_SECOND_LAYER_SETTINGS=二層目の雲
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Unboundの雲
 screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=二層Unbound雲
+screen.CLOUD_SHADING_SETTINGS=雲の陰影
 screen.AURORA_SETTINGS=オーロラ
 screen.AURORA_SETTINGS.comment=オーロラに関する設定です。
+screen.AURORA_INFLUENCE_SETTINGS=オーロラの影響
 screen.AURORA_COLOR_SETTINGS=オーロラの色設定
 screen.AURORA_COLOR_SETTINGS.comment=オーロラの色に関する設定です。
 screen.END_SKY=ジ・エンドの空
@@ -1204,8 +1261,6 @@ screen.NEBULA_STAR_SETTINGS=星雲の星設定
 
 screen.WORLD=ワールド
 screen.WORLD.comment=ワールドに関する設定です。
-screen.SPOOKY_SETTINGS=Spooklementary 設定
-screen.EYES_SETTINGS=目の設定
 screen.BLOOD_MOON_SETTINGS=ブラッドムーン設定
 screen.OVERWORLD_WORLD=オーバーワールド
 screen.OVERWORLD_BEAM=オーバーワールドビーム
@@ -1281,6 +1336,8 @@ screen.STATIC_NOISE_SETTINGS=静的ノイズ設定
 screen.HORIZONTAL_NOISE_SETTINGS=水平ノイズ設定
 screen.VERTICAL_SCREEN_DISPLACEMENT_SETTINGS=垂直画面変位設定
 screen.PIXELATE_SCREEN_SETTINGS=ピクセル化設定
+screen.DITHERING_SETTINGS=ディザリング設定
+screen.PALETTE_SETTINGS=パレット設定
 screen.SCANLINE_SETTINGS=スキャンライン設定
 screen.HALFTONE_SETTINGS=ハーフトーン設定
 screen.SPEED_LINES_SETTINGS=スピード線設定
@@ -1312,23 +1369,23 @@ option.DAYLIGHT_CYCLE_COMPAT=ワールド時間アニメーション
 option.DAYLIGHT_CYCLE_COMPAT.comment=この設定は、gameruleでdoDaylightCycleをfalseにしている場合にのみ使用してください。. 有効にすると、雲などが昼夜サイクルが無効のワールドでもアニメーションしますが、プレイヤー間で同期されなくなります。
 
 option.AURORA_COLOR_PRESET=オーロラ 色プリセット
-option.AURORA_COLOR_PRESET.comment=デフォルトの見た目/カスタム色のオーロラ、日ごとや月ごとに色が変わるオーロラ、または色のプリセットを選択します。
+option.AURORA_COLOR_PRESET.comment=デフォルトの見た目/カスタム色のオーロラ、日ごとや月ごとに色が変わるオーロラ、または色のプリセットを選択します。. また、一晩を通して色が滑らかに変化し続ける「スムーズ日ごと」設定も利用可能です。
+value.AURORA_COLOR_PRESET.-1=§o§l変化 - スムーズ日ごと
 value.AURORA_COLOR_PRESET.0=カスタム
 value.AURORA_COLOR_PRESET.1=§o§l変化 - 日ごと
 value.AURORA_COLOR_PRESET.2=§o§l変化 - 月ごと
-value.AURORA_COLOR_PRESET.3=§cブ§6レ§cイ§6ジ§cン§6グ
-value.AURORA_COLOR_PRESET.4=§cゴ§4ー§bス§3ト
-value.AURORA_COLOR_PRESET.5=§9ネ§5ビ§dュ§5ラ
-value.AURORA_COLOR_PRESET.6=§9v§b4
-value.AURORA_COLOR_PRESET.7=§6エ§dン§5ド
-value.AURORA_COLOR_PRESET.8=§bア§3イ§9ス
-value.AURORA_COLOR_PRESET.9=§cウ§6ォ§cタ§6ー§a§6メ§2ロ§2ン
-value.AURORA_COLOR_PRESET.10=§bエ§3テ§bリ§3ア§bル
-value.AURORA_COLOR_PRESET.11=§bパ§3ー§bム§cフ§3ロ§cス§3ト
-value.AURORA_COLOR_PRESET.12=§dピ§5ン§dク
-value.AURORA_COLOR_PRESET.13=§aジョーカー
-value.AURORA_COLOR_PRESET.14=§cブラッド§bバス
-value.AURORA_COLOR_PRESET.15=§bミ§9スティ§bカル
+value.AURORA_COLOR_PRESET.3=§9レガシー§b Complementary v4
+value.AURORA_COLOR_PRESET.4=§bパ§3ー§bマ§3フ§cロ§3ス§cト
+value.AURORA_COLOR_PRESET.5=§d咲き誇る§5光
+value.AURORA_COLOR_PRESET.6=§9ネ§5ビ§dュ§5ラ
+value.AURORA_COLOR_PRESET.7=§5セレスティアル§3ダンス
+value.AURORA_COLOR_PRESET.8=§a緑の閃光
+value.AURORA_COLOR_PRESET.9=§bエ§3テ§bリ§3ア§bル
+value.AURORA_COLOR_PRESET.10=§b氷河の§9祝福
+value.AURORA_COLOR_PRESET.11=§bミス§9ティ§bカル
+value.AURORA_COLOR_PRESET.12=§cウ§6ォ§cー§a§6タ§aー§2メ§aロ§2ン
+value.AURORA_COLOR_PRESET.13=§cブラッド§bバス
+value.AURORA_COLOR_PRESET.14=§cゴ§4ー§bス§3ト
 
 option.RGB_AURORA=RGBオーロラ
 option.RGB_AURORA.comment=§4R§2G§9B§rのオーロラで真のゲーマーになろう。
@@ -1360,6 +1417,33 @@ option.AURORA_TERRAIN_INFLUENCE_INTENSITY=地形への影響強度
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY.comment=オーロラが地形に与える影響の強度を変更します。
 value.AURORA_TERRAIN_INFLUENCE_INTENSITY.0.00=OFF
 
+option.RANDOM_AURORA=ランダムなオーロラの出現
+option.RANDOM_AURORA.comment=夜にオーロラが現れる確率を変更します。. Complementaryのオーロラの条件設定に従います。
+value.RANDOM_AURORA.0=デフォルト
+value.RANDOM_AURORA.1=10%の確率
+value.RANDOM_AURORA.2=20%の確率
+value.RANDOM_AURORA.3=30%の確率
+value.RANDOM_AURORA.4=40%の確率
+value.RANDOM_AURORA.5=50%の確率
+value.RANDOM_AURORA.6=60%の確率
+value.RANDOM_AURORA.7=70%の確率
+value.RANDOM_AURORA.8=80%の確率
+value.RANDOM_AURORA.9=90%の確率
+
+option.AURORA_NOISE_SCALE=オーロラ ノイズのスケール
+option.AURORA_NOISE_SCALE.comment=オーロラの効果に使用されるノイズのスケールを変更します。
+
+option.AURORA_PATTERN_WARP=渦巻き度
+option.AURORA_PATTERN_WARP.comment=オーロラがどれだけ渦巻いて歪むかを変更します。
+value.AURORA_PATTERN_WARP.0=OFF
+
+option.AURORA_SATURATION=オーロラ 彩度
+option.AURORA_SATURATION.comment=オーロラの色の彩度を変更します。
+value.AURORA_SATURATION.10=デフォルト
+
+option.AURORA_COLOR_MIX_POWER=メインレイヤー
+option.AURORA_COLOR_MIX_POWER.comment=オーロラのどのレイヤーが最も顕著に現れるかを変更します。
+
 option.CLOUD_ROUNDNESS=雲の丸み §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=非常に四角い §e[*]§r
 value.CLOUD_ROUNDNESS.0.05=四角い §e[*]§r
@@ -1371,18 +1455,15 @@ value.CLOUD_SHADOW_ROUNDNESS.0.15=非常に四角い
 value.CLOUD_SHADOW_ROUNDNESS.0.25=四角い
 value.CLOUD_SHADOW_ROUNDNESS.0.35=丸い
 option.CLOUD_SHADOW_ROUNDNESS.comment=雲の影の丸み具合を変更します。
-option.CLOUD_NARROWNESS=雲の細さ
-value.CLOUD_NARROWNESS.0.1=超スリム
-value.CLOUD_NARROWNESS.0.075=スリム
-value.CLOUD_NARROWNESS.0.07=中間
-value.CLOUD_NARROWNESS.0.025=幅広
-option.CLOUD_NARROWNESS.comment=雲の水平スケールでの細さを変更します。
+option.CLOUD_NARROWNESS=雲の幅
+option.CLOUD_NARROWNESS.comment=雲が水平方向にどの程度太くなるかを変更します。
 
 option.CLOUD_SHADOW_UNBOUND_SIZE=雲の影の大きさ
 option.CLOUD_SHADOW_UNBOUND_SIZE.comment=雲の影の大きさを決定します。
 
 option.CLOUD_STRETCH=雲の高さ
-option.CLOUD_TRANSPARENCY=雲の透明度
+option.CLOUD_TRANSPARENCY=雲の不透明度
+option.CLOUD_TRANSPARENCY.comment=雲の不透明度を変更します。
 option.CLOUD_DIRECTION=雲の移動方向
 option.CLOUD_DIRECTION.comment=雲が移動する方向を変更します。
 option.CLOUD_TEXTURE=Minecraftの雲のテクスチャ
@@ -1408,6 +1489,21 @@ value.RAINBOW_CLOUD.10=100%の範囲
 option.CLOUD_RENDER_DISTANCE=雲の描画距離
 option.CLOUD_RENDER_DISTANCE.comment=雲がどれだけ遠くまで描画されるかを変更するオプションです。
 
+option.CLOUD_SHADING_AMOUNT=雲の陰影の量
+option.CLOUD_SHADING_AMOUNT.comment=雲の陰影ががどの程度付くかを決定します。
+
+option.INVERTED_CLOUD_SHADING=雲の陰影の反転
+option.INVERTED_CLOUD_SHADING.comment=雲の陰影効果を反転します。
+
+option.CLOUD_LIGHT_MULTIPLIER=雲の光倍率
+option.CLOUD_LIGHT_MULTIPLIER.comment=雲の明るい面の輝度を増加させます。
+
+option.CLOUD_AMBIENT_MULTIPLIER=雲の環境光倍率
+option.CLOUD_AMBIENT_MULTIPLIER.comment=雲の環境光が当たる面の輝度を増加させます。
+
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW=雲を90°回転
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Reimaginedの雲を90度回転させます。
+
 option.NIGHT_CLOUD_UNBOUND_REMOVE=夜間の雲削除量
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=夜間に削除される雲の量を設定します。
 
@@ -1422,12 +1518,66 @@ option.CLOUD_UNBOUND_LAYER2_ALTITUDE=二層目の雲の高度
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=二層目の雲が表示されるワールドの高さを決定します。
 option.CLOUD_UNBOUND_LAYER2_HEIGHT=二層目の雲の高さ
 option.CLOUD_UNBOUND_LAYER2_SIZE=二層目の雲の大きさ
-option.CLOUD_UNBOUND_LAYER2_SIZE.comment=二層目の雲の大きさを決定します。
+option.CLOUD_UNBOUND_LAYER2_SIZE.comment=二層目のUnbound雲の大きさを決定します。
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=二層目の雲の量
-option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=二層目の雲の量を決定します。
+option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=二層目のUnbound雲の量を決定します。
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=二層目の雲の不透明度
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=二層目のUnbound雲の不透明度を決定します。
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.0=0.0
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.1=0.05
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.2=0.10
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.3=0.15
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.4=0.20
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.5=0.25
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.6=0.30
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.7=0.35
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.8=0.40
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.9=0.45
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.10=0.50
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.11=0.55
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.12=0.60
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.13=0.65
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.14=0.70
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.15=0.75
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.16=0.80
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.17=0.85
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.18=0.90
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.19=0.95
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.20=1.00
+
+
+option.CLOUD_REIMAGINED_LAYER2_HEIGHT=二層目の雲の高さ
+option.CLOUD_REIMAGINED_LAYER2_HEIGHT.comment=二層目のReimagined雲の高さを決定します。
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=二層目の雲の不透明度
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.comment=二層目のReimagined雲の不透明度を決定します。
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.0=0.0
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.1=0.05
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.2=0.10
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.3=0.15
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.4=0.20
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.5=0.25
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.6=0.30
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.7=0.35
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.8=0.40
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.9=0.45
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.10=0.50
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.11=0.55
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.12=0.60
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.13=0.65
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.14=0.70
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.15=0.75
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.16=0.80
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.17=0.85
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.18=0.90
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.19=0.95
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_SUN_MOON_SHADING=太陽/月の陰影
 option.CLOUD_SUN_MOON_SHADING.comment=太陽と月が雲に作る陰影を有効にします。
+value.CLOUD_SUN_MOON_SHADING.0=OFF
+value.CLOUD_SUN_MOON_SHADING.1=月のみ
+value.CLOUD_SUN_MOON_SHADING.2=太陽のみ
+value.CLOUD_SUN_MOON_SHADING.3=両方
 
 option.END_SMOKE=ジ・エンドの煙
 option.END_SMOKE.comment=誰かが火を放置してしまい、ジ・エンドに上下の虚空に煙が漂っています。
@@ -2020,7 +2170,7 @@ option.SOUL_SAND_VALLEY_OVERHAUL=ソウルサンドの谷の改変
 option.SOUL_SAND_VALLEY_OVERHAUL.comment=ソウルサンドの谷で火に関するブロック、エンティティ、パーティクルを青くします。
 
 option.PURPLE_END_FIRE=紫色のジ・エンドの炎
-option.PURPLE_END_FIRE.comment=ジ・エンドで火に関するブロック、エンティティ、パーティクルを紫色にします。
+option.PURPLE_END_FIRE.comment=ジ・エンドで火に関するブロック、エンティティ、パーティクルを紫色にします。. §e[*]§r 最適な結果を得るには、RPサポートオプションをIntegrated PBR+に設定する必要があります。
 
 option.NO_RAIN_ABOVE_CLOUDS=雲の上では雨が降らない
 option.NO_RAIN_ABOVE_CLOUDS.comment=雲の上で雨が降らないようにします。. バニラの雲の高さが変更され、バニラの雲が有効になっている場合はうまく機能しません。
@@ -2074,9 +2224,44 @@ value.VERTICAL_STUTTER_SPEED.0.00=OFF
 option.VERTICAL_SCROLL_FREQUENCY=スクロールの頻度
 option.VERTICAL_STUTTER_FREQUENCY=スタッターの頻度
 
-option.PIXELATE_SCREEN=ピクセル化
 option.PIXELATED_SCREEN_SIZE=ピクセルサイズ
-option.PIXELATED_SCREEN_SMOOTHNESS=滑らかさ
+option.PIXELATED_SCREEN_SIZE.comment=画面のピクセル化効果を有効にし、そのピクセルサイズを変更します。
+value.PIXELATED_SCREEN_SIZE.0=OFF
+option.PIXELATED_SCREEN_SMOOTHNESS=ピクセルの滑らかさ
+option.PIXELATED_SCREEN_SMOOTHNESS.comment=ピクセル化効果の滑らかさを変更します。. 高い値に設定するとピクセル同士が混ざりやすくなります。
+option.COLOR_LEVELS=階調化
+option.COLOR_LEVELS.comment=画像内の色の数を減らすことで、よりレトロな見た目にします。
+option.POSTERIZE_STRENGTH=階調化の強さ
+option.POSTERIZE_STRENGTH.comment=階調化効果の強さを変更します。
+value.POSTERIZE_STRENGTH.0.0=OFF
+
+option.PALETTE_SWAP=パレット
+option.PALETTE1R=色1 赤
+option.PALETTE1G=色1 緑
+option.PALETTE1B=色1 青
+option.PALETTE2R=色2 赤
+option.PALETTE2G=色2 緑
+option.PALETTE2B=色2 青
+option.PALETTE3R=色3 赤
+option.PALETTE3G=色3 緑
+option.PALETTE3B=色3 青
+option.PALETTE4R=色4 赤
+option.PALETTE4G=色4 緑
+option.PALETTE4B=色4 青
+option.PALETTE5R=色5 赤
+option.PALETTE5G=色5 緑
+option.PALETTE5B=色5 青
+option.PALETTE6R=色6 赤
+option.PALETTE6G=色6 緑
+option.PALETTE6B=色6 青
+option.USE_TEXTURE_PALETTE=テクスチャパレット
+option.USE_TEXTURE_PALETTE.comment=GUI設定からではなく、palettesフォルダにあるパレットのPNG画像を使用します。
+value.USE_TEXTURE_PALETTE.0=Off
+
+option.SCREEN_DITHERING=ディザリング
+option.SCREEN_DITHERING.comment=画面にディザリングを行うことで、パレットよりも多くの色を擬似的に表現します。
+option.SCREEN_DITHER_AMOUNT=ディザリングの量
+option.SCREEN_DITHER_I=ディザリングの強度
 
 option.SCANLINE=スキャンライン
 value.SCANLINE.0=OFF
@@ -2196,18 +2381,6 @@ value.EMISSIVE_FLOWERS_TYPE.1=寒色
 value.EMISSIVE_FLOWERS_TYPE.2=暖色
 
 option.EMISSIVE_FLOWERS_STRENGTH=発光の強度
-
-option.SPOOKY=Spooklementary
-option.SPOOKY.comment=たくさんの不気味な機能を有効にします :)
-option.EYES=目
-option.EYE_FREQUENCY=目の出現頻度
-option.EYE_SPEED=目の速度
-option.EYE_RED_PROBABILITY=赤い目の確率
-option.BLOOD_MOON=ブラッドムーン
-value.BLOOD_MOON.0=OFF
-value.BLOOD_MOON.1=ON - 満月の夜
-value.BLOOD_MOON.2=ON - 毎晩
-option.EMISSIVE_BLOOD_MOON_FLOWERS=光るブラッドムーンの花
 
 option.DISTANCE_MIN_LIGHT=洞窟のライティングをフェード
 option.DISTANCE_MIN_LIGHT.comment=プレイヤーからの距離が増えるにつれて洞窟が暗くなります。. より高い洞窟のライティング設定と組み合わせると、洞窟の見た目が向上します。
@@ -2512,9 +2685,10 @@ value.NEBULA_MOON_CONDITION.1=新月
 value.NEBULA_MOON_CONDITION.2=満月
 value.NEBULA_MOON_CONDITION.3=部分月
 value.NEBULA_MOON_CONDITION.4=ランダム
+value.NEBULA_MOON_CONDITION.5=新月以外
 
 option.END_CENTER_LIGHTING=ジ・エンド中央のライティング
-option.END_CENTER_LIGHTING.comment=ジ・エンドの中央のライティングを変更します。
+option.END_CENTER_LIGHTING.comment=ジ・エンドの中央のライティングを変更します。. §e[*]§r この機能はMinecraft 1.9以降でのみ動作します。
 value.END_CENTER_LIGHTING.0=OFF
 
 option.END_CENTER_LIGHTING_R=ライティング - 赤
@@ -2563,3 +2737,19 @@ option.EP_END_FLASH.comment=エンドフラッシュの種類をデフォルト�
 value.EP_END_FLASH.0=デフォルトのみ
 value.EP_END_FLASH.1=Euphoriaのみ
 value.EP_END_FLASH.2=両方
+
+option.MIRROR_TINTED_GLASS_OPAQUE=不透明な遮光ガラス
+option.MIRROR_TINTED_GLASS_OPAQUE.comment=遮光ガラスを不透明にします。 (主に鏡用)
+
+option.COLORED_LIGHT_FOG_RAIN_I=色付きの光の霧 雨天強度
+option.COLORED_LIGHT_FOG_RAIN_I.comment=雨天時の色付きの光の霧の強度を変更します。
+value.COLORED_LIGHT_FOG_RAIN_I.0=デフォルト
+
+option.BLOOD_MOON=ブラッドムーン
+option.BLOOD_MOON.comment=ここで設定した間隔のゲーム内日数で発生するブラッドムーンを有効にします。. 毎夜以上に設定されている場合、ブラッドムーンは最初の夜には発生しません。. 毎夜以上に設定されている場合、ブラッドムーンは新月の夜には発生しません。
+value.BLOOD_MOON.0=OFF
+value.BLOOD_MOON.1=毎夜
+suffix.BLOOD_MOON=\ Minecraft夜
+option.BLOOD_MOON.comment=ここで設定した間隔のゲーム内日数で発生するブラッドムーンを有効にします。
+option.EMISSIVE_BLOOD_MOON_FLOWERS=ブラッドムーンで花が発光
+option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=ブラッドムーンの間、赤い花が赤く輝くようにします。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。

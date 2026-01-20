@@ -1,37 +1,29 @@
 {
-  "isRightToLeft": false,
-
-  "pageTitle": "Euphoria Patchesの導入方法",
-
-  "modMethodTitle": "Modを使う",
-  "step1": "前提となるバージョンのComplementaryをダウンロードし、shaderpacksフォルダに入れる。",
-  "step1After": "(ファイルを改変しないでください)",
-  "substep1_1": "対応Complementaryバージョン: ",
-  "or": "または",
-  "step2Before": "最新の",
-  "step2After": "Modファイルをダウンロードし、modsフォルダに入れる。",
-  "step3": "Fabric | Quilt | Forge | NeoForgeのいずれかでゲームを起動する。",
-  "step4": "がshaderpacksフォルダに生成されます。",
-
-  "unsupportedVersions": "Modが未対応のMinecraftのバージョンについては、対応しているバージョンのMinecraftでEuphoriaPatcher Modを使用した後、生成されたファイルを未対応バージョンのMinecraftのshaderpackフォルダにコピーしてください。",
-
-  "discordContact": "インストールでお困りですか？",
-  "discordContactLink": "Discordコミュニティに参加しましょう",
-
-  "downloadPageButton": "ダウンロード",
-
-  "supportDevelopment1": "開発を支援し、早期開発バージョンへアクセスしたいですか？",
-  "supportDevelopment2": "プレビューバージョンをゲットしましょう！",
-
-  "installerMethodTitle": "インストーラーを使う",
-  "installerStep1After": "Complementaryインストーラーをダウンロードする。",
-  "installerStep2": "ダウンロードしたファイルをダブルクリックして、インストーラーを起動する。",
-  "installerStep3": "'Advanced Settings'をクリックする。",
-  "installerStep4": "'Install Euphoria Patches'にチェックを入れる。",
-  "installerStep5": "'Install'をクリックしてゲームを起動すると、Complementary Shaders + Euphoria Patchesがshaderpacksフォルダに生成されます。",
-
-  "windowsInstallerButton": "Windowsインストーラー",
-  "javaInstallerButton": "汎用JAR",
-  "complementaryInstallerButton": "ダウンロード",
-  "complementaryWebsiteButton": "Complementary公式サイトに移動"
+    "isRightToLeft": false,
+    "pageTitle": "Euphoria Patchesの導入方法",
+    "modMethodTitle": "Modを使う",
+    "step1": "前提となるバージョンのComplementaryをダウンロードし、shaderpacksフォルダに入れる。",
+    "step1After": "(ファイルを改変しないでください)",
+    "substep1_1": "対応Complementaryバージョン: ",
+    "or": "または",
+    "step2Before": "最新の",
+    "step2After": "Modファイルをダウンロードし、modsフォルダに入れる。",
+    "step3": "Fabric | Quilt | Forge | NeoForgeのいずれかでゲームを起動する。",
+    "step4": "がshaderpacksフォルダに生成されます。",
+    "unsupportedVersions": "Modが未対応のMinecraftのバージョンについては、対応しているバージョンのMinecraftでEuphoriaPatcher Modを使用した後、生成されたファイルを未対応バージョンのMinecraftのshaderpackフォルダにコピーしてください。",
+    "discordContact": "インストールでお困りですか？",
+    "discordContactLink": "Discordコミュニティに参加しましょう",
+    "downloadPageButton": "ダウンロード",
+    "supportDevelopment1": "開発を支援し、早期開発バージョンへアクセスしたいですか？",
+    "supportDevelopment2": "プレビューバージョンをゲットしましょう！",
+    "installerMethodTitle": "インストーラーを使う",
+    "installerStep1After": "Complementaryインストーラーをダウンロードする。",
+    "installerStep2": "ダウンロードしたファイルをダブルクリックして、インストーラーを起動する。",
+    "installerStep3": "'Advanced Settings'をクリックする。",
+    "installerStep4": "'Install Euphoria Patches'にチェックを入れる。",
+    "installerStep5": "'Install'をクリックしてゲームを起動すると、Complementary Shaders + Euphoria Patchesがshaderpacksフォルダに生成されます。",
+    "windowsInstallerButton": "Windowsインストーラー",
+    "javaInstallerButton": "汎用JAR",
+    "complementaryInstallerButton": "ダウンロード",
+    "complementaryWebsiteButton": "Complementary公式サイトに移動"
 }
