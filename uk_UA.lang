@@ -200,7 +200,7 @@ screen.RAIN_LIGHT_MULTS=Дощ
 screen.NETHER_LIGHT_MULTS=Незер
 screen.END_LIGHT_MULTS=Енд
 
-screen.BLOCKLIGHT__SETTINGS=Світло блоків §e[*]§r
+screen.BLOCKLIGHT_SETTINGS=Світло блоків §e[*]§r
 screen.BLOCKLIGHT_SETTINGS.comment=Налаштування світла, випромінюваного блоками, які є джерелами світла. §e[*]§r Червоні/зелені/сині кольорів не впливатимуть на більшість джерел світла, якщо ввімкнено розширене кольорове трасування.
 
 screen.MOON_PHASE_INF_SETTINGS=Вплив фаз Місяця
