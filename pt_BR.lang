@@ -166,6 +166,9 @@ screen.COLORGRADING_SETTINGS.comment=Configurações para misturar os canais de 
 screen.WORLD_BLUR_SETTINGS=Desfoque do Mundo
 screen.WORLD_BLUR_SETTINGS.comment=Configurações relacionadas a efeitos avançados de desfoque no mundo.
 
+screen.TAA_SETTINGS=Configurações do Filtro Temporal
+screen.TAA_SETTINGS.comment=Configurações para determinar o comportamento do anti-aliasing temporal (TAA).
+
 screen.MATERIAL_SETTINGS=Materiais
 screen.MATERIAL_SETTINGS.comment=Configurações relacionadas aos materiais do Minecraft.
 
@@ -197,8 +200,8 @@ screen.RAIN_LIGHT_MULTS=Clima Chuvoso
 screen.NETHER_LIGHT_MULTS=Dimensão do Nether
 screen.END_LIGHT_MULTS=Dimensão do The End
 
-screen.BLOCKLIGHT_COLOR_SETTINGS=Cor da Luz dos blocos§e[*]§r
-screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Configurações para ajustar a cor emitida por blocos que são fontes de luz. §e[*]§r Essas configurações de cor não afetarão a maioria das luzes se a opção "Iluminação Colorida Avançada" estiver ativada, exceto pelo controle deslizante de Intensidade da Luz de Blocos.
+screen.BLOCKLIGHT_SETTINGS=Iluminação de Blocos §e[*]§r
+screen.BLOCKLIGHT_SETTINGS.comment=Configurações para ajustar a iluminação emitida por blocos que são fontes de luz. §e[*]§r As configurações de cor vermelho/verde/azul não afetarão a maioria das luzes se a opção Rastreamento Avançado de Cores estiver ativada.
 
 screen.MOON_PHASE_INF_SETTINGS=Influência das fases da Lua.
 screen.MOON_PHASE_INF_SETTINGS.comment=Configurações que determinam como as diferentes fases da lua afetam a iluminação noturna.
@@ -351,11 +354,11 @@ value.WORLD_SPACE_PLAYER_REF.1=LIGADO
 
 option.SSAO_I=Intensidade da Sombra de Borda (SSAO)
 option.SSAO_I.comment=Define a intensidade da Oclusão de Ambiente em Espaço de Tela (SSAO), que adiciona sombras extras nas bordas da cena. §e[*]§r Esta configuração não funcionará se SSAO estiver desativado em "Configurações de Desempenho".
-value.SSAO_I.0=§cDESATIVADO
+value.SSAO_I.0=DESATIVADO
 
 option.VANILLAAO_I=Intensidade da Sombra de Borda (Vanilla)
 option.VANILLAAO_I.comment=Define a intensidade da oclusão de ambiente do Minecraft, que adiciona sombras extras nas bordas da cena.
-value.VANILLAAO_I.0=§cDESATIVADO
+value.VANILLAAO_I.0=DESATIVADO
 
 option.BORDER_FOG=Neblina de Borda
 option.BORDER_FOG.comment=Neblina intensa nas bordas do mundo carregado para esconder as bordas dos chunks. §e[*]§r Recomenda-se desativar a Neblina de Borda ao jogar com menos de 8 chunks de distância de renderização.
@@ -378,7 +381,7 @@ option.CAVE_FOG.comment=Ativa neblina extra em áreas subterrâneas profundas.
 
 option.LIGHTSHAFT_BEHAVIOUR=Modo dos Feixes de Luz
 option.LIGHTSHAFT_BEHAVIOUR.comment=Define o comportamento dos feixes de luz. §a[+]§r Feixes de Luz Sensíveis ao Ambiente alternam automaticamente entre modos normal e extremo para melhores resultados. §c[-]§r O modo Extremo não é recomendado para jogabilidade geral e pode impactar severamente o desempenho.
-value.LIGHTSHAFT_BEHAVIOUR.0=§cDESATIVADO
+value.LIGHTSHAFT_BEHAVIOUR.0=DESATIVADO
 value.LIGHTSHAFT_BEHAVIOUR.1=Sensível ao Ambiente §a[+]
 value.LIGHTSHAFT_BEHAVIOUR.2=Normal
 value.LIGHTSHAFT_BEHAVIOUR.3=Extremo §c[-]
@@ -393,10 +396,13 @@ option.LIGHTSHAFT_DAY_I=Multiplicador de Feixe de Luz de Dia
 option.LIGHTSHAFT_NIGHT_I=Multiplicador de Feixe de Luz Noturno
 option.LIGHTSHAFT_RAIN_I=Multiplicador de Feixe de Luz na Chuva
 
+option.LIGHTSHAFT_SUNSET_SATURATION=Cor do Light Shaft no Pôr do Sol
+option.LIGHTSHAFT_SUNSET_SATURATION.comment=Ajusta a saturação extra aplicada à cor dos light shafts durante o nascer e o pôr do sol. Valores mais altos produzem um tom laranja avermelhado, enquanto valores mais baixos tendem a puxar para o amarelo.
+
 option.CLOUD_STYLE_DEFINE=Estilo das Nuvens
 option.CLOUD_STYLE_DEFINE.comment=Define o estilo das nuvens. §e[*]§r "Definido pelo Estilo" significa que a configuração será determinada automaticamente pela opção "Estilo Visual" no menu principal das Opções do Shader. §e[*]§r O estilo "Vanilla" requer que as nuvens estejam ativadas nas Configurações de Vídeo.
 value.CLOUD_STYLE_DEFINE.-1=Definido pelo Estilo
-value.CLOUD_STYLE_DEFINE.0=§cDESATIVADO
+value.CLOUD_STYLE_DEFINE.0=DESATIVADO
 value.CLOUD_STYLE_DEFINE.1=§bReimagined
 value.CLOUD_STYLE_DEFINE.3=Unbound
 value.CLOUD_STYLE_DEFINE.50=Vanilla §e[*]
@@ -748,11 +754,41 @@ value.LENSFLARE_MODE.2=Sol & Lua
 option.LENSFLARE_I=Intensidade do Reflexo de Lente
 option.LENSFLARE_I.comment=Ajuda a ajustar a força do efeito de Reflexo de Lente.
 
-option.TAA_MODE=Filtro Temporal
-option.TAA_MODE.comment=Determina o comportamento do anti-aliasing temporal. Inteligente & Sutil §a[+]§r: Filtro temporal aplicado em pequenas quantidades sem causar artefatos. Intenso §e[*]§r: Melhor anti-aliasing, mas pode causar borrões e cintilação; pode ser melhor em altas taxas de quadros e resolução. DESLIGADO §c[-]§r: Desligar piora o desempenho e a qualidade do efeito.
-value.TAA_MODE.1=Inteligente & Sutil §a[+]
-value.TAA_MODE.2=Intenso §e[*]
+option.TAA_MODE=§eFiltro Temporal§r
+option.TAA_MODE.comment=Ativa o anti-aliasing temporal, que ajuda a suavizar efeitos granulados, melhora o desempenho ao reduzir a quantidade de amostras de alguns efeitos mais pesados e pode reduzir o aliasing com as configurações corretas. §c[-]§r: Desativar esta opção resultará em pior desempenho e menor qualidade dos efeitos.
 value.TAA_MODE.0=DESLIGADO §c[-]
+value.TAA_MODE.1=LIGADO §a[+]
+
+option.TAA_SMOOTHING=Suavização Temporal
+option.TAA_SMOOTHING.comment=Ajusta a quantidade de suavização aplicada pelo Filtro Temporal. Valores mais altos produzem uma imagem mais borrada, mas reduzem cintilação e granulação. A diferença não será perceptível ao ficar parado.
+value.TAA_SMOOTHING.2=Baixo
+value.TAA_SMOOTHING.3=Médio
+value.TAA_SMOOTHING.4=Alto
+
+option.TAA_JITTER=Jitter Temporal §e[*]§r
+option.TAA_JITTER.comment=O jitter ajuda o Filtro Temporal a aplicar melhor o anti-aliasing na imagem, mas possui algumas desvantagens. §e[*]§r Valores mais altos melhoram o anti-aliasing, porém também causam bastante cintilação e desfoque. §e[*]§r Recomenda-se Alta Suavização Temporal com jitter Completo. §c[-]§r Desativar o jitter eliminará os benefícios do anti-aliasing.
+value.TAA_JITTER.0=DESLIGADO §c[-]
+value.TAA_JITTER.1=Baixo
+value.TAA_JITTER.2=Médio
+value.TAA_JITTER.3=Completo §e[*]
+
+option.TAA_MOVEMENT_IMPROVEMENT_FILTER=Amostragem Catmull-Rom
+option.TAA_MOVEMENT_IMPROVEMENT_FILTER.comment=Reduz o desfoque do Filtro Temporal utilizando um método de amostragem mais avançado.
+value.TAA_MOVEMENT_IMPROVEMENT_FILTER.0=DESLIGADO §c[-]
+value.TAA_MOVEMENT_IMPROVEMENT_FILTER.1=LIGADO
+
+option.FXAA_STRENGTH=Intensidade do FXAA
+option.FXAA_STRENGTH.comment=Ajusta a intensidade do efeito FXAA. Valores mais altos produzem melhor anti-aliasing ao custo de uma imagem mais borrada.
+value.FXAA_STRENGTH.-1=DESLIGADO
+
+option.FXAA_TAA_INTERACTION=Reduzir FXAA em Movimento
+option.FXAA_TAA_INTERACTION.comment=Reduz a intensidade do FXAA quando a câmera está em movimento. Valores mais altos produzem uma imagem mais nítida, mas também geram mais cintilação.
+value.FXAA_TAA_INTERACTION.0=DESLIGADO
+value.FXAA_TAA_INTERACTION.2=20
+value.FXAA_TAA_INTERACTION.4=40
+value.FXAA_TAA_INTERACTION.6=60
+value.FXAA_TAA_INTERACTION.8=80
+value.FXAA_TAA_INTERACTION.10=100
 
 option.DISTANT_LIGHT_BOKEH=Bokeh de Luz Distante
 option.DISTANT_LIGHT_BOKEH.comment=Faz fontes de luz distantes parecerem dispersas aplicando um leve desfoque à distância. §a[+]§r Este efeito é melhorado com IntegratedPBR+ (opcional), ajustando as luzes distantes para melhor aparência.
@@ -886,7 +922,7 @@ option.COATED_TEXTURE_MULT.comment=Ajuda a ajustar a força dos detalhes de poei
 
 option.GLOWING_ORE_MASTER=§eAtivar Minérios Brilhantes
 option.GLOWING_ORE_MASTER.comment=Ativa a funcionalidade de minérios brilhantes. §e[*]§r "Definido pelo Estilo" só ativa se o "Estilo Visual" for "Sem Limites". §e[*]§r As opções abaixo só funcionam se esta estiver ativada.
-value.GLOWING_ORE_MASTER.0=§cDESLIGADO
+value.GLOWING_ORE_MASTER.0=DESLIGADO
 value.GLOWING_ORE_MASTER.1=Definido pelo Estilo
 value.GLOWING_ORE_MASTER.2=§aLIGADO
 
@@ -909,12 +945,12 @@ option.GLOWING_ORE_MODDED=Minérios de Mods Brilhantes §e[*]§r
 option.GLOWING_ORE_MODDED.comment=§e[*]§r Adicione IDs de minérios de mods em "Complementary-->shaders-->block.properties" para fazê-los brilhar. Abra o arquivo com um editor de texto e adicione os IDs ao lado de "block.10024=".
 
 option.GLOWING_AMETHYST=Ametista Brilhante
-value.GLOWING_AMETHYST.0=§cDESLIGADO
+value.GLOWING_AMETHYST.0=DESLIGADO
 value.GLOWING_AMETHYST.1=Cristal
 value.GLOWING_AMETHYST.2=Cristal & Bloco
 
 option.GLOWING_LICHEN=Musgo Brilhante
-value.GLOWING_LICHEN.0=§cDESLIGADO
+value.GLOWING_LICHEN.0=DESLIGADO
 value.GLOWING_LICHEN.1=Em Áreas Fechadas
 value.GLOWING_LICHEN.2=Sempre
 
@@ -972,7 +1008,7 @@ value.DIRECTIONAL_BLOCKLIGHT.11=Intenso §c[-]
 
 option.HELD_LIGHTING_MODE=Iluminação Dinâmica na Mão
 option.HELD_LIGHTING_MODE.comment=Permite que fontes de luz na mão iluminem o cenário.
-value.HELD_LIGHTING_MODE.0=§cDESLIGADO
+value.HELD_LIGHTING_MODE.0=DESLIGADO
 value.HELD_LIGHTING_MODE.1=Sutil
 value.HELD_LIGHTING_MODE.2=Normal
 
@@ -1058,7 +1094,7 @@ option.UNDERWATER_DISTORTION.comment=Adiciona refração sutil à tela quando a 
 
 option.SELECT_OUTLINE=Contorno de Seleção
 option.SELECT_OUTLINE.comment=Define a cor do contorno de seleção de bloco.
-value.SELECT_OUTLINE.0=§cDESLIGADO
+value.SELECT_OUTLINE.0=DESLIGADO
 value.SELECT_OUTLINE.1=Padrão
 value.SELECT_OUTLINE.2=Arco-Íris
 value.SELECT_OUTLINE.3=Selecionar Cor
@@ -1170,6 +1206,9 @@ option.XLIGHT_R=Multiplicador Vermelho da Luz de Bloco
 option.XLIGHT_G=Multiplicador Verde da Luz de Bloco
 option.XLIGHT_B=Multiplicador Azul da Luz de Bloco
 option.XLIGHT_I=Multiplicador de Intensidade da Luz de Bloco
+
+option.XLIGHT_CURVE=Contraste da Iluminação de Blocos
+option.XLIGHT_CURVE.comment=Ajusta a rapidez com que a intensidade da iluminação dos blocos diminui à medida que se afasta da fonte de luz.
 
 ####### Euphoria Patches #######
 
@@ -1535,6 +1574,10 @@ value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_SUN_MOON_SHADING=Sombreamento do Sol/Lua
 option.CLOUD_SUN_MOON_SHADING.comment=Ativa o sombreamento do sol e da lua nas nuvens.
+value.CLOUD_SUN_MOON_SHADING.0=OFF
+value.CLOUD_SUN_MOON_SHADING.1=Somente a Lua
+value.CLOUD_SUN_MOON_SHADING.2=Somente o Sol
+value.CLOUD_SUN_MOON_SHADING.3=Ambos
 
 option.END_SMOKE=Fumaça do End
 option.END_SMOKE.comment=Alguém deixou o fogo sem supervisão e agora o End tem fumaça no vazio superior e inferior.
@@ -2642,6 +2685,7 @@ value.NEBULA_MOON_CONDITION.1=Lua Nova
 value.NEBULA_MOON_CONDITION.2=Lua Cheia
 value.NEBULA_MOON_CONDITION.3=Luas Parciais
 value.NEBULA_MOON_CONDITION.4=Aleatório
+value.NEBULA_MOON_CONDITION.5= Sempre, exceto durante a Lua Nova
 
 option.END_CENTER_LIGHTING=Iluminação Central do End
 option.END_CENTER_LIGHTING.comment=Altera a iluminação do centro do End. §e[*]§r Este recurso funciona apenas no Minecraft 1.9+.
@@ -2700,3 +2744,12 @@ option.MIRROR_TINTED_GLASS_OPAQUE.comment = Deixa os blocos de vidro escurecido 
 option.COLORED_LIGHT_FOG_RAIN_I=Intensidade da Névoa de Luz Colorida (Chuva)
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Ajusta o quão forte fica a névoa de luz colorida enquanto chove.
 value.COLORED_LIGHT_FOG_RAIN_I.0=Padrão
+
+option.BLOOD_MOON=Lua de Sangue
+option.BLOOD_MOON.comment=Ativa Luas de Sangue que ocorrem de acordo com a quantidade de dias do Minecraft definida nesta opção. Luas de Sangue não acontecem na primeira noite se a opção estiver definida para algo acima de Toda Noite. Luas de Sangue também não acontecem durante a Lua Nova se a opção estiver definida para algo acima de Toda Noite.
+value.BLOOD_MOON.0=DESLIGADO
+value.BLOOD_MOON.1=Todas as noite
+suffix.BLOOD_MOON=\ Noites do Minecraft
+option.BLOOD_MOON.comment=Ativa Luas de Sangue que ocorrem conforme a quantidade de dias do Minecraft definida pelo usuário nesta opção.
+option.EMISSIVE_BLOOD_MOON_FLOWERS=Flores da Lua de Sangue Emissivas
+option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Faz flores vermelhas brilharem durante Luas de Sangue. §e[*]§r A opção de suporte a RP deve estar definida como PBR+ Integrado.
