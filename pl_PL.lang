@@ -166,6 +166,9 @@ screen.COLORGRADING_SETTINGS.comment=Ustawienia do mieszania kanałów kolorów.
 screen.WORLD_BLUR_SETTINGS=Efekty Rozmycia
 screen.WORLD_BLUR_SETTINGS.comment=Ustawienia związane z różnorakimi efektami rozmycia.
 
+screen.TAA_SETTINGS=Ustawienia Filtra Temporalnego
+screen.TAA_SETTINGS.comment=Ustawienia określające zachowanie wygładzania krawędzi TAA.
+
 screen.MATERIAL_SETTINGS=Materiały
 screen.MATERIAL_SETTINGS.comment=Ustawienia związane z materiałami róznych bloków.
 
@@ -197,8 +200,8 @@ screen.RAIN_LIGHT_MULTS=Pogoda Deszczowa/Śnieżna
 screen.NETHER_LIGHT_MULTS=Wymiar Netheru
 screen.END_LIGHT_MULTS=Wymiar Endu
 
-screen.BLOCKLIGHT_COLOR_SETTINGS=Kolor Źródeł Światła §e[*]§r
-screen.BLOCKLIGHT_COLOR_SETTINGS.comment=Ustawienia dostosowujące kolor emitowany przez bloki będące źródłami światła. §e[*]§r Te ustawienia nie będą miały wpływu na większość bloków, jeśli włączone jest ustawienie Zaawansowane Kolorowe Oświetlenie (ACT).
+screen.BLOCKLIGHT_SETTINGS=Ustawienia Źródeł Światła §e[*]§r
+screen.BLOCKLIGHT_SETTINGS.comment=Ustawienia dostosowujące światło emitowany przez bloki będącymi źródłami światła. §e[*]§r Ustawienia związane z kolorem nie będą miały wpływu na większość bloków, jeśli włączone jest ustawienie Zaawansowane Kolorowe Oświetlenie (ACT).
 
 screen.MOON_PHASE_INF_SETTINGS=Wpływ Fazy Księżyca
 screen.MOON_PHASE_INF_SETTINGS.comment=Ustawienia określające wpływ różnych faz księżyca na oświetlenie nocne.
@@ -287,10 +290,10 @@ value.shadowDistance.768.0=§4§k-§r§4§l§n§o48 Chunków§r§4§k-
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 Chunki§r§4§k-
 
 option.ENTITY_SHADOW=Cienie Mobów
-option.ENTITY_SHADOW.comment=Kontroluje możliwość rzucania cieni przez moby, niektóre bloki i inne byty. §c[-]§r Cienie mobów wpływają na wydajność znacznie bardziej niż oczekiwano, w niektórych przypadkach kosztując ponad 50% klatek na sekundę.
+option.ENTITY_SHADOW.comment=Kontroluje możliwość rzucania cieni przez moby, niektóre bloki i inne byty. „Zwykłe Moby” obejmują takie zwierzęta i potwory, natomiast opcja „Pełne” obejmuje również pewne blokoi, takie jak skrzynie. §c[-]§r Cienie mobów wpływają na wydajność znacznie bardziej niż oczekiwano, w niektórych przypadkach kosztując ponad 50% klatek na sekundę.
 value.ENTITY_SHADOW.-1=§aWYŁ.
 value.ENTITY_SHADOW.1=§cZwykłe Moby
-value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oWŁ.§r§4§k- §r§c[-]
+value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oPełne§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Jakość Detali
 option.DETAIL_QUALITY.comment=Dostosowuje kilka drobnych rzeczy, które mocno wpływają na wydajność, takie jak: Jakość Wody, TAA, Korekty Oświetlenia, Nocne Mgławice, Burza Netheru, Zorza Endu, Odbicia Nieba, Dokladnośc Kałuż, Efekty Falowania, Rozmycie Ruchu
@@ -344,13 +347,18 @@ option.WORLD_SPACE_REF_MODE.comment=Określa tryb działania odbić przestrzeni 
 value.WORLD_SPACE_REF_MODE.1=Tylko WSR
 value.WORLD_SPACE_REF_MODE.2=WSR + SSR
 
+option.WORLD_SPACE_PLAYER_REF=WSR Odbicia gracza
+option.WORLD_SPACE_PLAYER_REF.comment=Sprawia, że model gracza jest odbijany w przestrzeni świata.
+value.WORLD_SPACE_PLAYER_REF.-1=WYŁ.
+value.WORLD_SPACE_PLAYER_REF.1=WŁ.
+
 option.SSAO_I=Natężenie Cieni na Krawędziach (SSAO)
 option.SSAO_I.comment=Określa siłę Screen-Space Ambient Occlusion (SSAO), która dodaje dodatkowe cienie do krawędzi sceny. §e[*]§r To ustawienie nie będzie działać, jeśli SSAO jest wyłączone w "Ustawieniach Jakości".
-value.SSAO_I.0=§cWYŁ.
+value.SSAO_I.0=WYŁ.
 
 option.VANILLAAO_I=Natężenie Cieni na Krawędziach (Vanilla)
 option.VANILLAAO_I.comment=Określa siłę wbudowanej okluzji otoczenia Minecrafta, która dodaje dodatkowe cienie do krawędzi sceny.
-value.VANILLAAO_I.0=§cWYŁ.
+value.VANILLAAO_I.0=WYŁ.
 
 option.BORDER_FOG=Mgła Graniczna
 option.BORDER_FOG.comment=Intensywna mgła na krawędzi świata, aby ukryć granice chunków. §e[*]§r Zaleca się wyłączenie mgły granicznej podczas gry z mniej niż 8 chunkami odległości renderowania.
@@ -373,7 +381,7 @@ option.CAVE_FOG.comment=Dodaje dodatkową mgłę głęboko pod ziemią.
 
 option.LIGHTSHAFT_BEHAVIOUR=Tryb Snopów Światłą
 option.LIGHTSHAFT_BEHAVIOUR.comment=Określa zachowanie snopów światła. §a[+]§r Snopy Światła Świadome Sceny automatycznie przechodzą między trybem zwykłym i ekstremalnym, aby osiągnąć najlepsze rezultaty. §c[-]§r Tryb ekstremalny nie jest zalecany do ogólnej rozgrywki i może poważnie wpłynąć na wydajność.
-value.LIGHTSHAFT_BEHAVIOUR.0=§cWYŁ.
+value.LIGHTSHAFT_BEHAVIOUR.0=WYŁ.
 value.LIGHTSHAFT_BEHAVIOUR.1=Świadome Sceny §a[+]
 value.LIGHTSHAFT_BEHAVIOUR.2=Zwykły
 value.LIGHTSHAFT_BEHAVIOUR.3=Extremalny §c[-]
@@ -388,10 +396,13 @@ option.LIGHTSHAFT_DAY_I=Mnożnik Snopów Światła w trakcie Dnia
 option.LIGHTSHAFT_NIGHT_I=Mnożnik Snopów Światła w trakcie Nocy
 option.LIGHTSHAFT_RAIN_I=Mnożnik Snopów Światła w trakcie Deszczu
 
+option.LIGHTSHAFT_SUNSET_SATURATION=Kolor Promieni Słonecznych o Zachodzie Słońca
+option.LIGHTSHAFT_SUNSET_SATURATION.comment=Dostosowuje kolor promieni słonecznych o wschodzie i zachodzie słońca. Wyższe wartości powodują uzyskanie czerwono-pomarańczowego odcienia, natomiast niższe wartości powodują przesunięcie w kierunku żółtego.
+
 option.CLOUD_STYLE_DEFINE=Styl Chmur
 option.CLOUD_STYLE_DEFINE.comment=Określa styl chmur. §e[*]§r "Określony przez Styl" oznacza, że ustawienie zostanie automatycznie określone przez ustawienie "Styl Wizualny" w głównym menu Opcji Shadera. §e[*]§r Styl "Vanilla" wymaga włączenia chmur w Ustawieniach Grafiki Minecrafta.
 value.CLOUD_STYLE_DEFINE.-1=Określony przez Styl
-value.CLOUD_STYLE_DEFINE.0=§cWYŁ.
+value.CLOUD_STYLE_DEFINE.0=WYŁ.
 value.CLOUD_STYLE_DEFINE.1=Reimagined
 value.CLOUD_STYLE_DEFINE.3=Unbound
 value.CLOUD_STYLE_DEFINE.50=Vanilla §e[*]
@@ -416,8 +427,8 @@ option.CLOUD_B=Mnożnik Niebieskości Chmur
 option.CLOUD_UNBOUND_AMOUNT=Ilość Chmur
 option.CLOUD_UNBOUND_AMOUNT.comment=Dostosowuje ilość chmur w stylu Unbound.
 
-option.CLOUD_UNBOUND_SIZE_MULT=Rozmiar Chmur (Odwrócony)
-option.CLOUD_UNBOUND_SIZE_MULT.comment=Dostosowuje rozmiar chmur Unbound. Ten mnożnik jest odwrócony (wyższe wartości zmniejszają rozmiar chmur).
+option.CLOUD_UNBOUND_SIZE_MULT=Rozmiar Chmur (Odwrócony) §c[-]§r
+option.CLOUD_UNBOUND_SIZE_MULT.comment=Dostosowuje rozmiar chmur Unbound. Ten mnożnik jest odwrócony (wyższe wartości zmniejszają rozmiar chmur). §c[-]§r Zmiana tej wartości spowoduje wyłączenie funkcji synchronizacji pozycji chmur między graczami na tym samym serwerze.
 
 option.CLOUD_UNBOUND_RAIN_ADD=Więcej Chmur podczas Deszczu
 option.CLOUD_UNBOUND_RAIN_ADD.comment=Dostosowuje wzrost ilości chmur, podczas opadów deszczu/śniegu.
@@ -506,7 +517,7 @@ option.GR_BB=Niebieski do Niebieskiego
 option.GR_BC=Krzywa Niebieskości
 
 option.WATER_STYLE_DEFINE=Styl Wody
-option.WATER_STYLE_DEFINE.comment=Określa styl wody. §e[*]§r "Określony przez Styl" oznacza, że ustawienie zostanie automatycznie określone przez ustawienie "Styl Wizualny" w głównym menu Opcji Shadera.
+option.WATER_STYLE_DEFINE.comment=Określa styl wody. §e[*]§r "Określony przez Styl" oznacza, że ustawienie zostanie automatycznie określone przez ustawienie "Styl Wizualny" w głównym menu opcji shadera.
 value.WATER_STYLE_DEFINE.-1=Określony przez Styl
 value.WATER_STYLE_DEFINE.1=Reimagined
 value.WATER_STYLE_DEFINE.2=Reimagined + Fale
@@ -604,8 +615,8 @@ value.SUN_MOON_STYLE_DEFINE.3=Unbound (Mniejszy)
 option.SUN_MOON_HORIZON=Horyzont Słońca/księżyca
 option.SUN_MOON_HORIZON.comment=Zapobiega pojawianiu się słońca/księżyca poniżej linii horyzontu.
 
-option.SUN_MOON_DURING_RAIN=Słońce/Księżyc podczas deszczu
-option.SUN_MOON_DURING_RAIN.comment=Określa, czy słońce i księżyc będą widoczne podczas deszczu, czy nie.
+option.SUN_MOON_DURING_RAIN=Słońce/Księżyc podczas deszczu §e[*]§r
+option.SUN_MOON_DURING_RAIN.comment=Określa, czy słońce i księżyc będą widoczne podczas deszczu, czy nie. §e[*]§r To ustawienie zmienia również balans oświetlenia podczas deszczu.
 
 option.NIGHT_STAR_AMOUNT=Ilość Gwiazd
 option.NIGHT_STAR_AMOUNT.comment=Określa ilość gwiazd na nocnym niebie.
@@ -621,15 +632,22 @@ value.RAINBOWS.0=WYŁ.
 value.RAINBOWS.1=Po deszczu
 value.RAINBOWS.3=Zawsze
 
+option.RAINBOW_STYLE_DEFINE=Styl Tęczy
+option.RAINBOW_STYLE_DEFINE.comment=Określa styl tęczy. §e[*]§r „Określony przez Styl” oznacza, że ustawienie zostanie automatycznie określone przez ustawienie „Styl Wizualny” w menu głównym opcji shadera.
+value.RAINBOW_STYLE_DEFINE.-1=Określony przez Styl
+value.RAINBOW_STYLE_DEFINE.1=Reimagined
+value.RAINBOW_STYLE_DEFINE.4=Unbound
+
 option.AURORA_STYLE_DEFINE=Styl Zorzy Polarnej
 option.AURORA_STYLE_DEFINE.comment=Określa styl zorzy polarnej pojawiającej się na nocnym niebie.
 value.AURORA_STYLE_DEFINE.-1=Określony przez Styl
-value.AURORA_STYLE_DEFINE.0=§cWYŁ.
+value.AURORA_STYLE_DEFINE.0=WYŁ.
 value.AURORA_STYLE_DEFINE.1=Reimagined
 value.AURORA_STYLE_DEFINE.2=Unbound
 
 option.AURORA_CONDITION=Warunki Zorzy Polarnej
 option.AURORA_CONDITION.comment=Określa warunki w jakich pojawi się zorza polarna. §e[*]§r Zorza polarna pojawi się tylko w nocy, niezależnie od tego ustawienia.
+value.AURORA_CONDITION.-1=Każdej Nocy z Wyjątkiem Nowiu
 value.AURORA_CONDITION.0=Każdej Nocy
 value.AURORA_CONDITION.1=Księżyc w Pełni
 value.AURORA_CONDITION.2=Zimny Biom
@@ -737,10 +755,40 @@ option.LENSFLARE_I=Natężęnie Odblasków Obiektywu
 option.LENSFLARE_I.comment=Dostosowuje siłę efektu odblasku obiektywu.
 
 option.TAA_MODE=§eFiltr Temporalny (TAA)§r
-option.TAA_MODE.comment=Określa zachowanie antyaliasingu temporalnego. Sprytny & Subtelny §a[+]§r: Filtr temporalny jest nakładany w niewielkich ilościach na obraz w sposób, który nie powoduje artefaktów. Intensywny §e[*]§r: Zapewnia lepszy antyaliasing, ale powoduje dodatkowe rozmycie i migotanie; może być lepszym wyborem przy wyższej liczbie klatek na sekundę i rozdzielczości. WYŁ. §c[-]§r: Wyłączenie tej opcji spowoduje pogorszenie wydajności i jakości obrazu.
-value.TAA_MODE.1=Sprytny & Subtelny §a[+]
-value.TAA_MODE.2=Intensywny §e[*]
+option.TAA_MODE.comment=Włącza temporalny aliasing (TAA), który pomaga wygładzić ziarnistość obrazy, poprawia wydajność poprzez zmniejszenie liczby próbek niektórych efektów i może zmniejszyć aliasing przy odpowiednich ustawieniach. §c[-]§r: Wyłączenie tej opcji spowoduje pogorszenie wydajności i jakości efektów.
 value.TAA_MODE.0=§cWYŁ. [-]
+value.TAA_MODE.1=WŁ. §a[+]
+
+option.TAA_SMOOTHING=Wygładzanie
+option.TAA_SMOOTHING.comment=Dostosowuje poziom wygładzania stosowanego przez filtr temporalny. Wyższe wartości powodują większe rozmycie obrazu, ale zmniejszają migotanie i ziarnistość. Różnica nie będzie zauważalna podczas stania w miejscu.
+value.TAA_SMOOTHING.2=Niskie
+value.TAA_SMOOTHING.3=Średnie
+value.TAA_SMOOTHING.4=Wysokie
+
+option.TAA_JITTER=Drganie §e[*]§r
+option.TAA_JITTER.comment=Drgania pomagają filtrowi temporalnemu lepiej wygładzać obraz, ale mają pewne wady. §e[*]§r Wyższe wartości poprawiają wygładzanie, ale powodują również znaczne migotanie i rozmycie obrazu. §e[*]§r Przy opcji "Pełne" zalecane jest ustawienie Wygładzania na "Wysokie." §c[-]§r Wyłączenie drgań eliminuje efekt antyaliasingu filtra temporalnego.
+value.TAA_JITTER.0=WYŁ. §c[-]
+value.TAA_JITTER.1=Niskie
+value.TAA_JITTER.2=Średnie
+value.TAA_JITTER.3=Pełne §e[*]
+
+option.TAA_MOVEMENT_IMPROVEMENT_FILTER=Próbkowanie Catmull-Rom
+option.TAA_MOVEMENT_IMPROVEMENT_FILTER.comment=Zmniejsza rozmycie filtra czasowego dzięki zastosowaniu bardziej zaawansowanej metodzie próbkowania.
+wartość.TAA_MOVEMENT_IMPROVEMENT_FILTER.0=WYŁ. §c[-]
+wartość.TAA_MOVEMENT_IMPROVEMENT_FILTER.1=WŁ.
+
+opcja.FXAA_STRENGTH=Siła FXAA
+opcja.FXAA_STRENGTH.komentarz=Dostosowuje intensywność efektu FXAA. Wyższe wartości zapewniają lepsze wygładzanie krawędzi kosztem większego rozmycia obrazu.
+value.FXAA_STRENGTH.-1=WYŁ.
+
+option.FXAA_TAA_INTERACTION=Zmniejsz FXAA Podczas Ruchu
+option.FXAA_TAA_INTERACTION.comment=Zmniejsza siłę FXAA podczas ruchu kamery. Wyższe wartości zapewniają ostrzejszy obraz, ale powodują również większe migotanie.
+value.FXAA_TAA_INTERACTION.0=WYŁ.
+value.FXAA_TAA_INTERACTION.2=20
+value.FXAA_TAA_INTERACTION.4=40
+value.FXAA_TAA_INTERACTION.6=60
+value.FXAA_TAA_INTERACTION.8=80
+value.FXAA_TAA_INTERACTION.10=100
 
 option.DISTANT_LIGHT_BOKEH=Bokeh Odległego Światła
 option.DISTANT_LIGHT_BOKEH.comment=Sprawia, że odległe źródła światła wyglądają na rozproszone poprzez zastosowanie rozmycia pojedynczego piksela. §a[+]§r Ten efekt korzysta ze ZintegrowanegoPBR+ (opcjonalnie), dostosowując odległe źródła światła w celu uzyskania lepszego wyglądu.
@@ -810,6 +858,9 @@ option.FANCY_GLASS.comment=Ulepsza zwykłe szkło, dodając do niego półprzezr
 option.GREEN_SCREEN_LIME=Zielony ekran
 option.GREEN_SCREEN_LIME.comment=Zmienia "Jasnozielony Beton", "Jasnozielona Wełna" i "Jasnozielony Dywan" w zielone ekrany do edycji wideo. Wskazówka 1: Wyłącz opcję "Blask", aby poprawić separację. Wskazówka 2: Umieść światła pod jasnozielonymi dywanami, aby je oświetlić. Wskazówka 3: Możesz wyłączyć antyaliasing (FXAA) i ustawić jakość detali na "ziemniak" w ustawieniach jakości, aby wyłączyć filtrowanie obrazu i uzyskać idealną separację pikseli.
 
+option.MIRROR_TINTED_GLASS=Lustrzane Szkło Przyciemnione
+option.MIRROR_TINTED_GLASS.comment=Zwiększa współczynnik odbicia i nieprzezroczystość bloków szkła przyciemnianego. Aby uzyskać najlepsze wyniki, włącz odbicia przestrzeni świata.
+
 option.HAND_SWAYING=Kołysanie Ręką
 option.HAND_SWAYING.comment=Dodaje powolny ruch do ręki gracza, aby symulować animację oddychania.
 value.HAND_SWAYING.0=WYŁ.
@@ -871,7 +922,7 @@ option.COATED_TEXTURE_MULT.comment=Dostosowuje przezroczystość automatycznie g
 
 option.GLOWING_ORE_MASTER=Włącz Świecące Rudy
 option.GLOWING_ORE_MASTER.comment=Włącza funkcjonalność świecących rud. §e[*]§r Wybranie opcji "Określone przez Styl" włączy świecące rudy tylko wtedy, gdy "Styl Wizualny" jest ustawiony na "Unbound". §e[*]§r Ustawienia w tej sekcji, jeśli ta opcja nie jest włączona.
-value.GLOWING_ORE_MASTER.0=§cWYŁ.
+value.GLOWING_ORE_MASTER.0=WYŁ.
 value.GLOWING_ORE_MASTER.1=Określone przez Styl [*]
 value.GLOWING_ORE_MASTER.2=§aWŁ.
 
@@ -894,12 +945,12 @@ option.GLOWING_ORE_MODDED=Świece Zmodyfikowane Rudy §e[*]§r
 option.GLOWING_ORE_MODDED.comment=§e[*]§r Możesz dodać identyfikatory rud dodanych przez modyfikacje do pliku "Complementary-->shaders-->block.properties", aby sprawić by świeciły. Możesz otworzyć plik block.properties za pomocą dowolnego edytora tekstu, takiego jak Notatnik, a następnie dodać identyfikatory zmowydikowanych bloków rudy do wartości "block.10024=".
 
 option.GLOWING_AMETHYST=Świecący Ametyst
-value.GLOWING_AMETHYST.0=§cWYŁ
+value.GLOWING_AMETHYST.0=WYŁ
 value.GLOWING_AMETHYST.1=Kryształ
 value.GLOWING_AMETHYST.2=Kryształ & Blok
 
 option.GLOWING_LICHEN=Naprawde Świecący Porost
-value.GLOWING_LICHEN.0=§cWYŁ.
+value.GLOWING_LICHEN.0=WYŁ.
 value.GLOWING_LICHEN.1=W Obszarach Zamkniętych
 value.GLOWING_LICHEN.2=Zawsze
 
@@ -957,7 +1008,7 @@ value.DIRECTIONAL_BLOCKLIGHT.11=Intensywne §c[-]
 
 option.HELD_LIGHTING_MODE=Dynamiczne Oświetlenie Ręczne
 option.HELD_LIGHTING_MODE.comment=Pozwala źródłom światła trzymanym w ręce rzucać światło na scenę.
-value.HELD_LIGHTING_MODE.0=§cWYŁ.
+value.HELD_LIGHTING_MODE.0=WYŁ.
 value.HELD_LIGHTING_MODE.1=Subtelne
 value.HELD_LIGHTING_MODE.2=Zwykłe
 
@@ -1043,7 +1094,7 @@ option.UNDERWATER_DISTORTION.comment=Dodaje subtelne załamanie na ekranie, gdy 
 
 option.SELECT_OUTLINE=Kontur Wyboru
 option.SELECT_OUTLINE.comment=Określa kolor konturu zaznaczenia bloku.
-value.SELECT_OUTLINE.0=§cWYŁ.
+value.SELECT_OUTLINE.0=WYŁ.
 value.SELECT_OUTLINE.1=Domyślny
 value.SELECT_OUTLINE.2=Tęczowy
 value.SELECT_OUTLINE.3=Wybierz kolor
@@ -1094,7 +1145,7 @@ option.COLORED_LIGHT_FOG=§eWolumetryczna Mgła Świetlna§r
 option.COLORED_LIGHT_FOG.comment=Dodaje wolumetryczną mgłę do sceny, najbardziej widoczną w nocy lub pod ziemią. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACT) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
 
 option.COLORED_LIGHT_FOG_I=Natężęnie Mgły Świetlnej
-option.COLORED_LIGHT_FOG_I.comment=Określa jasność kolorowej mgły świetlnej.
+option.COLORED_LIGHT_FOG_I.comment=Określa jasność wolumetrycznej mgły świetlnej.
 
 option.LIGHT_COLOR_MULTS=§eMnożniki Kolorów Oświetlenia
 option.LIGHT_COLOR_MULTS.comment=Umożliwia dostosowanie kolorów oświetlenia widocznych na wszystkich powierzchniach.
@@ -1156,6 +1207,9 @@ option.XLIGHT_G=Mnożnik Zieleni Źródeł Światła
 option.XLIGHT_B=Mnożnik Niebieskości Źródeł Światła
 option.XLIGHT_I=Natężęnie Źródeł Światła
 
+option.XLIGHT_CURVE=Kontrast Źródeł Światła 
+option.XLIGHT_CURVE.comment=Reguluje spadek intensywności światła w miarę oddalania się od źródła światła.
+
 ####### Euphoria Patches #######
 
 profile.SPACEAGLE17= §f۞ §kO§fDebug (Nie Używać)§f§kO
@@ -1171,17 +1225,20 @@ value.WATERMARK.3=& Interfejs Schowany & Trzymaj Pajęcze Oko
 value.WATERMARK.4=Czarno/Biały
 option.WATERMARK_SIZE=Rozmiar Znaku Wodnego
 
-screen.EUPHORIA_SETTINGS=§dUstawienia Euphoria Patches
+screen.EUPHORIA_SETTINGS=§dKonfiguracja Euphoria Patches >
 screen.EUPHORIA_SETTINGS.comment=Ustawienia dodane przez Euphoria Patches. §bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support
 
 screen.ATMOSPHERE=Atmosfera
 screen.ATMOSPHERE.comment=Ustawienia które wpływają na atmosferę.
 screen.CLOUDS=Chmury
 screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Chmury Reimagined
+screen.CLOUD_REIMAGINED_SECOND_LAYER_SETTINGS=Druga Warstwa Chmur
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Chmury Unbound
 screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Podwójne Chmury Unbound
+screen.CLOUD_SHADING_SETTINGS=Cieniowanie Chmur
 screen.AURORA_SETTINGS=Zorza Polarna
 screen.AURORA_SETTINGS.comment=Ustawienia które wpływają na zorze polarną.
+screen.AURORA_INFLUENCE_SETTINGS=Wpływ Zorzy
 screen.AURORA_COLOR_SETTINGS=Kolory Zorzy Polarnej
 screen.AURORA_COLOR_SETTINGS.comment=Ustawienia związane z kolorem zorzy polarnej.
 screen.END_SKY=Niebo Endu
@@ -1204,8 +1261,6 @@ screen.NEBULA_STAR_SETTINGS=Ustawienia Gwiazd
 
 screen.WORLD=Świat
 screen.WORLD.comment=Ustawienia które wpływają na świat.
-screen.SPOOKY_SETTINGS=Ustawienia Spooklementary
-screen.EYES_SETTINGS=Ustawienia Oczu
 screen.BLOOD_MOON_SETTINGS=Ustawienia Krwawego Księżyca
 screen.OVERWORLD_WORLD=Powierzchnia
 screen.OVERWORLD_BEAM=Słupy Świetlne
@@ -1281,6 +1336,8 @@ screen.STATIC_NOISE_SETTINGS=Szum Telewizyjny
 screen.HORIZONTAL_NOISE_SETTINGS=Ustawienia Szumu Poziomego
 screen.VERTICAL_SCREEN_DISPLACEMENT_SETTINGS=Ustawienia Pionowej Dyslokacji Ekranu
 screen.PIXELATE_SCREEN_SETTINGS=Ustawienia Pikelozy
+screen.DITHERING_SETTINGS=Ustawienia Dithering-u
+screen.PALETTE_SETTINGS=Ustawienia Palety Kolorów
 screen.SCANLINE_SETTINGS=Linia Skanowania
 screen.HALFTONE_SETTINGS=Ustawienia Półtonu
 screen.SPEED_LINES_SETTINGS=Ustawienia Lin Prędkości
@@ -1312,23 +1369,23 @@ option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
 option.DAYLIGHT_CYCLE_COMPAT.comment=Używaj tej opcji TYLKO, jeśli grasz na serwerze z wyłączoną zasadą "doDaylightCycle". Po włączeniu tej opcji chmury i inne animacje w światach z wyłączonym cyklem dziennym nie są już synchronizowane między graczami.
 
 option.AURORA_COLOR_PRESET=Preset Kolorów Zorzy Polarnej
-option.AURORA_COLOR_PRESET.comment=Wybierz pomiędzy zorzami o domyślnych/niestandardowych kolorach, zorzami o różnych kolorach, których kolor zmienia się każdego Minecraftowego dnia/miesiąca lub ręcznie ustaw kolory.
+option.AURORA_COLOR_PRESET.comment=Wybierz pomiędzy zorzami o domyślnych/niestandardowych kolorach, zorzami o różnych kolorach, których kolor zmienia się każdego Minecraftowego dnia/miesiąca lub ręcznie ustaw kolory. Lub gładki codzienny, który płynnie zmienia kolor przez całą noc.
+value.AURORA_COLOR_PRESET.-1=§o§lZmienny - Gładki Codzienny
 value.AURORA_COLOR_PRESET.0=Własny
 value.AURORA_COLOR_PRESET.1=§o§lZmienny - Codziennie
 value.AURORA_COLOR_PRESET.2=§o§lZmienny - Co Miesiąc
-value.AURORA_COLOR_PRESET.3=§cO§6g§cn§6i§es§6t§ey
-value.AURORA_COLOR_PRESET.4=§cW§4i§bd§3m§bo
-value.AURORA_COLOR_PRESET.5=§9Mg§5ł§9a§5w§di§5ca
-value.AURORA_COLOR_PRESET.6=§9Complementary §bv4
-value.AURORA_COLOR_PRESET.7=§6E§dn§5d
-value.AURORA_COLOR_PRESET.8=§bL§3ó§9d
-value.AURORA_COLOR_PRESET.9=§cA§6r§ab§2u§2z
-value.AURORA_COLOR_PRESET.10=§bEt§3e§br§dyc§3z§dny
-value.AURORA_COLOR_PRESET.11=§bZm§3a§br§3z§cl§3i§cna
-value.AURORA_COLOR_PRESET.12=§dR§5ó§dż§do§5w§dy
-value.AURORA_COLOR_PRESET.13=§aJo§5ker
-value.AURORA_COLOR_PRESET.14=§cRzeź
-value.AURORA_COLOR_PRESET.15=§bMisty§9czny
+value.AURORA_COLOR_PRESET.3=§9Orginalny§b Complementary v4
+value.AURORA_COLOR_PRESET.4=§bZm§3a§br§3z§cl§3i§cna
+value.AURORA_COLOR_PRESET.5=§dKwitniące §5Światła
+value.AURORA_COLOR_PRESET.6=§9Mg§5ł§9a§5w§di§5ca
+value.AURORA_COLOR_PRESET.7=§5Niebiański §3Taniec
+value.AURORA_COLOR_PRESET.8=§aZielony Błysk
+value.AURORA_COLOR_PRESET.9=§bEt§3e§br§dyc§3z§dny
+value.AURORA_COLOR_PRESET.10=§bLodowcowe §9Błogosławieństwo
+value.AURORA_COLOR_PRESET.11=§bMisty§9czny
+value.AURORA_COLOR_PRESET.12=§cA§6r§ab§2u§2z
+value.AURORA_COLOR_PRESET.13=§cRzeź
+value.AURORA_COLOR_PRESET.14=§cD§4u§bc§3h
 
 option.RGB_AURORA=Zorza RGB
 option.RGB_AURORA.comment=Stań się epickim gejmerem dzięki §rZorzy §4R§2G§9B
@@ -1360,6 +1417,33 @@ option.AURORA_TERRAIN_INFLUENCE_INTENSITY=Natężęnie Wpływu na Teren
 option.AURORA_TERRAIN_INFLUENCE_INTENSITY.comment=Zmienia intensywność wpływu koloru zorzy polarnej na teren.
 value.AURORA_TERRAIN_INFLUENCE_INTENSITY.0.00=WYŁ.
 
+option.RANDOM_AURORA=Losowa Widoczność Zorzy Polarnej
+option.RANDOM_AURORA.comment=Zmienia prawdopodobieństwo pojawienia się zorzy polarnej każdej nocy. Nadal uwzględnia normalne warunki pojawiania się zorzy polarnej.
+value.RANDOM_AURORA.0=Domyślne
+value.RANDOM_AURORA.1=10%
+value.RANDOM_AURORA.2=20%
+value.RANDOM_AURORA.3=30%
+value.RANDOM_AURORA.4=40%
+value.RANDOM_AURORA.5=50%
+value.RANDOM_AURORA.6=60%
+value.RANDOM_AURORA.7=70%
+value.RANDOM_AURORA.8=80%
+value.RANDOM_AURORA.9=90%
+
+opcja. AURORA_NOISE_SCALE=Skala Zorzy Polarnej
+opcja.AURORA_NOISE_SCALE.comment=Zmienia skalę zorzy polarnej.
+
+opcja.AURORA_PATTERN_WARP=Zawirowanie
+opcja.AURORA_PATTERN_WARP.comment=Zmienia stopień zawirowania i zniekształcenia zorzy polarnej.
+value.AURORA_PATTERN_WARP.0=WYŁ.
+
+opcja.AURORA_SATURATION=Nasycenie Zorzy Polarnej
+opcja.AURORA_SATURATION.comment=Zmienia nasycenie kolorów zorzy polarnej.
+value.AURORA_SATURATION.10=Domyślne
+
+option.AURORA_COLOR_MIX_POWER=Dominująca Warstwa
+option.AURORA_COLOR_MIX_POWER.comment=Zmienia, która warstwa zorzy polarnej jest najbardziej widoczna.
+
 option.CLOUD_ROUNDNESS=Krągłość Chmur §e[*]§r
 value.CLOUD_ROUNDNESS.0.025=Bardzo Kwadratowe §e[*]§r
 value.CLOUD_ROUNDNESS.0.05=Kwadratowe §e[*]§r
@@ -1371,18 +1455,15 @@ value.CLOUD_SHADOW_ROUNDNESS.0.15=Bardzo Kwadratowe
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Kwadratowe
 value.CLOUD_SHADOW_ROUNDNESS.0.35=Okrągłe
 option.CLOUD_SHADOW_ROUNDNESS.comment=Zmienia stopień zaokrąglenia cieni chmur.
-option.CLOUD_NARROWNESS=Wąskość Chmur
-value.CLOUD_NARROWNESS.0.1=Ultra Smukłe
-value.CLOUD_NARROWNESS.0.075=Smukłe
-value.CLOUD_NARROWNESS.0.07=Normalne
-value.CLOUD_NARROWNESS.0.025=Szerokie
-option.CLOUD_NARROWNESS.comment=Zmienia, jak wąskie są chmury na osi poziomej.
+option.CLOUD_NARROWNESS=Szerokość Chmur
+option.CLOUD_NARROWNESS.comment=Zmiana szerokości chmur w poziomie.
 
 option.CLOUD_SHADOW_UNBOUND_SIZE=Rozmiar Cieni Chmur
 option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Zmienia rozmiar cieni chmur.
 
 option.CLOUD_STRETCH=Wysokość Chmur
 option.CLOUD_TRANSPARENCY=Przezroczystość Chmur
+option.CLOUD_TRANSPARENCY.comment=Zmienia przezroczystość chmur.
 option.CLOUD_DIRECTION=Kierunek Chmur
 option.CLOUD_DIRECTION.comment=Zmienia kierunek, w którym poruszają się chmury.
 option.CLOUD_TEXTURE=Tekstura Chmur Minecrafta
@@ -1408,6 +1489,21 @@ value.RAINBOW_CLOUD.10=100% Pokrycia
 option.CLOUD_RENDER_DISTANCE=Odległość Render Chmur
 option.CLOUD_RENDER_DISTANCE.comment=Kontroluje jak daleko od gracza chmury będzą widoczne.
 
+option.CLOUD_SHADING_AMOUNT=Intensywność Cieniowania Chmur
+option.CLOUD_SHADING_AMOUNT.comment=Określa stopień cieniowania chmur.
+
+option.INVERTED_CLOUD_SHADING=Odwrócone Cieniowanie Chmur
+option.INVERTED_CLOUD_SHADING.comment=Odwraca efekt cieniowania chmur.
+
+option.CLOUD_LIGHT_MULTIPLIER=Współczynnik Naświetlenia Chmur
+option.CLOUD_LIGHT_MULTIPLIER.comment=Mnoży jasność oświetlonej strony chmur.
+
+option.CLOUD_AMBIENT_MULTIPLIER=Mnożnik Jasności Chmur
+option.CLOUD_AMBIENT_MULTIPLIER.comment=Mnoży jasność strony chmur oświetlonej światłem otoczenia.
+
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Obrót chmur o 90°
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Obraca chmury Reimagined o 90 stopni.
+
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Mniej Chmur w Nocy
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Kontroluje ilość chmur, które zostaną usunięte w nocy
 
@@ -1418,16 +1514,70 @@ option.CLOUD_LAYER2_SPEED_MULT=Mnożnik prędkości warstwy 2 chmur
 
 option.DOUBLE_UNBOUND_CLOUDS=Podwójne Chmury Unbound
 option.DOUBLE_UNBOUND_CLOUDS.comment=Włącza drugą warstwe chmur Unbound. §c[-]§r To ustawienie może mieć wpływ na wydajność.
-option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Pułąp Chmur 2 Warstwy
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Pułap Chmur Drugiej Warstwy
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Określa pułap, na którym znajduje się druga warstwa chmur.
-option.CLOUD_UNBOUND_LAYER2_HEIGHT=Grubość Chmur 2 Warstwy
-option. CLOUD_UNBOUND_LAYER2_SIZE=Rozmiar Chmur 2 Warstywu
+option.CLOUD_UNBOUND_LAYER2_HEIGHT=Grubość Chmur Drugiej Warstwy
+option. CLOUD_UNBOUND_LAYER2_SIZE=Rozmiar Chmur Drugiej Warstwy
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Określa rozmiar chmur drugiej warstwy.
-option.CLOUD_UNBOUND_LAYER2_AMOUNT=Ilość Chmur 2 Warstwy
+option.CLOUD_UNBOUND_LAYER2_AMOUNT=Ilość Chmur Drugiej Warstwy
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Określa ilość chmur drugiej warstwy.
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=Przezroczystość Chmur Drugiej Warstwy
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=Określa przezroczystość drugiej warstwy chmur.
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.0=0.0
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.1=0.05
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.2=0.10
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.3=0.15
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.4=0.20
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.5=0.25
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.6=0.30
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.7=0.35
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.8=0.40
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.9=0.45
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.10=0.50
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.11=0.55
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.12=0.60
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.13=0.65
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.14=0.70
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.15=0.75
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.16=0.80
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.17=0.85
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.18=0.90
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.19=0.95
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.20=1.00
+
+
+option.CLOUD_REIMAGINED_LAYER2_HEIGHT=Pułap Chmur Drugiej Warstwy
+option.CLOUD_REIMAGINED_LAYER2_HEIGHT.comment=Określa pułap, na którym znajduje się druga warstwa chmur.
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=Przezroczystość Chmur Drugiej Warstwy
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.comment=Określa przezroczystość drugiej warstwy chmur.
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.0=0.0
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.1=0.05
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.2=0.10
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.3=0.15
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.4=0.20
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.5=0.25
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.6=0.30
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.7=0.35
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.8=0.40
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.9=0.45
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.10=0.50
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.11=0.55
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.12=0.60
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.13=0.65
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.14=0.70
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.15=0.75
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.16=0.80
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.17=0.85
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.18=0.90
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.19=0.95
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.20=1.00
 
 option.CLOUD_SUN_MOON_SHADING=Cieniowanie Słońca/Księżyca
 option.CLOUD_SUN_MOON_SHADING.comment=Włącza cieniowanie słońca i księżyca.
+value.CLOUD_SUN_MOON_SHADING.0=WYŁ.
+value.CLOUD_SUN_MOON_SHADING.1=Tylko Księżyc
+value.CLOUD_SUN_MOON_SHADING.2=Tylko Słońce
+value.CLOUD_SUN_MOON_SHADING.3=Obydwa
 
 option.END_SMOKE=Dym Endu
 option.END_SMOKE.comment=Ktoś zostawił piekarnik bez nadzoru i teraz cały End jest zadymiony.
@@ -1556,12 +1706,6 @@ value.STAR_BRIGHTNESS.30=2.7
 value.STAR_BRIGHTNESS.31=2.8
 value.STAR_BRIGHTNESS.32=2.9
 value.STAR_BRIGHTNESS.33=3.0
-
-option.MORE_STARS_OVERWORLD=Więcej Gwiazd na Powierzchni
-option.MORE_STARS_OVERWORLD.comment=Zastępuje ilość gwiazd na nocnym niebie dużo wyższą wartością. Dotyczy wymiaru Powierzchni.
-value.MORE_STARS_OVERWORLD.0=WYŁ.
-value.MORE_STARS_OVERWORLD.1=Dużo
-value.MORE_STARS_OVERWORLD.2=Za Dużo
 
 option.TWINKLING_STARS=Migoczące Gwiazdy
 option.TWINKLING_STARS.comment=Niech gwiazdy mrugają do ciebie.
@@ -1737,6 +1881,7 @@ value.LAVA_VARIATION.1=Adapcyjna (Zalecane)
 value.LAVA_VARIATION.2=Rumieniąca się
 value.LAVA_VARIATION.3=Stopiony Ser
 value.LAVA_VARIATION.4=Ciemne Wyspy
+wartość.LAVA_VARIATION.5=Chaotyczny Nurt
 
 option.LAVA_TEMPERATURE=Temperatura Lawy
 option.LAVA_TEMPERATURE.comment=Zmień temperaturę lawy, sprawia, że jest bardziej czerwona lub bardziej biała.
@@ -2006,10 +2151,11 @@ value.NETHER_NOISE.0=WYŁ.
 value.NETHER_NOISE.1=WŁ.
 
 option.MCBL_MAIN_DEFINE=Kolorowe Oświetlenie Euphoria
-option.MCBL_MAIN_DEFINE.comment=Włączą wielokolorowe źródła światła. Ustaw na ACT + Przestrzeń Ekranu, aby używać systemu przestrzeni ekranu wraz z Zaawansowanym Kolorowym Oświetleniem (ACT). §e[*]§r Działą tylko na Iris 1.16.5 lub wyżej, albo z modem "Angelica" .
+option.MCBL_MAIN_DEFINE.comment=Włączą wielokolorowe źródła światła. Ustaw na ACT + Przestrzeń Ekranu, aby używać systemu przestrzeni ekranu wraz z Zaawansowanym Kolorowym Oświetleniem (ACT). ACT + Przestrzeń Ekranu + Obsługa Dynamicznego Oświetlenia może zostać popsute przez pewne modyfikacje. §e[*]§r Działą tylko na Iris 1.16.5 lub wyżej, albo z modem "Angelica" .
 value.MCBL_MAIN_DEFINE.0=WYŁ.
 value.MCBL_MAIN_DEFINE.1=W Przestrzeni Ekranu
 value.MCBL_MAIN_DEFINE.2=ACT + Przestrzeń Ekranu
+value.MCBL_MAIN_DEFINE.3=ACT + Przestrzeń Ekranu + Obsługa Dynamicznego Oświetlenia
 
 option.MCBL_INFLUENCE=Wpływ Wielokolorowych Źródeł Światła
 option.MCBL_INFLUENCE.comment=Kontroluje, w jakim stopniu wielokolorowe źródła światła wpłyną na domyślny kolor źródeł światła.
@@ -2024,7 +2170,7 @@ option.SOUL_SAND_VALLEY_OVERHAUL=Ulepszona Dolina Dusz
 option.SOUL_SAND_VALLEY_OVERHAUL.comment=Sprawia, że ogniste bloki, moby i cząsteczki stają się niebieskie w dolinie dusz.
 
 option.PURPLE_END_FIRE=Fioletowe Płomieńe Endu
-option.PURPLE_END_FIRE.comment=Sprawia, że ogniste bloki, moby i cząsteczki stają się fioletowe w wymiarze Endu.
+option.PURPLE_END_FIRE.comment=Sprawia, że ogniste bloki, moby i cząsteczki stają się fioletowe w wymiarze Endu. Aby uzyskać najlepsze wyniki, opcja Wsparcia Tekstur musi być ustawiona na Zintegrowane PBR+.
 
 option.NO_RAIN_ABOVE_CLOUDS=Brak Deszczu Ponad Chmurami
 option.NO_RAIN_ABOVE_CLOUDS.comment=Wyłącza deszcz nad chmurami. Nie działa dobrze, jeśli wysokość chmur vanilla została zmieniona przy włączonych chmurach vanilla.
@@ -2078,9 +2224,44 @@ value.VERTICAL_STUTTER_SPEED.0.00=WYŁ.
 option.VERTICAL_SCROLL_FREQUENCY=Częstotliwość Przewijania
 option.VERTICAL_STUTTER_FREQUENCY=Częstotliwość Zacinania Się
 
-option.PIXELATE_SCREEN=Pikseloza
-option._SCREEN_SIZE=Rozmiar Pikseli
-option._SCREEN_SMOOTHNESS=Gładkość
+option.PIXELATED_SCREEN_SIZE=Rozmiar Pikseli
+option.PIXELATED_SCREEN_SIZE.comment=Aktywuj efekt pikselizacji ekranu i zmień rozmiar pikseli.
+value.PIXELATED_SCREEN_SIZE.0=WYŁ.
+option.PIXELATED_SCREEN_SMOOTHNESS=Gładkość Pikseli
+option.PIXELATED_SCREEN_SMOOTHNESS.comment=Zmienia gładkość efektu pikselizacji ekranu. Wyższe wartości powodują większe mieszanie się pikseli.
+option.COLOR_LEVELS=Posterizacja
+option.COLOR_LEVELS.comment=Zmniejsza liczbę kolorów w obrazie, nadając mu wygląd retro.
+option.POSTERIZE_STRENGTH=Siła Posteryzacji
+option.POSTERIZE_STRENGTH.comment=Zmienia siłę efektu posteryzacji.
+value.POSTERIZE_STRENGTH.0.0=WYŁ.
+
+option.PALETTE_SWAP=Paleta Kolorów
+option.PALETTE1R=Kolor 1 Czerwony
+option.PALETTE1G=Kolor 1 Zielony
+option.PALETTE1B=Kolor 1 Niebieski
+option.PALETTE2R=Kolor 2 Czerwony
+option.PALETTE2G=Kolor 2 Zielony
+option.PALETTE2B=Kolor 2 Niebieski
+option.PALETTE3R=Kolor 3 Czerwony
+option.PALETTE3G=Kolor 3 Zielony
+option.PALETTE3B=Kolor 3 Niebieski
+option.PALETTE4R=Kolor4 Czerwony
+opcja.PALETTE4G=Kolor4 Zielony
+opcja.PALETTE4B=Kolor4 Niebieski
+opcja.PALETTE5R=Kolor5 Czerwony
+opcja.PALETTE5G=Kolor5 Zielony
+opcja.PALETTE5B=Kolor5 Niebieski
+opcja.PALETTE6R=Kolor6 Czerwony
+opcja.PALETTE6G=Kolor6 Zielony
+opcja.PALETTE6B=Kolor6 Niebieski
+opcja.USE_TEXTURE_PALETTE=Paleta Tekstur
+opcja.USE_TEXTURE_PALETTE.comment=Używa obrazu PNG palety z folderu palet zamiast obrazu z ustawień GUI.
+value.USE_TEXTURE_PALETTE.0=WYŁ.
+
+option.SCREEN_DITHERING=Dithering
+option.SCREEN_DITHERING.comment=Dodaje dithering do ekranu, aby symulować więcej kolorów niż pozwala na to paleta.
+option.SCREEN_DITHER_AMOUNT=Wartość Ditheringu
+option.SCREEN_DITHER_I=Intensywność Ditheringu
 
 option.SCANLINE=Linia Skanowania
 value.SCANLINE.0=WYŁ.
@@ -2200,18 +2381,6 @@ value.EMISSIVE_FLOWERS_TYPE.1=Zimne Kolory
 value.EMISSIVE_FLOWERS_TYPE.2=Ciepłe Kolory
 
 option.EMISSIVE_FLOWERS_STRENGTH=Jasność
-
-option.SPOOKY=Spooklementary
-option.SPOOKY.comment=Włączona wiele przerażających  funkcji :)
-option.EYES=Oczy
-option.EYE_FREQUENCY=Częstotliwość Oczu
-option.EYE_SPEED=Szybkość Pojawiania się Oczu
-option.EYE_RED_PROBABILITY=Prawdopodobieństwo Czerwonych Oczu
-option.BLOOD_MOON=Krwawy Księżyc
-value.BLOOD_MOON.0=WYŁ.
-value.BLOOD_MOON.1=WŁ. - Pełnia Księżyca
-value.BLOOD_MOON.2=WŁ. - Codziennie
-option.EMISSIVE_BLOOD_MOON_FLOWERS=Świecące Kwiaty Krwawego Księżyca
 
 option.DISTANCE_MIN_LIGHT=Wygasanie Oświetlenia w Jaskiniach
 option.DISTANCE_MIN_LIGHT.comment=Przyciemnia jaskinie wraz ze wzrostem odległości od gracza. Poprawia wygląd jaskiń przy wyższych ustawieniach oświetlenia jaskiń.
@@ -2516,14 +2685,18 @@ value.NEBULA_MOON_CONDITION.1=Księżyc w Nowiu
 value.NEBULA_MOON_CONDITION.2=Księżyc w Pełni
 value.NEBULA_MOON_CONDITION.3=Księżyc w Kwadrach
 value.NEBULA_MOON_CONDITION.4=Losowo
+value.NEBULA_MOON_CONDITION.5=Zawsze z Wyjątkiem Nowiu
 
 option.END_CENTER_LIGHTING=Światło Centrum Endu
-option.END_CENTER_LIGHTING.comment=Zmienia właściwości światła emitowanego przez główną wyspę Endu.
+option.END_CENTER_LIGHTING.comment=Zmienia właściwości światła emitowanego przez główną wyspę Endu. §e[*]§r Ta funkcja działa tylko w Minecraft 1.9+.
 value.END_CENTER_LIGHTING.0=WYŁ.
 
 option.END_CENTER_LIGHTING_R=Czerwone Oświetlenie
 option.END_CENTER_LIGHTING_G=Zielone Oświetlenie
 option.END_CENTER_LIGHTING_B=Niebieskie Oświetlenie
+
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT=Wpływ na Źródła Światła
+option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT.comment=Zmienia kolor źródeł światła w Endzie w oparciu o Kolor Światła Centrum.
 
 option.NETHER_HEAT_DISTORTION=Zniekształcenie Cieplne
 option.NETHER_HEAT_DISTORTION.comment=Dodaje efekt zniekształcenia cieplnego do Netheru.
@@ -2564,3 +2737,19 @@ option.EP_END_FLASH.comment=Zmienia typ rozbłysków Endu, domyślny lub niestan
 value.EP_END_FLASH.0=Tylko domyślny
 value.EP_END_FLASH.1=Tylko Euphoria
 value.EP_END_FLASH.2=Oba
+
+option.MIRROR_TINTED_GLASS_OPAQUE=Nieprzezroczyste Szkło Przyciemniane
+option.MIRROR_TINTED_GLASS_OPAQUE.comment=Sprawia, że przyciemniane bloki szkła stają się nieprzezroczyste (pomaga dać efekt idealnego lustra).
+
+option.COLORED_LIGHT_FOG_RAIN_I=Intensywność Wolumetrycznej Mgły Świetlnej Podczas Deszczu
+option.COLORED_LIGHT_FOG_RAIN_I.comment=Zmienia intensywność wolumetryczna mgły podczas deszczu.
+value.COLORED_LIGHT_FOG_RAIN_I.0=Domyślna
+
+option.BLOOD_MOON=Krwawy księżyc
+option.BLOOD_MOON.comment=Włącza krwawe księżyce, które pojawiają się przez liczbę dni ustawioną przez użytkownika. Krwawe księżyce nie pojawiają się pierwszej nocy, jeśli ustawiono wartość inną niż „Każdej Nocy”. Krwawy księżyc nie pojawia się podczas nowiu, jeśli ustawiono wartość inną niż „Każdej Nocy”.
+value.BLOOD_MOON.0=WYŁ.
+value.BLOOD_MOON.1=Każdej Nocy
+suffix.BLOOD_MOON=\ Nocy
+option.BLOOD_MOON.comment=Włącza krwawe księżyce, które pojawiają się przez liczbę dni ustawioną przez użytkownika.
+option.EMISSIVE_BLOOD_MOON_FLOWERS=Świecące Kwiaty Krwawego Księżyca
+option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Sprawia, że czerwone kwiaty świecą podczas krwawych księżyców. §e[*]§r Opcja wsparcia RP musi być ustawiona na Integrated PBR+.
