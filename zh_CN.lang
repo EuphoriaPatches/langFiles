@@ -2749,9 +2749,9 @@ option.COLORED_LIGHT_FOG_RAIN_I.comment=调节雨天时彩色光雾的亮度.
 value.COLORED_LIGHT_FOG_RAIN_I.0=默认
 
 option.BLOOD_MOON=血月
+option.BLOOD_MOON.comment=启用血月, 由玩家设定每次血月出现的间隔天数. 若设置高于 “每天” 的间隔时间, 血月不会在第一天夜晚或月相为新月的夜晚出现.
 value.BLOOD_MOON.0=关
 value.BLOOD_MOON.1=每天
 suffix.BLOOD_MOON=天1次
-option.BLOOD_MOON.comment=启用血月, 由玩家设定每次血月出现的间隔天数.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=血月红花发光
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=血月期间使红色花朵发光. §e[*]§r 资源包支持选项需设置为集成PBR+.
