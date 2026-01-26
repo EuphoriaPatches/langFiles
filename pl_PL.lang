@@ -338,7 +338,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 Chunki §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunki§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=Odbicia w Przestrzeni Świata §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=Oblicza odbicia w przestrzeni świata (WSR), a zamiast w przestrzeni ekranu (SSR). §c[-]§r Nie działa z blokami dodanymi przez mody. §e[*]§r Ta funkcja działa tylko wtedy, gdy w Ustawieniach Jakości włączona jest opcja Zaawansowane Kolorowe Oświetlenie (ACT), a twój komputer ją obsługuje. §e[*]§r Maksymalny zasięg tego ustawienia zależy od odległości zaawansowanego kolorowego oświetlenia, ale z przyczyn technicznych jest wewnętrznie ograniczony do 16 chunków. §c[-]§r Efekt ten może mieć poważny wpływ na wydajność, zwłaszcza przy większych odległościach zaawansowanego kolorowego oświetlenia. §c[-]§r Odbicia w przestrzeni świata mogą całkowicie przestać działać po zmianie pakietów zasobów, rozwiązanie problemu wymaga ponownego uruchomienia gry. §c[-]§r Odbicia w przestrzeni świata mogą powodować intensywne migotanie w przypadku modów lub pakietów zasobów, które używają rozdzielczości wyższej niż 16x dla tekstur bloków.
+option.WORLD_SPACE_REFLECTIONS.comment=Oblicza odbicia w przestrzeni świata (WSR), a zamiast w przestrzeni ekranu (SSR). §c[-]§r Nie działa z blokami dodanymi przez mody. §e[*]§r Ta funkcja działa tylko wtedy, gdy w Ustawieniach Jakości włączona jest opcja Zaawansowane Kolorowe Oświetlenie (ACT), a twój komputer ją obsługuje. §e[*]§r Maksymalny zasięg tego ustawienia zależy od odległości zaawansowanego kolorowego oświetlenia, ale z przyczyn technicznych jest wewnętrznie ograniczony do 16 chunków. §c[-]§r Efekt ten może mieć poważny wpływ na wydajność, zwłaszcza przy większych odległościach zaawansowanego kolorowego oświetlenia. §c[-]§r Odbicia w przestrzeni świata mogą nie działać poprawnie z modami i z paczkami zasobów. 
 value.WORLD_SPACE_REFLECTIONS.-1=§aWYŁ.
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oWŁ.
 
@@ -2753,3 +2753,4 @@ suffix.BLOOD_MOON=\ Nocy
 option.BLOOD_MOON.comment=Włącza krwawe księżyce, które pojawiają się przez liczbę dni ustawioną przez użytkownika.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Świecące Kwiaty Krwawego Księżyca
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Sprawia, że czerwone kwiaty świecą podczas krwawych księżyców. §e[*]§r Opcja wsparcia RP musi być ustawiona na Integrated PBR+.
+
