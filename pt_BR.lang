@@ -338,7 +338,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 Chunks §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunks§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=Reflexões em Espaço do Mundo §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=Calcula reflexos no espaço do mundo ao invés do espaço da tela. §c[-]§r Provavelmente não funciona corretamente com blocos de mods. §e[*]§r Este recurso só funciona se o Rastreamento de Cor Avançado estiver ativado nas Configurações de Desempenho e seu sistema suportar. §e[*]§r A distância máxima deste efeito depende da distância do Rastreamento de Cor Avançado. §c[-]§r Este efeito pode impactar severamente o desempenho, especialmente com distâncias maiores de Rastreamento de Cor Avançado.
+option.WORLD_SPACE_REFLECTIONS.comment=Calcula reflexos no espaço do mundo em vez do espaço da tela. §c[-]§r Provavelmente quebra com blocos de mods. §e[*]§r Este recurso só funciona se o Advanced Color Tracing estiver ativado nas Configurações de Desempenho e se o seu sistema for compatível. §e[*]§r A distância máxima deste efeito depende da distância do Advanced Color Tracing, mas é internamente limitada a 16 chunks por motivos técnicos. §c[-]§r Este efeito pode impactar severamente o desempenho, especialmente com distâncias altas de Advanced Color Tracing. §c[-]§r Reflexos em espaço do mundo podem apresentar vários tipos de problemas com mods ou pacotes de recursos.
 value.WORLD_SPACE_REFLECTIONS.-1=§aDESLIGADO
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oLIGADO
 
@@ -1623,6 +1623,9 @@ value.END_CRYSTAL_VORTEX.2=Feixe de Cura
 value.END_CRYSTAL_VORTEX.3=Ambos
 option.DRAGON_DEATH_EFFECT=Efeito de Morte do Dragão
 option.DRAGON_DEATH_EFFECT.comment=Configuração que substitui os feixes da morte do dragão por um efeito volumétrico. §4[***]§r Ativa §cSombras de Entidades§r. [§e*§r] Funciona apenas no Iris. [§e*§r] Não funciona no MacOS.
+value.DRAGON_DEATH_EFFECT.0=DESLIGADO
+value.DRAGON_DEATH_EFFECT.1=Efeito Volumétrico
+value.DRAGON_DEATH_EFFECT.2=Volumétrico + Feixes Originais
 option.E_BEAMS_AMBIENT_INFLUENCE=Influência da Cor Ambiente
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=Os feixes terão a cor ambiente em 1.00 e a cor definida pelo usuário em 0.00. Não se aplica aos Feixes do Dragão.
 option.E_BEAM_R_NEW=Feixes do Ender - Vermelho
