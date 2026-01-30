@@ -90,7 +90,7 @@ option.info17=Versões Beta: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=Você pode apoiar o SpacEagle17 no Patreon ou Ko-Fi, e tenha o acesso exclusivo de versões em desenvolvimento. acesse: §d§l§neuphoriapatches.com/support
 
-option.info18=For Complementary r5.7
+option.info18=For Complementary r5.7.1
 value.info18.0=
 option.info18.comment=Obrigado por instalar o   §5Euphoria Patches§r :)
 
@@ -1362,7 +1362,7 @@ screen.POPULAR_SETTINGS=§dConfigurações Populares
 screen.POPULAR_SETTINGS.comment=Estas são algumas das configurações mais populares no Euphoria Patches. Exceto o Advanced Colored Tracing (que é necessário para muitos efeitos), todas as opções aqui são exclusivas do Euphoria Patches e não podem ser encontradas no Shaderpack Complementary Original.
 screen.POPULAR_SETTINGS_2=Página 2
 screen.POPULAR_SETTINGS_3=Página 3
-screen.EP_VERSION=Euphoria Patches §d1.8.0
+screen.EP_VERSION=Euphoria Patches §d1.8.1
 screen.EP_VERSION.comment=§bVocê pode apoiar o SpacEagle17 no Patreon ou Ko-Fi e receber novas versões beta exclusivas.
 
 option.DAYLIGHT_CYCLE_COMPAT=Animação do Tempo Mundial

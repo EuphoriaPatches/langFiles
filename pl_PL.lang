@@ -90,7 +90,7 @@ option.info17=Wersje Beta: Patreon SpacEagle17
 value.info17.0=
 option.info17.comment=Możesz wesprzeć SpacEagle17 na Patreonie lub Ko-Fi i uzyskać dostęp do ekskluzywnych wersji Beta. §d§d§l§neuphoriapatches.com/support
 
-option.info18=Dla Complementary r5.7
+option.info18=Dla Complementary r5.7.1
 value.info18.0=
 option.info18.comment=Dziękujemy za wybranie Euphoria Patches :)
 
@@ -338,7 +338,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 Chunki §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 Chunki§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=Odbicia w Przestrzeni Świata §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=Oblicza odbicia w przestrzeni świata (WSR), a zamiast w przestrzeni ekranu (SSR). §c[-]§r Nie działa z blokami dodanymi przez mody. §e[*]§r Ta funkcja działa tylko wtedy, gdy w Ustawieniach Jakości włączona jest opcja Zaawansowane Kolorowe Oświetlenie (ACT), a twój komputer ją obsługuje. §e[*]§r Maksymalny zasięg tego ustawienia zależy od odległości zaawansowanego kolorowego oświetlenia, ale z przyczyn technicznych jest wewnętrznie ograniczony do 16 chunków. §c[-]§r Efekt ten może mieć poważny wpływ na wydajność, zwłaszcza przy większych odległościach zaawansowanego kolorowego oświetlenia. §c[-]§r Odbicia w przestrzeni świata mogą nie działać poprawnie z modami i z paczkami zasobów. 
+option.WORLD_SPACE_REFLECTIONS.comment=Oblicza odbicia w przestrzeni świata (WSR), a zamiast w przestrzeni ekranu (SSR). §c[-]§r Nie działa z blokami dodanymi przez mody. §e[*]§r Ta funkcja działa tylko wtedy, gdy w Ustawieniach Jakości włączona jest opcja Zaawansowane Kolorowe Oświetlenie (ACT), a twój komputer ją obsługuje. §e[*]§r Maksymalny zasięg tego ustawienia zależy od odległości zaawansowanego kolorowego oświetlenia, ale z przyczyn technicznych jest wewnętrznie ograniczony do 16 chunków. §c[-]§r Efekt ten może mieć poważny wpływ na wydajność, zwłaszcza przy większych odległościach zaawansowanego kolorowego oświetlenia. §c[-]§r Odbicia w przestrzeni świata mogą nie działać poprawnie z modami i z paczkami zasobów.
 value.WORLD_SPACE_REFLECTIONS.-1=§aWYŁ.
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oWŁ.
 
@@ -1207,7 +1207,7 @@ option.XLIGHT_G=Mnożnik Zieleni Źródeł Światła
 option.XLIGHT_B=Mnożnik Niebieskości Źródeł Światła
 option.XLIGHT_I=Natężęnie Źródeł Światła
 
-option.XLIGHT_CURVE=Kontrast Źródeł Światła 
+option.XLIGHT_CURVE=Kontrast Źródeł Światła
 option.XLIGHT_CURVE.comment=Reguluje spadek intensywności światła w miarę oddalania się od źródła światła.
 
 ####### Euphoria Patches #######
@@ -1362,7 +1362,7 @@ screen.POPULAR_SETTINGS=§dPopularne Ustawienia
 screen.POPULAR_SETTINGS.comment=screen.POPULAR_SETTINGS.comment=Oto niektóre z najpopularniejszych ustawień w Euphoria Patches. Poza Zaawansowanym Kolorowym Oświetleniem (niezbędnym dla wielu efektów) wszystkie opcje tutaj są dostępne wyłączne dla Euphoria Patches i nie można ich znaleźć w oryginalnym pakiecie Complementary.
 screen.POPULAR_SETTINGS_2=2 Strona
 screen.POPULAR_SETTINGS_3=3 Strona
-screen.EP_VERSION=Euphoria Patches §d1.8.0
+screen.EP_VERSION=Euphoria Patches §d1.8.1
 screen.EP_VERSION.comment=§bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi, co wiąże się z wczesnym dostępem do wersji w deweloperskich. §r§d§l§neuphoriapatches.com/support
 
 option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
