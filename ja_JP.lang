@@ -338,7 +338,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24チャンク §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32チャンク§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=ワールドスペース反射 (WSR) §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=反射の計算方式をスクリーンスペースからワールドスペースに変更します。. §c[-]§r おそらくModブロックでは動作しません。. §e[*]§r この機能は「パフォーマンス設定」で高度な色トレーシングが有効で、かつシステムが対応している場合にのみ動作します。. §e[*]§r この効果の最大距離は高度な色トレーシングの距離に依存しますが、技術的な理由により最大16チャンクの内部的な制限があります。. §c[-]§r この効果は、特に高度な色トレーシングの効果距離が長い場合において、パフォーマンスに大きく影響を与える可能性があります。. §c[-]§r ワールドスペース反射はリソースパックを変更した際に完全に壊れてしまう場合がありますが、これはゲームを再起動すると修正されます。. §c[-]§r ワールドスペース反射は解像度が16x以上のブロックテクスチャを使用するModやリソースパックで激しい点滅を引き起こす可能性があります。
+option.WORLD_SPACE_REFLECTIONS.comment=反射の計算方式をスクリーンスペースからワールドスペースに変更します。. §c[-]§r おそらくModブロックでは動作しません。. §e[*]§r この機能は「パフォーマンス設定」で高度な色トレーシングが有効で、かつシステムが対応している場合にのみ動作します。. §e[*]§r この効果の最大距離は高度な色トレーシングの距離に依存しますが、技術的な理由により最大16チャンクの内部的な制限があります。. §c[-]§r この効果は、特に高度な色トレーシングの効果距離が長い場合において、パフォーマンスに大きく影響を与える可能性があります。. §c[-]§r ワールドスペース反射はModやリソースパックを使用している場合にいくつかの問題が発生する場合があります。
 value.WORLD_SPACE_REFLECTIONS.-1=§aOFF
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oON
 
@@ -1623,6 +1623,9 @@ value.END_CRYSTAL_VORTEX.2=回復ビーム
 value.END_CRYSTAL_VORTEX.3=両方
 option.DRAGON_DEATH_EFFECT=ドラゴン死亡エフェクト
 option.DRAGON_DEATH_EFFECT.comment=ドラゴンの死亡時のビームを立体効果に置き換える設定です。. §4[***]§r §cエンティティの影§rが有効になります。. [§e*§r] Irisでのみ動作します。. [§e*§r] MacOSでは動作しません。
+value.DRAGON_DEATH_EFFECT.0=OFF
+value.DRAGON_DEATH_EFFECT.1=立体効果
+value.DRAGON_DEATH_EFFECT.2=立体効果 + 元のビーム
 option.E_BEAMS_AMBIENT_INFLUENCE=環境色の影響
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=ビームの色は1.00で環境色になり、0.00でユーザー定義の色になります。. ドラゴンのエンダービームには適用されません。
 option.E_BEAM_R_NEW=エンダービーム - 赤
