@@ -1362,7 +1362,7 @@ screen.POPULAR_SETTINGS=§dПопулярні налаштування
 screen.POPULAR_SETTINGS.comment=Це деякі з найпопулярніших налаштувань у Euphoria Patches. Окрім розширеноuj кольоровоuj трасування (яка потрібна для багатьох ефектів), усі параметри тут є ексклюзивними для Euphoria Patches, і їх неможливо знайти в оригінальному пакеті шейдерів Complementary.
 screen.POPULAR_SETTINGS_2=Сторінка 2
 screen.POPULAR_SETTINGS_3=Сторінка 3
-screen.EP_VERSION=Euphoria Patches §d1.8.2
+screen.EP_VERSION=Euphoria Patches §d1.8.3
 screen.EP_VERSION.comment=§bВи можете підтримати SpacEagle17 на Patreon або Ko-Fi і отримати за це нові ексклюзивні бета-збірки. §r§d§l§neuphoriapatches.com/support.
 
 option.DAYLIGHT_CYCLE_COMPAT=Час анімації світу
