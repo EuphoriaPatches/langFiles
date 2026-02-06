@@ -90,7 +90,7 @@ option.info17=Бета-версія: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=Ви можете підтримати SpacEagle17 на Patreon або Ko-Fi і отримати версію для розробників. §l§neuphoriapatches.com/support.
 
-option.info18=Для Complementary r5.7.1
+option.info18=Для Complementary r5.8
 value.info18.0=
 option.info18.comment=Дякую за встановлення Euphoria Patches :).
 
@@ -1362,7 +1362,7 @@ screen.POPULAR_SETTINGS=§dПопулярні налаштування
 screen.POPULAR_SETTINGS.comment=Це деякі з найпопулярніших налаштувань у Euphoria Patches. Окрім розширеноuj кольоровоuj трасування (яка потрібна для багатьох ефектів), усі параметри тут є ексклюзивними для Euphoria Patches, і їх неможливо знайти в оригінальному пакеті шейдерів Complementary.
 screen.POPULAR_SETTINGS_2=Сторінка 2
 screen.POPULAR_SETTINGS_3=Сторінка 3
-screen.EP_VERSION=Euphoria Patches §d1.8.4
+screen.EP_VERSION=Euphoria Patches §d1.9.0
 screen.EP_VERSION.comment=§bВи можете підтримати SpacEagle17 на Patreon або Ko-Fi і отримати за це нові ексклюзивні бета-збірки. §r§d§l§neuphoriapatches.com/support.
 
 option.DAYLIGHT_CYCLE_COMPAT=Час анімації світу
