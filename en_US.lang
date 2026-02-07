@@ -413,8 +413,8 @@ option.CLOUD_SHADOWS.comment=Enables shadows that are cast from the clouds. §e[
 option.CLOUD_CLOSED_AREA_CHECK=Prevent Clouds in Interiors
 option.CLOUD_CLOSED_AREA_CHECK.comment=Does additional checks to remove clouds in closed areas. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF.
 
-option.CLOUD_ALT1=Cloud Altitude
-option.CLOUD_ALT1.comment=Determines the world height which the clouds will appear at. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
+option.CLOUD_ALT1=Cloud Altitude §e[*]§r
+option.CLOUD_ALT1.comment=Determines the world height which the clouds will appear at. §e[*]§r This setting can be internally increased or decreased depending on your dimension settings and mods. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
 
 option.CLOUD_SPEED_MULT=Cloud Speed
 option.CLOUD_SPEED_MULT.comment=Determines how fast the clouds are going to move. "Synced to World Time" setting uses Minecraft world time to advance the cloud positions; this allows for clouds to appear the same between players in the same server. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
@@ -1101,7 +1101,7 @@ value.SELECT_OUTLINE.3=Select Color
 value.SELECT_OUTLINE.4=Versatile
 
 option.SELECT_OUTLINE_AUTO_HIDE=Auto Hide Selection Outline
-option.SELECT_OUTLINE_AUTO_HIDE.comment=Hides the block selection outline if the player isn't holding anything in any of their hands, or only holding a light source in the off-hand.
+option.SELECT_OUTLINE_AUTO_HIDE.comment=Hides the block selection outline if the player isn't holding anything in their main hand.
 
 option.SELECT_OUTLINE_I=SO Brightness
 option.SELECT_OUTLINE_R=SO Red
