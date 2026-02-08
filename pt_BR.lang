@@ -413,8 +413,8 @@ option.CLOUD_SHADOWS.comment=Ativa sombras projetadas pelas nuvens. §e[*]§r Es
 option.CLOUD_CLOSED_AREA_CHECK=Evitar Nuvens em Interiores
 option.CLOUD_CLOSED_AREA_CHECK.comment=Faz verificações adicionais para remover nuvens em áreas fechadas. §e[*]§r Esta configuração só funciona com os estilos de nuvem "Reimaginadas" ou "Sem Limites". §e[*]§r Esta configuração será desativada se "Sombras em Tempo Real" estiver DESATIVADO.
 
-option.CLOUD_ALT1=Altitude das Nuvens
-option.CLOUD_ALT1.comment=Define a altura no mundo em que as nuvens aparecerão. §e[*]§r Esta configuração só funciona com os estilos de nuvem "Reimaginadas" ou "Sem Limites".
+option.CLOUD_ALT1=Altitude das Nuvens §e[*]§r
+ooption.CLOUD_ALT1.comment=Determina a altura do mundo em que as nuvens irão aparecer. §e[*]§r Esta configuração pode ser aumentada ou diminuída internamente dependendo das configurações da dimensão e dos mods utilizados. §e[*]§r Esta configuração funciona apenas com os estilos de nuvem "Reimagined" ou "Unbound".
 
 option.CLOUD_SPEED_MULT=Velocidade das Nuvens
 option.CLOUD_SPEED_MULT.comment=Define a velocidade com que as nuvens vão se mover. A opção "Sincronizado com o Tempo do Mundo" usa o tempo do mundo do Minecraft para avançar as posições das nuvens; isso permite que as nuvens apareçam iguais para todos os jogadores no mesmo servidor. §e[*]§r Esta configuração só funciona com os estilos de nuvem "Reimaginadas" ou "Sem Limites".
@@ -1616,7 +1616,7 @@ option.OW_BEAM_B_NEW=Feixes do Overworld - Azul
 option.END_BEAMS=Feixes do End
 option.END_BEAMS.comment=Configuração que ativa feixes semelhantes a nébulas no End.
 option.END_CRYSTAL_VORTEX=Vórtice do Cristal do End
-option.END_CRYSTAL_VORTEX.comment=Configuração que ativa feixes de energia subindo dos cristais do End. §4[***]§r Ativa §cSombras de Entidades§r. [§e*§r] Funciona apenas no Iris. [§e*§r] Não funciona no MacOS.
+option.END_CRYSTAL_VORTEX.comment=Configuração que ativa feixes de energia subindo a partir dos Cristais do End no End. §4[***]§r Ativa §cSombras de Entidades§r. [§e*§r] Funciona apenas no Iris. [§e*§r] Não funciona no MacOS. A Distância das Sombras nas Configurações do Complementary afeta a distância em que os vórtices ficam visíveis.
 value.END_CRYSTAL_VORTEX.0=DESLIGADO
 value.END_CRYSTAL_VORTEX.1=Vórtice
 value.END_CRYSTAL_VORTEX.2=Feixe de Cura
@@ -2756,3 +2756,4 @@ suffix.BLOOD_MOON=\ Noites do Minecraft
 option.BLOOD_MOON.comment=Ativa Luas de Sangue que ocorrem conforme a quantidade de dias do Minecraft definida pelo usuário nesta opção.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Flores da Lua de Sangue Emissivas
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Faz flores vermelhas brilharem durante Luas de Sangue. §e[*]§r A opção de suporte a RP deve estar definida como PBR+ Integrado.
+
