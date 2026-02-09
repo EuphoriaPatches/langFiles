@@ -861,6 +861,15 @@ option.GREEN_SCREEN_LIME.comment=Turns "Lime Concrete", "Lime Wool", and "Lime C
 option.MIRROR_TINTED_GLASS=Mirror-like Tinted Glass
 option.MIRROR_TINTED_GLASS.comment=Increases the reflectiveness and opacity of Tinted Glass blocks. Enable World-Space Reflections for best results.
 
+option.MORE_REFLECTIVE_DISTANT_GLASS=More Reflective Distant Glass
+option.MORE_REFLECTIVE_DISTANT_GLASS.comment=Increases the reflectiveness and opacity of distant glass to make buildings with glass windows look nicer.
+
+option.HIDE_ARMOR=Hide Armor §e[*]§r
+option.HIDE_ARMOR.comment=Hides the armor and elytra worn by the player or all entities. Elytra is only shown while flying. §e[*]§r This setting only works on Iris. §e[*]§r The "On Main Player" option can look messy if other entities wearing armor get very close to the main player.
+value.HIDE_ARMOR.0=OFF
+value.HIDE_ARMOR.1=On Main Player §e[*]§r
+value.HIDE_ARMOR.2=On All Entities
+
 option.HAND_SWAYING=Hand Sway
 option.HAND_SWAYING.comment=Adds slow movement to the player hand to simulate a breathing animation.
 value.HAND_SWAYING.0=OFF
