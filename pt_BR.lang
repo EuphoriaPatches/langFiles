@@ -861,6 +861,15 @@ option.GREEN_SCREEN_LIME.comment=Transforma "Concreto Verde Limão", "Lã Verde 
 option.MIRROR_TINTED_GLASS = Vidro Escurecido com Efeito de Espelho
 option.MIRROR_TINTED_GLASS.comment = Aumenta a refletividade e a opacidade dos blocos de Vidro Escurecido. Ative as Reflexões em World-Space para obter o melhor resultado.
 
+option.MORE_REFLECTIVE_DISTANT_GLASS=Vidro Distante Mais Reflexivo
+option.MORE_REFLECTIVE_DISTANT_GLASS.comment=Aumenta a refletividade e a opacidade do vidro distante para deixar construções com janelas de vidro mais bonitas.
+
+option.HIDE_ARMOR=Ocultar Armadura §e[*]§r
+option.HIDE_ARMOR.comment=Oculta a armadura e a elytra usadas pelo jogador ou por todas as entidades. A elytra só é exibida enquanto o jogador está voando. §e[*]§r Esta configuração funciona apenas no Iris. §e[*]§r A opção "Apenas no Jogador Principal" pode ficar visualmente confusa se outras entidades usando armadura chegarem muito perto do jogador principal.
+value.HIDE_ARMOR.0=DESLIGADO
+value.HIDE_ARMOR.1=Apenas no Jogador Principal §e[*]§r
+value.HIDE_ARMOR.2=Em Todas as Entidades
+
 option.HAND_SWAYING=Movimento da Mão
 option.HAND_SWAYING.comment=Adiciona movimento lento à mão do jogador para simular respiração.
 value.HAND_SWAYING.0=DESLIGADO
@@ -2756,4 +2765,5 @@ suffix.BLOOD_MOON=\ Noites do Minecraft
 option.BLOOD_MOON.comment=Ativa Luas de Sangue que ocorrem conforme a quantidade de dias do Minecraft definida pelo usuário nesta opção.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Flores da Lua de Sangue Emissivas
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Faz flores vermelhas brilharem durante Luas de Sangue. §e[*]§r A opção de suporte a RP deve estar definida como PBR+ Integrado.
+
 
