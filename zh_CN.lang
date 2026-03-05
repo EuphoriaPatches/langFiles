@@ -416,8 +416,8 @@ option.CLOUD_SHADOWS.comment=启用从云层投下的阴影. §e[*]§r 本选项
 option.CLOUD_CLOSED_AREA_CHECK=禁止云层出现在室内
 option.CLOUD_CLOSED_AREA_CHECK.comment=额外附加检测条件避免云层出现在室内. §e[*]§r 本选项仅在 云层风格 设置为 Reimagined 或 Unbound 时生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用.
 
-option.CLOUD_ALT1=云层高度
-option.CLOUD_ALT1.comment=决定第一云层所在的高度. §e[*]§r 本选项仅在 云层风格 设置为 Reimagined 或 Unbound 时生效.
+option.CLOUD_ALT1=云层高度 §e[*]§r
+option.CLOUD_ALT1.comment=决定第一云层所在的高度. §e[*]§r 此设置可根据维度设置和模组内部设置进行调高或降低.  §e[*]§r 本选项仅在 云层风格 设置为 Reimagined 或 Unbound 时生效.
 
 option.CLOUD_SPEED_MULT=云层速度
 option.CLOUD_SPEED_MULT.comment=决定云层移动速度的快慢. 与世界时间同步 设置会根据 Minecraft 世界时间来使云层推进; 这可以让那些在相同服务器内的玩家看到相同的云层. §e[*]§r 本选项仅在 云层风格 设置为 Reimagined 或 Unbound 时生效.
@@ -864,6 +864,15 @@ option.GREEN_SCREEN_LIME.comment=把 黄绿色混凝土, 黄绿色羊毛, 黄绿
 option.MIRROR_TINTED_GLASS=镜面遮光玻璃
 option.MIRROR_TINTED_GLASS.comment=增加遮光玻璃的反射率和不透明度. 启用世界空间发射以获得最好的结果.
 
+option.MORE_REFLECTIVE_DISTANT_GLASS=远距离玻璃反射增强
+option.MORE_REFLECTIVE_DISTANT_GLASS.comment=提高远处玻璃的反光性和不透明度来使带玻璃窗的建筑看起来更美观.
+
+option.HIDE_ARMOR=隐藏盔甲 §e[*]§r
+option.HIDE_ARMOR.comment=隐藏玩家和所有实体装备的盔甲和鞘翅. 鞘翅仅在飞行时展示. §e[*]§r 此设置仅在 Iris 加载器下生效. §e[*]§r "对主玩家" 选项会在其他穿盔甲的实体靠近主玩家时出现混乱问题.
+value.HIDE_ARMOR.0=关
+value.HIDE_ARMOR.1=对主玩家 §e[*]§r
+value.HIDE_ARMOR.2=对所有实体
+
 option.HAND_SWAYING=手部摇晃
 option.HAND_SWAYING.comment=为玩家的手添加缓慢的摇晃效果, 以模拟呼吸效果.
 value.HAND_SWAYING.0=关
@@ -1104,7 +1113,7 @@ value.SELECT_OUTLINE.3=自定义颜色
 value.SELECT_OUTLINE.4=多功能
 
 option.SELECT_OUTLINE_AUTO_HIDE=自动隐藏选择框描边
-option.SELECT_OUTLINE_AUTO_HIDE.comment=当玩家双手都没有手持物品时隐藏选择框描边, 或仅当在副手手持光源时.
+option.SELECT_OUTLINE_AUTO_HIDE.comment=当玩家主手不持有物品时隐藏选择框描边.
 
 option.SELECT_OUTLINE_I=选择框描边 - 亮度
 option.SELECT_OUTLINE_R=选择框描边 - 红色
@@ -1619,13 +1628,16 @@ option.OW_BEAM_B_NEW=主世界星束 - 蓝色
 option.END_BEAMS=末地星束
 option.END_BEAMS.comment=启用在末地天空上方像出现的如同光束一般的星云.
 option.END_CRYSTAL_VORTEX=末地水晶涡流 §e[Iris]§r
-option.END_CRYSTAL_VORTEX.comment=用于开启在末地维度中从末地水晶旋转上升的能量涡流和治疗光束的设置. §4[***]§r 需启用 §c实体阴影§r. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
+option.END_CRYSTAL_VORTEX.comment=用于开启在末地维度中从末地水晶旋转上升的能量涡流和治疗光束的设置. §4[***]§r 需启用 §c实体阴影§r. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS. Complementary 的阴影距离设置会影响涡流的可见距离.
 value.END_CRYSTAL_VORTEX.0=关
 value.END_CRYSTAL_VORTEX.1=仅涡流
 value.END_CRYSTAL_VORTEX.2=仅治疗光束
 value.END_CRYSTAL_VORTEX.3=两者
 option.DRAGON_DEATH_EFFECT=末影龙死亡效果 §e[Iris]§r
 option.DRAGON_DEATH_EFFECT.comment=用体积特效替换末影龙死亡特效的选项. §4[***]§r 需启用 §c实体阴影§r. [§e*§r] 仅在 Iris 光影加载器下生效. [§e*§r] 不支持 MacOS.
+value.DRAGON_DEATH_EFFECT.0=关
+value.DRAGON_DEATH_EFFECT.1=体积效果
+value.DRAGON_DEATH_EFFECT.2=体积效果 + 原始光束
 option.E_BEAMS_AMBIENT_INFLUENCE=环境色影响程度
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=设置的数值越接近 1.00 时星束的颜色越接近环境色, 设置的数值越接近 0.00 时星束的颜色越接近玩家自定义的颜色. 此设置不会影响龙战星束颜色.
 option.E_BEAM_R_NEW=末地星束 - 红色
