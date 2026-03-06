@@ -1055,8 +1055,8 @@ option.WAVING_LEAVES.comment=Adds movement to leaves to simulate wind.
 option.WAVING_LAVA=Waving Lava Texture
 option.WAVING_LAVA.comment=Adds constant movement to lava. §e[*]§r Lava waving in particular is not affected by the "No Waving in Closed Areas" setting.
 
-option.WAVING_LILY_PAD=Waving Lily Pad
-option.WAVING_LILY_PAD.comment=Adds movement to lily pads and frogspawn to simulate impact from water waves.
+option.WAVING_LILY_PAD=Waving Lily Pad §c[-]§r
+option.WAVING_LILY_PAD.comment=Adds movement to lily pads and frogspawn to simulate impact from water waves. §c[-]§r This causes lily pads on waterlogged blocks to become invisible
 
 option.WAVING_WATER_VERTEX=Waving Water Height
 option.WAVING_WATER_VERTEX.comment=Adds movement to water position to simulate wind. §e[*]§r This option is not related to the "Water Wave Strength" setting.
