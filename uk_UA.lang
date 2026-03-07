@@ -2271,7 +2271,7 @@ option.USE_TEXTURE_PALETTE.comment=Використовує зображення
 value.USE_TEXTURE_PALETTE.0=ВИМК.
 
 option.SCREEN_DITHERING=Розсипчастість
-option.SCREEN_DITHERING.comment=Додає розмитість до екрана, щоби імітувати більше кольорів, ніж дозволяє палітра.
+option.SCREEN_DITHERING.comment=Додає розмитість до екрана, щоб імітувати більше кольорів, ніж дозволяє палітра.
 option.SCREEN_DITHER_AMOUNT=Кількітсь розсипчастости
 option.SCREEN_DITHER_I=Інтенсивність розсипчастости
 
