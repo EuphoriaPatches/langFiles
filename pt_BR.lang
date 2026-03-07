@@ -1055,8 +1055,8 @@ option.WAVING_LEAVES.comment=Adiciona movimento às folhas para simular vento.
 option.WAVING_LAVA=Lava Ondulante
 option.WAVING_LAVA.comment=Adiciona movimento constante à lava. §e[*]§r Não é afetado pela opção "Sem Ondulação em Áreas Fechadas".
 
-option.WAVING_LILY_PAD=Lírio Ondulante
-option.WAVING_LILY_PAD.comment=Adiciona movimento aos lírios e ovos de sapo para simular impacto das ondas.
+option.WAVING_LILY_PAD=Vitórias-régias ondulando §c[-]§r
+option.WAVING_LILY_PAD.comment=Faz as vitórias-régias e os ovos de sapo se moverem levemente, simulando o efeito das ondas da água. §c[-]§r Pode fazer com que vitórias-régias em blocos alagados fiquem invisíveis
 
 option.WAVING_WATER_VERTEX=Altura da Água Ondulante
 option.WAVING_WATER_VERTEX.comment=Adiciona movimento à posição da água para simular vento. §e[*]§r Não está relacionado à "Força da Onda da Água".
@@ -2765,5 +2765,6 @@ suffix.BLOOD_MOON=\ Noites do Minecraft
 option.BLOOD_MOON.comment=Ativa Luas de Sangue que ocorrem conforme a quantidade de dias do Minecraft definida pelo usuário nesta opção.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Flores da Lua de Sangue Emissivas
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Faz flores vermelhas brilharem durante Luas de Sangue. §e[*]§r A opção de suporte a RP deve estar definida como PBR+ Integrado.
+
 
 
