@@ -1055,8 +1055,8 @@ option.WAVING_LEAVES.comment=Додає коливання для листям, 
 option.WAVING_LAVA=Коливання лави
 option.WAVING_LAVA.comment=Додає коливання для лави. §e[*]§r На лаву не впливає налаштування «Без конливань в кімнатах».
 
-option.WAVING_LILY_PAD=Коливання латаття
-option.WAVING_LILY_PAD.comment=Додає коливання для латаття, щоб імітувати водяних хвиль.
+option.WAVING_LILY_PAD=Коливання латаття §c[-]§r
+option.WAVING_LILY_PAD.comment=Додає коливання для латаття, щоб імітувати водяних хвиль. §c[-]§r Через це подушечки лілій на залитих водою блоках стають невидимими.
 
 option.WAVING_WATER_VERTEX=Висота коливання води
 option.WAVING_WATER_VERTEX.comment=Додає коливання для води, щоб імітувати вітер. §e[*]§r Це не пов'язано із «Сила хвилі в воді».
