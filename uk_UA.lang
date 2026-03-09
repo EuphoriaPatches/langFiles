@@ -1374,8 +1374,20 @@ screen.POPULAR_SETTINGS_3=Сторінка 3
 screen.EP_VERSION=Euphoria Patches §d1.9.0
 screen.EP_VERSION.comment=§bВи можете підтримати SpacEagle17 на Patreon або Ko-Fi і отримати за це нові ексклюзивні бета-збірки. §r§d§l§neuphoriapatches.com/support.
 
+screen.MODDED_SETTINGS=Модифіковані налаштування
+screen.MODDED_SETTINGS.comment=Налаштування, які працюють, лише якщо у вас встановлено певні моди. Ці налаштування зроблені для доповнення досвіду гри з цими модами, і вони нічого не дадуть, якщо у вас немає необхідних модів.
+screen.PHOTONICS_SETTINGS=Photonics
+screen.PHOTONICS_SETTINGS.comment=Налаштування, які працюють, лише якщо у вас встановлений мод Photonics.
+screen.PHOTONICS_SETTINGS_BASIC=Простий ежим
+screen.PHOTONICS_SETTINGS_BASIC.comment=Налаштування простого режиму освітлення.
+screen.PHOTONICS_SETTINGS_RESTIR=Режим ReSTIR
+screen.PHOTONICS_SETTINGS_RESTIR.comment=Налаштування режиму освітлення ReSTIR.
+
+screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
+screen.DISTANT_HORIZONS_SETTINGS.comment=Налаштування, які працюють, лише якщо у вас встановлений мод Distant Horizons.
+
 option.DAYLIGHT_CYCLE_COMPAT=Час анімації світу
-option.DAYLIGHT_CYCLE_COMPAT.comment=Використовуйте це ТІЛЬКИ, якщо ігрове правилом doDaylightCycle установлене на false. Якщо ввімкнути хмари та інше, вони анімуються в світах із вимкненим циклом денного світла, але вони більше не синхронізуються між гравцями.
+option.DAYLIGHT_CYCLE_COMPAT.comment=Використовуйте це ЛИШЕ, якщо ігрове правилом doDaylightCycle установлене на false. Якщо ввімкнути хмари та інше, вони анімуються в світах із вимкненим циклом денного світла, але вони більше не синхронізуються між гравцями.
 
 option.AURORA_COLOR_PRESET=Пресет кольору поляр. сяйва
 option.AURORA_COLOR_PRESET.comment=Вибирайте між типовим виглядом/спеціальними кольоровими полярними сяйвами, різнокольоровими полярними сяйвами, де колір полярного сяйва змінюється кожного дня/місяця Minecraft, або попередні налаштування кольорів. Або гладкий щоденний, який плавно змінює колір протягом ночі.
@@ -2765,3 +2777,59 @@ suffix.BLOOD_MOON=\ ігрових ночей
 option.BLOOD_MOON.comment=Умикає криваві місяці, які відбуваються протягом кількости днів Minecraft, які користувач встановив у цьому параметрі.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Випром. квіти кривавого Місяця
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Змушує червоні квіти світитися під час кривавих Місяців. §e[*]§r Для параметра «Підтримка ПР» має бути встановлено значення Integrated PBR+.
+
+option.PHOTONICS_LIGHTING_MODE=Режим освітлення
+option.PHOTONICS_LIGHTING_MODE.comment=Змінює алгоритм освітлення, який Photonics використовує для освітлення.\n\nПростий — дуже простий алгоритм освітлення без шуму, але з обмеженою кількістю світла (Максимальні зразки).\nReSTIR — Використовує ReSTIR для освітлення, підтримує необмежену (Максимальне світло) кількість світла, але може створювати шум у певних областях. §e[*]§r Цей параметр працює, лише якщо встановлено Photonics.
+value.PHOTONICS_LIGHTING_MODE.0=Простий
+value.PHOTONICS_LIGHTING_MODE.1=ReSTIR
+
+option.PHOTONICS_PIXELATED_SHADOWS=Піксельні тіні
+option.PHOTONICS_PIXELATED_SHADOWS.comment=УМИкає або вимикає піксельні тіні в моді Photonics. §c[*]§rУ режимі освітлення ReSTIR може бути шумно.
+
+option.PHOTONICS_ALPHA_MODE=Режим прозорости
+option.PHOTONICS_ALPHA_MODE.comment=Керує тим, як Photonics обробляє прозорі блоки.\n\nЖоден — прозорі блоки розглядаються як непрозорі.\nБлок — прозорість застосовується до кожного блока (§aНезначний вплив на продуктивність)§r.\nВоксель — прозорість застосовується до кожного вокселя (§6ИВИСОКИЙ ВПЛИВ НА ПРОДУКИВНІСТЬ)§r
+value.PHOTONICS_ALPHA_MODE.NONE=Жоден
+value.PHOTONICS_ALPHA_MODE.BLOCK=Блок
+value.PHOTONICS_ALPHA_MODE.VOXEL=Воксель
+
+option.PHOTONICS_MAX_LIGHTS=Максимлаьне освітлення
+option.PHOTONICS_MAX_LIGHTS.comment=Максимальна кількість трасованих світил, які можна завантажити.\n\n§6Середній вплив на продуктивність.
+
+option.PHOTONICS_MAX_SAMPLES=Максимальна кількість зразків
+option.PHOTONICS_MAX_SAMPLES.comment=Кількість світла поблизу, яке може проливати світло на об'єкт\n\n§cВИСОКИЙ ВПЛИВ НА ПРОДУКТИВНІСТЬ.
+
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES=Початкові зразки ReSTIR
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=Скільки світил ReSTIR має передбачити спочатку.\n\n§6Середній вплив на продуктивність.
+
+option.PHOTONICS_RESTIR_SOFT_SHADOWS=ReSTIR М'які тіні
+option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=Чи має ReSTIR мати м’які тіні.\n\n§aНезначний вплив на продуктивність.
+
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES=Зразки просторового повторного використання ReSTIR
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=Скільки зразків ReSTIR використовує для просторового повторного використання.\n\n§6Середній вплив на продуктивність.
+
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_RADIUS=Радіус просторового перевикористання ReSTIR
+
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=Кадри накопичення ReSTIR
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=Максимальна кількість кадрів, які ReSTIR використовує для накопичення. Нижчі значення призведуть до більшої чутливости освітлення за рахунок збільшення шуму.\n\nЖодного впливу на продуктивність.
+
+option.PHOTONICS_RESTIR_DENOISER_QUALITY=Якість знешумлення ReSTIR
+option.PHOTONICS_RESTIR_DENOISER_QUALITY.comment=Якість використаного знешумлення ReSTIR.\n\n§cВИСОКИЙ ВПЛИВ НА ПРОДУКТИВНІСТЬ.
+
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.OFF=ВИМК.
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.LOW=Низька
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.MEDIUM=Середня
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.HIGH=Висока
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.ULTRA=Ультра
+
+option.PHOTONICS_VANILLA_LIGHT_FALLBACK=Резерв стандартного світла
+option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=Відсоток стандартного освітлення для використання в як резерву під час використання Photonics для запобігання темних ділянок, де освітлення Photonics не завантажувалося.
+suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=\%
+
+option.STELLAR_VIEW_SUPPORT=Підтримка Stellar View
+option.STELLAR_VIEW_SUPPORT.comment=Додає підтримку для мода Stellar View. §c[*]§r Може викликати проблеми з пакетами ресурсів неба.
+
+option.DISTANT_HORIZONS_SSAO=Край тіней (НОПе)
+option.DISTANT_HORIZONS_SSAO.comment=Умикає НЕПО (Навколишня оклюзія простору екрана) у чанках Distant Horizons. §e[*]§r Цей параметр працює, лише якщо встановлено Distant Horizons. §e[*]§r Вимагає, щоб якість краю тіней (НОПЕ) була вимкнена в параметрах продуктивности.
+
+option.DISTANT_HORIZONS_FADE=Плавне згасання
+option.DISTANT_HORIZONS_FADE.comment=Умикає плавне затухання між різними чанками Distant Horizons. §e[*]§r Цей параметр працює, лише якщо встановлено Distant Horizons.
