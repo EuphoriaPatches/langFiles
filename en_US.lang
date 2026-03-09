@@ -1374,6 +1374,18 @@ screen.POPULAR_SETTINGS_3=Page 3
 screen.EP_VERSION=Euphoria Patches §d1.9.0
 screen.EP_VERSION.comment=§bYou can support SpacEagle17 on Patreon or Ko-Fi and get new Exclusive Beta Versions. §r§d§l§neuphoriapatches.com/support
 
+screen.MODDED_SETTINGS=Modded Settings
+screen.MODDED_SETTINGS.comment=Settings that only work if you have certain mods installed. These settings are made to complement the experience of playing with those mods, and they won't do anything if you don't have the required mods.
+screen.PHOTONICS_SETTINGS=Photonics
+screen.PHOTONICS_SETTINGS.comment=Settings that only work if you have the Photonics mod installed.
+screen.PHOTONICS_SETTINGS_BASIC=Simple Mode
+screen.PHOTONICS_SETTINGS_BASIC.comment=Simple Lighting Mode settings.
+screen.PHOTONICS_SETTINGS_RESTIR=ReSTIR Mode
+screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIR Lighting Mode settings.
+
+screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
+screen.DISTANT_HORIZONS_SETTINGS.comment=Settings that only work if you have the Distant Horizons mod installed.
+
 option.DAYLIGHT_CYCLE_COMPAT=World Time Animation
 option.DAYLIGHT_CYCLE_COMPAT.comment=ONLY use this if you play with the gamerule doDaylightCycle false. When enabled clouds and more animate in worlds with the daylight cycle off but they are no longer synced between players.
 
@@ -2765,3 +2777,59 @@ suffix.BLOOD_MOON=\ Minecraft Nights
 option.BLOOD_MOON.comment=Enables Blood Moons that occur the amount of Minecraft days the user has set in this option.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Emissive Blood Moon Flowers
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Makes red flowers glow during Blood Moons. §e[*]§r RP Support option must be set to Integrated PBR+.
+
+option.PHOTONICS_LIGHTING_MODE=Lighting Mode
+option.PHOTONICS_LIGHTING_MODE.comment=Changes the lighting algorithm Photonics uses for lighting.\n\nSimple - A very simple lighting algorithm with no noise, but a limited number of lights (Max Samples)\nReSTIR - Uses ReSTIR for lighting, supports an unlimited (Max Lights) number of lights, but may be noisy in certain areas. §e[*]§r This option only works if Photonics is installed.
+value.PHOTONICS_LIGHTING_MODE.0=Simple
+value.PHOTONICS_LIGHTING_MODE.1=ReSTIR
+
+option.PHOTONICS_PIXELATED_SHADOWS=Pixelated Shadows
+option.PHOTONICS_PIXELATED_SHADOWS.comment=Enable or disable pixelated shadows in the Photonics mod. §c[*]§r Can be noisy with ReSTIR lighting mode.
+
+option.PHOTONICS_ALPHA_MODE=Transparency Mode
+option.PHOTONICS_ALPHA_MODE.comment=Sets how Photonics handles transparent blocks.\n\nNone - Transparent blocks are treated as opaque\nBlock - Transparency is applied per block (§aMinimal performance impact)§r\nVoxel - Transparency is applied per voxel (§6HIGH PERFORMANCE IMPACT)§r
+value.PHOTONICS_ALPHA_MODE.NONE=None
+value.PHOTONICS_ALPHA_MODE.BLOCK=Block
+value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
+
+option.PHOTONICS_MAX_LIGHTS=Max Lights
+option.PHOTONICS_MAX_LIGHTS.comment=The max number of traced lights that can be loaded\n\n§6Medium performance impact
+
+option.PHOTONICS_MAX_SAMPLES=Max Sample Count
+option.PHOTONICS_MAX_SAMPLES.comment=The amount of nearby lights that can cast light on an object\n\n§cHIGH PERFORMANCE IMPACT
+
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES=ReSTIR Initial Samples
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=How many lights ReSTIR should initially consider \n\n§6Medium performance impact
+
+option.PHOTONICS_RESTIR_SOFT_SHADOWS=ReSTIR Soft Shadows
+option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=Whether ReSTIR should have soft shadows \n\n§aMinor performance impact
+
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES=ReSTIR Spatial Reuse Samples
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=How many samples ReSTIR uses for spatial reuse \n\n§6Medium performance impact
+
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_RADIUS=ReSTIR Spatial Reuse Radius
+
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=ReSTIR Accumulation Frames
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=The max number of frames ReSTIR uses for accumulation. Lower values will cause lighting to be more responsive, at the cost of more noise. \n\nNo performance impact
+
+option.PHOTONICS_RESTIR_DENOISER_QUALITY=ReSTIR Denoiser Quality
+option.PHOTONICS_RESTIR_DENOISER_QUALITY.comment=The quality of the denoiser ReSTIR uses\n\n§cHIGH PERFORMANCE IMPACT
+
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.OFF=Off
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.LOW=Low
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.MEDIUM=Medium
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.HIGH=High
+value.PHOTONICS_RESTIR_DENOISER_QUALITY.ULTRA=Ultra
+
+option.PHOTONICS_VANILLA_LIGHT_FALLBACK=Vanilla Light Fallback
+option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=Percentage of vanilla lighting to use as a fallback while using photonics to prevent dark areas where photonics lighting did not load.
+suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=\%
+
+option.STELLAR_VIEW_SUPPORT=Stellar View Support
+option.STELLAR_VIEW_SUPPORT.comment=Adds support for the Stellar View mod. §c[*]§r Can cause issues with Sky Resource Packs.
+
+option.DISTANT_HORIZONS_SSAO=Edge Shadow (SSAO)
+option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusion) in Distant Horizons Chunks. §e[*]§r This option only works if Distant Horizons is installed. §e[*]§r Requires Edge Shadow (SSAO) Quality to be set to not be set to OFF in the Performance Settings.
+
+option.DISTANT_HORIZONS_FADE=Smooth Fade
+option.DISTANT_HORIZONS_FADE.comment=Enables smooth fading between different Distant Horizons chunks. §e[*]§r This option only works if Distant Horizons is installed.
