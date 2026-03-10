@@ -2780,8 +2780,9 @@ option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Makes red flowers glow during Blood M
 
 option.PHOTONICS_LIGHTING_MODE=Lighting Mode
 option.PHOTONICS_LIGHTING_MODE.comment=Changes the lighting algorithm Photonics uses for lighting.\n\nSimple - A very simple lighting algorithm with no noise, but a limited number of lights (Max Samples)\nReSTIR - Uses ReSTIR for lighting, supports an unlimited (Max Lights) number of lights, but may be noisy in certain areas. §e[*]§r This option only works if Photonics is installed.
-value.PHOTONICS_LIGHTING_MODE.0=Simple
-value.PHOTONICS_LIGHTING_MODE.1=ReSTIR
+value.PHOTONICS_LIGHTING_MODE.0=OFF
+value.PHOTONICS_LIGHTING_MODE.1=Simple
+value.PHOTONICS_LIGHTING_MODE.2=ReSTIR
 
 option.PHOTONICS_PIXELATED_SHADOWS=Pixelated Shadows
 option.PHOTONICS_PIXELATED_SHADOWS.comment=Enable or disable pixelated shadows in the Photonics mod. §c[*]§r Can be noisy with ReSTIR lighting mode.
@@ -2812,14 +2813,9 @@ option.PHOTONICS_RESTIR_SPATIAL_REUSE_RADIUS=ReSTIR Spatial Reuse Radius
 option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=ReSTIR Accumulation Frames
 option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=The max number of frames ReSTIR uses for accumulation. Lower values will cause lighting to be more responsive, at the cost of more noise. \n\nNo performance impact
 
-option.PHOTONICS_RESTIR_DENOISER_QUALITY=ReSTIR Denoiser Quality
-option.PHOTONICS_RESTIR_DENOISER_QUALITY.comment=The quality of the denoiser ReSTIR uses\n\n§cHIGH PERFORMANCE IMPACT
-
-value.PHOTONICS_RESTIR_DENOISER_QUALITY.OFF=Off
-value.PHOTONICS_RESTIR_DENOISER_QUALITY.LOW=Low
-value.PHOTONICS_RESTIR_DENOISER_QUALITY.MEDIUM=Medium
-value.PHOTONICS_RESTIR_DENOISER_QUALITY.HIGH=High
-value.PHOTONICS_RESTIR_DENOISER_QUALITY.ULTRA=Ultra
+option.PHOTONICS_RESTIR_DENOISER_PASSES=Denoiser Passes
+option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=The number of passes the denoiser for ReSTIR uses\n\n§cHIGH PERFORMANCE IMPACT
+value.PHOTONICS_RESTIR_DENOISER_PASSES.0=Off
 
 option.PHOTONICS_VANILLA_LIGHT_FALLBACK=Vanilla Light Fallback
 option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=Percentage of vanilla lighting to use as a fallback while using photonics to prevent dark areas where photonics lighting did not load.
