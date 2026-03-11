@@ -2462,6 +2462,7 @@ option.DAYLIGHT_STARS=Daylight Stars
 option.DAYLIGHT_STARS.comment=Enables Stars during the day
 
 option.FROZEN_TIME=Frozen Time
+option.FROZEN_TIME_COMMENT=Freezes shader animation time, shader effects which rely on frame based animation will be frozen and thus allowing for good comparison screenshots.
 
 option.DARKER_DEPTH_OCEANS=Deeper Darker Oceans
 option.DARKER_DEPTH_OCEANS.comment=Light decreases with depth of the Ocean
