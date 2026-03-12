@@ -1058,8 +1058,8 @@ option.WAVING_LEAVES.comment=给树叶添加摇晃的效果模拟风的吹拂.
 option.WAVING_LAVA=岩浆纹理摇晃
 option.WAVING_LAVA.comment=为岩浆添加持续的运动效果. §e[*]§r 岩浆的摇晃是特殊的, 不受 封闭区域不摇晃 选项影响.
 
-option.WAVING_LILY_PAD=睡莲摇晃
-option.WAVING_LILY_PAD.comment=给睡莲和青蛙卵添加摇晃的效果模拟水波影响.
+option.WAVING_LILY_PAD=睡莲摇晃 §c[-]§r
+option.WAVING_LILY_PAD.comment=给睡莲和青蛙卵添加摇晃的效果模拟水波影响. §c[-]§r 会导致在含水方块上的睡莲叶不可见.
 
 option.WAVING_WATER_VERTEX=水面高度摇晃
 option.WAVING_WATER_VERTEX.comment=给水面添加摇晃运动模拟风的吹拂. §e[*]§r 本设置与 水波强度 选项无关.
@@ -1376,6 +1376,18 @@ screen.POPULAR_SETTINGS_2=第二页
 screen.POPULAR_SETTINGS_3=第三页
 screen.EP_VERSION=Euphoria Patches §d1.9.0
 screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件. §r§d§l§neuphoriapatches.com/support
+
+screen.MODDED_SETTINGS=模组支持
+screen.MODDED_SETTINGS.comment=安装特定模组后才会生效的设置. 这些设置为了补充使用这些模组的体验而添加的, 若没有安装这些模组, 此菜单的选项没有任何作用..
+screen.PHOTONICS_SETTINGS=Photonics
+screen.PHOTONICS_SETTINGS.comment=仅当安装 Photionics 模组后才生效的设置.
+screen.PHOTONICS_SETTINGS_BASIC=简单模式
+screen.PHOTONICS_SETTINGS_BASIC.comment=简单照明模式设置.
+screen.PHOTONICS_SETTINGS_RESTIR=ReSTIR 模式
+screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIR 照明模式设置.
+
+screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
+screen.DISTANT_HORIZONS_SETTINGS.comment=仅当安装 Distant Horizons 模组后才生效的设置.
 
 option.DAYLIGHT_CYCLE_COMPAT=世界时间动画
 option.DAYLIGHT_CYCLE_COMPAT.comment=本选项提供了 "在关闭世界日期循环 ( /gamerule doDaylightCycle false ) 后云层和其他动画效果正常工作" 的选择. 但这意味着多人游戏各玩家间的动画效果不再同步了.
@@ -2453,6 +2465,7 @@ option.DAYLIGHT_STARS=白日繁星
 option.DAYLIGHT_STARS.comment=使星空在白天可见.
 
 option.FROZEN_TIME=冻结时间
+option.FROZEN_TIME_COMMENT=冻结着色器动画时间, 依赖于基于帧的相关着色器效果会被冻结, 便于截图对比效果.
 
 option.DARKER_DEPTH_OCEANS=越深越暗的海洋
 option.DARKER_DEPTH_OCEANS.comment=在海洋中时随着所处深度的增加光线不断减少.
@@ -2767,3 +2780,55 @@ value.BLOOD_MOON.1=每天
 suffix.BLOOD_MOON=天1次
 option.EMISSIVE_BLOOD_MOON_FLOWERS=血月红花发光
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=血月期间使红色花朵发光. §e[*]§r 资源包支持选项需设置为集成PBR+.
+
+option.PHOTONICS_LIGHTING_MODE=照明模式
+option.PHOTONICS_LIGHTING_MODE.comment=选择 Photonics 模组使用的照明算法. \n§a简单§f\n - 非常简易的不会带来噪点的照明算法, 但会限制光源数量 (§a最大样本数量§f). \n§bReSTIR§f\n - 使用 ReSTIR 技术进行照明, 支持不限制数量的光源 (§b最大光源数量§f), 但会在特定情况下产生噪点. \n§e[*]§r 本选项仅在安装 Photonics 模组时生效.
+value.PHOTONICS_LIGHTING_MODE.0=关
+value.PHOTONICS_LIGHTING_MODE.1=§a简单§f
+value.PHOTONICS_LIGHTING_MODE.2=§bReSTIR§f
+
+option.PHOTONICS_PIXELATED_SHADOWS=像素化阴影
+option.PHOTONICS_PIXELATED_SHADOWS.comment=开关 Photonics 模组中阴影的像素化. §c[*]§r 可能在 ReSTIR 模式下产生很多噪点.
+
+option.PHOTONICS_ALPHA_MODE=半透明模式
+option.PHOTONICS_ALPHA_MODE.comment=设置 Photonics 对半透明方块的处理方式. \n无\n - 透明方块被视为不透明方块. \n逐方块\n - 逐方块应用透明度 (§a性能影响小§r). \n逐像素\n - 逐像素应用透明度 (§c性能影响非常高§r)
+value.PHOTONICS_ALPHA_MODE.NONE=无
+value.PHOTONICS_ALPHA_MODE.BLOCK=逐方块
+value.PHOTONICS_ALPHA_MODE.VOXEL=逐像素
+
+option.PHOTONICS_MAX_LIGHTS=§b最大光源数量§f
+option.PHOTONICS_MAX_LIGHTS.comment=可加载的最大追踪光源数量. \n§6中幅影响性能
+
+option.PHOTONICS_MAX_SAMPLES=§a最大样本数量§f
+option.PHOTONICS_MAX_SAMPLES.comment=附近可投射光线的光源数量. \n§c性能影响非常高
+
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES=ReSTIR 初始样本数
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=ReSTIR 考虑的光源初始样本数量. \n§6中幅影响性能
+
+option.PHOTONICS_RESTIR_SOFT_SHADOWS=ReSTIR 软阴影
+option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=是否启用 ReSTIR 的软阴影. \n§a性能影响较小
+
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES=ReSTIR 空间复用样本数
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=ReSTIR 复用的时空样本数量. \n§6中幅影响性能
+
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_RADIUS=ReSTIR 空间复用半径
+
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=ReSTIR 累计帧
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=ReSTIR 用于累积的最大帧数. 本选项设置的数值越低光源的响应越灵敏, 代价是更多噪点. \n无性能影响.
+
+option.PHOTONICS_RESTIR_DENOISER_PASSES=降噪通道数
+option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=ReSTIR 降噪器使用的通道数. \n§c性能影响非常高
+value.PHOTONICS_RESTIR_DENOISER_PASSES.0=关
+
+option.PHOTONICS_VANILLA_LIGHT_FALLBACK=原版照明备选
+option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=使用 Photonics 时为了预防其出现光照未加载时出现完全失去照明的情况下的光照备选方案.
+suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=\%
+
+option.STELLAR_VIEW_SUPPORT=Stellar View 支持
+option.STELLAR_VIEW_SUPPORT.comment=为 Stellar View 模组添加支持. §c[*]§r 可能导致部分天空资源包出现问题.
+
+option.DISTANT_HORIZONS_SSAO=边缘阴影 (SSAO)
+option.DISTANT_HORIZONS_SSAO.comment=在 Distant Horizons 区块启用 SSAO (屏幕空间环境光遮蔽). \n§e[*]§r 需将位于 "性能设置" 菜单内的 "边缘阴影 (SSAO) 质量" 选项设置为除 "§a关§f" 以外的其他值. \n§e[*]§r 本选项仅在安装 Distant Horizons 模组时生效.
+
+option.DISTANT_HORIZONS_FADE=平滑淡出
+option.DISTANT_HORIZONS_FADE.comment=启用不同 Distant Horizons 区块间的平滑过渡效果. \n§e[*]§r 本选项仅在安装 Distant Horizons 模组时生效.
