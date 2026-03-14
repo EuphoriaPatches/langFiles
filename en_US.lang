@@ -2822,6 +2822,9 @@ option.PHOTONICS_VANILLA_LIGHT_FALLBACK=Vanilla Light Fallback
 option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=Percentage of vanilla lighting to use as a fallback while using photonics to prevent dark areas where photonics lighting did not load.
 suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=\%
 
+option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Enchanting Glint Strength
+option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Changes the strength of the light emitted by enchanted items when using Photonics lighting.
+
 option.STELLAR_VIEW_SUPPORT=Stellar View Support
 option.STELLAR_VIEW_SUPPORT.comment=Adds support for the Stellar View mod. §c[*]§r Can cause issues with Sky Resource Packs.
 
