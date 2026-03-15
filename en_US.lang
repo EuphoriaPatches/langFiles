@@ -2794,6 +2794,10 @@ value.PHOTONICS_ALPHA_MODE.NONE=None
 value.PHOTONICS_ALPHA_MODE.BLOCK=Block
 value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
 
+option.PHOTONICS_INDIRECT_INTENSITY=Global Illumination
+option.PHOTONICS_INDIRECT_INTENSITY.comment=Changes the intensity of the indirect lighting in the Photonics mod. §e[*]§r This option only works if Photonics is installed.
+value.PHOTONICS_INDIRECT_INTENSITY.0=OFF
+
 option.PHOTONICS_MAX_LIGHTS=Max Lights
 option.PHOTONICS_MAX_LIGHTS.comment=The max number of traced lights that can be loaded\n\n§6Medium performance impact
 
@@ -2817,6 +2821,10 @@ option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=The max number of frames ReS
 option.PHOTONICS_RESTIR_DENOISER_PASSES=Denoiser Passes
 option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=The number of passes the denoiser for ReSTIR uses\n\n§cHIGH PERFORMANCE IMPACT
 value.PHOTONICS_RESTIR_DENOISER_PASSES.0=Off
+
+option.PHOTONICS_RESTIR_FLICKER_FIRE=ReSTIR Flickering Fire
+option.PHOTONICS_RESTIR_FLICKER_FIRE.comment=Fire light sources will flicker. §c[*]§r This option only works with ReSTIR lighting mode.
+value.PHOTONICS_RESTIR_FLICKER_FIRE.0=OFF
 
 option.PHOTONICS_VANILLA_LIGHT_FALLBACK=Vanilla Light Fallback
 option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=Percentage of vanilla lighting to use as a fallback while using photonics to prevent dark areas where photonics lighting did not load.
