@@ -2794,6 +2794,9 @@ value.PHOTONICS_ALPHA_MODE.NONE=None
 value.PHOTONICS_ALPHA_MODE.BLOCK=Block
 value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
 
+option.PHOTONICS_RENDER_SCALE=Render Scale
+option.PHOTONICS_RENDER_SCALE.comment=Changes the render scale of the Photonics lighting.\n\n§aLower values can help with performance but may cause the lighting to look worse.\n\n§cHigher values can improve the lighting quality but may cause performance issues.\n\n
+
 option.PHOTONICS_INDIRECT_INTENSITY=Global Illumination
 option.PHOTONICS_INDIRECT_INTENSITY.comment=Changes the intensity of the indirect lighting in the Photonics mod. §e[*]§r This option only works if Photonics is installed.
 value.PHOTONICS_INDIRECT_INTENSITY.0=OFF
@@ -2841,3 +2844,12 @@ option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusio
 
 option.DISTANT_HORIZONS_FADE=Smooth Fade
 option.DISTANT_HORIZONS_FADE.comment=Enables smooth fading between different Distant Horizons chunks. §e[*]§r This option only works if Distant Horizons is installed.
+
+option.PIXELATED_SHADOWS_MODE=Pixelated Shadows Mode
+option.PIXELATED_SHADOWS_MODE.comment=Changes the way pixelated shadows are rendered. Automatic is default and best for most cases, the manual resolutions should only be used when the used resourcepacks have mismatched texture resolutions. §e[*]§r Pixelated shadows need to be enabled for this option to work
+value.PIXELATED_SHADOWS_MODE.0=Automatic
+value.PIXELATED_SHADOWS_MODE.8=Manual 8x
+value.PIXELATED_SHADOWS_MODE.16=Manual 16x
+value.PIXELATED_SHADOWS_MODE.32=Manual 32x
+value.PIXELATED_SHADOWS_MODE.64=Manual 64x
+value.PIXELATED_SHADOWS_MODE.128=Manual 128x
