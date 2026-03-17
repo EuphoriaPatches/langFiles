@@ -2802,7 +2802,8 @@ option.PHOTONICS_INDIRECT_INTENSITY.comment=Changes the intensity of the indirec
 value.PHOTONICS_INDIRECT_INTENSITY.0=OFF
 
 option.PHOTONICS_MAX_LIGHTS=Max Lights
-option.PHOTONICS_MAX_LIGHTS.comment=The max number of traced lights that can be loaded\n\n§6Medium performance impact
+option.PHOTONICS_MAX_LIGHTS.comment=The max number of traced lights that can be loaded\n\n§6Medium performance impact.§r\n\nWhen set to OFF no photonics blocklight will be used and the vanilla blocklight will be used instead.
+value.PHOTONICS_MAX_LIGHTS.0=OFF
 
 option.PHOTONICS_MAX_SAMPLES=Max Sample Count
 option.PHOTONICS_MAX_SAMPLES.comment=The amount of nearby lights that can cast light on an object\n\n§cHIGH PERFORMANCE IMPACT
