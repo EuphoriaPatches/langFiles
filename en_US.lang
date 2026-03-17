@@ -2786,10 +2786,10 @@ value.PHOTONICS_LIGHTING_MODE.1=Simple
 value.PHOTONICS_LIGHTING_MODE.2=ReSTIR
 
 option.PHOTONICS_PIXELATED_SHADOWS=Pixelated Shadows
-option.PHOTONICS_PIXELATED_SHADOWS.comment=Enable or disable pixelated shadows in the Photonics mod. §c[*]§r Can be noisy with ReSTIR lighting mode.
+option.PHOTONICS_PIXELATED_SHADOWS.comment=Enable or disable pixelated shadows in the Photonics mod. §c[*]§r This option only works with Simple lighting mode.
 
 option.PHOTONICS_ALPHA_MODE=Transparency Mode
-option.PHOTONICS_ALPHA_MODE.comment=Sets how Photonics handles transparent blocks.\n\nNone - Transparent blocks are treated as opaque\nBlock - Transparency is applied per block (§aMinimal performance impact)§r\nVoxel - Transparency is applied per voxel (§6HIGH PERFORMANCE IMPACT)§r
+option.PHOTONICS_ALPHA_MODE.comment=Sets how Photonics handles transparent blocks.\n\nNone - Transparent blocks are treated as opaque\nBlock - Transparency is applied per block (§aMinimal performance impact)§r\nVoxel - Transparency is applied per voxel (§cHIGH PERFORMANCE IMPACT)§r
 value.PHOTONICS_ALPHA_MODE.NONE=None
 value.PHOTONICS_ALPHA_MODE.BLOCK=Block
 value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
@@ -2836,6 +2836,9 @@ suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=\%
 
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Enchanting Glint Strength
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Changes the strength of the light emitted by enchanted items when using Photonics lighting.
+
+option.PHOTONICS_SEPARATE_HANDHELD_RAYS=Separate Handheld Rays
+option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=Whether both handheld lights should cast shadows. When disabled only one shadow will be cast\n\n§aMinimal performance impact
 
 option.STELLAR_VIEW_SUPPORT=Stellar View Support
 option.STELLAR_VIEW_SUPPORT.comment=Adds support for the Stellar View mod. §c[*]§r Can cause issues with Sky Resource Packs.
