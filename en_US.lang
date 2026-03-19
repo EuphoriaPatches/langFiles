@@ -60,7 +60,7 @@ option.info9.comment=Best way to support the development of Complementary is to 
 
 option.info10=Credits
 value.info10.0=
-option.info10.comment=EminGT: The main developer of Complementary. Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE
+option.info10.comment=EminGT: The main developer of Complementary. Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§dWhat is Euphoria Patches
 value.info11.0=
@@ -230,8 +230,8 @@ screen.OTHER_SETTINGS.comment=Settings that don't fit into any other category.
 screen.SELECT_OUTLINE_SETTINGS=Selection Outline
 screen.SELECT_OUTLINE_SETTINGS.comment=Settings that change the block selection outline.
 
-screen.WORLD_OUTLINE_SETTINGS=World Outline
-screen.WORLD_OUTLINE_SETTINGS.comment=Settings that are about optional outline effects.
+screen.WORLD_OUTLINE_SETTINGS=World Outline §e[*]§r
+screen.WORLD_OUTLINE_SETTINGS.comment=Settings that are about optional outline effects. §e[*]§r The World Outline effect calculations benefit a lot from PBR block reflections being enabled.
 
 #Settings
 option.RP_MODE=RP Support
@@ -1083,6 +1083,9 @@ option.WORLD_OUTLINE_I.comment=Determines how intense the World Outline effect w
 
 option.WORLD_OUTLINE_ON_ENTITIES=World Outline on Entities
 option.WORLD_OUTLINE_ON_ENTITIES.comment=Determines if the World Outline effect will apply to entities or not. §c[-]§r This setting may not work perfectly with some custom PBR resource packs.
+
+option.WORLD_OUTLINE_SCALED=Distance Scaled World Outline
+option.WORLD_OUTLINE_SCALED.comment=Makes the size of world outline scale according to distance.
 
 option.DARK_OUTLINE=§eDark Outline§r
 option.DARK_OUTLINE.comment=Adds dark outlines around blocks. §c[-]§r This effect can impact performance.
