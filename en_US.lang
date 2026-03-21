@@ -1381,8 +1381,8 @@ screen.MODDED_SETTINGS=Modded Settings
 screen.MODDED_SETTINGS.comment=Settings that only work if you have certain mods installed. These settings are made to complement the experience of playing with those mods, and they won't do anything if you don't have the required mods.
 screen.PHOTONICS_SETTINGS=Photonics
 screen.PHOTONICS_SETTINGS.comment=Settings that only work if you have the Photonics mod installed.
-screen.PHOTONICS_SETTINGS_BASIC=Simple Mode
-screen.PHOTONICS_SETTINGS_BASIC.comment=Simple Lighting Mode settings.
+screen.PHOTONICS_SETTINGS_BASIC=Sharp Mode
+screen.PHOTONICS_SETTINGS_BASIC.comment=Sharp Lighting Mode settings.
 screen.PHOTONICS_SETTINGS_RESTIR=ReSTIR Mode
 screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIR Lighting Mode settings.
 
@@ -1474,11 +1474,16 @@ value.CLOUD_ROUNDNESS.0.05=Boxy §e[*]§r
 value.CLOUD_ROUNDNESS.0.125=Balanced
 value.CLOUD_ROUNDNESS.0.2=Round
 option.CLOUD_ROUNDNESS.comment=Change how round the clouds appear.  §e[*]§r Lower roundness results in more noise artifacts
+
 option.CLOUD_SHADOW_ROUNDNESS=Cloud Shadow Roundness
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Extra Boxy
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Boxy
 value.CLOUD_SHADOW_ROUNDNESS.0.35=Round
 option.CLOUD_SHADOW_ROUNDNESS.comment=Change how round cloud shadows appear.
+
+option.CLOUD_SHADOW_STRENGTH=Cloud Shadow Strength
+option.CLOUD_SHADOW_STRENGTH.comment=Adjusts only cloud shadow darkness. Lower values make cloud shadows brighter, higher values make them darker.
+
 option.CLOUD_NARROWNESS=Cloud Width
 option.CLOUD_NARROWNESS.comment=Change how wide the clouds appear horizontally.
 
@@ -2783,13 +2788,13 @@ option.EMISSIVE_BLOOD_MOON_FLOWERS=Emissive Blood Moon Flowers
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Makes red flowers glow during Blood Moons. §e[*]§r RP Support option must be set to Integrated PBR+.
 
 option.PHOTONICS_LIGHTING_MODE=Lighting Mode
-option.PHOTONICS_LIGHTING_MODE.comment=Changes the lighting algorithm Photonics uses for lighting.\n\nSimple - A very simple lighting algorithm with no noise, but a limited number of lights (Max Samples)\nReSTIR - Uses ReSTIR for lighting, supports an unlimited (Max Lights) number of lights, but may be noisy in certain areas. §e[*]§r This option only works if Photonics is installed.
+option.PHOTONICS_LIGHTING_MODE.comment=Changes the lighting algorithm Photonics uses for lighting.\n\nSharp - A sharp lighting algorithm with no noise, but a limited number of lights (Max Samples)\nReSTIR - Uses ReSTIR for lighting, supports an unlimited (Max Lights) number of lights, but may be noisy in certain areas. §e[*]§r This option only works if Photonics is installed.
 value.PHOTONICS_LIGHTING_MODE.0=OFF
-value.PHOTONICS_LIGHTING_MODE.1=Simple
+value.PHOTONICS_LIGHTING_MODE.1=Sharp
 value.PHOTONICS_LIGHTING_MODE.2=ReSTIR
 
 option.PHOTONICS_PIXELATED_SHADOWS=Pixelated Shadows
-option.PHOTONICS_PIXELATED_SHADOWS.comment=Enable or disable pixelated shadows in the Photonics mod. §c[*]§r This option only works with Simple lighting mode.
+option.PHOTONICS_PIXELATED_SHADOWS.comment=Enable or disable pixelated shadows in the Photonics mod. §c[*]§r This option only works with Sharp lighting mode.
 
 option.PHOTONICS_ALPHA_MODE=Transparency Mode
 option.PHOTONICS_ALPHA_MODE.comment=Sets how Photonics handles transparent blocks.\n\nNone - Transparent blocks are treated as opaque\nBlock - Transparency is applied per block (§aMinimal performance impact)§r\nVoxel - Transparency is applied per voxel (§cHIGH PERFORMANCE IMPACT)§r
