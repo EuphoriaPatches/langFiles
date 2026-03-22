@@ -1,15 +1,15 @@
 #shaders/lang/en_us.lang
 
 #Profiles
-profile.POTATO=§aPotato
-profile.VERYLOW=§aVery Low
-profile.LOW=§aLow
-profile.MEDIUM=§aMedium
-profile.HIGH=§eHigh (Default)
-profile.VERYHIGH=§cVery High
-profile.ULTRA=§4§lUltra
+profile.POTATO=Performance: §aPotato
+profile.VERYLOW=Performance: §aVery Low
+profile.LOW=Performance: §aLow
+profile.MEDIUM=Performance: §aMedium
+profile.HIGH=Performance: §eHigh (Default)
+profile.VERYHIGH=Performance: §cVery High
+profile.ULTRA=Performance: §4§lUltra
 profile.COMPLEMENTARY=§4§l§n§oComplementary
-profile.comment=Shader profiles change performance settings with the most optimised visual fidelity to performance ratio. §e[*]§r It's recommended to use one of these profiles for your settings unless you know what you are doing. §e[*]§r All affected settings can all be found in the "Performance Settings" menu. The Popular Settings Profile enables the community's favorite settings.
+profile.comment=Shader profiles change performance settings with the most optimised visual fidelity to performance ratio. §e[*]§r It's recommended to use one of these profiles for your settings unless you know what you are doing. §e[*]§r All affected settings can all be found in the "Performance Settings" menu.
 
 #Information
 screen.INFORMATION=Information
@@ -1223,9 +1223,10 @@ option.XLIGHT_CURVE=Blocklight Contrast
 option.XLIGHT_CURVE.comment=Adjusts how quickly the intensity of blocklight fades away as it travels distance away from the light source.
 
 ####### Euphoria Patches #######
-
-profile.SPACEAGLE17= §f۞ §kO§fDEBUG (Do Not Use)§f§kO
-profile.POPULAR=§bPopular §dSettings
+profile2.DEFAULT=§bVisual Settings:§r Default
+profile2.SPACEAGLE17= §f۞ §kO§fDEBUG (Do Not Use)§f§kO
+profile2.POPULAR=§bVisual Settings: §dPopular
+profile2.comment=These are profile presets for Euphoria Patches. §c[-] WARNING:§r Using this can alter many different settings and even break your handcrafted ones.\n\n• Default Settings are the default Complementary Shader Settings.\n\n• §bPopular §dSettings§r is a preset that has some of the most popular Euphoria Patches and Complementary settings enabled.\n\n• The Debug profile is used for testing purposes and isn't meant to be used by regular users.
 
 #WATERMARK
 option.WATERMARK=Complementary
