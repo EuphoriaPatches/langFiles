@@ -10,6 +10,7 @@ profile.VERYHIGH=Desempenho: §cResolução bem Alta
 profile.ULTRA=Desempenho: §4§l Resolução Ultra
 profile.COMPLEMENTARY=§4§l§n§oComplementary
 profile.comment=Os "Profile" de shader equilibram qualidade visual e desempenho da forma mais otimizada possível. §e[*]§r Recomenda-se usar um desses "Profiles" nas suas configurações, a menos que você saiba o que está fazendo. §e[*]§r Todas as configurações afetadas podem ser encontradas no menu 'Configurações de Desempenho'.
+
 #Information
 screen.INFORMATION=Informação
 screen.INFORMATION.comment=Esta seção contém apenas botões que existem para fornecer informações.
@@ -2779,7 +2780,7 @@ option.COLORED_LIGHT_FOG_RAIN_I.comment=Ajusta o quão forte fica a névoa de lu
 value.COLORED_LIGHT_FOG_RAIN_I.0=Padrão
 
 option.BLOOD_MOON=Lua de Sangue
-option.BLOOD_MOON.comment=Ativa Luas de Sangue que ocorrem de acordo com a quantidade de dias do Minecraft definida nesta opção. Luas de Sangue não acontecem na primeira noite se a opção estiver definida para algo acima de Toda Noite. Luas de Sangue também não acontecem durante a Lua Nova se a opção estiver definida para algo acima de Toda Noite.
+option.BLOOD_MOON.comment=Ativa Luas de Sangue, que acontecem a cada X noites do Minecraft definido nesta opção. Luas de Sangue não ocorrem na primeira noite se estiver definido para algo acima de "Toda Noite". Luas de Sangue não ocorrem em luas novas se estiver definido para algo acima de "Toda Noite".
 value.BLOOD_MOON.0=DESLIGADO
 value.BLOOD_MOON.1=Todas as noite
 suffix.BLOOD_MOON=\ Noites do Minecraft
