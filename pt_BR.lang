@@ -1,16 +1,15 @@
 #shaders/lang/pt_BR.lang
 
 #Profiles
-profile.POTATO=§aResolução de calculadora
-profile.VERYLOW=§aResolução bem Baixa
-profile.LOW=§aResolução Baixa
-profile.MEDIUM=§aResolução Média
-profile.HIGH=§eResolução Alta (Padrão)
-profile.VERYHIGH=§cResolução bem Alta
-profile.ULTRA=§4§l Resolução Ultra
+profile.POTATO=Desempenho: §aResolução de calculadora
+profile.VERYLOW=Desempenho: §aResolução bem Baixa
+profile.LOW=Desempenho: §aResolução Baixa
+profile.MEDIUM=Desempenho: §aResolução Média
+profile.HIGH=Desempenho: §eResolução Alta (Padrão)
+profile.VERYHIGH=Desempenho: §cResolução bem Alta
+profile.ULTRA=Desempenho: §4§l Resolução Ultra
 profile.COMPLEMENTARY=§4§l§n§oComplementary
-profile.comment=Os "Profile" de shader equilibram qualidade visual e desempenho da forma mais otimizada possível. §e[*]§r Recomenda-se usar um desses "Profiles" nas suas configurações, a menos que você saiba o que está fazendo. §e[*]§r Todas as configurações afetadas podem ser encontradas no menu 'Configurações de Desempenho'. O Perfil de Configurações Populares ativa as preferências favoritas da comunidade.
-
+profile.comment=Os "Profile" de shader equilibram qualidade visual e desempenho da forma mais otimizada possível. §e[*]§r Recomenda-se usar um desses "Profiles" nas suas configurações, a menos que você saiba o que está fazendo. §e[*]§r Todas as configurações afetadas podem ser encontradas no menu 'Configurações de Desempenho'.
 #Information
 screen.INFORMATION=Informação
 screen.INFORMATION.comment=Esta seção contém apenas botões que existem para fornecer informações.
@@ -60,7 +59,7 @@ option.info9.comment=A melhor forma de apoiar o desenvolvimento da  §1Complemen
 
 option.info10=Créditos
 value.info10.0=
-option.info10.comment= §4EminGT§r: Desenvolvedor principal do Complementary Shaders  §5Capt Tatsu §r: Desenvolvedor do BSL Shaders,com a generosidade dele fez com que Complementary pudesse existir para inicio de conversa.  §6 Agradecimentos Especiais: §r  §1IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap §r
+option.info10.comment= §4EminGT§r: Desenvolvedor principal do Complementary Shaders  §5Capt Tatsu §r: Desenvolvedor do BSL Shaders,com a generosidade dele fez com que Complementary pudesse existir para inicio de conversa.  §6 Agradecimentos Especiais: §r  §1IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, plazmal §r
 
 option.info11=§dO que é §5Euphoria Patches.§r
 value.info11.0=
@@ -230,8 +229,8 @@ screen.OTHER_SETTINGS.comment=Configurações que não se encaixam em nenhuma ou
 screen.SELECT_OUTLINE_SETTINGS=Contorno de Seleção
 screen.SELECT_OUTLINE_SETTINGS.comment=Configurações que alteram o contorno de seleção de blocos.
 
-screen.WORLD_OUTLINE_SETTINGS=Contorno do Mundo
-screen.WORLD_OUTLINE_SETTINGS.comment=Configurações relacionadas a efeitos opcionais de contorno.
+screen.WORLD_OUTLINE_SETTINGS=Contorno do Mundo §e[*]§r
+screen.WORLD_OUTLINE_SETTINGS.comment=Configurações relacionadas a efeitos opcionais de contorno. §e[*]§r Os cálculos do efeito de contorno do mundo se beneficiam bastante de reflexões de blocos PBR ativadas.
 
 #Settings
 option.RP_MODE=RP Suporte
@@ -1084,6 +1083,9 @@ option.WORLD_OUTLINE_I.comment=Define a intensidade do efeito de contorno do mun
 option.WORLD_OUTLINE_ON_ENTITIES=Contorno do Mundo em Entidades
 option.WORLD_OUTLINE_ON_ENTITIES.comment=Define se o efeito de contorno será aplicado em entidades. §c[-]§r Pode não funcionar bem com alguns pacotes PBR personalizados.
 
+option.WORLD_OUTLINE_SCALED=Contorno do Mundo Escalado pela Distância
+option.WORLD_OUTLINE_SCALED.comment=Faz o tamanho do contorno do mundo variar de acordo com a distância.
+
 option.DARK_OUTLINE=Contorno Escuro
 option.DARK_OUTLINE.comment=Adiciona contornos escuros aos blocos. §c[-]§r Pode impactar o desempenho.
 
@@ -1220,9 +1222,10 @@ option.XLIGHT_CURVE=Contraste da Iluminação de Blocos
 option.XLIGHT_CURVE.comment=Ajusta a rapidez com que a intensidade da iluminação dos blocos diminui à medida que se afasta da fonte de luz.
 
 ####### Euphoria Patches #######
-
-profile.SPACEAGLE17= §f۞ §kO§fDEBUG (Não Use)§f§kO
-profile.POPULAR=§bPopular §dSettings
+profile2.DEFAULT=§bConfigurações Visuais:§r Padrão
+profile2.SPACEAGLE17= §f۞ §kO§fDEBUG (Não Use)§f§kO
+profile2.POPULAR=§bConfigurações Visuais: §dPopular
+profile2.comment=Estes são perfis predefinidos do Euphoria Patches. §c[-] AVISO:§r Usar isso pode alterar várias configurações diferentes e até quebrar as que você configurou manualmente.\n\n• Configurações Padrão são as configurações padrão do Complementary Shaders.\n\n• §bConfigurações §dPopulares§r é um preset que ativa algumas das configurações mais populares do Euphoria Patches e do Complementary.\n\n• O perfil Debug é usado para testes e não é feito para uso de usuários comuns.
 
 #WATERMARK
 option.WATERMARK=Complementary
@@ -1374,6 +1377,18 @@ screen.POPULAR_SETTINGS_3=Página 3
 screen.EP_VERSION=Euphoria Patches §d1.9.0
 screen.EP_VERSION.comment=§bVocê pode apoiar o SpacEagle17 no Patreon ou Ko-Fi e receber novas versões beta exclusivas.
 
+screen.MODDED_SETTINGS=Configurações de Mods
+screen.MODDED_SETTINGS.comment=Configurações que só funcionam se você tiver certos mods instalados. Elas foram feitas para complementar a experiência ao jogar com esses mods, e não fazem nada se os mods necessários não estiverem instalados.
+screen.PHOTONICS_SETTINGS=Photonics
+screen.PHOTONICS_SETTINGS.comment=Configurações que só funcionam se você tiver o mod Photonics instalado.
+screen.PHOTONICS_SETTINGS_BASIC=Modo Nítido
+screen.PHOTONICS_SETTINGS_BASIC.comment=Configurações do modo de iluminação nítido.
+screen.PHOTONICS_SETTINGS_RESTIR=Modo ReSTIR
+screen.PHOTONICS_SETTINGS_RESTIR.comment=Configurações do modo de iluminação ReSTIR.
+
+screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
+screen.DISTANT_HORIZONS_SETTINGS.comment=Configurações que só funcionam se você tiver o mod Distant Horizons instalado.
+
 option.DAYLIGHT_CYCLE_COMPAT=Animação do Tempo Mundial
 option.DAYLIGHT_CYCLE_COMPAT.comment=USE apenas se você joga com o gamerule doDaylightCycle false. Quando ativado, nuvens e outros animam em mundos com o ciclo do dia desativado, mas não ficam mais sincronizados entre os jogadores.
 
@@ -1459,11 +1474,16 @@ value.CLOUD_ROUNDNESS.0.05=Quadrada §e[*]§r
 value.CLOUD_ROUNDNESS.0.125=Equilibrada
 value.CLOUD_ROUNDNESS.0.2=Arredondada
 option.CLOUD_ROUNDNESS.comment=Altere o quão arredondadas as nuvens aparecem. §e[*]§r Menos arredondamento resulta em mais artefatos de ruído.
+
 option.CLOUD_SHADOW_ROUNDNESS=Arredondamento da Sombra das Nuvens
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Super Quadrada
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Quadrada
 value.CLOUD_SHADOW_ROUNDNESS.0.35=Arredondada
 option.CLOUD_SHADOW_ROUNDNESS.comment=Altere o quão arredondadas as sombras das nuvens aparecem.
+
+option.CLOUD_SHADOW_STRENGTH=Intensidade da Sombra das Nuvens
+option.CLOUD_SHADOW_STRENGTH.comment=Ajusta apenas a escuridão das sombras das nuvens. Valores mais baixos deixam as sombras mais claras, valores mais altos deixam elas mais escuras.
+
 option.CLOUD_NARROWNESS=Largura das Nuvens
 option.CLOUD_NARROWNESS.comment=Altera o quão largas as nuvens aparecem horizontalmente.
 
@@ -2450,6 +2470,7 @@ option.DAYLIGHT_STARS=Estrelas Durante o Dia
 option.DAYLIGHT_STARS.comment=Ativa estrelas durante o dia
 
 option.FROZEN_TIME=Tempo Congelado
+option.FROZEN_TIME_COMMENT=Congela o tempo de animação do shader, efeitos de shader que dependem de animação por frame ficarão congelados, permitindo assim boas capturas de comparação.
 
 option.DARKER_DEPTH_OCEANS=Oceanos Profundos Mais Escuros
 option.DARKER_DEPTH_OCEANS.comment=A luz diminui com a profundidade do oceano
@@ -2766,5 +2787,81 @@ option.BLOOD_MOON.comment=Ativa Luas de Sangue que ocorrem conforme a quantidade
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Flores da Lua de Sangue Emissivas
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Faz flores vermelhas brilharem durante Luas de Sangue. §e[*]§r A opção de suporte a RP deve estar definida como PBR+ Integrado.
 
+option.PHOTONICS_LIGHTING_MODE=Modo de Iluminação
+option.PHOTONICS_LIGHTING_MODE.comment=Altera o algoritmo de iluminação que o Photonics usa.\n\nNítido - Um algoritmo de iluminação nítida sem ruído, mas com número limitado de luzes (Máx. Amostras)\nReSTIR - Usa ReSTIR para iluminação, suporta número ilimitado de luzes (Máx. Luzes), mas pode gerar ruído em algumas áreas. §e[*]§r Esta opção só funciona se o Photonics estiver instalado.
+value.PHOTONICS_LIGHTING_MODE.0=Desligado
+value.PHOTONICS_LIGHTING_MODE.1=Simples
+value.PHOTONICS_LIGHTING_MODE.2=ReSTIR
 
+option.PHOTONICS_PIXELATED_SHADOWS=Sombras Pixeladas
+option.PHOTONICS_PIXELATED_SHADOWS.comment=Ativa ou desativa sombras pixeladas no mod Photonics. §c[*]§r Esta opção só funciona com o modo de iluminação Nítido.
 
+option.PHOTONICS_ALPHA_MODE=Modo de Transparência
+option.PHOTONICS_ALPHA_MODE.comment=Define como o Photonics lida com blocos transparentes.\n\nNone - Blocos transparentes são tratados como opacos\nBlock - Transparência aplicada por bloco (§aImpacto mínimo na performance)§r\nVoxel - Transparência aplicada por voxel (§cALTO IMPACTO NA PERFORMANCE)§r
+value.PHOTONICS_ALPHA_MODE.NONE=Nenhum
+value.PHOTONICS_ALPHA_MODE.BLOCK=Bloco
+value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
+
+option.PHOTONICS_RENDER_SCALE=Escala de Renderização
+option.PHOTONICS_RENDER_SCALE.comment=Altera a escala de renderização da iluminação do Photonics.\n\n§aValores mais baixos podem ajudar na performance, mas podem piorar a qualidade da iluminação.\n\n§cValores mais altos podem melhorar a qualidade da iluminação, mas podem causar problemas de performance.\n\n
+
+option.PHOTONICS_INDIRECT_INTENSITY=Iluminação Global
+option.PHOTONICS_INDIRECT_INTENSITY.comment=Altera a intensidade da iluminação indireta no mod Photonics. §e[*]§r Esta opção só funciona se o Photonics estiver instalado.
+value.PHOTONICS_INDIRECT_INTENSITY.0=Desligado
+
+option.PHOTONICS_MAX_LIGHTS=Máximo de Luzes
+option.PHOTONICS_MAX_LIGHTS.comment=Número máximo de luzes rastreadas que podem ser carregadas\n\n§6Impacto médio na performance.§r\n\nQuando definido como Desligado, nenhuma iluminação de blocos do Photonics será usada e a iluminação vanilla será usada no lugar.
+value.PHOTONICS_MAX_LIGHTS.0=Desligado
+
+option.PHOTONICS_MAX_SAMPLES=Máximo de Amostras
+option.PHOTONICS_MAX_SAMPLES.comment=Quantidade de luzes próximas que podem iluminar um objeto\n\n§cALTO IMPACTO NA PERFORMANCE
+
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES=Amostras Iniciais do ReSTIR
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=Quantas luzes o ReSTIR deve considerar inicialmente\n\n§6Impacto médio na performance
+
+option.PHOTONICS_RESTIR_SOFT_SHADOWS=Sombras Suaves (ReSTIR)
+option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=Define se o ReSTIR terá sombras suaves\n\n§aPequeno impacto na performance
+
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES=Amostras de Reuso Espacial (ReSTIR)
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=Quantas amostras o ReSTIR usa para reuso espacial\n\n§6Impacto médio na performance
+
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_RADIUS=Raio de Reuso Espacial (ReSTIR)
+
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=Frames de Acumulação (ReSTIR)
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=Número máximo de frames usados para acumulação. Valores menores deixam a iluminação mais responsiva, porém com mais ruído.\n\nSem impacto na performance
+
+option.PHOTONICS_RESTIR_DENOISER_PASSES=Passes do Denoiser
+option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=Número de passes que o denoiser do ReSTIR usa\n\n§cALTO IMPACTO NA PERFORMANCE
+value.PHOTONICS_RESTIR_DENOISER_PASSES.0=Desligado
+
+option.PHOTONICS_RESTIR_FLICKER_FIRE=Fogo Tremulante (ReSTIR)
+option.PHOTONICS_RESTIR_FLICKER_FIRE.comment=Fontes de luz de fogo irão tremular. §c[*]§r Esta opção só funciona com o modo de iluminação ReSTIR.
+value.PHOTONICS_RESTIR_FLICKER_FIRE.0=Desligado
+
+option.PHOTONICS_VANILLA_LIGHT_FALLBACK=Luz Vanilla de Reserva
+option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=Porcentagem da iluminação vanilla usada como fallback para evitar áreas escuras onde a iluminação do Photonics não carregou.
+suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=%
+
+option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Intensidade do Brilho de Encantamento
+option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Altera a intensidade da luz emitida por itens encantados ao usar a iluminação do Photonics.
+
+option.PHOTONICS_SEPARATE_HANDHELD_RAYS=Raios Separados para Itens na Mão
+option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=Define se ambas as luzes de itens na mão devem projetar sombras. Quando desativado, apenas uma sombra será projetada\n\n§aImpacto mínimo na performance
+
+option.STELLAR_VIEW_SUPPORT=Suporte ao Stellar View
+option.STELLAR_VIEW_SUPPORT.comment=Adiciona suporte ao mod Stellar View. §c[*]§r Pode causar problemas com resource packs de céu.
+
+option.DISTANT_HORIZONS_SSAO=Sombra de Borda (SSAO)
+option.DISTANT_HORIZONS_SSAO.comment=Ativa SSAO (oclusão de ambiente em espaço de tela) nos chunks do Distant Horizons. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado. §e[*]§r Requer que a qualidade de SSAO não esteja em OFF nas configurações de performance.
+
+option.DISTANT_HORIZONS_FADE=Transição Suave
+option.DISTANT_HORIZONS_FADE.comment=Ativa uma transição suave entre diferentes chunks do Distant Horizons. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado.
+
+option.PIXELATED_SHADOWS_MODE=Modo de Sombras Pixeladas
+option.PIXELATED_SHADOWS_MODE.comment=Altera a forma como as sombras pixeladas são renderizadas. Automático é o padrão e funciona melhor na maioria dos casos; as resoluções manuais devem ser usadas apenas quando os resource packs utilizados têm resoluções de textura diferentes. §e[*]§r As sombras pixeladas precisam estar ativadas para esta opção funcionar.
+value.PIXELATED_SHADOWS_MODE.0=Automático
+value.PIXELATED_SHADOWS_MODE.8=Manual 8x
+value.PIXELATED_SHADOWS_MODE.16=Manual 16x
+value.PIXELATED_SHADOWS_MODE.32=Manual 32x
+value.PIXELATED_SHADOWS_MODE.64=Manual 64x
+value.PIXELATED_SHADOWS_MODE.128=Manual 128x
