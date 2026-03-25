@@ -1485,6 +1485,10 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=Change how round cloud shadows appear.
 option.CLOUD_SHADOW_STRENGTH=Cloud Shadow Strength
 option.CLOUD_SHADOW_STRENGTH.comment=Adjusts only cloud shadow darkness. Lower values make cloud shadows brighter, higher values make them darker.
 
+option.CLOUD_SHADOW_FADE_DISTANCE=Cloud Shadow Distance
+option.CLOUD_SHADOW_FADE_DISTANCE.comment=Determines the distance around the player in which cloud shadows will not be shown.
+value.CLOUD_SHADOW_FADE_DISTANCE.0=OFF
+
 option.CLOUD_NARROWNESS=Cloud Width
 option.CLOUD_NARROWNESS.comment=Change how wide the clouds appear horizontally.
 
