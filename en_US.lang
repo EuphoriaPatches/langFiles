@@ -2856,6 +2856,9 @@ option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=Whether both handheld lights sho
 option.PHOTONICS_AMBIENT_LIGHT_MULT=Ambient Light Multiplier
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Option to change how much default ambient light should be used alongside Photonics lighting. §e[*]§r This option only works if Photonics is installed.
 
+option.PHOTONICS_COMBINED_GI=Combined GI
+option.PHOTONICS_COMBINED_GI.comment=Whether Gi should be ran through ReSTIR's denoiser instead of its usual path. \nResults in much intenser Gi, at the cost of performance and noise\n\n§cHIGH PERFORMANCE IMPACT. §b[*]§r Recommended to be used with a denoiser pass count of 5 or higher.
+
 option.STELLAR_VIEW_SUPPORT=Stellar View Support
 option.STELLAR_VIEW_SUPPORT.comment=Adds support for the Stellar View mod. §c[*]§r Can cause issues with Sky Resource Packs.
 
