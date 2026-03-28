@@ -1546,6 +1546,10 @@ option.HIGH_QUALITY_CLOUDS.comment=Increases the quality of Clouds to more than 
 
 option.CLOUD_LAYER2_SPEED_MULT=Cloud Layer 2 Speed Multiplier
 
+option.PIXELATED_UNBOUND_CLOUDS=Pixelated Unbound Clouds
+option.PIXELATED_UNBOUND_CLOUDS.comment=Gives the unbound clouds a pixelated look. The higher the value the bigger the pixels.
+value.PIXELATED_UNBOUND_CLOUDS.0=OFF
+
 option.DOUBLE_UNBOUND_CLOUDS=Double Unbound Clouds
 option.DOUBLE_UNBOUND_CLOUDS.comment=Enables a second layer of unbound clouds to be rendered. §c[-]§r This setting can impact performance.
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Cloud Layer 2 Altitude
