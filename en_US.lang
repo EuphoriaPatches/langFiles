@@ -1884,6 +1884,9 @@ option.BIOME_COLORED_NETHER_PORTALS.comment=Nether portals in the Nether will be
 
 option.NETHER_PORTAL_NOISE=Nether Portal Noise
 option.NETHER_PORTAL_NOISE.comment=Adds noise to the Nether Portal texture, making it look more dynamic.
+value.NETHER_PORTAL_NOISE.0=OFF
+value.NETHER_PORTAL_NOISE.1=Normal
+value.NETHER_PORTAL_NOISE.2=Pixelated
 
 option.END_PORTAL_VARIATION=End Portal Preset
 option.END_PORTAL_VARIATION.comment=Option to choose between different end portal presets. §e[*]§r RP Support option must be set to Integrated PBR+
