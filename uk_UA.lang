@@ -1884,6 +1884,9 @@ option.BIOME_COLORED_NETHER_PORTALS.comment=Портали Незеру буду
 
 option.NETHER_PORTAL_NOISE=Шум порталу Незеру
 option.NETHER_PORTAL_NOISE.comment=Додає шум до текстури порталу Незеру, роблячи його більш динамічним.
+value.NETHER_PORTAL_NOISE.0=ВИМК.
+value.NETHER_PORTAL_NOISE.1=Звичайний
+value.NETHER_PORTAL_NOISE.2=Пыксельний
 
 option.END_PORTAL_VARIATION=Пресет порталу Енду
 option.END_PORTAL_VARIATION.comment=Можливість вибору між різними пресетами порталу в Енд. §e[*]§r Підтримка ПР має бути Integrated PBR+.
