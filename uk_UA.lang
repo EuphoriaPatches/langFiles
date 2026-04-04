@@ -2,11 +2,11 @@
 
 #Profiles
 profile.POTATO=Продуктив.: §aКартопля
-profile.VERYLOW=Продуктив.: §aНаднизький
-profile.LOW=Продуктив.: §aНизький
-profile.MEDIUM=Продуктив.: §aПосередній
-profile.HIGH=Продуктив.: §eВисокий (устал.)
-profile.VERYHIGH=Продуктив.: §cНадвисокий
+profile.VERYLOW=Продуктив.: §aНаднизька
+profile.LOW=Продуктив.: §aНизька
+profile.MEDIUM=Продуктив.: §aПосередня
+profile.HIGH=Продуктив.: §eВисока (устал.)
+profile.VERYHIGH=Продуктив.: §cНадвисока
 profile.ULTRA=Продуктив.: §4§lУльтра
 profile.COMPLEMENTARY=§4§l§n§oComplementary
 profile.comment=Профілі шейдерів змінюють налаштування продуктивности з максимально оптимізованим співвідношенням візуальної точности та продуктивности. §e[*]§r Рекомендовано використовувати один із цих профілів для налаштувань, якщо ви не знаєте, що робите. §e[*]§r Усі параметри, яких це стосується, можна знайти в меню «Продуктивність».
@@ -255,7 +255,7 @@ value.BLOCK_REFLECT_QUALITY.1=§eНизька
 value.BLOCK_REFLECT_QUALITY.3=§cВисока
 
 option.SHADOW_QUALITY=Тіні в реальному часі
-option.SHADOW_QUALITY.comment=Керує якістю тіней. Кожен рівень додатково зменшує артефакти тіньового шуму, значення нижче, ніж «§eВисокі§r» ввімкнуть оптимізовані тіні для листя, «§eНаднизькі§r» значно зменшує тіні багатьма способами, «§aВИМК.§r» повністю вимикає тіні та світлові потоки.
+option.SHADOW_QUALITY.comment=Керує якістю тіней. Кожен рівень додатково зменшує шумові артефакти тіні, §eнизькі§r й §eнаднизькі§r використовують простішу фільтрацію тіней, §eнаднизькі§r також вимикає кольорові тіні, §a«ВИМК.»§r повністю вимикає тіні та світлові потоки. §e[*]§r Цей параметр унутрішньо обмежено значенням «Низький», якщо ви вимкнете тимчасовий фільтр або ввімкнете налаштування піксельних тіней.
 value.SHADOW_QUALITY.-1=§aВИМК.
 value.SHADOW_QUALITY.0=§eНаднизькі
 value.SHADOW_QUALITY.1=§eНизькі
@@ -1258,6 +1258,8 @@ screen.END_SKY=Небо Енду
 screen.END_SKY.comment=Налаштування, які стосуються неба Енду.
 screen.END_BEAMS_SETTINGS=Налаштування променів Енду
 screen.END_BEAMS_SETTINGS.comment=Налаштування, які стосуються променів Енду.
+screen.END_BEAMS_COLOR_SETTINGS=Кольори променів Енду
+screen.END_BEAMS_COLOR_SETTINGS.comment=Налашутвнаня, які стосуються кольору променів Енду.
 screen.END_STAR=Налаштування зірок Енду
 screen.END_STAR.comment=Налаштування, які стосуються зірок Енду.
 screen.STAR_COLORS_END=Колір зірок Енду
@@ -1678,8 +1680,16 @@ option.E_DRAGON_BEAM_B_NEW=Синій променів дракона Енду
 option.E_DRAGON_BEAM_B_NEW.comment=Синій колір променю Енду під час бою з драконом.
 option.E_DRAGON_BEAM_I=Інтенсивність променів дракона Енду
 option.E_DRAGON_BEAM_I.comment=Інтенсивність кольору променю Енду під час бою з драконом.
-option.BEAMS_NEAR_PLAYER=Промені Енду біля гравця
-option.BEAMS_NEAR_PLAYER.comment=Умикає або вимикає промені Енду біля гравця.
+option.END_BEAM_SCALE=Розмір
+option.END_BEAM_SCALE.comment=Змінює розмір променів Енду. Вищі значення роблять їх тоншими, нижчі — ширшими.
+option.END_BEAM_DISTANCE_MULTIPLIER=Множник відстані
+option.END_BEAM_DISTANCE_MULTIPLIER.comment=Змінює відстань, на якій далекі або близькі промені Енду до гравця. Вищі значення змушують їх починати далі, нижчі – ближче.
+option.END_BEAM_HEIGHT=Висота
+option.END_BEAM_HEIGHT.comment=Змінює висоту променів Енду. Більші значення роблять їх нижчими, нижчі — вищими.
+option.END_BEAM_POW=Потужність променів
+option.END_BEAM_POW.comment=Змінює потужність променів.
+option.END_BEAM_DENSITY=Щільність променів
+option.END_BEAM_DENSITY.comment=Змінює щільність променів енду.
 
 option.END_STARS=Зірки Енду
 option.END_STARS.comment=Умикає або вимикає зірки в Енді.
