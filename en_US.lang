@@ -1625,8 +1625,8 @@ option.E_SKY_COLORR_NEW=End Sky - Red
 option.E_SKY_COLORG_NEW=End Sky - Green
 option.E_SKY_COLORB_NEW=End Sky - Blue
 option.E_SKY_COLORI=End Sky - Intensity
-option.END_SKY_FOG_INFLUENCE=End Sky Fog Color Influence
-option.END_SKY_FOG_INFLUENCE.comment=Tweak how much the color of the fog of modded biomes affect the sky colors
+option.END_SKY_FOG_INFLUENCE=Modded End Biome Tint
+option.END_SKY_FOG_INFLUENCE.comment=Tweak how much the fog color of modded biomes affect the End Sky and End Beam colors. At 1.00 the End Sky and End Beams will have the same color as the fog color, at 0.00 they will be unaffected by the fog color.
 
 option.GLOWING_EMERALD_BLOCK=Emissive Emerald Block
 option.GLOWING_EMERALD_BLOCK.comment=Option to make Emerald blocks glow. §e[*]§r RP Support option must be set to Integrated PBR+
@@ -1688,8 +1688,10 @@ option.END_BEAM_HEIGHT=Height
 option.END_BEAM_HEIGHT.comment=Changes the height of the end beams. Bigger values make them shorter, lower values make them taller.
 option.END_BEAM_POW=Beam Power
 option.END_BEAM_POW.comment=Changes the power the beams have.
-option.END_BEAM_DENSITY=Beam Density
-option.END_BEAM_DENSITY.comment=Changes the density of the end beams.
+option.END_BEAM_DIRECTION_BIAS=Vertical Direction Bias
+option.END_BEAM_DIRECTION_BIAS.comment=Controls which side of the beam center is favored. -1.0 favors below, 0.0 is mirrored, 1.0 favors above.
+option.END_BEAM_START_HEIGHT=Beam Start Height
+option.END_BEAM_START_HEIGHT.comment=Changes the height at which the end beams start.
 
 option.END_STARS=End Stars
 option.END_STARS.comment=Enable or disable the stars in the End.
@@ -2631,6 +2633,7 @@ option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=Removes the desaturation e
 option.PURKINJE_RENDER_DISTANCE_FADE=Render Distance Fade
 option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=Nether Render Distance Fade
 option.PURKINJE_RENDER_DISTANCE_FADE_END=End Render Distance Fade
+option.NO_PURKINJE_IN_SKYBOX=No Skybox Desaturation
 
 option.MOON_PHASE_INF_PURKINJE=Moon Phased Night Desaturation
 option.MOON_PHASED_DESATURATION_SETTINGS.comment=Adjusts the amount of desaturation based on the current phase of the moon.
