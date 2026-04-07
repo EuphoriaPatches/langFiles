@@ -1260,6 +1260,8 @@ screen.END_BEAMS_SETTINGS=Ender Beam Settings
 screen.END_BEAMS_SETTINGS.comment=Settings that relate to the Ender Beams.
 screen.END_BEAMS_COLOR_SETTINGS=Ender Beam Colors
 screen.END_BEAMS_COLOR_SETTINGS.comment=Settings that relate to the color of the Ender Beams.
+screen.END_BEAMS_FLASH_SETTINGS=End Flash Settings
+screen.END_BEAMS_FLASH_SETTINGS.comment=Settings that relate to the End Beams when End Flashes are happening. Only works on 1.21.9+.
 screen.END_STAR=End Star Settings
 screen.END_STAR.comment=Settings that relate to the End Stars.
 screen.STAR_COLORS_END=End Star Colors
@@ -1692,6 +1694,10 @@ option.END_BEAM_DIRECTION_BIAS=Vertical Direction Bias
 option.END_BEAM_DIRECTION_BIAS.comment=Controls which side of the beam center is favored. -1.0 favors below, 0.0 is mirrored, 1.0 favors above.
 option.END_BEAM_START_HEIGHT=Beam Start Height
 option.END_BEAM_START_HEIGHT.comment=Changes the height at which the end beams start.
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=Flash Height Multiplier
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Changes the height of the end beams during end flashes. Higher values make them shorter, lower values make them taller.
+option.END_BEAM_FLASH_POW_MULTIPLIER=Flash Power Multiplier
+option.END_BEAM_FLASH_POW_MULTIPLIER.comment=Changes the power of the end beams during end flashes.
 
 option.END_STARS=End Stars
 option.END_STARS.comment=Enable or disable the stars in the End.
@@ -2232,7 +2238,12 @@ option.NO_RAIN_ABOVE_CLOUDS=No Rain Above Clouds
 option.NO_RAIN_ABOVE_CLOUDS.comment=Disables rain above the clouds. Doesn't work well if the vanilla cloud height was changed with the vanilla clouds enabled.
 
 option.RAIN_FADE_TIMER=Rain Fade Timer
-option.RAIN_FADE_TIMER.comment=Change the time it takes for rain related effects to fade in and out. Affected effects are clouds, rain puddles, fog, rainbow and more.
+option.RAIN_FADE_TIMER.comment=Change the time it takes for rain related effects to fade in and out. Affected effects are clouds, rain puddles, fog, rainbow and more. §e[*]§r Only works on Iris and derivatives.
+
+option.RAIN_TEX_OPACITY_MULTIPLIER=Rain Opacity Multiplier
+option.RAIN_TEX_OPACITY_MULTIPLIER.comment=Change the opacity of the rain particle texture, making the rain look heavier or lighter.
+option.SNOW_TEX_OPACITY_MULTIPLIER=Snow Opacity Multiplier
+option.SNOW_TEX_OPACITY_MULTIPLIER.comment=Change the opacity of the snow particle texture, making the snow look heavier or lighter.
 
 option.DOF_SNEAKING=DoF Sneaking & Spyglass
 option.DOF_SNEAKING.comment=Only activate the world blur option while sneaking and holding a spyglass.
