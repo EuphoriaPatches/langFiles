@@ -255,7 +255,7 @@ value.BLOCK_REFLECT_QUALITY.1=Resolução Baixa
 value.BLOCK_REFLECT_QUALITY.2=§cMedium
 
 option.SHADOW_QUALITY=Sombras em Tempo-Real
-option.SHADOW_QUALITY.comment=Ajusta  a qualidades das sombras.Cada nível adicional reduz ainda mais os artefatos de ruído nas sombras. As opções abaixo de §eAlto§r ativam sombras otimizadas em folhagens. A configuração §eResolução Muito Baixo§r compromete significativamente a qualidade das sombras de diversas maneiras, enquanto a opção §aDESATIVADO§r desativa completamente as sombras e os feixes de luz.
+option.SHADOW_QUALITY.comment=Ajusta a qualidade das sombras. Cada nível reduz ainda mais os artefatos de ruído nas sombras. §eBaixo§r e §eMuito Baixo§r usam um filtro de sombras mais simples, e §eMuito Baixo§r também desativa sombras coloridas. §aDESLIGADO§r desativa completamente as sombras e os feixes de luz. §e[*]§r Esta configuração fica limitada internamente a "Baixo" se você desativar o Filtro Temporal ou ativar a opção Sombras Pixeladas.
 value.SHADOW_QUALITY.-1=Desativado
 value.SHADOW_QUALITY.0=§eResolução Muito Baixa
 value.SHADOW_QUALITY.1=Resolução Baixa
@@ -1258,6 +1258,10 @@ screen.END_SKY=Céu do End
 screen.END_SKY.comment=Configurações relacionadas ao Céu do End.
 screen.END_BEAMS_SETTINGS=Configurações dos Feixes do Ender
 screen.END_BEAMS_SETTINGS.comment=Configurações relacionadas aos Feixes do Ender.
+screen.END_BEAMS_COLOR_SETTINGS=Cores dos feixes do End
+screen.END_BEAMS_COLOR_SETTINGS.comment=Configurações relacionadas à cor dos feixes do End.
+screen.END_BEAMS_FLASH_SETTINGS=Configurações do brilho do End
+screen.END_BEAMS_FLASH_SETTINGS.comment=Configurações relacionadas aos feixes do End durante os flashes do End. Funciona apenas na versão 1.21.9 ou superior.
 screen.END_STAR=Configurações das Estrelas do End
 screen.END_STAR.comment=Configurações relacionadas às Estrelas do End.
 screen.STAR_COLORS_END=Cores das Estrelas do End
@@ -1485,6 +1489,10 @@ option.CLOUD_SHADOW_ROUNDNESS.comment=Altere o quão arredondadas as sombras das
 option.CLOUD_SHADOW_STRENGTH=Intensidade da Sombra das Nuvens
 option.CLOUD_SHADOW_STRENGTH.comment=Ajusta apenas a escuridão das sombras das nuvens. Valores mais baixos deixam as sombras mais claras, valores mais altos deixam elas mais escuras.
 
+option.CLOUD_SHADOW_FADE_DISTANCE=Distância de sombra das nuvens
+option.CLOUD_SHADOW_FADE_DISTANCE.comment=Define a distância ao redor do jogador em que as sombras das nuvens não serão exibidas.
+value.CLOUD_SHADOW_FADE_DISTANCE.0=DESLIGADO
+
 option.CLOUD_NARROWNESS=Largura das Nuvens
 option.CLOUD_NARROWNESS.comment=Altera o quão largas as nuvens aparecem horizontalmente.
 
@@ -1541,6 +1549,10 @@ option.HIGH_QUALITY_CLOUDS=Alta qualidade das  nuvens
 option.HIGH_QUALITY_CLOUDS.comment=Aumenta a qualidade das nuvens mais que o possível que a configuração normal do Complementary pode ir. §c[-]§r ativando essa configuração pode afetar no desempenho.
 
 option.CLOUD_LAYER2_SPEED_MULT=Cloud Layer 2 Speed Multiplier
+
+option.PIXELATED_UNBOUND_CLOUDS=Nuvens soltas pixeladas
+option.PIXELATED_UNBOUND_CLOUDS.comment=Dá às nuvens soltas um visual pixelado. Quanto maior o valor, maiores ficam os pixels.
+value.PIXELATED_UNBOUND_CLOUDS.0=DESLIGADO
 
 option.DOUBLE_UNBOUND_CLOUDS=Nuvens Unbound Duplas
 option.DOUBLE_UNBOUND_CLOUDS.comment=Ativa a renderização de uma segunda camada de nuvens livres. §c[-]§r Esta configuração pode impactar o desempenho.
@@ -1615,8 +1627,8 @@ option.E_SKY_COLORR_NEW=Céu do End - Vermelho
 option.E_SKY_COLORG_NEW=Céu do End - Verde
 option.E_SKY_COLORB_NEW=Céu do End - Azul
 option.E_SKY_COLORI=Céu do End - Intensidade
-option.END_SKY_FOG_INFLUENCE=Influência da Cor da Névoa do Céu do End
-option.END_SKY_FOG_INFLUENCE.comment=Altere o quanto a cor da névoa de biomas de mods afeta as cores do céu
+option.END_SKY_FOG_INFLUENCE=Influência da cor de biomas modificados no End
+option.END_SKY_FOG_INFLUENCE.comment=Ajusta o quanto a cor da névoa de biomas modificados afeta o céu do End e os feixes do End. Em 1.00, o céu e os feixes terão a mesma cor da névoa; em 0.00, não serão afetados pela cor da névoa.
 
 option.GLOWING_EMERALD_BLOCK=Bloco de Esmeralda Emissivo
 option.GLOWING_EMERALD_BLOCK.comment=Opção para fazer blocos de esmeralda brilharem. §e[*]§r A opção de Suporte a RP deve estar em Integrated PBR+
@@ -1670,8 +1682,22 @@ option.E_DRAGON_BEAM_B_NEW=Feixes do Dragão do Ender - Azul
 option.E_DRAGON_BEAM_B_NEW.comment=A cor do Feixe do Ender durante a luta contra o dragão - Azul.
 option.E_DRAGON_BEAM_I=Feixes do Dragão do End - Intensidade
 option.E_DRAGON_BEAM_I.comment=Intensidade do Feixe do End durante a luta com o dragão.
-option.BEAMS_NEAR_PLAYER=Feixes do End Perto do Jogador
-option.BEAMS_NEAR_PLAYER.comment=Ativa ou desativa feixes do End próximos ao jogador.
+option.END_BEAM_SCALE=Escala
+option.END_BEAM_SCALE.comment=Altera a escala dos feixes do End. Valores mais altos os deixam mais finos, valores mais baixos os deixam mais largos.
+option.END_BEAM_DISTANCE_MULTIPLIER=Multiplicador de distância
+option.END_BEAM_DISTANCE_MULTIPLIER.comment=Define o quão perto ou longe os feixes do End ficam do jogador. Valores mais altos fazem com que comecem mais distantes, valores mais baixos mais próximos.
+option.END_BEAM_HEIGHT=Altura dos feixes do End
+option.END_BEAM_HEIGHT.comment=Ajusta a altura física dos feixes do End.
+option.END_BEAM_POW=Potência do feixe
+option.END_BEAM_POW.comment=Define a intensidade dos feixes.
+option.END_BEAM_DIRECTION_BIAS=Viés de direção vertical
+option.END_BEAM_DIRECTION_BIAS.comment=Define para qual lado do centro do feixe o efeito se inclina. -100 puxa para baixo, 0 fica equilibrado, 100 puxa para cima.
+option.END_BEAM_CENTER_ALT=Altitude central dos feixes do End
+option.END_BEAM_CENTER_ALT.comment=Ajusta a altitude em que os feixes do End ficam centralizados no eixo Y do mundo.
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=Multiplicador de altura do flash
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Altera a altura dos feixes do End durante os flashes. Valores mais altos os deixam mais curtos, valores mais baixos os deixam mais altos.
+option.END_BEAM_FLASH_POW_MULTIPLIER=Multiplicador de intensidade do flash
+option.END_BEAM_FLASH_POW_MULTIPLIER.comment=Altera a intensidade dos feixes do End durante os flashes.
 
 option.END_STARS=Estrelas do End
 option.END_STARS.comment=Ativa ou desativa as estrelas no End.
@@ -1876,6 +1902,9 @@ option.BIOME_COLORED_NETHER_PORTALS.comment=Portais do Nether no Nether terão c
 
 option.NETHER_PORTAL_NOISE=Ruído do Portal do Nether
 option.NETHER_PORTAL_NOISE.comment=Adiciona ruído à textura do Portal do Nether, tornando-o mais dinâmico.
+value.NETHER_PORTAL_NOISE.0=OFF
+value.NETHER_PORTAL_NOISE.1=Normal
+value.NETHER_PORTAL_NOISE.2=Pixelado
 
 option.END_PORTAL_VARIATION=Predefinição do Portal do End
 option.END_PORTAL_VARIATION.comment=Opção para escolher entre diferentes predefinições de portal do End. §e[*]§r O suporte a RP deve estar em Integrated PBR+
@@ -2209,7 +2238,12 @@ option.NO_RAIN_ABOVE_CLOUDS=Sem Chuva Acima das Nuvens
 option.NO_RAIN_ABOVE_CLOUDS.comment=Desativa a chuva acima das nuvens. Não funciona bem se a altura das nuvens vanilla foi alterada com as nuvens vanilla ativadas.
 
 option.RAIN_FADE_TIMER=Tempo de Desvanecimento da Chuva
-option.RAIN_FADE_TIMER.comment=Altere o tempo para efeitos relacionados à chuva desaparecerem. Afeta nuvens, poças, neblina, arco-íris e mais.
+option.RAIN_FADE_TIMER.comment=Altera o tempo que os efeitos relacionados à chuva levam para aparecer e desaparecer suavemente. Afeta nuvens, poças de chuva, névoa, arco-íris e mais. §e[*]§r Funciona apenas no Iris e derivados.
+
+option.RAIN_TEX_OPACITY_MULTIPLIER=Multiplicador de opacidade da chuva
+option.RAIN_TEX_OPACITY_MULTIPLIER.comment=Altera a opacidade da textura das partículas de chuva, deixando a chuva mais intensa ou mais leve.
+option.SNOW_TEX_OPACITY_MULTIPLIER=Multiplicador de opacidade da neve
+option.SNOW_TEX_OPACITY_MULTIPLIER.comment=Altera a opacidade da textura das partículas de neve, deixando a neve mais intensa ou mais leve.
 
 option.DOF_SNEAKING=Desfoque ao Agachar & Luneta
 option.DOF_SNEAKING.comment=Ativa o desfoque do mundo apenas ao agachar e segurar uma luneta.
@@ -2610,6 +2644,7 @@ option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=Remove o efeito de desatur
 option.PURKINJE_RENDER_DISTANCE_FADE=Desvanecimento por Distância de Renderização
 option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=Desvanecimento por Distância de Renderização no Nether
 option.PURKINJE_RENDER_DISTANCE_FADE_END=Desvanecimento por Distância de Renderização no End
+option.NO_PURKINJE_IN_SKYBOX=Sem dessaturação no céu
 
 option.MOON_PHASE_INF_PURKINJE=Desaturação Noturna por Fase da Lua
 option.MOON_PHASED_DESATURATION_SETTINGS.comment=Ajuda a ajustar a quantidade de desaturação conforme a fase atual da lua.
@@ -2848,6 +2883,12 @@ option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Altera a intensidade da luz e
 
 option.PHOTONICS_SEPARATE_HANDHELD_RAYS=Raios Separados para Itens na Mão
 option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=Define se ambas as luzes de itens na mão devem projetar sombras. Quando desativado, apenas uma sombra será projetada\n\n§aImpacto mínimo na performance
+
+option.PHOTONICS_AMBIENT_LIGHT_MULT=Multiplicador de luz ambiente
+option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Permite ajustar quanto da luz ambiente padrão será usada junto com a iluminação do Photonics. §e[*]§r Esta opção só funciona se o Photonics estiver instalado.
+
+option.PHOTONICS_COMBINED_GI=GI combinado
+option.PHOTONICS_COMBINED_GI.comment=Define se o GI deve ser processado pelo denoiser do ReSTIR em vez do método padrão.\nResulta em um GI muito mais intenso, com custo de desempenho e aumento de ruído.\n\n§cALTO IMPACTO DE PERFORMANCE. §b[*]§r Recomendado usar com contagem de passes do denoiser em 5 ou mais.
 
 option.STELLAR_VIEW_SUPPORT=Suporte ao Stellar View
 option.STELLAR_VIEW_SUPPORT.comment=Adiciona suporte ao mod Stellar View. §c[*]§r Pode causar problemas com resource packs de céu.
