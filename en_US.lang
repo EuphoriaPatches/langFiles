@@ -1698,6 +1698,8 @@ option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=Flash Height Multiplier
 option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Changes the height of the end beams during end flashes. Higher values make them shorter, lower values make them taller.
 option.END_BEAM_FLASH_POW_MULTIPLIER=Flash Power Multiplier
 option.END_BEAM_FLASH_POW_MULTIPLIER.comment=Changes the power of the end beams during end flashes.
+option.END_BEAM_FLASH_NARROWNESS=Flash Narrowness
+option.END_BEAM_FLASH_NARROWNESS.comment=Changes the narrowness of the zone affected by the end flash. Higher values make the flash affect a smaller area, lower values make it affect a bigger area.
 
 option.END_STARS=End Stars
 option.END_STARS.comment=Enable or disable the stars in the End.
