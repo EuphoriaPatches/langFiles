@@ -151,6 +151,9 @@ screen.SUN_MOON_SETTINGS.comment=Settings that relate to the sun and moon.
 screen.NETHER_SETTINGS=The Nether Dimension
 screen.NETHER_SETTINGS.comment=Settings that relate to the Nether dimension.
 
+screen.END_SETTINGS=The End Dimension
+screen.END_SETTINGS.comment=Settings that relate to the End dimension.
+
 screen.WEATHER_SETTINGS=Rain / Weather
 screen.WEATHER_SETTINGS.comment=Settings that relate to weather conditions
 
@@ -260,7 +263,7 @@ value.SHADOW_QUALITY.-1=§aOFF
 value.SHADOW_QUALITY.0=§eVery Low
 value.SHADOW_QUALITY.1=§eLow
 value.SHADOW_QUALITY.2=§eMedium
-value.SHADOW_QUALITY.3=§eHigh
+value.SHADOW_QUALITY.3=§cHigh
 value.SHADOW_QUALITY.4=§cVery High
 value.SHADOW_QUALITY.5=§4§lUltra
 
@@ -473,6 +476,21 @@ option.NETHER_COLOR_MODE.comment=Determines how the ambience colors will be hand
 value.NETHER_COLOR_MODE.3=Biome Based (Modified)
 value.NETHER_COLOR_MODE.2=Biome Based
 value.NETHER_COLOR_MODE.0=Constant
+
+option.END_BEAM_INTENSITY=End Beams Intensity
+option.END_BEAM_INTENSITY.comment=Adjusts the brightness of the beams seen in the End dimension.
+
+option.END_STAR_INTENSITY=End Stars Intensity
+option.END_STAR_INTENSITY.comment=Adjusts the brightness of the stars seen in the End dimension.
+
+option.END_FLASHES=End Flashes
+option.END_FLASHES.comment=Enables support for the "End flash" environmental feature that was added in Minecraft 1.21.9. The intensity of the flashes in the sky are directly tied to the intensity of End Beams.
+
+option.END_BEAM_CENTER_ALT=End Beams Center Altitude
+option.END_BEAM_CENTER_ALT.comment=Adjusts the altitude the End Beams will be centered at the y-level of the world.
+
+option.END_BEAM_HEIGHT=End Beams Height
+option.END_BEAM_HEIGHT.comment=Adjusts the physical tallness of the End Beams.
 
 option.TM_EXPOSURE=General Brightness
 option.TM_EXPOSURE.comment=Also known as "Tonemap Exposure". Adjusts the overall brightness of the whole image.
@@ -1689,7 +1707,7 @@ option.END_BEAM_DISTANCE_MULTIPLIER.comment=Changes the distance how far or clos
 option.END_BEAM_HEIGHT=End Beams Height
 option.END_BEAM_HEIGHT.comment=Adjusts the physical tallness of the End Beams.
 option.END_BEAM_POW=Beam Power
-option.END_BEAM_POW.comment=Changes the power the beams have.
+option.END_BEAM_POW.comment=Changes the power the beams have. Higher values make them less intense and lower values make them more intense.
 option.END_BEAM_DIRECTION_BIAS=Vertical Direction Bias
 option.END_BEAM_DIRECTION_BIAS.comment=Controls which side of the beam center is favored. -100 favors below, 0 is mirrored, 100 favors above.
 option.END_BEAM_CENTER_ALT=End Beams Center Altitude
@@ -2897,9 +2915,6 @@ option.STELLAR_VIEW_SUPPORT.comment=Adds support for the Stellar View mod. §c[*
 
 option.DISTANT_HORIZONS_SSAO=Edge Shadow (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusion) in Distant Horizons Chunks. §e[*]§r This option only works if Distant Horizons is installed. §e[*]§r Requires Edge Shadow (SSAO) Quality to be set to not be set to OFF in the Performance Settings.
-
-option.DISTANT_HORIZONS_FADE=Smooth Fade
-option.DISTANT_HORIZONS_FADE.comment=Enables smooth fading between different Distant Horizons chunks. §e[*]§r This option only works if Distant Horizons is installed.
 
 option.PIXELATED_SHADOWS_MODE=Pixelated Shadows Mode
 option.PIXELATED_SHADOWS_MODE.comment=Changes the way pixelated shadows are rendered. Automatic is default and best for most cases, the manual resolutions should only be used when the used resourcepacks have mismatched texture resolutions. §e[*]§r Pixelated shadows need to be enabled for this option to work
