@@ -1704,20 +1704,18 @@ option.END_BEAM_SCALE=Scale
 option.END_BEAM_SCALE.comment=Changes the scale of the end beams. Higher values make them tinner, lower values make them wider.
 option.END_BEAM_DISTANCE_MULTIPLIER=Distance Multiplier
 option.END_BEAM_DISTANCE_MULTIPLIER.comment=Changes the distance how far or close end beams are to the player. Higher values make them start further away, lower values make them start closer.
-option.END_BEAM_HEIGHT=End Beams Height
-option.END_BEAM_HEIGHT.comment=Adjusts the physical tallness of the End Beams.
 option.END_BEAM_POW=Beam Power
 option.END_BEAM_POW.comment=Changes the power the beams have. Higher values make them less intense and lower values make them more intense.
 option.END_BEAM_DIRECTION_BIAS=Vertical Direction Bias
 option.END_BEAM_DIRECTION_BIAS.comment=Controls which side of the beam center is favored. -100 favors below, 0 is mirrored, 100 favors above.
-option.END_BEAM_CENTER_ALT=End Beams Center Altitude
-option.END_BEAM_CENTER_ALT.comment=Adjusts the altitude the End Beams will be centered at the y-level of the world.
 option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=Flash Height Multiplier
 option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Changes the height of the end beams during end flashes. Higher values make them shorter, lower values make them taller.
 option.END_BEAM_FLASH_POW_MULTIPLIER=Flash Power Multiplier
 option.END_BEAM_FLASH_POW_MULTIPLIER.comment=Changes the power of the end beams during end flashes.
 option.END_BEAM_FLASH_NARROWNESS=Flash Narrowness
 option.END_BEAM_FLASH_NARROWNESS.comment=Changes the narrowness of the zone affected by the end flash. Higher values make the flash affect a smaller area, lower values make it affect a bigger area.
+option.END_BEAM_SPEED=Speed
+option.END_BEAM_SPEED.comment=Changes the speed of the end beams.
 
 option.END_STARS=End Stars
 option.END_STARS.comment=Enable or disable the stars in the End.
@@ -1751,6 +1749,11 @@ value.END_TWINKLING_STARS.17=1.7
 value.END_TWINKLING_STARS.18=1.8
 value.END_TWINKLING_STARS.19=1.9
 value.END_TWINKLING_STARS.20=2.0
+option.END_STAR_HEMISPHERE=End Star Hemisphere
+option.END_STAR_HEMISPHERE.comment=Setting to only render stars in the upper or lower hemisphere of the sky in the End.
+value.END_STAR_HEMISPHERE.0=Full Sky
+value.END_STAR_HEMISPHERE.1=Upper Hemisphere Only
+value.END_STAR_HEMISPHERE.-1=Lower Hemisphere Only
 
 option.STAR_BRIGHTNESS=Star Brightness
 option.STAR_BRIGHTNESS.comment=Setting to adjust the star brightness.
@@ -2820,6 +2823,7 @@ option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Prevents custom water surface color
 
 option.END_FLASH_SHADOW=End Flash Shadows
 option.END_FLASH_SHADOW.comment=Shadows in the End will be projected from the End flashes instead of the End Sun Angle. §e[*]§r This feature only works on Iris on 1.21.9+
+value.END_FLASH_SHADOW.0=OFF
 
 option.EP_END_FLASH=End Flash
 option.EP_END_FLASH.comment=Changes the End Flash type, either the default one or the custom Euphoria one or both. §e[*]§r This feature only works on Iris on 1.21.9+
