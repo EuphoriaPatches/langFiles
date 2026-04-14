@@ -636,6 +636,11 @@ option.SUN_MOON_HORIZON.comment=Prevents the sun/moon from appearing below the h
 option.SUN_MOON_DURING_RAIN=Sun/Moon During Rain. §e[*]§r
 option.SUN_MOON_DURING_RAIN.comment=Determines if the sun and moon will be visible during rain or not. §e[*]§r This setting also changes the balance of lighting during rain.
 
+option.IMPROVED_RAIN_DEFINE=Improved Weather Textures
+option.IMPROVED_RAIN_DEFINE.comment=Enables improved weather texture handling that allows for better colors and also fixes the Minecraft bug where rain/snow isn't visible behind colored or modified glass.
+value.IMPROVED_RAIN_DEFINE.0=OFF
+value.IMPROVED_RAIN_DEFINE.1=ON
+
 option.NIGHT_STAR_AMOUNT=Night Star Amount
 option.NIGHT_STAR_AMOUNT.comment=Determines the amount of stars in the night sky.
 value.NIGHT_STAR_AMOUNT.0=Off
@@ -2921,6 +2926,9 @@ option.STELLAR_VIEW_SUPPORT.comment=Adds support for the Stellar View mod. §c[*
 
 option.DISTANT_HORIZONS_SSAO=Edge Shadow (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusion) in Distant Horizons Chunks. §e[*]§r This option only works if Distant Horizons is installed. §e[*]§r Requires Edge Shadow (SSAO) Quality to be set to not be set to OFF in the Performance Settings.
+
+option.DH_BLENDING=Distant Horizons Blending
+option.DH_BLENDING.comment=Smoothly blends the transition between Distant Horizons chunks and normal chunks. §e[*]§r This option only works if Distant Horizons is installed.
 
 option.PIXELATED_SHADOWS_MODE=Pixelated Shadows Mode
 option.PIXELATED_SHADOWS_MODE.comment=Changes the way pixelated shadows are rendered. Automatic is default and best for most cases, the manual resolutions should only be used when the used resourcepacks have mismatched texture resolutions. §e[*]§r Pixelated shadows need to be enabled for this option to work
