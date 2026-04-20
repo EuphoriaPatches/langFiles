@@ -636,6 +636,11 @@ option.SUN_MOON_HORIZON.comment=Prevents the sun/moon from appearing below the h
 option.SUN_MOON_DURING_RAIN=Sun/Moon During Rain. §e[*]§r
 option.SUN_MOON_DURING_RAIN.comment=Determines if the sun and moon will be visible during rain or not. §e[*]§r This setting also changes the balance of lighting during rain.
 
+option.IMPROVED_RAIN_DEFINE=Improved Weather Textures
+option.IMPROVED_RAIN_DEFINE.comment=Enables improved weather texture handling that allows for better colors and also fixes the Minecraft bug where rain/snow isn't visible behind colored or modified glass.
+value.IMPROVED_RAIN_DEFINE.0=OFF
+value.IMPROVED_RAIN_DEFINE.1=ON
+
 option.NIGHT_STAR_AMOUNT=Night Star Amount
 option.NIGHT_STAR_AMOUNT.comment=Determines the amount of stars in the night sky.
 value.NIGHT_STAR_AMOUNT.0=Off
@@ -1676,13 +1681,13 @@ option.OW_BEAM_B_NEW=Overworld Beams - Blue
 option.END_BEAMS=Ender Beams
 option.END_BEAMS.comment=Setting which enables nebula like beams in the End.
 option.END_CRYSTAL_VORTEX=End Crystal Vortex
-option.END_CRYSTAL_VORTEX.comment=Setting which enables energy beams going up from end crystals in the end. §4[***]§r Enables §cEntity Shadows§r. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS. Shadow Distance in Complementary Settings affects the distance at which the vortexes are visible.
+option.END_CRYSTAL_VORTEX.comment=Setting which enables energy beams going up from end crystals in the end. §4[***]§r Enables §cEntity Shadows§r. §e[*]§r Only works on Iris. §e[*]§r does not work on MacOS. Shadow Distance in Complementary Settings affects the distance at which the vortexes are visible.
 value.END_CRYSTAL_VORTEX.0=OFF
 value.END_CRYSTAL_VORTEX.1=Vortex
 value.END_CRYSTAL_VORTEX.2=Healing Beam
 value.END_CRYSTAL_VORTEX.3=Both
 option.DRAGON_DEATH_EFFECT=Dragon Death Effect
-option.DRAGON_DEATH_EFFECT.comment=Setting which replaces the dragon's dying beams with a volumetric effect. §4[***]§r Enables §cEntity Shadows§r. [§e*§r] Only works on Iris. [§e*§r] does not work on MacOS.
+option.DRAGON_DEATH_EFFECT.comment=Setting which replaces the dragon's dying beams with a volumetric effect. §4[***]§r Enables §cEntity Shadows§r. §e[*]§r Only works on Iris. §e[*]§r does not work on MacOS.
 value.DRAGON_DEATH_EFFECT.0=OFF
 value.DRAGON_DEATH_EFFECT.1=Volumetric Effect
 value.DRAGON_DEATH_EFFECT.2=Volumetric + Original Beams
@@ -1716,6 +1721,8 @@ option.END_BEAM_FLASH_NARROWNESS=Flash Narrowness
 option.END_BEAM_FLASH_NARROWNESS.comment=Changes the narrowness of the zone affected by the end flash. Higher values make the flash affect a smaller area, lower values make it affect a bigger area.
 option.END_BEAM_SPEED=Speed
 option.END_BEAM_SPEED.comment=Changes the speed of the end beams.
+option.END_BEAM_FOG_BLEND=Terrain Blend
+option.END_BEAM_FOG_BLEND.comment=Changes how much the end beams blend with the terrain at far distances. §e[*]§r Lower values make the chunk borders visible.
 
 option.END_STARS=End Stars
 option.END_STARS.comment=Enable or disable the stars in the End.
@@ -2911,14 +2918,17 @@ option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=Whether both handheld lights sho
 option.PHOTONICS_AMBIENT_LIGHT_MULT=Ambient Light Multiplier
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Option to change how much default ambient light should be used alongside Photonics lighting. §e[*]§r This option only works if Photonics is installed.
 
-option.PHOTONICS_COMBINED_GI=Combined GI
-option.PHOTONICS_COMBINED_GI.comment=Whether Gi should be ran through ReSTIR's denoiser instead of its usual path. \nResults in much intenser Gi, at the cost of performance and noise\n\n§cHIGH PERFORMANCE IMPACT. §b[*]§r Recommended to be used with a denoiser pass count of 5 or higher.
+option.PHOTONICS_COMBINED_GI=Include Skylight GI
+option.PHOTONICS_COMBINED_GI.comment=Whether Global Illumination should be ran through ReSTIR's denoiser instead of its usual path. \nResults in much intenser GI, at the cost of performance and noise\n\n§cHIGH PERFORMANCE IMPACT. §b[*]§r Recommended to be used with a denoiser pass count of 5 or higher.
 
-option.STELLAR_VIEW_SUPPORT=Stellar View Support
-option.STELLAR_VIEW_SUPPORT.comment=Adds support for the Stellar View mod. §c[*]§r Can cause issues with Sky Resource Packs.
+option.STELLAR_VIEW_SUPPORT=Custom Skybox Support
+option.STELLAR_VIEW_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View.
 
 option.DISTANT_HORIZONS_SSAO=Edge Shadow (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusion) in Distant Horizons Chunks. §e[*]§r This option only works if Distant Horizons is installed. §e[*]§r Requires Edge Shadow (SSAO) Quality to be set to not be set to OFF in the Performance Settings.
+
+option.DH_BLENDING=Distant Horizons Blending
+option.DH_BLENDING.comment=Smoothly blends the transition between Distant Horizons chunks and normal chunks. §e[*]§r This option only works if Distant Horizons is installed.
 
 option.PIXELATED_SHADOWS_MODE=Pixelated Shadows Mode
 option.PIXELATED_SHADOWS_MODE.comment=Changes the way pixelated shadows are rendered. Automatic is default and best for most cases, the manual resolutions should only be used when the used resourcepacks have mismatched texture resolutions. §e[*]§r Pixelated shadows need to be enabled for this option to work
