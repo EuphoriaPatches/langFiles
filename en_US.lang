@@ -268,7 +268,7 @@ value.SHADOW_QUALITY.4=§cVery High
 value.SHADOW_QUALITY.5=§4§lUltra
 
 option.LIGHTSHAFT_QUALI_DEFINE=Light Shaft Quality §e[*]§r
-option.LIGHTSHAFT_QUALI_DEFINE.comment=Adjusts the quality of light shafts. Every tier further reduces the light shaft noise artifacts. §e[*]§r "Real-Time Shadows" setting must be set to anything but OFF for light shafts to work.
+option.LIGHTSHAFT_QUALI_DEFINE.comment=Adjusts the quality of light shafts. Every tier further reduces the noise artifacts. §e[*]§r "Real-Time Shadows" setting must be set to anything but OFF for light shafts to work. §e[*]§r This setting also controls the quality of End Beams, with the exception that the "OFF" option is treated as "Low".
 value.LIGHTSHAFT_QUALI_DEFINE.0=§aOFF
 value.LIGHTSHAFT_QUALI_DEFINE.1=§eLow
 value.LIGHTSHAFT_QUALI_DEFINE.2=§eMedium
@@ -299,7 +299,7 @@ value.ENTITY_SHADOW.1=§cRegular Entities
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oFull§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Detail Quality
-option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, Ender Beams, sky effect reflections, rain puddle accuracy, waving effect, motion blur
+option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, sky effect reflections, rain puddle accuracy, waving effect, motion blur
 value.DETAIL_QUALITY.0=§aPotato
 value.DETAIL_QUALITY.2=§eMedium
 value.DETAIL_QUALITY.3=§cHigh
