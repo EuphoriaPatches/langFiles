@@ -2924,11 +2924,11 @@ option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Option to change how much default am
 option.PHOTONICS_COMBINED_GI=Include Skylight GI
 option.PHOTONICS_COMBINED_GI.comment=Whether Global Illumination should be ran through ReSTIR's denoiser instead of its usual path. \nResults in much intenser GI, at the cost of performance and noise\n\n§cHIGH PERFORMANCE IMPACT. §b[*]§r Recommended to be used with a denoiser pass count of 5 or higher.
 
-option.STELLAR_VIEW_SUPPORT=Custom Skybox Support
-option.STELLAR_VIEW_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View.
+option.CUSTOM_SKY_SUPPORT=Custom Skybox Support
+option.CUSTOM_SKY_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View.
 
-option.SECRET_CAELUM_SUPPORT_SETTING=Sky Mod Support
-option.SECRET_CAELUM_SUPPORT_SETTING.comment=Adds support for custom sky mods such as Caelum or Astrocraft. Might perhaps break some things, not tested with many mods.
+option.CUSTOM_SKY_MOD_SUPPORT=Sky Mod Support
+option.CUSTOM_SKY_MOD_SUPPORT.comment=Adds support for custom sky mods such as Caelum or Astrocraft. Might perhaps break some things, not tested with many mods.
 
 option.DISTANT_HORIZONS_SSAO=Edge Shadow (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusion) in Distant Horizons Chunks. §e[*]§r This option only works if Distant Horizons is installed. §e[*]§r Requires Edge Shadow (SSAO) Quality to be set to not be set to OFF in the Performance Settings.
