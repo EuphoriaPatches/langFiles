@@ -2640,6 +2640,9 @@ option.SHOOTING_STARS_LINE_THICKNESS.comment=Change the width of the shooting st
 option.SHOOTING_STARS_TRAIL_LENGTH=Line Length
 option.SHOOTING_STARS_TRAIL_LENGTH.comment=Change the length of the shooting stars line.
 
+option.HIDE_VANILLA_STARS=Hide Vanilla Stars
+option.HIDE_VANILLA_STARS.comment=Hides the vanilla stars in the sky.
+
 option.SITUATIONAL_GLOWING_TRIMS=Situational Glowing Trims
 option.SITUATIONAL_GLOWING_TRIMS.comment=Trims will only glow in caves and at night. §e[*]§r Glowing Trims must be enabled for this to work.
 
@@ -2923,6 +2926,9 @@ option.PHOTONICS_COMBINED_GI.comment=Whether Global Illumination should be ran t
 
 option.STELLAR_VIEW_SUPPORT=Custom Skybox Support
 option.STELLAR_VIEW_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View.
+
+option.SECRET_CAELUM_SUPPORT_SETTING=Sky Mod Support
+option.SECRET_CAELUM_SUPPORT_SETTING.comment=Adds support for custom sky mods such as Caelum or Astrocraft. Might perhaps break some things, not tested with many mods.
 
 option.DISTANT_HORIZONS_SSAO=Edge Shadow (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusion) in Distant Horizons Chunks. §e[*]§r This option only works if Distant Horizons is installed. §e[*]§r Requires Edge Shadow (SSAO) Quality to be set to not be set to OFF in the Performance Settings.
