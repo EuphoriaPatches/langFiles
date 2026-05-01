@@ -1417,6 +1417,9 @@ screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIR Lighting Mode settings.
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
 screen.DISTANT_HORIZONS_SETTINGS.comment=Settings that only work if you have the Distant Horizons mod installed.
 
+screen.MODDED_SKYBOX_SETTINGS=Skybox Settings
+screen.MODDED_SKYBOX_SETTINGS.comment=Settings related to sky related mods.
+
 option.DAYLIGHT_CYCLE_COMPAT=World Time Animation
 option.DAYLIGHT_CYCLE_COMPAT.comment=ONLY use this if you play with the gamerule doDaylightCycle false. When enabled clouds and more animate in worlds with the daylight cycle off but they are no longer synced between players.
 
