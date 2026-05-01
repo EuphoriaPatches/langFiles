@@ -1417,6 +1417,9 @@ screen.PHOTONICS_SETTINGS_RESTIR.comment=Configurações do modo de iluminação
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
 screen.DISTANT_HORIZONS_SETTINGS.comment=Configurações que só funcionam se você tiver o mod Distant Horizons instalado.
 
+screen.MODDED_SKYBOX_SETTINGS=Configurações da Skybox
+screen.MODDED_SKYBOX_SETTINGS.comment=Configurações relacionadas a mods de céu.
+
 option.DAYLIGHT_CYCLE_COMPAT=Animação do Tempo Mundial
 option.DAYLIGHT_CYCLE_COMPAT.comment=USE apenas se você joga com o gamerule doDaylightCycle false. Quando ativado, nuvens e outros animam em mundos com o ciclo do dia desativado, mas não ficam mais sincronizados entre os jogadores.
 
