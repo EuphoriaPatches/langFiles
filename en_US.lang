@@ -2927,6 +2927,38 @@ option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Option to change how much default am
 option.PHOTONICS_COMBINED_GI=Include Skylight GI
 option.PHOTONICS_COMBINED_GI.comment=Whether Global Illumination should be ran through ReSTIR's denoiser instead of its usual path. \nResults in much intenser GI, at the cost of performance and noise\n\n§cHIGH PERFORMANCE IMPACT. §b[*]§r Recommended to be used with a denoiser pass count of 5 or higher.
 
+option.PHOTONICS_MAX_ALLOWED_DISTANCE=Allowed Distance
+option.PHOTONICS_MAX_ALLOWED_DISTANCE.comment=The maximum distance at which Photonics lighting will be applied to objects. Beyond this distance, vanilla lighting will be used instead. This is to prevent issues where far away light sources are not illuminating things. §e[*]§r Max Lights amount might need to be increased for higher values of this option to work properly.
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.6=6 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.7=7 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.8=8 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.9=9 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.10=10 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.11=11 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.12=12 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.13=13 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.14=14 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.15=15 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.16=16 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.17=17 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.18=18 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.19=19 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.20=20 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.21=21 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.22=22 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.23=23 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.24=24 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.25=25 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.26=26 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.27=27 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.28=28 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.29=29 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.30=30 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.31=31 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Render Distance
+
+
 option.CUSTOM_SKY_SUPPORT=Custom Skybox Support
 option.CUSTOM_SKY_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View.
 
