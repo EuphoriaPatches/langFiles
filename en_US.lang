@@ -1559,11 +1559,17 @@ option.CLOUD_SHADING_AMOUNT.comment=Determines how much the clouds get shaded.
 option.INVERTED_CLOUD_SHADING=Inverted Cloud Shading
 option.INVERTED_CLOUD_SHADING.comment=Inverts the cloud shading effect.
 
-option.CLOUD_LIGHT_MULTIPLIER=Cloud Light Multiplier
-option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting side of the clouds.
+option.CLOUD_LIGHT_MULTIPLIER=Cloud Day Light Multiplier
+option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting side of the clouds receives during the day.
+
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER=Cloud Night Light Multiplier
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting side of the clouds receives during the night.
 
 option.CLOUD_AMBIENT_MULTIPLIER=Cloud Ambient Light Multiplier
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Multiplies the brightness of the ambient light side of the clouds.
+
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=Cloud Night Ambient Light Multiplier
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=Multiplies the brightness of the ambient light side of the clouds during the night.
 
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Rotate Clouds 90°
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Rotates the reimagined clouds by 90 degrees.
