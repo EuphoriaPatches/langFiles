@@ -233,8 +233,8 @@ screen.OTHER_SETTINGS.comment=Settings that don't fit into any other category.
 screen.SELECT_OUTLINE_SETTINGS=Selection Outline
 screen.SELECT_OUTLINE_SETTINGS.comment=Settings that change the block selection outline.
 
-screen.WORLD_OUTLINE_SETTINGS=World Outline §e[*]§r
-screen.WORLD_OUTLINE_SETTINGS.comment=Settings that are about optional outline effects. §e[*]§r The World Outline effect calculations benefit a lot from PBR block reflections being enabled.
+screen.WORLD_OUTLINE_SETTINGS=World Outline
+screen.WORLD_OUTLINE_SETTINGS.comment=Settings that are about optional outline effects.
 
 #Settings
 option.RP_MODE=RP Support
@@ -934,16 +934,19 @@ value.PLAYER_SHADOW.-1=OFF
 value.PLAYER_SHADOW.1=ON
 
 option.GENERATED_NORMALS=Generated Normals
-option.GENERATED_NORMALS.comment=Adds auto-generated bumpy details to surfaces. §e[*]§r RP Support option must be set to Integrated PBR+.
+option.GENERATED_NORMALS.comment=Adds auto-generated bumpy details to surfaces. §e[*]§r RP Support option must be set to Integrated PBR+. §e[*]§r Can look wonky with some resource packs or mods that feature non-standard resolution textures.
 
 option.COATED_TEXTURES=Coated Textures
-option.COATED_TEXTURES.comment=Adds auto-generated dusty details to textures. §e[*]§r RP Support option must be set to Integrated PBR+.
+option.COATED_TEXTURES.comment=Adds auto-generated dusty details to textures. §e[*]§r RP Support option must be set to Integrated PBR+. §e[*]§r Can look wonky with some resource packs or mods that feature non-standard resolution textures.
 
-option.ENTITY_GN_AND_CT=Allow GN and CT on Entities
+option.ENTITY_GN_AND_CT=Allow GN & CT on Entities
 option.ENTITY_GN_AND_CT.comment=Decides if Generated Normals and Coated Textures can appear on entities. §e[*]§r This won't enable GN or CT on entities if the main GN or CT options are disabled.
 
 option.GENERATED_NORMAL_MULT=Generated Normal Strength
 option.GENERATED_NORMAL_MULT.comment=Adjusts the strength of auto-generated bumpy details on surfaces.
+
+option.GENERATED_NORMAL_RES=Generated Normal Resolution
+option.GENERATED_NORMAL_RES.comment=Adjusts the resolution/size of auto-generated bumpy details on surfaces. §e[*]§r Note that the GN resolution also depends on each texture's own resolution, which means that resource packs or mods can mess up the resolution of GN on different blocks.
 
 option.GENERATED_NORMAL_ENTITY_MULT=Gen. Normals on Entities
 option.GENERATED_NORMAL_ENTITY_MULT.comment=Adjusts the strength of auto-generated bumpy details on entities.
@@ -1853,9 +1856,6 @@ option.RANDOM_BLOCKLIGHT.comment=Randomizes the color of the blocklight dependin
 option.RANDOM_BLOCKLIGHT_SIZE=Random Colored Blocklight Size
 option.RANDOM_BLOCKLIGHT_SIZE.comment=Change the color size of the random colored blocklight effect.
 
-option.NORMAL_RES=Normals Resolution
-option.NORMAL_RES.comment=Change the resolution at which the integrated normal maps render. §e[*]§r RP Support option must be set to Integrated PBR+ and Auto Generated Normals have to be turned on
-
 option.COATED_TEXTURE_RES=Coated Textures Resolution
 option.COATED_TEXTURE_RES.comment=Change the resolution at which the Noise Coated Textures render. §e[*]§r RP Support option must be set to Integrated PBR+ and Coated Texture have to be turned on
 
@@ -2539,6 +2539,13 @@ value.SUN_GLARE_AMOUNT.0=OFF
 
 option.MOON_GLARE_AMOUNT=Moon Glare Amount
 value.MOON_GLARE_AMOUNT.0=OFF
+
+option.SUN_MOON_IPBR=Sun/Moon IPBR
+option.SUN_MOON_IPBR.comment=Enable or disable the IntegratedPBR for the sun and moon
+value.SUN_MOON_IPBR.0=OFF
+value.SUN_MOON_IPBR.1=Sun Only
+value.SUN_MOON_IPBR.2=Moon Only
+value.SUN_MOON_IPBR.3=Sun and Moon
 
 option.DAYLIGHT_STARS=Daylight Stars
 option.DAYLIGHT_STARS.comment=Enables Stars during the day
