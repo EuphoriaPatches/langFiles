@@ -233,8 +233,8 @@ screen.OTHER_SETTINGS.comment=Configurações que não se encaixam em nenhuma ou
 screen.SELECT_OUTLINE_SETTINGS=Contorno de Seleção
 screen.SELECT_OUTLINE_SETTINGS.comment=Configurações que alteram o contorno de seleção de blocos.
 
-screen.WORLD_OUTLINE_SETTINGS=Contorno do Mundo §e[*]§r
-screen.WORLD_OUTLINE_SETTINGS.comment=Configurações relacionadas a efeitos opcionais de contorno. §e[*]§r Os cálculos do efeito de contorno do mundo se beneficiam bastante de reflexões de blocos PBR ativadas.
+screen.WORLD_OUTLINE_SETTINGS=Contorno do Mundo
+screen.WORLD_OUTLINE_SETTINGS.comment=Configurações relacionadas aos efeitos opcionais de contorno.
 
 #Settings
 option.RP_MODE=RP Suporte
@@ -934,16 +934,19 @@ value.PLAYER_SHADOW.-1=DESLIGADO
 value.PLAYER_SHADOW.1=LIGADO
 
 option.GENERATED_NORMALS=Normais Geradas
-option.GENERATED_NORMALS.comment=Adiciona relevo automático às superfícies. §e[*]§r O suporte a RP deve estar em Integrated PBR+.
+option.GENERATED_NORMALS.comment=Adiciona detalhes em relevo gerados automaticamente às superfícies. §e[*]§r A opção de suporte a RP deve estar definida como Integrated PBR+. §e[*]§r Pode apresentar resultados estranhos com alguns resource packs ou mods que utilizam texturas com resoluções não padronizadas.
 
 option.COATED_TEXTURES=Texturas Envelopadas
-option.COATED_TEXTURES.comment=Adiciona detalhes de poeira automáticos às texturas. §e[*]§r O suporte a RP deve estar em Integrated PBR+.
+option.COATED_TEXTURES.comment=Adiciona detalhes empoeirados gerados automaticamente às texturas. §e[*]§r A opção de suporte a RP deve estar definida como Integrated PBR+. §e[*]§r Pode apresentar resultados estranhos com alguns resource packs ou mods que utilizam texturas com resoluções não padronizadas.
 
-option.ENTITY_GN_AND_CT=Permitir NG e TE em Entidades
+option.ENTITY_GN_AND_CT=Permitir GN & CT em Entidades
 option.ENTITY_GN_AND_CT.comment=Define se Normais Geradas e Texturas Envelopadas podem aparecer em entidades. §e[*]§r Não ativa NG ou TE se as opções principais estiverem desativadas.
 
 option.GENERATED_NORMAL_MULT=Força das Normais Geradas
 option.GENERATED_NORMAL_MULT.comment=Ajuda a ajustar a força do relevo automático nas superfícies.
+
+option.GENERATED_NORMAL_RES=Resolução dos Normais Gerados
+option.GENERATED_NORMAL_RES.comment=Ajusta a resolução/tamanho dos detalhes em relevo gerados automaticamente nas superfícies. §e[*]§r Note que a resolução dos GN também depende da resolução própria de cada textura, o que significa que resource packs ou mods podem acabar alterando a resolução dos GN em diferentes blocos.
 
 option.GENERATED_NORMAL_ENTITY_MULT=NG em Entidades
 option.GENERATED_NORMAL_ENTITY_MULT.comment=Ajuda a ajustar a força do relevo automático em entidades.
@@ -1559,11 +1562,17 @@ option.CLOUD_SHADING_AMOUNT.comment=Define o quanto as nuvens recebem sombreamen
 option.INVERTED_CLOUD_SHADING=Sombreamento de Nuvens Invertido
 option.INVERTED_CLOUD_SHADING.comment=Inverte o efeito de sombreamento das nuvens.
 
-option.CLOUD_LIGHT_MULTIPLIER=Multiplicador de Luz das Nuvens
-option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplica o brilho do lado iluminado das nuvens.
+option.CLOUD_LIGHT_MULTIPLIER=Multiplicador de Luz Diurna das Nuvens
+option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplica o brilho que o lado iluminado das nuvens recebe durante o dia.
+
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER=Multiplicador de Luz Noturna das Nuvens
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=Multiplica o brilho que o lado iluminado das nuvens recebe durante a noite.
 
 option.CLOUD_AMBIENT_MULTIPLIER=Multiplicador de Luz Ambiente das Nuvens
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Multiplica o brilho do lado de luz ambiente das nuvens.
+
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=Multiplicador de Luz Ambiente Noturna das Nuvens
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=Multiplica o brilho do lado da luz ambiente das nuvens durante a noite.
 
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Girar Nuvens em 90°
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Gira as nuvens reimaginadas em 90 graus.
@@ -1844,9 +1853,6 @@ option.WATER_GENERATED_NORMALS=Normais Geradas da Água
 
 option.RANDOM_BLOCKLIGHT=Luz de Bloco Colorida Aleatória
 option.RANDOM_BLOCKLIGHT.comment=Randomiza a cor da luz de bloco dependendo das coordenadas do mundo, apenas por diversão.
-option.RANDOM_BLOCKLIGHT_SIZE=Tamanho da Luz de Bloco Colorida Aleatória
-option.RANDOM_BLOCKLIGHT_SIZE.comment=Altere o tamanho da cor do efeito de luz de bloco colorida aleatória.
-
 option.NORMAL_RES=Resolução das Normais
 option.NORMAL_RES.comment=Altere a resolução em que os mapas normais integrados são renderizados. §e[*]§r O suporte a RP deve estar em Integrated PBR+ e Normais Geradas automaticamente precisam estar ativadas.
 
@@ -2534,6 +2540,13 @@ value.SUN_GLARE_AMOUNT.0=DESLIGADO
 option.MOON_GLARE_AMOUNT=Intensidade do Brilho Lunar
 value.MOON_GLARE_AMOUNT.0=DESLIGADO
 
+option.SUN_MOON_IPBR=IPBR do Sol/Lua
+option.SUN_MOON_IPBR.comment=Ativa ou desativa o IntegratedPBR para o sol e a lua.
+value.SUN_MOON_IPBR.0=DESLIGADO
+value.SUN_MOON_IPBR.1=Apenas Sol
+value.SUN_MOON_IPBR.2=Apenas Lua
+value.SUN_MOON_IPBR.3=Sol e Lua
+
 option.DAYLIGHT_STARS=Estrelas Durante o Dia
 option.DAYLIGHT_STARS.comment=Ativa estrelas durante o dia
 
@@ -2926,6 +2939,38 @@ option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Permite ajustar quanto da luz ambien
 
 option.PHOTONICS_COMBINED_GI=Incluir GI da Luz do Céu
 option.PHOTONICS_COMBINED_GI.comment=Define se a Iluminação Global (GI) deve passar pelo denoiser do ReSTIR em vez do método padrão.\nIsso resulta em uma GI muito mais intensa, porém com custo maior de desempenho e mais ruído.\n\n§cALTO IMPACTO NO DESEMPENHO. §b[*]§r Recomendado usar com contagem de passes do denoiser igual ou superior a 5.
+
+option.PHOTONICS_MAX_ALLOWED_DISTANCE=Distância máxima permitida
+option.PHOTONICS_MAX_ALLOWED_DISTANCE.comment=A distância máxima em que a iluminação do Photonics será aplicada aos objetos. Além dessa distância, a iluminação vanilla será usada no lugar. Isso existe para evitar problemas em que fontes de luz distantes não iluminam corretamente os objetos. §e[*]§r A quantidade máxima de luzes (“Max Lights”) talvez precise ser aumentada para que valores maiores desta opção funcionem corretamente.
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.6=6 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.7=7 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.8=8 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.9=9 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.10=10 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.11=11 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.12=12 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.13=13 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.14=14 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.15=15 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.16=16 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.17=17 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.18=18 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.19=19 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.20=20 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.21=21 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.22=22 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.23=23 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.24=24 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.25=25 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.26=26 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.27=27 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.28=28 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.29=29 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.30=30 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.31=31 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Distância de renderização
+
 
 option.CUSTOM_SKY_SUPPORT=Suporte a Skybox Personalizada
 option.CUSTOM_SKY_SUPPORT.comment=Adiciona suporte a skyboxes personalizadas, incluindo as de mods como Stellar View.
