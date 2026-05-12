@@ -2128,7 +2128,7 @@ option.WAVE_EVERYTHING=Танцующий мир
 option.WAVE_EVERYTHING.comment=Заставьте всё вокруг танцевать Макарену.
 
 option.INTERACTIVE_FOLIAGE=Интерактивная листва
-option.INTERACTIVE_FOLIAGE.comment=Листва отклоняется при приближении игрока в первом лице.
+option.INTERACTIVE_FOLIAGE.comment=Листва отклоняется от игрока для ещё большего погружения.
 
 option.EMIN_BOAT=Лодка Эмина
 option.EMIN_BOAT.comment=Катайтесь на лодках так, как задумал Эмин.
