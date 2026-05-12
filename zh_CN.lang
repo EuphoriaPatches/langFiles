@@ -2139,7 +2139,7 @@ option.WAVE_EVERYTHING=全~都~在~晃~
 option.WAVE_EVERYTHING.comment=给你身体带来快乐的 Macarena. [为什么是西班牙语?]
 
 option.INTERACTIVE_FOLIAGE=交互式植物
-option.INTERACTIVE_FOLIAGE.comment=第一人称视角下靠近植物时使植物向远离玩家的方向弯曲.
+option.INTERACTIVE_FOLIAGE.comment=使植物向远离玩家的方向弯曲来模拟植物被挤压的情景, 以获得更沉浸的体验.
 
 option.EMIN_BOAT=Emin 的 快 乐 小 船
 option.EMIN_BOAT.comment=使用 Emin 的坐船方式.
