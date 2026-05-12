@@ -2134,7 +2134,7 @@ option.WAVE_EVERYTHING=Wave Everything
 option.WAVE_EVERYTHING.comment=Dale a tu cuerpo alegría Macarena.
 
 option.INTERACTIVE_FOLIAGE=Interactive Foliage
-option.INTERACTIVE_FOLIAGE.comment=Makes Foliage bend away from the player when in first person.
+option.INTERACTIVE_FOLIAGE.comment=Makes Foliage bend away from the player for a more immersive experience.
 
 option.EMIN_BOAT=Emin B O A T
 option.EMIN_BOAT.comment=Ride boats like Emin intended.
