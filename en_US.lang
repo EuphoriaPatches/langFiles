@@ -2070,6 +2070,7 @@ value.tonemap.filmic=Filmic
 value.tonemap.GTTonemap=Gran Turismo
 value.tonemap.uchimura=Uchimura
 value.tonemap.agxTonemap=AgX
+value.tonemap.doSimpleTonemap=Simple
 
 option.TONEMAP_COMPARISON=Tonemap Comparison
 option.TONEMAP_COMPARISON.comment=Option to compare tonemaps
@@ -2089,6 +2090,7 @@ value.tonemap_left.filmic=Filmic
 value.tonemap_left.GTTonemap=Gran Turismo
 value.tonemap_left.uchimura=Uchimura
 value.tonemap_left.agxTonemap=AgX
+value.tonemap_left.doSimpleTonemap=Simple
 
 option.tonemap_right=Tonemap Right
 option.tonemap_right.comment=Changes which tonemap is used.
@@ -2105,6 +2107,7 @@ value.tonemap_right.filmic=Filmic
 value.tonemap_right.GTTonemap=Gran Turismo
 value.tonemap_right.uchimura=Uchimura
 value.tonemap_right.agxTonemap=AgX
+value.tonemap_right.doSimpleTonemap=Simple
 
 option.ACES_EXPOSURE=Exposure
 option.ACES_EXPOSURE.comment=Adjusts the overall brightness of the image.
