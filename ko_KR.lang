@@ -1336,7 +1336,7 @@ screen.SPRING=Spring Settings (봄)
 screen.SUMMER=Summer Settings (여름)
 screen.NETHER_WORLD=Nether (네더 차원)
 screen.FOG_BORDER_NETHER=Border fog (경계 안개)
-screen.FOG_BORDER_NETHER.comment=경계 안개에 관련된 설정. 
+screen.FOG_BORDER_NETHER.comment=경계 안개에 관련된 설정.
 screen.HEAT_DISTORTION_SETTINGS=Heat Distortion (열 왜곡)
 screen.HEAT_DISTORTION_SETTINGS.comment=열 왜곡에 관련된 설정.
 screen.END_WORLD=End (엔드 차원)
@@ -1418,7 +1418,7 @@ screen.POPULAR_SETTINGS=§dPopular Settings (인기 설정)
 screen.POPULAR_SETTINGS.comment=Euphoria Patches에서 가장 인기 있는 설정들입니다. Advanced Colored Tracing(많은 효과에 필요함)을 제외하면, 여기의 모든 옵션은 Euphoria Patches 전용이며 원본 Complementary Shaderpack에서는 찾을 수 없습니다.
 screen.POPULAR_SETTINGS_2=Page 2
 screen.POPULAR_SETTINGS_3=Page 3
-screen.EP_VERSION=Euphoria Patches §d1.9.0
+screen.EP_VERSION=Euphoria Patches §d1.9.1
 screen.EP_VERSION.comment=§bYou can support SpacEagle17 on Patreon or Ko-Fi and get new Exclusive Beta Versions. §r§d§l§neuphoriapatches.com/support
 
 screen.MODDED_SETTINGS=Modded Settings (모드 전용 설정)
@@ -2568,7 +2568,7 @@ option.EMISSIVE_SOUL_SAND.comment=영혼모래 블록 위에 서 있을 때 눈 
 option.BEACON_BEAM_EMISSION=Beacon Beam Emission (신호기 빔 발광)
 option.BEACON_BEAM_EMISSION.comment=신호기 빔의 발광 강도를 조정합니다.
 
-option.PINKER_CHERRY_LEAVES=Pinker Cherry Leaves (더 진한 벚꽃잎) 
+option.PINKER_CHERRY_LEAVES=Pinker Cherry Leaves (더 진한 벚꽃잎)
 
 option.LIGHTMAP_CURVES=Lightmap Curves
 option.LIGHTMAP_CURVES.comment=월드의 라이트맵 곡선을 조정합니다.
