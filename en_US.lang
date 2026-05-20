@@ -2892,7 +2892,7 @@ value.PHOTONICS_ALPHA_MODE.BLOCK=Block
 value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
 
 option.PHOTONICS_RENDER_SCALE=Render Scale
-option.PHOTONICS_RENDER_SCALE.comment=Changes the render scale of the Photonics lighting.\n\n§aLower values can help with performance but may cause the lighting to look worse.\n\n§cHigher values can improve the lighting quality but may cause performance issues.\n\n
+option.PHOTONICS_RENDER_SCALE.comment=Changes the render scale of the Photonics lighting.\n\n§aLower values can help with performance but may cause the lighting to look worse.\n\n§cHigher values can improve the lighting quality but may cause performance issues.
 
 option.PHOTONICS_INDIRECT_INTENSITY=Global Illumination
 option.PHOTONICS_INDIRECT_INTENSITY.comment=Changes the intensity of the indirect lighting in the Photonics mod. §e[*]§r This option only works if Photonics is installed.
