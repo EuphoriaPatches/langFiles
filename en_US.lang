@@ -1509,6 +1509,10 @@ value.CLOUD_ROUNDNESS.0.125=Balanced
 value.CLOUD_ROUNDNESS.0.2=Round
 option.CLOUD_ROUNDNESS.comment=Change how round the clouds appear.  §e[*]§r Lower roundness results in more noise artifacts
 
+option.REIMAGINED_CLOUDS_OUTLINE=Clouds Outline
+option.REIMAGINED_CLOUDS_OUTLINE.comment=Enables an outline around the reimagined clouds.
+value.REIMAGINED_CLOUDS_OUTLINE.0=OFF
+
 option.CLOUD_SHADOW_ROUNDNESS=Cloud Shadow Roundness
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Extra Boxy
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Boxy
@@ -1726,7 +1730,7 @@ option.END_BEAM_POW.comment=Changes the power the beams have. Higher values make
 option.END_BEAM_DIRECTION_BIAS=Vertical Direction Bias
 option.END_BEAM_DIRECTION_BIAS.comment=Controls which side of the beam center is favored. -100 favors below, 0 is mirrored, 100 favors above.
 option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=Flash Height Multiplier
-option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Changes the height of the end beams during end flashes. Higher values make them shorter, lower values make them taller.
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Changes the height of the end beams during end flashes.
 option.END_BEAM_FLASH_POW_MULTIPLIER=Flash Power Multiplier
 option.END_BEAM_FLASH_POW_MULTIPLIER.comment=Changes the power of the end beams during end flashes.
 option.END_BEAM_FLASH_NARROWNESS=Flash Narrowness
