@@ -929,7 +929,7 @@ option.AMBIENT_MULT=Multiplicador de Luz nas Sombras
 option.AMBIENT_MULT.comment=Define a quantidade de luz ambiente vista nas sombras. §c[-]§r Alterar drasticamente pode quebrar o equilíbrio da iluminação.
 
 option.PLAYER_SHADOW=Sombra do Jogador §e[*]§r
-option.PLAYER_SHADOW.comment=Define se o jogador terá sombra ou não. §e[*]§r Só funciona no Iris. §e[*]§r Será desativado se "Sombras em Tempo Real" estiver DESLIGADO.
+option.PLAYER_SHADOW.comment=Define se o jogador irá projetar sombra ou não. §e[*]§r Esta configuração funciona completamente apenas no Iris. §e[*]§r Esta configuração será desativada se "Sombras em Tempo Real" estiver OFF.
 value.PLAYER_SHADOW.-1=DESLIGADO
 value.PLAYER_SHADOW.1=LIGADO
 
@@ -1509,6 +1509,10 @@ value.CLOUD_ROUNDNESS.0.125=Equilibrada
 value.CLOUD_ROUNDNESS.0.2=Arredondada
 option.CLOUD_ROUNDNESS.comment=Altere o quão arredondadas as nuvens aparecem. §e[*]§r Menos arredondamento resulta em mais artefatos de ruído.
 
+option.REIMAGINED_CLOUDS_OUTLINE=Contorno das Nuvens
+option.REIMAGINED_CLOUDS_OUTLINE.comment=Ativa um contorno ao redor das nuvens reimaginadas.
+value.REIMAGINED_CLOUDS_OUTLINE.0=OFF
+
 option.CLOUD_SHADOW_ROUNDNESS=Arredondamento da Sombra das Nuvens
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Super Quadrada
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Quadrada
@@ -1726,7 +1730,7 @@ option.END_BEAM_POW.comment=Altera a potência dos feixes. Valores mais altos os
 option.END_BEAM_DIRECTION_BIAS=Viés de direção vertical
 option.END_BEAM_DIRECTION_BIAS.comment=Define para qual lado do centro do feixe o efeito se inclina. -100 puxa para baixo, 0 fica equilibrado, 100 puxa para cima.
 option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=Multiplicador de altura do flash
-option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Altera a altura dos feixes do End durante os flashes. Valores mais altos os deixam mais curtos, valores mais baixos os deixam mais altos.
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Altera a altura dos feixes do End durante os flashes do End.
 option.END_BEAM_FLASH_POW_MULTIPLIER=Multiplicador de intensidade do flash
 option.END_BEAM_FLASH_POW_MULTIPLIER.comment=Altera a intensidade dos feixes do End durante os flashes.
 option.END_BEAM_FLASH_NARROWNESS=Intensidade de Estreitamento do Flash
@@ -2070,6 +2074,7 @@ value.tonemap.filmic=Fílmico
 value.tonemap.GTTonemap=Gran Turismo
 value.tonemap.uchimura=Uchimura
 value.tonemap.agxTonemap=AgX
+value.tonemap.doSimpleTonemap=Simples
 
 option.TONEMAP_COMPARISON=Comparação de Tonemap
 option.TONEMAP_COMPARISON.comment=Opção para comparar tonemaps
@@ -2089,6 +2094,7 @@ value.tonemap_left.filmic=Fílmico
 value.tonemap_left.GTTonemap=Gran Turismo
 value.tonemap_left.uchimura=Uchimura
 value.tonemap_left.agxTonemap=AgX
+value.tonemap_left.doSimpleTonemap=Simples
 
 option.tonemap_right=Tonemap Direito
 option.tonemap_right.comment=Altera qual tonemap é usado.
@@ -2105,6 +2111,7 @@ value.tonemap_right.filmic=Fílmico
 value.tonemap_right.GTTonemap=Gran Turismo
 value.tonemap_right.uchimura=Uchimura
 value.tonemap_right.agxTonemap-AgX
+value.tonemap_right.doSimpleTonemap=Simples
 
 option.ACES_EXPOSURE=Exposição
 option.ACES_EXPOSURE.comment=Ajuda a ajustar o brilho geral da imagem.
@@ -2134,7 +2141,7 @@ option.WAVE_EVERYTHING=Ondular Tudo
 option.WAVE_EVERYTHING.comment=Dale a tu cuerpo alegría Macarena.
 
 option.INTERACTIVE_FOLIAGE=Folhagem Interativa
-option.INTERACTIVE_FOLIAGE.comment=Faz a folhagem se afastar do jogador em primeira pessoa.
+option.INTERACTIVE_FOLIAGE.comment=Faz a vegetação se mover para longe do jogador, criando uma sensação maior de imersão.
 
 option.EMIN_BOAT=Emin B O A T
 option.EMIN_BOAT.comment=Ande de barco como o Emin queria.
@@ -2889,7 +2896,7 @@ value.PHOTONICS_ALPHA_MODE.BLOCK=Bloco
 value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
 
 option.PHOTONICS_RENDER_SCALE=Escala de Renderização
-option.PHOTONICS_RENDER_SCALE.comment=Altera a escala de renderização da iluminação do Photonics.\n\n§aValores mais baixos podem ajudar na performance, mas podem piorar a qualidade da iluminação.\n\n§cValores mais altos podem melhorar a qualidade da iluminação, mas podem causar problemas de performance.\n\n
+option.PHOTONICS_RENDER_SCALE.comment=Altera a escala de renderização da iluminação do Photonics.\n\n§aValores mais baixos podem ajudar na performance, mas podem piorar a qualidade da iluminação.\n\n§cValores mais altos podem melhorar a qualidade da iluminação, mas podem causar problemas de performance.
 
 option.PHOTONICS_INDIRECT_INTENSITY=Iluminação Global
 option.PHOTONICS_INDIRECT_INTENSITY.comment=Altera a intensidade da iluminação indireta no mod Photonics. §e[*]§r Esta opção só funciona se o Photonics estiver instalado.
