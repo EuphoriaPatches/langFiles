@@ -1,7 +1,7 @@
 #shaders/lang/ko_kr.lang
 
 # 한글 유저번역
-# 번역제작자 : _StrawberrySushi 최신 변경사항은 적용이 늦을 수 있습니다. All credits to SpaceEagle17
+# 번역제작자 : _StrawberrySushi 최신 변경사항은 추가 번역 적용이 늦을 수 있습니다. All credits to SpaceEagle17
 
 #Profiles
 profile.POTATO=품질: §a최저
@@ -15,13 +15,13 @@ profile.COMPLEMENTARY=§4§l§n§oComplementary
 profile.comment=쉐이더 프로필은 성능 대비 시각적 품질 비율이 가장 최적화되도록 성능 설정을 변경합니다. §e[*]§r 설정에 대해 잘 알고 있는 경우가 아니라면 다음 프로필 중 하나를 사용하는 것이 권장됩니다. §e[*]§r 영향을 받는 모든 설정은 “Performance” 메뉴에서 확인할 수 있습니다.
 
 #Information
-screen.INFORMATION=한글 번역 : _Strawberry
+screen.INFORMATION=한글 번역 : _StrawberrySushi
 screen.INFORMATION.comment=Euphoria Patches KR Translated by _StrawberrySushi
 
 screen.INFORMATION2=Complementary 정보
 screen.INFORMATION2.comment=여기에는 정보 제공을 목적으로만 존재하는 버튼들이 포함되어 있습니다.
 
-option.info0=§b버튼위에 마우스를 올려 두세요
+option.info0=§b버튼위에 마우스를 올려보세요
 value.info0.0=
 option.info0.comment=이 섹션에는 정보 제공을 목적으로만 존재하는 버튼들이 포함되어 있습니다.
 
@@ -61,7 +61,7 @@ option.info9=Complementary 지원하기
 value.info9.0=
 option.info9.comment=Best way to support the development of Complementary is to share it with your friends or social media, but you can also directly support the developer on Patreon. www.patreon.com/emingt
 
-option.info10=Credits
+option.info10=Credits (크레딧)
 value.info10.0=
 option.info10.comment=EminGT: The main developer of Complementary. Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
@@ -105,11 +105,11 @@ option.info20=
 value.info20.0=§aeuphoriapatches.com/download
 option.info20.comment=EuphoriaPatcher 모드의 새 버전을 사용할 수 있습니다. Modrinth에서 다운로드하세요 https://euphoriapatches.com/download
 
-option.info21=Frequently Asked Questions
+option.info21=자주 묻는 질문
 value.info21.0=
 option.info21.comment=Check out the FAQ page to find answers to common questions. §d§l§neuphoriapatches.com/faq
 
-option.info22=§d스크롤해서 더 많은 설정
+option.info22=§d스크롤해서 더 많은 설정 보기
 value.info22.0=
 option.info22.comment=GUI 크기가 클 경우 일부 설정이 숨겨질 수 있으며 아래로 스크롤하면 표시됩니다.
 
@@ -280,20 +280,20 @@ value.LIGHTSHAFT_QUALI_DEFINE.4=§4§lVery High
 
 option.shadowDistance=Shadow Distance (그림자 거리)
 option.shadowDistance.comment=플레이어로부터 실시간 그림자가 렌더링되는 거리를 조정합니다. §c[-]§r 값이 낮을수록 빛줄기 누수가 과도하게 발생할 수 있습니다.
-value.shadowDistance.64.0=§a4 Chunks §c[-]
-value.shadowDistance.80.0=§a5 Chunks §c[-]
-value.shadowDistance.96.0=§a6 Chunks §c[-]
-value.shadowDistance.112.0=§a7 Chunks §c[-]
-value.shadowDistance.128.0=§a8 Chunks
-value.shadowDistance.160.0=§e10 Chunks
-value.shadowDistance.192.0=§e12 Chunks
-value.shadowDistance.224.0=§e14 Chunks
-value.shadowDistance.256.0=§c16 Chunks
-value.shadowDistance.320.0=§c20 Chunks
-value.shadowDistance.384.0=§4§l24 Chunks
-value.shadowDistance.512.0=§4§l32 Chunks
-value.shadowDistance.768.0=§4§l§n§o48 Chunks
-value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 Chunks§r§4§k-
+value.shadowDistance.64.0=§a4 청크 §c[-]
+value.shadowDistance.80.0=§a5 청크 §c[-]
+value.shadowDistance.96.0=§a6 청크 §c[-]
+value.shadowDistance.112.0=§a7 청크 §c[-]
+value.shadowDistance.128.0=§a8 청크
+value.shadowDistance.160.0=§e10 청크
+value.shadowDistance.192.0=§e12 청크
+value.shadowDistance.224.0=§e14 청크
+value.shadowDistance.256.0=§c16 청크
+value.shadowDistance.320.0=§c20 청크
+value.shadowDistance.384.0=§4§l24 청크
+value.shadowDistance.512.0=§4§l32 청크
+value.shadowDistance.768.0=§4§l§n§o48 청크
+value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 청크§r§4§k-
 
 option.ENTITY_SHADOW=Entity Shadows (엔티티 그림자)
 option.ENTITY_SHADOW.comment=엔티티와 블록 엔티티에서 드리워지는 그림자를 활성화합니다. "Regular Entities"는 동물이나 몬스터 같은 것들을 포함하며 "Full" 옵션은 상자와 같은 블록 엔티티도 포함합니다. §c[-]§r Entity Shadows는 예상보다 성능에 훨씬 큰 영향을 주며 일부 경우에는 FPS의 50% 이상을 소모할 수 있습니다.
@@ -303,16 +303,16 @@ value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oFull§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Detail Quality (디테일 품질)
 option.DETAIL_QUALITY.comment=성능에 영향을 주는 여러 작은 요소들을 조정합니다. 다음 항목들의 품질을 조정합니다 물 재질, TAA, 조명 조정, Night Nebula, Nether Storm, Ender Beams, 하늘 효과 반사, 비 웅덩이 정확도, 흔들림 효과, 모션 블러.
-value.DETAIL_QUALITY.0=§aPotato
-value.DETAIL_QUALITY.2=§eMedium
-value.DETAIL_QUALITY.3=§cHigh
+value.DETAIL_QUALITY.0=§a최저
+value.DETAIL_QUALITY.2=§e중간
+value.DETAIL_QUALITY.3=§c높음
 
 option.CLOUD_QUALITY=Cloud Quality (구름 품질)
 option.CLOUD_QUALITY.comment=Reimagined, Unbound 구름 스타일의 조명, 디테일, 샘플 품질을 조정합니다. §e[*]§r 이 설정은 "Reimagined" 또는 "Unbound" Cloud Styles에서만 작동합니다.
-value.CLOUD_QUALITY.0=§aOFF
-value.CLOUD_QUALITY.1=§aLow
-value.CLOUD_QUALITY.2=§eMedium
-value.CLOUD_QUALITY.3=§cHigh
+value.CLOUD_QUALITY.0=§a끄기
+value.CLOUD_QUALITY.1=§a낮음
+value.CLOUD_QUALITY.2=§e중간
+value.CLOUD_QUALITY.3=§c높음
 
 option.FXAA_DEFINE=Anti-Aliasing (FXAA) (안티 앨리어싱)
 option.FXAA_DEFINE.comment=Fast Approximate Anti-Aliasing (FXAA)를 활성화하며, 이는 기본적으로 이미지를 더 부드럽게 만들어주는 효과입니다.
