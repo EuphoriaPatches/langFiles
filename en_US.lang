@@ -90,7 +90,7 @@ option.info17=Beta Version: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access exclusive development versions. §d§l§neuphoriapatches.com/support
 
-option.info18=For Complementary r5.8
+option.info18=For Complementary r5.8.1
 value.info18.0=
 option.info18.comment=Thank you for Installing Euphoria Patches :)
 
@@ -233,8 +233,8 @@ screen.OTHER_SETTINGS.comment=Settings that don't fit into any other category.
 screen.SELECT_OUTLINE_SETTINGS=Selection Outline
 screen.SELECT_OUTLINE_SETTINGS.comment=Settings that change the block selection outline.
 
-screen.WORLD_OUTLINE_SETTINGS=World Outline §e[*]§r
-screen.WORLD_OUTLINE_SETTINGS.comment=Settings that are about optional outline effects. §e[*]§r The World Outline effect calculations benefit a lot from PBR block reflections being enabled.
+screen.WORLD_OUTLINE_SETTINGS=World Outline
+screen.WORLD_OUTLINE_SETTINGS.comment=Settings that are about optional outline effects.
 
 #Settings
 option.RP_MODE=RP Support
@@ -268,7 +268,7 @@ value.SHADOW_QUALITY.4=§cVery High
 value.SHADOW_QUALITY.5=§4§lUltra
 
 option.LIGHTSHAFT_QUALI_DEFINE=Light Shaft Quality §e[*]§r
-option.LIGHTSHAFT_QUALI_DEFINE.comment=Adjusts the quality of light shafts. Every tier further reduces the light shaft noise artifacts. §e[*]§r "Real-Time Shadows" setting must be set to anything but OFF for light shafts to work.
+option.LIGHTSHAFT_QUALI_DEFINE.comment=Adjusts the quality of light shafts. Every tier further reduces the noise artifacts. §e[*]§r "Real-Time Shadows" setting must be set to anything but OFF for light shafts to work. §e[*]§r This setting also controls the quality of End Beams, with the exception that the "OFF" option is treated as "Low".
 value.LIGHTSHAFT_QUALI_DEFINE.0=§aOFF
 value.LIGHTSHAFT_QUALI_DEFINE.1=§eLow
 value.LIGHTSHAFT_QUALI_DEFINE.2=§eMedium
@@ -299,7 +299,7 @@ value.ENTITY_SHADOW.1=§cRegular Entities
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oFull§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Detail Quality
-option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, Ender Beams, sky effect reflections, rain puddle accuracy, waving effect, motion blur
+option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, sky effect reflections, rain puddle accuracy, waving effect, motion blur
 value.DETAIL_QUALITY.0=§aPotato
 value.DETAIL_QUALITY.2=§eMedium
 value.DETAIL_QUALITY.3=§cHigh
@@ -929,21 +929,24 @@ option.AMBIENT_MULT=Shadow Light Multiplier
 option.AMBIENT_MULT.comment=Determines the amount of ambient lighting seen in shadows. §c[-]§r Drastically changing this setting can break the lighting balance.
 
 option.PLAYER_SHADOW=Player Shadow §e[*]§r
-option.PLAYER_SHADOW.comment=Determines if the player will cast a shadow or not. §e[*]§r This setting only works on Iris. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF.
+option.PLAYER_SHADOW.comment=Determines if the player will cast a shadow or not. §e[*]§r This setting only fully works on Iris. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF.
 value.PLAYER_SHADOW.-1=OFF
 value.PLAYER_SHADOW.1=ON
 
 option.GENERATED_NORMALS=Generated Normals
-option.GENERATED_NORMALS.comment=Adds auto-generated bumpy details to surfaces. §e[*]§r RP Support option must be set to Integrated PBR+.
+option.GENERATED_NORMALS.comment=Adds auto-generated bumpy details to surfaces. §e[*]§r RP Support option must be set to Integrated PBR+. §e[*]§r Can look wonky with some resource packs or mods that feature non-standard resolution textures.
 
 option.COATED_TEXTURES=Coated Textures
-option.COATED_TEXTURES.comment=Adds auto-generated dusty details to textures. §e[*]§r RP Support option must be set to Integrated PBR+.
+option.COATED_TEXTURES.comment=Adds auto-generated dusty details to textures. §e[*]§r RP Support option must be set to Integrated PBR+. §e[*]§r Can look wonky with some resource packs or mods that feature non-standard resolution textures.
 
-option.ENTITY_GN_AND_CT=Allow GN and CT on Entities
+option.ENTITY_GN_AND_CT=Allow GN & CT on Entities
 option.ENTITY_GN_AND_CT.comment=Decides if Generated Normals and Coated Textures can appear on entities. §e[*]§r This won't enable GN or CT on entities if the main GN or CT options are disabled.
 
 option.GENERATED_NORMAL_MULT=Generated Normal Strength
 option.GENERATED_NORMAL_MULT.comment=Adjusts the strength of auto-generated bumpy details on surfaces.
+
+option.GENERATED_NORMAL_RES=Generated Normal Resolution
+option.GENERATED_NORMAL_RES.comment=Adjusts the resolution/size of auto-generated bumpy details on surfaces. §e[*]§r Note that the GN resolution also depends on each texture's own resolution, which means that resource packs or mods can mess up the resolution of GN on different blocks.
 
 option.GENERATED_NORMAL_ENTITY_MULT=Gen. Normals on Entities
 option.GENERATED_NORMAL_ENTITY_MULT.comment=Adjusts the strength of auto-generated bumpy details on entities.
@@ -1402,7 +1405,7 @@ screen.POPULAR_SETTINGS=§dPopular Settings
 screen.POPULAR_SETTINGS.comment=These are some of the most popular settings in Euphoria Patches. Apart from Advanced Colored Tracing (which is needed for a lot of effects), all options in here are exclusive to Euphoria Patches and cannot be found in the Original Complementary Shaderpack.
 screen.POPULAR_SETTINGS_2=Page 2
 screen.POPULAR_SETTINGS_3=Page 3
-screen.EP_VERSION=Euphoria Patches §d1.9.0
+screen.EP_VERSION=Euphoria Patches §d1.9.3
 screen.EP_VERSION.comment=§bYou can support SpacEagle17 on Patreon or Ko-Fi and get new Exclusive Beta Versions. §r§d§l§neuphoriapatches.com/support
 
 screen.MODDED_SETTINGS=Modded Settings
@@ -1416,6 +1419,9 @@ screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIR Lighting Mode settings.
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
 screen.DISTANT_HORIZONS_SETTINGS.comment=Settings that only work if you have the Distant Horizons mod installed.
+
+screen.MODDED_SKYBOX_SETTINGS=Skybox Settings
+screen.MODDED_SKYBOX_SETTINGS.comment=Settings related to sky related mods.
 
 option.DAYLIGHT_CYCLE_COMPAT=World Time Animation
 option.DAYLIGHT_CYCLE_COMPAT.comment=ONLY use this if you play with the gamerule doDaylightCycle false. When enabled clouds and more animate in worlds with the daylight cycle off but they are no longer synced between players.
@@ -1503,6 +1509,10 @@ value.CLOUD_ROUNDNESS.0.125=Balanced
 value.CLOUD_ROUNDNESS.0.2=Round
 option.CLOUD_ROUNDNESS.comment=Change how round the clouds appear.  §e[*]§r Lower roundness results in more noise artifacts
 
+option.REIMAGINED_CLOUDS_OUTLINE=Clouds Outline
+option.REIMAGINED_CLOUDS_OUTLINE.comment=Enables an outline around the reimagined clouds.
+value.REIMAGINED_CLOUDS_OUTLINE.0=OFF
+
 option.CLOUD_SHADOW_ROUNDNESS=Cloud Shadow Roundness
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Extra Boxy
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Boxy
@@ -1556,11 +1566,17 @@ option.CLOUD_SHADING_AMOUNT.comment=Determines how much the clouds get shaded.
 option.INVERTED_CLOUD_SHADING=Inverted Cloud Shading
 option.INVERTED_CLOUD_SHADING.comment=Inverts the cloud shading effect.
 
-option.CLOUD_LIGHT_MULTIPLIER=Cloud Light Multiplier
-option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting side of the clouds.
+option.CLOUD_LIGHT_MULTIPLIER=Cloud Day Light Multiplier
+option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting side of the clouds receives during the day.
+
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER=Cloud Night Light Multiplier
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting side of the clouds receives during the night.
 
 option.CLOUD_AMBIENT_MULTIPLIER=Cloud Ambient Light Multiplier
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Multiplies the brightness of the ambient light side of the clouds.
+
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=Cloud Night Ambient Light Multiplier
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=Multiplies the brightness of the ambient light side of the clouds during the night.
 
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Rotate Clouds 90°
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Rotates the reimagined clouds by 90 degrees.
@@ -1714,7 +1730,7 @@ option.END_BEAM_POW.comment=Changes the power the beams have. Higher values make
 option.END_BEAM_DIRECTION_BIAS=Vertical Direction Bias
 option.END_BEAM_DIRECTION_BIAS.comment=Controls which side of the beam center is favored. -100 favors below, 0 is mirrored, 100 favors above.
 option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=Flash Height Multiplier
-option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Changes the height of the end beams during end flashes. Higher values make them shorter, lower values make them taller.
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Changes the height of the end beams during end flashes.
 option.END_BEAM_FLASH_POW_MULTIPLIER=Flash Power Multiplier
 option.END_BEAM_FLASH_POW_MULTIPLIER.comment=Changes the power of the end beams during end flashes.
 option.END_BEAM_FLASH_NARROWNESS=Flash Narrowness
@@ -1843,9 +1859,6 @@ option.RANDOM_BLOCKLIGHT=Random Colored Blocklight
 option.RANDOM_BLOCKLIGHT.comment=Randomizes the color of the blocklight depending on world coordinates, purely a fun setting.
 option.RANDOM_BLOCKLIGHT_SIZE=Random Colored Blocklight Size
 option.RANDOM_BLOCKLIGHT_SIZE.comment=Change the color size of the random colored blocklight effect.
-
-option.NORMAL_RES=Normals Resolution
-option.NORMAL_RES.comment=Change the resolution at which the integrated normal maps render. §e[*]§r RP Support option must be set to Integrated PBR+ and Auto Generated Normals have to be turned on
 
 option.COATED_TEXTURE_RES=Coated Textures Resolution
 option.COATED_TEXTURE_RES.comment=Change the resolution at which the Noise Coated Textures render. §e[*]§r RP Support option must be set to Integrated PBR+ and Coated Texture have to be turned on
@@ -2061,6 +2074,7 @@ value.tonemap.filmic=Filmic
 value.tonemap.GTTonemap=Gran Turismo
 value.tonemap.uchimura=Uchimura
 value.tonemap.agxTonemap=AgX
+value.tonemap.doSimpleTonemap=Simple
 
 option.TONEMAP_COMPARISON=Tonemap Comparison
 option.TONEMAP_COMPARISON.comment=Option to compare tonemaps
@@ -2080,6 +2094,7 @@ value.tonemap_left.filmic=Filmic
 value.tonemap_left.GTTonemap=Gran Turismo
 value.tonemap_left.uchimura=Uchimura
 value.tonemap_left.agxTonemap=AgX
+value.tonemap_left.doSimpleTonemap=Simple
 
 option.tonemap_right=Tonemap Right
 option.tonemap_right.comment=Changes which tonemap is used.
@@ -2096,6 +2111,7 @@ value.tonemap_right.filmic=Filmic
 value.tonemap_right.GTTonemap=Gran Turismo
 value.tonemap_right.uchimura=Uchimura
 value.tonemap_right.agxTonemap=AgX
+value.tonemap_right.doSimpleTonemap=Simple
 
 option.ACES_EXPOSURE=Exposure
 option.ACES_EXPOSURE.comment=Adjusts the overall brightness of the image.
@@ -2125,7 +2141,7 @@ option.WAVE_EVERYTHING=Wave Everything
 option.WAVE_EVERYTHING.comment=Dale a tu cuerpo alegría Macarena.
 
 option.INTERACTIVE_FOLIAGE=Interactive Foliage
-option.INTERACTIVE_FOLIAGE.comment=Makes Foliage bend away from the player when in first person.
+option.INTERACTIVE_FOLIAGE.comment=Makes Foliage bend away from the player for a more immersive experience.
 
 option.EMIN_BOAT=Emin B O A T
 option.EMIN_BOAT.comment=Ride boats like Emin intended.
@@ -2531,6 +2547,13 @@ value.SUN_GLARE_AMOUNT.0=OFF
 option.MOON_GLARE_AMOUNT=Moon Glare Amount
 value.MOON_GLARE_AMOUNT.0=OFF
 
+option.SUN_MOON_IPBR=Sun/Moon IPBR
+option.SUN_MOON_IPBR.comment=Enable or disable the IntegratedPBR for the sun and moon
+value.SUN_MOON_IPBR.0=OFF
+value.SUN_MOON_IPBR.1=Sun Only
+value.SUN_MOON_IPBR.2=Moon Only
+value.SUN_MOON_IPBR.3=Sun and Moon
+
 option.DAYLIGHT_STARS=Daylight Stars
 option.DAYLIGHT_STARS.comment=Enables Stars during the day
 
@@ -2639,6 +2662,9 @@ option.SHOOTING_STARS_LINE_THICKNESS=Line Width
 option.SHOOTING_STARS_LINE_THICKNESS.comment=Change the width of the shooting stars line.
 option.SHOOTING_STARS_TRAIL_LENGTH=Line Length
 option.SHOOTING_STARS_TRAIL_LENGTH.comment=Change the length of the shooting stars line.
+
+option.HIDE_VANILLA_STARS=Hide Vanilla Stars
+option.HIDE_VANILLA_STARS.comment=Hides the vanilla stars in the sky.
 
 option.SITUATIONAL_GLOWING_TRIMS=Situational Glowing Trims
 option.SITUATIONAL_GLOWING_TRIMS.comment=Trims will only glow in caves and at night. §e[*]§r Glowing Trims must be enabled for this to work.
@@ -2870,7 +2896,7 @@ value.PHOTONICS_ALPHA_MODE.BLOCK=Block
 value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
 
 option.PHOTONICS_RENDER_SCALE=Render Scale
-option.PHOTONICS_RENDER_SCALE.comment=Changes the render scale of the Photonics lighting.\n\n§aLower values can help with performance but may cause the lighting to look worse.\n\n§cHigher values can improve the lighting quality but may cause performance issues.\n\n
+option.PHOTONICS_RENDER_SCALE.comment=Changes the render scale of the Photonics lighting.\n\n§aLower values can help with performance but may cause the lighting to look worse.\n\n§cHigher values can improve the lighting quality but may cause performance issues.
 
 option.PHOTONICS_INDIRECT_INTENSITY=Global Illumination
 option.PHOTONICS_INDIRECT_INTENSITY.comment=Changes the intensity of the indirect lighting in the Photonics mod. §e[*]§r This option only works if Photonics is installed.
@@ -2912,8 +2938,11 @@ suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=\%
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Enchanting Glint Strength
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Changes the strength of the light emitted by enchanted items when using Photonics lighting.
 
-option.PHOTONICS_SEPARATE_HANDHELD_RAYS=Separate Handheld Rays
-option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=Whether both handheld lights should cast shadows. When disabled only one shadow will be cast\n\n§aMinimal performance impact
+option.PHOTONICS_HANDHELD_MODE=Handheld Light Mode
+option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\Single - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
+value.PHOTONICS_HANDHELD_MODE.0=Off
+value.PHOTONICS_HANDHELD_MODE.1=Separate
+value.PHOTONICS_HANDHELD_MODE.2=Single
 
 option.PHOTONICS_AMBIENT_LIGHT_MULT=Ambient Light Multiplier
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Option to change how much default ambient light should be used alongside Photonics lighting. §e[*]§r This option only works if Photonics is installed.
@@ -2921,8 +2950,43 @@ option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Option to change how much default am
 option.PHOTONICS_COMBINED_GI=Include Skylight GI
 option.PHOTONICS_COMBINED_GI.comment=Whether Global Illumination should be ran through ReSTIR's denoiser instead of its usual path. \nResults in much intenser GI, at the cost of performance and noise\n\n§cHIGH PERFORMANCE IMPACT. §b[*]§r Recommended to be used with a denoiser pass count of 5 or higher.
 
-option.STELLAR_VIEW_SUPPORT=Custom Skybox Support
-option.STELLAR_VIEW_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View.
+option.PHOTONICS_MAX_ALLOWED_DISTANCE=Allowed Distance
+option.PHOTONICS_MAX_ALLOWED_DISTANCE.comment=The maximum distance at which Photonics lighting will be applied to objects. Beyond this distance, vanilla lighting will be used instead. This is to prevent issues where far away light sources are not illuminating things. §e[*]§r Max Lights amount might need to be increased for higher values of this option to work properly.
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.6=6 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.7=7 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.8=8 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.9=9 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.10=10 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.11=11 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.12=12 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.13=13 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.14=14 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.15=15 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.16=16 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.17=17 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.18=18 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.19=19 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.20=20 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.21=21 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.22=22 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.23=23 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.24=24 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.25=25 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.26=26 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.27=27 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.28=28 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.29=29 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.30=30 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.31=31 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Render Distance
+
+
+option.CUSTOM_SKY_SUPPORT=Custom Skybox Support
+option.CUSTOM_SKY_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View.
+
+option.CUSTOM_SKY_MOD_SUPPORT=Sky Mod Support
+option.CUSTOM_SKY_MOD_SUPPORT.comment=Adds support for custom sky mods such as Caelum or Astrocraft. Might perhaps break some things, not tested with many mods.
 
 option.DISTANT_HORIZONS_SSAO=Edge Shadow (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusion) in Distant Horizons Chunks. §e[*]§r This option only works if Distant Horizons is installed. §e[*]§r Requires Edge Shadow (SSAO) Quality to be set to not be set to OFF in the Performance Settings.
@@ -2938,3 +3002,7 @@ value.PIXELATED_SHADOWS_MODE.16=Manual 16x
 value.PIXELATED_SHADOWS_MODE.32=Manual 32x
 value.PIXELATED_SHADOWS_MODE.64=Manual 64x
 value.PIXELATED_SHADOWS_MODE.128=Manual 128x
+
+option.PANINI_PROJECTION=Panini Projection
+option.PANINI_PROJECTION.comment=Enables Panini Projection, which is a type of projection that reduces distortion at the edges of the screen, especially when using a high field of view (FOV). §e[-]§r Can make the image look stretched in the center, or blurrier overall.
+value.PANINI_PROJECTION.0=OFF

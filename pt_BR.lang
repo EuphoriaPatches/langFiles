@@ -90,7 +90,7 @@ option.info17=Versões Beta: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=Você pode apoiar o SpacEagle17 no Patreon ou Ko-Fi, e tenha o acesso exclusivo de versões em desenvolvimento. acesse: §d§l§neuphoriapatches.com/support
 
-option.info18=For Complementary r5.8
+option.info18=For Complementary r5.8.1
 value.info18.0=
 option.info18.comment=Obrigado por instalar o   §5Euphoria Patches§r :)
 
@@ -150,6 +150,9 @@ screen.SUN_MOON_SETTINGS.comment=Configurações que estão relacionadas ao Sol 
 
 screen.NETHER_SETTINGS=Dimensão do Nether
 screen.NETHER_SETTINGS.comment=Configurações que estão relacionadas á dimensão do Nether.
+
+screen.END_SETTINGS=A Dimensão do End
+screen.END_SETTINGS.comment=Configurção relacionados à dimensão do End.
 
 screen.WEATHER_SETTINGS=Chuva / Clima
 screen.WEATHER_SETTINGS.comment=Configurações que afetam as condições do clima.
@@ -230,8 +233,8 @@ screen.OTHER_SETTINGS.comment=Configurações que não se encaixam em nenhuma ou
 screen.SELECT_OUTLINE_SETTINGS=Contorno de Seleção
 screen.SELECT_OUTLINE_SETTINGS.comment=Configurações que alteram o contorno de seleção de blocos.
 
-screen.WORLD_OUTLINE_SETTINGS=Contorno do Mundo §e[*]§r
-screen.WORLD_OUTLINE_SETTINGS.comment=Configurações relacionadas a efeitos opcionais de contorno. §e[*]§r Os cálculos do efeito de contorno do mundo se beneficiam bastante de reflexões de blocos PBR ativadas.
+screen.WORLD_OUTLINE_SETTINGS=Contorno do Mundo
+screen.WORLD_OUTLINE_SETTINGS.comment=Configurações relacionadas aos efeitos opcionais de contorno.
 
 #Settings
 option.RP_MODE=RP Suporte
@@ -260,12 +263,12 @@ value.SHADOW_QUALITY.-1=Desativado
 value.SHADOW_QUALITY.0=§eResolução Muito Baixa
 value.SHADOW_QUALITY.1=Resolução Baixa
 value.SHADOW_QUALITY.2=§eResolução Média
-value.SHADOW_QUALITY.3=§eResolução Alta
+value.SHADOW_QUALITY.3=§cResolução Alta
 value.SHADOW_QUALITY.4=§cResolução Muito  Alta
 value.SHADOW_QUALITY.5=§4§lResolução Ultra
 
 option.LIGHTSHAFT_QUALI_DEFINE=Qualidade dos Feixes de Luz §e[*]§r
-option.LIGHTSHAFT_QUALI_DEFINE.comment=Ajusta a qualidade dos feixes de luz. Cada nível adicional reduz ainda mais os artefatos de ruído nos feixes de luz. A configuração §e[*]§r "Sombras em Tempo Real" deve estar definida em qualquer valor diferente de DESATIVADO para que os feixes de luz funcionem.
+option.LIGHTSHAFT_QUALI_DEFINE.comment=Ajusta a qualidade dos feixes de luz. Cada nível reduz ainda mais os artefatos de ruído. §e[*]§r A opção "Sombras em Tempo Real" deve estar configurada para qualquer valor diferente de DESLIGADO para que os feixes de luz funcionem. §e[*]§r Esta configuração também controla a qualidade dos Feixes do End, com a exceção de que a opção "DESLIGADO" é tratada como "Baixo".
 value.LIGHTSHAFT_QUALI_DEFINE.0=Desativado
 value.LIGHTSHAFT_QUALI_DEFINE.1=Resolução Baixa
 value.LIGHTSHAFT_QUALI_DEFINE.2=§eResolução Média
@@ -296,7 +299,7 @@ value.ENTITY_SHADOW.1=§cEntidades Normal
 value.ENTITY_SHADOWS_DEFINE.1=§4§k-§r§4§l§n§oATIVADO§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Qualidade dos Detalhes
-option.DETAIL_QUALITY.comment=Ajusta várias pequenas coisas que afetam o desempenho. Ajusta a qualidade de: material da água, TAA, ajustes de iluminação, Névoa Noturna, Tempestade do Nether, Feixes do Ender, reflexos dos efeitos do céu, precisão das poças de chuva, efeito de ondulação, desfoque de movimento
+option.LIGHTSHAFT_QUALI_DEFINE.comment=Ajusta a qualidade dos feixes de luz. Cada nível reduz ainda mais os artefatos de ruído. §e[*]§r A opção "Sombras em Tempo Real" deve estar configurada para qualquer valor diferente de DESLIGADO para que os feixes de luz funcionem. §e[*]§r Esta configuração também controla a qualidade dos Feixes do End, com a exceção de que a opção "DESLIGADO" é tratada como "Baixo".
 value.DETAIL_QUALITY.0=§aBatata
 value.DETAIL_QUALITY.2=§eResolução Média
 value.DETAIL_QUALITY.3=§cResolução Alta
@@ -474,6 +477,21 @@ value.NETHER_COLOR_MODE.3=Baseado em Bioma (Modificado)
 value.NETHER_COLOR_MODE.2=Baseado em Bioma
 value.NETHER_COLOR_MODE.0=Constante
 
+option.END_BEAM_INTENSITY=Intensidade dos Feixes do End
+option.END_BEAM_INTENSITY.comment=Ajusta o brilho dos feixes visíveis na dimensão do End.
+
+option.END_STAR_INTENSITY=Intensidade das Estrelas do End
+option.END_STAR_INTENSITY.comment=Ajusta o brilho das estrelas visíveis na dimensão do End.
+
+option.END_FLASHES=Flashes do End
+option.END_FLASHES.comment=Ativa o suporte para o efeito ambiental "flash do End", adicionado no Minecraft 1.21.9. A intensidade dos flashes no céu está diretamente ligada à intensidade dos Feixes do End.
+
+option.END_BEAM_CENTER_ALT=Altitude Central dos Feixes do End
+option.END_BEAM_CENTER_ALT.comment=Ajusta a altitude em que os Feixes do End ficam centralizados no nível Y do mundo.
+
+option.END_BEAM_HEIGHT=Altura dos Feixes do End
+option.END_BEAM_HEIGHT.comment=Ajusta a altura física dos Feixes do End.
+
 option.T_EXPOSURE=Brilho em Geral
 option.T_EXPOSURE.comment=option.TONEMAP_EXPOSURE=Também conhecido como "Exposição Tonemap". Ajusta o brilho geral de toda a imagem.
 
@@ -617,6 +635,11 @@ option.SUN_MOON_HORIZON.comment=Impede que o sol/lua apareça abaixo da linha do
 
 option.SUN_MOON_DURING_RAIN=Sol/Lua Durante a Chuva
 option.SUN_MOON_DURING_RAIN.comment=Define se o sol e a lua ficarão visíveis durante a chuva ou não.
+
+option.IMPROVED_RAIN_DEFINE=Texturas de Clima Aprimoradas
+option.IMPROVED_RAIN_DEFINE.comment=Ativa um sistema aprimorado de texturas climáticas, permitindo cores mais realistas e corrigindo o bug do Minecraft em que chuva/neve não aparecem atrás de vidros coloridos ou modificados.
+value.IMPROVED_RAIN_DEFINE.0=DESLIGADO
+value.IMPROVED_RAIN_DEFINE.1=LIGADO
 
 option.NIGHT_STAR_AMOUNT=Quantidade de Estrelas à Noite
 option.NIGHT_STAR_AMOUNT.comment=Define a quantidade de estrelas no céu noturno.
@@ -906,21 +929,24 @@ option.AMBIENT_MULT=Multiplicador de Luz nas Sombras
 option.AMBIENT_MULT.comment=Define a quantidade de luz ambiente vista nas sombras. §c[-]§r Alterar drasticamente pode quebrar o equilíbrio da iluminação.
 
 option.PLAYER_SHADOW=Sombra do Jogador §e[*]§r
-option.PLAYER_SHADOW.comment=Define se o jogador terá sombra ou não. §e[*]§r Só funciona no Iris. §e[*]§r Será desativado se "Sombras em Tempo Real" estiver DESLIGADO.
+option.PLAYER_SHADOW.comment=Define se o jogador irá projetar sombra ou não. §e[*]§r Esta configuração funciona completamente apenas no Iris. §e[*]§r Esta configuração será desativada se "Sombras em Tempo Real" estiver OFF.
 value.PLAYER_SHADOW.-1=DESLIGADO
 value.PLAYER_SHADOW.1=LIGADO
 
 option.GENERATED_NORMALS=Normais Geradas
-option.GENERATED_NORMALS.comment=Adiciona relevo automático às superfícies. §e[*]§r O suporte a RP deve estar em Integrated PBR+.
+option.GENERATED_NORMALS.comment=Adiciona detalhes em relevo gerados automaticamente às superfícies. §e[*]§r A opção de suporte a RP deve estar definida como Integrated PBR+. §e[*]§r Pode apresentar resultados estranhos com alguns resource packs ou mods que utilizam texturas com resoluções não padronizadas.
 
 option.COATED_TEXTURES=Texturas Envelopadas
-option.COATED_TEXTURES.comment=Adiciona detalhes de poeira automáticos às texturas. §e[*]§r O suporte a RP deve estar em Integrated PBR+.
+option.COATED_TEXTURES.comment=Adiciona detalhes empoeirados gerados automaticamente às texturas. §e[*]§r A opção de suporte a RP deve estar definida como Integrated PBR+. §e[*]§r Pode apresentar resultados estranhos com alguns resource packs ou mods que utilizam texturas com resoluções não padronizadas.
 
-option.ENTITY_GN_AND_CT=Permitir NG e TE em Entidades
+option.ENTITY_GN_AND_CT=Permitir GN & CT em Entidades
 option.ENTITY_GN_AND_CT.comment=Define se Normais Geradas e Texturas Envelopadas podem aparecer em entidades. §e[*]§r Não ativa NG ou TE se as opções principais estiverem desativadas.
 
 option.GENERATED_NORMAL_MULT=Força das Normais Geradas
 option.GENERATED_NORMAL_MULT.comment=Ajuda a ajustar a força do relevo automático nas superfícies.
+
+option.GENERATED_NORMAL_RES=Resolução dos Normais Gerados
+option.GENERATED_NORMAL_RES.comment=Ajusta a resolução/tamanho dos detalhes em relevo gerados automaticamente nas superfícies. §e[*]§r Note que a resolução dos GN também depende da resolução própria de cada textura, o que significa que resource packs ou mods podem acabar alterando a resolução dos GN em diferentes blocos.
 
 option.GENERATED_NORMAL_ENTITY_MULT=NG em Entidades
 option.GENERATED_NORMAL_ENTITY_MULT.comment=Ajuda a ajustar a força do relevo automático em entidades.
@@ -1379,7 +1405,7 @@ screen.POPULAR_SETTINGS=§dConfigurações Populares
 screen.POPULAR_SETTINGS.comment=Estas são algumas das configurações mais populares no Euphoria Patches. Exceto o Advanced Colored Tracing (que é necessário para muitos efeitos), todas as opções aqui são exclusivas do Euphoria Patches e não podem ser encontradas no Shaderpack Complementary Original.
 screen.POPULAR_SETTINGS_2=Página 2
 screen.POPULAR_SETTINGS_3=Página 3
-screen.EP_VERSION=Euphoria Patches §d1.9.0
+screen.EP_VERSION=Euphoria Patches §d1.9.3
 screen.EP_VERSION.comment=§bVocê pode apoiar o SpacEagle17 no Patreon ou Ko-Fi e receber novas versões beta exclusivas.
 
 screen.MODDED_SETTINGS=Configurações de Mods
@@ -1393,6 +1419,9 @@ screen.PHOTONICS_SETTINGS_RESTIR.comment=Configurações do modo de iluminação
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
 screen.DISTANT_HORIZONS_SETTINGS.comment=Configurações que só funcionam se você tiver o mod Distant Horizons instalado.
+
+screen.MODDED_SKYBOX_SETTINGS=Configurações da Skybox
+screen.MODDED_SKYBOX_SETTINGS.comment=Configurações relacionadas a mods de céu.
 
 option.DAYLIGHT_CYCLE_COMPAT=Animação do Tempo Mundial
 option.DAYLIGHT_CYCLE_COMPAT.comment=USE apenas se você joga com o gamerule doDaylightCycle false. Quando ativado, nuvens e outros animam em mundos com o ciclo do dia desativado, mas não ficam mais sincronizados entre os jogadores.
@@ -1480,6 +1509,10 @@ value.CLOUD_ROUNDNESS.0.125=Equilibrada
 value.CLOUD_ROUNDNESS.0.2=Arredondada
 option.CLOUD_ROUNDNESS.comment=Altere o quão arredondadas as nuvens aparecem. §e[*]§r Menos arredondamento resulta em mais artefatos de ruído.
 
+option.REIMAGINED_CLOUDS_OUTLINE=Contorno das Nuvens
+option.REIMAGINED_CLOUDS_OUTLINE.comment=Ativa um contorno ao redor das nuvens reimaginadas.
+value.REIMAGINED_CLOUDS_OUTLINE.0=OFF
+
 option.CLOUD_SHADOW_ROUNDNESS=Arredondamento da Sombra das Nuvens
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Super Quadrada
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Quadrada
@@ -1533,11 +1566,17 @@ option.CLOUD_SHADING_AMOUNT.comment=Define o quanto as nuvens recebem sombreamen
 option.INVERTED_CLOUD_SHADING=Sombreamento de Nuvens Invertido
 option.INVERTED_CLOUD_SHADING.comment=Inverte o efeito de sombreamento das nuvens.
 
-option.CLOUD_LIGHT_MULTIPLIER=Multiplicador de Luz das Nuvens
-option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplica o brilho do lado iluminado das nuvens.
+option.CLOUD_LIGHT_MULTIPLIER=Multiplicador de Luz Diurna das Nuvens
+option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplica o brilho que o lado iluminado das nuvens recebe durante o dia.
+
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER=Multiplicador de Luz Noturna das Nuvens
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=Multiplica o brilho que o lado iluminado das nuvens recebe durante a noite.
 
 option.CLOUD_AMBIENT_MULTIPLIER=Multiplicador de Luz Ambiente das Nuvens
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Multiplica o brilho do lado de luz ambiente das nuvens.
+
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=Multiplicador de Luz Ambiente Noturna das Nuvens
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=Multiplica o brilho do lado da luz ambiente das nuvens durante a noite.
 
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Girar Nuvens em 90°
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Gira as nuvens reimaginadas em 90 graus.
@@ -1658,13 +1697,13 @@ option.OW_BEAM_B_NEW=Feixes do Overworld - Azul
 option.END_BEAMS=Feixes do End
 option.END_BEAMS.comment=Configuração que ativa feixes semelhantes a nébulas no End.
 option.END_CRYSTAL_VORTEX=Vórtice do Cristal do End
-option.END_CRYSTAL_VORTEX.comment=Configuração que ativa feixes de energia subindo a partir dos Cristais do End no End. §4[***]§r Ativa §cSombras de Entidades§r. [§e*§r] Funciona apenas no Iris. [§e*§r] Não funciona no MacOS. A Distância das Sombras nas Configurações do Complementary afeta a distância em que os vórtices ficam visíveis.
+option.END_CRYSTAL_VORTEX.comment=Configuração que ativa feixes de energia subindo a partir dos Cristais do End no End. §4[***]§r Ativa §cSombras de Entidades§r. §e[*]§r Funciona apenas no Iris. §e[*]§r Não funciona no MacOS. A Distância das Sombras nas Configurações do Complementary afeta a distância em que os vórtices ficam visíveis.
 value.END_CRYSTAL_VORTEX.0=DESLIGADO
 value.END_CRYSTAL_VORTEX.1=Vórtice
 value.END_CRYSTAL_VORTEX.2=Feixe de Cura
 value.END_CRYSTAL_VORTEX.3=Ambos
 option.DRAGON_DEATH_EFFECT=Efeito de Morte do Dragão
-option.DRAGON_DEATH_EFFECT.comment=Configuração que substitui os feixes da morte do dragão por um efeito volumétrico. §4[***]§r Ativa §cSombras de Entidades§r. [§e*§r] Funciona apenas no Iris. [§e*§r] Não funciona no MacOS.
+option.DRAGON_DEATH_EFFECT.comment=Configuração que substitui os feixes da morte do dragão por um efeito volumétrico. §4[***]§r Ativa §cSombras de Entidades§r. §e[*]§r Funciona apenas no Iris. §e[*]§r Não funciona no MacOS.
 value.DRAGON_DEATH_EFFECT.0=DESLIGADO
 value.DRAGON_DEATH_EFFECT.1=Efeito Volumétrico
 value.DRAGON_DEATH_EFFECT.2=Volumétrico + Feixes Originais
@@ -1686,18 +1725,20 @@ option.END_BEAM_SCALE=Escala
 option.END_BEAM_SCALE.comment=Altera a escala dos feixes do End. Valores mais altos os deixam mais finos, valores mais baixos os deixam mais largos.
 option.END_BEAM_DISTANCE_MULTIPLIER=Multiplicador de distância
 option.END_BEAM_DISTANCE_MULTIPLIER.comment=Define o quão perto ou longe os feixes do End ficam do jogador. Valores mais altos fazem com que comecem mais distantes, valores mais baixos mais próximos.
-option.END_BEAM_HEIGHT=Altura dos feixes do End
-option.END_BEAM_HEIGHT.comment=Ajusta a altura física dos feixes do End.
 option.END_BEAM_POW=Potência do feixe
-option.END_BEAM_POW.comment=Define a intensidade dos feixes.
+option.END_BEAM_POW.comment=Altera a potência dos feixes. Valores mais altos os tornam menos intensos, enquanto valores mais baixos os tornam mais intensos.
 option.END_BEAM_DIRECTION_BIAS=Viés de direção vertical
 option.END_BEAM_DIRECTION_BIAS.comment=Define para qual lado do centro do feixe o efeito se inclina. -100 puxa para baixo, 0 fica equilibrado, 100 puxa para cima.
-option.END_BEAM_CENTER_ALT=Altitude central dos feixes do End
-option.END_BEAM_CENTER_ALT.comment=Ajusta a altitude em que os feixes do End ficam centralizados no eixo Y do mundo.
 option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=Multiplicador de altura do flash
-option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Altera a altura dos feixes do End durante os flashes. Valores mais altos os deixam mais curtos, valores mais baixos os deixam mais altos.
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=Altera a altura dos feixes do End durante os flashes do End.
 option.END_BEAM_FLASH_POW_MULTIPLIER=Multiplicador de intensidade do flash
 option.END_BEAM_FLASH_POW_MULTIPLIER.comment=Altera a intensidade dos feixes do End durante os flashes.
+option.END_BEAM_FLASH_NARROWNESS=Intensidade de Estreitamento do Flash
+option.END_BEAM_FLASH_NARROWNESS.comment=Define o quão estreita é a área afetada pelo flash final. Valores mais altos fazem o efeito atingir uma área menor, enquanto valores mais baixos fazem com que ele alcance uma área maior.
+option.END_BEAM_SPEED=Velocidade
+option.END_BEAM_SPEED.comment=Altera a velocidade dos feixes do End.
+option.END_BEAM_FOG_BLEND=Mesclagem com o Terreno
+option.END_BEAM_FOG_BLEND.comment=Define o quanto os feixes do End se misturam com o terreno a longas distâncias. §e[*]§r Valores mais baixos tornam as bordas dos chunks visíveis.
 
 option.END_STARS=Estrelas do End
 option.END_STARS.comment=Ativa ou desativa as estrelas no End.
@@ -1731,6 +1772,11 @@ value.END_TWINKLING_STARS.17=1.7
 value.END_TWINKLING_STARS.18=1.8
 value.END_TWINKLING_STARS.19=1.9
 value.END_TWINKLING_STARS.20=2.0
+option.END_STAR_HEMISPHERE=Hemisfério das Estrelas do End
+option.END_STAR_HEMISPHERE.comment=Define se as estrelas serão renderizadas apenas no hemisfério superior ou inferior do céu no End.
+value.END_STAR_HEMISPHERE.0=Céu Completo
+value.END_STAR_HEMISPHERE.1=Apenas Hemisfério Superior
+value.END_STAR_HEMISPHERE.-1=Apenas Hemisfério Inferior
 
 option.STAR_BRIGHTNESS=Brilho das Estrelas
 option.STAR_BRIGHTNESS.comment=Configuração para ajustar o brilho das
@@ -1811,9 +1857,6 @@ option.WATER_GENERATED_NORMALS=Normais Geradas da Água
 
 option.RANDOM_BLOCKLIGHT=Luz de Bloco Colorida Aleatória
 option.RANDOM_BLOCKLIGHT.comment=Randomiza a cor da luz de bloco dependendo das coordenadas do mundo, apenas por diversão.
-option.RANDOM_BLOCKLIGHT_SIZE=Tamanho da Luz de Bloco Colorida Aleatória
-option.RANDOM_BLOCKLIGHT_SIZE.comment=Altere o tamanho da cor do efeito de luz de bloco colorida aleatória.
-
 option.NORMAL_RES=Resolução das Normais
 option.NORMAL_RES.comment=Altere a resolução em que os mapas normais integrados são renderizados. §e[*]§r O suporte a RP deve estar em Integrated PBR+ e Normais Geradas automaticamente precisam estar ativadas.
 
@@ -2031,6 +2074,7 @@ value.tonemap.filmic=Fílmico
 value.tonemap.GTTonemap=Gran Turismo
 value.tonemap.uchimura=Uchimura
 value.tonemap.agxTonemap=AgX
+value.tonemap.doSimpleTonemap=Simples
 
 option.TONEMAP_COMPARISON=Comparação de Tonemap
 option.TONEMAP_COMPARISON.comment=Opção para comparar tonemaps
@@ -2050,6 +2094,7 @@ value.tonemap_left.filmic=Fílmico
 value.tonemap_left.GTTonemap=Gran Turismo
 value.tonemap_left.uchimura=Uchimura
 value.tonemap_left.agxTonemap=AgX
+value.tonemap_left.doSimpleTonemap=Simples
 
 option.tonemap_right=Tonemap Direito
 option.tonemap_right.comment=Altera qual tonemap é usado.
@@ -2066,6 +2111,7 @@ value.tonemap_right.filmic=Fílmico
 value.tonemap_right.GTTonemap=Gran Turismo
 value.tonemap_right.uchimura=Uchimura
 value.tonemap_right.agxTonemap-AgX
+value.tonemap_right.doSimpleTonemap=Simples
 
 option.ACES_EXPOSURE=Exposição
 option.ACES_EXPOSURE.comment=Ajuda a ajustar o brilho geral da imagem.
@@ -2095,7 +2141,7 @@ option.WAVE_EVERYTHING=Ondular Tudo
 option.WAVE_EVERYTHING.comment=Dale a tu cuerpo alegría Macarena.
 
 option.INTERACTIVE_FOLIAGE=Folhagem Interativa
-option.INTERACTIVE_FOLIAGE.comment=Faz a folhagem se afastar do jogador em primeira pessoa.
+option.INTERACTIVE_FOLIAGE.comment=Faz a vegetação se mover para longe do jogador, criando uma sensação maior de imersão.
 
 option.EMIN_BOAT=Emin B O A T
 option.EMIN_BOAT.comment=Ande de barco como o Emin queria.
@@ -2501,6 +2547,13 @@ value.SUN_GLARE_AMOUNT.0=DESLIGADO
 option.MOON_GLARE_AMOUNT=Intensidade do Brilho Lunar
 value.MOON_GLARE_AMOUNT.0=DESLIGADO
 
+option.SUN_MOON_IPBR=IPBR do Sol/Lua
+option.SUN_MOON_IPBR.comment=Ativa ou desativa o IntegratedPBR para o sol e a lua.
+value.SUN_MOON_IPBR.0=DESLIGADO
+value.SUN_MOON_IPBR.1=Apenas Sol
+value.SUN_MOON_IPBR.2=Apenas Lua
+value.SUN_MOON_IPBR.3=Sol e Lua
+
 option.DAYLIGHT_STARS=Estrelas Durante o Dia
 option.DAYLIGHT_STARS.comment=Ativa estrelas durante o dia
 
@@ -2609,6 +2662,9 @@ option.SHOOTING_STARS_LINE_THICKNESS=Espessura da Linha
 option.SHOOTING_STARS_LINE_THICKNESS.comment=Altere a espessura da linha das estrelas cadentes.
 option.SHOOTING_STARS_TRAIL_LENGTH=Comprimento da Linha
 option.SHOOTING_STARS_TRAIL_LENGTH.comment=Altere o comprimento da linha das estrelas cadentes.
+
+option.HIDE_VANILLA_STARS=Ocultar Estrelas Padrão
+option.HIDE_VANILLA_STARS.comment=Oculta as estrelas padrão do céu.
 
 option.SITUATIONAL_GLOWING_TRIMS=Detalhes Brilhantes Situacionais
 option.SITUATIONAL_GLOWING_TRIMS.comment=Detalhes só irão brilhar em cavernas e à noite. §e[*]§r Detalhes Brilhantes devem estar ativados para isso funcionar.
@@ -2800,6 +2856,7 @@ option.WATER_CAULDRON_COLOR_OVERRIDE.comment=Impede que as configurações de co
 
 option.END_FLASH_SHADOW=Sombra dos Flashes do End
 option.END_FLASH_SHADOW.comment=No End, as sombras serão projetadas a partir dos flashes em vez do ângulo do Sol do End. §e[*]§r Este recurso funciona apenas no Iris a partir da versão 1.21.9+
+value.END_FLASH_SHADOW.0=OFF
 
 option.EP_END_FLASH=Flash do End
 option.EP_END_FLASH.comment=Altera o tipo de End Flash, podendo ser o padrão, o personalizado Euphoria ou ambos. §e[*]§r Este recurso só funciona no Iris na versão 1.21.9 ou superior.
@@ -2839,7 +2896,7 @@ value.PHOTONICS_ALPHA_MODE.BLOCK=Bloco
 value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
 
 option.PHOTONICS_RENDER_SCALE=Escala de Renderização
-option.PHOTONICS_RENDER_SCALE.comment=Altera a escala de renderização da iluminação do Photonics.\n\n§aValores mais baixos podem ajudar na performance, mas podem piorar a qualidade da iluminação.\n\n§cValores mais altos podem melhorar a qualidade da iluminação, mas podem causar problemas de performance.\n\n
+option.PHOTONICS_RENDER_SCALE.comment=Altera a escala de renderização da iluminação do Photonics.\n\n§aValores mais baixos podem ajudar na performance, mas podem piorar a qualidade da iluminação.\n\n§cValores mais altos podem melhorar a qualidade da iluminação, mas podem causar problemas de performance.
 
 option.PHOTONICS_INDIRECT_INTENSITY=Iluminação Global
 option.PHOTONICS_INDIRECT_INTENSITY.comment=Altera a intensidade da iluminação indireta no mod Photonics. §e[*]§r Esta opção só funciona se o Photonics estiver instalado.
@@ -2887,17 +2944,52 @@ option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=Define se ambas as luzes de iten
 option.PHOTONICS_AMBIENT_LIGHT_MULT=Multiplicador de luz ambiente
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Permite ajustar quanto da luz ambiente padrão será usada junto com a iluminação do Photonics. §e[*]§r Esta opção só funciona se o Photonics estiver instalado.
 
-option.PHOTONICS_COMBINED_GI=GI combinado
-option.PHOTONICS_COMBINED_GI.comment=Define se o GI deve ser processado pelo denoiser do ReSTIR em vez do método padrão.\nResulta em um GI muito mais intenso, com custo de desempenho e aumento de ruído.\n\n§cALTO IMPACTO DE PERFORMANCE. §b[*]§r Recomendado usar com contagem de passes do denoiser em 5 ou mais.
+option.PHOTONICS_COMBINED_GI=Incluir GI da Luz do Céu
+option.PHOTONICS_COMBINED_GI.comment=Define se a Iluminação Global (GI) deve passar pelo denoiser do ReSTIR em vez do método padrão.\nIsso resulta em uma GI muito mais intensa, porém com custo maior de desempenho e mais ruído.\n\n§cALTO IMPACTO NO DESEMPENHO. §b[*]§r Recomendado usar com contagem de passes do denoiser igual ou superior a 5.
 
-option.STELLAR_VIEW_SUPPORT=Suporte ao Stellar View
-option.STELLAR_VIEW_SUPPORT.comment=Adiciona suporte ao mod Stellar View. §c[*]§r Pode causar problemas com resource packs de céu.
+option.PHOTONICS_MAX_ALLOWED_DISTANCE=Distância máxima permitida
+option.PHOTONICS_MAX_ALLOWED_DISTANCE.comment=A distância máxima em que a iluminação do Photonics será aplicada aos objetos. Além dessa distância, a iluminação vanilla será usada no lugar. Isso existe para evitar problemas em que fontes de luz distantes não iluminam corretamente os objetos. §e[*]§r A quantidade máxima de luzes (“Max Lights”) talvez precise ser aumentada para que valores maiores desta opção funcionem corretamente.
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.6=6 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.7=7 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.8=8 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.9=9 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.10=10 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.11=11 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.12=12 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.13=13 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.14=14 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.15=15 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.16=16 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.17=17 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.18=18 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.19=19 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.20=20 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.21=21 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.22=22 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.23=23 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.24=24 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.25=25 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.26=26 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.27=27 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.28=28 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.29=29 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.30=30 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.31=31 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32 Chunks
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Distância de renderização
+
+
+option.CUSTOM_SKY_SUPPORT=Suporte a Skybox Personalizada
+option.CUSTOM_SKY_SUPPORT.comment=Adiciona suporte a skyboxes personalizadas, incluindo as de mods como Stellar View.
+
+option.CUSTOM_SKY_MOD_SUPPORT=Suporte a Mods de Céu
+option.CUSTOM_SKY_MOD_SUPPORT.comment=Adiciona suporte a mods de céu personalizados, como Caelum ou Astrocraft. Pode causar alguns problemas, pois não foi testado com muitos mods.
 
 option.DISTANT_HORIZONS_SSAO=Sombra de Borda (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Ativa SSAO (oclusão de ambiente em espaço de tela) nos chunks do Distant Horizons. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado. §e[*]§r Requer que a qualidade de SSAO não esteja em OFF nas configurações de performance.
 
-option.DISTANT_HORIZONS_FADE=Transição Suave
-option.DISTANT_HORIZONS_FADE.comment=Ativa uma transição suave entre diferentes chunks do Distant Horizons. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado.
+option.DH_BLENDING=Mesclagem com Distant Horizons
+option.DH_BLENDING.comment=Suaviza a transição entre os chunks do Distant Horizons e os chunks normais. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado.
 
 option.PIXELATED_SHADOWS_MODE=Modo de Sombras Pixeladas
 option.PIXELATED_SHADOWS_MODE.comment=Altera a forma como as sombras pixeladas são renderizadas. Automático é o padrão e funciona melhor na maioria dos casos; as resoluções manuais devem ser usadas apenas quando os resource packs utilizados têm resoluções de textura diferentes. §e[*]§r As sombras pixeladas precisam estar ativadas para esta opção funcionar.
