@@ -61,7 +61,7 @@ option.info9=Complementary 지원하기
 value.info9.0=
 option.info9.comment=Best way to support the development of Complementary is to share it with your friends or social media, but you can also directly support the developer on Patreon. www.patreon.com/emingt
 
-option.info10=Credits (크레딧)
+option.info10=크레딧
 value.info10.0=
 option.info10.comment=EminGT: The main developer of Complementary. Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
@@ -1418,7 +1418,7 @@ screen.POPULAR_SETTINGS=§dPopular Settings (인기 설정)
 screen.POPULAR_SETTINGS.comment=Euphoria Patches에서 가장 인기 있는 설정들입니다. Advanced Colored Tracing(많은 효과에 필요함)을 제외하면, 여기의 모든 옵션은 Euphoria Patches 전용이며 원본 Complementary Shaderpack에서는 찾을 수 없습니다.
 screen.POPULAR_SETTINGS_2=Page 2
 screen.POPULAR_SETTINGS_3=Page 3
-screen.EP_VERSION=Euphoria Patches §d1.9.0
+screen.EP_VERSION=Euphoria Patches §d1.9.3
 screen.EP_VERSION.comment=§bSpacEagle17을 Patreon 또는 Ko-Fi에서 후원하면 새로운 독점 베타 버전을 받을 수 있습니다. §r§d§l§neuphoriapatches.com/support
 
 screen.MODDED_SETTINGS=모드 전용 설정
@@ -2568,7 +2568,7 @@ option.EMISSIVE_SOUL_SAND.comment=영혼모래 블록 위에 서 있을 때 눈 
 option.BEACON_BEAM_EMISSION=Beacon Beam Emission (신호기 빔 발광)
 option.BEACON_BEAM_EMISSION.comment=신호기 빔의 발광 강도를 조정합니다.
 
-option.PINKER_CHERRY_LEAVES=Pinker Cherry Leaves (더 진한 벚꽃잎)
+option.PINKER_CHERRY_LEAVES=Pinker Cherry Leaves (더 진한 벚꽃잎) 
 
 option.LIGHTMAP_CURVES=Lightmap Curves
 option.LIGHTMAP_CURVES.comment=월드의 라이트맵 곡선을 조정합니다.
@@ -2930,22 +2930,62 @@ suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=\%
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Enchanting Glint Strength (마법부여 반짝임 강도)
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Photonics 조명을 사용할 때, 인챈트된 아이템이 방출하는 빛의 강도를 변경합니다.
 
-option.PHOTONICS_SEPARATE_HANDHELD_RAYS=Separate Handheld Rays (휴대 광원 개별 광선)
-option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=양손에 든 광원이 모두 그림자를 생성할지 여부를 설정합니다. 비활성화하면 하나의 그림자만 생성됩니다.\n\n§a성능에 미치는 영향은 매우 적습니다
+option.PHOTONICS_HANDHELD_MODE=휴대용 조명 모드
+option.PHOTONICS_HANDHELD_MODE.comment=Photonics 모드에서 손에 든 광원이 렌더링되는 방식을 변경합니다.\n\n끄기 - 손에 든 광원이 Photonics를 통해 전혀 렌더링되지 않습니다 \단일 - 손에 든 광원 중 하나만 그림자를 생성합니다\n개별 - 양손의 광원이 각각 독립적으로 그림자를 생성합니다\n\n§a성능 영향이 매우 적음
+value.PHOTONICS_HANDHELD_MODE.0=끄기
+value.PHOTONICS_HANDHELD_MODE.1=개별
+value.PHOTONICS_HANDHELD_MODE.2=단일	
 
-option.PHOTONICS_AMBIENT_LIGHT_MULT=Ambient Light Multiplier (주변광 빛 배수)
+option.PHOTONICS_AMBIENT_LIGHT_MULT=주변광 빛 배수
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Photonics 조명과 함께 사용할 기본 주변광의 양을 조정하는 옵션입니다. §e[*]§r 이 옵션은 Photonics가 설치되어 있을 때만 작동합니다.
 
-option.PHOTONICS_COMBINED_GI=Combined GI (통합 GI)
+option.PHOTONICS_COMBINED_GI=통합 GI
 option.PHOTONICS_COMBINED_GI.comment=GI를 기본 방식 대신 ReSTIR의 디노이저를 통해 처리할지 여부를 설정합니다.\n더 강한 GI 효과를 얻을 수 있지만 성능 저하와 노이즈 증가가 발생합니다.\n\n§c높은 성능 영향이 있습니다. §b[*]§r 디노이저 패스 수를 5 이상으로 설정하는 것을 권장합니다.
 
-option.STELLAR_VIEW_SUPPORT=Stellar View Support (Stellar View 모드 지원)
-option.STELLAR_VIEW_SUPPORT.comment=Stellar View 모드 지원을 추가합니다. §c[*]§r 스카이 리소스팩과 충돌 문제가 발생할 수 있습니다.
+option.PHOTONICS_MAX_ALLOWED_DISTANCE=허용 거리
+option.PHOTONICS_MAX_ALLOWED_DISTANCE.comment=Photonics 조명이 물체에 적용되는 최대 거리입니다. 이 거리를 초과하면 대신 바닐라 조명이 사용됩니다. 이는 멀리 있는 광원이 물체를 비추지 못하는 문제를 방지하기 위한 것입니다. §e[*]§r 이 옵션의 값을 높게 설정한 경우 제대로 작동하도록 하려면 최대 광원 수(Max Lights)도 늘려야 할 수 있습니다.
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.6=6 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.7=7 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.8=8 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.9=9 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.10=10 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.11=11 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.12=12 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.13=13 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.14=14 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.15=15 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.16=16 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.17=17 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.18=18 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.19=19 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.20=20 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.21=21 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.22=22 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.23=23 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.24=24 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.25=25 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.26=26 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.27=27 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.28=28 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.29=29 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.30=30 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.31=31 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32 청크
+value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=렌더 거리
+
+option.CUSTOM_SKY_SUPPORT=사용자 스카이박스 지원
+option.CUSTOM_SKY_SUPPORT.comment=Stellar View와 같은 모드가 추가하는 것을 포함하여, 사용자 지정 스카이박스(Custom Skybox)를 지원합니다.
+
+option.CUSTOM_SKY_MOD_SUPPORT=하늘관련 모드 지원
+option.CUSTOM_SKY_MOD_SUPPORT.comment=Caelum이나 Astrocraft 같은 사용자 지정 하늘 모드를 지원합니다. 다만 일부 기능이 정상적으로 작동하지 않을 수 있으며, 많은 모드와의 호환성 테스트는 이루어지지 않았습니다.
 
 option.DISTANT_HORIZONS_SSAO=Edge Shadow (SSAO) (가장자리 그림자 (SSAO))
 option.DISTANT_HORIZONS_SSAO.comment=Distant Horizons 청크에서 SSAO(스크린 공간 앰비언트 오클루전)를 활성화합니다. §e[]§r 이 옵션은 Distant Horizons가 설치되어 있을 때만 작동합니다. §e[]§r 성능 설정에서 Edge Shadow(SSAO) 품질이 끄기 가 아니어야 합니다.
 
-option.PIXELATED_SHADOWS_MODE=Pixelated Shadows Mode (그림자 픽셀화)
+option.DH_BLENDING=Distant Horizons 청크 섞임
+option.DH_BLENDING.comment=Distant Horizons 청크와 일반 청크 사이의 전환을 부드럽게 혼합합니다. §e[*]§r 이 옵션은 Distant Horizons가 설치되어 있을 때만 작동합니다.
+
+option.PIXELATED_SHADOWS_MODE=그림자 픽셀화
 option.PIXELATED_SHADOWS_MODE.comment=픽셀화된 그림자의 렌더링 방식을 변경합니다.
 Automatic은 기본값이며 대부분의 경우에 가장 적합합니다. 수동 해상도 옵션은 사용하는 리소스팩들의 텍스처 해상도가 서로 맞지 않을 때만 사용하는 것이 좋습니다. §e[*]§r 이 옵션을 사용하려면 픽셀화된 그림자가 활성화되어 있어야 합니다.
 value.PIXELATED_SHADOWS_MODE.0=자동
@@ -2954,3 +2994,7 @@ value.PIXELATED_SHADOWS_MODE.16=수동 16x
 value.PIXELATED_SHADOWS_MODE.32=수동 32x
 value.PIXELATED_SHADOWS_MODE.64=수동 64x
 value.PIXELATED_SHADOWS_MODE.128=수동 128x
+
+option.PANINI_PROJECTION=파니니 투영
+option.PANINI_PROJECTION.comment=파니니 투영(Panini Projection)을 활성화합니다. 이는 특히 높은 시야각(FOV) 사용 시 화면 가장자리의 왜곡을 줄여주는 투영 방식입니다. §e[-]§r 화면 중앙이 늘어나 보이거나 전체적으로 더 흐릿하게 보일 수 있습니다.
+value.PANINI_PROJECTION.0=끄기
