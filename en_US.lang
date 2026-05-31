@@ -2983,10 +2983,15 @@ value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Render Distance
 
 
 option.CUSTOM_SKY_SUPPORT=Custom Skybox Support
-option.CUSTOM_SKY_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View.
+option.CUSTOM_SKY_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View. The slider changes the alpha mix of the skybox, only change it if there are issues.
+value.CUSTOM_SKY_SUPPORT.0=OFF
+value.CUSTOM_SKY_SUPPORT.10=On
 
 option.CUSTOM_SKY_MOD_SUPPORT=Sky Mod Support
 option.CUSTOM_SKY_MOD_SUPPORT.comment=Adds support for custom sky mods such as Caelum or Astrocraft. Might perhaps break some things, not tested with many mods.
+
+option.SAVE_SKYBOX_DATA_OVERRIDE=Save Skybox Data
+option.SAVE_SKYBOX_DATA_OVERRIDE.comment=Allows the shaderpack to save the custom skybox to a buffer, this happens automatically when a skybox mod is installed but can occasionally cause issues with certain mods that change the skybox as well, thus this option allows you to disable it.
 
 option.DISTANT_HORIZONS_SSAO=Edge Shadow (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusion) in Distant Horizons Chunks. §e[*]§r This option only works if Distant Horizons is installed. §e[*]§r Requires Edge Shadow (SSAO) Quality to be set to not be set to OFF in the Performance Settings.
