@@ -1424,7 +1424,7 @@ screen.POPULAR_SETTINGS=§dPopular Settings (인기 설정)
 screen.POPULAR_SETTINGS.comment=Euphoria Patches에서 가장 인기 있는 설정들입니다. Advanced Colored Tracing(많은 효과에 필요함)을 제외하면, 여기의 모든 옵션은 Euphoria Patches 전용이며 원본 Complementary Shaderpack에서는 찾을 수 없습니다.
 screen.POPULAR_SETTINGS_2=Page 2
 screen.POPULAR_SETTINGS_3=Page 3
-screen.EP_VERSION=Euphoria Patches §d1.9.4
+screen.EP_VERSION=Euphoria Patches §d1.10.0
 screen.EP_VERSION.comment=§bSpacEagle17을 Patreon 또는 Ko-Fi에서 후원하면 새로운 독점 베타 버전을 받을 수 있습니다. §r§d§l§neuphoriapatches.com/support
 
 screen.MODDED_SETTINGS=모드 전용 설정
