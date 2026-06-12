@@ -1512,6 +1512,10 @@ value.CLOUD_ROUNDNESS.0.125=Сбалансированные
 value.CLOUD_ROUNDNESS.0.2=Круглые
 option.CLOUD_ROUNDNESS.comment=Форма облаков. §e[*]§r Низкие значения увеличивают шум.
 
+option.REIMAGINED_CLOUDS_OUTLINE=Контур облаков
+option.REIMAGINED_CLOUDS_OUTLINE.comment=Включает контур вокруг облаков Reimagined.
+value.REIMAGINED_CLOUDS_OUTLINE.0=Нет
+
 option.CLOUD_SHADOW_ROUNDNESS=Закруглённость теней
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Очень угловатые
 value.CLOUD_SHADOW_ROUNDNESS.0.25=Угловатые
@@ -2073,6 +2077,7 @@ value.tonemap.filmic=Кинематографичное
 value.tonemap.GTTonemap=Gran Turismo
 value.tonemap.uchimura=Uchimura
 value.tonemap.agxTonemap=AgX
+value.tonemap.doSimpleTonemap=Простая
 
 option.TONEMAP_COMPARISON=Сравнение тональных карт
 option.TONEMAP_COMPARISON.comment=Сравнивает разные методы тонального отображения.
@@ -2092,6 +2097,7 @@ value.tonemap_left.filmic=Кинематографичное
 value.tonemap_left.GTTonemap=Gran Turismo
 value.tonemap_left.uchimura=Uchimura
 value.tonemap_left.agxTonemap=AgX
+value.tonemap_left.doSimpleTonemap=Простая
 
 option.tonemap_right=Тональная карта справа
 option.tonemap_right.comment=Выбор тонального отображения для правой части.
@@ -2108,6 +2114,7 @@ value.tonemap_right.filmic=Кинематографичное
 value.tonemap_right.GTTonemap=Gran Turismo
 value.tonemap_right.uchimura=Uchimura
 value.tonemap_right.agxTonemap=AgX
+value.tonemap_right.doSimpleTonemap=Простая
 
 option.ACES_EXPOSURE=Экспозиция
 option.ACES_EXPOSURE.comment=Регулирует общую яркость изображения.
@@ -2977,9 +2984,14 @@ value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Дальность отрисовки
 
 option.CUSTOM_SKY_SUPPORT=Поддержка пользовательских небосводов
 option.CUSTOM_SKY_SUPPORT.comment=Добавляет поддержку пользовательских небосводов, включая модифицированные, такие как Stellar View.
+value.CUSTOM_SKY_SUPPORT.0=Нет
+value.CUSTOM_SKY_SUPPORT.10=Да
 
 option.CUSTOM_SKY_MOD_SUPPORT=Поддержка модов на небо
 option.CUSTOM_SKY_MOD_SUPPORT.comment=Добавлена поддержка пользовательских небесных модов, таких как Caelum или Astrocraft. Возможно, это может нарушить некоторые функции, которые не тестировались на многих модах.
+
+option.SAVE_SKYBOX_DATA_OVERRIDE=Сохранять данные небосвода
+option.SAVE_SKYBOX_DATA_OVERRIDE.comment=Позволяет шейдерам сохранять пользовательский небосвод в буфер. Это происходит автоматически при установке модов на небо, но иногда могут возникать проблемы с некоторыми модами, также изменяющими небосвод, поэтому эта опция позволяет вам это отключить.
 
 option.DISTANT_HORIZONS_SSAO=Тёмный край (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Включает SSAO (окружающее затенение экранного пространства) в чанках Distant Horizons. §e[*]§r Эта опция работает, только если установлен Distant Horizons. §e[*]§r Требуется, чтобы качество тёмного края (SSAO) не было отключено в настройках производительности.
@@ -2995,3 +3007,7 @@ value.PIXELATED_SHADOWS_MODE.16=Ручной 16×
 value.PIXELATED_SHADOWS_MODE.32=Ручной 32×
 value.PIXELATED_SHADOWS_MODE.64=Ручной 64×
 value.PIXELATED_SHADOWS_MODE.128=Ручной 128×
+
+option.PANINI_PROJECTION=Проекция Панини
+option.PANINI_PROJECTION.comment=Позволяет использовать проекцию Панини, уменьшающую искажения по краям экрана, особенно при использовании большого поля зрения. §e[-]§r Может сделать изображение растянутым в центре или в целом более размытым.
+value.PANINI_PROJECTION.0=Нет
