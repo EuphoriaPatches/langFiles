@@ -1423,8 +1423,8 @@ screen.DISTANT_HORIZONS_SETTINGS.comment=Settings that only work if you have the
 screen.MODDED_SKYBOX_SETTINGS=Skybox Settings
 screen.MODDED_SKYBOX_SETTINGS.comment=Settings related to sky related mods.
 
-option.DAYLIGHT_CYCLE_COMPAT=World Time Animation
-option.DAYLIGHT_CYCLE_COMPAT.comment=ONLY use this if you play with the gamerule doDaylightCycle false. When enabled clouds and more animate in worlds with the daylight cycle off but they are no longer synced between players.
+option.DAYLIGHT_CYCLE_FROZEN=Frozen Daylight Cycle
+option.DAYLIGHT_CYCLE_FROZEN.comment=Disable the feature of clouds, aurorae, caustics and more animating automatically with the gamerule doDaylightCycle/advance_time disabled. With this enabled, animations of these will be frozen.
 
 option.AURORA_COLOR_PRESET=Aurora Color Preset
 option.AURORA_COLOR_PRESET.comment=Choose between default look/custom colored auroras, varying colored auroras, where the aurora color changes each Minecraft day/month or color presets. Or The smooth daily one which changes color smoothly throughout the night.
@@ -2558,7 +2558,7 @@ option.DAYLIGHT_STARS=Daylight Stars
 option.DAYLIGHT_STARS.comment=Enables Stars during the day
 
 option.FROZEN_TIME=Frozen Time
-option.FROZEN_TIME_COMMENT=Freezes shader animation time, shader effects which rely on frame based animation will be frozen and thus allowing for good comparison screenshots.
+option.FROZEN_TIME.comment=Freezes shader animation time, shader effects which rely on frame based animation will be frozen and thus allowing for good comparison screenshots.
 
 option.DARKER_DEPTH_OCEANS=Deeper Darker Oceans
 option.DARKER_DEPTH_OCEANS.comment=Light decreases with depth of the Ocean
