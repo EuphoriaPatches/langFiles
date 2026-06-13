@@ -1423,8 +1423,8 @@ screen.DISTANT_HORIZONS_SETTINGS.comment=Configurações que só funcionam se vo
 screen.MODDED_SKYBOX_SETTINGS=Configurações da Skybox
 screen.MODDED_SKYBOX_SETTINGS.comment=Configurações relacionadas a mods de céu.
 
-option.DAYLIGHT_CYCLE_COMPAT=Animação do Tempo Mundial
-option.DAYLIGHT_CYCLE_COMPAT.comment=USE apenas se você joga com o gamerule doDaylightCycle false. Quando ativado, nuvens e outros animam em mundos com o ciclo do dia desativado, mas não ficam mais sincronizados entre os jogadores.
+option.DAYLIGHT_CYCLE_FROZEN=Ciclo de Luz do Dia Congelado
+option.DAYLIGHT_CYCLE_FROZEN.comment=Desativa o recurso que faz nuvens, auroras, cáusticas e outros efeitos animarem automaticamente quando a gamerule doDaylightCycle ou advance_time está desativada. Com esta opção ativada, as animações desses efeitos ficarão congeladas.
 
 option.AURORA_COLOR_PRESET=Predefinição de Cor da Aurora
 option.AURORA_COLOR_PRESET.comment=Escolha entre o visual padrão ou auroras personalizadas, auroras com cores variadas que mudam a cada dia ou mês do Minecraft, presets de cores ou o modo suave diário, onde a cor muda gradualmente durante a noite.
@@ -2558,7 +2558,7 @@ option.DAYLIGHT_STARS=Estrelas Durante o Dia
 option.DAYLIGHT_STARS.comment=Ativa estrelas durante o dia
 
 option.FROZEN_TIME=Tempo Congelado
-option.FROZEN_TIME_COMMENT=Congela o tempo de animação do shader, efeitos de shader que dependem de animação por frame ficarão congelados, permitindo assim boas capturas de comparação.
+option.FROZEN_TIME.comment=Congela o tempo das animações do shader. Efeitos do shader que dependem de animações baseadas em quadros (frames) ficarão congelados, permitindo capturas de tela ideais para comparação.
 
 option.DARKER_DEPTH_OCEANS=Oceanos Profundos Mais Escuros
 option.DARKER_DEPTH_OCEANS.comment=A luz diminui com a profundidade do oceano
@@ -2938,8 +2938,11 @@ suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=%
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Intensidade do Brilho de Encantamento
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Altera a intensidade da luz emitida por itens encantados ao usar a iluminação do Photonics.
 
-option.PHOTONICS_SEPARATE_HANDHELD_RAYS=Raios Separados para Itens na Mão
-option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=Define se ambas as luzes de itens na mão devem projetar sombras. Quando desativado, apenas uma sombra será projetada\n\n§aImpacto mínimo na performance
+option.PHOTONICS_HANDHELD_MODE=Modo de Luz Portátil
+option.PHOTONICS_HANDHELD_MODE.comment=Altera a forma como as luzes portáteis são renderizadas no mod Photonics.\n\nDesligado - As luzes portáteis não são renderizadas pelo Photonics\nÚnica - Apenas uma das luzes portáteis projetará sombras\nSeparadas - Ambas as luzes portáteis projetarão sombras separadas\n\n§aImpacto mínimo no desempenho
+value.PHOTONICS_HANDHELD_MODE.0=Desligado
+value.PHOTONICS_HANDHELD_MODE.1=Separadas
+value.PHOTONICS_HANDHELD_MODE.2=Única
 
 option.PHOTONICS_AMBIENT_LIGHT_MULT=Multiplicador de luz ambiente
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Permite ajustar quanto da luz ambiente padrão será usada junto com a iluminação do Photonics. §e[*]§r Esta opção só funciona se o Photonics estiver instalado.
@@ -2980,10 +2983,15 @@ value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Distância de renderização
 
 
 option.CUSTOM_SKY_SUPPORT=Suporte a Skybox Personalizada
-option.CUSTOM_SKY_SUPPORT.comment=Adiciona suporte a skyboxes personalizadas, incluindo as de mods como Stellar View.
+option.CUSTOM_SKY_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View. The slider changes the alpha mix of the skybox, only change it if there are issues.
+value.CUSTOM_SKY_SUPPORT.0=OFF
+value.CUSTOM_SKY_SUPPORT.10=On
 
 option.CUSTOM_SKY_MOD_SUPPORT=Suporte a Mods de Céu
 option.CUSTOM_SKY_MOD_SUPPORT.comment=Adiciona suporte a mods de céu personalizados, como Caelum ou Astrocraft. Pode causar alguns problemas, pois não foi testado com muitos mods.
+
+option.SAVE_SKYBOX_DATA_OVERRIDE=Salvar Dados da Skybox
+option.SAVE_SKYBOX_DATA_OVERRIDE.comment=Permite que o pacote de shaders salve a skybox personalizada em um buffer. Isso acontece automaticamente quando um mod de skybox está instalado, mas ocasionalmente pode causar problemas com certos mods que também alteram a skybox. Por isso, esta opção permite desativar esse comportamento.
 
 option.DISTANT_HORIZONS_SSAO=Sombra de Borda (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Ativa SSAO (oclusão de ambiente em espaço de tela) nos chunks do Distant Horizons. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado. §e[*]§r Requer que a qualidade de SSAO não esteja em OFF nas configurações de performance.
@@ -2999,3 +3007,7 @@ value.PIXELATED_SHADOWS_MODE.16=Manual 16x
 value.PIXELATED_SHADOWS_MODE.32=Manual 32x
 value.PIXELATED_SHADOWS_MODE.64=Manual 64x
 value.PIXELATED_SHADOWS_MODE.128=Manual 128x
+
+option.PANINI_PROJECTION=Projeção Panini
+option.PANINI_PROJECTION.comment=Ativa a Projeção Panini, um tipo de projeção que reduz a distorção nas bordas da tela, especialmente ao usar um campo de visão (FOV) alto. §e[-]§r Pode fazer a imagem parecer esticada no centro ou mais borrada no geral.
+value.PANINI_PROJECTION.0=DESLIGADO
