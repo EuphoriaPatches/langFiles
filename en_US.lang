@@ -1119,8 +1119,8 @@ option.DARK_OUTLINE.comment=Adds dark outlines around blocks. §c[-]§r This eff
 option.DARK_OUTLINE_THICKNESS=§eDark Outline Thickness§r
 option.DARK_OUTLINE_THICKNESS.comment=Determines the thickness of the Dark Outline effect. §c[-]§r Increasing this setting can impact performance.
 
-option.RAIN_PUDDLES=§eRain Puddles§r
-option.RAIN_PUDDLES.comment=Adds water puddles to the terrain during rain. §c[-]§r Rain puddles can severely impact performance.
+option.RAIN_PUDDLES=Rain Puddles
+option.RAIN_PUDDLES.comment=Adds water puddles to the terrain during rain. §e[*]§r "Block Reflection Quality" must be enabled for this to work. §e[*]§r Rain puddles have a problem where they can appear inside interiors if the roof is made of glass, but this issue is fixed by the "Advanced Color Tracing" system when that option is enabled.
 value.RAIN_PUDDLES.0=§aOFF
 value.RAIN_PUDDLES.1=§cPuddles in Rain
 value.RAIN_PUDDLES.2=§cFull Coverage in Rain
@@ -1177,7 +1177,11 @@ option.COLORED_CANDLE_LIGHT=Colored Candle Lighting
 option.COLORED_CANDLE_LIGHT.comment=Makes lights cast by candles to be the same color as their bases. §e[*]§r The desaturated candle color variants will continue to use the usual fire color.
 
 option.COLORED_LIGHT_SATURATION=Colored Lighting Saturation
-option.COLORED_LIGHT_SATURATION.comment=Adjusts how saturated the colors produced from Advanced Color Tracing will be. §e[*]§r It's not recommended to change this value, as the visuals are designed to look the most balanced with the default saturation.
+option.COLORED_LIGHT_SATURATION.comment=Adjusts how saturated the colors produced from Advanced Color Tracing will be, including torches §e[*]§r It's not recommended to change this value, as the visuals are designed to look the most balanced with the default saturation.
+
+option.ACT_FIRE_COLOR_WARMNESS=Torch/Fire Color Warmness
+option.ACT_FIRE_COLOR_WARMNESS.comment=Adjusts the warmness of torch/fire/lantern light colors when Advanced Color Tracing is enabled. Note that the color is also affected by the "Colored Lighting Saturation" setting. §e[*]§r It's not recommended to change this value more than a tiny amount, as the visuals are designed to look the most balanced with the default level.
+value.ACT_FIRE_COLOR_WARMNESS.100=Normal
 
 option.COLORED_LIGHT_FOG=§eColored Light Fog§r
 option.COLORED_LIGHT_FOG.comment=Adds volumetric blocklight fog to the scene, most visible during the night or underground. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §c[-]§r This effect can severely impact performance.
@@ -1247,6 +1251,7 @@ option.XLIGHT_I=Blocklight Intensity
 
 option.XLIGHT_CURVE=Blocklight Contrast
 option.XLIGHT_CURVE.comment=Adjusts how quickly the intensity of blocklight fades away as it travels distance away from the light source.
+
 
 ####### Euphoria Patches #######
 profile2.DEFAULT=§bVisual Settings:§r Default
