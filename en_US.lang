@@ -2158,7 +2158,7 @@ value.MONOTONE_WORLD.1=White
 value.MONOTONE_WORLD.2=Black
 value.MONOTONE_WORLD.3=Gray
 
-option.SEASONS=Seasons
+option.SEASONS=Season
 option.SEASONS.comment=Changes the colors of the environment based on the worldTime. In the winter there's also snow! §e[*]§r RP Support option is recommended to be set to Integrated PBR+
 value.SEASONS.0=OFF
 value.SEASONS.1=Cycling
