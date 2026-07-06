@@ -2987,10 +2987,10 @@ value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32 Chunks
 value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Render Distance
 
 
-option.CUSTOM_SKY_SUPPORT=Custom Skybox Support
-option.CUSTOM_SKY_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View. The slider changes the alpha mix of the skybox, only change it if there are issues.
-value.CUSTOM_SKY_SUPPORT.0=OFF
-value.CUSTOM_SKY_SUPPORT.10=On
+option.CUSTOM_SKY_SUPPORT_SLIDER=Custom Skybox Support
+option.CUSTOM_SKY_SUPPORT_SLIDER.comment=Adds support for custom skyboxes including modded ones such as Stellar View. The slider changes the alpha mix of the skybox, only change it if there are issues.
+value.CUSTOM_SKY_SUPPORT_SLIDER.0=OFF
+value.CUSTOM_SKY_SUPPORT_SLIDER.10=On
 
 option.CUSTOM_SKY_MOD_SUPPORT=Sky Mod Support
 option.CUSTOM_SKY_MOD_SUPPORT.comment=Adds support for custom sky mods such as Caelum or Astrocraft. Might perhaps break some things, not tested with many mods.
