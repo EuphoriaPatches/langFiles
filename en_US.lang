@@ -6,9 +6,9 @@ profile.VERYLOW=Performance: §aVery Low
 profile.LOW=Performance: §aLow
 profile.MEDIUM=Performance: §aMedium
 profile.HIGH=Performance: §eHigh (Default)
-profile.VERYHIGH=Performance: §cVery High
-profile.ULTRA=Performance: §4§lUltra
-profile.COMPLEMENTARY=§4§l§n§oComplementary
+profile.VERYHIGH=Performance: §eVery High
+profile.ULTRA=Performance: §cUltra
+profile.COMPLEMENTARY=Performance: §4§lComplementary
 profile.comment=Shader profiles change performance settings with the most optimised visual fidelity to performance ratio. §e[*]§r It's recommended to use one of these profiles for your settings unless you know what you are doing. §e[*]§r All affected settings can all be found in the "Performance Settings" menu.
 
 #Information
@@ -395,7 +395,8 @@ option.LIGHTSHAFT_SMOKE.comment=Adds volumetric smoke to the light shafts. §c[-
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Special Pale Garden Shafts
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Makes light shafts look extra spicy in the "Pale Garden" biome.
 
-option.LIGHTSHAFT_DAY_I=Light Shaft Day Multiplier
+option.LIGHTSHAFT_NOON_I=Light Shaft Noon Multiplier
+option.LIGHTSHAFT_SUNSET_I=Light Shaft Sunset Multiplier
 option.LIGHTSHAFT_NIGHT_I=Light Shaft Night Multiplier
 option.LIGHTSHAFT_RAIN_I=Light Shaft Rain Multiplier
 
