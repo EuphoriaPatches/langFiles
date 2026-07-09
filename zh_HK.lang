@@ -1124,7 +1124,7 @@ option.DARK_OUTLINE_THICKNESS=§e暗色描邊寬度§r
 option.DARK_OUTLINE_THICKNESS.comment=確定暗色描邊輪廓綫效果的寬度. §c[-]§r 拉高本選項的數值可能會影響性能.
 
 option.RAIN_PUDDLES=雨水坑
-option.RAIN_PUDDLES.comment=在雨天時向地表添加雨水坑. §e[*]§r "方塊反射質量" 設定必須被啓用以令雨水坑正常運作. §e[*]§r 當玩家在有玻璃天花板的室内時，雨水坑可能在室内出現； 此問題可開啓 高級顔色追蹤 設定解決. 
+option.RAIN_PUDDLES.comment=在雨天時向地表添加雨水坑. §e[*]§r "方塊反射質量" 設定必須被啓用以令雨水坑正常運作. §e[*]§r 當玩家在有玻璃天花板的室內時，雨水坑可能在室內出現； 此問題可開啓 高級顔色追蹤 設定解決. 
 value.RAIN_PUDDLES.0=§a關
 value.RAIN_PUDDLES.1=§c開 - 雨天水坑
 value.RAIN_PUDDLES.2=§c開 - 雨天水坑全覆蓋
@@ -2880,8 +2880,8 @@ option.COLORED_LIGHT_FOG_RAIN_I=彩色光霧強度 - 雨天
 option.COLORED_LIGHT_FOG_RAIN_I.comment=調節雨天時彩色光霧的亮度.
 value.COLORED_LIGHT_FOG_RAIN_I.0=默認
 
-option.COLORED_LIGHT_FOG_CAVE_I=顔色光綫霧氣（顔色光綫會產生霧氣）洞穴强度
-option.COLORED_LIGHT_FOG_CAVE_I.comment=改變顔色光綫霧氣在洞穴中的强度.
+option.COLORED_LIGHT_FOG_CAVE_I=顔色光綫霧氣（顔色光綫會產生霧氣）洞穴強度
+option.COLORED_LIGHT_FOG_CAVE_I.comment=改變顔色光綫霧氣在洞穴中的強度.
 value.COLORED_LIGHT_FOG_CAVE_I.0=Default=預設
 
 option.BLOOD_MOON=血月
