@@ -6,9 +6,9 @@ profile.VERYLOW=Performance: §aVery Low
 profile.LOW=Performance: §aLow
 profile.MEDIUM=Performance: §aMedium
 profile.HIGH=Performance: §eHigh (Default)
-profile.VERYHIGH=Performance: §cVery High
-profile.ULTRA=Performance: §4§lUltra
-profile.COMPLEMENTARY=§4§l§n§oComplementary
+profile.VERYHIGH=Performance: §eVery High
+profile.ULTRA=Performance: §cUltra
+profile.COMPLEMENTARY=Performance: §4§lComplementary
 profile.comment=Shader profiles change performance settings with the most optimised visual fidelity to performance ratio. §e[*]§r It's recommended to use one of these profiles for your settings unless you know what you are doing. §e[*]§r All affected settings can all be found in the "Performance Settings" menu.
 
 #Information
@@ -395,7 +395,8 @@ option.LIGHTSHAFT_SMOKE.comment=Adds volumetric smoke to the light shafts. §c[-
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Special Pale Garden Shafts
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Makes light shafts look extra spicy in the "Pale Garden" biome.
 
-option.LIGHTSHAFT_DAY_I=Light Shaft Day Multiplier
+option.LIGHTSHAFT_NOON_I=Light Shaft Noon Multiplier
+option.LIGHTSHAFT_SUNSET_I=Light Shaft Sunset Multiplier
 option.LIGHTSHAFT_NIGHT_I=Light Shaft Night Multiplier
 option.LIGHTSHAFT_RAIN_I=Light Shaft Rain Multiplier
 
@@ -1321,6 +1322,8 @@ screen.FOG_ATMOSPHERIC=Atmospheric fog
 screen.FOG_ATMOSPHERIC.comment=Settings that relate to atmospheric fog.
 screen.FOG_BORDER_OVERWORLD=Border fog
 screen.FOG_BORDER_OVERWORLD.comment=Settings that relate to border fog.
+screen.COLORED_LIGHT_FOG_SETTINGS=Colored Light Fog
+screen.COLORED_LIGHT_FOG_SETTINGS.comment=Settings that relate to colored light fog.
 screen.SEASON=Seasons
 screen.WINTER=Winter Settings
 screen.AUTUMN=Autumn Settings
@@ -2876,6 +2879,10 @@ option.COLORED_LIGHT_FOG_RAIN_I=Colored Light Fog Rain Intensity
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Change the intensity of the colored light fog during rain.
 value.COLORED_LIGHT_FOG_RAIN_I.0=Default
 
+option.COLORED_LIGHT_FOG_CAVE_I=Cave Intensity
+option.COLORED_LIGHT_FOG_CAVE_I.comment=Change the intensity of the colored light fog in caves.
+value.COLORED_LIGHT_FOG_CAVE_I.0=Default
+
 option.BLOOD_MOON=Blood Moon
 option.BLOOD_MOON.comment=Enables Blood Moons which happen every X Minecraft nights user has set in this option. Blood Moons don't happen on the first night if set to anything above Every Night. Blood Moond don't happen on new moons if set to anything above Every Night.
 value.BLOOD_MOON.0=OFF
@@ -2987,10 +2994,10 @@ value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32 Chunks
 value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Render Distance
 
 
-option.CUSTOM_SKY_SUPPORT=Custom Skybox Support
-option.CUSTOM_SKY_SUPPORT.comment=Adds support for custom skyboxes including modded ones such as Stellar View. The slider changes the alpha mix of the skybox, only change it if there are issues.
-value.CUSTOM_SKY_SUPPORT.0=OFF
-value.CUSTOM_SKY_SUPPORT.10=On
+option.CUSTOM_SKY_SUPPORT_SLIDER=Custom Skybox Support
+option.CUSTOM_SKY_SUPPORT_SLIDER.comment=Adds support for custom skyboxes including modded ones such as Stellar View. The slider changes the alpha mix of the skybox, only change it if there are issues.
+value.CUSTOM_SKY_SUPPORT_SLIDER.0=OFF
+value.CUSTOM_SKY_SUPPORT_SLIDER.10=On
 
 option.CUSTOM_SKY_MOD_SUPPORT=Sky Mod Support
 option.CUSTOM_SKY_MOD_SUPPORT.comment=Adds support for custom sky mods such as Caelum or Astrocraft. Might perhaps break some things, not tested with many mods.
