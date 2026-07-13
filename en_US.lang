@@ -1296,6 +1296,7 @@ screen.END_BEAMS_FLASH_SETTINGS=End Flash Settings
 screen.END_BEAMS_FLASH_SETTINGS.comment=Settings that relate to the End Beams when End Flashes are happening. Only works on 1.21.9+.
 screen.END_STAR=End Star Settings
 screen.END_STAR.comment=Settings that relate to the End Stars.
+screen.BLACK_HOLE_SETTINGS=Black Hole Settings
 screen.STAR_COLORS_END=End Star Colors
 screen.STARS_OVERWORLD=Stars
 screen.SHOOTING_STARS_SETTINGS=Shooting Stars
@@ -3022,3 +3023,19 @@ value.PIXELATED_SHADOWS_MODE.128=Manual 128x
 option.PANINI_PROJECTION=Panini Projection
 option.PANINI_PROJECTION.comment=Enables Panini Projection, which is a type of projection that reduces distortion at the edges of the screen, especially when using a high field of view (FOV). §e[-]§r Can make the image look stretched in the center, or blurrier overall.
 value.PANINI_PROJECTION.0=OFF
+
+option.BLACK_HOLE=Black Hole
+option.BLACK_HOLE.comment=Adds a black hole to the skybox in the End. It follows the End Sun Angle option
+value.BLACK_HOLE.0=OFF
+
+option.BLACK_HOLE_SIZE=Black Hole Size
+option.BLACK_HOLE_SIZE.comment=Changes the size of the black hole
+
+option.BLACK_HOLE_RING_SIZE=Ring Size
+option.BLACK_HOLE_RING_SIZE.comment=Changes the size of the dust around the black hole
+
+option.BLACK_HOLE_RING_COUNT=Ring Count
+option.BLACK_HOLE_RING_COUNT.comment=Changes the amount of rings which form the dust around the black hole
+
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT=Differential Spin
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT.comment=Changes how much faster material near the black hole spins relative to the outer edge
