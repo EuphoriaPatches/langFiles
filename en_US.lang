@@ -1296,6 +1296,10 @@ screen.END_BEAMS_FLASH_SETTINGS=End Flash Settings
 screen.END_BEAMS_FLASH_SETTINGS.comment=Settings that relate to the End Beams when End Flashes are happening. Only works on 1.21.9+.
 screen.END_STAR=End Star Settings
 screen.END_STAR.comment=Settings that relate to the End Stars.
+screen.BLACK_HOLE_SETTINGS=Black Hole Settings
+screen.BLACK_HOLE_POSITION_SETTINGS=Black Hole Position
+screen.FIXED_POSITION_BLACK_HOLE_SETTINGS=Fixed Position
+screen.MOVING_POSITION_BLACK_HOLE_SETTINGS=Slowly Wandering
 screen.STAR_COLORS_END=End Star Colors
 screen.STARS_OVERWORLD=Stars
 screen.SHOOTING_STARS_SETTINGS=Shooting Stars
@@ -1606,6 +1610,7 @@ option.DOUBLE_UNBOUND_CLOUDS.comment=Enables a second layer of unbound clouds to
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Cloud Layer 2 Altitude
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Determines the world height which the second layer clouds will appear at.
 option.CLOUD_UNBOUND_LAYER2_HEIGHT=Cloud Layer 2 Height
+option.CLOUD_UNBOUND_LAYER2_HEIGHT.comment=Determines the geometric height of the second layer of unbound clouds.
 option.CLOUD_UNBOUND_LAYER2_SIZE=Cloud Layer 2 Size
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Determines the size of the second layer of unbound clouds.
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=Cloud Layer 2 Amount
@@ -2884,11 +2889,10 @@ option.COLORED_LIGHT_FOG_CAVE_I.comment=Change the intensity of the colored ligh
 value.COLORED_LIGHT_FOG_CAVE_I.0=Default
 
 option.BLOOD_MOON=Blood Moon
-option.BLOOD_MOON.comment=Enables Blood Moons which happen every X Minecraft nights user has set in this option. Blood Moons don't happen on the first night if set to anything above Every Night. Blood Moond don't happen on new moons if set to anything above Every Night.
+option.BLOOD_MOON.comment=Enables Blood Moons which happen every X Minecraft nights the user has set in this option. Blood Moons don't happen on the first night if set to anything above Every Night. Blood Moons don't happen on new moons if set to anything above Every Night.
 value.BLOOD_MOON.0=OFF
 value.BLOOD_MOON.1=Every Night
 suffix.BLOOD_MOON=\ Minecraft Nights
-option.BLOOD_MOON.comment=Enables Blood Moons that occur the amount of Minecraft days the user has set in this option.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Emissive Blood Moon Flowers
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Makes red flowers glow during Blood Moons. §e[*]§r RP Support option must be set to Integrated PBR+.
 
@@ -3023,3 +3027,46 @@ value.PIXELATED_SHADOWS_MODE.128=Manual 128x
 option.PANINI_PROJECTION=Panini Projection
 option.PANINI_PROJECTION.comment=Enables Panini Projection, which is a type of projection that reduces distortion at the edges of the screen, especially when using a high field of view (FOV). §e[-]§r Can make the image look stretched in the center, or blurrier overall.
 value.PANINI_PROJECTION.0=OFF
+
+option.BLACK_HOLE=Black Hole
+option.BLACK_HOLE.comment=Adds a black hole to the skybox in the End. Its position is controlled by the Black Hole Position settings
+value.BLACK_HOLE.0=OFF
+
+option.BLACK_HOLE_SIZE=Black Hole Size
+option.BLACK_HOLE_SIZE.comment=Changes the size of the black hole
+
+option.BLACK_HOLE_RING_SIZE=Ring Size
+option.BLACK_HOLE_RING_SIZE.comment=Changes the size of the dust around the black hole
+
+option.BLACK_HOLE_RING_COUNT=Ring Count
+option.BLACK_HOLE_RING_COUNT.comment=Changes the amount of rings which form the dust around the black hole
+
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT=Differential Spin
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT.comment=Changes how much faster material near the black hole spins relative to the outer edge
+
+option.BLACK_HOLE_LENSING_STRENGTH=Gravitational Lensing
+option.BLACK_HOLE_LENSING_STRENGTH.comment=Changes how much the black hole bends light around it, creating a gravitational lensing effect.
+
+option.BLACK_HOLE_LENSING_RANGE=Lensing Range
+option.BLACK_HOLE_LENSING_RANGE.comment=Changes how far the gravitational lensing effect extends around the black hole
+
+option.BLACK_HOLE_LENSING_SWIRL=Lensing Swirl Amount
+option.BLACK_HOLE_LENSING_SWIRL.comment=Changes how much the gravitational lensing effect swirls around the black hole, creating a more dynamic visual effect.
+
+option.BLACK_HOLE_DIRECTION_MODE=Position Mode
+option.BLACK_HOLE_DIRECTION_MODE.comment=Changes how the black hole's position in the sky is determined. Follow Sun Angle mode makes the black hole follow the End Sun Angle Option Position, Fixed Position mode allows you to set a specific position for the black hole, and Slowly Wandering mode makes the black hole move slowly across the sky over time.
+value.BLACK_HOLE_DIRECTION_MODE.0=Follow Sun Angle
+value.BLACK_HOLE_DIRECTION_MODE.1=Fixed Position
+value.BLACK_HOLE_DIRECTION_MODE.2=Slowly Wandering
+
+option.BLACK_HOLE_LONGITUDE=Longitude
+option.BLACK_HOLE_LONGITUDE.comment=Fixed Position mode: sets the black hole's position around the horizon, in degrees
+
+option.BLACK_HOLE_LATITUDE=Latitude
+option.BLACK_HOLE_LATITUDE.comment=Fixed Position mode: sets the black hole's position above or below the horizon, in degrees
+
+option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY=Longitude Loops Per Day
+option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full loops around the horizon the black hole completes per real-world day.
+
+option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY=Latitude Loops Per Day
+option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full up-and-down oscillations the black hole completes per real-world day. Keep this different from Longitude Loops Per Day for a less repetitive path
