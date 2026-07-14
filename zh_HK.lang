@@ -1299,6 +1299,10 @@ screen.END_BEAMS_FLASH_SETTINGS=末地閃光設定
 screen.END_BEAMS_FLASH_SETTINGS.comment=關於末地光束在發生閃光時的設定. 僅在 Minecraft 1.21.9+ 版本生效.
 screen.END_STAR=星空設定 - 末地
 screen.END_STAR.comment=關於末地星空的設定.
+screen.BLACK_HOLE_SETTINGS=黑洞設定
+screen.BLACK_HOLE_POSITION_SETTINGS=黑洞位置設定
+screen.FIXED_POSITION_BLACK_HOLE_SETTINGS=固定位置
+screen.MOVING_POSITION_BLACK_HOLE_SETTINGS=緩慢地遊走
 screen.STAR_COLORS_END=末地星星顔色
 screen.STARS_OVERWORLD=星空設定 - 主世界
 screen.SHOOTING_STARS_SETTINGS=流星
@@ -3023,3 +3027,46 @@ value.PIXELATED_SHADOWS_MODE.128=手動 128x
 option.PANINI_PROJECTION=帕尼尼投影
 option.PANINI_PROJECTION.comment=啓用帕尼尼投影, 一種會減少屏幕邊緣失真的投影，尤其是在使用高視野值 (FOV)時. §e[-]§r 可能令屏幕中心扭曲, 或令畫面變得模糊.
 value.PANINI_PROJECTION.0=關
+
+option.BLACK_HOLE=黑洞
+option.BLACK_HOLE.comment=在末地的天空盒中增加黑洞. 黑洞位置受 黑洞位置設定 影響
+value.BLACK_HOLE.0=關
+
+option.BLACK_HOLE_SIZE=黑洞大小
+option.BLACK_HOLE_SIZE.comment=改變黑洞大小
+
+option.BLACK_HOLE_RING_SIZE=塵埃圓環大小
+option.BLACK_HOLE_RING_SIZE.comment=改變圍繞黑洞的塵埃圓環大小
+
+option.BLACK_HOLE_RING_COUNT=塵埃圓環數量
+option.BLACK_HOLE_RING_COUNT.comment=改變圍繞黑洞的塵埃圓環數量
+
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT=差異自轉
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT.comment=改變黑洞內沿物質與黑洞外沿的旋轉速度差強度 (黑洞內沿旋轉得更快)
+
+option.BLACK_HOLE_LENSING_STRENGTH=引力透鏡
+option.BLACK_HOLE_LENSING_STRENGTH.comment=改變黑洞扭曲光綫的程度, 產生引力透鏡效果.
+
+option.BLACK_HOLE_LENSING_RANGE=引力透鏡範圍
+option.BLACK_HOLE_LENSING_RANGE.comment=改變引力透鏡圍繞黑洞的範圍大小
+
+option.BLACK_HOLE_LENSING_SWIRL=透鏡旋轉強度
+option.BLACK_HOLE_LENSING_SWIRL.comment=改變引力透鏡效果圍繞黑洞旋轉的程度, 以達成動態視覺效果.
+
+option.BLACK_HOLE_DIRECTION_MODE=位置模式
+option.BLACK_HOLE_DIRECTION_MODE.comment=改變黑洞在空中的位置如何被決定. 跟隨日月斜角模式令黑洞位置跟隨 末地日月斜角 設定, 固定位置模式允許你自定義黑洞的位置 (在空中固定), 緩慢移動模式令黑洞在空中緩慢地隨時間過去而移動.
+value.BLACK_HOLE_DIRECTION_MODE.0=跟隨日月斜角
+value.BLACK_HOLE_DIRECTION_MODE.1=固定位置
+value.BLACK_HOLE_DIRECTION_MODE.2=緩慢移動
+
+option.BLACK_HOLE_LONGITUDE=經度
+option.BLACK_HOLE_LONGITUDE.comment=固定位置模式: 設定黑洞相對於玩家的經度 (以度數計, 正東為0度, 正西為正180或負180度)
+
+option.BLACK_HOLE_LATITUDE=緯度
+option.BLACK_HOLE_LATITUDE.comment=固定位置模式: 設定黑洞相對於玩家的緯度 (以度數計, 世界頂點為90度, 與地平綫同緯度為0度)
+
+option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY=經度週期 (每天)
+option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY.comment=緩慢移動模式: 控制每現實世界天黑洞會完成多少個經度週期 (一個經度週期為水平圍繞玩家一圈)
+
+option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY=緯度週期 (每天)
+option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY.comment=緩慢移動模式: 控制每現實世界天黑洞會完成多少個經度週期 (一個緯度週期為垂直圍繞玩家一圈). 建議將此設定設爲與 經度週期 (每天) 設定不同的數值以避免黑洞路徑過於重複.
