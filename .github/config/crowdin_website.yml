@@ -1,6 +1,6 @@
 project_id_env: "CROWDIN_PROJECT_ID_WEBSITE"
 api_token_env: "CROWDIN_TOKEN"
-base_path: "./website"
+base_path: "../../website"
 
 preserve_hierarchy: true
 
