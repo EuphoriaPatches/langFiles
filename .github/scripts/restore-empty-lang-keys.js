@@ -1,7 +1,7 @@
-// After Crowdin downloads translations, any key whose *source* value in
-// en_US.lang is empty gets dropped from exported files. These empty-value keys are
-// intentional, so this script restores any of them that Crowdin's
-// export dropped.
+// Cleans up Crowdin .lang export quirks before committing:
+// 1. Restores intentionally empty keys that Crowdin drops.
+// 2. Fixes the first-line header path to match the target's filename, not the source's.
+// 3. Trims extra trailing blank lines added to partially translated files.
 "use strict";
 
 const fs = require("fs");
@@ -11,6 +11,7 @@ const ROOT = path.resolve(__dirname, "..", "..");
 const SOURCE_FILE = "en_US.lang";
 
 const ENTRY_RE = /^([^#\s][^=]*)=(.*)$/;
+const HEADER_RE = /^(#.*\/)([^/]+\.lang)$/;
 
 function detectEol(raw) {
   return raw.includes("\r\n") ? "\r\n" : "\n";
@@ -32,20 +33,29 @@ function parseEntries(lines) {
   return entries;
 }
 
+function countTrailingBlankLines(realLines) {
+  let count = 0;
+  for (let i = realLines.length - 1; i >= 0 && realLines[i] === ""; i--) {
+    count++;
+  }
+  return count;
+}
+
 function main() {
   const sourcePath = path.join(ROOT, SOURCE_FILE);
   const sourceRaw = fs.readFileSync(sourcePath, "utf8");
   const sourceLines = splitLines(sourceRaw);
   const sourceEntries = parseEntries(sourceLines);
+  const sourceTrailingNewline =
+    sourceRaw.endsWith("\r\n") || sourceRaw.endsWith("\n");
+  const sourceRealLines = sourceTrailingNewline
+    ? sourceLines.slice(0, -1)
+    : sourceLines;
+  const sourceTrailingBlanks = countTrailingBlankLines(sourceRealLines);
 
   const emptyKeyPositions = sourceEntries
     .map((entry, i) => (entry.value === "" ? i : -1))
     .filter((i) => i !== -1);
-
-  if (emptyKeyPositions.length === 0) {
-    console.log("No empty-valued source keys found - nothing to restore.");
-    return;
-  }
 
   const targetFiles = fs
     .readdirSync(ROOT)
@@ -60,11 +70,22 @@ function main() {
     const lines = splitLines(raw);
     const trailingNewline = raw.endsWith("\r\n") || raw.endsWith("\n");
 
+    let changed = false;
+    const restoredKeys = [];
+
+    // 1. Fix the header line if Crowdin replaced it with the source's own name.
+    if (HEADER_RE.test(sourceLines[0]) && HEADER_RE.test(lines[0])) {
+      const [, prefix] = sourceLines[0].match(HEADER_RE);
+      const expectedHeader = `${prefix}${fileName}`;
+      if (lines[0] !== expectedHeader) {
+        lines[0] = expectedHeader;
+        changed = true;
+      }
+    }
+
+    // 2. Restore intentionally-empty keys that Crowdin dropped.
     let entries = parseEntries(lines);
     let presentKeys = new Set(entries.map((e) => e.key));
-
-    let changed = false;
-    const missing = [];
 
     for (const sourcePos of emptyKeyPositions) {
       const key = sourceEntries[sourcePos].key;
@@ -100,27 +121,41 @@ function main() {
 
       lines.splice(insertAt, 0, `${key}=`);
       changed = true;
-      missing.push(key);
+      restoredKeys.push(key);
 
       // Re-parse since indices shifted after the splice.
       entries = parseEntries(lines);
       presentKeys = new Set(entries.map((e) => e.key));
     }
 
+    // 3. Trim excess trailing blank lines back down to match the source.
+    const realLines = trailingNewline ? lines.slice(0, -1) : lines;
+    let trimmedCount = 0;
+    while (countTrailingBlankLines(realLines) > sourceTrailingBlanks) {
+      realLines.pop();
+      trimmedCount++;
+    }
+    if (trimmedCount > 0) changed = true;
+
     if (changed) {
-      const out = lines.join(eol) + (trailingNewline ? eol : "");
+      const out = realLines.join(eol) + (trailingNewline ? eol : "");
       fs.writeFileSync(filePath, out, "utf8");
       anyChanged = true;
-      console.log(
-        `Restored ${missing.length} empty key(s) in ${fileName}: ${missing.join(", ")}`,
-      );
+      const parts = [];
+      if (restoredKeys.length > 0) {
+        parts.push(
+          `restored ${restoredKeys.length} empty key(s): ${restoredKeys.join(", ")}`,
+        );
+      }
+      if (trimmedCount > 0) {
+        parts.push(`trimmed ${trimmedCount} trailing blank line(s)`);
+      }
+      console.log(`${fileName}: ${parts.join("; ") || "fixed header"}`);
     }
   }
 
   if (!anyChanged) {
-    console.log(
-      "All target files already had every empty-valued key - nothing to restore.",
-    );
+    console.log("Nothing to fix in any target .lang file.");
   }
 }
 
