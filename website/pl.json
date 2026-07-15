@@ -1,6 +1,5 @@
 {
   "pageTitle": "Jak Zainstalować Euphoria Patches",
-
   "modMethodTitle": "Metoda Moda",
   "step1": "Pobierz kompatybilną wersje shaderów Complementary i skopiuj ją do folderu 'shaderpacks'",
   "step1After": "(nie rozpakowywuj, modyfikuj i nie zmieniaj nazwy pliku).",
@@ -10,16 +9,20 @@
   "step2After": "i skopiuj go do folderu modów",
   "step3": "Uruchom gre używając jednego z tych mod loaderów: Fabric | Quilt | Forge | NeoForge",
   "step4": "pojawią się w twoim folderze shaderpacków",
-
   "unsupportedVersions": "W przypadku nieobsługiwanych wersji Minecrafta należy użyć patchera z nowszą wersją Minecrafta, wygenerować Euphoria Patches, a następnie skopiować wygenerowany folder do nieobsługiwanej instancji.",
-
+  "discordContact": "Having trouble with installation?",
+  "discordContactLink": "Join our Discord community",
   "downloadPageButton": "Przejdź Na Stronę Pobierania",
-
+  "supportDevelopment1": "Support development and get access to early exclusive updates?",
+  "supportDevelopment2": "Get the Preview Versions now!",
   "installerMethodTitle": "Metoda Instalatora",
-  "installerStep1Before": "Odwiedź stronę",
   "installerStep1After": "i pobierz instalator",
   "installerStep2": "Otwórz instalator, klikając dwukrotnie pobrany plik",
   "installerStep3": "Teraz kliknij 'Advanced Settings'",
   "installerStep4": "Zatwierdź pole 'Install Euphoria Patches'",
-  "installerStep5": "Kliknij zainstaluj, Shadery Complementary + Euphoria Patches pojawią się teraz w folderze shaderpacków."
+  "installerStep5": "Kliknij zainstaluj, Shadery Complementary + Euphoria Patches pojawią się teraz w folderze shaderpacków.",
+  "windowsInstallerButton": "Windows Installer",
+  "javaInstallerButton": "Universal JAR",
+  "complementaryInstallerButton": "Download Installer",
+  "complementaryWebsiteButton": "Visit Complementary Website"
 }

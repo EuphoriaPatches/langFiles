@@ -1,6 +1,5 @@
 {
   "pageTitle": "Как Установить Euphoria Patches",
-
   "modMethodTitle": "Метод Мода",
   "step1": "Получите необходимую версию Complementary и поместите ее в папку с пакетами шейдеров",
   "step1After": "(не распаковывайте, не изменяйте и не переименовывайте его).",
@@ -10,16 +9,20 @@
   "step2After": "и поместите его в папку с модами.",
   "step3": "Запустите игру, используя любой из вариантов: Fabric | Quilt | Forge | NeoForge",
   "step4": "теперь появится в вашей папке с пакетами шейдеров",
-
   "unsupportedVersions": "Для неподдерживаемых версий Minecraft используйте патчер с более новой версией Minecraft, сгенерируйте Euphoria Patches, а затем скопируйте сгенерированную папку с пакетами шейдеров в неподдерживаемый экземпляр.",
-
+  "discordContact": "Having trouble with installation?",
+  "discordContactLink": "Join our Discord community",
   "downloadPageButton": "Перейти На Страницу Скачивания",
-
+  "supportDevelopment1": "Support development and get access to early exclusive updates?",
+  "supportDevelopment2": "Get the Preview Versions now!",
   "installerMethodTitle": "Метод Установщика",
-  "installerStep1Before": "Перейдите на",
   "installerStep1After": "и загрузите установщик",
   "installerStep2": "Откройте установщик, дважды щелкнув по загруженному файлу",
   "installerStep3": "Теперь нажмите на 'Advanced Settings'",
   "installerStep4": "Установите флажок 'Install Euphoria Patches'",
-  "installerStep5": "Нажмите на кнопку установить, Complementary Shaders + Euphoria Patches теперь появится в вашей папке с пакетами шейдеров"
+  "installerStep5": "Нажмите на кнопку установить, Complementary Shaders + Euphoria Patches теперь появится в вашей папке с пакетами шейдеров",
+  "windowsInstallerButton": "Windows Installer",
+  "javaInstallerButton": "Universal JAR",
+  "complementaryInstallerButton": "Download Installer",
+  "complementaryWebsiteButton": "Visit Complementary Website"
 }
