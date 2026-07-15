@@ -1,4 +1,4 @@
-#shaders/lang/zh_HK.lang
+#shaders/lang/en_us.lang
 
 #Profiles
 profile.POTATO=性能需求: §a極低
@@ -1926,7 +1926,7 @@ option.NETHER_PORTAL_VARIATION=下界傳送門預設
 option.NETHER_PORTAL_VARIATION.comment=可供選擇的不同風格的下界傳送門預設. §e[*]§r 資源包支持選項需設定為集成PBR+.
 value.NETHER_PORTAL_VARIATION.0=原版
 value.NETHER_PORTAL_VARIATION.1=水印類型
-value.NETHER_PORTAL_VARIATION.2=Purple Void
+value.NETHER_PORTAL_VARIATION.2=紫色虛空
 
 option.BIOME_COLORED_NETHER_PORTALS=變色龍地獄門
 option.BIOME_COLORED_NETHER_PORTALS.comment=下界傳送門的顔色將由玩家所處羣系的顔色編碼變色.
@@ -1940,8 +1940,8 @@ value.NETHER_PORTAL_NOISE.2=像素化
 option.END_PORTAL_VARIATION=末地傳送門預設
 option.END_PORTAL_VARIATION.comment=可供選擇的不同風格的末地傳送門預設. §e[*]§r 資源包支持選項需設定為集成PBR+.
 value.END_PORTAL_VARIATION.0=水印類型
-value.END_PORTAL_VARIATION.1=Smudged Strings
-value.END_PORTAL_VARIATION.3=Pixelated Salsa
+value.END_PORTAL_VARIATION.1=髒亂綫條
+value.END_PORTAL_VARIATION.3=像素薩爾薩醬
 
 option.END_PORTAL_BEAM=末地傳送門射束 §e[Iris]§r
 option.END_PORTAL_BEAM.comment=在末地傳送門的邊緣添加光束. 類似於《我的世界：地下城》. §e[*]§r 僅在 Iris 光影加載器下生效. §e[*]§r 不支持 MacOS.
@@ -1971,10 +1971,10 @@ option.LAVA_VARIATION=巖漿預設
 option.LAVA_VARIATION.comment=讓你所在區域的巖漿更躁動的預設. 來選擇吧!
 value.LAVA_VARIATION.0=水印類型
 value.LAVA_VARIATION.1=自適應噪聲 (推薦)
-value.LAVA_VARIATION.2=Blushing Hotness
-value.LAVA_VARIATION.3=Molten Cheese
-value.LAVA_VARIATION.4=Dark Islands
-value.LAVA_VARIATION.5=Chaotic Flow
+value.LAVA_VARIATION.2=溫紅熱流
+value.LAVA_VARIATION.3=熔岩芝士
+value.LAVA_VARIATION.4=暗黑群島
+value.LAVA_VARIATION.5=無序急流
 
 option.LAVA_TEMPERATURE=巖漿色溫
 option.LAVA_TEMPERATURE.comment=改變巖漿的色溫, 讓它更紅或者更白.
@@ -2497,7 +2497,7 @@ value.FROGLIGHT_SATURATION.1=默認
 value.FROGLIGHT_SATURATION.2=2x
 value.FROGLIGHT_SATURATION.3=3x
 
-option.RENKO_CUT=Renko's Cut of EP
+option.RENKO_CUT=屬於Renko的EP
 option.RENKO_CUT.comment=Earned in a fair fight in the Complisseum. §e譯者注§r. 本選項是由 gri573 為 Renko 添加的一個特別設定. 具體效果是在屏幕上用小刀雕刻一遍 Renko 這個名字.
 
 option.GLITTER_RAIN=閃光雨
