@@ -2,7 +2,8 @@
 
 Welcome to the community-driven translation files!
 
+## PRs no longer accepted. We moved to Crowdin! https://crowdin.com/profile/spaceagle17
+
 ## How to contribute
 
-- A Pull Request can be opened and the changes will be merged with Euphoria Patches.
-- The raw translation file can also be shared on [discord](https://discord.gg/5N45SAsC3X) for those who have not worked with GitHub before
+Go to https://crowdin.com/profile/spaceagle17 and start editing!
