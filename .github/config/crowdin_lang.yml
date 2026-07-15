@@ -10,13 +10,3 @@ files:
     type: "properties"
     update_option: "update_as_unapproved"
     escape_special_characters: 0
-
-# Minecraft-style locale codes used by this repo's .lang files don't all
-# match Crowdin's default codes (e.g. Crowdin uses "ru", the file is ru_RU.lang).
-languages_mapping:
-  locale_with_underscore:
-    ja: ja_JP
-    ko: ko_KR
-    pl: pl_PL
-    ru: ru_RU
-    uk: uk_UA
