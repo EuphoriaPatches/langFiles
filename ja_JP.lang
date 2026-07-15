@@ -1,4 +1,4 @@
-#shaders/lang/en_us.lang
+#shaders/lang/ja_JP.lang
 
 #Profiles
 profile.POTATO=品質: §a最低
@@ -19,69 +19,95 @@ screen.INFORMATION2=Complementaryの情報
 screen.INFORMATION2.comment=このセクションには、情報提供のためだけに存在するボタンが含まれています。
 
 option.info0=§bボタンにマウスを乗せてください
+value.info0.0=
 option.info0.comment=このセクションには、情報提供のためだけに存在するボタンが含まれています。
 
 option.info1=パフォーマンスを向上させる方法
+value.info1.0=
 option.info1.comment=Minecraftにおけるパフォーマンスは、多くの要因に影響される複雑な問題ですが、一般的なアドバイスとしては以下が挙げられます:. 描写距離を減らす。 (ほとんどのデバイスでは6から16の範囲が理想的です). 「プロファイル」設定を下げる。 (これらはパフォーマンスと視覚的忠実度の比率が最適化されるよう慎重にテストされています). 詳細な情報は今後追加されます。
 
 option.info2=最適な設定とは
+value.info2.0=
 option.info2.comment=最適な設定が何かは主観的ですが、デフォルト設定を使用することでほとんどの人にとってほぼ最良の結果が得られます。. デフォルト設定は、コミュニティによる長年の評価とフィードバックに基づいて形作られ、パフォーマンスと視覚的忠実度の比率に細心の注意を払っています。. とはいえ、自由に設定を変更して楽しむのは良いことです！
 
 option.info3=プロファイルとビジュアルスタイル
+value.info3.0=
 option.info3.comment=「プロファイル」設定は「パフォーマンス設定」メニューの設定のみを変更し、ビジュアルスタイルなどの個人設定には影響を与えません。. 「ビジュアルスタイル」は、多くの個人設定にある「スタイル依存」に設定された値を変更しますが、パフォーマンスには大きな影響を与えません。
 
 option.info4=RPサポートとは
+value.info4.0=
 option.info4.comment=「RPサポート」設定は、シェーダーパックがMinecraftのブロックそれぞれをどのように扱うかを決定します。. たとえば、§bIntegratedPBR+§rでは金ブロックが光沢のあるものとして扱われますが、§elabPBR§rや§eseuspbr§rではリソースパックをインストールしてシェーダーにその情報を伝える必要があります。. RPサポートを§aBasic§rに設定すると、水などのいくつかの例外を除いて、ブロックは「特別」扱いされません。
 
 option.info5=黄色の設定はなんですか？
+value.info5.0=
 option.info5.comment=名前が黄色くなっている設定は、「パフォーマンス設定」カテゴリに含まれませんが、パフォーマンスに一定の影響を与える設定です。. 有効にしたときに赤くなる設定は、パフォーマンスコストが非常に大きいことを示しています。
+option.info6=
+value.info6.0=
+option.info6.comment=
+option.info7=
+value.info7.0=
+option.info7.comment=
 
 
 
 option.info8=コミュニティに参加する方法
+value.info8.0=
 option.info8.comment=ComplementaryのDiscordサーバーに参加して、フレンドリーなコミュニティに加わり、開発者や経験豊富なコミュニティメンバーと連絡を取ることができます。. www.complementary.dev/discord
 
 option.info9=Complementaryをサポートする方法
+value.info9.0=
 option.info9.comment=Complementaryの開発をサポートする最良の方法は、友人やSNSで共有することですが、Patreonで開発者を直接サポートすることもできます。. www.patreon.com/emingt
 
 option.info10=クレジット
+value.info10.0=
 option.info10.comment=EminGT: Complementaryのメイン開発者。. Capt Tatsu: BSLシェーダーの開発者であり、彼の寛大さがComplementaryの実現を可能にしました。. スペシャルサンクス: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§dEuphoria Patchesとは
+value.info11.0=
 option.info11.comment=Euphoria Patchesは、SpacEagle17によって開発されたComplementary Shadersのアドオンです。. より多くの機能と設定を追加することで、Complementaryを拡張することを目的としています。
 
 option.info12=Euphoria Patchesの設定
+value.info12.0=
 option.info12.comment=Euphoriaのすべてのオプションはデフォルトで無効になっており、ユーザーが有効にする項目を選択できます。. 「人気の設定」カテゴリには、最も人気のあるEuphoria Patchesの機能があります。. その他にも無数の設定があり、アップデートごとにさらに追加されるので、自由に試して楽しんでください！
 
 option.info13=EuphoriaのModサポート
+value.info13.0=
 option.info13.comment=Euphoria Patchesはデフォルトで他Modブロックのサポートを追加することで、Complementaryよりも強力なMOD互換性を持っています。 (block.propertiesを参照). 自動発光テクスチャおよび光源ブロック検知。. SSS(サブサーフェス・スキャッタリング)が自動的に適用される植物モデルの検知。
 
 option.info14=コミュニティに参加
+value.info14.0=
 option.info14.comment=Euphoria PatchesのDiscordサーバーに参加して質問、楽しいコミュニティおよび最新のニュースにキャッチアップしましょう。. §d§l§neuphoriapatches.com/discord
 
 option.info15=Euphoria Patchesのクレジット
+value.info15.0=
 option.info15.comment=クレジットの全文は、§deuphoriapatches.com/credits§rに記載されています。. isuewo - Euphoria Patchesの元共同開発者。. EminGT: Complementaryのメイン開発者。. Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§d§nEuphoria Patchesをサポートする方法
+value.info16.0=
 option.info16.comment=Euphoria Patchesをサポートする方法は、アップデートに興味を持ち他の人に共有することですが、PatreonやKo-FiでSpacEagle17を直接サポートし、限定のベータ版にアクセスすることもできます。. §d§l§neuphoriapatches.com/support
 
 option.info17=ベータ版: SpacEagle17のPatreon
+value.info17.0=
 option.info17.comment=PatreonやKo-FiでSpacEagle17をサポートして限定開発バージョンにアクセスできます。. §d§l§neuphoriapatches.com/support
 
 option.info18=Complementary r5.9用
+value.info18.0=
 option.info18.comment=Euphoria Patchesをご利用いただきありがとうございます :)
 
 option.info19=§a新しいアップデート
 value.info19.0=§cX.Y.Z §r->§a X.Y.Z
 option.info19.comment=EuphoriaPatcher Modの新しいバージョンが利用可能です。. Modrinthからダウンロードしてください: https://euphoriapatches.com/download
+option.info20=
 
 value.info20.0=§aeuphoriapatches.com/download
 option.info20.comment=EuphoriaPatcher Modの新しいバージョンが利用可能です。. Modrinthからダウンロードしてください: https://euphoriapatches.com/download
 
 option.info21=よくある質問
+value.info21.0=
 option.info21.comment=FAQページを参照してよくある質問への解答を確認してください。. §d§l§neuphoriapatches.com/faq
 
 option.info22=§dスクロールしてさらに設定を表示
+value.info22.0=
 option.info22.comment=GUIのサイズが大きいと、一部の設定が隠れてしまうことがあります。. 下にスクロールして表示しましょう。
 
 #Style
@@ -2635,17 +2661,3 @@ value.PIXELATED_SHADOWS_MODE.16=16x固定
 value.PIXELATED_SHADOWS_MODE.32=32x固定
 value.PIXELATED_SHADOWS_MODE.64=64x固定
 value.PIXELATED_SHADOWS_MODE.128=128x固定
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-#shaders/lang/en_us.lang
+#shaders/lang/zh_HK.lang
 
 #Profiles
 profile.POTATO=性能需求: §a極低
@@ -19,69 +19,95 @@ screen.INFORMATION2=Complementary 提示信息
 screen.INFORMATION2.comment=此部分包含的選項按鈕僅用於展示信息.
 
 option.info0=§b懸停你的鼠標指針在這些按鈕上
+value.info0.0=
 option.info0.comment=按鈕僅供信息展示.
 
 option.info1=如何得到更好的體驗
+value.info1.0=
 option.info1.comment=討論在 Minecraft 裏如何獲取一個相對更好的體驗是個很複雜的話題, 因為它受太多因素影響了. 但你至少可以嘗試這些.... ①減小渲染距離/視距, 在任何設備上都推薦在 6-16 這個區域中根據具體情況選擇. ②降低光影的配置文件設定. 更多的建議會隨後添加.
 
 option.info2=什麼是最佳設定
+value.info2.0=
 option.info2.comment=最佳設定其實是很主觀的, 但對於絕大多數人來說, 本光影的默認配置是經過多年社區評估和反饋得來的, 並且它也很注重視覺效果/性能消耗比. 但大家依舊能根據自己的喜好和樂趣來自由調節選項.
 
 option.info3=什麼是配置文件和視覺風格
+value.info3.0=
 option.info3.comment=至少在本光影裏, 配置文件 設定會改變 性能設定 菜單中的選項, 並且不會影響那些基於玩家個人偏好的設定. 視覺風格 選項會改變很多位於 偏好 設定選項裏的 由所選風格決定 值, 但其實它對性能影響不大.
 
 option.info4=什麼是資源包支持
+value.info4.0=
 option.info4.comment=資源包支持 選項決定光影包如何處理 Minecraft 那些不同的方塊.例如: §b集成PBR+§r 會對金塊這類的方塊賦予發生反射的屬性, 但 §elabPBR§r 或 §eseuspbr§r 則需要你去安裝一個支持 PBR 的資源包來告訴光影怎麼判斷這些方塊的類型. 如果設定為 §a基本§r 則會讓所有方塊都不那麼特殊, 當然, 像水方塊這類的例外.
 
 option.info5=標黃的選項有什麼含義
+value.info5.0=
 option.info5.comment=標記為黃色的選項表示: 儘管不位於 性能設定 分類裏, 它們對性能影響也是可以被衡量的. 如果調節這個選項使得數值文本變紅, 意味着將會消耗大量的性能.
+option.info6=
+value.info6.0=
+option.info6.comment=
+option.info7=
+value.info7.0=
+option.info7.comment=
 
 
 
 option.info8=如何加入 Complementary 社區
+value.info8.0=
 option.info8.comment=你可以通過加入 Complementary Discord 服務器來加入我們友好的社區, 在這裏可以聯繫到開發者和一些有經驗的社區成員. 鏈接: www.complementary.dev/discord
 
 option.info9=如何支持 Complementary
+value.info9.0=
 option.info9.comment=最好的方式當然是在社交平臺上友好地分享關於 Complementary 相關的截圖或視頻啦. 但也可以直接在 Patreon 上支持呀. 鏈接: www.patreon.com/emingt
 
 option.info10=致謝
+value.info10.0=
 option.info10.comment=EminGT: Complementary 光影的主要開發者. Capt Tatsu: BSL 光影的開發者, 沒有他的慷慨, 最初的 Complementary 不可能出現. 特別致謝: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§d什麼是 Euphoria Patches ?
+value.info11.0=
 option.info11.comment=Euphoria Patches 是 Complementary 光影的一個附加, 由 SpacEagle17 開發. 旨在通過更多定製功能和可選選項來擴展 Complementary 光影的功能.
 
 option.info12=Euphoria Patches 設定
+value.info12.0=
 option.info12.comment=所有的 Euphoria 設定默認禁用, 由用戶按需開啓. 可從位於 §d流行§b設定§r 分類下找到時下最受歡迎的 Euphoria Patches 設定. 在其他分類下仍有數不盡的其他設定, 會有更多功能隨着每次的更新而添加, 大家玩的開心!
 
 option.info13=Euphoria 額外模組方塊支持
+value.info13.0=
 option.info13.comment=Euphoria Patches 旨在通過默認置入更多模組的方塊 ID 實現比普通 Complementary 更好的模組方塊兼容 (請查看 block.properties). 自動應用自發光的光源方塊檢測. 自動應用次表面散射的植物模型檢測.
 
 option.info14=加入社區
+value.info14.0=
 option.info14.comment=如果想提問, 瞭解 Euphoria Patches 的最新消息, 可以加入這個有趣的 Discord 服務器. §d§l§neuphoriapatches.com/discord
 
 option.info15=Euphoria Patches 致謝
+value.info15.0=
 option.info15.comment=完整致謝名單可以訪問 §deuphoriapatches.com/credits§r 來查看. isuewo - Euphoria Patches 的前合作開發者. EminGT: Complementary 的主開發者. Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§d§n如何支持 Euphoria Patches
+value.info16.0=
 option.info16.comment=使用 Euphoria Patches 即是最好的支持. 向更多人推薦和介紹本光影, 保持對我們未來的更新內容的好奇和熱情. 可以直接通過 Patreon 和 Ko-Fi 來給予金錢支持的同時獲得開發版本的光影文件. §d§l§neuphoriapatches.com/support
 
 option.info17=測試版本: 從SpacEagle17的Patreon獲取
+value.info17.0=
 option.info17.comment=可以直接通過 Patreon 和 Ko-Fi 對 SpacEagle17 進行支持的同時獲得光影的獨佔開發版本. §d§l§neuphoriapatches.com/support
 
 option.info18=對應 Complementary r5.9 版本
+value.info18.0=
 option.info18.comment=感謝您安裝 Euphoria Patches :)
 
 option.info19=§a有可用的更新
 value.info19.0=§cX.Y.Z §r->§a X.Y.Z
 option.info19.comment=EuphoriaPatcher 模組有新的版本. 從 Modrinth 下載: https://euphoriapatches.com/download.
+option.info20=
 
 value.info20.0=§aeuphoriapatches.com/download
 option.info20.comment=EuphoriaPatcher 模組有新的版本. 從 Modrinth 下載: https://euphoriapatches.com/download.
 
 option.info21=常見問題解答
+value.info21.0=
 option.info21.comment=請查看 FAQ 頁面去查找常見問題的解答. §d§l§neuphoriapatches.com/faq
 
 option.info22=§d滾動菜單以查看更多設定
+value.info22.0=
 option.info22.comment=使用較大的 GUI 尺寸時, 部分設定可能被隱藏, 向下滾動將顯示它們.
 
 #Style

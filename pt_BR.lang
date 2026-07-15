@@ -1,4 +1,4 @@
-#shaders/lang/en_us.lang
+#shaders/lang/pt_BR.lang
 
 #Profiles
 profile.POTATO=Desempenho: §aResolução de calculadora
@@ -19,69 +19,95 @@ screen.INFORMATION2=Informação do Complementary
 screen.INFORMATION2.comment=Esta seção contém apenas botões que existem para fornecer informações.
 
 option.info0=§bPasse o mouse sobre um botão.
+value.info0.0=
 option.info0.comment=Esta seção contém apenas botões que existem para fornecer informações.
 
 option.info1=Como deixar o jogo com mais desempenho.
+value.info1.0=
 option.info1.comment=Desempenho é um tópico complexo no Minecraft porque isso pode ser afetado por várias coisas, mas você pode tentar qualquer um desses:. Reduzir sua render distance(distância renderização),A melhor configuração para a maioria dos dispositivos é entre 6 á 16 chunks. Reduza a configuração do shaders "Profile", Estes foram cuidadosamente testados para oferecer a melhor relação entre qualidade visual e desempenho. Mais informações serão adicionadas posteriormente.
 
 option.info2=Quais são as melhores configurações?
+value.info2.0=
 option.info2.comment=As melhores configurações são subjetiva,mas ao usar a configuração padrão será o ideal para a maioria das pessoas. As configurações padrão foram ajustadas ao longo de anos com base nas avaliações e no feedback da comunidade, sempre com muita atenção ao equilíbrio entre visual e desempenho. Mas você ainda deve se sentir à vontade para fazer ajustes e se divertir com isso!
 
 option.info3=O que é "Profile" ou "Visual Style"
+value.info3.0=
 option.info3.comment=A configuração "Profile" altera as configurações encontradas no menu "Configurações de Desempenho", sem afetar nenhuma configuração baseada em preferências. "Visual Style" altera os valores "Set by Style" que existem em muitas configurações baseadas em preferências, mas isso não impacta o desempenho de forma significativa.
 
 option.info4=O que é §5RP Support§r
+value.info4.0=
 option.info4.comment=A opção §5RP Support§r determina como o shader irá tratar diferentes blocos do Minecraft. Por exemplo, §bIntegratedPBR+§r trata os blocos de ouro como um bloco que reflete as coisa, enquanto o §elabPBR§r ou §eseuspbr§r nessecitam que você instale um resource pack para informar isso ao shaders. Configurando o §5RP Support§r para §aBasic§r Fará com que nenhum bloco seja considerado "especial", com exceção de alguns casos, como a água.
 
 option.info5=Como consertar a incompatibilidade com mods
+value.info5.0=
 option.info5.comment=A incompatibilidade com mods são inevitáveis com shaderpack por causa da forma que eles funcionam, mas você pode dar uma olhada nessa  página de informação sobre problema entre os mods e o Complementary para ver várias correções conhecidas. Acesse: www.complementary.dev/mod-issues
+option.info6=
+value.info6.0=
+option.info6.comment=
+option.info7=
+value.info7.0=
+option.info7.comment=
 
 
 
 option.info8=Como se juntar a nossa comunidade
+value.info8.0=
 option.info8.comment=Você pode se juntar á nossa amigável comunidade do Discord §1Complementary §r, E assim você poderá entrar em contato com desenvolvedores ou membros experientes da comunidade. acesse: www.complementary.dev/discord
 
 option.info9=Como  apoiar o  §1Complementary §r
+value.info9.0=
 option.info9.comment=A melhor forma de apoiar o desenvolvimento da  §1Complementary Shaders §r é compartilhando com seus amigos ou nas redes sociais, mas você pode apoiar diretamente os desenvolvedores no Patreon. acesse: www.patreon.com/emingt
 
 option.info10=Créditos
+value.info10.0=
 option.info10.comment=§4EminGT§r: Desenvolvedor principal do Complementary Shaders  §5Capt Tatsu §r: Desenvolvedor do BSL Shaders,com a generosidade dele fez com que Complementary pudesse existir para inicio de conversa.  §6 Agradecimentos Especiais: §r  §1IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, plazmal §r
 
 option.info11=§dO que é §5Euphoria Patches.§r
+value.info11.0=
 option.info11.comment=§5Euphoria Patches§r é  um add-on para o Complementary Shaders, desenvolvido por SpacEagle17. Ele tem como objetivo expandir o Complementary com mais recursos e configurações opcionais feitos manualmente.
 
 option.info12=Configurações do  §5Euphoria Patches§r
+value.info12.0=
 option.info12.comment=Todas opções do §5Euphoria§r estão desabilitado por padrão e o usuário que pode decidir quando ativar. embaixo das Categorias de Configurações Populares, é possível encontrar os recursos mais populares do Euphoria Patches. Incontáveis outras configurações existem e mais! são adicionadas a cada atualização. Divirta-se explorando!
 
 option.info13=Suporte do §5Euphoria§r Mod
+value.info13.0=
 option.info13.comment=O §5Euphoria Patches§r tem como objetivo em dar o melhor suporte para blocos modificados do que o complementary padrão, ao incluir o suporte nativo para blocos modificados (check block.properties). Detecção de Fontes de luz (Light Source detection) com emissão aplicada automáticamente. Detecção de modelos de folhagem com SSS aplicado automaticamente.
 
 option.info14=Junte-se a comunidade
+value.info14.0=
 option.info14.comment=Participe do servidor Discord do §5Euphoria Patches§r para tirar dúvidas, fazer parte de uma comunidade divertida e ficar por dentro das últimas novidades. §d§l§neuphoriapatches.com/discord
 
 option.info15=Créditos do §5Euphoria Patches§r
+value.info15.0=
 option.info15.comment=A maioria das colaboração pode ser acessado no site: §deuphoriapatches.com/credits§r. §6isuewo - Ex-co-desenvolvedor do §5Euphoria Patches.§r §6EminGT: Desenvolvedor principal do Complementary. §6Capt Tatsu, gri573, FoZy STYLE, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.§r
 
 option.info16=§d§nComo apoiar o §5Euphoria Patches§r
+value.info16.0=
 option.info16.comment=Você pode apoiar o  §5Euphoria Patches§rSendo curioso sobre as novas atualizações e compartilhando com outras pessoas, você já está ajudando, mas também pode apoiar diretamente o SpacEagle17 no Patreon ou Ko-Fi e acessar versões beta exclusivas. §d§l§neuphoriapatches.com/support
 
 option.info17=Versões Beta: SpacEagle17 Patreon
+value.info17.0=
 option.info17.comment=Você pode apoiar o SpacEagle17 no Patreon ou Ko-Fi, e tenha o acesso exclusivo de versões em desenvolvimento. acesse: §d§l§neuphoriapatches.com/support
 
 option.info18=For Complementary r5.9
+value.info18.0=
 option.info18.comment=Obrigado por instalar o   §5Euphoria Patches§r :)
 
 option.info19=§aNova Atualização
 value.info19.0=§cX.Y.Z §r->§a X.Y.Z
 option.info19.comment=Uma nova versão do  §5EuphoriaPatcher§r Mod está disponível para download. Baixe lá na página do Modrinth: https://euphoriapatches.com/download.
+option.info20=
 
 value.info20.0=§aeuphoriapatches.com/download
 option.info20.comment=Uma nova versão do  §5EuphoriaPatcher§r Mod está disponível para download. Baixe lá na página do Modrinth: https://euphoriapatches.com/download.
 
 option.info21=Dúvidas Frequentemente perguntadas
+value.info21.0=
 option.info21.comment=Dê uma olhada na página do FAQ para achar respostas para suas perguntas. §d§l§neuphoriapatches.com/faq
 
 option.info22=§dMais Opções ao Rolar
+value.info22.0=
 option.info22.comment=Em GUIs grandes, algumas opções podem ficar ocultas. Role para baixo para revelá-las.
 
 #Style
@@ -2860,15 +2886,3 @@ option.PANINI_PROJECTION.comment=Ativa a Projeção Panini, um tipo de projeçã
 value.PANINI_PROJECTION.0=DESLIGADO
 
 value.BLACK_HOLE.0=Desligado
-
-
-
-
-
-
-
-
-
-
-
-
