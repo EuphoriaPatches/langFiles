@@ -6,15 +6,14 @@ preserve_hierarchy: true
 
 files:
   - source: "/en.json"
-    translation: "/%locale%.json"
+    translation: "/%locale_with_underscore%.json"
     type: "json"
     update_option: "update_as_unapproved"
 
-# Ones with no country code need to have it added here!!!!
-# Crowdin's default %locale% is region-qualified for several languages
-# (e.g. French -> fr-FR) even though the target language has no dialect.
+# Every language here has to also be in the crowdin project
+# This is a mapping of the crowdin language codes to the ones used in the website.
 languages_mapping:
-  locale:
+  locale_with_underscore:
     fr: fr
     de: de
     he: he
@@ -27,3 +26,7 @@ languages_mapping:
     th: th
     tr: tr
     uk: uk
+    pt-BR: pt-BR
+    es-ES: es-ES
+    zh-CN: zh-CN
+    zh-HK: zh-HK
