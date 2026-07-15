@@ -141,6 +141,7 @@ jobs:
           source_branch: ${{ env.LOCALIZATION_BRANCH }}
           target_branch: ${{ env.TARGET_BRANCH }}
           label: "translations"
+          create_missing_labels: true
           title: "New Crowdin translations"
           body: |
             New translations from Crowdin.
