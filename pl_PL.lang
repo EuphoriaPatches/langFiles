@@ -1,7 +1,4 @@
-#shaders/lang/pl_PL.lang
-
-# TŁUMACZENIE WYKONANE PRZEZ SPOŁECZNOŚĆ
-# Tłumaczenie wykonane przez Acer (Alex) - Tłumaczenie może być nieaktualne. SpacEagle17 nie może tego zagwarantować.
+#shaders/lang/en_us.lang
 
 #Profiles
 profile.POTATO=Jakość: §aZiemniak
@@ -17,6 +14,9 @@ profile.comment=Profile shaderów zmieniają ustawienia jakości z najbardziej z
 #Information
 screen.INFORMATION=Informacja
 screen.INFORMATION.comment=Ta sekcja zawiera przyciski, które służą wyłącznie do przekazywania informacji.
+
+screen.INFORMATION2=Complementary Information
+screen.INFORMATION2.comment=Ta sekcja zawiera przyciski, które służą wyłącznie do przekazywania informacji.
 
 option.info0=§bNajedź kursorem myszy na przycisk
 value.info0.0=
@@ -66,7 +66,7 @@ option.info11=§dCzym jest Euphoria Patches
 value.info11.0=
 option.info11.comment=Euphoria Patches jest dodatkiem do shaderów Complementary, stworzonym przez SpacEagle17. Ma on na celu rozszerzenie shaderów Complementary o więcej możliwości modyfikacji istniejących funkcji, a zarazem wiele zupełnie nowych funkcji, zbudowanych od podstaw. Wszystkie opcje Euphorii są domyślnie wyłączone, a użytkownik może zdecydować, co chce włączyć.
 
-option.info12= Ustawienia Euphoria Patches
+option.info12=Ustawienia Euphoria Patches
 value.info12.0=
 option.info12.comment=Wszystkie opcje Euphorii są domyślnie wyłączone, a użytkownik może zdecydować, co włączyć. W kategorii Popularne ustawienia można znaleźć najpopularniejsze funkcje Euphoria Patches. Istnieją niezliczone inne ustawienia, a z każdą aktualizacją dodawane są kolejne - miłego majsterkowania!
 
@@ -80,7 +80,7 @@ option.info14.comment=Euphoria Patches, a także zwykłe Complementary używają
 
 option.info15=Euphoria Patches - podziękowania
 value.info15.0=
-option.info15.comment= Pełna lista znajduje się w "credits.txt" w folderze shadera. isuewo dawny co-deweloper Euphoria Patches. EminGT: Główny deweloper shaderów Complementary. Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
+option.info15.comment=Pełna lista znajduje się w "credits.txt" w folderze shadera. isuewo dawny co-deweloper Euphoria Patches. EminGT: Główny deweloper shaderów Complementary. Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
 
 option.info16=§d§nJak wesprzeć Euphoria Patches
 value.info16.0=
@@ -380,7 +380,7 @@ option.ATM_FOG_ALTITUDE=Poziom Mgły Atmosferycznej
 option.ATM_FOG_ALTITUDE.comment=Określa wysokość, na której mgła atmosferyczna jest najbardziej widoczna.
 
 option.CAVE_FOG=Mgła w Jaskiniach
-option.CAVE_FOG.comment=Dodaje dodatkową mgłę głęboko pod ziemią.
+option.CAVE_FOG.comment=Włącz lub wyłącz mgłe w jaskiniach.
 
 option.LIGHTSHAFT_BEHAVIOUR=Tryb Snopów Światłą
 option.LIGHTSHAFT_BEHAVIOUR.comment=Określa zachowanie snopów światła. §a[+]§r Snopy Światła Świadome Sceny automatycznie przechodzą między trybem zwykłym i ekstremalnym, aby osiągnąć najlepsze rezultaty. §c[-]§r Tryb ekstremalny nie jest zalecany do ogólnej rozgrywki i może poważnie wpłynąć na wydajność.
@@ -395,7 +395,8 @@ option.LIGHTSHAFT_SMOKE.comment=Dodaje wolumetryczny dym do snopów świetła. �
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Specjalne Snopy Świała w Bladym Ogrodzie
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Sprawia, że snopy światła wyglądają wyjątkowo w biomie „Blady Ogród”.
 
-option.LIGHTSHAFT_DAY_I=Mnożnik Snopów Światła w trakcie Dnia
+option.LIGHTSHAFT_NOON_I=Light Shaft Noon Multiplier
+option.LIGHTSHAFT_SUNSET_I=Light Shaft Sunset Multiplier
 option.LIGHTSHAFT_NIGHT_I=Mnożnik Snopów Światła w trakcie Nocy
 option.LIGHTSHAFT_RAIN_I=Mnożnik Snopów Światła w trakcie Deszczu
 
@@ -597,31 +598,8 @@ option.WATER_SIZE_MULT.comment=Dostosowuje wielkość fal widocznych na wodzie.
 option.SUN_ANGLE=Kąt Słońca/Księżyca
 option.SUN_ANGLE.comment=Dostosowuje kąt słońca/księżyca względem świata w południe. §a[+]§r Styl Reimagined został specjalnie zaprojektowany, aby kąt "0" działał równie dobrze jak inne.
 value.SUN_ANGLE.-1=Określony przez Styl
-value.SUN_ANGLE.60=60
-value.SUN_ANGLE.55=55
-value.SUN_ANGLE.50=50
-value.SUN_ANGLE.45=45
-value.SUN_ANGLE.40=40
-value.SUN_ANGLE.35=35
-value.SUN_ANGLE.30=30
-value.SUN_ANGLE.25=25
-value.SUN_ANGLE.20=20
-value.SUN_ANGLE.15=15
-value.SUN_ANGLE.10=10
-value.SUN_ANGLE.5=5
 value.SUN_ANGLE.0=0 §r(§bReimagined§r)
-value.SUN_ANGLE.-5=-5
-value.SUN_ANGLE.-10=-10
-value.SUN_ANGLE.-15=-15
-value.SUN_ANGLE.-20=-20
-value.SUN_ANGLE.-25=-25
-value.SUN_ANGLE.-30=-30
-value.SUN_ANGLE.-35=-35
 value.SUN_ANGLE.-40=-40 §r(§dUnbound§r)
-value.SUN_ANGLE.-45=-45
-value.SUN_ANGLE.-50=-50
-value.SUN_ANGLE.-55=-55
-value.SUN_ANGLE.-60=-60
 
 option.SUN_MOON_STYLE_DEFINE=Styl Słońca/Księżyca
 option.SUN_MOON_STYLE_DEFINE.comment=Określa styl słońca/księżyca. §e[*]§r To ustawienie może niepoprawnie współdziałać z niektórymi pakietami zasobów ze względu na techniczne trudności w rozróżnianiu słońca/księżyca/sklepienia.
@@ -646,8 +624,8 @@ option.NIGHT_STAR_AMOUNT.comment=Określa ilość gwiazd na nocnym niebie.
 value.NIGHT_STAR_AMOUNT.0=Brak
 value.NIGHT_STAR_AMOUNT.1=Niska
 value.NIGHT_STAR_AMOUNT.2=Średnia
-value.NIGHT_STAR_AMOUNT.3=Wysoka
 value.NIGHT_STAR_AMOUNT.3=Bardzo Wysoka
+value.NIGHT_STAR_AMOUNT.4=Bardzo Dużo
 
 option.RAINBOWS=Tęcze
 option.RAINBOWS.comment=Włącza tęcze, które pojawiają się po przeciwnej stronie słońca rano/wieczorem.
@@ -717,7 +695,7 @@ option.PIXEL_SCALE.comment=Skalowanie robione na teksturach.
 value.PIXEL_SCALE.-2=0.25x
 value.PIXEL_SCALE.-1=0.5x
 value.PIXEL_SCALE.1=1x
-value.PIXEL_SCALE.2=2x
+value.PIXEL_SCALE.2=x2
 value.PIXEL_SCALE.3=4x
 value.PIXEL_SCALE.4=8x
 value.PIXEL_SCALE.5=16x
@@ -758,7 +736,7 @@ option.IMAGE_SHARPENING=Wyostrzanie Obrazu
 option.IMAGE_SHARPENING.comment=Sztucznie wyostrza obraz przy użyciu filtra. §c[-]§r Zbyt duże wyostrzenie może powodować artefakty wizualne, takie jak aliasing, migotanie, szum i subtelne zmiany jasności.
 value.IMAGE_SHARPENING.0=WYŁ.
 value.IMAGE_SHARPENING.1=1x
-value.IMAGE_SHARPENING.2=2x
+value.IMAGE_SHARPENING.2=x2
 value.IMAGE_SHARPENING.3=3x
 value.IMAGE_SHARPENING.4=4x
 value.IMAGE_SHARPENING.5=5x
@@ -797,11 +775,11 @@ value.TAA_JITTER.3=Pełne §e[*]
 
 option.TAA_MOVEMENT_IMPROVEMENT_FILTER=Próbkowanie Catmull-Rom
 option.TAA_MOVEMENT_IMPROVEMENT_FILTER.comment=Zmniejsza rozmycie filtra czasowego dzięki zastosowaniu bardziej zaawansowanej metodzie próbkowania.
-wartość.TAA_MOVEMENT_IMPROVEMENT_FILTER.0=WYŁ. §c[-]
-wartość.TAA_MOVEMENT_IMPROVEMENT_FILTER.1=WŁ.
+value.TAA_MOVEMENT_IMPROVEMENT_FILTER.0=WYŁ. §c[-]
+value.TAA_MOVEMENT_IMPROVEMENT_FILTER.1=WŁ.
 
-opcja.FXAA_STRENGTH=Siła FXAA
-opcja.FXAA_STRENGTH.komentarz=Dostosowuje intensywność efektu FXAA. Wyższe wartości zapewniają lepsze wygładzanie krawędzi kosztem większego rozmycia obrazu.
+option.FXAA_STRENGTH=FXAA Strength
+option.FXAA_STRENGTH.comment=Adjusts the intensity of the FXAA effect. Higher values will produce better anti-aliasing at the cost of a blurrier image.
 value.FXAA_STRENGTH.-1=WYŁ.
 
 option.FXAA_TAA_INTERACTION=Zmniejsz FXAA Podczas Ruchu
@@ -922,8 +900,8 @@ option.COLOR_CODED_PROGRAMS.comment=Pokazuje, które programy shadera są używa
 option.GLOWING_COLORED_PARTICLES=Wymuś Świecące Cząsteczki §c[-]§r
 option.GLOWING_COLORED_PARTICLES.comment=Sprawia, że wszystkie cząsteczki, stają się emisyjne. §c[-]§r Ta opcja nie jest zalecana do ogólnej rozgrywki, ponieważ sprawia, że wiele cząstek świeci, mimo że są wykonane z materiałów, które w ogóle nie powinny świecić.
 
-option.MINIMUM_LIGHT_MODE=Oświetlenie Jaskiń
-option.MINIMUM_LIGHT_MODE.comment=Reguluje minimalną jasność w zamkniętych przestrzeniach, bez źródeł światła. §a[+]§r Opcja "Domyślne" określa oświetlenie zgodnie z suwakiem "Jasność" w Ustawieniach Grafiki Minecrafta. §c[-]§r Drastyczna zmiana tego ustawienia może zakłócić balans oświetlenia.
+option.CAVE_LIGHTING=Cave Lighting Multiplier
+option.CAVE_LIGHTING.comment=Adds extra lighting to areas that don't have skylight. §e[*]§r Cave lighting is also affected by the "Brightness" slider in Video Settings. §c[-]§r Drastically changing this setting can break the lighting balance.
 
 option.AMBIENT_MULT=Mnożnik Jasności Cieni
 option.AMBIENT_MULT.comment=Określa jak jasne są cienie. §c[-]§r Drastyczna zmiana tego ustawienia może zakłócić balans oświetlenia.
@@ -1101,9 +1079,6 @@ value.REFLECTION_RES.0.5=§aPołowa
 option.WORLD_OUTLINE=§eKontur Świata§r
 option.WORLD_OUTLINE.comment=Dodaje jasne kontury wokół bloków. §c[-]§r Ten efekt może mieć wpływ na wydajność.
 
-option.WORLD_OUTLINE_SCALED=Kontur Świata Skalowany Odległością
-option.WORLD_OUTLINE_SCALED.comment=Sprawia, że rozmiar konturu świata jest skalowany w zależności od odległości.
-
 option.WORLD_OUTLINE_THICKNESS=§eGrubość Konturu Świata§r
 option.WORLD_OUTLINE_THICKNESS.comment=Określa grubość efektu konturu świata. §c[-]§r Zwiększenie tego ustawienia może mieć wpływ na wydajność.
 
@@ -1112,6 +1087,9 @@ option.WORLD_OUTLINE_I.comment=Określa intensywność efektu konturów świata.
 
 option.WORLD_OUTLINE_ON_ENTITIES=Kontur Świata na Mobach
 option.WORLD_OUTLINE_ON_ENTITIES.comment=Określa, czy efekt konturu świata będzie widoczny na mobach, czy nie. §c[-]§r To ustawienie może nie działać z niektórymi pakietami zasobów PBR.
+
+option.WORLD_OUTLINE_SCALED=Kontur Świata Skalowany Odległością
+option.WORLD_OUTLINE_SCALED.comment=Sprawia, że rozmiar konturu świata jest skalowany w zależności od odległości.
 
 option.DARK_OUTLINE=§eCiemny Kontur Świata§r
 option.DARK_OUTLINE.comment=Dodaje ciemne kontury wokół bloków. §c[-]§r Ten efekt może mieć wpływ na wydajność.
@@ -1149,7 +1127,7 @@ option.SELECT_OUTLINE_B=SO Niebieskość
 option.MOON_PHASE_INF_LIGHT=Wpływ Fazy Księżyca (Oświetlenie)
 option.MOON_PHASE_INF_LIGHT.comment=Umożliwia aby różne fazy księżyca mogły zmienić jasność nocnego oświetlenia.
 
-option.MOON_PHASE_INF_ATMOSPHERE= Wpływ Fazy Księżyca (Atmosfera)
+option.MOON_PHASE_INF_ATMOSPHERE=Wpływ Fazy Księżyca (Atmosfera)
 option.MOON_PHASE_INF_ATMOSPHERE.comment=Umożliwia aby różne fazy księżyca mogły zmienić jasność nocnej atmosfery.
 
 option.MOON_PHASE_INF_REFLECTION=Wpływ Fazy Księżyca (Odblask)
@@ -1178,6 +1156,10 @@ option.COLORED_CANDLE_LIGHT.comment=Sprawia, że światło emitowane przez świe
 
 option.COLORED_LIGHT_SATURATION=Nasycenie Kolorowego Światła
 option.COLORED_LIGHT_SATURATION.comment=Pozwala dostosować nasycenie kolorów Zaawansowanego Kolorowego Oświetlenia (ACT). §e[*]§r Nie zaleca się zmiany tej wartości, ponieważ grafika wygląda na najbardziej zrównoważoną przy domyślnym nasyceniu.
+
+option.ACT_FIRE_COLOR_WARMNESS=Torch/Fire Color Warmness
+option.ACT_FIRE_COLOR_WARMNESS.comment=Adjusts the warmness of torch/fire/lantern light colors when Advanced Color Tracing is enabled. Note that the color is also affected by the "Colored Lighting Saturation" setting. §e[*]§r It's not recommended to change this value more than a tiny amount, as the visuals are designed to look the most balanced with the default level.
+value.ACT_FIRE_COLOR_WARMNESS.100=Normalny
 
 option.COLORED_LIGHT_FOG=§eWolumetryczna Mgła Świetlna§r
 option.COLORED_LIGHT_FOG.comment=Dodaje wolumetryczną mgłę do sceny, najbardziej widoczną w nocy lub pod ziemią. §e[*]§r Ta funkcja działa tylko wtedy, gdy Zaawansowane Kolorowe Oświetlenie (ACT) jest włączone w ustawieniach jakości i twój komputer/shader loader obsługuje tę funkcję. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
@@ -1248,11 +1230,12 @@ option.XLIGHT_I=Natężęnie Źródeł Światła
 option.XLIGHT_CURVE=Kontrast Źródeł Światła
 option.XLIGHT_CURVE.comment=Reguluje spadek intensywności światła w miarę oddalania się od źródła światła.
 
+
 ####### Euphoria Patches #######
 profile2.DEFAULT=§bUstawienia Wizualne:§r Domyślne
 profile2.SPACEAGLE17= §f۞ §kO§fDEBUG (Nie używać)§f§kO
 profile2.POPULAR=§bUstawienia Wizualne: §dPopularne
-profile2.comment=Są to gotowe ustawienia profilu dla Euphoria Patches. §c[-] OSTRZEŻENIE:§r Użycie tego może zmienić wiele różnych ustawień, a nawet zepsuć te, które sam stworzyłeś.\ n\n• Ustawienia domyślne to domyślne ustawienia Complementary.\n\n• §bPopularne §dUstawienia§r to preset, który ma włączone niektóre z najpopularniejszych ustawnień z Complementary i Euphoria Patches.\n\n• Profil Debug służy do celów testowych i nie jest przeznaczony do użytku przez zwykłych użytkowników.
+profile2.comment=Są to gotowe ustawienia profilu dla Euphoria Patches. §c[-] OSTRZEŻENIE:§r Użycie tego może zmienić wiele różnych ustawień, a nawet zepsuć te, które sam stworzyłeś. n\n• Ustawienia domyślne to domyślne ustawienia Complementary.\n\n• §bPopularne §dUstawienia§r to preset, który ma włączone niektóre z najpopularniejszych ustawnień z Complementary i Euphoria Patches.\n\n• Profil Debug służy do celów testowych i nie jest przeznaczony do użytku przez zwykłych użytkowników.
 
 #WATERMARK
 option.WATERMARK=Complementary
@@ -1290,6 +1273,10 @@ screen.END_BEAMS_FLASH_SETTINGS=Ustawienia Błysków Endu
 screen.END_BEAMS_FLASH_SETTINGS.comment=Ustawienia dotyczące zorzy Endu podczas błysków Endu. Działa tylko w wersji 1.21.9+.
 screen.END_STAR=Ustawienia Gwiazd Endu
 screen.END_STAR.comment=Ustawienia związane z gwiazdami wymiaru Endu.
+screen.BLACK_HOLE_SETTINGS=Black Hole Settings
+screen.BLACK_HOLE_POSITION_SETTINGS=Black Hole Position
+screen.FIXED_POSITION_BLACK_HOLE_SETTINGS=Fixed Position
+screen.MOVING_POSITION_BLACK_HOLE_SETTINGS=Slowly Wandering
 screen.STAR_COLORS_END=Kolory Gwiazd Endu
 screen.STARS_OVERWORLD=Gwiazdy
 screen.SHOOTING_STARS_SETTINGS=Spadające Gwiazdy
@@ -1316,6 +1303,8 @@ screen.FOG_ATMOSPHERIC=Mgła Atmosferyczna
 screen.FOG_ATMOSPHERIC.comment=Ustawienia związane z mgłą atmosferyczną
 screen.FOG_BORDER_OVERWORLD=Mgła Graniczna
 screen.FOG_BORDER_OVERWORLD.comment=Ustawienia związane z mgłą graniczną.
+screen.COLORED_LIGHT_FOG_SETTINGS=Colored Light Fog
+screen.COLORED_LIGHT_FOG_SETTINGS.comment=Settings that relate to colored light fog.
 screen.SEASON=Pory Roku
 screen.WINTER=Ustawienia Zimy
 screen.AUTUMN=Ustawienia Jesieni
@@ -1423,8 +1412,8 @@ screen.DISTANT_HORIZONS_SETTINGS.comment=Ustawienia, które działają tylko wte
 screen.MODDED_SKYBOX_SETTINGS=Ustawienia Skyboxu
 screen.MODDED_SKYBOX_SETTINGS.comment=Ustawienia związane z modami dotyczącymi nieba.
 
-option.DAYLIGHT_CYCLE_COMPAT=Animacja Czasu na Świecie
-option.DAYLIGHT_CYCLE_COMPAT.comment=Używaj tej opcji TYLKO, jeśli grasz na serwerze z wyłączoną zasadą "doDaylightCycle". Po włączeniu tej opcji chmury i inne animacje w światach z wyłączonym cyklem dziennym nie są już synchronizowane między graczami.
+option.DAYLIGHT_CYCLE_FROZEN=Frozen Daylight Cycle
+option.DAYLIGHT_CYCLE_FROZEN.comment=Disable the feature of clouds, aurorae, caustics and more animating automatically with the gamerule doDaylightCycle/advance_time disabled. With this enabled, animations of these will be frozen.
 
 option.AURORA_COLOR_PRESET=Preset Kolorów Zorzy Polarnej
 option.AURORA_COLOR_PRESET.comment=Wybierz pomiędzy zorzami o domyślnych/niestandardowych kolorach, zorzami o różnych kolorach, których kolor zmienia się każdego Minecraftowego dnia/miesiąca lub ręcznie ustaw kolory. Lub gładki codzienny, który płynnie zmienia kolor przez całą noc.
@@ -1488,15 +1477,15 @@ value.RANDOM_AURORA.7=70%
 value.RANDOM_AURORA.8=80%
 value.RANDOM_AURORA.9=90%
 
-opcja. AURORA_NOISE_SCALE=Skala Zorzy Polarnej
-opcja.AURORA_NOISE_SCALE.comment=Zmienia skalę zorzy polarnej.
+option.AURORA_NOISE_SCALE=Aurora Noise Scale
+option.AURORA_NOISE_SCALE.comment=Changes the scale of the noise used in the aurora effect.
 
-opcja.AURORA_PATTERN_WARP=Zawirowanie
-opcja.AURORA_PATTERN_WARP.comment=Zmienia stopień zawirowania i zniekształcenia zorzy polarnej.
+option.AURORA_PATTERN_WARP=Swirliness
+option.AURORA_PATTERN_WARP.comment=Changes how much the aurora swirls and warps.
 value.AURORA_PATTERN_WARP.0=WYŁ.
 
-opcja.AURORA_SATURATION=Nasycenie Zorzy Polarnej
-opcja.AURORA_SATURATION.comment=Zmienia nasycenie kolorów zorzy polarnej.
+option.AURORA_SATURATION=Aurora Saturation
+option.AURORA_SATURATION.comment=Changes the saturation of the aurora colors.
 value.AURORA_SATURATION.10=Domyślne
 
 option.AURORA_COLOR_MIX_POWER=Dominująca Warstwa
@@ -1508,6 +1497,10 @@ value.CLOUD_ROUNDNESS.0.05=Kwadratowe §e[*]§r
 value.CLOUD_ROUNDNESS.0.125=Zrównoważona
 value.CLOUD_ROUNDNESS.0.2=Okrągłe
 option.CLOUD_ROUNDNESS.comment=Zmienia stopień zaokrąglenia chmur.  §e[*]§r Mniejsze zaokrąglenie powoduje więcej artefaktów.
+
+option.REIMAGINED_CLOUDS_OUTLINE=Clouds Outline
+option.REIMAGINED_CLOUDS_OUTLINE.comment=Enables an outline around the reimagined clouds.
+value.REIMAGINED_CLOUDS_OUTLINE.0=WŁ.
 
 option.CLOUD_SHADOW_ROUNDNESS=Krągłość Cieni Chmur
 value.CLOUD_SHADOW_ROUNDNESS.0.15=Bardzo Kwadratowe
@@ -1594,7 +1587,8 @@ option.DOUBLE_UNBOUND_CLOUDS.comment=Włącza drugą warstwe chmur Unbound. §c[
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Pułap Chmur Drugiej Warstwy
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Określa pułap, na którym znajduje się druga warstwa chmur.
 option.CLOUD_UNBOUND_LAYER2_HEIGHT=Grubość Chmur Drugiej Warstwy
-option. CLOUD_UNBOUND_LAYER2_SIZE=Rozmiar Chmur Drugiej Warstwy
+option.CLOUD_UNBOUND_LAYER2_HEIGHT.comment=Determines the geometric height of the second layer of unbound clouds.
+option.CLOUD_UNBOUND_LAYER2_SIZE=Cloud Layer 2 Size
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Określa rozmiar chmur drugiej warstwy.
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=Ilość Chmur Drugiej Warstwy
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Określa ilość chmur drugiej warstwy.
@@ -1768,7 +1762,7 @@ value.END_TWINKLING_STARS.17=1.7
 value.END_TWINKLING_STARS.18=1.8
 value.END_TWINKLING_STARS.19=1.9
 value.END_TWINKLING_STARS.20=2.0
-ption.END_STAR_HEMISPHERE=Półkula gwiazd w Endzie
+option.END_STAR_HEMISPHERE=End Star Hemisphere
 option.END_STAR_HEMISPHERE.comment=Ustawienie określające wyświetlanie gwiazd wyłącznie na górnej lub dolnej półkuli nieba w Endzie.
 value.END_STAR_HEMISPHERE.0=Obie Półkule
 value.END_STAR_HEMISPHERE.1=Tylko Górna Półkula
@@ -1864,8 +1858,6 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=Sprawia, że zintegrowane mapy norma
 option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=Intensywność od Bloków
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Intensywność od Trzymanego Światła
 
-option.CAVE_FOG=Mgła w Jaskiniach
-option.CAVE_FOG.comment=Włącz lub wyłącz mgłe w jaskiniach.
 option.CAVE_FOG_R_NEW=Mgła w Jask. - Czerwień
 option.CAVE_FOG_G_NEW=Mgła w Jask. - Zieleń
 option.CAVE_FOG_B_NEW=Mgła w Jask. - Niebieskość
@@ -1982,7 +1974,7 @@ value.LAVA_VARIATION.1=Adapcyjna (Zalecane)
 value.LAVA_VARIATION.2=Rumieniąca się
 value.LAVA_VARIATION.3=Stopiony Ser
 value.LAVA_VARIATION.4=Ciemne Wyspy
-wartość.LAVA_VARIATION.5=Chaotyczny Nurt
+value.LAVA_VARIATION.5=Chaotic Flow
 
 option.LAVA_TEMPERATURE=Temperatura Lawy
 option.LAVA_TEMPERATURE.comment=Zmień temperaturę lawy, sprawia, że jest bardziej czerwona lub bardziej biała.
@@ -2070,6 +2062,7 @@ value.tonemap.filmic=Filmowa
 value.tonemap.GTTonemap=Gran Turismo
 value.tonemap.uchimura=Uchimura
 value.tonemap.agxTonemap=AgX
+value.tonemap.doSimpleTonemap=Simple
 
 option.TONEMAP_COMPARISON=Porównanie Mapy Tonów
 option.TONEMAP_COMPARISON.comment=Pozwala na porównywanie różnych map tonalnych.
@@ -2089,6 +2082,7 @@ value.tonemap_left.filmic=Filmowa
 value.tonemap_left.GTTonemap=Gran Turismo
 value.tonemap_left.uchimura=Uchimura
 value.tonemap_left.agxTonemap=AgX
+value.tonemap_left.doSimpleTonemap=Simple
 
 option.tonemap_right=Mapa Tonów - Prawa
 option.tonemap_right.comment=Zmienia która mapa tonów jest w użyciu po prawej stronie ektranu.
@@ -2105,6 +2099,7 @@ value.tonemap_right.filmic=Filmowa
 value.tonemap_right.GTTonemap=Gran Turismo
 value.tonemap_right.uchimura=Uchimura
 value.tonemap_right.agxTonemap=AgX
+value.tonemap_right.doSimpleTonemap=Simple
 
 option.ACES_EXPOSURE=Ekspozycja
 option.ACES_EXPOSURE.comment=Dostosowuje ogólną jasność całego obrazu.
@@ -2298,10 +2293,10 @@ value.RETRO_LOOK.0=WYŁ.
 value.RETRO_LOOK.1=Zarysy
 value.RETRO_LOOK.2=Zarysy - Podczas Noktowizji
 
-option.RETRO_LOOK_R=Wygląd Retro - Czerwień
-option.RETRO_LOOK_G=Wygląd Retro - Zieleń
-option.RETRO_LOOK_B=Wygląd Retro - Niebieskość
-option.RETRO_LOOK_I=Wygląd Retro - Natężęnie
+option.RETRO_LOOK_R= Wygląd Retro - Czerwień
+option.RETRO_LOOK_G= Wygląd Retro - Zieleń
+option.RETRO_LOOK_B= Wygląd Retro - Niebieskość
+option.RETRO_LOOK_I= Wygląd Retro - Natężęnie
 
 option.CURVE_DISPLAY=Zagięty Ekran
 option.CURVE_DISPLAY.comment=Symuluje zakrzywienie wyświetlacz.
@@ -2352,16 +2347,16 @@ option.PALETTE3R=Kolor 3 Czerwony
 option.PALETTE3G=Kolor 3 Zielony
 option.PALETTE3B=Kolor 3 Niebieski
 option.PALETTE4R=Kolor4 Czerwony
-opcja.PALETTE4G=Kolor4 Zielony
-opcja.PALETTE4B=Kolor4 Niebieski
-opcja.PALETTE5R=Kolor5 Czerwony
-opcja.PALETTE5G=Kolor5 Zielony
-opcja.PALETTE5B=Kolor5 Niebieski
-opcja.PALETTE6R=Kolor6 Czerwony
-opcja.PALETTE6G=Kolor6 Zielony
-opcja.PALETTE6B=Kolor6 Niebieski
-opcja.USE_TEXTURE_PALETTE=Paleta Tekstur
-opcja.USE_TEXTURE_PALETTE.comment=Używa obrazu PNG palety z folderu palet zamiast obrazu z ustawień GUI.
+option.PALETTE4G=Color4 Green
+option.PALETTE4B=Color4 Blue
+option.PALETTE5R=Color5 Red
+option.PALETTE5G=Color5 Green
+option.PALETTE5B=Color5 Blue
+option.PALETTE6R=Color6 Red
+option.PALETTE6G=Color6 Green
+option.PALETTE6B=Color6 Blue
+option.USE_TEXTURE_PALETTE=Texture Palette
+option.USE_TEXTURE_PALETTE.comment=Uses the palette PNG image from the palettes folder instead of the GUI Settings one.
 value.USE_TEXTURE_PALETTE.0=WYŁ.
 
 option.SCREEN_DITHERING=Dithering
@@ -2376,7 +2371,7 @@ option.SCANLINE_SPEED=Szybkość Linii Skanowania
 option.SCANLINE_AMOUNT=Ilość Linii Skanowania
 option.SCANLINE_NEW_MONOCHROME=Kolor Monochromatyczny
 option.SCANLINE_NEW_DIRECTION=Kierunek Linii Skanowania
-alue.SCANLINE_NEW_DIRECTION.0=Poziomo
+value.SCANLINE_NEW_DIRECTION.false=Horizontal
 value.SCANLINE_NEW_DIRECTION.true=Pionowo
 option.SCANLINE_R=Mnożnik Czerwieni
 option.SCANLINE_G=Mmnożnik Zieleni
@@ -2551,7 +2546,7 @@ option.DAYLIGHT_STARS=Gwiazdy w Dzień
 option.DAYLIGHT_STARS.comment=Włącza gwiazdy podczas dnia.
 
 option.FROZEN_TIME=Zatrzymany Czas
-opcja.FROZEN_TIME_COMMENT=Zatrzymuje wszelkie animacje efektów shadera, co pozwoli na wykonanie dobrych zrzutów ekranu porównawczych.
+option.FROZEN_TIME.comment=Freezes shader animation time, shader effects which rely on frame based animation will be frozen and thus allowing for good comparison screenshots.
 
 option.DARKER_DEPTH_OCEANS=Ciemniejsze Głebokie Oceany
 option.DARKER_DEPTH_OCEANS.comment=Ilość światła zmniejsza się wraz z głebokością
@@ -2745,19 +2740,7 @@ option.SMOKE_PARTICLE_OPACITY=Przezroczystość Cząstek Dymu
 
 option.END_SUN_ANGLE=Kąt Oświetlenia Endu
 option.END_SUN_ANGLE.comment=Dostosowuje kąt padania światła w wymiarze Endu.
-value.END_SUN_ANGLE.60=60
-value.END_SUN_ANGLE.50=50
-value.END_SUN_ANGLE.40=40
-value.END_SUN_ANGLE.30=30
-value.END_SUN_ANGLE.20=20
-value.END_SUN_ANGLE.10=10
 value.END_SUN_ANGLE.0=0 §r(§bDomyślny§r)
-value.END_SUN_ANGLE.-10=-10
-value.END_SUN_ANGLE.-20=-20
-value.END_SUN_ANGLE.-30=-30
-value.END_SUN_ANGLE.-40=-40
-value.END_SUN_ANGLE.-50=-50
-value.END_SUN_ANGLE.-60=-60
 
 option.PIXELATED_NEBULA=Pikselowane Mgławice
 value.PIXELATED_NEBULA.0=WYŁ.
@@ -2864,17 +2847,20 @@ option.COLORED_LIGHT_FOG_RAIN_I=Intensywność Wolumetrycznej Mgły Świetlnej P
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Zmienia intensywność wolumetryczna mgły podczas deszczu.
 value.COLORED_LIGHT_FOG_RAIN_I.0=Domyślna
 
+option.COLORED_LIGHT_FOG_CAVE_I=Cave Intensity
+option.COLORED_LIGHT_FOG_CAVE_I.comment=Change the intensity of the colored light fog in caves.
+value.COLORED_LIGHT_FOG_CAVE_I.0=Styl Domyślny
+
 option.BLOOD_MOON=Krwawy księżyc
-option.BLOOD_MOON.comment=Włącza krwawe księżyce, które pojawiają się co określoną liczbę nocy ustawioną przez użytkownika. Krwawe księżyce nie pojawiają się pierwszej nocy, jeśli ustawiono wartość inną niż „Każdej Nocy”. Krwawy księżyc nie pojawia się podczas nowiu, jeśli ustawiono wartość inną niż „Każdej Nocy”.
+option.BLOOD_MOON.comment=Włącza krwawe księżyce, które pojawiają się przez liczbę dni ustawioną przez użytkownika.
 value.BLOOD_MOON.0=WYŁ.
 value.BLOOD_MOON.1=Każdej Nocy
 suffix.BLOOD_MOON=\ Nocy
-option.BLOOD_MOON.comment=Włącza krwawe księżyce, które pojawiają się przez liczbę dni ustawioną przez użytkownika.
 option.EMISSIVE_BLOOD_MOON_FLOWERS=Świecące Kwiaty Krwawego Księżyca
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=Sprawia, że czerwone kwiaty świecą podczas krwawych księżyców. §e[*]§r Opcja wsparcia RP musi być ustawiona na Integrated PBR+.
 
 option.PHOTONICS_LIGHTING_MODE=Tryb Oświetlenia
-option.PHOTONICS_LIGHTING_MODE.comment=Zmienia algorytm oświetlenia używany przez Photonics.\ n\nOstry — algorytm ostrego oświetlenia bez szumu, ale z ograniczoną liczbą świateł (Max Samples)\nReSTIR — wykorzystuje ReSTIR do oświetlenia, obsługuje nieograniczoną liczbę świateł (Max Lights), ale w niektórych obszarach może występować szum. §e[*]§r Ta opcja działa tylko wtedy, gdy zainstalowany jest mod Photonics.
+option.PHOTONICS_LIGHTING_MODE.comment=Zmienia algorytm oświetlenia używany przez Photonics. n\nOstry — algorytm ostrego oświetlenia bez szumu, ale z ograniczoną liczbą świateł (Max Samples)\nReSTIR — wykorzystuje ReSTIR do oświetlenia, obsługuje nieograniczoną liczbę świateł (Max Lights), ale w niektórych obszarach może występować szum. §e[*]§r Ta opcja działa tylko wtedy, gdy zainstalowany jest mod Photonics.
 value.PHOTONICS_LIGHTING_MODE.0=WYŁ.
 value.PHOTONICS_LIGHTING_MODE.1=Ostry
 value.PHOTONICS_LIGHTING_MODE.2=ReSTIR
@@ -2883,8 +2869,8 @@ option.PHOTONICS_PIXELATED_SHADOWS=Pikselowanie Cieni
 option.PHOTONICS_PIXELATED_SHADOWS.comment=Włącza lub wyłącza pikselowanie cieni w modzie Photonics. §c[*]§r Ta opcja działa wyłącznie w "Ostrym" trybie oświetlenia.
 
 option.PHOTONICS_ALPHA_MODE=Tryb Przezroczystości
-option.PHOTONICS_ALPHA_MODE.comment=Ustawia sposób, w jaki Photonics obsługuje przezroczyste bloki.\ n\nBrak - Przezroczyste bloki są traktowane jako nieprzezroczyste\nBlok - Przezroczystość jest stosowana dla każdego bloku (§aMinimalny wpływ na wydajność)§r\nVoxel - Przezroczystość jest stosowana dla każdego woksela (§cDUŻY WPŁYW NA WYDAJNOŚĆ)§r
-value.PHOTONICS_ALPHA_MODE. NONE=Brak
+option.PHOTONICS_ALPHA_MODE.comment=Ustawia sposób, w jaki Photonics obsługuje przezroczyste bloki. n\nBrak - Przezroczyste bloki są traktowane jako nieprzezroczyste\nBlok - Przezroczystość jest stosowana dla każdego bloku (§aMinimalny wpływ na wydajność)§r\nVoxel - Przezroczystość jest stosowana dla każdego woksela (§cDUŻY WPŁYW NA WYDAJNOŚĆ)§r
+value.PHOTONICS_ALPHA_MODE.NONE=None
 value.PHOTONICS_ALPHA_MODE.BLOCK=Blok
 value.PHOTONICS_ALPHA_MODE.VOXEL=Voxel
 
@@ -2906,15 +2892,15 @@ option.PHOTONICS_RESTIR_INITIAL_SAMPLES=Wstępne Próbkowanie ReSTIR
 option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=Ile źródeł światła ReSTIR powinno być początkowo uwzględnione \n\n§6Średni wpływ na wydajność
 
 option.PHOTONICS_RESTIR_SOFT_SHADOWS=Miękkie Cienie ReSTIR
-option. PHOTONICS_RESTIR_SOFT_SHADOWS.comment=Czy ReSTIR powinien stosować miękkie cienie \n\n§aNiewielki wpływ na wydajność
+option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=Whether ReSTIR should have soft shadows \n\n§aMinor performance impact
 
 option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES=Próbki Ponownego Wykorzystania Przestrzennego ReSTIR
-option. PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=Ile próbek ReSTIR wykorzystuje do ponownego wykorzystania \n\n§6Średni wpływ na wydajność
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=How many samples ReSTIR uses for spatial reuse \n\n§6Medium performance impact
 
 option.PHOTONICS_RESTIR_SPATIAL_REUSE_RADIUS=ReSTIR Promień Ponownego Wykorzystania Przestrzennego
 
-opcja.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=ReSTIR Klatki Akumulacji
-opcja.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=Maksymalna liczba klatek używanych przez ReSTIR do akumulacji. Niższe wartości spowodują, że oświetlenie będzie bardziej responsywne, kosztem większego szumu. \n\nBrak wpływu na wydajność
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=ReSTIR Accumulation Frames
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=The max number of frames ReSTIR uses for accumulation. Lower values will cause lighting to be more responsive, at the cost of more noise. \n\nNo performance impact
 
 option.PHOTONICS_RESTIR_DENOISER_PASSES=Iloraz Odszumiania
 option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=Liczba przejść modułu usuwania szumów stosowanego w ReSTIR\n\n§cDUŻY WPŁYW NA WYDAJNOŚĆ
@@ -2926,13 +2912,16 @@ value.PHOTONICS_RESTIR_FLICKER_FIRE.0=WYŁ.
 
 option.PHOTONICS_VANILLA_LIGHT_FALLBACK=Drugorzędne Oświetlenie Domyślne
 option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=Procent oświetlenia domyślnego, który ma być używany jako drugorzędne rozwiązanie podczas korzystania z Photonics, aby zapobiec powstawaniu ciemnych obszarów tam, gdzie oświetlenie Photonics nie zostało załadowane.
-suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=\%
+suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=%
 
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Siła Zaklętego Blasku
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Zmienia siłę światła emitowanego przez zaklęte przedmioty podczas korzystania z Photonics.
 
-option.PHOTONICS_SEPARATE_HANDHELD_RAYS=Podział Światła Przenośnego
-option.PHOTONICS_SEPARATE_HANDHELD_RAYS.comment=Czy światła w obydwu rękach gracza powinny rzucać cienie. Gdy opcja jest wyłączona, rzucany będzie tylko jeden cień\n\n§aMinimalny wpływ na wydajność
+option.PHOTONICS_HANDHELD_MODE=Handheld Light Mode
+option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\Single - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
+value.PHOTONICS_HANDHELD_MODE.0=WYŁ.
+value.PHOTONICS_HANDHELD_MODE.1=Separate
+value.PHOTONICS_HANDHELD_MODE.2=Single
 
 option.PHOTONICS_AMBIENT_LIGHT_MULT=Mnożnik Światła Otoczenia
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Opcja pozwalająca zmienić ilość domyślnego światła otoczenia, które powinno być używane wraz z oświetleniem Photonics. §e[*]§r Ta opcja działa tylko wtedy, gdy zainstalowany jest mod Photonics.
@@ -2971,11 +2960,17 @@ value.PHOTONICS_MAX_ALLOWED_DISTANCE.31=31 Chunków
 value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32 Chunki
 value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Zasięg Widzenia
 
-option.CUSTOM_SKY_SUPPORT=Obsługa Niestandardowych Skyboxów
-option.CUSTOM_SKY_SUPPORT.comment=Dodaje obsługę niestandardowych skyboxów, w tym tych pochodzących z modów, takich jak Stellar View.
+
+option.CUSTOM_SKY_SUPPORT_SLIDER=Custom Skybox Support
+option.CUSTOM_SKY_SUPPORT_SLIDER.comment=Adds support for custom skyboxes including modded ones such as Stellar View. The slider changes the alpha mix of the skybox, only change it if there are issues.
+value.CUSTOM_SKY_SUPPORT_SLIDER.0=WŁ.
+value.CUSTOM_SKY_SUPPORT_SLIDER.10=On
 
 option.CUSTOM_SKY_MOD_SUPPORT=Obsługa Modów Skyboxu
 option.CUSTOM_SKY_MOD_SUPPORT.comment=Dodaje obsługę modów zmieniających skybox, takich jak Caelum lub Astrocraft. Może to spowodować pewne problemy, nie zostało przetestowane z wieloma modami.
+
+option.SAVE_SKYBOX_DATA_OVERRIDE=Save Skybox Data
+option.SAVE_SKYBOX_DATA_OVERRIDE.comment=Allows the shaderpack to save the custom skybox to a buffer, this happens automatically when a skybox mod is installed but can occasionally cause issues with certain mods that change the skybox as well, thus this option allows you to disable it.
 
 option.DISTANT_HORIZONS_SSAO=Cienie krawędzi (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Włącza SSAO (Screen Space Ambient Occlusion) w chunkach Distant Horizons. §e[*]§r Ta opcja działa tylko wtedy, gdy zainstalowano mod Distant Horizons. §e[*]§r Wymaga, aby jakość cieni krawędzi (SSAO) nie była wyłączona w ustawieniach wydajności.
@@ -2991,3 +2986,50 @@ value.PIXELATED_SHADOWS_MODE.16=Ręczne 16x
 value.PIXELATED_SHADOWS_MODE.32=Ręczne 32x
 value.PIXELATED_SHADOWS_MODE.64=Ręczne 64x
 value.PIXELATED_SHADOWS_MODE.128=Ręczne 128x
+
+option.PANINI_PROJECTION=Panini Projection
+option.PANINI_PROJECTION.comment=Enables Panini Projection, which is a type of projection that reduces distortion at the edges of the screen, especially when using a high field of view (FOV). §e[-]§r Can make the image look stretched in the center, or blurrier overall.
+value.PANINI_PROJECTION.0=WŁ.
+
+option.BLACK_HOLE=Black Hole
+option.BLACK_HOLE.comment=Adds a black hole to the skybox in the End. Its position is controlled by the Black Hole Position settings
+value.BLACK_HOLE.0=WŁ.
+
+option.BLACK_HOLE_SIZE=Black Hole Size
+option.BLACK_HOLE_SIZE.comment=Changes the size of the black hole
+
+option.BLACK_HOLE_RING_SIZE=Ring Size
+option.BLACK_HOLE_RING_SIZE.comment=Changes the size of the dust around the black hole
+
+option.BLACK_HOLE_RING_COUNT=Ring Count
+option.BLACK_HOLE_RING_COUNT.comment=Changes the amount of rings which form the dust around the black hole
+
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT=Differential Spin
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT.comment=Changes how much faster material near the black hole spins relative to the outer edge
+
+option.BLACK_HOLE_LENSING_STRENGTH=Gravitational Lensing
+option.BLACK_HOLE_LENSING_STRENGTH.comment=Changes how much the black hole bends light around it, creating a gravitational lensing effect.
+
+option.BLACK_HOLE_LENSING_RANGE=Lensing Range
+option.BLACK_HOLE_LENSING_RANGE.comment=Changes how far the gravitational lensing effect extends around the black hole
+
+option.BLACK_HOLE_LENSING_SWIRL=Lensing Swirl Amount
+option.BLACK_HOLE_LENSING_SWIRL.comment=Changes how much the gravitational lensing effect swirls around the black hole, creating a more dynamic visual effect.
+
+option.BLACK_HOLE_DIRECTION_MODE=Position Mode
+option.BLACK_HOLE_DIRECTION_MODE.comment=Changes how the black hole's position in the sky is determined. Follow Sun Angle mode makes the black hole follow the End Sun Angle Option Position, Fixed Position mode allows you to set a specific position for the black hole, and Slowly Wandering mode makes the black hole move slowly across the sky over time.
+value.BLACK_HOLE_DIRECTION_MODE.0=Follow Sun Angle
+value.BLACK_HOLE_DIRECTION_MODE.1=Fixed Position
+value.BLACK_HOLE_DIRECTION_MODE.2=Slowly Wandering
+
+option.BLACK_HOLE_LONGITUDE=Longitude
+option.BLACK_HOLE_LONGITUDE.comment=Fixed Position mode: sets the black hole's position around the horizon, in degrees
+
+option.BLACK_HOLE_LATITUDE=Latitude
+option.BLACK_HOLE_LATITUDE.comment=Fixed Position mode: sets the black hole's position above or below the horizon, in degrees
+
+option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY=Longitude Loops Per Day
+option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full loops around the horizon the black hole completes per real-world day.
+
+option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY=Latitude Loops Per Day
+option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full up-and-down oscillations the black hole completes per real-world day. Keep this different from Longitude Loops Per Day for a less repetitive path
