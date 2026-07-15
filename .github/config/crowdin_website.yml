@@ -9,3 +9,21 @@ files:
     translation: "/%locale%.json"
     type: "json"
     update_option: "update_as_unapproved"
+
+# Ones with no country code need to have it added here!!!!
+# Crowdin's default %locale% is region-qualified for several languages
+# (e.g. French -> fr-FR) even though the target language has no dialect.
+languages_mapping:
+  locale:
+    fr: fr
+    de: de
+    he: he
+    ja: ja
+    nl: nl
+    pl: pl
+    ru: ru
+    es: es
+    sv: sv
+    th: th
+    tr: tr
+    uk: uk
