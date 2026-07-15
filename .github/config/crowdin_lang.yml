@@ -9,6 +9,7 @@ files:
     translation: "/%locale_with_underscore%.lang"
     type: "properties"
     update_option: "update_as_unapproved"
+    escape_special_characters: 0
 
 # Minecraft-style locale codes used by this repo's .lang files don't all
 # match Crowdin's default codes (e.g. Crowdin uses "ru", the file is ru_RU.lang).

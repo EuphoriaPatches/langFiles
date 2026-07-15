@@ -1,5 +1,4 @@
 {
-    "isRightToLeft": false,
     "pageTitle": "Euphoria Patchesの導入方法",
     "modMethodTitle": "Modを使う",
     "step1": "前提となるバージョンのComplementaryをダウンロードし、shaderpacksフォルダに入れる。",
