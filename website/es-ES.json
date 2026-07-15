@@ -10,8 +10,8 @@
   "step3": "Lanza el juego con uno de los siguientes: Fabric | Quilt | Forge | NeoForge",
   "step4": "ahora aparecerá en tu carpeta de shaderpacks",
   "unsupportedVersions": "Para versiones de Minecraft no soportadas, usa el mod con una versión más nueva de Minecraft, genera Euphoria Patches y luego copia la carpeta de shaderpack generada a la instancia no soportada.",
-  "discordContact": "Having trouble with installation?",
-  "discordContactLink": "Join our Discord community",
+  "discordContact": "¿Tienes problemas con la instalación?",
+  "discordContactLink": "Únete a nuestra comunidad en Discord",
   "downloadPageButton": "Ir a la Página de Descargas",
   "supportDevelopment1": "¿Obtener acceso a versiones beta exclusivas y apoyar el desarrollo?",
   "supportDevelopment2": "¡Accede a las versiones beta ahora!",
@@ -21,8 +21,8 @@
   "installerStep3": "Ahora haz clic en 'Advanced Settings'",
   "installerStep4": "Marca la casilla 'Install Euphoria Patches'",
   "installerStep5": "Haz clic en instalar, Complementary Shaders + Euphoria Patches ahora aparecerá en tu carpeta de shaderpacks",
-  "windowsInstallerButton": "Windows Installer",
-  "javaInstallerButton": "Universal JAR",
-  "complementaryInstallerButton": "Download Installer",
+  "windowsInstallerButton": "Instalador para Windows",
+  "javaInstallerButton": "JAR Universal",
+  "complementaryInstallerButton": "Descargar Instalador",
   "complementaryWebsiteButton": "Visita la página web de Complementary"
 }
