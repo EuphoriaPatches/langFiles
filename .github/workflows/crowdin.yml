@@ -61,6 +61,25 @@ jobs:
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_PROJECT_ID_LANG: ${{ vars.CROWDIN_PROJECT_ID_LANG }}
 
+      - name: "Restore intentionally empty lang keys"
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git fetch origin ${{ env.LOCALIZATION_BRANCH }} || true
+          if git show-ref --verify --quiet "refs/remotes/origin/${{ env.LOCALIZATION_BRANCH }}"; then
+            git checkout ${{ env.LOCALIZATION_BRANCH }}
+            node .github/scripts/restore-empty-lang-keys.js
+            if ! git diff --quiet -- '*.lang'; then
+              git config --local user.email "action@github.com"
+              git config --local user.name "GitHub Action"
+              git add -- '*.lang'
+              git commit -m "[translation] Restore intentionally empty lang keys"
+              git push origin ${{ env.LOCALIZATION_BRANCH }}
+            fi
+            git checkout ${{ env.TARGET_BRANCH }}
+          else
+            echo "No localization branch to patch - skipping."
+          fi
+
   sync-website:
     name: "Sync Website"
     runs-on: ubuntu-latest
