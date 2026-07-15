@@ -174,7 +174,6 @@ jobs:
           if [ -z "$MSG" ]; then
             MSG="Update language files"
           fi
-          MSG="$MSG [skip ci]"
 
           # Only commit if there are staged changes
           git diff --quiet --staged || {

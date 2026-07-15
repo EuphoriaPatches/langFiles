@@ -1,0 +1,21 @@
+project_id_env: "CROWDIN_PROJECT_ID_LANG"
+api_token_env: "CROWDIN_TOKEN"
+base_path: "."
+
+preserve_hierarchy: true
+
+files:
+  - source: "/en_US.lang"
+    translation: "/%locale_with_underscore%.lang"
+    type: "properties"
+    update_option: "update_as_unapproved"
+
+# Minecraft-style locale codes used by this repo's .lang files don't all
+# match Crowdin's default codes (e.g. Crowdin uses "ru", the file is ru_RU.lang).
+languages_mapping:
+  locale_with_underscore:
+    ja: ja_JP
+    ko: ko_KR
+    pl: pl_PL
+    ru: ru_RU
+    uk: uk_UA

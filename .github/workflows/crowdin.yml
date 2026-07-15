@@ -1,0 +1,124 @@
+name: "Crowdin Translations"
+run-name: "Crowdin Translations #${{ github.run_number }}"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "en_US.lang"
+      - "website/en.json"
+  workflow_dispatch:
+    inputs:
+      create_pr:
+        description: "Create Pull Request after sync"
+        type: boolean
+        default: false
+        required: true
+      upload_translations:
+        description: "Also upload existing repo translations to Crowdin (one-time seeding)"
+        type: boolean
+        default: false
+        required: true
+  schedule:
+    # Runs after update-en-US.yml (midnight UTC), so any freshly pulled
+    # English strings are pushed to Crowdin the same night.
+    - cron: "0 2 * * *"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  LOCALIZATION_BRANCH: l10n_crowdin_translations
+  TARGET_BRANCH: main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-lang:
+    name: "Sync Shader Lang"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v4
+
+      - name: "Crowdin (Shader Lang)"
+        uses: crowdin/github-action@v2
+        with:
+          upload_sources: true
+          upload_translations: ${{ github.event_name == 'workflow_dispatch' && inputs.upload_translations }}
+          download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+          skip_untranslated_strings: true
+          create_pull_request: false
+          localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
+          pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
+          commit_message: "[translation] Update shader lang translations"
+          config: .github/config/crowdin_lang.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_PROJECT_ID_LANG: ${{ vars.CROWDIN_PROJECT_ID_LANG }}
+
+  sync-website:
+    name: "Sync Website"
+    runs-on: ubuntu-latest
+    needs: [sync-lang]
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v4
+
+      - name: "Crowdin (Website)"
+        uses: crowdin/github-action@v2
+        with:
+          upload_sources: true
+          upload_translations: ${{ github.event_name == 'workflow_dispatch' && inputs.upload_translations }}
+          download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+          skip_untranslated_strings: true
+          create_pull_request: false
+          localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
+          pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
+          commit_message: "[translation] Update website translations"
+          config: .github/config/crowdin_website.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_PROJECT_ID_WEBSITE: ${{ vars.CROWDIN_PROJECT_ID_WEBSITE }}
+
+  create-pr:
+    name: "Create Pull Request"
+    runs-on: ubuntu-latest
+    needs: [sync-lang, sync-website]
+    if: (github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && inputs.create_pr)
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v4
+
+      - name: "Get changed files"
+        id: diff
+        run: |
+          git fetch origin ${{ env.TARGET_BRANCH }} ${{ env.LOCALIZATION_BRANCH }}
+          FILES=$(git diff --name-only "origin/${{ env.TARGET_BRANCH }}" "origin/${{ env.LOCALIZATION_BRANCH }}" | sed 's/^/- /')
+          if [ -z "$FILES" ]; then
+            FILES="- No file changes detected"
+          fi
+          {
+            echo "changed_files<<EOF"
+            echo "$FILES"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: "Create Pull Request"
+        uses: devops-infra/action-pull-request@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_branch: ${{ env.LOCALIZATION_BRANCH }}
+          target_branch: ${{ env.TARGET_BRANCH }}
+          label: "translations"
+          title: "New Crowdin translations"
+          body: |
+            New translations from Crowdin.
+
+            ### Changed files
+            ${{ steps.diff.outputs.changed_files }}
