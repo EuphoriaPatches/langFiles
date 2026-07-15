@@ -1,6 +1,5 @@
 {
   "pageTitle": "如何安裝 Euphoria Patches",
-
   "modMethodTitle": "通過模組安裝的方法",
   "step1": "獲取對應版本的的 Complementary 光影並將其放在 shaderpacks 文件夾中",
   "step1After": "(請勿解壓，修改或者重命名它).",
@@ -10,24 +9,18 @@
   "step2After": "模組文件並將其放在你的 mods 文件夾中",
   "step3": "通過任意一種模組加載器啟動遊戲: Fabric | Quilt | Forge | NeoForge",
   "step4": "現在會出現在你的 shaderpacks 文件夾",
-
   "unsupportedVersions": "對於模組不支持的 Minecraft 版本，可使用模組在支持的 Minecraft 版本生成 Euphoria Patches 後將生成的得到的光影文件夾複製到模組不支持的 Minecraft 版本實例中",
-
   "discordContact": "在安裝過程中遇到問題?",
   "discordContactLink": "加入我們的 Discord 社區!",
-
   "downloadPageButton": "前往下載頁面",
-
   "supportDevelopment1": "想要支持開發並獲取早期獨家更新?",
   "supportDevelopment2": "馬上獲取預覽版本!",
-
   "installerMethodTitle": "通過安裝器安裝的方法",
   "installerStep1After": "下載 Complementary 安裝器",
   "installerStep2": "通過鼠標左鍵雙擊下載的文件啟動安裝器",
   "installerStep3": "點擊 'Advanced Settings'",
   "installerStep4": "選中 'Install Euphoria Patches' 複選框",
   "installerStep5": "點擊 install 然後啟動遊戲, Complementary Shaders + Euphoria Patches 現在會出現在你的 shaderpacks 文件夾",
-
   "windowsInstallerButton": "Windows 安裝器",
   "javaInstallerButton": "通用 JAR",
   "complementaryInstallerButton": "下載安裝器",

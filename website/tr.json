@@ -1,6 +1,5 @@
 {
   "pageTitle": "Euphoria Patches Nasıl İndirilir",
-
   "modMethodTitle": "Mod Yolu",
   "step1": "İlk öncelikle gerekli olan Complementary versiyonunu indirin ve shaderpacks klasörüne koyun.",
   "step1After": "(dosyayı zipten çıkarmayın,kurcalamayın veya ismini değiştirmeyin).",
@@ -10,16 +9,20 @@
   "step2After": "sürümünü indirip, mod dosyasını mod klasörüne atın.",
   "step3": "Oyunu bunlardan biriyle başlatın: Fabric | Quilt | Forge | NeoForge",
   "step4": "artık shaderpack klasörünüzde gözükecek",
-
   "unsupportedVersions": "Desteklenmeyen Minecraft sürümleri için, patcher'i daha yeni Minecraft sürümüyle kullanın, Euphoria Patches'i yükleyin ve ardından oluşturulan shaderpack klasörünü desteklenmeyen örneğe kopyalayın.",
-
+  "discordContact": "Having trouble with installation?",
+  "discordContactLink": "Join our Discord community",
   "downloadPageButton": "İndirme Sayfasına Git",
-
+  "supportDevelopment1": "Support development and get access to early exclusive updates?",
+  "supportDevelopment2": "Get the Preview Versions now!",
   "installerMethodTitle": "Yükleyici Yolu",
-  "installerStep1Before": "İndirmek için",
   "installerStep1After": "linkine gidin ve yükleyiciyi indirin.",
   "installerStep2": "İndirdiğiniz dosyayı açmak için çift tıklayın.",
   "installerStep3": "Şimdi 'Advanced Settings'a tıklayın.",
   "installerStep4": "'Install Euphoria Patches' kutucuğuna tıklayarak işaretleyin. Ardından 'Done'a tıklayın.",
-  "installerStep5": "'Install'a tıklayın. Complementary Shaders + Euphoria Patches artık shaderpack klasörünüzde gözükecek."
+  "installerStep5": "'Install'a tıklayın. Complementary Shaders + Euphoria Patches artık shaderpack klasörünüzde gözükecek.",
+  "windowsInstallerButton": "Windows Installer",
+  "javaInstallerButton": "Universal JAR",
+  "complementaryInstallerButton": "Download Installer",
+  "complementaryWebsiteButton": "Visit Complementary Website"
 }
