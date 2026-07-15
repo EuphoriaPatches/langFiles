@@ -50,7 +50,7 @@ jobs:
           upload_sources: true
           upload_translations: ${{ github.event_name == 'workflow_dispatch' && inputs.upload_translations }}
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
-          skip_untranslated_strings: true
+          skip_untranslated_strings: false
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
           pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
@@ -100,7 +100,7 @@ jobs:
           upload_sources: true
           upload_translations: ${{ github.event_name == 'workflow_dispatch' && inputs.upload_translations }}
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
-          skip_untranslated_strings: true
+          skip_untranslated_strings: false
           create_pull_request: false
           localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
           pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
