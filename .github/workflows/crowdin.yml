@@ -37,9 +37,48 @@ permissions:
   pull-requests: write
 
 jobs:
+  check-source-changes:
+    name: "Check for source changes"
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    outputs:
+      lang_changed: ${{ steps.check.outputs.lang_changed }}
+      website_changed: ${{ steps.check.outputs.website_changed }}
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: "Check for recent changes to source files"
+        id: check
+        # The nightly schedule fires every 2 AM UTC regardless of whether
+        # en_US.lang/en.json actually changed since the last run. Skip the
+        # upload step when there's nothing new to push to Crowdin.
+        run: |
+          if [ -n "$(git log --since='25 hours ago' --format= -- en_US.lang)" ]; then
+            echo "lang_changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "lang_changed=false" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -n "$(git log --since='25 hours ago' --format= -- website/en.json)" ]; then
+            echo "website_changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "website_changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  # sync-lang and sync-website each only upload/download against their own
+  # Crowdin project and produce local file changes as an artifact - neither
+  # touches git directly, so they can safely run in parallel. Only
+  # commit-and-push (below) ever writes to the localization branch, which
+  # avoids the two jobs racing to push the same branch at once.
   sync-lang:
     name: "Sync Shader Lang"
     runs-on: ubuntu-latest
+    needs: [check-source-changes]
+    if: always() && (needs.check-source-changes.result == 'success' || needs.check-source-changes.result == 'skipped')
+    outputs:
+      has_changes: ${{ steps.check-changes.outputs.has_changes || 'false' }}
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v4
@@ -47,14 +86,12 @@ jobs:
       - name: "Crowdin (Shader Lang)"
         uses: crowdin/github-action@v2
         with:
-          upload_sources: true
+          upload_sources: ${{ github.event_name != 'schedule' || needs.check-source-changes.outputs.lang_changed == 'true' }}
           upload_translations: ${{ github.event_name == 'workflow_dispatch' && inputs.upload_translations }}
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+          push_sources: false
+          push_translations: false
           skip_untranslated_strings: false
-          create_pull_request: false
-          localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
-          pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
-          commit_message: "[translation] Update shader lang translations"
           config: .github/config/crowdin_lang.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -64,32 +101,39 @@ jobs:
       - name: "Fix workspace ownership"
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         # The Crowdin action runs in a Docker container as root, which leaves
-        # the checked-out workspace root-owned. Reclaim it before the next step runs git commands as the normal runner user.
+        # the checked-out workspace root-owned. Reclaim it before the next
+        # steps read/write files as the normal runner user.
         run: sudo chown -R "$(id -u):$(id -g)" .
 
       - name: "Restore intentionally empty lang keys"
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: node .github/scripts/restore-empty-lang-keys.js
+
+      - name: "Check for changes"
+        id: check-changes
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
-          git fetch origin ${{ env.LOCALIZATION_BRANCH }} || true
-          if git show-ref --verify --quiet "refs/remotes/origin/${{ env.LOCALIZATION_BRANCH }}"; then
-            git checkout ${{ env.LOCALIZATION_BRANCH }}
-            node .github/scripts/restore-empty-lang-keys.js
-            if ! git diff --quiet -- '*.lang'; then
-              git config --local user.email "action@github.com"
-              git config --local user.name "GitHub Action"
-              git add -- '*.lang'
-              git commit -m "[translation] Restore intentionally empty lang keys"
-              git push origin ${{ env.LOCALIZATION_BRANCH }}
-            fi
-            git checkout ${{ env.TARGET_BRANCH }}
+          if [ -n "$(git status --porcelain -- '*.lang')" ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           else
-            echo "No localization branch to patch - skipping."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: "Upload lang files artifact"
+        if: steps.check-changes.outputs.has_changes == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: lang-files
+          path: "*.lang"
+          retention-days: 1
 
   sync-website:
     name: "Sync Website"
     runs-on: ubuntu-latest
-    needs: [sync-lang]
+    needs: [check-source-changes]
+    if: always() && (needs.check-source-changes.result == 'success' || needs.check-source-changes.result == 'skipped')
+    outputs:
+      has_changes: ${{ steps.check-changes.outputs.has_changes || 'false' }}
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v4
@@ -97,25 +141,100 @@ jobs:
       - name: "Crowdin (Website)"
         uses: crowdin/github-action@v2
         with:
-          upload_sources: true
+          upload_sources: ${{ github.event_name != 'schedule' || needs.check-source-changes.outputs.website_changed == 'true' }}
           upload_translations: ${{ github.event_name == 'workflow_dispatch' && inputs.upload_translations }}
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
+          push_sources: false
+          push_translations: false
           skip_untranslated_strings: false
-          create_pull_request: false
-          localization_branch_name: ${{ env.LOCALIZATION_BRANCH }}
-          pull_request_base_branch_name: ${{ env.TARGET_BRANCH }}
-          commit_message: "[translation] Update website translations"
           config: .github/config/crowdin_website.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_PROJECT_ID_WEBSITE: ${{ vars.CROWDIN_PROJECT_ID_WEBSITE }}
 
+      - name: "Fix workspace ownership"
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: sudo chown -R "$(id -u):$(id -g)" .
+
+      - name: "Check for changes"
+        id: check-changes
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          if [ -n "$(git status --porcelain -- 'website/*.json')" ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: "Upload website files artifact"
+        if: steps.check-changes.outputs.has_changes == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-files
+          path: "website/*.json"
+          retention-days: 1
+
+  commit-and-push:
+    name: "Commit and Push Translations"
+    runs-on: ubuntu-latest
+    needs: [sync-lang, sync-website]
+    if: |
+      always() &&
+      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') &&
+      (needs.sync-lang.outputs.has_changes == 'true' || needs.sync-website.outputs.has_changes == 'true')
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v4
+
+      - name: "Download lang files"
+        if: needs.sync-lang.outputs.has_changes == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: lang-files
+          path: ./
+
+      - name: "Download website files"
+        if: needs.sync-website.outputs.has_changes == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          name: website-files
+          path: website
+
+      - name: "Configure Git"
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: "Commit and push to localization branch"
+        run: |
+          git checkout -B ${{ env.LOCALIZATION_BRANCH }}
+          git add -- '*.lang' 'website/*.json'
+          git diff --cached --quiet && { echo "Nothing staged, skipping commit"; exit 0; }
+
+          MSG=""
+          if [ "${{ needs.sync-lang.outputs.has_changes }}" = "true" ]; then
+            MSG="Update shader lang translations"
+          fi
+          if [ "${{ needs.sync-website.outputs.has_changes }}" = "true" ]; then
+            if [ -n "$MSG" ]; then
+              MSG="$MSG and website translations"
+            else
+              MSG="Update website translations"
+            fi
+          fi
+
+          git commit -m "[translation] $MSG"
+          git push --force origin ${{ env.LOCALIZATION_BRANCH }}
+
   create-pr:
     name: "Create Pull Request"
     runs-on: ubuntu-latest
-    needs: [sync-lang, sync-website]
-    if: (github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && inputs.create_pr)
+    needs: [commit-and-push]
+    if: |
+      always() &&
+      needs.commit-and-push.result == 'success' &&
+      ((github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && inputs.create_pr))
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v4
