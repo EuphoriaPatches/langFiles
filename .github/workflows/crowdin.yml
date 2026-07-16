@@ -215,7 +215,7 @@ jobs:
           path: _new/website
 
       - name: "Split changes into clean and flagged"
-        run: node .github/scripts/split-by-profanity.js
+        run: node .github/scripts/split-by-content-safety.js
         env:
           PROFANITY_REPO_TOKEN: ${{ secrets.PROFANITY_REPO_TOKEN }}
 
@@ -297,20 +297,28 @@ jobs:
         run: |
           {
             echo "body<<EOF"
-            echo "New translations from Crowdin were flagged by the profanity filter and need manual review before merging."
+            echo "New translations from Crowdin were flagged by the content safety check and need manual review before merging."
             echo ""
             echo "### Flagged items"
             node -e "
               const items = JSON.parse(require('fs').readFileSync('_flagged-report.json', 'utf8'));
               const slugs = { lang: '${{ env.CROWDIN_PROJECT_SLUG_LANG }}', website: '${{ env.CROWDIN_PROJECT_SLUG_WEBSITE }}' };
+              const labels = {
+                'no-wordlist-coverage': 'no profanity wordlist for this language yet - needs one added',
+                'profanity-match': 'profanity match',
+                'suspicious-url': 'URL not found in the English source or whitelist',
+                'homoglyph-url': 'URL contains mixed-script (lookalike) characters',
+                'phone-number': 'phone number detected',
+                'html-injection': 'HTML/script injection pattern',
+                'spam-repetition': 'repeated character/word spam pattern',
+              };
               for (const item of items) {
                 const isWebsite = item.file.startsWith('website/');
                 const slug = isWebsite ? slugs.website : slugs.lang;
                 const link = 'https://crowdin.com/project/' + slug;
-                const reason = item.reason === 'no-wordlist-coverage'
-                  ? 'no profanity wordlist for this language yet - flagged automatically, needs a wordlist added'
-                  : 'matched: ' + item.matchedWords.join(', ');
-                console.log('- **' + item.file + '** \`' + item.key + '\` (' + item.language + ') - ' + reason);
+                const reasonText = item.reasons.map((r) => labels[r] || r).join('; ');
+                console.log('- **' + item.file + '** \`' + item.key + '\` (' + item.language + ') - ' + reasonText);
+                console.log('  - Matched: ' + item.matchedWords.join(', '));
                 console.log('  - Old: ' + JSON.stringify(item.oldValue));
                 console.log('  - New: ' + JSON.stringify(item.newValue));
                 console.log('  - [Review in Crowdin](' + link + ') - search for the key above');

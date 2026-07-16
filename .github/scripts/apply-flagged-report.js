@@ -1,4 +1,4 @@
-// Applies the flagged updates recorded by split-by-profanity.js onto the
+// Applies the flagged updates recorded by split-by-content-safety.js onto the
 // current files (which by this point already have the clean changes
 // committed). Run this only on the localization branch, after the clean
 // commit has landed on the target branch.
