@@ -293,10 +293,8 @@ jobs:
           name: flagged-report
 
       - name: "Build PR body"
-        id: body
         run: |
           {
-            echo "body<<EOF"
             echo "New translations from Crowdin were flagged by the content safety check and need manual review before merging."
             echo ""
             echo "### Flagged items"
@@ -327,15 +325,67 @@ jobs:
             echo ""
             echo "### If rejected"
             echo "Delete or fix the translation directly in Crowdin using the links above, so it isn't proposed again unchanged."
-            echo "EOF"
-          } >> "$GITHUB_OUTPUT"
+          } > pr-body.md
+          echo "--- PR body ---"
+          cat pr-body.md
 
-      - name: "Create Pull Request"
-        uses: devops-infra/action-pull-request@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: ${{ env.LOCALIZATION_BRANCH }}
-          target_branch: ${{ env.TARGET_BRANCH }}
-          label: "translations"
-          title: "Flagged Crowdin translations for review"
-          body: ${{ steps.body.outputs.body }}
+      # Uses gh directly instead to see real error output in the logs, since the action's own error message is unhelpful and hides the actual cause.
+      - name: "Create or update Pull Request"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -uo pipefail
+
+          MAX_RETRIES=3
+          ATTEMPT=1
+
+          while [ "$ATTEMPT" -le "$MAX_RETRIES" ]; do
+            echo "[Attempt $ATTEMPT/$MAX_RETRIES] Checking for an existing PR (${{ env.LOCALIZATION_BRANCH }} -> ${{ env.TARGET_BRANCH }})..."
+
+            LIST_OUTPUT="$(gh pr list \
+              --repo "${{ github.repository }}" \
+              --head "${{ env.LOCALIZATION_BRANCH }}" \
+              --base "${{ env.TARGET_BRANCH }}" \
+              --state open \
+              --json number \
+              --jq '.[0].number // empty' 2>&1)"
+            LIST_STATUS=$?
+
+            if [ "$LIST_STATUS" -ne 0 ]; then
+              echo "gh pr list failed (exit $LIST_STATUS): $LIST_OUTPUT"
+            elif [ -n "$LIST_OUTPUT" ]; then
+              echo "Found existing PR #$LIST_OUTPUT - updating it"
+              if EDIT_OUTPUT="$(gh pr edit "$LIST_OUTPUT" \
+                  --repo "${{ github.repository }}" \
+                  --title "Flagged Crowdin translations for review" \
+                  --body-file pr-body.md 2>&1)"; then
+                echo "PR #$LIST_OUTPUT updated."
+                exit 0
+              else
+                echo "gh pr edit failed: $EDIT_OUTPUT"
+              fi
+            else
+              echo "No existing PR found - creating a new one"
+              if CREATE_OUTPUT="$(gh pr create \
+                  --repo "${{ github.repository }}" \
+                  --head "${{ env.LOCALIZATION_BRANCH }}" \
+                  --base "${{ env.TARGET_BRANCH }}" \
+                  --title "Flagged Crowdin translations for review" \
+                  --body-file pr-body.md \
+                  --label "translations" 2>&1)"; then
+                echo "PR created: $CREATE_OUTPUT"
+                exit 0
+              else
+                echo "gh pr create failed: $CREATE_OUTPUT"
+              fi
+            fi
+
+            ATTEMPT=$((ATTEMPT + 1))
+            if [ "$ATTEMPT" -le "$MAX_RETRIES" ]; then
+              echo "Retrying in 10s..."
+              sleep 10
+            fi
+          done
+
+          echo "::error::Failed to create/update the PR after $MAX_RETRIES attempts - see the gh output above for the actual cause."
+          exit 1
