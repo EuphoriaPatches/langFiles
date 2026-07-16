@@ -19,6 +19,11 @@ on:
         type: boolean
         default: false
         required: true
+      test_mode:
+        description: "Target main-test instead of main (for validating this workflow)"
+        type: boolean
+        default: false
+        required: true
   schedule:
     # Runs after update-en-US.yml (midnight UTC), so any freshly pulled
     # English strings are pushed to Crowdin the same night.
@@ -30,7 +35,9 @@ concurrency:
 
 env:
   LOCALIZATION_BRANCH: l10n_crowdin_translations
-  TARGET_BRANCH: main
+  TARGET_BRANCH: ${{ (github.event_name == 'workflow_dispatch' && inputs.test_mode) && 'main-test' || 'main' }}
+  CROWDIN_PROJECT_SLUG_LANG: EuphoriaPatchesShader
+  CROWDIN_PROJECT_SLUG_WEBSITE: EuphoriaPatchesWebsite
 
 permissions:
   contents: write
@@ -67,11 +74,10 @@ jobs:
             echo "website_changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-  # sync-lang and sync-website each only upload/download against their own
-  # Crowdin project and produce local file changes as an artifact - neither
-  # touches git directly, so they can safely run in parallel. Only
-  # commit-and-push (below) ever writes to the localization branch, which
-  # avoids the two jobs racing to push the same branch at once.
+  # sync-lang and sync-website only talk to their own Crowdin project and
+  # never touch git (push_sources/push_translations: false) - they just
+  # produce artifacts. That means they can safely run in parallel; only
+  # process-changes (below) ever writes to a branch.
   sync-lang:
     name: "Sync Shader Lang"
     runs-on: ubuntu-latest
@@ -104,10 +110,6 @@ jobs:
         # the checked-out workspace root-owned. Reclaim it before the next
         # steps read/write files as the normal runner user.
         run: sudo chown -R "$(id -u):$(id -g)" .
-
-      - name: "Restore intentionally empty lang keys"
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        run: node .github/scripts/restore-empty-lang-keys.js
 
       - name: "Check for changes"
         id: check-changes
@@ -175,81 +177,154 @@ jobs:
           path: "website/*.json"
           retention-days: 1
 
-  commit-and-push:
-    name: "Commit and Push Translations"
+  process-changes:
+    name: "Split Clean/Flagged and Commit"
     runs-on: ubuntu-latest
     needs: [sync-lang, sync-website]
     if: |
       always() &&
       (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') &&
       (needs.sync-lang.outputs.has_changes == 'true' || needs.sync-website.outputs.has_changes == 'true')
+    outputs:
+      has_flagged_changes: ${{ steps.flagged-check.outputs.has_flagged_changes || 'false' }}
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: "Prepare target branch"
+        run: |
+          if [ "${{ env.TARGET_BRANCH }}" != "main" ]; then
+            if git ls-remote --exit-code --heads origin "${{ env.TARGET_BRANCH }}" > /dev/null 2>&1; then
+              git fetch origin "${{ env.TARGET_BRANCH }}"
+              git checkout "${{ env.TARGET_BRANCH }}"
+            else
+              git checkout -b "${{ env.TARGET_BRANCH }}"
+            fi
+          fi
 
       - name: "Download lang files"
         if: needs.sync-lang.outputs.has_changes == 'true'
         uses: actions/download-artifact@v4
         with:
           name: lang-files
-          path: ./
+          path: _new
 
       - name: "Download website files"
         if: needs.sync-website.outputs.has_changes == 'true'
         uses: actions/download-artifact@v4
         with:
           name: website-files
-          path: website
+          path: _new/website
+
+      - name: "Split changes into clean and flagged"
+        run: node .github/scripts/split-by-profanity.js
+        env:
+          PROFANITY_REPO_TOKEN: ${{ secrets.PROFANITY_REPO_TOKEN }}
+
+      - name: "Restore intentionally empty lang keys (clean set)"
+        run: node .github/scripts/restore-empty-lang-keys.js
 
       - name: "Configure Git"
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-      - name: "Commit and push to localization branch"
+      - name: "Commit and push clean changes to target branch"
         run: |
-          git checkout -B ${{ env.LOCALIZATION_BRANCH }}
           git add -- '*.lang' 'website/*.json'
-          git diff --cached --quiet && { echo "Nothing staged, skipping commit"; exit 0; }
-
-          MSG=""
-          if [ "${{ needs.sync-lang.outputs.has_changes }}" = "true" ]; then
-            MSG="Update shader lang translations"
-          fi
-          if [ "${{ needs.sync-website.outputs.has_changes }}" = "true" ]; then
-            if [ -n "$MSG" ]; then
-              MSG="$MSG and website translations"
-            else
-              MSG="Update website translations"
+          if git diff --cached --quiet; then
+            echo "No clean changes to commit."
+          else
+            MSG=""
+            if [ "${{ needs.sync-lang.outputs.has_changes }}" = "true" ]; then
+              MSG="Update shader lang translations"
             fi
+            if [ "${{ needs.sync-website.outputs.has_changes }}" = "true" ]; then
+              if [ -n "$MSG" ]; then
+                MSG="$MSG and website translations"
+              else
+                MSG="Update website translations"
+              fi
+            fi
+            git commit -m "[translation] $MSG"
+            git push origin "${{ env.TARGET_BRANCH }}"
           fi
 
-          git commit -m "[translation] $MSG"
-          git push --force origin ${{ env.LOCALIZATION_BRANCH }}
+      - name: "Check for flagged content"
+        id: flagged-check
+        run: |
+          COUNT=$(node -e "console.log(JSON.parse(require('fs').readFileSync('_flagged-report.json','utf8')).length)")
+          if [ "$COUNT" -gt 0 ]; then
+            echo "has_flagged_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_flagged_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: "Commit and push flagged changes to localization branch"
+        if: steps.flagged-check.outputs.has_flagged_changes == 'true'
+        run: |
+          git checkout -B "${{ env.LOCALIZATION_BRANCH }}"
+          node .github/scripts/apply-flagged-report.js
+          node .github/scripts/restore-empty-lang-keys.js
+          git add -- '*.lang' 'website/*.json'
+          git commit -m "[translation] Flagged translations pending review"
+          git push --force origin "${{ env.LOCALIZATION_BRANCH }}"
+
+      - name: "Upload flagged report"
+        if: steps.flagged-check.outputs.has_flagged_changes == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: flagged-report
+          path: _flagged-report.json
+          retention-days: 1
 
   create-pr:
     name: "Create Pull Request"
     runs-on: ubuntu-latest
-    needs: [commit-and-push]
+    needs: [process-changes]
     if: |
       always() &&
-      needs.commit-and-push.result == 'success' &&
+      needs.process-changes.outputs.has_flagged_changes == 'true' &&
       ((github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && inputs.create_pr))
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v4
 
-      - name: "Get changed files"
-        id: diff
+      - name: "Download flagged report"
+        uses: actions/download-artifact@v4
+        with:
+          name: flagged-report
+
+      - name: "Build PR body"
+        id: body
         run: |
-          git fetch origin ${{ env.TARGET_BRANCH }} ${{ env.LOCALIZATION_BRANCH }}
-          FILES=$(git diff --name-only "origin/${{ env.TARGET_BRANCH }}" "origin/${{ env.LOCALIZATION_BRANCH }}" | sed 's/^/- /')
-          if [ -z "$FILES" ]; then
-            FILES="- No file changes detected"
-          fi
           {
-            echo "changed_files<<EOF"
-            echo "$FILES"
+            echo "body<<EOF"
+            echo "New translations from Crowdin were flagged by the profanity filter and need manual review before merging."
+            echo ""
+            echo "### Flagged items"
+            node -e "
+              const items = JSON.parse(require('fs').readFileSync('_flagged-report.json', 'utf8'));
+              const slugs = { lang: '${{ env.CROWDIN_PROJECT_SLUG_LANG }}', website: '${{ env.CROWDIN_PROJECT_SLUG_WEBSITE }}' };
+              for (const item of items) {
+                const isWebsite = item.file.startsWith('website/');
+                const slug = isWebsite ? slugs.website : slugs.lang;
+                const link = 'https://crowdin.com/project/' + slug;
+                const reason = item.reason === 'no-wordlist-coverage'
+                  ? 'no profanity wordlist for this language yet - flagged automatically, needs a wordlist added'
+                  : 'matched: ' + item.matchedWords.join(', ');
+                console.log('- **' + item.file + '** \`' + item.key + '\` (' + item.language + ') - ' + reason);
+                console.log('  - Old: ' + JSON.stringify(item.oldValue));
+                console.log('  - New: ' + JSON.stringify(item.newValue));
+                console.log('  - [Review in Crowdin](' + link + ') - search for the key above');
+              }
+            "
+            echo ""
+            echo "### If rejected"
+            echo "Delete or fix the translation directly in Crowdin using the links above, so it isn't proposed again unchanged."
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
@@ -261,9 +336,5 @@ jobs:
           target_branch: ${{ env.TARGET_BRANCH }}
           label: "translations"
           create_missing_labels: true
-          title: "New Crowdin translations"
-          body: |
-            New translations from Crowdin.
-
-            ### Changed files
-            ${{ steps.diff.outputs.changed_files }}
+          title: "Flagged Crowdin translations for review"
+          body: ${{ steps.body.outputs.body }}
