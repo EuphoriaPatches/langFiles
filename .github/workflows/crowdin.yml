@@ -337,6 +337,5 @@ jobs:
           source_branch: ${{ env.LOCALIZATION_BRANCH }}
           target_branch: ${{ env.TARGET_BRANCH }}
           label: "translations"
-          create_missing_labels: true
           title: "Flagged Crowdin translations for review"
           body: ${{ steps.body.outputs.body }}
