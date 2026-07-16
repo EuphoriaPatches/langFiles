@@ -8,4 +8,4 @@ files:
   - source: "/en.json"
     translation: "/%locale%.json"
     type: "json"
-    update_option: "update_as_unapproved"
+    # update_option: "update_as_unapproved"

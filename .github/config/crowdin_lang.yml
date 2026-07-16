@@ -8,5 +8,5 @@ files:
   - source: "/en_US.lang"
     translation: "/%locale_with_underscore%.lang"
     type: "properties"
-    update_option: "update_as_unapproved"
+    # update_option: "update_as_unapproved"
     escape_special_characters: 0
