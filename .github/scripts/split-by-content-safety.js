@@ -22,8 +22,15 @@ const ENTRY_RE = /^([^#\s][^=]*)=(.*)$/;
 // Profanity wordlists
 // ---------------------------------------------------------------------
 
-function deriveWordlistCode(langId) {
-  return langId.split(/[_-]/)[0].toLowerCase();
+// Overrides for language identifiers whose wordlist code isn't just the
+// part before the underscore (see resolveWordlistCode below). Empty for
+// now - every current locale here reduces cleanly.
+const PROFANITY_LANG_OVERRIDES = {};
+
+function resolveWordlistCode(langId) {
+  return (
+    PROFANITY_LANG_OVERRIDES[langId] ?? langId.split(/[_-]/)[0].toLowerCase()
+  );
 }
 
 // Scripts that don't reliably delimit words with spaces, so a wordlist
@@ -114,7 +121,7 @@ function warnOnce(langId, message) {
 // Fails closed: no wordlist coverage means we can't rule out profanity, so
 // treat it as flagged rather than silently letting it through unchecked.
 async function checkProfanity(text, langId) {
-  const wordlistCode = deriveWordlistCode(langId);
+  const wordlistCode = resolveWordlistCode(langId);
 
   const index = await getWordlistIndex(wordlistCode);
   if (!index) {
@@ -159,7 +166,8 @@ const WHITELISTED_URL_PREFIXES = [
   "crowdin.com/project/EuphoriaPatchesShader",
   "crowdin.com/project/EuphoriaPatchesWebsite",
   "patreon.com/c/SpacEagle17",
-  "www.patreon.com/cw/SpacEagle17",
+  "patreon.com/cw/SpacEagle17",
+  "patreon.com/spaceagle17",
   "ko-fi.com/spaceagle17",
 ];
 
