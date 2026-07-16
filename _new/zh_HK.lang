@@ -1,4 +1,4 @@
-#shaders/lang/zh_HK.lang
+#shaders/lang/en_US.lang
 
 #Profiles
 profile.POTATO=性能需求: §a極低
@@ -241,8 +241,8 @@ option.RP_MODE=資源包支持
 option.RP_MODE.comment=改變了許多內部計算, 以確定不同的方塊和材質將被如何渲染. §b集成PBR+§r: 計算出的PBR材質和其他額外效果, 大部分情況下強烈推薦使用這個模式.  §a基本§r: 沒有法綫貼圖和額外效果. §elabPBR/seuspbr§r: 對含 PBR 紋理的資源包的支持.
 value.RP_MODE.0=§a基本
 value.RP_MODE.1=§b集成PBR+
-value.RP_MODE.2=§eseuspbr (RP Required)
-value.RP_MODE.3=§elabPBR (RP Required)
+value.RP_MODE.2=§eseuspbr (需要資源包）
+value.RP_MODE.3=§elabPBR (需要資源包）
 
 option.WATER_REFLECT_QUALITY=水體反射質量
 option.WATER_REFLECT_QUALITY.comment=調節出現在半透明方塊上的反射的視覺質量. §c中§r: 水和半透明方塊的反射使用屏幕空間路徑跟蹤. §e極低§r: 用更快的方法替代原有水和半透明的反射, 在某些情況下可能看起來不正確. §a關§r: 無反射.
@@ -843,9 +843,9 @@ value.CHROMA_ABERRATION.8=8 §c[-]
 
 option.IPBR_EMISSIVE_MODE=集成PBR+自發光模式
 option.IPBR_EMISSIVE_MODE.comment=選擇集成PBR+自發光的處理模式. 選擇 labPBR 或 seuspbr 時允許在使用兼容的資源包時使方塊的集成PBR+自發光效果被資源包內對應的高光貼圖效果完全覆蓋. §c[-]§r 除非知道自己在做什麼, 否則不推薦改變這個選項的默認數值.
-value.IPBR_EMISSIVE_MODE.1=IPBR+ Only
-value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
-value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
+value.IPBR_EMISSIVE_MODE.1=僅集成PBR+
+value.IPBR_EMISSIVE_MODE.3=labPBR > 集成PBR+
+value.IPBR_EMISSIVE_MODE.2=seuspbr > 集成PBR+
 
 option.IPBR_COMPAT_MODE_DEFINE=集成PBR+兼容模式
 option.IPBR_COMPAT_MODE_DEFINE.comment=更改部分集成PBR+功能的計算方式來, 避免使用激進的實現方法, 以減少對部分資源包和模組造成的問題.
