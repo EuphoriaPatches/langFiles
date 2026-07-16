@@ -2961,8 +2961,8 @@ value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32チャンク
 value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=描画距離
 
 
-option.CUSTOM_SKY_SUPPORT_SLIDER=Custom Skybox Support
-option.CUSTOM_SKY_SUPPORT_SLIDER.comment=Adds support for custom skyboxes including modded ones such as Stellar View. The slider changes the alpha mix of the skybox, only change it if there are issues.
+option.CUSTOM_SKY_SUPPORT_SLIDER=カスタムスカイボックスサポート
+option.CUSTOM_SKY_SUPPORT_SLIDER.comment=Stellar ViewなどのModを含むカスタムスカイボックスのサポートを追加します。. スライダーはスカイボックスのアルファ合成を変更します。問題が発生した場合のみ変更してください。
 value.CUSTOM_SKY_SUPPORT_SLIDER.0=OFF
 value.CUSTOM_SKY_SUPPORT_SLIDER.10=ON
 
@@ -2970,7 +2970,7 @@ option.CUSTOM_SKY_MOD_SUPPORT=空Modサポート
 option.CUSTOM_SKY_MOD_SUPPORT.comment=CaelumやAstrocraftなどのカスタムされた空を使用するModのサポートを追加します。. あまり多くのModではテストされていないため、いくつかのものが壊れる可能性があります。
 
 option.SAVE_SKYBOX_DATA_OVERRIDE=スカイボックスのデータを保存
-option.SAVE_SKYBOX_DATA_OVERRIDE.comment=Allows the shaderpack to save the custom skybox to a buffer, this happens automatically when a skybox mod is installed but can occasionally cause issues with certain mods that change the skybox as well, thus this option allows you to disable it.
+option.SAVE_SKYBOX_DATA_OVERRIDE.comment=シェーダーがカスタムスカイボックスをバッファーに保存するのを許可します。. これはスカイボックスModがインストールされている場合に自動で発生しますが、いくつかのModでは問題が発生するため、この設定でこの動作を無効にすることができます。
 
 option.DISTANT_HORIZONS_SSAO=エッジシャドウ (SSAO)
 option.DISTANT_HORIZONS_SSAO.comment=Distant HorizonsのチャンクでSSAO(Screen Space Ambient Occlusion)を有効にします。. §e[*]§r Distant Horizonsがインストールされている場合にのみ動作します。. §e[*]§r パフォーマンス設定でエッジシャドウ(SSAO)の品質がOFF以外に設定されている必要があります。
