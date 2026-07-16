@@ -75,6 +75,10 @@ async function fetchWordlist(wordlistCode) {
     : [];
 }
 
+
+const MIN_SUBSTRING_LATIN_LENGTH = 3;
+const PURE_LATIN_RE = /^[a-z]+$/;
+
 // Builds a fast lookup index for one wordlist:
 // - wordSet: single-word entries, checked via O(1) Set membership against
 //   tokenized input (for space-delimited languages).
@@ -89,6 +93,7 @@ function buildIndex(words, wordlistCode) {
     const w = raw.toLowerCase().trim();
     if (!w) continue;
     if (forceSubstring || w.includes(" ")) {
+      if (PURE_LATIN_RE.test(w) && w.length < MIN_SUBSTRING_LATIN_LENGTH) continue;
       substringList.push(w);
     } else {
       wordSet.add(w);
@@ -332,6 +337,8 @@ async function main() {
       }
     }
   }
+
+  fs.rmSync(NEW_LANG_DIR, { recursive: true, force: true });
 
   fs.writeFileSync(REPORT_PATH, JSON.stringify(flaggedReport, null, 2), "utf8");
 
