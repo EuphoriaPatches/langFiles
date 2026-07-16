@@ -9,11 +9,6 @@ on:
       - "website/en.json"
   workflow_dispatch:
     inputs:
-      create_pr:
-        description: "Create Pull Request after sync"
-        type: boolean
-        default: false
-        required: true
       upload_translations:
         description: "Also upload existing repo translations to Crowdin (one-time seeding)"
         type: boolean
@@ -287,8 +282,7 @@ jobs:
     needs: [process-changes]
     if: |
       always() &&
-      needs.process-changes.outputs.has_flagged_changes == 'true' &&
-      ((github.event_name == 'schedule') || (github.event_name == 'workflow_dispatch' && inputs.create_pr))
+      needs.process-changes.outputs.has_flagged_changes == 'true'
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v4
