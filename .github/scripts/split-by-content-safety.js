@@ -31,6 +31,21 @@ function deriveWordlistCode(langId) {
 // on whitespace would just produce one giant "token" per sentence.
 const SUBSTRING_ONLY_CODES = new Set(["ja", "zh", "th"]);
 
+// Known-safe terms that happen to contain a flagged substring
+const SAFE_TERM_EXCEPTIONS = {
+  ja: ["カスタム", "カスタマイズ"],
+};
+
+function maskSafeTerms(text, wordlistCode) {
+  const exceptions = SAFE_TERM_EXCEPTIONS[wordlistCode];
+  if (!exceptions) return text;
+  let masked = text;
+  for (const term of exceptions) {
+    masked = masked.split(term).join(" ".repeat(term.length));
+  }
+  return masked;
+}
+
 const TOKEN_RE = /[\p{L}\p{N}]+/gu;
 
 async function fetchWordlist(wordlistCode) {
@@ -115,8 +130,9 @@ async function checkProfanity(text, langId) {
     if (index.wordSet.has(token)) matches.add(token);
   }
 
+  const maskedForSubstring = maskSafeTerms(lower, wordlistCode);
   for (const phrase of index.substringList) {
-    if (lower.includes(phrase)) matches.add(phrase);
+    if (maskedForSubstring.includes(phrase)) matches.add(phrase);
   }
 
   return {
