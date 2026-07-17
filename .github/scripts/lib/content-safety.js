@@ -289,14 +289,18 @@ function findHtmlInjection(text) {
 // Spam / repetition
 // ---------------------------------------------------------------------
 
+// Repeated characters (e.g. "!!!!!!!!") or repeated words (e.g. "hello hello hello hello hello")
 function hasSpamRepetition(text) {
   if (/(.)\1{7,}/u.test(text)) return true;
   const words = text.toLowerCase().match(/[\p{L}\p{N}]{3,}/gu) || [];
-  const counts = new Map();
-  for (const w of words) {
-    const count = (counts.get(w) || 0) + 1;
-    counts.set(w, count);
-    if (count >= 5) return true;
+  let run = 1;
+  for (let i = 1; i < words.length; i++) {
+    if (words[i] === words[i - 1]) {
+      run++;
+      if (run >= 5) return true;
+    } else {
+      run = 1;
+    }
   }
   return false;
 }
