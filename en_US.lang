@@ -2174,7 +2174,7 @@ value.SEASON_TRANSITION_START.4=80% of the Season
 value.SEASON_TRANSITION_START.9=90% of the Season
 
 option.SEASON_COLOR_DESATURATION=Color Desaturation
-option.SEASON_COLOR_DESATURATION.commnet=Desaturates the colors of the environment.
+option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
 
 option.SNOW_CONDITION=Snow Condition
 option.SNOW_CONDITION.comment=Determines the condition(s) for the snow to appear.
@@ -2920,7 +2920,7 @@ option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Enchanting Glint Strength
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Changes the strength of the light emitted by enchanted items when using Photonics lighting.
 
 option.PHOTONICS_HANDHELD_MODE=Handheld Light Mode
-option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\Single - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
+option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\nSingle - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
 value.PHOTONICS_HANDHELD_MODE.0=Off
 value.PHOTONICS_HANDHELD_MODE.1=Separate
 value.PHOTONICS_HANDHELD_MODE.2=Single
