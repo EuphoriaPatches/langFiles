@@ -19,6 +19,11 @@ on:
         type: boolean
         default: false
         required: true
+      test_sync_manual_edits:
+        description: "Dry-run the manual-lang-edits sync (diffs the latest commit, never writes to Crowdin)"
+        type: boolean
+        default: false
+        required: true
   schedule:
     # Runs after update-en-US.yml (midnight UTC), so any freshly pulled
     # English strings are pushed to Crowdin the same night.
@@ -91,6 +96,50 @@ jobs:
           name: lang-files
           path: "*.lang"
           retention-days: 1
+
+  # Handles hand-synchronized edits (e.g. a version-number bump applied to
+  # en_US.lang and every other lang file in the same commit) - pushes those
+  # specific translations to Crowdin directly so they don't get reset to
+  # English by Crowdin's normal "source text changed" invalidation. Needs
+  # sync-lang's upload_sources to have completed first, since Crowdin's
+  # per-key invalidation should be resolved before we submit the correct
+  # translation, not racing against it.
+  #
+  # Runs for real on push (diffing github.event.before/after). Can also be
+  # dry-run manually via workflow_dispatch + test_sync_manual_edits, which
+  # diffs the latest commit on whatever branch you run it from and never
+  # writes to Crowdin - useful for checking what it *would* do before
+  # trusting it unattended on a real push.
+  sync-manual-lang-edits:
+    name: "Sync Manual Lang Edits"
+    runs-on: ubuntu-latest
+    needs: [sync-lang]
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.test_sync_manual_edits)
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: "Determine commit range"
+        id: range
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            echo "before=${{ github.event.before }}" >> "$GITHUB_OUTPUT"
+            echo "after=${{ github.event.after }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "before=$(git rev-parse HEAD~1)" >> "$GITHUB_OUTPUT"
+            echo "after=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: "Sync manual edits to Crowdin"
+        env:
+          BEFORE_SHA: ${{ steps.range.outputs.before }}
+          AFTER_SHA: ${{ steps.range.outputs.after }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
+          CROWDIN_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_PROJECT_ID_LANG: ${{ vars.CROWDIN_PROJECT_ID_LANG }}
+        run: node .github/scripts/sync-manual-lang-edits.js
 
   sync-website:
     name: "Sync Website"
