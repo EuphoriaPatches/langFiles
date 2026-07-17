@@ -2,7 +2,7 @@
 
 #Profiles
 option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
-option.TRANSLATORS=Translated by: Insert your name(s) here
+option.TRANSLATORS=번역제작자 : _StrawberrySushi
 profile.POTATO=품질: §a최저
 profile.VERYLOW=품질: §a매우 낮음
 profile.LOW=품질: §a낮음
