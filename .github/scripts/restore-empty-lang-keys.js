@@ -74,11 +74,16 @@ function main() {
     const restoredKeys = [];
 
     // 1. Fix the header line if Crowdin replaced it with the source's own name.
-    if (HEADER_RE.test(sourceLines[0]) && HEADER_RE.test(lines[0])) {
+    if (HEADER_RE.test(sourceLines[0])) {
       const [, prefix] = sourceLines[0].match(HEADER_RE);
       const expectedHeader = `${prefix}${fileName}`;
-      if (lines[0] !== expectedHeader) {
-        lines[0] = expectedHeader;
+      if (HEADER_RE.test(lines[0])) {
+        if (lines[0] !== expectedHeader) {
+          lines[0] = expectedHeader;
+          changed = true;
+        }
+      } else if (lines[0] !== expectedHeader) {
+        lines.unshift(expectedHeader);
         changed = true;
       }
     }

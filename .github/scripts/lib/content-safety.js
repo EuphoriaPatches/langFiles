@@ -382,7 +382,10 @@ function parseLangEntries(lines) {
 function patchLangFile(oldRaw, updates, sourceKeyOrder) {
   const eol = detectEol(oldRaw);
   const trailingNewline = oldRaw.endsWith("\r\n") || oldRaw.endsWith("\n");
-  const lines = splitLines(oldRaw);
+  // splitLines("") returns [""] (one empty element), which would otherwise
+  // leave a stray leading blank line when building a brand new file from
+  // scratch (oldRaw === "").
+  const lines = oldRaw === "" ? [] : splitLines(oldRaw);
   let entries = parseLangEntries(lines);
 
   for (const [key, value] of updates) {
