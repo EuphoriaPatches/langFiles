@@ -101,7 +101,18 @@ jobs:
             gh pr edit "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body-file pr-body.md
 
             REMAINING=$(node -e "console.log(require('./_safe-term-result.json').remainingCount)")
-            REPLY="Added \`${{ steps.extract.outputs.term }}\` as a safe-term exception and re-checked matching flagged item(s). $REMAINING item(s) still need review."
+            if [ "$REMAINING" = "0" ]; then
+              if MERGE_OUTPUT=$(gh pr merge "${{ github.event.issue.number }}" \
+                  --repo "${{ github.repository }}" \
+                  --merge --delete-branch 2>&1); then
+                REPLY="Added \`${{ steps.extract.outputs.term }}\` as a safe-term exception. No flagged items remain (of any kind), so this PR was merged and its branch deleted automatically."
+              else
+                echo "gh pr merge failed: $MERGE_OUTPUT"
+                REPLY="Added \`${{ steps.extract.outputs.term }}\` as a safe-term exception. No flagged items remain, but auto-merge failed (branch protection or required checks?) - see the workflow run for details. Merge manually when ready."
+              fi
+            else
+              REPLY="Added \`${{ steps.extract.outputs.term }}\` as a safe-term exception and re-checked matching flagged item(s). $REMAINING item(s) still need review."
+            fi
           elif [ "$STATUS" = "not-found" ]; then
             REPLY="Couldn't find a flagged profanity match for \`${{ steps.extract.outputs.term }}\` in this PR - nothing changed."
           else

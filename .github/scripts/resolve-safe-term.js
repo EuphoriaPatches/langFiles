@@ -129,7 +129,17 @@ async function main() {
     fs.writeFileSync(filePath, patched, "utf8");
   }
 
-  fs.writeFileSync(REPORT_PATH, JSON.stringify(stillFlagged, null, 2), "utf8");
+  if (stillFlagged.length === 0) {
+    // Nothing left to review - remove the report entirely rather than
+    // leaving a stale "[]" file committed on the branch.
+    fs.rmSync(REPORT_PATH, { force: true });
+  } else {
+    fs.writeFileSync(
+      REPORT_PATH,
+      JSON.stringify(stillFlagged, null, 2),
+      "utf8",
+    );
+  }
 
   writeResult({
     status: "resolved",

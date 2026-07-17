@@ -18,7 +18,9 @@ const REASON_LABELS = {
 };
 
 function main() {
-  const items = JSON.parse(fs.readFileSync("_flagged-report.json", "utf8"));
+  const items = fs.existsSync("_flagged-report.json")
+    ? JSON.parse(fs.readFileSync("_flagged-report.json", "utf8"))
+    : [];
   const slugs = {
     lang: process.env.CROWDIN_PROJECT_SLUG_LANG,
     website: process.env.CROWDIN_PROJECT_SLUG_WEBSITE,
