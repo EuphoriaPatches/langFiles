@@ -1,5 +1,8 @@
 #shaders/lang/en_US.lang
 
+option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
+option.TRANSLATORS=Translated by: Insert your name(s) here
+
 #Profiles
 profile.POTATO=Performance: §aPotato
 profile.VERYLOW=Performance: §aVery Low
