@@ -1,19 +1,6 @@
 // Handles the "version bump" workflow: when en_US.lang and other *.lang
-// files are hand-edited together in the same push (e.g. a global find/
-// replace bumping a version number across every language at once), the
-// normal pipeline would otherwise let Crowdin's own "source changed"
-// invalidation reset those translations to English until a translator
-// redoes them - even though the correct translation is already sitting
-// right there in the repo.
-//
-// For each key that changed in en_US.lang in this push, checks whether
-// each other lang file *also* changed that same key in the same push. If
-// so, that's treated as a deliberate synchronized edit, and the new value
-// is pushed directly to Crowdin as the current, approved translation via
-// the string-translations API - bypassing the "needs retranslation" state
-// entirely for exactly those keys. Any source key that changed *without* a
-// corresponding change elsewhere is left alone, since that's a real content
-// edit that should still flow through the normal reset-and-retranslate path.
+// files are hand-edited together in the same push then feeds those changes to Crowdin directly
+// so that the Crowdin project is kept in sync with the repo's current state.
 "use strict";
 
 const { execFileSync } = require("child_process");
@@ -63,20 +50,43 @@ async function crowdinRequest(token, method, urlPath, body) {
   });
   const json = await res.json().catch(() => null);
   if (!res.ok) {
-    throw new Error(
+    const err = new Error(
       `Crowdin API ${method} ${urlPath} failed (${res.status}): ${JSON.stringify(json)}`,
     );
+    err.body = json;
+    throw err;
   }
   return json;
 }
 
-// Crowdin's own language IDs don't always match our repo's *.lang filenames:
-// languages without a dialect use the bare code (ja_JP -> "ja"), but
-// dialect-specific ones keep the region (pt_BR -> "pt-BR", zh_CN -> "zh-CN").
-// Rather than hardcode that split (and have it silently go stale the next
-// time a dialect-specific language is added, as just happened with es_ES),
-// ask Crowdin what languages actually exist in the project and match our
-// filename's base code against them.
+// Crowdin rejects POST /translations when a translation with identical text
+// already exists for that string+language (e.g. added by its own TM
+// pre-translation step, which runs upstream of this script in the sync-lang
+// job) - it wants you to approve the existing one instead of creating a
+// duplicate.
+function isDuplicateTranslationError(err) {
+  const errors = err.body && err.body.errors;
+  if (!Array.isArray(errors)) return false;
+  return errors.some((e) =>
+    ((e.error && e.error.errors) || []).some(
+      (inner) => inner.code === "validationError" && /duplicate translation/i.test(inner.message || ""),
+    ),
+  );
+}
+
+async function findMatchingTranslation(token, projectId, stringId, languageId, text) {
+  const result = await crowdinRequest(
+    token,
+    "GET",
+    `/projects/${projectId}/translations?stringId=${stringId}&languageId=${languageId}`,
+  );
+  const match = (result.data || []).find((item) => item.data.text === text);
+  return match ? match.data : null;
+}
+
+// Get the list of language IDs that exist in the Crowdin project, so we can
+// map our local lang file names to the correct Crowdin language ID (e.g.
+// "fr" vs "fr-FR" vs "fr-CA").
 async function getProjectLanguageIds(token, projectId) {
   const result = await crowdinRequest(token, "GET", `/projects/${projectId}`);
   return (result.data.targetLanguages || []).map((l) => l.id);
@@ -177,18 +187,47 @@ async function main() {
       }
 
       try {
-        const translation = await crowdinRequest(token, "POST", `/projects/${projectId}/translations`, {
-          stringId,
-          languageId,
-          text: newValue,
-        });
-        await crowdinRequest(token, "POST", `/projects/${projectId}/approvals`, {
-          translationId: translation.data.id,
-        });
-        console.log(`Synced ${fileName} [${key}] -> Crowdin (${languageId}), approved.`);
+        let translationId;
+        try {
+          const translation = await crowdinRequest(
+            token,
+            "POST",
+            `/projects/${projectId}/translations`,
+            {
+              stringId,
+              languageId,
+              text: newValue,
+            },
+          );
+          translationId = translation.data.id;
+        } catch (err) {
+          if (!isDuplicateTranslationError(err)) throw err;
+          const existing = await findMatchingTranslation(
+            token,
+            projectId,
+            stringId,
+            languageId,
+            newValue,
+          );
+          if (!existing) throw err;
+          translationId = existing.id;
+        }
+        await crowdinRequest(
+          token,
+          "POST",
+          `/projects/${projectId}/approvals`,
+          {
+            translationId,
+          },
+        );
+        console.log(
+          `Synced ${fileName} [${key}] -> Crowdin (${languageId}), approved.`,
+        );
         pushedCount++;
       } catch (err) {
-        console.warn(`WARNING: failed to sync ${fileName} [${key}]: ${err.message}`);
+        console.warn(
+          `WARNING: failed to sync ${fileName} [${key}]: ${err.message}`,
+        );
       }
     }
   }
