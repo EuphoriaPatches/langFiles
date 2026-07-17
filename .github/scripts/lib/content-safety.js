@@ -438,6 +438,35 @@ function loadSourceKeyOrder(sourceRaw) {
   return order;
 }
 
+const HEADER_RE = /^(#.*\/)([^/]+\.lang)$/;
+
+// Builds a new .lang file from the source template, replacing each key's
+// value with the translated value if present, or falling back to the
+// English source value if not. Preserves comments, blank lines...
+function buildLangFileFromTemplate(sourceRaw, translatedMap, fileName) {
+  const eol = detectEol(sourceRaw);
+  const trailingNewline =
+    sourceRaw.endsWith("\r\n") || sourceRaw.endsWith("\n");
+  const lines = splitLines(sourceRaw);
+  const realLines = trailingNewline ? lines.slice(0, -1) : lines;
+
+  const output = realLines.map((line) => {
+    if (HEADER_RE.test(line)) {
+      const [, prefix] = line.match(HEADER_RE);
+      return `${prefix}${fileName}`;
+    }
+    const m = line.match(ENTRY_RE);
+    if (!m) return line; // comment or blank line, copy as-is
+    const [, key, englishValue] = m;
+    const value = translatedMap.has(key)
+      ? translatedMap.get(key)
+      : englishValue;
+    return `${key}=${value}`;
+  });
+
+  return output.join(eol) + (trailingNewline ? eol : "");
+}
+
 module.exports = {
   REPO_ROOT,
   resolveWordlistCode,
@@ -451,5 +480,6 @@ module.exports = {
   patchLangFile,
   patchJsonFile,
   loadSourceKeyOrder,
+  buildLangFileFromTemplate,
   ENTRY_RE,
 };

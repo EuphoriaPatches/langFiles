@@ -22,6 +22,7 @@ const {
   patchLangFile,
   patchJsonFile,
   loadSourceKeyOrder,
+  buildLangFileFromTemplate,
   ENTRY_RE,
 } = require("./lib/content-safety");
 
@@ -51,11 +52,10 @@ async function main() {
       const langId = fileName.replace(/\.lang$/, "");
       const oldPath = path.join(REPO_ROOT, fileName);
       const newPath = path.join(NEW_LANG_DIR, fileName);
+      const isNewFile = !fs.existsSync(oldPath);
 
       // If the old file doesn't exist, we treat it as an empty file. For new languages which did not exist before.
-      const oldRaw = fs.existsSync(oldPath)
-        ? fs.readFileSync(oldPath, "utf8")
-        : "";
+      const oldRaw = isNewFile ? "" : fs.readFileSync(oldPath, "utf8");
       const newRaw = fs.readFileSync(newPath, "utf8");
       const oldMap = loadLangMap(oldRaw);
       const newMap = loadLangMap(newRaw);
@@ -84,7 +84,17 @@ async function main() {
         }
       }
 
-      if (cleanUpdates.size > 0) {
+      if (isNewFile) {
+        // Build from the source's own structure to preserve new lines, comments, and key order.
+        fs.writeFileSync(
+          oldPath,
+          buildLangFileFromTemplate(sourceRaw, cleanUpdates, fileName),
+          "utf8",
+        );
+        console.log(
+          `${fileName}: created new language file (${cleanUpdates.size} clean update(s))`,
+        );
+      } else if (cleanUpdates.size > 0) {
         fs.writeFileSync(
           oldPath,
           patchLangFile(oldRaw, cleanUpdates, sourceKeyOrder),
