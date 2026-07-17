@@ -18,7 +18,7 @@
 
 const { execFileSync } = require("child_process");
 const path = require("path");
-const { REPO_ROOT, loadLangMap, resolveWordlistCode } = require("./lib/content-safety");
+const { REPO_ROOT, loadLangMap } = require("./lib/content-safety");
 
 const CROWDIN_API = "https://api.crowdin.com/api/v2";
 const ZERO_SHA = "0000000000000000000000000000000000000000";
@@ -70,6 +70,37 @@ async function crowdinRequest(token, method, urlPath, body) {
   return json;
 }
 
+// Crowdin's own language IDs don't always match our repo's *.lang filenames:
+// languages without a dialect use the bare code (ja_JP -> "ja"), but
+// dialect-specific ones keep the region (pt_BR -> "pt-BR", zh_CN -> "zh-CN").
+// Rather than hardcode that split (and have it silently go stale the next
+// time a dialect-specific language is added, as just happened with es_ES),
+// ask Crowdin what languages actually exist in the project and match our
+// filename's base code against them.
+async function getProjectLanguageIds(token, projectId) {
+  const result = await crowdinRequest(token, "GET", `/projects/${projectId}`);
+  return (result.data.targetLanguages || []).map((l) => l.id);
+}
+
+function resolveCrowdinLanguageId(langId, projectLanguageIds) {
+  const [base, region] = langId.split(/[_-]/);
+  const baseLower = base.toLowerCase();
+
+  if (projectLanguageIds.includes(baseLower)) return baseLower;
+
+  const dialectMatches = projectLanguageIds.filter((id) =>
+    id.toLowerCase().startsWith(`${baseLower}-`),
+  );
+  if (dialectMatches.length === 1) return dialectMatches[0];
+  if (dialectMatches.length > 1 && region) {
+    const exact = dialectMatches.find(
+      (id) => id.toLowerCase() === `${baseLower}-${region.toLowerCase()}`,
+    );
+    if (exact) return exact;
+  }
+  return null;
+}
+
 async function resolveStringId(token, projectId, key, cache) {
   if (cache.has(key)) return cache.get(key);
   const result = await crowdinRequest(
@@ -106,11 +137,17 @@ async function main() {
     return;
   }
 
+  const projectLanguageIds = await getProjectLanguageIds(token, projectId);
   const stringIdCache = new Map();
   let pushedCount = 0;
 
   for (const fileName of listLangFiles()) {
     const langId = fileName.replace(/\.lang$/, "");
+    const languageId = resolveCrowdinLanguageId(langId, projectLanguageIds);
+    if (!languageId) {
+      console.warn(`WARNING: could not resolve a Crowdin language ID for "${langId}" (no match in project languages: ${projectLanguageIds.join(", ")}) - skipping ${fileName}.`);
+      continue;
+    }
     const oldRaw = gitShow(beforeSha, fileName);
     const newRaw = gitShow(afterSha, fileName);
     if (newRaw === null) continue; // file doesn't exist at this commit
@@ -126,8 +163,6 @@ async function main() {
       // that changed in the source but not here is a real content change
       // that should still go through the normal retranslation flow.
       if (oldMap.get(key) === newValue) continue;
-
-      const languageId = resolveWordlistCode(langId);
 
       if (process.env.DRY_RUN === "true") {
         console.log(`[DRY RUN] would sync ${fileName} [${key}] -> Crowdin (${languageId}): ${JSON.stringify(newValue)}`);
