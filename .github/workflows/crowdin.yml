@@ -230,7 +230,11 @@ jobs:
           git checkout -B "${{ env.LOCALIZATION_BRANCH }}"
           node .github/scripts/apply-flagged-report.js
           node .github/scripts/restore-empty-lang-keys.js
-          git add -- '*.lang' 'website/*.json'
+          # _flagged-report.json is committed here (not just uploaded as an
+          # artifact) so it's still readable from the branch whenever
+          # someone comments on the PR, even long after the artifact's
+          # short retention window has expired.
+          git add -- '*.lang' 'website/*.json' '_flagged-report.json'
           git commit -m "[translation] Flagged translations pending review"
           git push --force origin "${{ env.LOCALIZATION_BRANCH }}"
 
@@ -259,41 +263,7 @@ jobs:
           name: flagged-report
 
       - name: "Build PR body"
-        run: |
-          {
-            echo "New translations from Crowdin were flagged by the content safety check and need manual review before merging."
-            echo ""
-            echo "### Flagged items"
-            node -e "
-              const items = JSON.parse(require('fs').readFileSync('_flagged-report.json', 'utf8'));
-              const slugs = { lang: '${{ env.CROWDIN_PROJECT_SLUG_LANG }}', website: '${{ env.CROWDIN_PROJECT_SLUG_WEBSITE }}' };
-              const labels = {
-                'no-wordlist-coverage': 'no profanity wordlist for this language yet - needs one added',
-                'profanity-match': 'profanity match',
-                'suspicious-url': 'URL not found in the English source or whitelist',
-                'homoglyph-url': 'URL contains mixed-script (lookalike) characters',
-                'phone-number': 'phone number detected',
-                'html-injection': 'HTML/script injection pattern',
-                'spam-repetition': 'repeated character/word spam pattern',
-              };
-              for (const item of items) {
-                const isWebsite = item.file.startsWith('website/');
-                const slug = isWebsite ? slugs.website : slugs.lang;
-                const link = 'https://crowdin.com/project/' + slug;
-                const reasonText = item.reasons.map((r) => labels[r] || r).join('; ');
-                console.log('- **' + item.file + '** \`' + item.key + '\` (' + item.language + ') - ' + reasonText);
-                console.log('  - Matched: ' + item.matchedWords.join(', '));
-                console.log('  - Old: ' + JSON.stringify(item.oldValue));
-                console.log('  - New: ' + JSON.stringify(item.newValue));
-                console.log('  - [Review in Crowdin](' + link + ') - search for the key above');
-              }
-            "
-            echo ""
-            echo "### If rejected"
-            echo "Delete or fix the translation directly in Crowdin using the links above, so it isn't proposed again unchanged."
-          } > pr-body.md
-          echo "--- PR body ---"
-          cat pr-body.md
+        run: node .github/scripts/build-pr-body.js
 
       # Uses gh directly instead to see real error output in the logs, since the action's own error message is unhelpful and hides the actual cause.
       - name: "Create or update Pull Request"

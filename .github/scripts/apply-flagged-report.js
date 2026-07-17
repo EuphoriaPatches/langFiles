@@ -6,67 +6,14 @@
 
 const fs = require("fs");
 const path = require("path");
+const {
+  REPO_ROOT,
+  loadSourceKeyOrder,
+  patchLangFile,
+  patchJsonFile,
+} = require("./lib/content-safety");
 
-const ROOT = path.resolve(__dirname, "..", "..");
-const REPORT_PATH = path.join(ROOT, "_flagged-report.json");
-
-const ENTRY_RE = /^([^#\s][^=]*)=(.*)$/;
-
-function splitLines(raw) {
-  return raw.split(/\r\n|\n/);
-}
-
-function detectEol(raw) {
-  return raw.includes("\r\n") ? "\r\n" : "\n";
-}
-
-function parseLangEntries(lines) {
-  const map = new Map();
-  lines.forEach((line, index) => {
-    const m = line.match(ENTRY_RE);
-    if (m) map.set(m[1], { value: m[2], index });
-  });
-  return map;
-}
-
-function patchLangFile(oldRaw, updates, sourceKeyOrder) {
-  const eol = detectEol(oldRaw);
-  const trailingNewline = oldRaw.endsWith("\r\n") || oldRaw.endsWith("\n");
-  const lines = splitLines(oldRaw);
-  let entries = parseLangEntries(lines);
-
-  for (const [key, value] of updates) {
-    const existing = entries.get(key);
-    if (existing) {
-      lines[existing.index] = `${key}=${value}`;
-    } else {
-      const srcIdx = sourceKeyOrder.indexOf(key);
-      let insertAt = null;
-      if (srcIdx !== -1) {
-        for (let i = srcIdx - 1; i >= 0 && insertAt === null; i--) {
-          const anchor = entries.get(sourceKeyOrder[i]);
-          if (anchor) insertAt = anchor.index + 1;
-        }
-        for (let i = srcIdx + 1; i < sourceKeyOrder.length && insertAt === null; i++) {
-          const anchor = entries.get(sourceKeyOrder[i]);
-          if (anchor) insertAt = anchor.index;
-        }
-      }
-      if (insertAt === null) insertAt = lines.length;
-      lines.splice(insertAt, 0, `${key}=${value}`);
-    }
-    entries = parseLangEntries(lines);
-  }
-
-  const realLines = trailingNewline ? lines.slice(0, -1) : lines;
-  return realLines.join(eol) + (trailingNewline ? eol : "");
-}
-
-function patchJsonFile(oldRaw, updates) {
-  const obj = JSON.parse(oldRaw);
-  for (const [key, value] of updates) obj[key] = value;
-  return JSON.stringify(obj, null, 2) + "\n";
-}
+const REPORT_PATH = path.join(REPO_ROOT, "_flagged-report.json");
 
 function main() {
   if (!fs.existsSync(REPORT_PATH)) {
@@ -80,12 +27,11 @@ function main() {
     return;
   }
 
-  const sourceRaw = fs.readFileSync(path.join(ROOT, "en_US.lang"), "utf8");
-  const sourceKeyOrder = [];
-  splitLines(sourceRaw).forEach((line) => {
-    const m = line.match(ENTRY_RE);
-    if (m) sourceKeyOrder.push(m[1]);
-  });
+  const sourceRaw = fs.readFileSync(
+    path.join(REPO_ROOT, "en_US.lang"),
+    "utf8",
+  );
+  const sourceKeyOrder = loadSourceKeyOrder(sourceRaw);
 
   const byFile = new Map();
   for (const item of report) {
@@ -94,7 +40,7 @@ function main() {
   }
 
   for (const [file, updates] of byFile) {
-    const filePath = path.join(ROOT, file);
+    const filePath = path.join(REPO_ROOT, file);
     const raw = fs.readFileSync(filePath, "utf8");
     const patched = file.endsWith(".json")
       ? patchJsonFile(raw, updates)
