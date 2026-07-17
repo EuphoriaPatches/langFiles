@@ -1,6 +1,8 @@
 #shaders/lang/ru_RU.lang
 
 #Profiles
+option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
+option.TRANSLATORS=Translated by: Insert your name(s) here
 profile.POTATO=Предустановка: §aкартошка
 profile.VERYLOW=Предустановка: §aочень низкая
 profile.LOW=Предустановка: §aнизкая
@@ -2172,6 +2174,7 @@ value.SEASON_TRANSITION_START.4=80% сезона
 value.SEASON_TRANSITION_START.9=90% сезона
 
 option.SEASON_COLOR_DESATURATION=Обесцвечивание
+option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
 option.SEASON_COLOR_DESATURATION.commnet=Уменьшает насыщенность цветов окружения.
 
 option.SNOW_CONDITION=Условия снега
@@ -2918,7 +2921,7 @@ option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Сила блеска чар
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Изменяет силу света, излучаемого зачарованными предметами, при использовании освещения Photonics.
 
 option.PHOTONICS_HANDHELD_MODE=Режим лучей в руках
-option.PHOTONICS_HANDHELD_MODE.comment=Изменяет способ отрисовки источников света в руках в моде Photonics.\n\nНет — источники света в руках вообще не отрисовываются через Photonics\nОдин — только один из источников света в руках будет отбрасывать тени\nРаздельно — оба источника света в руках будут отбрасывать отдельные тени\n\n§aМинимальное влияние на производительность
+option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\nSingle - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
 value.PHOTONICS_HANDHELD_MODE.0=Нет
 value.PHOTONICS_HANDHELD_MODE.1=Раздельно
 value.PHOTONICS_HANDHELD_MODE.2=Один

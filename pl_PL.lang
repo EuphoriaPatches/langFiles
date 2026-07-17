@@ -1,6 +1,8 @@
 #shaders/lang/pl_PL.lang
 
 #Profiles
+option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
+option.TRANSLATORS=Translated by: Insert your name(s) here
 profile.POTATO=Jakość: §aZiemniak
 profile.VERYLOW=Jakość: §aBardzo Niska
 profile.LOW=Jakość: §aNiska
@@ -2172,6 +2174,7 @@ value.SEASON_TRANSITION_START.4=80% pory roku
 value.SEASON_TRANSITION_START.9=90% pory roku
 
 option.SEASON_COLOR_DESATURATION=Desaturacja Kolorów
+option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
 option.SEASON_COLOR_DESATURATION.commnet=Desaturuje kolory otoczenia.
 
 option.SNOW_CONDITION=Warunek Pojawienia się Śniegu
@@ -2918,7 +2921,7 @@ option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Siła Zaklętego Blasku
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Zmienia siłę światła emitowanego przez zaklęte przedmioty podczas korzystania z Photonics.
 
 option.PHOTONICS_HANDHELD_MODE=Handheld Light Mode
-option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\Single - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
+option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\nSingle - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
 value.PHOTONICS_HANDHELD_MODE.0=WYŁ.
 value.PHOTONICS_HANDHELD_MODE.1=Separate
 value.PHOTONICS_HANDHELD_MODE.2=Single

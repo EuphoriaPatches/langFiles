@@ -1,6 +1,8 @@
 #shaders/lang/pt_BR.lang
 
 #Profiles
+option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
+option.TRANSLATORS=Translated by: Insert your name(s) here
 profile.POTATO=Desempenho: §aResolução de calculadora
 profile.VERYLOW=Desempenho: §aResolução bem Baixa
 profile.LOW=Desempenho: §aResolução Baixa
@@ -2172,6 +2174,7 @@ value.SEASON_TRANSITION_START.4=80% da Estação
 value.SEASON_TRANSITION_START.9=90% da Estação
 
 option.SEASON_COLOR_DESATURATION=Desaturação de Cor
+option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
 option.SEASON_COLOR_DESATURATION.commnet=Desaturates the colors of the environment.
 
 option.SNOW_CONDITION=Condição da Neve
@@ -2918,7 +2921,7 @@ option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Intensidade do Brilho de Encantamento
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Altera a intensidade da luz emitida por itens encantados ao usar a iluminação do Photonics.
 
 option.PHOTONICS_HANDHELD_MODE=Modo de Luz Portátil
-option.PHOTONICS_HANDHELD_MODE.comment=Altera a forma como as luzes portáteis são renderizadas no mod Photonics.\n\nDesligado - As luzes portáteis não são renderizadas pelo Photonics\nÚnica - Apenas uma das luzes portáteis projetará sombras\nSeparadas - Ambas as luzes portáteis projetarão sombras separadas\n\n§aImpacto mínimo no desempenho
+option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\nSingle - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
 value.PHOTONICS_HANDHELD_MODE.0=Desligado
 value.PHOTONICS_HANDHELD_MODE.1=Separadas
 value.PHOTONICS_HANDHELD_MODE.2=Única

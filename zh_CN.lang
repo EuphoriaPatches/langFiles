@@ -1,6 +1,8 @@
 #shaders/lang/zh_CN.lang
 
 #Profiles
+option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
+option.TRANSLATORS=Translated by: Insert your name(s) here
 profile.POTATO=性能需求: §a极低
 profile.VERYLOW=性能需求: §a很低
 profile.LOW=性能需求: §a低
@@ -2172,6 +2174,7 @@ value.SEASON_TRANSITION_START.4=当前季节过去 80%
 value.SEASON_TRANSITION_START.9=当前季节过去 90%
 
 option.SEASON_COLOR_DESATURATION=环境色彩去饱和度
+option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
 option.SEASON_COLOR_DESATURATION.commnet=使整体环境颜色略微不饱和.
 
 option.SNOW_CONDITION=覆雪条件
@@ -2918,7 +2921,7 @@ option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=附魔光效强度
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=调节使用 Photonics 照明时附魔物品投射的附魔光效照明强度.
 
 option.PHOTONICS_HANDHELD_MODE=Handheld Light Mode
-option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\Single - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
+option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\nSingle - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
 value.PHOTONICS_HANDHELD_MODE.0=关
 value.PHOTONICS_HANDHELD_MODE.1=Separate
 value.PHOTONICS_HANDHELD_MODE.2=Single
