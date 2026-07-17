@@ -2,7 +2,7 @@
 
 #Profiles
 option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
-option.TRANSLATORS=Translated by: Insert your name(s) here
+option.TRANSLATORS=本文档由 Surisen (Ruri) 翻译
 profile.POTATO=性能需求: §a极低
 profile.VERYLOW=性能需求: §a很低
 profile.LOW=性能需求: §a低
