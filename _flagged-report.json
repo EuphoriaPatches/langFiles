@@ -1,0 +1,15 @@
+[
+  {
+    "file": "zh_HK.lang",
+    "key": "option.LANG_FILE_HEADER",
+    "language": "zh_HK",
+    "oldValue": "Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.",
+    "newValue": "本文檔為社區貢獻翻譯 - 此文檔翻譯可能會過時. SpacEagle17 不能保證翻譯的準確性.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  }
+]
