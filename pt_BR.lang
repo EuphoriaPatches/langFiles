@@ -1,5 +1,8 @@
 #shaders/lang/pt_BR.lang
 
+option.LANG_FILE_HEADER=Arquivos de tradução feitos pela comunidade - A tradução pode estar desatualizada. O SpacEagle17 não pode garantir sua precisão.
+option.TRANSLATORS=Traduzido por: Lucas Henrick
+
 #Profiles
 profile.POTATO=Desempenho: §aResolução de Calculadora
 profile.VERYLOW=Desempenho: §aResolução bem baixa
@@ -1858,8 +1861,6 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=Faz os mapas normais integrados func
 option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=Intensidade do Bloco
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Intensidade na Mão
 
-option.CAVE_FOG=Névoa de Caverna
-option.CAVE_FOG.comment=Ativa ou desativa a névoa em cavernas.
 option.CAVE_FOG_R_NEW=Névoa de Caverna - Vermelho
 option.CAVE_FOG_G_NEW=Névoa de Caverna - Verde
 option.CAVE_FOG_B_NEW=Névoa de Caverna - Azul
