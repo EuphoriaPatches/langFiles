@@ -1,8 +1,8 @@
 #shaders/lang/pt_BR.lang
 
 #Profiles
-profile.POTATO=Desempenho: §aResolução de calculadora
-profile.VERYLOW=Desempenho: §aResolução bem Baixa
+profile.POTATO=Desempenho: §aResolução de Calculadora
+profile.VERYLOW=Desempenho: §aResolução bem baixa
 profile.LOW=Desempenho: §aResolução Baixa
 profile.MEDIUM=Desempenho: §aResolução Média
 profile.HIGH=Desempenho: §eResolução Alta (Padrão)
@@ -396,8 +396,9 @@ option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Feixes Especiais no Pale Garden
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Deixa os feixes de luz mais chamativos no bioma "Pale Garden".
 
 option.LIGHTSHAFT_NOON_I=Multiplicador dos Raios de Luz ao Meio-Dia
-option.LIGHTSHAFT_SUNSET_I=Multiplicador dos Raios de Luz ao Pôr do Sol
-option.LIGHTSHAFT_RAIN_I=Multiplicador de Feixe de Luz na Chuva
+option.LIGHTSHAFT_SUNSET_I=Multiplicador dos Raios de Luz no Pôr do Sol
+option.LIGHTSHAFT_NIGHT_I=Multiplicador dos Raios de Luz à Noite
+option.LIGHTSHAFT_RAIN_I=Multiplicador dos Raios de Luz na Chuva
 
 option.LIGHTSHAFT_SUNSET_SATURATION=Cor do Light Shaft no Pôr do Sol
 option.LIGHTSHAFT_SUNSET_SATURATION.comment=Ajusta a saturação extra aplicada à cor dos light shafts durante o nascer e o pôr do sol. Valores mais altos produzem um tom laranja avermelhado, enquanto valores mais baixos tendem a puxar para o amarelo.
@@ -593,35 +594,12 @@ option.WATER_SPEED_MULT.comment=Ajuda a ajustar a velocidade de movimento das on
 
 option.WATER_SIZE_MULT=Tamanho das Ondas
 option.WATER_SIZE_MULT.comment=Ajuda a ajustar o tamanho das ondas superficiais (normais) vistas na água.
-
+  
 option.SUN_ANGLE=Ângulo do Sol/Lua
 option.SUN_ANGLE.comment=Ajuda a ajustar o ângulo do sol/lua em relação ao mundo durante o meio-dia. §a[+]§r O modelo de iluminação Reimagined foi especialmente projetado para fazer o ângulo "0" funcionar tão bem quanto os outros.
 value.SUN_ANGLE.-1=Definido pelo o estilo
-value.SUN_ANGLE.60=60
-value.SUN_ANGLE.55=55
-value.SUN_ANGLE.50=50
-value.SUN_ANGLE.45=45
-value.SUN_ANGLE.40=40
-value.SUN_ANGLE.35=35
-value.SUN_ANGLE.30=30
-value.SUN_ANGLE.25=25
-value.SUN_ANGLE.20=20
-value.SUN_ANGLE.15=15
-value.SUN_ANGLE.10=10
-value.SUN_ANGLE.5=5
 value.SUN_ANGLE.0=0 §r(§bReimagined§r)
-value.SUN_ANGLE.-5=-5
-value.SUN_ANGLE.-10=-10
-value.SUN_ANGLE.-15=-15
-value.SUN_ANGLE.-20=-20
-value.SUN_ANGLE.-25=-25
-value.SUN_ANGLE.-30=-30
-value.SUN_ANGLE.-35=-35
 value.SUN_ANGLE.-40=-40 §r(§dUnbound§r)
-value.SUN_ANGLE.-45=-45
-value.SUN_ANGLE.-50=-50
-value.SUN_ANGLE.-55=-55
-value.SUN_ANGLE.-60=-60
 
 option.SUN_MOON_STYLE_DEFINE=Estilo do Sol/Lua
 option.SUN_MOON_STYLE_DEFINE.comment=Define o estilo do sol/lua. §e[*]§r Esta configuração pode interagir incorretamente com alguns resource packs devido às limitações de diferenciação entre sol/lua/skybox.
@@ -2196,7 +2174,7 @@ value.SEASON_TRANSITION_START.4=80% da Estação
 value.SEASON_TRANSITION_START.9=90% da Estação
 
 option.SEASON_COLOR_DESATURATION=Desaturação de Cor
-option.SEASON_COLOR_DESATURATION.comment=Desatura as cores do ambiente.
+option.SEASON_COLOR_DESATURATION.comment=Reduz a saturação das cores do ambiente durante o inverno e o outono nas configurações de estações.
 
 option.SNOW_CONDITION=Condição da Neve
 option.SNOW_CONDITION.comment=Determina a(s) condição(ões) para a neve aparecer.
@@ -2764,19 +2742,7 @@ option.SMOKE_PARTICLE_OPACITY=Opacidade das Partículas de Fumaça
 
 option.END_SUN_ANGLE=Ângulo do Sol do End
 option.END_SUN_ANGLE.comment=Altera o ângulo do sol/lua em relação ao mundo durante o meio-dia.
-value.END_SUN_ANGLE.60=60
-value.END_SUN_ANGLE.50=50
-value.END_SUN_ANGLE.40=40
-value.END_SUN_ANGLE.30=30
-value.END_SUN_ANGLE.20=20
-value.END_SUN_ANGLE.10=10
 value.END_SUN_ANGLE.0=0 §r(§bPadrão§r)
-value.END_SUN_ANGLE.-10=-10
-value.END_SUN_ANGLE.-20=-20
-value.END_SUN_ANGLE.-30=-30
-value.END_SUN_ANGLE.-40=-40
-value.END_SUN_ANGLE.-50=-50
-value.END_SUN_ANGLE.-60=-60
 
 option.PIXELATED_NEBULA=Nébula Pixelada
 value.PIXELATED_NEBULA.0=DESLIGADO
@@ -2883,7 +2849,6 @@ option.COLORED_LIGHT_FOG_RAIN_I=Intensidade da Névoa de Luz Colorida (Chuva)
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Ajusta o quão forte fica a névoa de luz colorida enquanto chove.
 value.COLORED_LIGHT_FOG_RAIN_I.0=Padrão
 
-option.BLOOD_MOON=Lua de Sangue
 option.COLORED_LIGHT_FOG_CAVE_I=Intensidade nas Cavernas
 option.COLORED_LIGHT_FOG_CAVE_I.comment=Altera a intensidade da neblina com iluminação colorida nas cavernas.
 value.COLORED_LIGHT_FOG_CAVE_I.0=Padrão
