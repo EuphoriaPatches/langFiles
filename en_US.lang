@@ -1861,8 +1861,6 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=Make the integrated normal maps work
 option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=Block Intensity
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=Handheld Intensity
 
-option.CAVE_FOG=Cave Fog
-option.CAVE_FOG.comment=Turn cave fog on and off.
 option.CAVE_FOG_R_NEW=Cave Fog - Red
 option.CAVE_FOG_G_NEW=Cave Fog - Green
 option.CAVE_FOG_B_NEW=Cave Fog - Blue
