@@ -8,7 +8,6 @@ const fs = require("fs");
 const path = require("path");
 const {
   REPO_ROOT,
-  loadSourceKeyOrder,
   patchLangFile,
   patchJsonFile,
 } = require("./lib/content-safety");
@@ -31,7 +30,6 @@ function main() {
     path.join(REPO_ROOT, "en_US.lang"),
     "utf8",
   );
-  const sourceKeyOrder = loadSourceKeyOrder(sourceRaw);
 
   const byFile = new Map();
   for (const item of report) {
@@ -44,7 +42,7 @@ function main() {
     const raw = fs.readFileSync(filePath, "utf8");
     const patched = file.endsWith(".json")
       ? patchJsonFile(raw, updates)
-      : patchLangFile(raw, updates, sourceKeyOrder);
+      : patchLangFile(raw, updates, sourceRaw, file);
     fs.writeFileSync(filePath, patched, "utf8");
     console.log(`Applied ${updates.size} flagged update(s) to ${file}`);
   }

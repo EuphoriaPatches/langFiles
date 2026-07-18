@@ -369,73 +369,10 @@ function loadLangMap(raw) {
   return map;
 }
 
-function parseLangEntries(lines) {
-  const map = new Map();
-  lines.forEach((line, index) => {
-    const m = line.match(ENTRY_RE);
-    if (m) map.set(m[1], { value: m[2], index });
-  });
-  return map;
-}
-
-// Patches only the given keys onto the existing .lang file structure.
-// Existing keys get their line replaced in place; brand-new keys get
-// inserted next to the nearest neighboring key that exists in this file,
-// walking outward through the source's key order (same technique as
-// restore-empty-lang-keys.js).
-function patchLangFile(oldRaw, updates, sourceKeyOrder) {
-  const eol = detectEol(oldRaw);
-  const trailingNewline = oldRaw.endsWith("\r\n") || oldRaw.endsWith("\n");
-  // splitLines("") returns [""] (one empty element), which would otherwise
-  // leave a stray leading blank line when building a brand new file from
-  // scratch (oldRaw === "").
-  const lines = oldRaw === "" ? [] : splitLines(oldRaw);
-  let entries = parseLangEntries(lines);
-
-  for (const [key, value] of updates) {
-    const existing = entries.get(key);
-    if (existing) {
-      lines[existing.index] = `${key}=${value}`;
-    } else {
-      const srcIdx = sourceKeyOrder.indexOf(key);
-      let insertAt = null;
-      if (srcIdx !== -1) {
-        for (let i = srcIdx - 1; i >= 0 && insertAt === null; i--) {
-          const anchor = entries.get(sourceKeyOrder[i]);
-          if (anchor) insertAt = anchor.index + 1;
-        }
-        for (
-          let i = srcIdx + 1;
-          i < sourceKeyOrder.length && insertAt === null;
-          i++
-        ) {
-          const anchor = entries.get(sourceKeyOrder[i]);
-          if (anchor) insertAt = anchor.index;
-        }
-      }
-      if (insertAt === null) insertAt = lines.length;
-      lines.splice(insertAt, 0, `${key}=${value}`);
-    }
-    entries = parseLangEntries(lines);
-  }
-
-  const realLines = trailingNewline ? lines.slice(0, -1) : lines;
-  return realLines.join(eol) + (trailingNewline ? eol : "");
-}
-
 function patchJsonFile(oldRaw, updates) {
   const obj = JSON.parse(oldRaw);
   for (const [key, value] of updates) obj[key] = value;
   return JSON.stringify(obj, null, 2) + "\n";
-}
-
-function loadSourceKeyOrder(sourceRaw) {
-  const order = [];
-  splitLines(sourceRaw).forEach((line) => {
-    const m = line.match(ENTRY_RE);
-    if (m) order.push(m[1]);
-  });
-  return order;
 }
 
 const HEADER_RE = /^(#.*\/)([^/]+\.lang)$/;
@@ -467,6 +404,18 @@ function buildLangFileFromTemplate(sourceRaw, translatedMap, fileName) {
   return output.join(eol) + (trailingNewline ? eol : "");
 }
 
+// Patches the given keys onto an existing .lang file, then re-renders the
+// whole file from the source's structure - same as buildLangFileFromTemplate,
+// just seeded with this file's current values instead of starting empty.
+// This is what makes newly-added keys land in the same comments/blank-line
+// spot they have in en_US.lang, rather than being spliced in next to
+// whatever existing key happened to be nearby.
+function patchLangFile(oldRaw, updates, sourceRaw, fileName) {
+  const mergedMap = loadLangMap(oldRaw);
+  for (const [key, value] of updates) mergedMap.set(key, value);
+  return buildLangFileFromTemplate(sourceRaw, mergedMap, fileName);
+}
+
 module.exports = {
   REPO_ROOT,
   resolveWordlistCode,
@@ -476,10 +425,8 @@ module.exports = {
   splitLines,
   detectEol,
   loadLangMap,
-  parseLangEntries,
   patchLangFile,
   patchJsonFile,
-  loadSourceKeyOrder,
   buildLangFileFromTemplate,
   ENTRY_RE,
 };

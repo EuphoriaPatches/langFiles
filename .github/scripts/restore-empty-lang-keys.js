@@ -1,7 +1,9 @@
 // Cleans up Crowdin .lang export quirks before committing:
-// 1. Restores intentionally empty keys that Crowdin drops.
-// 2. Fixes the first-line header path to match the target's filename, not the source's.
-// 3. Trims extra trailing blank lines added to partially translated files.
+// 1. Fixes the first-line header path to match the target's filename, not the source's.
+// 2. Removes keys that no longer exist in the source (renamed/deleted keys,
+//    or stale typos that were never a real key to begin with).
+// 3. Restores intentionally empty keys that Crowdin drops.
+// 4. Trims extra trailing blank lines added to partially translated files.
 "use strict";
 
 const fs = require("fs");
@@ -56,6 +58,7 @@ function main() {
   const emptyKeyPositions = sourceEntries
     .map((entry, i) => (entry.value === "" ? i : -1))
     .filter((i) => i !== -1);
+  const sourceKeySet = new Set(sourceEntries.map((e) => e.key));
 
   const targetFiles = fs
     .readdirSync(ROOT)
@@ -88,7 +91,18 @@ function main() {
       }
     }
 
-    // 2. Restore intentionally-empty keys that Crowdin dropped.
+    // 2. Remove keys that no longer exist in the source.
+    const removedKeys = [];
+    for (let i = lines.length - 1; i >= 0; i--) {
+      const m = lines[i].match(ENTRY_RE);
+      if (m && !sourceKeySet.has(m[1])) {
+        lines.splice(i, 1);
+        removedKeys.push(m[1]);
+      }
+    }
+    if (removedKeys.length > 0) changed = true;
+
+    // 3. Restore intentionally-empty keys that Crowdin dropped.
     let entries = parseEntries(lines);
     let presentKeys = new Set(entries.map((e) => e.key));
 
@@ -133,7 +147,7 @@ function main() {
       presentKeys = new Set(entries.map((e) => e.key));
     }
 
-    // 3. Trim excess trailing blank lines back down to match the source.
+    // 4. Trim excess trailing blank lines back down to match the source.
     const realLines = trailingNewline ? lines.slice(0, -1) : lines;
     let trimmedCount = 0;
     while (countTrailingBlankLines(realLines) > sourceTrailingBlanks) {
@@ -147,6 +161,11 @@ function main() {
       fs.writeFileSync(filePath, out, "utf8");
       anyChanged = true;
       const parts = [];
+      if (removedKeys.length > 0) {
+        parts.push(
+          `removed ${removedKeys.length} stale key(s): ${removedKeys.join(", ")}`,
+        );
+      }
       if (restoredKeys.length > 0) {
         parts.push(
           `restored ${restoredKeys.length} empty key(s): ${restoredKeys.join(", ")}`,

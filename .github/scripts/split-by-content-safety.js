@@ -21,7 +21,6 @@ const {
   loadLangMap,
   patchLangFile,
   patchJsonFile,
-  loadSourceKeyOrder,
   buildLangFileFromTemplate,
   ENTRY_RE,
 } = require("./lib/content-safety");
@@ -32,7 +31,6 @@ const REPORT_PATH = path.join(REPO_ROOT, "_flagged-report.json");
 
 async function main() {
   const sourceRaw = fs.readFileSync(path.join(REPO_ROOT, "en_US.lang"), "utf8");
-  const sourceKeyOrder = loadSourceKeyOrder(sourceRaw);
   const sourceLangMap = loadLangMap(sourceRaw);
   const exceptions = loadSafeTermExceptions();
 
@@ -97,7 +95,7 @@ async function main() {
       } else if (cleanUpdates.size > 0) {
         fs.writeFileSync(
           oldPath,
-          patchLangFile(oldRaw, cleanUpdates, sourceKeyOrder),
+          patchLangFile(oldRaw, cleanUpdates, sourceRaw, fileName),
           "utf8",
         );
         console.log(
