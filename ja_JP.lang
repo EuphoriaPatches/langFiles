@@ -1,8 +1,9 @@
 #shaders/lang/ja_JP.lang
 
+option.LANG_FILE_HEADER=コミュニティによる翻訳ファイル - 翻訳が古い可能性があります。. SpacEagle17は翻訳の精度を保証できません。
+option.TRANSLATORS=日本語訳: MUKSC
+
 #Profiles
-option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
-option.TRANSLATORS=Translated by: Insert your name(s) here
 profile.POTATO=品質: §a最低
 profile.VERYLOW=品質: §a超低
 profile.LOW=品質: §a低
@@ -382,7 +383,7 @@ option.ATM_FOG_ALTITUDE=大気中の霧の高度
 option.ATM_FOG_ALTITUDE.comment=大気中の霧が最も顕著に現れる高度を決定します。
 
 option.CAVE_FOG=洞窟の霧
-option.CAVE_FOG.comment=洞窟の霧を有効または無効にします。
+option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
 
 option.LIGHTSHAFT_BEHAVIOUR=光芒設定
 option.LIGHTSHAFT_BEHAVIOUR.comment=光芒の挙動を決定します。. §a[+]§r「シーン認識」は、「通常」と「エクストリーム」の間を自動的に切り替え、最適な結果を提供します。. §c[-]§r 「エクストリーム」は通常のゲームプレイには推奨されず、パフォーマンスに大きく影響を与える可能性があります。
@@ -2174,8 +2175,7 @@ value.SEASON_TRANSITION_START.4=季節の80%
 value.SEASON_TRANSITION_START.9=季節の90%
 
 option.SEASON_COLOR_DESATURATION=色の彩度を下げる
-option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
-option.SEASON_COLOR_DESATURATION.commnet=環境の色の彩度を下げます。
+option.SEASON_COLOR_DESATURATION.comment=季節設定による冬と秋の期間中に環境の色の彩度を下げます。
 
 option.SNOW_CONDITION=雪の条件
 option.SNOW_CONDITION.comment=雪が現れる条件を決定します。

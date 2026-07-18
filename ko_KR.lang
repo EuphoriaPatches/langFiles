@@ -1,8 +1,9 @@
 #shaders/lang/ko_KR.lang
 
-#Profiles
 option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
 option.TRANSLATORS=번역제작자 : _StrawberrySushi
+
+#Profiles
 profile.POTATO=품질: §a최저
 profile.VERYLOW=품질: §a매우 낮음
 profile.LOW=품질: §a낮음
@@ -382,7 +383,7 @@ option.ATM_FOG_ALTITUDE=대기 안개 고도
 option.ATM_FOG_ALTITUDE.comment=대기 안개가 가장 두드러지게 나타나는 고도를 결정합니다.
 
 option.CAVE_FOG=Cave Fog (동굴 안걔)
-option.CAVE_FOG.comment=동굴 안개를 활성화합니다.
+option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
 
 option.LIGHTSHAFT_BEHAVIOUR=빛줄기 방식
 option.LIGHTSHAFT_BEHAVIOUR.comment=빛줄기의 동작 방식을 결정합니다. §a[+]§r Scene Aware Light Shafts는 최적의 결과를 제공하기 위해 일반 모드와 익스트림 모드 사이를 자동으로 전환합니다. §c[-]§r 익스트림 모드는 일반 플레이에 권장되지 않으며 성능에 큰 영향을 줄 수 있습니다.
@@ -2175,7 +2176,6 @@ value.SEASON_TRANSITION_START.9=계절의 90%
 
 option.SEASON_COLOR_DESATURATION=Color Desaturation (색상 채도 감소)
 option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
-option.SEASON_COLOR_DESATURATION.commnet=환경의 색상의 채도를 감소시킵니다.
 
 option.SNOW_CONDITION=Snow Condition (강설 조건)
 option.SNOW_CONDITION.comment=눈이 내리는 조건을 결정합니다.

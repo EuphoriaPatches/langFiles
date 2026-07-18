@@ -1,8 +1,9 @@
 #shaders/lang/pt_BR.lang
 
-#Profiles
 option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
 option.TRANSLATORS=Translated by: Insert your name(s) here
+
+#Profiles
 profile.POTATO=Desempenho: §aResolução de calculadora
 profile.VERYLOW=Desempenho: §aResolução bem Baixa
 profile.LOW=Desempenho: §aResolução Baixa
@@ -382,7 +383,7 @@ option.ATM_FOG_ALTITUDE=Altitude da Neblina Atmosférica
 option.ATM_FOG_ALTITUDE.comment=Define a altitude em que a neblina atmosférica aparece de forma mais proeminente.
 
 option.CAVE_FOG=Névoa de Caverna
-option.CAVE_FOG.comment=Ativa ou desativa a névoa em cavernas.
+option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
 
 option.LIGHTSHAFT_BEHAVIOUR=Modo dos Feixes de Luz
 option.LIGHTSHAFT_BEHAVIOUR.comment=Define o comportamento dos feixes de luz. §a[+]§r Feixes de Luz Sensíveis ao Ambiente alternam automaticamente entre modos normal e extremo para melhores resultados. §c[-]§r O modo Extremo não é recomendado para jogabilidade geral e pode impactar severamente o desempenho.
@@ -2175,7 +2176,6 @@ value.SEASON_TRANSITION_START.9=90% da Estação
 
 option.SEASON_COLOR_DESATURATION=Desaturação de Cor
 option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
-option.SEASON_COLOR_DESATURATION.commnet=Desaturates the colors of the environment.
 
 option.SNOW_CONDITION=Condição da Neve
 option.SNOW_CONDITION.comment=Determina a(s) condição(ões) para a neve aparecer.

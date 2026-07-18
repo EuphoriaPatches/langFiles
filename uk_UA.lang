@@ -1,8 +1,9 @@
 #shaders/lang/uk_UA.lang
 
-#Profiles
 option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
 option.TRANSLATORS=Translated by: Insert your name(s) here
+
+#Profiles
 profile.POTATO=Продуктив.: §aКартопля
 profile.VERYLOW=Продуктив.: §aНаднизька
 profile.LOW=Продуктив.: §aНизька
@@ -382,7 +383,7 @@ option.ATM_FOG_ALTITUDE=Висота атмосферного туману
 option.ATM_FOG_ALTITUDE.comment=Керує висотою, на якій атмосферний туман є найбільш помітним.
 
 option.CAVE_FOG=Печерний туман
-option.CAVE_FOG.comment=Умикає або вимикає печерний туман.
+option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
 
 option.LIGHTSHAFT_BEHAVIOUR=Режим світлових потоків
 option.LIGHTSHAFT_BEHAVIOUR.comment=Керує поведінкою світлових потоків. §a[+]§r Свідомий режим автоматично перемикаються між звичайним і екстремальним режимами, щоб забезпечити найкращі результати. §c[-]§r Екстремальний режим не рекомендується використовувати для загального ігрового процесу, і він може серйозно вплинути на продуктивність.
@@ -2175,7 +2176,6 @@ value.SEASON_TRANSITION_START.9=90%
 
 option.SEASON_COLOR_DESATURATION=Знебарвлення
 option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
-option.SEASON_COLOR_DESATURATION.commnet=Знебарвлює кольори середовища.
 
 option.SNOW_CONDITION=Стан снігу
 option.SNOW_CONDITION.comment=Керує умовами для сходження снігу.
