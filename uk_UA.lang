@@ -2175,7 +2175,6 @@ value.SEASON_TRANSITION_START.9=90%
 
 option.SEASON_COLOR_DESATURATION=Знебарвлення
 option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
-option.SEASON_COLOR_DESATURATION.commnet=Знебарвлює кольори середовища.
 
 option.SNOW_CONDITION=Стан снігу
 option.SNOW_CONDITION.comment=Керує умовами для сходження снігу.

@@ -2175,7 +2175,6 @@ value.SEASON_TRANSITION_START.9=계절의 90%
 
 option.SEASON_COLOR_DESATURATION=Color Desaturation (색상 채도 감소)
 option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
-option.SEASON_COLOR_DESATURATION.commnet=환경의 색상의 채도를 감소시킵니다.
 
 option.SNOW_CONDITION=Snow Condition (강설 조건)
 option.SNOW_CONDITION.comment=눈이 내리는 조건을 결정합니다.

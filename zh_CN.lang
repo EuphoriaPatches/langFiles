@@ -2175,7 +2175,6 @@ value.SEASON_TRANSITION_START.9=当前季节过去 90%
 
 option.SEASON_COLOR_DESATURATION=环境色彩去饱和度
 option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
-option.SEASON_COLOR_DESATURATION.commnet=使整体环境颜色略微不饱和.
 
 option.SNOW_CONDITION=覆雪条件
 option.SNOW_CONDITION.comment=决定结霜/覆雪的条件.

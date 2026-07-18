@@ -2175,7 +2175,6 @@ value.SEASON_TRANSITION_START.9=90% pory roku
 
 option.SEASON_COLOR_DESATURATION=Desaturacja Kolorów
 option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
-option.SEASON_COLOR_DESATURATION.commnet=Desaturuje kolory otoczenia.
 
 option.SNOW_CONDITION=Warunek Pojawienia się Śniegu
 option.SNOW_CONDITION.comment=Określa warunki pojawienia się śniegu.

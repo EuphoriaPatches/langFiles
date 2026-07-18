@@ -2175,7 +2175,6 @@ value.SEASON_TRANSITION_START.9=90% сезона
 
 option.SEASON_COLOR_DESATURATION=Обесцвечивание
 option.SEASON_COLOR_DESATURATION.comment=Снижает насыщенность цветов окружающей среды зимой и осенью в зависимости от времени года.
-option.SEASON_COLOR_DESATURATION.commnet=Уменьшает насыщенность цветов окружения.
 
 option.SNOW_CONDITION=Условия снега
 option.SNOW_CONDITION.comment=Определяет условия появления снега.

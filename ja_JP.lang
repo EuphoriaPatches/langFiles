@@ -1,8 +1,9 @@
 #shaders/lang/ja_JP.lang
 
+option.LANG_FILE_HEADER=コミュニティによる翻訳ファイル - 翻訳が古い可能性があります。. SpacEagle17は翻訳の精度を保証できません。
+option.TRANSLATORS=日本語訳: MUKSC
+
 #Profiles
-option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
-option.TRANSLATORS=Translated by: Insert your name(s) here
 profile.POTATO=品質: §a最低
 profile.VERYLOW=品質: §a超低
 profile.LOW=品質: §a低
@@ -1860,6 +1861,8 @@ option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=統合された法線マップをブ
 option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=ブロックの強度
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=手持ち光源の強度
 
+option.CAVE_FOG=洞窟の霧
+option.CAVE_FOG.comment=洞窟の霧を有効または無効にします。
 option.CAVE_FOG_R_NEW=洞窟の霧 - 赤
 option.CAVE_FOG_G_NEW=洞窟の霧 - 緑
 option.CAVE_FOG_B_NEW=洞窟の霧 - 青
@@ -2174,8 +2177,7 @@ value.SEASON_TRANSITION_START.4=季節の80%
 value.SEASON_TRANSITION_START.9=季節の90%
 
 option.SEASON_COLOR_DESATURATION=色の彩度を下げる
-option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
-option.SEASON_COLOR_DESATURATION.commnet=環境の色の彩度を下げます。
+option.SEASON_COLOR_DESATURATION.comment=季節設定による冬と秋の期間中に環境の色の彩度を下げます。
 
 option.SNOW_CONDITION=雪の条件
 option.SNOW_CONDITION.comment=雪が現れる条件を決定します。
