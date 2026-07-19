@@ -383,7 +383,7 @@ option.ATM_FOG_ALTITUDE=大气雾高度
 option.ATM_FOG_ALTITUDE.comment=调节大气雾密度达到最大时的起始高度.
 
 option.CAVE_FOG=洞穴雾气
-option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
+option.CAVE_FOG.comment=在深入地下的区域启用额外的雾气.
 
 option.LIGHTSHAFT_BEHAVIOUR=光轴模式
 option.LIGHTSHAFT_BEHAVIOUR.comment=选择光轴的行为表现形式. §a[+]§r 场景感知模式下, 光轴会自动在 常规 和 极限 强度之间切换, 以提供最佳效果. §c[-]§r 不推荐在正常游玩时选择极限强度, 并且它会严重影响性能.

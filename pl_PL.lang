@@ -383,7 +383,7 @@ option.ATM_FOG_ALTITUDE=Poziom Mgły Atmosferycznej
 option.ATM_FOG_ALTITUDE.comment=Określa wysokość, na której mgła atmosferyczna jest najbardziej widoczna.
 
 option.CAVE_FOG=Mgła w Jaskiniach
-option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
+option.CAVE_FOG.comment=Dodaje dodatkową mgłę głęboko pod ziemią.
 
 option.LIGHTSHAFT_BEHAVIOUR=Tryb Snopów Światłą
 option.LIGHTSHAFT_BEHAVIOUR.comment=Określa zachowanie snopów światła. §a[+]§r Snopy Światła Świadome Sceny automatycznie przechodzą między trybem zwykłym i ekstremalnym, aby osiągnąć najlepsze rezultaty. §c[-]§r Tryb ekstremalny nie jest zalecany do ogólnej rozgrywki i może poważnie wpłynąć na wydajność.

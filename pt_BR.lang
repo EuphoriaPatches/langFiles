@@ -1,7 +1,7 @@
 #shaders/lang/pt_BR.lang
 
-option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
-option.TRANSLATORS=Translated by: Insert your name(s) here
+option.LANG_FILE_HEADER=Traduções feitas pela comunidade, A tradução pode estar desatualizada. O SpacEagle17 não pode garantir sua precisão.
+option.TRANSLATORS=Traduzido por: Lucas Henrick
 
 #Profiles
 profile.POTATO=Desempenho: §aResolução de calculadora
@@ -114,7 +114,7 @@ value.info22.0=
 option.info22.comment=Em GUIs grandes, algumas opções podem ficar ocultas. Role para baixo para revelá-las.
 
 #Style
-option.SHADER_STYLE=Visual Style
+option.SHADER_STYLE=Estilo Visual
 option.SHADER_STYLE.comment=Determina o estilo visual padrão do shaders. §bReimagined§r: Aprimorando o Minecraft sem perder sua identidade visual. §dUnbound§r: Recriando os visuais do Minecraft com um toque de fantasia semi-realista. §e[*]§r Configurações que pode ser afetadas: Estilo da água, estilo das Nuvens, estilo do Sol e da Lua, ângulo do Sol e Lua, estilo da Aurora Boreal, Minérios luminosos.
 value.SHADER_STYLE.1=§bReimagined
 value.SHADER_STYLE.4=§dUnbound
@@ -212,17 +212,17 @@ screen.BLOCKLIGHT_SETTINGS.comment=Configurações para ajustar a iluminação e
 screen.MOON_PHASE_INF_SETTINGS=Influência das fases da Lua.
 screen.MOON_PHASE_INF_SETTINGS.comment=Configurações que determinam como as diferentes fases da lua afetam a iluminação noturna.
 
-screen.ACT_FEATURES_SETTINGS=ACT Exclusive Features §e[*]§r
-screen.ACT_FEATURES_SETTINGS.comment=Settings that are about features exclusive to Advanced Color Tracing. §e[*]§r These features only work if Advanced Color Tracing is on in Performance Settings and your system supports it.
+screen.ACT_FEATURES_SETTINGS=Recursos  exclusivos do ACT  §e[*]§r
+screen.ACT_FEATURES_SETTINGS.comment=Configurações relacionadas a recursos exclusivos do Advanced Color Tracing. §e[*]§r Esses recursos só funcionam se o Advanced Color Tracing estiver ativado nas Configurações de Desempenho e o seu sistema for compatível.
 
 screen.PIXELATED_LIGHTING_SETTINGS=Luz pixelada
 screen.PIXELATED_LIGHTING_SETTINGS.comment=Configurações que faz  com que certos efeitos de luz saem pixelados.
 
 screen.WATER_SETTINGS=Água
-screen.WATER_SETTINGS.comment=Settings that are about water.
+screen.WATER_SETTINGS.comment=Configurações relacionadas à água
 
 screen.WATER_COLOR_SETTINGS=Cor da superfície da água.
-screen.UNDERWATER_COLOR_SETTINGS=Underwater Color
+screen.UNDERWATER_COLOR_SETTINGS=Cor debaixo d'água
 
 screen.WATER_WAVE_SETTINGS=Ondulações da Água §e[*]§r
 screen.WATER_WAVE_SETTINGS.comment=Configurações para personalizar as ondulações na superfície da água (normais). §e[*]§r Essas configurações só funcionam quando o Estilo da Água está definido como "Reimaginado + Ondas" ou "Sem Limites".
@@ -295,14 +295,14 @@ value.shadowDistance.512.0=§4§l32 Chunks
 value.shadowDistance.768.0=§4§l§n§o48 Chunks
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 Chunks§r§4§k-
 
-option.ENTITY_SHADOW=Entity Shadows
+option.ENTITY_SHADOW=Sombras das Entidades
 option.ENTITY_SHADOW.comment=Ativa as sombras projetadas por entidades e blocos-entidade. As "Entidades Regulares" incluem coisas como animais e monstros, enquanto a opção "Completa" também inclui blocos-entidade, como baús. §c[-]§r As sombras de entidades afetam o desempenho muito mais do que o esperado, podendo reduzir mais de 50% dos seus FPS em alguns casos.
 value.ENTITY_SHADOW.-1=DESLIGADO
 value.ENTITY_SHADOW.1=§cEntidades Normal
-value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oFull§r§4§k- §r§c[-]
+value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§o Completo§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Qualidade dos Detalhes
-option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, sky effect reflections, rain puddle accuracy, waving effect, motion blur
+option.DETAIL_QUALITY.comment=Ajusta várias pequenas coisas que afetam o desempenho. Ajusta a qualidade de: material da água, TAA, ajustes de iluminação, Névoa Noturna, Tempestade do Nether, Feixes do Ender, reflexos dos efeitos do céu, precisão das poças de chuva, efeito de ondulação, desfoque de movimento
 value.DETAIL_QUALITY.0=§aBatata
 value.DETAIL_QUALITY.2=§eResolução Média
 value.DETAIL_QUALITY.3=§cResolução Alta
@@ -383,7 +383,7 @@ option.ATM_FOG_ALTITUDE=Altitude da Neblina Atmosférica
 option.ATM_FOG_ALTITUDE.comment=Define a altitude em que a neblina atmosférica aparece de forma mais proeminente.
 
 option.CAVE_FOG=Névoa de Caverna
-option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
+option.CAVE_FOG.comment=Ativa neblina extra em áreas subterrâneas profundas.
 
 option.LIGHTSHAFT_BEHAVIOUR=Modo dos Feixes de Luz
 option.LIGHTSHAFT_BEHAVIOUR.comment=Define o comportamento dos feixes de luz. §a[+]§r Feixes de Luz Sensíveis ao Ambiente alternam automaticamente entre modos normal e extremo para melhores resultados. §c[-]§r O modo Extremo não é recomendado para jogabilidade geral e pode impactar severamente o desempenho.
@@ -398,8 +398,8 @@ option.LIGHTSHAFT_SMOKE.comment=Adiciona fumaça volumétrica aos feixes de luz.
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Feixes Especiais no Pale Garden
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Deixa os feixes de luz mais chamativos no bioma "Pale Garden".
 
-option.LIGHTSHAFT_NOON_I=Light Shaft Noon Multiplier
-option.LIGHTSHAFT_SUNSET_I=Light Shaft Sunset Multiplier
+option.LIGHTSHAFT_NOON_I=Multiplicador do feixe de luz ao meio-dia
+option.LIGHTSHAFT_SUNSET_I=Multiplicador do feixe de luz ao amanhecer
 option.LIGHTSHAFT_NIGHT_I=Multiplicador de Feixe de Luz Noturno
 option.LIGHTSHAFT_RAIN_I=Multiplicador de Feixe de Luz na Chuva
 
@@ -421,7 +421,7 @@ option.CLOUD_CLOSED_AREA_CHECK=Evitar Nuvens em Interiores
 option.CLOUD_CLOSED_AREA_CHECK.comment=Faz verificações adicionais para remover nuvens em áreas fechadas. §e[*]§r Esta configuração só funciona com os estilos de nuvem "Reimaginadas" ou "Sem Limites". §e[*]§r Esta configuração será desativada se "Sombras em Tempo Real" estiver DESATIVADO.
 
 option.CLOUD_ALT1=Altitude das Nuvens §e[*]§r
-option.CLOUD_ALT1.comment=Determines the world height which the clouds will appear at. §e[*]§r This setting can be internally increased or decreased depending on your dimension settings and mods. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
+option.CLOUD_ALT1.comment=Determina a altura em que as nuvens vão aparecer
 
 option.CLOUD_SPEED_MULT=Velocidade das Nuvens
 option.CLOUD_SPEED_MULT.comment=Define a velocidade com que as nuvens vão se mover. A opção "Sincronizado com o Tempo do Mundo" usa o tempo do mundo do Minecraft para avançar as posições das nuvens; isso permite que as nuvens apareçam iguais para todos os jogadores no mesmo servidor. §e[*]§r Esta configuração só funciona com os estilos de nuvem "Reimaginadas" ou "Sem Limites".
@@ -496,8 +496,8 @@ option.END_BEAM_CENTER_ALT.comment=Ajusta a altitude em que os Feixes do End fic
 option.END_BEAM_HEIGHT=Altura dos Feixes do End
 option.END_BEAM_HEIGHT.comment=Ajusta a altura física dos Feixes do End.
 
-option.TM_EXPOSURE=General Brightness
-option.TM_EXPOSURE.comment=Also known as "Tonemap Exposure". Adjusts the overall brightness of the whole image.
+option.TM_EXPOSURE=Brilho Geral
+option.TM_EXPOSURE.comment=Também conhecido como "Tonemap Exposure". Ajusta o brilho geral de toda a imagem.
 
 option.TM_WHITE_CURVE=Brilho do Branco
 option.TM_WHITE_CURVE.comment=Também conhecido como "Curva de Branco do Tonemap". Ajusta quão facilmente as cores chegam ao branco total.
@@ -666,10 +666,10 @@ value.NIGHT_NEBULAE.1=§eLIGADO
 option.NIGHT_NEBULA_I=Brilho das Nébulas Noturnas
 option.NIGHT_NEBULA_I.comment=Ajuda a ajustar o brilho das Nébulas Noturnas.
 
-option.RAIN_STYLE=Rainy Weather Style
-option.RAIN_STYLE.comment=Determines the style of rainy weather.
-value.RAIN_STYLE.1=Light & Warmer
-value.RAIN_STYLE.2=Heavy & Colder
+option.RAIN_STYLE=Estilo de Clima Chuvoso
+option.RAIN_STYLE.comment=Determina o  estilo do Clima Chuvoso
+value.RAIN_STYLE.1=Leve & Quente
+value.RAIN_STYLE.2=Denso & Frio
 
 option.SPECIAL_BIOME_WEATHER=Clima Especial Frio/Seco
 option.SPECIAL_BIOME_WEATHER.comment=Altera o equilíbrio da atmosfera em biomas frios e secos para dar a sensação de nevasca ou tempestade de areia.
@@ -704,7 +704,7 @@ value.PIXEL_SCALE.4=8x
 value.PIXEL_SCALE.5=16x
 
 option.BLOOM_ENABLED=Brilho Suave
-option.BLOOM_ENABLED.comment=Enables blurry glow from bright objects and humidity. §c[-]§r This effect can impact performance.
+option.BLOOM_ENABLED.comment=Ativa um brilho borrado de objetos brilhantes e da umidade. §c[-]§r Este efeito pode afetar o desempenho.
 value.BLOOM_ENABLED.-1=Desligado
 value.BLOOM_ENABLED.1=§eLIGADO
 
@@ -798,7 +798,7 @@ option.DISTANT_LIGHT_BOKEH=Bokeh de Luz Distante
 option.DISTANT_LIGHT_BOKEH.comment=Faz fontes de luz distantes parecerem dispersas aplicando um leve desfoque à distância. §a[+]§r Este efeito é melhorado com IntegratedPBR+ (opcional), ajustando as luzes distantes para melhor aparência.
 
 option.MOTION_BLUR_EFFECT=Desfoque de Movimento
-option.MOTION_BLUR_EFFECT.comment=Applies blur to the image when moving the camera. §c[-]§r This effect can impact performance.
+option.MOTION_BLUR_EFFECT.comment=Aplica desfoque à imagem ao movimentar a câmera. §c[-]§r Este efeito pode afetar o desempenho.
 value.MOTION_BLUR_EFFECT.-1=Desligado
 value.MOTION_BLUR_EFFECT.1=§eLIGADO
 
@@ -850,8 +850,8 @@ value.IPBR_EMISSIVE_MODE.1=Apenas IPBR+
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 
-option.IPBR_COMPAT_MODE_DEFINE=IPBR+ Compatibility Mode
-option.IPBR_COMPAT_MODE_DEFINE.comment=Changes how some IPBR+ features are calculated to be less aggressive in order to cause less problems with resource packs, or mods.
+option.IPBR_COMPAT_MODE_DEFINE=
+option.IPBR_COMPAT_MODE_DEFINE.comment=Altera como alguns recursos do IPBR+ são calculados para serem menos agressivos, a fim de causar menos problemas com pacotes de recursos ou mods.
 
 option.IPBR_PARTICLE_FEATURES=Recursos de Partículas IPBR+
 option.IPBR_PARTICLE_FEATURES.comment=Ativa vários recursos para partículas, incluindo partículas de lava brilhantes e partículas de água com cores melhores.
@@ -1074,10 +1074,10 @@ option.WAVING_RAIN.comment=Adiciona movimento às texturas de chuva e neve para 
 option.SPECIAL_PORTAL_EFFECTS=Efeitos Especiais de Portal
 option.SPECIAL_PORTAL_EFFECTS.comment=Adiciona animações e emissão especiais aos portais do Nether, End e Portais de Entrada.
 
-option.REFLECTION_RES=§eReflection Resolution§r
+option.REFLECTION_RES=§e Resolução dos Reflexos§r
 option.REFLECTION_RES.comment=Altera a resolução das reflexões PBR nos blocos (e as reflexões em espaço de mundo, se você tiver essa configuração ativada) para ganhar desempenho. §c[-]§r Reflexões em resolução "Completa" podem impactar o desempenho muito mais do que o esperado em algumas situações. §e[*]§r Este recurso não funciona no Optifine.
-value.REFLECTION_RES.1.0=§4§l§n§oFull
-value.REFLECTION_RES.0.5=§aHalf
+value.REFLECTION_RES.1.0=§4§l§n§o Completo
+value.REFLECTION_RES.0.5=§a Metade
 
 option.WORLD_OUTLINE=Contorno do Mundo
 option.WORLD_OUTLINE.comment=Adiciona contornos brilhantes aos blocos. §c[-]§r Pode impactar o desempenho.
@@ -1160,8 +1160,8 @@ option.COLORED_CANDLE_LIGHT.comment=Faz a luz das velas ter a mesma cor da base.
 option.COLORED_LIGHT_SATURATION=Saturação da Luz Colorida
 option.COLORED_LIGHT_SATURATION.comment=Ajuda a ajustar a saturação das cores produzidas pela Iluminação Colorida Avançada. §e[*]§r Não recomendado alterar, pois o visual foi balanceado para a saturação padrão.
 
-option.ACT_FIRE_COLOR_WARMNESS=Torch/Fire Color Warmness
-option.ACT_FIRE_COLOR_WARMNESS.comment=Adjusts the warmness of torch/fire/lantern light colors when Advanced Color Tracing is enabled. Note that the color is also affected by the "Colored Lighting Saturation" setting. §e[*]§r It's not recommended to change this value more than a tiny amount, as the visuals are designed to look the most balanced with the default level.
+option.ACT_FIRE_COLOR_WARMNESS=Aquecimento da Cor da Tocha/Fogo
+option.ACT_FIRE_COLOR_WARMNESS.comment=Ajusta o aquecimento das cores da luz de tochas/fogo/lanternas quando o Advanced Color Tracing está ativado. Observe que a cor também é afetada pela configuração "Saturação da Iluminação Colorida". §e[*]§r Não é recomendado alterar este valor mais do que uma pequena quantidade, pois os visuais foram projetados para parecerem mais equilibrados com o nível padrão.
 value.ACT_FIRE_COLOR_WARMNESS.100=Normal
 
 option.COLORED_LIGHT_FOG=Névoa de Luz Colorida
@@ -1276,10 +1276,10 @@ screen.END_BEAMS_FLASH_SETTINGS=Configurações do brilho do End
 screen.END_BEAMS_FLASH_SETTINGS.comment=Configurações relacionadas aos feixes do End durante os flashes do End. Funciona apenas na versão 1.21.9 ou superior.
 screen.END_STAR=Configurações das Estrelas do End
 screen.END_STAR.comment=Configurações relacionadas às Estrelas do End.
-screen.BLACK_HOLE_SETTINGS=Black Hole Settings
-screen.BLACK_HOLE_POSITION_SETTINGS=Black Hole Position
-screen.FIXED_POSITION_BLACK_HOLE_SETTINGS=Fixed Position
-screen.MOVING_POSITION_BLACK_HOLE_SETTINGS=Slowly Wandering
+screen.BLACK_HOLE_SETTINGS=Configurações do Buraco Negro
+screen.BLACK_HOLE_POSITION_SETTINGS=Posição do Buraco Negro
+screen.FIXED_POSITION_BLACK_HOLE_SETTINGS=Posição Fixa
+screen.MOVING_POSITION_BLACK_HOLE_SETTINGS=Movimento Lento e Aleatório
 screen.STAR_COLORS_END=Cores das Estrelas do End
 screen.STARS_OVERWORLD=Estrelas
 screen.SHOOTING_STARS_SETTINGS=Estrelas Cadentes
@@ -1306,8 +1306,8 @@ screen.FOG_ATMOSPHERIC=Névoa Atmosférica
 screen.FOG_ATMOSPHERIC.comment=Configurações relacionadas à névoa atmosférica.
 screen.FOG_BORDER_OVERWORLD=Névoa de Borda
 screen.FOG_BORDER_OVERWORLD.comment=Configurações relacionadas à névoa de borda.
-screen.COLORED_LIGHT_FOG_SETTINGS=Colored Light Fog
-screen.COLORED_LIGHT_FOG_SETTINGS.comment=Settings that relate to colored light fog.
+screen.COLORED_LIGHT_FOG_SETTINGS=Névoa de Luz Colorida
+screen.COLORED_LIGHT_FOG_SETTINGS.comment=Configurações relacionadas à Névoa de Luz Colorida
 screen.SEASON=Estações do Ano
 screen.WINTER=Configurações do inverno
 screen.AUTUMN=Configurações de Outono
@@ -1328,7 +1328,7 @@ screen.BLOCKLIGHT=Configurações de Luz de Bloco
 screen.BLOCKLIGHT.comment=Configurações relacionadas à cor da luz de bloco.
 screen.COLORED_LIGHT=Iluminação Colorida
 screen.SSBL_SETTINGS=Luz de Bloco Colorida na Tela
-screen.ACT_SETTINGS=Advanced Colored Tracing
+screen.ACT_SETTINGS=Rastreamento Avançado de Cores
 screen.LIGHTMAP_CURVES_SETTINGS=Curvas do Lightmap
 screen.OVERLAY_NOISE=Ruído de Sobreposição
 screen.MOSS_NOISE_SETTINGS=Configurações de Ruído do Musgo
@@ -1345,7 +1345,7 @@ screen.IPBR_REDSTONE.comment=Configurações relacionadas ao IntegratedPBR para 
 screen.DIRECTIONAL_LIGHTMAP_NORMALS_SETTINGS=Normais do Lightmap Direcional
 screen.LAVA_SETTINGS=Lava
 screen.LAVA_SETTINGS.comment=Configurações relacionadas à lava quente.
-screen.END_ROD_SETTINGS=End Rod
+screen.END_ROD_SETTINGS=Vara do End
 screen.END_ROD_SETTINGS.comment=Configurações relacionadas às barras do End.
 screen.FOLIAGE_SETTINGS=Folhagem
 screen.FOLIAGE_SETTINGS.comment=Configurações relacionadas à folhagem.
@@ -1579,7 +1579,7 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Quantidade de nuvens que são removida
 option.HIGH_QUALITY_CLOUDS=Alta qualidade das  nuvens
 option.HIGH_QUALITY_CLOUDS.comment=Aumenta a qualidade das nuvens mais que o possível que a configuração normal do Complementary pode ir. §c[-]§r ativando essa configuração pode afetar no desempenho.
 
-option.CLOUD_LAYER2_SPEED_MULT=Cloud Layer 2 Speed Multiplier
+option.CLOUD_LAYER2_SPEED_MULT=Multiplicador de Velocidade da Camada 2 de Nuvens3
 
 option.PIXELATED_UNBOUND_CLOUDS=Nuvens soltas pixeladas
 option.PIXELATED_UNBOUND_CLOUDS.comment=Dá às nuvens soltas um visual pixelado. Quanto maior o valor, maiores ficam os pixels.
@@ -1590,7 +1590,7 @@ option.DOUBLE_UNBOUND_CLOUDS.comment=Ativa a renderização de uma segunda camad
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Altitude da Camada de Nuvens 2
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Define a altura do mundo em que a segunda camada de nuvens aparecerá.
 option.CLOUD_UNBOUND_LAYER2_HEIGHT=Altura da Camada de Nuvens 2
-option.CLOUD_UNBOUND_LAYER2_HEIGHT.comment=Determines the geometric height of the second layer of unbound clouds.
+option.CLOUD_UNBOUND_LAYER2_HEIGHT.comment=Determina a altura geométrica da segunda camada das nuvens unbound.
 option.CLOUD_UNBOUND_LAYER2_SIZE=Tamanho da Camada de Nuvens 2
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Define o tamanho da segunda camada de nuvens do Unbound.
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=Quantidade da Camada de Nuvens 2
@@ -1850,8 +1850,8 @@ option.WATER_GENERATED_NORMALS=Normais Geradas da Água
 
 option.RANDOM_BLOCKLIGHT=Luz de Bloco Colorida Aleatória
 option.RANDOM_BLOCKLIGHT.comment=Randomiza a cor da luz de bloco dependendo das coordenadas do mundo, apenas por diversão.
-option.RANDOM_BLOCKLIGHT_SIZE=Random Colored Blocklight Size
-option.RANDOM_BLOCKLIGHT_SIZE.comment=Change the color size of the random colored blocklight effect.
+option.RANDOM_BLOCKLIGHT_SIZE=Tamanho Aleatório da Luz Colorida dos Blocos
+option.RANDOM_BLOCKLIGHT_SIZE.comment=Altera o tamanho da cor do efeito de luz colorida aleatória dos blocos.
 
 option.COATED_TEXTURE_RES=Resolução das Texturas Envelopadas
 option.COATED_TEXTURE_RES.comment=Altere a resolução em que as Texturas Envelopadas com Ruído são renderizadas. §e[*]§r O suporte a RP deve estar em Integrated PBR+ e Texturas Envelopadas precisam estar ativadas.
@@ -1927,9 +1927,9 @@ option.BORDER_FOG_OVERWORLD=Névoa da Borda do Overworld
 
 option.NETHER_PORTAL_VARIATION=Predefinição do Portal do Nether
 option.NETHER_PORTAL_VARIATION.comment=Opção para escolher entre diferentes predefinições de portal do Nether. §e[*]§r O suporte a RP deve estar em Integrated PBR+
-value.NETHER_PORTAL_VARIATION.0=Vanilla
+value.NETHER_PORTAL_VARIATION.0=Vanila
 value.NETHER_PORTAL_VARIATION.1=Complementary
-value.NETHER_PORTAL_VARIATION.2=Purple Void
+value.NETHER_PORTAL_VARIATION.2=Vazio Roxo
 
 option.BIOME_COLORED_NETHER_PORTALS=Portais do Nether Camaleão
 option.BIOME_COLORED_NETHER_PORTALS.comment=Portais do Nether no Nether terão cor diferente dependendo do bioma em que você está.
@@ -2895,7 +2895,7 @@ option.PHOTONICS_RESTIR_INITIAL_SAMPLES=Amostras Iniciais do ReSTIR
 option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=Quantas luzes o ReSTIR deve considerar inicialmente\n\n§6Impacto médio na performance
 
 option.PHOTONICS_RESTIR_SOFT_SHADOWS=Sombras Suaves (ReSTIR)
-option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=Define se o ReSTIR terá sombras suaves\n\n§aPequeno impacto na performance
+option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=Define se o ReSTIR terá sombras suaves\n\n§aPequeno impacto no desempenho
 
 option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES=Amostras de Reuso Espacial (ReSTIR)
 option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=Quantas amostras o ReSTIR usa para reuso espacial\n\n§6Impacto médio na performance
@@ -2969,7 +2969,7 @@ option.CUSTOM_SKY_SUPPORT_SLIDER.comment=Adds support for custom skyboxes includ
 value.CUSTOM_SKY_SUPPORT_SLIDER.0=Desligado
 value.CUSTOM_SKY_SUPPORT_SLIDER.10=On
 
-option.CUSTOM_SKY_MOD_SUPPORT=Suporte a Mods de Céu
+option.CUSTOM_SKY_MOD_SUPPORT=Suporte a mods de Céu
 option.CUSTOM_SKY_MOD_SUPPORT.comment=Adiciona suporte a mods de céu personalizados, como Caelum ou Astrocraft. Pode causar alguns problemas, pois não foi testado com muitos mods.
 
 option.SAVE_SKYBOX_DATA_OVERRIDE=Salvar Dados da Skybox
@@ -2996,7 +2996,7 @@ value.PANINI_PROJECTION.0=DESLIGADO
 
 option.BLACK_HOLE=Black Hole
 option.BLACK_HOLE.comment=Adds a black hole to the skybox in the End. Its position is controlled by the Black Hole Position settings
-value.BLACK_HOLE.0=Desligado
+value.BLACK_HOLE.0=DESLIGADO
 
 option.BLACK_HOLE_SIZE=Black Hole Size
 option.BLACK_HOLE_SIZE.comment=Changes the size of the black hole

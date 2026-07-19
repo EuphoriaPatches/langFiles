@@ -12,38 +12,38 @@ profile.HIGH=品質: §e高 (デフォルト)
 profile.VERYHIGH=品質: §e超高
 profile.ULTRA=品質: §cウルトラ
 profile.COMPLEMENTARY=品質: §4§lComplementary
-profile.comment=シェーダープロファイルは、パフォーマンスと視覚的忠実度のバランスが最適化された設定を適用します。. §e[*]§r 手動で設定を変更するよりも、これらのプロファイルを使用することをお勧めします。. §e[*]§r 影響を受けるすべての設定は「パフォーマンス設定」メニューにあります。
+profile.comment=シェーダープロファイルは、パフォーマンスとグラフィック品質のバランスが最適になるように設定を変更します。. §e[*]§r 特別な理由がない限り、手動で設定を変更するのではなく、これらのプロファイルを使用することを推奨します。. §e[*]§r 影響を受ける設定はすべて「パフォーマンス設定」メニュー内にあります。
 
 #Information
 screen.INFORMATION=情報
-screen.INFORMATION.comment=このセクションには、情報提供のためだけに存在するボタンが含まれています。
+screen.INFORMATION.comment=このセクションには情報表示のみを目的としたボタンが含まれています。
 
 screen.INFORMATION2=Complementaryの情報
-screen.INFORMATION2.comment=このセクションには、情報提供のためだけに存在するボタンが含まれています。
+screen.INFORMATION2.comment=このセクションには情報表示のみを目的としたボタンが含まれています。
 
 option.info0=§bボタンにマウスを乗せてください
 value.info0.0=
-option.info0.comment=このセクションには、情報提供のためだけに存在するボタンが含まれています。
+option.info0.comment=このセクションには情報表示のみを目的としたボタンが含まれています。
 
 option.info1=パフォーマンスを向上させる方法
 value.info1.0=
-option.info1.comment=Minecraftにおけるパフォーマンスは、多くの要因に影響される複雑な問題ですが、一般的なアドバイスとしては以下が挙げられます:. 描写距離を減らす。 (ほとんどのデバイスでは6から16の範囲が理想的です). 「プロファイル」設定を下げる。 (これらはパフォーマンスと視覚的忠実度の比率が最適化されるよう慎重にテストされています). 詳細な情報は今後追加されます。
+option.info1.comment=Minecraftにおけるパフォーマンスは多くの要因に影響される複雑な問題ですが、一般的なアドバイスとしては以下が挙げられます:. 描写距離を減らす - ほとんどのデバイスでは6から16の範囲が理想的です。. 「プロファイル」設定を下げる - これらはパフォーマンスとグラフィック品質のバランスが最適化されるよう慎重にテストされています。. 詳細な情報は今後追加されます。
 
 option.info2=最適な設定とは
 value.info2.0=
-option.info2.comment=最適な設定が何かは主観的ですが、デフォルト設定を使用することでほとんどの人にとってほぼ最良の結果が得られます。. デフォルト設定は、コミュニティによる長年の評価とフィードバックに基づいて形作られ、パフォーマンスと視覚的忠実度の比率に細心の注意を払っています。. とはいえ、自由に設定を変更して楽しむのは良いことです！
+option.info2.comment=最適な設定が何かは主観的ですが、デフォルト設定を使用することでほとんどの人にとってほぼ最良の結果が得られます。. デフォルト設定はコミュニティによる長年の評価とフィードバックに基づいて形作られ、パフォーマンスとグラフィック品質のバランスに細心の注意を払っています。. とはいえ、自由に設定を変更して楽しむのは良いことです！
 
 option.info3=プロファイルとビジュアルスタイル
 value.info3.0=
-option.info3.comment=「プロファイル」設定は「パフォーマンス設定」メニューの設定のみを変更し、ビジュアルスタイルなどの個人設定には影響を与えません。. 「ビジュアルスタイル」は、多くの個人設定にある「スタイル依存」に設定された値を変更しますが、パフォーマンスには大きな影響を与えません。
+option.info3.comment=「プロファイル」設定は「パフォーマンス設定」メニューの設定のみを変更し、ビジュアルスタイルなどの個人設定には影響を与えません。. 「ビジュアルスタイル」は多くの個人設定に存在する「スタイル依存」の値を変更しますが、パフォーマンスには大きな影響を与えません。
 
 option.info4=RPサポートとは
 value.info4.0=
 option.info4.comment=「RPサポート」設定は、シェーダーパックがMinecraftのブロックそれぞれをどのように扱うかを決定します。. たとえば、§bIntegratedPBR+§rでは金ブロックが光沢のあるものとして扱われますが、§elabPBR§rや§eseuspbr§rではリソースパックをインストールしてシェーダーにその情報を伝える必要があります。. RPサポートを§aBasic§rに設定すると、水などのいくつかの例外を除いて、ブロックは「特別」扱いされません。
 
-option.info5=黄色の設定はなんですか？
+option.info5=黄色い設定について
 value.info5.0=
-option.info5.comment=名前が黄色くなっている設定は、「パフォーマンス設定」カテゴリに含まれませんが、パフォーマンスに一定の影響を与える設定です。. 有効にしたときに赤くなる設定は、パフォーマンスコストが非常に大きいことを示しています。
+option.info5.comment=名前が黄色くなっている設定は、「パフォーマンス設定」カテゴリに含まれてはいないものの、パフォーマンスに一定の影響を与える設定です。. 有効にしたときに赤くなる設定は、パフォーマンスコストが非常に大きいことを示しています。
 
 option.info6=
 value.info6.0=
@@ -55,11 +55,11 @@ option.info7.comment=
 
 option.info8=コミュニティに参加する方法
 value.info8.0=
-option.info8.comment=ComplementaryのDiscordサーバーに参加して、フレンドリーなコミュニティに加わり、開発者や経験豊富なコミュニティメンバーと連絡を取ることができます。. www.complementary.dev/discord
+option.info8.comment=ComplementaryのDiscordサーバーに参加してフレンドリーなコミュニティに加わり、開発者や経験豊富なコミュニティメンバーと連絡を取ることができます。. www.complementary.dev/discord
 
 option.info9=Complementaryをサポートする方法
 value.info9.0=
-option.info9.comment=Complementaryの開発をサポートする最良の方法は、友人やSNSで共有することですが、Patreonで開発者を直接サポートすることもできます。. www.patreon.com/emingt
+option.info9.comment=Complementaryの開発をサポートする最良の方法は友人やSNSで共有することですが、Patreonで開発者を直接サポートすることもできます。. www.patreon.com/emingt
 
 option.info10=クレジット
 value.info10.0=
@@ -71,15 +71,15 @@ option.info11.comment=Euphoria Patchesは、SpacEagle17によって開発され
 
 option.info12=Euphoria Patchesの設定
 value.info12.0=
-option.info12.comment=Euphoriaのすべてのオプションはデフォルトで無効になっており、ユーザーが有効にする項目を選択できます。. 「人気の設定」カテゴリには、最も人気のあるEuphoria Patchesの機能があります。. その他にも無数の設定があり、アップデートごとにさらに追加されるので、自由に試して楽しんでください！
+option.info12.comment=Euphoriaのすべてのオプションはデフォルトで無効になっており、ユーザーが有効にする項目を選択できます。. 「人気の設定」カテゴリには、最も人気のあるEuphoria Patchesの機能がまとめてあります。. その他にも無数の設定があり、アップデートごとにさらに追加されるので、自由に試して楽しんでください！
 
 option.info13=EuphoriaのModサポート
 value.info13.0=
-option.info13.comment=Euphoria Patchesはデフォルトで他Modブロックのサポートを追加することで、Complementaryよりも強力なMOD互換性を持っています。 (block.propertiesを参照). 自動発光テクスチャおよび光源ブロック検知。. SSS(サブサーフェス・スキャッタリング)が自動的に適用される植物モデルの検知。
+option.info13.comment=Euphoria Patchesはデフォルトで他Modブロックのサポートを追加することで、Complementaryよりも強力なMod互換性を持つことを目指しています。 (block.propertiesを参照). 自動発光テクスチャおよび光源ブロック検知。. SSS(サブサーフェス・スキャッタリング)が自動的に適用される植物モデルの検知。
 
 option.info14=コミュニティに参加
 value.info14.0=
-option.info14.comment=Euphoria PatchesのDiscordサーバーに参加して質問、楽しいコミュニティおよび最新のニュースにキャッチアップしましょう。. §d§l§neuphoriapatches.com/discord
+option.info14.comment=Euphoria PatchesのDiscordサーバーに参加すれば質問はもちろん、楽しいコミュニティとの交流や最新情報のチェックもできます。. §d§l§neuphoriapatches.com/discord
 
 option.info15=Euphoria Patchesのクレジット
 value.info15.0=
@@ -87,7 +87,7 @@ option.info15.comment=クレジットの全文は、§deuphoriapatches.com/credi
 
 option.info16=§d§nEuphoria Patchesをサポートする方法
 value.info16.0=
-option.info16.comment=Euphoria Patchesをサポートする方法は、アップデートに興味を持ち他の人に共有することですが、PatreonやKo-FiでSpacEagle17を直接サポートし、限定のベータ版にアクセスすることもできます。. §d§l§neuphoriapatches.com/support
+option.info16.comment=Euphoria Patchesをサポートする方法はアップデートに興味を持ったり友人に共有したりすることですが、PatreonやKo-FiでSpacEagle17を直接サポートして限定のベータ版にアクセスすることもできます。. §d§l§neuphoriapatches.com/support
 
 option.info17=ベータ版: SpacEagle17のPatreon
 value.info17.0=
@@ -383,7 +383,7 @@ option.ATM_FOG_ALTITUDE=大気中の霧の高度
 option.ATM_FOG_ALTITUDE.comment=大気中の霧が最も顕著に現れる高度を決定します。
 
 option.CAVE_FOG=洞窟の霧
-option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
+option.CAVE_FOG.comment=地下深くのエリアで追加の霧を有効にします。
 
 option.LIGHTSHAFT_BEHAVIOUR=光芒設定
 option.LIGHTSHAFT_BEHAVIOUR.comment=光芒の挙動を決定します。. §a[+]§r「シーン認識」は、「通常」と「エクストリーム」の間を自動的に切り替え、最適な結果を提供します。. §c[-]§r 「エクストリーム」は通常のゲームプレイには推奨されず、パフォーマンスに大きく影響を与える可能性があります。

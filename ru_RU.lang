@@ -383,7 +383,7 @@ option.ATM_FOG_ALTITUDE=Высота атмосферного тумана
 option.ATM_FOG_ALTITUDE.comment=Задаёт высоту максимальной плотности тумана.
 
 option.CAVE_FOG=Пещерный туман
-option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
+option.CAVE_FOG.comment=Добавляет дополнительный туман в глубоких подземных зонах.
 
 option.LIGHTSHAFT_BEHAVIOUR=Режим световых лучей
 option.LIGHTSHAFT_BEHAVIOUR.comment=Определяет поведение световых лучей. §a[+]§r Адаптивные лучи автоматически переключаются между режимами. §c[-]§r Экстремальный режим не рекомендуется для игры, так как сильно влияет на FPS.

@@ -383,7 +383,7 @@ option.ATM_FOG_ALTITUDE=대기 안개 고도
 option.ATM_FOG_ALTITUDE.comment=대기 안개가 가장 두드러지게 나타나는 고도를 결정합니다.
 
 option.CAVE_FOG=Cave Fog (동굴 안걔)
-option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
+option.CAVE_FOG.comment=깊은 지하에 더 많은 안개를 추가합니다.
 
 option.LIGHTSHAFT_BEHAVIOUR=빛줄기 방식
 option.LIGHTSHAFT_BEHAVIOUR.comment=빛줄기의 동작 방식을 결정합니다. §a[+]§r Scene Aware Light Shafts는 최적의 결과를 제공하기 위해 일반 모드와 익스트림 모드 사이를 자동으로 전환합니다. §c[-]§r 익스트림 모드는 일반 플레이에 권장되지 않으며 성능에 큰 영향을 줄 수 있습니다.

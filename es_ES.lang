@@ -383,7 +383,7 @@ option.ATM_FOG_ALTITUDE=Atmospheric Fog Altitude
 option.ATM_FOG_ALTITUDE.comment=Determines the altitude that the atmospheric fog appears the most prominently.
 
 option.CAVE_FOG=Niebla en Cuevas
-option.CAVE_FOG.comment=Enables extra fog in deep underground areas.
+option.CAVE_FOG.comment=Permite niebla extra en zonas subterráneas profundas.
 
 option.LIGHTSHAFT_BEHAVIOUR=Light Shaft Mode
 option.LIGHTSHAFT_BEHAVIOUR.comment=Determines the behaviour of light shafts. §a[+]§r Scene Aware Light Shafts automatically transition between regular and extreme modes to provide the best results. §c[-]§r Extreme mode is not recommended for general gameplay, and it can severely impact performance.
@@ -571,7 +571,7 @@ option.WATERCOLOR_MODE=Color Mode
 option.WATERCOLOR_MODE.comment=Determines how the water color will be handled. Constant: Water colors won't change between biomes. Biome Based: Color will change depending on the biome. Biome Based (Clamped): Biome based, but prevents the surface color from getting weird in certain biomes. §e[*]§r This setting won't work correctly on Minecraft versions below 1.13.
 value.WATERCOLOR_MODE.3=Biome Based (Clamped)
 value.WATERCOLOR_MODE.2=Biome Based
-value.WATERCOLOR_MODE.0=Constant
+value.WATERCOLOR_MODE.0=Constante
 
 option.BRIGHT_CAVE_WATER=Brighter Shallow/Cave Water
 option.BRIGHT_CAVE_WATER.comment=Makes shallow water or water in closed areas brighter to improve visibility in caves, and add some color detail to the shallow parts of oceans. §e[*]§r This effect won't work if Water Opacity Factor is set higher than 199 for technical reasons.
@@ -630,7 +630,7 @@ value.NIGHT_STAR_AMOUNT.2=Media
 value.NIGHT_STAR_AMOUNT.3=Alta
 value.NIGHT_STAR_AMOUNT.4=Muy Alta
 
-option.RAINBOWS=Rainbows
+option.RAINBOWS=Arcoíris
 option.RAINBOWS.comment=Enables rainbows that appear at the opposite side of the sun during the morning/evening.
 value.RAINBOWS.0=OFF
 value.RAINBOWS.1=After Rain
