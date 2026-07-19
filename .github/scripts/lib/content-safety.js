@@ -306,6 +306,17 @@ function hasSpamRepetition(text) {
 }
 
 // ---------------------------------------------------------------------
+// Minecraft formatting codes
+// ---------------------------------------------------------------------
+
+const COLOR_CODE_RE = /§[0-9a-fk-or]/gi;
+
+// Strips Minecraft color codes to avoid false positives in the content-safety checks
+function stripColorCodes(text) {
+  return text.replace(COLOR_CODE_RE, "");
+}
+
+// ---------------------------------------------------------------------
 // Combined check
 // ---------------------------------------------------------------------
 
@@ -313,17 +324,21 @@ function hasSpamRepetition(text) {
 // hit never needs a wordlist fetch. Profanity (the only async check, since
 // it fetches remote data) only runs if nothing else already flagged it.
 async function checkContentIssues(text, langId, englishSourceValue, exceptions) {
+  const cleanText = stripColorCodes(text);
+  const cleanSource = englishSourceValue
+    ? stripColorCodes(englishSourceValue)
+    : englishSourceValue;
   const issues = [];
 
-  for (const url of findSuspiciousUrls(text, englishSourceValue)) {
+  for (const url of findSuspiciousUrls(cleanText, cleanSource)) {
     issues.push({ reason: url.reason, detail: url.detail });
   }
-  for (const phone of findPhoneNumbers(text)) {
+  for (const phone of findPhoneNumbers(cleanText)) {
     issues.push({ reason: "phone-number", detail: phone });
   }
-  const html = findHtmlInjection(text);
+  const html = findHtmlInjection(cleanText);
   if (html) issues.push({ reason: "html-injection", detail: html });
-  if (hasSpamRepetition(text)) {
+  if (hasSpamRepetition(cleanText)) {
     issues.push({
       reason: "spam-repetition",
       detail: "repeated character/word pattern",
@@ -338,7 +353,7 @@ async function checkContentIssues(text, langId, englishSourceValue, exceptions) 
     };
   }
 
-  const profanity = await checkProfanity(text, langId, exceptions);
+  const profanity = await checkProfanity(cleanText, langId, exceptions);
   return {
     flagged: profanity.flagged,
     matches: profanity.matches,
