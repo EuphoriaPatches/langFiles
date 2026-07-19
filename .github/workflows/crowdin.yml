@@ -244,6 +244,8 @@ jobs:
 
       - name: "Commit and push clean changes to target branch"
         run: |
+          # Remove any stray _flagged-report.json from main (it should only exist on the localization branch)
+          git rm --ignore-unmatch --quiet -- '_flagged-report.json'
           git add -- '*.lang' 'website/*.json'
           if git diff --cached --quiet; then
             echo "No clean changes to commit."
@@ -258,6 +260,9 @@ jobs:
               else
                 MSG="Update website translations"
               fi
+            fi
+            if [ -z "$MSG" ]; then
+              MSG="Remove stray _flagged-report.json from main"
             fi
             git commit -m "[translation] $MSG"
             git push origin "${{ env.TARGET_BRANCH }}"
