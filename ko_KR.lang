@@ -3031,8 +3031,8 @@ option.BLACK_HOLE_LONGITUDE.comment=Fixed Position mode: sets the black hole's p
 option.BLACK_HOLE_LATITUDE=Latitude
 option.BLACK_HOLE_LATITUDE.comment=Fixed Position mode: sets the black hole's position above or below the horizon, in degrees
 
-option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY=Longitude Loops Per Day
-option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full loops around the horizon the black hole completes per real-world day.
+option.BLACK_HOLE_LOOPS_PER_DAY=Loops Per Day
+option.BLACK_HOLE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full loops around the sky the black hole completes per real-world day. Changes the Speed basically.
 
-option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY=Latitude Loops Per Day
-option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full up-and-down oscillations the black hole completes per real-world day. Keep this different from Longitude Loops Per Day for a less repetitive path
+option.BLACK_HOLE_LATITUDE_BIAS=Latitude Bias
+option.BLACK_HOLE_LATITUDE_BIAS.comment=Changes the bias of the black hole's latitude, making it more likely to appear higher or lower in the sky over time. By default a positive bias to make it appear more often above the horizon.

@@ -3031,8 +3031,8 @@ option.BLACK_HOLE_LONGITUDE.comment=Режим фиксированной поз
 option.BLACK_HOLE_LATITUDE=Широта
 option.BLACK_HOLE_LATITUDE.comment=Режим фиксированной позиции: задаёт положение чёрной дыры выше или ниже горизонта в градусах.
 
-option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY=Оборотов по долготе в день
-option.BLACK_HOLE_LONGITUDE_LOOPS_PER_DAY.comment=Режим медленного блуждания: сколько полных оборотов вдоль горизонта чёрная дыра совершает за реальный день.
+option.BLACK_HOLE_LOOPS_PER_DAY=Loops Per Day
+option.BLACK_HOLE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full loops around the sky the black hole completes per real-world day. Changes the Speed basically.
 
-option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY=Оборотов по широте в день
-option.BLACK_HOLE_LATITUDE_LOOPS_PER_DAY.comment=Режим медленного блуждания: сколько полных колебаний вверх-вниз чёрная дыра совершает за реальный день. Держите это значение отличным от «Оборотов по долготе в день» для менее повторяющейся траектории.
+option.BLACK_HOLE_LATITUDE_BIAS=Latitude Bias
+option.BLACK_HOLE_LATITUDE_BIAS.comment=Changes the bias of the black hole's latitude, making it more likely to appear higher or lower in the sky over time. By default a positive bias to make it appear more often above the horizon.
