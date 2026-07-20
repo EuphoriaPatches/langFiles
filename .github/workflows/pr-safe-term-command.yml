@@ -64,8 +64,9 @@ jobs:
 
           PR_JSON=$(gh pr view "${{ github.event.issue.number }}" \
             --repo "${{ github.repository }}" \
-            --json headRefName,labels)
+            --json headRefName,baseRefName,labels)
           HEAD_REF=$(echo "$PR_JSON" | node -e "console.log(JSON.parse(require('fs').readFileSync(0,'utf8')).headRefName)")
+          BASE_REF=$(echo "$PR_JSON" | node -e "console.log(JSON.parse(require('fs').readFileSync(0,'utf8')).baseRefName)")
           HAS_LABEL=$(echo "$PR_JSON" | node -e "console.log(JSON.parse(require('fs').readFileSync(0,'utf8')).labels.some(l => l.name === 'translations'))")
 
           if [ "$HAS_LABEL" != "true" ]; then
@@ -77,6 +78,7 @@ jobs:
           echo "found=true" >> "$GITHUB_OUTPUT"
           echo "commands=$COMMANDS" >> "$GITHUB_OUTPUT"
           echo "head_ref=$HEAD_REF" >> "$GITHUB_OUTPUT"
+          echo "base_ref=$BASE_REF" >> "$GITHUB_OUTPUT"
 
       - name: "Checkout PR branch"
         if: steps.extract.outputs.found == 'true'
@@ -123,17 +125,31 @@ jobs:
             REMAINING=$(node -e "console.log(require('./_safe-term-result.json').remainingCount)")
 
             if [ "$REMAINING" = "0" ]; then
-              # Squash so the whole review history (initial flagged apply +
-              # every accept/reject/safe-term commit) collapses into a
-              # single commit on the target branch instead of showing every
-              # intermediate step.
-              if MERGE_OUTPUT=$(gh pr merge "${{ github.event.issue.number }}" \
-                  --repo "${{ github.repository }}" \
-                  --squash --delete-branch 2>&1); then
-                REPLY="$REPLY"$'\n\n'"All flagged items are cleared. This PR was squash-merged and its branch deleted automatically."
+              # If every flagged item ended up /reject-ed (or otherwise
+              # reverted back to what the base branch already has), there's
+              # nothing left to merge - close instead. Only merge when the
+              # branch actually still differs from its base (e.g. at least
+              # one item was /accept-ed or /safe-term-resolved).
+              git fetch origin "${{ steps.extract.outputs.base_ref }}" --quiet
+              if git diff --quiet "origin/${{ steps.extract.outputs.base_ref }}...HEAD"; then
+                if gh pr close "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --delete-branch 2>&1; then
+                  REPLY="$REPLY"$'\n\n'"All flagged items are cleared, but every change was rejected - there's nothing left to merge. This PR was closed and its branch deleted automatically."
+                else
+                  REPLY="$REPLY"$'\n\n'"All flagged items are cleared and there's nothing left to merge, but auto-close failed - see the workflow run for details. Close manually when ready."
+                fi
               else
-                echo "gh pr merge failed: $MERGE_OUTPUT"
-                REPLY="$REPLY"$'\n\n'"All flagged items are cleared, but auto-merge failed (branch protection or required checks?) - see the workflow run for details. Merge manually when ready."
+                # Squash so the whole review history (initial flagged apply +
+                # every accept/reject/safe-term commit) collapses into a
+                # single commit on the target branch instead of showing every
+                # intermediate step.
+                if MERGE_OUTPUT=$(gh pr merge "${{ github.event.issue.number }}" \
+                    --repo "${{ github.repository }}" \
+                    --squash --delete-branch 2>&1); then
+                  REPLY="$REPLY"$'\n\n'"All flagged items are cleared. This PR was squash-merged and its branch deleted automatically."
+                else
+                  echo "gh pr merge failed: $MERGE_OUTPUT"
+                  REPLY="$REPLY"$'\n\n'"All flagged items are cleared, but auto-merge failed (branch protection or required checks?) - see the workflow run for details. Merge manually when ready."
+                fi
               fi
             fi
           elif [ "$STATUS" = "not-found" ]; then
