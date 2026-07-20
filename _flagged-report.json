@@ -1,0 +1,41 @@
+[
+  {
+    "file": "zh_CN.lang",
+    "key": "option.LANG_FILE_HEADER",
+    "language": "zh_CN",
+    "oldValue": "Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.",
+    "newValue": "本文档为社区贡献翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证翻译的准确性.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.BLACK_HOLE_DIRECTION_MODE.comment",
+    "language": "zh_CN",
+    "oldValue": "Changes how the black hole's position in the sky is determined. Follow Sun Angle mode makes the black hole follow the End Sun Angle Option Position, Fixed Position mode allows you to set a specific position for the black hole, and Slowly Wandering mode makes the black hole move slowly across the sky over time.",
+    "newValue": "改变黑洞在空中的位置如何被决定. 跟随日月斜角模式令黑洞位置跟随 末地日月斜角 设定, 固定位置模式允许你自定义黑洞的位置 (在空中固定), 缓慢移动模式令黑洞在空中缓慢地随时间过去而移动.",
+    "matchedWords": [
+      "日"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "value.BLACK_HOLE_DIRECTION_MODE.0",
+    "language": "zh_CN",
+    "oldValue": "Follow Sun Angle",
+    "newValue": "跟随日月斜角",
+    "matchedWords": [
+      "日"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  }
+]

@@ -1,6 +1,6 @@
 #shaders/lang/zh_CN.lang
 
-option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
+option.LANG_FILE_HEADER=本文档为社区贡献翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证翻译的准确性.
 option.TRANSLATORS=本文档由 Surisen (Ruri) 翻译
 
 #Profiles
@@ -3020,8 +3020,8 @@ option.BLACK_HOLE_LENSING_SWIRL=透镜旋转强度
 option.BLACK_HOLE_LENSING_SWIRL.comment=改变引力透镜效果围绕黑洞旋转的程度, 以达成更动态的视觉效果.
 
 option.BLACK_HOLE_DIRECTION_MODE=位置模式
-option.BLACK_HOLE_DIRECTION_MODE.comment=Changes how the black hole's position in the sky is determined. Follow Sun Angle mode makes the black hole follow the End Sun Angle Option Position, Fixed Position mode allows you to set a specific position for the black hole, and Slowly Wandering mode makes the black hole move slowly across the sky over time.
-value.BLACK_HOLE_DIRECTION_MODE.0=Follow Sun Angle
+option.BLACK_HOLE_DIRECTION_MODE.comment=改变黑洞在空中的位置如何被决定. 跟随日月斜角模式令黑洞位置跟随 末地日月斜角 设定, 固定位置模式允许你自定义黑洞的位置 (在空中固定), 缓慢移动模式令黑洞在空中缓慢地随时间过去而移动.
+value.BLACK_HOLE_DIRECTION_MODE.0=跟随日月斜角
 value.BLACK_HOLE_DIRECTION_MODE.1=固定位置
 value.BLACK_HOLE_DIRECTION_MODE.2=缓慢移动
 
