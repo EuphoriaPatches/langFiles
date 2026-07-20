@@ -6,8 +6,15 @@
 const { execFileSync } = require("child_process");
 const path = require("path");
 const { REPO_ROOT, loadLangMap } = require("./lib/content-safety");
+const {
+  isDuplicateTranslationError,
+  findMatchingTranslation,
+  getProjectLanguageIds,
+  resolveCrowdinLanguageId,
+  resolveStringId,
+  crowdinRequest,
+} = require("./lib/crowdin-api");
 
-const CROWDIN_API = "https://api.crowdin.com/api/v2";
 const ZERO_SHA = "0000000000000000000000000000000000000000";
 
 function gitShow(sha, filePath) {
@@ -37,91 +44,6 @@ function changedKeys(oldRaw, newRaw) {
     if (oldMap.get(key) !== value) changed.set(key, value);
   }
   return changed;
-}
-
-async function crowdinRequest(token, method, urlPath, body) {
-  const res = await fetch(`${CROWDIN_API}${urlPath}`, {
-    method,
-    headers: {
-      Authorization: `Bearer ${token}`,
-      "Content-Type": "application/json",
-    },
-    body: body ? JSON.stringify(body) : undefined,
-  });
-  const json = await res.json().catch(() => null);
-  if (!res.ok) {
-    const err = new Error(
-      `Crowdin API ${method} ${urlPath} failed (${res.status}): ${JSON.stringify(json)}`,
-    );
-    err.body = json;
-    throw err;
-  }
-  return json;
-}
-
-// Crowdin rejects POST /translations when a translation with identical text
-// already exists for that string+language (e.g. added by its own TM
-// pre-translation step, which runs upstream of this script in the sync-lang
-// job) - it wants you to approve the existing one instead of creating a
-// duplicate.
-function isDuplicateTranslationError(err) {
-  const errors = err.body && err.body.errors;
-  if (!Array.isArray(errors)) return false;
-  return errors.some((e) =>
-    ((e.error && e.error.errors) || []).some(
-      (inner) => inner.code === "validationError" && /duplicate translation/i.test(inner.message || ""),
-    ),
-  );
-}
-
-async function findMatchingTranslation(token, projectId, stringId, languageId, text) {
-  const result = await crowdinRequest(
-    token,
-    "GET",
-    `/projects/${projectId}/translations?stringId=${stringId}&languageId=${languageId}`,
-  );
-  const match = (result.data || []).find((item) => item.data.text === text);
-  return match ? match.data : null;
-}
-
-// Get the list of language IDs that exist in the Crowdin project, so we can
-// map our local lang file names to the correct Crowdin language ID (e.g.
-// "fr" vs "fr-FR" vs "fr-CA").
-async function getProjectLanguageIds(token, projectId) {
-  const result = await crowdinRequest(token, "GET", `/projects/${projectId}`);
-  return (result.data.targetLanguages || []).map((l) => l.id);
-}
-
-function resolveCrowdinLanguageId(langId, projectLanguageIds) {
-  const [base, region] = langId.split(/[_-]/);
-  const baseLower = base.toLowerCase();
-
-  if (projectLanguageIds.includes(baseLower)) return baseLower;
-
-  const dialectMatches = projectLanguageIds.filter((id) =>
-    id.toLowerCase().startsWith(`${baseLower}-`),
-  );
-  if (dialectMatches.length === 1) return dialectMatches[0];
-  if (dialectMatches.length > 1 && region) {
-    const exact = dialectMatches.find(
-      (id) => id.toLowerCase() === `${baseLower}-${region.toLowerCase()}`,
-    );
-    if (exact) return exact;
-  }
-  return null;
-}
-
-async function resolveStringId(token, projectId, key, cache) {
-  if (cache.has(key)) return cache.get(key);
-  const result = await crowdinRequest(
-    token,
-    "GET",
-    `/projects/${projectId}/strings?filter=${encodeURIComponent(key)}&scope=identifier&limit=50`,
-  );
-  const match = (result.data || []).find((item) => item.data.identifier === key);
-  const id = match ? match.data.id : null;
-  cache.set(key, id);
-  return id;
 }
 
 async function main() {

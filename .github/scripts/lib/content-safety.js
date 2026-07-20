@@ -1,7 +1,8 @@
 // Shared detection/parsing logic for the content-safety pipeline. Used by
 // split-by-content-safety.js (the main diff-and-split check) and
-// resolve-safe-term.js (the /safe-term PR comment automation) so both stay
-// in sync instead of drifting apart as separately-maintained copies.
+// process-pr-commands.js (the /safe-term, /accept, /reject PR comment
+// automation) so both stay in sync instead of drifting apart as
+// separately-maintained copies.
 "use strict";
 
 const fs = require("fs");
@@ -384,9 +385,15 @@ function loadLangMap(raw) {
   return map;
 }
 
+// A value of `undefined` in `updates` means "remove this key" (used by the
+// /reject PR command to undo a key that didn't exist before it was flagged),
+// as opposed to setting it to an empty string, which is a real value.
 function patchJsonFile(oldRaw, updates) {
   const obj = JSON.parse(oldRaw);
-  for (const [key, value] of updates) obj[key] = value;
+  for (const [key, value] of updates) {
+    if (value === undefined) delete obj[key];
+    else obj[key] = value;
+  }
   return JSON.stringify(obj, null, 2) + "\n";
 }
 
@@ -427,7 +434,13 @@ function buildLangFileFromTemplate(sourceRaw, translatedMap, fileName) {
 // whatever existing key happened to be nearby.
 function patchLangFile(oldRaw, updates, sourceRaw, fileName) {
   const mergedMap = loadLangMap(oldRaw);
-  for (const [key, value] of updates) mergedMap.set(key, value);
+  for (const [key, value] of updates) {
+    // undefined -> "remove this key" (see patchJsonFile) - drop it so the
+    // template rebuild falls back to the English source value instead of
+    // pinning an explicit (and wrong) empty string.
+    if (value === undefined) mergedMap.delete(key);
+    else mergedMap.set(key, value);
+  }
   return buildLangFileFromTemplate(sourceRaw, mergedMap, fileName);
 }
 

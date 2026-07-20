@@ -16,15 +16,17 @@ concurrency:
 
 jobs:
   safe-term:
-    name: "Process /safe-term command"
+    name: "Process /safe-term, /accept, /reject commands"
     runs-on: ubuntu-latest
-    # Only on PR comments containing the command, from a trusted association.
-    # The precise "/safe-term <term>" parse (handling things like a comment
-    # that starts with "/safe-term-typo" instead) happens in the extract
-    # step below - this is just a cheap upfront filter.
+    # Only on PR comments containing a command, from a trusted association.
+    # The precise per-line "/cmd <term>" parse (handling things like a
+    # comment that starts with "/safe-term-typo" instead) happens in the
+    # extract step below - this is just a cheap upfront filter.
     if: |
       github.event.issue.pull_request &&
-      contains(github.event.comment.body, '/safe-term') &&
+      (contains(github.event.comment.body, '/safe-term') ||
+       contains(github.event.comment.body, '/accept') ||
+       contains(github.event.comment.body, '/reject')) &&
       contains(fromJSON('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.comment.author_association)
     steps:
       - name: "React to comment"
@@ -34,19 +36,28 @@ jobs:
           gh api "repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" \
             -f content='eyes' || true
 
-      - name: "Extract term and find PR branch"
+      - name: "Extract commands and find PR branch"
         id: extract
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ github.event.comment.body }}
         run: |
-          TERM=$(node -e "
+          # One comment can contain several commands, one per line, e.g.:
+          #   /safe-term whatever
+          #   /reject badWord
+          #   /accept this
+          COMMANDS=$(node -e "
             const body = process.env.COMMENT_BODY || '';
-            const m = body.match(/^\/safe-term\s+(.+)\$/m);
-            console.log(m ? m[1].trim() : '');
+            const commands = [];
+            for (const line of body.split(/\r?\n/)) {
+              const m = line.match(/^\/(safe-term|accept|reject)\s+(.+)\$/);
+              if (m) commands.push({ cmd: m[1], term: m[2].trim() });
+            }
+            console.log(JSON.stringify(commands));
           ")
-          if [ -z "$TERM" ]; then
-            echo "No valid /safe-term <term> command found in comment - ignoring."
+
+          if [ "$COMMANDS" = "[]" ]; then
+            echo "No valid /safe-term, /accept, or /reject command found in comment - ignoring."
             echo "found=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
@@ -64,7 +75,7 @@ jobs:
           fi
 
           echo "found=true" >> "$GITHUB_OUTPUT"
-          echo "term=$TERM" >> "$GITHUB_OUTPUT"
+          echo "commands=$COMMANDS" >> "$GITHUB_OUTPUT"
           echo "head_ref=$HEAD_REF" >> "$GITHUB_OUTPUT"
 
       - name: "Checkout PR branch"
@@ -74,14 +85,17 @@ jobs:
           ref: ${{ steps.extract.outputs.head_ref }}
           fetch-depth: 0
 
-      - name: "Resolve safe term"
+      - name: "Process review commands"
         if: steps.extract.outputs.found == 'true'
         env:
-          SAFE_TERM_QUERY: ${{ steps.extract.outputs.term }}
+          COMMANDS_JSON: ${{ steps.extract.outputs.commands }}
           PROFANITY_REPO_TOKEN: ${{ secrets.PROFANITY_REPO_TOKEN }}
-        run: node .github/scripts/resolve-safe-term.js
+          CROWDIN_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
+          CROWDIN_PROJECT_ID_LANG: ${{ vars.CROWDIN_PROJECT_ID_LANG }}
+          CROWDIN_PROJECT_ID_WEBSITE: ${{ vars.CROWDIN_PROJECT_ID_WEBSITE }}
+        run: node .github/scripts/process-pr-commands.js
 
-      - name: "Commit, push, and update PR if resolved"
+      - name: "Commit, push, and update PR"
         if: steps.extract.outputs.found == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -90,33 +104,42 @@ jobs:
         run: |
           STATUS=$(node -e "console.log(require('./_safe-term-result.json').status)")
 
-          if [ "$STATUS" = "resolved" ]; then
+          if [ "$STATUS" = "processed" ]; then
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add -- '.github/data/safe-term-exceptions.json' '*.lang' 'website/*.json' '_flagged-report.json'
-            git commit -m "[translation] Add safe-term exception: ${{ steps.extract.outputs.term }}"
-            git push origin "${{ steps.extract.outputs.head_ref }}"
 
-            node .github/scripts/build-pr-body.js
-            gh pr edit "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body-file pr-body.md
+            if git diff --cached --quiet; then
+              echo "Nothing to commit (no command matched a flagged item)."
+            else
+              git commit -m "[translation] Process PR review commands"
+              git push origin "${{ steps.extract.outputs.head_ref }}"
 
+              node .github/scripts/build-pr-body.js
+              gh pr edit "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body-file pr-body.md
+            fi
+
+            REPLY=$(node -e "console.log(require('./_safe-term-result.json').reply)")
             REMAINING=$(node -e "console.log(require('./_safe-term-result.json').remainingCount)")
+
             if [ "$REMAINING" = "0" ]; then
+              # Squash so the whole review history (initial flagged apply +
+              # every accept/reject/safe-term commit) collapses into a
+              # single commit on the target branch instead of showing every
+              # intermediate step.
               if MERGE_OUTPUT=$(gh pr merge "${{ github.event.issue.number }}" \
                   --repo "${{ github.repository }}" \
-                  --merge --delete-branch 2>&1); then
-                REPLY="Added \`${{ steps.extract.outputs.term }}\` as a safe-term exception. No flagged items remain (of any kind), so this PR was merged and its branch deleted automatically."
+                  --squash --delete-branch 2>&1); then
+                REPLY="$REPLY"$'\n\n'"All flagged items are cleared. This PR was squash-merged and its branch deleted automatically."
               else
                 echo "gh pr merge failed: $MERGE_OUTPUT"
-                REPLY="Added \`${{ steps.extract.outputs.term }}\` as a safe-term exception. No flagged items remain, but auto-merge failed (branch protection or required checks?) - see the workflow run for details. Merge manually when ready."
+                REPLY="$REPLY"$'\n\n'"All flagged items are cleared, but auto-merge failed (branch protection or required checks?) - see the workflow run for details. Merge manually when ready."
               fi
-            else
-              REPLY="Added \`${{ steps.extract.outputs.term }}\` as a safe-term exception and re-checked matching flagged item(s). $REMAINING item(s) still need review."
             fi
           elif [ "$STATUS" = "not-found" ]; then
-            REPLY="Couldn't find a flagged profanity match for \`${{ steps.extract.outputs.term }}\` in this PR - nothing changed."
+            REPLY=$(node -e "console.log(require('./_safe-term-result.json').reply)")
           else
-            REPLY="Something went wrong processing this command - check the workflow run for details."
+            REPLY="Something went wrong processing these commands - check the workflow run for details."
           fi
 
           gh pr comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body "$REPLY"

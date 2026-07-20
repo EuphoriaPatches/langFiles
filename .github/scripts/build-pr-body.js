@@ -29,7 +29,12 @@ function main() {
   const lines = [];
   lines.push("New translations from Crowdin were flagged by the content safety check and need manual review before merging.");
   lines.push("");
-  lines.push("To mark a flagged term as a known-safe false positive (e.g. a loanword that happens to contain a flagged substring), comment `/safe-term <term>` on this PR - an owner/member/collaborator only.");
+  lines.push("Comment one or more of these on this PR (owner/member/collaborator only; one per line to batch several in a single comment):");
+  lines.push("- `/safe-term <term>` - mark a term as a permanent known-safe exception (e.g. a loanword that happens to contain a flagged substring) and re-check matching profanity-flagged items. Profanity matches only.");
+  lines.push("- `/accept <term>` - accept a flagged item as-is, just this once. No lasting exception is recorded. Works for any flag reason (URL, phone number, spam, profanity, etc.).");
+  lines.push("- `/reject <term>` - drop a flagged item, revert it to its original value, and best-effort delete the rejected translation from Crowdin too (only if it hasn't already been changed there since).");
+  lines.push("");
+  lines.push("Once every flagged item is cleared, this PR merges automatically (squashed into a single commit).");
   lines.push("");
   lines.push("### Flagged items");
 
@@ -50,8 +55,8 @@ function main() {
   }
 
   lines.push("");
-  lines.push("### If rejected");
-  lines.push("Delete or fix the translation directly in Crowdin using the links above, so it isn't proposed again unchanged.");
+  lines.push("### Note");
+  lines.push("If `/reject`'s Crowdin sync is skipped or fails (see the reply comment), fix or delete the translation directly in Crowdin using the links above so it isn't proposed again unchanged.");
 
   fs.writeFileSync("pr-body.md", lines.join("\n") + "\n", "utf8");
   console.log("--- PR body ---");
