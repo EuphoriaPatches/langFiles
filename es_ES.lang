@@ -12,7 +12,7 @@ profile.HIGH=Rendimiento: §eAlto (Por defecto)
 profile.VERYHIGH=Rendimiento: §eMuy Alto
 profile.ULTRA=Rendimiento: §cUltra
 profile.COMPLEMENTARY=Rendimiento: §4§lComplementary
-profile.comment=Shader profiles change performance settings with the most optimised visual fidelity to performance ratio. §e[*]§r It's recommended to use one of these profiles for your settings unless you know what you are doing. §e[*]§r All affected settings can all be found in the "Performance Settings" menu.
+profile.comment=joder
 
 #Information
 screen.INFORMATION=Información

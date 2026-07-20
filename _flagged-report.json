@@ -1,0 +1,58 @@
+[
+  {
+    "file": "es_ES.lang",
+    "key": "profile.comment",
+    "language": "es_ES",
+    "oldValue": "Shader profiles change performance settings with the most optimised visual fidelity to performance ratio. §e[*]§r It's recommended to use one of these profiles for your settings unless you know what you are doing. §e[*]§r All affected settings can all be found in the \"Performance Settings\" menu.",
+    "existedBefore": true,
+    "newValue": "joder",
+    "matchedWords": [
+      "joder"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "ja_JP.lang",
+    "key": "option.SHADER_STYLE.comment",
+    "language": "ja_JP",
+    "oldValue": "シェーダーパックのデフォルトのビジュアルスタイルを決定します。. §bReimagined§r: Minecraftのビジュアルを補完しつつも、Minecraftらしさを保ちます。. §dUnbound§r: Minecraftのビジュアルを半リアルなファンタジースタイルで再構築します。. §e[*]§r 影響を受ける設定: 水のスタイル、雲のスタイル、太陽/月のスタイル、太陽/月の角度、オーロラのスタイル、光る鉱石。",
+    "existedBefore": true,
+    "newValue": "シェーダーパックのデフォルトのビジュアルスタイルを決定します。. §bReimagined§r: Minecraftのビジュアルを補完しつつもMinecraftらしさを保ちます. §dUnbound§r: Minecraftのビジュアルを半リアルなファンタジースタイルで再構築します. §e[*]§r 影響を受ける設定: 水のスタイル、雲のスタイル、太陽/月のスタイル、太陽/月の角度、オーロラのスタイル、光る鉱石",
+    "matchedWords": [
+      "ファンタジー"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "ja_JP.lang",
+    "key": "option.WB_DOF_FOCUS.comment",
+    "language": "ja_JP",
+    "oldValue": "カメラのフォーカス距離を決定します。. 自動: 画面の中心に従って焦点が調整されます。. 明るさ: 「ビデオ設定」の「明るさ」スライダーでフォーカスが決まります。",
+    "existedBefore": true,
+    "newValue": "カメラのフォーカス距離を決定します。. 自動: 画面の中心に従って焦点が調整されます. 明るさ: ビデオ設定の「明るさ」スライダーでフォーカスが決まります",
+    "matchedWords": [
+      "カス"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "website/es-ES.json",
+    "key": "modMethodTitle",
+    "language": "es-ES",
+    "oldValue": "El Método Mod",
+    "existedBefore": true,
+    "newValue": "El Método Mod joder",
+    "matchedWords": [
+      "joder"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  }
+]
