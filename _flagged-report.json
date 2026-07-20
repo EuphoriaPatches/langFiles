@@ -1,19 +1,6 @@
 [
   {
     "file": "zh_CN.lang",
-    "key": "option.LANG_FILE_HEADER",
-    "language": "zh_CN",
-    "oldValue": "Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.",
-    "newValue": "本文档为社区贡献翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证翻译的准确性.",
-    "matchedWords": [
-      "性"
-    ],
-    "reasons": [
-      "profanity-match"
-    ]
-  },
-  {
-    "file": "zh_CN.lang",
     "key": "option.BLACK_HOLE_DIRECTION_MODE.comment",
     "language": "zh_CN",
     "oldValue": "Changes how the black hole's position in the sky is determined. Follow Sun Angle mode makes the black hole follow the End Sun Angle Option Position, Fixed Position mode allows you to set a specific position for the black hole, and Slowly Wandering mode makes the black hole move slowly across the sky over time.",
