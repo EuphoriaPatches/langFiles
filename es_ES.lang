@@ -319,7 +319,7 @@ option.FXAA_DEFINE.comment=Activar el Anti-Aliasing Aproximado Rápido (FXAA), q
 value.FXAA_DEFINE.-1=§aDESACTIVADO
 value.FXAA_DEFINE.1=§eACTIVADO
 
-option.SSAO_QUALI_DEFINE=Edge Shadow (SSAO) Quality
+option.SSAO_QUALI_DEFINE=Calidad de la sombra del borde (SSAO)
 option.SSAO_QUALI_DEFINE.comment=Adjusts the quality of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. Every tier further reduces the ssao noise artifacts.
 value.SSAO_QUALI_DEFINE.0=§aOFF
 value.SSAO_QUALI_DEFINE.2=§eMedium
@@ -358,8 +358,8 @@ option.WORLD_SPACE_PLAYER_REF.comment=Makes the current player's own player mode
 value.WORLD_SPACE_PLAYER_REF.-1=OFF
 value.WORLD_SPACE_PLAYER_REF.1=ON
 
-option.SSAO_I=Edge Shadow Intensity (SSAO)
-option.SSAO_I.comment=Determines the strength of Screen-Space Ambient Occlusion (SSAO) which adds extra ambient shadowing to the edges of the scene. §e[*]§r This setting won't work if SSAO is disabled in "Performance Settings".
+option.SSAO_I=Intensidad de la sombra de borde (SSAO)
+option.SSAO_I.comment=Determina la fuerza de la Oclusión Ambiente Screen-Space (SSAO) que añade sombra ambiental extra a los bordes de la escena. §e[*]§r Esta configuración no funcionará si SSAO está desactivado en "Ajustes de Rendimiento".
 value.SSAO_I.0=OFF
 
 option.VANILLAAO_I=Intensidad de la sombra de borde (Vanilla)
@@ -379,7 +379,7 @@ value.ATM_FOG_MULT.0.95=Intensa
 option.ATM_FOG_DISTANCE=Distancia de la Niebla Atmosférica
 option.ATM_FOG_DISTANCE.comment=Ajusta la distancia de la cámara que la niebla atmosférica empieza a aparecer. §e[*]§r Ten en cuenta que también se ajusta automáticamente a la configuración de Distancia de Renderizado (Render Distance) en Ajustes de Vídeo.
 
-option.ATM_FOG_ALTITUDE=Atmospheric Fog Altitude
+option.ATM_FOG_ALTITUDE=Altitud de la Niebla Atmosférica
 option.ATM_FOG_ALTITUDE.comment=Determines the altitude that the atmospheric fog appears the most prominently.
 
 option.CAVE_FOG=Niebla en Cuevas
@@ -414,14 +414,14 @@ value.CLOUD_STYLE_DEFINE.1=Reimagined
 value.CLOUD_STYLE_DEFINE.3=Unbound
 value.CLOUD_STYLE_DEFINE.50=Vanilla §e[*]
 
-option.CLOUD_SHADOWS=Cloud Shadows
+option.CLOUD_SHADOWS=Sombras de nubes
 option.CLOUD_SHADOWS.comment=Enables shadows that are cast from the clouds. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r Cloud shadows will be randomly generated if Cloud Style is set to "Unbound", because of the extra complexity of Unbound clouds.
 
-option.CLOUD_CLOSED_AREA_CHECK=Prevent Clouds in Interiors
+option.CLOUD_CLOSED_AREA_CHECK=Prevenir nubes en los interiores
 option.CLOUD_CLOSED_AREA_CHECK.comment=Does additional checks to remove clouds in closed areas. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles. §e[*]§r This setting will be disabled if "Real-Time Shadows" is OFF.
 
-option.CLOUD_ALT1=Cloud Altitude §e[*]§r
-option.CLOUD_ALT1.comment=Determines the world height which the clouds will appear at. §e[*]§r This setting can be internally increased or decreased depending on your dimension settings and mods. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
+option.CLOUD_ALT1=Altitud de las nubes §e[*]§r
+option.CLOUD_ALT1.comment=Determina la altura del mundo en que aparecerán las nubes. §e[*]§r Este ajuste puede ser incrementado internamente o disminuido dependiendo de tus ajustes de dimensión y mods. §e[*]§r Esta configuración sólo funciona con los estilos de nube "Reimagined" o "Unbound".
 
 option.CLOUD_SPEED_MULT=Velocidad de Nubes
 option.CLOUD_SPEED_MULT.comment=Determines how fast the clouds are going to move. "Synced to World Time" setting uses Minecraft world time to advance the cloud positions; this allows for clouds to appear the same between players in the same server. §e[*]§r This setting only works with the "Reimagined" or "Unbound" Cloud Styles.
@@ -434,24 +434,24 @@ option.CLOUD_B=Multiplicador de Azules en Nubes
 option.CLOUD_UNBOUND_AMOUNT=Cantidad de Nubes
 option.CLOUD_UNBOUND_AMOUNT.comment=Ajusta la cantidad de nubes del estilo Unbound.
 
-option.CLOUD_UNBOUND_SIZE_MULT=Cloud Smallness §c[-]§r
+option.CLOUD_UNBOUND_SIZE_MULT=Altura de nubes §c[-]§r
 option.CLOUD_UNBOUND_SIZE_MULT.comment=Adjusts the size of Unbound clouds. Higher values produce smaller clouds. §c[-]§r Changing this setting will disable the "sync clouds between players in the same server" feature of Complementary.
 
-option.CLOUD_UNBOUND_RAIN_ADD=Rain Cloud Addition
-option.CLOUD_UNBOUND_RAIN_ADD.comment=Adjusts the cloud amount increase that gets applied during rain/snow.
+option.CLOUD_UNBOUND_RAIN_ADD=Cantidad de nubes en lluvia
+option.CLOUD_UNBOUND_RAIN_ADD.comment=Ajusta el aumento de la cantidad de la nube que se aplica durante la lluvia o la nieve.
 prefix.CLOUD_UNBOUND_RAIN_ADD=+
 
-option.DOUBLE_REIM_CLOUDS=Double Reimagined Clouds
-option.DOUBLE_REIM_CLOUDS.comment=Enables a secondary Reimagined cloud layer. §e[*]§r This setting only works with the "Reimagined" Cloud Style.
+option.DOUBLE_REIM_CLOUDS=Nubes Reimagined dobles
+option.DOUBLE_REIM_CLOUDS.comment=Activa una segunda zona de nubes Reimagined. §e[*]§r Esta opción sólo funciona con el estilo de nube "Reimagined".
 
-option.CLOUD_ALT2=Cloud Layer 2 Altitude
-option.CLOUD_ALT2.comment=Determines the world height which the second layer clouds will appear at. §e[*]§r This setting only works when the "Double Reimagined Clouds" option is enabled with the "Reimagined" Cloud Style.
+option.CLOUD_ALT2=Altitud de zona de nubes 2
+option.CLOUD_ALT2.comment=Determina la altura del mundo en la que aparecerán las nubes de la segunda zona. §e[*]§r Esta configuración sólo funciona cuando la opción "Nubes Reimagined dobles" está activada con el estilo de nube "Reimagined".
 
-option.NETHER_STORM=§eNether Storm§r
-option.NETHER_STORM.comment=Adds a smoke-like volumetric effect to the Nether dimension. §c[-]§r This effect can impact performance.
+option.NETHER_STORM=§eTormenta del Nether§r
+option.NETHER_STORM.comment=Añade un efecto volumétrico como humo a la dimensión del Nether. §c[-]§r Este efecto puede impactar el rendimiento.
 
-option.NETHER_STORM_I=Nether Storm Opacity
-option.NETHER_STORM_I.comment=Adjusts the opacity of the Nether Storm.
+option.NETHER_STORM_I=Opacidad de tormenta del Nether
+option.NETHER_STORM_I.comment=Ajusta la opacidad de la Tormenta del Nether.
 
 option.NETHER_STORM_LOWER_ALT=Nether Storm Lower Altitude
 option.NETHER_STORM_LOWER_ALT.comment=Determines the lower starting point of the Nether Storm. The Nether Storm won't appear below this altitude, and it will look the most bright right above this altitude.
@@ -485,7 +485,7 @@ option.END_BEAM_INTENSITY=End Beams Intensity
 option.END_BEAM_INTENSITY.comment=Adjusts the brightness of the beams seen in the End dimension.
 
 option.END_STAR_INTENSITY=End Stars Intensity
-option.END_STAR_INTENSITY.comment=Adjusts the brightness of the stars seen in the End dimension.
+option.END_STAR_INTENSITY.comment=Ajusta el brillo de las estrellas visibles en la dimensión del End.
 
 option.END_FLASHES=End Flashes
 option.END_FLASHES.comment=Enables support for the "End flash" environmental feature that was added in Minecraft 1.21.9. The intensity of the flashes in the sky are directly tied to the intensity of End Beams.
@@ -496,28 +496,28 @@ option.END_BEAM_CENTER_ALT.comment=Adjusts the altitude the End Beams will be ce
 option.END_BEAM_HEIGHT=End Beams Height
 option.END_BEAM_HEIGHT.comment=Adjusts the physical tallness of the End Beams.
 
-option.TM_EXPOSURE=General Brightness
-option.TM_EXPOSURE.comment=Also known as "Tonemap Exposure". Adjusts the overall brightness of the whole image.
+option.TM_EXPOSURE=Brillo general
+option.TM_EXPOSURE.comment=También conocido como "Tonemap Exposure", ajusta el brillo total de la imagen.
 
-option.TM_WHITE_CURVE=White Brightness
+option.TM_WHITE_CURVE=Brillo Blanco
 option.TM_WHITE_CURVE.comment=Also known as "Tonemap White Curve". Adjusts how easily the colors reach to full white.
 
-option.T_UPPER_CURVE=Contrast of Brighter Colors
+option.T_UPPER_CURVE=Contraste de Colores Claros
 option.T_UPPER_CURVE.comment=Also known as "Tonemap Upper Curve". Adjusts contrast of brighter colors.
 
-option.T_LOWER_CURVE=Contrast of Darker Colors
+option.T_LOWER_CURVE=Contraste de Colores Oscuros
 option.T_LOWER_CURVE.comment=Also known as "Tonemap Lower Curve". Adjusts contrast of darker colors.
 
-option.TM_CONTRAST=General Contrast
+option.TM_CONTRAST=Contraste general
 option.TM_CONTRAST.comment=Adjusts the darkness of dark colors and brightness of bright colors.
 
-option.T_SATURATION=Saturation
+option.T_SATURATION=Saturación
 option.T_SATURATION.comment=Adjusts overall colorfulness of the image.
 
 option.T_VIBRANCE=Saturation of Paler Colors
 option.T_VIBRANCE.comment=Also known as "Vibrance". Adjusts the colorfulness of the image, but already colorful pixels are less affected.
 
-option.TM_DARK_DESATURATION=Darkness Desaturation
+option.TM_DARK_DESATURATION=Desaturación de oscuridad
 option.TM_DARK_DESATURATION.comment=Adjusts the amount of color-dulling effect that is going to be applied to darker areas.
 
 option.TM_WHITE_PATH=White Reachability
@@ -538,7 +538,7 @@ option.GR_BG=Azul a Verde
 option.GR_BB=Azul a Azul
 option.GR_BC=Curva del Azul
 
-option.WATER_STYLE_DEFINE=Water Style
+option.WATER_STYLE_DEFINE=Estilo de agua
 option.WATER_STYLE_DEFINE.comment=Determines the style of water. §e[*]§r "Set by Style" means that the setting will be automatically determined by the "Visual Style" setting in the main menu of Shader Options.
 value.WATER_STYLE_DEFINE.-1=Definido por estilo
 value.WATER_STYLE_DEFINE.1=Reimagined
@@ -554,33 +554,33 @@ value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 option.WATER_REFRACTION_INTENSITY=Water Refraction Intensity §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=Adjusts the intensity of water refraction and underwater distortion. §e[*]§r This setting only fully works when Detail Quality is set to "High", or else it will only affect the subtle underwater distortion.
 
-option.WATER_FOAM_I=Water Foam Intensity
+option.WATER_FOAM_I=Intensidad de la espuma de agua
 option.WATER_FOAM_I.comment=Determines the opacity of foam seen on water edges. §e[*]§r This setting only works when Detail Quality is set to Medium or higher.
 
-option.WATER_ALPHA_MULT=Water Opacity Factor
+option.WATER_ALPHA_MULT=Factor de la Opacidad del Agua
 option.WATER_ALPHA_MULT.comment=Adjusts how opaque the water looks. §c[-]§r Extreme values will break the balance of water lighting. §e[*]§r This setting only works when Detail Quality is set to Medium or higher.
 
-option.WATER_FOG_MULT=Water Fog Factor
+option.WATER_FOG_MULT=Factor de niebla de agua
 option.WATER_FOG_MULT.comment=Adjusts how close the water fog looks. Higher values provide closer fog. §c[-]§r Extreme values will break the balance of water lighting.
 
-option.WATERCOLOR_R=Water Surface Red Multiplier
-option.WATERCOLOR_G=Water Surface Green Multiplier
-option.WATERCOLOR_B=Water Surface Blue Multiplier
+option.WATERCOLOR_R=Multiplicador de Superficie Roja
+option.WATERCOLOR_G=Multiplicador de Superficie Verde
+option.WATERCOLOR_B=Multiplicador de Superficie Azul
 
-option.WATERCOLOR_MODE=Color Mode
+option.WATERCOLOR_MODE=Modo de color
 option.WATERCOLOR_MODE.comment=Determines how the water color will be handled. Constant: Water colors won't change between biomes. Biome Based: Color will change depending on the biome. Biome Based (Clamped): Biome based, but prevents the surface color from getting weird in certain biomes. §e[*]§r This setting won't work correctly on Minecraft versions below 1.13.
-value.WATERCOLOR_MODE.3=Biome Based (Clamped)
-value.WATERCOLOR_MODE.2=Biome Based
+value.WATERCOLOR_MODE.3=Basado en biomas (restringido)
+value.WATERCOLOR_MODE.2=Basado en biomas
 value.WATERCOLOR_MODE.0=Constante
 
 option.BRIGHT_CAVE_WATER=Brighter Shallow/Cave Water
 option.BRIGHT_CAVE_WATER.comment=Makes shallow water or water in closed areas brighter to improve visibility in caves, and add some color detail to the shallow parts of oceans. §e[*]§r This effect won't work if Water Opacity Factor is set higher than 199 for technical reasons.
 
-option.UNDERWATERCOLOR_R=Underwater Red Multiplier
-option.UNDERWATERCOLOR_G=Underwater Green Multiplier
-option.UNDERWATERCOLOR_B=Underwater Blue Multiplier
+option.UNDERWATERCOLOR_R=Multiplicador rojo bajo agua
+option.UNDERWATERCOLOR_G=Multiplicador verde bajo agua
+option.UNDERWATERCOLOR_B=Multiplicador azul bajo agua
 
-option.WATER_BUMPINESS=Wave Strength
+option.WATER_BUMPINESS=Fuerza de ondas
 option.WATER_BUMPINESS.comment=Adjusts the intensity of surface-direction waves (normals) seen on water.
 
 option.WATER_BUMP_SMALL=Wave Strength - Small Waves
@@ -604,7 +604,7 @@ value.SUN_ANGLE.-1=Definido por estilo
 value.SUN_ANGLE.0=0 §r(§bReimagined§r)
 value.SUN_ANGLE.-40=-40 §r(§dUnbound§r)
 
-option.SUN_MOON_STYLE_DEFINE=Sun/Moon Style
+option.SUN_MOON_STYLE_DEFINE=Estilo del Sol/Luna
 option.SUN_MOON_STYLE_DEFINE.comment=Determines the style of sun/moon. §e[*]§r This setting might interact incorrectly with some resource packs due to the limitations of sun/moon/skybox differentiation.
 value.SUN_MOON_STYLE_DEFINE.-1=Definido por estilo
 value.SUN_MOON_STYLE_DEFINE.1=Reimagined
@@ -651,14 +651,14 @@ value.AURORA_STYLE_DEFINE.2=Unbound
 
 option.AURORA_CONDITION=Aurora C.
 option.AURORA_CONDITION.comment=Aurora Condition setting determines the condition(s) for the Aurora Borealis to appear. §e[*]§r Aurora Borealis will only appear during night regardless of this setting
-value.AURORA_CONDITION.-1=Always Except New Moon
-value.AURORA_CONDITION.0=Every Night
-value.AURORA_CONDITION.1=Full Moon
-value.AURORA_CONDITION.2=Snowy Biome
-value.AURORA_CONDITION.3=Full Moon in Snowy Biome
-value.AURORA_CONDITION.4=Full Moon or Snowy Biome
+value.AURORA_CONDITION.-1=Siempre Excepto Luna Nueva
+value.AURORA_CONDITION.0=Todas las noches
+value.AURORA_CONDITION.1=Luna llena
+value.AURORA_CONDITION.2=Bioma nevado
+value.AURORA_CONDITION.3=Luna llena en bioma nevado
+value.AURORA_CONDITION.4=Luna llena o bioma nevado
 
-option.NIGHT_NEBULAE=§eNight Nebulae§r
+option.NIGHT_NEBULAE=§eNebulosa Nocturna§r
 option.NIGHT_NEBULAE.comment=Adds galaxy-style nebulae to the night sky. The nebulae are procedurally generated, and they will look different every night. §c[-]§r This effect can impact performance. §e[*]§r "Nebulae" isn't a typo, it's the plural of Nebula =D
 value.NIGHT_NEBULAE.-1=OFF
 value.NIGHT_NEBULAE.1=§eON
@@ -752,8 +752,8 @@ value.IMAGE_SHARPENING.10=10x §c[-]
 option.LENSFLARE_MODE=§eLens Flare§r
 option.LENSFLARE_MODE.comment=Adds camera lens reflection effect when towards the sun or moon. §c[-]§r This effect can severely impact performance.
 value.LENSFLARE_MODE.0=OFF
-value.LENSFLARE_MODE.1=§cSun Only
-value.LENSFLARE_MODE.2=§cSun & Moon
+value.LENSFLARE_MODE.1=§cSolo sol
+value.LENSFLARE_MODE.2=§Sol & Luna
 
 option.LENSFLARE_I=Lens Flare Intensity
 option.LENSFLARE_I.comment=Adjusts the strength of the Lens Flare effect.
@@ -822,21 +822,21 @@ option.WB_ANAMORPHIC.comment=Stretches the blur in one direction. §c[-]§r This
 
 option.WB_DOF_I=Depth of Field Strength
 option.WB_DOF_FOCUS=Depth of Field Focus
-option.WB_DOF_FOCUS.comment=Determines the focus distance of the camera. Automatic: The focus point will be adjusted according to the center point of the screen. Brightness: The focus point will be determined by the "Brightness" slider in Video Settings.
-value.WB_DOF_FOCUS.-1=Brightness §e[*]
-value.WB_DOF_FOCUS.0=Automatic
+option.WB_DOF_FOCUS.comment=Determina la distancia de enfoque de la cámara. Automático: El punto de enfoque se ajusta según el punto central de la pantalla. Brillo: El punto de enfoque es determinado por el deslizador de "brillo" en la configuración de vídeo.
+value.WB_DOF_FOCUS.-1=Brillo §e[*]
+value.WB_DOF_FOCUS.0=Automático
 
-option.WB_DB_DAY_I=Dis. Blur - Day
-option.WB_DB_NIGHT_I=Dis. Blur - Night & Interiors
-option.WB_DB_RAIN_I=Dis. Blur - Rain & Snow
-option.WB_DB_WATER_I=Dis. Blur - Underwater
-option.WB_DB_NETHER_I=Dis. Blur - The Nether
-option.WB_DB_END_I=Dis. Blur - The End
+option.WB_DB_DAY_I=Dis. Desenfoque - Día
+option.WB_DB_NIGHT_I=Dis. Desenfoque - Noche e Interiores
+option.WB_DB_RAIN_I=Dis. Desenfoque - Lluvia y nieve
+option.WB_DB_WATER_I=Dis. Desenfoque - Bajo Agua
+option.WB_DB_NETHER_I=Dis. Desenfoque - En el Nether
+option.WB_DB_END_I=Dis. Desenfoque - En el End
 
 option.VIGNETTE_R=Vignette
 option.VIGNETTE_R.comment=Applies darkening around the edges of the screen.
 
-option.CHROMA_ABERRATION=Chromatic Aberration
+option.CHROMA_ABERRATION=Aberración Cromática
 option.CHROMA_ABERRATION.comment=Separates different colors towards the edges of the screen. §c[-]§r Chromatic Aberration can cause the image to feel blurry; high values aren't recommended for gameplay.
 value.CHROMA_ABERRATION.4=4 §c[-]
 value.CHROMA_ABERRATION.5=5 §c[-]
@@ -877,12 +877,12 @@ value.HIDE_ARMOR.2=On All Entities
 option.HAND_SWAYING=Hand Sway
 option.HAND_SWAYING.comment=Adds slow movement to the player hand to simulate a breathing animation.
 value.HAND_SWAYING.0=OFF
-value.HAND_SWAYING.1=Subtle
+value.HAND_SWAYING.1=Sutil
 value.HAND_SWAYING.2=Normal
-value.HAND_SWAYING.3=Intense
+value.HAND_SWAYING.3=Intenso
 
-option.LESS_LAVA_FOG=Less Fog Inside Lava or Snow
-option.LESS_LAVA_FOG.comment=Reduces the lava fog and powder snow fog to improve visibility inside them.
+option.LESS_LAVA_FOG=Menos niebla dentro de Lava o Nieve
+option.LESS_LAVA_FOG.comment=Reduce la niebla de lava y niebla de la nieve en polvo para mejorar la visibilidad dentro de ellos.
 
 option.REDUCE_CLOSE_PARTICLES=Reduce Close-up Particles
 option.REDUCE_CLOSE_PARTICLES.comment=Reduces the opacity of particles that are close to the camera to improve visibility.
