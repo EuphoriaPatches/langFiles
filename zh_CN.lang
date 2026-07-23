@@ -1319,6 +1319,7 @@ screen.FOG_BORDER_NETHER.comment=与边界雾气相关的设置.
 screen.HEAT_DISTORTION_SETTINGS=热失真
 screen.HEAT_DISTORTION_SETTINGS.comment=与热失真相关的设置.
 screen.END_WORLD=末地
+screen.END_VOLUMETRIC_SETTINGS=End Volumetrics
 screen.END_AMBIENT=末地环境光
 screen.FOG_BORDER_END=边界雾气
 screen.FOG_BORDER_END.comment=与边界雾气相关的设置.
@@ -1700,6 +1701,11 @@ option.DRAGON_DEATH_EFFECT.comment=用体积特效替换末影龙死亡特效的
 value.DRAGON_DEATH_EFFECT.0=关
 value.DRAGON_DEATH_EFFECT.1=体积效果
 value.DRAGON_DEATH_EFFECT.2=体积效果 + 原始光束
+
+option.END_CRYSTAL_VOXEL_PIXEL=Voxel Pixelation
+option.END_CRYSTAL_VOXEL_PIXEL.comment=Setting which enables voxel pixelation on the end crystal vortexes and the dragon death effect.
+value.END_CRYSTAL_VOXEL_PIXEL.0=关
+
 option.E_BEAMS_AMBIENT_INFLUENCE=环境色影响程度
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=设置的数值越接近 1.00 时星束的颜色越接近环境色, 设置的数值越接近 0.00 时星束的颜色越接近玩家自定义的颜色. 此设置不会影响龙战星束颜色.
 option.E_BEAM_R_NEW=末地星束 - 红色
@@ -2998,6 +3004,15 @@ option.BLACK_HOLE=黑洞
 option.BLACK_HOLE.comment=在末地的天空盒中增加黑洞. 黑洞位置受 黑洞位置设定 影响
 value.BLACK_HOLE.0=关
 
+option.BLACK_HOLE_SHAPE=Black Hole Shape
+option.BLACK_HOLE_SHAPE.comment=Changes the shape of the black hole's event horizon.
+value.BLACK_HOLE_SHAPE.0=圆形
+value.BLACK_HOLE_SHAPE.1=方形
+
+option.BLACK_HOLE_PIXELATION=Black Hole Pixelation
+option.BLACK_HOLE_PIXELATION.comment=Makes the black hole pixelated, amount changes pixel size.
+value.BLACK_HOLE_PIXELATION.0=Off
+
 option.BLACK_HOLE_SIZE=黑洞大小
 option.BLACK_HOLE_SIZE.comment=改变黑洞大小
 
@@ -3036,3 +3051,7 @@ option.BLACK_HOLE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full loo
 
 option.BLACK_HOLE_LATITUDE_BIAS=Latitude Bias
 option.BLACK_HOLE_LATITUDE_BIAS.comment=Changes the bias of the black hole's latitude, making it more likely to appear higher or lower in the sky over time. By default a positive bias to make it appear more often above the horizon.
+
+option.BLACK_HOLE_STREAK=Horizontal Streak
+option.BLACK_HOLE_STREAK.comment=Adds a horizontal accretion-disk streak to the black hole.
+value.BLACK_HOLE_STREAK.0=OFF

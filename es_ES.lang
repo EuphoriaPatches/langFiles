@@ -1319,6 +1319,7 @@ screen.FOG_BORDER_NETHER.comment=Settings that relate to border fog.
 screen.HEAT_DISTORTION_SETTINGS=Heat Distortion
 screen.HEAT_DISTORTION_SETTINGS.comment=Settings that relate to heat distortion.
 screen.END_WORLD=End
+screen.END_VOLUMETRIC_SETTINGS=End Volumetrics
 screen.END_AMBIENT=End Ambient
 screen.FOG_BORDER_END=Border fog
 screen.FOG_BORDER_END.comment=Settings that relate to border fog.
@@ -1700,6 +1701,11 @@ option.DRAGON_DEATH_EFFECT.comment=Setting which replaces the dragon's dying bea
 value.DRAGON_DEATH_EFFECT.0=OFF
 value.DRAGON_DEATH_EFFECT.1=Volumetric Effect
 value.DRAGON_DEATH_EFFECT.2=Volumetric + Original Beams
+
+option.END_CRYSTAL_VOXEL_PIXEL=Voxel Pixelation
+option.END_CRYSTAL_VOXEL_PIXEL.comment=Setting which enables voxel pixelation on the end crystal vortexes and the dragon death effect.
+value.END_CRYSTAL_VOXEL_PIXEL.0=No
+
 option.E_BEAMS_AMBIENT_INFLUENCE=Ambient Color Influence
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=The beams will have the ambient color at 1.00 and the user defined color at 0.00. Doesn't apply to Dragon Ender Beams.
 option.E_BEAM_R_NEW=Ender Beams - Red
@@ -2998,6 +3004,15 @@ option.BLACK_HOLE=Black Hole
 option.BLACK_HOLE.comment=Adds a black hole to the skybox in the End. Its position is controlled by the Black Hole Position settings
 value.BLACK_HOLE.0=OFF
 
+option.BLACK_HOLE_SHAPE=Black Hole Shape
+option.BLACK_HOLE_SHAPE.comment=Changes the shape of the black hole's event horizon.
+value.BLACK_HOLE_SHAPE.0=Circle
+value.BLACK_HOLE_SHAPE.1=Square
+
+option.BLACK_HOLE_PIXELATION=Black Hole Pixelation
+option.BLACK_HOLE_PIXELATION.comment=Makes the black hole pixelated, amount changes pixel size.
+value.BLACK_HOLE_PIXELATION.0=Apagada
+
 option.BLACK_HOLE_SIZE=Black Hole Size
 option.BLACK_HOLE_SIZE.comment=Changes the size of the black hole
 
@@ -3036,3 +3051,7 @@ option.BLACK_HOLE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full loo
 
 option.BLACK_HOLE_LATITUDE_BIAS=Latitude Bias
 option.BLACK_HOLE_LATITUDE_BIAS.comment=Changes the bias of the black hole's latitude, making it more likely to appear higher or lower in the sky over time. By default a positive bias to make it appear more often above the horizon.
+
+option.BLACK_HOLE_STREAK=Horizontal Streak
+option.BLACK_HOLE_STREAK.comment=Adds a horizontal accretion-disk streak to the black hole.
+value.BLACK_HOLE_STREAK.0=Sin brillo
