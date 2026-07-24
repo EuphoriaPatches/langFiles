@@ -3054,4 +3054,4 @@ option.BLACK_HOLE_LATITUDE_BIAS.comment=Changes the bias of the black hole's lat
 
 option.BLACK_HOLE_STREAK=Horizontal Streak
 option.BLACK_HOLE_STREAK.comment=Adds a horizontal accretion-disk streak to the black hole.
-value.BLACK_HOLE_STREAK.0=OFF
+value.BLACK_HOLE_STREAK.0=關

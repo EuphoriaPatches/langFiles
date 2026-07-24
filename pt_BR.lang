@@ -21,11 +21,11 @@ screen.INFORMATION.comment=Esta seção contém apenas botões que existem para 
 screen.INFORMATION2=Informação do Complementary
 screen.INFORMATION2.comment=Esta seção contém apenas botões que existem para fornecer informações.
 
-option.info0=§bPasse o mouse sobre um botão.
+option.info0=§b Passe o mouse sobre o botão.
 value.info0.0=
 option.info0.comment=Esta seção contém apenas botões que existem para fornecer informações.
 
-option.info1=Como deixar o jogo com mais desempenho.
+option.info1=Como deixar o jogo com mais desempenho
 value.info1.0=
 option.info1.comment=Desempenho é um tópico complexo no Minecraft porque isso pode ser afetado por várias coisas, mas você pode tentar qualquer um desses:. Reduzir sua render distance(distância renderização),A melhor configuração para a maioria dos dispositivos é entre 6 á 16 chunks. Reduza a configuração do shaders "Profile", Estes foram cuidadosamente testados para oferecer a melhor relação entre qualidade visual e desempenho. Mais informações serão adicionadas posteriormente.
 
@@ -37,7 +37,7 @@ option.info3=O que é "Profile" ou "Visual Style"
 value.info3.0=
 option.info3.comment=A configuração "Profile" altera as configurações encontradas no menu "Configurações de Desempenho", sem afetar nenhuma configuração baseada em preferências. "Visual Style" altera os valores "Set by Style" que existem em muitas configurações baseadas em preferências, mas isso não impacta o desempenho de forma significativa.
 
-option.info4=O que é §5RP Support§r
+option.info4=O que é §5 RP Support§r
 value.info4.0=
 option.info4.comment=A opção §5RP Support§r determina como o shader irá tratar diferentes blocos do Minecraft. Por exemplo, §bIntegratedPBR+§r trata os blocos de ouro como um bloco que reflete as coisa, enquanto o §elabPBR§r ou §eseuspbr§r nessecitam que você instale um resource pack para informar isso ao shaders. Configurando o §5RP Support§r para §aBasic§r Fará com que nenhum bloco seja considerado "especial", com exceção de alguns casos, como a água.
 
@@ -121,7 +121,7 @@ value.SHADER_STYLE.4=§dUnbound
 
 #Screens
 screen.PERFORMANCE_SETTINGS=§eConfigurações de Desempenho§r
-screen.PERFORMANCE_SETTINGS.comment=Configurações que influenciam diretamente o desempenho e mudam conforme o perfil de shader escolhido.
+screen.PERFORMANCE_SETTINGS.comment=Configurações que influenciam diretamente o desempenho e mudam conforme o perfil de shaders escolhido.
 
 screen.ATMOSPHERE_SETTINGS=Atmosfera
 screen.ATMOSPHERE_SETTINGS.comment=Configurações que influenciam o clima e a ambientação do jogo.
@@ -129,7 +129,7 @@ screen.ATMOSPHERE_SETTINGS.comment=Configurações que influenciam o clima e a a
 screen.ATM_COLOR_SETTINGS=Ajustes de cor para a atmosfera
 screen.ATM_COLOR_SETTINGS.comment=Permite ajustar as cores da atmosfera, especialmente as que aparecem no céu e na neblina.
 
-screen.MORNING_ATM_MULTS=Nascer/Pôr do Sol
+screen.MORNING_ATM_MULTS=Nascer/Pôr Do Sol
 screen.NOON_ATM_MULTS=Meio-Dia
 screen.NIGHT_ATM_MULTS=Noite
 screen.RAIN_ATM_MULTS=Clima Chuvoso
@@ -149,13 +149,13 @@ screen.FOG_SETTINGS=Neblina
 screen.FOG_SETTINGS.comment=Configurações relacionadas aos diversos tipos de neblina.
 
 screen.SUN_MOON_SETTINGS=Sol / Lua
-screen.SUN_MOON_SETTINGS.comment=Configurações que estão relacionadas ao Sol e a Lua.
+screen.SUN_MOON_SETTINGS.comment=Configurações relacionadas ao Sol e a Lua.
 
 screen.NETHER_SETTINGS=Dimensão do Nether
-screen.NETHER_SETTINGS.comment=Configurações que estão relacionadas á dimensão do Nether.
+screen.NETHER_SETTINGS.comment=Configurações relacionadas á dimensão do Nether.
 
 screen.END_SETTINGS=A Dimensão do End
-screen.END_SETTINGS.comment=Configurção relacionados à dimensão do End.
+screen.END_SETTINGS.comment=Configuração relacionada à dimensão do End.
 
 screen.WEATHER_SETTINGS=Chuva / Clima
 screen.WEATHER_SETTINGS.comment=Configurações que afetam as condições do clima.
@@ -274,9 +274,9 @@ option.LIGHTSHAFT_QUALI_DEFINE=Qualidade dos Feixes de Luz §e[*]§r
 option.LIGHTSHAFT_QUALI_DEFINE.comment=Ajusta a qualidade dos feixes de luz. Cada nível reduz ainda mais os artefatos de ruído. §e[*]§r A opção "Sombras em Tempo Real" deve estar configurada para qualquer valor diferente de DESLIGADO para que os feixes de luz funcionem. §e[*]§r Esta configuração também controla a qualidade dos Feixes do End, com a exceção de que a opção "DESLIGADO" é tratada como "Baixo".
 value.LIGHTSHAFT_QUALI_DEFINE.0=Desativado
 value.LIGHTSHAFT_QUALI_DEFINE.1=Resolução Baixa
-value.LIGHTSHAFT_QUALI_DEFINE.2=§eResolução Média
-value.LIGHTSHAFT_QUALI_DEFINE.3=§cResolução Alta
-value.LIGHTSHAFT_QUALI_DEFINE.4=§4§lResolução Muito Alta
+value.LIGHTSHAFT_QUALI_DEFINE.2=§e Resolução Média
+value.LIGHTSHAFT_QUALI_DEFINE.3=§c Resolução Alta
+value.LIGHTSHAFT_QUALI_DEFINE.4=§4§l Resolução Muito Alta
 
 option.shadowDistance=Distância da Sombra
 option.shadowDistance.comment=Ajusta a distância a partir do jogador na qual as sombras em tempo real são renderizadas. §e[*]§r O valor é limitado internamente pela Distância de Renderização. §e[*]§r Recomenda-se definir este valor em cerca de 80% da sua distância de renderização para obter o melhor desempenho e cobertura. §c[-]§r Valores mais baixos podem causar vazamento excessivo de feixes de luz.
@@ -410,7 +410,7 @@ option.CLOUD_STYLE_DEFINE=Estilo das Nuvens
 option.CLOUD_STYLE_DEFINE.comment=Define o estilo das nuvens. §e[*]§r "Definido pelo Estilo" significa que a configuração será determinada automaticamente pela opção "Estilo Visual" no menu principal das Opções do Shader. §e[*]§r O estilo "Vanilla" requer que as nuvens estejam ativadas nas Configurações de Vídeo.
 value.CLOUD_STYLE_DEFINE.-1=Definido pelo Estilo
 value.CLOUD_STYLE_DEFINE.0=DESATIVADO
-value.CLOUD_STYLE_DEFINE.1=§bReimagined
+value.CLOUD_STYLE_DEFINE.1=§b Reimagined
 value.CLOUD_STYLE_DEFINE.3=Sem Limites
 value.CLOUD_STYLE_DEFINE.50=Vanilla §e[*]
 
@@ -2909,7 +2909,7 @@ option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=Quantas amostras o ReSTIR 
 option.PHOTONICS_RESTIR_SPATIAL_REUSE_RADIUS=Raio de Reuso Espacial (ReSTIR)
 
 option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=Frames de Acumulação (ReSTIR)
-option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=Número máximo de frames usados para acumulação. Valores menores deixam a iluminação mais responsiva, porém com mais ruído.\n\nSem impacto na performance
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=Número máximo de frames usados para acumulação. Valores menores deixam a iluminação mais responsiva, porém com mais ruído.\n\nSem impacto no desempenho
 
 option.PHOTONICS_RESTIR_DENOISER_PASSES=Passes do Denoiser
 option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=Número de passes que o denoiser do ReSTIR usa\n\n§cALTO IMPACTO NA PERFORMANCE
@@ -2976,13 +2976,13 @@ value.CUSTOM_SKY_SUPPORT_SLIDER.0=Desligado
 value.CUSTOM_SKY_SUPPORT_SLIDER.10=On
 
 option.CUSTOM_SKY_MOD_SUPPORT=Suporte a mods de Céu
-option.CUSTOM_SKY_MOD_SUPPORT.comment=Adiciona suporte a mods de céu personalizados, como Caelum ou Astrocraft. Pode causar alguns problemas, pois não foi testado com muitos mods.
+option.CUSTOM_SKY_MOD_SUPPORT.comment=Adiciona suporte a mods de céus personalizados, como Caelum ou Astrocraft. Pode causar alguns problemas, pois não foi testado com muitos mods.
 
 option.SAVE_SKYBOX_DATA_OVERRIDE=Salvar Dados da Skybox
 option.SAVE_SKYBOX_DATA_OVERRIDE.comment=Permite que o pacote de shaders salve a skybox personalizada em um buffer. Isso acontece automaticamente quando um mod de skybox está instalado, mas ocasionalmente pode causar problemas com certos mods que também alteram a skybox. Por isso, esta opção permite desativar esse comportamento.
 
 option.DISTANT_HORIZONS_SSAO=Sombra de Borda (SSAO)
-option.DISTANT_HORIZONS_SSAO.comment=Ativa SSAO (oclusão de ambiente em espaço de tela) nos chunks do Distant Horizons. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado. §e[*]§r Requer que a qualidade de SSAO não esteja em OFF nas configurações de performance.
+option.DISTANT_HORIZONS_SSAO.comment=Ativa SSAO (oclusão de ambiente em espaço de tela) nos chunks do Distant Horizons. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado. §e[*]§r Requer que a qualidade de SSAO não esteja em OFF nas configurações de desempenho.
 
 option.DH_BLENDING=Mesclagem com Distant Horizons
 option.DH_BLENDING.comment=Suaviza a transição entre os chunks do Distant Horizons e os chunks normais. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado.
@@ -2997,7 +2997,7 @@ value.PIXELATED_SHADOWS_MODE.64=Manual 64x
 value.PIXELATED_SHADOWS_MODE.128=Manual 128x
 
 option.PANINI_PROJECTION=Projeção Panini
-option.PANINI_PROJECTION.comment=Ativa a Projeção Panini, um tipo de projeção que reduz a distorção nas bordas da tela, especialmente ao usar um campo de visão (FOV) alto. §e[-]§r Pode fazer a imagem parecer esticada no centro ou mais borrada no geral.
+option.PANINI_PROJECTION.comment=Enables Panini Projection, which is a type of projection that reduces distortion at the edges of the screen, especially when using a high field of view (FOV). §e[-]§r Can make the image look stretched in the center, or blurrier overall.
 value.PANINI_PROJECTION.0=DESLIGADO
 
 option.BLACK_HOLE=Black Hole
