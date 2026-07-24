@@ -3,6 +3,8 @@
 option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
 option.TRANSLATORS=Translated by: Insert your name(s) here
 
+shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r Complementary add-on by SpacEagle17 extending it with many more unique optional features and settings.\nDev versions: §dwww.euphoriapatches.com/support§r
+
 #Profiles
 profile.POTATO=Продуктив.: §aКартопля
 profile.VERYLOW=Продуктив.: §aНаднизька

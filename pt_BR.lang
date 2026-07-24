@@ -3,6 +3,8 @@
 option.LANG_FILE_HEADER=Traduções feitas pela comunidade, A tradução pode estar desatualizada. O SpacEagle17 não pode garantir sua precisão.
 option.TRANSLATORS=Traduzido por: Lucas Henrick
 
+shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r Complementary add-on by SpacEagle17 extending it with many more unique optional features and settings.\nDev versions: §dwww.euphoriapatches.com/support§r
+
 #Profiles
 profile.POTATO=Desempenho: §aResolução de calculadora
 profile.VERYLOW=Desempenho: §aResolução bem Baixa
