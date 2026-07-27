@@ -3,7 +3,7 @@
 option.LANG_FILE_HEADER=Перевод выполнен сообществом. Может устареть. SpacEagle17 не может это гарантировать.
 option.TRANSLATORS=Перевод от Folox_ (Nikita), mpustovoi и Slava_vas(MPLOC)
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nComplementary add-on by SpacEagle17 extending it with many more unique optional features and settings.\nDev versions: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nДополнение для Complementary от SpacEagle17 с множеством уникальных дополнительных функций и настроек.\nВерсии в разработке: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=Предустановка: §aкартошка
@@ -1321,7 +1321,7 @@ screen.FOG_BORDER_NETHER.comment=Настройки граничного тум�
 screen.HEAT_DISTORTION_SETTINGS=Искажение от жары
 screen.HEAT_DISTORTION_SETTINGS.comment=Настройки искажения от жары.
 screen.END_WORLD=Энд
-screen.END_VOLUMETRIC_SETTINGS=End Volumetrics
+screen.END_VOLUMETRIC_SETTINGS=Объёмность Энда
 screen.END_AMBIENT=Атмосфера Энда
 screen.FOG_BORDER_END=Граничный туман
 screen.FOG_BORDER_END.comment=Настройки граничного тумана.
@@ -1692,7 +1692,7 @@ option.OW_BEAM_B_NEW=Синий для лучей обычного мира
 
 option.END_BEAMS=Эндер-лучи
 option.END_BEAMS.comment=Туманные лучи в измерении Энда.
-option.END_CRYSTAL_VORTEX=Вихрь эндер-кристаллов
+option.END_CRYSTAL_VORTEX=Вихрь кристаллов Энда
 option.END_CRYSTAL_VORTEX.comment=Энергетические лучи от кристаллов Энда в измерении Энда. §4[***]§r Требует включения «§cТеней существ§r». §e[*]§r Работает только на Iris. §e[*]§r Не работает на MacOS.
 value.END_CRYSTAL_VORTEX.0=Нет
 value.END_CRYSTAL_VORTEX.1=Вихрь
@@ -1704,8 +1704,8 @@ value.DRAGON_DEATH_EFFECT.0=Нет
 value.DRAGON_DEATH_EFFECT.1=Объёмный эффект
 value.DRAGON_DEATH_EFFECT.2=Объёмный + ванильные лучи
 
-option.END_CRYSTAL_VOXEL_PIXEL=Voxel Pixelation
-option.END_CRYSTAL_VOXEL_PIXEL.comment=Setting which enables voxel pixelation on the end crystal vortexes and the dragon death effect.
+option.END_CRYSTAL_VOXEL_PIXEL=Пикселизация вокселей
+option.END_CRYSTAL_VOXEL_PIXEL.comment=Настройка, которая включает пикселизацию вокселей на вихрях кристаллов Энда и эффекте смерти дракона.
 value.END_CRYSTAL_VOXEL_PIXEL.0=Нет
 
 option.E_BEAMS_AMBIENT_INFLUENCE=Влияние окружения
@@ -3006,13 +3006,13 @@ option.BLACK_HOLE=Чёрная дыра
 option.BLACK_HOLE.comment=Добавляет чёрную дыру на небосвод в Энде. Её положение задаётся настройками «Положение чёрной дыры».
 value.BLACK_HOLE.0=Нет
 
-option.BLACK_HOLE_SHAPE=Black Hole Shape
-option.BLACK_HOLE_SHAPE.comment=Changes the shape of the black hole's event horizon.
+option.BLACK_HOLE_SHAPE=Форма чёрной дыры
+option.BLACK_HOLE_SHAPE.comment=Изменяет форму горизонта событий черной дыры.
 value.BLACK_HOLE_SHAPE.0=Круг
 value.BLACK_HOLE_SHAPE.1=Квадрат
 
-option.BLACK_HOLE_PIXELATION=Black Hole Pixelation
-option.BLACK_HOLE_PIXELATION.comment=Makes the black hole pixelated, amount changes pixel size.
+option.BLACK_HOLE_PIXELATION=Пикселизация чёрной дыры
+option.BLACK_HOLE_PIXELATION.comment=Делает чёрную дыру пиксельной, количество изменяет размер пикселя.
 value.BLACK_HOLE_PIXELATION.0=Нет
 
 option.BLACK_HOLE_SIZE=Размер чёрной дыры
@@ -3054,6 +3054,6 @@ option.BLACK_HOLE_LOOPS_PER_DAY.comment=Режим медленного блуж
 option.BLACK_HOLE_LATITUDE_BIAS=Смещение по широте
 option.BLACK_HOLE_LATITUDE_BIAS.comment=Изменяет смещение широты чёрной дыры, повышая вероятность того, что со временем она будет появляться выше или ниже на небосводе. По умолчанию смещение положительное, то есть чёрная дыра чаще появляется над горизонтом.
 
-option.BLACK_HOLE_STREAK=Horizontal Streak
-option.BLACK_HOLE_STREAK.comment=Adds a horizontal accretion-disk streak to the black hole.
+option.BLACK_HOLE_STREAK=Горизонтальная полоса
+option.BLACK_HOLE_STREAK.comment=Добавляет горизонтальную полосу аккреционного диска к чёрной дыре.
 value.BLACK_HOLE_STREAK.0=Нет

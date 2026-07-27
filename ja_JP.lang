@@ -3,7 +3,7 @@
 option.LANG_FILE_HEADER=コミュニティによる翻訳ファイル - 翻訳が古い可能性があります。. SpacEagle17は翻訳の精度を保証できません。
 option.TRANSLATORS=日本語訳: MUKSC
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nComplementary add-on by SpacEagle17 extending it with many more unique optional features and settings.\nDev versions: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\n多くの追加機能や設定を追加する、SpacEagle17によるComplementary Shadersのアドオンです。\n開発版: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=品質: §a最低
@@ -1321,7 +1321,7 @@ screen.FOG_BORDER_NETHER.comment=境界の霧に関する設定です。
 screen.HEAT_DISTORTION_SETTINGS=陽炎
 screen.HEAT_DISTORTION_SETTINGS.comment=陽炎(熱による光の揺らぎ)に関する設定です。
 screen.END_WORLD=ジ・エンド
-screen.END_VOLUMETRIC_SETTINGS=End Volumetrics
+screen.END_VOLUMETRIC_SETTINGS=ジ・エンド 立体効果
 screen.END_AMBIENT=ジ・エンドの環境
 screen.FOG_BORDER_END=境界の霧
 screen.FOG_BORDER_END.comment=境界の霧に関する設定です。
@@ -1704,8 +1704,8 @@ value.DRAGON_DEATH_EFFECT.0=OFF
 value.DRAGON_DEATH_EFFECT.1=立体効果
 value.DRAGON_DEATH_EFFECT.2=立体効果 + 元のビーム
 
-option.END_CRYSTAL_VOXEL_PIXEL=Voxel Pixelation
-option.END_CRYSTAL_VOXEL_PIXEL.comment=Setting which enables voxel pixelation on the end crystal vortexes and the dragon death effect.
+option.END_CRYSTAL_VOXEL_PIXEL=ボクセル化
+option.END_CRYSTAL_VOXEL_PIXEL.comment=エンドクリスタルの渦とドラゴン死亡エフェクトをボクセル化する設定です。
 value.END_CRYSTAL_VOXEL_PIXEL.0=OFF
 
 option.E_BEAMS_AMBIENT_INFLUENCE=環境色の影響
@@ -3006,13 +3006,13 @@ option.BLACK_HOLE=ブラックホール
 option.BLACK_HOLE.comment=エンドのスカイボックスにブラックホールを追加します。. 位置は「ブラックホールの位置」設定によって制御されます。
 value.BLACK_HOLE.0=OFF
 
-option.BLACK_HOLE_SHAPE=Black Hole Shape
-option.BLACK_HOLE_SHAPE.comment=Changes the shape of the black hole's event horizon.
+option.BLACK_HOLE_SHAPE=ブラックホールの形状
+option.BLACK_HOLE_SHAPE.comment=ブラックホールの地平線の形状を変更します。
 value.BLACK_HOLE_SHAPE.0=円形
 value.BLACK_HOLE_SHAPE.1=四角形
 
-option.BLACK_HOLE_PIXELATION=Black Hole Pixelation
-option.BLACK_HOLE_PIXELATION.comment=Makes the black hole pixelated, amount changes pixel size.
+option.BLACK_HOLE_PIXELATION=ブラックホールのピクセル化
+option.BLACK_HOLE_PIXELATION.comment=ブラックホールをピクセル化します。. 値によってピクセルサイズが変わります。
 value.BLACK_HOLE_PIXELATION.0=OFF
 
 option.BLACK_HOLE_SIZE=ブラックホールの大きさ
@@ -3054,6 +3054,6 @@ option.BLACK_HOLE_LOOPS_PER_DAY.comment=ゆっくり移動モード: 現実世�
 option.BLACK_HOLE_LATITUDE_BIAS=緯度のバイアス
 option.BLACK_HOLE_LATITUDE_BIAS.comment=ブラックホールの緯度方向の偏りを変更し、時間が経過とともに空高く、または低くに現れやすくします。. デフォルトでは、地平線の上側に出やすくするために正のバイアスがかかっています。
 
-option.BLACK_HOLE_STREAK=Horizontal Streak
-option.BLACK_HOLE_STREAK.comment=Adds a horizontal accretion-disk streak to the black hole.
+option.BLACK_HOLE_STREAK=水平の軌跡
+option.BLACK_HOLE_STREAK.comment=ブラックホールに水平方向の降着円盤の軌跡を追加します。
 value.BLACK_HOLE_STREAK.0=OFF
