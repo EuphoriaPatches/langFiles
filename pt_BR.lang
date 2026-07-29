@@ -29,43 +29,43 @@ option.info0.comment=Esta seção contém apenas botões que existem para fornec
 
 option.info1=Como deixar o jogo com mais desempenho
 value.info1.0=
-option.info1.comment=Desempenho é um tópico complexo no Minecraft porque isso pode ser afetado por várias coisas, mas você pode tentar qualquer um desses:. Reduzir sua render distance(distância renderização),A melhor configuração para a maioria dos dispositivos é entre 6 á 16 chunks. Reduza a configuração do shaders "Profile", Estes foram cuidadosamente testados para oferecer a melhor relação entre qualidade visual e desempenho. Mais informações serão adicionadas posteriormente.
+option.info1.comment=- Performance is a complex topic in Minecraft because it gets affected by so many things, but you can try these:. - Use Iris+Sodium mods instead of Optifine, because Optifine is problematic and won't even let you read rest of this description in some cases. - Reduce the "Profile" shader setting, these have been carefully tested for the best visual/performance ratio. - Reduce your render distance, I recommend setting it to be 2-4 chunks higher than the "shadow distance" of the "Profile" you have chosen, so for example, 16 chunks of render distance for the "High" profile, 6 chunks for the Potato profile. - Make sure your resolution isnt too excessive, 1920x1080 is great for mid tier systems, 1440p is viable for high tier systems, 4k is excessive. - Make sure you don't have a massive amount of mods, even if most of those mods are "optimization mods", they usually aren't that helpful for shaders. It's also worth mentioning that some resource packs, especially ones that add more complex foliage/leaves cost a ton of performance.
 
 option.info2=Quais são as melhores configurações?
 value.info2.0=
-option.info2.comment=As melhores configurações são subjetiva,mas ao usar a configuração padrão será o ideal para a maioria das pessoas. As configurações padrão foram ajustadas ao longo de anos com base nas avaliações e no feedback da comunidade, sempre com muita atenção ao equilíbrio entre visual e desempenho. Mas você ainda deve se sentir à vontade para fazer ajustes e se divertir com isso!
+option.info2.comment=- Best settings are subjective, but using the default "Profile" options are going to be the near-best for most people. - The default settings have been shaped by years of community evaluations, testing, and feedback; while paying a lot of attention to the visuals/performance ratio. - But you should still feel free to tweak around and have fun doing so!
 
 option.info3=O que é "Profile" ou "Visual Style"
 value.info3.0=
-option.info3.comment=A configuração "Profile" altera as configurações encontradas no menu "Configurações de Desempenho", sem afetar nenhuma configuração baseada em preferências. "Visual Style" altera os valores "Set by Style" que existem em muitas configurações baseadas em preferências, mas isso não impacta o desempenho de forma significativa.
+option.info3.comment=- "Profile" setting changes the settings found in the "Performance Settings" menu, while not affecting any preference-based settings. - "Visual Style" changes the "Set by Style" values that exist on many preference-based settings, but it does not impact performance by an important amount. - The only difference between Complementary Reimagined and Unbound is the default option of "Visual Style"
 
 option.info4=O que é §5 RP Support§r
 value.info4.0=
-option.info4.comment=A opção §5RP Support§r determina como o shader irá tratar diferentes blocos do Minecraft. Por exemplo, §bIntegratedPBR+§r trata os blocos de ouro como um bloco que reflete as coisa, enquanto o §elabPBR§r ou §eseuspbr§r nessecitam que você instale um resource pack para informar isso ao shaders. Configurando o §5RP Support§r para §aBasic§r Fará com que nenhum bloco seja considerado "especial", com exceção de alguns casos, como a água.
+option.info4.comment=- RP Support option determines how the shader pack treats the different blocks of Minecraft. - For example, §bIntegratedPBR+§r treats gold blocks as reflective things, while §elabPBR§r or §eseuspbr§r require you to install a resource pack to tell that to the shader. - Setting RP Support to §aBasic§r will make it so that no block is "special" other than a couple exceptions like water.
 
 option.info5=Como consertar a incompatibilidade com mods
 value.info5.0=
-option.info5.comment=A incompatibilidade com mods são inevitáveis com shaderpack por causa da forma que eles funcionam, mas você pode dar uma olhada nessa  página de informação sobre problema entre os mods e o Complementary para ver várias correções conhecidas. Acesse: www.complementary.dev/mod-issues
+option.info5.comment=- A setting with a yellow name means that the setting impacts performance by a measurable amount despite not being in the "Performance Settings" category. - If enabling it results in a red option text, it means that the performance cost is very high.
 
-option.info6=
+option.info6=Are there any recommended mods
 value.info6.0=
-option.info6.comment=
+option.info6.comment=- Aside from Iris and Sodium which are essential, I recommend "Better Block Entities" for improved performance. - Aside from that, the "RenderScale" mod can be good for easily adjusting resolution. - It's also worth mentioning "Voxy" or "Distant Horizons" mods that add a way to have extreme render distances with non-extreme performance cost; I recommend using 64 to 256 chunks of Voxy render distance, or 64 to 128 chunks of Distant Horizons distance, with 8 to 12 chunks of regular render distance if you are using either mods. - Lastly you can get the "Euphoria Patches" mod that adds a modified Complementary to your shaders list with more functionality and settings; alongside adding several Iris fixes/tweaks even when you aren't using the modified Complementary-Euphoria shader pack, like making colored lighting work even at very high world coordinates.
 
-option.info7=
+option.info7=Where to ask questions or report problems
 value.info7.0=
-option.info7.comment=
+option.info7.comment=- Please either use the Complementary Discord server for questions, or use the "issues" section in the Github page. - www.complementary.dev/discord. - www.complementary.dev/github
 
 option.info8=Como se juntar a nossa comunidade
 value.info8.0=
-option.info8.comment=Você pode se juntar á nossa amigável comunidade do Discord §1Complementary §r, E assim você poderá entrar em contato com desenvolvedores ou membros experientes da comunidade. acesse: www.complementary.dev/discord
+option.info8.comment=- You can join the Complementary Discord server to join our friendly community, and be able to contact developers or experienced community members. - www.complementary.dev/discord
 
 option.info9=Como  apoiar o  §1Complementary §r
 value.info9.0=
-option.info9.comment=A melhor forma de apoiar o desenvolvimento da  §1Complementary Shaders §r é compartilhando com seus amigos ou nas redes sociais, mas você pode apoiar diretamente os desenvolvedores no Patreon. acesse: www.patreon.com/emingt
+option.info9.comment=- Best way to support Complementary is to share it with your friends or social media, but you can also directly support the main developer (me!) on Patreon. - www.patreon.com/emingt
 
 option.info10=Créditos
 value.info10.0=
-option.info10.comment=§4EminGT§r: Desenvolvedor principal do Complementary Shaders  §5Capt Tatsu §r: Desenvolvedor do BSL Shaders,com a generosidade dele fez com que Complementary pudesse existir para inicio de conversa.  §6 Agradecimentos Especiais: §r  §1IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, plazmal §r
+option.info10.comment=- EminGT: The main developer of Complementary. - Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. - Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§dO que é §5Euphoria Patches.§r
 value.info11.0=
@@ -304,10 +304,11 @@ value.ENTITY_SHADOW.1=§cEntidades Normal
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§o Completo§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Qualidade dos Detalhes
-option.DETAIL_QUALITY.comment=Ajusta várias pequenas coisas que afetam o desempenho. Ajusta a qualidade de: material da água, TAA, ajustes de iluminação, Névoa Noturna, Tempestade do Nether, Feixes do Ender, reflexos dos efeitos do céu, precisão das poças de chuva, efeito de ondulação, desfoque de movimento
+option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, sky effect reflections, rain puddle accuracy, waving effect, motion blur, reflection fixes, texture filtering on translucents
 value.DETAIL_QUALITY.0=§aBatata
 value.DETAIL_QUALITY.2=§eResolução Média
 value.DETAIL_QUALITY.3=§cResolução Alta
+value.DETAIL_QUALITY.4=§4§k-§r§4§l§n§oUltra§r§4§k-
 
 option.CLOUD_QUALITY=Qualidade das Nuvens
 option.CLOUD_QUALITY.comment=Ajusta a iluminação, os detalhes e a qualidade de amostragem dos estilos de nuvens "Reimaginadas" ou "Sem Limites". §e[*]§r Esta configuração só funciona com os estilos de nuvem "Reimaginadas" ou "Sem Limites".
@@ -760,10 +761,11 @@ value.LENSFLARE_MODE.2=Sol & Lua
 option.LENSFLARE_I=Intensidade do Reflexo de Lente
 option.LENSFLARE_I.comment=Ajuda a ajustar a força do efeito de Reflexo de Lente.
 
-option.TAA_MODE=§eFiltro Temporal§r
-option.TAA_MODE.comment=Ativa o anti-aliasing temporal, que ajuda a suavizar efeitos granulados, melhora o desempenho ao reduzir a quantidade de amostras de alguns efeitos mais pesados e pode reduzir o aliasing com as configurações corretas. §c[-]§r: Desativar esta opção resultará em pior desempenho e menor qualidade dos efeitos.
-value.TAA_MODE.0=DESLIGADO §c[-]
-value.TAA_MODE.1=LIGADO §a[+]
+option.TAA_DEFINE=§eFiltro Temporal§r
+option.TAA_DEFINE.comment=Enables temporal anti aliasing which helps smooth out grainy effects, improves performance by reducing the sample counts of some heavier effects, and can reduce aliasing with the right settings. §c[-]§r: Turning this off will cause worse performance and worse effect quality, but it can also increase performance when paired with very low shader settings.
+value.TAA_DEFINE.-1=§aSet By DQ
+value.TAA_DEFINE.0=DESLIGADO §c[-]
+value.TAA_DEFINE.1=LIGADO §a[+]
 
 option.TAA_SMOOTHING=Suavização Temporal
 option.TAA_SMOOTHING.comment=Ajusta a quantidade de suavização aplicada pelo Filtro Temporal. Valores mais altos produzem uma imagem mais borrada, mas reduzem cintilação e granulação. A diferença não será perceptível ao ficar parado.
@@ -915,6 +917,19 @@ option.PLAYER_SHADOW=Sombra do Jogador §e[*]§r
 option.PLAYER_SHADOW.comment=Define se o jogador irá projetar sombra ou não. §e[*]§r Esta configuração funciona completamente apenas no Iris. §e[*]§r Esta configuração será desativada se "Sombras em Tempo Real" estiver OFF.
 value.PLAYER_SHADOW.-1=DESLIGADO
 value.PLAYER_SHADOW.1=LIGADO
+
+option.LEAF_SHADOW_OPTIMISATION_DEFINE=§eLeaf Shadow Optimization§r
+option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=Disables shadows of leaves and vines in darker areas to gain performance. §c[-]§r The main downside of this optimization is that it messes up lighting with some fancy leaf resource packs. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§aSet By DQ
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.0=§cOFF
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.1=§aLIGADO
+
+option.SKY_EFFECT_REFLECTION_DEFINE=§eSky Effect Reflections§r
+option.SKY_EFFECT_REFLECTION_DEFINE.comment=Enables reflections to have sky effects visible; like clouds, stars, and aurora borealis. "ON - Water" option will enable sky effects on water and translucent reflections, while "ON - Full" will enable them on block reflections as well. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
+value.SKY_EFFECT_REFLECTION_DEFINE.-1=§aSet By DQ
+value.SKY_EFFECT_REFLECTION_DEFINE.0=DESLIGADO
+value.SKY_EFFECT_REFLECTION_DEFINE.1=§cON - Water
+value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§oON - Full
 
 option.GENERATED_NORMALS=Normais Geradas
 option.GENERATED_NORMALS.comment=Adiciona detalhes em relevo gerados automaticamente às superfícies. §e[*]§r A opção de suporte a RP deve estar definida como Integrated PBR+. §e[*]§r Pode apresentar resultados estranhos com alguns resource packs ou mods que utilizam texturas com resoluções não padronizadas.

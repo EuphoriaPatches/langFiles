@@ -29,43 +29,43 @@ option.info0.comment=Цей розділ містить кнопки, які і�
 
 option.info1=Як отримати кращу продуктивність
 value.info1.0=
-option.info1.comment=Продуктивність є складною темою в Minecraft, оскільки на неї впливає дуже багато речей, але ви можете спробувати це: Зменште дальність промальовування, в ідеалі вона має бути від 6 до 16 майже для кожного пристрою. Зменште налаштування «Профіль», вони були ретельно перевірені на найкраще співвідношення візуальної якости та продуктивности. Більше інформації буде додано пізніше.
+option.info1.comment=- Performance is a complex topic in Minecraft because it gets affected by so many things, but you can try these:. - Use Iris+Sodium mods instead of Optifine, because Optifine is problematic and won't even let you read rest of this description in some cases. - Reduce the "Profile" shader setting, these have been carefully tested for the best visual/performance ratio. - Reduce your render distance, I recommend setting it to be 2-4 chunks higher than the "shadow distance" of the "Profile" you have chosen, so for example, 16 chunks of render distance for the "High" profile, 6 chunks for the Potato profile. - Make sure your resolution isnt too excessive, 1920x1080 is great for mid tier systems, 1440p is viable for high tier systems, 4k is excessive. - Make sure you don't have a massive amount of mods, even if most of those mods are "optimization mods", they usually aren't that helpful for shaders. It's also worth mentioning that some resource packs, especially ones that add more complex foliage/leaves cost a ton of performance.
 
 option.info2=Які налаштування найкращі
 value.info2.0=
-option.info2.comment=Найкращі налаштування є суб'єктивними, але використання усталених налаштувань буде майже найкращим для більшости людей. Усталені налаштування були сформовані роками оцінок спільноти та відгуків, приділяючи велику увагу співвідношенню візуального вигляду та продуктивности. Але ви все одно можете сміливо налаштовувати та отримувати від цього задоволення!
+option.info2.comment=- Best settings are subjective, but using the default "Profile" options are going to be the near-best for most people. - The default settings have been shaped by years of community evaluations, testing, and feedback; while paying a lot of attention to the visuals/performance ratio. - But you should still feel free to tweak around and have fun doing so!
 
 option.info3=Що таке профілі та візуальний стиль
 value.info3.0=
-option.info3.comment=«Профіль» змінює налаштування в «Продуктивність», при цьому не впливаючи на налаштування на основі переваг. «Візуальний стиль» змінює значення «Поточний стиль», які існують для багатьох налаштувань на основі переваг, але це не впливає на продуктивність значною мірою.
+option.info3.comment=- "Profile" setting changes the settings found in the "Performance Settings" menu, while not affecting any preference-based settings. - "Visual Style" changes the "Set by Style" values that exist on many preference-based settings, but it does not impact performance by an important amount. - The only difference between Complementary Reimagined and Unbound is the default option of "Visual Style"
 
 option.info4=Що таке підтримка ПР
 value.info4.0=
-option.info4.comment=Підтримка пакетів ресурсів керує тим, як пакет шейдерів обробляє різні блоки. Наприклад, §bIntegratedPBR+§r розглядає золоті блоки як відбивальні речі, тоді як §elabPBR§r або §eseuspbr§r вимагають встановлення пакета ресурсів, щоб повідомити це шейдеру. Якщо встановити «Підтримка ПР» на §aБазова§r, жоден блок не буде «особливим», окрім кількох винятків, таких як вода.
+option.info4.comment=- RP Support option determines how the shader pack treats the different blocks of Minecraft. - For example, §bIntegratedPBR+§r treats gold blocks as reflective things, while §elabPBR§r or §eseuspbr§r require you to install a resource pack to tell that to the shader. - Setting RP Support to §aBasic§r will make it so that no block is "special" other than a couple exceptions like water.
 
 option.info5=Що за жовті параметри
 value.info5.0=
-option.info5.comment=Параметр із жовтою назвою означає, що параметр впливає на продуктивність вимірюваною величиною незважаючи на відсутність у категорії «Продуктивність». Якщо його ввімкнення призводить до червоного тексту параметра, це означає, що вартість продуктивности дуже висока.
+option.info5.comment=- A setting with a yellow name means that the setting impacts performance by a measurable amount despite not being in the "Performance Settings" category. - If enabling it results in a red option text, it means that the performance cost is very high.
 
-option.info6=
+option.info6=Are there any recommended mods
 value.info6.0=
-option.info6.comment=
+option.info6.comment=- Aside from Iris and Sodium which are essential, I recommend "Better Block Entities" for improved performance. - Aside from that, the "RenderScale" mod can be good for easily adjusting resolution. - It's also worth mentioning "Voxy" or "Distant Horizons" mods that add a way to have extreme render distances with non-extreme performance cost; I recommend using 64 to 256 chunks of Voxy render distance, or 64 to 128 chunks of Distant Horizons distance, with 8 to 12 chunks of regular render distance if you are using either mods. - Lastly you can get the "Euphoria Patches" mod that adds a modified Complementary to your shaders list with more functionality and settings; alongside adding several Iris fixes/tweaks even when you aren't using the modified Complementary-Euphoria shader pack, like making colored lighting work even at very high world coordinates.
 
-option.info7=
+option.info7=Where to ask questions or report problems
 value.info7.0=
-option.info7.comment=
+option.info7.comment=- Please either use the Complementary Discord server for questions, or use the "issues" section in the Github page. - www.complementary.dev/discord. - www.complementary.dev/github
 
 option.info8=Як приєднатися до спільноти
 value.info8.0=
-option.info8.comment=Ви можете приєднатися до Discord-сервера Complementary, вступивши до нашої дружньої спільноти ви можете мати можливість зв'язатися з розробниками або досвідченими членами спільноти. www.complementary.dev/discord.
+option.info8.comment=- You can join the Complementary Discord server to join our friendly community, and be able to contact developers or experienced community members. - www.complementary.dev/discord
 
 option.info9=Як підтримати Complementary
 value.info9.0=
-option.info9.comment=Найкращий спосіб підтримати розробку Complementary — поділитися нею з друзями або в соціальних мережах, але ви також можете підтримати розробника безпосередньо на Patreon. www.patreon.com/emingt.
+option.info9.comment=- Best way to support Complementary is to share it with your friends or social media, but you can also directly support the main developer (me!) on Patreon. - www.patreon.com/emingt
 
 option.info10=Згадки і подяки
 value.info10.0=
-option.info10.comment=EminGT: головний розробник Complementary. Capt Tatsu: розробник BSL Shaders, його щедрість зробила можливим Complementary в першу чергу. Спеціальна подяка: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal.
+option.info10.comment=- EminGT: The main developer of Complementary. - Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. - Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§dЩо таке Euphoria Patches
 value.info11.0=
@@ -304,10 +304,11 @@ value.ENTITY_SHADOW.1=§cЗвичайні сутності
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oFull§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Якість деталей
-option.DETAIL_QUALITY.comment=Налаштовує кілька дрібниць, які впливають на продуктивність. Налаштуйте якість: водяного матеріалу, TAA, налаштування освітлення, нічної туманности, бурі Незеру, ефекту відблиску неба, точности дощової калюжі, ефект коливання, розмивання у русі.
+option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, sky effect reflections, rain puddle accuracy, waving effect, motion blur, reflection fixes, texture filtering on translucents
 value.DETAIL_QUALITY.0=§aКартопля
 value.DETAIL_QUALITY.2=§eПосередня
 value.DETAIL_QUALITY.3=§cВисока
+value.DETAIL_QUALITY.4=§4§k-§r§4§l§n§oUltra§r§4§k-
 
 option.CLOUD_QUALITY=Якість хмар
 option.CLOUD_QUALITY.comment=Налаштовує освітлення, деталізацію та якість переосмисленого і непов'язаного стилю хмар. §e[*]§r Це працює лише з переосмисленим або непов'язаним стилями хмари.
@@ -760,10 +761,11 @@ value.LENSFLARE_MODE.2=§cСонце і Місяць
 option.LENSFLARE_I=Інтенсивність відблиску об'єктива
 option.LENSFLARE_I.comment=Керує силлю відблиску об'єктива.
 
-option.TAA_MODE=§eТимчасовий фільтр§r
-option.TAA_MODE.comment=Умикає тимчасове згладжування, яке допомагає згладити зернисті ефекти, покращує продуктивність, зменшуючи кількість семплів для деяких більш важких ефектів, і може зменшити згладжування за допомогою правильних налаштувань. §c[-]§r Вимкнення призведе до погіршення продуктивности та погіршення якости ефекту.
-value.TAA_MODE.0=§сВИМК. [-]
-value.TAA_MODE.1=УВІМК. §a[+]
+option.TAA_DEFINE=§eТимчасовий фільтр§r
+option.TAA_DEFINE.comment=Enables temporal anti aliasing which helps smooth out grainy effects, improves performance by reducing the sample counts of some heavier effects, and can reduce aliasing with the right settings. §c[-]§r: Turning this off will cause worse performance and worse effect quality, but it can also increase performance when paired with very low shader settings.
+value.TAA_DEFINE.-1=§aSet By DQ
+value.TAA_DEFINE.0=§сВИМК. [-]
+value.TAA_DEFINE.1=УВІМК. §a[+]
 
 option.TAA_SMOOTHING=Тимчасове згладжування
 option.TAA_SMOOTHING.comment=Налаштовує ступінь згладжування, який застосовуватиме часовий фільтр. Вищі значення створюють розмитіше зображення, але зменшують мерехтіння та зернистість. Різниця не буде помітна, якщо стояти на місці.
@@ -915,6 +917,19 @@ option.PLAYER_SHADOW=Тінь від гравця §e[*]§r
 option.PLAYER_SHADOW.comment=Керує тим, чи буде гравець відкидати тінь чи ні. §e[*]§r Це повністю працює лише в Iris. §e[*]§r Це налаштування буде вимкнено, якщо «Якість тіней» вимкнено.
 value.PLAYER_SHADOW.-1=ВИМК.
 value.PLAYER_SHADOW.1=УВІМК.
+
+option.LEAF_SHADOW_OPTIMISATION_DEFINE=§eLeaf Shadow Optimization§r
+option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=Disables shadows of leaves and vines in darker areas to gain performance. §c[-]§r The main downside of this optimization is that it messes up lighting with some fancy leaf resource packs. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§aSet By DQ
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.0=§cOFF
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.1=§aУВІМК.
+
+option.SKY_EFFECT_REFLECTION_DEFINE=§eSky Effect Reflections§r
+option.SKY_EFFECT_REFLECTION_DEFINE.comment=Enables reflections to have sky effects visible; like clouds, stars, and aurora borealis. "ON - Water" option will enable sky effects on water and translucent reflections, while "ON - Full" will enable them on block reflections as well. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
+value.SKY_EFFECT_REFLECTION_DEFINE.-1=§aSet By DQ
+value.SKY_EFFECT_REFLECTION_DEFINE.0=§aВИМК.
+value.SKY_EFFECT_REFLECTION_DEFINE.1=§cON - Water
+value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§oON - Full
 
 option.GENERATED_NORMALS=Генерація нерівностей
 option.GENERATED_NORMALS.comment=Додає автоматично створені нерівні деталі до поверхонь. §e[*]§r Підтримка ПР має бути «Integrated PBR+». §e[*]§r Може виглядати погано з деякими пакетами ресурсів або модами, які містять текстури нестандартної роздільности.

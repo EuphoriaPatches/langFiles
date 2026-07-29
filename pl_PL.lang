@@ -29,43 +29,43 @@ option.info0.comment=Ta sekcja zawiera przyciski, które służą wyłącznie do
 
 option.info1=Jak uzyskać więcej klatek na sekunde.
 value.info1.0=
-option.info1.comment=Wydajność w Minecrafcie to złożony temat, ponieważ wpływa na nią wiele rzeczy, ale możesz wypróbować następujące rozwiązania:. Zmniejsz zasięg renderowania, najlepiej między 6 a 16 chunków dla prawie każdego urządzenia. Zmniejsz "Profil" shadera, profile zostały dokładnie przetestowane pod kątem najlepszego stosunku jakości do wydajności. Więcej informacji zostanie dodanych później.
+option.info1.comment=- Performance is a complex topic in Minecraft because it gets affected by so many things, but you can try these:. - Use Iris+Sodium mods instead of Optifine, because Optifine is problematic and won't even let you read rest of this description in some cases. - Reduce the "Profile" shader setting, these have been carefully tested for the best visual/performance ratio. - Reduce your render distance, I recommend setting it to be 2-4 chunks higher than the "shadow distance" of the "Profile" you have chosen, so for example, 16 chunks of render distance for the "High" profile, 6 chunks for the Potato profile. - Make sure your resolution isnt too excessive, 1920x1080 is great for mid tier systems, 1440p is viable for high tier systems, 4k is excessive. - Make sure you don't have a massive amount of mods, even if most of those mods are "optimization mods", they usually aren't that helpful for shaders. It's also worth mentioning that some resource packs, especially ones that add more complex foliage/leaves cost a ton of performance.
 
 option.info2=Jakie ustawienia są najlepsze
 value.info2.0=
-option.info2.comment=Najlepsze ustawienia są subiektywne, ale dla większości ludzi korzystanie z ustawień domyślnych będzie satysfakcjonujące. Ustawienia domyślne zostały ukształtowane przez lata ocen i opinii społeczności, przy jednoczesnym zwróceniu dużej uwagi na stosunek jakości do wydajności.  Ale nie krępuj się majsterkować przy poszczególnych ustawieniach, życzymy dobrej zabawy!
+option.info2.comment=- Best settings are subjective, but using the default "Profile" options are going to be the near-best for most people. - The default settings have been shaped by years of community evaluations, testing, and feedback; while paying a lot of attention to the visuals/performance ratio. - But you should still feel free to tweak around and have fun doing so!
 
 option.info3=Czym jest Profil a czym Styl Wizualny
 value.info3.0=
-option.info3.comment=Przycisk "Profil" zmienia ustawienia znajdujące się w menu "Ustawienia Jakości", nie wpływając na żadne ustawienia oparte na preferencjach. "Styl Wizualny" zmienia ustawienia oparte na preferencjach, ale nie ma znaczącego wpływu na wydajność.
+option.info3.comment=- "Profile" setting changes the settings found in the "Performance Settings" menu, while not affecting any preference-based settings. - "Visual Style" changes the "Set by Style" values that exist on many preference-based settings, but it does not impact performance by an important amount. - The only difference between Complementary Reimagined and Unbound is the default option of "Visual Style"
 
 option.info4=Czym jest "Wsparcie Tekstur"
 value.info4.0=
-option.info4.comment=Ustawienie wsparcia tekstur określa sposób, w jaki shader traktuje różne bloki Minecrafta. Na przykład §bZintegrowanePBR+§r traktuje bloki złota jako błyszczące się, podczas gdy §elabPBR§r lub §eseuspbr§r wymagają zainstalowania osobnego pakietu zasobów, aby dostarczyć te informacje. Ustawienie wparcia tekstur na §aPodstawowe§r sprawi, że żaden blok nie będzie miał "specjalnych" właściwości poza kilkoma wyjątkami, takimi jak woda.
+option.info4.comment=- RP Support option determines how the shader pack treats the different blocks of Minecraft. - For example, §bIntegratedPBR+§r treats gold blocks as reflective things, while §elabPBR§r or §eseuspbr§r require you to install a resource pack to tell that to the shader. - Setting RP Support to §aBasic§r will make it so that no block is "special" other than a couple exceptions like water.
 
 option.info5=Czemu niektóre ustawienia są żółte?
 value.info5.0=
-option.info5.comment=Ustawienie z żółtą nazwą oznacza, że ma ono odczuwalny wpływ na wydajność, mimo że nie znajduje się w kategorii „Ustawienia wydajności”. Jeśli po włączeniu tej opcji tekst opcji zmieni kolor na czerwony, oznacza to, że wpływ na wydajność jest bardzo wysoki.
+option.info5.comment=- A setting with a yellow name means that the setting impacts performance by a measurable amount despite not being in the "Performance Settings" category. - If enabling it results in a red option text, it means that the performance cost is very high.
 
-option.info6=
+option.info6=Are there any recommended mods
 value.info6.0=
-option.info6.comment=
+option.info6.comment=- Aside from Iris and Sodium which are essential, I recommend "Better Block Entities" for improved performance. - Aside from that, the "RenderScale" mod can be good for easily adjusting resolution. - It's also worth mentioning "Voxy" or "Distant Horizons" mods that add a way to have extreme render distances with non-extreme performance cost; I recommend using 64 to 256 chunks of Voxy render distance, or 64 to 128 chunks of Distant Horizons distance, with 8 to 12 chunks of regular render distance if you are using either mods. - Lastly you can get the "Euphoria Patches" mod that adds a modified Complementary to your shaders list with more functionality and settings; alongside adding several Iris fixes/tweaks even when you aren't using the modified Complementary-Euphoria shader pack, like making colored lighting work even at very high world coordinates.
 
-option.info7=
+option.info7=Where to ask questions or report problems
 value.info7.0=
-option.info7.comment=
+option.info7.comment=- Please either use the Complementary Discord server for questions, or use the "issues" section in the Github page. - www.complementary.dev/discord. - www.complementary.dev/github
 
 option.info8=Jak dołączyć do naszej społeczności
 value.info8.0=
-option.info8.comment=Możesz dołączyć do serwera Complementary na Discordzie, aby spotkać się z naszą miłą społecznością i móc kontaktować się z deweloperami lub doświadczonymi członkami społeczności. www.complementary.dev/discord
+option.info8.comment=- You can join the Complementary Discord server to join our friendly community, and be able to contact developers or experienced community members. - www.complementary.dev/discord
 
 option.info9=Jak wspierać rozwój shaderów Complementary
 value.info9.0=
-option.info9.comment=Najlepszym sposobem na wsparcie rozwoju shaderów Complementary jest podzielenie się nim ze znajomymi lub w mediach społecznościowych, ale można też bezpośrednio wesprzeć dewelopera na Patreonie. www.patreon.com/emingt
+option.info9.comment=- Best way to support Complementary is to share it with your friends or social media, but you can also directly support the main developer (me!) on Patreon. - www.patreon.com/emingt
 
 option.info10=Podziękowania
 value.info10.0=
-option.info10.comment=EminGT: Główny deweloper Complementary. Capt Tatsu: Deweloper BSL Shaders, jego hojność umożliwiła powstanie Complementary. Specjalne podziękowania dla: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
+option.info10.comment=- EminGT: The main developer of Complementary. - Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. - Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§dCzym jest Euphoria Patches
 value.info11.0=
@@ -304,10 +304,11 @@ value.ENTITY_SHADOW.1=§cZwykłe Moby
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oPełne§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Jakość Detali
-option.DETAIL_QUALITY.comment=Dostosowuje kilka drobnych rzeczy, które mocno wpływają na wydajność, takie jak: Jakość Wody, TAA, Korekty Oświetlenia, Nocne Mgławice, Burza Netheru, Odbicia Nieba, Dokladnośc Kałuż, Efekty Falowania, Rozmycie Ruchu
+option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, sky effect reflections, rain puddle accuracy, waving effect, motion blur, reflection fixes, texture filtering on translucents
 value.DETAIL_QUALITY.0=§aZiemniak
 value.DETAIL_QUALITY.2=§eŚrednia
 value.DETAIL_QUALITY.3=§cWysoka
+value.DETAIL_QUALITY.4=§4§k-§r§4§l§n§oUltra§r§4§k-
 
 option.CLOUD_QUALITY=Jakość Chmur
 option.CLOUD_QUALITY.comment=Dostosowuje oświetlenie, detale i jakość próbkowania chmur. §e[*]§r To ustawienie działa tylko ze stylami chmur "Reimagined" lub "Unbound".
@@ -760,10 +761,11 @@ value.LENSFLARE_MODE.2=§cSłońce & Księżyc
 option.LENSFLARE_I=Natężęnie Odblasków Obiektywu
 option.LENSFLARE_I.comment=Dostosowuje siłę efektu odblasku obiektywu.
 
-option.TAA_MODE=§eFiltr Temporalny (TAA)§r
-option.TAA_MODE.comment=Włącza temporalny aliasing (TAA), który pomaga wygładzić ziarnistość obrazy, poprawia wydajność poprzez zmniejszenie liczby próbek niektórych efektów i może zmniejszyć aliasing przy odpowiednich ustawieniach. §c[-]§r: Wyłączenie tej opcji spowoduje pogorszenie wydajności i jakości efektów.
-value.TAA_MODE.0=§cWYŁ. [-]
-value.TAA_MODE.1=WŁ. §a[+]
+option.TAA_DEFINE=§eFiltr Temporalny (TAA)§r
+option.TAA_DEFINE.comment=Enables temporal anti aliasing which helps smooth out grainy effects, improves performance by reducing the sample counts of some heavier effects, and can reduce aliasing with the right settings. §c[-]§r: Turning this off will cause worse performance and worse effect quality, but it can also increase performance when paired with very low shader settings.
+value.TAA_DEFINE.-1=§aSet By DQ
+value.TAA_DEFINE.0=§cWYŁ. [-]
+value.TAA_DEFINE.1=WŁ. §a[+]
 
 option.TAA_SMOOTHING=Wygładzanie
 option.TAA_SMOOTHING.comment=Dostosowuje poziom wygładzania stosowanego przez filtr temporalny. Wyższe wartości powodują większe rozmycie obrazu, ale zmniejszają migotanie i ziarnistość. Różnica nie będzie zauważalna podczas stania w miejscu.
@@ -915,6 +917,19 @@ option.PLAYER_SHADOW=Cień Gracza §e[*]§r
 option.PLAYER_SHADOW.comment=Określa, czy gracz będzie rzucał cień, czy nie. §e[*]§r To ustawienie działa tylko na Iris. §e[*]§r To ustawienie będzie traktowane jako WYŁĄCZONE, jeśli "Cienie w Czasie Rzeczywistym" są wyłączone.
 value.PLAYER_SHADOW.-1=WYŁ.
 value.PLAYER_SHADOW.1=WŁ.
+
+option.LEAF_SHADOW_OPTIMISATION_DEFINE=§eLeaf Shadow Optimization§r
+option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=Disables shadows of leaves and vines in darker areas to gain performance. §c[-]§r The main downside of this optimization is that it messes up lighting with some fancy leaf resource packs. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§aSet By DQ
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.0=§cOFF
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.1=§aWŁ.
+
+option.SKY_EFFECT_REFLECTION_DEFINE=§eSky Effect Reflections§r
+option.SKY_EFFECT_REFLECTION_DEFINE.comment=Enables reflections to have sky effects visible; like clouds, stars, and aurora borealis. "ON - Water" option will enable sky effects on water and translucent reflections, while "ON - Full" will enable them on block reflections as well. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
+value.SKY_EFFECT_REFLECTION_DEFINE.-1=§aSet By DQ
+value.SKY_EFFECT_REFLECTION_DEFINE.0=WYŁ.
+value.SKY_EFFECT_REFLECTION_DEFINE.1=§cON - Water
+value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§oON - Full
 
 option.GENERATED_NORMALS=Generowane Normalne (GN)
 option.GENERATED_NORMALS.comment=Dodaje automatycznie generowane nierówności do powierzchni bloków. §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+. §e[*]§r Może wyglądać dziwnie z niektórymi paczkami zasobów lub modami, które zawierają tekstury o niestandardowej rozdzielczości.
