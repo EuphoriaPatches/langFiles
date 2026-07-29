@@ -761,7 +761,7 @@ value.LENSFLARE_MODE.2=§c日月
 option.LENSFLARE_I=镜头眩光强度
 option.LENSFLARE_I.comment=调整镜头眩光效果的强度.
 
-option.TAA_DEFINE=§eTemporal Filtering§r
+option.TAA_DEFINE=§e时间性过滤器§r
 option.TAA_DEFINE.comment=Enables temporal anti aliasing which helps smooth out grainy effects, improves performance by reducing the sample counts of some heavier effects, and can reduce aliasing with the right settings. §c[-]§r: Turning this off will cause worse performance and worse effect quality, but it can also increase performance when paired with very low shader settings.
 value.TAA_DEFINE.-1=§aSet By DQ
 value.TAA_DEFINE.0=§c关 [-]
