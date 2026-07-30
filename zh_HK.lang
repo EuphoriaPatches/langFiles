@@ -927,7 +927,7 @@ value.LEAF_SHADOW_OPTIMISATION_DEFINE.1=§a開
 option.SKY_EFFECT_REFLECTION_DEFINE=§eSky Effect Reflections§r
 option.SKY_EFFECT_REFLECTION_DEFINE.comment=Enables reflections to have sky effects visible; like clouds, stars, and aurora borealis. "ON - Water" option will enable sky effects on water and translucent reflections, while "ON - Full" will enable them on block reflections as well. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
 value.SKY_EFFECT_REFLECTION_DEFINE.-1=§aSet By DQ
-value.SKY_EFFECT_REFLECTION_DEFINE.0=§aOFF
+value.SKY_EFFECT_REFLECTION_DEFINE.0=§a關
 value.SKY_EFFECT_REFLECTION_DEFINE.1=§cON - Water
 value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§oON - Full
 
