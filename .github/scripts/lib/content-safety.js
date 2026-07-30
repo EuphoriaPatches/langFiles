@@ -459,6 +459,33 @@ function buildLangFileFromTemplate(sourceRaw, translatedMap, fileName) {
   return output.join(eol) + (trailingNewline ? eol : "");
 }
 
+// Merges sparse key updates onto an existing .lang file's current key map -
+// the seed for patchLangFile below, split out so callers can inspect the
+// result (e.g. to decide whether the file should exist at all) before
+// rendering it.
+function mergeLangUpdates(oldRaw, updates) {
+  const mergedMap = loadLangMap(oldRaw);
+  for (const [key, value] of updates) {
+    // undefined -> "remove this key" (see patchJsonFile) - drop it so the
+    // template rebuild omits it entirely instead of pinning an explicit
+    // (and wrong) empty string.
+    if (value === undefined) mergedMap.delete(key);
+    else mergedMap.set(key, value);
+  }
+  return mergedMap;
+}
+
+// True if at least one key in the map is a real translation rather than one
+// of the source's own intentionally-empty placeholder keys - used to decide
+// whether a language file has earned the right to exist yet, since a file
+// with nothing but comments and empty placeholders is just noise.
+function hasRealTranslation(mergedMap, sourceLangMap) {
+  for (const key of mergedMap.keys()) {
+    if (sourceLangMap.get(key) !== "") return true;
+  }
+  return false;
+}
+
 // Patches the given keys onto an existing .lang file, then re-renders the
 // whole file from the source's structure - same as buildLangFileFromTemplate,
 // just seeded with this file's current values instead of starting empty.
@@ -466,15 +493,11 @@ function buildLangFileFromTemplate(sourceRaw, translatedMap, fileName) {
 // spot they have in en_US.lang, rather than being spliced in next to
 // whatever existing key happened to be nearby.
 function patchLangFile(oldRaw, updates, sourceRaw, fileName) {
-  const mergedMap = loadLangMap(oldRaw);
-  for (const [key, value] of updates) {
-    // undefined -> "remove this key" (see patchJsonFile) - drop it so the
-    // template rebuild falls back to the English source value instead of
-    // pinning an explicit (and wrong) empty string.
-    if (value === undefined) mergedMap.delete(key);
-    else mergedMap.set(key, value);
-  }
-  return buildLangFileFromTemplate(sourceRaw, mergedMap, fileName);
+  return buildLangFileFromTemplate(
+    sourceRaw,
+    mergeLangUpdates(oldRaw, updates),
+    fileName,
+  );
 }
 
 module.exports = {
@@ -486,6 +509,8 @@ module.exports = {
   splitLines,
   detectEol,
   loadLangMap,
+  mergeLangUpdates,
+  hasRealTranslation,
   patchLangFile,
   patchJsonFile,
   buildLangFileFromTemplate,

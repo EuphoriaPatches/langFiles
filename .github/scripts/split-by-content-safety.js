@@ -19,7 +19,8 @@ const {
   loadSafeTermExceptions,
   splitLines,
   loadLangMap,
-  patchLangFile,
+  mergeLangUpdates,
+  hasRealTranslation,
   patchJsonFile,
   buildLangFileFromTemplate,
   ENTRY_RE,
@@ -100,26 +101,44 @@ async function main() {
       }
 
       if (isNewFile) {
-        // Build from the source's own structure to preserve new lines, comments, and key order.
-        fs.writeFileSync(
-          oldPath,
-          buildLangFileFromTemplate(sourceRaw, cleanUpdates, fileName),
-          "utf8",
-        );
-        console.log(
-          `${fileName}: created new language file (${cleanUpdates.size} clean update(s))`,
-        );
+        // Don't create a file for a language with nothing translated yet -
+        // buildLangFileFromTemplate would still emit the header, comments,
+        // and always-empty placeholder keys, producing a content-free
+        // skeleton file. Wait for at least one real translation.
+        if (cleanUpdates.size > 0) {
+          // Build from the source's own structure to preserve new lines, comments, and key order.
+          fs.writeFileSync(
+            oldPath,
+            buildLangFileFromTemplate(sourceRaw, cleanUpdates, fileName),
+            "utf8",
+          );
+          console.log(
+            `${fileName}: created new language file (${cleanUpdates.size} clean update(s))`,
+          );
+        } else {
+          console.log(
+            `${fileName}: skipped - no translations yet for this new language.`,
+          );
+        }
       } else if (cleanUpdates.size > 0) {
-        fs.writeFileSync(
-          oldPath,
-          patchLangFile(oldRaw, cleanUpdates, sourceRaw, fileName),
-          "utf8",
-        );
-        const removedSuffix =
-          removedCount > 0 ? `, dropped ${removedCount} untranslated key(s)` : "";
-        console.log(
-          `${fileName}: applied ${cleanUpdates.size - removedCount} clean update(s)${removedSuffix}`,
-        );
+        const mergedMap = mergeLangUpdates(oldRaw, cleanUpdates);
+        if (hasRealTranslation(mergedMap, sourceLangMap)) {
+          fs.writeFileSync(
+            oldPath,
+            buildLangFileFromTemplate(sourceRaw, mergedMap, fileName),
+            "utf8",
+          );
+          const removedSuffix =
+            removedCount > 0 ? `, dropped ${removedCount} untranslated key(s)` : "";
+          console.log(
+            `${fileName}: applied ${cleanUpdates.size - removedCount} clean update(s)${removedSuffix}`,
+          );
+        } else {
+          fs.rmSync(oldPath);
+          console.log(
+            `${fileName}: removed - no translations remain for this language.`,
+          );
+        }
       }
     }
   }
