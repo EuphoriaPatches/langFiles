@@ -65,7 +65,7 @@ jobs:
           download_translations: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
           push_sources: false
           push_translations: false
-          skip_untranslated_strings: false
+          skip_untranslated_strings: true
           config: .github/config/crowdin_lang.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -234,9 +234,6 @@ jobs:
         env:
           PROFANITY_REPO_TOKEN: ${{ secrets.PROFANITY_REPO_TOKEN }}
 
-      - name: "Restore intentionally empty lang keys (clean set)"
-        run: node .github/scripts/restore-empty-lang-keys.js
-
       - name: "Configure Git"
         run: |
           git config --local user.email "action@github.com"
@@ -283,7 +280,6 @@ jobs:
         run: |
           git checkout -B "${{ env.LOCALIZATION_BRANCH }}"
           node .github/scripts/apply-flagged-report.js
-          node .github/scripts/restore-empty-lang-keys.js
           # _flagged-report.json is committed here (not just uploaded as an
           # artifact) so it's still readable from the branch whenever
           # someone comments on the PR, even long after the artifact's

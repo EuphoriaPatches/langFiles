@@ -83,6 +83,22 @@ async function main() {
         }
       }
 
+      // Crowdin now exports only actual translations (skip_untranslated_strings),
+      // so a key that's no longer in the export is either newly-untranslated
+      // (was reverted/invalidated) or was never translated at all. Either way
+      // it should be dropped from the committed file rather than left
+      // pinned to its last-known value - dropping is always "clean" since it
+      // removes text rather than introducing new content, so no content
+      // check is needed here.
+      let removedCount = 0;
+      for (const key of oldMap.keys()) {
+        if (newMap.has(key)) continue; // handled above
+        if (!sourceLangMap.has(key)) continue; // stale key, template rebuild drops it anyway
+        if (sourceLangMap.get(key) === "") continue; // intentionally-empty key, always kept
+        cleanUpdates.set(key, undefined);
+        removedCount++;
+      }
+
       if (isNewFile) {
         // Build from the source's own structure to preserve new lines, comments, and key order.
         fs.writeFileSync(
@@ -99,8 +115,10 @@ async function main() {
           patchLangFile(oldRaw, cleanUpdates, sourceRaw, fileName),
           "utf8",
         );
+        const removedSuffix =
+          removedCount > 0 ? `, dropped ${removedCount} untranslated key(s)` : "";
         console.log(
-          `${fileName}: applied ${cleanUpdates.size} clean update(s)`,
+          `${fileName}: applied ${cleanUpdates.size - removedCount} clean update(s)${removedSuffix}`,
         );
       }
     }

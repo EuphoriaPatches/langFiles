@@ -399,9 +399,11 @@ function patchJsonFile(oldRaw, updates) {
 
 const HEADER_RE = /^(#.*\/)([^/]+\.lang)$/;
 
-// Builds a new .lang file from the source template, replacing each key's
-// value with the translated value if present, or falling back to the
-// English source value if not. Preserves comments, blank lines...
+// Builds a .lang file from source template.
+// - Untranslated keys are omitted (no English fallback).
+// - Intentionally blank English keys are preserved.
+// - Collapses double-blank lines caused by dropped keys, but preserves
+//   original multi-blank formatting.
 function buildLangFileFromTemplate(sourceRaw, translatedMap, fileName) {
   const eol = detectEol(sourceRaw);
   const trailingNewline =
@@ -409,20 +411,51 @@ function buildLangFileFromTemplate(sourceRaw, translatedMap, fileName) {
   const lines = splitLines(sourceRaw);
   const realLines = trailingNewline ? lines.slice(0, -1) : lines;
 
-  const output = realLines.map((line) => {
+  const segments = [];
+  // Tracks source blank lines vs. blank lines adjacent due to dropped entries.
+  let prevLineWasBlank = false;
+  for (const line of realLines) {
+    if (line === "") {
+      if (prevLineWasBlank) segments[segments.length - 1].count++;
+      else segments.push({ type: "blank", count: 1 });
+      prevLineWasBlank = true;
+      continue;
+    }
+    prevLineWasBlank = false;
+
     if (HEADER_RE.test(line)) {
       const [, prefix] = line.match(HEADER_RE);
-      return `${prefix}${fileName}`;
+      segments.push({ type: "line", text: `${prefix}${fileName}` });
+      continue;
     }
-    const m = line.match(ENTRY_RE);
-    if (!m) return line; // comment or blank line, copy as-is
-    const [, key, englishValue] = m;
-    const value = translatedMap.has(key)
-      ? translatedMap.get(key)
-      : englishValue;
-    return `${key}=${value}`;
-  });
 
+    const m = line.match(ENTRY_RE);
+    if (!m) {
+      segments.push({ type: "line", text: line });
+      continue;
+    }
+
+    const [, key, englishValue] = m;
+    if (translatedMap.has(key)) {
+      segments.push({ type: "line", text: `${key}=${translatedMap.get(key)}` });
+    } else if (englishValue === "") {
+      // Empty in source = placeholder, preserve empty entry.
+      segments.push({ type: "line", text: `${key}=` });
+    }
+  }
+
+  const collapsed = [];
+  for (const seg of segments) {
+    const last = collapsed[collapsed.length - 1];
+    if (seg.type === "blank" && last && last.type === "blank") continue;
+    collapsed.push(seg);
+  }
+
+  const output = [];
+  for (const seg of collapsed) {
+    if (seg.type === "blank") output.push(...Array(seg.count).fill(""));
+    else output.push(seg.text);
+  }
   return output.join(eol) + (trailingNewline ? eol : "");
 }
 
