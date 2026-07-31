@@ -14,7 +14,7 @@ profile.HIGH=Предустановка: §eвысокая (по умолчан�
 profile.VERYHIGH=Предустановка: §cочень высокая
 profile.ULTRA=Предустановка: §4§lультра
 profile.COMPLEMENTARY=Предустановка: §4§lComplementary
-profile.comment=Профили шейдера изменяют настройки производительности с оптимальным соотношением качества и производительности. §e[*]§r Рекомендуется использовать один из этих профилей, если вы не уверены в своих действиях. §e[*]§r Все затронутые настройки можно найти в разделе «Настройки производительности».
+profile.comment=Предустановки шейдера изменяют настройки производительности с оптимальным соотношением качества и производительности. §e[*]§r Рекомендуется использовать одну из этих предустановок, если вы не уверены в своих действиях. §e[*]§r Все затронутые настройки можно найти в разделе «Настройки производительности».
 
 #Information
 screen.INFORMATION=Информация
@@ -29,43 +29,43 @@ option.info0.comment=Этот раздел содержит кнопки, кот
 
 option.info1=Как повысить производительность
 value.info1.0=
-option.info1.comment=- Performance is a complex topic in Minecraft because it gets affected by so many things, but you can try these:. - Use Iris+Sodium mods instead of Optifine, because Optifine is problematic and won't even let you read rest of this description in some cases. - Reduce the "Profile" shader setting, these have been carefully tested for the best visual/performance ratio. - Reduce your render distance, I recommend setting it to be 2-4 chunks higher than the "shadow distance" of the "Profile" you have chosen, so for example, 16 chunks of render distance for the "High" profile, 6 chunks for the Potato profile. - Make sure your resolution isnt too excessive, 1920x1080 is great for mid tier systems, 1440p is viable for high tier systems, 4k is excessive. - Make sure you don't have a massive amount of mods, even if most of those mods are "optimization mods", they usually aren't that helpful for shaders. It's also worth mentioning that some resource packs, especially ones that add more complex foliage/leaves cost a ton of performance.
+option.info1.comment=- Производительность в Minecraft — сложная тема, потому что на неё влияет огромное множество факторов, но вы можете попробовать следующее: - Используйте моды Iris и Sodium вместо Optifine, потому что с Optifine часто возникают проблемы, и в некоторых случаях вы даже не сможете дочитать это описание до конца. - Понизьте параметр «Предустановка» у шейдера; все они были тщательно протестированы на предмет оптимального соотношения качества и производительности. - Уменьшите дальность прорисовки. Рекомендуется установить её на 2-4 чанка больше, чем «дальность прорисовки теней» у выбранной вами предустановки шейдера. Например, 16 чанков для «высокой» предустановки, 6 чанков для «картошки». - Убедитесь, что разрешение экрана не слишком высокое. 1920×1080 отлично подходит для систем среднего уровня, 1440p — для систем высокого уровня, а 4K — это уже перебор. - Убедитесь, что у вас не слишком много модов. Даже если большинство из них — «оптимизирующие», они обычно не очень хорошо влияют на работу шейдеров. Также стоит отметить, что некоторые наборы ресурсов, особенно те, что добавляют более сложную листву, сильно снижают производительность.
 
 option.info2=Какие настройки лучше
 value.info2.0=
-option.info2.comment=- Best settings are subjective, but using the default "Profile" options are going to be the near-best for most people. - The default settings have been shaped by years of community evaluations, testing, and feedback; while paying a lot of attention to the visuals/performance ratio. - But you should still feel free to tweak around and have fun doing so!
+option.info2.comment=- Лучшие настройки — понятие субъективное, но для большинства пользователей оптимальными будут стандартные предустановки. - Настройки по умолчанию были сформированы на основе многолетних оценок, тестирования и отзывов сообщества с упором на соотношение качества и производительности. - Но вы, конечно, можете экспериментировать по-своему и получать от этого удовольствие!
 
-option.info3=Что такое профиль и визуальный стиль
+option.info3=Что такое предустановка и визуальный стиль
 value.info3.0=
-option.info3.comment=- "Profile" setting changes the settings found in the "Performance Settings" menu, while not affecting any preference-based settings. - "Visual Style" changes the "Set by Style" values that exist on many preference-based settings, but it does not impact performance by an important amount. - The only difference between Complementary Reimagined and Unbound is the default option of "Visual Style"
+option.info3.comment=- Настройка «Предустановка» изменяет параметры, указанные в меню «Настройки производительности», но не влияет на настройки, связанные с пользовательскими предпочтениями. - «Визуальный стиль» изменяет значения «По стилю», которые используются во многих настройках, связанных с пользовательскими предпочтениями, но не оказывает существенного влияния на производительность. - Единственное различие между версиями Complementary Reimagined и Unbound — это выбранный по умолчанию «Визуальный стиль».
 
 option.info4=Поддержка наборов ресурсов
 value.info4.0=
-option.info4.comment=- RP Support option determines how the shader pack treats the different blocks of Minecraft. - For example, §bIntegratedPBR+§r treats gold blocks as reflective things, while §elabPBR§r or §eseuspbr§r require you to install a resource pack to tell that to the shader. - Setting RP Support to §aBasic§r will make it so that no block is "special" other than a couple exceptions like water.
+option.info4.comment=- Опция поддержки наборов ресурсов определяет, как шейдеры обрабатывают различные блоки в Minecraft. - Например, §bВстроенный PBR+§r обрабатывает золотые блоки как отражающие поверхности, а §elabPBR§r или §eseuspbr§r требуют установки специального набора ресурсов, чтобы шейдер мог их распознать. - Если выбрать §aБазовую§r в качестве поддержки RP, то ни один блок не будет считаться «особым», за исключением нескольких исключений, таких как вода.
 
 option.info5=Как исправить проблемы с модами
 value.info5.0=
-option.info5.comment=- A setting with a yellow name means that the setting impacts performance by a measurable amount despite not being in the "Performance Settings" category. - If enabling it results in a red option text, it means that the performance cost is very high.
+option.info5.comment=- Настройка с жёлтым цветом в названии означает, что она оказывает заметное влияние на производительность, несмотря на то, что не относится к категории «Настройки производительности». - Если при её включении появляется красный текст, это означает, что снижение производительности будет очень значительным.
 
-option.info6=Are there any recommended mods
+option.info6=Есть ли какие-нибудь рекомендуемые моды
 value.info6.0=
-option.info6.comment=- Aside from Iris and Sodium which are essential, I recommend "Better Block Entities" for improved performance. - Aside from that, the "RenderScale" mod can be good for easily adjusting resolution. - It's also worth mentioning "Voxy" or "Distant Horizons" mods that add a way to have extreme render distances with non-extreme performance cost; I recommend using 64 to 256 chunks of Voxy render distance, or 64 to 128 chunks of Distant Horizons distance, with 8 to 12 chunks of regular render distance if you are using either mods. - Lastly you can get the "Euphoria Patches" mod that adds a modified Complementary to your shaders list with more functionality and settings; alongside adding several Iris fixes/tweaks even when you aren't using the modified Complementary-Euphoria shader pack, like making colored lighting work even at very high world coordinates.
+option.info6.comment=- Помимо Iris и Sodium, которые являются обязательными, я рекомендую мод Better Block Entities для повышения производительности. - Кроме того, мод RenderScale позволяет легко регулировать разрешение. - Также стоит упомянуть моды Voxy и Distant Horizons, которые позволяют увеличить дальность прорисовки без существенного снижения производительности. Я рекомендую использовать от 64 до 256 чанков дальности прорисовки Voxy или от 64 до 128 чанков дальности прорисовки Distant Horizons, а также от 8 до 12 чанков обычной дальности прорисовки, если вы используете какой-либо из этих модов. - Наконец, вы можете установить мод Euphoria Patches, который добавляет в список шейдеров модифицированный Complementary с расширенным функционалом и настройками, а также несколько исправлений и доработок для Iris, даже если вы вовсе не используете сам модифицированный шейдер Complementary-Euphoria. Например, с ним цветное освещение будет работать даже при очень высоких мировых координатах.
 
-option.info7=Where to ask questions or report problems
+option.info7=Куда обращаться с вопросами или сообщать о проблемах
 value.info7.0=
-option.info7.comment=- Please either use the Complementary Discord server for questions, or use the "issues" section in the Github page. - www.complementary.dev/discord. - www.complementary.dev/github
+option.info7.comment=- Пожалуйста, задавайте вопросы на сервере Complementary в Discord или в разделе «Issues» на странице GitHub. - www.complementary.dev/discord. - www.complementary.dev/github
 
 option.info8=Как присоединиться к сообществу
 value.info8.0=
-option.info8.comment=- You can join the Complementary Discord server to join our friendly community, and be able to contact developers or experienced community members. - www.complementary.dev/discord
+option.info8.comment=- Вы можете присоединиться к нашему дружелюбному сообществу на сервере Complementary в Discord и связаться с разработчиками или опытными участниками сообщества. - www.complementary.dev/discord
 
 option.info9=Как поддержать Complementary
 value.info9.0=
-option.info9.comment=- Best way to support Complementary is to share it with your friends or social media, but you can also directly support the main developer (me!) on Patreon. - www.patreon.com/emingt
+option.info9.comment=- Лучшая поддержка Complementary — рассказать друзьями или в социальных сетях. Также можно напрямую поддержать основного разработчика на Patreon. - www.patreon.com/emingt
 
 option.info10=Благодарности
 value.info10.0=
-option.info10.comment=- EminGT: The main developer of Complementary. - Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. - Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
+option.info10.comment=- EminGT: главный разработчик Complementary. - Capt Tatsu: разработчик шейдеров BSL. Благодаря его щедрости стало возможным создание Complementary. - Особая благодарность: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§dЧто такое Euphoria Patches
 value.info11.0=
@@ -100,7 +100,7 @@ value.info18.0=
 option.info18.comment=Спасибо за установку Euphoria Patches :)
 
 option.info19=§aНОВОЕ ОБНОВЛЕНИЕ
-value.info19.0=§cX.Y.Z §r->§a X.Y.Z
+value.info19.0=§cX.Y.Z §r—>§a X.Y.Z
 option.info19.comment=Доступна новая версия мода Euphoria Patcher. Скачайте: https://euphoriapatches.com/download.
 
 option.info20=
@@ -123,7 +123,7 @@ value.SHADER_STYLE.4=§dUnbound
 
 #Screens
 screen.PERFORMANCE_SETTINGS=§eНастройки производительности§r
-screen.PERFORMANCE_SETTINGS.comment=Настройки, напрямую влияющие на производительность; изменяются при выборе профилей шейдеров.
+screen.PERFORMANCE_SETTINGS.comment=Настройки, напрямую влияющие на производительность; изменяются при выборе предустановок шейдеров.
 
 screen.ATMOSPHERE_SETTINGS=Атмосфера
 screen.ATMOSPHERE_SETTINGS.comment=Настройки атмосферных эффектов.
@@ -227,10 +227,10 @@ screen.WATER_COLOR_SETTINGS=Множитель цвета воды
 screen.UNDERWATER_COLOR_SETTINGS=Цвет под водой
 
 screen.WATER_WAVE_SETTINGS=Волны на воде §e[*]§r
-screen.WATER_WAVE_SETTINGS.comment=Настройка поверхностных волн (нормалей) на воде. §e[*]§r Работает только при стиле воды «Reimagined + волны» или «Unbound».
+screen.WATER_WAVE_SETTINGS.comment=Настройка поверхностных волн (нормалей) на воде. §e[*]§r Работает только при стиле воды «Reimagined и волны» или «Unbound».
 
 screen.WAVING_SETTINGS=Колыхание текстур
-screen.WAVING_SETTINGS.comment=Настройки динамики текстур.
+screen.WAVING_SETTINGS.comment=Настройки динамических текстур.
 
 screen.OTHER_SETTINGS=Прочее
 screen.OTHER_SETTINGS.comment=Настройки, не вошедшие в другие категории.
@@ -304,11 +304,11 @@ value.ENTITY_SHADOW.1=§cОбычные сущности
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oВсе§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Качество деталей
-option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, sky effect reflections, rain puddle accuracy, waving effect, motion blur, reflection fixes, texture filtering on translucents
+option.DETAIL_QUALITY.comment=Настраивает некоторые мелкие параметры, влияющие на производительность. Влияет на: материал воды, временное сглаживание TAA, настройки освещения, ночную туманность, шторм Незера, отражение эффектов неба, точность отображения дождевых луж, эффект колыхания, размытие в движении, исправление отражений, фильтрации текстур на полупрозрачных поверхностях.
 value.DETAIL_QUALITY.0=§aКартошка
 value.DETAIL_QUALITY.2=§eСреднее
 value.DETAIL_QUALITY.3=§cВысокое
-value.DETAIL_QUALITY.4=§4§k-§r§4§l§n§oUltra§r§4§k-
+value.DETAIL_QUALITY.4=§4§k-§r§4§l§n§oУльтра§r§4§k-
 
 option.CLOUD_QUALITY=Качество облаков
 option.CLOUD_QUALITY.comment=Настраивает освещение, детализацию и качество выборки стилей облаков Reimagined или Unbound. §e[*]§r Работает только со стилями облаков Reimagined или Unbound.
@@ -506,10 +506,10 @@ option.TM_WHITE_CURVE=Яркость белого
 option.TM_WHITE_CURVE.comment=Также известен как «Кривая белого тональной карты» (Tonemap White Curve). Определяет, насколько легко цвета достигают чистого белого.
 
 option.T_UPPER_CURVE=Контраст светлых цветов
-option.T_UPPER_CURVE.comment=Также известен как «Верхняя кривая тональной карты» (Tonemap Upper Curve). Регулирует контрастность ярких цветов.
+option.T_UPPER_CURVE.comment=Также известен как «Верхняя кривая тональной карты». Регулирует контрастность ярких цветов.
 
 option.T_LOWER_CURVE=Контраст тёмных цветов
-option.T_LOWER_CURVE.comment=Также известен как «Нижняя кривая тональной карты» (Tonemap Lower Curve). Регулирует контрастность тёмных цветов.
+option.T_LOWER_CURVE.comment=Также известен как «Нижняя кривая тональной карты». Регулирует контрастность тёмных цветов.
 
 option.TM_CONTRAST=Общая контрастность
 option.TM_CONTRAST.comment=Регулирует темноту тёмных и яркость светлых тонов.
@@ -518,7 +518,7 @@ option.T_SATURATION=Насыщенность
 option.T_SATURATION.comment=Регулирует общую насыщенность цветов изображения.
 
 option.T_VIBRANCE=Насыщенность бледных цветов
-option.T_VIBRANCE.comment=Также известна как «Яркость» (Vibrance). Усиливает цвета, меньше затрагивая уже насыщенные участки.
+option.T_VIBRANCE.comment=Также известна как «Яркость». Усиливает цвета, меньше затрагивая уже насыщенные участки.
 
 option.TM_DARK_DESATURATION=Обесцвечивание темноты
 option.TM_DARK_DESATURATION.comment=Регулирует степень эффекта приглушения цвета, который будет применен к более тёмным участкам.
@@ -545,7 +545,7 @@ option.WATER_STYLE_DEFINE=Стиль воды
 option.WATER_STYLE_DEFINE.comment=Определяет стиль воды. §e[*]§r «По стилю» — значение выбирается автоматически в зависимости от основного «Визуального стиля» на главной странице параметров шейдеров.
 value.WATER_STYLE_DEFINE.-1=По стилю
 value.WATER_STYLE_DEFINE.1=Reimagined
-value.WATER_STYLE_DEFINE.2=Reimagined + волны
+value.WATER_STYLE_DEFINE.2=Reimagined и волны
 value.WATER_STYLE_DEFINE.3=Unbound
 
 option.WATER_CAUSTIC_STYLE_DEFINE=Стиль каустик воды
@@ -601,7 +601,7 @@ option.WATER_SPEED_MULT.comment=Регулирует скорость движе
 option.WATER_SIZE_MULT=Размер волн
 option.WATER_SIZE_MULT.comment=Определяет видимый размер волн на поверхности.
 
-option.SUN_ANGLE=Угол солнца/луны
+option.SUN_ANGLE=Угол солнца и луны
 option.SUN_ANGLE.comment=Регулирует угол наклона солнца и луны относительно мира в полдень. §a[+]§r Стиль Reimagined оптимизирован для угла «0».
 value.SUN_ANGLE.-1=По стилю
 value.SUN_ANGLE.0=0 §r(§bReimagined§r)
@@ -615,7 +615,7 @@ value.SUN_MOON_STYLE_DEFINE.2=Unbound
 value.SUN_MOON_STYLE_DEFINE.3=Уменьшенный Unbound
 
 option.SUN_MOON_HORIZON=Солнце и луна за горизонтом
-option.SUN_MOON_HORIZON.comment=Скрывает солнце/луну ниже линии горизонта.
+option.SUN_MOON_HORIZON.comment=Скрывает солнце и луну ниже линии горизонта.
 
 option.SUN_MOON_DURING_RAIN=Солнце и луна во время дождя §e[*]§r
 option.SUN_MOON_DURING_RAIN.comment=Определяет видимость солнца и луны в дождь. §e[*]§r Эта настройка также изменяет баланс освещения во время дождя.
@@ -634,7 +634,7 @@ value.NIGHT_STAR_AMOUNT.3=Много
 value.NIGHT_STAR_AMOUNT.4=Очень много
 
 option.RAINBOWS=Радуги
-option.RAINBOWS.comment=Включает радуги, появляющиеся на противоположной от солнца стороне во время рассвета/заката.
+option.RAINBOWS.comment=Включает радуги, появляющиеся на противоположной от солнца стороне во время рассвета и заката.
 value.RAINBOWS.0=Нет
 value.RAINBOWS.1=После дождя
 value.RAINBOWS.3=Всегда
@@ -666,7 +666,7 @@ option.NIGHT_NEBULAE.comment=Добавляет в ночное небо гал�
 value.NIGHT_NEBULAE.-1=Нет
 value.NIGHT_NEBULAE.1=§eДа
 
-option.NIGHT_NEBULA_I=Яркость ночных туманностей
+option.NIGHT_NEBULA_I=Яркость ночной туманности
 option.NIGHT_NEBULA_I.comment=Регулирует яркость ночных туманностей.
 
 option.RAIN_STYLE=Стиль дождя
@@ -753,7 +753,7 @@ value.IMAGE_SHARPENING.9=9× §c[-]
 value.IMAGE_SHARPENING.10=10× §c[-]
 
 option.LENSFLARE_MODE=§eБлики объектива§r
-option.LENSFLARE_MODE.comment=Добавляет блики при взгляде на солнце/луну. §c[-]§r Сильно влияет на производительность.
+option.LENSFLARE_MODE.comment=Добавляет блики при взгляде на солнце и луну. §c[-]§r Сильно влияет на производительность.
 value.LENSFLARE_MODE.0=Нет
 value.LENSFLARE_MODE.1=§cТолько солнце
 value.LENSFLARE_MODE.2=§cСолнце и луна
@@ -762,8 +762,8 @@ option.LENSFLARE_I=Яркость бликов
 option.LENSFLARE_I.comment=Регулирует силу эффекта бликов.
 
 option.TAA_DEFINE=§eФильтр TAA§r
-option.TAA_DEFINE.comment=Enables temporal anti aliasing which helps smooth out grainy effects, improves performance by reducing the sample counts of some heavier effects, and can reduce aliasing with the right settings. §c[-]§r: Turning this off will cause worse performance and worse effect quality, but it can also increase performance when paired with very low shader settings.
-value.TAA_DEFINE.-1=§aSet By DQ
+option.TAA_DEFINE.comment=Включает временное сглаживание (TAA), которое уменьшает зернистость и повышает производительность за счёт снижения количества выборок в тяжёлых эффектах и устраняет ступенчатость при правильных настройках. §c[-]§r: Отключение приведёт к ухудшению производительности и качества эффектов, но при очень низких настройках шейдеров производительность может повыситься.
+value.TAA_DEFINE.-1=§aПо качеству деталей
 value.TAA_DEFINE.0=§cНет [-]
 value.TAA_DEFINE.1=Да §a[+]
 
@@ -828,7 +828,7 @@ option.WB_DOF_I=Сила глубины резкости
 option.WB_DOF_FOCUS=Фокус глубины резкости
 option.WB_DOF_FOCUS.comment=Определяет фокусное расстояние камеры. Авто: фокус в центре экрана. Яркость: фокус зависит от настроек ползунка «Яркости» в «Настройках графики».
 value.WB_DOF_FOCUS.-1=Яркость §e[*]
-value.WB_DOF_FOCUS.0=Авто
+value.WB_DOF_FOCUS.0=Автоматический
 
 option.WB_DB_DAY_I=Дневное размытие
 option.WB_DB_NIGHT_I=Ночное и интерьерное
@@ -918,27 +918,27 @@ option.PLAYER_SHADOW.comment=Включает тень от персонажа. 
 value.PLAYER_SHADOW.-1=Нет
 value.PLAYER_SHADOW.1=Да
 
-option.LEAF_SHADOW_OPTIMISATION_DEFINE=§eLeaf Shadow Optimization§r
-option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=Disables shadows of leaves and vines in darker areas to gain performance. §c[-]§r The main downside of this optimization is that it messes up lighting with some fancy leaf resource packs. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
-value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§aSet By DQ
-value.LEAF_SHADOW_OPTIMISATION_DEFINE.0=§cOFF
+option.LEAF_SHADOW_OPTIMISATION_DEFINE=§eОптимизация теней листьев§r
+option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=Отключает тени от листьев и лоз в тёмных областях для повышения производительности. §c[-]§r Главный недостаток этой оптимизации заключается в том, что она портит освещение при использовании некоторых наборов ресурсов с улучшенной листвой. §e[*]§r «По качеству деталей» означает, что этот параметр определяется параметром «Качество детализации» в разделе «Настройки производительности», если вы его не меняли.
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§aПо качеству деталей
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.0=§cНет
 value.LEAF_SHADOW_OPTIMISATION_DEFINE.1=§aДа
 
-option.SKY_EFFECT_REFLECTION_DEFINE=§eSky Effect Reflections§r
-option.SKY_EFFECT_REFLECTION_DEFINE.comment=Enables reflections to have sky effects visible; like clouds, stars, and aurora borealis. "ON - Water" option will enable sky effects on water and translucent reflections, while "ON - Full" will enable them on block reflections as well. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
-value.SKY_EFFECT_REFLECTION_DEFINE.-1=§aSet By DQ
+option.SKY_EFFECT_REFLECTION_DEFINE=§eОтражение эффектов неба§r
+option.SKY_EFFECT_REFLECTION_DEFINE.comment=Включает эффекты неба в отражениях: облака, звёзды и северное сияние. Опция «Да — вода» включает эффекты неба в отражениях от воды и полупрозрачных поверхностей, а опция «Да — полностью» — в отражениях от блоков. §e[*]§r «По качеству деталей» означает, что этот параметр определяется параметром «Качество детализации» в разделе «Настройки производительности», если вы его не меняли.
+value.SKY_EFFECT_REFLECTION_DEFINE.-1=§aПо качеству деталей
 value.SKY_EFFECT_REFLECTION_DEFINE.0=§aНет
-value.SKY_EFFECT_REFLECTION_DEFINE.1=§cON - Water
-value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§oON - Full
+value.SKY_EFFECT_REFLECTION_DEFINE.1=§cДа — вода
+value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§oДа — полностью
 
 option.GENERATED_NORMALS=Генерируемые нормали
 option.GENERATED_NORMALS.comment=Добавляет текстурам рельефность. §e[*]§r Требуется встроенный PBR+.
 
-option.COATED_TEXTURES=Покрытые текстуры
-option.COATED_TEXTURES.comment=Добавляет пыльный эффект поверхностям. §e[*]§r Требуется встроенный PBR+.
+option.COATED_TEXTURES=Покрывающие текстуры
+option.COATED_TEXTURES.comment=Добавляет пыльный эффект поверхностям. §e[*]§r Требуется встроенный PBR+. §e[*]§r Может выглядеть негармонично с некоторыми наборами ресурсов или модами, использующими текстуры с нестандартным разрешением.
 
 option.ENTITY_GN_AND_CT=ГН и ПТ на существах
-option.ENTITY_GN_AND_CT.comment=Разрешает появление генерируемых нормалей и покрытых текстур на моделях существ. §e[*]§r Это не позволит включить ГН или ПТ для существ, если соответствующие основные параметры отключены.
+option.ENTITY_GN_AND_CT.comment=Разрешает появление генерируемых нормалей и покрывающих текстур на моделях существ. §e[*]§r Это не позволит включить ГН или ПТ для существ, если соответствующие основные параметры отключены.
 
 option.GENERATED_NORMAL_MULT=Сила генерируемых нормалей
 option.GENERATED_NORMAL_MULT.comment=Регулирует интенсивность автоматически создаваемого рельефа на поверхностях.
@@ -1086,7 +1086,7 @@ option.WAVING_WATER_VERTEX=Колебание уровня воды
 option.WAVING_WATER_VERTEX.comment=Добавляет волны на поверхности воды для симуляции ветра. §e[*]§r Не связано с параметром «Силы волн».
 
 option.WAVING_RAIN=Колыхание дождя и снега
-option.WAVING_RAIN.comment=Динамическое движение падающих осадков для придания им динамичности.
+option.WAVING_RAIN.comment=Добавляет движение к текстурам дождя и снега для придания им динамичности.
 
 option.SPECIAL_PORTAL_EFFECTS=Особые эффекты порталов
 option.SPECIAL_PORTAL_EFFECTS.comment=Добавляет анимации и свечение порталам в Незер, Энд и вратам Энда.
@@ -1147,10 +1147,10 @@ option.SELECT_OUTLINE_B=Синий для контура
 option.MOON_PHASE_INF_LIGHT=Влияние фаз луны на освещение
 option.MOON_PHASE_INF_LIGHT.comment=Включает зависимость яркости ночного освещения от фазы луны.
 
-option.MOON_PHASE_INF_ATMOSPHERE=Влияние фаз на атмосферу
+option.MOON_PHASE_INF_ATMOSPHERE=Влияние луны на атмосферу
 option.MOON_PHASE_INF_ATMOSPHERE.comment=Заставляет фазы луны менять яркость ночной атмосферы.
 
-option.MOON_PHASE_INF_REFLECTION=Влияние фаз на отражения
+option.MOON_PHASE_INF_REFLECTION=Влияние луны на отражения
 option.MOON_PHASE_INF_REFLECTION.comment=Заставляет яркость лунных отражений зависеть от фазы луны.
 
 option.MOON_PHASE_FULL=Яркость полнолуния
@@ -1305,9 +1305,9 @@ screen.RAIN_SETTINGS=Настройки дождя
 screen.NIGHT_DESATURATION_SETTINGS=Обесцвечивание темноты
 screen.MOON_PHASED_DESATURATION_SETTINGS=Фазовое обесцвечивание
 screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Интенсивность обесцвечивания в зависимости от фазы луны.
-screen.NIGHT_NEBULA_SETTINGS=Ночные туманности
+screen.NIGHT_NEBULA_SETTINGS=Ночная туманность
 screen.NIGHT_NEBULA_COLOR_SETTINGS=Настройки цвета
-screen.NEBULA_STAR_SETTINGS=Параметры звёзд туманностей
+screen.NEBULA_STAR_SETTINGS=Параметры звёзд туманности
 
 screen.WORLD=Мир
 screen.WORLD.comment=Настройки игрового мира.
@@ -1693,7 +1693,7 @@ option.GLOWING_NETHER_TREES=Свечение грибов Незера
 option.GLOWING_NETHER_TREES.comment=Стволы багровых и искажённых грибов светятся.
 
 option.OVERWORLD_BEAMS=Лучи обычного мира
-option.OVERWORLD_BEAMS.comment=Ночные туманные лучи в обычном мире.
+option.OVERWORLD_BEAMS.comment=Включает туманные лучи ночью в обычном мире.
 option.OVERWORLD_BEAMS_CONDITION=Условие появления
 option.OVERWORLD_BEAMS_CONDITION.comment=По умолчанию только в полнолуние.
 value.OVERWORLD_BEAMS_CONDITION.0=Полнолуние
@@ -1706,7 +1706,7 @@ option.OW_BEAM_G_NEW=Зелёный для лучей обычного мира
 option.OW_BEAM_B_NEW=Синий для лучей обычного мира
 
 option.END_BEAMS=Эндер-лучи
-option.END_BEAMS.comment=Туманные лучи в измерении Энда.
+option.END_BEAMS.comment=Включает туманные лучи в Энде.
 option.END_CRYSTAL_VORTEX=Вихрь кристаллов Энда
 option.END_CRYSTAL_VORTEX.comment=Энергетические лучи от кристаллов Энда в измерении Энда. §4[***]§r Требует включения «§cТеней существ§r». §e[*]§r Работает только на Iris. §e[*]§r Не работает на MacOS.
 value.END_CRYSTAL_VORTEX.0=Нет
@@ -2662,7 +2662,7 @@ option.STAR_COLOR_VARIATION_END=Яркость цвета
 value.STAR_COLOR_VARIATION_END.0.0=Нет
 
 option.CELESTIAL_BOTH_HEMISPHERES=Полное небо
-option.CELESTIAL_BOTH_HEMISPHERES.comment=Отображает небесные объекты (звёзды, солнце, луну, туманности) по всему небу, создавая более глубокий эффект небосвода.
+option.CELESTIAL_BOTH_HEMISPHERES.comment=Отображает небесные объекты (звёзды, солнце, луну, туманность) по всему небу, создавая более глубокий эффект небосвода.
 
 option.SHOOTING_STARS=Падающие звёзды
 option.SHOOTING_STARS_SIZE=Размер
@@ -2742,7 +2742,7 @@ value.DELTARUNE_BATTLE_BACKGROUND.2=Без сущностей
 option.END_CRYSTAL_EMISSION=Свечение кристаллов Энда
 
 option.CLEAR_WATER_SPOTS=Прозрачные участки воды
-option.CLEAR_WATER_SPOTS.comment=Добавляет прозрачные зоны воде для разнообразия. §e[*]§r Требуется волновой эффект воды либо «Unbound», либо «Reimagined + волны».
+option.CLEAR_WATER_SPOTS.comment=Добавляет прозрачные зоны воде для разнообразия. §e[*]§r Требуется стиль воды либо «Unbound», либо «Reimagined и волны».
 
 option.ACT_ORE_INTENSITY=Яркость руд ПЦТ
 option.ACT_ORE_INTENSITY.comment=Настраивает силу свечения руд при «Продвинутой цветовой трассировке».

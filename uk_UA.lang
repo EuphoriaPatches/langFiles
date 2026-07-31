@@ -1,10 +1,5 @@
 #shaders/lang/uk_UA.lang
 
-option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
-option.TRANSLATORS=Translated by: Insert your name(s) here
-
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nComplementary add-on by SpacEagle17 extending it with many more unique optional features and settings.\nDev versions: §dwww.euphoriapatches.com/support§r
-
 #Profiles
 profile.POTATO=Продуктив.: §aКартопля
 profile.VERYLOW=Продуктив.: §aНаднизька
@@ -29,43 +24,31 @@ option.info0.comment=Цей розділ містить кнопки, які і�
 
 option.info1=Як отримати кращу продуктивність
 value.info1.0=
-option.info1.comment=- Performance is a complex topic in Minecraft because it gets affected by so many things, but you can try these:. - Use Iris+Sodium mods instead of Optifine, because Optifine is problematic and won't even let you read rest of this description in some cases. - Reduce the "Profile" shader setting, these have been carefully tested for the best visual/performance ratio. - Reduce your render distance, I recommend setting it to be 2-4 chunks higher than the "shadow distance" of the "Profile" you have chosen, so for example, 16 chunks of render distance for the "High" profile, 6 chunks for the Potato profile. - Make sure your resolution isnt too excessive, 1920x1080 is great for mid tier systems, 1440p is viable for high tier systems, 4k is excessive. - Make sure you don't have a massive amount of mods, even if most of those mods are "optimization mods", they usually aren't that helpful for shaders. It's also worth mentioning that some resource packs, especially ones that add more complex foliage/leaves cost a ton of performance.
 
 option.info2=Які налаштування найкращі
 value.info2.0=
-option.info2.comment=- Best settings are subjective, but using the default "Profile" options are going to be the near-best for most people. - The default settings have been shaped by years of community evaluations, testing, and feedback; while paying a lot of attention to the visuals/performance ratio. - But you should still feel free to tweak around and have fun doing so!
 
 option.info3=Що таке профілі та візуальний стиль
 value.info3.0=
-option.info3.comment=- "Profile" setting changes the settings found in the "Performance Settings" menu, while not affecting any preference-based settings. - "Visual Style" changes the "Set by Style" values that exist on many preference-based settings, but it does not impact performance by an important amount. - The only difference between Complementary Reimagined and Unbound is the default option of "Visual Style"
 
 option.info4=Що таке підтримка ПР
 value.info4.0=
-option.info4.comment=- RP Support option determines how the shader pack treats the different blocks of Minecraft. - For example, §bIntegratedPBR+§r treats gold blocks as reflective things, while §elabPBR§r or §eseuspbr§r require you to install a resource pack to tell that to the shader. - Setting RP Support to §aBasic§r will make it so that no block is "special" other than a couple exceptions like water.
 
 option.info5=Що за жовті параметри
 value.info5.0=
-option.info5.comment=- A setting with a yellow name means that the setting impacts performance by a measurable amount despite not being in the "Performance Settings" category. - If enabling it results in a red option text, it means that the performance cost is very high.
 
-option.info6=Are there any recommended mods
 value.info6.0=
-option.info6.comment=- Aside from Iris and Sodium which are essential, I recommend "Better Block Entities" for improved performance. - Aside from that, the "RenderScale" mod can be good for easily adjusting resolution. - It's also worth mentioning "Voxy" or "Distant Horizons" mods that add a way to have extreme render distances with non-extreme performance cost; I recommend using 64 to 256 chunks of Voxy render distance, or 64 to 128 chunks of Distant Horizons distance, with 8 to 12 chunks of regular render distance if you are using either mods. - Lastly you can get the "Euphoria Patches" mod that adds a modified Complementary to your shaders list with more functionality and settings; alongside adding several Iris fixes/tweaks even when you aren't using the modified Complementary-Euphoria shader pack, like making colored lighting work even at very high world coordinates.
 
-option.info7=Where to ask questions or report problems
 value.info7.0=
-option.info7.comment=- Please either use the Complementary Discord server for questions, or use the "issues" section in the Github page. - www.complementary.dev/discord. - www.complementary.dev/github
 
 option.info8=Як приєднатися до спільноти
 value.info8.0=
-option.info8.comment=- You can join the Complementary Discord server to join our friendly community, and be able to contact developers or experienced community members. - www.complementary.dev/discord
 
 option.info9=Як підтримати Complementary
 value.info9.0=
-option.info9.comment=- Best way to support Complementary is to share it with your friends or social media, but you can also directly support the main developer (me!) on Patreon. - www.patreon.com/emingt
 
 option.info10=Згадки і подяки
 value.info10.0=
-option.info10.comment=- EminGT: The main developer of Complementary. - Capt Tatsu: Developer of BSL Shaders, his generosity is what made Complementary possible in the first place. - Special Thanks: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§dЩо таке Euphoria Patches
 value.info11.0=
@@ -297,18 +280,13 @@ value.shadowDistance.512.0=§4§l32 чанка
 value.shadowDistance.768.0=§4§k-§r§4§l§n§o48 чанків§r§4§k-
 value.shadowDistance.1024.0=§4§k-§r§4§l§n§o64 чанка§r§4§k-
 
-option.ENTITY_SHADOW=Entity Shadows
-option.ENTITY_SHADOW.comment=Enables shadows cast from entities and block entities. "Regular Entities" include things like animals and monsters, while the "Full" option also includes block entities like chests. §c[-]§r Entity Shadows impact performance way more than expected, costing more than 50% of your fps in some cases.
 value.ENTITY_SHADOW.-1=§aВИМК.
 value.ENTITY_SHADOW.1=§cЗвичайні сутності
-value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oFull§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Якість деталей
-option.DETAIL_QUALITY.comment=Adjusts several small things that affect performance. Adjust the quality of: Water material, TAA, lighting tweaks, Night Nebula, Nether Storm, sky effect reflections, rain puddle accuracy, waving effect, motion blur, reflection fixes, texture filtering on translucents
 value.DETAIL_QUALITY.0=§aКартопля
 value.DETAIL_QUALITY.2=§eПосередня
 value.DETAIL_QUALITY.3=§cВисока
-value.DETAIL_QUALITY.4=§4§k-§r§4§l§n§oUltra§r§4§k-
 
 option.CLOUD_QUALITY=Якість хмар
 option.CLOUD_QUALITY.comment=Налаштовує освітлення, деталізацію та якість переосмисленого і непов'язаного стилю хмар. §e[*]§r Це працює лише з переосмисленим або непов'язаним стилями хмари.
@@ -401,8 +379,6 @@ option.LIGHTSHAFT_SMOKE.comment=Додає об'ємний дим у світл�
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS=Спец. світл. потоки блідого саду
 option.SPECIAL_PALE_GARDEN_LIGHTSHAFTS.comment=Робить світлові потоки надзвичайно специфічними в блідого саду.
 
-option.LIGHTSHAFT_NOON_I=Light Shaft Noon Multiplier
-option.LIGHTSHAFT_SUNSET_I=Light Shaft Sunset Multiplier
 option.LIGHTSHAFT_NIGHT_I=Множник уночі
 option.LIGHTSHAFT_RAIN_I=Множник при дощу
 
@@ -707,7 +683,6 @@ value.PIXEL_SCALE.4=8x
 value.PIXEL_SCALE.5=16x
 
 option.BLOOM_ENABLED=§eСвітіння§r
-option.BLOOM_ENABLED.comment=Enables blurry glow from bright objects and humidity. §c[-]§r This effect can impact performance.
 value.BLOOM_ENABLED.-1=ВИМК.
 value.BLOOM_ENABLED.1=§eУВІМК.
 
@@ -762,8 +737,6 @@ option.LENSFLARE_I=Інтенсивність відблиску об'єктив
 option.LENSFLARE_I.comment=Керує силлю відблиску об'єктива.
 
 option.TAA_DEFINE=§eТимчасовий фільтр§r
-option.TAA_DEFINE.comment=Enables temporal anti aliasing which helps smooth out grainy effects, improves performance by reducing the sample counts of some heavier effects, and can reduce aliasing with the right settings. §c[-]§r: Turning this off will cause worse performance and worse effect quality, but it can also increase performance when paired with very low shader settings.
-value.TAA_DEFINE.-1=§aSet By DQ
 value.TAA_DEFINE.0=§сВИМК. [-]
 value.TAA_DEFINE.1=УВІМК. §a[+]
 
@@ -780,8 +753,6 @@ value.TAA_JITTER.1=Низьке
 value.TAA_JITTER.2=Середнє
 value.TAA_JITTER.3=Повне §e[*]
 
-option.TAA_MOVEMENT_IMPROVEMENT_FILTER=Catmull-Rom Sampling
-option.TAA_MOVEMENT_IMPROVEMENT_FILTER.comment=Reduces the blurriness of Temporal Filter by using a more advanced sampling method.
 value.TAA_MOVEMENT_IMPROVEMENT_FILTER.0=ВИМК. §c[-]
 value.TAA_MOVEMENT_IMPROVEMENT_FILTER.1=УВІМК.
 
@@ -851,8 +822,6 @@ value.CHROMA_ABERRATION.8=8 §c[-]
 option.IPBR_EMISSIVE_MODE=Сяйний режим IPBR+
 option.IPBR_EMISSIVE_MODE.comment=Керує поводженням сяйних пікселів у IntegratedPBR+. Вибір labPBR або seuspbr дозволяє сумісним пакетам ресурсів повністю замінювати сяяння IPBR+ на блоках, до яких прикріплено дзеркальні текстури. §c[-]§r Не рекомендується змінювати це, якщо ви не знаєте, що робите.
 value.IPBR_EMISSIVE_MODE.1=Лише IPBR+
-value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
-value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 
 option.IPBR_COMPAT_MODE_DEFINE=Режим сумісности IPBR+
 option.IPBR_COMPAT_MODE_DEFINE.comment=Змінює спосіб обчислення деяких функцій IPBR+, щоб вони були менш агресивними, щоб спричиняти менше проблем із пакетами ресурсів або модами.
@@ -918,18 +887,9 @@ option.PLAYER_SHADOW.comment=Керує тим, чи буде гравець в�
 value.PLAYER_SHADOW.-1=ВИМК.
 value.PLAYER_SHADOW.1=УВІМК.
 
-option.LEAF_SHADOW_OPTIMISATION_DEFINE=§eLeaf Shadow Optimization§r
-option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=Disables shadows of leaves and vines in darker areas to gain performance. §c[-]§r The main downside of this optimization is that it messes up lighting with some fancy leaf resource packs. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
-value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§aSet By DQ
-value.LEAF_SHADOW_OPTIMISATION_DEFINE.0=§cOFF
 value.LEAF_SHADOW_OPTIMISATION_DEFINE.1=§aУВІМК.
 
-option.SKY_EFFECT_REFLECTION_DEFINE=§eSky Effect Reflections§r
-option.SKY_EFFECT_REFLECTION_DEFINE.comment=Enables reflections to have sky effects visible; like clouds, stars, and aurora borealis. "ON - Water" option will enable sky effects on water and translucent reflections, while "ON - Full" will enable them on block reflections as well. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
-value.SKY_EFFECT_REFLECTION_DEFINE.-1=§aSet By DQ
 value.SKY_EFFECT_REFLECTION_DEFINE.0=§aВИМК.
-value.SKY_EFFECT_REFLECTION_DEFINE.1=§cON - Water
-value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§oON - Full
 
 option.GENERATED_NORMALS=Генерація нерівностей
 option.GENERATED_NORMALS.comment=Додає автоматично створені нерівні деталі до поверхонь. §e[*]§r Підтримка ПР має бути «Integrated PBR+». §e[*]§r Може виглядати погано з деякими пакетами ресурсів або модами, які містять текстури нестандартної роздільности.
@@ -1091,8 +1051,6 @@ option.WAVING_RAIN.comment=Додає коливання для дощу та с
 option.SPECIAL_PORTAL_EFFECTS=Спеціальні ефекти порталу
 option.SPECIAL_PORTAL_EFFECTS.comment=Додає спеціальні анімації та випромінювання до порталів Незеру, Енду і воріт Енду.
 
-option.REFLECTION_RES=§eReflection Resolution§r
-option.REFLECTION_RES.comment=Changes the resolution of PBR reflections on blocks (and the world-space reflections if you have that setting enabled) to gain performance. §c[-]§r "Full" resolution reflections can impact performance way more than expected in some situations. §e[*]§r This feature does not work on Optifine.
 value.REFLECTION_RES.1.0=§4§l§n§oПовна
 value.REFLECTION_RES.0.5=§aПів
 
@@ -1177,8 +1135,6 @@ option.COLORED_CANDLE_LIGHT.comment=Робить вогні від свічок 
 option.COLORED_LIGHT_SATURATION=Насиченість кольорового освітлення
 option.COLORED_LIGHT_SATURATION.comment=Керує тим, наскільки насиченими будуть кольори, створені за допомогою розширеного кольорового трасування. §e[*]§r Не рекомендується змінювати це значення, оскільки візуальні ефекти створені таким чином, щоб вони виглядали найбільш збалансовано з усталеною насиченістю.
 
-option.ACT_FIRE_COLOR_WARMNESS=Torch/Fire Color Warmness
-option.ACT_FIRE_COLOR_WARMNESS.comment=Adjusts the warmness of torch/fire/lantern light colors when Advanced Color Tracing is enabled. Note that the color is also affected by the "Colored Lighting Saturation" setting. §e[*]§r It's not recommended to change this value more than a tiny amount, as the visuals are designed to look the most balanced with the default level.
 value.ACT_FIRE_COLOR_WARMNESS.100=Звичайний
 
 option.COLORED_LIGHT_FOG=§eКольорове світло туману§r
@@ -1293,10 +1249,6 @@ screen.END_BEAMS_FLASH_SETTINGS=Налаштування спалаху Енду
 screen.END_BEAMS_FLASH_SETTINGS.comment=Налаштування, що стосуються променів Енду при спалахах у небі. Лише на 1.21.9+.
 screen.END_STAR=Налаштування зірок Енду
 screen.END_STAR.comment=Налаштування, які стосуються зірок Енду.
-screen.BLACK_HOLE_SETTINGS=Black Hole Settings
-screen.BLACK_HOLE_POSITION_SETTINGS=Black Hole Position
-screen.FIXED_POSITION_BLACK_HOLE_SETTINGS=Fixed Position
-screen.MOVING_POSITION_BLACK_HOLE_SETTINGS=Slowly Wandering
 screen.STAR_COLORS_END=Колір зірок Енду
 screen.STARS_OVERWORLD=Зірки
 screen.SHOOTING_STARS_SETTINGS=Падучі зірки
@@ -1323,8 +1275,6 @@ screen.FOG_ATMOSPHERIC=Атмосферний туман
 screen.FOG_ATMOSPHERIC.comment=Налаштування, які стосуються атмосферного туману.
 screen.FOG_BORDER_OVERWORLD=Межа туману
 screen.FOG_BORDER_OVERWORLD.comment=Налаштування, які стосуються межі туману.
-screen.COLORED_LIGHT_FOG_SETTINGS=Colored Light Fog
-screen.COLORED_LIGHT_FOG_SETTINGS.comment=Settings that relate to colored light fog.
 screen.SEASON=Сезони
 screen.WINTER=Налаштування зими
 screen.AUTUMN=Налаштування осені
@@ -1336,7 +1286,6 @@ screen.FOG_BORDER_NETHER.comment=Налаштування, які стосуют
 screen.HEAT_DISTORTION_SETTINGS=Теплове спотворення
 screen.HEAT_DISTORTION_SETTINGS.comment=Налаштування, які стосуються теплових спотворень.
 screen.END_WORLD=Енд
-screen.END_VOLUMETRIC_SETTINGS=End Volumetrics
 screen.END_AMBIENT=Середовище Енду
 screen.FOG_BORDER_END=Межа туману
 screen.FOG_BORDER_END.comment=Налаштування, які стосуються межі туману.
@@ -1442,12 +1391,10 @@ value.AURORA_COLOR_PRESET.-1=§o§lРізне — плавно щодня
 value.AURORA_COLOR_PRESET.0=Корист.
 value.AURORA_COLOR_PRESET.1=§o§lЗмінна — денний
 value.AURORA_COLOR_PRESET.2=§o§lЗмінна — нічний
-value.AURORA_COLOR_PRESET.3=§9Legacy§b Complementary v4
 value.AURORA_COLOR_PRESET.4=§bВі§3чн§bа §3мер§cзл§3о§cта
 value.AURORA_COLOR_PRESET.5=§dКвітуче §5світло
 value.AURORA_COLOR_PRESET.6=§9Тум§5ан§dні§5сть
 value.AURORA_COLOR_PRESET.7=§5Небесний §3танець
-value.AURORA_COLOR_PRESET.8=§aGreen Flash
 value.AURORA_COLOR_PRESET.9=§bЕ§3т§bе§dр§3н§dий
 value.AURORA_COLOR_PRESET.10=§bЛьодовикове §9благо
 value.AURORA_COLOR_PRESET.11=§5Міс§9ти§bчний
@@ -1608,7 +1555,6 @@ option.DOUBLE_UNBOUND_CLOUDS.comment=Дозволяє промальовуван
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Вершина 2 шару хмар
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Керує висотою, на якій з'являться хмари другого шару.
 option.CLOUD_UNBOUND_LAYER2_HEIGHT=Висота 2 шару хмар
-option.CLOUD_UNBOUND_LAYER2_HEIGHT.comment=Determines the geometric height of the second layer of unbound clouds.
 option.CLOUD_UNBOUND_LAYER2_SIZE=Розмір 2 шару хмар
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Керує розміром непов'язаних хмар другого шару.
 option.CLOUD_UNBOUND_LAYER2_AMOUNT=Кількість 2 шару хмар
@@ -1719,15 +1665,11 @@ value.DRAGON_DEATH_EFFECT.0=ВИМК.
 value.DRAGON_DEATH_EFFECT.1=Об'ємний
 value.DRAGON_DEATH_EFFECT.2=Об'ємний + оригінальні промені
 
-option.END_CRYSTAL_VOXEL_PIXEL=Voxel Pixelation
-option.END_CRYSTAL_VOXEL_PIXEL.comment=Setting which enables voxel pixelation on the end crystal vortexes and the dragon death effect.
 value.END_CRYSTAL_VOXEL_PIXEL.0=ВИМК
 
 option.E_BEAMS_AMBIENT_INFLUENCE=Вплив кольору на середовище
 option.E_BEAMS_AMBIENT_INFLUENCE.comment=Промені матимуть навколишній колір 1.00 та вказаний користувачем колір 0.00. Не стосується променів дракона Енду.
 option.E_BEAM_R_NEW=Синій променів Енду
-option.E_BEAM_G_NEW=Ender Beams - Green
-option.E_BEAM_B_NEW=Ender Beams - Blue
 option.E_BEAM_I=Інтенсивність променів Енду
 option.E_DRAGON_BEAM_R_NEW=Червоний променів дракона Енду
 option.E_DRAGON_BEAM_R_NEW.comment=Червоний колір променю Енду під час бою з драконом.
@@ -2070,7 +2012,6 @@ option.EXCLUDE_ENTITIES.comment=Керує ти, чи слід виключат�
 
 option.LETTERBOXING_TRANSPARENCY=Прозорість звужування
 
-option.BAD_APPLE=Bad Apple
 option.BAD_APPLE.comment=Робить екран чорним, за винятком сутностей, які будуть білими. §l§bhttps://youtu.be/div8JofEHS0?si=gMPQf8wa533j8SrC§r :D.
 
 option.tonemap=Мапа тонів
@@ -2152,7 +2093,6 @@ option.REFLECTIVE_WORLD=Дзеркальний світ
 option.REFLECTIVE_WORLD.comment=Весь світ — дзеркало, але ти не можеш побачити себе. RIP.
 
 option.WAVE_EVERYTHING=Хвилесвіт
-option.WAVE_EVERYTHING.comment=Dale a tu cuerpo alegría Macarena.
 
 option.INTERACTIVE_FOLIAGE=Інтерактивне листя
 option.INTERACTIVE_FOLIAGE.comment=Змушує листя нахилятися від гравця для захопливішого досвіду.
@@ -2198,7 +2138,6 @@ value.SEASON_TRANSITION_START.4=80%
 value.SEASON_TRANSITION_START.9=90%
 
 option.SEASON_COLOR_DESATURATION=Знебарвлення
-option.SEASON_COLOR_DESATURATION.comment=Desaturates the colors of the environment during winter and autumn from the seasons settings.
 
 option.SNOW_CONDITION=Стан снігу
 option.SNOW_CONDITION.comment=Керує умовами для сходження снігу.
@@ -2395,10 +2334,6 @@ value.SCANLINE.0=ВИМК.
 option.SCANLINE_FREQUENCY=Частота сканування
 option.SCANLINE_SPEED=Швидкість сканування
 option.SCANLINE_AMOUNT=Кількість сканування
-option.SCANLINE_NEW_MONOCHROME=Monchrome Color
-option.SCANLINE_NEW_DIRECTION=Scanline Direction
-value.SCANLINE_NEW_DIRECTION.false=Horizontal
-value.SCANLINE_NEW_DIRECTION.true=Vertical
 option.SCANLINE_R=Червоний
 option.SCANLINE_G=Зелений
 option.SCANLINE_B=Синій
@@ -2873,8 +2808,6 @@ option.COLORED_LIGHT_FOG_RAIN_I=Інтен. дощу за кольор. світ
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Змінює інтенсивність кольорового світла туману під час дощу.
 value.COLORED_LIGHT_FOG_RAIN_I.0=Усталена
 
-option.COLORED_LIGHT_FOG_CAVE_I=Cave Intensity
-option.COLORED_LIGHT_FOG_CAVE_I.comment=Change the intensity of the colored light fog in caves.
 value.COLORED_LIGHT_FOG_CAVE_I.0=Усталене
 
 option.BLOOD_MOON=Кривавий Місяць
@@ -2944,7 +2877,6 @@ option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=Сила блиску зачарув�
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Змінює силу світла, випромінюваного зачарованими предметами під час використання світла Photonics.
 
 option.PHOTONICS_HANDHELD_MODE=Режим ручний світла
-option.PHOTONICS_HANDHELD_MODE.comment=Changes the way handheld lights are rendered in the Photonics mod.\n\nOff - Handheld lights are not rendered at all via Photonics\nSingle - Only one of the handheld lights will cast shadows\nSeparate - Both handheld lights will cast separate shadows\n\n§aMinimal performance impact
 value.PHOTONICS_HANDHELD_MODE.0=ВИМК.
 value.PHOTONICS_HANDHELD_MODE.1=Окремо
 value.PHOTONICS_HANDHELD_MODE.2=Одинарний
@@ -2987,10 +2919,7 @@ value.PHOTONICS_MAX_ALLOWED_DISTANCE.32=32 чанки
 value.PHOTONICS_MAX_ALLOWED_DISTANCE.100=Дальність промальовування
 
 
-option.CUSTOM_SKY_SUPPORT_SLIDER=Custom Skybox Support
-option.CUSTOM_SKY_SUPPORT_SLIDER.comment=Adds support for custom skyboxes including modded ones such as Stellar View. The slider changes the alpha mix of the skybox, only change it if there are issues.
 value.CUSTOM_SKY_SUPPORT_SLIDER.0=УВІМК.
-value.CUSTOM_SKY_SUPPORT_SLIDER.10=On
 
 option.CUSTOM_SKY_MOD_SUPPORT=Підтримка модів неба
 option.CUSTOM_SKY_MOD_SUPPORT.comment=Додає підтримку модів на власні неба, як-от Caelum чи Astrocraft. може порушити деякі речі, не перевірено з багатьма модами.
@@ -3001,7 +2930,6 @@ option.SAVE_SKYBOX_DATA_OVERRIDE.comment=Дозволяє пакету шейд�
 option.DISTANT_HORIZONS_SSAO=Край тіней (НОПЕ)
 option.DISTANT_HORIZONS_SSAO.comment=Умикає НОПЕ (Навколишня оклюзія простору екрана) у чанках Distant Horizons. §e[*]§r Цей параметр працює, лише якщо встановлено Distant Horizons. §e[*]§r Вимагає, щоб якість краю тіней (НОПЕ) була вимкнена в параметрах продуктивности.
 
-option.DH_BLENDING=Distant Horizons Blending
 option.DH_BLENDING.comment=Плавно змішує перехід між чанками Distant Horizons і звичайними. §e[*]§r Цей параметр працює лише, якщо встановлено Distant Horizons.
 
 option.PIXELATED_SHADOWS_MODE=Режим піксельних тіней
@@ -3017,58 +2945,11 @@ option.PANINI_PROJECTION=Проєкція Паніні
 option.PANINI_PROJECTION.comment=Умикає проєкцію Паніні, який є типом проєкції, який зменшує викривлення на краях екрана, особливо при використанні високого поля зору (FOV). §e[-]§r Може зробити зображення розтягнутим у центрі або більш розмитим загалом.
 value.PANINI_PROJECTION.0=ВИМК.
 
-option.BLACK_HOLE=Black Hole
-option.BLACK_HOLE.comment=Adds a black hole to the skybox in the End. Its position is controlled by the Black Hole Position settings
 value.BLACK_HOLE.0=ВИМК
 
-option.BLACK_HOLE_SHAPE=Black Hole Shape
-option.BLACK_HOLE_SHAPE.comment=Changes the shape of the black hole's event horizon.
 value.BLACK_HOLE_SHAPE.0=Кругла
 value.BLACK_HOLE_SHAPE.1=Квадратна
 
-option.BLACK_HOLE_PIXELATION=Black Hole Pixelation
-option.BLACK_HOLE_PIXELATION.comment=Makes the black hole pixelated, amount changes pixel size.
 value.BLACK_HOLE_PIXELATION.0=ВИМК.
 
-option.BLACK_HOLE_SIZE=Black Hole Size
-option.BLACK_HOLE_SIZE.comment=Changes the size of the black hole
-
-option.BLACK_HOLE_RING_SIZE=Ring Size
-option.BLACK_HOLE_RING_SIZE.comment=Changes the size of the dust around the black hole
-
-option.BLACK_HOLE_RING_COUNT=Ring Count
-option.BLACK_HOLE_RING_COUNT.comment=Changes the amount of rings which form the dust around the black hole
-
-option.BLACK_HOLE_DIFFERENTIAL_AMOUNT=Differential Spin
-option.BLACK_HOLE_DIFFERENTIAL_AMOUNT.comment=Changes how much faster material near the black hole spins relative to the outer edge
-
-option.BLACK_HOLE_LENSING_STRENGTH=Gravitational Lensing
-option.BLACK_HOLE_LENSING_STRENGTH.comment=Changes how much the black hole bends light around it, creating a gravitational lensing effect.
-
-option.BLACK_HOLE_LENSING_RANGE=Lensing Range
-option.BLACK_HOLE_LENSING_RANGE.comment=Changes how far the gravitational lensing effect extends around the black hole
-
-option.BLACK_HOLE_LENSING_SWIRL=Lensing Swirl Amount
-option.BLACK_HOLE_LENSING_SWIRL.comment=Changes how much the gravitational lensing effect swirls around the black hole, creating a more dynamic visual effect.
-
-option.BLACK_HOLE_DIRECTION_MODE=Position Mode
-option.BLACK_HOLE_DIRECTION_MODE.comment=Changes how the black hole's position in the sky is determined. Follow Sun Angle mode makes the black hole follow the End Sun Angle Option Position, Fixed Position mode allows you to set a specific position for the black hole, and Slowly Wandering mode makes the black hole move slowly across the sky over time.
-value.BLACK_HOLE_DIRECTION_MODE.0=Follow Sun Angle
-value.BLACK_HOLE_DIRECTION_MODE.1=Fixed Position
-value.BLACK_HOLE_DIRECTION_MODE.2=Slowly Wandering
-
-option.BLACK_HOLE_LONGITUDE=Longitude
-option.BLACK_HOLE_LONGITUDE.comment=Fixed Position mode: sets the black hole's position around the horizon, in degrees
-
-option.BLACK_HOLE_LATITUDE=Latitude
-option.BLACK_HOLE_LATITUDE.comment=Fixed Position mode: sets the black hole's position above or below the horizon, in degrees
-
-option.BLACK_HOLE_LOOPS_PER_DAY=Loops Per Day
-option.BLACK_HOLE_LOOPS_PER_DAY.comment=Slowly Wandering mode: how many full loops around the sky the black hole completes per real-world day. Changes the Speed basically.
-
-option.BLACK_HOLE_LATITUDE_BIAS=Latitude Bias
-option.BLACK_HOLE_LATITUDE_BIAS.comment=Changes the bias of the black hole's latitude, making it more likely to appear higher or lower in the sky over time. By default a positive bias to make it appear more often above the horizon.
-
-option.BLACK_HOLE_STREAK=Horizontal Streak
-option.BLACK_HOLE_STREAK.comment=Adds a horizontal accretion-disk streak to the black hole.
 value.BLACK_HOLE_STREAK.0=УВІМК.
