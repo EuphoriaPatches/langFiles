@@ -1607,8 +1607,6 @@ value.CLOUD_SUN_MOON_SHADING.1=Tylko Księżyc
 value.CLOUD_SUN_MOON_SHADING.2=Tylko Słońce
 value.CLOUD_SUN_MOON_SHADING.3=Obydwa
 
-option.END_SMOKE=Dym Endu
-option.END_SMOKE.comment=Ktoś zostawił piekarnik bez nadzoru i teraz cały End jest zadymiony.
 option.E_SKY_COLORR_NEW=Niebo Endu - Czerwień
 option.E_SKY_COLORG_NEW=Niebo Endu - Zieleń
 option.E_SKY_COLORB_NEW=Niebo Endu - Niebieskość
@@ -1726,6 +1724,8 @@ option.END_STAR_HEMISPHERE.comment=Ustawienie określające wyświetlanie gwiazd
 value.END_STAR_HEMISPHERE.0=Obie Półkule
 value.END_STAR_HEMISPHERE.1=Tylko Górna Półkula
 value.END_STAR_HEMISPHERE.-1=Tylko Dolna Półkula
+
+value.END_NEBULA.0=WŁ.
 
 option.STAR_BRIGHTNESS=Jasność Gwiazd
 option.STAR_BRIGHTNESS.comment=Ustawienie umożliwiające regulację jasności gwiazd.

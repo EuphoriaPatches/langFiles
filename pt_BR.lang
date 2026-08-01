@@ -1643,8 +1643,6 @@ value.CLOUD_SUN_MOON_SHADING.1=Somente a Lua
 value.CLOUD_SUN_MOON_SHADING.2=Somente o Sol
 value.CLOUD_SUN_MOON_SHADING.3=Ambos
 
-option.END_SMOKE=Fumaça do End
-option.END_SMOKE.comment=Alguém deixou o fogo sem supervisão e agora o End tem fumaça no vazio superior e inferior.
 option.E_SKY_COLORR_NEW=Céu do End - Vermelho
 option.E_SKY_COLORG_NEW=Céu do End - Verde
 option.E_SKY_COLORB_NEW=Céu do End - Azul
@@ -1763,6 +1761,8 @@ option.END_STAR_HEMISPHERE.comment=Define se as estrelas serão renderizadas ape
 value.END_STAR_HEMISPHERE.0=Céu Completo
 value.END_STAR_HEMISPHERE.1=Apenas Hemisfério Superior
 value.END_STAR_HEMISPHERE.-1=Apenas Hemisfério Inferior
+
+value.END_NEBULA.0=Desligado
 
 option.STAR_BRIGHTNESS=Brilho das Estrelas
 option.STAR_BRIGHTNESS.comment=Configuração para ajustar o brilho das

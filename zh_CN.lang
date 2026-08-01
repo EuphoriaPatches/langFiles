@@ -1671,8 +1671,6 @@ value.CLOUD_SUN_MOON_SHADING.1=仅月亮
 value.CLOUD_SUN_MOON_SHADING.2=仅太阳
 value.CLOUD_SUN_MOON_SHADING.3=两者
 
-option.END_SMOKE=末地烟云
-option.END_SMOKE.comment=有人纵火, 所以现在末地上下层虚空都有烟云.
 option.E_SKY_COLORR_NEW=末地天空 - 红色
 option.E_SKY_COLORG_NEW=末地天空 - 绿色
 option.E_SKY_COLORB_NEW=末地天空 - 蓝色
@@ -1793,6 +1791,8 @@ option.END_STAR_HEMISPHERE.comment=选择末地维度的星空仅渲染上半部
 value.END_STAR_HEMISPHERE.0=完整
 value.END_STAR_HEMISPHERE.1=上半球
 value.END_STAR_HEMISPHERE.-1=下半球
+
+value.END_NEBULA.0=关
 
 option.STAR_BRIGHTNESS=星星亮度
 option.STAR_BRIGHTNESS.comment=调节夜空中星星的亮度.

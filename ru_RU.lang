@@ -1671,8 +1671,6 @@ value.CLOUD_SUN_MOON_SHADING.1=Только луна
 value.CLOUD_SUN_MOON_SHADING.2=Только солнце
 value.CLOUD_SUN_MOON_SHADING.3=Оба
 
-option.END_SMOKE=Дым Энда
-option.END_SMOKE.comment=Кто-то забыл потушить огонь, и теперь в верхней и нижней пустоте Энда появился дым.
 option.E_SKY_COLORR_NEW=Красный для неба Энда
 option.E_SKY_COLORG_NEW=Зелёный для неба Энда
 option.E_SKY_COLORB_NEW=Синий для неба Энда
@@ -1793,6 +1791,8 @@ option.END_STAR_HEMISPHERE.comment=Настройка для отображен�
 value.END_STAR_HEMISPHERE.0=Полное небо
 value.END_STAR_HEMISPHERE.1=Только верхняя полусфера
 value.END_STAR_HEMISPHERE.-1=Только нижняя полусфера
+
+value.END_NEBULA.0=Нет
 
 option.STAR_BRIGHTNESS=Яркость звёзд
 option.STAR_BRIGHTNESS.comment=Регулировка яркости звёзд.

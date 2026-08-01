@@ -1617,8 +1617,6 @@ value.CLOUD_SUN_MOON_SHADING.1=Лише Місяць
 value.CLOUD_SUN_MOON_SHADING.2=Лише Сонце
 value.CLOUD_SUN_MOON_SHADING.3=УВІМК.
 
-option.END_SMOKE=Дим
-option.END_SMOKE.comment=О ні, хтось залишив вогонь без нагляду, і тепер Енд димить згори і знизу!
 option.E_SKY_COLORR_NEW=Червоний неба Енду
 option.E_SKY_COLORG_NEW=Зелений неба Енду
 option.E_SKY_COLORB_NEW=Синій неба Енду
@@ -1735,6 +1733,8 @@ option.END_STAR_HEMISPHERE.comment=Налаштування лише для ві
 value.END_STAR_HEMISPHERE.0=Повне небо
 value.END_STAR_HEMISPHERE.1=Верхня півкуля
 value.END_STAR_HEMISPHERE.-1=Нижня півкуля
+
+value.END_NEBULA.0=ВИМК
 
 option.STAR_BRIGHTNESS=Яскравість
 option.STAR_BRIGHTNESS.comment=Яскравість зірок.

@@ -1671,8 +1671,6 @@ value.CLOUD_SUN_MOON_SHADING.1=月のみ
 value.CLOUD_SUN_MOON_SHADING.2=太陽のみ
 value.CLOUD_SUN_MOON_SHADING.3=両方
 
-option.END_SMOKE=ジ・エンドの煙
-option.END_SMOKE.comment=誰かが火を放置してしまい、ジ・エンドに上下の虚空に煙が漂っています。
 option.E_SKY_COLORR_NEW=ジ・エンドの空 - 赤
 option.E_SKY_COLORG_NEW=ジ・エンドの空 - 緑
 option.E_SKY_COLORB_NEW=ジ・エンドの空 - 青
@@ -1793,6 +1791,8 @@ option.END_STAR_HEMISPHERE.comment=ジ・エンドの星を、空の上下どち
 value.END_STAR_HEMISPHERE.0=空全体
 value.END_STAR_HEMISPHERE.1=上半球のみ
 value.END_STAR_HEMISPHERE.-1=下半球のみ
+
+value.END_NEBULA.0=OFF
 
 option.STAR_BRIGHTNESS=星の明るさ
 option.STAR_BRIGHTNESS.comment=星の明るさを調整する設定です。

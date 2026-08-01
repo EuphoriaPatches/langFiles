@@ -740,6 +740,8 @@ value.END_TWINKLING_STARS.18=1,8
 value.END_TWINKLING_STARS.19=1,9
 value.END_TWINKLING_STARS.20=2,0
 
+value.END_NEBULA.0=Desactivadas
+
 option.STAR_BRIGHTNESS=Brillo de las Estrellas
 option.STAR_BRIGHTNESS.comment=Ajuste del brillo de las estrellas.
 value.STAR_BRIGHTNESS.3=Sin brillo

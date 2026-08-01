@@ -1409,8 +1409,6 @@ value.CLOUD_SUN_MOON_SHADING.1=달에만 적용
 value.CLOUD_SUN_MOON_SHADING.2=해에만 적용
 value.CLOUD_SUN_MOON_SHADING.3=둘 다 적용
 
-option.END_SMOKE=엔드 연기
-option.END_SMOKE.comment=누군가 불을 방치한 탓에, 이제 엔드의 상단과 하단 보이드에 연기가 퍼져 있습니다.
 option.E_SKY_COLORI=End Sky - Intensity (엔드 하늘 - 세기)
 option.END_SKY_FOG_INFLUENCE=Modded End Biome Tint (모드 바이옴 틴트)
 option.END_SKY_FOG_INFLUENCE.comment=모드 바이옴의 안개 색상이 엔드 하늘과 엔드 광선 색상에 얼마나 영향을 주는지 조정합니다. 값이 1.00이면 엔드 하늘과 엔드 광선이 안개 색상과 동일해지고, 0.00이면 안개 색상의 영향을 받지 않습니다.
@@ -1492,6 +1490,8 @@ option.END_STAR_HEMISPHERE.comment=엔드에서 하늘의 상반구 또는 하�
 value.END_STAR_HEMISPHERE.0=하늘 전체
 value.END_STAR_HEMISPHERE.1=상반구
 value.END_STAR_HEMISPHERE.-1=하반구
+
+value.END_NEBULA.0=켜기
 
 option.STAR_BRIGHTNESS=별 밝기
 option.STAR_BRIGHTNESS.comment=별의 밝기를 조정하는 설정입니다.
