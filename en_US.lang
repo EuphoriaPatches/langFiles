@@ -1295,6 +1295,7 @@ screen.END_STAR=End Star Settings
 screen.END_STAR.comment=Settings that relate to the End Stars.
 screen.BLACK_HOLE_SETTINGS=Black Hole Settings
 screen.BLACK_HOLE_POSITION_SETTINGS=Black Hole Position
+screen.END_NEBULA_SETTINGS=End Nebula Settings
 screen.FIXED_POSITION_BLACK_HOLE_SETTINGS=Fixed Position
 screen.MOVING_POSITION_BLACK_HOLE_SETTINGS=Slowly Wandering
 screen.STAR_COLORS_END=End Star Colors
@@ -1671,8 +1672,6 @@ value.CLOUD_SUN_MOON_SHADING.1=Moon Only
 value.CLOUD_SUN_MOON_SHADING.2=Sun Only
 value.CLOUD_SUN_MOON_SHADING.3=Both
 
-option.END_SMOKE=End Smoke
-option.END_SMOKE.comment=Someone left the fire unattended and now the End has smoke in the upper and lower void.
 option.E_SKY_COLORR_NEW=End Sky - Red
 option.E_SKY_COLORG_NEW=End Sky - Green
 option.E_SKY_COLORB_NEW=End Sky - Blue
@@ -1793,6 +1792,18 @@ option.END_STAR_HEMISPHERE.comment=Setting to only render stars in the upper or 
 value.END_STAR_HEMISPHERE.0=Full Sky
 value.END_STAR_HEMISPHERE.1=Upper Hemisphere Only
 value.END_STAR_HEMISPHERE.-1=Lower Hemisphere Only
+
+option.END_NEBULA=End Nebula
+option.END_NEBULA.comment=Adds a procedurally-generated nebula to the End sky, similar to galaxy-style Night Nebulae. Also controls its intensity. §c[-]§r This effect can impact performance.
+value.END_NEBULA.0=OFF
+option.END_NEBULA_RESOLUTION=Nebula Resolution
+option.END_NEBULA_RESOLUTION.comment=Controls how many cells the nebula is discretised into, giving it a pixelated look. Noticeable distortion is present at lower resolutions since it's impossible to perfectly tile a sphere with squares.
+option.END_NEBULA_COVERAGE=Nebula Coverage
+option.END_NEBULA_COVERAGE.comment=Controls how much of the sky the nebula's noise pattern covers. Higher values result in thinner, wispier shapes.
+option.END_NEBULA_GRAININESS=Nebula Graininess
+option.END_NEBULA_GRAININESS.comment=Controls how much white noise is added to the nebula to give it a grainy effect.
+option.END_NEBULA_DISTORTION_INTENSITY=Distortion Intensity
+option.END_NEBULA_DISTORTION_INTENSITY.comment=Controls how much the nebula's shape is warped away from a plain radial gradient.
 
 option.STAR_BRIGHTNESS=Star Brightness
 option.STAR_BRIGHTNESS.comment=Setting to adjust the star brightness.
