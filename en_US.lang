@@ -1796,14 +1796,27 @@ value.END_STAR_HEMISPHERE.-1=Lower Hemisphere Only
 option.END_NEBULA=End Nebula
 option.END_NEBULA.comment=Adds a procedurally-generated nebula to the End sky, similar to galaxy-style Night Nebulae. Also controls its intensity. §c[-]§r This effect can impact performance.
 value.END_NEBULA.0=OFF
+
 option.END_NEBULA_RESOLUTION=Nebula Resolution
 option.END_NEBULA_RESOLUTION.comment=Controls how many cells the nebula is discretised into, giving it a pixelated look. Noticeable distortion is present at lower resolutions since it's impossible to perfectly tile a sphere with squares.
+value.END_NEBULA_RESOLUTION.0=Smooth
+
 option.END_NEBULA_COVERAGE=Nebula Coverage
 option.END_NEBULA_COVERAGE.comment=Controls how much of the sky the nebula's noise pattern covers. Higher values result in thinner, wispier shapes.
+
 option.END_NEBULA_GRAININESS=Nebula Graininess
-option.END_NEBULA_GRAININESS.comment=Controls how much white noise is added to the nebula to give it a grainy effect.
+option.END_NEBULA_GRAININESS.comment=Controls how much white noise is added to the nebula to give it a grainy effect. Does not work with Nebula Resolution set to Smooth.
+
 option.END_NEBULA_DISTORTION_INTENSITY=Distortion Intensity
 option.END_NEBULA_DISTORTION_INTENSITY.comment=Controls how much the nebula's shape is warped away from a plain radial gradient.
+
+option.END_NEBULA_QUALITY=Nebula Quality
+option.END_NEBULA_QUALITY.comment=Controls how many layers of noise are used to generate the nebula. §c[-]§r This effect can impact performance.
+value.END_NEBULA_QUALITY.1=Low
+value.END_NEBULA_QUALITY.2=Medium
+value.END_NEBULA_QUALITY.3=High
+value.END_NEBULA_QUALITY.4=Ultra
+value.END_NEBULA_QUALITY.5=Extreme
 
 option.STAR_BRIGHTNESS=Star Brightness
 option.STAR_BRIGHTNESS.comment=Setting to adjust the star brightness.
