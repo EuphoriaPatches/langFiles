@@ -1764,6 +1764,12 @@ value.END_STAR_HEMISPHERE.-1=Apenas Hemisfério Inferior
 
 value.END_NEBULA.0=Desligado
 
+value.END_NEBULA_RESOLUTION.0=Suave
+
+value.END_NEBULA_QUALITY.1=Baixo
+value.END_NEBULA_QUALITY.2=Médio
+value.END_NEBULA_QUALITY.3=Alto
+
 option.STAR_BRIGHTNESS=Brilho das Estrelas
 option.STAR_BRIGHTNESS.comment=Configuração para ajustar o brilho das
 value.STAR_BRIGHTNESS.3=Desligado

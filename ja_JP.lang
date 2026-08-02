@@ -1794,6 +1794,12 @@ value.END_STAR_HEMISPHERE.-1=下半球のみ
 
 value.END_NEBULA.0=OFF
 
+value.END_NEBULA_RESOLUTION.0=滑らか
+
+value.END_NEBULA_QUALITY.1=低
+value.END_NEBULA_QUALITY.2=中
+value.END_NEBULA_QUALITY.3=高
+
 option.STAR_BRIGHTNESS=星の明るさ
 option.STAR_BRIGHTNESS.comment=星の明るさを調整する設定です。
 value.STAR_BRIGHTNESS.3=OFF

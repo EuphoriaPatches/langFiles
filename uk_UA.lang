@@ -1736,6 +1736,12 @@ value.END_STAR_HEMISPHERE.-1=Нижня півкуля
 
 value.END_NEBULA.0=ВИМК
 
+value.END_NEBULA_RESOLUTION.0=Гладкий
+
+value.END_NEBULA_QUALITY.1=Мало
+value.END_NEBULA_QUALITY.2=Посереднє
+value.END_NEBULA_QUALITY.3=Багато
+
 option.STAR_BRIGHTNESS=Яскравість
 option.STAR_BRIGHTNESS.comment=Яскравість зірок.
 value.STAR_BRIGHTNESS.3=ВИМК.

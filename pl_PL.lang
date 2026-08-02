@@ -1727,6 +1727,12 @@ value.END_STAR_HEMISPHERE.-1=Tylko Dolna Półkula
 
 value.END_NEBULA.0=WŁ.
 
+value.END_NEBULA_RESOLUTION.0=Gładki
+
+value.END_NEBULA_QUALITY.1=Mało
+value.END_NEBULA_QUALITY.2=Średnie
+value.END_NEBULA_QUALITY.3=Dużo
+
 option.STAR_BRIGHTNESS=Jasność Gwiazd
 option.STAR_BRIGHTNESS.comment=Ustawienie umożliwiające regulację jasności gwiazd.
 value.STAR_BRIGHTNESS.3=WYŁ.

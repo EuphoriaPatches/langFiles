@@ -1764,6 +1764,12 @@ value.END_STAR_HEMISPHERE.-1=下半球
 
 value.END_NEBULA.0=關
 
+value.END_NEBULA_RESOLUTION.0=平滑
+
+value.END_NEBULA_QUALITY.1=稀疏
+value.END_NEBULA_QUALITY.2=中
+value.END_NEBULA_QUALITY.3=密集
+
 option.STAR_BRIGHTNESS=星星亮度
 option.STAR_BRIGHTNESS.comment=調節夜空中星星的亮度.
 value.STAR_BRIGHTNESS.3=關
