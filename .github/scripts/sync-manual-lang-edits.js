@@ -7,12 +7,10 @@ const { execFileSync } = require("child_process");
 const path = require("path");
 const { REPO_ROOT, loadLangMap } = require("./lib/content-safety");
 const {
-  isDuplicateTranslationError,
-  findMatchingTranslation,
+  pushAndApproveTranslation,
   getProjectLanguageIds,
   resolveCrowdinLanguageId,
   resolveStringId,
-  crowdinRequest,
 } = require("./lib/crowdin-api");
 
 const ZERO_SHA = "0000000000000000000000000000000000000000";
@@ -109,39 +107,7 @@ async function main() {
       }
 
       try {
-        let translationId;
-        try {
-          const translation = await crowdinRequest(
-            token,
-            "POST",
-            `/projects/${projectId}/translations`,
-            {
-              stringId,
-              languageId,
-              text: newValue,
-            },
-          );
-          translationId = translation.data.id;
-        } catch (err) {
-          if (!isDuplicateTranslationError(err)) throw err;
-          const existing = await findMatchingTranslation(
-            token,
-            projectId,
-            stringId,
-            languageId,
-            newValue,
-          );
-          if (!existing) throw err;
-          translationId = existing.id;
-        }
-        await crowdinRequest(
-          token,
-          "POST",
-          `/projects/${projectId}/approvals`,
-          {
-            translationId,
-          },
-        );
+        await pushAndApproveTranslation(token, projectId, stringId, languageId, newValue);
         console.log(
           `Synced ${fileName} [${key}] -> Crowdin (${languageId}), approved.`,
         );

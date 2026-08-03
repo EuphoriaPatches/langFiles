@@ -365,6 +365,21 @@ async function checkContentIssues(text, langId, englishSourceValue, exceptions) 
 }
 
 // ---------------------------------------------------------------------
+// Punctuation normalization
+// ---------------------------------------------------------------------
+
+// Some in-game text (e.g. option/screen "*.comment" tooltips) is split on
+// ". " to render as separate lines - a translator using their language's own
+// full-width period (e.g. Chinese/Japanese "。") instead of the ASCII "."
+// silently breaks that splitting. Swap it for ". ", reusing whatever
+// whitespace already follows it instead of adding a second space.
+const FULL_WIDTH_PERIOD_RE = /。(\s?)/g;
+
+function normalizeFullWidthPeriods(text) {
+  return text.replace(FULL_WIDTH_PERIOD_RE, (_, ws) => (ws ? `.${ws}` : ". "));
+}
+
+// ---------------------------------------------------------------------
 // File parsing/patching
 // ---------------------------------------------------------------------
 
@@ -506,6 +521,7 @@ module.exports = {
   loadSafeTermExceptions,
   saveSafeTermExceptions,
   checkContentIssues,
+  normalizeFullWidthPeriods,
   splitLines,
   detectEol,
   loadLangMap,

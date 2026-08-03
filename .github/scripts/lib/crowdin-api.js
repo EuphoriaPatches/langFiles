@@ -61,6 +61,33 @@ async function deleteTranslation(token, projectId, translationId) {
   await crowdinRequest(token, "DELETE", `/projects/${projectId}/translations/${translationId}`);
 }
 
+// Submits `text` as a translation for stringId+languageId and approves it -
+// used for translations we're pushing on a translator's behalf (they didn't
+// type this exact text into Crowdin themselves, but it's a direct derivative
+// of what they did submit, e.g. a hand-synced value or an automated
+// punctuation fix) rather than actual community-submitted work awaiting
+// review. Falls back to approving the existing translation instead of
+// creating a duplicate, since Crowdin rejects a second identical one (see
+// isDuplicateTranslationError).
+async function pushAndApproveTranslation(token, projectId, stringId, languageId, text) {
+  let translationId;
+  try {
+    const translation = await crowdinRequest(
+      token,
+      "POST",
+      `/projects/${projectId}/translations`,
+      { stringId, languageId, text },
+    );
+    translationId = translation.data.id;
+  } catch (err) {
+    if (!isDuplicateTranslationError(err)) throw err;
+    const existing = await findMatchingTranslation(token, projectId, stringId, languageId, text);
+    if (!existing) throw err;
+    translationId = existing.id;
+  }
+  await crowdinRequest(token, "POST", `/projects/${projectId}/approvals`, { translationId });
+}
+
 // Get the list of language IDs that exist in the Crowdin project, so we can
 // map a local file name to the correct Crowdin language ID (e.g. "fr" vs
 // "fr-FR" vs "fr-CA"). Needed for both projects - file-naming placeholders
@@ -111,6 +138,7 @@ module.exports = {
   listTranslations,
   findMatchingTranslation,
   deleteTranslation,
+  pushAndApproveTranslation,
   getProjectLanguageIds,
   resolveCrowdinLanguageId,
   resolveStringId,

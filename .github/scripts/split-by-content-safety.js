@@ -8,7 +8,10 @@
 //   being applied, so they can go through the PR review path applied by
 //   apply-flagged-report.js.
 //
-// Requires: `PROFANITY_REPO_TOKEN` environment variable.
+// Requires: `PROFANITY_REPO_TOKEN` environment variable. `CROWDIN_TOKEN` /
+// `CROWDIN_PROJECT_ID_LANG` are optional - without them, punctuation fixes
+// (see pushPunctuationCorrections) still get committed locally but aren't
+// pushed back up to Crowdin.
 "use strict";
 
 const fs = require("fs");
@@ -16,6 +19,7 @@ const path = require("path");
 const {
   REPO_ROOT,
   checkContentIssues,
+  normalizeFullWidthPeriods,
   loadSafeTermExceptions,
   splitLines,
   loadLangMap,
@@ -25,10 +29,60 @@ const {
   buildLangFileFromTemplate,
   ENTRY_RE,
 } = require("./lib/content-safety");
+const {
+  pushAndApproveTranslation,
+  getProjectLanguageIds,
+  resolveCrowdinLanguageId,
+  resolveStringId,
+} = require("./lib/crowdin-api");
 
 const NEW_LANG_DIR = path.join(REPO_ROOT, "_new");
 const NEW_WEBSITE_DIR = path.join(REPO_ROOT, "_new", "website");
 const REPORT_PATH = path.join(REPO_ROOT, "_flagged-report.json");
+
+// Pushes punctuation-normalized values back up to Crowdin so the correction
+// sticks - otherwise Crowdin still holds the translator's original
+// full-width period and every future sync would "fix" (and re-diff) the
+// same key again. Best-effort: a translator's own subsequent edit in
+// Crowdin should never be blocked by this failing, so failures are logged
+// and skipped rather than thrown.
+async function pushPunctuationCorrections(corrections) {
+  const token = process.env.CROWDIN_TOKEN;
+  const projectId = process.env.CROWDIN_PROJECT_ID_LANG;
+  if (!token || !projectId) {
+    console.warn(
+      `WARNING: ${corrections.length} punctuation correction(s) found but CROWDIN_TOKEN/CROWDIN_PROJECT_ID_LANG are not set - skipping Crowdin push.`,
+    );
+    return;
+  }
+
+  const projectLanguageIds = await getProjectLanguageIds(token, projectId);
+  const stringIdCache = new Map();
+  const languageIdCache = new Map();
+
+  for (const { key, language, value } of corrections) {
+    if (!languageIdCache.has(language)) {
+      languageIdCache.set(language, resolveCrowdinLanguageId(language, projectLanguageIds));
+    }
+    const languageId = languageIdCache.get(language);
+    if (!languageId) {
+      console.warn(`WARNING: could not resolve a Crowdin language ID for "${language}" - skipping punctuation fix for [${key}].`);
+      continue;
+    }
+
+    try {
+      const stringId = await resolveStringId(token, projectId, key, stringIdCache);
+      if (!stringId) {
+        console.warn(`WARNING: no Crowdin string found for identifier "${key}" - skipping punctuation fix.`);
+        continue;
+      }
+      await pushAndApproveTranslation(token, projectId, stringId, languageId, value);
+      console.log(`Pushed punctuation fix to Crowdin: [${key}] (${language})`);
+    } catch (err) {
+      console.warn(`WARNING: failed to push punctuation fix for [${key}] (${language}): ${err.message}`);
+    }
+  }
+}
 
 async function main() {
   const sourceRaw = fs.readFileSync(path.join(REPO_ROOT, "en_US.lang"), "utf8");
@@ -41,6 +95,11 @@ async function main() {
     : {};
 
   const flaggedReport = [];
+  // Punctuation fixes (see normalizeFullWidthPeriods) need pushing back to
+  // Crowdin itself, not just committed here - otherwise the next export
+  // still has the translator's original full-width period and we'd "fix"
+  // the same key over and over on every sync.
+  const punctuationCorrections = []; // { key, language, value }
 
   if (fs.existsSync(NEW_LANG_DIR)) {
     const newLangFiles = fs
@@ -60,7 +119,11 @@ async function main() {
       const newMap = loadLangMap(newRaw);
 
       const cleanUpdates = new Map();
-      for (const [key, newValue] of newMap) {
+      for (const [key, rawNewValue] of newMap) {
+        const newValue = normalizeFullWidthPeriods(rawNewValue);
+        if (newValue !== rawNewValue) {
+          punctuationCorrections.push({ key, language: langId, value: newValue });
+        }
         if (oldMap.get(key) === newValue) continue;
         const { flagged, matches, reasons } = await checkContentIssues(
           newValue,
@@ -192,6 +255,10 @@ async function main() {
         console.log(`${relFile}: applied ${cleanUpdates.size} clean update(s)`);
       }
     }
+  }
+
+  if (punctuationCorrections.length > 0) {
+    await pushPunctuationCorrections(punctuationCorrections);
   }
 
   // Clean up the staging directory now to prevent commit issues.
