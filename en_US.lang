@@ -1,5 +1,7 @@
 #shaders/lang/en_US.lang
 
+Contribute=Contribute to the official translations here: https://www.euphoriapatches.com/lang - Do not change this URL
+
 option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
 option.TRANSLATORS=Translated by: Insert your name(s) here
 
