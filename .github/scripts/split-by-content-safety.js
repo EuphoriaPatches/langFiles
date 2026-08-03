@@ -11,7 +11,9 @@
 // Requires: `PROFANITY_REPO_TOKEN` environment variable. `CROWDIN_TOKEN` /
 // `CROWDIN_PROJECT_ID_LANG` are optional - without them, punctuation fixes
 // (see pushPunctuationCorrections) still get committed locally but aren't
-// pushed back up to Crowdin.
+// pushed back up to Crowdin. Set `DRY_RUN=true` to log what would be pushed
+// instead of calling the Crowdin API at all (see the workflow's
+// prevent_crowdin_uploads input).
 "use strict";
 
 const fs = require("fs");
@@ -47,6 +49,13 @@ const REPORT_PATH = path.join(REPO_ROOT, "_flagged-report.json");
 // Crowdin should never be blocked by this failing, so failures are logged
 // and skipped rather than thrown.
 async function pushPunctuationCorrections(corrections) {
+  if (process.env.DRY_RUN === "true") {
+    for (const { key, language, value } of corrections) {
+      console.log(`[DRY RUN] would push punctuation fix to Crowdin: [${key}] (${language}): ${JSON.stringify(value)}`);
+    }
+    return;
+  }
+
   const token = process.env.CROWDIN_TOKEN;
   const projectId = process.env.CROWDIN_PROJECT_ID_LANG;
   if (!token || !projectId) {

@@ -19,8 +19,8 @@ on:
         type: boolean
         default: false
         required: true
-      test_sync_manual_edits:
-        description: "Dry-run the manual-lang-edits sync (diffs the latest commit, never writes to Crowdin)"
+      prevent_crowdin_uploads:
+        description: "Prevent any Crowdin API uploads"
         type: boolean
         default: false
         required: true
@@ -106,7 +106,7 @@ jobs:
   # translation, not racing against it.
   #
   # Runs for real on push (diffing github.event.before/after). Can also be
-  # dry-run manually via workflow_dispatch + test_sync_manual_edits, which
+  # dry-run manually via workflow_dispatch + prevent_crowdin_uploads, which
   # diffs the latest commit on whatever branch you run it from and never
   # writes to Crowdin - useful for checking what it *would* do before
   # trusting it unattended on a real push.
@@ -114,7 +114,7 @@ jobs:
     name: "Sync Manual Lang Edits"
     runs-on: ubuntu-latest
     needs: [sync-lang]
-    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.test_sync_manual_edits)
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.prevent_crowdin_uploads)
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v4
@@ -233,6 +233,7 @@ jobs:
         run: node .github/scripts/split-by-content-safety.js
         env:
           PROFANITY_REPO_TOKEN: ${{ secrets.PROFANITY_REPO_TOKEN }}
+          DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.prevent_crowdin_uploads) && 'true' || 'false' }}
           CROWDIN_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_PROJECT_ID_LANG: ${{ vars.CROWDIN_PROJECT_ID_LANG }}
 
