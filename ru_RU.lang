@@ -1805,13 +1805,18 @@ option.END_NEBULA_COVERAGE=Покрытие туманности
 option.END_NEBULA_COVERAGE.comment=Определяет, какую часть неба покрывает шумовой паттерн туманности. Чем выше значение, тем тоньше и прозрачнее форма.
 
 option.END_NEBULA_GRAININESS=Зернистость туманности
+option.END_NEBULA_GRAININESS.comment=Определяет, сколько белого шума будет добавлено в туманность для создания эффекта зернистости. Не работает при установке «Разрешения туманности» на «Плавное».
 
 option.END_NEBULA_DISTORTION_INTENSITY=Интенсивность искажения
 option.END_NEBULA_DISTORTION_INTENSITY.comment=Определяет степень отклонения формы туманности от простого радиального градиента.
 
+option.END_NEBULA_QUALITY=Качество туманности
+option.END_NEBULA_QUALITY.comment=Определяет, сколько слоёв шума используется для создания туманности. §c[-]§r Может повлиять на производительность.
 value.END_NEBULA_QUALITY.1=Низкое
 value.END_NEBULA_QUALITY.2=Среднее
 value.END_NEBULA_QUALITY.3=Высокое
+value.END_NEBULA_QUALITY.4=Ультра
+value.END_NEBULA_QUALITY.5=Экстремальное
 
 option.STAR_BRIGHTNESS=Яркость звёзд
 option.STAR_BRIGHTNESS.comment=Регулировка яркости звёзд.

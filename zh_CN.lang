@@ -763,7 +763,7 @@ option.LENSFLARE_I.comment=调整镜头眩光效果的强度.
 
 option.TAA_DEFINE=§e时间性过滤器§r
 option.TAA_DEFINE.comment=启用时间性抗锯齿以助于降低颗粒感，通过减少一部分对性能要求较高的效果的采样数来提升性能，在适当设置下减少锯齿。关 §c[-]§r：关闭TAA会导致性能下降和效果质量变差，但如果搭配非常低的光影设置，它也可以提高性能。
-value.TAA_DEFINE.-1=§由DQ设置
+value.TAA_DEFINE.-1=§a跟随细节质量设定
 value.TAA_DEFINE.0=§c关 [-]
 value.TAA_DEFINE.1=开 §a[+]
 
@@ -919,14 +919,14 @@ value.PLAYER_SHADOW.-1=关
 value.PLAYER_SHADOW.1=开
 
 option.LEAF_SHADOW_OPTIMISATION_DEFINE=§e树叶阴影优化§r
-option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=禁用较暗区域树叶和藤蔓的阴影以提升性能。§c[-]§r 此优化的主要缺点是会影响某些高品质树叶资源包的光照效果。§e[*]§r “由DQ设置”表示此设置由性能设置中的“细节质量”决定，除非你另行更改。
-value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§a由DQ设置
+option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=禁用暗部树叶和藤蔓的阴影以提升性能. §c[-]§r 此优化的主要缺点是会影响某些高品质树叶资源包的光照效果. §e[*]§r “跟随细节质量设定” 表示此设置由性能设置中的 “细节质量” 决定, 除非你另行更改.
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§a跟随细节质量设定
 value.LEAF_SHADOW_OPTIMISATION_DEFINE.0=§c关
 value.LEAF_SHADOW_OPTIMISATION_DEFINE.1=§a开
 
 option.SKY_EFFECT_REFLECTION_DEFINE=§e天空效果反射§r
-option.SKY_EFFECT_REFLECTION_DEFINE.comment=启用后，反射效果将显示天空特效，例如云朵、星星和北极光。“开 - 水体”选项将启用水面和半透明反射的天空特效，“开 - 完全”选项将同时启用方块反射的天空特效。§e[*]§r “由DQ设置”表示此设置由性能设置中的“细节质量”决定，除非你另行更改。
-value.SKY_EFFECT_REFLECTION_DEFINE.-1=§a由DQ设置
+option.SKY_EFFECT_REFLECTION_DEFINE.comment=启用后, 反射将显示天空相关效果, 例如云朵, 星星和北极光. “开 - 水体”选项将启用水面和半透明反射的天空特效; “开 - 完全”选项将同时启用方块反射的天空特效. §e[*]§r “跟随细节质量设定” 表示此设置由性能设置中的 “细节质量” 决定, 除非你另行更改.
+value.SKY_EFFECT_REFLECTION_DEFINE.-1=§a跟随细节质量设定
 value.SKY_EFFECT_REFLECTION_DEFINE.0=§a关
 value.SKY_EFFECT_REFLECTION_DEFINE.1=§c开 - 水体
 value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§o开 - 完全
@@ -1295,6 +1295,7 @@ screen.END_STAR=星空设置 - 末地
 screen.END_STAR.comment=关于末地星空的设置.
 screen.BLACK_HOLE_SETTINGS=黑洞设定
 screen.BLACK_HOLE_POSITION_SETTINGS=黑洞位置设定
+screen.END_NEBULA_SETTINGS=末地星云设置
 screen.FIXED_POSITION_BLACK_HOLE_SETTINGS=固定位置
 screen.MOVING_POSITION_BLACK_HOLE_SETTINGS=缓慢移动
 screen.STAR_COLORS_END=末地星星颜色
@@ -1792,13 +1793,30 @@ value.END_STAR_HEMISPHERE.0=完整
 value.END_STAR_HEMISPHERE.1=上半球
 value.END_STAR_HEMISPHERE.-1=下半球
 
+option.END_NEBULA=末地星云
+option.END_NEBULA.comment=添加程序生成的星云到末地天空, 类似于银河风格的夜间星云. 同时控制其强度. §c[-]§r 本选项的效果可能会影响性能.
 value.END_NEBULA.0=关
 
+option.END_NEBULA_RESOLUTION=星云分辨率
+option.END_NEBULA_RESOLUTION.comment=控制星云存在的单元格数量, 赋予其像素化外观. 设置较低分辨率时会存在明显的变形情况, 因为不可能用正方形来完美平铺一个球形区域.
 value.END_NEBULA_RESOLUTION.0=平滑
 
+option.END_NEBULA_COVERAGE=星云覆盖率
+option.END_NEBULA_COVERAGE.comment=控制天空星云噪声的覆盖面积. 设置更高的值会产生更薄, 更纤细的形状.
+
+option.END_NEBULA_GRAININESS=星云颗粒度
+option.END_NEBULA_GRAININESS.comment=通过控制向星云添加的白噪声数量来赋予其产生颗粒效果. 当 “星云分辨率” 设置为 “平滑” 时不生效.
+
+option.END_NEBULA_DISTORTION_INTENSITY=畸变强度
+option.END_NEBULA_DISTORTION_INTENSITY.comment=控制星云形状偏离平面径向梯度的扭曲程度.
+
+option.END_NEBULA_QUALITY=星云质量
+option.END_NEBULA_QUALITY.comment=控制用于生成星云的噪声层数. §c[-]§r 本选项的效果可能会影响性能.
 value.END_NEBULA_QUALITY.1=稀疏
 value.END_NEBULA_QUALITY.2=中
 value.END_NEBULA_QUALITY.3=密集
+value.END_NEBULA_QUALITY.4=极致
+value.END_NEBULA_QUALITY.5=极限
 
 option.STAR_BRIGHTNESS=星星亮度
 option.STAR_BRIGHTNESS.comment=调节夜空中星星的亮度.
