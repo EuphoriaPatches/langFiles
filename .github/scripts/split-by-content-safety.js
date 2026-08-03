@@ -9,9 +9,9 @@
 //   apply-flagged-report.js.
 //
 // Requires: `PROFANITY_REPO_TOKEN` environment variable. `CROWDIN_TOKEN` /
-// `CROWDIN_PROJECT_ID_LANG` are optional - without them, punctuation fixes
-// (see pushPunctuationCorrections) still get committed locally but aren't
-// pushed back up to Crowdin. Set `DRY_RUN=true` to log what would be pushed
+// `CROWDIN_PROJECT_ID_LANG` are optional - without them, text corrections
+// (see pushTextCorrections) still get committed locally but aren't pushed
+// back up to Crowdin. Set `DRY_RUN=true` to log what would be pushed
 // instead of calling the Crowdin API at all (see the workflow's
 // prevent_crowdin_uploads input).
 "use strict";
@@ -42,16 +42,16 @@ const NEW_LANG_DIR = path.join(REPO_ROOT, "_new");
 const NEW_WEBSITE_DIR = path.join(REPO_ROOT, "_new", "website");
 const REPORT_PATH = path.join(REPO_ROOT, "_flagged-report.json");
 
-// Pushes punctuation-normalized values back up to Crowdin so the correction
-// sticks - otherwise Crowdin still holds the translator's original
-// full-width period and every future sync would "fix" (and re-diff) the
-// same key again. Best-effort: a translator's own subsequent edit in
-// Crowdin should never be blocked by this failing, so failures are logged
-// and skipped rather than thrown.
-async function pushPunctuationCorrections(corrections) {
+// Pushes normalized values (full-width period fixes, trailing-whitespace
+// trims) back up to Crowdin so the correction sticks - otherwise Crowdin
+// still holds the translator's original text and every future sync would
+// "fix" (and re-diff) the same key again. Best-effort: a translator's own
+// subsequent edit in Crowdin should never be blocked by this failing, so
+// failures are logged and skipped rather than thrown.
+async function pushTextCorrections(corrections) {
   if (process.env.DRY_RUN === "true") {
     for (const { key, language, value } of corrections) {
-      console.log(`[DRY RUN] would push punctuation fix to Crowdin: [${key}] (${language}): ${JSON.stringify(value)}`);
+      console.log(`[DRY RUN] would push text correction to Crowdin: [${key}] (${language}): ${JSON.stringify(value)}`);
     }
     return;
   }
@@ -60,7 +60,7 @@ async function pushPunctuationCorrections(corrections) {
   const projectId = process.env.CROWDIN_PROJECT_ID_LANG;
   if (!token || !projectId) {
     console.warn(
-      `WARNING: ${corrections.length} punctuation correction(s) found but CROWDIN_TOKEN/CROWDIN_PROJECT_ID_LANG are not set - skipping Crowdin push.`,
+      `WARNING: ${corrections.length} text correction(s) found but CROWDIN_TOKEN/CROWDIN_PROJECT_ID_LANG are not set - skipping Crowdin push.`,
     );
     return;
   }
@@ -75,20 +75,20 @@ async function pushPunctuationCorrections(corrections) {
     }
     const languageId = languageIdCache.get(language);
     if (!languageId) {
-      console.warn(`WARNING: could not resolve a Crowdin language ID for "${language}" - skipping punctuation fix for [${key}].`);
+      console.warn(`WARNING: could not resolve a Crowdin language ID for "${language}" - skipping text correction for [${key}].`);
       continue;
     }
 
     try {
       const stringId = await resolveStringId(token, projectId, key, stringIdCache);
       if (!stringId) {
-        console.warn(`WARNING: no Crowdin string found for identifier "${key}" - skipping punctuation fix.`);
+        console.warn(`WARNING: no Crowdin string found for identifier "${key}" - skipping text correction.`);
         continue;
       }
       await pushAndApproveTranslation(token, projectId, stringId, languageId, value);
-      console.log(`Pushed punctuation fix to Crowdin: [${key}] (${language})`);
+      console.log(`Pushed text correction to Crowdin: [${key}] (${language})`);
     } catch (err) {
-      console.warn(`WARNING: failed to push punctuation fix for [${key}] (${language}): ${err.message}`);
+      console.warn(`WARNING: failed to push text correction for [${key}] (${language}): ${err.message}`);
     }
   }
 }
@@ -104,11 +104,11 @@ async function main() {
     : {};
 
   const flaggedReport = [];
-  // Punctuation fixes (see normalizeFullWidthPeriods) need pushing back to
-  // Crowdin itself, not just committed here - otherwise the next export
-  // still has the translator's original full-width period and we'd "fix"
-  // the same key over and over on every sync.
-  const punctuationCorrections = []; // { key, language, value }
+  // Punctuation fixes (see normalizeFullWidthPeriods) and trailing-whitespace
+  // trims need pushing back to Crowdin itself, not just committed here -
+  // otherwise the next export still has the translator's original text and
+  // we'd "fix" the same key over and over on every sync.
+  const textCorrections = []; // { key, language, value }
 
   if (fs.existsSync(NEW_LANG_DIR)) {
     const newLangFiles = fs
@@ -129,9 +129,9 @@ async function main() {
 
       const cleanUpdates = new Map();
       for (const [key, rawNewValue] of newMap) {
-        const newValue = normalizeFullWidthPeriods(rawNewValue);
+        const newValue = normalizeFullWidthPeriods(rawNewValue).trimEnd();
         if (newValue !== rawNewValue) {
-          punctuationCorrections.push({ key, language: langId, value: newValue });
+          textCorrections.push({ key, language: langId, value: newValue });
         }
         if (oldMap.get(key) === newValue) continue;
         const { flagged, matches, reasons } = await checkContentIssues(
@@ -266,8 +266,8 @@ async function main() {
     }
   }
 
-  if (punctuationCorrections.length > 0) {
-    await pushPunctuationCorrections(punctuationCorrections);
+  if (textCorrections.length > 0) {
+    await pushTextCorrections(textCorrections);
   }
 
   // Clean up the staging directory now to prevent commit issues.

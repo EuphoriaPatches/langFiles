@@ -371,12 +371,20 @@ async function checkContentIssues(text, langId, englishSourceValue, exceptions) 
 // Some in-game text (e.g. option/screen "*.comment" tooltips) is split on
 // ". " to render as separate lines - a translator using their language's own
 // full-width period (e.g. Chinese/Japanese "。") instead of the ASCII "."
-// silently breaks that splitting. Swap it for ". ", reusing whatever
-// whitespace already follows it instead of adding a second space.
-const FULL_WIDTH_PERIOD_RE = /。(\s?)/g;
+// silently breaks that splitting. Swap it for ". " - also absorbing any
+// repeated "。", ASCII "." and/or whitespace that already immediately
+// follows it (a translator sometimes already typed their own ". " right
+// after their own "。", or doubled up "。。"), so the result is always a
+// single ". " rather than doubling up into ". . ". No trailing space is
+// added when the match runs to the very end of the value - there's nothing
+// after it to separate from, so a trailing space would just be stray
+// whitespace.
+const FULL_WIDTH_PERIOD_RE = /。[。.\s]*/g;
 
 function normalizeFullWidthPeriods(text) {
-  return text.replace(FULL_WIDTH_PERIOD_RE, (_, ws) => (ws ? `.${ws}` : ". "));
+  return text.replace(FULL_WIDTH_PERIOD_RE, (match, offset) =>
+    offset + match.length >= text.length ? "." : ". ",
+  );
 }
 
 // ---------------------------------------------------------------------
@@ -419,6 +427,7 @@ const HEADER_RE = /^(#.*\/)([^/]+\.lang)$/;
 // - Intentionally blank English keys are preserved.
 // - Collapses double-blank lines caused by dropped keys, but preserves
 //   original multi-blank formatting.
+// - Trailing whitespace is trimmed from every rendered line.
 function buildLangFileFromTemplate(sourceRaw, translatedMap, fileName) {
   const eol = detectEol(sourceRaw);
   const trailingNewline =
@@ -469,7 +478,7 @@ function buildLangFileFromTemplate(sourceRaw, translatedMap, fileName) {
   const output = [];
   for (const seg of collapsed) {
     if (seg.type === "blank") output.push(...Array(seg.count).fill(""));
-    else output.push(seg.text);
+    else output.push(seg.text.trimEnd());
   }
   return output.join(eol) + (trailingNewline ? eol : "");
 }

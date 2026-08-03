@@ -20,17 +20,17 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Fetch latest en_US.lang file
         env:
           GITHUB_TOKEN: ${{ secrets.PRIVATE_REPO_PAT }}
         run: |
           # Create temp directory
           mkdir -p temp_euphoria
-          
+
           # Clone the private Euphoria-Patches repository
           git clone --depth 1 https://$GITHUB_TOKEN@github.com/EuphoriaPatches/Euphoria-Patches.git temp_euphoria
-          
+
           # Copy the en_US.lang file from shaders/lang/ to root directory
           if [ -f temp_euphoria/shaders/lang/en_US.lang ]; then
             cp -v temp_euphoria/shaders/lang/en_US.lang ./en_US.lang
@@ -39,10 +39,10 @@ jobs:
             echo "Error: en_US.lang file not found in temp_euphoria/shaders/lang/"
             exit 1
           fi
-          
+
           # Clean up
           rm -rf temp_euphoria
-      
+
       # Check if there were changes to en_US.lang
       - name: Check for en_US.lang changes
         id: check-changes
@@ -55,7 +55,7 @@ jobs:
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "No changes detected in en_US.lang file"
           fi
-      
+
       # Upload en_US.lang as an artifact if changed
       - name: Upload en_US.lang artifact
         if: steps.check-changes.outputs.has_changes == 'true'
@@ -77,10 +77,10 @@ jobs:
         run: |
           # Create temp directory
           mkdir -p temp_website
-          
+
           # Clone the EuphoriaPatches.github.io repository
           git clone --depth 1 https://github.com/EuphoriaPatches/EuphoriaPatches.github.io.git temp_website
-          
+
           # Copy the en.json file to website/ directory
           mkdir -p website
           if [ -f temp_website/how-to-install/translations/en.json ]; then
@@ -90,7 +90,7 @@ jobs:
             echo "Error: en.json file not found in temp_website/how-to-install/translations/"
             exit 1
           fi
-          
+
           # Clean up
           rm -rf temp_website
 
