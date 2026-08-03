@@ -3,7 +3,7 @@
 option.LANG_FILE_HEADER=本文档为社区贡献翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证翻译的准确性.
 option.TRANSLATORS=本文档由 Surisen (Ruri) 及 Justinpro0715 翻译
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nSpacEagle17 开发的附加包，为其添加了更多独特的可选功能和设置。\n开发版本：§dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nSpacEagle17 开发的附加包，为其添加了更多独特的可选功能和设置. \n开发版本：§dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=性能需求: §a极低
@@ -29,35 +29,35 @@ option.info0.comment=按钮仅供信息展示.
 
 option.info1=如何得到更好的体验
 value.info1.0=
-option.info1.comment=- Minecraft的性能是个复杂的问题，受多种因素影响，但你可以尝试以下方法： - 使用Iris搭配Sodium模组代替Optifine，因为Optifine容易出问题，在某些情况下甚至会导致你无法阅读本说明的其余部分。 - 降低“配置文件”光影设置，这些设置经过精心测试，可实现最佳的视觉/性能平衡。 - 降低渲染距离，建议将其设置为比你选择的“配置文件”的“阴影距离”高2-4个区块，例如，“高”配置文件的渲染距离为16个区块，“低”配置文件的渲染距离为6个区块。 - 确保你的分辨率不要太高，1920x1080对于中端配置的电脑来说很不错，1440p对于高端配置的电脑来说也足够了，4K则过高。 - 确保你没有安装大量的模组，即使其中大部分是“优化模组”，它们通常对着色器也没有太大帮助。值得一提的是，某些资源包，特别是那些添加更复杂植被/树叶的资源包，会消耗大量性能。
+option.info1.comment=- Minecraft的性能是个复杂的问题，受多种因素影响，但你可以尝试以下方法： - 使用Iris搭配Sodium模组代替Optifine，因为Optifine容易出问题，在某些情况下甚至会导致你无法阅读本说明的其余部分. - 降低“配置文件”光影设置，这些设置经过精心测试，可实现最佳的视觉/性能平衡. - 降低渲染距离，建议将其设置为比你选择的“配置文件”的“阴影距离”高2-4个区块，例如，“高”配置文件的渲染距离为16个区块，“低”配置文件的渲染距离为6个区块. - 确保你的分辨率不要太高，1920x1080对于中端配置的电脑来说很不错，1440p对于高端配置的电脑来说也足够了，4K则过高. - 确保你没有安装大量的模组，即使其中大部分是“优化模组”，它们通常对着色器也没有太大帮助. 值得一提的是，某些资源包，特别是那些添加更复杂植被/树叶的资源包，会消耗大量性能.
 
 option.info2=什么是最佳设置
 value.info2.0=
-option.info2.comment=- 最佳设置因人而异，但对于绝大多数人来说，使用默认的“配置文件”选项应该是最接近最佳的设置。默认设置经过多年社区评估、测试和反馈的调整，同时我们也非常注重视觉效果和性能之间的平衡。当然，你仍然可以自由地进行调整，享受其中的乐趣！
+option.info2.comment=- 最佳设置因人而异，但对于绝大多数人来说，使用默认的“配置文件”选项应该是最接近最佳的设置. 默认设置经过多年社区评估、测试和反馈的调整，同时我们也非常注重视觉效果和性能之间的平衡. 当然，你仍然可以自由地进行调整，享受其中的乐趣！
 
 option.info3=什么是配置文件和视觉风格
 value.info3.0=
-option.info3.comment=- “配置文件”设置会更改“性能设置”菜单中的设置，但不会影响任何基于偏好设置的选项。- “视觉风格”会更改许多基于偏好设置的选项中的“按样式设置”值，但不会对性能产生显著影响。- Complementary Reimagined和Unbound之间的唯一区别在于“视觉风格”的默认选项。
+option.info3.comment=- “配置文件”设置会更改“性能设置”菜单中的设置，但不会影响任何基于偏好设置的选项. - “视觉风格”会更改许多基于偏好设置的选项中的“按样式设置”值，但不会对性能产生显著影响. - Complementary Reimagined和Unbound之间的唯一区别在于“视觉风格”的默认选项.
 
 option.info4=什么是资源包支持
 value.info4.0=
-option.info4.comment=- 资源包支持选项决定了光影包如何处理Minecraft中的不同方块。- 例如，§b集成PBR+§r会将金块视为反射物体，而§elabPBR§r或§eseuspbr§r则需要你安装资源包来告知光影。- 将资源包支持设为§a基本§r则会让所有方块都不那么特殊，当然像水方块这类的例外。
+option.info4.comment=- 资源包支持选项决定了光影包如何处理Minecraft中的不同方块. - 例如，§b集成PBR+§r会将金块视为反射物体，而§elabPBR§r或§eseuspbr§r则需要你安装资源包来告知光影. - 将资源包支持设为§a基本§r则会让所有方块都不那么特殊，当然像水方块这类的例外.
 
 option.info5=标黄的选项有什么含义
 value.info5.0=
-option.info5.comment=- 标记为黄色的选项表示：尽管不位于“性能设置”分类里，它们对性能影响也是可以被衡量的。- 如果调节这个选项使得数值文本变红，意味着将会消耗大量的性能。
+option.info5.comment=- 标记为黄色的选项表示：尽管不位于“性能设置”分类里，它们对性能影响也是可以被衡量的. - 如果调节这个选项使得数值文本变红，意味着将会消耗大量的性能.
 
 option.info6=是否有推荐的模组
 value.info6.0=
-option.info6.comment=除了必不可少的Iris和Sodium之外，还推荐使用“Better Block Entities”提升性能。此外，“RenderScale”模组可以轻松调整分辨率。还有“Voxy”或“Distant Horizo​​ns”模组可以在不大幅增加性能开销的情况下实现极远的渲染距离；建议使用64到256个区块的Voxy渲染距离，或64到128个区块的Distant Horizo​​ns渲染距离，同时搭配8到12个区块的常规渲染距离。最后，你可以安装“Euphoria Patches”模组，它会在您的光影包列表中添加一个功能更强大、设置更丰富的修改版Complementary光影；即使不使用修改版的Complementary-Euphoria光影包，它也会修复/调整一些Iris光影的问题，例如使彩色光照在高世界坐标下也能正常工作。
+option.info6.comment=除了必不可少的Iris和Sodium之外，还推荐使用“Better Block Entities”提升性能. 此外，“RenderScale”模组可以轻松调整分辨率. 还有“Voxy”或“Distant Horizo​​ns”模组可以在不大幅增加性能开销的情况下实现极远的渲染距离；建议使用64到256个区块的Voxy渲染距离，或64到128个区块的Distant Horizo​​ns渲染距离，同时搭配8到12个区块的常规渲染距离. 最后，你可以安装“Euphoria Patches”模组，它会在您的光影包列表中添加一个功能更强大、设置更丰富的修改版Complementary光影；即使不使用修改版的Complementary-Euphoria光影包，它也会修复/调整一些Iris光影的问题，例如使彩色光照在高世界坐标下也能正常工作.
 
 option.info7=哪里可以提问或报告问题
 value.info7.0=
-option.info7.comment=- 如有任何疑问，请使用Complementary Discord服务器或在GitHub页面的“Issues”部分提交问题。- www.complementary.dev/discord。- www.complementary.dev/github
+option.info7.comment=- 如有任何疑问，请使用Complementary Discord服务器或在GitHub页面的“Issues”部分提交问题. - www.complementary.dev/discord. - www.complementary.dev/github
 
 option.info8=如何加入 Complementary 社区
 value.info8.0=
-option.info8.comment=您可以加入Complementary Discord服务器，加入我们友好的社区，从而联系开发者或经验丰富的社区成员。 - www.complementary.dev/discord
+option.info8.comment=您可以加入Complementary Discord服务器，加入我们友好的社区，从而联系开发者或经验丰富的社区成员. - www.complementary.dev/discord
 
 option.info9=如何支持 Complementary
 value.info9.0=
@@ -65,7 +65,7 @@ option.info9.comment=支持Complementary的最佳方式是与您的朋友或社�
 
 option.info10=致谢
 value.info10.0=
-option.info10.comment=- EminGT：Complementary光影的主要开发者。- Capt Tatsu：BSL光影的开发者，没有他的慷慨，最初的Complementary不可能出现。- 特别致谢：IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
+option.info10.comment=- EminGT：Complementary光影的主要开发者. - Capt Tatsu：BSL光影的开发者，没有他的慷慨，最初的Complementary不可能出现. - 特别致谢：IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§d什么是 Euphoria Patches ?
 value.info11.0=
@@ -304,7 +304,7 @@ value.ENTITY_SHADOW.1=§c普通实体
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§o完全§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=细节质量
-option.DETAIL_QUALITY.comment=调整多个影响性能的细微设置。调整以下内容的质量：水体材质、时间抗锯齿、光照调整、夜空星云、下界风暴、天空反射效果、雨滴精度、波浪效果、动态模糊、反射修复、半透明的纹理过滤。
+option.DETAIL_QUALITY.comment=调整多个影响性能的细微设置. 调整以下内容的质量：水体材质、时间抗锯齿、光照调整、夜空星云、下界风暴、天空反射效果、雨滴精度、波浪效果、动态模糊、反射修复、半透明的纹理过滤.
 value.DETAIL_QUALITY.0=§a极低
 value.DETAIL_QUALITY.2=§e中
 value.DETAIL_QUALITY.3=§c高
@@ -762,7 +762,7 @@ option.LENSFLARE_I=镜头眩光强度
 option.LENSFLARE_I.comment=调整镜头眩光效果的强度.
 
 option.TAA_DEFINE=§e时间性过滤器§r
-option.TAA_DEFINE.comment=启用时间性抗锯齿以助于降低颗粒感，通过减少一部分对性能要求较高的效果的采样数来提升性能，在适当设置下减少锯齿。关 §c[-]§r：关闭TAA会导致性能下降和效果质量变差，但如果搭配非常低的光影设置，它也可以提高性能。
+option.TAA_DEFINE.comment=启用时间性抗锯齿以助于降低颗粒感，通过减少一部分对性能要求较高的效果的采样数来提升性能，在适当设置下减少锯齿. 关 §c[-]§r：关闭TAA会导致性能下降和效果质量变差，但如果搭配非常低的光影设置，它也可以提高性能.
 value.TAA_DEFINE.-1=§a跟随细节质量设定
 value.TAA_DEFINE.0=§c关 [-]
 value.TAA_DEFINE.1=开 §a[+]
@@ -3088,10 +3088,10 @@ option.BLACK_HOLE_LATITUDE=纬度
 option.BLACK_HOLE_LATITUDE.comment=固定位置模式: 设定黑洞相对于玩家的纬度 (以度数计, 世界顶点为90度, 与地平线同纬度为0度)
 
 option.BLACK_HOLE_LOOPS_PER_DAY=每天循环
-option.BLACK_HOLE_LOOPS_PER_DAY.comment=缓慢移动模式：黑洞在现实世界的一天内绕天空运行的完整圈数。这基本上会改变速度。
+option.BLACK_HOLE_LOOPS_PER_DAY.comment=缓慢移动模式：黑洞在现实世界的一天内绕天空运行的完整圈数. 这基本上会改变速度.
 
 option.BLACK_HOLE_LATITUDE_BIAS=纬度偏差
-option.BLACK_HOLE_LATITUDE_BIAS.comment=改变黑洞纬度的偏差，使其随时间推移更有可能出现在天空中更高或更低的位置。默认情况下为正偏差，使其更常出现在地平线以上。
+option.BLACK_HOLE_LATITUDE_BIAS.comment=改变黑洞纬度的偏差，使其随时间推移更有可能出现在天空中更高或更低的位置. 默认情况下为正偏差，使其更常出现在地平线以上.
 
 option.BLACK_HOLE_STREAK=水平条纹
 option.BLACK_HOLE_STREAK.comment=为黑洞添加一道水平吸积盘条纹.
