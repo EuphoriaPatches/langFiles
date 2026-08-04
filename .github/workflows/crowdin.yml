@@ -216,6 +216,13 @@ jobs:
             if git ls-remote --exit-code --heads origin "${{ env.TARGET_BRANCH }}" > /dev/null 2>&1; then
               git fetch origin "${{ env.TARGET_BRANCH }}"
               git checkout "${{ env.TARGET_BRANCH }}"
+              # Switching branches swaps out .github/ (scripts, workflows,
+              # config) to whatever that branch last had committed too - for
+              # a long-lived test branch that's whatever it happened to be
+              # left at by a previous test run, potentially far behind main.
+              # Always process with main's current scripts/config regardless
+              # of which branch the resulting lang-file changes land on.
+              git checkout main -- .github
             else
               git checkout -b "${{ env.TARGET_BRANCH }}"
             fi

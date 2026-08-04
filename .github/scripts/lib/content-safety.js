@@ -388,6 +388,15 @@ function normalizePeriods(text, langId) {
   );
 }
 
+// Crowdin syncs occasionally double backslashes before Java-properties escape
+// sequences (e.g., turning "\n" into "\\n", causing literal "\n" in-game).
+// Collapses runs of 2+ backslashes before escape targets back down to 1.
+const DOUBLED_ESCAPE_RE = /\\{2,}(?=[nrt\\])/g;
+
+function normalizeEscapedBackslashes(text) {
+  return text.replace(DOUBLED_ESCAPE_RE, "\\");
+}
+
 // ---------------------------------------------------------------------
 // File parsing/patching
 // ---------------------------------------------------------------------
@@ -532,6 +541,7 @@ module.exports = {
   saveSafeTermExceptions,
   checkContentIssues,
   normalizePeriods,
+  normalizeEscapedBackslashes,
   splitLines,
   detectEol,
   loadLangMap,

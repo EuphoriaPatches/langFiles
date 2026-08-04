@@ -22,6 +22,7 @@ const {
   REPO_ROOT,
   checkContentIssues,
   normalizePeriods,
+  normalizeEscapedBackslashes,
   loadSafeTermExceptions,
   splitLines,
   loadLangMap,
@@ -41,6 +42,12 @@ const {
 const NEW_LANG_DIR = path.join(REPO_ROOT, "_new");
 const NEW_WEBSITE_DIR = path.join(REPO_ROOT, "_new", "website");
 const REPORT_PATH = path.join(REPO_ROOT, "_flagged-report.json");
+
+// Applies all text corrections (period/escape normalization) so raw downloaded
+// and committed values can be compared on equal footing (see change-detection check below).
+function normalizeTranslation(text, langId) {
+  return normalizePeriods(normalizeEscapedBackslashes(text), langId).trimEnd();
+}
 
 // Pushes normalized values (full-width period fixes, trailing-whitespace
 // trims) back up to Crowdin so the correction sticks - otherwise Crowdin
@@ -130,11 +137,20 @@ async function main() {
 
       const cleanUpdates = new Map();
       for (const [key, rawNewValue] of newMap) {
-        const newValue = normalizePeriods(rawNewValue, langId).trimEnd();
+        const newValue = normalizeTranslation(rawNewValue, langId);
         if (newValue !== rawNewValue) {
           textCorrections.push({ key, language: langId, value: newValue });
         }
-        if (oldMap.get(key) === newValue) continue;
+        const oldValue = oldMap.get(key);
+        if (oldValue === newValue) continue;
+
+        // If normalized values match, only our own formatting changed (e.g., fresh Crowdin re-export).
+        // Apply directly without re-checking content safety to prevent false positives on already-reviewed text.
+        if (oldValue !== undefined && normalizeTranslation(oldValue, langId) === newValue) {
+          cleanUpdates.set(key, newValue);
+          continue;
+        }
+
         const { flagged, matches, reasons } = await checkContentIssues(
           newValue,
           langId,
@@ -146,7 +162,7 @@ async function main() {
             file: fileName,
             key,
             language: langId,
-            oldValue: oldMap.get(key) ?? "",
+            oldValue: oldValue ?? "",
             existedBefore: oldMap.has(key),
             newValue,
             matchedWords: matches,
