@@ -34,7 +34,7 @@ const {
   ENTRY_RE,
 } = require("./lib/content-safety");
 const {
-  pushAndApproveTranslation,
+  pushTranslationMirroringApproval,
   getProjectLanguageIds,
   resolveCrowdinLanguageId,
   resolveStringId,
@@ -77,12 +77,12 @@ async function pushTextCorrections(corrections) {
     return;
   }
 
-  const approve = process.env.CROWDIN_SKIP_APPROVAL !== "true";
+  const forceNoApproval = process.env.CROWDIN_SKIP_APPROVAL === "true";
   const projectLanguageIds = await getProjectLanguageIds(token, projectId);
   const stringIdCache = new Map();
   const languageIdCache = new Map();
 
-  for (const { key, language, value } of corrections) {
+  for (const { key, language, oldValue, value } of corrections) {
     if (!languageIdCache.has(language)) {
       languageIdCache.set(language, resolveCrowdinLanguageId(language, projectLanguageIds));
     }
@@ -98,8 +98,16 @@ async function pushTextCorrections(corrections) {
         console.warn(`WARNING: no Crowdin string found for identifier "${key}" - skipping text correction.`);
         continue;
       }
-      await pushAndApproveTranslation(token, projectId, stringId, languageId, value, approve);
-      console.log(`Pushed text correction to Crowdin: [${key}] (${language}), ${approve ? "approved" : "pending approval"}.`);
+      const approved = await pushTranslationMirroringApproval(
+        token,
+        projectId,
+        stringId,
+        languageId,
+        oldValue,
+        value,
+        { forceNoApproval },
+      );
+      console.log(`Pushed text correction to Crowdin: [${key}] (${language}), ${approved ? "approved" : "pending approval"}.`);
     } catch (err) {
       console.warn(`WARNING: failed to push text correction for [${key}] (${language}): ${err.message}`);
     }
@@ -144,7 +152,10 @@ async function main() {
       for (const [key, rawNewValue] of newMap) {
         const newValue = normalizeTranslation(rawNewValue, langId);
         if (newValue !== rawNewValue) {
-          textCorrections.push({ key, language: langId, value: newValue });
+          // oldValue here is what's currently live on Crowdin (rawNewValue) -
+          // pushTextCorrections mirrors whatever approval status *that*
+          // translation has onto the corrected one.
+          textCorrections.push({ key, language: langId, oldValue: rawNewValue, value: newValue });
         }
         const oldValue = oldMap.get(key);
         if (oldValue === newValue) continue;

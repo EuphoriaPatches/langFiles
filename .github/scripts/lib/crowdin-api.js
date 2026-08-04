@@ -61,38 +61,74 @@ async function deleteTranslation(token, projectId, translationId) {
   await crowdinRequest(token, "DELETE", `/projects/${projectId}/translations/${translationId}`);
 }
 
-// Submits `text` as a translation for stringId+languageId and (by default)
-// approves it - used for translations we're pushing on a translator's
-// behalf (they didn't type this exact text into Crowdin themselves, but
-// it's a direct derivative of what they did submit, e.g. a hand-synced
-// value or an automated punctuation fix) rather than actual
-// community-submitted work awaiting review. Falls back to approving the
-// existing translation instead of creating a duplicate, since Crowdin
-// rejects a second identical one (see isDuplicateTranslationError).
+async function listApprovals(token, projectId, stringId, languageId) {
+  const result = await crowdinRequest(
+    token,
+    "GET",
+    `/projects/${projectId}/approvals?stringId=${stringId}&languageId=${languageId}`,
+  );
+  return (result.data || []).map((item) => item.data);
+}
+
+async function isTranslationApproved(token, projectId, stringId, languageId, translationId) {
+  const approvals = await listApprovals(token, projectId, stringId, languageId);
+  return approvals.some((a) => a.translationId === translationId);
+}
+
+// Submits `newText` as a translation for stringId+languageId, replacing
+// `oldText` - used for edits we're pushing on a translator's behalf (a
+// hand-synced value, or an automated punctuation/escape/NBSP fix) that are
+// direct derivatives of what they already submitted, rather than new
+// community-submitted work awaiting review. Rather than blindly
+// (dis)approving the result, it mirrors whatever `oldText`'s own approval
+// status currently is: if a human had already approved it, the edit - which
+// doesn't change the actual translation, just its mechanical formatting -
+// keeps that approved status; if it was still pending review, the edit
+// stays pending too, so it doesn't sneak past human review.
 //
-// Pass `approve: false` (wired to the workflow's disable_crowdin_auto_approval
-// input) to submit without approving, e.g. while validating that these
-// automated pushes are producing the right text before trusting them
-// unattended.
-async function pushAndApproveTranslation(token, projectId, stringId, languageId, text, approve = true) {
+// Pass `forceNoApproval: true` (wired to the workflow's
+// disable_crowdin_auto_approval input) to always leave the result pending,
+// e.g. while validating that these automated pushes are producing the right
+// text before trusting them unattended. Falls back to approving/reusing the
+// existing translation instead of creating a duplicate, since Crowdin
+// rejects a second identical one (see isDuplicateTranslationError). Returns
+// whether the result ended up approved.
+async function pushTranslationMirroringApproval(
+  token,
+  projectId,
+  stringId,
+  languageId,
+  oldText,
+  newText,
+  { forceNoApproval = false } = {},
+) {
+  let shouldApprove = false;
+  if (!forceNoApproval) {
+    const oldTranslation = await findMatchingTranslation(token, projectId, stringId, languageId, oldText);
+    if (oldTranslation) {
+      shouldApprove = await isTranslationApproved(token, projectId, stringId, languageId, oldTranslation.id);
+    }
+  }
+
   let translationId;
   try {
     const translation = await crowdinRequest(
       token,
       "POST",
       `/projects/${projectId}/translations`,
-      { stringId, languageId, text },
+      { stringId, languageId, text: newText },
     );
     translationId = translation.data.id;
   } catch (err) {
     if (!isDuplicateTranslationError(err)) throw err;
-    const existing = await findMatchingTranslation(token, projectId, stringId, languageId, text);
+    const existing = await findMatchingTranslation(token, projectId, stringId, languageId, newText);
     if (!existing) throw err;
     translationId = existing.id;
   }
-  if (approve) {
+  if (shouldApprove) {
     await crowdinRequest(token, "POST", `/projects/${projectId}/approvals`, { translationId });
   }
+  return shouldApprove;
 }
 
 // Get the list of language IDs that exist in the Crowdin project, so we can
@@ -145,7 +181,9 @@ module.exports = {
   listTranslations,
   findMatchingTranslation,
   deleteTranslation,
-  pushAndApproveTranslation,
+  listApprovals,
+  isTranslationApproved,
+  pushTranslationMirroringApproval,
   getProjectLanguageIds,
   resolveCrowdinLanguageId,
   resolveStringId,

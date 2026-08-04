@@ -25,7 +25,7 @@ on:
         default: false
         required: true
       disable_crowdin_auto_approval:
-        description: "Don't auto-approve translations pushed to Crowdin - leaves them pending review instead"
+        description: "Force translations pushed to Crowdin to stay pending review, instead of mirroring the approval status of what they replaced"
         type: boolean
         default: false
         required: true

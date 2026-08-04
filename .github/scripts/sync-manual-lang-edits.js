@@ -7,7 +7,7 @@ const { execFileSync } = require("child_process");
 const path = require("path");
 const { REPO_ROOT, loadLangMap } = require("./lib/content-safety");
 const {
-  pushAndApproveTranslation,
+  pushTranslationMirroringApproval,
   getProjectLanguageIds,
   resolveCrowdinLanguageId,
   resolveStringId,
@@ -67,7 +67,7 @@ async function main() {
     return;
   }
 
-  const approve = process.env.CROWDIN_SKIP_APPROVAL !== "true";
+  const forceNoApproval = process.env.CROWDIN_SKIP_APPROVAL === "true";
   const projectLanguageIds = await getProjectLanguageIds(token, projectId);
   const stringIdCache = new Map();
   let pushedCount = 0;
@@ -108,9 +108,17 @@ async function main() {
       }
 
       try {
-        await pushAndApproveTranslation(token, projectId, stringId, languageId, newValue, approve);
+        const approved = await pushTranslationMirroringApproval(
+          token,
+          projectId,
+          stringId,
+          languageId,
+          oldMap.get(key),
+          newValue,
+          { forceNoApproval },
+        );
         console.log(
-          `Synced ${fileName} [${key}] -> Crowdin (${languageId}), ${approve ? "approved" : "pending approval"}.`,
+          `Synced ${fileName} [${key}] -> Crowdin (${languageId}), ${approved ? "approved" : "pending approval"}.`,
         );
         pushedCount++;
       } catch (err) {
