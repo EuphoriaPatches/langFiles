@@ -373,13 +373,19 @@ async function checkContentIssues(text, langId, englishSourceValue, exceptions) 
 // - CJK: ASCII "." doesn't render, so normalizes to "。. " (visible "。" + delimiter ". ").
 // - Merges consecutive period/space runs to prevent duplicate markers.
 // - Ignores "." inside URLs or version strings (e.g. "r5.9").
+// - Converts spaces to NBSP to prevent unwanted wrapping (convertSpacesToNbsp).
 const CJK_LANG_PREFIXES = new Set(["zh", "ja"]);
+
+function isCjkLanguage(langId) {
+  return CJK_LANG_PREFIXES.has((langId || "").slice(0, 2).toLowerCase());
+}
+
 const SAFE_ASCII_PERIOD = "(?:\\.(?![A-Za-z0-9])|(?<![A-Za-z0-9])\\.)";
 const CJK_PERIOD_RUN_RE = new RegExp(`(?:${SAFE_ASCII_PERIOD}|。)[。.\\s]*`, "g");
 const FULL_WIDTH_PERIOD_RE = /。[。.\s]*/g;
 
 function normalizePeriods(text, langId) {
-  const cjk = CJK_LANG_PREFIXES.has((langId || "").slice(0, 2).toLowerCase());
+  const cjk = isCjkLanguage(langId);
   const re = cjk ? CJK_PERIOD_RUN_RE : FULL_WIDTH_PERIOD_RE;
   const marker = cjk ? "。. " : ". ";
   const markerAtEnd = cjk ? "。." : ".";
@@ -395,6 +401,36 @@ const DOUBLED_ESCAPE_RE = /\\{2,}(?=[nrt\\])/g;
 
 function normalizeEscapedBackslashes(text) {
   return text.replace(DOUBLED_ESCAPE_RE, "\\");
+}
+
+// Replaces spaces in CJK text with non-breaking spaces (NBSP) to prevent unwanted character-wrapping in Minecraft.
+// Preserves literal spaces after the "。. " marker and between two ASCII characters.
+// Must run after normalizePeriods.
+const NBSP = "\u00A0";
+const ASCII_CHAR_RE = /[\x21-\x7E]/;
+
+function isAsciiChar(ch) {
+  return ch !== undefined && ASCII_CHAR_RE.test(ch);
+}
+
+function convertSpacesToNbsp(text, langId) {
+  if (!isCjkLanguage(langId)) return text;
+  let result = "";
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (ch !== " ") {
+      result += ch;
+      continue;
+    }
+    if (text.slice(i - 2, i) === "。.") {
+      result += " ";
+    } else if (isAsciiChar(text[i - 1]) && isAsciiChar(text[i + 1])) {
+      result += " ";
+    } else {
+      result += NBSP;
+    }
+  }
+  return result;
 }
 
 // ---------------------------------------------------------------------
@@ -542,6 +578,7 @@ module.exports = {
   checkContentIssues,
   normalizePeriods,
   normalizeEscapedBackslashes,
+  convertSpacesToNbsp,
   splitLines,
   detectEol,
   loadLangMap,

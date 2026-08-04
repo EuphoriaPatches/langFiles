@@ -23,6 +23,7 @@ const {
   checkContentIssues,
   normalizePeriods,
   normalizeEscapedBackslashes,
+  convertSpacesToNbsp,
   loadSafeTermExceptions,
   splitLines,
   loadLangMap,
@@ -43,10 +44,14 @@ const NEW_LANG_DIR = path.join(REPO_ROOT, "_new");
 const NEW_WEBSITE_DIR = path.join(REPO_ROOT, "_new", "website");
 const REPORT_PATH = path.join(REPO_ROOT, "_flagged-report.json");
 
-// Applies all text corrections (period/escape normalization) so raw downloaded
-// and committed values can be compared on equal footing (see change-detection check below).
+// Applies all text corrections (period/escape normalization, CJK NBSP
+// word-wrap fix) so raw downloaded and committed values can be compared on
+// equal footing (see change-detection check below). convertSpacesToNbsp
+// must run after normalizePeriods, since it protects the marker space
+// normalizePeriods just inserted.
 function normalizeTranslation(text, langId) {
-  return normalizePeriods(normalizeEscapedBackslashes(text), langId).trimEnd();
+  const periodsFixed = normalizePeriods(normalizeEscapedBackslashes(text), langId);
+  return convertSpacesToNbsp(periodsFixed, langId).trimEnd();
 }
 
 // Pushes normalized values (full-width period fixes, trailing-whitespace
