@@ -113,7 +113,7 @@ option.info21.comment=请查看 FAQ 页面去查找常见问题的解答。. §d
 
 option.info22=§d滚动菜单以查看更多设置
 value.info22.0=
-option.info22.comment=使用较大的 GUI 尺寸时, 部分设置可能被隐藏, 向下滚动将显示它们.
+option.info22.comment=使用较大的 GUI 尺寸时, 部分设置可能被隐藏, 向下滚动将显示它们。.
 
 #Style
 option.SHADER_STYLE=视觉风格
@@ -227,7 +227,7 @@ screen.WATER_COLOR_SETTINGS=水面颜色
 screen.UNDERWATER_COLOR_SETTINGS=水下颜色
 
 screen.WATER_WAVE_SETTINGS=水面法线摇晃 §e[*]§r
-screen.WATER_WAVE_SETTINGS.comment=用于自定义设置水外看到的指向性水面波浪(法线)的设置. §e[*]§r 本选项仅在 水体风格 设置为 Reimagined + 水波 或 Unbound 时生效.
+screen.WATER_WAVE_SETTINGS.comment=用于自定义设置水外看到的指向性水面波浪(法线)的设置。. §e[*]§r 本选项仅在 水体风格 设置为 Reimagined + 水波 或 Unbound 时生效。.
 
 screen.WAVING_SETTINGS=摇晃的纹理
 screen.WAVING_SETTINGS.comment=与纹理摇晃相关的设置。.
@@ -329,14 +329,14 @@ value.SSAO_QUALI_DEFINE.2=§e中
 value.SSAO_QUALI_DEFINE.3=§c高
 
 option.ANISOTROPIC_FILTER=纹理过滤
-option.ANISOTROPIC_FILTER.comment=通过各向异性过滤提高 mipmaped 纹理的质量. §e[*]§r 请确保视频设置中的 Mipmap 级别已设置为最大值 (4) , 否则得不到好的效果.
+option.ANISOTROPIC_FILTER.comment=通过各向异性过滤提高 mipmaped 纹理的质量。. §e[*]§r 请确保视频设置中的 Mipmap 级别已设置为最大值 (4) , 否则得不到好的效果。.
 value.ANISOTROPIC_FILTER.0=§a关
 value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=高级颜色追踪 §e[*]§r
-option.COLORED_LIGHTING.comment=使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级颜色追踪独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上. §c[-]§r 彩色照明会在遇到不完整方块和模组方块时产生泄漏问题.
+option.COLORED_LIGHTING.comment=使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源。. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效。. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用。. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级颜色追踪独占特性 菜单中单独禁用或启用它们。. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上。. §c[-]§r 彩色照明会在遇到不完整方块和模组方块时产生泄漏问题。.
 value.COLORED_LIGHTING.0=§a关
 value.COLORED_LIGHTING.128=§c4 区块
 value.COLORED_LIGHTING.192=§c6 区块
@@ -584,7 +584,7 @@ option.UNDERWATERCOLOR_G=水下颜色 - 绿色 - 倍率
 option.UNDERWATERCOLOR_B=水下颜色 - 蓝色 - 倍率
 
 option.WATER_BUMPINESS=水波强度
-option.WATER_BUMPINESS.comment=调节在水外看到的指向性水面波浪(法线)的强度.
+option.WATER_BUMPINESS.comment=调节在水外看到的指向性水面波浪(法线)的强度。.
 
 option.WATER_BUMP_SMALL=水波强度 - 小型波浪
 option.WATER_BUMP_SMALL.comment=调节相较于其他水波更小的水波的强度。.
@@ -596,10 +596,10 @@ option.WATER_BUMP_BIG=水波强度 - 大型波浪
 option.WATER_BUMP_BIG.comment=调节相较于其他水波更大的水波的强度。.
 
 option.WATER_SPEED_MULT=水波速度
-option.WATER_SPEED_MULT.comment=调节在水外看到的指向性水面波浪(法线)的移动速度.
+option.WATER_SPEED_MULT.comment=调节在水外看到的指向性水面波浪(法线)的移动速度。.
 
 option.WATER_SIZE_MULT=水波大小
-option.WATER_SIZE_MULT.comment=调节在水外看到的指向性水面波浪(法线)的大小.
+option.WATER_SIZE_MULT.comment=调节在水外看到的指向性水面波浪(法线)的大小。.
 
 option.SUN_ANGLE=日月斜角
 option.SUN_ANGLE.comment=调节日月相对于世界在正午时偏转的角度。. §a[+]§r Reimagined 的照明模型被特别优化到日月角度为 0° 时和其他角度效果一样好。.
@@ -870,10 +870,10 @@ option.MIRROR_TINTED_GLASS=镜面遮光玻璃
 option.MIRROR_TINTED_GLASS.comment=增加遮光玻璃的反射率和不透明度。. 启用世界空间发射以获得最好的结果。.
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=远距离玻璃反射增强
-option.MORE_REFLECTIVE_DISTANT_GLASS.comment=提高远处玻璃的反光性和不透明度来使带玻璃窗的建筑看起来更美观.
+option.MORE_REFLECTIVE_DISTANT_GLASS.comment=提高远处玻璃的反光性和不透明度来使带玻璃窗的建筑看起来更美观。.
 
 option.HIDE_ARMOR=隐藏盔甲 §e[*]§r
-option.HIDE_ARMOR.comment=隐藏玩家和所有实体装备的盔甲和鞘翅. 鞘翅仅在飞行时展示. §e[*]§r 此设置仅在 Iris 加载器下生效. §e[*]§r "对主玩家" 选项会在其他穿盔甲的实体靠近主玩家时出现混乱问题.
+option.HIDE_ARMOR.comment=隐藏玩家和所有实体装备的盔甲和鞘翅。. 鞘翅仅在飞行时展示。. §e[*]§r 此设置仅在 Iris 加载器下生效。. §e[*]§r "对主玩家" 选项会在其他穿盔甲的实体靠近主玩家时出现混乱问题。.
 value.HIDE_ARMOR.0=关
 value.HIDE_ARMOR.1=对主玩家 §e[*]§r
 value.HIDE_ARMOR.2=对所有实体
@@ -889,7 +889,7 @@ option.LESS_LAVA_FOG=岩浆/细雪内更好的能见度
 option.LESS_LAVA_FOG.comment=减少岩浆和细雪内的雾气, 在陷入其中时提高能见度。.
 
 option.REDUCE_CLOSE_PARTICLES=近处粒子减少
-option.REDUCE_CLOSE_PARTICLES.comment=降低靠近玩家的粒子的不透明度, 提高能见度.
+option.REDUCE_CLOSE_PARTICLES.comment=降低靠近玩家的粒子的不透明度, 提高能见度。.
 
 option.SNOWY_WORLD=覆雪世界
 option.SNOWY_WORLD.comment=使霜雪覆盖整个世界。.
@@ -1080,7 +1080,7 @@ option.WAVING_LAVA=岩浆纹理摇晃
 option.WAVING_LAVA.comment=为岩浆添加持续的运动效果。. §e[*]§r 岩浆的摇晃是特殊的, 不受 封闭区域不摇晃 选项影响。.
 
 option.WAVING_LILY_PAD=睡莲摇晃 §c[-]§r
-option.WAVING_LILY_PAD.comment=给睡莲和青蛙卵添加摇晃的效果模拟水波影响. §c[-]§r 会导致在含水方块上的睡莲叶不可见.
+option.WAVING_LILY_PAD.comment=给睡莲和青蛙卵添加摇晃的效果模拟水波影响。. §c[-]§r 会导致在含水方块上的睡莲叶不可见。.
 
 option.WAVING_WATER_VERTEX=水面高度摇晃
 option.WAVING_WATER_VERTEX.comment=给水面添加摇晃运动模拟风的吹拂。. §e[*]§r 本设置与 水波强度 选项无关。.
@@ -2156,7 +2156,7 @@ option.ACES_EXPOSURE.comment=调节图像的整体亮度。.
 option.ACES_WHITE=白色曲线
 option.ACES_WHITE.comment=调节色调达到全白的容易程度。.
 option.ACES_BRIGHTNESS_ROLLOFF=亮度滚降
-option.ACES_BRIGHTNESS_ROLLOFF.comment=调节 ACES 色调的亮度滚降.
+option.ACES_BRIGHTNESS_ROLLOFF.comment=调节 ACES 色调的亮度滚降。.
 
 option.AGX_LOOK=AgX 外观
 value.AGX_LOOK.0=默认
@@ -2730,7 +2730,7 @@ option.NIGHT_CAVE_DESATURATION.comment=对洞穴环境的色彩去饱和。.
 value.NIGHT_CAVE_DESATURATION.0=关
 
 option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=光源近处效果移除
-option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=移除靠近光源区域的去饱和效果.
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=移除靠近光源区域的去饱和效果。.
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=手持光源时移除效果
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=当手持光源时移除去饱和效果。.
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=夜视状态时移除效果
@@ -3017,7 +3017,7 @@ value.CUSTOM_SKY_SUPPORT_SLIDER.0=关
 value.CUSTOM_SKY_SUPPORT_SLIDER.10=开
 
 option.CUSTOM_SKY_MOD_SUPPORT=天空类模组支持
-option.CUSTOM_SKY_MOD_SUPPORT.comment=添加对自定义天空类型模组的支持(如 Caelum 或 Astrocraft). 可能会破坏其他模组的兼容性, 没有对大量模组进行测试.
+option.CUSTOM_SKY_MOD_SUPPORT.comment=添加对自定义天空类型模组的支持(如 Caelum 或 Astrocraft)。. 可能会破坏其他模组的兼容性, 没有对大量模组进行测试。.
 
 option.SAVE_SKYBOX_DATA_OVERRIDE=储存天空盒数据
 option.SAVE_SKYBOX_DATA_OVERRIDE.comment=允许光影包将自定义天空盒储存在缓冲中。. 这在天空盒模组存在时会自动发生, 但可能会与其他会改变天空盒的模组发生冲突，因此此设定允许你关闭此功能。.

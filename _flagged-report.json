@@ -1,0 +1,366 @@
+[
+  {
+    "file": "zh_CN.lang",
+    "key": "option.info22.comment",
+    "language": "zh_CN",
+    "oldValue": "使用较大的 GUI 尺寸时, 部分设置可能被隐藏, 向下滚动将显示它们.",
+    "existedBefore": true,
+    "newValue": "使用较大的 GUI 尺寸时, 部分设置可能被隐藏, 向下滚动将显示它们。.",
+    "matchedWords": [
+      "滚"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "screen.WATER_WAVE_SETTINGS.comment",
+    "language": "zh_CN",
+    "oldValue": "用于自定义设置水外看到的指向性水面波浪(法线)的设置. §e[*]§r 本选项仅在 水体风格 设置为 Reimagined + 水波 或 Unbound 时生效.",
+    "existedBefore": true,
+    "newValue": "用于自定义设置水外看到的指向性水面波浪(法线)的设置。. §e[*]§r 本选项仅在 水体风格 设置为 Reimagined + 水波 或 Unbound 时生效。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.ANISOTROPIC_FILTER.comment",
+    "language": "zh_CN",
+    "oldValue": "通过各向异性过滤提高 mipmaped 纹理的质量. §e[*]§r 请确保视频设置中的 Mipmap 级别已设置为最大值 (4) , 否则得不到好的效果.",
+    "existedBefore": true,
+    "newValue": "通过各向异性过滤提高 mipmaped 纹理的质量。. §e[*]§r 请确保视频设置中的 Mipmap 级别已设置为最大值 (4) , 否则得不到好的效果。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.COLORED_LIGHTING.comment",
+    "language": "zh_CN",
+    "oldValue": "使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级颜色追踪独占特性 菜单中单独禁用或启用它们. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上. §c[-]§r 彩色照明会在遇到不完整方块和模组方块时产生泄漏问题.",
+    "existedBefore": true,
+    "newValue": "使用体素化和泛洪填充技术为方块光添加颜色的同时引入新的光源。. §e[*]§r 本选项的功能仅在 Iris 光影加载器和支持的显卡设备下才能生效。. §e[*]§r 本选项会在 实时阴影 选项被设置为关时自动禁用。. §a[+]§r 该技术还同时启用了其他的特性, 可在 其他 -> 高级颜色追踪独占特性 菜单中单独禁用或启用它们。. §c[-]§r 为本选项设置过高的区块数值对性能会有超出预期的影响, 每提高一级区块范围覆盖大小的增量性能成本都会超过上一级数值的两倍以上。. §c[-]§r 彩色照明会在遇到不完整方块和模组方块时产生泄漏问题。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.WATER_BUMPINESS.comment",
+    "language": "zh_CN",
+    "oldValue": "调节在水外看到的指向性水面波浪(法线)的强度.",
+    "existedBefore": true,
+    "newValue": "调节在水外看到的指向性水面波浪(法线)的强度。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.WATER_SPEED_MULT.comment",
+    "language": "zh_CN",
+    "oldValue": "调节在水外看到的指向性水面波浪(法线)的移动速度.",
+    "existedBefore": true,
+    "newValue": "调节在水外看到的指向性水面波浪(法线)的移动速度。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.WATER_SIZE_MULT.comment",
+    "language": "zh_CN",
+    "oldValue": "调节在水外看到的指向性水面波浪(法线)的大小.",
+    "existedBefore": true,
+    "newValue": "调节在水外看到的指向性水面波浪(法线)的大小。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.MORE_REFLECTIVE_DISTANT_GLASS.comment",
+    "language": "zh_CN",
+    "oldValue": "提高远处玻璃的反光性和不透明度来使带玻璃窗的建筑看起来更美观.",
+    "existedBefore": true,
+    "newValue": "提高远处玻璃的反光性和不透明度来使带玻璃窗的建筑看起来更美观。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.HIDE_ARMOR.comment",
+    "language": "zh_CN",
+    "oldValue": "隐藏玩家和所有实体装备的盔甲和鞘翅. 鞘翅仅在飞行时展示. §e[*]§r 此设置仅在 Iris 加载器下生效. §e[*]§r \"对主玩家\" 选项会在其他穿盔甲的实体靠近主玩家时出现混乱问题.",
+    "existedBefore": true,
+    "newValue": "隐藏玩家和所有实体装备的盔甲和鞘翅。. 鞘翅仅在飞行时展示。. §e[*]§r 此设置仅在 Iris 加载器下生效。. §e[*]§r \"对主玩家\" 选项会在其他穿盔甲的实体靠近主玩家时出现混乱问题。.",
+    "matchedWords": [
+      "靠"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.REDUCE_CLOSE_PARTICLES.comment",
+    "language": "zh_CN",
+    "oldValue": "降低靠近玩家的粒子的不透明度, 提高能见度.",
+    "existedBefore": true,
+    "newValue": "降低靠近玩家的粒子的不透明度, 提高能见度。.",
+    "matchedWords": [
+      "靠"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.WAVING_LILY_PAD.comment",
+    "language": "zh_CN",
+    "oldValue": "给睡莲和青蛙卵添加摇晃的效果模拟水波影响. §c[-]§r 会导致在含水方块上的睡莲叶不可见.",
+    "existedBefore": true,
+    "newValue": "给睡莲和青蛙卵添加摇晃的效果模拟水波影响。. §c[-]§r 会导致在含水方块上的睡莲叶不可见。.",
+    "matchedWords": [
+      "卵"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.ACES_BRIGHTNESS_ROLLOFF.comment",
+    "language": "zh_CN",
+    "oldValue": "调节 ACES 色调的亮度滚降.",
+    "existedBefore": true,
+    "newValue": "调节 ACES 色调的亮度滚降。.",
+    "matchedWords": [
+      "滚"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment",
+    "language": "zh_CN",
+    "oldValue": "移除靠近光源区域的去饱和效果.",
+    "existedBefore": true,
+    "newValue": "移除靠近光源区域的去饱和效果。.",
+    "matchedWords": [
+      "靠"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_CN.lang",
+    "key": "option.CUSTOM_SKY_MOD_SUPPORT.comment",
+    "language": "zh_CN",
+    "oldValue": "添加对自定义天空类型模组的支持(如 Caelum 或 Astrocraft). 可能会破坏其他模组的兼容性, 没有对大量模组进行测试.",
+    "existedBefore": true,
+    "newValue": "添加对自定义天空类型模组的支持(如 Caelum 或 Astrocraft)。. 可能会破坏其他模组的兼容性, 没有对大量模组进行测试。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "screen.WATER_WAVE_SETTINGS.comment",
+    "language": "zh_HK",
+    "oldValue": "用於自定義設定水外看到的指向性水面波浪(法綫)的設定. §e[*]§r 本選項僅在 水體風格 設定為 Reimagined + 水波 或 Unbound 時生效.",
+    "existedBefore": true,
+    "newValue": "用於自定義設定水外看到的指向性水面波浪(法綫)的設定。. §e[*]§r 本選項僅在 水體風格 設定為 Reimagined + 水波 或 Unbound 時生效。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.ANISOTROPIC_FILTER.comment",
+    "language": "zh_HK",
+    "oldValue": "通過各向異性過濾提高 mipmapped 紋理的質量. §e[*]§r 請確保視頻設定中的 Mipmap 級別已設定為最大值 (4) , 否則得不到好的效果.",
+    "existedBefore": true,
+    "newValue": "通過各向異性過濾提高 mipmapped 紋理的質量。. §e[*]§r 請確保視頻設定中的 Mipmap 級別已設定為最大值 (4) , 否則得不到好的效果。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.COLORED_LIGHTING.comment",
+    "language": "zh_HK",
+    "oldValue": "使用體素化和泛洪填充技術為方塊光添加顔色的同時引入新的光源. §e[*]§r 本選項的功能僅在 Iris 光影加載器和支持的顯卡設備下才能生效. §e[*]§r 本選項會在 實時陰影 選項被設定為關時自動禁用. §a[+]§r 該技術還同時啓用了其他的特性, 可在 其他 -> 高級顔色追蹤獨佔特性 菜單中單獨禁用或啓用它們. §c[-]§r 為本選項設定過高的區塊數值對性能會有超出預期的影響, 每提高一級區塊範圍覆蓋大小的增量性能成本都會超過上一級數值的兩倍以上. §c[-]§r 彩色照明會在遇到不完整方塊和模組方塊時產生泄漏問題.",
+    "existedBefore": true,
+    "newValue": "使用體素化和泛洪填充技術為方塊光添加顔色的同時引入新的光源。. §e[*]§r 本選項的功能僅在 Iris 光影加載器和支持的顯卡設備下才能生效。. §e[*]§r 本選項會在 實時陰影 選項被設定為關時自動禁用。. §a[+]§r 該技術還同時啓用了其他的特性, 可在 其他 -> 高級顔色追蹤獨佔特性 菜單中單獨禁用或啓用它們。. §c[-]§r 為本選項設定過高的區塊數值對性能會有超出預期的影響, 每提高一級區塊範圍覆蓋大小的增量性能成本都會超過上一級數值的兩倍以上。. §c[-]§r 彩色照明會在遇到不完整方塊和模組方塊時產生泄漏問題。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.WATER_BUMPINESS.comment",
+    "language": "zh_HK",
+    "oldValue": "調節在水外看到的指向性水面波浪(法綫)的強度.",
+    "existedBefore": true,
+    "newValue": "調節在水外看到的指向性水面波浪(法綫)的強度。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.WATER_SPEED_MULT.comment",
+    "language": "zh_HK",
+    "oldValue": "調節在水外看到的指向性水面波浪(法綫)的移動速度.",
+    "existedBefore": true,
+    "newValue": "調節在水外看到的指向性水面波浪(法綫)的移動速度。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.WATER_SIZE_MULT.comment",
+    "language": "zh_HK",
+    "oldValue": "調節在水外看到的指向性水面波浪(法綫)的大小.",
+    "existedBefore": true,
+    "newValue": "調節在水外看到的指向性水面波浪(法綫)的大小。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.MORE_REFLECTIVE_DISTANT_GLASS.comment",
+    "language": "zh_HK",
+    "oldValue": "提高遠處玻璃的反光性和不透明度來使帶玻璃窗的建築看起來更美觀.",
+    "existedBefore": true,
+    "newValue": "提高遠處玻璃的反光性和不透明度來使帶玻璃窗的建築看起來更美觀。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.HIDE_ARMOR.comment",
+    "language": "zh_HK",
+    "oldValue": "隱藏玩家和所有實體裝備的盔甲和鞘翅. 鞘翅僅在飛行時展示. §e[*]§r 此設定僅在 Iris 加載器下生效. §e[*]§r \"對主玩家\" 選項會在其他穿盔甲的實體靠近主玩家時出現混亂問題.",
+    "existedBefore": true,
+    "newValue": "隱藏玩家和所有實體裝備的盔甲和鞘翅。. 鞘翅僅在飛行時展示。. §e[*]§r 此設定僅在 Iris 加載器下生效。. §e[*]§r \"對主玩家\" 選項會在其他穿盔甲的實體靠近主玩家時出現混亂問題。.",
+    "matchedWords": [
+      "靠"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.REDUCE_CLOSE_PARTICLES.comment",
+    "language": "zh_HK",
+    "oldValue": "降低靠近玩家的粒子的不透明度, 提高能見度.",
+    "existedBefore": true,
+    "newValue": "降低靠近玩家的粒子的不透明度, 提高能見度。.",
+    "matchedWords": [
+      "靠"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.WAVING_LILY_PAD.comment",
+    "language": "zh_HK",
+    "oldValue": "給睡蓮和青蛙卵添加搖晃的效果模擬水波影響. §c[-]§r 會導致在含水方塊上的睡蓮葉不可見.",
+    "existedBefore": true,
+    "newValue": "給睡蓮和青蛙卵添加搖晃的效果模擬水波影響。. §c[-]§r 會導致在含水方塊上的睡蓮葉不可見。.",
+    "matchedWords": [
+      "卵"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment",
+    "language": "zh_HK",
+    "oldValue": "移除靠近光源區域的去飽和效果.",
+    "existedBefore": true,
+    "newValue": "移除靠近光源區域的去飽和效果。.",
+    "matchedWords": [
+      "靠"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  },
+  {
+    "file": "zh_HK.lang",
+    "key": "option.CUSTOM_SKY_MOD_SUPPORT.comment",
+    "language": "zh_HK",
+    "oldValue": "添加對自定義天空類型模組的支持(如 Caelum 或 Astrocraft). 可能會破壞其他模組的兼容性, 沒有對大量模組進行測試.",
+    "existedBefore": true,
+    "newValue": "添加對自定義天空類型模組的支持(如 Caelum 或 Astrocraft)。. 可能會破壞其他模組的兼容性, 沒有對大量模組進行測試。.",
+    "matchedWords": [
+      "性"
+    ],
+    "reasons": [
+      "profanity-match"
+    ]
+  }
+]

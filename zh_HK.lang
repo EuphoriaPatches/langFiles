@@ -213,7 +213,7 @@ screen.WATER_COLOR_SETTINGS=水面顔色
 screen.UNDERWATER_COLOR_SETTINGS=水下顔色
 
 screen.WATER_WAVE_SETTINGS=水面法綫搖晃 §e[*]§r
-screen.WATER_WAVE_SETTINGS.comment=用於自定義設定水外看到的指向性水面波浪(法綫)的設定. §e[*]§r 本選項僅在 水體風格 設定為 Reimagined + 水波 或 Unbound 時生效.
+screen.WATER_WAVE_SETTINGS.comment=用於自定義設定水外看到的指向性水面波浪(法綫)的設定。. §e[*]§r 本選項僅在 水體風格 設定為 Reimagined + 水波 或 Unbound 時生效。.
 
 screen.WAVING_SETTINGS=搖晃的紋理
 screen.WAVING_SETTINGS.comment=與紋理搖晃相關的設定。.
@@ -313,14 +313,14 @@ value.SSAO_QUALI_DEFINE.2=§e中
 value.SSAO_QUALI_DEFINE.3=§c高
 
 option.ANISOTROPIC_FILTER=紋理過濾
-option.ANISOTROPIC_FILTER.comment=通過各向異性過濾提高 mipmapped 紋理的質量. §e[*]§r 請確保視頻設定中的 Mipmap 級別已設定為最大值 (4) , 否則得不到好的效果.
+option.ANISOTROPIC_FILTER.comment=通過各向異性過濾提高 mipmapped 紋理的質量。. §e[*]§r 請確保視頻設定中的 Mipmap 級別已設定為最大值 (4) , 否則得不到好的效果。.
 value.ANISOTROPIC_FILTER.0=§a關
 value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
 value.ANISOTROPIC_FILTER.16=§4§l16x
 
 option.COLORED_LIGHTING=高級顔色追蹤 §e[*]§r
-option.COLORED_LIGHTING.comment=使用體素化和泛洪填充技術為方塊光添加顔色的同時引入新的光源. §e[*]§r 本選項的功能僅在 Iris 光影加載器和支持的顯卡設備下才能生效. §e[*]§r 本選項會在 實時陰影 選項被設定為關時自動禁用. §a[+]§r 該技術還同時啓用了其他的特性, 可在 其他 -> 高級顔色追蹤獨佔特性 菜單中單獨禁用或啓用它們. §c[-]§r 為本選項設定過高的區塊數值對性能會有超出預期的影響, 每提高一級區塊範圍覆蓋大小的增量性能成本都會超過上一級數值的兩倍以上. §c[-]§r 彩色照明會在遇到不完整方塊和模組方塊時產生泄漏問題.
+option.COLORED_LIGHTING.comment=使用體素化和泛洪填充技術為方塊光添加顔色的同時引入新的光源。. §e[*]§r 本選項的功能僅在 Iris 光影加載器和支持的顯卡設備下才能生效。. §e[*]§r 本選項會在 實時陰影 選項被設定為關時自動禁用。. §a[+]§r 該技術還同時啓用了其他的特性, 可在 其他 -> 高級顔色追蹤獨佔特性 菜單中單獨禁用或啓用它們。. §c[-]§r 為本選項設定過高的區塊數值對性能會有超出預期的影響, 每提高一級區塊範圍覆蓋大小的增量性能成本都會超過上一級數值的兩倍以上。. §c[-]§r 彩色照明會在遇到不完整方塊和模組方塊時產生泄漏問題。.
 value.COLORED_LIGHTING.0=§a關
 value.COLORED_LIGHTING.128=§c4 區塊
 value.COLORED_LIGHTING.192=§c6 區塊
@@ -568,7 +568,7 @@ option.UNDERWATERCOLOR_G=水下顔色 - 綠色 - 倍率
 option.UNDERWATERCOLOR_B=水下顔色 - 藍色 - 倍率
 
 option.WATER_BUMPINESS=水波強度
-option.WATER_BUMPINESS.comment=調節在水外看到的指向性水面波浪(法綫)的強度.
+option.WATER_BUMPINESS.comment=調節在水外看到的指向性水面波浪(法綫)的強度。.
 
 option.WATER_BUMP_SMALL=水波強度 - 小型波浪
 option.WATER_BUMP_SMALL.comment=調節相較於其他水波更小的水波的強度。.
@@ -580,10 +580,10 @@ option.WATER_BUMP_BIG=水波強度 - 大型波浪
 option.WATER_BUMP_BIG.comment=調節相較於其他水波更大的水波的強度。.
 
 option.WATER_SPEED_MULT=水波速度
-option.WATER_SPEED_MULT.comment=調節在水外看到的指向性水面波浪(法綫)的移動速度.
+option.WATER_SPEED_MULT.comment=調節在水外看到的指向性水面波浪(法綫)的移動速度。.
 
 option.WATER_SIZE_MULT=水波大小
-option.WATER_SIZE_MULT.comment=調節在水外看到的指向性水面波浪(法綫)的大小.
+option.WATER_SIZE_MULT.comment=調節在水外看到的指向性水面波浪(法綫)的大小。.
 
 option.SUN_ANGLE=日月斜角
 option.SUN_ANGLE.comment=調節日月相對於世界在正午時偏轉的角度。. §a[+]§r Reimagined 的照明模型被特別優化到日月角度為 0° 時和其他角度效果一樣好。.
@@ -852,10 +852,10 @@ option.MIRROR_TINTED_GLASS=鏡面遮光玻璃
 option.MIRROR_TINTED_GLASS.comment=增加遮光玻璃的反射率和不透明度。. 啓用世界空間發射以獲得最好的結果。.
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=遠距離玻璃反射增強
-option.MORE_REFLECTIVE_DISTANT_GLASS.comment=提高遠處玻璃的反光性和不透明度來使帶玻璃窗的建築看起來更美觀.
+option.MORE_REFLECTIVE_DISTANT_GLASS.comment=提高遠處玻璃的反光性和不透明度來使帶玻璃窗的建築看起來更美觀。.
 
 option.HIDE_ARMOR=隱藏盔甲 §e[*]§r
-option.HIDE_ARMOR.comment=隱藏玩家和所有實體裝備的盔甲和鞘翅. 鞘翅僅在飛行時展示. §e[*]§r 此設定僅在 Iris 加載器下生效. §e[*]§r "對主玩家" 選項會在其他穿盔甲的實體靠近主玩家時出現混亂問題.
+option.HIDE_ARMOR.comment=隱藏玩家和所有實體裝備的盔甲和鞘翅。. 鞘翅僅在飛行時展示。. §e[*]§r 此設定僅在 Iris 加載器下生效。. §e[*]§r "對主玩家" 選項會在其他穿盔甲的實體靠近主玩家時出現混亂問題。.
 value.HIDE_ARMOR.0=關
 value.HIDE_ARMOR.1=對主玩家 §e[*]§r
 value.HIDE_ARMOR.2=對所有實體
@@ -871,7 +871,7 @@ option.LESS_LAVA_FOG=巖漿/細雪內更好的能見度
 option.LESS_LAVA_FOG.comment=減少巖漿和細雪內的霧氣, 在陷入其中時提高能見度。.
 
 option.REDUCE_CLOSE_PARTICLES=近處粒子減少
-option.REDUCE_CLOSE_PARTICLES.comment=降低靠近玩家的粒子的不透明度, 提高能見度.
+option.REDUCE_CLOSE_PARTICLES.comment=降低靠近玩家的粒子的不透明度, 提高能見度。.
 
 option.SNOWY_WORLD=覆雪世界
 option.SNOWY_WORLD.comment=使霜雪覆蓋整個世界。.
@@ -1053,7 +1053,7 @@ option.WAVING_LAVA=巖漿紋理搖晃
 option.WAVING_LAVA.comment=為巖漿添加持續的運動效果。. §e[*]§r 巖漿的搖晃是特殊的, 不受 封閉區域不搖晃 選項影響。.
 
 option.WAVING_LILY_PAD=睡蓮搖晃 §c[-]§r
-option.WAVING_LILY_PAD.comment=給睡蓮和青蛙卵添加搖晃的效果模擬水波影響. §c[-]§r 會導致在含水方塊上的睡蓮葉不可見.
+option.WAVING_LILY_PAD.comment=給睡蓮和青蛙卵添加搖晃的效果模擬水波影響。. §c[-]§r 會導致在含水方塊上的睡蓮葉不可見。.
 
 option.WAVING_WATER_VERTEX=水面高度搖晃
 option.WAVING_WATER_VERTEX.comment=給水面添加搖晃運動模擬風的吹拂。. §e[*]§r 本設定與 水波強度 選項無關。.
@@ -2682,7 +2682,7 @@ option.NIGHT_CAVE_DESATURATION.comment=對洞穴環境的色彩去飽和。.
 value.NIGHT_CAVE_DESATURATION.0=關
 
 option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS=光源近處效果移除
-option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=移除靠近光源區域的去飽和效果.
+option.NIGHT_DESATURATION_REMOVE_NEAR_LIGHTS.comment=移除靠近光源區域的去飽和效果。.
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=手持光源時移除效果
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=當手持光源時移除去飽和效果。.
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=夜視狀態時移除效果
@@ -2969,7 +2969,7 @@ value.CUSTOM_SKY_SUPPORT_SLIDER.0=關
 value.CUSTOM_SKY_SUPPORT_SLIDER.10=開
 
 option.CUSTOM_SKY_MOD_SUPPORT=天空類模組支持
-option.CUSTOM_SKY_MOD_SUPPORT.comment=添加對自定義天空類型模組的支持(如 Caelum 或 Astrocraft). 可能會破壞其他模組的兼容性, 沒有對大量模組進行測試.
+option.CUSTOM_SKY_MOD_SUPPORT.comment=添加對自定義天空類型模組的支持(如 Caelum 或 Astrocraft)。. 可能會破壞其他模組的兼容性, 沒有對大量模組進行測試。.
 
 option.SAVE_SKYBOX_DATA_OVERRIDE=儲存天空盒數據
 option.SAVE_SKYBOX_DATA_OVERRIDE.comment=允許光影包將自定義天空盒儲存在緩衝中。. 這在天空盒模組存在時會自動發生, 但可能會與其他會改變天空盒的模組發生衝突，因此此設定允許你關閉此功能。.
