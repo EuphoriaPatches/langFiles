@@ -21,7 +21,7 @@ const path = require("path");
 const {
   REPO_ROOT,
   checkContentIssues,
-  normalizeFullWidthPeriods,
+  normalizePeriods,
   loadSafeTermExceptions,
   splitLines,
   loadLangMap,
@@ -65,6 +65,7 @@ async function pushTextCorrections(corrections) {
     return;
   }
 
+  const approve = process.env.CROWDIN_SKIP_APPROVAL !== "true";
   const projectLanguageIds = await getProjectLanguageIds(token, projectId);
   const stringIdCache = new Map();
   const languageIdCache = new Map();
@@ -85,8 +86,8 @@ async function pushTextCorrections(corrections) {
         console.warn(`WARNING: no Crowdin string found for identifier "${key}" - skipping text correction.`);
         continue;
       }
-      await pushAndApproveTranslation(token, projectId, stringId, languageId, value);
-      console.log(`Pushed text correction to Crowdin: [${key}] (${language})`);
+      await pushAndApproveTranslation(token, projectId, stringId, languageId, value, approve);
+      console.log(`Pushed text correction to Crowdin: [${key}] (${language}), ${approve ? "approved" : "pending approval"}.`);
     } catch (err) {
       console.warn(`WARNING: failed to push text correction for [${key}] (${language}): ${err.message}`);
     }
@@ -104,7 +105,7 @@ async function main() {
     : {};
 
   const flaggedReport = [];
-  // Punctuation fixes (see normalizeFullWidthPeriods) and trailing-whitespace
+  // Punctuation fixes (see normalizePeriods) and trailing-whitespace
   // trims need pushing back to Crowdin itself, not just committed here -
   // otherwise the next export still has the translator's original text and
   // we'd "fix" the same key over and over on every sync.
@@ -129,7 +130,7 @@ async function main() {
 
       const cleanUpdates = new Map();
       for (const [key, rawNewValue] of newMap) {
-        const newValue = normalizeFullWidthPeriods(rawNewValue).trimEnd();
+        const newValue = normalizePeriods(rawNewValue, langId).trimEnd();
         if (newValue !== rawNewValue) {
           textCorrections.push({ key, language: langId, value: newValue });
         }

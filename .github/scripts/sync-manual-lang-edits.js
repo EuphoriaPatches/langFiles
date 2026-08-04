@@ -67,6 +67,7 @@ async function main() {
     return;
   }
 
+  const approve = process.env.CROWDIN_SKIP_APPROVAL !== "true";
   const projectLanguageIds = await getProjectLanguageIds(token, projectId);
   const stringIdCache = new Map();
   let pushedCount = 0;
@@ -107,9 +108,9 @@ async function main() {
       }
 
       try {
-        await pushAndApproveTranslation(token, projectId, stringId, languageId, newValue);
+        await pushAndApproveTranslation(token, projectId, stringId, languageId, newValue, approve);
         console.log(
-          `Synced ${fileName} [${key}] -> Crowdin (${languageId}), approved.`,
+          `Synced ${fileName} [${key}] -> Crowdin (${languageId}), ${approve ? "approved" : "pending approval"}.`,
         );
         pushedCount++;
       } catch (err) {

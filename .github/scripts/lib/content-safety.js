@@ -368,22 +368,23 @@ async function checkContentIssues(text, langId, englishSourceValue, exceptions) 
 // Punctuation normalization
 // ---------------------------------------------------------------------
 
-// Some in-game text (e.g. option/screen "*.comment" tooltips) is split on
-// ". " to render as separate lines - a translator using their language's own
-// full-width period (e.g. Chinese/Japanese "。") instead of the ASCII "."
-// silently breaks that splitting. Swap it for ". " - also absorbing any
-// repeated "。", ASCII "." and/or whitespace that already immediately
-// follows it (a translator sometimes already typed their own ". " right
-// after their own "。", or doubled up "。。"), so the result is always a
-// single ". " rather than doubling up into ". . ". No trailing space is
-// added when the match runs to the very end of the value - there's nothing
-// after it to separate from, so a trailing space would just be stray
-// whitespace.
+// In-game tooltips split on ". " into separate lines.
+// - Non-CJK: Swaps full-width "。" for ". " to allow splitting.
+// - CJK: ASCII "." doesn't render, so normalizes to "。. " (visible "。" + delimiter ". ").
+// - Merges consecutive period/space runs to prevent duplicate markers.
+// - Ignores "." inside URLs or version strings (e.g. "r5.9").
+const CJK_LANG_PREFIXES = new Set(["zh", "ja"]);
+const SAFE_ASCII_PERIOD = "(?:\\.(?![A-Za-z0-9])|(?<![A-Za-z0-9])\\.)";
+const CJK_PERIOD_RUN_RE = new RegExp(`(?:${SAFE_ASCII_PERIOD}|。)[。.\\s]*`, "g");
 const FULL_WIDTH_PERIOD_RE = /。[。.\s]*/g;
 
-function normalizeFullWidthPeriods(text) {
-  return text.replace(FULL_WIDTH_PERIOD_RE, (match, offset) =>
-    offset + match.length >= text.length ? "." : ". ",
+function normalizePeriods(text, langId) {
+  const cjk = CJK_LANG_PREFIXES.has((langId || "").slice(0, 2).toLowerCase());
+  const re = cjk ? CJK_PERIOD_RUN_RE : FULL_WIDTH_PERIOD_RE;
+  const marker = cjk ? "。. " : ". ";
+  const markerAtEnd = cjk ? "。." : ".";
+  return text.replace(re, (match, offset) =>
+    offset + match.length >= text.length ? markerAtEnd : marker,
   );
 }
 
@@ -530,7 +531,7 @@ module.exports = {
   loadSafeTermExceptions,
   saveSafeTermExceptions,
   checkContentIssues,
-  normalizeFullWidthPeriods,
+  normalizePeriods,
   splitLines,
   detectEol,
   loadLangMap,

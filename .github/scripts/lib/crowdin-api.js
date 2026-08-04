@@ -61,15 +61,20 @@ async function deleteTranslation(token, projectId, translationId) {
   await crowdinRequest(token, "DELETE", `/projects/${projectId}/translations/${translationId}`);
 }
 
-// Submits `text` as a translation for stringId+languageId and approves it -
-// used for translations we're pushing on a translator's behalf (they didn't
-// type this exact text into Crowdin themselves, but it's a direct derivative
-// of what they did submit, e.g. a hand-synced value or an automated
-// punctuation fix) rather than actual community-submitted work awaiting
-// review. Falls back to approving the existing translation instead of
-// creating a duplicate, since Crowdin rejects a second identical one (see
-// isDuplicateTranslationError).
-async function pushAndApproveTranslation(token, projectId, stringId, languageId, text) {
+// Submits `text` as a translation for stringId+languageId and (by default)
+// approves it - used for translations we're pushing on a translator's
+// behalf (they didn't type this exact text into Crowdin themselves, but
+// it's a direct derivative of what they did submit, e.g. a hand-synced
+// value or an automated punctuation fix) rather than actual
+// community-submitted work awaiting review. Falls back to approving the
+// existing translation instead of creating a duplicate, since Crowdin
+// rejects a second identical one (see isDuplicateTranslationError).
+//
+// Pass `approve: false` (wired to the workflow's disable_crowdin_auto_approval
+// input) to submit without approving, e.g. while validating that these
+// automated pushes are producing the right text before trusting them
+// unattended.
+async function pushAndApproveTranslation(token, projectId, stringId, languageId, text, approve = true) {
   let translationId;
   try {
     const translation = await crowdinRequest(
@@ -85,7 +90,9 @@ async function pushAndApproveTranslation(token, projectId, stringId, languageId,
     if (!existing) throw err;
     translationId = existing.id;
   }
-  await crowdinRequest(token, "POST", `/projects/${projectId}/approvals`, { translationId });
+  if (approve) {
+    await crowdinRequest(token, "POST", `/projects/${projectId}/approvals`, { translationId });
+  }
 }
 
 // Get the list of language IDs that exist in the Crowdin project, so we can

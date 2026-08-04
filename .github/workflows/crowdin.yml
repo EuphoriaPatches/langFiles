@@ -24,6 +24,11 @@ on:
         type: boolean
         default: false
         required: true
+      disable_crowdin_auto_approval:
+        description: "Don't auto-approve translations pushed to Crowdin - leaves them pending review instead"
+        type: boolean
+        default: false
+        required: true
   schedule:
     # Runs after update-en-US.yml (midnight UTC), so any freshly pulled
     # English strings are pushed to Crowdin the same night.
@@ -137,6 +142,7 @@ jobs:
           BEFORE_SHA: ${{ steps.range.outputs.before }}
           AFTER_SHA: ${{ steps.range.outputs.after }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && 'true' || 'false' }}
+          CROWDIN_SKIP_APPROVAL: ${{ (github.event_name == 'workflow_dispatch' && inputs.disable_crowdin_auto_approval) && 'true' || 'false' }}
           CROWDIN_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_PROJECT_ID_LANG: ${{ vars.CROWDIN_PROJECT_ID_LANG }}
         run: node .github/scripts/sync-manual-lang-edits.js
@@ -234,6 +240,7 @@ jobs:
         env:
           PROFANITY_REPO_TOKEN: ${{ secrets.PROFANITY_REPO_TOKEN }}
           DRY_RUN: ${{ (github.event_name == 'workflow_dispatch' && inputs.prevent_crowdin_uploads) && 'true' || 'false' }}
+          CROWDIN_SKIP_APPROVAL: ${{ (github.event_name == 'workflow_dispatch' && inputs.disable_crowdin_auto_approval) && 'true' || 'false' }}
           CROWDIN_TOKEN: ${{ secrets.CROWDIN_TOKEN }}
           CROWDIN_PROJECT_ID_LANG: ${{ vars.CROWDIN_PROJECT_ID_LANG }}
 
