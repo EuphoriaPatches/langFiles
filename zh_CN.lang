@@ -3,7 +3,7 @@
 option.LANG_FILE_HEADER=本文档为社区贡献翻译 - 此文档翻译可能会过时. SpacEagle17 不能保证翻译的准确性.
 option.TRANSLATORS=本文档由 Surisen (Ruri) 及 Justinpro0715 翻译
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nSpacEagle17 开发的附加包，为其添加了更多独特的可选功能和设置. \n开发版本：§dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\\nSpacEagle17 开发的附加包，为其添加了更多独特的可选功能和设置. \\n开发版本：§dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=性能需求: §a极低

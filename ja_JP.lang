@@ -5,7 +5,7 @@ Contribute=公式翻訳への貢献はこちらから: https://www.euphoriapatc
 option.LANG_FILE_HEADER=コミュニティによる翻訳ファイル - 翻訳が古い可能性があります. SpacEagle17は翻訳の精度を保証できません.
 option.TRANSLATORS=日本語訳: MUKSC
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\n多くの追加機能や設定を追加する、SpacEagle17によるComplementary Shadersのアドオンです. \n開発版: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\\n多くの追加機能や設定を追加する、SpacEagle17によるComplementary Shadersのアドオンです. \\n開発版: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=品質: §a最低
@@ -1257,7 +1257,7 @@ option.XLIGHT_CURVE.comment=光源から離れるにつれて、光源ブロッ�
 profile2.DEFAULT=§bビジュアル:§r デフォルト
 profile2.SPACEAGLE17= §f۞ §kO§fデバッグ (使わないで)§f§kO
 profile2.POPULAR=§bビジュアル: §d人気の§d設定
-profile2.comment=これらはEuphoria Patchesのプロファイル設定です. §c[-] 警告:§r これを使用すると複数の設定が変更され、あなたが作り上げた設定を破壊してしまうおそれがあります. \n\n• デフォルト設定はComplementary Shaderのデフォルトの設定です. \n\n• §d人気の§d設定§rプロファイルはEuphoria PatchesとComplementaryで人気の設定が有効になります. \n\n• デバッグプロファイルはテスト用に使用され、一般のユーザーが使用するようには設計されていません.
+profile2.comment=これらはEuphoria Patchesのプロファイル設定です. §c[-] 警告:§r これを使用すると複数の設定が変更され、あなたが作り上げた設定を破壊してしまうおそれがあります. \\n\\n• デフォルト設定はComplementary Shaderのデフォルトの設定です. \\n\\n• §d人気の§d設定§rプロファイルはEuphoria PatchesとComplementaryで人気の設定が有効になります. \\n\\n• デバッグプロファイルはテスト用に使用され、一般のユーザーが使用するようには設計されていません.
 
 #WATERMARK
 option.WATERMARK=Complementary
@@ -2912,7 +2912,7 @@ option.EMISSIVE_BLOOD_MOON_FLOWERS=ブラッドムーンで花が発光
 option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=ブラッドムーンの間、赤い花が赤く輝くようにします. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります.
 
 option.PHOTONICS_LIGHTING_MODE=ライティングモード
-option.PHOTONICS_LIGHTING_MODE.comment=Photonicsがライティングに使うアルゴリズムを変更します. \n\nシャープ - ノイズのない非常にシャープなライティングアルゴリズムですが、光源の数が限られます. (最大サンプル数)\nReSTIR - ライティングにReSTIRを使用し、無制限の光源数をサポートしますが、一部の環境ではノイズが強く出る可能性があります. (最大光源数). §e[*]§r この設定はPhotonicsがインストールされている場合にのみ動作します.
+option.PHOTONICS_LIGHTING_MODE.comment=Photonicsがライティングに使うアルゴリズムを変更します. \\n\\nシャープ - ノイズのない非常にシャープなライティングアルゴリズムですが、光源の数が限られます. (最大サンプル数)\\nReSTIR - ライティングにReSTIRを使用し、無制限の光源数をサポートしますが、一部の環境ではノイズが強く出る可能性があります. (最大光源数). §e[*]§r この設定はPhotonicsがインストールされている場合にのみ動作します.
 value.PHOTONICS_LIGHTING_MODE.0=OFF
 value.PHOTONICS_LIGHTING_MODE.1=シャープ
 value.PHOTONICS_LIGHTING_MODE.2=ReSTIR
@@ -2921,41 +2921,41 @@ option.PHOTONICS_PIXELATED_SHADOWS=ピクセル化された影
 option.PHOTONICS_PIXELATED_SHADOWS.comment=Photonics Modでのピクセル化された影設定を変更します. §c[*]§r この設定はシャープライティングモードでのみ動作します.
 
 option.PHOTONICS_ALPHA_MODE=透過モード
-option.PHOTONICS_ALPHA_MODE.comment=Photonicsが透過ブロックをどのように扱うかを決定します. \n\nなし - 透過ブロックは不透明ブロックとして扱われます. \nブロック - ブロック単位で透過が適応されます. (§aパフォーマンスへの影響: 最小)§r\nボクセル - ボクセルごとに透過が適応されます. (§cパフォーマンスへの影響: 高)§r
+option.PHOTONICS_ALPHA_MODE.comment=Photonicsが透過ブロックをどのように扱うかを決定します. \\n\\nなし - 透過ブロックは不透明ブロックとして扱われます. \\nブロック - ブロック単位で透過が適応されます. (§aパフォーマンスへの影響: 最小)§r\\nボクセル - ボクセルごとに透過が適応されます. (§cパフォーマンスへの影響: 高)§r
 value.PHOTONICS_ALPHA_MODE.NONE=なし
 value.PHOTONICS_ALPHA_MODE.BLOCK=ブロック
 value.PHOTONICS_ALPHA_MODE.VOXEL=ボクセル
 
 option.PHOTONICS_RENDER_SCALE=レンダリング倍率
-option.PHOTONICS_RENDER_SCALE.comment=Photonicsライティングのレンダリング倍率を変更します. \n\n§a低い値はパフォーマンスを向上させますが、ライティングの見た目が悪くなる可能性があります. \n\n§c高い値はライティングの品質を向上させますが、パフォーマンスの問題が発生する可能性があります.
+option.PHOTONICS_RENDER_SCALE.comment=Photonicsライティングのレンダリング倍率を変更します. \\n\\n§a低い値はパフォーマンスを向上させますが、ライティングの見た目が悪くなる可能性があります. \\n\\n§c高い値はライティングの品質を向上させますが、パフォーマンスの問題が発生する可能性があります.
 
 option.PHOTONICS_INDIRECT_INTENSITY=大域照明 (GI)
 option.PHOTONICS_INDIRECT_INTENSITY.comment=Photonics Modでの間接照明の強度を変更します. §e[*]§r この設定はPhotonicsがインストールされている場合にのみ動作します.
 value.PHOTONICS_INDIRECT_INTENSITY.0=OFF
 
 option.PHOTONICS_MAX_LIGHTS=最大光源数
-option.PHOTONICS_MAX_LIGHTS.comment=トレースされた光源の最大読み込み数です. \n\n§6パフォーマンスへの影響: 中.§r\n\nOFFにするとPhotonicsのブロック光源は使用されずにバニラのものが代わりに使用されます.
+option.PHOTONICS_MAX_LIGHTS.comment=トレースされた光源の最大読み込み数です. \\n\\n§6パフォーマンスへの影響: 中.§r\\n\\nOFFにするとPhotonicsのブロック光源は使用されずにバニラのものが代わりに使用されます.
 value.PHOTONICS_MAX_LIGHTS.0=OFF
 
 option.PHOTONICS_MAX_SAMPLES=最大サンプル数
-option.PHOTONICS_MAX_SAMPLES.comment=オブジェクトに影を落とすことができる近くの光源の数です. \n\n§cパフォーマンスへの影響: 高
+option.PHOTONICS_MAX_SAMPLES.comment=オブジェクトに影を落とすことができる近くの光源の数です. \\n\\n§cパフォーマンスへの影響: 高
 
 option.PHOTONICS_RESTIR_INITIAL_SAMPLES=ReSTIR初期サンプル数
-option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=ReSTIRが最初に考慮する光源の数です. \n\n§6パフォーマンスへの影響: 中
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=ReSTIRが最初に考慮する光源の数です. \\n\\n§6パフォーマンスへの影響: 中
 
 option.PHOTONICS_RESTIR_SOFT_SHADOWS=ReSTIRソフトシャドウ
-option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=ReSTIRでソフトシャドウを有効にするかどうかです. \n\n§aパフォーマンスへの影響: 小
+option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=ReSTIRでソフトシャドウを有効にするかどうかです. \\n\\n§aパフォーマンスへの影響: 小
 
 option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES=ReSTIR Spatial Reuseサンプル数
-option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=ReSTIRがSpatial Reuseに使うサンプル数です. \n\n§6パフォーマンスへの影響: 中
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=ReSTIRがSpatial Reuseに使うサンプル数です. \\n\\n§6パフォーマンスへの影響: 中
 
 option.PHOTONICS_RESTIR_SPATIAL_REUSE_RADIUS=ReSTIR Spatial Reuse半径
 
 option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=ReSTIR累積フレーム数
-option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=ReSTIRが蓄積するフレームの最大数です. 低い値ではライティングの反映が素早くなりますが、代わりにノイズが増加します. \n\nパフォーマンスへの影響: なし
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=ReSTIRが蓄積するフレームの最大数です. 低い値ではライティングの反映が素早くなりますが、代わりにノイズが増加します. \\n\\nパフォーマンスへの影響: なし
 
 option.PHOTONICS_RESTIR_DENOISER_PASSES=デノイザーパス数
-option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=ReSTIRのデノイザーが使用するパスの数です. \n\n§cパフォーマンスへの影響: 高
+option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=ReSTIRのデノイザーが使用するパスの数です. \\n\\n§cパフォーマンスへの影響: 高
 value.PHOTONICS_RESTIR_DENOISER_PASSES.0=OFF
 
 option.PHOTONICS_RESTIR_FLICKER_FIRE=ReSTIR 炎の明滅
@@ -2970,7 +2970,7 @@ option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=エンチャントのオーラの強�
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Photonicsのライティングを使用している際に、エンチャントされたアイテムから放たれる光の強さを変更します.
 
 option.PHOTONICS_HANDHELD_MODE=手持ち光源モード
-option.PHOTONICS_HANDHELD_MODE.comment=Photonics Modで手持ち光源がどのようにレンダリングされるかを変更します. \n\nOFF - Photonicsは手持ち光源を一切レンダリングしません\n単体 - 手持ち光源の一つのみが影を落とします\n個別 - 両方の手持ち光源が影を落とします\n\n§aパフォーマンスへの影響: 最小
+option.PHOTONICS_HANDHELD_MODE.comment=Photonics Modで手持ち光源がどのようにレンダリングされるかを変更します. \\n\\nOFF - Photonicsは手持ち光源を一切レンダリングしません\\n単体 - 手持ち光源の一つのみが影を落とします\\n個別 - 両方の手持ち光源が影を落とします\\n\\n§aパフォーマンスへの影響: 最小
 value.PHOTONICS_HANDHELD_MODE.0=OFF
 value.PHOTONICS_HANDHELD_MODE.1=個別
 value.PHOTONICS_HANDHELD_MODE.2=単体
@@ -2979,7 +2979,7 @@ option.PHOTONICS_AMBIENT_LIGHT_MULT=環境光の倍率
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Photonicsのライティングに加えてどの程度デフォルトの環境光が使用されるかを変更する設定です. §e[*]§r この設定はPhotonicsがインストールされている場合にのみ動作します.
 
 option.PHOTONICS_COMBINED_GI=統合GI
-option.PHOTONICS_COMBINED_GI.comment=GIが通常の処理ではなくReSTIRのデノイザーを通して処理されるかどうかです. \nパフォーマンスとノイズを引き換えに、より鮮明なGIが得られます. \n\n§cパフォーマンスへの影響: 高. §b[*]§r デノイザーパス数を5以上に設定して使用することが推奨されます.
+option.PHOTONICS_COMBINED_GI.comment=GIが通常の処理ではなくReSTIRのデノイザーを通して処理されるかどうかです. \\nパフォーマンスとノイズを引き換えに、より鮮明なGIが得られます. \\n\\n§cパフォーマンスへの影響: 高. §b[*]§r デノイザーパス数を5以上に設定して使用することが推奨されます.
 
 option.PHOTONICS_MAX_ALLOWED_DISTANCE=有効距離
 option.PHOTONICS_MAX_ALLOWED_DISTANCE.comment=Photonicsのライティングが適用される最大距離です. これ以降の距離ではバニラのライティングが使用されます. これは遠くの光源が光を発さない問題を防ぐためです. §e[*]§r この設定が正しく機能するためには最大光源数を高い値に設定する必要があります.
