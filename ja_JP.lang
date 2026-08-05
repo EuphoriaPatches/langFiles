@@ -1917,10 +1917,10 @@ option.CAVE_FOG_I=洞窟の霧 - 強度
 option.CAVE_FOG_DENSITY=洞窟の霧 - 密度
 
 option.ATMOSPHERIC_FOG=大気中の霧
-option.ATMOSPHERIC_FOG_R_NEW= 大気中の霧 - 赤
-option.ATMOSPHERIC_FOG_G_NEW= 大気中の霧 - 緑
-option.ATMOSPHERIC_FOG_B_NEW= 大気中の霧 - 青
-option.ATMOSPHERIC_FOG_I= 大気中の霧 - 強度
+option.ATMOSPHERIC_FOG_R_NEW=  大気中の霧 - 赤
+option.ATMOSPHERIC_FOG_G_NEW=  大気中の霧 - 緑
+option.ATMOSPHERIC_FOG_B_NEW=  大気中の霧 - 青
+option.ATMOSPHERIC_FOG_I=  大気中の霧 - 強度
 option.ATMOSPHERIC_FOG_DENSITY=大気中の霧 - 密度
 option.RADIOACTIVE_ATMOSPHERIC_FOG=放射性の大気中の霧
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=不健康な習慣が一つ増えた感じです。. 夜間に非常に目立ちます。.
@@ -2345,10 +2345,10 @@ value.RETRO_LOOK.0=OFF
 value.RETRO_LOOK.1=輪郭線
 value.RETRO_LOOK.2=輪郭線 - 暗視のみ
 
-option.RETRO_LOOK_R= レトロな見た目 - 赤
-option.RETRO_LOOK_G= レトロな見た目 - 緑
-option.RETRO_LOOK_B= レトロな見た目 - 青
-option.RETRO_LOOK_I= レトロな見た目 - 強度
+option.RETRO_LOOK_R=  レトロな見た目 - 赤
+option.RETRO_LOOK_G=  レトロな見た目 - 緑
+option.RETRO_LOOK_B=  レトロな見た目 - 青
+option.RETRO_LOOK_I=  レトロな見た目 - 強度
 
 option.CURVE_DISPLAY=湾曲ディスプレイ
 option.CURVE_DISPLAY.comment=ディスプレイを湾曲させます。.

@@ -1253,7 +1253,7 @@ option.XLIGHT_CURVE.comment=调节方块光的随距离增加而衰减的快速�
 
 ####### Euphoria Patches #######
 profile2.DEFAULT=§b风格设置:§r 默认
-profile2.SPACEAGLE17= §f۞ §kO§f调试 (请勿使用)§f§kO
+profile2.SPACEAGLE17=  §f۞ §kO§f调试 (请勿使用)§f§kO
 profile2.POPULAR=§b风格设置: §d流行
 profile2.comment=此为 Euphoria Patches 的配置文件预设。. §c[-] 警告:§r 使用此选项会影响许多设置, 也会破坏部分已经调节过的设置。. \n\n• 默认设置为 Complementary 默认的设置。. \n\n• §d流行§r配置文件会启用涵盖 Euphoria Patches 和 Complementary 在内的最受欢迎的部分设置\n\n• 调试配置文件用于测试目的, 普通用户请勿使用。.
 
@@ -1915,10 +1915,10 @@ option.CAVE_FOG_I=洞穴烟雾 - 强度
 option.CAVE_FOG_DENSITY=洞穴烟雾 密度
 
 option.ATMOSPHERIC_FOG=大气雾
-option.ATMOSPHERIC_FOG_R_NEW= 大气雾 - 红色
-option.ATMOSPHERIC_FOG_G_NEW= 大气雾 - 绿色
-option.ATMOSPHERIC_FOG_B_NEW= 大气雾 - 蓝色
-option.ATMOSPHERIC_FOG_I= 大气雾 - 强度
+option.ATMOSPHERIC_FOG_R_NEW=  大气雾 - 红色
+option.ATMOSPHERIC_FOG_G_NEW=  大气雾 - 绿色
+option.ATMOSPHERIC_FOG_B_NEW=  大气雾 - 蓝色
+option.ATMOSPHERIC_FOG_I=  大气雾 - 强度
 option.ATMOSPHERIC_FOG_DENSITY=大气雾 密度
 option.RADIOACTIVE_ATMOSPHERIC_FOG=放射性大气雾
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=此设置稍显病态。. 在晚上效果会非常明显。.
@@ -2210,7 +2210,7 @@ value.SEASON_START.3=春天
 option.SEASON_LENGTH=季节持续时间
 option.SEASON_LENGTH.comment=以 Minecraft 的一天为基本单位调节每个季节的持续时间。.
 value.SEASON_LENGTH.1=1 MC 日
-suffix.SEASON_LENGTH=\ MC 日
+suffix.SEASON_LENGTH=\\ MC 日
 
 option.SEASON_TRANSITION_START=过渡开始时间
 option.SEASON_TRANSITION_START.comment=从这个季节的时间过去百分比起开启下一个季节的过渡。.
@@ -2343,10 +2343,10 @@ value.RETRO_LOOK.0=关
 value.RETRO_LOOK.1=描边
 value.RETRO_LOOK.2=描边 - 仅夜视模式
 
-option.RETRO_LOOK_R= 复古外观 - 红色
-option.RETRO_LOOK_G= 复古外观 - 绿色
-option.RETRO_LOOK_B= 复古外观 - 蓝色
-option.RETRO_LOOK_I= 复古外观 - 强度
+option.RETRO_LOOK_R=  复古外观 - 红色
+option.RETRO_LOOK_G=  复古外观 - 绿色
+option.RETRO_LOOK_B=  复古外观 - 蓝色
+option.RETRO_LOOK_I=  复古外观 - 强度
 
 option.CURVE_DISPLAY=曲面显示
 option.CURVE_DISPLAY.comment=使得显示内容呈弧形。.
