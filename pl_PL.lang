@@ -1733,6 +1733,14 @@ value.END_NEBULA_QUALITY.1=Mało
 value.END_NEBULA_QUALITY.2=Średnie
 value.END_NEBULA_QUALITY.3=Dużo
 
+value.END_NEBULA_HEMISPHERE.0=Obie Półkule
+value.END_NEBULA_HEMISPHERE.1=Tylko Górna Półkula
+value.END_NEBULA_HEMISPHERE.-1=Tylko Dolna Półkula
+
+option.END_NEBULA_STAR_BRIGHTNESS=Jasność Gwiazd w Mgławicach
+
+option.END_NEBULA_ONLY_STARS=Tylko Gwiazdy
+
 option.STAR_BRIGHTNESS=Jasność Gwiazd
 option.STAR_BRIGHTNESS.comment=Ustawienie umożliwiające regulację jasności gwiazd.
 value.STAR_BRIGHTNESS.3=WYŁ.

@@ -31,7 +31,7 @@ option.info0.comment=このセクションには情報表示のみを目的と�
 
 option.info1=パフォーマンスを向上させる方法
 value.info1.0=
-option.info1.comment=- Minecraftにおけるパフォーマンスは多くの要因に影響される複雑な問題ですが、一般的なアドバイスとしては以下が挙げられます:。. - OptifineではなくIris+Sodiumを使用する - Optifineは問題児で、場合によってはこの説明文を最後まで読ませてもらえないことすらあります。. - シェーダーの「プロファイル」設定を下げる - これらはパフォーマンスとグラフィック品質のバランスが最適化されるよう慎重にテストされています。. - 描画距離を下げる - 推奨は選んだ「プロファイル」設定の「影の描写距離」から2～4チャンク上、つまり「高」プロファイルでは16チャンク、最低プロファイルでは6チャンクになります。. - 解像度が過剰になっていないか確認する - 4Kは過剰で、ミドルエンドのシステムでは1920x1080が最適、ハイエンドのシステムでは1440pが視野に入ってきます。. - 大量のModが入っていないか確認する - 例えそのほとんどが「最適化Mod」だったとしても、大抵の場合シェーダーにとってはあまり役に立ちません。. また一部のリソースパック、特に複雑な植物/葉を追加するものはパフォーマンスに大きく影響することに注意してください。.
+option.info1.comment=- Minecraftにおけるパフォーマンスは多くの要因に影響される複雑な問題ですが、一般的なアドバイスとしては以下が挙げられます:\n- OptifineではなくIris+Sodiumを使用する - Optifineは問題児で、場合によってはこの説明文を最後まで読ませてもらえないことすらあります。. - シェーダーの「プロファイル」設定を下げる - これらはパフォーマンスとグラフィック品質のバランスが最適化されるよう慎重にテストされています。. - 描画距離を下げる - 推奨は選んだ「プロファイル」設定の「影の描写距離」から2～4チャンク上、つまり「高」プロファイルでは16チャンク、最低プロファイルでは6チャンクになります。. - 解像度が過剰になっていないか確認する - 4Kは過剰で、ミドルエンドのシステムでは1920x1080が最適、ハイエンドのシステムでは1440pが視野に入ってきます。. - 大量のModが入っていないか確認する - 例えそのほとんどが「最適化Mod」だったとしても、大抵の場合シェーダーにとってはあまり役に立ちません。. また一部のリソースパック、特に複雑な植物/葉を追加するものはパフォーマンスに大きく影響することに注意してください。.
 
 option.info2=最適な設定とは
 value.info2.0=
@@ -55,7 +55,7 @@ option.info6.comment=- 必須のIrisとSodiumのほか、パフォーマンス�
 
 option.info7=質問または問題を報告する場所
 value.info7.0=
-option.info7.comment=- 質問にはComplementaryのDiscordサーバーか、GitHubページの「issues」タブを使用してください。. - www.complementary.dev/discord。. - www.complementary.dev/github
+option.info7.comment=- 質問にはComplementaryのDiscordサーバーか、GitHubページの「issues」タブを使用してください。. - www.complementary.dev/discord\n- www.complementary.dev/github
 
 option.info8=コミュニティに参加する方法
 value.info8.0=
@@ -67,7 +67,7 @@ option.info9.comment=- Complementaryをサポートする最良の方法は友�
 
 option.info10=クレジット
 value.info10.0=
-option.info10.comment=- EminGT: Complementaryのメイン開発者。. - Capt Tatsu: BSLシェーダーの開発者であり、彼の寛大さがComplementaryの実現を可能にしました。. - スペシャルサンクス: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
+option.info10.comment=- EminGT: Complementaryのメイン開発者\n- Capt Tatsu: BSLシェーダーの開発者であり、彼の寛大さがComplementaryの実現を可能にしました\n- スペシャルサンクス: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§dEuphoria Patchesとは
 value.info11.0=
@@ -79,7 +79,7 @@ option.info12.comment=Euphoriaのすべての設定はデフォルトで無効�
 
 option.info13=EuphoriaのModサポート
 value.info13.0=
-option.info13.comment=Euphoria Patchesは、デフォルトで他Modブロックのサポートを追加することで、Complementaryよりも強力なMod互換性を持つことを目指しています。. (block.propertiesを参照)。. 自動発光テクスチャおよび光源ブロック検知。. SSS (サブサーフェス・スキャッタリング) が自動的に適用される植物モデルの検知。.
+option.info13.comment=Euphoria Patchesは、デフォルトで他Modブロックのサポートを追加することで、Complementaryよりも強力なMod互換性を持つことを目指しています。. (block.propertiesを参照)\n自動発光テクスチャおよび光源ブロック検知。. SSS (サブサーフェス・スキャッタリング) が自動的に適用される植物モデルの検知。.
 
 option.info14=コミュニティに参加
 value.info14.0=
@@ -87,7 +87,7 @@ option.info14.comment=Euphoria PatchesのDiscordサーバーに参加すれば�
 
 option.info15=Euphoria Patchesのクレジット
 value.info15.0=
-option.info15.comment=クレジットの全文は§deuphoriapatches.com/credits§rに記載されています。. isuewo - Euphoria Patchesの元共同開発者。. EminGT: Complementaryのメイン開発者。. Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust。.
+option.info15.comment=クレジットの全文は§deuphoriapatches.com/credits§rに記載されています。. isuewo - Euphoria Patchesの元共同開発者\nEminGT: Complementaryのメイン開発者\nCapt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust
 
 option.info16=§d§nEuphoria Patchesをサポートする方法
 value.info16.0=
@@ -119,7 +119,7 @@ option.info22.comment=GUIのサイズが大きいと、一部の設定が隠れ�
 
 #Style
 option.SHADER_STYLE=ビジュアルスタイル
-option.SHADER_STYLE.comment=シェーダーパックのデフォルトのビジュアルスタイルを決定します。. §bReimagined§r: Minecraftのビジュアルを補完しつつもMinecraftらしさを保ちます。. §dUnbound§r: Minecraftのビジュアルを半リアルなファンタジースタイルで再構築します。. §e[*]§r 影響を受ける設定: 水のスタイル、雲のスタイル、太陽/月のスタイル、太陽/月の角度、オーロラのスタイル、光る鉱石
+option.SHADER_STYLE.comment=シェーダーパックのデフォルトのビジュアルスタイルを決定します。. §bReimagined§r: Minecraftのビジュアルを補完しつつもMinecraftらしさを保ちます\n§dUnbound§r: Minecraftのビジュアルを半リアルなファンタジースタイルで再構築します\n§e[*]§r 影響を受ける設定: 水のスタイル、雲のスタイル、太陽/月のスタイル、太陽/月の角度、オーロラのスタイル、光る鉱石
 value.SHADER_STYLE.1=§bReimagined
 value.SHADER_STYLE.4=§dUnbound
 
@@ -245,21 +245,21 @@ screen.WORLD_OUTLINE_SETTINGS.comment=追加のアウトライン効果に関す
 
 #Settings
 option.RP_MODE=RPサポート
-option.RP_MODE.comment=多くの内部計算を変更し、様々なブロックや素材がどのようにレンダリングされるかを決定します。. §bIntegrated PBR+§r: 自動計算されたPBRと追加効果 - ほとんどの使用ケースで強く推奨されます。. §aBasic§r: PBRや追加効果なし。. §elabPBR/seuspbr§r: PBRリソースパックのマテリアル情報を使用
+option.RP_MODE.comment=多くの内部計算を変更し、様々なブロックや素材がどのようにレンダリングされるかを決定します。. §bIntegrated PBR+§r: 自動計算されたPBRと追加効果 - ほとんどの使用ケースで強く推奨されます\n§aBasic§r: PBRや追加効果なし\n§elabPBR/seuspbr§r: PBRリソースパックのマテリアル情報を使用
 value.RP_MODE.0=§aBasic
 value.RP_MODE.1=§bIntegrated PBR+
 value.RP_MODE.2=§eseuspbr (RP必須)
 value.RP_MODE.3=§elabPBR (RP必須)
 
 option.WATER_REFLECT_QUALITY=水の反射の品質
-option.WATER_REFLECT_QUALITY.comment=半透明のオブジェクトに表示される反射の品質を調整します。. §c中§r: 水や半透明オブジェクトにスクリーンスペースのレイトレースされた反射を適用します。. §e超低§r: 水と半透明の反射を高速な方法に置き換えますが、状況によっては見た目が不正確になることがあります。. §aOFF§r: 反射なし
+option.WATER_REFLECT_QUALITY.comment=半透明のオブジェクトに表示される反射の品質を調整します。. §c中§r: 水や半透明オブジェクトにスクリーンスペースのレイトレースされた反射を適用します\n§e超低§r: 水と半透明の反射を高速な方法に置き換えますが、状況によっては見た目が不正確になることがあります\n§aOFF§r: 反射なし
 value.WATER_REFLECT_QUALITY.-1=§aOFF
 value.WATER_REFLECT_QUALITY.0=§a空のみ
 value.WATER_REFLECT_QUALITY.1=§e超低
 value.WATER_REFLECT_QUALITY.2=§c中
 
 option.BLOCK_REFLECT_QUALITY=ブロック反射の品質 §e[*]§r
-option.BLOCK_REFLECT_QUALITY.comment=固体素材に表示される反射の品質を調整します。. §c高§r: 太陽/月のハイライト + 高度な鏡面反射。. §e低§r: 太陽/月のハイライトのみ。. §e[*]§r 鏡面反射を表示するには、「RPサポート」設定をBasic以外に設定する必要があります。.
+option.BLOCK_REFLECT_QUALITY.comment=固体素材に表示される反射の品質を調整します。. §c高§r: 太陽/月のハイライト + 高度な鏡面反射\n§e低§r: 太陽/月のハイライトのみ\n§e[*]§r 鏡面反射を表示するには、「RPサポート」設定をBasic以外に設定する必要があります。.
 value.BLOCK_REFLECT_QUALITY.0=§aOFF
 value.BLOCK_REFLECT_QUALITY.1=§e低
 value.BLOCK_REFLECT_QUALITY.3=§c高
@@ -275,7 +275,7 @@ value.SHADOW_QUALITY.4=§c超高
 value.SHADOW_QUALITY.5=§4§lウルトラ
 
 option.LIGHTSHAFT_QUALI_DEFINE=光芒の品質 §e[*]§r
-option.LIGHTSHAFT_QUALI_DEFINE.comment=光芒の品質を調整します。. 段階ごとにノイズがより少なくなります。. §e[*]§r 光芒を有効にするには、「動的な影」設定がOFF以外に設定されている必要があります。. §e[*]§r この設定はエンドビームの品質も変更します。. ただし「OFF」は「低」として扱われます。.
+option.LIGHTSHAFT_QUALI_DEFINE.comment=光芒の品質を調整します。. 段階ごとにノイズがより少なくなります。. §e[*]§r 光芒を有効にするには、「動的な影」設定がOFF以外に設定されている必要があります。. §e[*]§r この設定はエンドビームの品質も変更しますが、「OFF」は「低」として扱われます。.
 value.LIGHTSHAFT_QUALI_DEFINE.0=§aOFF
 value.LIGHTSHAFT_QUALI_DEFINE.1=§e低
 value.LIGHTSHAFT_QUALI_DEFINE.2=§e中
@@ -481,7 +481,7 @@ value.NETHER_VIEW_LIMIT.1024.0=64チャンク §c[-]
 value.NETHER_VIEW_LIMIT.99999.0=無制限 §c[-]
 
 option.NETHER_COLOR_MODE=カラーモード
-option.NETHER_COLOR_MODE.comment=ネザー内の環境色がどのように処理されるかを決定します。. 一定: バイオームに関わらず色は変化しません。. バイオーム別: バイオームに応じて色が変化します。. バイオーム別 (カスタム): バイオーム別ですが、Complementaryのデフォルトのアートスタイルに合わせて色が再調整されています
+option.NETHER_COLOR_MODE.comment=ネザー内の環境色がどのように処理されるかを決定します。. 一定: バイオームに関わらず色は変化しません\nバイオーム別: バイオームに応じて色が変化します\nバイオーム別 (カスタム): バイオーム別ですが、Complementaryのデフォルトのアートスタイルに合わせて色が再調整されています
 value.NETHER_COLOR_MODE.3=バイオーム別 (カスタム)
 value.NETHER_COLOR_MODE.2=バイオーム別
 value.NETHER_COLOR_MODE.0=一定
@@ -573,7 +573,7 @@ option.WATERCOLOR_G=水面 緑色倍率
 option.WATERCOLOR_B=水面 青色倍率
 
 option.WATERCOLOR_MODE=カラーモード
-option.WATERCOLOR_MODE.comment=水の色がどのように処理されるかを決定します。. 一定: バイオームに関わらず水の色は変化しません。. バイオーム別: バイオームに応じて色が変化します。. バイオーム別 (調整): バイオーム別ですが、特定のバイオームで水面の色が不自然になるのを防ぎます。. §e[*]§r この設定はMinecraftバージョン1.13未満では正しく機能しません。.
+option.WATERCOLOR_MODE.comment=水の色がどのように処理されるかを決定します。. 一定: バイオームに関わらず水の色は変化しません\nバイオーム別: バイオームに応じて色が変化します\nバイオーム別 (調整): バイオーム別ですが、特定のバイオームで水面の色が不自然になるのを防ぎます\n§e[*]§r この設定はMinecraftバージョン1.13未満では正しく機能しません。.
 value.WATERCOLOR_MODE.3=バイオーム別 (調整)
 value.WATERCOLOR_MODE.2=バイオーム別
 value.WATERCOLOR_MODE.0=一定
@@ -812,7 +812,7 @@ option.MOTION_BLURRING_STRENGTH=モーションブラーの強さ
 option.MOTION_BLURRING_STRENGTH.comment=モーションブラーの強さを調整します。.
 
 option.WORLD_BLUR=§eワールドブラー§r
-option.WORLD_BLUR.comment=ワールド全体のぼかしを有効にします。. 距離ブラー: カメラからの距離に応じて霧のようにぼかしが適用されます。. 被写界深度: カメラの焦点に応じてぼかしが発生します。. §c[-]§r この効果はパフォーマンスに大きな影響を与える可能性があります。.
+option.WORLD_BLUR.comment=ワールド全体のぼかしを有効にします。. 距離ブラー: カメラからの距離に応じて霧のようにぼかしが適用されます\n被写界深度: カメラの焦点に応じてぼかしが発生します\n§c[-]§r この効果はパフォーマンスに大きな影響を与える可能性があります。.
 value.WORLD_BLUR.0=§aOFF
 value.WORLD_BLUR.1=§c距離ブラー
 value.WORLD_BLUR.2=§c被写界深度
@@ -828,7 +828,7 @@ option.WB_ANAMORPHIC.comment=ぼかしを一方向に引き伸ばします。. �
 
 option.WB_DOF_I=被写界深度の強さ
 option.WB_DOF_FOCUS=被写界深度のフォーカス
-option.WB_DOF_FOCUS.comment=カメラのフォーカス距離を決定します。. 自動: 画面の中心に従って焦点が調整されます。. 明るさ: ビデオ設定の「明るさ」スライダーでフォーカスが決まります
+option.WB_DOF_FOCUS.comment=カメラのフォーカス距離を決定します。. 自動: 画面の中心に従って焦点が調整されます\n明るさ: ビデオ設定の「明るさ」スライダーでフォーカスが決まります
 value.WB_DOF_FOCUS.-1=明るさ §e[*]
 value.WB_DOF_FOCUS.0=自動
 
@@ -866,7 +866,7 @@ option.FANCY_GLASS=より良いガラス
 option.FANCY_GLASS.comment=通常のガラスに半透明の層を追加することで改善します。. §c[-]§r 古いIrisバージョンでは機能しません。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 
 option.GREEN_SCREEN_LIME=グリーンスクリーン用黄緑色ブロック
-option.GREEN_SCREEN_LIME.comment=「黄緑色のコンクリート」「黄緑色の羊毛」「黄緑色のカーペット」を動画編集用のグリーンスクリーンに変えます。. ヒント1: 「ブルーム」設定を無効にすると分離が改善されます。. ヒント2: 照明用に黄緑色のカーペットの下に光源を置いてください。. ヒント3: アンチエイリアシング (FXAA) を無効にし、パフォーマンス設定で「細部の品質」を「超低」に設定すると、フィルタリングがすべて無効化されピクセルパーフェクトな分離が可能です
+option.GREEN_SCREEN_LIME.comment=「黄緑色のコンクリート」「黄緑色の羊毛」「黄緑色のカーペット」を動画編集用のグリーンスクリーンに変えます。. ヒント1: 「ブルーム」設定を無効にすると分離が改善されます\nヒント2: 照明用に黄緑色のカーペットの下に光源を置いてください\nヒント3: アンチエイリアシング (FXAA) を無効にし、パフォーマンス設定で「細部の品質」を「超低」に設定すると、フィルタリングがすべて無効化されピクセルパーフェクトな分離が可能です
 
 option.MIRROR_TINTED_GLASS=鏡面遮光ガラス
 option.MIRROR_TINTED_GLASS.comment=遮光ガラスの反射性と不透明度を増加させます。. 最適な結果を得るにはワールドスペース反射を有効にしてください。.
@@ -897,7 +897,7 @@ option.SNOWY_WORLD=雪景色
 option.SNOWY_WORLD.comment=世界全体に雪を積もらせます。.
 
 option.SHOW_LIGHT_LEVEL=光レベルの表示
-option.SHOW_LIGHT_LEVEL.comment=オーバーワールド: 黄色は夜間にモブがスポーン可能であることを、赤はいつでもモブがスポーン可能であることを示します。. ネザー/ジ・エンド: 黄色は一部のモブがスポーン可能であることを、赤はすべてのモブがスポーン可能であることを示します。. §e[*]§r 正確な結果を得るためには、スムースライティングを無効にしてください。.
+option.SHOW_LIGHT_LEVEL.comment=オーバーワールド: 黄色は夜間にモブがスポーン可能であることを、赤はいつでもモブがスポーン可能であることを示します\nネザー/ジ・エンド: 黄色は一部のモブがスポーン可能であることを、赤はすべてのモブがスポーン可能であることを示します\n§e[*]§r 正確な結果を得るためには、スムースライティングを無効にしてください。.
 value.SHOW_LIGHT_LEVEL.0=OFF
 value.SHOW_LIGHT_LEVEL.1=クモの目を持っている時
 value.SHOW_LIGHT_LEVEL.2=光源を持っている時
@@ -1027,7 +1027,7 @@ value.POM_DISTANCE.512=512 §e[*]
 value.POM_DISTANCE.1024=1024 §e[*]
 
 option.POM_LIGHTING_MODE=POM ライティングモード
-option.POM_LIGHTING_MODE.comment=POMに影響を受ける表面のライティングスタイルを調整します。. シャープ: 光が当たらないPOMの壁には光が届きません。. 滑らか: POMの壁が光に対して向いていない場合でも光が当たります。. §e[*]§r POMの品質が100未満に設定されている場合、この設定は「滑らか」に強制されます。.
+option.POM_LIGHTING_MODE.comment=POMに影響を受ける表面のライティングスタイルを調整します。. シャープ: 光が当たらないPOMの壁には光が届きません\n滑らか: POMの壁が光に対して向いていない場合でも光が当たります\n§e[*]§r POMの品質が100未満に設定されている場合、この設定は「滑らか」に強制されます。.
 value.POM_LIGHTING_MODE.1=滑らか
 value.POM_LIGHTING_MODE.2=シャープ
 
@@ -1820,6 +1820,14 @@ value.END_NEBULA_QUALITY.3=高
 value.END_NEBULA_QUALITY.4=ウルトラ
 value.END_NEBULA_QUALITY.5=エクストリーム
 
+value.END_NEBULA_HEMISPHERE.0=空全体
+value.END_NEBULA_HEMISPHERE.1=上半球のみ
+value.END_NEBULA_HEMISPHERE.-1=下半球のみ
+
+option.END_NEBULA_STAR_BRIGHTNESS=星雲の星 明るさ
+
+option.END_NEBULA_ONLY_STARS=星のみ
+
 option.STAR_BRIGHTNESS=星の明るさ
 option.STAR_BRIGHTNESS.comment=星の明るさを調整する設定です。.
 value.STAR_BRIGHTNESS.3=OFF
@@ -1917,10 +1925,10 @@ option.CAVE_FOG_I=洞窟の霧 - 強度
 option.CAVE_FOG_DENSITY=洞窟の霧 - 密度
 
 option.ATMOSPHERIC_FOG=大気中の霧
-option.ATMOSPHERIC_FOG_R_NEW=  大気中の霧 - 赤
-option.ATMOSPHERIC_FOG_G_NEW=  大気中の霧 - 緑
-option.ATMOSPHERIC_FOG_B_NEW=  大気中の霧 - 青
-option.ATMOSPHERIC_FOG_I=  大気中の霧 - 強度
+option.ATMOSPHERIC_FOG_R_NEW=   大気中の霧 - 赤
+option.ATMOSPHERIC_FOG_G_NEW=   大気中の霧 - 緑
+option.ATMOSPHERIC_FOG_B_NEW=   大気中の霧 - 青
+option.ATMOSPHERIC_FOG_I=   大気中の霧 - 強度
 option.ATMOSPHERIC_FOG_DENSITY=大気中の霧 - 密度
 option.RADIOACTIVE_ATMOSPHERIC_FOG=放射性の大気中の霧
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=不健康な習慣が一つ増えた感じです。. 夜間に非常に目立ちます。.
@@ -2345,10 +2353,10 @@ value.RETRO_LOOK.0=OFF
 value.RETRO_LOOK.1=輪郭線
 value.RETRO_LOOK.2=輪郭線 - 暗視のみ
 
-option.RETRO_LOOK_R=  レトロな見た目 - 赤
-option.RETRO_LOOK_G=  レトロな見た目 - 緑
-option.RETRO_LOOK_B=  レトロな見た目 - 青
-option.RETRO_LOOK_I=  レトロな見た目 - 強度
+option.RETRO_LOOK_R=   レトロな見た目 - 赤
+option.RETRO_LOOK_G=   レトロな見た目 - 緑
+option.RETRO_LOOK_B=   レトロな見た目 - 青
+option.RETRO_LOOK_I=   レトロな見た目 - 強度
 
 option.CURVE_DISPLAY=湾曲ディスプレイ
 option.CURVE_DISPLAY.comment=ディスプレイを湾曲させます。.

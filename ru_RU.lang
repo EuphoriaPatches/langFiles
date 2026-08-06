@@ -1820,6 +1820,14 @@ value.END_NEBULA_QUALITY.3=Высокое
 value.END_NEBULA_QUALITY.4=Ультра
 value.END_NEBULA_QUALITY.5=Экстремальное
 
+value.END_NEBULA_HEMISPHERE.0=Полное небо
+value.END_NEBULA_HEMISPHERE.1=Только верхняя полусфера
+value.END_NEBULA_HEMISPHERE.-1=Только нижняя полусфера
+
+option.END_NEBULA_STAR_BRIGHTNESS=Яркость звёзд туманности
+
+option.END_NEBULA_ONLY_STARS=Только звёзды
+
 option.STAR_BRIGHTNESS=Яркость звёзд
 option.STAR_BRIGHTNESS.comment=Регулировка яркости звёзд.
 value.STAR_BRIGHTNESS.3=Нет

@@ -1499,6 +1499,14 @@ value.END_NEBULA_QUALITY.1=낮음
 value.END_NEBULA_QUALITY.2=중간
 value.END_NEBULA_QUALITY.3=높음
 
+value.END_NEBULA_HEMISPHERE.0=하늘 전체
+value.END_NEBULA_HEMISPHERE.1=상반구
+value.END_NEBULA_HEMISPHERE.-1=하반구
+
+option.END_NEBULA_STAR_BRIGHTNESS=Nebula Star Brightness (성운 별 밝기)
+
+option.END_NEBULA_ONLY_STARS=Only Stars (별만 표시)
+
 option.STAR_BRIGHTNESS=별 밝기
 option.STAR_BRIGHTNESS.comment=별의 밝기를 조정하는 설정입니다.
 value.STAR_BRIGHTNESS.3=끄기

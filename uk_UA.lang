@@ -1742,6 +1742,14 @@ value.END_NEBULA_QUALITY.1=Мало
 value.END_NEBULA_QUALITY.2=Посереднє
 value.END_NEBULA_QUALITY.3=Багато
 
+value.END_NEBULA_HEMISPHERE.0=Повне небо
+value.END_NEBULA_HEMISPHERE.1=Верхня півкуля
+value.END_NEBULA_HEMISPHERE.-1=Нижня півкуля
+
+option.END_NEBULA_STAR_BRIGHTNESS=Яскравість зірок туманности
+
+option.END_NEBULA_ONLY_STARS=Лише зірки
+
 option.STAR_BRIGHTNESS=Яскравість
 option.STAR_BRIGHTNESS.comment=Яскравість зірок.
 value.STAR_BRIGHTNESS.3=ВИМК.

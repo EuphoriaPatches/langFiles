@@ -4,14 +4,14 @@ option.LANG_FILE_HEADER=Traduções feitas pela comunidade, A tradução pode es
 option.TRANSLATORS=Traduzido por: Lucas Henrick
 
 #Profiles
-profile.POTATO=Desempenho: §aResolução de calculadora
-profile.VERYLOW=Desempenho: §aResolução bem Baixa
-profile.LOW=Desempenho: §aResolução Baixa
-profile.MEDIUM=Desempenho: §aResolução Média
-profile.HIGH=Desempenho: §eResolução Alta (Padrão)
-profile.VERYHIGH=Desempenho: §cResolução bem Alta
-profile.ULTRA=Desempenho: §4§l Resolução Ultra
-profile.COMPLEMENTARY=§4§l§n§oComplementary
+profile.POTATO=Desempenho: §a Resolução de calculadora
+profile.VERYLOW=Desempenho: § a Resolução bem Baixa
+profile.LOW=Desempenho: §a Resolução Baixa
+profile.MEDIUM=Desempenho: §a Resolução Média
+profile.HIGH=Desempenho: §e Resolução Alta (Padrão)
+profile.VERYHIGH=Desempenho: §c Resolução bem Alta
+profile.ULTRA=Desempenho: §c Resolução Ultra
+profile.COMPLEMENTARY=§4§l§n§o Complementar
 profile.comment=Os "Profile" de shader equilibram qualidade visual e desempenho da forma mais otimizada possível. §e[*]§r Recomenda-se usar um desses "Profiles" nas suas configurações, a menos que você saiba o que está fazendo. §e[*]§r Todas as configurações afetadas podem ser encontradas no menu 'Configurações de Desempenho'.
 
 #Information
@@ -27,14 +27,16 @@ option.info0.comment=Esta seção contém apenas botões que existem para fornec
 
 option.info1=Como deixar o jogo com mais desempenho
 value.info1.0=
+option.info1.comment=- O desempenho é um tema complexo no Minecraft porque é afetado por tantas coisas, mas você pode tentar isso:. - Use Iris+Sodium em vez de Optifine, porque Optifine é problemático e nem sequer deixa você ler o resto desta descrição em alguns casos. - Reduza a configuração de sombreamento "Perfil", estas foram cuidadosamente testadas para a melhor relação visual/desempenho. - Reduza a distância de renderização, eu recomendo que a configuração seja 2-4 vezes maior que a "distância das sombras" do "Perfil" que você escolheu, por exemplo, 16 chunks de distância de renderização para o perfil "Alto", 6 chunks para o perfil de Batata. - Certifique-se de que sua resolução não é demasiado excessiva, 1920x1080 é ótimo para sistemas de níveis médios, 1440p é viável para sistemas de nível elevado, 4k é excessivo. - Certifique-se de que você não tem uma quantidade enorme de mods, Mesmo que a maioria desses mods sejam "mods de otimização", eles geralmente não são tão úteis para obturadores. Também vale a pena mencionar que alguns pacotes de recursos, especialmente aqueles que adicionam folhetos/folhas mais complexas custam uma tonelada de desempenho.
 
 option.info2=Quais são as melhores configurações?
 value.info2.0=
+option.info2.comment=\n
 
 option.info3=O que é "Profile" ou "Visual Style"
 value.info3.0=
 
-option.info4=O que é §5 RP Support§r
+option.info4=O que é RP Support
 value.info4.0=
 
 option.info5=Como consertar a incompatibilidade com mods
@@ -47,13 +49,13 @@ value.info7.0=
 option.info8=Como se juntar a nossa comunidade
 value.info8.0=
 
-option.info9=Como  apoiar o  §1Complementary §r
+option.info9=Como apoiar o Complementary
 value.info9.0=
 
 option.info10=Créditos
 value.info10.0=
 
-option.info11=§dO que é §5Euphoria Patches.§r
+option.info11=§d O que é §5Euphoria Patches.§r
 value.info11.0=
 option.info11.comment=§5Euphoria Patches§r é  um add-on para o Complementary Shaders, desenvolvido por SpacEagle17. Ele tem como objetivo expandir o Complementary com mais recursos e configurações opcionais feitos manualmente.
 
@@ -79,7 +81,7 @@ option.info16.comment=Você pode apoiar o  §5Euphoria Patches§rSendo curioso s
 
 option.info17=Versões Beta: SpacEagle17 Patreon
 value.info17.0=
-option.info17.comment=Você pode apoiar o SpacEagle17 no Patreon ou Ko-Fi, e tenha o acesso exclusivo de versões em desenvolvimento. acesse: §d§l§neuphoriapatches.com/support
+option.info17.comment=Você pode apoiar o SpacEagle17 no Patreon ou Ko-Fi, e tenha o acesso exclusivo de versões em desenvolvimento. Acesse: §d§l§neuphoriapatches.com/support
 
 option.info18=For Complementary r5.9
 value.info18.0=
@@ -87,7 +89,7 @@ option.info18.comment=Obrigado por instalar o   §5Euphoria Patches§r :)
 
 option.info19=§aNova Atualização
 value.info19.0=§cX.Y.Z §r->§a X.Y.Z
-option.info19.comment=Uma nova versão do  §5EuphoriaPatcher§r Mod está disponível para download. Baixe lá na página do Modrinth: https://euphoriapatches.com/download.
+option.info19.comment=Uma nova versão do §5EuphoriaPatcher§r Mod está disponível para download. Baixe lá na página do Modrinth:https://euphoriapatches.com/download.
 
 option.info20=
 value.info20.0=§aeuphoriapatches.com/download
@@ -97,7 +99,7 @@ option.info21=Dúvidas Frequentemente perguntadas
 value.info21.0=
 option.info21.comment=Dê uma olhada na página do FAQ para achar respostas para suas perguntas. §d§l§neuphoriapatches.com/faq
 
-option.info22=§dMais Opções ao Rolar
+option.info22=§d Mais Opções ao Rolar
 value.info22.0=
 option.info22.comment=Em GUIs grandes, algumas opções podem ficar ocultas. Role para baixo para revelá-las.
 
@@ -1770,6 +1772,14 @@ value.END_NEBULA_QUALITY.1=Baixo
 value.END_NEBULA_QUALITY.2=Médio
 value.END_NEBULA_QUALITY.3=Alto
 
+value.END_NEBULA_HEMISPHERE.0=Céu Completo
+value.END_NEBULA_HEMISPHERE.1=Apenas Hemisfério Superior
+value.END_NEBULA_HEMISPHERE.-1=Apenas Hemisfério Inferior
+
+option.END_NEBULA_STAR_BRIGHTNESS=Brilho das Estrelas da Nebulosa
+
+option.END_NEBULA_ONLY_STARS=Apenas Estrelas
+
 option.STAR_BRIGHTNESS=Brilho das Estrelas
 option.STAR_BRIGHTNESS.comment=Configuração para ajustar o brilho das
 value.STAR_BRIGHTNESS.3=Desligado
@@ -2951,4 +2961,45 @@ value.BLACK_HOLE_SHAPE.1=Quadrado
 
 value.BLACK_HOLE_PIXELATION.0=Desligado
 
+option.BLACK_HOLE_SIZE=Tamanho do Buraco negro
+option.BLACK_HOLE_SIZE.comment=Muda o tamanho do Buraco Negro
+
+option.BLACK_HOLE_RING_SIZE=Tamanho do Anel
+option.BLACK_HOLE_RING_SIZE.comment=Muda o tamanho da poeira ao redor do Buraco Negro.
+
+option.BLACK_HOLE_RING_COUNT=Quantidade de Anéis
+option.BLACK_HOLE_RING_COUNT.comment=Muda a quantidade de anéis que se formam a poeira ao redor do Buraco Negro.
+
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT=Rotação diferencial
+option.BLACK_HOLE_DIFFERENTIAL_AMOUNT.comment=Altera a diferença de velocidade de rotação entre o material próximo ao buraco negro e a borda externa.
+
+option.BLACK_HOLE_LENSING_STRENGTH=Lente gravitacional
+option.BLACK_HOLE_LENSING_STRENGTH.comment=Altera a intensidade com que o buraco negro curva a luz ao seu redor, criando um efeito de lente gravitacional.
+
+option.BLACK_HOLE_LENSING_RANGE=Alcance da Lente
+option.BLACK_HOLE_LENSING_RANGE.comment=Muda o quão longe o efeito de lente gravitacional estende em torno do buraco negro.
+
+option.BLACK_HOLE_LENSING_SWIRL=Intensidade do redemoinho da lente gravitacional
+option.BLACK_HOLE_LENSING_SWIRL.comment=Muda o quanto o efeito de lente gravitacional gira ao redor do buraco negro, criando um efeito visual mais dinâmico.
+
+option.BLACK_HOLE_DIRECTION_MODE=Modo de posição
+option.BLACK_HOLE_DIRECTION_MODE.comment=Muda como a posição do buraco negro no céu é determinada. Siga o modo de ângulo do Sol faz com que o furo preto siga a posição do ângulo do Sol do Final, O modo de posição fixa permite que você defina uma posição específica para o buraco preto, e o modo vagaroso lentamente faz o buraco negro se mover lentamente pelo céu ao longo do tempo.
+value.BLACK_HOLE_DIRECTION_MODE.0=Acompanhar o ângulo do Sol
+value.BLACK_HOLE_DIRECTION_MODE.1=Posição Fixa
+value.BLACK_HOLE_DIRECTION_MODE.2=Movimento Lento e Aleatório
+
+option.BLACK_HOLE_LONGITUDE=Longitude
+option.BLACK_HOLE_LONGITUDE.comment=Modo de Posição Fixa: define a posição preta do buraco ao redor do horizonte, em graus
+
+option.BLACK_HOLE_LATITUDE=Latitude
+option.BLACK_HOLE_LATITUDE.comment=Modo de Posição Fixa: define a posição preta do buraco acima ou abaixo do horizonte, em graus
+
+option.BLACK_HOLE_LOOPS_PER_DAY=Ciclos por dia
+option.BLACK_HOLE_LOOPS_PER_DAY.comment=Modo Movimento Lento e Aleatório: quantos laços cheios ao redor do céu o buraco negro completa por dia real. Muda a velocidade Basicamente.
+
+option.BLACK_HOLE_LATITUDE_BIAS=Desvio de latitude
+option.BLACK_HOLE_LATITUDE_BIAS.comment=Altera a posição de latitude do buraco negro, influenciando se ele aparece mais alto ou mais baixo no céu com o passar do tempo. Por padrão, o valor é positivo, fazendo com que ele apareça mais vezes acima do horizonte.
+
+option.BLACK_HOLE_STREAK=Rastro horizontal
+option.BLACK_HOLE_STREAK.comment=Adiciona uma faixa horizontal do disco de acreção ao redor do buraco negro.
 value.BLACK_HOLE_STREAK.0=Desligado
