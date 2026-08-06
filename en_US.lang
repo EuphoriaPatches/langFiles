@@ -1820,6 +1820,26 @@ value.END_NEBULA_QUALITY.3=High
 value.END_NEBULA_QUALITY.4=Ultra
 value.END_NEBULA_QUALITY.5=Extreme
 
+option.END_NEBULA_HEMISPHERE=Nebula Hemisphere
+option.END_NEBULA_HEMISPHERE.comment=Setting to only render the nebula in the upper or lower hemisphere of the sky in the End.
+value.END_NEBULA_HEMISPHERE.0=Full Sky
+value.END_NEBULA_HEMISPHERE.1=Upper Hemisphere Only
+value.END_NEBULA_HEMISPHERE.-1=Lower Hemisphere Only
+
+option.END_NEBULA_COLOR_2_INTENSITY=Second Color Intensity
+
+option.END_NEBULA_STAR_BRIGHTNESS=Nebula Star Brightness
+option.END_NEBULA_STAR_BRIGHTNESS.comment=Setting to adjust the star brightness in the End Nebula.
+
+option.END_NEBULA_ANIMATION_SPEED=Animation Speed
+option.END_NEBULA_ANIMATION_SPEED.comment=Controls the speed of the animation for the End Nebula.
+
+option.END_NEBULA_SEED=Seed
+option.END_NEBULA_SEED.comment=Controls the seed used to generate the End Nebula.
+
+option.END_NEBULA_ONLY_STARS=Only Stars
+option.END_NEBULA_ONLY_STARS.comment=Setting to only render stars in the End Nebula, without the nebula effect.
+
 option.STAR_BRIGHTNESS=Star Brightness
 option.STAR_BRIGHTNESS.comment=Setting to adjust the star brightness.
 value.STAR_BRIGHTNESS.3=OFF
