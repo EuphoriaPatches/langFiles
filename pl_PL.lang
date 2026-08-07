@@ -1212,7 +1212,7 @@ option.XLIGHT_CURVE.comment=Reguluje spadek intensywności światła w miarę od
 
 ####### Euphoria Patches #######
 profile2.DEFAULT=§bUstawienia Wizualne:§r Domyślne
-profile2.SPACEAGLE17= §f۞ §kO§fDEBUG (Nie używać)§f§kO
+profile2.SPACEAGLE17=§f۞ §kO§fDEBUG (Nie używać)§f§kO
 profile2.POPULAR=§bUstawienia Wizualne: §dPopularne
 profile2.comment=Są to gotowe ustawienia profilu dla Euphoria Patches. §c[-] OSTRZEŻENIE:§r Użycie tego może zmienić wiele różnych ustawień, a nawet zepsuć te, które sam stworzyłeś. n\n• Ustawienia domyślne to domyślne ustawienia Complementary.\n\n• §bPopularne §dUstawienia§r to preset, który ma włączone niektóre z najpopularniejszych ustawnień z Complementary i Euphoria Patches.\n\n• Profil Debug służy do celów testowych i nie jest przeznaczony do użytku przez zwykłych użytkowników.
 
@@ -1837,10 +1837,10 @@ option.CAVE_FOG_I=Mgła w Jask. - Natężęnie
 option.CAVE_FOG_DENSITY=Mgła w Jask. - Gęstość
 
 option.ATMOSPHERIC_FOG=Mgła Atmosferyczna
-option.ATMOSPHERIC_FOG_R_NEW= Mgła Atmosferyczna - Czerwień
-option.ATMOSPHERIC_FOG_G_NEW= Mgła Atmosferyczna - Zieleń
-option.ATMOSPHERIC_FOG_B_NEW= Mgła Atmosferyczna - Niebieskość
-option.ATMOSPHERIC_FOG_I= Mgła Atmosferyczna - Natężęnie
+option.ATMOSPHERIC_FOG_R_NEW=Mgła Atmosferyczna - Czerwień
+option.ATMOSPHERIC_FOG_G_NEW=Mgła Atmosferyczna - Zieleń
+option.ATMOSPHERIC_FOG_B_NEW=Mgła Atmosferyczna - Niebieskość
+option.ATMOSPHERIC_FOG_I=Mgła Atmosferyczna - Natężęnie
 option.ATMOSPHERIC_FOG_DENSITY=Mgła Atmosferyczna - Gęstość
 option.RADIOACTIVE_ATMOSPHERIC_FOG=Radioaktywna Mgła Atmosferyczna
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=Bardzo szkodzi na zdrowie... Szczególnie zauważalna w nocy.
@@ -2260,10 +2260,10 @@ value.RETRO_LOOK.0=WYŁ.
 value.RETRO_LOOK.1=Zarysy
 value.RETRO_LOOK.2=Zarysy - Podczas Noktowizji
 
-option.RETRO_LOOK_R= Wygląd Retro - Czerwień
-option.RETRO_LOOK_G= Wygląd Retro - Zieleń
-option.RETRO_LOOK_B= Wygląd Retro - Niebieskość
-option.RETRO_LOOK_I= Wygląd Retro - Natężęnie
+option.RETRO_LOOK_R=Wygląd Retro - Czerwień
+option.RETRO_LOOK_G=Wygląd Retro - Zieleń
+option.RETRO_LOOK_B=Wygląd Retro - Niebieskość
+option.RETRO_LOOK_I=Wygląd Retro - Natężęnie
 
 option.CURVE_DISPLAY=Zagięty Ekran
 option.CURVE_DISPLAY.comment=Symuluje zakrzywienie wyświetlacz.

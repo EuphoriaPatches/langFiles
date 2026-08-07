@@ -1209,7 +1209,7 @@ option.XLIGHT_CURVE.comment=Керує швидкістю згасання ін�
 
 ####### Euphoria Patches #######
 profile2.DEFAULT=§bВигляд: §rУсталений
-profile2.SPACEAGLE17= §f۞§kO§fНалагодження(не чіпати)§f§kO
+profile2.SPACEAGLE17=§f۞§kO§fНалагодження(не чіпати)§f§kO
 profile2.POPULAR=§bВигляд: §dПопулярний
 profile2.comment=Усталений та Попопулярний Це пресети профілів Euphoria Patches. §c[-] ПОПЕРЕДЖЕННЯ:§r Використання цього може змінити багато різних налаштувань і навіть порушити створені вами налаштування.\n\n• Усталений — це налаштування додаткових шейдерів усталено.\n\n• §dПопулярний§r — це попередні налаштування, у яких увімкнено деякі з найпопулярніших Euphoria Patches та додаткових налаштувань.\n\n• Профіль налагодження використовується для тестування та не призначений для використання звичайними користувачами.
 
@@ -1847,10 +1847,10 @@ option.CAVE_FOG_I=Інтенсивність печерного туману
 option.CAVE_FOG_DENSITY=Щільність печерного туману
 
 option.ATMOSPHERIC_FOG=Атмосферний туман
-option.ATMOSPHERIC_FOG_R_NEW= Червоний атмосферного туману
-option.ATMOSPHERIC_FOG_G_NEW= Зелений атмосферного туману
-option.ATMOSPHERIC_FOG_B_NEW= Синій атмосферного туману
-option.ATMOSPHERIC_FOG_I= Інтенсивність атмосферного туману
+option.ATMOSPHERIC_FOG_R_NEW=Червоний атмосферного туману
+option.ATMOSPHERIC_FOG_G_NEW=Зелений атмосферного туману
+option.ATMOSPHERIC_FOG_B_NEW=Синій атмосферного туману
+option.ATMOSPHERIC_FOG_I=Інтенсивність атмосферного туману
 option.ATMOSPHERIC_FOG_DENSITY=Щільність атмосферного туману
 option.RADIOACTIVE_ATMOSPHERIC_FOG=Радіоактивний атмосферний туман
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=Це ще одна нездорова звичка. Дуже помітно вночі.
@@ -2272,10 +2272,10 @@ value.RETRO_LOOK.0=ВИМК.
 value.RETRO_LOOK.1=Контури
 value.RETRO_LOOK.2=Контури — лише нічне бачення
 
-option.RETRO_LOOK_R= Червоний ретро погляду
-option.RETRO_LOOK_G= Зелений ретро погляду
-option.RETRO_LOOK_B= Синій ретро погляду
-option.RETRO_LOOK_I= Інтенсивність ретро погляду
+option.RETRO_LOOK_R=Червоний ретро погляду
+option.RETRO_LOOK_G=Зелений ретро погляду
+option.RETRO_LOOK_B=Синій ретро погляду
+option.RETRO_LOOK_I=Інтенсивність ретро погляду
 
 option.CURVE_DISPLAY=Кривий дисплей
 option.CURVE_DISPLAY.comment=Додає ефект викривлення дисплею.

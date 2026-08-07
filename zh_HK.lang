@@ -1226,7 +1226,7 @@ option.XLIGHT_CURVE.comment=調節方塊光的隨距離增加而衰減的快速�
 
 ####### Euphoria Patches #######
 profile2.DEFAULT=§b風格設定:§r 默認
-profile2.SPACEAGLE17=    §f۞ §kO§f調試 (請勿使用)§f§kO
+profile2.SPACEAGLE17=§f۞ §kO§f調試 (請勿使用)§f§kO
 profile2.POPULAR=§b風格設定: §d流行
 profile2.comment=此為 Euphoria Patches 的配置文件預設。. §c[-] 警告:§r 使用此選項會影響許多設定, 也會破壞部分已經調節過的設定。. \n\n• 默認設定為 Complementary 默認的設定。. \n\n• §d流行§r配置文件會啓用涵蓋 Euphoria Patches 和 Complementary 在內的最受歡迎的部分設定\n\n• 調試配置文件用於測試目的, 普通用戶請勿使用。.
 
@@ -1875,10 +1875,10 @@ option.CAVE_FOG_I=洞穴煙霧 - 強度
 option.CAVE_FOG_DENSITY=洞穴煙霧 密度
 
 option.ATMOSPHERIC_FOG=大氣霧
-option.ATMOSPHERIC_FOG_R_NEW=    大氣霧 - 紅色
-option.ATMOSPHERIC_FOG_G_NEW=    大氣霧 - 綠色
-option.ATMOSPHERIC_FOG_B_NEW=    大氣霧 - 藍色
-option.ATMOSPHERIC_FOG_I=    大氣霧 - 強度
+option.ATMOSPHERIC_FOG_R_NEW=大氣霧 - 紅色
+option.ATMOSPHERIC_FOG_G_NEW=大氣霧 - 綠色
+option.ATMOSPHERIC_FOG_B_NEW=大氣霧 - 藍色
+option.ATMOSPHERIC_FOG_I=大氣霧 - 強度
 option.ATMOSPHERIC_FOG_DENSITY=大氣霧 密度
 option.RADIOACTIVE_ATMOSPHERIC_FOG=放射性大氣霧
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=此設定稍顯病態。. 在晚上效果會非常明顯。.
@@ -2303,10 +2303,10 @@ value.RETRO_LOOK.0=關
 value.RETRO_LOOK.1=描邊
 value.RETRO_LOOK.2=描邊 - 僅夜視模式
 
-option.RETRO_LOOK_R=    複古外觀 - 紅色
-option.RETRO_LOOK_G=    複古外觀 - 綠色
-option.RETRO_LOOK_B=    複古外觀 - 藍色
-option.RETRO_LOOK_I=    複古外觀 - 強度
+option.RETRO_LOOK_R=複古外觀 - 紅色
+option.RETRO_LOOK_G=複古外觀 - 綠色
+option.RETRO_LOOK_B=複古外觀 - 藍色
+option.RETRO_LOOK_I=複古外觀 - 強度
 
 option.CURVE_DISPLAY=曲面顯示
 option.CURVE_DISPLAY.comment=使得顯示內容呈弧形。.

@@ -1255,7 +1255,7 @@ option.XLIGHT_CURVE.comment=Регулирует скорость уменьше
 
 ####### Euphoria Patches #######
 profile2.DEFAULT=§bВизуальный стиль:§r по умолчанию
-profile2.SPACEAGLE17= §f۞ §kO§fОТЛАДКА (не использовать)§f§kO
+profile2.SPACEAGLE17=§f۞ §kO§fОТЛАДКА (не использовать)§f§kO
 profile2.POPULAR=§bПопулярные §dнастройки
 profile2.comment=Это предустановки профиля Euphoria Patches. §c[-] ПРЕДУПРЕЖДЕНИЕ:§r Использование этого переключателя может изменить множество различных настроек и даже нарушить те, которые были установлены вручную.\n\n• Настройки по умолчанию — это настройки шейдера Complementary по умолчанию.\n\n• §bПопулярные §dнастройки§r это предустановка, в которой включены некоторые из самых популярных функций Euphoria Patches и Complementary.\n\n• Профиль отладки используется в целях тестирования и не предназначен для использования обычными пользователями.
 
@@ -1790,7 +1790,7 @@ value.END_TWINKLING_STARS.18=1.8
 value.END_TWINKLING_STARS.19=1.9
 value.END_TWINKLING_STARS.20=2.0
 option.END_STAR_HEMISPHERE=Полусфера звёзд Энда
-option.END_STAR_HEMISPHERE.comment=Настройка для отображения звезд только в верхнем или нижнем полушарии неба Энда.
+option.END_STAR_HEMISPHERE.comment=Настройка для отображения звёзд только в верхней или нижней полусфере неба Энда.
 value.END_STAR_HEMISPHERE.0=Полное небо
 value.END_STAR_HEMISPHERE.1=Только верхняя полусфера
 value.END_STAR_HEMISPHERE.-1=Только нижняя полусфера
@@ -1820,13 +1820,25 @@ value.END_NEBULA_QUALITY.3=Высокое
 value.END_NEBULA_QUALITY.4=Ультра
 value.END_NEBULA_QUALITY.5=Экстремальное
 
+option.END_NEBULA_HEMISPHERE=Полусфера туманности
+option.END_NEBULA_HEMISPHERE.comment=Настройка для отображения туманности только в верхней или нижней полусфере неба Энда.
 value.END_NEBULA_HEMISPHERE.0=Полное небо
 value.END_NEBULA_HEMISPHERE.1=Только верхняя полусфера
 value.END_NEBULA_HEMISPHERE.-1=Только нижняя полусфера
 
+option.END_NEBULA_COLOR_2_INTENSITY=Интенсивность второго цвета
+
 option.END_NEBULA_STAR_BRIGHTNESS=Яркость звёзд туманности
+option.END_NEBULA_STAR_BRIGHTNESS.comment=Настройка для регулировки яркости звёзд туманности Энда.
+
+option.END_NEBULA_ANIMATION_SPEED=Скорость анимации
+option.END_NEBULA_ANIMATION_SPEED.comment=Управляет скоростью анимации туманности Энда.
+
+option.END_NEBULA_SEED=Ключ генератора
+option.END_NEBULA_SEED.comment=Управляет ключом генератора, используемым для создания туманности Энда.
 
 option.END_NEBULA_ONLY_STARS=Только звёзды
+option.END_NEBULA_ONLY_STARS.comment=Настройка отображения только звёзд в туманности Энда, без самого эффекта туманности.
 
 option.STAR_BRIGHTNESS=Яркость звёзд
 option.STAR_BRIGHTNESS.comment=Регулировка яркости звёзд.
@@ -1925,10 +1937,10 @@ option.CAVE_FOG_I=Яркость пещерного тумана
 option.CAVE_FOG_DENSITY=Плотность пещерного тумана
 
 option.ATMOSPHERIC_FOG=Атмосферный туман
-option.ATMOSPHERIC_FOG_R_NEW= Красный для атмосферного тумана
-option.ATMOSPHERIC_FOG_G_NEW= Зелёный для атмосферного тумана
-option.ATMOSPHERIC_FOG_B_NEW= Синий для атмосферного тумана
-option.ATMOSPHERIC_FOG_I= Яркость атмосферного тумана
+option.ATMOSPHERIC_FOG_R_NEW=Красный для атмосферного тумана
+option.ATMOSPHERIC_FOG_G_NEW=Зелёный для атмосферного тумана
+option.ATMOSPHERIC_FOG_B_NEW=Синий для атмосферного тумана
+option.ATMOSPHERIC_FOG_I=Яркость атмосферного тумана
 option.ATMOSPHERIC_FOG_DENSITY=Плотность атмосферного тумана
 option.RADIOACTIVE_ATMOSPHERIC_FOG=Радиоактивный атмосферный туман
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=Опасный для здоровья эффект. Более заметен ночью.
@@ -2353,10 +2365,10 @@ value.RETRO_LOOK.0=Нет
 value.RETRO_LOOK.1=Контуры
 value.RETRO_LOOK.2=Контуры только с ночным зрением
 
-option.RETRO_LOOK_R= Красный для ретро
-option.RETRO_LOOK_G= Зелёный для ретро
-option.RETRO_LOOK_B= Синий для ретро
-option.RETRO_LOOK_I= Яркость ретро
+option.RETRO_LOOK_R=Красный для ретро
+option.RETRO_LOOK_G=Зелёный для ретро
+option.RETRO_LOOK_B=Синий для ретро
+option.RETRO_LOOK_I=Яркость ретро
 
 option.CURVE_DISPLAY=Изогнутый экран
 option.CURVE_DISPLAY.comment=Добавляет кривизну к изображению.

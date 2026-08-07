@@ -1255,7 +1255,7 @@ option.XLIGHT_CURVE.comment=光源から離れるにつれて、光源ブロッ�
 
 ####### Euphoria Patches #######
 profile2.DEFAULT=§bビジュアル:§r デフォルト
-profile2.SPACEAGLE17= §f۞ §kO§fデバッグ (使わないで)§f§kO
+profile2.SPACEAGLE17=§f۞ §kO§fデバッグ (使わないで)§f§kO
 profile2.POPULAR=§bビジュアル: §d人気の§d設定
 profile2.comment=これらはEuphoria Patchesのプロファイル設定です。. §c[-] 警告:§r これを使用すると複数の設定が変更され、あなたが作り上げた設定を破壊してしまうおそれがあります。. \n\n• デフォルト設定はComplementary Shaderのデフォルトの設定です。. \n\n• §d人気の§d設定§rプロファイルはEuphoria PatchesとComplementaryで人気の設定が有効になります。. \n\n• デバッグプロファイルはテスト用に使用され、一般のユーザーが使用するようには設計されていません。.
 
@@ -1820,13 +1820,25 @@ value.END_NEBULA_QUALITY.3=高
 value.END_NEBULA_QUALITY.4=ウルトラ
 value.END_NEBULA_QUALITY.5=エクストリーム
 
+option.END_NEBULA_HEMISPHERE=星雲の半球
+option.END_NEBULA_HEMISPHERE.comment=ジ・エンドの星雲を、空の上下どちらかの半球にのみ描画する設定です。.
 value.END_NEBULA_HEMISPHERE.0=空全体
 value.END_NEBULA_HEMISPHERE.1=上半球のみ
 value.END_NEBULA_HEMISPHERE.-1=下半球のみ
 
+option.END_NEBULA_COLOR_2_INTENSITY=第二色の強度
+
 option.END_NEBULA_STAR_BRIGHTNESS=星雲の星 明るさ
+option.END_NEBULA_STAR_BRIGHTNESS.comment=ジ・エンドの星雲の星の明るさを調整する設定です。.
+
+option.END_NEBULA_ANIMATION_SPEED=アニメーション速度
+option.END_NEBULA_ANIMATION_SPEED.comment=ジ・エンドの星雲のアニメーション速度を制御します。.
+
+option.END_NEBULA_SEED=シード値
+option.END_NEBULA_SEED.comment=ジ・エンドの星雲を生成するのに使用されるシード値を制御します。.
 
 option.END_NEBULA_ONLY_STARS=星のみ
+option.END_NEBULA_ONLY_STARS.comment=ジ・エンドの星雲で星雲効果を除いた星だけを描画する設定です。.
 
 option.STAR_BRIGHTNESS=星の明るさ
 option.STAR_BRIGHTNESS.comment=星の明るさを調整する設定です。.
@@ -1925,10 +1937,10 @@ option.CAVE_FOG_I=洞窟の霧 - 強度
 option.CAVE_FOG_DENSITY=洞窟の霧 - 密度
 
 option.ATMOSPHERIC_FOG=大気中の霧
-option.ATMOSPHERIC_FOG_R_NEW=    大気中の霧 - 赤
-option.ATMOSPHERIC_FOG_G_NEW=    大気中の霧 - 緑
-option.ATMOSPHERIC_FOG_B_NEW=    大気中の霧 - 青
-option.ATMOSPHERIC_FOG_I=    大気中の霧 - 強度
+option.ATMOSPHERIC_FOG_R_NEW=大気中の霧 - 赤
+option.ATMOSPHERIC_FOG_G_NEW=大気中の霧 - 緑
+option.ATMOSPHERIC_FOG_B_NEW=大気中の霧 - 青
+option.ATMOSPHERIC_FOG_I=大気中の霧 - 強度
 option.ATMOSPHERIC_FOG_DENSITY=大気中の霧 - 密度
 option.RADIOACTIVE_ATMOSPHERIC_FOG=放射性の大気中の霧
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=不健康な習慣が一つ増えた感じです。. 夜間に非常に目立ちます。.
@@ -2220,7 +2232,7 @@ value.SEASON_START.3=春
 option.SEASON_LENGTH=季節の期間
 option.SEASON_LENGTH.comment=季節の期間をMinecraft内の日数で変更します。.
 value.SEASON_LENGTH.1=1 Minecraft日
-suffix.SEASON_LENGTH= Minecraft日
+suffix.SEASON_LENGTH=Minecraft日
 
 option.SEASON_TRANSITION_START=季節の移行開始
 option.SEASON_TRANSITION_START.comment=この割合の季節が過ぎた時点で次の季節への移行が始まります。.
@@ -2353,10 +2365,10 @@ value.RETRO_LOOK.0=OFF
 value.RETRO_LOOK.1=輪郭線
 value.RETRO_LOOK.2=輪郭線 - 暗視のみ
 
-option.RETRO_LOOK_R=    レトロな見た目 - 赤
-option.RETRO_LOOK_G=    レトロな見た目 - 緑
-option.RETRO_LOOK_B=    レトロな見た目 - 青
-option.RETRO_LOOK_I=    レトロな見た目 - 強度
+option.RETRO_LOOK_R=レトロな見た目 - 赤
+option.RETRO_LOOK_G=レトロな見た目 - 緑
+option.RETRO_LOOK_B=レトロな見た目 - 青
+option.RETRO_LOOK_I=レトロな見た目 - 強度
 
 option.CURVE_DISPLAY=湾曲ディスプレイ
 option.CURVE_DISPLAY.comment=ディスプレイを湾曲させます。.

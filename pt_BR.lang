@@ -1227,7 +1227,7 @@ option.XLIGHT_CURVE.comment=Ajusta a rapidez com que a intensidade da iluminaç�
 
 ####### Euphoria Patches #######
 profile2.DEFAULT=§bConfigurações Visuais:§r Padrão
-profile2.SPACEAGLE17= §f۞ §kO§fDEBUG (Não Use)§f§kO
+profile2.SPACEAGLE17=§f۞ §kO§fDEBUG (Não Use)§f§kO
 profile2.POPULAR=§bConfigurações Visuais: §dPopular
 profile2.comment=Estes são perfis predefinidos do Euphoria Patches. §c[-] AVISO:§r Usar isso pode alterar várias configurações diferentes e até quebrar as que você configurou manualmente.\n\n• Configurações Padrão são as configurações padrão do Complementary Shaders.\n\n• §bConfigurações §dPopulares§r é um preset que ativa algumas das configurações mais populares do Euphoria Patches e do Complementary.\n\n• O perfil Debug é usado para testes e não é feito para uso de usuários comuns.
 
@@ -1876,10 +1876,10 @@ option.CAVE_FOG_I=Névoa de Caverna - Intensidade
 option.CAVE_FOG_DENSITY=Densidade da Névoa de Caverna
 
 option.ATMOSPHERIC_FOG=Névoa Atmosférica
-option.ATMOSPHERIC_FOG_R_NEW= Névoa Atmosférica - Vermelho
-option.ATMOSPHERIC_FOG_G_NEW= Névoa Atmosférica - Verde
-option.ATMOSPHERIC_FOG_B_NEW= Névoa Atmosférica - Azul
-option.ATMOSPHERIC_FOG_I= Névoa Atmosférica - Intensidade
+option.ATMOSPHERIC_FOG_R_NEW=Névoa Atmosférica - Vermelho
+option.ATMOSPHERIC_FOG_G_NEW=Névoa Atmosférica - Verde
+option.ATMOSPHERIC_FOG_B_NEW=Névoa Atmosférica - Azul
+option.ATMOSPHERIC_FOG_I=Névoa Atmosférica - Intensidade
 option.ATMOSPHERIC_FOG_DENSITY=Densidade da Névoa Atmosférica
 option.RADIOACTIVE_ATMOSPHERIC_FOG=Névoa Atmosférica Radioativa
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=É só mais um hábito nada saudável. Muito perceptível à noite
@@ -2292,10 +2292,10 @@ value.RETRO_LOOK.0=DESLIGADO
 value.RETRO_LOOK.1=Contornos
 value.RETRO_LOOK.2=Contornos - Apenas Visão Noturna
 
-option.RETRO_LOOK_R= Visual Retrô - Vermelho
-option.RETRO_LOOK_G= Visual Retrô - Verde
-option.RETRO_LOOK_B= Visual Retrô - Azul
-option.RETRO_LOOK_I= Visual Retrô - Intensidade
+option.RETRO_LOOK_R=Visual Retrô - Vermelho
+option.RETRO_LOOK_G=Visual Retrô - Verde
+option.RETRO_LOOK_B=Visual Retrô - Azul
+option.RETRO_LOOK_I=Visual Retrô - Intensidade
 
 option.CURVE_DISPLAY=Display Curvado
 option.CURVE_DISPLAY.comment=Deixa a tela curvada.
