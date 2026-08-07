@@ -408,13 +408,21 @@ function normalizeEscapedBackslashes(text) {
 // Must run after normalizePeriods.
 const NBSP = "\u00A0";
 const ASCII_CHAR_RE = /[\x21-\x7E]/;
+const LEADING_WHITESPACE_RE = /^[ \u00A0]*/;
 
 function isAsciiChar(ch) {
   return ch !== undefined && ASCII_CHAR_RE.test(ch);
 }
 
-function convertSpacesToNbsp(text, langId) {
+// Resets leading whitespace to match the source string's count, preventing
+// Crowdin syncs from endlessly stacking NBSPs due to space-diff mismatches.
+function convertSpacesToNbsp(text, langId, sourceText) {
   if (!isCjkLanguage(langId)) return text;
+  if (typeof sourceText === "string") {
+    const sourceLeadCount = sourceText.match(LEADING_WHITESPACE_RE)[0].length;
+    text =
+      NBSP.repeat(sourceLeadCount) + text.replace(LEADING_WHITESPACE_RE, "");
+  }
   let result = "";
   for (let i = 0; i < text.length; i++) {
     const ch = text[i];

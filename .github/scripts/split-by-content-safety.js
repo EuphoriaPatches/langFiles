@@ -48,10 +48,12 @@ const REPORT_PATH = path.join(REPO_ROOT, "_flagged-report.json");
 // word-wrap fix) so raw downloaded and committed values can be compared on
 // equal footing (see change-detection check below). convertSpacesToNbsp
 // must run after normalizePeriods, since it protects the marker space
-// normalizePeriods just inserted.
-function normalizeTranslation(text, langId) {
+// normalizePeriods just inserted. sourceText (the en_US value for this key)
+// lets convertSpacesToNbsp reset leading indentation instead of letting it
+// grow on every sync.
+function normalizeTranslation(text, langId, sourceText) {
   const periodsFixed = normalizePeriods(normalizeEscapedBackslashes(text), langId);
-  return convertSpacesToNbsp(periodsFixed, langId).trimEnd();
+  return convertSpacesToNbsp(periodsFixed, langId, sourceText).trimEnd();
 }
 
 // Pushes normalized values (full-width period fixes, trailing-whitespace
@@ -150,7 +152,8 @@ async function main() {
 
       const cleanUpdates = new Map();
       for (const [key, rawNewValue] of newMap) {
-        const newValue = normalizeTranslation(rawNewValue, langId);
+        const sourceValue = sourceLangMap.get(key);
+        const newValue = normalizeTranslation(rawNewValue, langId, sourceValue);
         if (newValue !== rawNewValue) {
           // oldValue here is what's currently live on Crowdin (rawNewValue) -
           // pushTextCorrections mirrors whatever approval status *that*
@@ -162,7 +165,7 @@ async function main() {
 
         // If normalized values match, only our own formatting changed (e.g., fresh Crowdin re-export).
         // Apply directly without re-checking content safety to prevent false positives on already-reviewed text.
-        if (oldValue !== undefined && normalizeTranslation(oldValue, langId) === newValue) {
+        if (oldValue !== undefined && normalizeTranslation(oldValue, langId, sourceValue) === newValue) {
           cleanUpdates.set(key, newValue);
           continue;
         }
