@@ -1255,7 +1255,7 @@ option.XLIGHT_CURVE.comment=Adjusts how quickly the intensity of blocklight fade
 
 ####### Euphoria Patches #######
 profile2.DEFAULT=§bVisual Settings:§r Default
-profile2.SPACEAGLE17= §f۞ §kO§fDEBUG (Do Not Use)§f§kO
+profile2.SPACEAGLE17=§f۞ §kO§fDEBUG (Do Not Use)§f§kO
 profile2.POPULAR=§bVisual Settings: §dPopular
 profile2.comment=These are profile presets for Euphoria Patches. §c[-] WARNING:§r Using this can alter many different settings and even break your handcrafted ones.\n\n• Default Settings are the default Complementary Shader Settings.\n\n• §bPopular §dSettings§r is a preset that has some of the most popular Euphoria Patches and Complementary settings enabled.\n\n• The Debug profile is used for testing purposes and isn't meant to be used by regular users.
 
@@ -1937,10 +1937,10 @@ option.CAVE_FOG_I=Cave Fog - Intensity
 option.CAVE_FOG_DENSITY=Cave Fog Density
 
 option.ATMOSPHERIC_FOG=Atmospheric Fog
-option.ATMOSPHERIC_FOG_R_NEW= Atmospheric Fog - Red
-option.ATMOSPHERIC_FOG_G_NEW= Atmospheric Fog - Green
-option.ATMOSPHERIC_FOG_B_NEW= Atmospheric Fog - Blue
-option.ATMOSPHERIC_FOG_I= Atmospheric Fog - Intensity
+option.ATMOSPHERIC_FOG_R_NEW=Atmospheric Fog - Red
+option.ATMOSPHERIC_FOG_G_NEW=Atmospheric Fog - Green
+option.ATMOSPHERIC_FOG_B_NEW=Atmospheric Fog - Blue
+option.ATMOSPHERIC_FOG_I=Atmospheric Fog - Intensity
 option.ATMOSPHERIC_FOG_DENSITY=Atmospheric Fog Density
 option.RADIOACTIVE_ATMOSPHERIC_FOG=Radioactive Atmospheric Fog
 option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=It's just one unhealthy habit more. Very noticeable at night.
@@ -2365,10 +2365,10 @@ value.RETRO_LOOK.0=OFF
 value.RETRO_LOOK.1=Outlines
 value.RETRO_LOOK.2=Outlines - Night Vision Only
 
-option.RETRO_LOOK_R= Retro Look - Red
-option.RETRO_LOOK_G= Retro Look - Green
-option.RETRO_LOOK_B= Retro Look - Blue
-option.RETRO_LOOK_I= Retro Look - Intensity
+option.RETRO_LOOK_R=Retro Look - Red
+option.RETRO_LOOK_G=Retro Look - Green
+option.RETRO_LOOK_B=Retro Look - Blue
+option.RETRO_LOOK_I=Retro Look - Intensity
 
 option.CURVE_DISPLAY=Curved Display
 option.CURVE_DISPLAY.comment=Make the display curved.
