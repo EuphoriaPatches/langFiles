@@ -1830,6 +1830,7 @@ option.END_NEBULA_COLOR_2_INTENSITY=Second Color Intensity
 
 option.END_NEBULA_STAR_BRIGHTNESS=Nebula Star Brightness
 option.END_NEBULA_STAR_BRIGHTNESS.comment=Setting to adjust the star brightness in the End Nebula.
+value.END_NEBULA_STAR_BRIGHTNESS.0=OFF
 
 option.END_NEBULA_ANIMATION_SPEED=Animation Speed
 option.END_NEBULA_ANIMATION_SPEED.comment=Controls the speed of the animation for the End Nebula.
