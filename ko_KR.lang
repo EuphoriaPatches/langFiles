@@ -1504,6 +1504,7 @@ value.END_NEBULA_HEMISPHERE.1=상반구
 value.END_NEBULA_HEMISPHERE.-1=하반구
 
 option.END_NEBULA_STAR_BRIGHTNESS=Nebula Star Brightness (성운 별 밝기)
+value.END_NEBULA_STAR_BRIGHTNESS.0=켜기
 
 option.END_NEBULA_ONLY_STARS=Only Stars (별만 표시)
 

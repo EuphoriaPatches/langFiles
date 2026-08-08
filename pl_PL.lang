@@ -1738,6 +1738,7 @@ value.END_NEBULA_HEMISPHERE.1=Tylko Górna Półkula
 value.END_NEBULA_HEMISPHERE.-1=Tylko Dolna Półkula
 
 option.END_NEBULA_STAR_BRIGHTNESS=Jasność Gwiazd w Mgławicach
+value.END_NEBULA_STAR_BRIGHTNESS.0=WŁ.
 
 option.END_NEBULA_ONLY_STARS=Tylko Gwiazdy
 

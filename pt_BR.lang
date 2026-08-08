@@ -1776,6 +1776,7 @@ value.END_NEBULA_HEMISPHERE.1=Apenas Hemisfério Superior
 value.END_NEBULA_HEMISPHERE.-1=Apenas Hemisfério Inferior
 
 option.END_NEBULA_STAR_BRIGHTNESS=Brilho das Estrelas da Nebulosa
+value.END_NEBULA_STAR_BRIGHTNESS.0=Desligado
 
 option.END_NEBULA_ONLY_STARS=Apenas Estrelas
 

@@ -746,6 +746,8 @@ value.END_NEBULA_QUALITY.1=Baja
 value.END_NEBULA_QUALITY.2=Media
 value.END_NEBULA_QUALITY.3=Alta
 
+value.END_NEBULA_STAR_BRIGHTNESS.0=Desactivadas
+
 option.STAR_BRIGHTNESS=Brillo de las Estrellas
 option.STAR_BRIGHTNESS.comment=Ajuste del brillo de las estrellas.
 value.STAR_BRIGHTNESS.3=Sin brillo

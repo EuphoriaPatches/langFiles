@@ -31,7 +31,7 @@ option.info0.comment=このセクションには情報表示のみを目的と�
 
 option.info1=パフォーマンスを向上させる方法
 value.info1.0=
-option.info1.comment=- Minecraftにおけるパフォーマンスは多くの要因に影響される複雑な問題ですが、一般的なアドバイスとしては以下が挙げられます:\n- OptifineではなくIris+Sodiumを使用する - Optifineは問題児で、場合によってはこの説明文を最後まで読ませてもらえないことすらあります。. - シェーダーの「プロファイル」設定を下げる - これらはパフォーマンスとグラフィック品質のバランスが最適化されるよう慎重にテストされています。. - 描画距離を下げる - 推奨は選んだ「プロファイル」設定の「影の描写距離」から2～4チャンク上、つまり「高」プロファイルでは16チャンク、最低プロファイルでは6チャンクになります。. - 解像度が過剰になっていないか確認する - 4Kは過剰で、ミドルエンドのシステムでは1920x1080が最適、ハイエンドのシステムでは1440pが視野に入ってきます。. - 大量のModが入っていないか確認する - 例えそのほとんどが「最適化Mod」だったとしても、大抵の場合シェーダーにとってはあまり役に立ちません。. また一部のリソースパック、特に複雑な植物/葉を追加するものはパフォーマンスに大きく影響することに注意してください。.
+option.info1.comment=- Minecraftにおけるパフォーマンスは多くの要因に影響される複雑な問題ですが、一般的なアドバイスとしては以下が挙げられます:\n- OptifineではなくIris+Sodiumを使用する - Optifineは問題児で、場合によってはこの説明文を最後まで読ませてもらえないことすらあります。. - シェーダーの「プロファイル」設定を下げる - これらはパフォーマンスとグラフィック品質のバランスが最適化されるよう慎重にテストされています。. - 描画距離を下げる - 推奨は選んだ「プロファイル」設定の「影の描画距離」から2～4チャンク上、つまり「高」プロファイルでは16チャンク、最低プロファイルでは6チャンクになります。. - 解像度が過剰になっていないか確認する - 4Kは過剰で、ミドルエンドのシステムでは1920x1080が最適、ハイエンドのシステムでは1440pが視野に入ってきます。. - 大量のModが入っていないか確認する - 例えそのほとんどが「最適化Mod」だったとしても、大抵の場合シェーダーにとってはあまり役に立ちません。. また一部のリソースパック、特に複雑な植物/葉を追加するものはパフォーマンスに大きく影響を与えることに注意してください。.
 
 option.info2=最適な設定とは
 value.info2.0=
@@ -282,7 +282,7 @@ value.LIGHTSHAFT_QUALI_DEFINE.2=§e中
 value.LIGHTSHAFT_QUALI_DEFINE.3=§c高
 value.LIGHTSHAFT_QUALI_DEFINE.4=§4§l超高
 
-option.shadowDistance=影の描写距離
+option.shadowDistance=影の描画距離
 option.shadowDistance.comment=動的な影が描画される距離を調整します。. §c[-]§r 低い値に設定すると、光芒が過度に漏れる可能性があります。.
 value.shadowDistance.64.0=§a4チャンク §c[-]
 value.shadowDistance.80.0=§a5チャンク §c[-]
@@ -372,7 +372,7 @@ option.VANILLAAO_I.comment=シーンのエッジに追加のアンビエント�
 value.VANILLAAO_I.0=OFF
 
 option.BORDER_FOG=境界の霧
-option.BORDER_FOG.comment=読み込み済みのワールドの端に濃い霧を追加して、チャンクの境界を隠します。. §e[*]§r 描写距離が8チャンク未満の場合は、境界の霧を無効にすることを推奨します。.
+option.BORDER_FOG.comment=読み込み済みのワールドの端に濃い霧を追加して、チャンクの境界を隠します。. §e[*]§r 描画距離が8チャンク未満の場合は、境界の霧を無効にすることを推奨します。.
 
 option.ATM_FOG_MULT=大気中の霧
 option.ATM_FOG_MULT.comment=高度に基づく霧の強度を調整します。.
@@ -382,7 +382,7 @@ value.ATM_FOG_MULT.0.80=普通
 value.ATM_FOG_MULT.0.95=強め
 
 option.ATM_FOG_DISTANCE=大気中の霧 距離
-option.ATM_FOG_DISTANCE.comment=大気中の霧が現れ始めるカメラからの距離を調整します。. §e[*]§r 霧の距離は、ビデオ設定の描写距離設定によって自動的に調整されることもあります。.
+option.ATM_FOG_DISTANCE.comment=大気中の霧が現れ始めるカメラからの距離を調整します。. §e[*]§r 霧の距離は、ビデオ設定の描画距離設定によって自動的に調整されることもあります。.
 
 option.ATM_FOG_ALTITUDE=大気中の霧 高度
 option.ATM_FOG_ALTITUDE.comment=大気中の霧が最も顕著に現れる高度を決定します。.
@@ -1256,16 +1256,16 @@ option.XLIGHT_CURVE.comment=光源から離れるにつれて、光源ブロッ�
 ####### Euphoria Patches #######
 profile2.DEFAULT=§bビジュアル:§r デフォルト
 profile2.SPACEAGLE17=§f۞ §kO§fデバッグ (使わないで)§f§kO
-profile2.POPULAR=§bビジュアル: §d人気の§d設定
-profile2.comment=これらはEuphoria Patchesのプロファイル設定です。. §c[-] 警告:§r これを使用すると複数の設定が変更され、あなたが作り上げた設定を破壊してしまうおそれがあります。. \n\n• デフォルト設定はComplementary Shaderのデフォルトの設定です。. \n\n• §d人気の§d設定§rプロファイルはEuphoria PatchesとComplementaryで人気の設定が有効になります。. \n\n• デバッグプロファイルはテスト用に使用され、一般のユーザーが使用するようには設計されていません。.
+profile2.POPULAR=§bビジュアル: §b人気の§d設定
+profile2.comment=これらはEuphoria Patchesのプロファイル設定です。. §c[-] 警告:§r これを使用すると複数の設定が変更され、あなたが作り上げた設定を破壊してしまうおそれがあります。. \n• デフォルト設定はComplementary Shaderのデフォルトの設定です。. \n• §b人気の§d設定§rプロファイルはEuphoria PatchesとComplementaryで人気の設定が有効になります。. \n• デバッグプロファイルはテスト用に使用され、一般のユーザーが使用するようには設計されていません。.
 
 #WATERMARK
 option.WATERMARK=Complementary
-option.WATERMARK.comment=Euphoria Patchesは愛情とケア、そしてフラストレーションから生まれた作品であり。. 素晴らしいComplementary Shaderpackに追加要素を加えつつ、独自のMinecraft体験を最適に補完することを目的としています。. ぜひ、素敵なComplementaryコミュニティに参加してください: www.complementary.dev/discord。. ウォーターマーク作成者: Elysia
+option.WATERMARK.comment=Euphoria Patchesは愛情とケア、そしてフラストレーションから生まれた作品であり、素晴らしいComplementary Shaderpackに追加要素を加えつつ、独自のMinecraft体験を最適に補完することを目的としています。. 素敵なComplementaryコミュニティへの参加は、こちらからお気軽にどうぞ: www.complementary.dev/discord\nウォーターマーク作成者: Elysia
 value.WATERMARK.0=& §dEuphoria §rPatches
 value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches
 value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - GUI非表示
-value.WATERMARK.3=& GUI非表示 & クモの目を持つと表示
+value.WATERMARK.3=& GUI非表示 & 手にクモの目
 value.WATERMARK.4=白黒
 option.WATERMARK_SIZE=ウォーターマークのサイズ
 
@@ -1337,7 +1337,7 @@ screen.NETHER_WORLD=ネザー
 screen.FOG_BORDER_NETHER=境界の霧
 screen.FOG_BORDER_NETHER.comment=境界の霧に関する設定です。.
 screen.HEAT_DISTORTION_SETTINGS=陽炎
-screen.HEAT_DISTORTION_SETTINGS.comment=陽炎(熱による光の揺らぎ)に関する設定です。.
+screen.HEAT_DISTORTION_SETTINGS.comment=陽炎 (熱による光の揺らぎ) に関する設定です。.
 screen.END_WORLD=ジ・エンド
 screen.END_VOLUMETRIC_SETTINGS=ジ・エンド 立体効果
 screen.END_AMBIENT=ジ・エンドの環境
@@ -1415,7 +1415,7 @@ screen.RANDOM_BLOCKLIGHT_SETTINGS=ランダムブロック光源
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=ランダムブロック光源に関する設定です。.
 
 screen.POPULAR_SETTINGS=§d人気の設定
-screen.POPULAR_SETTINGS.comment=これらはEuphoria Patchesの最も人気な設定の一部です。. 多数のエフェクトに必要となる「高度な色トレーシング」を除き、ここにある全ての設定はEuphoria Patches限定で、オリジナルのComplementaryシェーダーには存在しません。.
+screen.POPULAR_SETTINGS.comment=これらはEuphoria Patchesの最も人気な設定の一部です。. 多数のエフェクトに必要となる「高度な色トレーシング」を除き、ここにあるすべての設定はEuphoria Patches限定で、オリジナルのComplementaryシェーダーには存在しません。.
 screen.POPULAR_SETTINGS_2=ページ 2
 screen.POPULAR_SETTINGS_3=ページ 3
 screen.EP_VERSION=Euphoria Patches §d1.10.0
@@ -1451,9 +1451,9 @@ value.AURORA_COLOR_PRESET.5=§d咲き誇る§5光
 value.AURORA_COLOR_PRESET.6=§9ネ§5ビ§dュ§5ラ
 value.AURORA_COLOR_PRESET.7=§5セレスティアル§3ダンス
 value.AURORA_COLOR_PRESET.8=§a緑の閃光
-value.AURORA_COLOR_PRESET.9=§bエ§3テ§bリ§3ア§bル
+value.AURORA_COLOR_PRESET.9=§bエ§3テ§dリ§3ア§dル
 value.AURORA_COLOR_PRESET.10=§b氷河の§9祝福
-value.AURORA_COLOR_PRESET.11=§bミス§9ティ§bカル
+value.AURORA_COLOR_PRESET.11=§5ミスティ§9カ§bル
 value.AURORA_COLOR_PRESET.12=§cウ§6ォ§cー§a§6タ§aー§2メ§aロ§2ン
 value.AURORA_COLOR_PRESET.13=§cブラッド§bバス
 value.AURORA_COLOR_PRESET.14=§cゴ§4ー§bス§3ト
@@ -1472,13 +1472,13 @@ option.AURORA_DOWN_B=下部セクション - 青
 option.AURORA_DOWN_I=下部セクション - 強度
 
 option.AURORA_SIZE=オーロラ 密度
-option.AURORA_SIZE.comment=密度は、オーロラの見た目の高さと大きさを制御します。.
+option.AURORA_SIZE.comment=密度はオーロラの見かけの高さと大きさを制御します。.
 
 option.AURORA_DRAW_DISTANCE=オーロラ 描画距離
-option.AURORA_DRAW_DISTANCE.comment=描画距離は、オーロラの表示範囲を制御します。.
+option.AURORA_DRAW_DISTANCE.comment=描画距離はオーロラの表示範囲を制御します。.
 
 option.AURORA_INFLUENCE=オーロラの影響
-option.AURORA_INFLUENCE.comment=オーロラの色が雲や地形に影響を与えます。.
+option.AURORA_INFLUENCE.comment=オーロラの色が雲や地形に影響を与えるようにします。.
 
 option.AURORA_CLOUD_INFLUENCE_INTENSITY=雲への影響強度
 option.AURORA_CLOUD_INFLUENCE_INTENSITY.comment=オーロラが雲に与える影響の強度を変更します。.
@@ -1533,7 +1533,7 @@ value.CLOUD_SHADOW_ROUNDNESS.0.35=丸い
 option.CLOUD_SHADOW_ROUNDNESS.comment=雲の影の丸み具合を変更します。.
 
 option.CLOUD_SHADOW_STRENGTH=雲の影の強さ
-option.CLOUD_SHADOW_STRENGTH.comment=雲の影の暗さを調整します。. 低い値は雲の影を明るくし、高い値は暗くします。.
+option.CLOUD_SHADOW_STRENGTH.comment=雲の影の暗さを調整します。. 低い値では雲の影が明るくなり、高い値では暗くなります。.
 
 option.CLOUD_SHADOW_FADE_DISTANCE=雲の影の距離
 option.CLOUD_SHADOW_FADE_DISTANCE.comment=プレイヤーを中心とした雲の影が表示されない距離を決定します。.
@@ -1571,24 +1571,24 @@ value.RAINBOW_CLOUD.9=90%の範囲
 value.RAINBOW_CLOUD.10=100%の範囲
 
 option.CLOUD_RENDER_DISTANCE=雲の描画距離
-option.CLOUD_RENDER_DISTANCE.comment=雲がどれだけ遠くまで描画されるかを変更するオプションです。.
+option.CLOUD_RENDER_DISTANCE.comment=雲がどれだけ遠くまで描画されるかを変更する設定です。.
 
 option.CLOUD_SHADING_AMOUNT=雲の陰影の量
-option.CLOUD_SHADING_AMOUNT.comment=雲の陰影ががどの程度付くかを決定します。.
+option.CLOUD_SHADING_AMOUNT.comment=雲の陰影がどの程度付くかを決定します。.
 
 option.INVERTED_CLOUD_SHADING=雲の陰影の反転
 option.INVERTED_CLOUD_SHADING.comment=雲の陰影効果を反転します。.
 
-option.CLOUD_LIGHT_MULTIPLIER=雲の昼間の光倍率
+option.CLOUD_LIGHT_MULTIPLIER=雲の光倍率 - 昼間
 option.CLOUD_LIGHT_MULTIPLIER.comment=昼間に雲の光が当たる面の輝度を増加させます。.
 
-option.CLOUD_NIGHT_LIGHT_MULTIPLIER=雲の夜間の光倍率
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER=雲の光倍率 - 夜間
 option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=夜間に雲の光が当たる面の輝度を増加させます。.
 
 option.CLOUD_AMBIENT_MULTIPLIER=雲の環境光倍率
 option.CLOUD_AMBIENT_MULTIPLIER.comment=雲の環境光が当たる面の輝度を増加させます。.
 
-option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=雲の夜間の環境光倍率
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=雲の環境光倍率 - 夜間
 option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=夜間に雲の環境光が当たる面の輝度を増加させます。.
 
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW=雲を90°回転
@@ -1598,25 +1598,25 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE=夜間の雲削除量
 option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=夜間に削除される雲の量を設定します。.
 
 option.HIGH_QUALITY_CLOUDS=高品質な雲
-option.HIGH_QUALITY_CLOUDS.comment=雲の品質を通常のComplementary設定以上に引き上げます。. §c[-]§r この設定を有効にするとパフォーマンスに影響する可能性があります。.
+option.HIGH_QUALITY_CLOUDS.comment=通常のComplementaryで設定可能な範囲を超えて雲の品質を引き上げます。. §c[-]§r この設定を有効にするとパフォーマンスに影響を与える可能性があります。.
 
-option.CLOUD_LAYER2_SPEED_MULT=二層目の雲の速度倍率
+option.CLOUD_LAYER2_SPEED_MULT=二層目の雲 速度倍率
 
 option.PIXELATED_UNBOUND_CLOUDS=Unbound雲のピクセル化
 option.PIXELATED_UNBOUND_CLOUDS.comment=Unboundの雲をピクセル化します。. 高い値ではピクセルがより大きくなります。.
 value.PIXELATED_UNBOUND_CLOUDS.0=OFF
 
 option.DOUBLE_UNBOUND_CLOUDS=二層Unbound雲
-option.DOUBLE_UNBOUND_CLOUDS.comment=二層目のUnbound雲のレンダリングを有効にします。. §c[-]§r この設定を有効にするとパフォーマンスに影響する可能性があります。.
-option.CLOUD_UNBOUND_LAYER2_ALTITUDE=二層目の雲の高度
+option.DOUBLE_UNBOUND_CLOUDS.comment=二層目のUnbound雲のレンダリングを有効にします。. §c[-]§r この設定を有効にするとパフォーマンスに影響を与える可能性があります。.
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=二層目の雲 高度
 option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=二層目の雲が表示されるワールドの高さを決定します。.
-option.CLOUD_UNBOUND_LAYER2_HEIGHT=二層目の雲の高さ
+option.CLOUD_UNBOUND_LAYER2_HEIGHT=二層目の雲 高さ
 option.CLOUD_UNBOUND_LAYER2_HEIGHT.comment=二層目のUnbound雲の幾何学的高度を決定します。.
-option.CLOUD_UNBOUND_LAYER2_SIZE=二層目の雲の大きさ
+option.CLOUD_UNBOUND_LAYER2_SIZE=二層目の雲 大きさ
 option.CLOUD_UNBOUND_LAYER2_SIZE.comment=二層目のUnbound雲の大きさを決定します。.
-option.CLOUD_UNBOUND_LAYER2_AMOUNT=二層目の雲の量
+option.CLOUD_UNBOUND_LAYER2_AMOUNT=二層目の雲 雲の量
 option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=二層目のUnbound雲の量を決定します。.
-option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=二層目の雲の不透明度
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=二層目の雲 不透明度
 option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=二層目のUnbound雲の不透明度を決定します。.
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.0=0.0
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.1=0.05
@@ -1641,9 +1641,9 @@ value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.19=0.95
 value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.20=1.00
 
 
-option.CLOUD_REIMAGINED_LAYER2_HEIGHT=二層目の雲の高さ
+option.CLOUD_REIMAGINED_LAYER2_HEIGHT=二層目の雲 高さ
 option.CLOUD_REIMAGINED_LAYER2_HEIGHT.comment=二層目のReimagined雲の高さを決定します。.
-option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=二層目の雲の不透明度
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=二層目の雲 不透明度
 option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.comment=二層目のReimagined雲の不透明度を決定します。.
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.0=0.0
 value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.1=0.05
@@ -1679,19 +1679,19 @@ option.E_SKY_COLORG_NEW=ジ・エンドの空 - 緑
 option.E_SKY_COLORB_NEW=ジ・エンドの空 - 青
 option.E_SKY_COLORI=ジ・エンドの空 - 明るさ
 option.END_SKY_FOG_INFLUENCE=ジ・エンド Modバイオームの色
-option.END_SKY_FOG_INFLUENCE.comment=Modで追加されたバイオームの霧の色がジ・エンドの空とエンドビームの色にどれだけ影響するかを調整します。. 1.00では霧と同じ色になり、0.00では霧の色の影響を受けなくなります。.
+option.END_SKY_FOG_INFLUENCE.comment=Modで追加されたバイオームの霧の色が、ジ・エンドの空とエンドビームの色にどれだけ影響するかを調整します。. 1.00では霧と同じ色になり、0.00では霧の色の影響を受けなくなります。.
 
 option.GLOWING_EMERALD_BLOCK=光るエメラルドブロック
-option.GLOWING_EMERALD_BLOCK.comment=エメラルドブロックを発光させるオプションです。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。.
+option.GLOWING_EMERALD_BLOCK.comment=エメラルドブロックを発光させる設定です。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 
 option.EMISSIVE_ENCHANTING_TABLE=光るエンチャントテーブル
-option.EMISSIVE_ENCHANTING_TABLE.comment=エンチャントテーブルのダイヤ部分を発光させるオプションです。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。.
+option.EMISSIVE_ENCHANTING_TABLE.comment=エンチャントテーブルのダイヤ部分を発光させる設定です。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 
 option.GLOWING_WART=光るウォートブロック
-option.GLOWING_WART.comment=アニメーション付きの発光ウォートブロックを有効にする設定です。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。.
+option.GLOWING_WART.comment=アニメーション付きの発光ウォートブロックを有効にする設定です。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 
 option.GLOWING_NETHER_TREES=光るネザーの木
-option.GLOWING_NETHER_TREES.comment=光る真紅の/歪んだ幹を有効にする設定です。.
+option.GLOWING_NETHER_TREES.comment=発光する真紅の幹と歪んだ幹を有効にする設定です。.
 
 option.OVERWORLD_BEAMS=オーバーワールドビーム
 option.OVERWORLD_BEAMS.comment=オーバーワールドの夜間に星雲のようなビームを有効にする設定です。.
@@ -1699,7 +1699,7 @@ option.OVERWORLD_BEAMS_CONDITION=出現条件
 option.OVERWORLD_BEAMS_CONDITION.comment=デフォルトでは満月の夜にのみ出現しますが、この設定を変更すると毎晩出現します。.
 value.OVERWORLD_BEAMS_CONDITION.0=満月
 value.OVERWORLD_BEAMS_CONDITION.1=毎晩
-option.OVERWORLD_BEAMS_INTENSITY=オーバーワールドビームの強度
+option.OVERWORLD_BEAMS_INTENSITY=オーバーワールドビーム 強度
 option.BEAMS_AMBIENT_INFLUENCE=霧色の影響
 option.BEAMS_AMBIENT_INFLUENCE.comment=ビームは、1.00では霧の色に、0.00ではユーザーが定義した色になります。.
 option.OW_BEAM_R_NEW=オーバーワールドビーム - 赤
@@ -1830,6 +1830,7 @@ option.END_NEBULA_COLOR_2_INTENSITY=第二色の強度
 
 option.END_NEBULA_STAR_BRIGHTNESS=星雲の星 明るさ
 option.END_NEBULA_STAR_BRIGHTNESS.comment=ジ・エンドの星雲の星の明るさを調整する設定です。.
+value.END_NEBULA_STAR_BRIGHTNESS.0=OFF
 
 option.END_NEBULA_ANIMATION_SPEED=アニメーション速度
 option.END_NEBULA_ANIMATION_SPEED.comment=ジ・エンドの星雲のアニメーション速度を制御します。.

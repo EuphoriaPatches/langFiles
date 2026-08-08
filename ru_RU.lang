@@ -1830,6 +1830,7 @@ option.END_NEBULA_COLOR_2_INTENSITY=Интенсивность второго ц
 
 option.END_NEBULA_STAR_BRIGHTNESS=Яркость звёзд туманности
 option.END_NEBULA_STAR_BRIGHTNESS.comment=Настройка для регулировки яркости звёзд туманности Энда.
+value.END_NEBULA_STAR_BRIGHTNESS.0=Нет
 
 option.END_NEBULA_ANIMATION_SPEED=Скорость анимации
 option.END_NEBULA_ANIMATION_SPEED.comment=Управляет скоростью анимации туманности Энда.
