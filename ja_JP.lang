@@ -1688,13 +1688,13 @@ option.EMISSIVE_ENCHANTING_TABLE=光るエンチャントテーブル
 option.EMISSIVE_ENCHANTING_TABLE.comment=エンチャントテーブルのダイヤ部分を発光させる設定です。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 
 option.GLOWING_WART=光るウォートブロック
-option.GLOWING_WART.comment=アニメーション付きの発光ウォートブロックを有効にする設定です。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
+option.GLOWING_WART.comment=ウォートブロックをアニメーション付きで発光させる設定です。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 
 option.GLOWING_NETHER_TREES=光るネザーの木
-option.GLOWING_NETHER_TREES.comment=発光する真紅の幹と歪んだ幹を有効にする設定です。.
+option.GLOWING_NETHER_TREES.comment=真紅の幹と歪んだ幹を発光させる設定です。.
 
 option.OVERWORLD_BEAMS=オーバーワールドビーム
-option.OVERWORLD_BEAMS.comment=オーバーワールドの夜間に星雲のようなビームを有効にする設定です。.
+option.OVERWORLD_BEAMS.comment=オーバーワールドの夜間に星雲のようなビームを出現させる設定です。.
 option.OVERWORLD_BEAMS_CONDITION=出現条件
 option.OVERWORLD_BEAMS_CONDITION.comment=デフォルトでは満月の夜にのみ出現しますが、この設定を変更すると毎晩出現します。.
 value.OVERWORLD_BEAMS_CONDITION.0=満月
@@ -1707,9 +1707,9 @@ option.OW_BEAM_G_NEW=オーバーワールドビーム - 緑
 option.OW_BEAM_B_NEW=オーバーワールドビーム - 青
 
 option.END_BEAMS=エンダービーム
-option.END_BEAMS.comment=ジ・エンドで星雲のようなビームを有効にする設定です。.
+option.END_BEAMS.comment=ジ・エンドに星雲のようなビームを出現させる設定です。.
 option.END_CRYSTAL_VORTEX=エンドクリスタルの渦
-option.END_CRYSTAL_VORTEX.comment=エンドクリスタルから上方にエネルギービームを発生させる設定です。. §4[***]§r §cエンティティの影§rが有効になります。. §e[*]§r Irisでのみ動作します。. §e[*]§r MacOSでは動作しません。. 渦の描写距離はComplementaryの影の描写距離設定に影響されます。.
+option.END_CRYSTAL_VORTEX.comment=ジ・エンドのエンドクリスタルから上方に向けてエネルギービームを発生させる設定です。. §4[***]§r §cエンティティの影§rが有効になります。. §e[*]§r Irisでのみ動作します。. §e[*]§r MacOSでは動作しません。. 渦の描写距離はComplementaryの「影の描写距離」設定に影響されます。.
 value.END_CRYSTAL_VORTEX.0=OFF
 value.END_CRYSTAL_VORTEX.1=渦
 value.END_CRYSTAL_VORTEX.2=回復ビーム
@@ -1731,42 +1731,42 @@ option.E_BEAM_G_NEW=エンダービーム - 緑
 option.E_BEAM_B_NEW=エンダービーム - 青
 option.E_BEAM_I=エンダービーム - 強度
 option.E_DRAGON_BEAM_R_NEW=ドラゴンエンダービーム - 赤
-option.E_DRAGON_BEAM_R_NEW.comment=ドラゴン戦中のエンダービームの色 - 赤。.
+option.E_DRAGON_BEAM_R_NEW.comment=ドラゴン戦中のエンダービームの色 - 赤
 option.E_DRAGON_BEAM_G_NEW=ドラゴンエンダービーム - 緑
-option.E_DRAGON_BEAM_G_NEW.comment=ドラゴン戦中のエンダービームの色 - 緑。.
+option.E_DRAGON_BEAM_G_NEW.comment=ドラゴン戦中のエンダービームの色 - 緑
 option.E_DRAGON_BEAM_B_NEW=ドラゴンエンダービーム - 青
-option.E_DRAGON_BEAM_B_NEW.comment=ドラゴン戦中のエンダービームの色 - 青。.
+option.E_DRAGON_BEAM_B_NEW.comment=ドラゴン戦中のエンダービームの色 - 青
 option.E_DRAGON_BEAM_I=ドラゴンエンダービーム - 強度
-option.E_DRAGON_BEAM_I.comment=ドラゴン戦中のエンダービームの色 - 強度。.
+option.E_DRAGON_BEAM_I.comment=ドラゴン戦中のエンダービームの色 - 強度
 option.END_BEAM_SCALE=大きさ
 option.END_BEAM_SCALE.comment=エンダービームの大きさを変更します。. 高い値ではビームが細くなり、低い値では太くなります。.
 option.END_BEAM_DISTANCE_MULTIPLIER=距離倍率
 option.END_BEAM_DISTANCE_MULTIPLIER.comment=プレイヤーに対するエンドビームの距離を変更します。. 高い値ではビームは遠くから現れ、低い値では近くから現れます。.
-option.END_BEAM_POW=ビームの強度
-option.END_BEAM_POW.comment=ビームの強度を変更します。. 高い値ではより弱くなり、高い値ではより強くなります。.
+option.END_BEAM_POW=ビームの威力
+option.END_BEAM_POW.comment=ビームの威力を変更します。. 高い値ではより弱くなり、高い値ではより強く激しくなります。.
 option.END_BEAM_DIRECTION_BIAS=垂直方向のバイアス
-option.END_BEAM_DIRECTION_BIAS.comment=ビームの中心に対して、どの向きを優先するかを調整します。. -100では下側、0では反転、100では上側が優先されます。.
-option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=フラッシュの高さ倍率
-option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=エンドフラッシュ中のエンドビーム高さを変更します。.
-option.END_BEAM_FLASH_POW_MULTIPLIER=フラッシュの強度倍率
-option.END_BEAM_FLASH_POW_MULTIPLIER.comment=エンドフラッシュ中のエンドビームの強度を変更します。.
-option.END_BEAM_FLASH_NARROWNESS=フラッシュの狭さ
-option.END_BEAM_FLASH_NARROWNESS.comment=エンドフラッシュの影響を受けるゾーンの狭さを変更します。. 高い値ではフラッシュはより小さなエリアに影響し、低い値ではより大きなエリアに影響します。.
+option.END_BEAM_DIRECTION_BIAS.comment=ビームの中心に対してどちら側を優先するかを調整します。. -100では下側、0では対称、100では上側が優先されます。.
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER=フラッシュ 高さ倍率
+option.END_BEAM_FLASH_HEIGHT_MULTIPLIER.comment=エンドフラッシュ中のエンドビームの高さを変更します。.
+option.END_BEAM_FLASH_POW_MULTIPLIER=フラッシュ 威力倍率
+option.END_BEAM_FLASH_POW_MULTIPLIER.comment=エンドフラッシュ中のエンドビームの威力を変更します。.
+option.END_BEAM_FLASH_NARROWNESS=フラッシュ 狭さ
+option.END_BEAM_FLASH_NARROWNESS.comment=エンドフラッシュの影響を受けるエリアの狭さを変更します。. 高い値ではフラッシュはより小さなエリアに影響し、低い値ではより大きなエリアに影響します。.
 option.END_BEAM_SPEED=スピード
 option.END_BEAM_SPEED.comment=エンドビームのスピードを変更します。.
 option.END_BEAM_FOG_BLEND=地形にフェード
 option.END_BEAM_FOG_BLEND.comment=遠距離のエンドビームがどの程度地形とブレンドするかを変更します。. §e[*]§r 低い値ではチャンクの境界が見えてしまいます。.
 
 option.END_STARS=ジ・エンドの星
-option.END_STARS.comment=ジ・エンドで星を有効または無効にします。.
-option.END_STAR_BRIGHTNESS=ジ・エンドの星の明るさ
-option.END_STAR_SIZE=ジ・エンドの星の大きさ
-option.END_STAR_AMOUNT=ジ・エンドの星の数
+option.END_STARS.comment=ジ・エンドの星を有効または無効にします。.
+option.END_STAR_BRIGHTNESS=ジ・エンドの星 明るさ
+option.END_STAR_SIZE=ジ・エンドの星 大きさ
+option.END_STAR_AMOUNT=ジ・エンドの星 星の数
 value.END_STAR_AMOUNT.0=少ない
 value.END_STAR_AMOUNT.1=通常
 value.END_STAR_AMOUNT.2=多い
 value.END_STAR_AMOUNT.3=非常に多い
-value.END_STAR_AMOUNT.4=はちゃめちゃに多い
+value.END_STAR_AMOUNT.4=とんでもなく多い
 option.END_TWINKLING_STARS=煌めくジ・エンドの星
 value.END_TWINKLING_STARS.0=OFF
 value.END_TWINKLING_STARS.1=0.1
@@ -1920,14 +1920,14 @@ option.WATER_GENERATED_NORMALS=水の自動生成された法線
 
 option.RANDOM_BLOCKLIGHT=ランダム色ブロック光源
 option.RANDOM_BLOCKLIGHT.comment=座標に応じてブロック光源の色をランダム化します。. 完全なお遊び設定です。.
-option.RANDOM_BLOCKLIGHT_SIZE=ランダム色ブロック光源の大きさ
+option.RANDOM_BLOCKLIGHT_SIZE=ランダム色ブロック光源 大きさ
 option.RANDOM_BLOCKLIGHT_SIZE.comment=ランダム色ブロック光源の色の大きさを変更します。.
 
 option.COATED_TEXTURE_RES=コーティングテクスチャの解像度
-option.COATED_TEXTURE_RES.comment=ノイズコーティングテクスチャの描画解像度を変更します。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定し、コーティングテクスチャが有効になっている必要があります。.
+option.COATED_TEXTURE_RES.comment=ノイズコーティングテクスチャの描画解像度を変更します。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定し、コーティングテクスチャが有効になっている必要があります。.
 
 option.DIRECTIONAL_LIGHTMAP_NORMALS=ライトマップ法線
-option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=統合された法線マップをブロック光に対応させます。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定し、自動生成された法線が有効になっている必要があります。.
+option.DIRECTIONAL_LIGHTMAP_NORMALS.comment=統合された法線マップをブロック光源に対応させます。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定し、自動生成された法線が有効になっている必要があります。.
 option.DIRECTIONAL_LIGHTMAP_NORMALS_BLOCK_STRENGTH_NEW=ブロックの強度
 option.DIRECTIONAL_LIGHTMAP_NORMALS_HANDHELD_STRENGTH=手持ち光源の強度
 
@@ -1944,7 +1944,7 @@ option.ATMOSPHERIC_FOG_B_NEW=大気中の霧 - 青
 option.ATMOSPHERIC_FOG_I=大気中の霧 - 強度
 option.ATMOSPHERIC_FOG_DENSITY=大気中の霧 - 密度
 option.RADIOACTIVE_ATMOSPHERIC_FOG=放射性の大気中の霧
-option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=不健康な習慣が一つ増えた感じです。. 夜間に非常に目立ちます。.
+option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=不健康への道をたったもう一歩進むだけです。. 夜間に非常に目立ちます。.
 
 option.BORDER_FOG_DISTANCE_OVERWORLD=境界の霧 - 距離
 option.BORDER_FOG_DISTANCE_OVERWORLD.comment=オーバーワールドの境界の霧の距離を調整します。.
@@ -1996,7 +1996,7 @@ option.BORDER_FOG_END=ジ・エンド 境界の霧
 option.BORDER_FOG_OVERWORLD=オーバーワールド 境界の霧
 
 option.NETHER_PORTAL_VARIATION=ネザーポータル プリセット
-option.NETHER_PORTAL_VARIATION.comment=異なるネザーポータルのプリセットを選択するオプションです。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。.
+option.NETHER_PORTAL_VARIATION.comment=異なるネザーポータルのプリセットを選択する設定です。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 value.NETHER_PORTAL_VARIATION.0=バニラ
 value.NETHER_PORTAL_VARIATION.1=Complementary
 value.NETHER_PORTAL_VARIATION.2=パープルヴォイド
@@ -2011,29 +2011,29 @@ value.NETHER_PORTAL_NOISE.1=通常
 value.NETHER_PORTAL_NOISE.2=ピクセル化
 
 option.END_PORTAL_VARIATION=エンドポータル プリセット
-option.END_PORTAL_VARIATION.comment=異なるエンドポータルのプリセットを選択するオプションです。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。.
+option.END_PORTAL_VARIATION.comment=異なるエンドポータルのプリセットを選択する設定です。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 value.END_PORTAL_VARIATION.0=Complementary
-value.END_PORTAL_VARIATION.1=Smudged Strings
-value.END_PORTAL_VARIATION.3=Pixelated Salsa
+value.END_PORTAL_VARIATION.1=にじんだ糸
+value.END_PORTAL_VARIATION.3=ピクセルサルサ
 
 option.END_PORTAL_BEAM=エンドポータルの光線
-option.END_PORTAL_BEAM.comment=エンドポータルの縁に光の光線を追加します。. Minecraft Dungeonsに似ています。. [§e*§r] Irisでのみ動作します。. [§e*§r] MacOSでは動作しません。.
+option.END_PORTAL_BEAM.comment=エンドポータルの縁に光線を追加します。. Minecraft Dungeonsに似ています。. [§e*§r] Irisでのみ動作します。. [§e*§r] MacOSでは動作しません。.
 
 option.SILHOUETTE=シルエット
-option.SILHOUETTE.comment=有効にすると、太陽と反対側を向いているブロックが黒くなり、スクリーンショット撮影に便利です。.
+option.SILHOUETTE.comment=有効にすると、太陽と反対側を向いているブロックが黒くなり、スクリーンショット撮影に役立ちます。.
 value.SILHOUETTE.0=OFF
 value.SILHOUETTE.1=夜のみ
 value.SILHOUETTE.2=常に有効
 option.SILHOUETTE_BRIGHTNESS=シルエットの明るさ
 
 option.RAIN_ATMOSPHERE=豪華な雷雨
-option.RAIN_ATMOSPHERE.comment=雷が落ちた際に雷雨の表現が大幅に向上します。. §e[*]§r Irisと組み合わせるとより効果的です。.
+option.RAIN_ATMOSPHERE.comment=雷が落ちた際の雷雨の表現を大幅に向上させます。. §e[*]§r Iris上でより良く動作します。.
 
 option.BLUE_SCREEN=ブルースクリーン
-option.BLUE_SCREEN.comment=「青色のコンクリート」「青色の羊毛」「青色のカーペット」を動画編集用のブルースクリーンに変えます。. ヒント1: 「ブルーム」オプションを無効にすると、分離が改善されます。. ヒント2: 青いカーペットの下に光源を置いて照明を確保します。. ヒント3: アンチエイリアシング(FXAA)を無効にし、パフォーマンス設定で「細部の品質」を「パフォーマンス」に設定すると、フィルタリングが全て無効化され、ピクセルパーフェクトな分離が可能です。.
+option.BLUE_SCREEN.comment=「青色のコンクリート」「青色の羊毛」「青色のカーペット」を動画編集用のブルースクリーンに変えます。. ヒント1: 「ブルーム」設定を無効にすると分離が改善されます\nヒント2: 照明用に青色のカーペットの下に光源を置いてください\nヒント3: アンチエイリアシング (FXAA) を無効にし、パフォーマンス設定で「細部の品質」を「超低」に設定すると、フィルタリングがすべて無効化されピクセルパーフェクトな分離が可能です
 
-option.MIRROR_DIMENSION=ミラーディメンション
-option.MIRROR_DIMENSION.comment=あなたは魔法技術を習得し、ミラーディメンションに挑む勇気があります。.
+option.MIRROR_DIMENSION=ミラー・ディメンション
+option.MIRROR_DIMENSION.comment=魔術を習得したあなたは、ミラー・ディメンションに足を踏み入れるだけの勇気を持っている。.
 
 option.WORLD_CURVATURE=湾曲した世界
 option.OVERWORLD_CURVATURE_SIZE=オーバーワールドの湾曲度
@@ -2044,7 +2044,7 @@ option.LAVA_VARIATION=溶岩 プリセット
 option.LAVA_VARIATION.comment=近場で話題のアツいプリセット！今すぐ選ぼう！
 value.LAVA_VARIATION.0=Complementary
 value.LAVA_VARIATION.1=アダプティブノイズ (推奨)
-value.LAVA_VARIATION.2=ほてった魅力
+value.LAVA_VARIATION.2=ほてる熱さ
 value.LAVA_VARIATION.3=とろけるチーズ
 value.LAVA_VARIATION.4=暗黒の島々
 value.LAVA_VARIATION.5=カオスな流れ
@@ -2053,7 +2053,7 @@ option.LAVA_TEMPERATURE=溶岩の温度
 option.LAVA_TEMPERATURE.comment=溶岩の温度を変更し、赤みや白さを調整します。.
 
 option.WAVIER_LAVA=波打つ溶岩
-option.WAVIER_LAVA.comment=ネザー内で「揺れる溶岩テクスチャ」オプションをより極端にします。.
+option.WAVIER_LAVA.comment=ネザー内で「揺れる溶岩テクスチャ」設定をより極端にします。.
 
 option.LAVA_EMISSION=溶岩の発光
 
@@ -2064,7 +2064,7 @@ option.LAVA_NOISE_AMOUNT=溶岩ノイズの量
 option.LAVA_NOISE_AMOUNT.comment=ノイズの量を変更します。.
 
 option.LAVA_EDGE_EFFECT=溶岩の端の効果
-option.LAVA_EDGE_EFFECT.comment=溶岩が他のブロックに触れると、端に効果を追加します。. §e[*]§r この機能はパフォーマンス設定で高度な色トレーシングが有効になっている場合にのみ動作します。.
+option.LAVA_EDGE_EFFECT.comment=溶岩が他のブロックに触れると、端に効果を追加します。. §e[*]§r この機能は「パフォーマンス設定」で高度な色トレーシングが有効になっている場合にのみ動作します。.
 value.LAVA_EDGE_EFFECT.0=OFF
 value.LAVA_EDGE_EFFECT.1=ON - 明るい
 value.LAVA_EDGE_EFFECT.2=ON - 暗い
