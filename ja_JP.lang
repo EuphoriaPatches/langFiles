@@ -2070,10 +2070,10 @@ value.LAVA_EDGE_EFFECT.1=ON - 明るい
 value.LAVA_EDGE_EFFECT.2=ON - 暗い
 
 option.NETHER_BRIGHTNESS=ネザーの明るさ
-option.NETHER_BRIGHTNESS.comment=ネザーの環境光の明るさを変更します。.
+option.NETHER_BRIGHTNESS.comment=ネザーの周囲の明るさを変更します。.
 
 option.END_ROD_COLOR_PROFILE=エンドロッド 色プリセット
-option.END_ROD_COLOR_PROFILE.comment=Complementaryのデフォルトのエンドロッドの色とカスタム色を切り替えます。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。.
+option.END_ROD_COLOR_PROFILE.comment=Complementaryのデフォルトのエンドロッドの色とカスタム色の間で切り替えます。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 value.END_ROD_COLOR_PROFILE.0=Complementary
 value.END_ROD_COLOR_PROFILE.1=カスタム
 value.END_ROD_COLOR_PROFILE.2=虹
@@ -2082,7 +2082,7 @@ option.END_ROD_R=エンドロッド - 赤
 option.END_ROD_G=エンドロッド - 緑
 option.END_ROD_B=エンドロッド - 青
 option.END_ROD_I=エンドロッド - 強度
-option.RAINBOW_END_ROD_COORD_OFFSET=虹の色ずれ
+option.RAINBOW_END_ROD_COORD_OFFSET=虹の色のオフセット
 value.RAINBOW_END_ROD_COORD_OFFSET.0=全て同期
 value.RAINBOW_END_ROD_COORD_OFFSET.3=最小
 value.RAINBOW_END_ROD_COORD_OFFSET.5=デフォルト
@@ -2093,13 +2093,13 @@ option.END_ROD_RAINBOW_ANIMATE=虹の変化速度
 value.END_ROD_RAINBOW_ANIMATE.0.0=OFF
 
 option.REDSTONE_IPBR=レッドストーン IntegratedPBR
-option.REDSTONE_IPBR.comment=このオプションは、レッドストーン関連ブロックの赤いピクセルを発光させます。. レッドストーンのリソースパックと組み合わせると最適です。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。.
+option.REDSTONE_IPBR.comment=この設定はレッドストーンに関連するブロックの赤いピクセルを発光させます。. レッドストーンのリソースパックと組み合わせると最適です。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 option.REDSTONE_IPBR_R=赤の検出
-option.REDSTONE_IPBR_R.comment=使用しているリソースパックで検出が上手くいかない場合は変更してください。. ピクセルが赤いほど増加させ、赤くないほど減少させます。.
+option.REDSTONE_IPBR_R.comment=使用しているリソースパックで検出が上手くいかない場合に変更してください。. ピクセルの赤色が強い場合は増加、弱い場合は減少させてください。.
 option.REDSTONE_IPBR_G=緑の検出
-option.REDSTONE_IPBR_G.comment=使用しているリソースパックで検出が上手くいかない場合は変更してください。. ピクセルが緑がかっているほど増加させ、そうでない場合は減少させます。.
+option.REDSTONE_IPBR_G.comment=使用しているリソースパックで検出が上手くいかない場合に変更してください。. ピクセルの緑色が強い場合は増加、弱い場合は減少させてください。.
 option.REDSTONE_IPBR_B=青の検出
-option.REDSTONE_IPBR_B.comment=使用しているリソースパックで検出が上手くいかない場合は変更してください。. ピクセルが青いほど増加させ、青くないほど減少させます。.
+option.REDSTONE_IPBR_B.comment=使用しているリソースパックで検出が上手くいかない場合に変更してください。. ピクセルの青色が強い場合は増加、弱い場合は減少させてください。.
 option.REDSTONE_IPBR_I=発光強度
 option.REDSTONE_IPBR_I.comment=レッドストーン IntegratedPBRの発光強度を変更します。.
 
@@ -2125,34 +2125,34 @@ option.tonemap.comment=使用するトーンマップを変更します。.
 value.tonemap.DoCompTonemap=Complementary デフォルト
 value.tonemap.DoBSLTonemap=BSL/Complementary
 value.tonemap.ACESTonemap=ACES
-value.tonemap.ACESRedModified=ACES Red Modified
+value.tonemap.ACESRedModified=ACES 赤色調整
 value.tonemap.BurgessTonemap=Burgess
 value.tonemap.LottesTonemap=Lottes
 value.tonemap.uncharted2_tonemap_partial=Uncharted 2 - 部分的
 value.tonemap.uncharted2_filmic=Uncharted 2 - フィルミック
 value.tonemap.reinhard2=Reinhard2
 value.tonemap.filmic=フィルミック
-value.tonemap.GTTonemap=Gran Turismo
+value.tonemap.GTTonemap=グランツーリスモ
 value.tonemap.uchimura=Uchimura
 value.tonemap.agxTonemap=AgX
 value.tonemap.doSimpleTonemap=シンプル
 
 option.TONEMAP_COMPARISON=トーンマップ比較
-option.TONEMAP_COMPARISON.comment=トーンマップを比較するオプション。.
+option.TONEMAP_COMPARISON.comment=トーンマップを比較する設定です。.
 
 option.tonemap_left=左側のトーンマップ
 option.tonemap_left.comment=使用するトーンマップを変更します。.
 value.tonemap_left.DoCompTonemap=Complementary デフォルト
 value.tonemap_left.DoBSLTonemap=BSL/Complementary
 value.tonemap_left.ACESTonemap=ACES
-value.tonemap_left.ACESRedModified=ACES Red Modified
+value.tonemap_left.ACESRedModified=ACES 赤色調整
 value.tonemap_left.BurgessTonemap=Burgess
 value.tonemap_left.LottesTonemap=Lottes
 value.tonemap_left.uncharted2_tonemap_partial=Uncharted 2
 value.tonemap_left.uncharted2_filmic=Uncharted 2 - フィルミック
 value.tonemap_left.reinhard2=Reinhard2
 value.tonemap_left.filmic=フィルミック
-value.tonemap_left.GTTonemap=Gran Turismo
+value.tonemap_left.GTTonemap=グランツーリスモ
 value.tonemap_left.uchimura=Uchimura
 value.tonemap_left.agxTonemap=AgX
 value.tonemap_left.doSimpleTonemap=シンプル
@@ -2162,14 +2162,14 @@ option.tonemap_right.comment=使用するトーンマップを変更します。
 value.tonemap_right.DoCompTonemap=Complementary デフォルト
 value.tonemap_right.DoBSLTonemap=BSL/Complementary
 value.tonemap_right.ACESTonemap=ACES
-value.tonemap_right.ACESRedModified=ACES Red Modified
+value.tonemap_right.ACESRedModified=ACES 赤色調整
 value.tonemap_right.BurgessTonemap=Burgess
 value.tonemap_right.LottesTonemap=Lottes
 value.tonemap_right.uncharted2_tonemap_partial=Uncharted 2
 value.tonemap_right.uncharted2_filmic=Uncharted 2 - フィルミック
 value.tonemap_right.reinhard2=Reinhard2
 value.tonemap_right.filmic=フィルミック
-value.tonemap_right.GTTonemap=Gran Turismo
+value.tonemap_right.GTTonemap=グランツーリスモ
 value.tonemap_right.uchimura=Uchimura
 value.tonemap_right.agxTonemap=AgX
 value.tonemap_right.doSimpleTonemap=シンプル
@@ -2177,14 +2177,14 @@ value.tonemap_right.doSimpleTonemap=シンプル
 option.ACES_EXPOSURE=露出
 option.ACES_EXPOSURE.comment=画像全体の明るさを調整します。.
 option.ACES_WHITE=ホワイトカーブ
-option.ACES_WHITE.comment=色が完全な白に到達するまでの調整を行います。.
+option.ACES_WHITE.comment=色がどれだけ簡単に完全な白に達するかを調整します。.
 option.ACES_BRIGHTNESS_ROLLOFF=輝度の減衰
 option.ACES_BRIGHTNESS_ROLLOFF.comment=ACESトーンマップにおける輝度の減衰度合いを調整します。.
 
 option.AGX_LOOK=AgXの見た目
 value.AGX_LOOK.0=デフォルト
 value.AGX_LOOK.1=ゴールデン
-value.AGX_LOOK.2=パンチの効いた
+value.AGX_LOOK.2=力強い
 value.AGX_LOOK.3=カスタム
 option.AGX_R=AgX - 赤
 option.AGX_G=AgX - 緑
@@ -2192,14 +2192,14 @@ option.AGX_B=AgX - 青
 option.AGX_POWER=AgX パワー
 option.AGX_SATURATION=AgX 彩度
 
-option.COLOR_MULTIPLIER_COMPARISON=カラー倍率比較
-option.COLOR_MULTIPLIER_COMPARISON.comment=このオプションは、シェーダーパックのデフォルト値と照明や環境のカラー倍率値を簡単に比較できるようにします。.
+option.COLOR_MULTIPLIER_COMPARISON=色倍率比較
+option.COLOR_MULTIPLIER_COMPARISON.comment=この設定は、照明と環境の色倍率の適用後と、シェーダーパックのデフォルト値を簡単に比較できるようにします。.
 
 option.REFLECTIVE_WORLD=鏡面世界
-option.REFLECTIVE_WORLD.comment=世界全体が鏡になりますが、自分の姿は見えません。. RIP。.
+option.REFLECTIVE_WORLD.comment=世界のすべてが鏡なのに自分の姿が映っていません。. RIP
 
 option.WAVE_EVERYTHING=全てが波打つ
-option.WAVE_EVERYTHING.comment=Dale a tu cuerpo alegría Macarena。.
+option.WAVE_EVERYTHING.comment=Dale a tu cuerpo alegría Macarena
 
 option.INTERACTIVE_FOLIAGE=インタラクティブな葉
 option.INTERACTIVE_FOLIAGE.comment=プレイヤーが近づくと葉が避けるように曲がるようになり、没入感を高めます。.
@@ -2208,14 +2208,14 @@ option.EMIN_BOAT=Emin B O A T
 option.EMIN_BOAT.comment=Eminの意図した通りにボートに乗りましょう。.
 
 option.MONOTONE_WORLD=モノトーンの世界
-option.MONOTONE_WORLD.comment=世界を無彩色にしましょう！ワオ！
+option.MONOTONE_WORLD.comment=世界を無彩色にしよう！ウ～～～！
 value.MONOTONE_WORLD.0=OFF
 value.MONOTONE_WORLD.1=白
 value.MONOTONE_WORLD.2=黒
 value.MONOTONE_WORLD.3=灰色
 
 option.SEASONS=季節
-option.SEASONS.comment=ワールドの時間に基づいて環境の色を変更します。. 冬には雪も降ります！。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定することが推奨されます。.
+option.SEASONS.comment=ワールドの時間に基づいて環境の色を変更します。. 冬には雪も降ります！\n§e[*]§r 「RPサポート」設定をIntegrated PBR+に設定することを推奨します。.
 value.SEASONS.0=OFF
 value.SEASONS.1=循環
 value.SEASONS.2=夏
@@ -2224,7 +2224,7 @@ value.SEASONS.4=冬
 value.SEASONS.5=春
 
 option.SEASON_START=開始季節
-option.SEASON_START.comment=サイクルが始まる季節。.
+option.SEASON_START.comment=サイクルが始まる季節です。.
 value.SEASON_START.0=夏
 value.SEASON_START.1=秋
 value.SEASON_START.2=冬
@@ -2233,10 +2233,10 @@ value.SEASON_START.3=春
 option.SEASON_LENGTH=季節の期間
 option.SEASON_LENGTH.comment=季節の期間をMinecraft内の日数で変更します。.
 value.SEASON_LENGTH.1=1 Minecraft日
-suffix.SEASON_LENGTH=Minecraft日
+suffix.SEASON_LENGTH=\\ Minecraft日
 
 option.SEASON_TRANSITION_START=季節の移行開始
-option.SEASON_TRANSITION_START.comment=この割合の季節が過ぎた時点で次の季節への移行が始まります。.
+option.SEASON_TRANSITION_START.comment=季節のうち、この割合が過ぎた時点で次の季節への移行が始まります。.
 value.SEASON_TRANSITION_START.0=即時
 value.SEASON_TRANSITION_START.1=季節の半分
 value.SEASON_TRANSITION_START.2=季節の66%
@@ -2244,7 +2244,7 @@ value.SEASON_TRANSITION_START.3=季節の75%
 value.SEASON_TRANSITION_START.4=季節の80%
 value.SEASON_TRANSITION_START.9=季節の90%
 
-option.SEASON_COLOR_DESATURATION=色の彩度を下げる
+option.SEASON_COLOR_DESATURATION=彩度低下
 option.SEASON_COLOR_DESATURATION.comment=季節設定による冬と秋の期間中に環境の色の彩度を下げます。.
 
 option.SNOW_CONDITION=雪の条件
@@ -2269,7 +2269,7 @@ option.SNOW_TRANSPARENCY=雪の透明度
 option.SNOW_TRANSPARENCY.comment=雪の透明度を変更します。.
 
 option.SSS_SEASON_SNOW=季節の雪 SSS
-option.SSS_SEASON_SNOW.comment=季節オプションから雪にサブサーフェス・スキャッタリングを追加します。.
+option.SSS_SEASON_SNOW.comment=季節設定による雪にSSS (サブサーフェス・スキャッタリング) を追加します。.
 
 option.WINTER_GREEN_AMOUNT=冬の緑の量
 
@@ -2279,13 +2279,13 @@ value.LESS_LEAVES.0=OFF
 option.AUTUMN_CONDITION=森林にのみ適用
 
 option.AUTUMN_NOISE_SIZE=色ノイズのサイズ
-option.AUTUMN_NOISE_SIZE.comment=葉の色のグラデーションの元になるノイズのサイズ。.
+option.AUTUMN_NOISE_SIZE.comment=葉の色のグラデーションの元になるノイズのサイズです。.
 
 option.LEAVES_ON_GROUND=地面の葉
 option.LEAVES_ON_GROUND.comment=秋の間、地面に葉が表れます。.
 
-option.EXTRA_FLOOR_LEAVES_IN_FORESTS=森で地面の葉を追加
-option.EXTRA_FLOOR_LEAVES_IN_FORESTS.comment=森でより多くの葉が表れます。.
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS=森に追加の地面の葉
+option.EXTRA_FLOOR_LEAVES_IN_FORESTS.comment=森により多くの葉が表れます。.
 
 option.AUTUMN_STRENGTH=秋の強度
 option.AUTUMN_STRENGTH.comment=秋における色の上書きを変更します。.
@@ -2296,23 +2296,23 @@ option.FLOWER_AMOUNT=花の数
 value.FLOWER_AMOUNT.0=OFF
 option.SPRING_GREEN_INTENSITY=春の強度
 option.EMISSIVE_SPRING_FLOWERS=光る春の花
-option.EMISSIVE_SPRING_FLOWERS.comment=Euphoriaのマテリアル設定ページにある「光る花」オプションを使用している場合に、春の花の発光を有効にするオプションです。.
+option.EMISSIVE_SPRING_FLOWERS.comment=Euphoriaのマテリアル設定ページにある「光る花」設定を使用している場合に、春の花の発光を有効にするオプションです。.
 option.DISABLE_SPRING_IN_DRY_BIOMES=乾燥したバイオームでは無効化
 
 option.SUMMER_STRENGTH=夏の強度
 
 option.INTENSE_DEEP_DARK=ディープダークの強化
-option.INTENSE_DEEP_DARK.comment=ディープダークをさらに強化します。. §e[*]§r プレイヤーに暗闇の効果が適用されている必要があります。.
+option.INTENSE_DEEP_DARK.comment=ディープダークをさらに激しくします。. §e[*]§r プレイヤーに暗闇の効果が適用されている必要があります。.
 
 option.END_AMBIENT_INFLUENCE=環境色の影響
-option.END_AMBIENT_INFLUENCE.comment=デフォルトの環境色は0.00、ユーザーが定義した値は1.00です。.
+option.END_AMBIENT_INFLUENCE.comment=デフォルトの0.00では環境色に、1.00ではユーザー定義の色になります。.
 option.END_AMBIENT_R_NEW=環境色 - 赤
 option.END_AMBIENT_G_NEW=環境色 - 緑
 option.END_AMBIENT_B_NEW=環境色 - 青
 option.END_AMBIENT_I=環境色 - 強度
 
 option.ATLAS_ROTATION=アトラス回転
-option.ATLAS_ROTATION.comment=:)。.
+option.ATLAS_ROTATION.comment=:)
 
 option.NETHER_NOISE=ネザーの空ノイズ
 option.NETHER_NOISE.comment=ネザーの天井の上の空をより興味深くします。.
@@ -2320,17 +2320,17 @@ value.NETHER_NOISE.0=OFF
 value.NETHER_NOISE.1=ON
 
 option.MCBL_MAIN_DEFINE=Euphoria色付き照明
-option.MCBL_MAIN_DEFINE.comment=複数色付きブロック光源を有効にします。. 「ACT + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色トレーシング」が適用されます。. ACT + SSBL + 動的光源サポートは、MOD環境で間違った結果になることがあるため、バニラに動的光源MODを入れた環境でのみ使用してください。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。.
+option.MCBL_MAIN_DEFINE.comment=多色対応色付きブロック光源 (SSBL) を有効にします。. 「ACT + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色トレーシング」が適用されます。. 「ACT + SSBL + 動的光源サポート」はMod環境で間違った結果になることがあるため、バニラに動的光源Modを入れた環境でのみ使用してください。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。.
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=スクリーンスペース
 value.MCBL_MAIN_DEFINE.2=ACT + スクリーンスペース
 value.MCBL_MAIN_DEFINE.3=ACT + SSBL + 動的光源サポート
 
-option.MCBL_INFLUENCE=複数色付きブロック光源の影響
-option.MCBL_INFLUENCE.comment=複数色付きブロック光源が、デフォルトのブロック光源の色にどれだけ影響を与えるかを制御します。.
+option.MCBL_INFLUENCE=多色対応色付きブロック光源の影響
+option.MCBL_INFLUENCE.comment=多色対応色付きブロック光源が、デフォルトのブロック光源の色にどれだけ影響を与えるかを制御します。.
 
 option.SSS_SNOW_ICE=雪と氷のSSS
-option.SSS_SNOW_ICE.comment=雪や氷ブロックにサブサーフェス・スキャッタリングを追加します。.
+option.SSS_SNOW_ICE.comment=雪や氷ブロックにSSS (サブサーフェス・スキャッタリング) を追加します。.
 
 option.BEDROCK_NOISE=岩盤ノイズ
 option.BEDROCK_NOISE.comment=ネザーやオーバーワールドで岩盤の下にノイズ効果を追加します。.
@@ -2339,13 +2339,13 @@ option.SOUL_SAND_VALLEY_OVERHAUL=ソウルサンドの谷の改変
 option.SOUL_SAND_VALLEY_OVERHAUL.comment=ソウルサンドの谷で火に関するブロック、エンティティ、パーティクルを青くします。.
 
 option.PURPLE_END_FIRE=紫色のジ・エンドの炎
-option.PURPLE_END_FIRE.comment=ジ・エンドで火に関するブロック、エンティティ、パーティクルを紫色にします。. §e[*]§r 最適な結果を得るには、RPサポートオプションをIntegrated PBR+に設定する必要があります。.
+option.PURPLE_END_FIRE.comment=ジ・エンドで火に関するブロック、エンティティ、パーティクルを紫色にします。. §e[*]§r 最適な結果を得るには「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 
 option.NO_RAIN_ABOVE_CLOUDS=雲の上では雨が降らない
-option.NO_RAIN_ABOVE_CLOUDS.comment=雲の上で雨が降らないようにします。. バニラの雲の高さが変更され、バニラの雲が有効になっている場合はうまく機能しません。.
+option.NO_RAIN_ABOVE_CLOUDS.comment=雲の上で雨が降らないようにします。. バニラの雲が有効、かつバニラの雲の高さが変更されている場合はうまく機能しません。.
 
 option.RAIN_FADE_TIMER=雨のフェード時間
-option.RAIN_FADE_TIMER.comment=雨関連のエフェクトがフェードイン/フェードアウトするのにかかる時間を変更します。. 影響されるエフェクト: 雲、水溜まり、霧、虹など。. §e[*]§r Irisとその派生Modでのみ動作します。.
+option.RAIN_FADE_TIMER.comment=雨関連のエフェクトがフェードイン/フェードアウトするのにかかる時間を変更します。. 影響されるエフェクト: 雲、水溜まり、霧、虹など\n§e[*]§r Irisとその派生Modでのみ動作します。.
 
 option.RAIN_TEX_OPACITY_MULTIPLIER=雨の不透明度倍率
 option.RAIN_TEX_OPACITY_MULTIPLIER.comment=雨パーティクルのテクスチャの不透明度を変更し、雨をより大雨または小雨に見せます。.
@@ -2353,7 +2353,7 @@ option.SNOW_TEX_OPACITY_MULTIPLIER=雪の不透明度倍率
 option.SNOW_TEX_OPACITY_MULTIPLIER.comment=雪パーティクルのテクスチャの不透明度を変更し、雪をより大雪または小雪に見せます。.
 
 option.DOF_SNEAKING=被写界深度 スニーク中 & 望遠鏡
-option.DOF_SNEAKING.comment=スニークしている、かつ望遠鏡を手に持っている間のみワールドブラーオプションを有効にします。.
+option.DOF_SNEAKING.comment=スニークしている、かつ望遠鏡を手に持っている間のみワールドブラー設定を有効にします。.
 
 option.CLEAR_SKY_WHEN_RAINING=雨の間の空をクリアに
 option.CLEAR_SKY_WHEN_RAINING.comment=雨が降っている間に星や他の空の効果がわずかに見えるようにします。.
@@ -2388,8 +2388,8 @@ value.HORIZONTAL_NOISE.0=OFF
 option.HORIZONTAL_NOISE_INTENSITY=水平ノイズ 強度
 option.HORIZONTAL_NOISE_SPEED=水平ノイズ 速度
 
-option.VERTICAL_SCREEN_DISPLACEMENT=垂直スクリーンの変位
-option.VERTICAL_EDGE_GLITCH=エッジグリッチの強度
+option.VERTICAL_SCREEN_DISPLACEMENT=垂直画面変位
+option.VERTICAL_EDGE_GLITCH=画面端のグリッチの強度
 value.VERTICAL_EDGE_GLITCH.1.00=OFF
 option.VERTICAL_SCROLL_SPEED=スクロールの速度
 value.VERTICAL_SCROLL_SPEED.0.00=OFF
