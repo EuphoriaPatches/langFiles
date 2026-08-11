@@ -1,5 +1,7 @@
 #shaders/lang/zh_CN.lang
 
+Contribute=在此为官方贡献翻译：https://www.euphoriapatches.com/lang - 不要更改此链接
+
 option.LANG_FILE_HEADER=本文档为社区贡献翻译 - 此文档翻译可能会过时。. SpacEagle17 不能保证翻译的准确性。.
 option.TRANSLATORS=本文档由 Surisen (Ruri) 及 Justinpro0715 翻译
 
@@ -1818,14 +1820,26 @@ value.END_NEBULA_QUALITY.3=密集
 value.END_NEBULA_QUALITY.4=极致
 value.END_NEBULA_QUALITY.5=极限
 
+option.END_NEBULA_HEMISPHERE=星云渲染半球
+option.END_NEBULA_HEMISPHERE.comment=用于选择在末地天空仅渲染上半球或者下半球亦或者完整球体的星云。.
 value.END_NEBULA_HEMISPHERE.0=完整
 value.END_NEBULA_HEMISPHERE.1=上半球
 value.END_NEBULA_HEMISPHERE.-1=下半球
 
+option.END_NEBULA_COLOR_2_INTENSITY=第二色系颜色强度
+
 option.END_NEBULA_STAR_BRIGHTNESS=星云星星亮度
+option.END_NEBULA_STAR_BRIGHTNESS.comment=用于调整末地星云中星星的亮度的设置。.
 value.END_NEBULA_STAR_BRIGHTNESS.0=关
 
+option.END_NEBULA_ANIMATION_SPEED=动画速度
+option.END_NEBULA_ANIMATION_SPEED.comment=调节末地星云的动画速度。.
+
+option.END_NEBULA_SEED=种子
+option.END_NEBULA_SEED.comment=控制用于生成末地星云的随机种子。.
+
 option.END_NEBULA_ONLY_STARS=隐云展星
+option.END_NEBULA_ONLY_STARS.comment=选择是否移除星云的云层效果，仅渲染星云中的星星。.
 
 option.STAR_BRIGHTNESS=星星亮度
 option.STAR_BRIGHTNESS.comment=调节夜空中星星的亮度。.
