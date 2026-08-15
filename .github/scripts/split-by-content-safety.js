@@ -196,13 +196,23 @@ async function main() {
       for (const [key, rawNewValue] of newMap) {
         const sourceValue = sourceLangMap.get(key);
         const newValue = normalizeTranslation(rawNewValue, langId, sourceValue);
-        if (newValue !== rawNewValue) {
-          // oldValue here is what's currently live on Crowdin (rawNewValue) -
-          // pushTextCorrections mirrors whatever approval status *that*
-          // translation has onto the corrected one.
+        const oldValue = oldMap.get(key);
+        // Crowdin re-escapes stored backslashes (e.g. \n -> \\n) on every
+        // export, so a translation we already normalized and pushed last
+        // sync shows up needing "correction" again this sync even though
+        // nothing changed - oldValue === newValue here means the committed
+        // file already has the right text, so the correction was already
+        // pushed previously; pushing again would just hit Crowdin's
+        // duplicate-translation rejection for no benefit. Only push when
+        // this normalization is fixing something the committed file
+        // doesn't already have.
+        if (newValue !== rawNewValue && oldValue !== newValue) {
+          // The pushed oldValue is rawNewValue (what's currently live on
+          // Crowdin), not this loop's oldValue (the committed file's
+          // value) - pushTextCorrections mirrors whatever approval status
+          // *that* translation has onto the corrected one.
           textCorrections.push({ key, language: langId, oldValue: rawNewValue, value: newValue });
         }
-        const oldValue = oldMap.get(key);
         if (oldValue === newValue) continue;
 
         // If normalized values match, only our own formatting changed (e.g., fresh Crowdin re-export).
