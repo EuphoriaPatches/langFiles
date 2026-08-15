@@ -83,10 +83,15 @@ function describeCorrection(oldValue, newValue, context = 12) {
   const beforeEllipsis = start - context > 0 ? "…" : "";
   const afterEllipsis = endOld + context < oldValue.length ? "…" : "";
 
+  // No JSON.stringify here: it escapes backslashes, and this file's escape
+  // sequences (\n, \\n) already use backslashes as meaningful content - a
+  // shrinking run of them (e.g. Crowdin's doubled "\\n" -> "\n") would get
+  // shown as if a backslash vanished into thin air instead of a count going
+  // from 2 to 1. Guillemets delimit the changed span without touching it.
   return (
     beforeEllipsis +
     visualizeInvisibles(before) +
-    `[${JSON.stringify(visualizeInvisibles(oldValue.slice(start, endOld)))} → ${JSON.stringify(visualizeInvisibles(newValue.slice(start, endNew)))}]` +
+    `«${visualizeInvisibles(oldValue.slice(start, endOld))}»→«${visualizeInvisibles(newValue.slice(start, endNew))}»` +
     visualizeInvisibles(after) +
     afterEllipsis
   );
