@@ -1433,6 +1433,9 @@ screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIR Lighting Mode settings.
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
 screen.DISTANT_HORIZONS_SETTINGS.comment=Settings that only work if you have the Distant Horizons mod installed.
 
+screen.MCWIND_SETTINGS=WindLink
+screen.MCWIND_SETTINGS.comment=Settings that only work if you have the WindLink mod installed.
+
 screen.MODDED_SKYBOX_SETTINGS=Skybox Settings
 screen.MODDED_SKYBOX_SETTINGS.comment=Settings related to sky related mods.
 
@@ -3050,6 +3053,21 @@ option.DISTANT_HORIZONS_SSAO.comment=Enables SSAO (Screen Space Ambient Occlusio
 
 option.DH_BLENDING=Distant Horizons Blending
 option.DH_BLENDING.comment=Smoothly blends the transition between Distant Horizons chunks and normal chunks. §e[*]§r This option only works if Distant Horizons is installed.
+
+option.MCWIND=Enable WindLink
+option.MCWIND.comment=Master toggle for WindLink mod support. Enables the shader to react to the wind direction and strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed. §e[*]§r Disabling this falls back to the shaderpack's own built-in waving effects.
+
+option.MCWIND_FOLIAGE=WindLink Grass
+option.MCWIND_FOLIAGE.comment=Makes grass and other foliage sway according to the wind direction and strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
+
+option.MCWIND_LEAVES=WindLink Leaves
+option.MCWIND_LEAVES.comment=Makes leaves sway according to the wind direction and strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
+
+option.MCWIND_VINES=WindLink Vines
+option.MCWIND_VINES.comment=Makes vines sway and swing according to the wind direction and strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
+
+option.MCWIND_FIRE=WindLink Fire
+option.MCWIND_FIRE.comment=Makes fire and lit campfires lean and flicker according to the wind direction and strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
 
 option.PIXELATED_SHADOWS_MODE=Pixelated Shadows Mode
 option.PIXELATED_SHADOWS_MODE.comment=Changes the way pixelated shadows are rendered. Automatic is default and best for most cases, the manual resolutions should only be used when the used resourcepacks have mismatched texture resolutions. §e[*]§r Pixelated shadows need to be enabled for this option to work
