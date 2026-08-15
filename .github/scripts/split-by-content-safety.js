@@ -56,6 +56,42 @@ function normalizeTranslation(text, langId, sourceText) {
   return convertSpacesToNbsp(periodsFixed, langId, sourceText).trimEnd();
 }
 
+// Chars that read as invisible or as a plain space in a terminal but aren't
+// one (NBSP, tabs) - escaped so a log line can actually show what a
+// correction changed instead of looking like a no-op.
+function visualizeInvisibles(text) {
+  return text.replace(/[ \t]/g, (ch) => (ch === "\t" ? "\\t" : "\\u00A0"));
+}
+
+// Renders only the part of oldValue/newValue that actually differs (plus a
+// little surrounding context), so a correction log line stays short even for
+// long comment strings while still showing exactly what changed.
+function describeCorrection(oldValue, newValue, context = 12) {
+  let start = 0;
+  const minLen = Math.min(oldValue.length, newValue.length);
+  while (start < minLen && oldValue[start] === newValue[start]) start++;
+
+  let endOld = oldValue.length;
+  let endNew = newValue.length;
+  while (endOld > start && endNew > start && oldValue[endOld - 1] === newValue[endNew - 1]) {
+    endOld--;
+    endNew--;
+  }
+
+  const before = oldValue.slice(Math.max(0, start - context), start);
+  const after = oldValue.slice(endOld, endOld + context);
+  const beforeEllipsis = start - context > 0 ? "…" : "";
+  const afterEllipsis = endOld + context < oldValue.length ? "…" : "";
+
+  return (
+    beforeEllipsis +
+    visualizeInvisibles(before) +
+    `[${JSON.stringify(visualizeInvisibles(oldValue.slice(start, endOld)))} → ${JSON.stringify(visualizeInvisibles(newValue.slice(start, endNew)))}]` +
+    visualizeInvisibles(after) +
+    afterEllipsis
+  );
+}
+
 // Pushes normalized values (full-width period fixes, trailing-whitespace
 // trims) back up to Crowdin so the correction sticks - otherwise Crowdin
 // still holds the translator's original text and every future sync would
@@ -64,8 +100,8 @@ function normalizeTranslation(text, langId, sourceText) {
 // failures are logged and skipped rather than thrown.
 async function pushTextCorrections(corrections) {
   if (process.env.DRY_RUN === "true") {
-    for (const { key, language, value } of corrections) {
-      console.log(`[DRY RUN] would push text correction to Crowdin: [${key}] (${language}): ${JSON.stringify(value)}`);
+    for (const { key, language, oldValue, value } of corrections) {
+      console.log(`[DRY RUN] would push text correction to Crowdin: [${key}] (${language}): ${describeCorrection(oldValue, value)}`);
     }
     return;
   }
@@ -109,7 +145,9 @@ async function pushTextCorrections(corrections) {
         value,
         { forceNoApproval },
       );
-      console.log(`Pushed text correction to Crowdin: [${key}] (${language}), ${approved ? "approved" : "pending approval"}.`);
+      console.log(
+        `Pushed text correction to Crowdin: [${key}] (${language}), ${approved ? "approved" : "pending approval"}: ${describeCorrection(oldValue, value)}`,
+      );
     } catch (err) {
       console.warn(`WARNING: failed to push text correction for [${key}] (${language}): ${err.message}`);
     }
