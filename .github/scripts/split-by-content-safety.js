@@ -63,10 +63,17 @@ function visualizeInvisibles(text) {
   return text.replace(/[ \t]/g, (ch) => (ch === "\t" ? "\\t" : "\\u00A0"));
 }
 
-// Renders only the part of oldValue/newValue that actually differs (plus a
-// little surrounding context), so a correction log line stays short even for
-// long comment strings while still showing exactly what changed.
-function describeCorrection(oldValue, newValue, context = 12) {
+// Renders a git-diff-style "- old / + new" pair: the shared context around
+// the change (trimmed for long comment strings), with each side's own
+// version of the changed span standing in for it. Packing both versions
+// onto one line (e.g. with brackets/arrows) reads badly whenever the
+// change is just a character *count* shifting - e.g. Crowdin doubling a
+// backslash before \n, which our normalizeEscapedBackslashes collapses
+// back to one - because the shared backslash on the boundary has nowhere
+// unambiguous to sit. Two separate lines sidestep that: each line is the
+// real text of that version, so a reader compares them the way they'd
+// compare any two lines of text instead of parsing inline delimiters.
+function describeCorrection(oldValue, newValue, context = 20) {
   let start = 0;
   const minLen = Math.min(oldValue.length, newValue.length);
   while (start < minLen && oldValue[start] === newValue[start]) start++;
@@ -80,21 +87,13 @@ function describeCorrection(oldValue, newValue, context = 12) {
 
   const before = oldValue.slice(Math.max(0, start - context), start);
   const after = oldValue.slice(endOld, endOld + context);
-  const beforeEllipsis = start - context > 0 ? "…" : "";
-  const afterEllipsis = endOld + context < oldValue.length ? "…" : "";
+  const leadEllipsis = start - context > 0 ? "…" : "";
+  const trailEllipsis = endOld + context < oldValue.length ? "…" : "";
 
-  // No JSON.stringify here: it escapes backslashes, and this file's escape
-  // sequences (\n, \\n) already use backslashes as meaningful content - a
-  // shrinking run of them (e.g. Crowdin's doubled "\\n" -> "\n") would get
-  // shown as if a backslash vanished into thin air instead of a count going
-  // from 2 to 1. Guillemets delimit the changed span without touching it.
-  return (
-    beforeEllipsis +
-    visualizeInvisibles(before) +
-    `«${visualizeInvisibles(oldValue.slice(start, endOld))}»→«${visualizeInvisibles(newValue.slice(start, endNew))}»` +
-    visualizeInvisibles(after) +
-    afterEllipsis
-  );
+  const renderLine = (middle) =>
+    leadEllipsis + visualizeInvisibles(before) + visualizeInvisibles(middle) + visualizeInvisibles(after) + trailEllipsis;
+
+  return `\n      - ${renderLine(oldValue.slice(start, endOld))}\n      + ${renderLine(newValue.slice(start, endNew))}`;
 }
 
 // Pushes normalized values (full-width period fixes, trailing-whitespace
