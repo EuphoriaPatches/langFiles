@@ -1424,14 +1424,12 @@ screen.EP_VERSION.comment=§bSpacEagle17をPatreonやKo-Fiでサポートし、�
 screen.MODDED_SETTINGS=Modサポート設定
 screen.MODDED_SETTINGS.comment=特定のModがインストールされている場合にのみ動作する設定です。. これらのModを入れた場合のプレイ体験を補完するための設定で、必要なModがインストールされていない場合は何の影響も及ぼしません。.
 screen.PHOTONICS_SETTINGS=Photonics
-screen.PHOTONICS_SETTINGS.comment=Photonics Modがインストールされている場合にのみ動作する設定です。.
 screen.PHOTONICS_SETTINGS_BASIC=シャープモード
 screen.PHOTONICS_SETTINGS_BASIC.comment=シャープライティングモードの設定です。.
 screen.PHOTONICS_SETTINGS_RESTIR=ReSTIRモード
 screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIRライティングモードの設定です。.
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
-screen.DISTANT_HORIZONS_SETTINGS.comment=Distant Horizons Modがインストールされている場合にのみ動作する設定です。.
 
 screen.MODDED_SKYBOX_SETTINGS=スカイボックス設定
 screen.MODDED_SKYBOX_SETTINGS.comment=空に関係するModに関する設定です。.

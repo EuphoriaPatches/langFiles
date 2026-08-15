@@ -1424,14 +1424,12 @@ screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17
 screen.MODDED_SETTINGS=模组支持
 screen.MODDED_SETTINGS.comment=安装特定模组后才会生效的设置。. 这些设置为了补充使用这些模组的体验而添加的, 若没有安装这些模组, 此菜单的选项没有任何作用。.
 screen.PHOTONICS_SETTINGS=Photonics
-screen.PHOTONICS_SETTINGS.comment=仅当安装 Photionics 模组后才生效的设置。.
 screen.PHOTONICS_SETTINGS_BASIC=锐利模式
 screen.PHOTONICS_SETTINGS_BASIC.comment=锐利照明模式设置。.
 screen.PHOTONICS_SETTINGS_RESTIR=ReSTIR 模式
 screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIR 照明模式设置。.
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
-screen.DISTANT_HORIZONS_SETTINGS.comment=仅当安装 Distant Horizons 模组后才生效的设置。.
 
 screen.MODDED_SKYBOX_SETTINGS=天空盒设置
 screen.MODDED_SKYBOX_SETTINGS.comment=与修改天空类模组相关的设置。.

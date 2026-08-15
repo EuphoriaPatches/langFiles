@@ -1394,14 +1394,12 @@ screen.EP_VERSION.comment=§bVocê pode apoiar o SpacEagle17 no Patreon ou Ko-Fi
 screen.MODDED_SETTINGS=Configurações de Mods
 screen.MODDED_SETTINGS.comment=Configurações que só funcionam se você tiver certos mods instalados. Elas foram feitas para complementar a experiência ao jogar com esses mods, e não fazem nada se os mods necessários não estiverem instalados.
 screen.PHOTONICS_SETTINGS=Photonics
-screen.PHOTONICS_SETTINGS.comment=Configurações que só funcionam se você tiver o mod Photonics instalado.
 screen.PHOTONICS_SETTINGS_BASIC=Modo Nítido
 screen.PHOTONICS_SETTINGS_BASIC.comment=Configurações do modo de iluminação nítido.
 screen.PHOTONICS_SETTINGS_RESTIR=Modo ReSTIR
 screen.PHOTONICS_SETTINGS_RESTIR.comment=Configurações do modo de iluminação ReSTIR.
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
-screen.DISTANT_HORIZONS_SETTINGS.comment=Configurações que só funcionam se você tiver o mod Distant Horizons instalado.
 
 screen.MODDED_SKYBOX_SETTINGS=Configurações da Skybox
 screen.MODDED_SKYBOX_SETTINGS.comment=Configurações relacionadas a mods de céu.

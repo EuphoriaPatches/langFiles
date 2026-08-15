@@ -1371,14 +1371,12 @@ screen.EP_VERSION.comment=§bMożesz wspierać SpacEagle17 na Patreon lub Ko-Fi,
 screen.MODDED_SETTINGS=Ustawienia Modów
 screen.MODDED_SETTINGS.comment=Ustawienia, które działają tylko wtedy, gdy masz zainstalowane określone mody. Ustawienia te mają na celu wzbogacenie wrażeń z gry z tymi modami i nie będą działać, jeśli nie masz wymaganych modów.
 screen.PHOTONICS_SETTINGS=Photonics
-screen.PHOTONICS_SETTINGS.comment=Ustawienia, które działają tylko wtedy, gdy masz zainstalowany mod Photonics.
 screen.PHOTONICS_SETTINGS_BASIC=Cienie Ostre
 screen.PHOTONICS_SETTINGS_BASIC.comment=Ustawienia ostrych cieni.
 screen.PHOTONICS_SETTINGS_RESTIR=Cienie ReSTIR
 screen.PHOTONICS_SETTINGS_RESTIR.comment=Ustawienia cieni ReSTIR.
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
-screen.DISTANT_HORIZONS_SETTINGS.comment=Ustawienia, które działają tylko wtedy, gdy masz zainstalowany mod Distant Horizons.
 
 screen.MODDED_SKYBOX_SETTINGS=Ustawienia Skyboxu
 screen.MODDED_SKYBOX_SETTINGS.comment=Ustawienia związane z modami dotyczącymi nieba.

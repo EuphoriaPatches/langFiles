@@ -1424,14 +1424,12 @@ screen.EP_VERSION.comment=§bПоддержите SpacEagle17 на Patreon/Ko-Fi
 screen.MODDED_SETTINGS=Настройки модов
 screen.MODDED_SETTINGS.comment=Настройки, работающие только если у вас установлены определённые моды. Эти настройки созданы для того, чтобы дополнить опыт игры с этими модами, и они ничего не сделают, если у вас нет необходимых модов.
 screen.PHOTONICS_SETTINGS=Photonics
-screen.PHOTONICS_SETTINGS.comment=Настройки, работающие только если у вас установлен мод Photonics.
 screen.PHOTONICS_SETTINGS_BASIC=Резкий режим
 screen.PHOTONICS_SETTINGS_BASIC.comment=Настройки режима резкого освещения.
 screen.PHOTONICS_SETTINGS_RESTIR=Режим ReSTIR
 screen.PHOTONICS_SETTINGS_RESTIR.comment=Настройки режима освещения ReSTIR.
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
-screen.DISTANT_HORIZONS_SETTINGS.comment=Настройки, работающие только если у вас установлен мод Distant Horizons.
 
 screen.MODDED_SKYBOX_SETTINGS=Настройки небосвода
 screen.MODDED_SKYBOX_SETTINGS.comment=Настройки модов, связанных с небом.
