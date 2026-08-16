@@ -1393,12 +1393,17 @@ screen.EP_VERSION.comment=§b可以通過 Patreon 和 Ko-Fi 對 SpacEagle17
 screen.MODDED_SETTINGS=模組支持
 screen.MODDED_SETTINGS.comment=安裝特定模組後才會生效的設定。. 這些設定為了補充使用這些模組的體驗而添加的, 若沒有安裝這些模組, 此菜單的選項沒有任何作用。.
 screen.PHOTONICS_SETTINGS=Photonics
+screen.PHOTONICS_SETTINGS.comment=僅當安裝 Photionics 模組後才生效的設定。. https://modrinth.com/mod/photonics
 screen.PHOTONICS_SETTINGS_BASIC=銳利模式
 screen.PHOTONICS_SETTINGS_BASIC.comment=銳利照明模式設定。.
 screen.PHOTONICS_SETTINGS_RESTIR=ReSTIR 模式
 screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIR 照明模式設定。.
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
+screen.DISTANT_HORIZONS_SETTINGS.comment=僅當安裝 Distant Horizons 模組後才生效的設定。. https://modrinth.com/mod/distanthorizons
+
+screen.MCWIND_SETTINGS=WindLink
+screen.MCWIND_SETTINGS.comment=僅當安裝 WindLink 模組後才生效的設定。. https://modrinth.com/project/windlink
 
 screen.MODDED_SKYBOX_SETTINGS=天空盒設定
 screen.MODDED_SKYBOX_SETTINGS.comment=與修改天空類模組相關的設定。.

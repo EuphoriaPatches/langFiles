@@ -1370,12 +1370,17 @@ screen.EP_VERSION.comment=§bВи можете підтримати SpacEagle17 
 screen.MODDED_SETTINGS=Модифіковані налаштування
 screen.MODDED_SETTINGS.comment=Налаштування, які працюють, лише якщо у вас встановлено певні моди. Ці налаштування зроблені для доповнення досвіду гри з цими модами, і вони нічого не дадуть, якщо у вас немає необхідних модів.
 screen.PHOTONICS_SETTINGS=Photonics
+screen.PHOTONICS_SETTINGS.comment=Налаштування, які працюють, лише якщо у вас встановлений мод Photonics. https://modrinth.com/mod/photonics
 screen.PHOTONICS_SETTINGS_BASIC=Виразний режим
 screen.PHOTONICS_SETTINGS_BASIC.comment=Налаштування виразного режиму освітлення.
 screen.PHOTONICS_SETTINGS_RESTIR=Режим ReSTIR
 screen.PHOTONICS_SETTINGS_RESTIR.comment=Налаштування режиму освітлення ReSTIR.
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
+screen.DISTANT_HORIZONS_SETTINGS.comment=Налаштування, які працюють, лише якщо у вас встановлений мод Distant Horizons. https://modrinth.com/mod/distanthorizons
+
+screen.MCWIND_SETTINGS=WindLink
+screen.MCWIND_SETTINGS.comment=Налаштування, які працюють, лише якщо у вас встановлений мод WindLink. https://modrinth.com/project/windlink
 
 screen.MODDED_SKYBOX_SETTINGS=Налаштування неба
 screen.MODDED_SKYBOX_SETTINGS.comment=Налаштування, які стосуються неба з модів.

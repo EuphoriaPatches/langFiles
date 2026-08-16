@@ -1397,7 +1397,7 @@ screen.PALETTE_SETTINGS=パレット設定
 screen.SCANLINE_SETTINGS=スキャンライン設定
 screen.HALFTONE_SETTINGS=ハーフトーン設定
 screen.SPEED_LINES_SETTINGS=スピード線設定
-screen.CAMERA_NOISE_OVERLAY_SETTINGS=カメラ ノイズオーバーレイ設定
+screen.CAMERA_NOISE_OVERLAY_SETTINGS=画面ノイズフィルター設定
 screen.SCREEN_BORDER=境界設定
 screen.LETTERBOX_SETTINGS=レターボックス設定
 screen.GRID_SETTINGS=グリッド設定
@@ -1424,12 +1424,17 @@ screen.EP_VERSION.comment=§bSpacEagle17をPatreonやKo-Fiでサポートし、�
 screen.MODDED_SETTINGS=Modサポート設定
 screen.MODDED_SETTINGS.comment=特定のModがインストールされている場合にのみ動作する設定です。. これらのModを入れた場合のプレイ体験を補完するための設定で、必要なModがインストールされていない場合は何の影響も及ぼしません。.
 screen.PHOTONICS_SETTINGS=Photonics
+screen.PHOTONICS_SETTINGS.comment=Photonics Modがインストールされている場合にのみ動作する設定です。. https://modrinth.com/mod/photonics
 screen.PHOTONICS_SETTINGS_BASIC=シャープモード
 screen.PHOTONICS_SETTINGS_BASIC.comment=シャープライティングモードの設定です。.
 screen.PHOTONICS_SETTINGS_RESTIR=ReSTIRモード
 screen.PHOTONICS_SETTINGS_RESTIR.comment=ReSTIRライティングモードの設定です。.
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
+screen.DISTANT_HORIZONS_SETTINGS.comment=Distant Horizonsがインストールされている場合にのみ動作する設定です。. https://modrinth.com/mod/distanthorizons
+
+screen.MCWIND_SETTINGS=WindLink
+screen.MCWIND_SETTINGS.comment=WindLinkがインストールされている場合にのみ動作する設定です。. https://modrinth.com/project/windlink
 
 screen.MODDED_SKYBOX_SETTINGS=スカイボックス設定
 screen.MODDED_SKYBOX_SETTINGS.comment=空に関係するModに関する設定です。.
@@ -2432,16 +2437,16 @@ value.USE_TEXTURE_PALETTE.0=OFF
 
 option.SCREEN_DITHERING=ディザリング
 option.SCREEN_DITHERING.comment=画面にディザリングを行うことで、パレットよりも多くの色を擬似的に表現します。.
-option.SCREEN_DITHER_AMOUNT=ディザリングの量
-option.SCREEN_DITHER_I=ディザリングの強度
+option.SCREEN_DITHER_AMOUNT=ディザリング 量
+option.SCREEN_DITHER_I=ディザリング 強度
 
 option.SCANLINE=スキャンライン
 value.SCANLINE.0=OFF
 option.SCANLINE_FREQUENCY=スキャンライン 頻度
 option.SCANLINE_SPEED=スキャンライン 速度
 option.SCANLINE_AMOUNT=スキャンライン 量
-option.SCANLINE_NEW_MONOCHROME=単色カラー
-option.SCANLINE_NEW_DIRECTION=スキャンラインの方向
+option.SCANLINE_NEW_MONOCHROME=単色
+option.SCANLINE_NEW_DIRECTION=スキャンライン 方向
 value.SCANLINE_NEW_DIRECTION.false=水平
 value.SCANLINE_NEW_DIRECTION.true=垂直
 option.SCANLINE_R=赤色倍率
@@ -2450,7 +2455,7 @@ option.SCANLINE_B=青色倍率
 
 option.HALFTONE=ハーフトーン
 option.HALFTONE_MONOCHROME=グレースケール
-option.HALFTONE_BRIGHTNESS=ハーフトーンの明るさ
+option.HALFTONE_BRIGHTNESS=ハーフトーン 明るさ
 option.HALFTONE_SCALE=ドットのスケール
 option.HALFTONE_ANGLE=ドットの角度
 
@@ -2459,17 +2464,17 @@ value.SPEED_LINES.0=OFF
 value.SPEED_LINES.1=ON - 高速
 value.SPEED_LINES.2=ON - 高速 & ダッシュ中
 value.SPEED_LINES.3=ON
-option.SPEED_LINES_TRANSPARENCY=スピード線の不透明度
+option.SPEED_LINES_TRANSPARENCY=スピード線 不透明度
 option.SPEED_LINES_SPEED=強度
 option.SPEED_LINE_THICKNESS=線の太さ
 
-option.CAMERA_NOISE_OVERLAY=カメラ ノイズオーバーレイ
+option.CAMERA_NOISE_OVERLAY=画面ノイズフィルター
 value.CAMERA_NOISE_OVERLAY.0=OFF
 value.CAMERA_NOISE_OVERLAY.1=ノイズ 1
 option.CAMERA_NOISE_OVERLAY_INTENSITY=ノイズ強度
 
 option.LONG_EXPOSURE=長時間露光
-option.LONG_EXPOSURE.comment=F1キーでGUIを無効にして、動かずに立ってください。. 「天体」モードは星や明るいオブジェクトの見た目を向上させるために特別に作られたもので、「時間」モードではオブジェクトが時間とともに消えていきます。.
+option.LONG_EXPOSURE.comment=F1キーでGUIを無効にして立ち止まってください。. 「天体」モードは星や明るいオブジェクトの見た目を向上させるために特別に作られたもので、「時間」モードではオブジェクトが時間とともに消えていきます。.
 value.LONG_EXPOSURE.0=OFF
 value.LONG_EXPOSURE.1=天体蓄積
 value.LONG_EXPOSURE.2=時間軸重み付け
@@ -2486,7 +2491,7 @@ option.DOF_VIEW_FOCUS_NEW2=§c被写界深度の焦点面 & 望遠鏡
 option.DOF_VIEW_FOCUS_NEW2.comment=GUIが表示されている、かつ望遠鏡を手に持っているとき、被写界深度の焦点面を可視化します。.
 
 option.DOF_SHAPE=形状
-option.DOF_SHAPE.comment=被写界深度の形状。.
+option.DOF_SHAPE.comment=被写界深度の形状です。.
 value.DOF_SHAPE.0=デフォルト
 value.DOF_SHAPE.3=三角形
 value.DOF_SHAPE.4=四角形
@@ -2502,7 +2507,7 @@ option.DOF_POLYGON_RINGS=リング数
 option.DOF_POLYGON_RINGS.comment=ポリゴン形状に使用するリングの数です。. 値が高いほど形状が滑らかになります。. §c[-]§r 高い値ではパフォーマンスが低下します。.
 
 option.DOF_SHAPE_ROTATION_DEGREES=回転
-option.DOF_SHAPE_ROTATION_DEGREES.comment=被写界深度の形状の回転角度(度)です。.
+option.DOF_SHAPE_ROTATION_DEGREES.comment=被写界深度の形状の回転量を度単位で設定します。.
 
 option.LET_THERE_BE_COLORS=神は「色彩あれ」と言われた
 
@@ -2552,10 +2557,10 @@ value.EMISSIVE_FLOWERS_TYPE.0=すべて
 value.EMISSIVE_FLOWERS_TYPE.1=寒色
 value.EMISSIVE_FLOWERS_TYPE.2=暖色
 
-option.EMISSIVE_FLOWERS_STRENGTH=発光の強度
+option.EMISSIVE_FLOWERS_STRENGTH=発光強度
 
 option.DISTANCE_MIN_LIGHT=洞窟のライティングをフェード
-option.DISTANCE_MIN_LIGHT.comment=プレイヤーからの距離が増えるにつれて洞窟が暗くなります。. より高い洞窟のライティング設定と組み合わせると、洞窟の見た目が向上します。.
+option.DISTANCE_MIN_LIGHT.comment=プレイヤーから距離が離れるほど洞窟が暗くなります。. より高い「洞窟のライティング」設定と組み合わせると、洞窟の見た目が向上します。.
 value.DISTANCE_MIN_LIGHT.0=OFF
 
 option.EMISSIVE_DRAGON_EGG=光るドラゴンの卵
@@ -2565,10 +2570,10 @@ option.VANILLA_ENTITY_SHADOWS.comment=動的な影が無効なときにバニラ
 
 option.FROGLIGHT_SATURATION=フロッグライトの彩度
 value.FROGLIGHT_SATURATION.1=デフォルト
-value.FROGLIGHT_SATURATION.2=2倍
-value.FROGLIGHT_SATURATION.3=3倍
+value.FROGLIGHT_SATURATION.2=2x
+value.FROGLIGHT_SATURATION.3=3x
 
-option.RENKO_CUT=EP Renko監督版
+option.RENKO_CUT=EP Renko特別カット版
 option.RENKO_CUT.comment=Complisseumでの正当な戦いによって手に入れた。.
 
 option.GLITTER_RAIN=グリッターの雨
@@ -3048,6 +3053,20 @@ option.DISTANT_HORIZONS_SSAO.comment=Distant HorizonsのチャンクでSSAO(Scr
 
 option.DH_BLENDING=Distant Horizonsフェード
 option.DH_BLENDING.comment=通常のチャンクとDistant Horizonsチャンクの間を滑らかにブレンドさせます。. §e[*]§r Distant Horizonsがインストールされている場合にのみ動作します。.
+
+option.MCWIND_USER=WindLinkの有効化
+
+option.MCWIND_FOLIAGE=WindLinkの草
+option.MCWIND_FOLIAGE.comment=草やその他の植物がWindLink Modによる風向と風量に応じて揺れるようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
+
+option.MCWIND_LEAVES=WindLinkの葉
+option.MCWIND_LEAVES.comment=葉がWindLink Modによる風向と風量に応じて揺れるようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
+
+option.MCWIND_VINES=WindLinkのツタ
+option.MCWIND_VINES.comment=ツタがWindLink Modによる風向と風量に応じて揺れるようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
+
+option.MCWIND_FIRE=WindLinkの炎
+option.MCWIND_FIRE.comment=炎や点火された焚き火がWindLink Modによる風向と風量に応じて揺れたり明滅したりするようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
 
 option.PIXELATED_SHADOWS_MODE=ピクセル化された影のモード
 option.PIXELATED_SHADOWS_MODE.comment=ピクセル化された影がレンダリングされる方法を変更します。. デフォルトの自動はほとんどの場合に最適で、固定の解像度は使用しているリソースパックが一致しないテクスチャ解像度を使用している場合にのみ使用してください。. §e[*]§r この設定が動作するにはピクセルされた影の設定が有効である必要があります。.

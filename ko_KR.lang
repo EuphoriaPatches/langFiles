@@ -594,6 +594,8 @@ value.SUN_ANGLE.-1=스타일대로 설정
 option.SUN_MOON_STYLE_DEFINE=해/달 스타일
 option.SUN_MOON_STYLE_DEFINE.comment=태양/달의 스타일을 결정합니다. §e[*]§r 태양/달/스카이박스를 구분하는 방식의 한계로 인해 일부 리소스팩과는 정상적으로 작동하지 않을 수 있습니다.
 value.SUN_MOON_STYLE_DEFINE.-1=스타일대로 설정
+value.SUN_MOON_STYLE_DEFINE.1=Reimagined
+value.SUN_MOON_STYLE_DEFINE.2=Unbound
 
 option.SUN_MOON_HORIZON=해/달 지평선
 option.SUN_MOON_HORIZON.comment=태양/달이 지평선 아래로 보이지 않도록 합니다.
@@ -623,11 +625,15 @@ value.RAINBOWS.3=항상
 option.RAINBOW_STYLE_DEFINE=무지개 스타일
 option.RAINBOW_STYLE_DEFINE.comment=무지개의 스타일을 결정합니다. §e[*]§r “스타일대로 설정”은 Shader Options 메인 메뉴의 “Visual Style” 설정에 따라 자동으로 결정됨을 의미합니다.
 value.RAINBOW_STYLE_DEFINE.-1=스타일대로 설정
+value.RAINBOW_STYLE_DEFINE.1=Reimagined
+value.RAINBOW_STYLE_DEFINE.4=Unbound
 
 option.AURORA_STYLE_DEFINE=북반구 오로라 스타일
 option.AURORA_STYLE_DEFINE.comment=밤하늘에 나타나는 오로라의 스타일을 결정합니다.
 value.AURORA_STYLE_DEFINE.-1=스타일대로 설정
 value.AURORA_STYLE_DEFINE.0=끄기
+value.AURORA_STYLE_DEFINE.1=Reimagined
+value.AURORA_STYLE_DEFINE.2=Unbound
 
 option.AURORA_CONDITION=오로라 조건
 option.AURORA_CONDITION.comment=Aurora Condition 설정은 오로라(북극광)가 나타나는 조건을 결정합니다. §e[*]§r 이 설정과 관계없이 오로라는 밤에만 나타납니다.
