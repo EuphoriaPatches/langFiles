@@ -3055,6 +3055,7 @@ option.DH_BLENDING=Distant Horizonsフェード
 option.DH_BLENDING.comment=通常のチャンクとDistant Horizonsチャンクの間を滑らかにブレンドさせます。. §e[*]§r Distant Horizonsがインストールされている場合にのみ動作します。.
 
 option.MCWIND_USER=WindLinkの有効化
+option.MCWIND_USER.comment=WindLink Modのサポートの全体切り換え設定です。. WindLink Modによる風向と風量にシェーダーが反応するようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。. https://modrinth.com/project/windlink\n§e[*]§r 無効にするとシェーダー標準の揺れ効果に戻ります。.
 
 option.MCWIND_FOLIAGE=WindLinkの草
 option.MCWIND_FOLIAGE.comment=草やその他の植物がWindLink Modによる風向と風量に応じて揺れるようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
