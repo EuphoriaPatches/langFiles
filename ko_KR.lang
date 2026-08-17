@@ -1376,7 +1376,6 @@ option.ROTATE_REIMAGINED_CLOUDS_90_NEW=구름 90도 회전
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Reimagined 구름을 90도 회전시킵니다.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Remove Night Clouds Amount (밤 구름 감소)
-option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=밤에 줄어드는 구름 양을 결정합니다.
 
 option.HIGH_QUALITY_CLOUDS=고퀄리티 구름
 option.HIGH_QUALITY_CLOUDS.comment=구름 품질을 일반 Complementary 설정에서 가능한 것보다 더 높입니다. §c[-]§r 이 설정을 켜면 성능에 영향을 줄 수 있습니다.
@@ -1919,6 +1918,8 @@ option.SCANLINE_FREQUENCY=Scanline Frequency (주사선 빈도)
 option.SCANLINE_SPEED=Scanline Speed (주사선 속도)
 option.SCANLINE_AMOUNT=Scanline Amount (주사선 양)
 option.SCANLINE_NEW_MONOCHROME=Monchrome Color (모노크롬 색상)
+value.SCANLINE_NEW_MONOCHROME.false=켜기
+value.SCANLINE_NEW_MONOCHROME.true=켜기
 option.SCANLINE_NEW_DIRECTION=Scanline Direction (주사선 방향)
 value.SCANLINE_NEW_DIRECTION.false=Horizontal (수평)
 value.SCANLINE_NEW_DIRECTION.true=Vertical (수직)

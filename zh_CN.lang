@@ -1598,7 +1598,6 @@ option.ROTATE_REIMAGINED_CLOUDS_90_NEW=90°旋转云图
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=旋转 Reimagined 风格云层 90°。.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=夜晚云层消除强度
-option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=在夜晚时云层被消除的数量。.
 
 option.HIGH_QUALITY_CLOUDS=更高质量的云层
 option.HIGH_QUALITY_CLOUDS.comment=可将云层质量提升到正常 Complementary 设置无法达到的程度。. §c[-]§r 开启本选项可能会影响性能。.
@@ -2446,6 +2445,8 @@ option.SCANLINE_FREQUENCY=扫描线频率
 option.SCANLINE_SPEED=扫描线速度
 option.SCANLINE_AMOUNT=扫描线大小
 option.SCANLINE_NEW_MONOCHROME=单色
+value.SCANLINE_NEW_MONOCHROME.false=关
+value.SCANLINE_NEW_MONOCHROME.true=开
 option.SCANLINE_NEW_DIRECTION=扫描线方向
 value.SCANLINE_NEW_DIRECTION.false=水平
 value.SCANLINE_NEW_DIRECTION.true=垂直

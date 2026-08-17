@@ -874,6 +874,8 @@ option.PALETTE5B=Azul Color5
 option.PALETTE6R=Rojo Color6
 option.PALETTE6G=Verde Color6
 
+value.SCANLINE_NEW_MONOCHROME.false=Desactivadas
+
 value.DOF_SHAPE.0=Original
 value.DOF_SHAPE.3=Triángulo
 value.DOF_SHAPE.4=Cuadrado

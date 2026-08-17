@@ -1563,7 +1563,6 @@ option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Girar Nuvens em 90°
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Gira as nuvens reimaginadas em 90 graus.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Remover a Quantidades de nuvens á noiteRemove Night Clouds Amount
-option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Quantidade de nuvens que são removidas durante á noite
 
 option.HIGH_QUALITY_CLOUDS=Alta qualidade das  nuvens
 option.HIGH_QUALITY_CLOUDS.comment=Aumenta a qualidade das nuvens mais que o possível que a configuração normal do Complementary pode ir. §c[-]§r ativando essa configuração pode afetar no desempenho.
@@ -2348,6 +2347,8 @@ option.SCANLINE_FREQUENCY=Frequência do Scanline
 option.SCANLINE_SPEED=Velocidade do Scanline
 option.SCANLINE_AMOUNT=Quantidade de Scanline
 option.SCANLINE_NEW_MONOCHROME=Cor Monocromática
+value.SCANLINE_NEW_MONOCHROME.false=Desligado
+value.SCANLINE_NEW_MONOCHROME.true=LIGADO
 option.SCANLINE_NEW_DIRECTION=Direção do Scanline
 option.SCANLINE_R=Multiplicador de Vermelho
 option.SCANLINE_G=Multiplicador de Verde

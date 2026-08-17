@@ -1598,7 +1598,6 @@ option.ROTATE_REIMAGINED_CLOUDS_90_NEW=雲を90°回転
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Reimaginedの雲を90度回転させます。.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=夜間の雲削除量
-option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=夜間に削除される雲の量を設定します。.
 
 option.HIGH_QUALITY_CLOUDS=高品質な雲
 option.HIGH_QUALITY_CLOUDS.comment=通常のComplementaryで設定可能な範囲を超えて雲の品質を引き上げます。. §c[-]§r この設定を有効にするとパフォーマンスに影響を与える可能性があります。.
@@ -2299,7 +2298,7 @@ option.FLOWER_AMOUNT=花の数
 value.FLOWER_AMOUNT.0=OFF
 option.SPRING_GREEN_INTENSITY=春の強度
 option.EMISSIVE_SPRING_FLOWERS=光る春の花
-option.EMISSIVE_SPRING_FLOWERS.comment=Euphoriaのマテリアル設定ページにある「光る花」設定を使用している場合に、春の花の発光を有効にするオプションです。.
+option.EMISSIVE_SPRING_FLOWERS.comment=Euphoriaのマテリアル設定ページにある「光る花」設定を使用している場合に、春の花の発光を有効にする設定です。.
 option.DISABLE_SPRING_IN_DRY_BIOMES=乾燥したバイオームでは無効化
 
 option.SUMMER_STRENGTH=夏の強度
@@ -2446,6 +2445,8 @@ option.SCANLINE_FREQUENCY=スキャンライン 頻度
 option.SCANLINE_SPEED=スキャンライン 速度
 option.SCANLINE_AMOUNT=スキャンライン 量
 option.SCANLINE_NEW_MONOCHROME=単色
+value.SCANLINE_NEW_MONOCHROME.false=OFF
+value.SCANLINE_NEW_MONOCHROME.true=ON
 option.SCANLINE_NEW_DIRECTION=スキャンライン 方向
 value.SCANLINE_NEW_DIRECTION.false=水平
 value.SCANLINE_NEW_DIRECTION.true=垂直
@@ -2633,7 +2634,7 @@ option.WEATHER_TEX_G=天候テクスチャ - 緑
 option.WEATHER_TEX_B=天候テクスチャ - 青
 
 option.EMISSIVE_SOUL_SAND=光るソウルサンドの目
-option.EMISSIVE_SOUL_SAND.comment=ソウルサンドブロックの目が発光します。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。. デフォルトのバニラテクスチャのみ対応。.
+option.EMISSIVE_SOUL_SAND.comment=ソウルサンドブロックの目が発光します。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。. デフォルトのバニラテクスチャのみ対応。.
 
 option.BEACON_BEAM_EMISSION=ビーコンビームの発光
 option.BEACON_BEAM_EMISSION.comment=ビーコンビームの発光強度を変更します。.
@@ -2712,7 +2713,7 @@ option.STAR_COLOR_VARIATION_END=色の強度
 value.STAR_COLOR_VARIATION_END.0.0=OFF
 
 option.CELESTIAL_BOTH_HEMISPHERES=満天の天体
-option.CELESTIAL_BOTH_HEMISPHERES.comment=地平線の上部だけでなく、空全体に天体オブジェクト(星、太陽、月、星雲)を描画し、より没入感のある空を作り出します。.
+option.CELESTIAL_BOTH_HEMISPHERES.comment=地平線の上部だけでなく、空全体に天体オブジェクト (星、太陽、月、星雲) を描画し、より没入感のある空を作り出します。.
 
 option.SHOOTING_STARS=流れ星
 option.SHOOTING_STARS_SIZE=大きさ
@@ -2721,7 +2722,7 @@ option.SHOOTING_STARS_SPEED=スピード
 option.SHOOTING_STARS_CHANCE=確率
 option.SHOOTING_STARS_CHANCE.comment=流れ星が出現する確率です。. この値が大きいほど流れ星の出現頻度が増加します。.
 option.SHOOTING_STARS_COUNT=量
-option.SHOOTING_STARS_COUNT.comment=同時に空に存在できる流れ星の数です。.
+option.SHOOTING_STARS_COUNT.comment=空に同時に存在できる流れ星の数です。.
 option.SHOOTING_STARS_LINE_THICKNESS=線の太さ
 option.SHOOTING_STARS_LINE_THICKNESS.comment=流れ星の線の太さを変更します。.
 option.SHOOTING_STARS_TRAIL_LENGTH=線の長さ
@@ -2731,23 +2732,23 @@ option.HIDE_VANILLA_STARS=バニラの星を隠す
 option.HIDE_VANILLA_STARS.comment=空のバニラの星を隠します。.
 
 option.SITUATIONAL_GLOWING_TRIMS=条件付き発光トリム
-option.SITUATIONAL_GLOWING_TRIMS.comment=トリムは洞窟内や夜間のみ発光します。. §e[*]§r 発光トリムが有効になっている必要があります。.
+option.SITUATIONAL_GLOWING_TRIMS.comment=トリムは洞窟内や夜間のみ発光します。. §e[*]§r 光るアーマートリムが有効になっている必要があります。.
 
 option.DO_IPBR_LIGHTS=ACT IPBR発光
-option.DO_IPBR_LIGHTS.comment=このオプションを有効にすると、光源ではないブロックでも発光性であれば光を放つようになります。. (推奨: ON)
+option.DO_IPBR_LIGHTS.comment=この設定を有効にすると、光源ではないブロックでも発光性であれば光を放つようになります。. (推奨: ON)
 
 option.NIGHT_DESATURATION=暗闇での彩度低下
 option.NIGHT_DESATURATION.comment=暗いエリアの環境の彩度を低下させます。.
 
-option.NIGHT_DESATURATION_OW=オーバーワールドの強度
+option.NIGHT_DESATURATION_OW=オーバーワールド 強度
 value.NIGHT_DESATURATION_OW.0=OFF
 value.NIGHT_DESATURATION_OW.300=白黒
 
-option.NIGHT_DESATURATION_NETHER=ネザーの強度
+option.NIGHT_DESATURATION_NETHER=ネザー 強度
 value.NIGHT_DESATURATION_NETHER.0=OFF
 value.NIGHT_DESATURATION_NETHER.300=白黒
 
-option.NIGHT_DESATURATION_END=ジ・エンドの強度
+option.NIGHT_DESATURATION_END=ジ・エンド 強度
 value.NIGHT_DESATURATION_END.0=OFF
 value.NIGHT_DESATURATION_END.300=白黒
 
@@ -2770,7 +2771,7 @@ option.MOON_PHASE_INF_PURKINJE=月相に応じた暗闇での彩度低下
 option.MOON_PHASED_DESATURATION_SETTINGS.comment=現在の月の満ち欠けに応じて、彩度低下の程度を調整します。.
 
 option.MOON_PHASE_FULL_PURKINJE=満月
-option.MOON_PHASE_FULL_PURKINJE.comment=満月(最も明るい段階)での彩度低下の強度を調整します。.
+option.MOON_PHASE_FULL_PURKINJE.comment=満月 (最も明るい段階) での彩度低下の強度を調整します。.
 value.MOON_PHASE_FULL_PURKINJE.0=OFF
 value.MOON_PHASE_FULL_PURKINJE.300=白黒
 
@@ -2780,7 +2781,7 @@ value.MOON_PHASE_PARTIAL_PURKINJE.0=OFF
 value.MOON_PHASE_PARTIAL_PURKINJE.300=白黒
 
 option.MOON_PHASE_DARK_PURKINJE=新月
-option.MOON_PHASE_DARK_PURKINJE.comment=新月(最も暗い段階)での彩度低下の強度を調整します。.
+option.MOON_PHASE_DARK_PURKINJE.comment=新月 (最も暗い段階) での彩度低下の強度を調整します。.
 value.MOON_PHASE_DARK_PURKINJE.0=OFF
 value.MOON_PHASE_DARK_PURKINJE.300=白黒
 
@@ -2792,7 +2793,7 @@ value.DELTARUNE_BATTLE_BACKGROUND.2=ON - エンティティ以外
 option.END_CRYSTAL_EMISSION=エンドクリスタルの発光
 
 option.CLEAR_WATER_SPOTS=クリアな水のスポット
-option.CLEAR_WATER_SPOTS.comment=水にクリアなスポットを追加し、多少のバリエーションを追加します。. §e[*]§r 水の波が有効(UnboundまたはReimagined + 波)である必要があります。.
+option.CLEAR_WATER_SPOTS.comment=水にクリアなスポットを追加し、多少のバリエーションを追加します。. §e[*]§r 水の波が有効 (UnboundまたはReimagined + 波) である必要があります。.
 
 option.ACT_ORE_INTENSITY=ACT鉱石の強度
 option.ACT_ORE_INTENSITY.comment=鉱石におけるACTの光の強度を変更します。.
@@ -2804,10 +2805,10 @@ option.WATER_CAUSTIC_STRENGTH=水のコースティクスの強度
 option.WATER_CAUSTIC_STRENGTH.comment=水のコースティクス効果の強度を変更します。.
 
 option.ROUGHNESS_MULTIPLIER=粗さマスク
-option.ROUGHNESS_MULTIPLIER.comment=マテリアルに粗さ(ラフネス)がある部分を変更します。.
+option.ROUGHNESS_MULTIPLIER.comment=マテリアルに粗さ (ラフネス) がある部分を変更します。.
 
 option.ROUGHNESS_INTENSITY=粗さの強度
-option.ROUGHNESS_INTENSITY.comment=マテリアルの粗さ(ラフネス)を変更することで、光沢の度合いを調整します。.
+option.ROUGHNESS_INTENSITY.comment=マテリアルの粗さ (ラフネス) を変更することで、光沢の度合いを調整します。.
 
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。.
@@ -2825,7 +2826,7 @@ option.NEBULA_ZOOM_LEVEL.comment=空の星雲がどれくらいズームされ�
 option.NEBULA_AMOUNT=量
 option.NEBULA_AMOUNT.comment=星雲が空を覆う割合を変更します。.
 option.NEBULA_PATTERN_WARP=ねじれ
-option.NEBULA_PATTERN_WARP.comment=星雲がどれくらい歪んでいるかを変更します。.
+option.NEBULA_PATTERN_WARP.comment=星雲がどれくらい歪むかを変更します。.
 value.NEBULA_PATTERN_WARP.0=OFF
 option.NEBULA_HORIZON_STRENGTH=地平線の視認性
 option.NEBULA_HORIZON_STRENGTH.comment=地平線の星雲がどれくらい見えるかを変更します。.
@@ -2853,7 +2854,7 @@ option.NEBULA_STAR_SIZE=星雲の星 大きさ
 option.NEBULA_STAR_SIZE.comment=星雲内の星の大きさを変更します。.
 
 option.NEBULA_STAR_AMOUNT=星雲の星 量
-option.NEBULA_STAR_AMOUNT.comment=星雲内の星の大きさを変更します。.
+option.NEBULA_STAR_AMOUNT.comment=星雲内の星の量を変更します。.
 
 option.NEBULA_MOON_CONDITION=星雲 月の条件
 option.NEBULA_MOON_CONDITION.comment=星雲に対する月相の条件を変更します。.
@@ -2876,7 +2877,7 @@ option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT=ブロック光源への影響
 option.END_CENTER_LIGHTING_AFFECT_BLOCKLIGHT.comment=ジ・エンドでのブロック光源の色を中央のライティングの色に応じて変更します。.
 
 option.NETHER_HEAT_DISTORTION=陽炎
-option.NETHER_HEAT_DISTORTION.comment=ネザーに陽炎(熱による光の揺らぎ)効果を追加します。.
+option.NETHER_HEAT_DISTORTION.comment=ネザーに陽炎 (熱による光の揺らぎ) 効果を追加します。.
 value.NETHER_HEAT_DISTORTION.0=OFF
 option.NETHER_HEAT_DISTORTION_SPEED=速度
 option.NETHER_HEAT_DISTORTION_SPEED.comment=陽炎効果の速度を変更します。.
@@ -2886,7 +2887,7 @@ option.NETHER_HEAT_DISTORTION_SCALE.comment=陽炎効果のスケールを変更
 option.BLOCKLIGHT_CAUSTICS=ブロック光源のコースティクス
 option.BLOCKLIGHT_CAUSTICS.comment=水中にいるとき、ブロック光源にコースティクス効果を追加します。.
 
-option.LENS_FLARE_SHAPE=レンズフレアの形状
+option.LENS_FLARE_SHAPE=レンズフレア 形状
 option.LENS_FLARE_SHAPE.comment=レンズフレアの形状を変更します。.
 value.LENS_FLARE_SHAPE.0=デフォルト
 value.LENS_FLARE_SHAPE.3=三角形
@@ -2896,7 +2897,7 @@ value.LENS_FLARE_SHAPE.6=六角形
 value.LENS_FLARE_SHAPE.7=七角形
 value.LENS_FLARE_SHAPE.8=八角形
 
-option.LENS_FLARE_SHAPE_ROTATION=レンズフレアの形状の回転
+option.LENS_FLARE_SHAPE_ROTATION=レンズフレア 形状の回転
 option.LENS_FLARE_SHAPE_ROTATION.comment=レンズフレアの形状の回転を変更します。.
 
 option.ANAMORPHIC_LENS_FLARE=アナモルフィックレンズフレア
@@ -2917,7 +2918,7 @@ value.EP_END_FLASH.1=Euphoriaのみ
 value.EP_END_FLASH.2=両方
 
 option.MIRROR_TINTED_GLASS_OPAQUE=不透明な遮光ガラス
-option.MIRROR_TINTED_GLASS_OPAQUE.comment=遮光ガラスを不透明にします。. (主に鏡用)
+option.MIRROR_TINTED_GLASS_OPAQUE.comment=主に鏡用に、遮光ガラスを不透明にします。.
 
 option.COLORED_LIGHT_FOG_RAIN_I=色付きの光の霧 雨天強度
 option.COLORED_LIGHT_FOG_RAIN_I.comment=雨天時の色付きの光の霧の強度を変更します。.
@@ -2928,73 +2929,73 @@ option.COLORED_LIGHT_FOG_CAVE_I.comment=洞窟での色付きの光の霧の強�
 value.COLORED_LIGHT_FOG_CAVE_I.0=デフォルト
 
 option.BLOOD_MOON=ブラッドムーン
-option.BLOOD_MOON.comment=ここで設定した間隔のゲーム内日数で発生するブラッドムーンを有効にします。. 毎夜以上に設定されている場合、ブラッドムーンは最初の夜には発生しません。. 毎夜以上に設定されている場合、ブラッドムーンは新月の夜には発生しません。.
+option.BLOOD_MOON.comment=ここで設定したゲーム内日数ごとに発生する、ブラッドムーンを有効にします。. 「毎夜」以上に設定されている場合、ブラッドムーンは最初の夜には発生しません。. 「毎夜」以上に設定されている場合、ブラッドムーンは新月の夜には発生しません。.
 value.BLOOD_MOON.0=OFF
 value.BLOOD_MOON.1=毎夜
 suffix.BLOOD_MOON=\ Minecraft夜
 option.EMISSIVE_BLOOD_MOON_FLOWERS=ブラッドムーンで花が発光
-option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=ブラッドムーンの間、赤い花が赤く輝くようにします。. §e[*]§r RPサポートオプションをIntegrated PBR+に設定する必要があります。.
+option.EMISSIVE_BLOOD_MOON_FLOWERS.comment=ブラッドムーンの間、赤い花が赤く輝くようにします。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 
 option.PHOTONICS_LIGHTING_MODE=ライティングモード
-option.PHOTONICS_LIGHTING_MODE.comment=Photonicsがライティングに使うアルゴリズムを変更します。. \n\nシャープ - ノイズのない非常にシャープなライティングアルゴリズムですが、光源の数が限られます。. (最大サンプル数)\nReSTIR - ライティングにReSTIRを使用し、無制限の光源数をサポートしますが、一部の環境ではノイズが強く出る可能性があります。. (最大光源数)。. §e[*]§r この設定はPhotonicsがインストールされている場合にのみ動作します。.
+option.PHOTONICS_LIGHTING_MODE.comment=Photonicsがライティングに使うアルゴリズムを変更します。. \nシャープ - ノイズのない非常にシャープなライティングアルゴリズムですが、光源の数が限られます (最大サンプル数)\nReSTIR - ライティングにReSTIRを使用し、無制限の光源数をサポートしますが、一部の環境ではノイズが強く出る可能性があります (最大光源数)\n§e[*]§r この設定はPhotonicsがインストールされている場合にのみ動作します。.
 value.PHOTONICS_LIGHTING_MODE.0=OFF
 value.PHOTONICS_LIGHTING_MODE.1=シャープ
 value.PHOTONICS_LIGHTING_MODE.2=ReSTIR
 
 option.PHOTONICS_PIXELATED_SHADOWS=ピクセル化された影
-option.PHOTONICS_PIXELATED_SHADOWS.comment=Photonics Modでのピクセル化された影設定を変更します。. §c[*]§r この設定はシャープライティングモードでのみ動作します。.
+option.PHOTONICS_PIXELATED_SHADOWS.comment=Photonics Modでのピクセル化された影設定を変更します。. §c[*]§r この設定は「シャープ」ライティングモードでのみ動作します。.
 
 option.PHOTONICS_ALPHA_MODE=透過モード
-option.PHOTONICS_ALPHA_MODE.comment=Photonicsが透過ブロックをどのように扱うかを決定します。. \n\nなし - 透過ブロックは不透明ブロックとして扱われます。. \nブロック - ブロック単位で透過が適応されます。. (§aパフォーマンスへの影響: 最小)§r\nボクセル - ボクセルごとに透過が適応されます。. (§cパフォーマンスへの影響: 高)§r
+option.PHOTONICS_ALPHA_MODE.comment=Photonicsが透過ブロックをどのように扱うかを決定します。. \nなし - 透過ブロックは不透明ブロックとして扱われます\nブロック - ブロック単位で透過が適応されます (§aパフォーマンスへの影響: 最小)§r\nボクセル - ボクセルごとに透過が適応されます (§cパフォーマンスへの影響: 高)§r
 value.PHOTONICS_ALPHA_MODE.NONE=なし
 value.PHOTONICS_ALPHA_MODE.BLOCK=ブロック
 value.PHOTONICS_ALPHA_MODE.VOXEL=ボクセル
 
 option.PHOTONICS_RENDER_SCALE=レンダリング倍率
-option.PHOTONICS_RENDER_SCALE.comment=Photonicsライティングのレンダリング倍率を変更します。. \n\n§a低い値はパフォーマンスを向上させますが、ライティングの見た目が悪くなる可能性があります。. \n\n§c高い値はライティングの品質を向上させますが、パフォーマンスの問題が発生する可能性があります。.
+option.PHOTONICS_RENDER_SCALE.comment=Photonicsライティングのレンダリング倍率を変更します。. \n§a低い値はパフォーマンスを向上させますが、ライティングの見た目が悪くなる可能性があります。. \n§c高い値はライティングの品質を向上させますが、パフォーマンスの問題が発生する可能性があります。.
 
 option.PHOTONICS_INDIRECT_INTENSITY=大域照明 (GI)
 option.PHOTONICS_INDIRECT_INTENSITY.comment=Photonics Modでの間接照明の強度を変更します。. §e[*]§r この設定はPhotonicsがインストールされている場合にのみ動作します。.
 value.PHOTONICS_INDIRECT_INTENSITY.0=OFF
 
 option.PHOTONICS_MAX_LIGHTS=最大光源数
-option.PHOTONICS_MAX_LIGHTS.comment=トレースされた光源の最大読み込み数です。. \n\n§6パフォーマンスへの影響: 中。. §r\n\nOFFにするとPhotonicsのブロック光源は使用されずにバニラのものが代わりに使用されます。.
+option.PHOTONICS_MAX_LIGHTS.comment=トレースされた光源の最大読み込み数です。. \n§6パフォーマンスへの影響: 中§r\n\nOFFにするとPhotonicsのブロック光源は使用されず、代わりにバニラのものが使用されます。.
 value.PHOTONICS_MAX_LIGHTS.0=OFF
 
 option.PHOTONICS_MAX_SAMPLES=最大サンプル数
-option.PHOTONICS_MAX_SAMPLES.comment=オブジェクトに影を落とすことができる近くの光源の数です。. \n\n§cパフォーマンスへの影響: 高
+option.PHOTONICS_MAX_SAMPLES.comment=オブジェクトに影を落とすことができる近くの光源の数です。. \n§cパフォーマンスへの影響: 高
 
 option.PHOTONICS_RESTIR_INITIAL_SAMPLES=ReSTIR初期サンプル数
-option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=ReSTIRが最初に考慮する光源の数です。. \n\n§6パフォーマンスへの影響: 中
+option.PHOTONICS_RESTIR_INITIAL_SAMPLES.comment=ReSTIRが最初に考慮する光源の数です。. \n§6パフォーマンスへの影響: 中
 
 option.PHOTONICS_RESTIR_SOFT_SHADOWS=ReSTIRソフトシャドウ
-option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=ReSTIRでソフトシャドウを有効にするかどうかです。. \n\n§aパフォーマンスへの影響: 小
+option.PHOTONICS_RESTIR_SOFT_SHADOWS.comment=ReSTIRでソフトシャドウを有効にするかどうかです。. \n§aパフォーマンスへの影響: 小
 
 option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES=ReSTIR Spatial Reuseサンプル数
-option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=ReSTIRがSpatial Reuseに使うサンプル数です。. \n\n§6パフォーマンスへの影響: 中
+option.PHOTONICS_RESTIR_SPATIAL_REUSE_SAMPLES.comment=ReSTIRがSpatial Reuseに使うサンプル数です。. \n§6パフォーマンスへの影響: 中
 
 option.PHOTONICS_RESTIR_SPATIAL_REUSE_RADIUS=ReSTIR Spatial Reuse半径
 
 option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES=ReSTIR累積フレーム数
-option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=ReSTIRが蓄積するフレームの最大数です。. 低い値ではライティングの反映が素早くなりますが、代わりにノイズが増加します。. \n\nパフォーマンスへの影響: なし
+option.PHOTONICS_RESTIR_ACCUMULATION_FRAMES.comment=ReSTIRが蓄積するフレームの最大数です。. 低い値ではライティングの反映が素早くなりますが、代わりにノイズが増加します。. \nパフォーマンスへの影響: なし
 
 option.PHOTONICS_RESTIR_DENOISER_PASSES=デノイザーパス数
-option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=ReSTIRのデノイザーが使用するパスの数です。. \n\n§cパフォーマンスへの影響: 高
+option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=ReSTIRのデノイザーが使用するパスの数です。. \n§cパフォーマンスへの影響: 高
 value.PHOTONICS_RESTIR_DENOISER_PASSES.0=OFF
 
 option.PHOTONICS_RESTIR_FLICKER_FIRE=ReSTIR 炎の明滅
-option.PHOTONICS_RESTIR_FLICKER_FIRE.comment=火系の光源が明滅するようになります。. §c[*]§r この設定はReSTIRライティングモードでのみ動作します。.
+option.PHOTONICS_RESTIR_FLICKER_FIRE.comment=火系の光源が明滅するようになります。. §c[*]§r この設定は「ReSTIR」ライティングモードでのみ動作します。.
 value.PHOTONICS_RESTIR_FLICKER_FIRE.0=OFF
 
 option.PHOTONICS_VANILLA_LIGHT_FALLBACK=バニラ光源へのフォールバック
-option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=Photonicsのライティングが読み込まれなかった際の暗いエリアを防ぐために、フォールバックとして使用するバニラ光源のパーセンテージです。.
+option.PHOTONICS_VANILLA_LIGHT_FALLBACK.comment=Photonicsのライティングが読み込まれなかった際に、暗いエリアが発生するのを防ぐためにフォールバックとして使用するバニラ光源のパーセンテージです。.
 suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=%
 
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH=エンチャントのオーラの強度
 option.PHOTONICS_ENCHANTING_GLINT_STRENGTH.comment=Photonicsのライティングを使用している際に、エンチャントされたアイテムから放たれる光の強さを変更します。.
 
 option.PHOTONICS_HANDHELD_MODE=手持ち光源モード
-option.PHOTONICS_HANDHELD_MODE.comment=Photonics Modで手持ち光源がどのようにレンダリングされるかを変更します。. \n\nOFF - Photonicsは手持ち光源を一切レンダリングしません\n単体 - 手持ち光源の一つのみが影を落とします\n個別 - 両方の手持ち光源が影を落とします\n\n§aパフォーマンスへの影響: 最小
+option.PHOTONICS_HANDHELD_MODE.comment=Photonics Modで手持ち光源がどのようにレンダリングされるかを変更します。. \nOFF - Photonicsは手持ち光源を一切レンダリングしません\n単体 - 手持ち光源の一つのみが影を落とします\n個別 - 両方の手持ち光源が影を落とします\n\n§aパフォーマンスへの影響: 最小
 value.PHOTONICS_HANDHELD_MODE.0=OFF
 value.PHOTONICS_HANDHELD_MODE.1=個別
 value.PHOTONICS_HANDHELD_MODE.2=単体
@@ -3003,7 +3004,7 @@ option.PHOTONICS_AMBIENT_LIGHT_MULT=環境光の倍率
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Photonicsのライティングに加えてどの程度デフォルトの環境光が使用されるかを変更する設定です。. §e[*]§r この設定はPhotonicsがインストールされている場合にのみ動作します。.
 
 option.PHOTONICS_COMBINED_GI=統合GI
-option.PHOTONICS_COMBINED_GI.comment=GIが通常の処理ではなくReSTIRのデノイザーを通して処理されるかどうかです。. \nパフォーマンスとノイズを引き換えに、より鮮明なGIが得られます。. \n\n§cパフォーマンスへの影響: 高。. §b[*]§r デノイザーパス数を5以上に設定して使用することが推奨されます。.
+option.PHOTONICS_COMBINED_GI.comment=GIが通常の処理ではなくReSTIRのデノイザーを通して処理されるかどうかです。. \nパフォーマンスとノイズを引き換えに、より鮮明なGIが得られます。. \n§cパフォーマンスへの影響: 高\n§b[*]§r デノイザーパス数を5以上に設定して使用することが推奨されます。.
 
 option.PHOTONICS_MAX_ALLOWED_DISTANCE=有効距離
 option.PHOTONICS_MAX_ALLOWED_DISTANCE.comment=Photonicsのライティングが適用される最大距離です。. これ以降の距離ではバニラのライティングが使用されます。. これは遠くの光源が光を発さない問題を防ぐためです。. §e[*]§r この設定が正しく機能するためには最大光源数を高い値に設定する必要があります。.
@@ -3049,10 +3050,10 @@ option.SAVE_SKYBOX_DATA_OVERRIDE=スカイボックスのデータを保存
 option.SAVE_SKYBOX_DATA_OVERRIDE.comment=シェーダーがカスタムスカイボックスをバッファーに保存するのを許可します。. これはスカイボックスModがインストールされている場合に自動で発生しますが、いくつかのModでは問題が発生するため、この設定でこの動作を無効にすることができます。.
 
 option.DISTANT_HORIZONS_SSAO=エッジシャドウ (SSAO)
-option.DISTANT_HORIZONS_SSAO.comment=Distant HorizonsのチャンクでSSAO(Screen Space Ambient Occlusion)を有効にします。. §e[*]§r Distant Horizonsがインストールされている場合にのみ動作します。. §e[*]§r パフォーマンス設定でエッジシャドウ(SSAO)の品質がOFF以外に設定されている必要があります。.
+option.DISTANT_HORIZONS_SSAO.comment=Distant HorizonsのチャンクでSSAO (Screen Space Ambient Occlusion) を有効にします。. §e[*]§r Distant Horizonsがインストールされている場合にのみ動作します。. §e[*]§r パフォーマンス設定で「エッジシャドウ (SSAO) の品質」がOFF以外に設定されている必要があります。.
 
 option.DH_BLENDING=Distant Horizonsフェード
-option.DH_BLENDING.comment=通常のチャンクとDistant Horizonsチャンクの間を滑らかにブレンドさせます。. §e[*]§r Distant Horizonsがインストールされている場合にのみ動作します。.
+option.DH_BLENDING.comment=通常チャンクとDistant Horizonsチャンクの間を滑らかにブレンドさせます。. §e[*]§r Distant Horizonsがインストールされている場合にのみ動作します。.
 
 option.MCWIND_USER=WindLinkの有効化
 option.MCWIND_USER.comment=WindLink Modのサポートの全体切り換え設定です。. WindLink Modによる風向と風量にシェーダーが反応するようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。. https://modrinth.com/project/windlink\n§e[*]§r 無効にするとシェーダー標準の揺れ効果に戻ります。.
@@ -3070,7 +3071,7 @@ option.MCWIND_FIRE=WindLinkの炎
 option.MCWIND_FIRE.comment=炎や点火された焚き火がWindLink Modによる風向と風量に応じて揺れたり明滅したりするようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
 
 option.PIXELATED_SHADOWS_MODE=ピクセル化された影のモード
-option.PIXELATED_SHADOWS_MODE.comment=ピクセル化された影がレンダリングされる方法を変更します。. デフォルトの自動はほとんどの場合に最適で、固定の解像度は使用しているリソースパックが一致しないテクスチャ解像度を使用している場合にのみ使用してください。. §e[*]§r この設定が動作するにはピクセルされた影の設定が有効である必要があります。.
+option.PIXELATED_SHADOWS_MODE.comment=ピクセル化された影がレンダリングされる方法を変更します。. デフォルトの自動はほとんどの場合に最適で、固定の解像度は使用しているリソースパックが一致しないテクスチャ解像度を使用している場合にのみ使用してください。. §e[*]§r この設定が動作するには「ピクセルされた影」設定が有効である必要があります。.
 value.PIXELATED_SHADOWS_MODE.0=自動
 value.PIXELATED_SHADOWS_MODE.8=8x固定
 value.PIXELATED_SHADOWS_MODE.16=16x固定

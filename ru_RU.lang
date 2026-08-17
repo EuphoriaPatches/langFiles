@@ -1598,7 +1598,6 @@ option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Повернуть облака на 90°
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Поворачивает облака Reimagined на 90 градусов.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Удаление ночных облаков
-option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Процент облаков, удаляемых ночью.
 
 option.HIGH_QUALITY_CLOUDS=Высокое качество облаков
 option.HIGH_QUALITY_CLOUDS.comment=Повышает качество облаков до более высокого уровня, чем это возможно при обычных настройках Complementary. §c[-]§r Влияет на производительность.
@@ -2446,6 +2445,8 @@ option.SCANLINE_FREQUENCY=Частота сканирующих линий
 option.SCANLINE_SPEED=Скорость сканирующих линий
 option.SCANLINE_AMOUNT=Интенсивность сканирующих линий
 option.SCANLINE_NEW_MONOCHROME=Монохромный цвет
+value.SCANLINE_NEW_MONOCHROME.false=Нет
+value.SCANLINE_NEW_MONOCHROME.true=Да
 option.SCANLINE_NEW_DIRECTION=Направление сканирующих линий
 value.SCANLINE_NEW_DIRECTION.false=Горизонтальное
 value.SCANLINE_NEW_DIRECTION.true=Вертикальное
@@ -3053,6 +3054,21 @@ option.DISTANT_HORIZONS_SSAO.comment=Включает SSAO (окружающее
 
 option.DH_BLENDING=Плавное смешивание
 option.DH_BLENDING.comment=Включает плавное смешивание между различными чанками Distant Horizons. §e[*]§r Эта опция работает, только если установлен Distant Horizons.
+
+option.MCWIND_USER=Включить WindLink
+option.MCWIND_USER.comment=Главный переключатель поддержки мода WindLink. Позволяет шейдеру реагировать на направление и силу ветра, определяемые WindLink. §e[*]§r Эта опция работает только при установленном моде WindLink https://modrinth.com/project/windlink. §e[*]§r При отключении шейдер возвращается к встроенным эффектам колыхания.
+
+option.MCWIND_FOLIAGE=Трава WindLink
+option.MCWIND_FOLIAGE.comment=Трава и другая растительность будут колыхаться в зависимости от направления и силы ветра, определяемых модом WindLink. §e[*]§r Эта функция работает только при установленном моде WindLink.
+
+option.MCWIND_LEAVES=Листва WindLink
+option.MCWIND_LEAVES.comment=Листья будут колыхаться в зависимости от направления и силы ветра, определяемых модом WindLink. §e[*]§r Эта функция работает только при установленном моде WindLink.
+
+option.MCWIND_VINES=Лозы WindLink
+option.MCWIND_VINES.comment=Лозы будут раскачиваться и колыхаться в зависимости от направления и силы ветра, определяемых модом WindLink. §e[*]§r Эта функция работает только при установленном моде WindLink.
+
+option.MCWIND_FIRE=Огонь WindLink
+option.MCWIND_FIRE.comment=Огонь и зажжённые костры будут наклоняться и мерцать в зависимости от направления и силы ветра, определяемых модом WindLink. §e[*]§r Эта функция работает только при установленном моде WindLink.
 
 option.PIXELATED_SHADOWS_MODE=Режим пиксельных теней
 option.PIXELATED_SHADOWS_MODE.comment=Изменяет способ отображения пиксельных теней. По умолчанию используется автоматическое разрешение, которое лучше всего подходит для большинства случаев, а ручное разрешение следует использовать только в том случае, если используемые наборы ресурсов имеют несоответствующее разрешение текстур. §e[*]§r Для работы этой опции необходимо включить пиксельные тени.

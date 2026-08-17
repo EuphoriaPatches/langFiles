@@ -1533,7 +1533,6 @@ option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Obrót chmur o 90°
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Obraca chmury Reimagined o 90 stopni.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Mniej Chmur w Nocy
-option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Kontroluje ilość chmur, które zostaną usunięte w nocy
 
 option.HIGH_QUALITY_CLOUDS=Wyższa Jakość Chmur
 option.HIGH_QUALITY_CLOUDS.comment=Zwiększa jakość chmur bardziej niż jest to możliwe w ustawieniach jakości. §c[-]§r Włączenie tego ustawienia może mieć wpływ na wydajność.
@@ -2330,6 +2329,8 @@ option.SCANLINE_FREQUENCY=Częstotliwość Linii Skanowania
 option.SCANLINE_SPEED=Szybkość Linii Skanowania
 option.SCANLINE_AMOUNT=Ilość Linii Skanowania
 option.SCANLINE_NEW_MONOCHROME=Kolor Monochromatyczny
+value.SCANLINE_NEW_MONOCHROME.false=WYŁ.
+value.SCANLINE_NEW_MONOCHROME.true=WŁ.
 option.SCANLINE_NEW_DIRECTION=Kierunek Linii Skanowania
 value.SCANLINE_NEW_DIRECTION.true=Pionowo
 option.SCANLINE_R=Mnożnik Czerwieni
