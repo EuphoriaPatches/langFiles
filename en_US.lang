@@ -1598,7 +1598,7 @@ option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Rotate Clouds 90°
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Rotates the reimagined clouds by 90 degrees.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=Remove Night Clouds Amount
-option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Ammount of clouds which get removed during the night
+option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Amount of clouds which get removed during the night
 
 option.HIGH_QUALITY_CLOUDS=Higher Quality Clouds
 option.HIGH_QUALITY_CLOUDS.comment=Increases the quality of Clouds to more than is possible within the normal Complementary Settings. §c[-]§r Turning this setting on can impact performance.
@@ -2446,6 +2446,8 @@ option.SCANLINE_FREQUENCY=Scanline Frequency
 option.SCANLINE_SPEED=Scanline Speed
 option.SCANLINE_AMOUNT=Scanline Amount
 option.SCANLINE_NEW_MONOCHROME=Monchrome Color
+value.SCANLINE_NEW_MONOCHROME.false=OFF
+value.SCANLINE_NEW_MONOCHROME.true=ON
 option.SCANLINE_NEW_DIRECTION=Scanline Direction
 value.SCANLINE_NEW_DIRECTION.false=Horizontal
 value.SCANLINE_NEW_DIRECTION.true=Vertical
@@ -3068,6 +3070,15 @@ option.MCWIND_VINES.comment=Makes vines sway and swing according to the wind dir
 
 option.MCWIND_FIRE=WindLink Fire
 option.MCWIND_FIRE.comment=Makes fire and lit campfires lean and flicker according to the wind direction and strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
+
+option.MCWIND_STALKS=WindLink Stalks
+option.MCWIND_STALKS.comment=Makes sugar cane and bamboo bend from the ground according to the wind direction and strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
+
+option.MCWIND_RAIN=WindLink Rain/Snow
+option.MCWIND_RAIN.comment=Makes falling rain and snow lean into the wind direction and strength provided by the WindLink mod, instead of the shaderpack's own waving rain effect. §e[*]§r This option only works if WindLink is installed.
+
+option.MCWIND_LILY_PAD=WindLink Lily Pads
+option.MCWIND_LILY_PAD.comment=Makes lily pads bob up and down according to the wind strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
 
 option.PIXELATED_SHADOWS_MODE=Pixelated Shadows Mode
 option.PIXELATED_SHADOWS_MODE.comment=Changes the way pixelated shadows are rendered. Automatic is default and best for most cases, the manual resolutions should only be used when the used resourcepacks have mismatched texture resolutions. §e[*]§r Pixelated shadows need to be enabled for this option to work
