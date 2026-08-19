@@ -51,7 +51,7 @@ option.info5.comment=- A setting with a yellow name means that the setting impac
 
 option.info6=Are there any recommended mods
 value.info6.0=
-option.info6.comment=- Aside from Iris and Sodium which are essential, I recommend "Better Block Entities" for improved performance. - Aside from that, the "RenderScale" mod can be good for easily adjusting resolution. - It's also worth mentioning "Voxy" or "Distant Horizons" mods that add a way to have extreme render distances with non-extreme performance cost; I recommend using 64 to 256 chunks of Voxy render distance, or 64 to 128 chunks of Distant Horizons distance, with 8 to 12 chunks of regular render distance if you are using either mods. - Lastly you can get the "Euphoria Patches" mod that adds a modified Complementary to your shaders list with more functionality and settings; alongside adding several Iris fixes/tweaks even when you aren't using the modified Complementary-Euphoria shader pack, like making colored lighting work even at very high world coordinates.
+option.info6.comment=- Aside from Iris and Sodium which are essential, I recommend a block-entity optimization mod like "Optimized Block Entities" or "Enhanced Block Entities" for improved performance. - Aside from that, the "RenderScale" mod can be good for easily adjusting resolution. - It's also worth mentioning "Voxy" or "Distant Horizons" mods that add a way to have extreme render distances with non-extreme performance cost; I recommend using 64 to 256 chunks of Voxy render distance, or 64 to 128 chunks of Distant Horizons distance, with 8 to 12 chunks of regular render distance if you are using either mods. - Lastly you can get the "Euphoria Patches" mod that adds a modified Complementary to your shaders list with more functionality and settings; alongside adding several Iris fixes/tweaks even when you aren't using the modified Complementary-Euphoria shader pack, like making colored lighting work even at very high world coordinates.
 
 option.info7=Where to ask questions or report problems
 value.info7.0=
@@ -757,8 +757,10 @@ value.IMAGE_SHARPENING.10=10x §c[-]
 option.LENSFLARE_MODE=§eLens Flare§r
 option.LENSFLARE_MODE.comment=Adds camera lens reflection effect when towards the sun or moon. §c[-]§r This effect can severely impact performance.
 value.LENSFLARE_MODE.0=OFF
-value.LENSFLARE_MODE.1=§cSun Only
-value.LENSFLARE_MODE.2=§cSun & Moon
+value.LENSFLARE_MODE.1=§cSun Only - Circle
+value.LENSFLARE_MODE.2=§cSun & Moon - Circle
+value.LENSFLARE_MODE.3=§cSun Only - Square
+value.LENSFLARE_MODE.4=§cSun & Moon - Square
 
 option.LENSFLARE_I=Lens Flare Intensity
 option.LENSFLARE_I.comment=Adjusts the strength of the Lens Flare effect.
@@ -869,7 +871,11 @@ option.GREEN_SCREEN_LIME=Green Screen Lime Blocks
 option.GREEN_SCREEN_LIME.comment=Turns "Lime Concrete", "Lime Wool", and "Lime Carpet" into green screens for video editing. Tip 1: Turn off "Bloom" option to improve separation. Tip 2: Put lights under lime carpets for lighting. Tip 3: You can turn off Anti-Aliasing (FXAA) and set Detail Quality to Potato in Performance Settings to disable all filtering and get pixel-perfect separation.
 
 option.MIRROR_TINTED_GLASS=Mirror-like Tinted Glass
-option.MIRROR_TINTED_GLASS.comment=Increases the reflectiveness and opacity of Tinted Glass blocks. Enable World-Space Reflections for best results.
+option.MIRROR_TINTED_GLASS.comment=Increases the reflectiveness and opacity of Tinted Glass blocks. Enable World-Space Reflections for best results. §c[-]§r It's not recommended to use 100% Mirror in general gameplay due to it making a lot of reflection issues really apparent.
+value.MIRROR_TINTED_GLASS.0=OFF
+value.MIRROR_TINTED_GLASS.35=35% Mirror
+value.MIRROR_TINTED_GLASS.70=70% Mirror
+value.MIRROR_TINTED_GLASS.100=100% Mirror §c[-]
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=More Reflective Distant Glass
 option.MORE_REFLECTIVE_DISTANT_GLASS.comment=Increases the reflectiveness and opacity of distant glass to make buildings with glass windows look nicer.
@@ -2917,9 +2923,6 @@ option.EP_END_FLASH.comment=Changes the End Flash type, either the default one o
 value.EP_END_FLASH.0=Default Only
 value.EP_END_FLASH.1=Euphoria Only
 value.EP_END_FLASH.2=Both
-
-option.MIRROR_TINTED_GLASS_OPAQUE=Opaque Tinted Glass
-option.MIRROR_TINTED_GLASS_OPAQUE.comment=Makes tinted glass blocks opaque (mainly for mirrors).
 
 option.COLORED_LIGHT_FOG_RAIN_I=Colored Light Fog Rain Intensity
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Change the intensity of the colored light fog during rain.
