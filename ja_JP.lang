@@ -1598,6 +1598,7 @@ option.ROTATE_REIMAGINED_CLOUDS_90_NEW=雲を90°回転
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Reimaginedの雲を90度回転させます。.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=夜間の雲削除量
+option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=夜間に削除される雲の量を設定します。.
 
 option.HIGH_QUALITY_CLOUDS=高品質な雲
 option.HIGH_QUALITY_CLOUDS.comment=通常のComplementaryで設定可能な範囲を超えて雲の品質を引き上げます。. §c[-]§r この設定を有効にするとパフォーマンスに影響を与える可能性があります。.
@@ -3069,6 +3070,15 @@ option.MCWIND_VINES.comment=ツタがWindLink Modによる風向と風量に応
 
 option.MCWIND_FIRE=WindLinkの炎
 option.MCWIND_FIRE.comment=炎や点火された焚き火がWindLink Modによる風向と風量に応じて揺れたり明滅したりするようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
+
+option.MCWIND_STALKS=WindLinkの茎
+option.MCWIND_STALKS.comment=サトウキビと竹がWindLink Modによる風向と風量に応じて根本から曲がるようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
+
+option.MCWIND_RAIN=WindLinkの雨/雪
+option.MCWIND_RAIN.comment=シェーダーによる雨の揺れ効果の代わりに、雨と雪がWindLink Modによる風向と風量に応じて傾くようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
+
+option.MCWIND_LILY_PAD=WindLinkのスイレンの葉
+option.MCWIND_LILY_PAD.comment=スイレンの葉がWindLink Modによる風向と風量に応じて浮き沈みするようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
 
 option.PIXELATED_SHADOWS_MODE=ピクセル化された影のモード
 option.PIXELATED_SHADOWS_MODE.comment=ピクセル化された影がレンダリングされる方法を変更します。. デフォルトの自動はほとんどの場合に最適で、固定の解像度は使用しているリソースパックが一致しないテクスチャ解像度を使用している場合にのみ使用してください。. §e[*]§r この設定が動作するには「ピクセルされた影」設定が有効である必要があります。.
