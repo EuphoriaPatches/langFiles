@@ -51,7 +51,6 @@ option.info5.comment=- 名前が黄色くなっている設定は、「パフ�
 
 option.info6=推奨するMod
 value.info6.0=
-option.info6.comment=- 必須のIrisとSodiumのほか、パフォーマンス向上のために私は「Better Block Entities」を推奨します。. - 他には、解像度を簡単に調整できる「RenderScale」Modも優れています。. - また、極端なパフォーマンスコストなしに非常に大きな描画距離を実現する、「Voxy」や「Distant Horizons」Modも紹介しておきましょう。. Voxyの描画距離は64～256チャンク、Distant Horizonsの描画距離は64～128チャンクに設定し、これらのModを使用している場合の通常の描画距離は8～12チャンクにするのが個人的なオススメです。. - 最後は「Euphoria Patches」で、これは多くの機能や設定が追加された、Complementaryの改変バージョンをシェーダー一覧に追加するModです。. また、Complementary-Euphoriaのシェーダーパックを使用していない場合でも有効な、座標が大きな地点でも色付き照明を機能させるなどの、Irisに関するいくつかの修正/調整も含まれます。.
 
 option.info7=質問または問題を報告する場所
 value.info7.0=
@@ -757,8 +756,6 @@ value.IMAGE_SHARPENING.10=10x §c[-]
 option.LENSFLARE_MODE=§eレンズフレア§r
 option.LENSFLARE_MODE.comment=太陽や月の方を向いた時の、カメラのレンズ反射効果を追加します。. §c[-]§r この効果はパフォーマンスに大きな影響を与える可能性があります。.
 value.LENSFLARE_MODE.0=OFF
-value.LENSFLARE_MODE.1=§c太陽のみ
-value.LENSFLARE_MODE.2=§c太陽と月
 
 option.LENSFLARE_I=レンズフレアの強さ
 option.LENSFLARE_I.comment=レンズフレア効果の強さを調整します。.
@@ -869,7 +866,7 @@ option.GREEN_SCREEN_LIME=グリーンスクリーン用黄緑色ブロック
 option.GREEN_SCREEN_LIME.comment=「黄緑色のコンクリート」「黄緑色の羊毛」「黄緑色のカーペット」を動画編集用のグリーンスクリーンに変えます。. ヒント1: 「ブルーム」設定を無効にすると分離が改善されます\nヒント2: 照明用に黄緑色のカーペットの下に光源を置いてください\nヒント3: アンチエイリアシング (FXAA) を無効にし、パフォーマンス設定で「細部の品質」を「超低」に設定すると、フィルタリングがすべて無効化されピクセルパーフェクトな分離が可能です
 
 option.MIRROR_TINTED_GLASS=鏡面遮光ガラス
-option.MIRROR_TINTED_GLASS.comment=遮光ガラスの反射性と不透明度を増加させます。. 最適な結果を得るにはワールドスペース反射を有効にしてください。.
+value.MIRROR_TINTED_GLASS.0=OFF
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=遠くのガラスをより反射
 option.MORE_REFLECTIVE_DISTANT_GLASS.comment=遠くのガラスの反射性と不透明度を増加させ、ガラス付きの建築の見た目をより良くします。.
@@ -2917,9 +2914,6 @@ option.EP_END_FLASH.comment=エンドフラッシュの種類をデフォルト�
 value.EP_END_FLASH.0=デフォルトのみ
 value.EP_END_FLASH.1=Euphoriaのみ
 value.EP_END_FLASH.2=両方
-
-option.MIRROR_TINTED_GLASS_OPAQUE=不透明な遮光ガラス
-option.MIRROR_TINTED_GLASS_OPAQUE.comment=主に鏡用に、遮光ガラスを不透明にします。.
 
 option.COLORED_LIGHT_FOG_RAIN_I=色付きの光の霧 雨天強度
 option.COLORED_LIGHT_FOG_RAIN_I.comment=雨天時の色付きの光の霧の強度を変更します。.

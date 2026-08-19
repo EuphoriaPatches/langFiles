@@ -740,8 +740,6 @@ value.IMAGE_SHARPENING.10=10x §c[-]
 option.LENSFLARE_MODE=Reflexo de Lente
 option.LENSFLARE_MODE.comment=Adiciona efeito de reflexo de lente da câmera ao olhar para o sol ou lua. §c[-]§r Este efeito pode impactar bastante o desempenho.
 value.LENSFLARE_MODE.0=DESLIGADO
-value.LENSFLARE_MODE.1=Apenas Sol
-value.LENSFLARE_MODE.2=Sol & Lua
 
 option.LENSFLARE_I=Intensidade do Reflexo de Lente
 option.LENSFLARE_I.comment=Ajuda a ajustar a força do efeito de Reflexo de Lente.
@@ -850,7 +848,7 @@ option.GREEN_SCREEN_LIME=Blocos de Chroma Key Verde Limão
 option.GREEN_SCREEN_LIME.comment=Transforma "Concreto Verde Limão", "Lã Verde Limão" e "Carpete Verde Limão" em chroma key para edição de vídeo. Dica 1: Desative "Brilho Suave" para melhorar a separação. Dica 2: Coloque luzes sob os carpetes para iluminação. Dica 3: Você pode desativar o Anti-Aliasing (FXAA) e definir a Qualidade de Detalhe como Batata nas Configurações de Desempenho para desativar todos os filtros e obter separação perfeita de pixels.
 
 option.MIRROR_TINTED_GLASS=Vidro Escurecido com Efeito de Espelho
-option.MIRROR_TINTED_GLASS.comment=Aumenta a refletividade e a opacidade dos blocos de Vidro Escurecido. Ative as Reflexões em World-Space para obter o melhor resultado.
+value.MIRROR_TINTED_GLASS.0=DESLIGADO
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=Vidro Distante Mais Reflexivo
 option.MORE_REFLECTIVE_DISTANT_GLASS.comment=Aumenta a refletividade e a opacidade do vidro distante para deixar construções com janelas de vidro mais bonitas.
@@ -2813,9 +2811,6 @@ option.EP_END_FLASH.comment=Altera o tipo de End Flash, podendo ser o padrão, o
 value.EP_END_FLASH.0=Padrão apenas
 value.EP_END_FLASH.1=Euphoria apenas
 value.EP_END_FLASH.2=Ambos
-
-option.MIRROR_TINTED_GLASS_OPAQUE=Vidro Escurecido Opaco
-option.MIRROR_TINTED_GLASS_OPAQUE.comment=Deixa os blocos de vidro escurecido totalmente opacos (principalmente para uso como espelhos).
 
 option.COLORED_LIGHT_FOG_RAIN_I=Intensidade da Névoa de Luz Colorida (Chuva)
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Ajusta o quão forte fica a névoa de luz colorida enquanto chove.

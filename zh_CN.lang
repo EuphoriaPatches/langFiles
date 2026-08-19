@@ -51,7 +51,6 @@ option.info5.comment=- 标记为黄色的选项表示：尽管不位于“性�
 
 option.info6=是否有推荐的模组
 value.info6.0=
-option.info6.comment=除了必不可少的Iris和Sodium之外，还推荐使用“Better Block Entities”提升性能。. 此外，“RenderScale”模组可以轻松调整分辨率。. 还有“Voxy”或“Distant Horizo​​ns”模组可以在不大幅增加性能开销的情况下实现极远的渲染距离；建议使用64到256个区块的Voxy渲染距离，或64到128个区块的Distant Horizo​​ns渲染距离，同时搭配8到12个区块的常规渲染距离。. 最后，你可以安装“Euphoria Patches”模组，它会在您的光影包列表中添加一个功能更强大、设置更丰富的修改版Complementary光影；即使不使用修改版的Complementary-Euphoria光影包，它也会修复/调整一些Iris光影的问题，例如使彩色光照在高世界坐标下也能正常工作。.
 
 option.info7=哪里可以提问或报告问题
 value.info7.0=
@@ -757,8 +756,6 @@ value.IMAGE_SHARPENING.10=10x §c[-]
 option.LENSFLARE_MODE=§e镜头眩光§r
 option.LENSFLARE_MODE.comment=当中心对着太阳月亮时给屏幕添加镜头眩光效果。. §c[-]§r 本选项的效果会严重影响性能。.
 value.LENSFLARE_MODE.0=关
-value.LENSFLARE_MODE.1=§c仅太阳
-value.LENSFLARE_MODE.2=§c日月
 
 option.LENSFLARE_I=镜头眩光强度
 option.LENSFLARE_I.comment=调整镜头眩光效果的强度。.
@@ -869,7 +866,7 @@ option.GREEN_SCREEN_LIME=绿幕 - 黄绿色方块
 option.GREEN_SCREEN_LIME.comment=把 黄绿色混凝土, 黄绿色羊毛, 黄绿色地毯 转换为便于视频剪辑的绿幕。. 提示一: 关闭泛光以提高和其他区域的分离程度。. 提示二: 在黄绿色地毯下放置光源。. 提示三: 可以关闭抗锯齿 (FXAA) 并且在性能设置里把细节质量设置为极低来禁用所有的过滤, 以得到完美像素分离效果。.
 
 option.MIRROR_TINTED_GLASS=镜面遮光玻璃
-option.MIRROR_TINTED_GLASS.comment=增加遮光玻璃的反射率和不透明度。. 启用世界空间发射以获得最好的结果。.
+value.MIRROR_TINTED_GLASS.0=关
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=远距离玻璃反射增强
 option.MORE_REFLECTIVE_DISTANT_GLASS.comment=提高远处玻璃的反光性和不透明度来使带玻璃窗的建筑看起来更美观。.
@@ -2916,9 +2913,6 @@ option.EP_END_FLASH.comment=修改末地闪光类型, 同时启用 默认类�
 value.EP_END_FLASH.0=仅默认类型
 value.EP_END_FLASH.1=仅 Euphoria 类型
 value.EP_END_FLASH.2=两者
-
-option.MIRROR_TINTED_GLASS_OPAQUE=不透明遮光玻璃
-option.MIRROR_TINTED_GLASS_OPAQUE.comment=使遮光玻璃方块不透明 (主要便于模拟镜子)。.
 
 option.COLORED_LIGHT_FOG_RAIN_I=彩色光雾强度 - 雨天
 option.COLORED_LIGHT_FOG_RAIN_I.comment=调节雨天时彩色光雾的亮度。.

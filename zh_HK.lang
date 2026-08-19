@@ -739,8 +739,6 @@ value.IMAGE_SHARPENING.10=10x §c[-]
 option.LENSFLARE_MODE=§e鏡頭眩光§r
 option.LENSFLARE_MODE.comment=當中心對着太陽月亮時給屏幕添加鏡頭眩光效果。. §c[-]§r 本選項的效果會嚴重影響性能。.
 value.LENSFLARE_MODE.0=關
-value.LENSFLARE_MODE.1=§c僅太陽
-value.LENSFLARE_MODE.2=§c日月
 
 option.LENSFLARE_I=鏡頭眩光強度
 option.LENSFLARE_I.comment=調整鏡頭眩光效果的強度。.
@@ -849,7 +847,7 @@ option.GREEN_SCREEN_LIME=綠幕 - 黃綠色方塊
 option.GREEN_SCREEN_LIME.comment=把 黃綠色混凝土, 黃綠色羊毛, 黃綠色地毯 轉換為便於視頻剪輯的綠幕。. 提示一: 關閉泛光以提高和其他區域的分離程度。. 提示二: 在黃綠色地毯下放置光源。. 提示三: 可以關閉抗鋸齒 (FXAA) 並且在性能設定裏把細節質量設定為極低來禁用所有的過濾, 以得到完美像素分離效果。.
 
 option.MIRROR_TINTED_GLASS=鏡面遮光玻璃
-option.MIRROR_TINTED_GLASS.comment=增加遮光玻璃的反射率和不透明度。. 啓用世界空間發射以獲得最好的結果。.
+value.MIRROR_TINTED_GLASS.0=關
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=遠距離玻璃反射增強
 option.MORE_REFLECTIVE_DISTANT_GLASS.comment=提高遠處玻璃的反光性和不透明度來使帶玻璃窗的建築看起來更美觀。.
@@ -2854,9 +2852,6 @@ option.EP_END_FLASH.comment=修改末地閃光類型, 同時啓用 默認類�
 value.EP_END_FLASH.0=僅默認類型
 value.EP_END_FLASH.1=僅 Euphoria 類型
 value.EP_END_FLASH.2=兩者
-
-option.MIRROR_TINTED_GLASS_OPAQUE=不透明遮光玻璃
-option.MIRROR_TINTED_GLASS_OPAQUE.comment=使遮光玻璃方塊不透明 (主要便於模擬鏡子)。.
 
 option.COLORED_LIGHT_FOG_RAIN_I=彩色光霧強度 - 雨天
 option.COLORED_LIGHT_FOG_RAIN_I.comment=調節雨天時彩色光霧的亮度。.

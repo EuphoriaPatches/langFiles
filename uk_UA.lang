@@ -730,8 +730,6 @@ value.IMAGE_SHARPENING.10=10x §c[-]
 option.LENSFLARE_MODE=§eВідблиск об'єктива§r
 option.LENSFLARE_MODE.comment=Додає ефект відблиску об'єктива камери, коли він спрямований на Сонце чи Місяць. §c[-]§r Цей ефект може серйозно вплинути на продуктивність.
 value.LENSFLARE_MODE.0=ВИМК.
-value.LENSFLARE_MODE.1=§cЛише Сонце
-value.LENSFLARE_MODE.2=§cСонце і Місяць
 
 option.LENSFLARE_I=Інтенсивність відблиску об'єктива
 option.LENSFLARE_I.comment=Керує силлю відблиску об'єктива.
@@ -836,7 +834,7 @@ option.GREEN_SCREEN_LIME=Зелений екран
 option.GREEN_SCREEN_LIME.comment=Перетворює лаймовий бетон, вовну і килим на зелені екрани для редагування відео. Порада 1: вимкніть «світіння», щоб покращити розділення. Порада 2: для освітлення встановіть джерела світла під лаймовими килимами. Порада 3: ви можете вимкнути згладжування (ШНЗ) і встановити якість деталей на «Картопля» в налаштуваннях продуктивности, щоб вимкнути всі фільтри та отримати ідеальне розділення пікселів.
 
 option.MIRROR_TINTED_GLASS=Дзеркальне тоноване скло
-option.MIRROR_TINTED_GLASS.comment=Підвищує відбивність і непрозорість блоків тонованого скла. Увімкніть відблиски простору світу для найкращих результатів.
+value.MIRROR_TINTED_GLASS.0=УВІМК.
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=Більш відбивлискове дальне скло
 option.MORE_REFLECTIVE_DISTANT_GLASS.comment=Збільшує відблискову здатність і непрозорість дальнього скла, щоб будівлі зі скляними вікнами виглядали привабливіше.
@@ -2819,9 +2817,6 @@ option.EP_END_FLASH.comment=Змінює тип спалаху Енду: уст�
 value.EP_END_FLASH.0=Усталений
 value.EP_END_FLASH.1=Euphoria
 value.EP_END_FLASH.2=Обидва
-
-option.MIRROR_TINTED_GLASS_OPAQUE=Непрозоре тоноване скло
-option.MIRROR_TINTED_GLASS_OPAQUE.comment=Робить блоки тонованого скла непрозорими (переважно для дзеркал).
 
 option.COLORED_LIGHT_FOG_RAIN_I=Інтен. дощу за кольор. світл. туману
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Змінює інтенсивність кольорового світла туману під час дощу.

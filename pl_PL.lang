@@ -734,8 +734,6 @@ value.IMAGE_SHARPENING.10=10x §c[-]
 option.LENSFLARE_MODE=§eOdblaski Obiektywu§r
 option.LENSFLARE_MODE.comment=Dodaje efekt odbicia obiektywu kamery w kierunku słońca lub księżyca. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
 value.LENSFLARE_MODE.0=WYŁ
-value.LENSFLARE_MODE.1=§cTylko Słońce
-value.LENSFLARE_MODE.2=§cSłońce & Księżyc
 
 option.LENSFLARE_I=Natężęnie Odblasków Obiektywu
 option.LENSFLARE_I.comment=Dostosowuje siłę efektu odblasku obiektywu.
@@ -840,7 +838,7 @@ option.GREEN_SCREEN_LIME=Zielony ekran
 option.GREEN_SCREEN_LIME.comment=Zmienia "Jasnozielony Beton", "Jasnozielona Wełna" i "Jasnozielony Dywan" w zielone ekrany do edycji wideo. Wskazówka 1: Wyłącz opcję "Blask", aby poprawić separację. Wskazówka 2: Umieść światła pod jasnozielonymi dywanami, aby je oświetlić. Wskazówka 3: Możesz wyłączyć antyaliasing (FXAA) i ustawić jakość detali na "ziemniak" w ustawieniach jakości, aby wyłączyć filtrowanie obrazu i uzyskać idealną separację pikseli.
 
 option.MIRROR_TINTED_GLASS=Lustrzane Szkło Przyciemnione
-option.MIRROR_TINTED_GLASS.comment=Zwiększa współczynnik odbicia i nieprzezroczystość bloków szkła przyciemnianego. Aby uzyskać najlepsze wyniki, włącz odbicia przestrzeni świata.
+value.MIRROR_TINTED_GLASS.0=WŁ.
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=Bardziej Odblaskowe Szkło w Oddali
 option.MORE_REFLECTIVE_DISTANT_GLASS.comment=Zwiększa odblaskowość i nieprzezroczystość szkła w oddali, dzięki czemu budynki z szklanymi oknami wyglądają ładniej.
@@ -2798,9 +2796,6 @@ option.EP_END_FLASH.comment=Zmienia typ rozbłysków Endu, domyślny lub niestan
 value.EP_END_FLASH.0=Tylko domyślny
 value.EP_END_FLASH.1=Tylko Euphoria
 value.EP_END_FLASH.2=Oba
-
-option.MIRROR_TINTED_GLASS_OPAQUE=Nieprzezroczyste Szkło Przyciemniane
-option.MIRROR_TINTED_GLASS_OPAQUE.comment=Sprawia, że przyciemniane bloki szkła stają się nieprzezroczyste (pomaga dać efekt idealnego lustra).
 
 option.COLORED_LIGHT_FOG_RAIN_I=Intensywność Wolumetrycznej Mgły Świetlnej Podczas Deszczu
 option.COLORED_LIGHT_FOG_RAIN_I.comment=Zmienia intensywność wolumetryczna mgły podczas deszczu.

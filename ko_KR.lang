@@ -697,8 +697,6 @@ value.IMAGE_SHARPENING.0=끄기
 option.LENSFLARE_MODE=§e렌즈 플레어§r
 option.LENSFLARE_MODE.comment=태양이나 달을 바라볼 때 카메라 렌즈 반사 효과를 추가합니다. §c[-]§r 이 효과는 성능에 큰 영향을 줄 수 있습니다.
 value.LENSFLARE_MODE.0=끄기
-value.LENSFLARE_MODE.1=§c태양
-value.LENSFLARE_MODE.2=§c태양 & 달
 
 option.LENSFLARE_I=렌즈 플레어 강도
 option.LENSFLARE_I.comment=렌즈 플레어 효과의 강도를 조정합니다.
@@ -807,7 +805,7 @@ option.GREEN_SCREEN_LIME=라임 블록 크로마키
 option.GREEN_SCREEN_LIME.comment=“Lime Concrete”, “Lime Wool”, “Lime Carpet”를 영상 편집용 그린 스크린으로 변환합니다.
 
 option.MIRROR_TINTED_GLASS=거울 차광 유리
-option.MIRROR_TINTED_GLASS.comment=Tinted Glass 블록의 반사율과 불투명도를 증가시킵니다. 최상의 결과를 위해 World-Space Reflections를 활성화하세요.
+value.MIRROR_TINTED_GLASS.0=켜기
 
 option.MORE_REFLECTIVE_DISTANT_GLASS=원거리 유리 반사 증가
 option.MORE_REFLECTIVE_DISTANT_GLASS.comment=멀리 있는 유리의 반사율과 불투명도를 증가시켜 유리 창문이 있는 건물이 더 보기 좋게 보이도록 합니다.
@@ -2329,9 +2327,6 @@ option.EP_END_FLASH.comment=엔드 플래시 유형을 변경합니다. 기본 �
 value.EP_END_FLASH.0=기본만 적용
 value.EP_END_FLASH.1=Euphoria만 적용
 value.EP_END_FLASH.2=둘 다 적용
-
-option.MIRROR_TINTED_GLASS_OPAQUE=Opaque Tinted Glass (불투명한 차광 유리)
-option.MIRROR_TINTED_GLASS_OPAQUE.comment=차광 유리 블록을 불투명하게 만듭니다(주로 거울 효과용).
 
 option.COLORED_LIGHT_FOG_RAIN_I=Colored Light Fog Rain Intensity (우중 안개 빛 색상 강도)
 option.COLORED_LIGHT_FOG_RAIN_I.comment=비 오는 동안 색상이 들어간 빛 안개의 강도를 조정합니다.

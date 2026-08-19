@@ -524,9 +524,6 @@ value.IMAGE_SHARPENING.8=8x §c[-]
 value.IMAGE_SHARPENING.9=9x §c[-]
 value.IMAGE_SHARPENING.10=10x §c[-]
 
-value.LENSFLARE_MODE.1=§cSolo sol
-value.LENSFLARE_MODE.2=§Sol & Luna
-
 option.FXAA_TAA_INTERACTION=Reducir FXAA en movimiento
 option.FXAA_TAA_INTERACTION.comment=Reduce la fuerza de la FXAA cuando la cámara se mueve. Los valores altos producen una imagen más nítida pero producen más parpadeo.
 value.FXAA_TAA_INTERACTION.0=No
@@ -561,6 +558,8 @@ value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
 option.FANCY_GLASS=Cristal mejorado
 
 option.GREEN_SCREEN_LIME=Bloques Lima como Pantalla Verde
+
+value.MIRROR_TINTED_GLASS.0=Desactivadas
 
 value.HAND_SWAYING.1=Sutil
 value.HAND_SWAYING.2=Normal
