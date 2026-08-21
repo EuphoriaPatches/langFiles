@@ -2894,6 +2894,9 @@ option.NETHER_HEAT_DISTORTION_SCALE.comment=Change the scale of the heat distort
 option.BLOCKLIGHT_CAUSTICS=Blocklight Caustics
 option.BLOCKLIGHT_CAUSTICS.comment=Adds a caustic effect to the blocklight when underwater.
 
+option.LENS_FLARE_RADIUS=Lens Flare Size
+option.LENS_FLARE_RADIUS.comment=Change the overall size of the lens flare.
+
 option.LENS_FLARE_SHAPE=Lens Flare Shape
 option.LENS_FLARE_SHAPE.comment=Change the shape of the lens flares.
 value.LENS_FLARE_SHAPE.0=Default
