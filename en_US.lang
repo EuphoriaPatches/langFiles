@@ -1381,6 +1381,8 @@ screen.PORTAL_SETTINGS.comment=Settings that relate to portals.
 screen.MISC_SETTINGS=Miscellaneous
 screen.MISC_SETTINGS.comment=Settings which don't fit into any other category.
 screen.MISC_EMISSIVE_SETTINGS=Miscellaneous Emissive
+screen.REFLECTION_SETTINGS=Reflections
+screen.REFLECTION_SETTINGS.comment=Settings that relate to reflections.
 
 screen.CAMERA=Camera
 screen.CAMERA.comment=Settings that relate to the Camera.
@@ -2816,6 +2818,14 @@ option.ROUGHNESS_MULTIPLIER.comment=Change where materials are rough.
 
 option.ROUGHNESS_INTENSITY=Roughness Intensity
 option.ROUGHNESS_INTENSITY.comment=Change the roughness of the materials and make the more or less shiny.
+
+option.BLURRED_REFLECTIONS_I=Blurred Reflections
+option.BLURRED_REFLECTIONS_I.comment=Change the intensity of the blurred reflections on materials. §e[*]§r It is highly recommended to to use FULL Reflection Resolution when using lower values.
+value.BLURRED_REFLECTIONS_I.0=OFF
+value.BLURRED_REFLECTIONS_I.10=Default
+
+option.BETTER_LABPBR=Improved LabPBR
+option.BETTER_LABPBR.comment=Changes the look of LabPBR materials to fit more with what the resource pack developer intended. §e[*]§r This setting only works if "RP Support" is set to LabPBR
 
 option.SHADOW_SATURATION=Shadow Saturation
 option.SHADOW_SATURATION.comment=Change the saturation of the shadows and light shafts. §e[*]§r This setting only works if "Real-Time Shadows" is set to Low or higher.
