@@ -2817,6 +2817,9 @@ option.ROUGHNESS_MULTIPLIER.comment=マテリアルに粗さ (ラフネス) �
 option.ROUGHNESS_INTENSITY=粗さの強度
 option.ROUGHNESS_INTENSITY.comment=マテリアルの粗さ (ラフネス) を変更することで、光沢の度合いを調整します。.
 
+value.BLURRED_REFLECTIONS_I.0=OFF
+value.BLURRED_REFLECTIONS_I.10=デフォルト
+
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。.
 
@@ -2893,6 +2896,9 @@ option.NETHER_HEAT_DISTORTION_SCALE.comment=陽炎効果のスケールを変更
 
 option.BLOCKLIGHT_CAUSTICS=ブロック光源のコースティクス
 option.BLOCKLIGHT_CAUSTICS.comment=水中にいるとき、ブロック光源にコースティクス効果を追加します。.
+
+option.LENS_FLARE_RADIUS=レンズフレアのサイズ
+option.LENS_FLARE_RADIUS.comment=レンズフレアの全体的なサイズを変更します。.
 
 option.LENS_FLARE_SHAPE=レンズフレア 形状
 option.LENS_FLARE_SHAPE.comment=レンズフレアの形状を変更します。.

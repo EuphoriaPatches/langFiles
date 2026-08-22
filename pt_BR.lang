@@ -2705,6 +2705,9 @@ option.ROUGHNESS_MULTIPLIER.comment=Altere onde os materiais são rugosos.
 option.ROUGHNESS_INTENSITY=Intensidade da Rugosidade
 option.ROUGHNESS_INTENSITY.comment=Altere a rugosidade dos materiais e os deixe mais ou menos brilhantes.
 
+value.BLURRED_REFLECTIONS_I.0=Desligado
+value.BLURRED_REFLECTIONS_I.10=PADRÃO
+
 option.SHADOW_SATURATION=Saturação das Sombras
 option.SHADOW_SATURATION.comment=Altere a saturação das sombras e dos feixes de luz. §e[*]§r Esta configuração só funciona se "Sombras em Tempo-Real" estiver em Baixo ou superior.
 

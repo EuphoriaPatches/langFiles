@@ -2235,6 +2235,9 @@ option.ROUGHNESS_MULTIPLIER.comment=재질이 거칠어지는 부분을 선택�
 option.ROUGHNESS_INTENSITY=Roughness Intensity (거침도 세기)
 option.ROUGHNESS_INTENSITY.comment=재질의 거칠기를 조정하여 더 반짝이거나 덜 반짝이게 만듭니다.
 
+value.BLURRED_REFLECTIONS_I.0=켜기
+value.BLURRED_REFLECTIONS_I.10=Default (기본)
+
 option.SHADOW_SATURATION=Shadow Saturation (그림자 채도)
 option.SHADOW_SATURATION.comment=그림자와 빛 기둥의 채도를 조정합니다. §e[*]§r 이 설정은 “Real-Time Shadows”가 Low 이상으로 설정되어 있을 때만 작동합니다.
 

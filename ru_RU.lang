@@ -2817,6 +2817,9 @@ option.ROUGHNESS_MULTIPLIER.comment=Настройка шероховатост�
 option.ROUGHNESS_INTENSITY=Интенсивность шероховатости
 option.ROUGHNESS_INTENSITY.comment=Шероховатость материалов для большего или меньшего блеска.
 
+value.BLURRED_REFLECTIONS_I.0=Нет
+value.BLURRED_REFLECTIONS_I.10=Стандартный
+
 option.SHADOW_SATURATION=Насыщенность теней
 option.SHADOW_SATURATION.comment=Настройка насыщенности теней и световых лучей. §e[*]§r Требует «Тени в реальном времени» уровня «Низкий» или выше.
 

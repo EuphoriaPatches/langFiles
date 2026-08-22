@@ -2690,6 +2690,9 @@ option.ROUGHNESS_MULTIPLIER.comment=Zmień chropowatość materiałów.
 option.ROUGHNESS_INTENSITY=Intensywność Chropowatości
 option.ROUGHNESS_INTENSITY.comment=Zmień chropowatość materiałów, aby były bardziej lub mniej błyszczące.
 
+value.BLURRED_REFLECTIONS_I.0=WŁ.
+value.BLURRED_REFLECTIONS_I.10=Styl Domyślny
+
 option.SHADOW_SATURATION=Nasycenie Cieni
 option.SHADOW_SATURATION.comment=Zmień nasycenie cieni i snopów światła. §e[*]§r Cienie w Czasie Rzeczywistym muszą być ustawione na jakość "Niskią" lub wyższą.
 
