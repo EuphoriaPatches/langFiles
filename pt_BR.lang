@@ -2708,6 +2708,8 @@ option.ROUGHNESS_INTENSITY.comment=Altere a rugosidade dos materiais e os deixe 
 value.BLURRED_REFLECTIONS_I.0=Desligado
 value.BLURRED_REFLECTIONS_I.10=PADRÃO
 
+value.REFLECTION_RESPONSIVENESS.0.0=PADRÃO
+
 option.SHADOW_SATURATION=Saturação das Sombras
 option.SHADOW_SATURATION.comment=Altere a saturação das sombras e dos feixes de luz. §e[*]§r Esta configuração só funciona se "Sombras em Tempo-Real" estiver em Baixo ou superior.
 

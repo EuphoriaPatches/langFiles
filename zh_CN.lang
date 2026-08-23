@@ -2810,6 +2810,8 @@ option.ROUGHNESS_INTENSITY.comment=调节材质的粗糙程度, 使其更多或
 value.BLURRED_REFLECTIONS_I.0=关
 value.BLURRED_REFLECTIONS_I.10=默认
 
+value.REFLECTION_RESPONSIVENESS.0.0=默认
+
 option.SHADOW_SATURATION=阴影饱和度
 option.SHADOW_SATURATION.comment=调节阴影和光轴的饱和度。. §e[*]§r 本选项仅在 "实时阴影" 选项设置为 低 或者更高的值时生效。.
 

@@ -1381,6 +1381,8 @@ screen.PORTAL_SETTINGS.comment=Параметры порталов.
 screen.MISC_SETTINGS=Разное
 screen.MISC_SETTINGS.comment=Настройки, не вошедшие в другие категории.
 screen.MISC_EMISSIVE_SETTINGS=Разное свечение
+screen.REFLECTION_SETTINGS=Отражения
+screen.REFLECTION_SETTINGS.comment=Настройки отражений.
 
 screen.CAMERA=Камера
 screen.CAMERA.comment=Параметры камеры.
@@ -1411,7 +1413,7 @@ screen.WATERMARK_SETTINGS=Водяной знак
 screen.DOF_SETTINGS=Глубина резкости
 screen.DOF_SHAPE_SETTINGS=Настройки формы
 screen.LENS_FLARE_SETTINGS=Настройки блика объектива
-screen.LENS_FLARE_SETTINGS.comment=Настройки, связанные с бликами на объективе.
+screen.LENS_FLARE_SETTINGS.comment=Настройки бликов на объективе.
 
 screen.FUN=Развлечения
 screen.FUN.comment=Весёлые настройки.
@@ -2817,8 +2819,15 @@ option.ROUGHNESS_MULTIPLIER.comment=Настройка шероховатост�
 option.ROUGHNESS_INTENSITY=Интенсивность шероховатости
 option.ROUGHNESS_INTENSITY.comment=Шероховатость материалов для большего или меньшего блеска.
 
+option.BLURRED_REFLECTIONS_I=Размытые отражения
+option.BLURRED_REFLECTIONS_I.comment=Изменяет интенсивность размытых отражений на материалах. §e[*]§r При использовании низких значений настоятельно рекомендуется использовать 'ПОЛНОЕ' разрешение отражений.
 value.BLURRED_REFLECTIONS_I.0=Нет
-value.BLURRED_REFLECTIONS_I.10=Стандартный
+value.BLURRED_REFLECTIONS_I.10=По умолчанию
+
+value.REFLECTION_RESPONSIVENESS.0.0=Стандартный
+
+option.BETTER_LABPBR=Улучшенный LabPBR
+option.BETTER_LABPBR.comment=Изменяет внешний вид материалов LabPBR, чтобы они больше соответствовали задумке разработчика набора ресурсов. §e[*]§r Требует установки «Поддержки наборов ресурсов» на LabPBR.
 
 option.SHADOW_SATURATION=Насыщенность теней
 option.SHADOW_SATURATION.comment=Настройка насыщенности теней и световых лучей. §e[*]§r Требует «Тени в реальном времени» уровня «Низкий» или выше.
@@ -2896,6 +2905,9 @@ option.NETHER_HEAT_DISTORTION_SCALE.comment=Изменяет размер эфф
 
 option.BLOCKLIGHT_CAUSTICS=Каустика от света блоков
 option.BLOCKLIGHT_CAUSTICS.comment=Добавляет эффект каустики к свету от блоков под водой.
+
+option.LENS_FLARE_RADIUS=Размер бликов объектива
+option.LENS_FLARE_RADIUS.comment=Изменяет размер бликов объектива.
 
 option.LENS_FLARE_SHAPE=Форма бликов объектива
 option.LENS_FLARE_SHAPE.comment=Изменяет форму бликов объектива.

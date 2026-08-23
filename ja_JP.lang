@@ -1381,6 +1381,8 @@ screen.PORTAL_SETTINGS.comment=ポータルに関する設定です。.
 screen.MISC_SETTINGS=その他
 screen.MISC_SETTINGS.comment=他のカテゴリに収まらない設定です。.
 screen.MISC_EMISSIVE_SETTINGS=その他の発光
+screen.REFLECTION_SETTINGS=反射
+screen.REFLECTION_SETTINGS.comment=反射に関する設定です。.
 
 screen.CAMERA=カメラ
 screen.CAMERA.comment=カメラに関する設定です。.
@@ -2817,8 +2819,15 @@ option.ROUGHNESS_MULTIPLIER.comment=マテリアルに粗さ (ラフネス) �
 option.ROUGHNESS_INTENSITY=粗さの強度
 option.ROUGHNESS_INTENSITY.comment=マテリアルの粗さ (ラフネス) を変更することで、光沢の度合いを調整します。.
 
+option.BLURRED_REFLECTIONS_I=ぼやけた反射
+option.BLURRED_REFLECTIONS_I.comment=マテリアルのぼやけた反射の強度を変更します。. §e[*]§r 低い値を使用する場合は、反射の解像度を「完全」に設定することが強く推奨されます。.
 value.BLURRED_REFLECTIONS_I.0=OFF
 value.BLURRED_REFLECTIONS_I.10=デフォルト
+
+value.REFLECTION_RESPONSIVENESS.0.0=デフォルト
+
+option.BETTER_LABPBR=LabPBRの改善
+option.BETTER_LABPBR.comment=LabPBRマテリアルの見た目を変更し、リソースパックの開発者が意図したものにより近づくようにします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
 
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。.

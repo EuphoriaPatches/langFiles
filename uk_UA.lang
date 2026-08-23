@@ -1381,6 +1381,8 @@ screen.PORTAL_SETTINGS.comment=Налаштування, які стосують
 screen.MISC_SETTINGS=Різне
 screen.MISC_SETTINGS.comment=Налаштування, які не увійшли до інших категорій.
 screen.MISC_EMISSIVE_SETTINGS=Різне сяйне
+screen.REFLECTION_SETTINGS=Відблиски
+screen.REFLECTION_SETTINGS.comment=Налаштування, які стосуються відблисків.
 
 screen.CAMERA=Камера
 screen.CAMERA.comment=Налаштування, які стосуються камери.
@@ -2817,8 +2819,15 @@ option.ROUGHNESS_MULTIPLIER.comment=Змінює де матеріали шор�
 option.ROUGHNESS_INTENSITY=Інтенсивність шорсткости
 option.ROUGHNESS_INTENSITY.comment=Змінює шорсткість матеріалів і робить їх більш-менш блискучими.
 
+option.BLURRED_REFLECTIONS_I=Розмиті відблиски
+option.BLURRED_REFLECTIONS_I.comment=Змініть інтенсивність розмитих відблисків на матеріалах. §e[*]§r Наполегливо рекомендується використовувати повну роздільність відблисків при виборі низьких значень.
 value.BLURRED_REFLECTIONS_I.0=УВІМК.
-value.BLURRED_REFLECTIONS_I.10=Усталене
+value.BLURRED_REFLECTIONS_I.10=Усталені
+
+value.REFLECTION_RESPONSIVENESS.0.0=Усталене
+
+option.BETTER_LABPBR=Покращений LabPBR
+option.BETTER_LABPBR.comment=Змінює вигляд матеріалів LabPBR, щоб вони краще відповідали задуму розробника пакета ресурсів. §e[*]§r Працює лише тоді, коли підтримка ПР LabPBR.
 
 option.SHADOW_SATURATION=Насиченість тіні
 option.SHADOW_SATURATION.comment=Змінює насиченість тіней і світлових потоків. §e[*]§r Цей параметр працює, лише якщо для «Тіні в реальному часі» встановлено значення «Низько» або вище.
