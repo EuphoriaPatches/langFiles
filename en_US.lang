@@ -2824,6 +2824,10 @@ option.BLURRED_REFLECTIONS_I.comment=Change the intensity of the blurred reflect
 value.BLURRED_REFLECTIONS_I.0=OFF
 value.BLURRED_REFLECTIONS_I.10=Default
 
+option.REFLECTION_RESPONSIVENESS=Reflection Responsiveness
+option.REFLECTION_RESPONSIVENESS.comment=Makes reflections react faster to movement, reducing the ghosting/trailing effect they can have. §e[*]§r Higher values can make reflections more noisy.
+value.REFLECTION_RESPONSIVENESS.0.0=Default
+
 option.BETTER_LABPBR=Improved LabPBR
 option.BETTER_LABPBR.comment=Changes the look of LabPBR materials to fit more with what the resource pack developer intended. §e[*]§r This setting only works if "RP Support" is set to LabPBR
 
