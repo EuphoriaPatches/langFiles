@@ -2824,6 +2824,8 @@ option.BLURRED_REFLECTIONS_I.comment=Змініть інтенсивність �
 value.BLURRED_REFLECTIONS_I.0=УВІМК.
 value.BLURRED_REFLECTIONS_I.10=Усталені
 
+option.REFLECTION_RESPONSIVENESS=Чутливість відблисків
+option.REFLECTION_RESPONSIVENESS.comment=Змушує відблиски швидше реагувати на рух, зменшуючи ефект привида або шлейфу. §e[*]§r Вищі значення можуть додати шуму у відблиски.
 value.REFLECTION_RESPONSIVENESS.0.0=Усталене
 
 option.BETTER_LABPBR=Покращений LabPBR

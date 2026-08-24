@@ -2824,6 +2824,8 @@ option.BLURRED_REFLECTIONS_I.comment=マテリアルのぼやけた反射の強�
 value.BLURRED_REFLECTIONS_I.0=OFF
 value.BLURRED_REFLECTIONS_I.10=デフォルト
 
+option.REFLECTION_RESPONSIVENESS=反射の反映速度
+option.REFLECTION_RESPONSIVENESS.comment=反射が動きにより速く反応するようにし、ゴースティング/残像を減らします。. §e[*]§r 高い値では反射のノイズがより増えます。.
 value.REFLECTION_RESPONSIVENESS.0.0=デフォルト
 
 option.BETTER_LABPBR=LabPBRの改善

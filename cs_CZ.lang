@@ -1,0 +1,251 @@
+#shaders/lang/cs_CZ.lang
+
+Contribute=Přispěj k oficiálním překladům zde: https://www.euphoriapatches.com/lang - Neměň tuto adresu
+
+option.LANG_FILE_HEADER=Soubory překladů od komunity - Překlad může být zastaralý. SpacEagle17 nemůže zaručit jejich přesnost.
+option.TRANSLATORS=Přeložil: TerexG
+
+shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nDoplněk pro Complementary od SpacEagle17, který ho rozšiřuje o mnoho různých volitelných funkcí a nastavení.\nVývojové verze: §dwww.euphoriapatches.com/support§r
+
+#Profiles
+profile.POTATO=Výkon: §aBrambora
+profile.VERYLOW=Výkon: §aVelmi nízký
+profile.LOW=Výkon: §aNízký
+profile.MEDIUM=Výkon: §aStřední
+profile.HIGH=Výkon: §eVysoký (Výchozí)
+profile.VERYHIGH=Výkon: §eVelmi vysoký
+profile.ULTRA=Výkon: §cUltra
+profile.COMPLEMENTARY=Výkon: §4§lComplementary
+profile.comment=Profily shaderu mění nastavení s nejvíce optimalizovaným poměrem vizuální kvality a výkonu. §e[*]§r Je doporučeno používat jeden z těchto profilů pro tvoje nastavení, pokud nevíš, co děláš. §e[*]§r Všechna ovlivněná nastavení lze nalézt v nabídce "Nastavení výkonu".
+
+#Information
+screen.INFORMATION=Informace
+screen.INFORMATION.comment=Tato sekce obsahuje tlačítka, která pouze poskytují informace.
+
+screen.INFORMATION2=Informace Complementary
+screen.INFORMATION2.comment=Tato sekce obsahuje tlačítka, která pouze poskytují informace.
+
+option.info0=§bNajeď myší na tlačítko
+value.info0.0=
+option.info0.comment=Tato sekce obsahuje tlačítka, která pouze poskytují informace.
+
+option.info1=Jak získat lepší výkon
+value.info1.0=
+option.info1.comment=- Výkon je v Minecraftu složité téma, protože je ovlivněn mnoha věcmi, ale můžeš zkusit toto:. - Používej mody Iris a Sodium namísto Optifinu, protože Optifine je problematický a v některých případech tě nenechá ani přečíst zbytek tohoto popisu. - Sniž nastavení shaderu "Profil", tyto profily byly pečlivě testovány pro nejlepší poměr vzhled/výkon. - Sniž svoji délku dohledu, doporučuji ji nastavit o 2-4 chunky více, než "vzdálenost stínů" "Profilu", který sis vybral, takže například délka dohledu 16 chunků pro "Vysoký" profil  nebo 6 chunků pro profil Brambora. - Ujisti se, že nemáš přehnaně velké rozlišení, 1920x1080 je skvělé pro středně výkonné počítače, 1440p je možné pro vysoce výkonné počítače, 4k je přehnané. - Ujisti se, že nemáš velké množství modů, i když je většina z nich "optimizačními mody", většinou nejsou tak užitečné pro shadery. Stojí také za zmínku, že některé balíčky modifikací stojí hodně výkonu, obzvláště ty, které přidávají složitější zeleň/listy.
+
+option.info2=Jaká jsou nejlepší nastavení
+value.info2.0=
+option.info2.comment=- Nejlepší nastavení jsou subjektivní, ale používání výchozích možností "Profilu" bude pro většinu lidí skoro nejlepší. - Výchozí nastavení bylo vytvořeno roky hodnocení od komunity, testování a zpětné vazby; zatímco věnuje velkou pozornost poměru vzhled/výkon. - Pořád si však můžeš nastavení vyladit podle tebe a přitom se bavit!
+
+option.info3=Co je Profil nebo Vizuální styl
+value.info3.0=
+option.info3.comment=- Nastavení "Profil" mění nastavení v nabídce "Nastavení výkonu", ale neovlivní žádná nastavení  založená na preferenci. - "Vizuální styl" mění hodnoty "Určen(a/o) stylem", které existují v mnoha nastaveních založených na preferenci, ale neovlivňuje výkon o důležité množství. - Jediný rozdíl mezi Complementary Reimagined a Unbound je výchozí hodnota "Vizuálního stylu"
+
+option.info4=Co je Podpora textur
+value.info4.0=
+option.info4.comment=- Možnost Podpora textur určuje, jak shader zachází s různými bloky Minecraftu. - Například §bIntegratedPBR+§r považuje bloky zlata za odrážlivé, zatímco §elabPBR§r nebo §eseuspbr§r vyžadují, aby sis nainstaloval balíček modifikací, který to řekne shaderu. - Nastavením Podpory textur na §aZákladní§r způsobí, že žádný blok není "zvláštní" kromě pár výjimek jako třeba voda.
+
+option.info5=Co jsou žlutá nastavení
+value.info5.0=
+option.info5.comment=- Nastavení se žlutým jménem znamená, že toto nastavení ovlivňuje výkon o měřitelné množství, i když není v kategorii "Nastavení výkonu". - Pokud jeho povolení způsobí červený text možnosti, znamená to, že jeho dopad na výkon je velmi vysoký.
+
+option.info6=Jsou nějaké mody doporučené
+value.info6.0=
+option.info6.comment=- Kromě Iris a Sodium, které jsou zásadní, doporučuji pro lepší výkon mod pro optimalizaci blokových entit, jako třeba "Optimized Block Entities" nebo "Enhanced Block Entities". - Kromě toho může být mod "RenderScale" užitečný pro snadné upravení rozlišení. - Také stojí za zmínku mody "Voxy" nebo "Distant Horizons", které přidávají možnost mít extrémní délky dohledu bez extrémního dopadu na výkon; Doporučuji používat 64 až 256 chunků délky dohledu pro Voxy, nebo 64 až 128 chunků pro Distant Horizons s normální délkou dohledu 8 až 12 chunků pro oba mody. - Posledně můžeš získat mod "Euphoria Patches", který přidává upravený Complementary ke tvému seznamu shaderů s více funkcemi a nastaveními; spolu s přidáním několika oprav/vylepšení i když nepoužíváš modifikovaný balíček shaderů Complementary-Euphoria, jako například zachování funkce barevného osvětlení při vysokých světových souřadnicích.
+
+option.info7=Kde pokládat otázky nebo hlásit problémy
+value.info7.0=
+option.info7.comment=- Použij prosím Discord server Complementary pro otázky, nebo sekci "issues" na stránce Github. - www.complementary.dev/discord. - www.complementary.dev/github
+
+option.info8=Jak se připojit ke komunitě
+value.info8.0=
+option.info8.comment=- Můžeš se připojit do Discord serveru Complementary a připojit se k naší přátelské komunitě a mít možnost kontaktovat vývojáře nebo zkušené členy komunity. - www.complementary.dev/discord
+
+option.info9=Jak podpořit Complementary
+value.info9.0=
+option.info9.comment=- Nejlepší způsob, jak podpořit Complementary je sdílet ho s přáteli nebo na sociálních médiích, ale můžeš také přímo podpořit hlavního vývojáře (mě!) na Patreonu. - www.patreon.com/emingt
+
+option.info10=Poděkování
+value.info10.0=
+option.info10.comment=- EminGT: Hlavní vývojář Complementary. - Capt Tatsu: Vývojář BSL Shaders, jeho velkorysost je to, co v první řadě učinilo Complementary možným. - Zvláštní poděkování: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
+
+option.info11=Co je Euphoria Patches
+value.info11.0=
+option.info11.comment=Euphoria Patches je doplněk pro shader Complementary, který vyvinul SpacEagle17. Jeho cílem je rozšíření Complementary s více volitelnými ručně vyrobenými funkcemi a nastaveními.
+
+option.info12=Nastavení Euphoria Patches
+value.info12.0=
+option.info12.comment=Všechny možnosti Euphoria jsou ve výchozím nastavení vypnuty a uživatel se může rozhodnout, co zapnout. V kategorii Populární nastavení můžeš najít nejvíce populární funkce Euphoria Patches. Existuje nespočetně dalších nastavení a je přidáváno více s každou aktualizací, bav se hraním si s nimi!
+
+option.info13=Podpora modů Euphoria
+value.info13.0=
+option.info13.comment=Euphoria Patches si klade za cíl lepší podporu modovaných bloků než normální Complementary tím, že má výchozí podporu modovaných bloků (podívej se na block.properties). Detekce zdrojů světla s automaticky aplikovanou emisí. Detekce modelů zeleně s automaticky aplikovaným SSS.
+
+option.info14=Připoj se do komunity
+value.info14.0=
+option.info14.comment=Připoj se do Discord serveru Euphoria Patches pro otázky, zábavnou komunitu a abys zůstal(a) v obraze s nejnovějšími zprávami. §d§l§neuphoriapatches.com/discord
+
+option.info15=Poděkování Euphoria Patches
+value.info15.0=
+option.info15.comment=Celé poděkování lze nalézt na §deuphoriapatches.com/credits§r. isuewo - Bývalý spoluvývojář Euphoria Patches. EminGT: Hlavní vývojář Complementary. Capt Tatsu, gri573, FoZy STYLE, JoKerTech, SixthSurge, WoMspace (aka Sasha), Septonious, fayer3, Xonk, Memokii, dragoncat, TheNukeLore, dbrighthd, Surisen (Ruri), Acer (Alex), Folox_, Helgust.
+
+option.info16=Jak podpořit Euphoria Patches
+value.info16.0=
+option.info16.comment=Můžeš podpořit Euphoria Patches tím, že budeš zvědavý/á na nové aktualizace nebo jeho sdílením s ostatními lidmi, ale také můžeš přímo podpořit SpacEagle17 na Patreonu nebo Ko-Fi a získat přístup k exkluzivním beta verzím. §d§l§neuphoriapatches.com/support
+
+option.info17=Beta verze: Patreon SpacEagle17
+value.info17.0=
+option.info17.comment=Můžeš podpořit SpacEagle17 na Patreonu nebo Ko-Fi a získat přístup k exkluzivním verzím ve vývoji. §d§l§neuphoriapatches.com/support
+
+option.info18=Pro Complementary r5.9
+value.info18.0=
+option.info18.comment=Děkujeme za instalaci Euphoria Patches :)
+
+option.info19=§aNOVÁ AKTUALIZACE
+value.info19.0=§cX.Y.Z §r->§a X.Y.Z
+option.info19.comment=Je dostupná nová verze modu EuphoriaPatcher. Stáhni si ji z Modrinthu: https://euphoriapatches.com/download.
+
+option.info20=
+value.info20.0=§aeuphoriapatches.com/download
+option.info20.comment=Je dostupná nová verze modu EuphoriaPatcher. Stáhni si ji z Modrinthu: https://euphoriapatches.com/download.
+
+option.info21=Často kladené dotazy
+value.info21.0=
+option.info21.comment=Podívej se na stránku FAQ a najdi odpovědi na běžné otázky. §d§l§neuphoriapatches.com/faq
+
+option.info22=§dVíce nastavení po posunutí
+value.info22.0=
+option.info22.comment=Je možné, že na velkých velikostech GUI jsou některá nastavení skrytá, posunutí stránky dolů je odhalí.
+
+#Style
+option.SHADER_STYLE=Vizuální styl
+option.SHADER_STYLE.comment=Určuje výchozí vizuální styl balíčku shaderů. §bReimagined§r: Doplňuje Minecraft a zároveň zachovává jeho unikátní vizuální prvky. §dUnbound§r: Předělává vzhled Minecraftu s polorealistickým fantasy stylem.. §e[*]§r Ovlivněná nastavení: Styl vody, Styl mraků, Styl Slunce/Měsíce, Úhel Slunce/Měsíce, Styl polární záře, Svítící rudy.
+value.SHADER_STYLE.1=§bReimagined
+value.SHADER_STYLE.4=§dUnbound
+
+#Screens
+screen.PERFORMANCE_SETTINGS=§eNastavení výkonu§r
+screen.PERFORMANCE_SETTINGS.comment=Nastavení, která se přímo vztahují k výkonu a mění se s různými profily shaderu.
+
+screen.ATMOSPHERE_SETTINGS=Atmosféra
+screen.ATMOSPHERE_SETTINGS.comment=Nastavení týkající se atmosféry.
+
+screen.ATM_COLOR_SETTINGS=Násobiče barev atmosféry
+screen.ATM_COLOR_SETTINGS.comment=Umožňuje přizpůsobení barev atmosféry, které jsou hlavně vidět na obloze a mlze.
+
+screen.MORNING_ATM_MULTS=Východ/západ Slunce
+screen.NOON_ATM_MULTS=Poledne
+screen.NIGHT_ATM_MULTS=Noc
+screen.RAIN_ATM_MULTS=Deštivé počasí
+screen.NETHER_ATM_MULTS=Nether dimenze
+screen.END_ATM_MULTS=End dimenze
+
+screen.CLOUD_SETTINGS=Mraky
+screen.CLOUD_SETTINGS.comment=Nastavení týkající se mraků.
+
+screen.CLOUD_COLOR_SETTINGS=Barva mraků
+screen.CLOUD_COLOR_SETTINGS.comment=Nastavení pro změnu barvy mraků.
+
+screen.CLOUD_UNBOUND_SETTINGS=Nastavení Unbound mraků
+screen.CLOUD_REIMAGINED_SETTINGS=Nastavení Reimagined mraků
+
+screen.FOG_SETTINGS=Mlha
+screen.FOG_SETTINGS.comment=Nastavení týkající se různých typů mlhy.
+
+screen.SUN_MOON_SETTINGS=Slunce / Měsíc
+screen.SUN_MOON_SETTINGS.comment=Nastavení týkající se Slunce a Měsíce
+
+screen.NETHER_SETTINGS=Nether dimenze
+screen.NETHER_SETTINGS.comment=Nastavení týkající se Nether dimenze.
+
+screen.END_SETTINGS=End dimenze
+screen.END_SETTINGS.comment=Nastavení týkající s End dimenze.
+
+screen.WEATHER_SETTINGS=Déšť / Počasí
+screen.WEATHER_SETTINGS.comment=Nastavení týkající se povětrnostních podmínek.
+
+screen.CAMERA_SETTINGS=Kamera
+screen.CAMERA_SETTINGS.comment=Nastavení týkající se pohledu/kamery.
+
+screen.TONEMAP_SETTINGS=Rovnováha barev
+screen.TONEMAP_SETTINGS.comment=Nastavení určující rovnováhu barev obrazu.
+
+screen.COLORGRADING_SETTINGS=Korekce barev
+screen.COLORGRADING_SETTINGS.comment=Nastavení pro promíchání finálních kanálů barev.
+
+screen.WORLD_BLUR_SETTINGS=Rozostření světa
+screen.WORLD_BLUR_SETTINGS.comment=Nastavení týkající se skvělých efektů rozostření světa.
+
+screen.TAA_SETTINGS=Nastavení Temporálního filtru
+screen.TAA_SETTINGS.comment=Nastavení pro určení chování temporálního anti aliasingu.
+
+screen.MATERIAL_SETTINGS=Materiály
+screen.MATERIAL_SETTINGS.comment=Nastavení týkající se materiálů Minecraftu.
+
+screen.IPBR_SETTINGS=IntegratedPBR+ materiály
+screen.IPBR_SETTINGS.comment=Nastavení týkající se funkcí IntegratedPBR+.
+
+screen.GLOWING_ORE_SETTINGS=Svítící rudy
+screen.GLOWING_ORE_SETTINGS.comment=Nastavení pro upravení emise bloků rud.
+
+screen.GLOWING_STUFF_SETTINGS=Svítící věci
+screen.GLOWING_STUFF_SETTINGS.comment=Nastavení pro upravení emise různých bloků.
+
+screen.OTHER_IPBR_SETTINGS=Další funkce IPBR+
+screen.OTHER_IPBR_SETTINGS.comment=Různá nastavení IntegratedPBR+.
+
+screen.CUSTOM_PBR_SETTINGS=labPBR/seuspbr materiály
+screen.CUSTOM_PBR_SETTINGS.comment=Nastavení týkající se funkcí labPBR/seuspbr.
+
+screen.LIGHTING_SETTINGS=Osvětlení
+screen.LIGHTING_SETTINGS.comment=Nastavení týkající se osvětlení.
+
+screen.LIGHT_COLOR_SETTINGS=Násobiče barev osvětlení
+screen.LIGHT_COLOR_SETTINGS.comment=Umožňuje přizpůsobení barev osvětlení, které jsou viditelné na všech površích.
+
+screen.MORNING_LIGHT_MULTS=Východ/západ Slunce
+screen.NOON_LIGHT_MULTS=Poledne
+screen.NIGHT_LIGHT_MULTS=Noc
+screen.RAIN_LIGHT_MULTS=Deštivé počasí
+screen.NETHER_LIGHT_MULTS=Nether dimenze
+screen.END_LIGHT_MULTS=End dimenze
+
+screen.BLOCKLIGHT_SETTINGS=Světlo bloků §e[*]§r
+screen.BLOCKLIGHT_SETTINGS.comment=Nastavení pro upravení osvětlení vyzařovaného z bloků zdroje světla. §e[*]§r Nastavení červené/zelené/modré barvy neovlivní většinu světel, pokud je povoleno Pokročilé trasování barev.
+
+screen.MOON_PHASE_INF_SETTINGS=Vliv fáze měsíce
+screen.MOON_PHASE_INF_SETTINGS.comment=Nastavení pro určení, jak různé fáze měsíce ovlivňují noční osvětlení.
+
+screen.ACT_FEATURES_SETTINGS=Exkluzivní funkce ACT §e[*]§r
+screen.ACT_FEATURES_SETTINGS.comment=Nastavení, která jsou o funkcích exkluzivních pro Pokročilé trasování barev. §e[*]§r Tyto funkce pouze fungují, pokud je zapnuté Pokročilé trasování barev v Nastavení výkonu a tvůj systém ho podporuje.
+
+screen.PIXELATED_LIGHTING_SETTINGS=Pixelované osvětlení
+screen.PIXELATED_LIGHTING_SETTINGS.comment=Nastavení, aby některé efekty osvětlení byly pixelované.
+
+screen.WATER_SETTINGS=Voda
+screen.WATER_SETTINGS.comment=Nastavení týkající se vody.
+
+screen.WATER_COLOR_SETTINGS=Barva povrchu vody
+screen.UNDERWATER_COLOR_SETTINGS=Podvodní barva
+
+screen.WATER_WAVE_SETTINGS=Vlnící se normály vody §e[*]§r
+screen.WATER_WAVE_SETTINGS.comment=Nastavení pro přizpůsobení vln (normál) hladiny vody. §e[*]§r Tato nastavení pouze fungují, když je Styl vody "Reimagined s vlnami" nebo "Unbound".
+
+screen.WAVING_SETTINGS=Vlající textury
+screen.WAVING_SETTINGS.comment=Nastavení o vlajících texturách.
+
+screen.OTHER_SETTINGS=Ostatní
+screen.OTHER_SETTINGS.comment=Nastavení, která nepatří do žádné jiné kategorie.
+
+screen.SELECT_OUTLINE_SETTINGS=Obrys výběru
+screen.SELECT_OUTLINE_SETTINGS.comment=Nastavení měnící obrys vybraného bloku.
+
+screen.WORLD_OUTLINE_SETTINGS=Obrys světa
+screen.WORLD_OUTLINE_SETTINGS.comment=Nastavení týkající se volitelných efektů obrysu.
+
+#Settings
+
+####### Euphoria Patches #######
+
+#WATERMARK
+
