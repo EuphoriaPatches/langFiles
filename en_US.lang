@@ -3100,6 +3100,9 @@ option.MCWIND_RAIN.comment=Makes falling rain and snow lean into the wind direct
 option.MCWIND_LILY_PAD=WindLink Lily Pads
 option.MCWIND_LILY_PAD.comment=Makes lily pads bob up and down according to the wind strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
 
+option.MCWIND_PENDANTS=WindLink Lanterns & Chains
+option.MCWIND_PENDANTS.comment=Makes lanterns and chains swing like a pendulum according to the wind direction and strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
+
 option.PIXELATED_SHADOWS_MODE=Pixelated Shadows Mode
 option.PIXELATED_SHADOWS_MODE.comment=Changes the way pixelated shadows are rendered. Automatic is default and best for most cases, the manual resolutions should only be used when the used resourcepacks have mismatched texture resolutions. §e[*]§r Pixelated shadows need to be enabled for this option to work
 value.PIXELATED_SHADOWS_MODE.0=Automatic
