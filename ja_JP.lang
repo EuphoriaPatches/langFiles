@@ -3100,6 +3100,9 @@ option.MCWIND_RAIN.comment=シェーダーによる雨の揺れ効果の代わ�
 option.MCWIND_LILY_PAD=WindLinkのスイレンの葉
 option.MCWIND_LILY_PAD.comment=スイレンの葉がWindLink Modによる風向と風量に応じて浮き沈みするようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
 
+option.MCWIND_PENDANTS=WindLinkのランタン & 鎖
+option.MCWIND_PENDANTS.comment=ランタンと鎖がWindLink Modによる風向と風量に応じて振り子のように揺れるようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
+
 option.PIXELATED_SHADOWS_MODE=ピクセル化された影のモード
 option.PIXELATED_SHADOWS_MODE.comment=ピクセル化された影がレンダリングされる方法を変更します。. デフォルトの自動はほとんどの場合に最適で、固定の解像度は使用しているリソースパックが一致しないテクスチャ解像度を使用している場合にのみ使用してください。. §e[*]§r この設定が動作するには「ピクセルされた影」設定が有効である必要があります。.
 value.PIXELATED_SHADOWS_MODE.0=自動
