@@ -369,6 +369,7 @@ value.NETHER_VIEW_LIMIT.512.0=32 Chunks §c[-]
 value.NETHER_VIEW_LIMIT.768.0=48 Chunks §c[-]
 value.NETHER_VIEW_LIMIT.1024.0=64 Chunks §c[-]
 
+option.END_STAR_INTENSITY=Intensidad de las Estrellas del End
 option.END_STAR_INTENSITY.comment=Ajusta el brillo de las estrellas visibles en la dimensión del End.
 
 option.END_FLASHES=End Flashes
@@ -560,13 +561,33 @@ option.FANCY_GLASS=Cristal mejorado
 option.GREEN_SCREEN_LIME=Bloques Lima como Pantalla Verde
 
 value.MIRROR_TINTED_GLASS.0=Desactivadas
+value.MIRROR_TINTED_GLASS.35=Espejos 35%
+value.MIRROR_TINTED_GLASS.70=70% de espejo
+value.MIRROR_TINTED_GLASS.100=Espejos 100% §c[-]
 
+option.HIDE_ARMOR=Ocultar Armadura §e[*]§r
+value.HIDE_ARMOR.1=En Jugador §e[*]§r
+value.HIDE_ARMOR.2=En Todas las Entidades
+
+option.HAND_SWAYING=Movimiento de Mano
+option.HAND_SWAYING.comment=Añade un movimiento lento a la mano del jugador para simular una animación de respiración.
+value.HAND_SWAYING.0=DESACTIVADO
 value.HAND_SWAYING.1=Sutil
 value.HAND_SWAYING.2=Normal
 value.HAND_SWAYING.3=Intenso
 
 option.LESS_LAVA_FOG=Menos niebla dentro de Lava o Nieve
 option.LESS_LAVA_FOG.comment=Reduce la niebla de lava y niebla de la nieve en polvo para mejorar la visibilidad dentro de ellos.
+
+option.REDUCE_CLOSE_PARTICLES=Reducir las Partículas Cercanas
+
+option.SNOWY_WORLD=Mundo de Nieve
+option.SNOWY_WORLD.comment=Hace que el mundo entero esté cubierto de nieve.
+
+option.SHOW_LIGHT_LEVEL=Mostrar Niveles de Luz
+value.SHOW_LIGHT_LEVEL.0=Desactivado
+
+option.PLAYER_SHADOW=Sombra de Jugador §e[*]§r
 
 value.SKY_EFFECT_REFLECTION_DEFINE.0=§aDESACTIVADA
 

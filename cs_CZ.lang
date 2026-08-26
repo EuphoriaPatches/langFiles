@@ -802,6 +802,308 @@ value.FXAA_TAA_INTERACTION.6=60
 value.FXAA_TAA_INTERACTION.8=80
 value.FXAA_TAA_INTERACTION.10=100
 
+option.DISTANT_LIGHT_BOKEH=Bokeh vzdáleného světla
+option.DISTANT_LIGHT_BOKEH.comment=Dělá, že vzdálené zdroje světla vypadají rozptýlené uplatněním rozmazání jednoho pixelu v dálce. §a[+]§r Tento efekt je lepší s IntegratedPBR+ (volitelné), protože upravuje vzdálené zdroje světla pro lepší vzhled.
+
+option.MOTION_BLUR_EFFECT=§eRozmazání pohybu§r
+option.MOTION_BLUR_EFFECT.comment=Přidává k obrazu rozmazání, když se kamera pohybuje. §c[-]§r Tento efekt může mít dopad na výkon.
+value.MOTION_BLUR_EFFECT.-1=VYP
+value.MOTION_BLUR_EFFECT.1=§eZAP
+
+option.MOTION_BLURRING_STRENGTH=Síla rozmazání pohybu
+option.MOTION_BLURRING_STRENGTH.comment=Upravuje intenzitu rozmazání pohybu.
+
+option.WORLD_BLUR=§eRozostření světa§r
+option.WORLD_BLUR.comment=Zapíná rozostření světa. Vzdálenost: Rozmazání se chová jako mlha, je přidáno podle vzdálenosti od kamery. Hloubka ostrosti: Rozmazání je založeno na bodu zaměření kamery. §c[-]§r Tento efekt může mít vážný dopad na výkon.
+value.WORLD_BLUR.0=§aVYP
+value.WORLD_BLUR.1=§cVzdálenost
+value.WORLD_BLUR.2=§cHloubka ostrosti
+
+option.WB_FOV_SCALED=Rozmazání škálované zorným polem
+option.WB_FOV_SCALED.comment=Škáluje Rozmazání světa s šíří zorného pole kamery. Při menším zorném poli bude rozmazání více intenzivní.
+
+option.WB_CHROMATIC=Chromatické rozostření
+option.WB_CHROMATIC.comment=Přidává chromatickou aberaci k rozmazaným oblastem, což v těchto oblastech odděluje jiné barvy od sebe.
+
+option.WB_ANAMORPHIC=Anamorfické rozostření
+option.WB_ANAMORPHIC.comment=Roztahuje rozmazání v jednom směru. §c[-]§r Toto nastavení může snížit kvalitu Rozostření světa
+
+option.WB_DOF_I=Síla hloubky ostrosti
+option.WB_DOF_FOCUS=Zaměření hloubky ostrosti
+option.WB_DOF_FOCUS.comment=Určuje vzdálenost zaostření kamery. Automatické: Bod zaměření bude změněn podle středu obrazovky. Jas: Bod zaměření bude určen nastavením "Jas" v Nastaveních grafiky.
+value.WB_DOF_FOCUS.-1=Jas §e[*]
+value.WB_DOF_FOCUS.0=Automatické
+
+option.WB_DB_DAY_I=Roz. vzd. - Den
+option.WB_DB_NIGHT_I=Roz. vzd. - Noc a interiéry
+option.WB_DB_RAIN_I=Roz. vzd. - Déšť a sníh
+option.WB_DB_WATER_I=Roz. vzd. - Pod vodou
+option.WB_DB_NETHER_I=Roz. vzd. - Nether
+option.WB_DB_END_I=Roz. vzd. - End
+
+option.VIGNETTE_R=Viněta
+option.VIGNETTE_R.comment=Přidává ztmavení kolem okrajů obrazovky.
+
+option.CHROMA_ABERRATION=Chromatická aberace
+option.CHROMA_ABERRATION.comment=Odděluje od sebe jiné barvy kolem okrajů obrazovky. §c[-]§r Chromatická aberace může způsobit, že se obraz zdá rozmazaně; vysoké hodnoty nejsou doporučené pro hraní.
+value.CHROMA_ABERRATION.4=4 §c[-]
+value.CHROMA_ABERRATION.5=5 §c[-]
+value.CHROMA_ABERRATION.6=6 §c[-]
+value.CHROMA_ABERRATION.7=7 §c[-]
+value.CHROMA_ABERRATION.8=8 §c[-]
+
+option.IPBR_EMISSIVE_MODE=Režim emise IPBR+
+option.IPBR_EMISSIVE_MODE.comment=Určuje zacházení s emisivními texturami v IntegratedPBR+. Vybrání možností labPBR nebo seuspbr umožní kompatibilním balíčkům modifikací přepsat IPBR+ emisivní textury, když je balíček modifikací má. §c[-]§r Není doporučeno měnit toto nastavení, pokud nevíš, co děláš.
+value.IPBR_EMISSIVE_MODE.1=Pouze IPBR+
+value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
+value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
+
+option.IPBR_COMPAT_MODE_DEFINE=Režim kompatibility IPBR+
+option.IPBR_COMPAT_MODE_DEFINE.comment=Mění, jak jsou některé funkce IPBR+ vypočítané, aby byly méně agresivní a způsobovaly méně problémů s balíčky modifikací nebo mody.
+
+option.IPBR_PARTICLE_FEATURES=Funkce částic IPBR+
+option.IPBR_PARTICLE_FEATURES.comment=Zapíná různé funkce pro částice jako například svítící částice lávy nebo lépe zbarvené částice vody.
+
+option.FANCY_GLASS=Vylepšené sklo
+option.FANCY_GLASS.comment=Vylepšuje normální sklo tím, že k němu přidá průhlednou vrstvu. §c[-]§r Nefunguje na starších verzích Iris. §e[*]§r Podpora textur musí být nastavena na Integrated PBR+.
+
+option.GREEN_SCREEN_LIME=Světle zelené bloky jako pozadí
+option.GREEN_SCREEN_LIME.comment=Mění "Světle zelený beton", "Světle zelená vlna" a "Světle zelený koberec" na zelené pozadí pro editování videa. Tip 1: Vypni "Rozmazání světla" pro zlepšení oddělení. Tip 2: Dej světla pod světle zelené koberce pro osvětlení. Tip 3: Můžeš vypnout Anti-Aliasing (FXAA) a nastavit Kvalitu detailů na Brambora v menu Nastavení výkonu pro vypnutí všeho filtrování a získání dokonalého oddělení na úrovni pixelů.
+
+option.MIRROR_TINTED_GLASS=Kouřové sklo jako zrcadlo
+option.MIRROR_TINTED_GLASS.comment=Zvyšuje odrážlivost a neprůhlednost bloků Kouřového skla. Zapni Odrazy v prostoru světa pro nejlepší výsledky. §c[-]§r Není doporučeno používat 100% zrcadlo při obecném hraní, protože dělá mnoho problémů s odrazy velmi viditelnými.
+value.MIRROR_TINTED_GLASS.0=VYP
+value.MIRROR_TINTED_GLASS.35=35% zrcadlo
+value.MIRROR_TINTED_GLASS.70=70% zrcadlo
+value.MIRROR_TINTED_GLASS.100=100% zrcadlo §c[-]
+
+option.MORE_REFLECTIVE_DISTANT_GLASS=Více odrážlivé sklo v dálce
+option.MORE_REFLECTIVE_DISTANT_GLASS.comment=Zvyšuje odrážlivost a neprůhlednost skla v dálce, aby budovy s okny ze skla vypadaly lépe.
+
+option.HIDE_ARMOR=Skrýt zbroj §e[*]§r
+option.HIDE_ARMOR.comment=Skryje zbroj a krovky, které nosí hráč nebo všechny entity. Krovky jsou pouze ukázány při létání. §e[*]§r Toto nastavení pouze funguje na Iris. §e[*]§r Možnost "Na hlavním hráči" může vypadat ošklivě, když se jiné entity se zbrojí přiblíží velmi blízo k hlavnímu hráči.
+value.HIDE_ARMOR.0=VYP
+value.HIDE_ARMOR.1=Na hlavním hráči §e[*]§r
+value.HIDE_ARMOR.2=Na všech entitách
+
+option.HAND_SWAYING=Houpání ruky
+option.HAND_SWAYING.comment=Přidává pomalý pohyb k ruce hráče, který vypadá jako dýchání.
+value.HAND_SWAYING.0=VYP
+value.HAND_SWAYING.1=Jemné
+value.HAND_SWAYING.2=Normální
+value.HAND_SWAYING.3=Intenzivní
+
+option.LESS_LAVA_FOG=Méně mlhy v lávě nebo sněhu
+option.LESS_LAVA_FOG.comment=Snižuje mlhu v lávě a prašanu pro zlepšení viditelnosti v nich.
+
+option.REDUCE_CLOSE_PARTICLES=Snížit blízké částice
+option.REDUCE_CLOSE_PARTICLES.comment=Snižuje průhlednost částic blízkých ke kameře pro zlepšení viditelnosti.
+
+option.SNOWY_WORLD=Zasněžený svět
+option.SNOWY_WORLD.comment=Pokryje celý svět sněhem.
+
+option.SHOW_LIGHT_LEVEL=Ukázat úrovně světla
+option.SHOW_LIGHT_LEVEL.comment=Na Povrchu: Žlutá znamená, že se monstra mohou objevit v noci, červená znamená, že se mohou objevit kdykoliv. V Netheru nebo Endu: Žlutá znamená, že se některá monstra mohou objevit, červená znamená, že se mohou objevit všechna monstra. §e[*]§r Vypni Vyhlazené stíny pro přesné výsledky.
+value.SHOW_LIGHT_LEVEL.0=VYP
+value.SHOW_LIGHT_LEVEL.1=Drž Pavoučí oko
+value.SHOW_LIGHT_LEVEL.2=Drž zdroj světla
+value.SHOW_LIGHT_LEVEL.3=Vždy ZAP
+
+option.COLOR_CODED_PROGRAMS=Barevně odlišené programy §c[-]§r
+option.COLOR_CODED_PROGRAMS.comment=Ukáže, které programy shaderu jsou používány pro vykreslování geometrie. §c[-]§r Tato možnost je určena pouze pro vývojové účely a neměla by být používána při hře. §e[*]§r Hodnoty barev jsou v souborech shaderu: shaders/lib/misc/colorCodedPrograms.glsl
+
+option.GLOWING_COLORED_PARTICLES=Vynutit svítící částice §c[-]§r
+option.GLOWING_COLORED_PARTICLES.comment=Dělá, že všechny částice, které jsou technicky vzato "zbarvené", budou svítit. §c[-]§r Toto nastavení není doporučeno pro hraní, protože pak bude svítit mnoho částic, které jsou z materiálů, které by vůbec neměly svítit.
+
+option.CAVE_LIGHTING=Násobič světla v jeskyních
+option.CAVE_LIGHTING.comment=Přidává osvětlení navíc k oblastem, které nejsou pod oblohou. §e[*]§r Osvětlení jeskyní je také ovlivněno nastavením "Jas" v Nastavení grafiky. §c[-]§r Drastické změny tohoto nastavení můžou rozbít rovnováhu osvětlení.
+
+option.AMBIENT_MULT=Násobič jasnosti stínů
+option.AMBIENT_MULT.comment=Určuje množství okolního světla ve stínech. §c[-]§r Drastické změny tohoto nastavení můžou rozbít rovnováhu osvětlení.
+
+option.PLAYER_SHADOW=Stín hráče §e[*]§r
+option.PLAYER_SHADOW.comment=Určuje, jestli bude hráč vrhat stín. §e[*]§r Toto nastavení plně funguje pouze na Iris. §e[*]§r Toto nastavení bude zakázáno, pokud jsou "Stíny v reálném čase" vypnuty.
+value.PLAYER_SHADOW.-1=VYP
+value.PLAYER_SHADOW.1=ZAP
+
+option.LEAF_SHADOW_OPTIMISATION_DEFINE=§eOptimalizace stínů na listí§r
+option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=Zakáže stíny listí a lián v tmavších oblastech pro zlepšení výkonu. §c[-]§r Hlavní nevýhodou této optimalizace je, že pokazí osvětlení s některými balíčky modifikací, které přidávají vylepšené listí. §e[*]§r "Určena KD" znamená, že toto nastavení je určeno nastavením "Kvalita detailů" v Nastavení výkonu, pokud jej nezměníš.
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§aUrčena KD
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.0=§cVYP
+value.LEAF_SHADOW_OPTIMISATION_DEFINE.1=§aZAP
+
+option.SKY_EFFECT_REFLECTION_DEFINE=§eOdrazy efektů oblohy§r
+option.SKY_EFFECT_REFLECTION_DEFINE.comment=Umožňuje odrazům, aby se v nich objevovaly efekty oblohy jako třeba mraky, hvězdy nebo polární záře. Možnost "ZAP - voda" zapne efekty oblohy na odrazech vody a průhledných objektů, zatímco "ZAP - plné" je také zapne na odrazech bloků. §e[*]§r "Určeno KD" znamená, že toto nastavení je určeno nastavením "Kvalita detailů" v Nastavení výkonu, pokud jej nezměníš.
+value.SKY_EFFECT_REFLECTION_DEFINE.-1=§aUrčeno KD
+value.SKY_EFFECT_REFLECTION_DEFINE.0=§aVYP
+value.SKY_EFFECT_REFLECTION_DEFINE.1=§cZAP - voda
+value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§oZAP - plné
+
+option.GENERATED_NORMALS=Generované normály
+option.GENERATED_NORMALS.comment=Přidává automaticky generované nerovnosti ke všem povrchům. §e[*]§r Podpora textur musí být nastavena na Integrated PBR+. §e[*]§r Může vypadat divně s některými balíčky modifikací nebo mody, které mají textury s nestandardními rozlišeními.
+
+option.COATED_TEXTURES=Pokryté textury
+option.COATED_TEXTURES.comment=Přidává k texturám automaticky generovaný "prach". §e[*]§r Podpora textur musí být nastavena na Integrated PBR+. §e[*]§r Může vypadat divně s některými balíčky modifikací nebo mody, které mají textury s nestandardními rozlišeními.
+
+option.ENTITY_GN_AND_CT=Povolit GN a PT na entitách
+option.ENTITY_GN_AND_CT.comment=Určuje, jestli se můžou na entitách objevovat Generované normály a Pokryté textury. §e[*]§r Toto nastavení nepovolí GN ani PT na entitách, pokud nejsou zapnutá hlavní nastavení GN nebo PT.
+
+option.GENERATED_NORMAL_MULT=Síla generovaných normál
+option.GENERATED_NORMAL_MULT.comment=Upravuje sílu automaticky generovaných nerovností na površích.
+
+option.GENERATED_NORMAL_RES=Rozlišení gemerovaných normál
+option.GENERATED_NORMAL_RES.comment=Upravuje rozlišení/velikost automaticky generovaných nerovností na površích. §e[*]§r Měj na povědomí, že rozlišení GN také závisí na rozlišení každé textury, což znamená, že balíčky modifikací nebo mody mohou pokazit rozlišení GN na různých blocích.
+
+option.GENERATED_NORMAL_ENTITY_MULT=Gen. normály na entitách
+option.GENERATED_NORMAL_ENTITY_MULT.comment=Upravuje sílu automaticky generovaných nerovností na entitách.
+value.GENERATED_NORMAL_ENTITY_MULT.0=Výchozí
+
+option.COATED_TEXTURE_MULT=Síla pokrytých textur
+option.COATED_TEXTURE_MULT.comment=Upravuje sílu automaticky generovaného "prachu" na texturách.
+
+option.GLOWING_ORE_MASTER=§eZapnout svítící rudy
+option.GLOWING_ORE_MASTER.comment=Zapíná funkčnost svítících rud. §e[*]§r Možnost "Určeno stylem" zapne svítící rudy pouze, pokud je "Vizuální styl" nastaven na "Unbound". §e[*]§r Nastavení níže nebudou fungovat, pokud není toto nastavení zapnuté.
+value.GLOWING_ORE_MASTER.0=VYP
+value.GLOWING_ORE_MASTER.1=Určeno stylem
+value.GLOWING_ORE_MASTER.2=§aZAP
+
+option.GLOWING_ORE_MULT=Síla svitu rud
+option.GLOWING_ORE_MULT.comment=Určuje sílu svícení svítících rud.
+
+option.GLOWING_ORE_IRON=Svítící Železná ruda
+option.GLOWING_ORE_GOLD=Svítící Zlatá ruda
+option.GLOWING_ORE_COPPER=Svítící Měděná ruda
+option.GLOWING_ORE_REDSTONE=Svítící Redstonové ložisko §e[*]§r
+option.GLOWING_ORE_REDSTONE.comment=§e[*]§r Všechna redstonová ložiska budou svítit když jsou "aktivovaná" bez ohledu na tomto nastavení.
+option.GLOWING_ORE_LAPIS=Svítící Ložisko lazuritu
+option.GLOWING_ORE_EMERALD=Svítící Smaragdové ložisko
+option.GLOWING_ORE_DIAMOND=Svítící Diamantové ložisko
+option.GLOWING_ORE_NETHERQUARTZ=Svítící Ložisko netherového křemene
+option.GLOWING_ORE_NETHERGOLD=Svítící Netherová zlatá ruda
+option.GLOWING_ORE_GILDEDBLACKSTONE=Svítící Zlatonosný černokámen
+option.GLOWING_ORE_ANCIENTDEBRIS=Svítící Prastará suť
+option.GLOWING_ORE_MODDED=Svítící Modované rudy §e[*]§r
+option.GLOWING_ORE_MODDED.comment=§e[*]§r Můžeš přidat ID modovaných rud do souboru "Complementary-->shaders-->block.properties", aby svítily. block.properties můžeš otevřít jakýmkoliv textovým editorem jako například Poznámkový blok a pak přidat ID modovaných bloků rud vedle "block.10024=".
+
+option.GLOWING_AMETHYST=Svítící ametyst
+value.GLOWING_AMETHYST.0=VYP
+value.GLOWING_AMETHYST.1=Krystal
+value.GLOWING_AMETHYST.2=Krystal a blok
+
+option.GLOWING_LICHEN=Svítící Světélkující lišejník
+value.GLOWING_LICHEN.0=VYP
+value.GLOWING_LICHEN.1=V uzavřených oblastech
+value.GLOWING_LICHEN.2=Vždy
+
+option.EMISSIVE_REDSTONE_BLOCK=Svítící Redstonový blok
+
+option.EMISSIVE_LAPIS_BLOCK=Svítící Blok lazuritu
+
+option.GLOWING_ARMOR_TRIM=Svítící Ornament zbroje §e[*]§r
+option.GLOWING_ARMOR_TRIM.comment=Dělá, že ornamenty zbroje svítí. §e[*]§r Tato funkce funguje pouze na Iris, protože Optifine nepodporuje detekci ornamentů zbroje.
+
+option.NORMAL_MAP_STRENGTH=Síla normálové mapy
+option.NORMAL_MAP_STRENGTH.comment=Upravuje sílu nerovností na površích. §e[*]§r Podpora textur musí být nastavena na labPBR/seuspbr a musí být použit kompatibilní balíček modifikací.
+
+option.CUSTOM_EMISSION_INTENSITY=Intenzita vlastní emise
+option.CUSTOM_EMISSION_INTENSITY.comment=Upravuje intenzitu svícení svítících povrchů. §e[*]§r Podpora textur musí být nastavena na labPBR/seuspbr a musí být použit kompatibilní balíček modifikací.
+
+option.POM=§eMapování paralaxní okluze§r
+option.POM.comment=Zapíná 3D efekt na površích. §c[-]§r Tento efekt může mít vážný dopad na výkon. §e[*]§r Podpora textur musí být nastavena na labPBR/seuspbr a musí být použit kompatibilní balíček modifikací.
+value.POM.false=VYP
+value.POM.true=ZAP §c[-]
+
+option.POM_DEPTH=Hloubka MPO
+option.POM_DEPTH.comment=Upravuje hloubku mapování paralaxní okluze. §e[*]§r Podpora textur musí být nastavena na labPBR/seuspbr a musí být použit kompatibilní balíček modifikací.
+
+option.POM_QUALITY=§eKvalita MPO§r
+option.POM_QUALITY.comment=Upravuje ostrost/přesnost mapování paralaxní okluze. §c[-]§r Hodnoty vyšší než 200 mohou mít vážný dopad na výkon. §e[*]§r Hodnoty nižší než 100 vynutí, že "Režim osvětlení MPO" bude "Hladký". §e[*]§r Podpora textur musí být nastavena na labPBR/seuspbr a musí být použit kompatibilní balíček modifikací.
+value.POM_QUALITY.16=16 §e[*]
+value.POM_QUALITY.32=32 §e[*]
+value.POM_QUALITY.64=64 §e[*]
+value.POM_QUALITY.256=256 §c[-]
+value.POM_QUALITY.512=512 §c[-]
+
+option.POM_DISTANCE=§eVzdálenost MPO§r
+option.POM_DISTANCE.comment=Upravuje, jak daleko bude vypočítáváno mapování paralaxní okluze. §e[*]§r Je doporučeno nechat tuto hodnotu pod 50 pro malé zlepšení výkonu. §e[*]§r Podpora textur musí být nastavena na labPBR/seuspbr a musí být použit kompatibilní balíček modifikací.
+value.POM_DISTANCE.64=64 §e[*]
+value.POM_DISTANCE.128=128 §e[*]
+value.POM_DISTANCE.256=256 §e[*]
+value.POM_DISTANCE.512=512 §e[*]
+value.POM_DISTANCE.1024=1024 §e[*]
+
+option.POM_LIGHTING_MODE=Režim osvětlení MPO
+option.POM_LIGHTING_MODE.comment=Upravuje styl osvětlení povrchů ovlivněných MPO. Ostrý: Stěny MPO nedostanou světlo, pokud nejsou obráceny ke světlu. Hladký: Stěny MPO pořád dostanou světlo, jako by nebyly stěny. §e[*]§r Toto nastavení je vynuceno na "Hladký", pokud je kvalita MPO nastavena na méně než 100.
+value.POM_LIGHTING_MODE.1=Hladký
+value.POM_LIGHTING_MODE.2=Ostrý
+
+option.POM_ALLOW_CUTOUT=§eMPO na "vyřezaných" texturách §c[-]§r
+option.POM_ALLOW_CUTOUT.comment=Umožňuje, aby MPO fungovalo na "vyřezaných" částech bloků (jako třeba mezery listů). §c[-]§r Tento efekt může mít vážný dopad na výkon.
+
+option.DIRECTIONAL_BLOCKLIGHT=§eSměrové světlo bloků§r
+option.DIRECTIONAL_BLOCKLIGHT.comment=Přidává hloubku k světlu bloků v závislosi na normále povrchu. §c[-]§r Může v některých situacích způsobit vizuální artefakty. §c[-]§r Tento efekt může mít dopad na výkon. §e[*]§r Podpora textur musí být nastavena na labPBR/seuspbr a musí být použit kompatibilní balíček modifikací.
+value.DIRECTIONAL_BLOCKLIGHT.0=VYP
+value.DIRECTIONAL_BLOCKLIGHT.3=Jemné §c[-]
+value.DIRECTIONAL_BLOCKLIGHT.7=Normální §c[-]
+value.DIRECTIONAL_BLOCKLIGHT.11=Intenzivní §c[-]
+
+option.HELD_LIGHTING_MODE=Dynamické světlo v ruce
+option.HELD_LIGHTING_MODE.comment=Umožňuje zdrojům světla, aby vyplňovaly prostředí světlem, když je držíš v ruce.
+value.HELD_LIGHTING_MODE.0=VYP
+value.HELD_LIGHTING_MODE.1=Jemné
+value.HELD_LIGHTING_MODE.2=Normální
+
+option.BLOCKLIGHT_FLICKERING=Blikání světla bloků
+option.BLOCKLIGHT_FLICKERING.comment=Přidává efekt blikání k světlu vydávanému bloky.
+value.BLOCKLIGHT_FLICKERING.0=VYP
+
+option.WAVING_SPEED=Rychlost vlání
+option.WAVING_SPEED.comment=Upravuje, jak rychle se dějí efekty vlání.
+
+option.WAVING_I=Intenzita vlání
+option.WAVING_I.comment=Upravuje, jak moc se bloky hýbají, když vlají. §c[-]§r Moc vysoké hodnoty mohou způsobit, že se vlající bloky budou překrývat s jinými bloky.
+value.WAVING_I.1.25=1.25 §c[-]
+value.WAVING_I.1.50=1.50 §c[-]
+value.WAVING_I.1.75=1.75 §c[-]
+value.WAVING_I.2.00=2.00 §c[-]
+value.WAVING_I.50.0=§cŠílená
+
+option.NO_WAVING_INDOORS=Žádné vlání v uzavřených prostorech
+option.NO_WAVING_INDOORS.comment=Zabraňuje blokům před vláním v uzavřených prostorech použitím přístupu k obloze. §c[-]§r Zapnutí tohoto nastavení může způsobovat problémy s některými balíčky modifikací nebo mody.
+
+option.WAVING_I_RAIN_MULT=§eNásobič vlání při dešti§r
+option.WAVING_I_RAIN_MULT.comment=Násobí rychlost a intenzitu vlání během deště. §c[-]§r Moc vysoké hodnoty mohou způsobit, že se vlající bloky budou překrývat s jinými bloky. §c[-]§r Toto nastavení může mít dopad na výkon, když je zvýšeno nad 100.
+value.WAVING_I.125=125 §c[-]
+value.WAVING_I.150=150 §c[-]
+value.WAVING_I.175=175 §c[-]
+value.WAVING_I.200=200 §c[-]
+
+option.WAVING_FOLIAGE=Vlající tráva
+option.WAVING_FOLIAGE.comment=Přidává pohyb k trávě a jiné podobné zeleni pro napodobení větru.
+
+option.WAVING_LEAVES=Vlající listy
+option.WAVING_LEAVES.comment=Přidává pohyb k listům pro napodobení větru.
+
+option.WAVING_LAVA=Vlnící se textura lávy
+option.WAVING_LAVA.comment=Přidává stálý pohyb k lávě. §e[*]§r Vlnění lávy není ovlivněno nastavením "Žádné vlání v uzavřených prostorech".
+
+option.WAVING_LILY_PAD=Vlnící se lekníny §c[-]§r
+option.WAVING_LILY_PAD.comment=Přidává pohyb k leknínům a žabím vajíčkům pro napodobení dopadu z vln vody. §c[-]§r Toto způsobuje, že lekníny na blocích s vodou budou neviditelné
+
+option.WAVING_WATER_VERTEX=Vlnící se výška vody
+option.WAVING_WATER_VERTEX.comment=Přidává pohyb k poloze vody pro napodobení větru. §e[*]§r Toto nastavení nesouvisí s nastavením "Síla vln vody".
+
+option.WAVING_RAIN=Vlající textura deště/sněhu
+option.WAVING_RAIN.comment=Přidává pohyb k texturám padajícího deště a sněhu, aby vypadaly více dynamicky.
+
+option.SPECIAL_PORTAL_EFFECTS=Speciální efekty portálů
+option.SPECIAL_PORTAL_EFFECTS.comment=Přidává speciální animace a osvětlení k portálům do Netheru a Endu a k bránám v Endu.
+
+option.REFLECTION_RES=§eRozlišení odrazů§r
+option.REFLECTION_RES.comment=Mění rozlišení PBR odrazů na blocích (a odrazů v prostoru světa, pokud máš toto nastavení zapnuté) pro zlepšení výkonu. §c[-]§r "Plné" rozlišení odrazů může mít v některých situacích mnohem větší dopad na výkon, než je očekáváno. §e[*]§r Tato funkce nefunguje na Optifinu.
+value.REFLECTION_RES.1.0=§4§l§n§oPlné
+value.REFLECTION_RES.0.5=§aPoloviční
+
 ####### Euphoria Patches #######
 
 #WATERMARK
