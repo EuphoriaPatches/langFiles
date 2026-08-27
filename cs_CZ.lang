@@ -306,7 +306,7 @@ value.ENTITY_SHADOW.1=§cNormální entity
 value.ENTITY_SHADOW.2=§4§k-§r§4§l§n§oPlné§r§4§k- §r§c[-]
 
 option.DETAIL_QUALITY=Kvalita detailů
-option.DETAIL_QUALITY.comment=Upravuje mnoho malých věcí, které mají dopad na výkon. Mění kvalitu: Materiálu vody, TAA, vyladění osvětlení, Noční mlhoviny, Netherové bouře, odrazů efektů oblohy, přesnost louží při dešti, vlajících efektů, rozmazání pohybu, oprav odrazů, filtrování textur průsvitných objektů
+option.DETAIL_QUALITY.comment=Upravuje mnoho malých věcí, které mají dopad na výkon. Mění kvalitu: Materiálu vody, TAA, vyladění osvětlení, Noční mlhoviny, Netherové bouře, odrazů efektů oblohy, přesnost dešťových kaluží, vlajících efektů, rozmazání pohybu, oprav odrazů, filtrování textur průsvitných objektů
 value.DETAIL_QUALITY.0=§aBrambora
 value.DETAIL_QUALITY.2=§eStřední
 value.DETAIL_QUALITY.3=§cVysoká
@@ -349,7 +349,7 @@ value.COLORED_LIGHTING.768=§4§l§n§o24 chunků §r§c[-]
 value.COLORED_LIGHTING.1024=§4§k-§r§4§l§n§o32 chunků§r§4§k- §r§c[-]
 
 option.WORLD_SPACE_REFLECTIONS=Odrazy v prostoru světa (WSR) §e[*]§r
-option.WORLD_SPACE_REFLECTIONS.comment=Vypočítává odrazy v prostoru světa místo prostoru obrazovky. §c[-]§r Pravděpodobně nebude fungovat s modovanými bloky. §e[*]§r Tato funkce pouze funguje, když je zapnuto Pokročilé trasování barev v Nastavení výkonu a tvůj systém to podporuje. §e[*]§r Maximální vzdálenost tohoto efektu závisí na vzdálenosti Pokročilého trasování barev, ale je z technických důvodů vnitřně limitováno na 16 chunků. §c[-]§r Tento efekt může mít vážný dopad na výkon, zejména s vyššími vzdálenostmi Pokročilého trasování barev. §c[-]§r Odrazy v prostoru světa mohou mít různé problémy s mody nebo balíčky modifikací.
+option.WORLD_SPACE_REFLECTIONS.comment=Vypočítává odrazy v prostoru světa místo prostoru obrazovky. §c[-]§r Pravděpodobně nebude fungovat s modovanými bloky. §e[*]§r Tato funkce pouze funguje, když je zapnuto Pokročilé trasování barev v Nastavení výkonu a tvůj systém jej podporuje. §e[*]§r Maximální vzdálenost tohoto efektu závisí na vzdálenosti Pokročilého trasování barev, ale je z technických důvodů vnitřně limitováno na 16 chunků. §c[-]§r Tento efekt může mít vážný dopad na výkon, zejména s vyššími vzdálenostmi Pokročilého trasování barev. §c[-]§r Odrazy v prostoru světa mohou mít různé problémy s mody nebo balíčky modifikací.
 value.WORLD_SPACE_REFLECTIONS.-1=§aVYP
 value.WORLD_SPACE_REFLECTIONS.1=§4§l§n§oZAP
 
@@ -1104,7 +1104,222 @@ option.REFLECTION_RES.comment=Mění rozlišení PBR odrazů na blocích (a odra
 value.REFLECTION_RES.1.0=§4§l§n§oPlné
 value.REFLECTION_RES.0.5=§aPoloviční
 
+option.WORLD_OUTLINE=§eObrys světa§r
+option.WORLD_OUTLINE.comment=Přidává jasné obrysy okolo bloků. §c[-]§r Tento efekt může mít dopad na výkon.
+
+option.WORLD_OUTLINE_THICKNESS=§eTloušťka Obrysu světa§r
+option.WORLD_OUTLINE_THICKNESS.comment=Určuje tloušťku efektu Obrysu světa. §c[-]§r Zvýšení tohoto nastavení může mít dopad na výkon.
+
+option.WORLD_OUTLINE_I=Jas Obrysu světa
+option.WORLD_OUTLINE_I.comment=Určuje, jak intenzivní bude efekt Obrysu světa.
+
+option.WORLD_OUTLINE_ON_ENTITIES=Obrys světa na entitách
+option.WORLD_OUTLINE_ON_ENTITIES.comment=Určuje, jestli se efekt Obrysu světa bude vztahovat na entity. §c[-]§r Toto nastavení nemusí dokonale fungovat s některými PBR balíčky modifikací.
+
+option.WORLD_OUTLINE_SCALED=Obrys světa škálovaný vzdáleností
+option.WORLD_OUTLINE_SCALED.comment=Velikost obrysu světa se bude měnit podle vzdálenosti.
+
+option.DARK_OUTLINE=§eTmavý obrys§r
+option.DARK_OUTLINE.comment=Přidává tmavé obrysy okolo bloků. §c[-]§r Tento efekt může mít dopad na výkon.
+
+option.DARK_OUTLINE_THICKNESS=§eTloušťka Tmavého obrysu§r
+option.DARK_OUTLINE_THICKNESS.comment=Určuje tloušťku efektu Tmavého obrysu. §c[-]§r Zvýšení tohoto nastavení může mít dopad na výkon.
+
+option.RAIN_PUDDLES=Dešťové kaluže
+option.RAIN_PUDDLES.comment=Přidává kaluže vody k terénu během deště. §e[*]§r Nastavení "Kvalita odrazů bloků" musí být zapnuto, aby tento efekt fungoval. §e[*]§r Dešťové kaluže mají problém, že se mohou objevit v interiérech, pokud je střecha ze skla, ale tento problém je vyřešen systémem "Pokročilé trasování barev", když je toto nastavení povoleno.
+value.RAIN_PUDDLES.0=§aVYP
+value.RAIN_PUDDLES.1=§cKaluže při dešti
+value.RAIN_PUDDLES.2=§cPlné pokrytí při dešti
+value.RAIN_PUDDLES.3=§cVždy kaluže
+value.RAIN_PUDDLES.4=§cVždy plné pokrytí
+
+option.UNDERWATER_DISTORTION=Podvodní zkreslení
+option.UNDERWATER_DISTORTION.comment=Přidává jemný lom světla k obrazovce, když je kamera ve vodě.
+
+option.SELECT_OUTLINE=Obrys výběru
+option.SELECT_OUTLINE.comment=Určuje barvu obrysu vybraného bloku.
+value.SELECT_OUTLINE.0=VYP
+value.SELECT_OUTLINE.1=Výchozí
+value.SELECT_OUTLINE.2=Duhový
+value.SELECT_OUTLINE.3=Vybraná barva
+value.SELECT_OUTLINE.4=Různý
+
+option.SELECT_OUTLINE_AUTO_HIDE=Automaticky skrýt Obrys výběru
+option.SELECT_OUTLINE_AUTO_HIDE.comment=Skryje obrys vybraného bloku, když hráč nedrží nic ve své dominantní ruce.
+
+option.SELECT_OUTLINE_I=Jas Obrysu výběru
+option.SELECT_OUTLINE_R=OV červená
+option.SELECT_OUTLINE_G=OV zelená
+option.SELECT_OUTLINE_B=OV modrá
+
+option.MOON_PHASE_INF_LIGHT=Noční osvětlení dle fáze Měsíce
+option.MOON_PHASE_INF_LIGHT.comment=Umožňuje jiným fázím Měsíce, aby měnily jas osvětlení v noci.
+
+option.MOON_PHASE_INF_ATMOSPHERE=Noční atmosféra dle fáze Měsíce
+option.MOON_PHASE_INF_ATMOSPHERE.comment=Umožňuje jiným fázím Měsíce, aby měnily jas atmosféry v noci.
+
+option.MOON_PHASE_INF_REFLECTION=Odraz Měsíce dle fáze Měsíce
+option.MOON_PHASE_INF_REFLECTION.comment=Umožňuje jiným fázím měsíce, aby měnily jas odrazů Měsíce.
+
+option.MOON_PHASE_FULL=Intenzita úplňku
+option.MOON_PHASE_FULL.comment=Upravuje vliv fáze Měsíce během úplňku (nejjasnější fáze).
+
+option.MOON_PHASE_PARTIAL=Intenzita částečného Měsíce
+option.MOON_PHASE_PARTIAL.comment=Upravuje vliv fáze Měsíce během všech fází Měsíce mezi úplňkem a novem. Toto je fáze, kterou v Minecraftu uvidíš nejčastěji.
+
+option.MOON_PHASE_DARK=Intenzita novu
+option.MOON_PHASE_DARK.comment=Upravuje vliv fáze Měsíce během novu (nejtmavější fáze).
+
+option.CONNECTED_GLASS_EFFECT=Propojené sklo
+option.CONNECTED_GLASS_EFFECT.comment=Spojuje mezi sebou všechny typy skla. §e[*]§r Tato funkce pouze funguje, pokud je zapnuté Pokročilé trasování barev v Nastavení výkonu a tvůj systém jej podporuje. §e[*]§r Tato funkce se automaticky vypne, když je nainstalován mod "Continuity".
+
+option.PORTAL_EDGE_EFFECT=Svítící hrany portálů
+option.PORTAL_EDGE_EFFECT.comment=Přidává emisivní efekt k hranám endových a netherových portálů. §e[*]§r Tato funkce pouze funguje, pokud je zapnuté Pokročilé trasování barev v Nastavení výkonu a tvůj systém jej podporuje.
+
+option.PUDDLE_VOXELIZATION=Opravit kaluže pod sklem
+option.PUDDLE_VOXELIZATION.comment=Zabraňuje vytváření dešťových kaluží v uzavřených prostorech se skleněnými střechami, když je povoleno nastavení Dešťových kaluží. §e[*]§r Tato funkce pouze funguje, pokud je zapnuté Pokročilé trasování barev a Kvalita detailů je nastavena na Vysokou nebo vyšší.
+
+option.COLORED_CANDLE_LIGHT=Zbarvené světlo svíček
+option.COLORED_CANDLE_LIGHT.comment=Světla vrhaná svíčkami budou mít stejnou barvu, jako jejich podstavy. §e[*]§r Svíčky bez zabarvené podstavy budou pořád používat barvu ohně.
+
+option.COLORED_LIGHT_SATURATION=Sytost barevného osvětlení
+option.COLORED_LIGHT_SATURATION.comment=Upravuje, jak syté budou barvy vytvořené Pokročilým trasováním barev včetně loučí. §e[*]§r Není doporučeno měnit tuto hodnotu, protože celkový vzhled je navržen, aby vypadal nejvíce vyrovnaně s výchozí sytostí.
+
+option.ACT_FIRE_COLOR_WARMNESS=Teplota barvy loučí/ohně
+option.ACT_FIRE_COLOR_WARMNESS.comment=Upravuje teplotu barev světla loučí/ohně/luceren, když je zapnuto Pokročilé trasování světel. Měj na povědomí, že tato barva je také ovlivněna nastavením "Sytost barevného osvětlení". §e[*]§r Není doporučeno měnit tuto hodnotu o více než malé množství, protože celkový vzhled je navržen, aby vypadal nejvíce vyrovnaně s výchozí úrovní.
+value.ACT_FIRE_COLOR_WARMNESS.100=Normální
+
+option.COLORED_LIGHT_FOG=§eMlha barevného světla§r
+option.COLORED_LIGHT_FOG.comment=Přidává volumetrickou mlhu k světle bloků, nejvíce je viditelná v noci nebo pod zemí. §e[*]§r Tato funkce pouze funguje, pokud je zapnuté Pokročilé trasování barev v Nastavení výkonu a tvůj systém jej podporuje. §c[-]§r Tento efekt může mít vážný dopad na výkon.
+
+option.COLORED_LIGHT_FOG_I=Intenzita mlhy světla
+option.COLORED_LIGHT_FOG_I.comment=Určuje jas Mlhy barevného světla.
+
+option.LIGHT_COLOR_MULTS=§eNásobiče barev osvětlení
+option.LIGHT_COLOR_MULTS.comment=Umožňuje přizpůsobení barev osvětlení, které jsou viditelné na všech površích.
+
+option.ATM_COLOR_MULTS=§eNásobiče barev atmosféry
+option.ATM_COLOR_MULTS.comment=Umožňuje přizpůsobení barev atmosféry, které jsou hlavně vidět na obloze a mlze.
+
+option.LIGHT_MORNING_R=Násobič červené barvy osvětlení
+option.LIGHT_MORNING_G=Násobič zelené barvy osvětlení
+option.LIGHT_MORNING_B=Násobič modré barvy osvětlení
+option.LIGHT_MORNING_I=Násobič intenzity osvětlení
+option.ATM_MORNING_R=Násobič červené barvy atmosféry
+option.ATM_MORNING_G=Násobič zelené barvy atmosféry
+option.ATM_MORNING_B=Násobič modré barvy atmosféry
+option.ATM_MORNING_I=Násobič intenzity atmosféry
+option.LIGHT_NOON_R=Násobič červené barvy osvětlení
+option.LIGHT_NOON_G=Násobič zelené barvy osvětlení
+option.LIGHT_NOON_B=Násobič modré barvy osvětlení
+option.LIGHT_NOON_I=Násobič intenzity osvětlení
+option.ATM_NOON_R=Násobič červené barvy atmosféry
+option.ATM_NOON_G=Násobič zelené barvy atmosféry
+option.ATM_NOON_B=Násobič modré barvy atmosféry
+option.ATM_NOON_I=Násobič intenzity atmosféry
+option.LIGHT_NIGHT_R=Násobič červené barvy osvětlení
+option.LIGHT_NIGHT_G=Násobič zelené barvy osvětlení
+option.LIGHT_NIGHT_B=Násobič modré barvy osvětlení
+option.LIGHT_NIGHT_I=Násobič intenzity osvětlení
+option.ATM_NIGHT_R=Násobič červené barvy atmosféry
+option.ATM_NIGHT_G=Násobič zelené barvy atmosféry
+option.ATM_NIGHT_B=Násobič modré barvy atmosféry
+option.ATM_NIGHT_I=Násobič intenzity atmosféry
+option.LIGHT_RAIN_R=Násobič červené barvy osvětlení
+option.LIGHT_RAIN_G=Násobič zelené barvy osvětlení
+option.LIGHT_RAIN_B=Násobič modré barvy osvětlení
+option.LIGHT_RAIN_I=Násobič intenzity osvětlení
+option.ATM_RAIN_R=Násobič červené barvy atmosféry
+option.ATM_RAIN_G=Násobič zelené barvy atmosféry
+option.ATM_RAIN_B=Násobič modré barvy atmosféry
+option.ATM_RAIN_I=Násobič intenzity atmosféry
+option.LIGHT_NETHER_R=Násobič červené barvy osvětlení
+option.LIGHT_NETHER_G=Násobič zelené barvy osvětlení
+option.LIGHT_NETHER_B=Násobič modré barvy osvětlení
+option.LIGHT_NETHER_I=Násobič intenzity osvětlení
+option.ATM_NETHER_R=Násobič červené barvy atmosféry
+option.ATM_NETHER_G=Násobič zelené barvy atmosféry
+option.ATM_NETHER_B=Násobič modré barvy atmosféry
+option.ATM_NETHER_I=Násobič intenzity atmosféry
+option.LIGHT_END_R=Násobič červené barvy osvětlení
+option.LIGHT_END_G=Násobič zelené barvy osvětlení
+option.LIGHT_END_B=Násobič modré barvy osvětlení
+option.LIGHT_END_I=Násobič intenzity osvětlení
+option.ATM_END_R=Násobič červené barvy atmosféry
+option.ATM_END_G=Násobič zelené barvy atmosféry
+option.ATM_END_B=Násobič modré barvy atmosféry
+option.ATM_END_I=Násobič intenzity atmosféry
+
+option.XLIGHT_R=Násobič červené barvy světla bloků
+option.XLIGHT_G=Násobič zelené barvy světla bloků
+option.XLIGHT_B=Násobič modré barvy světla bloků
+option.XLIGHT_I=Intenzita světla bloků
+
+option.XLIGHT_CURVE=Kontrast světla bloků
+option.XLIGHT_CURVE.comment=Upravuje, jak rychle slábne intenzita světla bloku, když se oddaluje od zdroje světla.
+
+
 ####### Euphoria Patches #######
+profile2.DEFAULT=§bVizuální nastavení:§r Výchozí
+profile2.SPACEAGLE17=§f۞ §kO§fDEBUG (Nepoužívat)§f§kO
+profile2.POPULAR=§bVizuální nastavení: §dPopulární
+profile2.comment=Toto jsou předvolby profilu pro Euphoria Patches. §c[-] VAROVÁNÍ:§r Použití může změnit mnoho různých nastavení a dokonce i rozbít tvoje vlastní.\n\n• Výchozí nastavení jsou výchozí nastavení shaderu Complementary.\n\n• §bPopulární §dNastavení§r je předvolba, která má zapnutá některá z nejpopulárnějších nastavení Euphoria Patches a Complementary.\n\n• Profil Debug je používán pro účely testování a není určen pro běžné uživatele.
 
 #WATERMARK
+option.WATERMARK=Complementary
+option.WATERMARK.comment=Euphoria Patches je tvorba lásky, péče a frustrace, má za cíl co nejlépe doplňovat unikátní zážitek Minecraftu a zároveň přidávat k úžasnému shaderu Complementary. Prosím, neváhej se připojit k milé komunitě Complementary zde: www.complementary.dev/discord. Vodoznak od Elysia
+value.WATERMARK.0=& §dEuphoria §rPatches
+value.WATERMARK.1=& §cE§6u§ep§aho§br§9i§da §rPatches
+value.WATERMARK.2=& §cE§6u§ep§aho§br§9i§da §rPatches - Skryté GUI
+value.WATERMARK.3=a Skryté GUI a drž Pavoučí oko
+value.WATERMARK.4=Černobílý
+option.WATERMARK_SIZE=Velikost vodoznaku
+
+screen.EUPHORIA_SETTINGS=§dKonfigurace Euphoria Patches >
+screen.EUPHORIA_SETTINGS.comment=Nastavení přidaná Euphoria Patches. §bMůžeš podpořit SpacEagle17 na Patreonu nebo Ko-Fi a získat nové exkluzivní vývojové verze. §r§d§l§neuphoriapatches.com/support
+
+screen.ATMOSPHERE=Atmosféra
+screen.ATMOSPHERE.comment=Nastavení týkající se atmosféry.
+screen.CLOUDS=Mraky
+screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Reimagined mraky
+screen.CLOUD_REIMAGINED_SECOND_LAYER_SETTINGS=Druhá vrstva mraků
+screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Unbound mraky
+screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Dvojité Unbound mraky
+screen.CLOUD_SHADING_SETTINGS=Stínování mraků
+screen.AURORA_SETTINGS=Polární záře
+screen.AURORA_SETTINGS.comment=Nastavení týkající se polární záře.
+screen.AURORA_INFLUENCE_SETTINGS=Vliv polární záře
+screen.AURORA_COLOR_SETTINGS=Barvy polární záře
+screen.AURORA_COLOR_SETTINGS.comment=Nastavení týkající se barvy polární záře.
+screen.END_SKY=Obloha Endu
+screen.END_SKY.comment=Nastavení týkající se oblohy Endu.
+screen.END_BEAMS_SETTINGS=Nastavení Endových paprsků
+screen.END_BEAMS_SETTINGS.comment=Nastavení týkající se Endových paprsků
+screen.END_BEAMS_COLOR_SETTINGS=Barvy Endových paprsků
+screen.END_BEAMS_COLOR_SETTINGS.comment=Nastavení týkající se barvy Endových paprsků.
+screen.END_BEAMS_FLASH_SETTINGS=Nastavení Endových záblesků
+screen.END_BEAMS_FLASH_SETTINGS.comment=Nastavení týkající se Endových paprsků, když se dějí Endové záblesky. Funguje pouze na Minecraft verzi 1.21.9 nebo vyšší.
+screen.END_STAR=Nastavení hvězd v Endu
+screen.END_STAR.comment=Nastavení týkající se hvězd v Endu.
+screen.BLACK_HOLE_SETTINGS=Nastavení Černé díry
+screen.BLACK_HOLE_POSITION_SETTINGS=Pozice Černé díry
+screen.END_NEBULA_SETTINGS=Nastavení Endové mlhoviny
+screen.FIXED_POSITION_BLACK_HOLE_SETTINGS=Pevná poloha
+screen.MOVING_POSITION_BLACK_HOLE_SETTINGS=Pomalu se pohybující
+screen.STAR_COLORS_END=Barvy hvězd v Endu
+screen.STARS_OVERWORLD=Hvězdy
+screen.SHOOTING_STARS_SETTINGS=Padající hvězdy
+screen.STAR_COLORS_OW=Barvy hvězd
+screen.RAIN_SETTINGS=Nastavení deště
+screen.NIGHT_DESATURATION_SETTINGS=Bledost ve tmě
+screen.MOON_PHASED_DESATURATION_SETTINGS=Vyblednutí v noci dle fáze Měsíce
+screen.MOON_PHASED_DESATURATION_SETTINGS.comment=Upravuje množství vyblednutí podle aktuální fáze Měsíce.
+screen.NIGHT_NEBULA_SETTINGS=Noční mlhovina
+screen.NIGHT_NEBULA_COLOR_SETTINGS=Nastavení barev
+screen.NEBULA_STAR_SETTINGS=Nastavení hvězd v mlhovinách
+
+screen.WORLD=Svět
+screen.WORLD.comment=Nastavení týkající se světa.
+screen.BLOOD_MOON_SETTINGS=Nastavení krvavého Měsíce
+screen.OVERWORLD_WORLD=Povrch
 

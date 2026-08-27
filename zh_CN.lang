@@ -1372,6 +1372,8 @@ screen.PORTAL_SETTINGS.comment=与传送门相关的设置。.
 screen.MISC_SETTINGS=杂项
 screen.MISC_SETTINGS.comment=不适合放入其他分类的设置。.
 screen.MISC_EMISSIVE_SETTINGS=其他发光
+screen.REFLECTION_SETTINGS=反射
+screen.REFLECTION_SETTINGS.comment=与反射相关的设置。.
 
 screen.CAMERA=镜头
 screen.CAMERA.comment=关于镜头的设置。.
@@ -1595,6 +1597,7 @@ option.ROTATE_REIMAGINED_CLOUDS_90_NEW=90°旋转云图
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=旋转 Reimagined 风格云层 90°。.
 
 option.NIGHT_CLOUD_UNBOUND_REMOVE=夜晚云层消除强度
+option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=在夜晚时云层被消除的数量。.
 
 option.HIGH_QUALITY_CLOUDS=更高质量的云层
 option.HIGH_QUALITY_CLOUDS.comment=可将云层质量提升到正常 Complementary 设置无法达到的程度。. §c[-]§r 开启本选项可能会影响性能。.
@@ -1915,7 +1918,7 @@ option.FRESNEL_MULTIPLIER.comment=调节水面下层反射强度的设置。.
 option.SHADER_WATER=光影风格水体
 option.SHADER_WATER.comment=一个切换光影风格水体的开关。.
 
-option.WATER_GENERATED_NORMALS=水体生成法线。.
+option.WATER_GENERATED_NORMALS=水体生成法线
 
 option.RANDOM_BLOCKLIGHT=随机彩色方块光
 option.RANDOM_BLOCKLIGHT.comment=根据世界坐标对方块光随机应用颜色, 纯属娱乐设置。.
@@ -2807,10 +2810,16 @@ option.ROUGHNESS_MULTIPLIER.comment=选择方块的材质粗糙的范围。.
 option.ROUGHNESS_INTENSITY=粗糙度强度
 option.ROUGHNESS_INTENSITY.comment=调节材质的粗糙程度, 使其更多或者更少光泽。.
 
+option.BLURRED_REFLECTIONS_I=模糊反射
+option.BLURRED_REFLECTIONS_I.comment=更改方块材质上的反射效果被模糊的强度。. §e[*]§r 强烈建议在设置较低值时启用全分辨率反射。.
 value.BLURRED_REFLECTIONS_I.0=关
 value.BLURRED_REFLECTIONS_I.10=默认
 
+option.REFLECTION_RESPONSIVENESS=反射响应灵敏度
+option.REFLECTION_RESPONSIVENESS.comment=使反射效果响应延迟降低，减少反射发生拖影的情况。. §e[*]§r 设置过高的值会使反射噪点更多。.
 value.REFLECTION_RESPONSIVENESS.0.0=默认
+
+option.BETTER_LABPBR=改进 LabPBR 实现
 
 option.SHADOW_SATURATION=阴影饱和度
 option.SHADOW_SATURATION.comment=调节阴影和光轴的饱和度。. §e[*]§r 本选项仅在 "实时阴影" 选项设置为 低 或者更高的值时生效。.
@@ -2888,6 +2897,9 @@ option.NETHER_HEAT_DISTORTION_SCALE.comment=调节热失真效果的比例。.
 
 option.BLOCKLIGHT_CAUSTICS=方块光源焦散线
 option.BLOCKLIGHT_CAUSTICS.comment=位于水下时为方块光源周围添加焦散线效果。.
+
+option.LENS_FLARE_RADIUS=镜头眩光大小
+option.LENS_FLARE_RADIUS.comment=调节镜头眩光的整体大小尺寸。.
 
 option.LENS_FLARE_SHAPE=镜头眩光形状
 option.LENS_FLARE_SHAPE.comment=调节镜头眩光的形状。.
