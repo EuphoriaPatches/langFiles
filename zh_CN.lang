@@ -2820,6 +2820,7 @@ option.REFLECTION_RESPONSIVENESS.comment=使反射效果响应延迟降低，减
 value.REFLECTION_RESPONSIVENESS.0.0=默认
 
 option.BETTER_LABPBR=改进 LabPBR 实现
+option.BETTER_LABPBR.comment=更改 LabPBR 材质属性的表达以适配资源包开发者的预期。. §e[*]§r 本选项仅在 "资源包支持" 选项的值设置为 LabPBR 时生效。.
 
 option.SHADOW_SATURATION=阴影饱和度
 option.SHADOW_SATURATION.comment=调节阴影和光轴的饱和度。. §e[*]§r 本选项仅在 "实时阴影" 选项设置为 低 或者更高的值时生效。.
