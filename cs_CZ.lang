@@ -43,7 +43,7 @@ option.info3.comment=- Nastavení "Profil" mění nastavení v nabídce "Nastave
 
 option.info4=Co je Podpora textur
 value.info4.0=
-option.info4.comment=- Možnost Podpora textur určuje, jak shader zachází s různými bloky Minecraftu. - Například §bIntegratedPBR+§r považuje bloky zlata za odrážlivé, zatímco §elabPBR§r nebo §eseuspbr§r vyžadují, aby sis nainstaloval balíček modifikací, který to řekne shaderu. - Nastavením Podpory textur na §aZákladní§r způsobí, že žádný blok není "zvláštní" kromě pár výjimek jako třeba voda.
+option.info4.comment=- Možnost Podpora textur určuje, jak shader zachází s různými bloky Minecraftu. - Například §bIntegrovanéPBR+§r považuje bloky zlata za odrážlivé, zatímco §elabPBR§r nebo §eseuspbr§r vyžadují, aby sis nainstaloval balíček modifikací, který to řekne shaderu. - Nastavením Podpory textur na §aZákladní§r způsobí, že žádný blok není "zvláštní" kromě pár výjimek jako třeba voda.
 
 option.info5=Co jsou žlutá nastavení
 value.info5.0=
@@ -182,8 +182,8 @@ screen.TAA_SETTINGS.comment=Nastavení pro určení chování temporálního ant
 screen.MATERIAL_SETTINGS=Materiály
 screen.MATERIAL_SETTINGS.comment=Nastavení týkající se materiálů Minecraftu.
 
-screen.IPBR_SETTINGS=IntegratedPBR+ materiály
-screen.IPBR_SETTINGS.comment=Nastavení týkající se funkcí IntegratedPBR+.
+screen.IPBR_SETTINGS=Materiály IntegrovanéhoPBR+
+screen.IPBR_SETTINGS.comment=Nastavení týkající se funkcí IntegrovanéhoPBR+.
 
 screen.GLOWING_ORE_SETTINGS=Svítící rudy
 screen.GLOWING_ORE_SETTINGS.comment=Nastavení pro upravení emise bloků rud.
@@ -192,7 +192,7 @@ screen.GLOWING_STUFF_SETTINGS=Svítící věci
 screen.GLOWING_STUFF_SETTINGS.comment=Nastavení pro upravení emise různých bloků.
 
 screen.OTHER_IPBR_SETTINGS=Další funkce IPBR+
-screen.OTHER_IPBR_SETTINGS.comment=Různá nastavení IntegratedPBR+.
+screen.OTHER_IPBR_SETTINGS.comment=Různá nastavení IntegrovanéhoPBR+.
 
 screen.CUSTOM_PBR_SETTINGS=labPBR/seuspbr materiály
 screen.CUSTOM_PBR_SETTINGS.comment=Nastavení týkající se funkcí labPBR/seuspbr.
@@ -245,9 +245,9 @@ screen.WORLD_OUTLINE_SETTINGS.comment=Nastavení týkající se volitelných efe
 
 #Settings
 option.RP_MODE=Podpora textur
-option.RP_MODE.comment=Mění mnoho vnitřních výpočtů pro určení, jak budou různé bloky a materiály vykreslovány. §bIntegrated PBR+§r: Vypočtené PBR a další efekty, velmi doporučeno pro většinu případů použití. §aZákladní§r: Žádné PBR ani další efekty. §elabPBR/seuspbr§r: Materiály využívající potřebné PBR Balíčky modifikací.
+option.RP_MODE.comment=Mění mnoho vnitřních výpočtů pro určení, jak budou různé bloky a materiály vykreslovány. §bIntegrované PBR+§r: Vypočtené PBR a další efekty, velmi doporučeno pro většinu případů použití. §aZákladní§r: Žádné PBR ani další efekty. §elabPBR/seuspbr§r: Materiály využívající potřebné PBR Balíčky modifikací.
 value.RP_MODE.0=§aZákladní
-value.RP_MODE.1=§bIntegrated PBR+
+value.RP_MODE.1=§bIntegrované PBR+
 value.RP_MODE.2=§eseuspbr (Vyžadován Bal. mod.)
 value.RP_MODE.3=§elabPBR (Vyžadován Bal. mod.)
 
@@ -803,7 +803,7 @@ value.FXAA_TAA_INTERACTION.8=80
 value.FXAA_TAA_INTERACTION.10=100
 
 option.DISTANT_LIGHT_BOKEH=Bokeh vzdáleného světla
-option.DISTANT_LIGHT_BOKEH.comment=Dělá, že vzdálené zdroje světla vypadají rozptýlené uplatněním rozmazání jednoho pixelu v dálce. §a[+]§r Tento efekt je lepší s IntegratedPBR+ (volitelné), protože upravuje vzdálené zdroje světla pro lepší vzhled.
+option.DISTANT_LIGHT_BOKEH.comment=Dělá, že vzdálené zdroje světla vypadají rozptýlené uplatněním rozmazání jednoho pixelu v dálce. §a[+]§r Tento efekt je lepší s IntegrovanýmPBR+ (volitelné), protože upravuje vzdálené zdroje světla pro lepší vzhled.
 
 option.MOTION_BLUR_EFFECT=§eRozmazání pohybu§r
 option.MOTION_BLUR_EFFECT.comment=Přidává k obrazu rozmazání, když se kamera pohybuje. §c[-]§r Tento efekt může mít dopad na výkon.
@@ -853,7 +853,7 @@ value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
 
 option.IPBR_EMISSIVE_MODE=Režim emise IPBR+
-option.IPBR_EMISSIVE_MODE.comment=Určuje zacházení s emisivními texturami v IntegratedPBR+. Vybrání možností labPBR nebo seuspbr umožní kompatibilním balíčkům modifikací přepsat IPBR+ emisivní textury, když je balíček modifikací má. §c[-]§r Není doporučeno měnit toto nastavení, pokud nevíš, co děláš.
+option.IPBR_EMISSIVE_MODE.comment=Určuje zacházení s emisivními texturami v IntegrovanémPBR+. Vybrání možností labPBR nebo seuspbr umožní kompatibilním balíčkům modifikací přepsat IPBR+ emisivní textury, když je balíček modifikací má. §c[-]§r Není doporučeno měnit toto nastavení, pokud nevíš, co děláš.
 value.IPBR_EMISSIVE_MODE.1=Pouze IPBR+
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
@@ -865,7 +865,7 @@ option.IPBR_PARTICLE_FEATURES=Funkce částic IPBR+
 option.IPBR_PARTICLE_FEATURES.comment=Zapíná různé funkce pro částice jako například svítící částice lávy nebo lépe zbarvené částice vody.
 
 option.FANCY_GLASS=Vylepšené sklo
-option.FANCY_GLASS.comment=Vylepšuje normální sklo tím, že k němu přidá průhlednou vrstvu. §c[-]§r Nefunguje na starších verzích Iris. §e[*]§r Podpora textur musí být nastavena na Integrated PBR+.
+option.FANCY_GLASS.comment=Vylepšuje normální sklo tím, že k němu přidá průhlednou vrstvu. §c[-]§r Nefunguje na starších verzích Iris. §e[*]§r Podpora textur musí být nastavena na Integrované PBR+.
 
 option.GREEN_SCREEN_LIME=Světle zelené bloky jako pozadí
 option.GREEN_SCREEN_LIME.comment=Mění "Světle zelený beton", "Světle zelená vlna" a "Světle zelený koberec" na zelené pozadí pro editování videa. Tip 1: Vypni "Rozmazání světla" pro zlepšení oddělení. Tip 2: Dej světla pod světle zelené koberce pro osvětlení. Tip 3: Můžeš vypnout Anti-Aliasing (FXAA) a nastavit Kvalitu detailů na Brambora v menu Nastavení výkonu pro vypnutí všeho filtrování a získání dokonalého oddělení na úrovni pixelů.
@@ -903,7 +903,7 @@ option.SNOWY_WORLD=Zasněžený svět
 option.SNOWY_WORLD.comment=Pokryje celý svět sněhem.
 
 option.SHOW_LIGHT_LEVEL=Ukázat úrovně světla
-option.SHOW_LIGHT_LEVEL.comment=Na Povrchu: Žlutá znamená, že se monstra mohou objevit v noci, červená znamená, že se mohou objevit kdykoliv. V Netheru nebo Endu: Žlutá znamená, že se některá monstra mohou objevit, červená znamená, že se mohou objevit všechna monstra. §e[*]§r Vypni Vyhlazené stíny pro přesné výsledky.
+option.SHOW_LIGHT_LEVEL.comment=V Overwoldu: Žlutá znamená, že se monstra mohou objevit v noci, červená znamená, že se mohou objevit kdykoliv. V Netheru nebo Endu: Žlutá znamená, že se některá monstra mohou objevit, červená znamená, že se mohou objevit všechna monstra. §e[*]§r Vypni Vyhlazené stíny pro přesné výsledky.
 value.SHOW_LIGHT_LEVEL.0=VYP
 value.SHOW_LIGHT_LEVEL.1=Drž Pavoučí oko
 value.SHOW_LIGHT_LEVEL.2=Drž zdroj světla
@@ -940,10 +940,10 @@ value.SKY_EFFECT_REFLECTION_DEFINE.1=§cZAP - voda
 value.SKY_EFFECT_REFLECTION_DEFINE.2=§4§l§n§oZAP - plné
 
 option.GENERATED_NORMALS=Generované normály
-option.GENERATED_NORMALS.comment=Přidává automaticky generované nerovnosti ke všem povrchům. §e[*]§r Podpora textur musí být nastavena na Integrated PBR+. §e[*]§r Může vypadat divně s některými balíčky modifikací nebo mody, které mají textury s nestandardními rozlišeními.
+option.GENERATED_NORMALS.comment=Přidává automaticky generované nerovnosti ke všem povrchům. §e[*]§r Podpora textur musí být nastavena na Integrované PBR+. §e[*]§r Může vypadat divně s některými balíčky modifikací nebo mody, které mají textury s nestandardními rozlišeními.
 
 option.COATED_TEXTURES=Pokryté textury
-option.COATED_TEXTURES.comment=Přidává k texturám automaticky generovaný "prach". §e[*]§r Podpora textur musí být nastavena na Integrated PBR+. §e[*]§r Může vypadat divně s některými balíčky modifikací nebo mody, které mají textury s nestandardními rozlišeními.
+option.COATED_TEXTURES.comment=Přidává k texturám automaticky generovaný "prach". §e[*]§r Podpora textur musí být nastavena na Integrované PBR+. §e[*]§r Může vypadat divně s některými balíčky modifikací nebo mody, které mají textury s nestandardními rozlišeními.
 
 option.ENTITY_GN_AND_CT=Povolit GN a PT na entitách
 option.ENTITY_GN_AND_CT.comment=Určuje, jestli se můžou na entitách objevovat Generované normály a Pokryté textury. §e[*]§r Toto nastavení nepovolí GN ani PT na entitách, pokud nejsou zapnutá hlavní nastavení GN nebo PT.
@@ -1321,5 +1321,58 @@ screen.NEBULA_STAR_SETTINGS=Nastavení hvězd v mlhovinách
 screen.WORLD=Svět
 screen.WORLD.comment=Nastavení týkající se světa.
 screen.BLOOD_MOON_SETTINGS=Nastavení krvavého Měsíce
-screen.OVERWORLD_WORLD=Povrch
+screen.OVERWORLD_WORLD=Overworld
+screen.OVERWORLD_BEAM=Paprsky v Overworldu
+screen.OVERWORLD_BEAM.comment=Nastavení týkající se Paprsků v Overworldu
+screen.FOG=Mlha
+screen.FOG.comment=Nastavení týkající se mlhy.
+screen.FOG_CAVE=Mlha v jeskyních
+screen.FOG_CAVE.comment=Nastavení týkající se mlhy v jeskyních.
+screen.FOG_ATMOSPHERIC=Atmosférická mlha
+screen.FOG_ATMOSPHERIC.comment=Nastavení týkající se atmosférické mlhy.
+screen.FOG_BORDER_OVERWORLD=Mlha hranice
+screen.FOG_BORDER_OVERWORLD.comment=Nastavení týkající se mlhy hranice.
+screen.COLORED_LIGHT_FOG_SETTINGS=Mlha barevného světla
+screen.COLORED_LIGHT_FOG_SETTINGS.comment=Nastavení týkající se mlhy barevného světla.
+screen.SEASON=Roční období
+screen.WINTER=Nastavení Zimy
+screen.AUTUMN=Nastavení Podzimu
+screen.SPRING=Nastavení Jara
+screen.SUMMER=Nastavení Léta
+screen.NETHER_WORLD=Nether
+screen.FOG_BORDER_NETHER=Mlha hranice
+screen.FOG_BORDER_NETHER.comment=Nastavení týkající se mlhy hranice.
+screen.HEAT_DISTORTION_SETTINGS=Tepelné zkreslení
+screen.HEAT_DISTORTION_SETTINGS.comment=Nastavení týkající se tepelného zkreslení.
+screen.END_WORLD=End
+screen.END_VOLUMETRIC_SETTINGS=Volumetrické efekty v Endu
+screen.END_AMBIENT=Atmosféra Endu
+screen.FOG_BORDER_END=Mlha hranice
+screen.FOG_BORDER_END.comment=Nastavení týkající se mlhy hranice.
+screen.END_CENTER_LIGHTING_SETTINGS=Osvětlení středu Endu
+screen.LIGHT_SETTINGS=Nastavení světla
+screen.BLOCKLIGHT=Nastavení světla bloků
+screen.BLOCKLIGHT.comment=Nastavení týkající se barvy světla bloků.
+screen.COLORED_LIGHT=Barevné osvětlení
+screen.SSBL_SETTINGS=Barevné osvětlení v prostoru obrazovky (SSBL)
+screen.ACT_SETTINGS=Pokročilé trasování barev
+screen.LIGHTMAP_CURVES_SETTINGS=Křivky světelné mapy
+screen.OVERLAY_NOISE=Textury pokryté šumem
+screen.MOSS_NOISE_SETTINGS=Nastavení pokrytí mechem
+screen.SAND_NOISE_SETTINGS=Nastavení pokrytí pískem
+
+screen.MATERIALS=Materiály
+screen.MATERIALS.comment=Nastavení týkající se materiálů.
+screen.EMISSIVE_MATERIALS=Emisivní materiály
+screen.EMISSIVE_FLOWERS_SETTINGS=Emisivní květiny
+screen.WATER=Voda
+screen.WATER.comment=Nastavení týkající se vody.
+screen.IPBR_REDSTONE=Integrované PBR Redstonu
+screen.IPBR_REDSTONE.comment=Nastavení týkající se IntegrovanéhoPBR pro redstone.
+screen.DIRECTIONAL_LIGHTMAP_NORMALS_SETTINGS=Normály světelné mapy
+screen.LAVA_SETTINGS=Láva
+screen.LAVA_SETTINGS.comment=Nastavení týkající se lávy.
+screen.END_ROD_SETTINGS=Enderitová tyč
+screen.END_ROD_SETTINGS.comment=Nastavení týkající se enderitových tyčí.
+screen.FOLIAGE_SETTINGS=Zeleň
 
