@@ -1383,6 +1383,7 @@ screen.MISC_SETTINGS.comment=Налаштування, які не увійшл�
 screen.MISC_EMISSIVE_SETTINGS=Різне сяйне
 screen.REFLECTION_SETTINGS=Відблиски
 screen.REFLECTION_SETTINGS.comment=Налаштування, які стосуються відблисків.
+screen.BETTER_LABPBR_SETTINGS=Покращений LabPBR
 
 screen.CAMERA=Камера
 screen.CAMERA.comment=Налаштування, які стосуються камери.
@@ -2831,6 +2832,8 @@ value.REFLECTION_RESPONSIVENESS.0.0=Усталене
 option.BETTER_LABPBR=Покращений LabPBR
 option.BETTER_LABPBR.comment=Змінює вигляд матеріалів LabPBR, щоб вони краще відповідали задуму розробника пакета ресурсів. §e[*]§r Працює лише тоді, коли підтримка ПР LabPBR.
 
+value.BETTER_LABPBR_REFRACTIONS.0=ВИМК
+
 option.SHADOW_SATURATION=Насиченість тіні
 option.SHADOW_SATURATION.comment=Змінює насиченість тіней і світлових потоків. §e[*]§r Цей параметр працює, лише якщо для «Тіні в реальному часі» встановлено значення «Низько» або вище.
 
@@ -3102,6 +3105,9 @@ option.MCWIND_LILY_PAD.comment=Змушує латаття підійматис�
 
 option.MCWIND_PENDANTS=Ліхтарі та ланцюги WindLink
 option.MCWIND_PENDANTS.comment=Змушує ліхтарі та ланцюги коливатися відповідно до напрямку й сили вітру, що визначаються модом WindLink. §e[*]§r Працює лише за умови встановленого WindLink.
+
+value.MCWIND_NETHER_FOG.0=ВИМК
+value.MCWIND_NETHER_FOG.1=ВИМК.
 
 option.PIXELATED_SHADOWS_MODE=Режим піксельних тіней
 option.PIXELATED_SHADOWS_MODE.comment=Змінює спосіб промальовування піксельних тіней. Автоматично встановлено усталено і найкраще для більшости випадків, ручні роздільності слід використовувати лише тоді, коли використані пакети ресурсів мають невідповідну роздільну здатність текстур. §e[*]§r Щоб цей параметр працював, потрібно ввімкнути піксельні тіні.

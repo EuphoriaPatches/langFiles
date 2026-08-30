@@ -31,7 +31,7 @@ option.info0.comment=Tato sekce obsahuje tlačítka, která pouze poskytují inf
 
 option.info1=Jak získat lepší výkon
 value.info1.0=
-option.info1.comment=- Výkon je v Minecraftu složité téma, protože je ovlivněn mnoha věcmi, ale můžeš zkusit toto:. - Používej mody Iris a Sodium namísto Optifinu, protože Optifine je problematický a v některých případech tě nenechá ani přečíst zbytek tohoto popisu. - Sniž nastavení shaderu "Profil", tyto profily byly pečlivě testovány pro nejlepší poměr vzhled/výkon. - Sniž svoji délku dohledu, doporučuji ji nastavit o 2-4 chunky více, než "vzdálenost stínů" "Profilu", který sis vybral, takže například délka dohledu 16 chunků pro "Vysoký" profil  nebo 6 chunků pro profil Brambora. - Ujisti se, že nemáš přehnaně velké rozlišení, 1920x1080 je skvělé pro středně výkonné počítače, 1440p je možné pro vysoce výkonné počítače, 4k je přehnané. - Ujisti se, že nemáš velké množství modů, i když je většina z nich "optimizačními mody", většinou nejsou tak užitečné pro shadery. Stojí také za zmínku, že některé balíčky modifikací stojí hodně výkonu, obzvláště ty, které přidávají složitější zeleň/listy.
+option.info1.comment=- Výkon je v Minecraftu složité téma, protože je ovlivněn mnoha věcmi, ale můžeš zkusit toto:. - Používej mody Iris a Sodium namísto Optifinu, protože Optifine je problematický a v některých případech tě nenechá ani přečíst zbytek tohoto popisu. - Sniž nastavení shaderu "Profil", tyto profily byly pečlivě testovány pro nejlepší poměr vzhled/výkon. - Sniž svoji dohlednost, doporučuji ji nastavit o 2-4 chunky více, než "vzdálenost stínů" "Profilu", který sis vybral, takže například délka dohledu 16 chunků pro "Vysoký" profil nebo 6 chunků pro profil Brambora. - Ujisti se, že nemáš přehnaně velké rozlišení, 1920x1080 je skvělé pro středně výkonné počítače, 1440p je možné pro vysoce výkonné počítače, 4k je přehnané. - Ujisti se, že nemáš velké množství modů, i když je většina z nich "optimizačními mody", většinou nejsou tak užitečné pro shadery. Stojí také za zmínku, že některé balíčky modifikací stojí hodně výkonu, obzvláště ty, které přidávají složitější zeleň/listy.
 
 option.info2=Jaká jsou nejlepší nastavení
 value.info2.0=
@@ -51,7 +51,7 @@ option.info5.comment=- Nastavení se žlutým jménem znamená, že toto nastave
 
 option.info6=Jsou nějaké mody doporučené
 value.info6.0=
-option.info6.comment=- Kromě Iris a Sodium, které jsou zásadní, doporučuji pro lepší výkon mod pro optimalizaci blokových entit, jako třeba "Optimized Block Entities" nebo "Enhanced Block Entities". - Kromě toho může být mod "RenderScale" užitečný pro snadné upravení rozlišení. - Také stojí za zmínku mody "Voxy" nebo "Distant Horizons", které přidávají možnost mít extrémní délky dohledu bez extrémního dopadu na výkon; Doporučuji používat 64 až 256 chunků délky dohledu pro Voxy, nebo 64 až 128 chunků pro Distant Horizons s normální délkou dohledu 8 až 12 chunků pro oba mody. - Posledně můžeš získat mod "Euphoria Patches", který přidává upravený Complementary ke tvému seznamu shaderů s více funkcemi a nastaveními; spolu s přidáním několika oprav/vylepšení i když nepoužíváš modifikovaný balíček shaderů Complementary-Euphoria, jako například zachování funkce barevného osvětlení při vysokých světových souřadnicích.
+option.info6.comment=- Kromě Iris a Sodium, které jsou zásadní, doporučuji pro lepší výkon mod pro optimalizaci blokových entit, jako třeba "Optimized Block Entities" nebo "Enhanced Block Entities". - Kromě toho může být mod "RenderScale" užitečný pro snadné upravení rozlišení. - Také stojí za zmínku mody "Voxy" nebo "Distant Horizons", které přidávají možnost mít extrémní dohlednosti bez extrémního dopadu na výkon; Doporučuji používat 64 až 256 chunků dohlednosti pro Voxy, nebo 64 až 128 chunků pro Distant Horizons s normální dohledností 8 až 12 chunků pro oba mody. - Posledně můžeš získat mod "Euphoria Patches", který přidává upravený Complementary ke tvému seznamu shaderů s více funkcemi a nastaveními; spolu s přidáním několika oprav/vylepšení i když nepoužíváš modifikovaný balíček shaderů Complementary-Euphoria, jako například zachování funkce barevného osvětlení při vysokých světových souřadnicích.
 
 option.info7=Kde pokládat otázky nebo hlásit problémy
 value.info7.0=
@@ -372,7 +372,7 @@ option.VANILLAAO_I.comment=Určuje sílu Ambient Occlusion Minecraftu, které p�
 value.VANILLAAO_I.0=VYP
 
 option.BORDER_FOG=Mlha hranice
-option.BORDER_FOG.comment=Intenzivní mlha na okrajích načteného světa, aby se skryly hranice chunků. §e[*]§r Je doporučeno vypnout Mlhu hranice, když hraješ s dohledovou vzdáleností menší než 8 chunků.
+option.BORDER_FOG.comment=Intenzivní mlha na okrajích načteného světa, aby se skryly hranice chunků. §e[*]§r Je doporučeno vypnout Mlhu hranice, když hraješ s dohledností menší než 8 chunků.
 
 option.ATM_FOG_MULT=Atmosférická mlha
 option.ATM_FOG_MULT.comment=Upravuje intenzitu mlhy založené na nadmořské výšce.
@@ -382,7 +382,7 @@ value.ATM_FOG_MULT.0.80=Normální
 value.ATM_FOG_MULT.0.95=Intenzivní
 
 option.ATM_FOG_DISTANCE=Vzdálenost atmosférické mlhy
-option.ATM_FOG_DISTANCE.comment=Upravuje vzdálenost od kamery, kde se začíná objevovat atmosférická mlha. §e[*]§r Měj na povědomí, že vzdálenost mlhy je také automaticky upravena nastavením Vzdálenost dohledu v Nastavení grafiky.
+option.ATM_FOG_DISTANCE.comment=Upravuje vzdálenost od kamery, kde se začíná objevovat atmosférická mlha. §e[*]§r Měj na povědomí, že vzdálenost mlhy je také automaticky upravena nastavením Dohlednost v Nastavení grafiky.
 
 option.ATM_FOG_ALTITUDE=Výška atmosférické mlhy
 option.ATM_FOG_ALTITUDE.comment=Určuje nadmořskou výšku, kde se nejvýrazněji objevuje atmosférická mlha.
@@ -1431,4 +1431,198 @@ screen.EP_VERSION.comment=§bMůžeš podpořit SpacEagle17 na Patreonu nebo Ko-
 
 screen.MODDED_SETTINGS=Nastavení modů
 screen.MODDED_SETTINGS.comment=Nastavení, která fungují pouze, když máš nainstalované některé mody. Tato nastavení doplňují zážitek hraní s těmito mody a neudělají nic, pokud nemáš potřebné mody.
+screen.PHOTONICS_SETTINGS=Photonics
+screen.PHOTONICS_SETTINGS.comment=Nastavení, která fungují pouze, pokud máš nainstalovaný mod Photonics. https://modrinth.com/mod/photonics
+screen.PHOTONICS_SETTINGS_BASIC=Ostrý režim
+screen.PHOTONICS_SETTINGS_BASIC.comment=Nastavení Ostrého režimu osvětlení.
+screen.PHOTONICS_SETTINGS_RESTIR=ReSTIR režim
+screen.PHOTONICS_SETTINGS_RESTIR.comment=Nastavení ReSTIR režimu osvětlení.
+
+screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
+screen.DISTANT_HORIZONS_SETTINGS.comment=Nastavení, která fungují pouze, pokud máš nainstalovaný mod Distant Horizons. https://modrinth.com/mod/distanthorizons
+
+screen.MCWIND_SETTINGS=WindLink
+screen.MCWIND_SETTINGS.comment=Nastavení, která fungují pouze, pokud máš nainstalovaný mod WindLink. https://modrinth.com/project/windlink
+
+screen.MODDED_SKYBOX_SETTINGS=Nastavení Skyboxu
+screen.MODDED_SKYBOX_SETTINGS.comment=Nastavení týkající se modů souvisejících s oblohou.
+
+option.DAYLIGHT_CYCLE_FROZEN=Zmražený cyklus denního světla
+option.DAYLIGHT_CYCLE_FROZEN.comment=Vypnout funkci automatické animace mraků, polárních září, kaustik a dalšich efektů s vypnutým herním pravidlem doDaylightCycle/advance_time. Když je toto nastavení zapnuté, animace těchto efektů budou zmražené.
+
+option.AURORA_COLOR_PRESET=Předvolba barev záře
+option.AURORA_COLOR_PRESET.comment=Vyber si mezi výchozím vzhledem/vlastími barvami polární záře, zářemi s měnícími se barvami, kde se barva záře mění každý Minecraftový den/měsíc nebo předvolbami barev. Nebo také hladkou denní, která hladce mění barvu během noci.
+value.AURORA_COLOR_PRESET.-1=§o§lMěnící se - Hladká denní
+value.AURORA_COLOR_PRESET.0=Vlastní
+value.AURORA_COLOR_PRESET.1=§o§lMěnící se - Denně
+value.AURORA_COLOR_PRESET.2=§o§lMěnící se - Měsíčně
+value.AURORA_COLOR_PRESET.3=§9Originální§b Complementary v4
+value.AURORA_COLOR_PRESET.4=§bPe§3r§bm§3af§cr§3o§cst
+value.AURORA_COLOR_PRESET.5=§dKvetoucí §5světla
+value.AURORA_COLOR_PRESET.6=§9Ml§5ho§dvi§5na
+value.AURORA_COLOR_PRESET.7=§5Nebeský §3tanec
+value.AURORA_COLOR_PRESET.8=§aZelený blesk
+value.AURORA_COLOR_PRESET.9=§bÉt§3e§br§di§3c§dká
+value.AURORA_COLOR_PRESET.10=§bLedovcové §9požehnání
+value.AURORA_COLOR_PRESET.11=§5Mysti§9ck§bá
+value.AURORA_COLOR_PRESET.12=§cVo§6d§cn§6í §am§2e§al§2oun
+value.AURORA_COLOR_PRESET.13=§cKrvavá §bkoupel
+value.AURORA_COLOR_PRESET.14=§cD§4u§bc§3h
+
+option.RGB_AURORA=RGB záře
+option.RGB_AURORA.comment=Staň se epickým gamerem s §4R§2G§9B §rzáří.
+
+option.AURORA_UP_R=Horní část - Červená
+option.AURORA_UP_G=Horní část - Zelená
+option.AURORA_UP_B=Horní část - Modrá
+option.AURORA_UP_I=Horní část - Intenzita
+
+option.AURORA_DOWN_R=Spodní část - Červená
+option.AURORA_DOWN_G=Spodní část - Zelená
+option.AURORA_DOWN_B=Spodní část - Modrá
+option.AURORA_DOWN_I=Spodní část - Intenzita
+
+option.AURORA_SIZE=Hustota záře
+option.AURORA_SIZE.comment=Hustota řídí zdánlivou výšku a velikost polární záře
+
+option.AURORA_DRAW_DISTANCE=Vzdálenost vykreslování záře
+option.AURORA_DRAW_DISTANCE.comment=Vzdálenost vykreslování řídí, jak daleko od hráče bude vidět polární záře.
+
+option.AURORA_INFLUENCE=Vliv polární záře
+option.AURORA_INFLUENCE.comment=Barva aurory bude ovlivňovat barvu mraků a terénu.
+
+option.AURORA_CLOUD_INFLUENCE_INTENSITY=Intenzita vlivu na mraky
+option.AURORA_CLOUD_INFLUENCE_INTENSITY.comment=Měň, jak moc bude polární záře ovlivňovat mraky.
+value.AURORA_CLOUD_INFLUENCE_INTENSITY.0.00=VYP
+
+option.AURORA_TERRAIN_INFLUENCE_INTENSITY=Intenzita vlivu na terén
+option.AURORA_TERRAIN_INFLUENCE_INTENSITY.comment=Měň, jak moc bude polární záře ovlivňovat terén.
+value.AURORA_TERRAIN_INFLUENCE_INTENSITY.0.00=VYP
+
+option.RANDOM_AURORA=Náhodný výskyt polární záře
+option.RANDOM_AURORA.comment=Mění pravděpodobnost výskytu polární záře každou noc. Stále respektuje normální podmínky polární záře v nastavení Complementary.
+value.RANDOM_AURORA.0=Výchozí
+value.RANDOM_AURORA.1=10% šance
+value.RANDOM_AURORA.2=20% šance
+value.RANDOM_AURORA.3=30% šance
+value.RANDOM_AURORA.4=40% šance
+value.RANDOM_AURORA.5=50% šance
+value.RANDOM_AURORA.6=60% šance
+value.RANDOM_AURORA.7=70% šance
+value.RANDOM_AURORA.8=80% šance
+value.RANDOM_AURORA.9=90% šance
+
+option.AURORA_NOISE_SCALE=Měřítko šumu záře
+option.AURORA_NOISE_SCALE.comment=Mění měřítko šumu používaného v efektu polární záře.
+
+option.AURORA_PATTERN_WARP=Vířivost
+option.AURORA_PATTERN_WARP.comment=Mění, jak moc se polární záře víří a vlní.
+value.AURORA_PATTERN_WARP.0=VYP
+
+option.AURORA_SATURATION=Sytost polární záře
+option.AURORA_SATURATION.comment=Mění sytost barev polární záře.
+value.AURORA_SATURATION.10=Výchozí
+
+option.AURORA_COLOR_MIX_POWER=Dominantní vrstva
+option.AURORA_COLOR_MIX_POWER.comment=Mění, která vrstva polární záře je nejvýraznější.
+
+option.CLOUD_ROUNDNESS=Zaoblení mraků §e[*]§r
+value.CLOUD_ROUNDNESS.0.025=Velmi hranaté §e[*]§r
+value.CLOUD_ROUNDNESS.0.05=Hranaté §e[*]§r
+value.CLOUD_ROUNDNESS.0.125=Vyvážené
+value.CLOUD_ROUNDNESS.0.2=Kulaté
+option.CLOUD_ROUNDNESS.comment=Mění, jak oblé budou vypadat mraky. §e[*]§r Nižší oblost má za následek více artefaktů šumu
+
+option.REIMAGINED_CLOUDS_OUTLINE=Obrys mraků
+option.REIMAGINED_CLOUDS_OUTLINE.comment=Zapíná obrys kolem Reimagined mraků.
+value.REIMAGINED_CLOUDS_OUTLINE.0=VYP
+
+option.CLOUD_SHADOW_ROUNDNESS=Zaoblení stínů mraků
+value.CLOUD_SHADOW_ROUNDNESS.0.15=Velmi hranaté
+value.CLOUD_SHADOW_ROUNDNESS.0.25=Hranaté
+value.CLOUD_SHADOW_ROUNDNESS.0.35=Kulaté
+option.CLOUD_SHADOW_ROUNDNESS.comment=Mění, jak oblé vypadají stíny mraků.
+
+option.CLOUD_SHADOW_STRENGTH=Síla stínů mraků
+option.CLOUD_SHADOW_STRENGTH.comment=Upravuje pouze tmavost stínů mraků. Nižší hodnoty dělají stíny mraků světlejší, vyšší hodnoty naopak tmavší.
+
+option.CLOUD_SHADOW_FADE_DISTANCE=Vzdálenost stínů mraků
+option.CLOUD_SHADOW_FADE_DISTANCE.comment=Určuje vzdálenost kolem hráče, kde se nebudou objevovat stíny mraků.
+value.CLOUD_SHADOW_FADE_DISTANCE.0=VYP
+
+option.CLOUD_NARROWNESS=Šířka mraků
+option.CLOUD_NARROWNESS.comment=Mění, jak široké vypadají mraky vodorovně.
+
+option.CLOUD_SHADOW_UNBOUND_SIZE=Velikost stínů mraků
+option.CLOUD_SHADOW_UNBOUND_SIZE.comment=Určuje velikost stínů mraků.
+
+option.CLOUD_STRETCH=Výška mraků
+option.CLOUD_TRANSPARENCY=Průhlednost mraků
+option.CLOUD_TRANSPARENCY.comment=Mění průhlednost mraků.
+option.CLOUD_DIRECTION=Směr mraků
+option.CLOUD_DIRECTION.comment=Mění směr, ve kterém se mraky pohybují.
+option.CLOUD_TEXTURE=Textura mraků Minecraftu
+value.CLOUD_TEXTURE.0=Výchozí
+value.CLOUD_TEXTURE.1=Starý Minecraft
+value.CLOUD_TEXTURE.2=Staré Complementary
+
+value.CLOUD_DIRECTION.1=Západ-Východ
+value.CLOUD_DIRECTION.2=Sever-Jih
+option.RAINBOW_CLOUD=Duhové mraky
+value.RAINBOW_CLOUD.0=VYP
+value.RAINBOW_CLOUD.1=10% pokrytí
+value.RAINBOW_CLOUD.2=20% pokrytí
+value.RAINBOW_CLOUD.3=30% pokrytí
+value.RAINBOW_CLOUD.4=40% pokrytí
+value.RAINBOW_CLOUD.5=50% pokrytí
+value.RAINBOW_CLOUD.6=60% pokrytí
+value.RAINBOW_CLOUD.7=70% pokrytí
+value.RAINBOW_CLOUD.8=80% pokrytí
+value.RAINBOW_CLOUD.9=90% pokrytí
+value.RAINBOW_CLOUD.10=100% pokrytí
+
+option.CLOUD_RENDER_DISTANCE=Dohlednost mraků
+option.CLOUD_RENDER_DISTANCE.comment=Mění, jak daleko od hráče se budou vykreslovat mraky.
+
+option.CLOUD_SHADING_AMOUNT=Množství stínování mraků
+option.CLOUD_SHADING_AMOUNT.comment=Určuje, jak moc budou stínované mraky.
+
+option.INVERTED_CLOUD_SHADING=Obrácené stínování mraků
+option.INVERTED_CLOUD_SHADING.comment=Obrací efekt stínování mraků.
+
+option.CLOUD_LIGHT_MULTIPLIER=Násobič světla mraků ve dne
+option.CLOUD_LIGHT_MULTIPLIER.comment=Násobí jas světlé strany mraků ve dne.
+
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER=Násobič světla mraků v noci
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=Násobí jas světlé strany mraků v noci.
+
+option.CLOUD_AMBIENT_MULTIPLIER=Násobič okolního světla mraků ve dne
+option.CLOUD_AMBIENT_MULTIPLIER.comment=Násobí jas strany mraků s okolním světlem ve dne.
+
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=Násobič okolního světla mraků v noci
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=Násobí jas strany mraků s okolním světlem v noci.
+
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW=Otočit mraky o 90°
+option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Otočí Reimagined mraky o 90 stupňů.
+
+option.NIGHT_CLOUD_UNBOUND_REMOVE=Množství odstraněných mraků v noci
+option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Množství mraků, které jsou během noci odstraněny.
+
+option.HIGH_QUALITY_CLOUDS=Vyšší kvalita mraků
+option.HIGH_QUALITY_CLOUDS.comment=Zvyšuje kvalitu mraků na vyšší úroveň, než je možné v normálních nastaveních Complementary. §c[-]§r Zapnutí tohoto nastavení může mít dopad na výkon.
+
+option.CLOUD_LAYER2_SPEED_MULT=Násobič rychlosti vrstvy 2 mraků
+
+option.PIXELATED_UNBOUND_CLOUDS=Pixelované Unbound mraky
+option.PIXELATED_UNBOUND_CLOUDS.comment=Dává Unbound mrakům pixelovaný vzhled. Čím vyšší hodnota, tím větší pixely.
+value.PIXELATED_UNBOUND_CLOUDS.0=VYP
+
+option.DOUBLE_UNBOUND_CLOUDS=Dvojité Unbound mraky
+option.DOUBLE_UNBOUND_CLOUDS.comment=Zapíná vykreslování druhé vrstvy Unbound mraků. §c[-]§r Tento efekt může mít dopad na výkon.
+
+
+value.BETTER_LABPBR_REFRACTIONS.0=VYP
+
+value.MCWIND_NETHER_FOG.0=VYP
+value.MCWIND_NETHER_FOG.1=ZAP
 

@@ -1383,6 +1383,7 @@ screen.MISC_SETTINGS.comment=不适合放入其他分类的设置。.
 screen.MISC_EMISSIVE_SETTINGS=其他发光
 screen.REFLECTION_SETTINGS=反射
 screen.REFLECTION_SETTINGS.comment=与反射相关的设置。.
+screen.BETTER_LABPBR_SETTINGS=改进 LabPBR 实现
 
 screen.CAMERA=镜头
 screen.CAMERA.comment=关于镜头的设置。.
@@ -2831,6 +2832,8 @@ value.REFLECTION_RESPONSIVENESS.0.0=默认
 option.BETTER_LABPBR=改进 LabPBR 实现
 option.BETTER_LABPBR.comment=更改 LabPBR 材质属性的表达以适配资源包开发者的预期。. §e[*]§r 本选项仅在 "资源包支持" 选项的值设置为 LabPBR 时生效。.
 
+value.BETTER_LABPBR_REFRACTIONS.0=关
+
 option.SHADOW_SATURATION=阴影饱和度
 option.SHADOW_SATURATION.comment=调节阴影和光轴的饱和度。. §e[*]§r 本选项仅在 "实时阴影" 选项设置为 低 或者更高的值时生效。.
 
@@ -3075,6 +3078,9 @@ option.DISTANT_HORIZONS_SSAO.comment=在 Distant Horizons 区块启用 SSAO (
 
 option.DH_BLENDING=Distant Horizons 混合
 option.DH_BLENDING.comment=平滑混合 Distant Horizons Lod 块和普通区块。. §e[*]§r 本选项仅在安装 Distant Horizons 模组时生效。.
+
+value.MCWIND_NETHER_FOG.0=关
+value.MCWIND_NETHER_FOG.1=开
 
 option.PIXELATED_SHADOWS_MODE=像素化阴影模式
 option.PIXELATED_SHADOWS_MODE.comment=选择像素化阴影的渲染模式。. 默认为自动, 更适合绝大多数情况, 手动模式应当在自动模式错误判断当前资源包的纹理分辨率时的情况下启用。. §e[*]§r 本选项仅在启用 像素化阴影 选项时生效。.

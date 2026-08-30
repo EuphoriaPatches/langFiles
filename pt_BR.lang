@@ -2710,6 +2710,8 @@ value.BLURRED_REFLECTIONS_I.10=PADRÃO
 
 value.REFLECTION_RESPONSIVENESS.0.0=PADRÃO
 
+value.BETTER_LABPBR_REFRACTIONS.0=Desligado
+
 option.SHADOW_SATURATION=Saturação das Sombras
 option.SHADOW_SATURATION.comment=Altere a saturação das sombras e dos feixes de luz. §e[*]§r Esta configuração só funciona se "Sombras em Tempo-Real" estiver em Baixo ou superior.
 
@@ -2944,6 +2946,9 @@ option.DISTANT_HORIZONS_SSAO.comment=Ativa SSAO (oclusão de ambiente em espaço
 
 option.DH_BLENDING=Mesclagem com Distant Horizons
 option.DH_BLENDING.comment=Suaviza a transição entre os chunks do Distant Horizons e os chunks normais. §e[*]§r Esta opção só funciona se o Distant Horizons estiver instalado.
+
+value.MCWIND_NETHER_FOG.0=Desligado
+value.MCWIND_NETHER_FOG.1=LIGADO
 
 option.PIXELATED_SHADOWS_MODE=Modo de Sombras Pixeladas
 option.PIXELATED_SHADOWS_MODE.comment=Altera a forma como as sombras pixeladas são renderizadas. Automático é o padrão e funciona melhor na maioria dos casos; as resoluções manuais devem ser usadas apenas quando os resource packs utilizados têm resoluções de textura diferentes. §e[*]§r As sombras pixeladas precisam estar ativadas para esta opção funcionar.

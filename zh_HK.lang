@@ -2751,6 +2751,8 @@ value.BLURRED_REFLECTIONS_I.10=Default=預設
 
 value.REFLECTION_RESPONSIVENESS.0.0=Default=預設
 
+value.BETTER_LABPBR_REFRACTIONS.0=關
+
 option.SHADOW_SATURATION=陰影飽和度
 option.SHADOW_SATURATION.comment=調節陰影和光束的飽和度。. §e[*]§r 本選項僅在 "實時陰影" 選項設定為 低 或者更高的值時生效。.
 
@@ -2992,6 +2994,9 @@ option.DISTANT_HORIZONS_SSAO.comment=在 Distant Horizons 區塊啓用 SSAO (
 
 option.DH_BLENDING=Distant Horizons 混合
 option.DH_BLENDING.comment=平滑混合 Distant Horizons Lod 塊和普通區塊。. §e[*]§r 本選項僅在安裝 Distant Horizons 模組時生效。.
+
+value.MCWIND_NETHER_FOG.0=關
+value.MCWIND_NETHER_FOG.1=開
 
 option.PIXELATED_SHADOWS_MODE=像素化陰影模式
 option.PIXELATED_SHADOWS_MODE.comment=選擇像素化陰影的渲染模式。. 默認為自動, 更適合絕大多數情況, 手動模式應當在自動模式錯誤判斷當前資源包的紋理分辨率時的情況下啓用。. §e[*]§r 本選項僅在啓用 像素化陰影 選項時生效。.

@@ -2695,6 +2695,8 @@ value.BLURRED_REFLECTIONS_I.10=Styl Domyślny
 
 value.REFLECTION_RESPONSIVENESS.0.0=Styl Domyślny
 
+value.BETTER_LABPBR_REFRACTIONS.0=WŁ.
+
 option.SHADOW_SATURATION=Nasycenie Cieni
 option.SHADOW_SATURATION.comment=Zmień nasycenie cieni i snopów światła. §e[*]§r Cienie w Czasie Rzeczywistym muszą być ustawione na jakość "Niskią" lub wyższą.
 
@@ -2916,6 +2918,9 @@ option.DISTANT_HORIZONS_SSAO.comment=Włącza SSAO (Screen Space Ambient Occlusi
 
 option.DH_BLENDING=Zanikanie Distant Horizons
 option.DH_BLENDING.comment=Płynnie łączy przejście między chunkami Distant Horizons a zwykłymi chunkami. §e[*]§r Ta opcja działa tylko wtedy, gdy zainstalowano mod Distant Horizons.
+
+value.MCWIND_NETHER_FOG.0=WŁ.
+value.MCWIND_NETHER_FOG.1=WŁ.
 
 option.PIXELATED_SHADOWS_MODE=Tryb Cieni Pikselowanych
 option.PIXELATED_SHADOWS_MODE.comment=Zmienia sposób renderowania cieni pikselowanych. Ustawienie „Automatyczny” jest domyślne i najlepiej sprawdza się w większości przypadków; tryb ręczny należy stosować tylko wtedy, gdy używane pakiety zasobów mają niezgodne rozdzielczości tekstur. §e[*]§r Aby ta opcja działała, należy włączyć cienie pikselowe
