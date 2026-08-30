@@ -1383,6 +1383,7 @@ screen.MISC_SETTINGS.comment=Settings which don't fit into any other category.
 screen.MISC_EMISSIVE_SETTINGS=Miscellaneous Emissive
 screen.REFLECTION_SETTINGS=Reflections
 screen.REFLECTION_SETTINGS.comment=Settings that relate to reflections.
+screen.BETTER_LABPBR_SETTINGS=Improved LabPBR
 
 screen.CAMERA=Camera
 screen.CAMERA.comment=Settings that relate to the Camera.
@@ -2831,6 +2832,12 @@ value.REFLECTION_RESPONSIVENESS.0.0=Default
 option.BETTER_LABPBR=Improved LabPBR
 option.BETTER_LABPBR.comment=Changes the look of LabPBR materials to fit more with what the resource pack developer intended. §e[*]§r This setting only works if "RP Support" is set to LabPBR
 
+option.BETTER_LABPBR_REFLECTIONS=Improved Reflections
+option.BETTER_LABPBR_REFRACTIONS=Improved Refractions
+option.BETTER_LABPBR_REFRACTIONS.comment=Makes translucent blocks respect the LabPBR normals and refract or distort what is behind them.
+value.BETTER_LABPBR_REFRACTIONS.0=OFF
+suffix.BETTER_LABPBR_REFRACTIONS=%
+
 option.SHADOW_SATURATION=Shadow Saturation
 option.SHADOW_SATURATION.comment=Change the saturation of the shadows and light shafts. §e[*]§r This setting only works if "Real-Time Shadows" is set to Low or higher.
 
@@ -3102,6 +3109,11 @@ option.MCWIND_LILY_PAD.comment=Makes lily pads bob up and down according to the 
 
 option.MCWIND_PENDANTS=WindLink Lanterns & Chains
 option.MCWIND_PENDANTS.comment=Makes lanterns and chains swing like a pendulum according to the wind direction and strength provided by the WindLink mod. §e[*]§r This option only works if WindLink is installed.
+
+option.MCWIND_NETHER_FOG=WindLink Nether Fog
+value.MCWIND_NETHER_FOG.0=OFF
+value.MCWIND_NETHER_FOG.1=ON
+option.MCWIND_NETHER_FOG.comment=Drives the nether storm and haze from the WindLink wind field instead of a fixed scroll. §e[*]§r This option only works if WindLink is installed.
 
 option.PIXELATED_SHADOWS_MODE=Pixelated Shadows Mode
 option.PIXELATED_SHADOWS_MODE.comment=Changes the way pixelated shadows are rendered. Automatic is default and best for most cases, the manual resolutions should only be used when the used resourcepacks have mismatched texture resolutions. §e[*]§r Pixelated shadows need to be enabled for this option to work
