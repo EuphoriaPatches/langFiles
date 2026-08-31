@@ -2836,7 +2836,7 @@ option.BETTER_LABPBR=Improved LabPBR
 option.BETTER_LABPBR.comment=Changes the look of LabPBR materials to fit more with what the resource pack developer intended. §e[*]§r This setting only works if "RP Support" is set to LabPBR
 
 option.BETTER_LABPBR_REFLECTIONS=Improved Reflections
-option.BETTER_LABPBR_REFRACTIONS=Improved Refractions
+option.BETTER_LABPBR_REFRACTIONS=Refraction Support
 option.BETTER_LABPBR_REFRACTIONS.comment=Makes translucent blocks respect the LabPBR normals and refract or distort what is behind them.
 value.BETTER_LABPBR_REFRACTIONS.0=OFF
 suffix.BETTER_LABPBR_REFRACTIONS=%
