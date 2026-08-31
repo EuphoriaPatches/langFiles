@@ -1451,6 +1451,9 @@ screen.MODDED_SKYBOX_SETTINGS.comment=Настройки модов, связа�
 option.DAYLIGHT_CYCLE_FROZEN=Без смены дня и ночи
 option.DAYLIGHT_CYCLE_FROZEN.comment=Отключает автоматическую анимацию облаков, северного сияния, каустики и т. д. с помощью игрового правила doDaylightCycle/advance_time disabled. Если включено, анимация будет заморожена.
 
+option.SMOOTH_WORLD_ANIMATIONS=Плавная анимация мира
+option.SMOOTH_WORLD_ANIMATIONS.comment=Включает плавную анимацию облаков, звёзд и всего остального при пропуске времени с помощью команд.
+
 option.AURORA_COLOR_PRESET=Предустановка цвета сияния
 option.AURORA_COLOR_PRESET.comment=Выбор цветовой схемы северного сияния.
 value.AURORA_COLOR_PRESET.-1=§o§lПлавно изменяется ежедневно
@@ -2837,6 +2840,9 @@ option.BETTER_LABPBR_REFRACTIONS=Улучшенные преломления
 option.BETTER_LABPBR_REFRACTIONS.comment=Позволяет полупрозрачным блокам учитывать нормали LabPBR и преломлять или искажать то, что находится за ними.
 value.BETTER_LABPBR_REFRACTIONS.0=Нет
 suffix.BETTER_LABPBR_REFRACTIONS=%
+
+option.BETTER_LABPBR_POROSITY=Поддержка пористости
+option.BETTER_LABPBR_POROSITY.comment=Материалы LabPBR, подвергшиеся воздействию дождя, темнеют в зависимости от своей пористости и приобретают зеркальный блеск. §e[*]§r Требует установки «Поддержки наборов ресурсов» на LabPBR.
 
 option.SHADOW_SATURATION=Насыщенность теней
 option.SHADOW_SATURATION.comment=Настройка насыщенности теней и световых лучей. §e[*]§r Требует «Тени в реальном времени» уровня «Низкий» или выше.
