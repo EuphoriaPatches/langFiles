@@ -2833,7 +2833,6 @@ option.BETTER_LABPBR=LabPBRの改善
 option.BETTER_LABPBR.comment=LabPBRマテリアルの見た目を変更し、リソースパックの開発者が意図したものにより近づくようにします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
 
 option.BETTER_LABPBR_REFLECTIONS=より良い反射
-option.BETTER_LABPBR_REFRACTIONS=より良い屈折
 option.BETTER_LABPBR_REFRACTIONS.comment=半透明のブロックがLabPBRの法線に従うようにし、後ろにあるものを屈折または歪ませます。.
 value.BETTER_LABPBR_REFRACTIONS.0=OFF
 suffix.BETTER_LABPBR_REFRACTIONS=%

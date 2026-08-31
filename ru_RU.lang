@@ -2836,7 +2836,6 @@ option.BETTER_LABPBR=Улучшенный LabPBR
 option.BETTER_LABPBR.comment=Изменяет внешний вид материалов LabPBR, чтобы они больше соответствовали задумке разработчика набора ресурсов. §e[*]§r Требует установки «Поддержки наборов ресурсов» на LabPBR.
 
 option.BETTER_LABPBR_REFLECTIONS=Улучшенные отражения
-option.BETTER_LABPBR_REFRACTIONS=Улучшенные преломления
 option.BETTER_LABPBR_REFRACTIONS.comment=Позволяет полупрозрачным блокам учитывать нормали LabPBR и преломлять или искажать то, что находится за ними.
 value.BETTER_LABPBR_REFRACTIONS.0=Нет
 suffix.BETTER_LABPBR_REFRACTIONS=%
