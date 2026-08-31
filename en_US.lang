@@ -2839,7 +2839,7 @@ value.BETTER_LABPBR_REFRACTIONS.0=OFF
 suffix.BETTER_LABPBR_REFRACTIONS=%
 
 option.BETTER_LABPBR_POROSITY=Porosity Support
-option.BETTER_LABPBR_POROSITY.comment=Makes rain-exposed LabPBR materials darken and lose smoothness based on their porosity, and gain a reflective wet sheen. §e[*]§r This setting only works if "RP Support" is set to LabPBR
+option.BETTER_LABPBR_POROSITY.comment=Makes rain-exposed LabPBR materials darken based on their porosity, and gain a reflective wet sheen. §e[*]§r This setting only works if "RP Support" is set to LabPBR
 
 option.SHADOW_SATURATION=Shadow Saturation
 option.SHADOW_SATURATION.comment=Change the saturation of the shadows and light shafts. §e[*]§r This setting only works if "Real-Time Shadows" is set to Low or higher.
