@@ -2832,7 +2832,11 @@ value.REFLECTION_RESPONSIVENESS.0.0=По умолчанию
 option.BETTER_LABPBR=Улучшенный LabPBR
 option.BETTER_LABPBR.comment=Изменяет внешний вид материалов LabPBR, чтобы они больше соответствовали задумке разработчика набора ресурсов. §e[*]§r Требует установки «Поддержки наборов ресурсов» на LabPBR.
 
+option.BETTER_LABPBR_REFLECTIONS=Улучшенные отражения
+option.BETTER_LABPBR_REFRACTIONS=Улучшенные преломления
+option.BETTER_LABPBR_REFRACTIONS.comment=Позволяет полупрозрачным блокам учитывать нормали LabPBR и преломлять или искажать то, что находится за ними.
 value.BETTER_LABPBR_REFRACTIONS.0=Нет
+suffix.BETTER_LABPBR_REFRACTIONS=%
 
 option.SHADOW_SATURATION=Насыщенность теней
 option.SHADOW_SATURATION.comment=Настройка насыщенности теней и световых лучей. §e[*]§r Требует «Тени в реальном времени» уровня «Низкий» или выше.
@@ -3106,8 +3110,10 @@ option.MCWIND_LILY_PAD.comment=Кувшинки будут качаться вв
 option.MCWIND_PENDANTS=Фонари и цепи WindLink
 option.MCWIND_PENDANTS.comment=Фонари и цепи будут раскачиваться, как маятники в зависимости от направления и силы ветра, определяемых модом WindLink. §e[*]§r Эта функция работает только при установленном моде WindLink.
 
+option.MCWIND_NETHER_FOG=Незерский туман WindLink
 value.MCWIND_NETHER_FOG.0=Нет
 value.MCWIND_NETHER_FOG.1=Да
+option.MCWIND_NETHER_FOG.comment=Управляет штормом и дымкой Незера через ветровое поле WindLink, а не по фиксированной прокрутке. §e[*]§r Эта функция работает только при установленном моде WindLink.
 
 option.PIXELATED_SHADOWS_MODE=Режим пиксельных теней
 option.PIXELATED_SHADOWS_MODE.comment=Изменяет способ отображения пиксельных теней. По умолчанию используется автоматическое разрешение, которое лучше всего подходит для большинства случаев, а ручное разрешение следует использовать только в том случае, если используемые наборы ресурсов имеют несоответствующее разрешение текстур. §e[*]§r Для работы этой опции необходимо включить пиксельные тени.

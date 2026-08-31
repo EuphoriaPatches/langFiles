@@ -2832,7 +2832,11 @@ value.REFLECTION_RESPONSIVENESS.0.0=デフォルト
 option.BETTER_LABPBR=LabPBRの改善
 option.BETTER_LABPBR.comment=LabPBRマテリアルの見た目を変更し、リソースパックの開発者が意図したものにより近づくようにします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
 
+option.BETTER_LABPBR_REFLECTIONS=より良い反射
+option.BETTER_LABPBR_REFRACTIONS=より良い屈折
+option.BETTER_LABPBR_REFRACTIONS.comment=半透明のブロックがLabPBRの法線に従うようにし、後ろにあるものを屈折または歪ませます。.
 value.BETTER_LABPBR_REFRACTIONS.0=OFF
+suffix.BETTER_LABPBR_REFRACTIONS=%
 
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。.
@@ -3106,8 +3110,10 @@ option.MCWIND_LILY_PAD.comment=スイレンの葉がWindLink Modによる風向
 option.MCWIND_PENDANTS=WindLinkのランタン & 鎖
 option.MCWIND_PENDANTS.comment=ランタンと鎖がWindLink Modによる風向と風量に応じて振り子のように揺れるようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
 
+option.MCWIND_NETHER_FOG=WindLinkのネザーの霧
 value.MCWIND_NETHER_FOG.0=OFF
 value.MCWIND_NETHER_FOG.1=ON
+option.MCWIND_NETHER_FOG.comment=固定スクロールの代わりに、ネザーストームと霧がWindLinkの風域によって変動するようにします。. §e[*]§r この設定はWindLinkがインストールされている場合にのみ動作します。.
 
 option.PIXELATED_SHADOWS_MODE=ピクセル化された影のモード
 option.PIXELATED_SHADOWS_MODE.comment=ピクセル化された影がレンダリングされる方法を変更します。. デフォルトの自動はほとんどの場合に最適で、固定の解像度は使用しているリソースパックが一致しないテクスチャ解像度を使用している場合にのみ使用してください。. §e[*]§r この設定が動作するには「ピクセルされた影」設定が有効である必要があります。.

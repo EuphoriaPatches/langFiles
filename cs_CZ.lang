@@ -79,7 +79,7 @@ option.info12.comment=Všechny možnosti Euphoria jsou ve výchozím nastavení 
 
 option.info13=Podpora modů Euphoria
 value.info13.0=
-option.info13.comment=Euphoria Patches si klade za cíl lepší podporu modovaných bloků než normální Complementary tím, že má výchozí podporu modovaných bloků (podívej se na block.properties). Detekce zdrojů světla s automaticky aplikovanou emisí. Detekce modelů zeleně s automaticky aplikovaným SSS.
+option.info13.comment=Euphoria Patches si klade za cíl lepší podporu modovaných bloků než normální Complementary tím, že má výchozí podporu modovaných bloků (podívej se na block.properties). Detekce zdrojů světla s automaticky aplikovaným svícením. Detekce modelů zeleně s automaticky aplikovaným SSS.
 
 option.info14=Připoj se do komunity
 value.info14.0=
@@ -186,10 +186,10 @@ screen.IPBR_SETTINGS=Materiály IntegrovanéhoPBR+
 screen.IPBR_SETTINGS.comment=Nastavení týkající se funkcí IntegrovanéhoPBR+.
 
 screen.GLOWING_ORE_SETTINGS=Svítící rudy
-screen.GLOWING_ORE_SETTINGS.comment=Nastavení pro upravení emise bloků rud.
+screen.GLOWING_ORE_SETTINGS.comment=Nastavení pro upravení svícení bloků rud.
 
 screen.GLOWING_STUFF_SETTINGS=Svítící věci
-screen.GLOWING_STUFF_SETTINGS.comment=Nastavení pro upravení emise různých bloků.
+screen.GLOWING_STUFF_SETTINGS.comment=Nastavení pro upravení svícení různých bloků.
 
 screen.OTHER_IPBR_SETTINGS=Další funkce IPBR+
 screen.OTHER_IPBR_SETTINGS.comment=Různá nastavení IntegrovanéhoPBR+.
@@ -852,8 +852,8 @@ value.CHROMA_ABERRATION.6=6 §c[-]
 value.CHROMA_ABERRATION.7=7 §c[-]
 value.CHROMA_ABERRATION.8=8 §c[-]
 
-option.IPBR_EMISSIVE_MODE=Režim emise IPBR+
-option.IPBR_EMISSIVE_MODE.comment=Určuje zacházení s emisivními texturami v IntegrovanémPBR+. Vybrání možností labPBR nebo seuspbr umožní kompatibilním balíčkům modifikací přepsat IPBR+ emisivní textury, když je balíček modifikací má. §c[-]§r Není doporučeno měnit toto nastavení, pokud nevíš, co děláš.
+option.IPBR_EMISSIVE_MODE=Režim svícení IPBR+
+option.IPBR_EMISSIVE_MODE.comment=Určuje zacházení se svítícími texturami v IntegrovanémPBR+. Vybrání možností labPBR nebo seuspbr umožní kompatibilním balíčkům modifikací přepsat IPBR+ svítící textury, když je balíček modifikací má. §c[-]§r Není doporučeno měnit toto nastavení, pokud nevíš, co děláš.
 value.IPBR_EMISSIVE_MODE.1=Pouze IPBR+
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
@@ -1005,7 +1005,7 @@ option.GLOWING_ARMOR_TRIM.comment=Dělá, že ornamenty zbroje svítí. §e[*]§
 option.NORMAL_MAP_STRENGTH=Síla normálové mapy
 option.NORMAL_MAP_STRENGTH.comment=Upravuje sílu nerovností na površích. §e[*]§r Podpora textur musí být nastavena na labPBR/seuspbr a musí být použit kompatibilní balíček modifikací.
 
-option.CUSTOM_EMISSION_INTENSITY=Intenzita vlastní emise
+option.CUSTOM_EMISSION_INTENSITY=Intenzita vlastního svícení
 option.CUSTOM_EMISSION_INTENSITY.comment=Upravuje intenzitu svícení svítících povrchů. §e[*]§r Podpora textur musí být nastavena na labPBR/seuspbr a musí být použit kompatibilní balíček modifikací.
 
 option.POM=§eMapování paralaxní okluze§r
@@ -1174,7 +1174,7 @@ option.CONNECTED_GLASS_EFFECT=Propojené sklo
 option.CONNECTED_GLASS_EFFECT.comment=Spojuje mezi sebou všechny typy skla. §e[*]§r Tato funkce pouze funguje, pokud je zapnuté Pokročilé trasování barev v Nastavení výkonu a tvůj systém jej podporuje. §e[*]§r Tato funkce se automaticky vypne, když je nainstalován mod "Continuity".
 
 option.PORTAL_EDGE_EFFECT=Svítící hrany portálů
-option.PORTAL_EDGE_EFFECT.comment=Přidává emisivní efekt k hranám endových a netherových portálů. §e[*]§r Tato funkce pouze funguje, pokud je zapnuté Pokročilé trasování barev v Nastavení výkonu a tvůj systém jej podporuje.
+option.PORTAL_EDGE_EFFECT.comment=Přidává svítící efekt k hranám endových a netherových portálů. §e[*]§r Tato funkce pouze funguje, pokud je zapnuté Pokročilé trasování barev v Nastavení výkonu a tvůj systém jej podporuje.
 
 option.PUDDLE_VOXELIZATION=Opravit kaluže pod sklem
 option.PUDDLE_VOXELIZATION.comment=Zabraňuje vytváření dešťových kaluží v uzavřených prostorech se skleněnými střechami, když je povoleno nastavení Dešťových kaluží. §e[*]§r Tato funkce pouze funguje, pokud je zapnuté Pokročilé trasování barev a Kvalita detailů je nastavena na Vysokou nebo vyšší.
@@ -1363,8 +1363,8 @@ screen.SAND_NOISE_SETTINGS=Nastavení pokrytí pískem
 
 screen.MATERIALS=Materiály
 screen.MATERIALS.comment=Nastavení týkající se materiálů.
-screen.EMISSIVE_MATERIALS=Emisivní materiály
-screen.EMISSIVE_FLOWERS_SETTINGS=Emisivní květiny
+screen.EMISSIVE_MATERIALS=Svítící materiály
+screen.EMISSIVE_FLOWERS_SETTINGS=Svítící květiny
 screen.WATER=Voda
 screen.WATER.comment=Nastavení týkající se vody.
 screen.IPBR_REDSTONE=Integrované PBR Redstonu
@@ -1380,9 +1380,10 @@ screen.PORTAL_SETTINGS=Nastavení portálů
 screen.PORTAL_SETTINGS.comment=Nastavení týkající se portálů.
 screen.MISC_SETTINGS=Ostatní
 screen.MISC_SETTINGS.comment=Nastavení, která nepatří do žádné jiné kategorie.
-screen.MISC_EMISSIVE_SETTINGS=Jiné emisivní věci
+screen.MISC_EMISSIVE_SETTINGS=Jiné svítící věci
 screen.REFLECTION_SETTINGS=Odrazy
 screen.REFLECTION_SETTINGS.comment=Nastavení týkající se odrazů.
+screen.BETTER_LABPBR_SETTINGS=Vylepšené LabPBR
 
 screen.CAMERA=Kamera
 screen.CAMERA.comment=Nastavení týkající se kamery.
@@ -1611,7 +1612,7 @@ option.NIGHT_CLOUD_UNBOUND_REMOVE.comment=Množství mraků, které jsou během 
 option.HIGH_QUALITY_CLOUDS=Vyšší kvalita mraků
 option.HIGH_QUALITY_CLOUDS.comment=Zvyšuje kvalitu mraků na vyšší úroveň, než je možné v normálních nastaveních Complementary. §c[-]§r Zapnutí tohoto nastavení může mít dopad na výkon.
 
-option.CLOUD_LAYER2_SPEED_MULT=Násobič rychlosti vrstvy 2 mraků
+option.CLOUD_LAYER2_SPEED_MULT=Násobič rychlosti mraků vrstvy 2
 
 option.PIXELATED_UNBOUND_CLOUDS=Pixelované Unbound mraky
 option.PIXELATED_UNBOUND_CLOUDS.comment=Dává Unbound mrakům pixelovaný vzhled. Čím vyšší hodnota, tím větší pixely.
@@ -1619,7 +1620,124 @@ value.PIXELATED_UNBOUND_CLOUDS.0=VYP
 
 option.DOUBLE_UNBOUND_CLOUDS=Dvojité Unbound mraky
 option.DOUBLE_UNBOUND_CLOUDS.comment=Zapíná vykreslování druhé vrstvy Unbound mraků. §c[-]§r Tento efekt může mít dopad na výkon.
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE=Výška druhé vrstvy mraků
+option.CLOUD_UNBOUND_LAYER2_ALTITUDE.comment=Určuje světovou výšku, kde se objeví druhá vrstva mraků.
+option.CLOUD_UNBOUND_LAYER2_HEIGHT=Tloušťka mraků vrstvy 2
+option.CLOUD_UNBOUND_LAYER2_HEIGHT.comment=Určuje geometrickou výšku Unbound mraků ve druhé vrstvě.
+option.CLOUD_UNBOUND_LAYER2_SIZE=Velikost mraků vrstvy 2
+option.CLOUD_UNBOUND_LAYER2_SIZE.comment=Určuje velikost Unbound mraků ve druhé vrstvě.
+option.CLOUD_UNBOUND_LAYER2_AMOUNT=Množství mraků vrstvy 2
+option.CLOUD_UNBOUND_LAYER2_AMOUNT.comment=Určuje množství Unbound mraků ve druhé vrstvě.
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY=Průhlednost mraků vrstvy 2
+option.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.comment=Určuje průhlednost Unbound mraků ve druhé vrstvě.
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.0=0.0
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.1=0.05
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.2=0.10
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.3=0.15
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.4=0.20
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.5=0.25
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.6=0.30
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.7=0.35
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.8=0.40
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.9=0.45
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.10=0.50
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.11=0.55
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.12=0.60
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.13=0.65
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.14=0.70
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.15=0.75
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.16=0.80
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.17=0.85
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.18=0.90
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.19=0.95
+value.CLOUD_UNBOUND_LAYER2_TRANSPARENCY.20=1.00
 
+
+option.CLOUD_REIMAGINED_LAYER2_HEIGHT=Tloušťka mraků vrstvy 2
+option.CLOUD_REIMAGINED_LAYER2_HEIGHT.comment=Určuje geometrickou výšku Reimagined mraků ve druhé vrstvě.
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY=Průhlednost mraků vrstvy 2
+option.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.comment=Určuje průhlednost Reimagined mraků ve druhé vrstvě.
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.0=0.0
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.1=0.05
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.2=0.10
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.3=0.15
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.4=0.20
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.5=0.25
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.6=0.30
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.7=0.35
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.8=0.40
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.9=0.45
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.10=0.50
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.11=0.55
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.12=0.60
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.13=0.65
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.14=0.70
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.15=0.75
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.16=0.80
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.17=0.85
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.18=0.90
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.19=0.95
+value.CLOUD_REIMAGINED_LAYER2_TRANSPARENCY.20=1.00
+
+option.CLOUD_SUN_MOON_SHADING=Stínování Slunce/Měsíce
+option.CLOUD_SUN_MOON_SHADING.comment=Zapíná stínování od Slunce a Měsíce na mracích.
+value.CLOUD_SUN_MOON_SHADING.0=VYP
+value.CLOUD_SUN_MOON_SHADING.1=Pouze Měsíc
+value.CLOUD_SUN_MOON_SHADING.2=Pouze Slunce
+value.CLOUD_SUN_MOON_SHADING.3=Obojí
+
+option.E_SKY_COLORR_NEW=Obloha Endu - Červená
+option.E_SKY_COLORG_NEW=Obloha Endu - Zelená
+option.E_SKY_COLORB_NEW=Obloha Endu - Modrá
+option.E_SKY_COLORI=Obloha Endu - Intenzita
+option.END_SKY_FOG_INFLUENCE=Odstín modovaných Endových biomů
+option.END_SKY_FOG_INFLUENCE.comment=Uprav, jak moc bude barva mlhy modovaných biomů ovlivňovat barvy oblohy v Endu a Endových paprsků. Při hodnotě 1.00 budou mít obloha a Endové paprsky stejnou barvu jako barva mlhy, při hodnotě 0.00 nebudou ovlivněné barvou mlhy.
+
+option.GLOWING_EMERALD_BLOCK=Svítící Smaragdový blok
+option.GLOWING_EMERALD_BLOCK.comment=Dělá to, že Smaragdové bloky budou svítit. §e[*]§r Podpora textur musí být nastavena na Integrované PBR+
+
+option.EMISSIVE_ENCHANTING_TABLE=Svítící Oltář očarování
+option.EMISSIVE_ENCHANTING_TABLE.comment=Dělá to, že diamantová část oltáře očarování bude svítit. §e[*]§r Podpora textur musí být nastavena na Integrované PBR+
+
+option.GLOWING_WART=Svítící Bloky bradavičníku
+option.GLOWING_WART.comment=Zapíná animované svítící bloky bradavičníku. §e[*]§r Podpora textur musí být nastavena na Integrované PBR+
+
+option.GLOWING_NETHER_TREES=Svítící Netherové stromy
+option.GLOWING_NETHER_TREES.comment=Zapíná svítící karmínovou/přízračnou třeň.
+
+option.OVERWORLD_BEAMS=Paprsky v Overworldu
+option.OVERWORLD_BEAMS.comment=Zapíná paprsky podobné mlhovině během noci v Overworldu.
+option.OVERWORLD_BEAMS_CONDITION=Podmínka
+option.OVERWORLD_BEAMS_CONDITION.comment=Ve výchozím nastavení se pouze objevují během úplňku, změněním tohoto nastavení se objeví každou noc.
+value.OVERWORLD_BEAMS_CONDITION.0=Úplněk
+value.OVERWORLD_BEAMS_CONDITION.1=Každou noc
+option.OVERWORLD_BEAMS_INTENSITY=Intenzita Paprsků v Overworldu
+option.BEAMS_AMBIENT_INFLUENCE=Vliv barvy mlhy
+option.BEAMS_AMBIENT_INFLUENCE.comment=Paprsky budou mít barvu mlhy při hodnotě 1.00 a barvu definovanou uživatelem při hodnotě 0.00.
+option.OW_BEAM_R_NEW=Paprsky v Overworldu - Červená
+option.OW_BEAM_G_NEW=Paprsky v Overworldu - Zelená
+option.OW_BEAM_B_NEW=Paprsky v Overworldu - Modrá
+
+option.END_BEAMS=Endové paprsky
+option.END_BEAMS.comment=Zapíná v Endu paprsky podobné mlhovině.
+option.END_CRYSTAL_VORTEX=Vír Endových krystalů
+option.END_CRYSTAL_VORTEX.comment=Zapíná paprsky energie, které v Endu vycházejí z Endových krystalů. §4[***]§r Zapíná §cStíny entit§r. §e[*]§r Funguje pouze na Iris. §e[*]§r Nefunguje na MacOS. Vzdálenost stínů v nastavení Complementary ovlivňuje vzdálenost, kde jsou viditelné víry.
+value.END_CRYSTAL_VORTEX.0=VYP
+value.END_CRYSTAL_VORTEX.1=Vír
+value.END_CRYSTAL_VORTEX.2=Léčící paprsek
+value.END_CRYSTAL_VORTEX.3=Obojí
+option.DRAGON_DEATH_EFFECT=Efekt smrti Draka z Endu
+option.DRAGON_DEATH_EFFECT.comment=Nahrazuje paprsky smrti draka volumetrickým efektem. §4[***]§r Zapíná §cStíny entit§r. §e[*]§r Funguje pouze na Iris. §e[*]§r Nefunguje na MacOS.
+value.DRAGON_DEATH_EFFECT.0=VYP
+value.DRAGON_DEATH_EFFECT.1=Volumetrický efekt
+value.DRAGON_DEATH_EFFECT.2=Volumetrický + Originální paprsky
+
+option.END_CRYSTAL_VOXEL_PIXEL=Pixelizace voxelů
+option.END_CRYSTAL_VOXEL_PIXEL.comment=Zapíná pixelizaci voxelů na vírech endových krystalů a efektu smrti draka.
+value.END_CRYSTAL_VOXEL_PIXEL.0=VYP
+
+option.E_BEAMS_AMBIENT_INFLUENCE=Vliv barev prostředí
+option.E_BEAMS_AMBIENT_INFLUENCE.comment=Paprsky budou mít barvu prostředí při hodnotě 1.00 a barvu definovanou uživatelem při hodnotě 0.00. Nevztahuje se na Paprsky Endu draka.
 
 value.BETTER_LABPBR_REFRACTIONS.0=VYP
 
