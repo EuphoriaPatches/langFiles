@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: "0 0 * * *" # Every UTC midnight
   workflow_dispatch:     # Allow manual trigger
+    inputs:
+      update_shader:
+        description: "Update shader en_US.lang"
+        type: boolean
+        default: true
+      update_website:
+        description: "Update website en.json"
+        type: boolean
+        default: true
   push:
     paths:
       - '.github/workflows/update-en-US.yml'
@@ -15,6 +24,9 @@ concurrency:
 jobs:
   update-en-us-lang:
     runs-on: ubuntu-latest
+    if: >-
+      github.event_name != 'workflow_dispatch' ||
+      inputs.update_shader
     outputs:
       has_changes: ${{ steps.check-changes.outputs.has_changes || 'false' }}
     steps:
@@ -67,6 +79,9 @@ jobs:
 
   update-website-en-json:
     runs-on: ubuntu-latest
+    if: >-
+      github.event_name != 'workflow_dispatch' ||
+      inputs.update_website
     outputs:
       has_changes: ${{ steps.check-changes.outputs.has_changes || 'false' }}
     steps:
