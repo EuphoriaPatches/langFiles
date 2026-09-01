@@ -67,7 +67,6 @@ option.info9.comment=- Complementaryをサポートする最良の方法は友�
 
 option.info10=クレジット
 value.info10.0=
-option.info10.comment=- EminGT: Complementaryのメイン開発者\n- Capt Tatsu: BSLシェーダーの開発者であり、彼の寛大さがComplementaryの実現を可能にしました\n- スペシャルサンクス: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal
 
 option.info11=§dEuphoria Patchesとは
 value.info11.0=
@@ -1451,6 +1450,9 @@ screen.MODDED_SKYBOX_SETTINGS.comment=空に関係するModに関する設定で
 option.DAYLIGHT_CYCLE_FROZEN=昼夜サイクルの停止
 option.DAYLIGHT_CYCLE_FROZEN.comment=doDaylightCycle/advance_timeのゲームルールが無効になっている時に雲、オーロラ、コースティクス、その他のアニメーションを無効にします。. 有効な場合、これらのアニメーションは停止します。.
 
+option.SMOOTH_WORLD_ANIMATIONS=滑らかなワールドアニメーション
+option.SMOOTH_WORLD_ANIMATIONS.comment=コマンドで時間をスキップした時の雲や星などのアニメーションを滑らかにします。.
+
 option.AURORA_COLOR_PRESET=オーロラ 色プリセット
 option.AURORA_COLOR_PRESET.comment=デフォルトの見た目/カスタム色のオーロラ、日ごとや月ごとに色が変わるオーロラ、または色のプリセットを選択します。. また、一晩を通して色が滑らかに変化し続ける「スムーズ日ごと」設定も利用可能です。.
 value.AURORA_COLOR_PRESET.-1=§o§l変化 - スムーズ日ごと
@@ -2833,9 +2835,16 @@ option.BETTER_LABPBR=LabPBRの改善
 option.BETTER_LABPBR.comment=LabPBRマテリアルの見た目を変更し、リソースパックの開発者が意図したものにより近づくようにします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
 
 option.BETTER_LABPBR_REFLECTIONS=より良い反射
+option.BETTER_LABPBR_REFRACTIONS=屈折サポート
 option.BETTER_LABPBR_REFRACTIONS.comment=半透明のブロックがLabPBRの法線に従うようにし、後ろにあるものを屈折または歪ませます。.
 value.BETTER_LABPBR_REFRACTIONS.0=OFF
 suffix.BETTER_LABPBR_REFRACTIONS=%
+
+option.BETTER_LABPBR_POROSITY=ポロシティサポート
+option.BETTER_LABPBR_POROSITY.comment=雨にさらされたLabPBRマテリアルをポロシティ/気孔率に基づいて暗くし、反射のある濡れた光沢を与えます。.
+
+option.BETTER_LABPBR_AO=マテリアルAOサポート
+option.BETTER_LABPBR_AO.comment=LabPBRのノーマルテクスチャに含まれる、マテリアルのアンビエントオクルージョン (AO) に基づいて直接証明を暗くします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
 
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。.
