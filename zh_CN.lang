@@ -1451,6 +1451,9 @@ screen.MODDED_SKYBOX_SETTINGS.comment=与修改天空类模组相关的设置。
 option.DAYLIGHT_CYCLE_FROZEN=定格昼夜循环
 option.DAYLIGHT_CYCLE_FROZEN.comment=当游戏规则 doDaylightCycle/advance_time 被禁用时, 禁用云朵, 极光, 焦散光及其他相关动画。. 当此设定被启用时, 相关动画会被定格。.
 
+option.SMOOTH_WORLD_ANIMATIONS=平滑世界动画
+option.SMOOTH_WORLD_ANIMATIONS.comment=当你通过指令设置时间时, 可以为云、星星和任意动画启用平滑效果。.
+
 option.AURORA_COLOR_PRESET=极光颜色预设
 option.AURORA_COLOR_PRESET.comment=选择默认的或定制的北极光颜色预设, 随机 (Varying) 选项意味着会在每 日/月 出现极光的夜晚, 北极光的颜色会在预设颜色中切换。. 或者选择整晚随机且平滑渐变每日颜色预设。.
 value.AURORA_COLOR_PRESET.-1=平滑随机 §o§lVarying
@@ -2832,7 +2835,17 @@ value.REFLECTION_RESPONSIVENESS.0.0=默认
 option.BETTER_LABPBR=改进 LabPBR 实现
 option.BETTER_LABPBR.comment=更改 LabPBR 材质属性的表达以适配资源包开发者的预期。. §e[*]§r 本选项仅在 "资源包支持" 选项的值设置为 LabPBR 时生效。.
 
+option.BETTER_LABPBR_REFLECTIONS=改进反射效果
+option.BETTER_LABPBR_REFRACTIONS=折射支持
+option.BETTER_LABPBR_REFRACTIONS.comment=使半透明方块遵循 LabPBR 法线纹理的效果来产生折射或扭曲其后面的画面。.
 value.BETTER_LABPBR_REFRACTIONS.0=关
+suffix.BETTER_LABPBR_REFRACTIONS=%
+
+option.BETTER_LABPBR_POROSITY=孔隙率支持
+option.BETTER_LABPBR_POROSITY.comment=使暴露在雨中的方块表面遵循 LabPBR 的孔隙率标准来变暗，获得可产生反射的湿润层。. §e[*]§r 本选项仅在 "资源包支持" 选项的值设置为 LabPBR 时生效。.
+
+option.BETTER_LABPBR_AO=纹理 AO 支持
+option.BETTER_LABPBR_AO.comment=基于烘培到 LabPBR 法线纹理中的材质环境光遮蔽信息使方块的直接照明变暗。. §e[*]§r 本选项仅在 "资源包支持" 选项的值设置为 LabPBR 时生效。.
 
 option.SHADOW_SATURATION=阴影饱和度
 option.SHADOW_SATURATION.comment=调节阴影和光轴的饱和度。. §e[*]§r 本选项仅在 "实时阴影" 选项设置为 低 或者更高的值时生效。.
@@ -3078,6 +3091,8 @@ option.DISTANT_HORIZONS_SSAO.comment=在 Distant Horizons 区块启用 SSAO (
 
 option.DH_BLENDING=Distant Horizons 混合
 option.DH_BLENDING.comment=平滑混合 Distant Horizons Lod 块和普通区块。. §e[*]§r 本选项仅在安装 Distant Horizons 模组时生效。.
+
+option.MCWIND_USER=启用 WindLink
 
 value.MCWIND_NETHER_FOG.0=关
 value.MCWIND_NETHER_FOG.1=开

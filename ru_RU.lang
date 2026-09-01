@@ -2836,12 +2836,16 @@ option.BETTER_LABPBR=Улучшенный LabPBR
 option.BETTER_LABPBR.comment=Изменяет внешний вид материалов LabPBR, чтобы они больше соответствовали задумке разработчика набора ресурсов. §e[*]§r Требует установки «Поддержки наборов ресурсов» на LabPBR.
 
 option.BETTER_LABPBR_REFLECTIONS=Улучшенные отражения
+option.BETTER_LABPBR_REFRACTIONS=Поддержка преломления
 option.BETTER_LABPBR_REFRACTIONS.comment=Позволяет полупрозрачным блокам учитывать нормали LabPBR и преломлять или искажать то, что находится за ними.
 value.BETTER_LABPBR_REFRACTIONS.0=Нет
 suffix.BETTER_LABPBR_REFRACTIONS=%
 
 option.BETTER_LABPBR_POROSITY=Поддержка пористости
 option.BETTER_LABPBR_POROSITY.comment=Материалы LabPBR, подвергшиеся воздействию дождя, темнеют в зависимости от своей пористости и приобретают зеркальный блеск. §e[*]§r Требует установки «Поддержки наборов ресурсов» на LabPBR.
+
+option.BETTER_LABPBR_AO=Поддержка ОЗ материалов
+option.BETTER_LABPBR_AO.comment=Уменьшает интенсивность прямого освещения в зависимости от окружающего затенения материала, встроенного в текстуру нормалей LabPBR. §e[*]§r Требует установки «Поддержки наборов ресурсов» на LabPBR.
 
 option.SHADOW_SATURATION=Насыщенность теней
 option.SHADOW_SATURATION.comment=Настройка насыщенности теней и световых лучей. §e[*]§r Требует «Тени в реальном времени» уровня «Низкий» или выше.
