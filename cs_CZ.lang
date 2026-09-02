@@ -67,6 +67,7 @@ option.info9.comment=- Nejlepší způsob, jak podpořit Complementary je sdíle
 
 option.info10=Poděkování
 value.info10.0=
+option.info10.comment=- EminGT: Hlavní vývojář Complementary. - Capt Tatsu: Vývojář BSL Shaders, jeho velkorysost je to, co v první řadě učinilo Complementary možným. - Zvláštní poděkování: IMS212, sp614x, Chocapic13, Robobo1221, SixthSurge, null511, fayer3, catlikecoding, Builderb0y, Jessie, SpacEagle17, isuewo, flytrap, gri573, FoZy-STYLE, plazmal, aceralex
 
 option.info11=Co je Euphoria Patches
 value.info11.0=
