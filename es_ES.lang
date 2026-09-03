@@ -43,6 +43,7 @@ value.info5.0=
 
 value.info6.0=
 
+option.info7=Dónde hacer preguntas o reportar problemas
 value.info7.0=
 
 option.info8=Cómo unirse a la Comunidad
@@ -369,6 +370,8 @@ value.NETHER_VIEW_LIMIT.512.0=32 Chunks §c[-]
 value.NETHER_VIEW_LIMIT.768.0=48 Chunks §c[-]
 value.NETHER_VIEW_LIMIT.1024.0=64 Chunks §c[-]
 
+value.NETHER_COLOR_MODE.0=Constante
+
 option.END_STAR_INTENSITY=Intensidad de las Estrellas del End
 option.END_STAR_INTENSITY.comment=Ajusta el brillo de las estrellas visibles en la dimensión del End.
 
@@ -474,6 +477,10 @@ value.AURORA_CONDITION.4=Luna llena o bioma nevado
 
 option.NIGHT_NEBULAE=§eNebulosa Nocturna§r
 
+option.RAIN_STYLE.comment=Determina el estilo del ambiente cuando llueve.
+value.RAIN_STYLE.1=Suave y Cálido
+value.RAIN_STYLE.2=Pesado y Frío
+
 option.PIXEL_SCALE=Escala de Pixelación
 option.PIXEL_SCALE.comment=Escala hecha en la resolución de texturas.
 value.PIXEL_SCALE.-2=0.25x
@@ -525,6 +532,10 @@ value.IMAGE_SHARPENING.8=8x §c[-]
 value.IMAGE_SHARPENING.9=9x §c[-]
 value.IMAGE_SHARPENING.10=10x §c[-]
 
+option.TAA_SMOOTHING=Suavizado Temporal (TAA)
+
+option.FXAA_STRENGTH=Intensidad de FXAA
+
 option.FXAA_TAA_INTERACTION=Reducir FXAA en movimiento
 option.FXAA_TAA_INTERACTION.comment=Reduce la fuerza de la FXAA cuando la cámara se mueve. Los valores altos producen una imagen más nítida pero producen más parpadeo.
 value.FXAA_TAA_INTERACTION.0=No
@@ -534,6 +545,13 @@ value.FXAA_TAA_INTERACTION.6=60
 value.FXAA_TAA_INTERACTION.8=80
 value.FXAA_TAA_INTERACTION.10=100
 
+value.WORLD_BLUR.2=§cProfundidad del Campo de Visión
+
+option.WB_CHROMATIC=Desenfoque Cromático
+option.WB_CHROMATIC.comment=Aplica la aberración cromática a las áreas borrosas, separado diferentes colores en esas áreas.
+
+option.WB_DOF_I=Profundidad de la Fuerza del Campo de Visión
+option.WB_DOF_FOCUS=Profundidad del Enfoque de Campo
 option.WB_DOF_FOCUS.comment=Determina la distancia de enfoque de la cámara. Automático: El punto de enfoque se ajusta según el punto central de la pantalla. Brillo: El punto de enfoque es determinado por el deslizador de "brillo" en la configuración de vídeo.
 value.WB_DOF_FOCUS.-1=Brillo §e[*]
 value.WB_DOF_FOCUS.0=Automático
@@ -545,6 +563,9 @@ option.WB_DB_WATER_I=Dis. Desenfoque - Bajo Agua
 option.WB_DB_NETHER_I=Dis. Desenfoque - En el Nether
 option.WB_DB_END_I=Dis. Desenfoque - En el End
 
+option.VIGNETTE_R=Viñeta
+option.VIGNETTE_R.comment=Aplica una viñeta (oscurecimiento) alrededor de los bordes de la pantalla.
+
 option.CHROMA_ABERRATION=Aberración Cromática
 value.CHROMA_ABERRATION.4=4 §c[-]
 value.CHROMA_ABERRATION.5=5 §c[-]
@@ -555,6 +576,10 @@ value.CHROMA_ABERRATION.8=8 §c[-]
 value.IPBR_EMISSIVE_MODE.1=Sólo IPBR+
 value.IPBR_EMISSIVE_MODE.3=labPBR > IPBR+
 value.IPBR_EMISSIVE_MODE.2=seuspbr > IPBR+
+
+option.IPBR_COMPAT_MODE_DEFINE=Modo de Compatibilidad de IPBR+
+
+option.IPBR_PARTICLE_FEATURES=Características de las partículas de IPBR+
 
 option.FANCY_GLASS=Cristal mejorado
 
@@ -587,9 +612,15 @@ option.SNOWY_WORLD.comment=Hace que el mundo entero esté cubierto de nieve.
 option.SHOW_LIGHT_LEVEL=Mostrar Niveles de Luz
 value.SHOW_LIGHT_LEVEL.0=Desactivado
 
+option.GLOWING_COLORED_PARTICLES=Forzar Partículas Brillantes §c[-]§r
+
 option.PLAYER_SHADOW=Sombra de Jugador §e[*]§r
 
 value.SKY_EFFECT_REFLECTION_DEFINE.0=§aDESACTIVADA
+
+option.GLOWING_ORE_MULT.comment=Determina la fuerza de emisión de minerales brillantes.
+
+option.CUSTOM_EMISSION_INTENSITY=Intensidad de Emisión Personalizada
 
 value.POM_QUALITY.16=16 §e[*]
 value.POM_QUALITY.32=32 §e[*]
@@ -627,6 +658,7 @@ screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Nubes Reimagined
 screen.CLOUD_REIMAGINED_SECOND_LAYER_SETTINGS=Segunda Capa de Nubes
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Nubes Unbound
 screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Doble de Nubes Unbound
+screen.RAIN_SETTINGS=Ajustes de la Lluvia
 
 screen.WORLD=Mundo
 screen.WORLD.comment=Ajustes relacionados con el mundo
@@ -643,6 +675,14 @@ screen.SUMMER=Ajustes del Verano
 screen.NETHER_WORLD=Nether
 screen.FOG_BORDER_NETHER=Niebla de borde
 
+screen.MISC_SETTINGS=Más
+screen.MISC_SETTINGS.comment=Ajustes que no encajan en ninguna otra categoría.
+screen.REFLECTION_SETTINGS=Reflejos
+screen.REFLECTION_SETTINGS.comment=Ajustes relacionados con los reflejos.
+
+screen.CAMERA=Cámara
+screen.CAMERA.comment=Ajustes relacionados con la vista.
+screen.AGX_SETTINGS=Configuración de AgX
 screen.CAMERA_EFFECTS=Efectos de cámara
 
 screen.FUN=Diversión
@@ -976,3 +1016,4 @@ value.BLACK_HOLE_SHAPE.1=Cuadrado
 value.BLACK_HOLE_PIXELATION.0=Apagada
 
 value.BLACK_HOLE_STREAK.0=Sin brillo
+
