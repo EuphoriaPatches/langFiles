@@ -213,8 +213,8 @@ screen.END_LIGHT_MULTS=End dimenze
 screen.BLOCKLIGHT_SETTINGS=Světlo bloků §e[*]§r
 screen.BLOCKLIGHT_SETTINGS.comment=Nastavení pro upravení osvětlení vyzařovaného z bloků zdroje světla. §e[*]§r Nastavení červené/zelené/modré barvy neovlivní většinu světel, pokud je povoleno Pokročilé trasování barev.
 
-screen.MOON_PHASE_INF_SETTINGS=Vliv fáze měsíce
-screen.MOON_PHASE_INF_SETTINGS.comment=Nastavení pro určení, jak různé fáze měsíce ovlivňují noční osvětlení.
+screen.MOON_PHASE_INF_SETTINGS=Vliv fáze Měsíce
+screen.MOON_PHASE_INF_SETTINGS.comment=Nastavení pro určení, jak různé fáze Měsíce ovlivňují noční osvětlení.
 
 screen.ACT_FEATURES_SETTINGS=Exkluzivní funkce ACT §e[*]§r
 screen.ACT_FEATURES_SETTINGS.comment=Nastavení, která jsou o funkcích exkluzivních pro Pokročilé trasování barev. §e[*]§r Tyto funkce pouze fungují, pokud je zapnuté Pokročilé trasování barev v Nastavení výkonu a tvůj systém jej podporuje.
