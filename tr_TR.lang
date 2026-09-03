@@ -5,7 +5,7 @@ Contribute=Resmi çevirilere buradan katkıda bulunun: https://www.euphoriapatch
 option.LANG_FILE_HEADER=Topluluk tarafından hazırlanan çeviri dosyaları; çeviri güncel olmayabilir. SpacEagle17, bunların doğruluğunu garanti edemez.
 option.TRANSLATORS=Flowingday16
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nComplementary'yi çok daha fazla özgün isteğe bağlı özellik ve ayarla genişleten, SpacEagle17 imzalı bir eklenti.\nGeliştirici sürümleri: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.1§r\nComplementary'yi çok daha fazla özgün isteğe bağlı özellik ve ayarla genişleten, SpacEagle17 imzalı bir eklenti.\nGeliştirici sürümleri: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=Patates
@@ -97,7 +97,7 @@ option.info17=Beta Sürümü: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=SpacEagle17'yi Patreon veya Ko-Fi üzerinden destekleyebilir ve özel geliştirme sürümlerine erişebilirsiniz. §d§l§neuphoriapatches.com/support
 
-option.info18=Complementary r5.9 için
+option.info18=Complementary r5.9.1 için
 value.info18.0=
 option.info18.comment=Euphoria Yamaları'nı yüklediğiniz için teşekkür ederiz :)
 

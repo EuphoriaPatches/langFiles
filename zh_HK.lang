@@ -81,7 +81,7 @@ option.info17=測試版本: 從SpacEagle17的Patreon獲取
 value.info17.0=
 option.info17.comment=可以直接通過 Patreon 和 Ko-Fi 對 SpacEagle17 進行支持的同時獲得光影的獨佔開發版本。. §d§l§neuphoriapatches.com/support
 
-option.info18=對應 Complementary r5.9 版本
+option.info18=對應 Complementary r5.9.1 版本
 value.info18.0=
 option.info18.comment=感謝您安裝 Euphoria Patches :)
 
@@ -1385,7 +1385,7 @@ screen.POPULAR_SETTINGS=§d流行§b設定
 screen.POPULAR_SETTINGS.comment=Euphoria Patches 中最受歡迎的一些設定。. 除開 高級顔色追蹤 選項外(因為它是許多其他效選項的前置需求), 所有在此欄目中的選項都是 Euphoria Patches 獨家選項。.
 screen.POPULAR_SETTINGS_2=第二頁
 screen.POPULAR_SETTINGS_3=第三頁
-screen.EP_VERSION=Euphoria Patches §d1.10.0
+screen.EP_VERSION=Euphoria Patches §d1.10.1
 screen.EP_VERSION.comment=§b可以通過 Patreon 和 Ko-Fi 對 SpacEagle17 進行支持來獲得最新開發版本的光影文件。. §r§d§l§neuphoriapatches.com/support
 
 screen.MODDED_SETTINGS=模組支持

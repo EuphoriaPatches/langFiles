@@ -3,7 +3,7 @@
 option.LANG_FILE_HEADER=커뮤니티 제공 번역파일입니다 - 최신이 아닐 수도 있음. SpacEagle17이 정확도를 보장하진 않습니다.
 option.TRANSLATORS=번역제작자 : _StrawberrySushi
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nSpacEagle17 이 제작한 Complementary 에드온, 여러 특수한 기능과 설정을 제공합니다. \n개발자 빌드: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.1§r\nSpacEagle17 이 제작한 Complementary 에드온, 여러 특수한 기능과 설정을 제공합니다. \n개발자 빌드: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=품질: §a최저
@@ -83,7 +83,7 @@ option.info17=베타 버전: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=SpacEagle17을 Patreon 또는 Ko-Fi에서 후원하면 새로운 독점 개발 버전을 받을 수 있습니다. §r§d§l§neuphoriapatches.com/support
 
-option.info18=For Complementary r5.9
+option.info18=For Complementary r5.9.1
 value.info18.0=
 option.info18.comment=Euphoria Patches를 설치해주셔서 감사합니다 :)
 

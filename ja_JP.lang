@@ -5,7 +5,7 @@ Contribute=公式翻訳への貢献はこちらから: https://www.euphoriapatc
 option.LANG_FILE_HEADER=コミュニティによる翻訳ファイル - 翻訳が古い可能性があります。. SpacEagle17は翻訳の精度を保証できません。.
 option.TRANSLATORS=日本語訳: MUKSC
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\n多くの追加機能や設定を追加する、SpacEagle17によるComplementary Shadersのアドオンです。. \n開発版: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.1§r\n多くの追加機能や設定を追加する、SpacEagle17によるComplementary Shadersのアドオンです。. \n開発版: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=品質: §a最低
@@ -97,7 +97,7 @@ option.info17=ベータ版: SpacEagle17のPatreon
 value.info17.0=
 option.info17.comment=PatreonやKo-FiでSpacEagle17をサポートして限定開発バージョンにアクセスできます。. §d§l§neuphoriapatches.com/support
 
-option.info18=Complementary r5.9用
+option.info18=Complementary r5.9.1用
 value.info18.0=
 option.info18.comment=Euphoria Patchesをご利用いただきありがとうございます :)
 
@@ -1427,7 +1427,7 @@ screen.POPULAR_SETTINGS=§d人気の設定
 screen.POPULAR_SETTINGS.comment=これらはEuphoria Patchesの最も人気な設定の一部です。. 多数のエフェクトに必要となる「高度な色トレーシング」を除き、ここにあるすべての設定はEuphoria Patches限定で、オリジナルのComplementaryシェーダーには存在しません。.
 screen.POPULAR_SETTINGS_2=ページ 2
 screen.POPULAR_SETTINGS_3=ページ 3
-screen.EP_VERSION=Euphoria Patches §d1.10.0
+screen.EP_VERSION=Euphoria Patches §d1.10.1
 screen.EP_VERSION.comment=§bSpacEagle17をPatreonやKo-Fiでサポートし、新しい開発バージョンを入手できます。. §r§d§l§neuphoriapatches.com/support
 
 screen.MODDED_SETTINGS=Modサポート設定

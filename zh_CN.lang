@@ -5,7 +5,7 @@ Contribute=在此为官方贡献翻译：https://www.euphoriapatches.com/lang -�
 option.LANG_FILE_HEADER=本文档为社区贡献翻译 - 此文档翻译可能会过时。. SpacEagle17 不能保证翻译的准确性。.
 option.TRANSLATORS=本文档由 Surisen (Ruri) 及 Justinpro0715 翻译
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nSpacEagle17 开发的附加包，为其添加了更多独特的可选功能和设置。. \n开发版本：§dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.1§r\nSpacEagle17 开发的附加包，为其添加了更多独特的可选功能和设置。. \n开发版本：§dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=性能需求: §a极低
@@ -97,7 +97,7 @@ option.info17=测试版本: 从SpacEagle17的Patreon获取
 value.info17.0=
 option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本。. §d§l§neuphoriapatches.com/support
 
-option.info18=对应 Complementary r5.9 版本
+option.info18=对应 Complementary r5.9.1 版本
 value.info18.0=
 option.info18.comment=感谢您安装 Euphoria Patches :)
 
@@ -1427,7 +1427,7 @@ screen.POPULAR_SETTINGS=§d流行§b设置
 screen.POPULAR_SETTINGS.comment=Euphoria Patches 中最受欢迎的一些设置。. 除开 高级颜色追踪 选项外(因为它是许多其他效选项的前置需求), 所有在此栏目中的选项都是 Euphoria Patches 独家选项。.
 screen.POPULAR_SETTINGS_2=第二页
 screen.POPULAR_SETTINGS_3=第三页
-screen.EP_VERSION=Euphoria Patches §d1.10.0
+screen.EP_VERSION=Euphoria Patches §d1.10.1
 screen.EP_VERSION.comment=§b可以通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持来获得最新开发版本的光影文件。. §r§d§l§neuphoriapatches.com/support
 
 screen.MODDED_SETTINGS=模组支持

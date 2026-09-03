@@ -3,7 +3,7 @@
 option.LANG_FILE_HEADER=Archivos de traducción de la Comunidad. - Las traducciones pueden no ser las mejores. SpacEagle17 no puede garantizar que sean acertadas.
 option.TRANSLATORS=Traducido por: Wither362
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nAdd-on para Complementary de SpacEagle17 que lo amplía con muchas más funciones y ajustes opcionales únicos.\nVersiones de desarrollo: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.1§r\nAdd-on para Complementary de SpacEagle17 que lo amplía con muchas más funciones y ajustes opcionales únicos.\nVersiones de desarrollo: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=Rendimiento: §aPatata
@@ -77,7 +77,7 @@ option.info17=Versión Beta: Patreon de SpacEagle17
 value.info17.0=
 option.info17.comment=Puede apoyar a SpacEagle17 en Patreon o en Ko-Fi y acceder a versiones de desarrollo exclusivas. §d§l§neuphoriapatches.com/support
 
-option.info18=For Complementary r5.9
+option.info18=For Complementary r5.9.1
 value.info18.0=
 option.info18.comment=Gracias por instalar Euphoria Patches :)
 
@@ -649,7 +649,7 @@ screen.FUN=Diversión
 
 screen.POPULAR_SETTINGS_2=Página 2
 screen.POPULAR_SETTINGS_3=Página 3
-screen.EP_VERSION=Euphoria Patches §d1.10.0
+screen.EP_VERSION=Euphoria Patches §d1.10.1
 screen.EP_VERSION.comment=§bPuedes apoyar a SpacEagle17 en Patreon o Ko-Fi y acceder a nuevas versiones de desarrollo exclusivas. §r§d§l§neuphoriapatches.com/support
 
 value.RANDOM_AURORA.0=Por defecto

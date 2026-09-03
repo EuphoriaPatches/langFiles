@@ -372,7 +372,7 @@ async function checkContentIssues(text, langId, englishSourceValue, exceptions) 
 // - Non-CJK: Swaps full-width "。" for ". " to allow splitting.
 // - CJK: ASCII "." doesn't render, so normalizes to "。. " (visible "。" + delimiter ". ").
 // - Merges consecutive period/space runs to prevent duplicate markers.
-// - Ignores "." inside URLs or version strings (e.g. "r5.9").
+// - Ignores "." inside URLs or version strings.
 // - Converts spaces to NBSP to prevent unwanted wrapping (convertSpacesToNbsp).
 const CJK_LANG_PREFIXES = new Set(["zh", "ja"]);
 

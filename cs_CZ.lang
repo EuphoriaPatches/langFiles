@@ -5,7 +5,7 @@ Contribute=Přispěj k oficiálním překladům zde: https://www.euphoriapatches
 option.LANG_FILE_HEADER=Soubory překladů od komunity - Překlad může být zastaralý. SpacEagle17 nemůže zaručit jejich přesnost.
 option.TRANSLATORS=Přeložil: TerexG
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nDoplněk pro Complementary od SpacEagle17, který jej rozšiřuje o mnoho různých volitelných funkcí a nastavení.\nVývojové verze: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.1§r\nDoplněk pro Complementary od SpacEagle17, který jej rozšiřuje o mnoho různých volitelných funkcí a nastavení.\nVývojové verze: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=Výkon: §aBrambora
@@ -97,7 +97,7 @@ option.info17=Beta verze: Patreon SpacEagle17
 value.info17.0=
 option.info17.comment=Můžeš podpořit SpacEagle17 na Patreonu nebo Ko-Fi a získat přístup k exkluzivním verzím ve vývoji. §d§l§neuphoriapatches.com/support
 
-option.info18=Pro Complementary r5.9
+option.info18=Pro Complementary r5.9.1
 value.info18.0=
 option.info18.comment=Děkujeme za instalaci Euphoria Patches :)
 
@@ -1427,7 +1427,7 @@ screen.POPULAR_SETTINGS=§dPopulární nastavení
 screen.POPULAR_SETTINGS.comment=Toto jsou některé z nejpopulárnějších nastavení v Euphoria Patches. Kromě Pokročilého trasování barev (které je potřebné pro mnoho efektů), všechny možnosti zde jsou exkluzivní pro Euphoria Patches a nemohou být nalezeny v originálním shaderu Complementary.
 screen.POPULAR_SETTINGS_2=Strana 2
 screen.POPULAR_SETTINGS_3=Strana 3
-screen.EP_VERSION=Euphoria Patches §d1.10.0
+screen.EP_VERSION=Euphoria Patches §d1.10.1
 screen.EP_VERSION.comment=§bMůžeš podpořit SpacEagle17 na Patreonu nebo Ko-Fi a získat nové exkluzivní verze ve vývoji. §r§d§l§neuphoriapatches.com/support
 
 screen.MODDED_SETTINGS=Nastavení modů

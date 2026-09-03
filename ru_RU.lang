@@ -5,7 +5,7 @@ Contribute=Участвуйте в официальных переводах з�
 option.LANG_FILE_HEADER=Перевод выполнен сообществом. Может устареть. SpacEagle17 не может это гарантировать.
 option.TRANSLATORS=Перевод от Folox_ (Nikita), mpustovoi и Slava_vas(MPLOC)
 
-shaderDescription=§cComplementary Shaders r5.9§r + §dEuphoria Patches 1.10.0§r\nДополнение для Complementary от SpacEagle17 с множеством уникальных дополнительных функций и настроек.\nВерсии в разработке: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.1§r\nДополнение для Complementary от SpacEagle17 с множеством уникальных дополнительных функций и настроек.\nВерсии в разработке: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=Предустановка: §aкартошка
@@ -97,7 +97,7 @@ option.info17=Бета-версии: Patreon SpacEagle17
 value.info17.0=
 option.info17.comment=Доступ к эксклюзивным версиям через поддержку: §d§l§neuphoriapatches.com/support
 
-option.info18=Для Complementary r5.9
+option.info18=Для Complementary r5.9.1
 value.info18.0=
 option.info18.comment=Спасибо за установку Euphoria Patches :)
 
@@ -1427,7 +1427,7 @@ screen.POPULAR_SETTINGS=§dПопулярные настройки
 screen.POPULAR_SETTINGS.comment=Это одни из самых популярных настроек в Euphoria Patches. За исключением «Продвинутой цветовой трассировки» (необходимой для многих эффектов), все эти опции являются эксклюзивными для Euphoria Patches и не могут быть найдены в оригинальных шейдерах Complementary.
 screen.POPULAR_SETTINGS_2=Страница 2
 screen.POPULAR_SETTINGS_3=Страница 3
-screen.EP_VERSION=Euphoria Patches §d1.10.0
+screen.EP_VERSION=Euphoria Patches §d1.10.1
 screen.EP_VERSION.comment=§bПоддержите SpacEagle17 на Patreon/Ko-Fi для доступа к бета-версиям. §r§d§l§neuphoriapatches.com/support
 
 screen.MODDED_SETTINGS=Настройки модов
