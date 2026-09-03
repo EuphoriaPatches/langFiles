@@ -3192,3 +3192,6 @@ option.BLACK_HOLE_LATITUDE_BIAS.comment=Changes the bias of the black hole's lat
 option.BLACK_HOLE_STREAK=Horizontal Streak
 option.BLACK_HOLE_STREAK.comment=Adds a horizontal accretion-disk streak to the black hole.
 value.BLACK_HOLE_STREAK.0=OFF
+
+option.REFLECTIVE_HORSES=Glistening Horses
+option.REFLECTIVE_HORSES.comment=Every kid loves a shiny horse! A horse which is not shiny is a sad horse.
