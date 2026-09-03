@@ -86,6 +86,10 @@ async function isTranslationApproved(token, projectId, stringId, languageId, tra
 // keeps that approved status; if it was still pending review, the edit
 // stays pending too, so it doesn't sneak past human review.
 //
+// Pass `knownApproved` (true/false) to use that instead of the live check -
+// needed when a source-string upload has already cleared approvals this run
+// (see sync-manual-lang-edits.js --snapshot).
+//
 // Pass `forceNoApproval: true` (wired to the workflow's
 // disable_crowdin_auto_approval input) to always leave the result pending,
 // e.g. while validating that these automated pushes are producing the right
@@ -100,13 +104,17 @@ async function pushTranslationMirroringApproval(
   languageId,
   oldText,
   newText,
-  { forceNoApproval = false } = {},
+  { forceNoApproval = false, knownApproved = null } = {},
 ) {
   let shouldApprove = false;
   if (!forceNoApproval) {
-    const oldTranslation = await findMatchingTranslation(token, projectId, stringId, languageId, oldText);
-    if (oldTranslation) {
-      shouldApprove = await isTranslationApproved(token, projectId, stringId, languageId, oldTranslation.id);
+    if (typeof knownApproved === "boolean") {
+      shouldApprove = knownApproved;
+    } else {
+      const oldTranslation = await findMatchingTranslation(token, projectId, stringId, languageId, oldText);
+      if (oldTranslation) {
+        shouldApprove = await isTranslationApproved(token, projectId, stringId, languageId, oldTranslation.id);
+      }
     }
   }
 

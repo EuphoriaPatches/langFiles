@@ -1,19 +1,48 @@
 // Handles the "version bump" workflow: when en_US.lang and other *.lang
 // files are hand-edited together in the same push then feeds those changes to Crowdin directly
 // so that the Crowdin project is kept in sync with the repo's current state.
+//
+// Run with --snapshot (before upload_sources, which clears Crowdin approvals)
+// to just record current approval status; the normal run replays it via APPROVAL_SNAPSHOT_PATH.
 "use strict";
 
+const fs = require("fs");
 const { execFileSync } = require("child_process");
-const path = require("path");
 const { REPO_ROOT, loadLangMap } = require("./lib/content-safety");
 const {
   pushTranslationMirroringApproval,
+  findMatchingTranslation,
+  isTranslationApproved,
   getProjectLanguageIds,
   resolveCrowdinLanguageId,
   resolveStringId,
 } = require("./lib/crowdin-api");
 
 const ZERO_SHA = "0000000000000000000000000000000000000000";
+const SNAPSHOT_MODE = process.argv.includes("--snapshot");
+const SNAPSHOT_PATH = `${REPO_ROOT}/crowdin-approval-snapshot.json`;
+
+function writeSnapshot(entries, ok = true) {
+  fs.writeFileSync(SNAPSHOT_PATH, JSON.stringify({ ok, entries }, null, 2), "utf8");
+}
+
+// Loads a --snapshot file into a `"file key" -> approved` Map, or null when
+// there's no usable one (caller then checks approval live).
+function loadSnapshot() {
+  const p = process.env.APPROVAL_SNAPSHOT_PATH;
+  if (!p) return null;
+  try {
+    const parsed = JSON.parse(fs.readFileSync(p, "utf8"));
+    if (!parsed || parsed.ok === false) return null;
+    const map = new Map();
+    for (const e of parsed.entries || []) map.set(`${e.fileName} ${e.key}`, e.approved);
+    console.log(`Loaded approval snapshot (${map.size} translation(s)).`);
+    return map;
+  } catch (err) {
+    console.warn(`WARNING: could not read approval snapshot at ${p}: ${err.message}`);
+    return null;
+  }
+}
 
 function gitShow(sha, filePath) {
   try {
@@ -52,9 +81,15 @@ async function main() {
 
   if (!beforeSha || beforeSha === ZERO_SHA) {
     console.log("No prior commit to diff against (first push or force-push) - skipping.");
+    if (SNAPSHOT_MODE) writeSnapshot([]);
     return;
   }
   if (!token || !projectId) {
+    if (SNAPSHOT_MODE) {
+      console.warn("WARNING: CROWDIN_TOKEN / CROWDIN_PROJECT_ID_LANG not set - writing an unusable snapshot.");
+      writeSnapshot([], false);
+      return;
+    }
     throw new Error("CROWDIN_TOKEN / CROWDIN_PROJECT_ID_LANG env vars are required.");
   }
 
@@ -64,12 +99,18 @@ async function main() {
 
   if (sourceChanges.size === 0) {
     console.log("No key changes in en_US.lang for this push - nothing to do.");
+    if (SNAPSHOT_MODE) writeSnapshot([]);
     return;
   }
 
   const forceNoApproval = process.env.CROWDIN_SKIP_APPROVAL === "true";
+  const snapshot = SNAPSHOT_MODE ? null : loadSnapshot();
+  if (!SNAPSHOT_MODE && !snapshot && !forceNoApproval) {
+    console.warn("WARNING: no approval snapshot - approval status read live, which is unreliable once the source strings changed this run.");
+  }
   const projectLanguageIds = await getProjectLanguageIds(token, projectId);
   const stringIdCache = new Map();
+  const snapshotEntries = [];
   let pushedCount = 0;
 
   for (const fileName of listLangFiles()) {
@@ -95,7 +136,7 @@ async function main() {
       // that should still go through the normal retranslation flow.
       if (oldMap.get(key) === newValue) continue;
 
-      if (process.env.DRY_RUN === "true") {
+      if (!SNAPSHOT_MODE && process.env.DRY_RUN === "true") {
         console.log(`[DRY RUN] would sync ${fileName} [${key}] -> Crowdin (${languageId}): ${JSON.stringify(newValue)}`);
         pushedCount++;
         continue;
@@ -107,6 +148,21 @@ async function main() {
         continue;
       }
 
+      if (SNAPSHOT_MODE) {
+        let approved = false;
+        try {
+          const old = await findMatchingTranslation(token, projectId, stringId, languageId, oldMap.get(key));
+          approved = old ? await isTranslationApproved(token, projectId, stringId, languageId, old.id) : false;
+        } catch (err) {
+          console.warn(`WARNING: could not read approval state for ${fileName} [${key}]: ${err.message}`);
+        }
+        snapshotEntries.push({ fileName, key, approved });
+        console.log(`Snapshot ${fileName} [${key}]: ${approved ? "approved" : "pending"}.`);
+        continue;
+      }
+
+      const knownApproved = snapshot ? Boolean(snapshot.get(`${fileName} ${key}`)) : null;
+
       try {
         const approved = await pushTranslationMirroringApproval(
           token,
@@ -115,7 +171,7 @@ async function main() {
           languageId,
           oldMap.get(key),
           newValue,
-          { forceNoApproval },
+          { forceNoApproval, knownApproved },
         );
         console.log(
           `Synced ${fileName} [${key}] -> Crowdin (${languageId}), ${approved ? "approved" : "pending approval"}.`,
@@ -129,10 +185,21 @@ async function main() {
     }
   }
 
+  if (SNAPSHOT_MODE) {
+    writeSnapshot(snapshotEntries);
+    console.log(`Wrote approval snapshot for ${snapshotEntries.length} translation(s).`);
+    return;
+  }
+
   console.log(`Done. Pushed ${pushedCount} synchronized translation(s) to Crowdin.`);
 }
 
 main().catch((err) => {
   console.error(err);
+  // --snapshot is best-effort: never block the source upload / sync on it.
+  if (SNAPSHOT_MODE) {
+    try { writeSnapshot([], false); } catch {}
+    process.exit(0);
+  }
   process.exit(1);
 });
