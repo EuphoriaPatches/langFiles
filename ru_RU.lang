@@ -3192,3 +3192,6 @@ option.BLACK_HOLE_LATITUDE_BIAS.comment=Изменяет смещение шир
 option.BLACK_HOLE_STREAK=Горизонтальная полоса
 option.BLACK_HOLE_STREAK.comment=Добавляет горизонтальную полосу аккреционного диска к чёрной дыре.
 value.BLACK_HOLE_STREAK.0=Нет
+
+option.REFLECTIVE_HORSES=Сверкающие лошадки
+option.REFLECTIVE_HORSES.comment=Каждый ребёнок любит блестящих лошадок! Ведь лошадь, которая не блестит, — грустная лошадь.
