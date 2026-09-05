@@ -3111,7 +3111,6 @@ option.PANINI_PROJECTION.comment=启用帕尼尼投影, 一种会减少屏幕�
 value.PANINI_PROJECTION.0=关
 
 option.BLACK_HOLE=黑洞
-option.BLACK_HOLE.comment=在末地的天空盒中增加黑洞。. 黑洞位置受 黑洞位置设定 影响
 value.BLACK_HOLE.0=关
 
 option.BLACK_HOLE_SHAPE=黑洞形状
@@ -3165,3 +3164,4 @@ option.BLACK_HOLE_LATITUDE_BIAS.comment=改变黑洞纬度的偏差，使其随�
 option.BLACK_HOLE_STREAK=水平条纹
 option.BLACK_HOLE_STREAK.comment=为黑洞添加一道水平吸积盘条纹。.
 value.BLACK_HOLE_STREAK.0=关
+

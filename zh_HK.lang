@@ -2752,6 +2752,7 @@ value.BLURRED_REFLECTIONS_I.10=Default=預設
 value.REFLECTION_RESPONSIVENESS.0.0=Default=預設
 
 value.BETTER_LABPBR_REFRACTIONS.0=關
+suffix.BETTER_LABPBR_REFRACTIONS=%
 
 option.SHADOW_SATURATION=陰影飽和度
 option.SHADOW_SATURATION.comment=調節陰影和光束的飽和度。. §e[*]§r 本選項僅在 "實時陰影" 選項設定為 低 或者更高的值時生效。.
@@ -3012,7 +3013,6 @@ option.PANINI_PROJECTION.comment=啓用帕尼尼投影, 一種會減少屏幕�
 value.PANINI_PROJECTION.0=關
 
 option.BLACK_HOLE=黑洞
-option.BLACK_HOLE.comment=在末地的天空盒中增加黑洞。. 黑洞位置受 黑洞位置設定 影響
 value.BLACK_HOLE.0=關
 
 value.BLACK_HOLE_SHAPE.0=圓形
@@ -3054,3 +3054,4 @@ option.BLACK_HOLE_LATITUDE=緯度
 option.BLACK_HOLE_LATITUDE.comment=固定位置模式: 設定黑洞相對於玩家的緯度 (以度數計, 世界頂點為90度, 與地平綫同緯度為0度)
 
 value.BLACK_HOLE_STREAK.0=關
+

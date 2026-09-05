@@ -2711,6 +2711,7 @@ value.BLURRED_REFLECTIONS_I.10=PADRÃO
 value.REFLECTION_RESPONSIVENESS.0.0=PADRÃO
 
 value.BETTER_LABPBR_REFRACTIONS.0=Desligado
+suffix.BETTER_LABPBR_REFRACTIONS=%
 
 option.SHADOW_SATURATION=Saturação das Sombras
 option.SHADOW_SATURATION.comment=Altere a saturação das sombras e dos feixes de luz. §e[*]§r Esta configuração só funciona se "Sombras em Tempo-Real" estiver em Baixo ou superior.
@@ -3007,3 +3008,4 @@ option.BLACK_HOLE_LATITUDE_BIAS.comment=Altera a posição de latitude do buraco
 option.BLACK_HOLE_STREAK=Rastro horizontal
 option.BLACK_HOLE_STREAK.comment=Adiciona uma faixa horizontal do disco de acreção ao redor do buraco negro.
 value.BLACK_HOLE_STREAK.0=Desligado
+

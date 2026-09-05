@@ -3138,7 +3138,6 @@ option.PANINI_PROJECTION.comment=Умикає проєкцію Паніні, я�
 value.PANINI_PROJECTION.0=ВИМК.
 
 option.BLACK_HOLE=Чорна діра
-option.BLACK_HOLE.comment=Додає чорну діру до неба в Енду. Її положення визначається налаштуваннями позиції чорної діри.
 value.BLACK_HOLE.0=ВИМК
 
 option.BLACK_HOLE_SHAPE=Форма чорної діри
@@ -3192,3 +3191,4 @@ option.BLACK_HOLE_LATITUDE_BIAS.comment=Змінює зміщення широт
 option.BLACK_HOLE_STREAK=Горизонтальна смуга
 option.BLACK_HOLE_STREAK.comment=Додає до чорної діри горизонтальну смугу акреційного диска.
 value.BLACK_HOLE_STREAK.0=УВІМК.
+

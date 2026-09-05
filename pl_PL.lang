@@ -2696,6 +2696,7 @@ value.BLURRED_REFLECTIONS_I.10=Styl Domyślny
 value.REFLECTION_RESPONSIVENESS.0.0=Styl Domyślny
 
 value.BETTER_LABPBR_REFRACTIONS.0=WŁ.
+suffix.BETTER_LABPBR_REFRACTIONS=%
 
 option.SHADOW_SATURATION=Nasycenie Cieni
 option.SHADOW_SATURATION.comment=Zmień nasycenie cieni i snopów światła. §e[*]§r Cienie w Czasie Rzeczywistym muszą być ustawione na jakość "Niskią" lub wyższą.
@@ -2941,3 +2942,4 @@ value.BLACK_HOLE_SHAPE.1=Kwadratowa
 value.BLACK_HOLE_PIXELATION.0=WYŁ.
 
 value.BLACK_HOLE_STREAK.0=WŁ.
+
