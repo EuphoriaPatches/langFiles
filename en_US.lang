@@ -3138,7 +3138,7 @@ option.PANINI_PROJECTION.comment=Enables Panini Projection, which is a type of p
 value.PANINI_PROJECTION.0=OFF
 
 option.BLACK_HOLE=Black Hole
-option.BLACK_HOLE.comment=Adds a black hole to the skybox in the End. Its position is controlled by the Black Hole Position settings
+option.BLACK_HOLE.comment=Adds a black hole to the skybox in the End. This slider changes the brightness of the black hole. Its position is controlled by the Black Hole Position settings
 value.BLACK_HOLE.0=OFF
 
 option.BLACK_HOLE_SHAPE=Black Hole Shape
