@@ -2654,6 +2654,9 @@ option.BEACON_BEAM_EMISSION.comment=Change the emission strength of the beacon b
 
 option.PINKER_CHERRY_LEAVES=Pinker Cherry Leaves
 
+option.DISCARD_FOLIAGE_SHADOW=Remove Foliage Shadow
+option.DISCARD_FOLIAGE_SHADOW.comment=Prevents foliage such as grass, flowers, saplings, crops and similar plants from casting a shadow. §c[-]§r This effect does NOT improve performance and is only a visual change, in fact technically it decreases performance by a super small amount.
+
 option.LIGHTMAP_CURVES=Lightmap Curves
 option.LIGHTMAP_CURVES.comment=Change the lightmap curves of the world.
 option.UPPER_LIGHTMAP_CURVE=Upper Lightmap Curve
