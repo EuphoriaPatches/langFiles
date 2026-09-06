@@ -3138,6 +3138,7 @@ option.PANINI_PROJECTION.comment=Позволяет использовать п�
 value.PANINI_PROJECTION.0=Нет
 
 option.BLACK_HOLE=Чёрная дыра
+option.BLACK_HOLE.comment=Добавляет чёрную дыру на небосвод Энда. Этот ползунок регулирует яркость чёрной дыры. Её положение регулируется настройками «Положение чёрной дыры».
 value.BLACK_HOLE.0=Нет
 
 option.BLACK_HOLE_SHAPE=Форма чёрной дыры

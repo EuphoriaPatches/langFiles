@@ -3138,6 +3138,7 @@ option.PANINI_PROJECTION.comment=高い視野角を使用している場合に�
 value.PANINI_PROJECTION.0=OFF
 
 option.BLACK_HOLE=ブラックホール
+option.BLACK_HOLE.comment=エンドのスカイボックスにブラックホールを追加します。. このスライダーはブラックホールの明るさを変更します。. 位置は「ブラックホールの位置」設定によって制御されます。.
 value.BLACK_HOLE.0=OFF
 
 option.BLACK_HOLE_SHAPE=ブラックホールの形状
