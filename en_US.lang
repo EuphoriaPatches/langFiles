@@ -864,7 +864,7 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=Changes how some IPBR+ features are calcu
 option.IPBR_PARTICLE_FEATURES=IPBR+ Particle Features
 option.IPBR_PARTICLE_FEATURES.comment=Enables several features for particles, including things like glowing lava particles and better-colored water particles.
 
-option.FANCY_GLASS=Improved Glass
+option.FANCY_GLASS=Improved Glass §c[-]§r
 option.FANCY_GLASS.comment=Improves the regular glass by adding a translucent layer to it. §c[-]§r Does not work on older Iris versions. §e[*]§r RP Support option must be set to Integrated PBR+.
 
 option.GREEN_SCREEN_LIME=Green Screen Lime Blocks
