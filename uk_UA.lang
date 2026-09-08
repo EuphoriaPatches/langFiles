@@ -2654,6 +2654,9 @@ option.BEACON_BEAM_EMISSION.comment=Змінює силу сяяння пром�
 
 option.PINKER_CHERRY_LEAVES=Рожевіше вишневе листя
 
+option.DISCARD_FOLIAGE_SHADOW=Видалили тінь рослинности
+option.DISCARD_FOLIAGE_SHADOW.comment=Запобігає відкиданню тіні рослинністю, як-от травою, квітами, паростками, урожаєм тощо. §c[-]§r НЕ покращує продуктивність і є суто візуальною зміною; насправді, з технічного погляду, він навіть незначно знижує продуктивність.
+
 option.LIGHTMAP_CURVES=Криві мапи світла
 option.LIGHTMAP_CURVES.comment=Змінює криві мапи світла світу.
 option.UPPER_LIGHTMAP_CURVE=Верхня крива мапи світла

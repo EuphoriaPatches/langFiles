@@ -1079,7 +1079,7 @@ value.WAVING_I.175=175 §c[-]
 value.WAVING_I.200=200 §c[-]
 
 option.WAVING_FOLIAGE=揺れる草
-option.WAVING_FOLIAGE.comment=草や類似の葉に動きを追加し、風をシミュレートします。.
+option.WAVING_FOLIAGE.comment=草や葉などの植物を揺らし、風をシミュレートします。.
 
 option.WAVING_LEAVES=揺れる葉
 option.WAVING_LEAVES.comment=葉に動きを追加し、風をシミュレートします。.
@@ -2653,6 +2653,9 @@ option.BEACON_BEAM_EMISSION=ビーコンビームの発光
 option.BEACON_BEAM_EMISSION.comment=ビーコンビームの発光強度を変更します。.
 
 option.PINKER_CHERRY_LEAVES=よりピンクな桜の葉
+
+option.DISCARD_FOLIAGE_SHADOW=植物の影を削除
+option.DISCARD_FOLIAGE_SHADOW.comment=草、花、苗木、作物などの植物が影を落とさないようにします。. §c[-]§r この効果はパフォーマンスを向上させるものではなく、あくまで視覚的な変更です。. むしろ、厳密に言えばごく僅かにパフォーマンスが低下します。.
 
 option.LIGHTMAP_CURVES=ライトマップカーブ
 option.LIGHTMAP_CURVES.comment=ワールドのライトマップカーブを変更します。.
