@@ -843,7 +843,6 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=Altera como alguns recursos do IPBR+ são
 option.IPBR_PARTICLE_FEATURES=Recursos de Partículas IPBR+
 option.IPBR_PARTICLE_FEATURES.comment=Ativa vários recursos para partículas, incluindo partículas de lava brilhantes e partículas de água com cores melhores.
 
-option.FANCY_GLASS=Vidro Aprimorado
 option.FANCY_GLASS.comment=Melhora o vidro comum adicionando uma camada translúcida. §c[-]§r Não funciona em versões antigas do Iris. §e[*]§r A opção de Suporte a RP deve estar em Integrated PBR+.
 
 option.GREEN_SCREEN_LIME=Blocos de Chroma Key Verde Limão

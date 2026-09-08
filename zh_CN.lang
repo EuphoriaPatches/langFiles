@@ -864,7 +864,6 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=更改部分集成PBR+功能的计算方�
 option.IPBR_PARTICLE_FEATURES=集成PBR+粒子功能
 option.IPBR_PARTICLE_FEATURES.comment=启用粒子的多个集成PBR+功能, 包括岩浆的发光粒子和有更好颜色的水粒子等。.
 
-option.FANCY_GLASS=更好的玻璃
 option.FANCY_GLASS.comment=通过在普通玻璃上增加一个半透明层来增加质感。. §c[-]§r 在较旧版本的 Iris 上不生效。. §e[*]§r 资源包支持选项需设置为集成PBR+。.
 
 option.GREEN_SCREEN_LIME=绿幕 - 黄绿色方块

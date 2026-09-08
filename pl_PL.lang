@@ -831,7 +831,6 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=Zmienia sposób obliczania niektórych fu
 option.IPBR_PARTICLE_FEATURES=Ustawienia ZintegrowanegoPBR+ Cząsteczek
 option.IPBR_PARTICLE_FEATURES.comment=Włącza kilka funkcji dla cząsteczek, w tym świecące cząsteczki lawy i ładniejsze cząsteczki wody.
 
-option.FANCY_GLASS=Ulepszone Szkło
 option.FANCY_GLASS.comment=Ulepsza zwykłe szkło, dodając do niego półprzezroczystą warstwę. §c[-]§r Nie działa na starszych wersjach Iris (przed wersją 1.8). §e[*]§r Opcja Wsparcie Tekstur musi być ustawiona na Zintegrowane PBR+.
 
 option.GREEN_SCREEN_LIME=Zielony ekran

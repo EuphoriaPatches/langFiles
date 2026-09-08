@@ -581,8 +581,6 @@ option.IPBR_COMPAT_MODE_DEFINE=Modo de Compatibilidad de IPBR+
 
 option.IPBR_PARTICLE_FEATURES=Características de las partículas de IPBR+
 
-option.FANCY_GLASS=Cristal mejorado
-
 option.GREEN_SCREEN_LIME=Bloques Lima como Pantalla Verde
 
 value.MIRROR_TINTED_GLASS.0=Desactivadas

@@ -864,7 +864,6 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=Mění, jak jsou některé funkce IPBR+ v
 option.IPBR_PARTICLE_FEATURES=Funkce částic IPBR+
 option.IPBR_PARTICLE_FEATURES.comment=Zapíná různé funkce pro částice jako například svítící částice lávy nebo lépe zbarvené částice vody.
 
-option.FANCY_GLASS=Vylepšené sklo
 option.FANCY_GLASS.comment=Vylepšuje normální sklo tím, že k němu přidá průhlednou vrstvu. §c[-]§r Nefunguje na starších verzích Iris. §e[*]§r Podpora textur musí být nastavena na Integrované PBR+.
 
 option.GREEN_SCREEN_LIME=Světle zelené bloky jako pozadí

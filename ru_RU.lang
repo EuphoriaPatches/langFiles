@@ -864,7 +864,6 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=Делает функции встрое�
 option.IPBR_PARTICLE_FEATURES=Особенности частиц встр. PBR+
 option.IPBR_PARTICLE_FEATURES.comment=Добавляет свечение частицам лавы и улучшает цвет частиц воды.
 
-option.FANCY_GLASS=Улучшенное стекло
 option.FANCY_GLASS.comment=Добавляет полупрозрачный слой к обычному стеклу. §c[-]§r Не работает в старых версиях Iris. §e[*]§r Требуется режим «Поддержка наборов ресурсов»: встроенный PBR+.
 
 option.GREEN_SCREEN_LIME=Лаймовый хромакей
