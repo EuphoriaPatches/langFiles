@@ -864,6 +864,7 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=Змінює спосіб обчисле�
 option.IPBR_PARTICLE_FEATURES=Функції частинок IPBR+
 option.IPBR_PARTICLE_FEATURES.comment=Умикає кілька функцій для частинок, зокрема частинки лави, що світяться, і частинки води з кращим кольором.
 
+option.FANCY_GLASS=Покращене скло §c[-]§r
 option.FANCY_GLASS.comment=Покращує скло, додаючи до нього напівпрозорий шар. §c[-]§r Не працює на Iris через помилку Sodium. §e[*]§r Підтримка ПР має бути «Integrated PBR+».
 
 option.GREEN_SCREEN_LIME=Зелений екран

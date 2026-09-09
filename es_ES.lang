@@ -934,6 +934,7 @@ option.PALETTE6G=Verde Color6
 
 value.SCANLINE_NEW_MONOCHROME.false=Desactivadas
 
+option.DOF_SHAPE=Forma
 value.DOF_SHAPE.0=Original
 value.DOF_SHAPE.3=Triángulo
 value.DOF_SHAPE.4=Cuadrado
@@ -941,6 +942,11 @@ value.DOF_SHAPE.5=Pentágono
 value.DOF_SHAPE.6=Hexágono
 value.DOF_SHAPE.7=Heptágono
 value.DOF_SHAPE.8=Octágono
+
+option.DOF_SHAPE_ROTATION_DEGREES=Rotación
+
+option.SAND_TRANSPARENCY=Transparencia de la Arena
+option.SAND_IN_CAVES=Arena en Cuevas
 
 value.FROGLIGHT_SATURATION.1=Por defecto
 value.FROGLIGHT_SATURATION.2=2x
@@ -970,12 +976,24 @@ option.STAR_COLOR_3_END_R=Estrella 3 - Rojo
 option.STAR_COLOR_3_END_G=Estrella 3 - Verde
 option.STAR_COLOR_3_END_B=Estrella 3 - Azul
 
+option.SHOOTING_STARS_SIZE=Tamaño
+option.SHOOTING_STARS_SPEED=Velocidad
+option.SHOOTING_STARS_COUNT=Cantidad
+
 value.BLURRED_REFLECTIONS_I.0=Desactivadas
 value.BLURRED_REFLECTIONS_I.10=Por defecto
 
 value.REFLECTION_RESPONSIVENESS.0.0=Por defecto
 
 value.BETTER_LABPBR_REFRACTIONS.0=DESACTIVADO
+
+option.PHOTONICS_RENDER_SCALE=Escala de Renderizado
+
+option.PHOTONICS_INDIRECT_INTENSITY=Iluminación Global
+
+option.PHOTONICS_MAX_LIGHTS=Máx. de Luces
+
+suffix.PHOTONICS_VANILLA_LIGHT_FALLBACK=%
 
 value.PHOTONICS_MAX_ALLOWED_DISTANCE.6=6 Chunks
 value.PHOTONICS_MAX_ALLOWED_DISTANCE.7=7 Chunks
@@ -1013,5 +1031,11 @@ value.BLACK_HOLE_SHAPE.1=Cuadrado
 
 value.BLACK_HOLE_PIXELATION.0=Apagada
 
+value.BLACK_HOLE_DIRECTION_MODE.1=Posición Fija
+
+option.BLACK_HOLE_LATITUDE=Latitud
+option.BLACK_HOLE_LATITUDE.comment=Modo de Posición Fija: posiciona la posición relativa del agujero negro por encima o por debajo del horizonte, en grados.
+
 value.BLACK_HOLE_STREAK.0=Sin brillo
 
+option.REFLECTIVE_HORSES=Caballos Brillantes
