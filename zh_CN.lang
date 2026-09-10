@@ -3096,6 +3096,7 @@ option.DH_BLENDING=Distant Horizons 混合
 option.DH_BLENDING.comment=平滑混合 Distant Horizons Lod 块和普通区块。. §e[*]§r 本选项仅在安装 Distant Horizons 模组时生效。.
 
 option.MCWIND_USER=启用 WindLink
+option.MCWIND_USER.comment=WindLink 模组支持的主开关。. 允许着色器响应 WindLink 模组提供的风向和风力。. §e[*]§r 此选项仅在安装了 WindLink 时生效 https://modrinth.com/project/windlink。. §e[*]§r 禁用后将回退到光影包自身的内置摇晃效果。.
 
 option.MCWIND_FOLIAGE=WindLink 草类
 option.MCWIND_FOLIAGE.comment=使草和其他植被根据 WindLink 模组提供的风向和风力摇摆。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
