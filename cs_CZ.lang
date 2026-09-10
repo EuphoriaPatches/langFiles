@@ -864,6 +864,7 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=Mění, jak jsou některé funkce IPBR+ v
 option.IPBR_PARTICLE_FEATURES=Funkce částic IPBR+
 option.IPBR_PARTICLE_FEATURES.comment=Zapíná různé funkce pro částice jako například svítící částice lávy nebo lépe zbarvené částice vody.
 
+option.FANCY_GLASS=Vylepšené sklo §c[-]§r
 option.FANCY_GLASS.comment=Vylepšuje normální sklo tím, že k němu přidá průhlednou vrstvu. §c[-]§r Nefunguje na starších verzích Iris. §e[*]§r Podpora textur musí být nastavena na Integrované PBR+.
 
 option.GREEN_SCREEN_LIME=Světle zelené bloky jako pozadí
@@ -2653,6 +2654,9 @@ option.BEACON_BEAM_EMISSION.comment=Změň sílu svícení paprsku Majáku
 
 option.PINKER_CHERRY_LEAVES=Růžovější Třešňové listí
 
+option.DISCARD_FOLIAGE_SHADOW=Odstranit stíny zeleně
+option.DISCARD_FOLIAGE_SHADOW.comment=Zabraňuje vrhání stínu zeleni, jako je třeba tráva, květiny, sazenice, plodiny a podobné rostliny. §c[-]§r Tento efekt NEvylepšuje výkon a je to pouze vizuální změna, vlastně technicky vzato zhoršuje výkon o velmi malé množství.
+
 option.LIGHTMAP_CURVES=Křivky světelné mapy
 option.LIGHTMAP_CURVES.comment=Změň křivky světelné mapy světa.
 option.UPPER_LIGHTMAP_CURVE=Horní křivka světelné mapy
@@ -2802,7 +2806,46 @@ value.DELTARUNE_BATTLE_BACKGROUND.0=VYP
 value.DELTARUNE_BATTLE_BACKGROUND.1=ZAP - Pouze obloha
 value.DELTARUNE_BATTLE_BACKGROUND.2=ZAP - Kromě entit
 
+option.END_CRYSTAL_EMISSION=Svícení Endových krystalů
+
+option.CLEAR_WATER_SPOTS=Čirá místa vody
+option.CLEAR_WATER_SPOTS.comment=Přidává čirá místa k vodě pro přidání nějaké rozmanitosti. §e[*]§r Vyžaduje určitý typ vln vody, buď Unbound nebo Reimagined s vlnami.
+
+option.ACT_ORE_INTENSITY=Intenzita ACT rud
+option.ACT_ORE_INTENSITY.comment=Změň intenzitu světla rud Pokročilého trasování barev.
+value.ACT_ORE_INTENSITY.0.0=VYP
+
+option.ENTITIES_ARE_LIGHT=Entity jsou světlo
+
+option.WATER_CAUSTIC_STRENGTH=Síla kaustik vody
+option.WATER_CAUSTIC_STRENGTH.comment=Změň sílu efektu kaustik ve vodě.
+
+option.ROUGHNESS_MULTIPLIER=Maska drsnosti
+option.ROUGHNESS_MULTIPLIER.comment=Změň, kde jsou materiály drsné.
+
+option.ROUGHNESS_INTENSITY=Intenzita drsnosti
+option.ROUGHNESS_INTENSITY.comment=Změň drsnost materiálů a udělej je více nebo méně lesklé.
+
+option.BLURRED_REFLECTIONS_I=Rozostřené odrazy
+option.BLURRED_REFLECTIONS_I.comment=Změň intenzitu rozostřených odrazů na materiálech. §e[*]§r Při nižších hodnotách tohoto nastavení je velmi doporučeno používat PLNÉ rozlišení odrazů.
+value.BLURRED_REFLECTIONS_I.0=VYP
+value.BLURRED_REFLECTIONS_I.10=Výchozí
+
+option.REFLECTION_RESPONSIVENESS=Reaktivita odrazů
+option.REFLECTION_RESPONSIVENESS.comment=Odrazy budou rychleji reagovat na pohyb, což snižuje "loudavý" efekt, který můžou mít. §e[*]§r Vyšší hodnoty mohou způsobit vyšší zrnitost odrazů.
+value.REFLECTION_RESPONSIVENESS.0.0=Výchozí
+
+option.BETTER_LABPBR=Vylepšené LabPBR
+option.BETTER_LABPBR.comment=Mění vzhled LabPBR materiálů, aby více odpovídaly tomu, co zamýšlel vývojář balíčku modifikací. §e[*]§r Toto nastavení funguje, pouze když je "Podpora textur" nastavena na LabPBR
+
+option.BETTER_LABPBR_REFLECTIONS=Vylepšené odrazy
+option.BETTER_LABPBR_REFRACTIONS=Podpora lomu světla
+option.BETTER_LABPBR_REFRACTIONS.comment=Průhledné bloky se budou řídit normálami LabPBR, budou lomit světlo a zkreslovat, co je za nimi.
 value.BETTER_LABPBR_REFRACTIONS.0=VYP
+suffix.BETTER_LABPBR_REFRACTIONS=%
+
+option.BETTER_LABPBR_POROSITY=Podpora pórovitosti
+option.BETTER_LABPBR_POROSITY.comment=LabPBR materiály, které jsou vystavené dešti budou tmavnout podle jejich pórovitosti a získají odrážlivý mokrý lesk. §e[*]§r Toto nastavení pouze funguje, pokud je "Podpora textur" nastavena na LabPBR
 
 value.MCWIND_NETHER_FOG.0=VYP
 value.MCWIND_NETHER_FOG.1=ZAP

@@ -864,6 +864,7 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=更改部分集成PBR+功能的计算方�
 option.IPBR_PARTICLE_FEATURES=集成PBR+粒子功能
 option.IPBR_PARTICLE_FEATURES.comment=启用粒子的多个集成PBR+功能, 包括岩浆的发光粒子和有更好颜色的水粒子等。.
 
+option.FANCY_GLASS=改进玻璃效果 §c[-]§r
 option.FANCY_GLASS.comment=通过在普通玻璃上增加一个半透明层来增加质感。. §c[-]§r 在较旧版本的 Iris 上不生效。. §e[*]§r 资源包支持选项需设置为集成PBR+。.
 
 option.GREEN_SCREEN_LIME=绿幕 - 黄绿色方块
@@ -2653,6 +2654,9 @@ option.BEACON_BEAM_EMISSION.comment=调节信标光束的发光强度。.
 
 option.PINKER_CHERRY_LEAVES=更加粉红的樱花树叶
 
+option.DISCARD_FOLIAGE_SHADOW=移除植被阴影
+option.DISCARD_FOLIAGE_SHADOW.comment=防止草、花、树苗、农作物及类似植物投射阴影。. §c[-]§r 启用此选项效果不会提升性能，仅为视觉变化，从技术层面上还会略微降低性能。.
+
 option.LIGHTMAP_CURVES=光图曲线
 option.LIGHTMAP_CURVES.comment=调节在世界中渲染的光照贴图亮度曲线。.
 option.UPPER_LIGHTMAP_CURVE=光图曲线 - 上部
@@ -3093,8 +3097,34 @@ option.DH_BLENDING.comment=平滑混合 Distant Horizons Lod 块和普通区�
 
 option.MCWIND_USER=启用 WindLink
 
+option.MCWIND_FOLIAGE=WindLink 草类
+option.MCWIND_FOLIAGE.comment=使草和其他植被根据 WindLink 模组提供的风向和风力摇摆。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
+
+option.MCWIND_LEAVES=WindLink 树叶
+option.MCWIND_LEAVES.comment=使树叶根据 WindLink 模组提供的风向和风力摇摆。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
+
+option.MCWIND_VINES=WindLink 藤蔓
+option.MCWIND_VINES.comment=使藤蔓根据 WindLink 模组提供的风向和风力摇摆摆动。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
+
+option.MCWIND_FIRE=WindLink 火焰
+option.MCWIND_FIRE.comment=使火焰和点燃的营火根据 WindLink 模组提供的风向和风力倾斜和闪烁。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
+
+option.MCWIND_STALKS=WindLink 二高植物
+option.MCWIND_STALKS.comment=使甘蔗和竹子根据 WindLink 模组提供的风向和风力从地面弯曲。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
+
+option.MCWIND_RAIN=WindLink 雨/雪
+option.MCWIND_RAIN.comment=使落下的雨和雪根据 WindLink 模组提供的风向和风力倾斜，而不是使用光影包自身的雨雪摇晃效果。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
+
+option.MCWIND_LILY_PAD=WindLink 睡莲
+option.MCWIND_LILY_PAD.comment=使睡莲根据 WindLink 模组提供的风力上下浮动。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
+
+option.MCWIND_PENDANTS=WindLink 灯笼与锁链
+option.MCWIND_PENDANTS.comment=使灯笼和锁链根据 WindLink 模组提供的风向和风力像钟摆一样摆动。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
+
+option.MCWIND_NETHER_FOG=WindLink 下界雾气
 value.MCWIND_NETHER_FOG.0=关
 value.MCWIND_NETHER_FOG.1=开
+option.MCWIND_NETHER_FOG.comment=由 WindLink 的风场驱动下界风暴和烟雾，而不是固定螺旋上升。. §e[*]§r 此选项仅在安装了 WindLink 时生效。.
 
 option.PIXELATED_SHADOWS_MODE=像素化阴影模式
 option.PIXELATED_SHADOWS_MODE.comment=选择像素化阴影的渲染模式。. 默认为自动, 更适合绝大多数情况, 手动模式应当在自动模式错误判断当前资源包的纹理分辨率时的情况下启用。. §e[*]§r 本选项仅在启用 像素化阴影 选项时生效。.
@@ -3110,6 +3140,7 @@ option.PANINI_PROJECTION.comment=启用帕尼尼投影, 一种会减少屏幕�
 value.PANINI_PROJECTION.0=关
 
 option.BLACK_HOLE=黑洞
+option.BLACK_HOLE.comment=在末地的天空盒中添加一个黑洞。. 此选项滑块可以调节黑洞的亮度。. 其位置由黑洞位置设定控制。.
 value.BLACK_HOLE.0=关
 
 option.BLACK_HOLE_SHAPE=黑洞形状
@@ -3164,3 +3195,5 @@ option.BLACK_HOLE_STREAK=水平条纹
 option.BLACK_HOLE_STREAK.comment=为黑洞添加一道水平吸积盘条纹。.
 value.BLACK_HOLE_STREAK.0=关
 
+option.REFLECTIVE_HORSES=闪耀的马
+option.REFLECTIVE_HORSES.comment=每个孩子都喜欢闪亮的马！。. 一匹不闪亮的马是悲伤的马。.

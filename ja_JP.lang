@@ -864,6 +864,7 @@ option.IPBR_COMPAT_MODE_DEFINE.comment=IPBR+の機能の計算方式を調整し
 option.IPBR_PARTICLE_FEATURES=IPBR+ パーティクル機能
 option.IPBR_PARTICLE_FEATURES.comment=輝く溶岩パーティクルや、より色鮮やかな水パーティクルなど、いくつかのパーティクル機能を有効にします。.
 
+option.FANCY_GLASS=より良いガラス §c[-]§r
 option.FANCY_GLASS.comment=通常のガラスに半透明の層を追加することで改善します。. §c[-]§r 古いIrisバージョンでは機能しません。. §e[*]§r 「RPサポート」設定をIntegrated PBR+に設定する必要があります。.
 
 option.GREEN_SCREEN_LIME=グリーンスクリーン用黄緑色ブロック

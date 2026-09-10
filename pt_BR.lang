@@ -5,6 +5,8 @@ Contribute=Contribua com as traduções oficiais aqui: https://www.euphoriapatch
 option.LANG_FILE_HEADER=Traduções feitas pela comunidade, A tradução pode estar desatualizada. O SpacEagle17 não pode garantir sua precisão.
 option.TRANSLATORS=Traduzido por: Lucas Henrick
 
+shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.1§r\nComplementary add-on de SpacEagle17 \nAdicionando mais recursos únicos, e recursos opcionais exclusivos.\nVersões Desenvolvedor: §dwww.euphoriapatches.com/support§r
+
 #Profiles
 profile.POTATO=Desempenho: §a Resolução de calculadora
 profile.VERYLOW=Desempenho: § a Resolução bem Baixa
@@ -33,9 +35,11 @@ option.info1.comment=- O desempenho é um tema complexo no Minecraft porque é a
 
 option.info2=Quais são as melhores configurações?
 value.info2.0=
+option.info2.comment=As melhores configurações são subjetiva, mas ao usar a configuração padrão "Profile" será o ideal para maioria das pessoas. As configurações padrão foram ajustadas ao longo de anos com base nas avaliações e no feedback da comunidade, sempre com muita atenção ao equilíbrio entre visual e desempenho, mas você pode se sentir a vontade para fazer seus próprio ajustes e se divirta fazendo isso!!
 
 option.info3=O que é "Profile" ou "Visual Style"
 value.info3.0=
+option.info3.comment=A configuração "Profile" altera as configurações encontradas no menu "Configurações de Desempenho", sem afetar nenhuma configuração baseada em preferências. "Visual Style" altera os valores "Set by Style" que existem em muitas configurações baseadas em preferências, mas isso não impacta o desempenho de forma significativa.
 
 option.info4=O que é RP Support
 value.info4.0=
@@ -2628,7 +2632,7 @@ option.HIDE_VANILLA_STARS=Ocultar Estrelas Padrão
 option.HIDE_VANILLA_STARS.comment=Oculta as estrelas padrão do céu.
 
 option.SITUATIONAL_GLOWING_TRIMS=Detalhes Brilhantes Situacionais
-option.SITUATIONAL_GLOWING_TRIMS.comment=Detalhes só irão brilhar em cavernas e à noite. §e[*]§r Detalhes Brilhantes devem estar ativados para isso funcionar.
+option.SITUATIONAL_GLOWING_TRIMS.comment=Detalhes só vão brilhar em cavernas e à noite. §e[*]§r Detalhes Brilhantes devem estar ativados para isso funcionar.
 
 option.DO_IPBR_LIGHTS=ACT Luzes IPBR
 option.DO_IPBR_LIGHTS.comment=Esta opção faz com que fontes não luminosas do jogo emitam luz se forem emissivas via shader. (Recomendado: Ligado)
@@ -2882,7 +2886,7 @@ option.PHOTONICS_RESTIR_DENOISER_PASSES.comment=Número de passes que o denoiser
 value.PHOTONICS_RESTIR_DENOISER_PASSES.0=Desligado
 
 option.PHOTONICS_RESTIR_FLICKER_FIRE=Fogo Tremulante (ReSTIR)
-option.PHOTONICS_RESTIR_FLICKER_FIRE.comment=Fontes de luz de fogo irão tremular. §c[*]§r Esta opção só funciona com o modo de iluminação ReSTIR.
+option.PHOTONICS_RESTIR_FLICKER_FIRE.comment=Fontes de luz de fogo vão tremular. §c[*]§r Esta opção só funciona com o modo de iluminação ReSTIR.
 value.PHOTONICS_RESTIR_FLICKER_FIRE.0=Desligado
 
 option.PHOTONICS_VANILLA_LIGHT_FALLBACK=Luz Vanilla de Reserva
@@ -2957,7 +2961,7 @@ option.PIXELATED_SHADOWS_MODE.comment=Altera a forma como as sombras pixeladas s
 value.PIXELATED_SHADOWS_MODE.0=Automático
 
 option.PANINI_PROJECTION=Projeção Panini
-option.PANINI_PROJECTION.comment=Enables Panini Projection, which is a type of projection that reduces distortion at the edges of the screen, especially when using a high field of view (FOV). §e[-]§r Can make the image look stretched in the center, or blurrier overall.
+option.PANINI_PROJECTION.comment=Ativa a Projeção Panini, sendo um tipo de projeção que reduz a distorção nas bordas da tela, especialmente ao usar um campo de visão (FOV) alto. §e[-]§r Pode fazer com que a imagem pareça esticada no centro ou fique mais borrada geralmente
 value.PANINI_PROJECTION.0=DESLIGADO
 
 value.BLACK_HOLE.0=DESLIGADO
