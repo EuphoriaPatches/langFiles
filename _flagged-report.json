@@ -1,0 +1,16 @@
+[
+  {
+    "file": "zh_CN.lang",
+    "key": "option.MCWIND_USER.comment",
+    "language": "zh_CN",
+    "oldValue": "",
+    "existedBefore": false,
+    "newValue": "WindLink 模组支持的主开关。. 允许着色器响应 WindLink 模组提供的风向和风力。. §e[*]§r 此选项仅在安装了 WindLink 时生效 https://modrinth.com/project/windlink。. §e[*]§r 禁用后将回退到光影包自身的内置摇晃效果。.",
+    "matchedWords": [
+      "https://modrinth.com/project/windlink。."
+    ],
+    "reasons": [
+      "suspicious-url"
+    ]
+  }
+]
