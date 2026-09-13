@@ -5,7 +5,7 @@ Contribute=Contribua com as traduções oficiais aqui: https://www.euphoriapatch
 option.LANG_FILE_HEADER=Traduções feitas pela comunidade, A tradução pode estar desatualizada. O SpacEagle17 não pode garantir sua precisão.
 option.TRANSLATORS=Traduzido por: Lucas Henrick
 
-shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.1§r\nComplementary add-on de SpacEagle17 \nAdicionando mais recursos únicos, e recursos opcionais exclusivos.\nVersões Desenvolvedor: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.2§r\nComplementary add-on de SpacEagle17 \nAdicionando mais recursos únicos, e recursos opcionais exclusivos.\nVersões Desenvolvedor: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=Desempenho: §a Resolução de calculadora
@@ -1391,7 +1391,7 @@ screen.POPULAR_SETTINGS=§dConfigurações Populares
 screen.POPULAR_SETTINGS.comment=Estas são algumas das configurações mais populares no Euphoria Patches. Exceto o Advanced Colored Tracing (que é necessário para muitos efeitos), todas as opções aqui são exclusivas do Euphoria Patches e não podem ser encontradas no Shaderpack Complementary Original.
 screen.POPULAR_SETTINGS_2=Página 2
 screen.POPULAR_SETTINGS_3=Página 3
-screen.EP_VERSION=Euphoria Patches §d1.10.1
+screen.EP_VERSION=Euphoria Patches §d1.10.2
 screen.EP_VERSION.comment=§bVocê pode apoiar o SpacEagle17 no Patreon ou Ko-Fi e receber novas versões beta exclusivas.
 
 screen.MODDED_SETTINGS=Configurações de Mods
