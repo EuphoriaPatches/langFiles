@@ -5,7 +5,7 @@ Contribute=在此为官方贡献翻译：https://www.euphoriapatches.com/lang -�
 option.LANG_FILE_HEADER=本文档为社区贡献翻译 - 此文档翻译可能会过时。. SpacEagle17 不能保证翻译的准确性。.
 option.TRANSLATORS=本文档由 Surisen (Ruri) 及 Justinpro0715 翻译
 
-shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.2§r\nSpacEagle17 开发的附加包，为其添加了更多独特的可选功能和设置。. \n开发版本：§dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.2§r + §dEuphoria Patches 1.10.2§r\nSpacEagle17 开发的附加包，为其添加了更多独特的可选功能和设置。. \n开发版本：§dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=性能需求: §a极低
@@ -97,7 +97,7 @@ option.info17=测试版本: 从SpacEagle17的Patreon获取
 value.info17.0=
 option.info17.comment=可以直接通过 Patreon 和 Ko-Fi 对 SpacEagle17 进行支持的同时获得光影的独占开发版本。. §d§l§neuphoriapatches.com/support
 
-option.info18=对应 Complementary r5.9.1 版本
+option.info18=对应 Complementary r5.9.2 版本
 value.info18.0=
 option.info18.comment=感谢您安装 Euphoria Patches :)
 

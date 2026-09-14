@@ -5,7 +5,7 @@ Contribute=Contribute to the official translations here: https://www.euphoriapat
 option.LANG_FILE_HEADER=Translation files by the Community - The translation may be outdated. SpacEagle17 cannot guarantee their accuracy.
 option.TRANSLATORS=Translated by: Insert your name(s) here
 
-shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.2§r\nComplementary add-on by SpacEagle17 extending it with many more unique optional features and settings.\nDev versions: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.2§r + §dEuphoria Patches 1.10.2§r\nComplementary add-on by SpacEagle17 extending it with many more unique optional features and settings.\nDev versions: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=Performance: §aPotato
@@ -97,7 +97,7 @@ option.info17=Beta Version: SpacEagle17 Patreon
 value.info17.0=
 option.info17.comment=You can support SpacEagle17 on Patreon or Ko-Fi and access exclusive development versions. §d§l§neuphoriapatches.com/support
 
-option.info18=For Complementary r5.9.1
+option.info18=For Complementary r5.9.2
 value.info18.0=
 option.info18.comment=Thank you for Installing Euphoria Patches :)
 

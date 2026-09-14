@@ -5,7 +5,7 @@ Contribute=Přispěj k oficiálním překladům zde: https://www.euphoriapatches
 option.LANG_FILE_HEADER=Soubory překladů od komunity - Překlad může být zastaralý. SpacEagle17 nemůže zaručit jejich přesnost.
 option.TRANSLATORS=Přeložil: TerexG
 
-shaderDescription=§cComplementary Shaders r5.9.1§r + §dEuphoria Patches 1.10.2§r\nDoplněk pro Complementary od SpacEagle17, který jej rozšiřuje o mnoho různých volitelných funkcí a nastavení.\nVývojové verze: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.2§r + §dEuphoria Patches 1.10.2§r\nDoplněk pro Complementary od SpacEagle17, který jej rozšiřuje o mnoho různých volitelných funkcí a nastavení.\nVývojové verze: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=Výkon: §aBrambora
@@ -97,7 +97,7 @@ option.info17=Beta verze: Patreon SpacEagle17
 value.info17.0=
 option.info17.comment=Můžeš podpořit SpacEagle17 na Patreonu nebo Ko-Fi a získat přístup k exkluzivním verzím ve vývoji. §d§l§neuphoriapatches.com/support
 
-option.info18=Pro Complementary r5.9.1
+option.info18=Pro Complementary r5.9.2
 value.info18.0=
 option.info18.comment=Děkujeme za instalaci Euphoria Patches :)
 
