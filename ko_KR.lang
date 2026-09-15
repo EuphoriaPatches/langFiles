@@ -3,7 +3,7 @@
 option.LANG_FILE_HEADER=커뮤니티 제공 번역파일입니다 - 최신이 아닐 수도 있음. SpacEagle17이 정확도를 보장하진 않습니다.
 option.TRANSLATORS=번역제작자 : _StrawberrySushi
 
-shaderDescription=§cComplementary Shaders r5.9.2§r + §dEuphoria Patches 1.10.3§r\nSpacEagle17 이 제작한 Complementary 에드온, 여러 특수한 기능과 설정을 제공합니다. \n개발자 빌드: §dwww.euphoriapatches.com/support§r
+shaderDescription=§cComplementary Shaders r5.9.2§r + §dEuphoria Patches 1.10.4§r\nSpacEagle17 이 제작한 Complementary 에드온, 여러 특수한 기능과 설정을 제공합니다. \n개발자 빌드: §dwww.euphoriapatches.com/support§r
 
 #Profiles
 profile.POTATO=품질: §a최저
