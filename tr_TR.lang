@@ -243,6 +243,27 @@ screen.WORLD_OUTLINE_SETTINGS.comment=\nİsteğe bağlı dış hat efektleriyle 
 option.RP_MODE=
 option.RP_MODE.comment=
 
+value.shadowDistance.64.0=
+value.shadowDistance.80.0=
+value.shadowDistance.96.0=
+value.shadowDistance.112.0=
+value.shadowDistance.128.0=
+value.shadowDistance.160.0=
+value.shadowDistance.192.0=
+value.shadowDistance.224.0=
+value.shadowDistance.256.0=
+value.shadowDistance.320.0=
+value.shadowDistance.384.0=
+value.shadowDistance.512.0=
+value.shadowDistance.768.0=
+
+option.CLOUD_QUALITY=Bulut Kalitesi
+value.CLOUD_QUALITY.0=
+
+option.ATM_FOG_MULT=Atmosferik Sis
+
+option.CLOUD_UNBOUND_RAIN_ADD.comment=Yağmur veya kar sırasında uygulanan bulut miktarı artışını ayarlar.
+
 ####### Euphoria Patches #######
 
 #WATERMARK
