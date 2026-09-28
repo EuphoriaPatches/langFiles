@@ -35,12 +35,13 @@ value.info2.0=
 option.info3=Qué es "Perfil" o "Estilo Visual"
 value.info3.0=
 
-option.info4=Qué es el Soporte RP (o RP Support)
+option.info4=Qué es el Soporte PR (o RP Support)
 value.info4.0=
 
 option.info5=Qué son los ajustes que tienen color amarillo
 value.info5.0=
 
+option.info6=Algunos mods recomendados
 value.info6.0=
 
 option.info7=Dónde hacer preguntas o reportar problemas
@@ -208,7 +209,7 @@ screen.WORLD_OUTLINE_SETTINGS=Contorno del Mundo
 screen.WORLD_OUTLINE_SETTINGS.comment=Ajustes relacionados con efectos de contorno opcionales.
 
 #Settings
-option.RP_MODE=Soporte de RP (RP Support)
+option.RP_MODE=Soporte de PR (RP Support)
 value.RP_MODE.0=§aBásico
 value.RP_MODE.1=§bIntegrated PBR+
 value.RP_MODE.2=§eseuspbr (RP requerido)
@@ -457,6 +458,7 @@ value.NIGHT_STAR_AMOUNT.4=Muy Alta
 option.RAINBOWS=Arcoíris
 value.RAINBOWS.1=Tras la lluvia
 
+option.RAINBOW_STYLE_DEFINE=Estilo del Arcoíris
 value.RAINBOW_STYLE_DEFINE.-1=Definido por el Estilo Visual
 value.RAINBOW_STYLE_DEFINE.1=Reimagined
 value.RAINBOW_STYLE_DEFINE.4=Unbound
@@ -642,6 +644,8 @@ value.WAVING_I.125=125 §c[-]
 value.WAVING_I.150=150 §c[-]
 value.WAVING_I.175=175 §c[-]
 value.WAVING_I.200=200 §c[-]
+
+option.ATM_COLOR_MULTS=§eMultiplicadores de color de la atmósfera
 
 ####### Euphoria Patches #######
 
@@ -898,6 +902,13 @@ value.BORDER_FOG_DISTANCE_END.100=1,75
 value.BORDER_FOG_DISTANCE_END.500=2,00
 value.BORDER_FOG_DISTANCE_END.1000=2,50
 
+option.REDSTONE_IPBR_R=Detección de rojos
+option.REDSTONE_IPBR_R.comment=Cambia esto si la detección no funciona con tu paquete de recursos. Auméntalo si los píxeles son más rojos, disminúyelo si son menos rojos de lo que deberían ser.
+option.REDSTONE_IPBR_G=Detección de verdes
+option.REDSTONE_IPBR_G.comment=Cambia esto si la detección no funciona con tu paquete de recursos. Auméntalo si los píxeles son más verdes, disminúyelo si son menos verdes de lo que deberían ser.
+option.REDSTONE_IPBR_B=Detección de azules
+option.REDSTONE_IPBR_B.comment=Cambia esto si la detección no funciona con tu paquete de recursos. Auméntalo si los píxeles son más azules, disminúyelo si son menos azules de lo que deberían ser.
+
 option.BAD_APPLE=Bad Apple
 
 value.tonemap.GTTonemap=Gran Turismo
@@ -912,7 +923,28 @@ value.tonemap_right.GTTonemap=Gran Turismo
 
 option.WAVE_EVERYTHING.comment=macarena  :')
 
+option.SEASON_START.comment=Temporada en la que el ciclo empieza.
+value.SEASON_START.0=Verano
+value.SEASON_START.1=Otoño
+value.SEASON_START.2=Invierno
+value.SEASON_START.3=Primavera
+
+option.SEASON_LENGTH=Duración de Temporada
+option.SEASON_LENGTH.comment=Cambia la duración de cada temporada en días de Minecraft.
+value.SEASON_LENGTH.1=1 día de Minecraft
+suffix.SEASON_LENGTH=\ días de Minecraft
+
+value.SEASON_TRANSITION_START.0=Inmediatamente
+
 option.ATLAS_ROTATION.comment=:).
+
+option.MCBL_MAIN_DEFINE=Iluminación de Color Euphoria
+
+option.RETRO_LOOK=Aspecto Retro
+
+option.CURVE_DISPLAY=Visualización Curvada
+option.CURVE_DISPLAY.comment=Hace que la visualización se vea curvada.
+option.CURVATURE_AMOUNT=Cantidad de Curvatura
 
 option.PALETTE1R=Rojo Color1
 option.PALETTE1G=Verde Color1
