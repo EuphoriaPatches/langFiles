@@ -2044,9 +2044,6 @@ option.SILHOUETTE_BRIGHTNESS=Silhouette Brightness
 option.RAIN_ATMOSPHERE=Epic Thunderstorm
 option.RAIN_ATMOSPHERE.comment=Improves thunderstorms significantly when a lightning bolt strikes. §e[*]§r Works much better with Iris
 
-option.BLUE_SCREEN=Blue Screen
-option.BLUE_SCREEN.comment=Turns "Blue Concrete", "Blue Wool", and "Blue Carpet" into blue screens for video editing. Tip 1: Turn off "Bloom" option to improve separation. Tip 2: Put lights under blue carpets for lighting. Tip 3: You can turn off Anti-Aliasing (FXAA) and set Detail Quality to Potato in Performance Settings to disable all filtering and get pixel-perfect separation.
-
 option.MIRROR_DIMENSION=Mirror Dimension
 option.MIRROR_DIMENSION.comment=You have learned the art of magic and are brave enough to enter the mirror dimension.
 
