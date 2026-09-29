@@ -815,7 +815,7 @@ option.MOTION_BLURRING_STRENGTH.comment=Adjusts the intensity of motion blur.
 
 option.WORLD_BLUR=§eWorld Blur§r
 option.WORLD_BLUR.comment=Enables world blurring. Distance Blur: Blur gets applied like fog, depending on the distance from the camera. Depth of Field: Blurring happens depending on the focus point of the camera. §c[-]§r This effect can severely impact performance.
-value.WORLD_BLUR.0=§aOFF
+value.WORLD_BLUR.-1=§aOFF
 value.WORLD_BLUR.1=§cDistance Blur
 value.WORLD_BLUR.2=§cDepth of Field
 
@@ -1096,8 +1096,12 @@ option.WAVING_WATER_VERTEX.comment=Adds movement to water position to simulate w
 option.WAVING_RAIN=Waving Rain/Snow Texture
 option.WAVING_RAIN.comment=Adds movement to falling rain and snow textures to make it look more dynamic.
 
-option.SPECIAL_PORTAL_EFFECTS=Special Portal Effects
-option.SPECIAL_PORTAL_EFFECTS.comment=Adds special animations and emission to Nether Portals, End Portals, and End Gateways.
+option.SPECIAL_PORTAL_EFFECT=Special Portal Effects
+option.SPECIAL_PORTAL_EFFECT.comment=Adds special animations and emission to Nether Portals, End Portals, and End Gateways.
+value.SPECIAL_PORTAL_EFFECT.0=OFF
+value.SPECIAL_PORTAL_EFFECT.1=End Portal
+value.SPECIAL_PORTAL_EFFECT.2=Nether Portal
+value.SPECIAL_PORTAL_EFFECT.3=Full
 
 option.REFLECTION_RES=§eReflection Resolution§r
 option.REFLECTION_RES.comment=Changes the resolution of PBR reflections on blocks (and the world-space reflections if you have that setting enabled) to gain performance. §c[-]§r "Full" resolution reflections can impact performance way more than expected in some situations. §e[*]§r This feature does not work on Optifine.
@@ -3195,3 +3199,6 @@ value.BLACK_HOLE_STREAK.0=OFF
 
 option.REFLECTIVE_HORSES=Glistening Horses
 option.REFLECTIVE_HORSES.comment=Every kid loves a shiny horse! A horse which is not shiny is a sad horse.
+
+option.MODDED_FOG_SUPPORT=Modded Fog Support
+option.MODDED_FOG_SUPPORT.comment=Adds support for modded fogs, it should not do anything if a mod does not add a custom fog.
