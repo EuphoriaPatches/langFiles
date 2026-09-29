@@ -815,7 +815,7 @@ option.MOTION_BLURRING_STRENGTH.comment=モーションブラーの強さを調�
 
 option.WORLD_BLUR=§eワールドブラー§r
 option.WORLD_BLUR.comment=ワールド全体のぼかしを有効にします。. 距離ブラー: カメラからの距離に応じて霧のようにぼかしが適用されます\n被写界深度: カメラの焦点に応じてぼかしが発生します\n§c[-]§r この効果はパフォーマンスに大きな影響を与える可能性があります。.
-value.WORLD_BLUR.0=§aOFF
+value.WORLD_BLUR.-1=§aOFF
 value.WORLD_BLUR.1=§c距離ブラー
 value.WORLD_BLUR.2=§c被写界深度
 
@@ -1096,8 +1096,9 @@ option.WAVING_WATER_VERTEX.comment=水の位置に動きを追加し、風をシ
 option.WAVING_RAIN=揺れる雨/雪のテクスチャ
 option.WAVING_RAIN.comment=降ってくる雨や雪のテクスチャに動きを追加し、よりダイナミックに見せます。.
 
-option.SPECIAL_PORTAL_EFFECTS=特殊なポータルエフェクト
-option.SPECIAL_PORTAL_EFFECTS.comment=ネザーポータル、エンドポータル、エンドゲートウェイに特別なアニメーションと発光効果を追加します。.
+option.SPECIAL_PORTAL_EFFECT=特殊なポータルエフェクト
+option.SPECIAL_PORTAL_EFFECT.comment=ネザーポータル、エンドポータル、エンドゲートウェイに特別なアニメーションと発光効果を追加します。.
+value.SPECIAL_PORTAL_EFFECT.0=OFF
 
 option.REFLECTION_RES=§e反射の解像度§r
 option.REFLECTION_RES.comment=ブロックのPBR反射、およびワールドスペース反射 (有効になっている場合) の解像度を変更し、パフォーマンスを増加させます。. §c[-]§r 「完全」の解像度の反射は、一部のシーンでパフォーマンスに予想以上の影響を与える可能性があります。. §e[*]§r この機能はOptifine上では動作しません。.
@@ -2043,9 +2044,6 @@ option.SILHOUETTE_BRIGHTNESS=シルエットの明るさ
 
 option.RAIN_ATMOSPHERE=豪華な雷雨
 option.RAIN_ATMOSPHERE.comment=雷が落ちた際の雷雨の表現を大幅に向上させます。. §e[*]§r Iris上でより良く動作します。.
-
-option.BLUE_SCREEN=ブルースクリーン
-option.BLUE_SCREEN.comment=「青色のコンクリート」「青色の羊毛」「青色のカーペット」を動画編集用のブルースクリーンに変えます。. ヒント1: 「ブルーム」設定を無効にすると分離が改善されます\nヒント2: 照明用に青色のカーペットの下に光源を置いてください\nヒント3: アンチエイリアシング (FXAA) を無効にし、パフォーマンス設定で「細部の品質」を「超低」に設定すると、フィルタリングがすべて無効化されピクセルパーフェクトな分離が可能です
 
 option.MIRROR_DIMENSION=ミラー・ディメンション
 option.MIRROR_DIMENSION.comment=魔術を習得したあなたは、ミラー・ディメンションに足を踏み入れるだけの勇気を持っている。.
@@ -3198,3 +3196,4 @@ value.BLACK_HOLE_STREAK.0=OFF
 
 option.REFLECTIVE_HORSES=煌めく馬
 option.REFLECTIVE_HORSES.comment=子供はみんなキラキラの馬が大好き！\nキラキラしてない馬は悲しい馬だよ。.
+

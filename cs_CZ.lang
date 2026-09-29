@@ -815,7 +815,7 @@ option.MOTION_BLURRING_STRENGTH.comment=Upravuje intenzitu rozmazání pohybu.
 
 option.WORLD_BLUR=§eRozostření světa§r
 option.WORLD_BLUR.comment=Zapíná rozostření světa. Vzdálenost: Rozmazání se chová jako mlha, je přidáno podle vzdálenosti od kamery. Hloubka ostrosti: Rozmazání je založeno na bodu zaměření kamery. §c[-]§r Tento efekt může mít vážný dopad na výkon.
-value.WORLD_BLUR.0=§aVYP
+value.WORLD_BLUR.-1=§aVYP
 value.WORLD_BLUR.1=§cVzdálenost
 value.WORLD_BLUR.2=§cHloubka ostrosti
 
@@ -1096,8 +1096,9 @@ option.WAVING_WATER_VERTEX.comment=Přidává pohyb k poloze vody pro napodoben�
 option.WAVING_RAIN=Vlající textura deště/sněhu
 option.WAVING_RAIN.comment=Přidává pohyb k texturám padajícího deště a sněhu, aby vypadaly více dynamicky.
 
-option.SPECIAL_PORTAL_EFFECTS=Speciální efekty portálů
-option.SPECIAL_PORTAL_EFFECTS.comment=Přidává speciální animace a osvětlení k Netherovým a Endovým portálům a k Endovým branám.
+option.SPECIAL_PORTAL_EFFECT=Speciální efekty portálů
+option.SPECIAL_PORTAL_EFFECT.comment=Přidává speciální animace a osvětlení k Netherovým a Endovým portálům a k Endovým branám.
+value.SPECIAL_PORTAL_EFFECT.0=VYP
 
 option.REFLECTION_RES=§eRozlišení odrazů§r
 option.REFLECTION_RES.comment=Mění rozlišení PBR odrazů na blocích (a odrazů v prostoru světa, pokud máš toto nastavení zapnuté) pro zlepšení výkonu. §c[-]§r "Plné" rozlišení odrazů může mít v některých situacích mnohem větší dopad na výkon, než je očekáváno. §e[*]§r Tato funkce nefunguje na Optifinu.
@@ -3195,3 +3196,4 @@ value.BLACK_HOLE_STREAK.0=VYP
 
 option.REFLECTIVE_HORSES=Lesknoucí se koně
 option.REFLECTIVE_HORSES.comment=Každé dítě má rádo lesklého koně! Kůň, který není lesklý, je smutný.
+

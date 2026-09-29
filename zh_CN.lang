@@ -815,7 +815,7 @@ option.MOTION_BLURRING_STRENGTH.comment=调节运动模糊的强度。.
 
 option.WORLD_BLUR=§e视界模糊类型§r
 option.WORLD_BLUR.comment=启用视界模糊。. 距离模糊: 模糊的作用方式类似于雾气, 由距离镜头的距离决定。. 景深: 模糊的作用区域由镜头对的焦点决定。. §c[-]§r 本选项的效果会严重影响性能。.
-value.WORLD_BLUR.0=§a关
+value.WORLD_BLUR.-1=§a关
 value.WORLD_BLUR.1=§c距离模糊
 value.WORLD_BLUR.2=§c景深
 
@@ -1096,8 +1096,9 @@ option.WAVING_WATER_VERTEX.comment=给水面添加摇晃运动模拟风的吹拂
 option.WAVING_RAIN=雨雪纹理摇晃
 option.WAVING_RAIN.comment=为下落的雨水和雪花粒子纹理添加运动效果使其看起来更加动态。.
 
-option.SPECIAL_PORTAL_EFFECTS=传送门特殊效果
-option.SPECIAL_PORTAL_EFFECTS.comment=为下界传送门, 末地传送门, 末地折跃门添加的特殊动画和发光效果。.
+option.SPECIAL_PORTAL_EFFECT=传送门特殊效果
+option.SPECIAL_PORTAL_EFFECT.comment=为下界传送门, 末地传送门, 末地折跃门添加的特殊动画和发光效果。.
+value.SPECIAL_PORTAL_EFFECT.0=关
 
 option.REFLECTION_RES=§e反射分辨率 [Iris]§r
 option.REFLECTION_RES.comment=使得方块上基于物理的的反射 (及世界空间反射[若已启用]) 以半分辨率来渲染, 以此获得更好的性能表现。. §c[-]§r "全" 分辨率 反射在某些特殊场景下对性能的影响可能比预期的要大得多。. §e[*]§r 本功能在 OptiFine 上无效。.
@@ -2043,9 +2044,6 @@ option.SILHOUETTE_BRIGHTNESS=剪影亮度
 
 option.RAIN_ATMOSPHERE=史诗雷雨氛围
 option.RAIN_ATMOSPHERE.comment=当闪电降下时显著提高雷雨天的氛围。. §e[*]§r 在 Iris 上效果最佳。.
-
-option.BLUE_SCREEN=蓝幕
-option.BLUE_SCREEN.comment=改变蓝色混凝土和蓝色羊毛的渲染方式, 使其变为蓝幕以便于视频剪辑。. Tip 1: 关闭 泛光 选项来提高分离程度。. Tip 2:在蓝色地毯下放置光源来获得照明效果。. Tip 3: 关闭 抗锯齿 (FXAA) 然后设置位于 性能设置 中的 细节质量 选项值为极低来禁用所有降噪(抗锯齿)设置来获得完美像素分离效果。.
 
 option.MIRROR_DIMENSION=翻转维度
 option.MIRROR_DIMENSION.comment=你已经理解了魔法的艺术, 并且有足够的勇气进入翻转维度。.
@@ -3198,3 +3196,4 @@ value.BLACK_HOLE_STREAK.0=关
 
 option.REFLECTIVE_HORSES=闪耀的马
 option.REFLECTIVE_HORSES.comment=每个孩子都喜欢闪亮的马！。. 一匹不闪亮的马是悲伤的马。.
+

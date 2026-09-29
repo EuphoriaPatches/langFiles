@@ -749,7 +749,7 @@ option.MOTION_BLURRING_STRENGTH.comment=모션 블러의 강도를 조정합니�
 
 option.WORLD_BLUR=§e월드 블러§r
 option.WORLD_BLUR.comment=월드 블러를 활성화합니다.
-value.WORLD_BLUR.0=§a끄기
+value.WORLD_BLUR.-1=§a끄기
 value.WORLD_BLUR.1=§c거리별 블러
 value.WORLD_BLUR.2=§c피사계 심도
 
@@ -1016,8 +1016,9 @@ option.WAVING_WATER_VERTEX.comment=물의 위치에 움직임을 추가하여 �
 option.WAVING_RAIN=Waving Rain/Snow Texture (비/눈 텍스처 흔들림)
 option.WAVING_RAIN.comment=내리는 비와 눈 텍스처에 움직임을 추가하여 더 역동적으로 보이게 합니다.
 
-option.SPECIAL_PORTAL_EFFECTS=Special Portal Effects (포탈 특수 효과)
-option.SPECIAL_PORTAL_EFFECTS.comment=네더 포탈, 엔드 포탈, 엔드 게이트웨이에 특수 애니메이션과 발광 효과를 추가합니다.
+option.SPECIAL_PORTAL_EFFECT=Special Portal Effects (포탈 특수 효과)
+option.SPECIAL_PORTAL_EFFECT.comment=네더 포탈, 엔드 포탈, 엔드 게이트웨이에 특수 애니메이션과 발광 효과를 추가합니다.
+value.SPECIAL_PORTAL_EFFECT.0=켜기
 
 option.REFLECTION_RES=§eReflection Resolution§r (반사 해상도)
 option.REFLECTION_RES.comment=성능 향상을 위해 블록의 PBR 반사 해상도와 월드 공간 반사 설정이 활성화된 경우 해당 반사의 해상도를 변경합니다. §c[-]§r "Full" 해상도 반사는 일부 상황에서 예상보다 훨씬 큰 성능 영향을 줄 수 있습니다. §e[*]§r 이 기능은 Optifine에서는 작동하지 않습니다.
@@ -1605,9 +1606,6 @@ option.SILHOUETTE_BRIGHTNESS=Silhouette Brightness (실루엣 밝기)
 
 option.RAIN_ATMOSPHERE=Epic Thunderstorm (강력한 폭풍)
 option.RAIN_ATMOSPHERE.comment=번개가 칠 때 폭풍우 효과를 크게 개선합니다. §e[*]§r Iris에서 더 잘 작동합니다.
-
-option.BLUE_SCREEN=Blue Screen (블루 크로마키)
-option.BLUE_SCREEN.comment=“Blue Concrete”, “Blue Wool”, “Blue Carpet”를 영상 편집용 블루 스크린으로 변환합니다.
 
 option.MIRROR_DIMENSION=Mirror Dimension (거울 차원)
 option.MIRROR_DIMENSION.comment=당신은 마법의 기술을 익혔고, 거울 차원에 들어갈 만큼 용감해졌습니다.

@@ -281,6 +281,8 @@ value.LIGHTSHAFT_QUALI_DEFINE.1=§eLaag
 value.LIGHTSHAFT_QUALI_DEFINE.2=§eMedium
 value.LIGHTSHAFT_QUALI_DEFINE.3=§cHoog
 
+value.WORLD_BLUR.-1=§aUIT
+
 ####### Euphoria Patches #######
 
 #WATERMARK

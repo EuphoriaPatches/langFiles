@@ -784,7 +784,7 @@ option.MOTION_BLURRING_STRENGTH.comment=Dostosowuje intensywność rozmycia ruch
 
 option.WORLD_BLUR=§e Efekt Rozmycia§r
 option.WORLD_BLUR.comment=Włącza efekty rozmycia. Odległość: Rozmycie jest stosowane jak mgła, w zależności od odległości od kamery. Głębia Ostrości: Rozmycie jest stosowane w zależności od punktu ostrości kamery. §c[-]§r Ten efekt może poważnie wpłynąć na wydajność.
-value.WORLD_BLUR.0=§aWYŁ.
+value.WORLD_BLUR.-1=WYŁ.
 value.WORLD_BLUR.1=§cOdległość
 value.WORLD_BLUR.2=§cGłębia Ostrości
 
@@ -1046,8 +1046,9 @@ option.WAVING_WATER_VERTEX.comment=Dodaje ruch do powierzchni wody w celu symula
 option.WAVING_RAIN=Falująca Cząsteczki Pogodowe
 option.WAVING_RAIN.comment=Dodaje ruch do tekstur padającego deszczu i śniegu, aby wyglądały bardziej dynamicznie.
 
-option.SPECIAL_PORTAL_EFFECTS=Specjalne Efekty Portali
-option.SPECIAL_PORTAL_EFFECTS.comment=Dodaje specjalne animacje i emisje do portali Netheru, portali endu i bram endu.
+option.SPECIAL_PORTAL_EFFECT=Specjalne Efekty Portali
+option.SPECIAL_PORTAL_EFFECT.comment=Dodaje specjalne animacje i emisje do portali Netheru, portali endu i bram endu.
+value.SPECIAL_PORTAL_EFFECT.0=WŁ.
 
 option.REFLECTION_RES=§eRozdzielczość Odbić§r
 option.REFLECTION_RES.comment=Zmienia rozdzielczość odbić na blokach (oraz odbić w przestrzeni świata, jeśli masz włączone to ustawienie) w celu uzyskania lepszej wydajności. §c[-]§r Odbicia w „pełnej” rozdzielczości mogą w niektórych sytuacjach wpływać na wydajność znacznie bardziej niż można by się spodziewać. §e[*]§r Ta funkcja nie działa w Optifine.
@@ -1926,9 +1927,6 @@ option.SILHOUETTE_BRIGHTNESS=Jasność Sylwetki
 
 option.RAIN_ATMOSPHERE=Epickie Burze
 option.RAIN_ATMOSPHERE.comment=Znacząco poprawia burze z piorunami. §e[*]§r Działa znacznie lepiej z Iris
-
-option.BLUE_SCREEN=Niebieski Ekran
-option.BLUE_SCREEN.comment=Przekształca "Niebieski Beton", "Niebieską Wełnę" i "Niebieski Dywan" w niebieskie ekrany do edycji wideo. Wskazówka 1: Wyłącz opcję "Blask", aby poprawić separację. Wskazówka 2: Umieść światła pod niebieskimi dywanami, aby je oświetlić. Wskazówka 3: Możesz wyłączyć antyaliasing (FXAA) i ustawić jakość detali na "ziemniak" w ustawieniach jakości, aby wyłączyć filtrowanie obrazu i uzyskać idealną separację pikseli.
 
 option.MIRROR_DIMENSION=Wymiar Lustrzany
 option.MIRROR_DIMENSION.comment=Nauczyłeś się czarnej magii i odważyłeś się, wkroczyć do wymiaru lustrzanego.

@@ -547,6 +547,7 @@ value.FXAA_TAA_INTERACTION.6=60
 value.FXAA_TAA_INTERACTION.8=80
 value.FXAA_TAA_INTERACTION.10=100
 
+value.WORLD_BLUR.-1=§aDESACTIVADA
 value.WORLD_BLUR.2=§cProfundidad del Campo de Visión
 
 option.WB_CHROMATIC=Desenfoque Cromático
@@ -644,6 +645,8 @@ value.WAVING_I.125=125 §c[-]
 value.WAVING_I.150=150 §c[-]
 value.WAVING_I.175=175 §c[-]
 value.WAVING_I.200=200 §c[-]
+
+value.SPECIAL_PORTAL_EFFECT.0=DESACTIVADO
 
 option.ATM_COLOR_MULTS=§eMultiplicadores de color de la atmósfera
 
@@ -1071,3 +1074,4 @@ option.BLACK_HOLE_LATITUDE.comment=Modo de Posición Fija: posiciona la posició
 value.BLACK_HOLE_STREAK.0=Sin brillo
 
 option.REFLECTIVE_HORSES=Caballos Brillantes
+

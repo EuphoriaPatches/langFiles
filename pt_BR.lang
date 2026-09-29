@@ -798,7 +798,7 @@ option.MOTION_BLURRING_STRENGTH.comment=Ajuda a ajustar a intensidade do desfoqu
 
 option.WORLD_BLUR=§eDesfoque do Mundo
 option.WORLD_BLUR.comment=Ativa o desfoque do mundo. Desfoque de Distância: O desfoque é aplicado como neblina, dependendo da distância da câmera. Profundidade de Campo: O desfoque depende do ponto de foco da câmera. §c[-]§r Este efeito pode impactar bastante o desempenho.
-value.WORLD_BLUR.0=DESLIGADO
+value.WORLD_BLUR.-1=DESLIGADO
 value.WORLD_BLUR.1=§cDesfoque de Distância
 value.WORLD_BLUR.2=§cProfundidade de Campo
 
@@ -1065,8 +1065,9 @@ option.WAVING_WATER_VERTEX.comment=Adiciona movimento à posição da água para
 option.WAVING_RAIN=Textura de Chuva/Neve Ondulante
 option.WAVING_RAIN.comment=Adiciona movimento às texturas de chuva e neve para deixá-las mais dinâmicas.
 
-option.SPECIAL_PORTAL_EFFECTS=Efeitos Especiais de Portal
-option.SPECIAL_PORTAL_EFFECTS.comment=Adiciona animações e emissão especiais aos portais do Nether, End e Portais de Entrada.
+option.SPECIAL_PORTAL_EFFECT=Efeitos Especiais de Portal
+option.SPECIAL_PORTAL_EFFECT.comment=Adiciona animações e emissão especiais aos portais do Nether, End e Portais de Entrada.
+value.SPECIAL_PORTAL_EFFECT.0=Desligado
 
 option.REFLECTION_RES=§e Resolução dos Reflexos§r
 option.REFLECTION_RES.comment=Altera a resolução das reflexões PBR nos blocos (e as reflexões em espaço de mundo, se você tiver essa configuração ativada) para ganhar desempenho. §c[-]§r Reflexões em resolução "Completa" podem impactar o desempenho muito mais do que o esperado em algumas situações. §e[*]§r Este recurso não funciona no Optifine.
@@ -1965,9 +1966,6 @@ option.SILHOUETTE_BRIGHTNESS=Brilho da Silhueta
 
 option.RAIN_ATMOSPHERE=Tempestade Épica
 option.RAIN_ATMOSPHERE.comment=Melhora significativamente as tempestades quando um raio cai. §e[*]§r Funciona muito melhor com Iris
-
-option.BLUE_SCREEN=Tela Azul
-option.BLUE_SCREEN.comment=Transforma "Concreto Azul", "Lã Azul" e "Carpete Azul" em telas azuis para edição de vídeo. Dica 1: Desative a opção "Brilho Suave" para melhorar a separação. Dica 2: Coloque luzes sob os carpetes azuis para iluminação. Dica 3: Você pode desativar o Anti-Aliasing (FXAA) e definir a Qualidade de Detalhe como Batata nas Configurações de Desempenho para desativar todos os filtros e obter separação perfeita de pixels.
 
 option.MIRROR_DIMENSION=Dimensão do Espelho
 option.MIRROR_DIMENSION.comment=Você aprendeu a arte da magia e é corajoso o suficiente para entrar na dimensão do espelho.
