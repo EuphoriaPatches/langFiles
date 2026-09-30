@@ -1097,8 +1097,11 @@ option.WAVING_RAIN=Колыхание дождя и снега
 option.WAVING_RAIN.comment=Добавляет движение к текстурам дождя и снега для придания им динамичности.
 
 option.SPECIAL_PORTAL_EFFECT=Особые эффекты порталов
-option.SPECIAL_PORTAL_EFFECT.comment=Добавляет анимации и свечение порталам в Незер, Энд и вратам Энда.
+option.SPECIAL_PORTAL_EFFECT.comment=Добавляет анимации и свечение порталам Незера, Энда и вратам Энда.
 value.SPECIAL_PORTAL_EFFECT.0=Нет
+value.SPECIAL_PORTAL_EFFECT.1=Портал Энда
+value.SPECIAL_PORTAL_EFFECT.2=Портал Незера
+value.SPECIAL_PORTAL_EFFECT.3=Все
 
 option.REFLECTION_RES=§eОтражения с половинным разрешением§r
 option.REFLECTION_RES.comment=Отображает PBR-отражения на блоках (и отражения в мировом пространстве, если они включены) в половинном разрешении для повышения производительности. §c[-]§r В некоторых ситуациях отражения с 'полным' разрешением могут повлиять на производительность гораздо сильнее, чем ожидается. §e[*]§r Эта функция не работает в Optifine.
@@ -3197,3 +3200,5 @@ value.BLACK_HOLE_STREAK.0=Нет
 option.REFLECTIVE_HORSES=Сверкающие лошадки
 option.REFLECTIVE_HORSES.comment=Каждый ребёнок любит блестящих лошадок! Ведь лошадь, которая не блестит, — грустная лошадь.
 
+option.MODDED_FOG_SUPPORT=Поддержка тумана из модов
+option.MODDED_FOG_SUPPORT.comment=Добавляет поддержку туманов из модов. Эта настройка ни на что не влияет, если мод не добавляет собственный эффект тумана.

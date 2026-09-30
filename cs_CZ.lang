@@ -1099,6 +1099,9 @@ option.WAVING_RAIN.comment=Přidává pohyb k texturám padajícího deště a s
 option.SPECIAL_PORTAL_EFFECT=Speciální efekty portálů
 option.SPECIAL_PORTAL_EFFECT.comment=Přidává speciální animace a osvětlení k Netherovým a Endovým portálům a k Endovým branám.
 value.SPECIAL_PORTAL_EFFECT.0=VYP
+value.SPECIAL_PORTAL_EFFECT.1=Endový portál
+value.SPECIAL_PORTAL_EFFECT.2=Netherový portál
+value.SPECIAL_PORTAL_EFFECT.3=Plné
 
 option.REFLECTION_RES=§eRozlišení odrazů§r
 option.REFLECTION_RES.comment=Mění rozlišení PBR odrazů na blocích (a odrazů v prostoru světa, pokud máš toto nastavení zapnuté) pro zlepšení výkonu. §c[-]§r "Plné" rozlišení odrazů může mít v některých situacích mnohem větší dopad na výkon, než je očekáváno. §e[*]§r Tato funkce nefunguje na Optifinu.
@@ -3197,3 +3200,5 @@ value.BLACK_HOLE_STREAK.0=VYP
 option.REFLECTIVE_HORSES=Lesknoucí se koně
 option.REFLECTIVE_HORSES.comment=Každé dítě má rádo lesklého koně! Kůň, který není lesklý, je smutný.
 
+option.MODDED_FOG_SUPPORT=Podpora modované mlhy
+option.MODDED_FOG_SUPPORT.comment=Přidává podporu pro modované mlhy, nemělo by nic dělat, pokud mod nepřidává vlastní mlhu.
