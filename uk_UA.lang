@@ -1099,6 +1099,9 @@ option.WAVING_RAIN.comment=Додає коливання для дощу та с
 option.SPECIAL_PORTAL_EFFECT=Спеціальні ефекти порталу
 option.SPECIAL_PORTAL_EFFECT.comment=Додає спеціальні анімації та випромінювання до порталів Незеру, Енду і воріт Енду.
 value.SPECIAL_PORTAL_EFFECT.0=УВІМК.
+value.SPECIAL_PORTAL_EFFECT.1=Портал Енду
+value.SPECIAL_PORTAL_EFFECT.2=Портал Незеру
+value.SPECIAL_PORTAL_EFFECT.3=Повний
 
 option.REFLECTION_RES=§eРоздільність відблисків§r
 option.REFLECTION_RES.comment=Змінює роздільність відблисків PBR на блоках (а також відблисків простору світу, якщо ввімкнено) для підвищення продуктивности. §c[-]§r Відблиски з повною роздільністю в певних ситуаціях можуть суттєвіше впливати на продуктивність, ніж очікувалося. §e[*]§r Не працює з Optifine.
@@ -3197,3 +3200,5 @@ value.BLACK_HOLE_STREAK.0=УВІМК.
 option.REFLECTIVE_HORSES=Блискучі коні
 option.REFLECTIVE_HORSES.comment=Кожна дитина любить блискучого коня! Кінь, який не блищить — це сумний кінь.
 
+option.MODDED_FOG_SUPPORT=Підтримка туману модів
+option.MODDED_FOG_SUPPORT.comment=Додає підтримку до туманів з модів, це не повинно нічого робити, якщо немає мода, який додає власний туман.

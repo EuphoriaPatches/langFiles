@@ -1099,6 +1099,9 @@ option.WAVING_RAIN.comment=降ってくる雨や雪のテクスチャに動き�
 option.SPECIAL_PORTAL_EFFECT=特殊なポータルエフェクト
 option.SPECIAL_PORTAL_EFFECT.comment=ネザーポータル、エンドポータル、エンドゲートウェイに特別なアニメーションと発光効果を追加します。.
 value.SPECIAL_PORTAL_EFFECT.0=OFF
+value.SPECIAL_PORTAL_EFFECT.1=エンドポータル
+value.SPECIAL_PORTAL_EFFECT.2=ネザーポータル
+value.SPECIAL_PORTAL_EFFECT.3=完全
 
 option.REFLECTION_RES=§e反射の解像度§r
 option.REFLECTION_RES.comment=ブロックのPBR反射、およびワールドスペース反射 (有効になっている場合) の解像度を変更し、パフォーマンスを増加させます。. §c[-]§r 「完全」の解像度の反射は、一部のシーンでパフォーマンスに予想以上の影響を与える可能性があります。. §e[*]§r この機能はOptifine上では動作しません。.
@@ -3197,3 +3200,5 @@ value.BLACK_HOLE_STREAK.0=OFF
 option.REFLECTIVE_HORSES=煌めく馬
 option.REFLECTIVE_HORSES.comment=子供はみんなキラキラの馬が大好き！\nキラキラしてない馬は悲しい馬だよ。.
 
+option.MODDED_FOG_SUPPORT=Modの霧のサポート
+option.MODDED_FOG_SUPPORT.comment=Modで追加される霧へのサポートを追加します。. Modが独自の霧を追加しない場合は何も起こりません。.
