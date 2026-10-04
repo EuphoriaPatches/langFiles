@@ -1099,6 +1099,9 @@ option.WAVING_RAIN.comment=为下落的雨水和雪花粒子纹理添加运动�
 option.SPECIAL_PORTAL_EFFECT=传送门特殊效果
 option.SPECIAL_PORTAL_EFFECT.comment=为下界传送门, 末地传送门, 末地折跃门添加的特殊动画和发光效果。.
 value.SPECIAL_PORTAL_EFFECT.0=关
+value.SPECIAL_PORTAL_EFFECT.1=末地传送门
+value.SPECIAL_PORTAL_EFFECT.2=下界传送门
+value.SPECIAL_PORTAL_EFFECT.3=完整
 
 option.REFLECTION_RES=§e反射分辨率 [Iris]§r
 option.REFLECTION_RES.comment=使得方块上基于物理的的反射 (及世界空间反射[若已启用]) 以半分辨率来渲染, 以此获得更好的性能表现。. §c[-]§r "全" 分辨率 反射在某些特殊场景下对性能的影响可能比预期的要大得多。. §e[*]§r 本功能在 OptiFine 上无效。.
@@ -3197,3 +3200,5 @@ value.BLACK_HOLE_STREAK.0=关
 option.REFLECTIVE_HORSES=闪耀的马
 option.REFLECTIVE_HORSES.comment=每个孩子都喜欢闪亮的马！。. 一匹不闪亮的马是悲伤的马。.
 
+option.MODDED_FOG_SUPPORT=模组雾气支持
+option.MODDED_FOG_SUPPORT.comment=为模组雾气添加支持，若模组未添加自定义雾气的情况下不会有任何变化。.
