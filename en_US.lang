@@ -1424,6 +1424,8 @@ screen.FUN=Fun
 screen.FUN.comment=Let's have some fun.
 screen.WORLD_CURVATURE_SETTINGS=World Curvature
 screen.WORLD_CURVATURE_SETTINGS.comment=Settings that relate to World Curvature.
+screen.SHOCKWAVE_SETTINGS=Shockwave Settings
+screen.SHOCKWAVE_SETTINGS.comment=Settings that relate to Shockwaves.
 screen.RANDOM_BLOCKLIGHT_SETTINGS=Random Blocklight
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Settings that relate to Random Blocklight.
 
@@ -2673,7 +2675,10 @@ option.SHOCKWAVE=Shockwave
 value.SHOCKWAVE.0=OFF
 value.SHOCKWAVE.1=Circle
 value.SHOCKWAVE.2=Square
-option.SHOCKWAVE.comment=Crouch and find out!
+option.SHOCKWAVE.comment=Use the Mace and find out!
+
+option.SHOCKWAVE_CROUCHING=Crouching
+option.SHOCKWAVE_CROUCHING.comment=Also activates the shockwave when crouching. Auto enabled before 1.21, because the Mace did not exist yet.
 
 option.STAR_LAYER_OW=Star Layer
 option.STAR_LAYER_OW.comment=Adds additional stars to the current stars, larger or smaller ones
