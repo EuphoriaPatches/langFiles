@@ -2555,7 +2555,6 @@ option.SHOCKWAVE=Onda de Choque
 value.SHOCKWAVE.0=DESLIGADO
 value.SHOCKWAVE.1=Círculo
 value.SHOCKWAVE.2=Quadrado
-option.SHOCKWAVE.comment=Agache e descubra!
 
 option.STAR_LAYER_OW=Camada de Estrelas
 option.STAR_LAYER_OW.comment=Adiciona estrelas adicionais às atuais, maiores ou menores

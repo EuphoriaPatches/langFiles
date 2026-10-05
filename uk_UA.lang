@@ -2673,7 +2673,6 @@ option.SHOCKWAVE=Ударна хвиля
 value.SHOCKWAVE.0=ВИМК.
 value.SHOCKWAVE.1=Кругла
 value.SHOCKWAVE.2=Квадратна
-option.SHOCKWAVE.comment=Присядь і дізнайся!
 
 option.STAR_LAYER_OW=Шар зірок
 option.STAR_LAYER_OW.comment=Додає додаткові зірки до поточних зірок, на більших або менших шарах.

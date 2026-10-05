@@ -2673,7 +2673,6 @@ option.SHOCKWAVE=Rázová vlna
 value.SHOCKWAVE.0=VYP
 value.SHOCKWAVE.1=Kruh
 value.SHOCKWAVE.2=Čtverec
-option.SHOCKWAVE.comment=Pliž se a zjisti!
 
 option.STAR_LAYER_OW=Vrstva hvězd
 option.STAR_LAYER_OW.comment=Přidává vrstvu větších nebo menších hvězd k stávajícím hvězdám

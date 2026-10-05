@@ -2533,7 +2533,6 @@ option.SHOCKWAVE=Fala Uderzeniowa
 value.SHOCKWAVE.0=WYŁ.
 value.SHOCKWAVE.1=Okrągła
 value.SHOCKWAVE.2=Kwadratowa
-option.SHOCKWAVE.comment=Kucnij i zobacz.
 
 option.STAR_LAYER_OW=Warstwy Gwiazd
 option.STAR_LAYER_OW.comment=Dodaje dodatkowe gwiazdy do nocnego nieba, większe lub mniejsze.

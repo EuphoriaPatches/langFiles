@@ -2102,7 +2102,6 @@ option.SHOCKWAVE=Shockwave (충격파)
 value.SHOCKWAVE.0=끄기
 value.SHOCKWAVE.1=원
 value.SHOCKWAVE.2=정사각형
-option.SHOCKWAVE.comment=웅크려서 확인하세요!
 
 option.STAR_LAYER_OW=Star Layer (별 레이어)
 option.STAR_LAYER_OW.comment=기존 별에 추가로 더 큰 별이나 더 작은 별 레이어를 생성합니다.

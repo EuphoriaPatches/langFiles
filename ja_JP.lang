@@ -2673,7 +2673,6 @@ option.SHOCKWAVE=ショックウェーブ
 value.SHOCKWAVE.0=OFF
 value.SHOCKWAVE.1=円形
 value.SHOCKWAVE.2=四角形
-option.SHOCKWAVE.comment=スニークして何が起こるか確かめましょう！
 
 option.STAR_LAYER_OW=星の層
 option.STAR_LAYER_OW.comment=現在の星に追加の大きい星と小さい星を追加します。.

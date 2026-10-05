@@ -2589,7 +2589,6 @@ option.SHOCKWAVE=衝擊波
 value.SHOCKWAVE.0=關
 value.SHOCKWAVE.1=圓形
 value.SHOCKWAVE.2=方形
-option.SHOCKWAVE.comment=蹲一下!
 
 option.STAR_LAYER_OW=錯落星層 - 主世界
 option.STAR_LAYER_OW.comment=為當前的星空額外添加不同遠近, 不同大小的星層。.

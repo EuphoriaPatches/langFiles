@@ -2673,7 +2673,6 @@ option.SHOCKWAVE=Ударная волна
 value.SHOCKWAVE.0=Нет
 value.SHOCKWAVE.1=Круг
 value.SHOCKWAVE.2=Квадрат
-option.SHOCKWAVE.comment=Присядьте и узнаете!
 
 option.STAR_LAYER_OW=Слой звёзд
 option.STAR_LAYER_OW.comment=Добавляет дополнительные звёзды к текущим.
