@@ -1424,6 +1424,8 @@ screen.FUN=Развлечения
 screen.FUN.comment=Весёлые настройки.
 screen.WORLD_CURVATURE_SETTINGS=Кривизна мира
 screen.WORLD_CURVATURE_SETTINGS.comment=Эффект искривления игрового мира.
+screen.SHOCKWAVE_SETTINGS=Настройки ударной волны
+screen.SHOCKWAVE_SETTINGS.comment=Параметры ударных волн.
 screen.RANDOM_BLOCKLIGHT_SETTINGS=Случайный блочный свет
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Случайные цветовые вариации блочного освещения.
 
@@ -2673,6 +2675,10 @@ option.SHOCKWAVE=Ударная волна
 value.SHOCKWAVE.0=Нет
 value.SHOCKWAVE.1=Круг
 value.SHOCKWAVE.2=Квадрат
+option.SHOCKWAVE.comment=Используйте булаву и узнайте!
+
+option.SHOCKWAVE_CROUCHING=Крадучись
+option.SHOCKWAVE_CROUCHING.comment=Также активирует ударную волну крадучись. Автоматически активировано на версиях до 1.21, на которых булавы ещё не существовало.
 
 option.STAR_LAYER_OW=Слой звёзд
 option.STAR_LAYER_OW.comment=Добавляет дополнительные звёзды к текущим.
