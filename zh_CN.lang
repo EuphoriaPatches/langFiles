@@ -1093,6 +1093,9 @@ option.WAVING_LILY_PAD.comment=给睡莲和青蛙卵添加摇晃的效果模拟�
 option.WAVING_WATER_VERTEX=水面高度摇晃
 option.WAVING_WATER_VERTEX.comment=给水面添加摇晃运动模拟风的吹拂。. §e[*]§r 本设置与 水波强度 选项无关。.
 
+value.WATER_NOISE_COLORING.-1=§a跟随细节质量设定
+value.WATER_NOISE_COLORING.0=§a关
+
 option.WAVING_RAIN=雨雪纹理摇晃
 option.WAVING_RAIN.comment=为下落的雨水和雪花粒子纹理添加运动效果使其看起来更加动态。.
 
@@ -2340,7 +2343,6 @@ option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光。. 把本选项设�
 value.MCBL_MAIN_DEFINE.0=关
 value.MCBL_MAIN_DEFINE.1=屏幕空间
 value.MCBL_MAIN_DEFINE.2=高级颜色追踪 + 屏幕空间
-value.MCBL_MAIN_DEFINE.3=高级颜色追踪 + 屏幕空间 + 动态光源支持
 
 option.MCBL_INFLUENCE=彩色照明影响程度
 option.MCBL_INFLUENCE.comment=调节彩色照明颜色对默认方块光颜色的影响程度。.

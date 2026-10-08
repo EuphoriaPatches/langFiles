@@ -1093,6 +1093,9 @@ option.WAVING_LILY_PAD.comment=Анимация кувшинок и икры л�
 option.WAVING_WATER_VERTEX=Колебание уровня воды
 option.WAVING_WATER_VERTEX.comment=Добавляет волны на поверхности воды для симуляции ветра. §e[*]§r Не связано с параметром «Силы волн».
 
+value.WATER_NOISE_COLORING.-1=§aПо качеству деталей
+value.WATER_NOISE_COLORING.0=§aНет
+
 option.WAVING_RAIN=Колыхание дождя и снега
 option.WAVING_RAIN.comment=Добавляет движение к текстурам дождя и снега для придания им динамичности.
 
@@ -2342,7 +2345,6 @@ option.MCBL_MAIN_DEFINE.comment=Включает многоцветное бло
 value.MCBL_MAIN_DEFINE.0=Нет
 value.MCBL_MAIN_DEFINE.1=Экранное пространство
 value.MCBL_MAIN_DEFINE.2=ПЦТ + экранное пространство
-value.MCBL_MAIN_DEFINE.3=ПЦТ + экр. пр. + дин. освещ.
 
 option.MCBL_INFLUENCE=Влияние многоцветного блочного освещения
 option.MCBL_INFLUENCE.comment=Регулирует влияние многоцветного блочного освещения на стандартный блочный свет.

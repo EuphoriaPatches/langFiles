@@ -646,6 +646,8 @@ value.WAVING_I.150=150 §c[-]
 value.WAVING_I.175=175 §c[-]
 value.WAVING_I.200=200 §c[-]
 
+value.WATER_NOISE_COLORING.0=§aDESACTIVADA
+
 value.SPECIAL_PORTAL_EFFECT.0=DESACTIVADO
 
 option.ATM_COLOR_MULTS=§eMultiplicadores de color de la atmósfera

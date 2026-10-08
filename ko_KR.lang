@@ -1013,6 +1013,8 @@ option.WAVING_LILY_PAD.comment=수련잎과 개구리 알에 움직임을 추가
 option.WAVING_WATER_VERTEX=Waving Water Height (수면 흔들림 높이)
 option.WAVING_WATER_VERTEX.comment=물의 위치에 움직임을 추가하여 바람을 시뮬레이션합니다. §e[*]§r 이 옵션은 "Water Wave Strength" 설정과 관련이 없습니다.
 
+value.WATER_NOISE_COLORING.0=§a끄기
+
 option.WAVING_RAIN=Waving Rain/Snow Texture (비/눈 텍스처 흔들림)
 option.WAVING_RAIN.comment=내리는 비와 눈 텍스처에 움직임을 추가하여 더 역동적으로 보이게 합니다.
 

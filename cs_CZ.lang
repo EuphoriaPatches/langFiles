@@ -1093,6 +1093,9 @@ option.WAVING_LILY_PAD.comment=Přidává pohyb k leknínům a žabím vajíčk�
 option.WAVING_WATER_VERTEX=Vlnící se výška vody
 option.WAVING_WATER_VERTEX.comment=Přidává pohyb k poloze vody pro napodobení větru. §e[*]§r Toto nastavení nesouvisí s nastavením "Síla vln vody".
 
+value.WATER_NOISE_COLORING.-1=§aUrčeno KD
+value.WATER_NOISE_COLORING.0=§aVYP
+
 option.WAVING_RAIN=Vlající textura deště/sněhu
 option.WAVING_RAIN.comment=Přidává pohyb k texturám padajícího deště a sněhu, aby vypadaly více dynamicky.
 
@@ -1424,6 +1427,8 @@ screen.FUN=Zábava
 screen.FUN.comment=Pobavme se trochu.
 screen.WORLD_CURVATURE_SETTINGS=Zakřivení světa
 screen.WORLD_CURVATURE_SETTINGS.comment=Nastavení týkající se Zakřivení světa.
+screen.SHOCKWAVE_SETTINGS=Nastavení Rázové vlny
+screen.SHOCKWAVE_SETTINGS.comment=Nastavení týkající se Rázových vln.
 screen.RANDOM_BLOCKLIGHT_SETTINGS=Náhodné světlo bloků
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Nastavení týkající se Náhodného světla bloků.
 
@@ -2340,7 +2345,6 @@ option.MCBL_MAIN_DEFINE.comment=Zapíná vícebarevná světla bloků. Nastav na
 value.MCBL_MAIN_DEFINE.0=VYP
 value.MCBL_MAIN_DEFINE.1=Prostor obrazovky
 value.MCBL_MAIN_DEFINE.2=ACT + Prostor obrazovky
-value.MCBL_MAIN_DEFINE.3=ACT + SSBL + Podpora dynamického osvětlení
 
 option.MCBL_INFLUENCE=Vliv vícebarevného světla bloků
 option.MCBL_INFLUENCE.comment=Určuje, jak moc bude vícebarevné světlo bloků ovlivňovat výchozí barvu světla bloků.
@@ -2673,6 +2677,10 @@ option.SHOCKWAVE=Rázová vlna
 value.SHOCKWAVE.0=VYP
 value.SHOCKWAVE.1=Kruh
 value.SHOCKWAVE.2=Čtverec
+option.SHOCKWAVE.comment=Použij Palcát a zjisti!
+
+option.SHOCKWAVE_CROUCHING=Plížení
+option.SHOCKWAVE_CROUCHING.comment=Také aktivuje rázovou vlnu při plížení. Automaticky zapnuto před 1.21, protože Palcát ještě neexistoval.
 
 option.STAR_LAYER_OW=Vrstva hvězd
 option.STAR_LAYER_OW.comment=Přidává vrstvu větších nebo menších hvězd k stávajícím hvězdám

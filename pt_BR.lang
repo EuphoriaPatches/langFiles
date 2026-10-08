@@ -1062,6 +1062,8 @@ option.WAVING_LILY_PAD.comment=Faz as vitórias-régias e os ovos de sapo se mov
 option.WAVING_WATER_VERTEX=Altura da Água Ondulante
 option.WAVING_WATER_VERTEX.comment=Adiciona movimento à posição da água para simular vento. §e[*]§r Não está relacionado à "Força da Onda da Água".
 
+value.WATER_NOISE_COLORING.0=DESLIGADO
+
 option.WAVING_RAIN=Textura de Chuva/Neve Ondulante
 option.WAVING_RAIN.comment=Adiciona movimento às texturas de chuva e neve para deixá-las mais dinâmicas.
 
@@ -2249,7 +2251,6 @@ value.NETHER_NOISE.1=LIGADO
 option.MCBL_MAIN_DEFINE=Iluminação Colorida Euphoria
 option.MCBL_MAIN_DEFINE.comment=Ativa a iluminação multicolorida de blocos. Use "ACT + Screen-Space" para combinar o sistema em screen-space com o Advanced Colored Tracing. A combinação ACT + SSBL + Dynamic Lighting Support pode gerar resultados incorretos em ambientes com mods — recomendado usar apenas no vanilla com um mod de iluminação dinâmica. §e[*]§r Funciona apenas na versão 1.16.5 ou superior, ou no Angelica.
 value.MCBL_MAIN_DEFINE.0=DESLIGADO
-value.MCBL_MAIN_DEFINE.3=ACT + SSBL + Suporte a Iluminação Dinâmica
 
 option.MCBL_INFLUENCE=Influência da Luz de Bloco Multicolorida
 option.MCBL_INFLUENCE.comment=Controla o quanto a luz de bloco multicolorida afeta a cor padrão da luz de bloco.

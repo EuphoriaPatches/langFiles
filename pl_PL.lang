@@ -1043,6 +1043,8 @@ option.WAVING_LILY_PAD.comment=Dodaje falowanie do płatków lilii i żabiego sk
 option.WAVING_WATER_VERTEX=Wysokośc Fali Wodnych
 option.WAVING_WATER_VERTEX.comment=Dodaje ruch do powierzchni wody w celu symulacji wiatru. §e[*]§r Ta opcja nie jest powiązana z ustawieniem "Siła Fal Wody".
 
+value.WATER_NOISE_COLORING.0=WYŁ.
+
 option.WAVING_RAIN=Falująca Cząsteczki Pogodowe
 option.WAVING_RAIN.comment=Dodaje ruch do tekstur padającego deszczu i śniegu, aby wyglądały bardziej dynamicznie.
 
@@ -2216,7 +2218,6 @@ option.MCBL_MAIN_DEFINE.comment=Włączą wielokolorowe źródła światła. Ust
 value.MCBL_MAIN_DEFINE.0=WYŁ.
 value.MCBL_MAIN_DEFINE.1=W Przestrzeni Ekranu
 value.MCBL_MAIN_DEFINE.2=ACT + Przestrzeń Ekranu
-value.MCBL_MAIN_DEFINE.3=ACT + Przestrzeń Ekranu + Obsługa Dynamicznego Oświetlenia
 
 option.MCBL_INFLUENCE=Wpływ Wielokolorowych Źródeł Światła
 option.MCBL_INFLUENCE.comment=Kontroluje, w jakim stopniu wielokolorowe źródła światła wpłyną na domyślny kolor źródeł światła.

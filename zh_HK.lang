@@ -1055,6 +1055,8 @@ option.WAVING_LILY_PAD.comment=給睡蓮和青蛙卵添加搖晃的效果模擬�
 option.WAVING_WATER_VERTEX=水面高度搖晃
 option.WAVING_WATER_VERTEX.comment=給水面添加搖晃運動模擬風的吹拂。. §e[*]§r 本設定與 水波強度 選項無關。.
 
+value.WATER_NOISE_COLORING.0=§a關
+
 option.WAVING_RAIN=雨雪紋理搖晃
 option.WAVING_RAIN.comment=為下落的雨水和雪花粒子紋理添加運動效果使其看起來更加動態。.
 
@@ -2259,7 +2261,6 @@ option.MCBL_MAIN_DEFINE.comment=啓用多重顔色方塊光。. 把本選項設�
 value.MCBL_MAIN_DEFINE.0=關
 value.MCBL_MAIN_DEFINE.1=屏幕空間
 value.MCBL_MAIN_DEFINE.2=高級顔色追蹤 + 屏幕空間
-value.MCBL_MAIN_DEFINE.3=高級顔色追蹤 + 屏幕空間 + 動態光源支持
 
 option.MCBL_INFLUENCE=彩色照明影響程度
 option.MCBL_INFLUENCE.comment=調節彩色照明顔色對默認方塊光顔色的影響程度。.

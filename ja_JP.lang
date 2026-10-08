@@ -1093,6 +1093,9 @@ option.WAVING_LILY_PAD.comment=スイレンの葉やカエルの卵に動きを�
 option.WAVING_WATER_VERTEX=揺れる水位
 option.WAVING_WATER_VERTEX.comment=水の位置に動きを追加し、風をシミュレートします。. §e[*]§r この設定は「水の波の強さ」設定には関連しません。.
 
+value.WATER_NOISE_COLORING.-1=§a細部の品質依存
+value.WATER_NOISE_COLORING.0=§aOFF
+
 option.WAVING_RAIN=揺れる雨/雪のテクスチャ
 option.WAVING_RAIN.comment=降ってくる雨や雪のテクスチャに動きを追加し、よりダイナミックに見せます。.
 
@@ -1424,6 +1427,8 @@ screen.FUN=お遊び
 screen.FUN.comment=楽しくいこう。.
 screen.WORLD_CURVATURE_SETTINGS=湾曲した世界
 screen.WORLD_CURVATURE_SETTINGS.comment=湾曲した世界に関する設定です。.
+screen.SHOCKWAVE_SETTINGS=ショックウェーブ設定
+screen.SHOCKWAVE_SETTINGS.comment=ショックウェーブに関する設定です。.
 screen.RANDOM_BLOCKLIGHT_SETTINGS=ランダムブロック光源
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=ランダムブロック光源に関する設定です。.
 
@@ -2340,7 +2345,6 @@ option.MCBL_MAIN_DEFINE.comment=多色対応色付きブロック光源 (SSBL)�
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=スクリーンスペース
 value.MCBL_MAIN_DEFINE.2=ACT + スクリーンスペース
-value.MCBL_MAIN_DEFINE.3=ACT + SSBL + 動的光源サポート
 
 option.MCBL_INFLUENCE=多色対応色付きブロック光源の影響
 option.MCBL_INFLUENCE.comment=多色対応色付きブロック光源が、デフォルトのブロック光源の色にどれだけ影響を与えるかを制御します。.
@@ -2673,6 +2677,10 @@ option.SHOCKWAVE=ショックウェーブ
 value.SHOCKWAVE.0=OFF
 value.SHOCKWAVE.1=円形
 value.SHOCKWAVE.2=四角形
+option.SHOCKWAVE.comment=メイスを使用して何が起こるか確かめましょう！
+
+option.SHOCKWAVE_CROUCHING=スニーク時
+option.SHOCKWAVE_CROUCHING.comment=スニーク時にもショックウェーブを有効化します。. 1.21以前にはメイスが存在しないため、自動で有効になります。.
 
 option.STAR_LAYER_OW=星の層
 option.STAR_LAYER_OW.comment=現在の星に追加の大きい星と小さい星を追加します。.

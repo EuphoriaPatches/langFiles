@@ -1093,6 +1093,9 @@ option.WAVING_LILY_PAD.comment=Додає коливання для лататт
 option.WAVING_WATER_VERTEX=Висота коливання води
 option.WAVING_WATER_VERTEX.comment=Додає коливання для води, щоб імітувати вітер. §e[*]§r Це не пов'язано із «Сила хвилі в воді».
 
+value.WATER_NOISE_COLORING.-1=§aУстан. ЯД
+value.WATER_NOISE_COLORING.0=§aВИМК.
+
 option.WAVING_RAIN=Коливання дощу і снігу
 option.WAVING_RAIN.comment=Додає коливання для дощу та снігу, щоб зробити їх більш динамічними.
 
@@ -2340,7 +2343,6 @@ option.MCBL_MAIN_DEFINE.comment=Умикає багатокольорові дж
 value.MCBL_MAIN_DEFINE.0=ВИМК.
 value.MCBL_MAIN_DEFINE.1=Простір екрана
 value.MCBL_MAIN_DEFINE.2=РКТ + простір екрана
-value.MCBL_MAIN_DEFINE.3=ACT + SSBL + підтримка динамічного світла
 
 option.MCBL_INFLUENCE=Вплив багатокол. джерел світла
 option.MCBL_INFLUENCE.comment=Керує тим, наскільки різнокольорове світло впливає на колір блока усталено.
