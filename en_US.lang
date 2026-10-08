@@ -1093,6 +1093,12 @@ option.WAVING_LILY_PAD.comment=Adds movement to lily pads and frogspawn to simul
 option.WAVING_WATER_VERTEX=Waving Water Height
 option.WAVING_WATER_VERTEX.comment=Adds movement to water position to simulate wind. §e[*]§r This option is not related to the "Water Wave Strength" setting.
 
+option.WATER_NOISE_COLORING=Waving Water Brightness
+option.WATER_NOISE_COLORING.comment=Adds slight color variance to oceans, making them look wavier. §e[*]§r "Set By DQ" means that this setting is determined by "Detail Quality" in Performance Settings unless you change it.
+value.WATER_NOISE_COLORING.-1=§aSet By DQ
+value.WATER_NOISE_COLORING.0=§aOFF
+value.WATER_NOISE_COLORING.1=§cON
+
 option.WAVING_RAIN=Waving Rain/Snow Texture
 option.WAVING_RAIN.comment=Adds movement to falling rain and snow textures to make it look more dynamic.
 
@@ -1198,6 +1204,9 @@ option.COLORED_LIGHT_FOG.comment=Adds volumetric blocklight fog to the scene, mo
 
 option.COLORED_LIGHT_FOG_I=Light Fog Intensity
 option.COLORED_LIGHT_FOG_I.comment=Determines the brightness of the Colored Light Fog.
+
+option.COLORED_DYNAMIC_LIGHTING=§eColored Dynamic Lighting§r
+option.COLORED_DYNAMIC_LIGHTING.comment=Allows dynamic light sources, like dropped torch items on the ground, to cast colored lighting. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §c[-]§r This effect can impact performance.
 
 option.LIGHT_COLOR_MULTS=§eLighting Color Multipliers
 option.LIGHT_COLOR_MULTS.comment=Enables customization of lighting colors that are seen on all surfaces.
@@ -2342,7 +2351,6 @@ option.MCBL_MAIN_DEFINE.comment=Enables multi-colored blocklight. Set to to ACT 
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=Screen-Space
 value.MCBL_MAIN_DEFINE.2=ACT + Screen-Space
-value.MCBL_MAIN_DEFINE.3=ACT + SSBL + Dynamic Lighting Support
 
 option.MCBL_INFLUENCE=Multi-Colored Blocklight Influence
 option.MCBL_INFLUENCE.comment=Controls how much the multi-colored blocklight affects the default blocklight color.
