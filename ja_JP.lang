@@ -1093,8 +1093,11 @@ option.WAVING_LILY_PAD.comment=スイレンの葉やカエルの卵に動きを�
 option.WAVING_WATER_VERTEX=揺れる水位
 option.WAVING_WATER_VERTEX.comment=水の位置に動きを追加し、風をシミュレートします。. §e[*]§r この設定は「水の波の強さ」設定には関連しません。.
 
+option.WATER_NOISE_COLORING=揺れる水位 明るさ
+option.WATER_NOISE_COLORING.comment=海に微妙な色のバリエーションを加え、より波打っているように見せます。. §e[*]§r 「細部の品質依存」とは、設定を変更しない限りパフォーマンス設定の「細部の品質」によって自動的に決定されることを意味します。.
 value.WATER_NOISE_COLORING.-1=§a細部の品質依存
 value.WATER_NOISE_COLORING.0=§aOFF
+value.WATER_NOISE_COLORING.1=§cON
 
 option.WAVING_RAIN=揺れる雨/雪のテクスチャ
 option.WAVING_RAIN.comment=降ってくる雨や雪のテクスチャに動きを追加し、よりダイナミックに見せます。.
@@ -1201,6 +1204,9 @@ option.COLORED_LIGHT_FOG.comment=夜間や地下で顕著に見られるブロ�
 
 option.COLORED_LIGHT_FOG_I=光の霧の強度
 option.COLORED_LIGHT_FOG_I.comment=色付きの光の霧の明るさを調整します。.
+
+option.COLORED_DYNAMIC_LIGHTING=§色付き動的照明§r
+option.COLORED_DYNAMIC_LIGHTING.comment=地面に落ちた松明のアイテムなどの動的な光源が色付きの光を放つようにします。. §e[*]§r この機能は「パフォーマンス設定」で高度な色トレーシングが有効、かつシステムが対応している場合にのみ動作します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。.
 
 option.LIGHT_COLOR_MULTS=§eライティングの色倍率
 option.LIGHT_COLOR_MULTS.comment=あらゆる物体の表面に映るライティングの色をカスタマイズできるようにします。.
@@ -2064,7 +2070,6 @@ option.END_CURVATURE_SIZE=ジ・エンドの湾曲度
 option.LAVA_VARIATION=溶岩 プリセット
 option.LAVA_VARIATION.comment=近場で話題のアツいプリセット！今すぐ選ぼう！
 value.LAVA_VARIATION.0=Complementary
-value.LAVA_VARIATION.1=アダプティブノイズ (推奨)
 value.LAVA_VARIATION.2=ほてる熱さ
 value.LAVA_VARIATION.3=とろけるチーズ
 value.LAVA_VARIATION.4=暗黒の島々
@@ -2340,11 +2345,8 @@ option.NETHER_NOISE.comment=ネザーの天井の上の空をより興味深く�
 value.NETHER_NOISE.0=OFF
 value.NETHER_NOISE.1=ON
 
-option.MCBL_MAIN_DEFINE=Euphoria色付き照明
-option.MCBL_MAIN_DEFINE.comment=多色対応色付きブロック光源 (SSBL) を有効にします。. 「ACT + スクリーンスペース」に設定すると、スクリーンスペースのシステムの上から「高度な色トレーシング」が適用されます。. 「ACT + SSBL + 動的光源サポート」はMod環境で間違った結果になることがあるため、バニラに動的光源Modを入れた環境でのみ使用してください。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。.
 value.MCBL_MAIN_DEFINE.0=OFF
-value.MCBL_MAIN_DEFINE.1=スクリーンスペース
-value.MCBL_MAIN_DEFINE.2=ACT + スクリーンスペース
+value.MCBL_MAIN_DEFINE.1=ON
 
 option.MCBL_INFLUENCE=多色対応色付きブロック光源の影響
 option.MCBL_INFLUENCE.comment=多色対応色付きブロック光源が、デフォルトのブロック光源の色にどれだけ影響を与えるかを制御します。.

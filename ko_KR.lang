@@ -1619,7 +1619,6 @@ option.END_CURVATURE_SIZE=End Curvature Size (엔드 곡률 크기)
 
 option.LAVA_VARIATION=Lava Preset (용암 프리셋)
 option.LAVA_VARIATION.comment=프리셋을 골라보세요!
-value.LAVA_VARIATION.1=Adaptive Noise (추천)
 
 option.LAVA_TEMPERATURE=Lava Temperature (용암 온도)
 option.LAVA_TEMPERATURE.comment=용암 온도를 바꿔서, 더 붉은색 또는 흰색으로 만듭니다.
@@ -1817,8 +1816,6 @@ option.NETHER_NOISE.comment=네더 천장 위에서 보이는 하늘을 더 흥�
 value.NETHER_NOISE.0=끄기
 value.NETHER_NOISE.1=켜기
 
-option.MCBL_MAIN_DEFINE=Euphoria Colored Lighting (유포리아 색상 조명)
-option.MCBL_MAIN_DEFINE.comment=멀티 컬러 블록 조명을 활성화합니다. ACT + Screen-Space로 설정하면 Advanced Colored Tracing과 함께 스크린 스페이스 시스템을 사용할 수 있습니다. ACT + SSBL + Dynamic Lighting Support 조합은 모드 환경에서 잘못된 결과를 낼 수 있으므로, 동적 조명 모드가 적용된 바닐라 환경에서만 사용하는 것이 좋습니다. §e[*]§r 1.16.5 이상 또는 Angelica에서만 작동합니다.
 value.MCBL_MAIN_DEFINE.0=끄기
 
 option.MCBL_INFLUENCE=블록라이트 멀티색상 영향

@@ -1941,7 +1941,6 @@ option.END_CURVATURE_SIZE=Stopień Krzywizny Świata - End
 option.LAVA_VARIATION=Preset Lawy
 option.LAVA_VARIATION.comment=Gorące ustawienia wstępne w twojej okolicy. Wybierz teraz!
 value.LAVA_VARIATION.0=Complementary
-value.LAVA_VARIATION.1=Adapcyjna (Zalecane)
 value.LAVA_VARIATION.2=Rumieniąca się
 value.LAVA_VARIATION.3=Stopiony Ser
 value.LAVA_VARIATION.4=Ciemne Wyspy
@@ -2213,11 +2212,7 @@ option.NETHER_NOISE.comment=Sprawia, że niebo Netheru jest bardziej interesują
 value.NETHER_NOISE.0=WYŁ.
 value.NETHER_NOISE.1=WŁ.
 
-option.MCBL_MAIN_DEFINE=Kolorowe Oświetlenie Euphoria
-option.MCBL_MAIN_DEFINE.comment=Włączą wielokolorowe źródła światła. Ustaw na ACT + Przestrzeń Ekranu, aby używać systemu przestrzeni ekranu wraz z Zaawansowanym Kolorowym Oświetleniem (ACT). ACT + Przestrzeń Ekranu + Obsługa Dynamicznego Oświetlenia może zostać popsute przez pewne modyfikacje. §e[*]§r Działą tylko na Iris 1.16.5 lub wyżej, albo z modem "Angelica" .
 value.MCBL_MAIN_DEFINE.0=WYŁ.
-value.MCBL_MAIN_DEFINE.1=W Przestrzeni Ekranu
-value.MCBL_MAIN_DEFINE.2=ACT + Przestrzeń Ekranu
 
 option.MCBL_INFLUENCE=Wpływ Wielokolorowych Źródeł Światła
 option.MCBL_INFLUENCE.comment=Kontroluje, w jakim stopniu wielokolorowe źródła światła wpłyną na domyślny kolor źródeł światła.

@@ -2062,7 +2062,6 @@ option.END_CURVATURE_SIZE=Розмір викривлення Енду
 option.LAVA_VARIATION=Пресети лави
 option.LAVA_VARIATION.comment=Гарячі пресети в вашому регіоні. Виберіть зараз!
 value.LAVA_VARIATION.0=Complementary
-value.LAVA_VARIATION.1=Адаптивний шум (раджу)
 value.LAVA_VARIATION.2=Рум'яна гарячість
 value.LAVA_VARIATION.3=Розтоплений сир
 value.LAVA_VARIATION.4=Темні острови
@@ -2338,11 +2337,8 @@ option.NETHER_NOISE.comment=Робить небо Незеру над стеле
 value.NETHER_NOISE.0=УВІМК.
 value.NETHER_NOISE.1=ВИМК.
 
-option.MCBL_MAIN_DEFINE=Кольорове освітлення Euphoria
-option.MCBL_MAIN_DEFINE.comment=Умикає багатокольорові джерела світла. Установіть РКТ + простір екрана, щоб використовувати систему простору екрана разом із РКТ. ACT + SSBL + підтримка динамічного світла може викликати некоректні результати у модових середовищах — слід використовувати лише у стандартній грі з модом динамічного світла. §e[*]§r Лише 1.16.5 і вище або на Angelica.
 value.MCBL_MAIN_DEFINE.0=ВИМК.
-value.MCBL_MAIN_DEFINE.1=Простір екрана
-value.MCBL_MAIN_DEFINE.2=РКТ + простір екрана
+value.MCBL_MAIN_DEFINE.1=УВІМК.
 
 option.MCBL_INFLUENCE=Вплив багатокол. джерел світла
 option.MCBL_INFLUENCE.comment=Керує тим, наскільки різнокольорове світло впливає на колір блока усталено.

@@ -2064,7 +2064,6 @@ option.END_CURVATURE_SIZE=Кривизна Энда
 option.LAVA_VARIATION=Предустановка лавы
 option.LAVA_VARIATION.comment=Выберите стиль лавы.
 value.LAVA_VARIATION.0=Complementary
-value.LAVA_VARIATION.1=Адаптивный шум (рекомендуется)
 value.LAVA_VARIATION.2=Пылающий румянец
 value.LAVA_VARIATION.3=Расплавленный сыр
 value.LAVA_VARIATION.4=Тёмные острова
@@ -2340,11 +2339,8 @@ option.NETHER_NOISE.comment=Добавляет визуальный шум к н
 value.NETHER_NOISE.0=Нет
 value.NETHER_NOISE.1=Да
 
-option.MCBL_MAIN_DEFINE=Цветное освещение Euphoria
-option.MCBL_MAIN_DEFINE.comment=Включает многоцветное блоковое освещение. Режим «ПЦТ + экранное пространство» сочетает метод с «Продвинутой цветовой трассировкой». §e[*]§r Работает только на 1.16.5+ или с Angelica.
 value.MCBL_MAIN_DEFINE.0=Нет
-value.MCBL_MAIN_DEFINE.1=Экранное пространство
-value.MCBL_MAIN_DEFINE.2=ПЦТ + экранное пространство
+value.MCBL_MAIN_DEFINE.1=Да
 
 option.MCBL_INFLUENCE=Влияние многоцветного блочного освещения
 option.MCBL_INFLUENCE.comment=Регулирует влияние многоцветного блочного освещения на стандартный блочный свет.

@@ -2062,7 +2062,6 @@ option.END_CURVATURE_SIZE=末地 世界曲率规模
 option.LAVA_VARIATION=岩浆预设
 option.LAVA_VARIATION.comment=让你所在区域的岩浆更躁动的预设。. 来选择吧!
 value.LAVA_VARIATION.0=Complementary
-value.LAVA_VARIATION.1=自适应噪声 (推荐)
 value.LAVA_VARIATION.2=温红热流
 value.LAVA_VARIATION.3=熔岩芝士
 value.LAVA_VARIATION.4=暗黑群岛
@@ -2338,11 +2337,8 @@ option.NETHER_NOISE.comment=让下界上层的天空顶部看起来更有趣一�
 value.NETHER_NOISE.0=关
 value.NETHER_NOISE.1=开
 
-option.MCBL_MAIN_DEFINE=Euphoria 彩色照明
-option.MCBL_MAIN_DEFINE.comment=启用多重颜色方块光。. 把本选项设置为 高级颜色追踪 + 屏幕空间 来使得屏幕空间彩色照明系统与 高级颜色追踪 一同生效。. 高级颜色追踪 + 屏幕空间 + 动态光源支持 会在多模组环境产生不正确的画面 - 应仅在 原版 + 动态光源 模组情况下启用本选项。. §e[*]§r本选项仅在 MC 1.16.5 及以上的版本或者在使用 Angelica 模组的特定版本情况下生效。.
 value.MCBL_MAIN_DEFINE.0=关
-value.MCBL_MAIN_DEFINE.1=屏幕空间
-value.MCBL_MAIN_DEFINE.2=高级颜色追踪 + 屏幕空间
+value.MCBL_MAIN_DEFINE.1=开
 
 option.MCBL_INFLUENCE=彩色照明影响程度
 option.MCBL_INFLUENCE.comment=调节彩色照明颜色对默认方块光颜色的影响程度。.

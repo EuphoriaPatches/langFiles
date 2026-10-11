@@ -943,8 +943,6 @@ value.SEASON_TRANSITION_START.0=Inmediatamente
 
 option.ATLAS_ROTATION.comment=:).
 
-option.MCBL_MAIN_DEFINE=Iluminación de Color Euphoria
-
 option.RETRO_LOOK=Aspecto Retro
 
 option.CURVE_DISPLAY=Visualización Curvada
