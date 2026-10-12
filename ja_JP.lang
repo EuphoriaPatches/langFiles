@@ -2070,6 +2070,7 @@ option.END_CURVATURE_SIZE=ジ・エンドの湾曲度
 option.LAVA_VARIATION=溶岩 プリセット
 option.LAVA_VARIATION.comment=近場で話題のアツいプリセット！今すぐ選ぼう！
 value.LAVA_VARIATION.0=Complementary
+value.LAVA_VARIATION.1=アダプティブ (推奨)
 value.LAVA_VARIATION.2=ほてる熱さ
 value.LAVA_VARIATION.3=とろけるチーズ
 value.LAVA_VARIATION.4=暗黒の島々
@@ -2345,8 +2346,11 @@ option.NETHER_NOISE.comment=ネザーの天井の上の空をより興味深く�
 value.NETHER_NOISE.0=OFF
 value.NETHER_NOISE.1=ON
 
+option.MCBL_MAIN_DEFINE=スクリーンスペース色付き照明
+option.MCBL_MAIN_DEFINE.comment=Euphoria Patches専用のスクリーンスペース色付き照明を有効にします。. 「ON + ACT」に設定することで「高度な色トレーシング」と同時にスクリーンスペースのシステムを使用することができます。. これはACTとは違い、OptiFineとMac上でも動作します。. §e[*]§r 1.16.5以降、またはAngelica上でのみ動作します。.
 value.MCBL_MAIN_DEFINE.0=OFF
 value.MCBL_MAIN_DEFINE.1=ON
+value.MCBL_MAIN_DEFINE.2=ON + ACT
 
 option.MCBL_INFLUENCE=多色対応色付きブロック光源の影響
 option.MCBL_INFLUENCE.comment=多色対応色付きブロック光源が、デフォルトのブロック光源の色にどれだけ影響を与えるかを制御します。.

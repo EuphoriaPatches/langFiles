@@ -1090,11 +1090,14 @@ option.WAVING_LAVA.comment=Постоянное движение лавы. §e[*
 option.WAVING_LILY_PAD=Колыхание кувшинок §c[-]§r
 option.WAVING_LILY_PAD.comment=Анимация кувшинок и икры лягушек на воде. §c[-]§r Приводит к тому, что кувшинки на залитых водой блоках становятся невидимыми.
 
-option.WAVING_WATER_VERTEX=Колебание уровня воды
+option.WAVING_WATER_VERTEX=Уровень волнения воды
 option.WAVING_WATER_VERTEX.comment=Добавляет волны на поверхности воды для симуляции ветра. §e[*]§r Не связано с параметром «Силы волн».
 
+option.WATER_NOISE_COLORING=Яркость волнения воды
+option.WATER_NOISE_COLORING.comment=Добавляет океанам небольшие цветовые различия, делая их более волнистыми. §e[*]§r «По качеству деталей» означает, что этот параметр определяется «Качеством деталей» в «Настройках производительности», пока вы его не измените.
 value.WATER_NOISE_COLORING.-1=§aПо качеству деталей
 value.WATER_NOISE_COLORING.0=§aНет
+value.WATER_NOISE_COLORING.1=§cДа
 
 option.WAVING_RAIN=Колыхание дождя и снега
 option.WAVING_RAIN.comment=Добавляет движение к текстурам дождя и снега для придания им динамичности.
@@ -1201,6 +1204,9 @@ option.COLORED_LIGHT_FOG.comment=Добавляет объёмный туман 
 
 option.COLORED_LIGHT_FOG_I=Яркость светового тумана
 option.COLORED_LIGHT_FOG_I.comment=Интенсивность цветного тумана.
+
+option.COLORED_DYNAMIC_LIGHTING=§eЦветное динамическое освещение§r
+option.COLORED_DYNAMIC_LIGHTING.comment=Позволяет динамическим источникам света, таким как упавшие на землю факела и иные источники света, создавать цветное освещение. §e[*]§r Работают только, если «Продвинутая цветовая трассировка» включена в «Настройках производительности» и поддерживается вашей системой. §c[-]§r Влияет на производительность.
 
 option.LIGHT_COLOR_MULTS=§eМножители цвета освещения
 option.LIGHT_COLOR_MULTS.comment=Настройка цветов освещения на поверхностях.
@@ -2064,6 +2070,7 @@ option.END_CURVATURE_SIZE=Кривизна Энда
 option.LAVA_VARIATION=Предустановка лавы
 option.LAVA_VARIATION.comment=Выберите стиль лавы.
 value.LAVA_VARIATION.0=Complementary
+value.LAVA_VARIATION.1=Адаптивная (рекомендуется)
 value.LAVA_VARIATION.2=Пылающий румянец
 value.LAVA_VARIATION.3=Расплавленный сыр
 value.LAVA_VARIATION.4=Тёмные острова
@@ -2339,8 +2346,11 @@ option.NETHER_NOISE.comment=Добавляет визуальный шум к н
 value.NETHER_NOISE.0=Нет
 value.NETHER_NOISE.1=Да
 
+option.MCBL_MAIN_DEFINE=Экранное цветное освещение
+option.MCBL_MAIN_DEFINE.comment=Включает собственное цветное освещение экранного пространства из Euphoria Patches. Установите значение «Да с ПЦТ», чтобы использовать систему экранного пространства наряду с «Продвинутой цветовой трассировкой». Также работает на OptiFine и Mac, в отличие от самой ПЦТ. §e[*]§Работает только на версиях 1.16.5 и выше или на Angelica.
 value.MCBL_MAIN_DEFINE.0=Нет
 value.MCBL_MAIN_DEFINE.1=Да
+value.MCBL_MAIN_DEFINE.2=Да с ПЦТ
 
 option.MCBL_INFLUENCE=Влияние многоцветного блочного освещения
 option.MCBL_INFLUENCE.comment=Регулирует влияние многоцветного блочного освещения на стандартный блочный свет.
