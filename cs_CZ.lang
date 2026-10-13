@@ -2070,6 +2070,7 @@ option.END_CURVATURE_SIZE=Velikost zakřivení v Endu
 option.LAVA_VARIATION=Předvolba lávy
 option.LAVA_VARIATION.comment=Žhavé předvolby ve tvém okolí. Vybírej teď!
 value.LAVA_VARIATION.0=Complementary
+value.LAVA_VARIATION.1=Adaptivní (Doporučená)
 value.LAVA_VARIATION.2=Červenající se horkost
 value.LAVA_VARIATION.3=Roztavený sýr
 value.LAVA_VARIATION.4=Tmavé ostrovy
@@ -2345,8 +2346,11 @@ option.NETHER_NOISE.comment=Dělá oblohu Netheru nad jeho stropem zajímavějš
 value.NETHER_NOISE.0=VYP
 value.NETHER_NOISE.1=ZAP
 
+option.MCBL_MAIN_DEFINE=Barevné osvětlení v prostoru obrazovky
+option.MCBL_MAIN_DEFINE.comment=Zapíná barevné osvětlení v prostoru obrazovky exkluzivní pro Euphoria Patches. Nastav na Zap + ACT pro použití systému v prostoru obrazovky spolu s Pokročilým trasováním barev. Toto nastavení také funguje na OptiFinu a Macu narozdíl od ACT. §e[*]§rFunguje pouze na Minecraft verzi 1.16.5 a vyšší nebo na Angelica.
 value.MCBL_MAIN_DEFINE.0=VYP
 value.MCBL_MAIN_DEFINE.1=Zap
+value.MCBL_MAIN_DEFINE.2=Zap + ACT
 
 option.MCBL_INFLUENCE=Vliv vícebarevného světla bloků
 option.MCBL_INFLUENCE.comment=Určuje, jak moc bude vícebarevné světlo bloků ovlivňovat výchozí barvu světla bloků.
