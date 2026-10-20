@@ -1,5 +1,7 @@
 #shaders/lang/es_ES.lang
 
+Contribute=Contribuya a las traducciones oficiales aquí: https://www.euphoriapatches.com/lang - No modifiques este URL
+
 option.LANG_FILE_HEADER=Archivos de traducción de la Comunidad. - Las traducciones pueden no ser las mejores. SpacEagle17 no puede garantizar que sean acertadas.
 option.TRANSLATORS=Traducido por: Wither362
 
@@ -650,9 +652,17 @@ value.WATER_NOISE_COLORING.0=§aDESACTIVADA
 
 value.SPECIAL_PORTAL_EFFECT.0=DESACTIVADO
 
+option.RAIN_PUDDLES=Charcos de Lluvia
+value.RAIN_PUDDLES.3=§cCharcos Siempre
+
+value.SELECT_OUTLINE.4=Versátil
+
+option.CONNECTED_GLASS_EFFECT=Cristal Conectado
+
 option.ATM_COLOR_MULTS=§eMultiplicadores de color de la atmósfera
 
 ####### Euphoria Patches #######
+profile2.SPACEAGLE17=§f۞ §kO§fDEBUG (No Usar)§f§kO
 
 #WATERMARK
 option.WATERMARK=Complementary
@@ -665,6 +675,7 @@ screen.CLOUD_REIMAGINED_SETTINGS_EUPHORIA=Nubes Reimagined
 screen.CLOUD_REIMAGINED_SECOND_LAYER_SETTINGS=Segunda Capa de Nubes
 screen.CLOUD_UNBOUND_SETTINGS_EUPHORIA=Nubes Unbound
 screen.DOUBLE_UNBOUND_CLOUDS_SETTINGS=Doble de Nubes Unbound
+screen.CLOUD_SHADING_SETTINGS=Sombreado en Nubes
 screen.RAIN_SETTINGS=Ajustes de la Lluvia
 
 screen.WORLD=Mundo
@@ -682,6 +693,8 @@ screen.SUMMER=Ajustes del Verano
 screen.NETHER_WORLD=Nether
 screen.FOG_BORDER_NETHER=Niebla de borde
 
+screen.FOLIAGE_SETTINGS=Vegetación
+screen.FOLIAGE_SETTINGS.comment=Ajustes relacionados con la vegetación.
 screen.MISC_SETTINGS=Más
 screen.MISC_SETTINGS.comment=Ajustes que no encajan en ninguna otra categoría.
 screen.REFLECTION_SETTINGS=Reflejos
@@ -691,13 +704,38 @@ screen.CAMERA=Cámara
 screen.CAMERA.comment=Ajustes relacionados con la vista.
 screen.AGX_SETTINGS=Configuración de AgX
 screen.CAMERA_EFFECTS=Efectos de cámara
+screen.GRID_SETTINGS=Configuración de cuadrícula
 
 screen.FUN=Diversión
+screen.WORLD_CURVATURE_SETTINGS=Curvatura del Mundo
 
 screen.POPULAR_SETTINGS_2=Página 2
 screen.POPULAR_SETTINGS_3=Página 3
 screen.EP_VERSION=Euphoria Patches §d1.11.0
 screen.EP_VERSION.comment=§bPuedes apoyar a SpacEagle17 en Patreon o Ko-Fi y acceder a nuevas versiones de desarrollo exclusivas. §r§d§l§neuphoriapatches.com/support
+
+screen.MODDED_SETTINGS=Ajustes de Mods
+screen.MODDED_SETTINGS.comment=Ajustes que solamente funcionarán si tienes instalados los mods compatibles. Estos ajustes están hechos para mejorar la experiencia de juego con esos mods, y no harán nada si no los tienes instalados.
+screen.PHOTONICS_SETTINGS=Photonics
+screen.PHOTONICS_SETTINGS.comment=Ajustes que solamente funcionan si tienes el mod Photonics instalado y activado. https://modrinth.com/mod/photonics
+
+screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
+
+screen.MCWIND_SETTINGS=WindLink
+
+option.RGB_AURORA.comment=Conviértete en un Gamer Épico Súper Guay y Molón con las §rAuroras §4R§2G§9B!!1!!1!
+
+option.AURORA_UP_R=Sección Superior - Rojo
+option.AURORA_UP_G=Sección Superior - Verde
+option.AURORA_UP_B=Sección Superior - Azul
+option.AURORA_UP_I=Sección Superior - Intensidad
+
+option.AURORA_DOWN_R=Sección Inferior - Rojo
+option.AURORA_DOWN_G=Sección Inferior - Verde
+option.AURORA_DOWN_B=Sección Inferior - Azul
+option.AURORA_DOWN_I=Sección Inferior - Intensidad
+
+option.AURORA_SIZE=Densidad de Aurora
 
 value.RANDOM_AURORA.0=Por defecto
 value.RANDOM_AURORA.1=10% de probabilidad
@@ -875,6 +913,21 @@ value.TWINKLING_STARS.20=2,0
 option.STAR_SIZE=Tamaño de las Estrellas
 option.STAR_SIZE.comment=Cambiar el tamaño de tus estrellas.
 
+option.CAVE_FOG_R_NEW=Niebla de Cueva - Rojo
+option.CAVE_FOG_G_NEW=Niebla de Cueva - Verde
+option.CAVE_FOG_B_NEW=Niebla de Cueva - Azul
+option.CAVE_FOG_I=Niebla de Cueva - Intensidad
+option.CAVE_FOG_DENSITY=Densidad de Niebla de Cueva
+
+option.ATMOSPHERIC_FOG=Niebla Atmosférica
+option.ATMOSPHERIC_FOG_R_NEW=Niebla Atmosférica - Rojo
+option.ATMOSPHERIC_FOG_G_NEW=Niebla Atmosférica - Verde
+option.ATMOSPHERIC_FOG_B_NEW=Niebla Atmosférica - Azul
+option.ATMOSPHERIC_FOG_I=Niebla Atmosférica - Intensidad
+option.ATMOSPHERIC_FOG_DENSITY=Niebla Atmosférica - Densidad
+option.RADIOACTIVE_ATMOSPHERIC_FOG=Niebla Atmosférica Radiactiva
+option.RADIOACTIVE_ATMOSPHERIC_FOG.comment=Es simplemente un extra más para un hábito nada saludable. Muy notable de noche.
+
 option.BORDER_FOG_DISTANCE_OVERWORLD=Distancia de niebla de borde
 option.BORDER_FOG_DISTANCE_OVERWORLD.comment=Ajuste de la distancia de la niebla de borde del Overworld (Superficie).
 value.BORDER_FOG_DISTANCE_OVERWORLD.1=0,25
@@ -906,6 +959,8 @@ value.BORDER_FOG_DISTANCE_END.50=1,50
 value.BORDER_FOG_DISTANCE_END.100=1,75
 value.BORDER_FOG_DISTANCE_END.500=2,00
 value.BORDER_FOG_DISTANCE_END.1000=2,50
+
+option.RAIN_ATMOSPHERE=Tormenta Épica
 
 option.REDSTONE_IPBR_R=Detección de rojos
 option.REDSTONE_IPBR_R.comment=Cambia esto si la detección no funciona con tu paquete de recursos. Auméntalo si los píxeles son más rojos, disminúyelo si son menos rojos de lo que deberían ser.
