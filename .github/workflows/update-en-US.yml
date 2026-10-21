@@ -90,14 +90,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Checkout only the translations folder of the EuphoriaPatches.github.io repository
+      - name: Checkout EuphoriaPatches.github.io
+        uses: actions/checkout@v4
+        with:
+          repository: EuphoriaPatches/EuphoriaPatches.github.io
+          path: temp_website
+          sparse-checkout: how-to-install/translations
+          persist-credentials: false
+
       - name: Fetch website en.json translation
         run: |
-          # Create temp directory
-          mkdir -p temp_website
-
-          # Clone the EuphoriaPatches.github.io repository
-          git clone --depth 1 https://github.com/EuphoriaPatches/EuphoriaPatches.github.io.git temp_website
-
           # Copy the en.json file to website/ directory
           mkdir -p website
           if [ -f temp_website/how-to-install/translations/en.json ]; then
