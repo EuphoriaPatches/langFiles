@@ -2649,6 +2649,9 @@ option.DAYLIGHT_STARS.comment=Enables Stars during the day
 option.FROZEN_TIME=Frozen Time
 option.FROZEN_TIME.comment=Freezes shader animation time, shader effects which rely on frame based animation will be frozen and thus allowing for good comparison screenshots.
 
+option.USE_SYNCED_TIME=Use Synced Time
+option.USE_SYNCED_TIME.comment=Fetures such as clouds, nebula and others will be synced across players by using the game ticks.
+
 option.DARKER_DEPTH_OCEANS=Deeper Darker Oceans
 option.DARKER_DEPTH_OCEANS.comment=Light decreases with depth of the Ocean
 value.DARKER_DEPTH_OCEANS.0=OFF
