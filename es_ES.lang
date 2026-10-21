@@ -720,7 +720,7 @@ screen.PHOTONICS_SETTINGS=Photonics
 screen.PHOTONICS_SETTINGS.comment=Ajustes que solamente funcionan si tienes el mod Photonics instalado y activado. https://modrinth.com/mod/photonics
 
 screen.DISTANT_HORIZONS_SETTINGS=Distant Horizons
-screen.DISTANT_HORIZONS_SETTINGS.comment=Ajustes que solamente funcionan si tienes el mod Distant Horizons instalado y activado. https://modrinth.com/mod/photonics
+screen.DISTANT_HORIZONS_SETTINGS.comment=Ajustes que solamente funcionan si tienes el mod Distant Horizons instalado y activado. https://modrinth.com/mod/distanthorizons
 
 screen.MCWIND_SETTINGS=WindLink
 screen.MCWIND_SETTINGS.comment=Ajustes que solamente funcionan si tienes el mod WindLink instalado y activado. https://modrinth.com/mod/photonics
