@@ -3,7 +3,7 @@
 Contribute=Зробіть внесок до офіційного перекладу тут https://www.euphoriapatches.com/lang — Не змінюйте це посилення
 
 option.LANG_FILE_HEADER=Файли перекладу від спільноти — переклад може бути застарілим. SpacEagle17 не може гарантувати його точність.
-option.TRANSLATORS=Переклад від: Starman
+option.TRANSLATORS=Перекладачі: Starman
 
 shaderDescription=§cComplementary Shaders r5.10§r + §dEuphoria Patches 1.11.0§r\nДоповнення до Complementary від SpacEagle17, що розширює функціонал завдяки численним унікальним функціям і налаштуванням.\nВерсії для розробників: §dwww.euphoriapatches.com/support§r
 
@@ -1093,8 +1093,11 @@ option.WAVING_LILY_PAD.comment=Додає коливання для лататт
 option.WAVING_WATER_VERTEX=Висота коливання води
 option.WAVING_WATER_VERTEX.comment=Додає коливання для води, щоб імітувати вітер. §e[*]§r Це не пов'язано із «Сила хвилі в воді».
 
+option.WATER_NOISE_COLORING=Яскравість хвиль води
+option.WATER_NOISE_COLORING.comment=Додає незначні варіації кольору океанам, завдяки чому вони виглядають більш хвилястими. §e[*]§r «Устан. ЯД» означає, що цей параметр визначається якістю деталей у розділі налаштувань продуктивности, доки ви не зміните його самостійно.
 value.WATER_NOISE_COLORING.-1=§aУстан. ЯД
 value.WATER_NOISE_COLORING.0=§aВИМК.
+value.WATER_NOISE_COLORING.1=§cУВІМК.
 
 option.WAVING_RAIN=Коливання дощу і снігу
 option.WAVING_RAIN.comment=Додає коливання для дощу та снігу, щоб зробити їх більш динамічними.
@@ -1201,6 +1204,9 @@ option.COLORED_LIGHT_FOG.comment=Додає об'ємний блоковий т�
 
 option.COLORED_LIGHT_FOG_I=Інтенсивність світла туману
 option.COLORED_LIGHT_FOG_I.comment=Керує яскравістю «Кольорове світло туману».
+
+option.COLORED_DYNAMIC_LIGHTING=§eКольорове динамічне світло§r
+option.COLORED_DYNAMIC_LIGHTING.comment=Дозволяє динамічним джерелам світла, як-от смолоскипам, що лежать на землі, створювати кольорове освітлення. §e[*]§r Працює, лише якщо в налаштуваннях продуктивности ввімкнено розширене трасування кольорів і ваша система це підтримує. §c[-]§r Може вплинути на продуктивність.
 
 option.LIGHT_COLOR_MULTS=§eМножники кольору освітл.
 option.LIGHT_COLOR_MULTS.comment=Умикає налаштування кольорів освітлення, які видно на всіх поверхнях.
@@ -1427,6 +1433,8 @@ screen.FUN=Забава
 screen.FUN.comment=Давай розважимося :D.
 screen.WORLD_CURVATURE_SETTINGS=Кривина світу
 screen.WORLD_CURVATURE_SETTINGS.comment=Налаштування, які стосуються кривини світу.
+screen.SHOCKWAVE_SETTINGS=Налаштування ударної хвилі
+screen.SHOCKWAVE_SETTINGS.comment=Налаштування, які стосуються ударної хвилі.
 screen.RANDOM_BLOCKLIGHT_SETTINGS=Випадкове світло блоків
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=Параметри, які стосуються випадкового світла блоків.
 
@@ -2062,6 +2070,7 @@ option.END_CURVATURE_SIZE=Розмір викривлення Енду
 option.LAVA_VARIATION=Пресети лави
 option.LAVA_VARIATION.comment=Гарячі пресети в вашому регіоні. Виберіть зараз!
 value.LAVA_VARIATION.0=Complementary
+value.LAVA_VARIATION.1=Адаптивна (краще)
 value.LAVA_VARIATION.2=Рум'яна гарячість
 value.LAVA_VARIATION.3=Розтоплений сир
 value.LAVA_VARIATION.4=Темні острови
@@ -2337,8 +2346,11 @@ option.NETHER_NOISE.comment=Робить небо Незеру над стеле
 value.NETHER_NOISE.0=УВІМК.
 value.NETHER_NOISE.1=ВИМК.
 
+option.MCBL_MAIN_DEFINE=Кольорове світло простору екрана
+option.MCBL_MAIN_DEFINE.comment=Активує ексклюзивне для Euphoria Patches кольорове освітлення у просторі екрана.«УВІМК. + РТК», щоб використовувати цю систему разом з розширеним трасуванням кольорів. На відміну від РТК, ця функція також працює з OptiFine та на macOS. §e[*]§r Лише 1.16.5+, а також у середовищі Angelica.
 value.MCBL_MAIN_DEFINE.0=ВИМК.
 value.MCBL_MAIN_DEFINE.1=УВІМК.
+value.MCBL_MAIN_DEFINE.2=УВІМК. + РТК
 
 option.MCBL_INFLUENCE=Вплив багатокол. джерел світла
 option.MCBL_INFLUENCE.comment=Керує тим, наскільки різнокольорове світло впливає на колір блока усталено.
@@ -2671,6 +2683,10 @@ option.SHOCKWAVE=Ударна хвиля
 value.SHOCKWAVE.0=ВИМК.
 value.SHOCKWAVE.1=Кругла
 value.SHOCKWAVE.2=Квадратна
+option.SHOCKWAVE.comment=Скористайся булавою — і дізнаєтеся!
+
+option.SHOCKWAVE_CROUCHING=Крадькома
+option.SHOCKWAVE_CROUCHING.comment=Також активує ударну хвилю крадькома. До версії 1.21 ця функція була ввімкнена автоматично, оскільки булави тоді ще не існувало.
 
 option.STAR_LAYER_OW=Шар зірок
 option.STAR_LAYER_OW.comment=Додає додаткові зірки до поточних зірок, на більших або менших шарах.

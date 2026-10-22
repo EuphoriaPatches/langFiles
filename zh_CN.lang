@@ -1093,8 +1093,11 @@ option.WAVING_LILY_PAD.comment=给睡莲和青蛙卵添加摇晃的效果模拟�
 option.WAVING_WATER_VERTEX=水面高度摇晃
 option.WAVING_WATER_VERTEX.comment=给水面添加摇晃运动模拟风的吹拂。. §e[*]§r 本设置与 水波强度 选项无关。.
 
+option.WATER_NOISE_COLORING=水面高度摇晃
+option.WATER_NOISE_COLORING.comment=在海洋上添加轻微的颜色差异，使其看起来变得波动。. §e[*]§r "通过DQ设置" 表示此设置是在性能设置中由"详细质量"决定的，除非您更改它。.
 value.WATER_NOISE_COLORING.-1=§a跟随细节质量设定
 value.WATER_NOISE_COLORING.0=§a关
+value.WATER_NOISE_COLORING.1=§c打开
 
 option.WAVING_RAIN=雨雪纹理摇晃
 option.WAVING_RAIN.comment=为下落的雨水和雪花粒子纹理添加运动效果使其看起来更加动态。.
@@ -1201,6 +1204,9 @@ option.COLORED_LIGHT_FOG.comment=向场景中添加体积方块光雾, 在地�
 
 option.COLORED_LIGHT_FOG_I=光雾强度
 option.COLORED_LIGHT_FOG_I.comment=调节彩色光雾的亮度。.
+
+option.COLORED_DYNAMIC_LIGHTING=§e彩色动态灯光§r
+option.COLORED_DYNAMIC_LIGHTING.comment=允许动态光源，如地面上投放的火炬，投射彩色照明。. §e[*]§r 此功能仅在高级色彩追踪处于性能设置中且您的系统支持时才能使用。. §c[-]§r 这个效果会影响性能。.
 
 option.LIGHT_COLOR_MULTS=§e照明颜色倍率总开关
 option.LIGHT_COLOR_MULTS.comment=启用对出现在方块和物品表面的照明颜色的自定义功能。.
@@ -1427,6 +1433,8 @@ screen.FUN=趣设
 screen.FUN.comment=让我们来做点有意思的功能!
 screen.WORLD_CURVATURE_SETTINGS=世界曲率
 screen.WORLD_CURVATURE_SETTINGS.comment=与世界曲率相关的设置。.
+screen.SHOCKWAVE_SETTINGS=Shockwave 设置
+screen.SHOCKWAVE_SETTINGS.comment=与Shockwaves相关的设置。.
 screen.RANDOM_BLOCKLIGHT_SETTINGS=随机彩色方块光
 screen.RANDOM_BLOCKLIGHT_SETTINGS.comment=与随机彩色方块光相关的设置。.
 
@@ -2062,6 +2070,7 @@ option.END_CURVATURE_SIZE=末地 世界曲率规模
 option.LAVA_VARIATION=岩浆预设
 option.LAVA_VARIATION.comment=让你所在区域的岩浆更躁动的预设。. 来选择吧!
 value.LAVA_VARIATION.0=Complementary
+value.LAVA_VARIATION.1=自适应(推荐)
 value.LAVA_VARIATION.2=温红热流
 value.LAVA_VARIATION.3=熔岩芝士
 value.LAVA_VARIATION.4=暗黑群岛
@@ -2337,8 +2346,11 @@ option.NETHER_NOISE.comment=让下界上层的天空顶部看起来更有趣一�
 value.NETHER_NOISE.0=关
 value.NETHER_NOISE.1=开
 
+option.MCBL_MAIN_DEFINE=屏幕色彩光线
+option.MCBL_MAIN_DEFINE.comment=启用 Euphoria 补丁专用屏幕色彩照明。. 设置为 + ACT 与高级色彩追踪一起使用屏幕空间系统。. 这也适用于OptiFine和Mac ，不像ACT。. §e[*]§r只能在1.16.5及以上或在Angelica上工作。.
 value.MCBL_MAIN_DEFINE.0=关
 value.MCBL_MAIN_DEFINE.1=开
+value.MCBL_MAIN_DEFINE.2=在 + ACT
 
 option.MCBL_INFLUENCE=彩色照明影响程度
 option.MCBL_INFLUENCE.comment=调节彩色照明颜色对默认方块光颜色的影响程度。.
@@ -2671,6 +2683,10 @@ option.SHOCKWAVE=冲击波
 value.SHOCKWAVE.0=关
 value.SHOCKWAVE.1=圆形
 value.SHOCKWAVE.2=方形
+option.SHOCKWAVE.comment=使用面包并寻找！
+
+option.SHOCKWAVE_CROUCHING=蹲伏
+option.SHOCKWAVE_CROUCHING.comment=在抓取时也激活震动。. 在 1.21 之前自动启用，因为摩西还不存在。.
 
 option.STAR_LAYER_OW=错落星层 - 主世界
 option.STAR_LAYER_OW.comment=为当前的星空额外添加不同远近, 不同大小的星层。.
