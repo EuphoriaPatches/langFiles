@@ -1615,8 +1615,14 @@ option.CLOUD_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting sid
 option.CLOUD_NIGHT_LIGHT_MULTIPLIER=Cloud Night Light Multiplier
 option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting side of the clouds receives during the night.
 
+option.CLOUD_SUNSET_LIGHT_MULTIPLIER=Cloud Sunrise/Sunset Light Multiplier
+option.CLOUD_SUNSET_LIGHT_MULTIPLIER.comment=Multiplies the brightness the lighting side of the clouds receives during sunrise and sunset.
+
 option.CLOUD_AMBIENT_MULTIPLIER=Cloud Ambient Light Multiplier
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Multiplies the brightness of the ambient light side of the clouds.
+
+option.CLOUD_SUNSET_AMBIENT_MULTIPLIER=Cloud Sunrise/Sunset Ambient Light Multiplier
+option.CLOUD_SUNSET_AMBIENT_MULTIPLIER.comment=Multiplies the brightness of the ambient light side of the clouds during sunrise and sunset.
 
 option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=Cloud Night Ambient Light Multiplier
 option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=Multiplies the brightness of the ambient light side of the clouds during the night.
