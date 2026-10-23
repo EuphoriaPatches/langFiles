@@ -2649,6 +2649,9 @@ option.DAYLIGHT_STARS.comment=Zapne hvězdy během dne
 option.FROZEN_TIME=Zmrazený čas
 option.FROZEN_TIME.comment=Zmrazí čas animace shaderu, takže efekty shaderu, které používají animaci založenou na snímkové frekvenci budou zmrazeny a umožní tak dobré porovnávací snímky obrazovky.
 
+option.USE_SYNCED_TIME=Používat synchronizovaný čas
+option.USE_SYNCED_TIME.comment=Funkce jako mraky, mlhoviny a jiné budou synchronizované mezi hráči použitím tiků hry.
+
 option.DARKER_DEPTH_OCEANS=Tmavší hluboké oceány
 option.DARKER_DEPTH_OCEANS.comment=Světlo klesá s hloubkou oceánu
 value.DARKER_DEPTH_OCEANS.0=VYP
