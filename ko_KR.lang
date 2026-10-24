@@ -540,6 +540,8 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=물과 동일하게
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 
+value.WATER_REFRACTION_DEFINE.0=§a끄기
+
 option.WATER_REFRACTION_INTENSITY=물 굴절 강도 §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=물 굴절과 수중 왜곡의 강도를 조정합니다. §e[*]§r 이 설정은 “Detail Quality”가 “High”로 설정된 경우에만 완전히 적용되며, 그렇지 않으면 미세한 수중 왜곡에만 영향을 줍니다.
 

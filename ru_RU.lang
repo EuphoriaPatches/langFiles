@@ -556,6 +556,10 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=Как у воды
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 
+value.WATER_REFRACTION_DEFINE.-1=§aПо качеству деталей
+value.WATER_REFRACTION_DEFINE.0=§aНет
+value.WATER_REFRACTION_DEFINE.1=§cДа
+
 option.WATER_REFRACTION_INTENSITY=Интенсивность рефракции воды §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=Регулирует силу преломления света и искажений под водой. §e[*]§r Полноценно работает только при «Качестве деталей» — «Высокое», а иначе повлияет только на едва заметные подводные искажения.
 

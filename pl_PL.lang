@@ -533,6 +533,8 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=Zsynchronizowana ze Stylem Wody
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 
+value.WATER_REFRACTION_DEFINE.0=WYŁ.
+
 option.WATER_REFRACTION_INTENSITY=Natężęnie Refrakcji Wody §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=Dostosowuje intensywność refrakcji wody i podwodnych zniekształceń. §e[*]§r To ustawienie działa w pełni tylko wtedy, gdy Jakość Detali jest ustawiona na "Wysoką", w przeciwnym razie wpłynie tylko na subtelne podwodne zniekształcenia.
 

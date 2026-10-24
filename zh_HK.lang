@@ -538,6 +538,8 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=與水體風格一致
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 
+value.WATER_REFRACTION_DEFINE.0=§a關
+
 option.WATER_REFRACTION_INTENSITY=水體折射強度 §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=調節水體折射和水下失真變形的強度。. §e[*]§r 本選項僅在 細節質量 設定為 高 或者以上時生效。.
 

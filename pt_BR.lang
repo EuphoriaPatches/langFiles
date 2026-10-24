@@ -545,6 +545,8 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=Igual à Água
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimaginado
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Sem Limites
 
+value.WATER_REFRACTION_DEFINE.0=DESLIGADO
+
 option.WATER_REFRACTION_INTENSITY=Intensidade da Refração da Água §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=Ajuda a ajustar a intensidade da refração da água e distorção subaquática. §e[*]§r Esta configuração só funciona totalmente quando a Qualidade dos Detalhes está em "Alta", caso contrário, afeta apenas a distorção sutil subaquática.
 

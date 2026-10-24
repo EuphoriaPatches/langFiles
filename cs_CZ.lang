@@ -556,6 +556,10 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=Stejný jako voda
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 
+value.WATER_REFRACTION_DEFINE.-1=§aUrčen KD
+value.WATER_REFRACTION_DEFINE.0=§aVYP
+value.WATER_REFRACTION_DEFINE.1=§cZAP
+
 option.WATER_REFRACTION_INTENSITY=Intenzita lomu světla vody §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=Upravuje intenzitu lomu světla vody a zkreslení pod vodou. §e[*]§r Toto nastavení pouze plně funguje, když je Kvalita detailů nastavena na "Vysoká", jinak to bude pouze ovlivňovat jemné zkreslení pod vodou.
 
@@ -1615,8 +1619,14 @@ option.CLOUD_LIGHT_MULTIPLIER.comment=Násobí jas světlé strany mraků ve dne
 option.CLOUD_NIGHT_LIGHT_MULTIPLIER=Násobič světla mraků v noci
 option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=Násobí jas světlé strany mraků v noci.
 
+option.CLOUD_SUNSET_LIGHT_MULTIPLIER=Násobič světla mraků při východu/západu Slunce
+option.CLOUD_SUNSET_LIGHT_MULTIPLIER.comment=Násobí jas světlé strany mraků během východu a západu Slunce.
+
 option.CLOUD_AMBIENT_MULTIPLIER=Násobič okolního světla mraků ve dne
 option.CLOUD_AMBIENT_MULTIPLIER.comment=Násobí jas strany mraků s okolním světlem ve dne.
+
+option.CLOUD_SUNSET_AMBIENT_MULTIPLIER=Násobič okolního světla mraků při východu/západu Slunce
+option.CLOUD_SUNSET_AMBIENT_MULTIPLIER.comment=Násobí jas strany mraků s okolním světlem během východu a západu Slunce.
 
 option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=Násobič okolního světla mraků v noci
 option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=Násobí jas strany mraků s okolním světlem v noci.

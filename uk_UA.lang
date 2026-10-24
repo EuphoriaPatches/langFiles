@@ -556,6 +556,10 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=Як і вода
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Переосмислений
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Непов'язаний
 
+value.WATER_REFRACTION_DEFINE.-1=§aУстан. ЯД
+value.WATER_REFRACTION_DEFINE.0=§aВИМК.
+value.WATER_REFRACTION_DEFINE.1=§cУВІМК.
+
 option.WATER_REFRACTION_INTENSITY=Інтенсивність заломлення води §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=Керує інтенсивність заломлення води та спотворення зображення під водою. §e[*]§r Повністю працює лише тоді, коли якість деталей висока, інакше він ледве спотворюватиме зображення під водою.
 

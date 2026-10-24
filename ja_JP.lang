@@ -556,6 +556,10 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=水と同じ
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 
+value.WATER_REFRACTION_DEFINE.-1=§a細部の品質依存
+value.WATER_REFRACTION_DEFINE.0=§aOFF
+value.WATER_REFRACTION_DEFINE.1=§cON
+
 option.WATER_REFRACTION_INTENSITY=水の屈折強度 §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=水の屈折と水中での歪みの強度を調整します。. §e[*]§r この設定は「細部の品質」が「高」に設定されている場合にのみ完全に機能し、それ以外の場合は水中の微妙な歪みにのみ影響します。.
 
