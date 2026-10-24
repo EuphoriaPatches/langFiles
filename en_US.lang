@@ -556,6 +556,12 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=Same as Water
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 
+option.WATER_REFRACTION_DEFINE=Water Refraction
+option.WATER_REFRACTION_DEFINE.comment=Adds water refraction effect for water and nether portals.
+value.WATER_REFRACTION_DEFINE.-1=§aSet By DQ
+value.WATER_REFRACTION_DEFINE.0=§aOFF
+value.WATER_REFRACTION_DEFINE.1=§cON
+
 option.WATER_REFRACTION_INTENSITY=Water Refraction Intensity §e[*]§r
 option.WATER_REFRACTION_INTENSITY.comment=Adjusts the intensity of water refraction and underwater distortion. §e[*]§r This setting only fully works when Detail Quality is set to "High", or else it will only affect the subtle underwater distortion.
 
@@ -697,6 +703,9 @@ option.PIXELATED_BLOCKLIGHT.comment=Makes the lighting cast by light source bloc
 
 option.PIXELATED_AO=Pixelated Edge Shadows
 option.PIXELATED_AO.comment=Makes Minecraft's vanilla ambient occlusion look pixelated.
+
+option.PIXELATED_CLOUD_SHADOWS=Pixelated Cloud Shadows §e[*]§r
+option.PIXELATED_CLOUD_SHADOWS.comment=Makes cloud shadows more pixelated than regular pixel shadows. §e[*]§r Unlike other pixelation settings, this one does not respect the "Pixelation Scale" setting. §e[*]§r Cloud Shadows setting must be enabled in cloud settings for this feature to work.
 
 option.PIXEL_SCALE=Pixelation Scale
 option.PIXEL_SCALE.comment=Scaling done on the textures resolution.
