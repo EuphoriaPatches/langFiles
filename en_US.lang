@@ -3233,3 +3233,7 @@ option.REFLECTIVE_HORSES.comment=Every kid loves a shiny horse! A horse which is
 
 option.MODDED_FOG_SUPPORT=Modded Fog Support
 option.MODDED_FOG_SUPPORT.comment=Adds support for modded fogs, it should not do anything if a mod does not add a custom fog.
+
+option.ENTITY_SHADOW_DISTANCE=§4§lEntity Shadow Distance
+option.ENTITY_SHADOW_DISTANCE.comment=Multiplier for the entity shadow distance in the Overworld and End. §c[-]§r This has a rather high performance (FPS) impact when higher than default values are used.
+value.ENTITY_SHADOW_DISTANCE.0.125=Default (0.125)
