@@ -556,6 +556,8 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=Stejný jako voda
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 
+option.WATER_REFRACTION_DEFINE=Lom světla vody
+option.WATER_REFRACTION_DEFINE.comment=Přidává efekt lomu světla k vodě a Netherovým portálům.
 value.WATER_REFRACTION_DEFINE.-1=§aUrčen KD
 value.WATER_REFRACTION_DEFINE.0=§aVYP
 value.WATER_REFRACTION_DEFINE.1=§cZAP
@@ -701,6 +703,9 @@ option.PIXELATED_BLOCKLIGHT.comment=Dělá světlo vržené bloky pixelované.
 
 option.PIXELATED_AO=Pixelované stíny na hranách
 option.PIXELATED_AO.comment=Dělá Ambient Occlusion Minecraftu pixelované.
+
+option.PIXELATED_CLOUD_SHADOWS=Pixelované stíny mraků §e[*]§r
+option.PIXELATED_CLOUD_SHADOWS.comment=Stíny mraků budou vypadat více pixelované, než běžné pixelované stíny. §e[*]§r Na rozdíl od ostatních nastavení pixelizace nerespektuje nastavení "Měřítko pixelování". §e[*]§r Nastavení Stíny mraků musí být zapnuto v nastavení mraků, aby fungovala tato funkce.
 
 option.PIXEL_SCALE=Měřítko pixelování
 option.PIXEL_SCALE.comment=Škálování dělané na rozlišení textur.
@@ -2357,7 +2362,7 @@ value.NETHER_NOISE.0=VYP
 value.NETHER_NOISE.1=ZAP
 
 option.MCBL_MAIN_DEFINE=Barevné osvětlení v prostoru obrazovky
-option.MCBL_MAIN_DEFINE.comment=Zapíná barevné osvětlení v prostoru obrazovky exkluzivní pro Euphoria Patches. Nastav na Zap + ACT pro použití systému v prostoru obrazovky spolu s Pokročilým trasováním barev. Toto nastavení také funguje na OptiFinu a Macu narozdíl od ACT. §e[*]§rFunguje pouze na Minecraft verzi 1.16.5 a vyšší nebo na Angelica.
+option.MCBL_MAIN_DEFINE.comment=Zapíná barevné osvětlení v prostoru obrazovky exkluzivní pro Euphoria Patches. Nastav na Zap + ACT pro použití systému v prostoru obrazovky spolu s Pokročilým trasováním barev. Toto nastavení také funguje na OptiFinu a Macu na rozdíl od ACT. §e[*]§rFunguje pouze na Minecraft verzi 1.16.5 a vyšší nebo na Angelica.
 value.MCBL_MAIN_DEFINE.0=VYP
 value.MCBL_MAIN_DEFINE.1=Zap
 value.MCBL_MAIN_DEFINE.2=Zap + ACT
@@ -3228,3 +3233,7 @@ option.REFLECTIVE_HORSES.comment=Každé dítě má rádo lesklého koně! Kůň
 
 option.MODDED_FOG_SUPPORT=Podpora modované mlhy
 option.MODDED_FOG_SUPPORT.comment=Přidává podporu pro modované mlhy, nemělo by nic dělat, pokud mod nepřidává vlastní mlhu.
+
+option.ENTITY_SHADOW_DISTANCE=§4§lVzdálenost stínů enitit
+option.ENTITY_SHADOW_DISTANCE.comment=Násobič pro vzdálenost stínů entit v Overworldu a Endu. §c[-]§r Má docela vysoký dopad na výkon (FPS), když jsou použité vyšší hodnoty než výchozí.
+value.ENTITY_SHADOW_DISTANCE.0.125=Výchozí (0.125)
