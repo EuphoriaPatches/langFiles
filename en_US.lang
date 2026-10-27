@@ -2629,6 +2629,9 @@ option.SSS_STRENGTH=Subsurface Scattering
 value.SSS_STRENGTH.0=OFF
 value.SSS_STRENGTH.1=ON
 
+option.SKYLIGHT_SSS=Skylight Subsurface Scatter
+option.SKYLIGHT_SSS.comment=Lets leaves, plants and other translucent materials glow from skylight passing through them, most visible when looking up at them from below. §e[*]§r This setting only works if "Subsurface Scattering" is on and in the Overworld.
+
 option.PIXEL_WATER=Procedural Pixel Water
 option.PIXEL_WATER.comment=Generated procedural pixelated water texture.
 value.PIXEL_WATER.0=OFF
@@ -2881,6 +2884,9 @@ option.BETTER_LABPBR_POROSITY.comment=Makes rain-exposed LabPBR materials darken
 
 option.BETTER_LABPBR_AO=Material AO Support
 option.BETTER_LABPBR_AO.comment=Darkens direct lighting based on the material ambient occlusion baked into the LabPBR normal texture. §e[*]§r This setting only works if "RP Support" is set to LabPBR
+
+option.BETTER_LABPBR_SSS=Subsurface Scattering
+option.BETTER_LABPBR_SSS.comment=Lets materials light up from behind based on the subsurface scattering value stored in the LabPBR specular texture. Works on blocks, translucent blocks, and on entities if "Entity Shadows" is enabled and on block entities if it's set to "Full". §e[*]§r This setting only works if "RP Support" is set to LabPBR and "Real-Time Shadows" is set to Low or higher.
 
 option.SHADOW_SATURATION=Shadow Saturation
 option.SHADOW_SATURATION.comment=Change the saturation of the shadows and light shafts. §e[*]§r This setting only works if "Real-Time Shadows" is set to Low or higher.
