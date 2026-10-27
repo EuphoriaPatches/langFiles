@@ -2868,6 +2868,8 @@ option.BETTER_LABPBR_POROSITY.comment=使暴露在雨中的方块表面遵循 L
 option.BETTER_LABPBR_AO=纹理 AO 支持
 option.BETTER_LABPBR_AO.comment=基于烘培到 LabPBR 法线纹理中的材质环境光遮蔽信息使方块的直接照明变暗。. §e[*]§r 本选项仅在 "资源包支持" 选项的值设置为 LabPBR 时生效。.
 
+option.BETTER_LABPBR_SSS=次表面散射
+
 option.SHADOW_SATURATION=阴影饱和度
 option.SHADOW_SATURATION.comment=调节阴影和光轴的饱和度。. §e[*]§r 本选项仅在 "实时阴影" 选项设置为 低 或者更高的值时生效。.
 
@@ -3219,3 +3221,4 @@ option.REFLECTIVE_HORSES.comment=每个孩子都喜欢闪亮的马！。. 一匹
 
 option.MODDED_FOG_SUPPORT=模组雾气支持
 option.MODDED_FOG_SUPPORT.comment=为模组雾气添加支持，若模组未添加自定义雾气的情况下不会有任何变化。.
+

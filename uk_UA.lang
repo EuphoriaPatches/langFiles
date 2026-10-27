@@ -2868,6 +2868,8 @@ option.BETTER_LABPBR_POROSITY.comment=Змушує матеріали LabPBR, н
 option.BETTER_LABPBR_AO=Підтримка матеріалів НО
 option.BETTER_LABPBR_AO.comment=Затемнює пряме освітлення на основі матеріалах навколишньої оклюзії, запечених у текстурі нерівностей LabPBR. §e[*]§r Працює лише тоді, коли підтримка LabPBR.
 
+option.BETTER_LABPBR_SSS=Підповерхневе розсіювання
+
 option.SHADOW_SATURATION=Насиченість тіні
 option.SHADOW_SATURATION.comment=Змінює насиченість тіней і світлових потоків. §e[*]§r Цей параметр працює, лише якщо для «Тіні в реальному часі» встановлено значення «Низько» або вище.
 
@@ -3219,3 +3221,4 @@ option.REFLECTIVE_HORSES.comment=Кожна дитина любить блиск
 
 option.MODDED_FOG_SUPPORT=Підтримка туману модів
 option.MODDED_FOG_SUPPORT.comment=Додає підтримку до туманів з модів, це не повинно нічого робити, якщо немає мода, який додає власний туман.
+

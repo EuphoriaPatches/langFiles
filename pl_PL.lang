@@ -2692,6 +2692,8 @@ value.REFLECTION_RESPONSIVENESS.0.0=Styl Domyślny
 value.BETTER_LABPBR_REFRACTIONS.0=WŁ.
 suffix.BETTER_LABPBR_REFRACTIONS=%
 
+option.BETTER_LABPBR_SSS=Rozpraszanie Podpowierzchniowe (SSS)
+
 option.SHADOW_SATURATION=Nasycenie Cieni
 option.SHADOW_SATURATION.comment=Zmień nasycenie cieni i snopów światła. §e[*]§r Cienie w Czasie Rzeczywistym muszą być ustawione na jakość "Niskią" lub wyższą.
 

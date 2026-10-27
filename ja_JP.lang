@@ -2868,6 +2868,8 @@ option.BETTER_LABPBR_POROSITY.comment=雨にさらされたLabPBRマテリアル
 option.BETTER_LABPBR_AO=マテリアルAOサポート
 option.BETTER_LABPBR_AO.comment=LabPBRのノーマルテクスチャに含まれる、マテリアルのアンビエントオクルージョン (AO) に基づいて直接証明を暗くします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
 
+option.BETTER_LABPBR_SSS=サブサーフェス・スキャッタリング
+
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。.
 
@@ -3219,3 +3221,4 @@ option.REFLECTIVE_HORSES.comment=子供はみんなキラキラの馬が大好�
 
 option.MODDED_FOG_SUPPORT=Modの霧のサポート
 option.MODDED_FOG_SUPPORT.comment=Modで追加される霧へのサポートを追加します。. Modが独自の霧を追加しない場合は何も起こりません。.
+

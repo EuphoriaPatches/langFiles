@@ -2882,6 +2882,8 @@ option.BETTER_LABPBR_POROSITY.comment=LabPBR materiály, které jsou vystavené 
 option.BETTER_LABPBR_AO=Podpora AO materiálů
 option.BETTER_LABPBR_AO.comment=Ztmaví přímé osvětlení podle Ambient Occlusion materiálu v normálové textuře LabPBR. §e[*]§r Toto nastavení pouze funguje, pokud je "Podpora textur" nastavena na LabPBR
 
+option.BETTER_LABPBR_SSS=Podpovrchové rozptylování
+
 option.SHADOW_SATURATION=Sytost stínů
 option.SHADOW_SATURATION.comment=Mění sytost stínů a paprsků světla. §e[*]§r Toto nastavení pouze funguje, pokud je nastavení "Stíny v reálném čase" nastaveno na Nízké nebo vyšší.
 

@@ -2749,6 +2749,8 @@ value.REFLECTION_RESPONSIVENESS.0.0=Default=預設
 value.BETTER_LABPBR_REFRACTIONS.0=關
 suffix.BETTER_LABPBR_REFRACTIONS=%
 
+option.BETTER_LABPBR_SSS=次表面散射
+
 option.SHADOW_SATURATION=陰影飽和度
 option.SHADOW_SATURATION.comment=調節陰影和光束的飽和度。. §e[*]§r 本選項僅在 "實時陰影" 選項設定為 低 或者更高的值時生效。.
 
