@@ -2396,7 +2396,7 @@ option.SNOW_TEX_OPACITY_MULTIPLIER.comment=Změň průhlednost textury částic 
 option.DOF_SNEAKING=Rozmazání při plížení a s dalekohledem
 option.DOF_SNEAKING.comment=Aktivuje možnost rozmazání světa pouze při plížení a držení dalekohledu.
 
-option.CLEAR_SKY_WHEN_RAINING=Čiřejší nebe během deště
+option.CLEAR_SKY_WHEN_RAINING=Čiřejší obloha během deště
 option.CLEAR_SKY_WHEN_RAINING.comment=Dělá hvězdy a jiné efekty oblohy trochu viditelné během deště.
 
 option.RETRO_ON=Globální přepínač Retro
@@ -2628,6 +2628,8 @@ value.HAND_BLOCKLIGHT_FLICKERING.0=VYP
 option.SSS_STRENGTH=Podpovrchové rozptylování
 value.SSS_STRENGTH.0=VYP
 value.SSS_STRENGTH.1=ZAP
+
+option.SKYLIGHT_SSS=Podpovrchové rozptylování světla oblohy
 
 option.PIXEL_WATER=Procedurální pixelovaná voda
 option.PIXEL_WATER.comment=Procedurálně generovaná pixelovaná textura vody.
@@ -2883,6 +2885,7 @@ option.BETTER_LABPBR_AO=Podpora AO materiálů
 option.BETTER_LABPBR_AO.comment=Ztmaví přímé osvětlení podle Ambient Occlusion materiálu v normálové textuře LabPBR. §e[*]§r Toto nastavení pouze funguje, pokud je "Podpora textur" nastavena na LabPBR
 
 option.BETTER_LABPBR_SSS=Podpovrchové rozptylování
+option.BETTER_LABPBR_SSS.comment=Umožňuje materiálům rozsvítit se zezadu podle hodnoty podpovrchového rozptylování v textuře LabPBR. Funguje na blocích, průsvitných blocích, na entitách, pokud jsou zapnuté "Stíny entit", a na blokových entitách, pokud jsou nastaveny na "Plné". §e[*]§r Toto nastavení pouze funguje, pokud je "Podpora textur" nastavena na LabPBR a "Stíny v reálném čase" jsou nastaveny na Nízké nebo vyšší.
 
 option.SHADOW_SATURATION=Sytost stínů
 option.SHADOW_SATURATION.comment=Mění sytost stínů a paprsků světla. §e[*]§r Toto nastavení pouze funguje, pokud je nastavení "Stíny v reálném čase" nastaveno na Nízké nebo vyšší.
@@ -2898,7 +2901,7 @@ value.PIXELATED_NEBULA.0=VYP
 option.NEBULA_ZOOM_LEVEL=Úroveň přiblížení
 option.NEBULA_ZOOM_LEVEL.comment=Mění, jak přiblížená je mlhovina na obloze.
 option.NEBULA_AMOUNT=Množství
-option.NEBULA_AMOUNT.comment=Mění, jak velkou část nebe pokrývají mlhoviny.
+option.NEBULA_AMOUNT.comment=Mění, jak velkou část oblohy pokrývají mlhoviny.
 option.NEBULA_PATTERN_WARP=Vířivost
 option.NEBULA_PATTERN_WARP.comment=Mění, jak zkreslené budou mlhoviny.
 value.NEBULA_PATTERN_WARP.0=VYP
@@ -3077,7 +3080,7 @@ value.PHOTONICS_HANDHELD_MODE.2=Jeden
 option.PHOTONICS_AMBIENT_LIGHT_MULT=Násobič okolního světla
 option.PHOTONICS_AMBIENT_LIGHT_MULT.comment=Možnost změnit, kolik výchozího okolního osvětlení bude použito spolu s Photonics osvětlením. §e[*]§r Toto nastavení pouze funguje, pokud je nainstalovaný mod Photonics.
 
-option.PHOTONICS_COMBINED_GI=Zahrnout GO světla nebe
+option.PHOTONICS_COMBINED_GI=Zahrnout GO světla oblohy
 option.PHOTONICS_COMBINED_GI.comment=Jestli by mělo být globální osvětlení vedeno potlačením šumu ReSTIR místo jeho obvyklé cesty. \nMá za následek více intenzivní GO, za ceny výkonu a šumu\n\n§cVYSOKÝ DOPAD NA VÝKON. §b[*]§r Doporučeno používat s množstvím odstranění šumu 5 nebo vyšší.
 
 option.PHOTONICS_MAX_ALLOWED_DISTANCE=Povolená vzdálenost
