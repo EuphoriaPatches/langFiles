@@ -2630,7 +2630,7 @@ value.SSS_STRENGTH.0=OFF
 value.SSS_STRENGTH.1=ON
 
 option.SKYLIGHT_SSS=Skylight Subsurface Scatter
-option.SKYLIGHT_SSS.comment=Lets leaves, plants and other translucent materials glow from skylight passing through them, most visible when looking up at them from below. §e[*]§r This setting only works if "Subsurface Scattering" is on and in the Overworld.
+option.SKYLIGHT_SSS.comment=Lets leaves, plants and other translucent materials glow from skylight passing through them, most visible when looking up at them from below. This is always on when "Improved LabPBR" has "Subsurface Scattering Support" enabled. §e[*]§r This setting only works if "Subsurface Scattering" is on and in the Overworld.
 
 option.PIXEL_WATER=Procedural Pixel Water
 option.PIXEL_WATER.comment=Generated procedural pixelated water texture.
