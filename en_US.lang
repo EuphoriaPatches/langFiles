@@ -2882,6 +2882,9 @@ suffix.BETTER_LABPBR_REFRACTIONS=%
 option.BETTER_LABPBR_POROSITY=Porosity Support
 option.BETTER_LABPBR_POROSITY.comment=Makes rain-exposed LabPBR materials darken based on their porosity, and gain a reflective wet sheen. §e[*]§r This setting only works if "RP Support" is set to LabPBR
 
+option.BETTER_LABPBR_POM_PUDDLES=POM Rain Puddles
+option.BETTER_LABPBR_POM_PUDDLES.comment=Makes rain fill in the holes of blocks that have POM §e[*]§r This setting only works if "RP Support" is set to LabPBR and "Parallax Occlusion Mapping" is enabled.
+
 option.BETTER_LABPBR_AO=Material AO Support
 option.BETTER_LABPBR_AO.comment=Darkens direct lighting based on the material ambient occlusion baked into the LabPBR normal texture. §e[*]§r This setting only works if "RP Support" is set to LabPBR
 
