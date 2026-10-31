@@ -2630,6 +2630,7 @@ value.SSS_STRENGTH.0=VYP
 value.SSS_STRENGTH.1=ZAP
 
 option.SKYLIGHT_SSS=Podpovrchové rozptylování světla oblohy
+option.SKYLIGHT_SSS.comment=Umožňuje svítit listům, rostlinám a jiným průsvitným materiálům, když nimi prochází světlo oblohy, nejvíce viditelné při pohledu zdola. Toto je vždy zapnuté, když má "Vylepšené LabPBR" zapnuté "Podpora podpovrchového rozptylování". §e[*]§r Toto nastavení pouze funguje v Overworldu, když je zapnuté nastavení "Podpovrchové rozptylování".
 
 option.PIXEL_WATER=Procedurální pixelovaná voda
 option.PIXEL_WATER.comment=Procedurálně generovaná pixelovaná textura vody.

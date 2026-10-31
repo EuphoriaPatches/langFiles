@@ -556,6 +556,8 @@ value.WATER_CAUSTIC_STYLE_DEFINE.-1=水と同じ
 value.WATER_CAUSTIC_STYLE_DEFINE.1=Reimagined
 value.WATER_CAUSTIC_STYLE_DEFINE.3=Unbound
 
+option.WATER_REFRACTION_DEFINE=水の屈折
+option.WATER_REFRACTION_DEFINE.comment=水とネザーポータルに屈折効果を追加します。.
 value.WATER_REFRACTION_DEFINE.-1=§a細部の品質依存
 value.WATER_REFRACTION_DEFINE.0=§aOFF
 value.WATER_REFRACTION_DEFINE.1=§cON
@@ -701,6 +703,9 @@ option.PIXELATED_BLOCKLIGHT.comment=光源ブロックのライティングを�
 
 option.PIXELATED_AO=ピクセル化されたエッジシャドウ
 option.PIXELATED_AO.comment=バニラのアンビエントオクルージョンをピクセル化します。.
+
+option.PIXELATED_CLOUD_SHADOWS=ピクセル化された雲の影 §e[*]§r
+option.PIXELATED_CLOUD_SHADOWS.comment=雲の影を通常のピクセル影よりも強くピクセル化させます。. §e[*]§r 他のピクセル化設定と異なり、これは「ピクセル化のスケール」設定に影響されません。. §e[*]§r この機能を有効にするには「雲の影」設定が有効になっている必要があります。.
 
 option.PIXEL_SCALE=ピクセル化のスケール
 option.PIXEL_SCALE.comment=テクスチャ解像度に基づいてスケーリングを行います。.
@@ -1619,8 +1624,14 @@ option.CLOUD_LIGHT_MULTIPLIER.comment=昼間に雲の光が当たる面の輝度
 option.CLOUD_NIGHT_LIGHT_MULTIPLIER=雲の光倍率 - 夜間
 option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=夜間に雲の光が当たる面の輝度を増加させます。.
 
+option.CLOUD_SUNSET_LIGHT_MULTIPLIER=雲の光倍率 - 日の出/日の入り
+option.CLOUD_SUNSET_LIGHT_MULTIPLIER.comment=日の出と日の入りの時間帯に雲の光が当たる面の輝度を増加させます。.
+
 option.CLOUD_AMBIENT_MULTIPLIER=雲の環境光倍率
 option.CLOUD_AMBIENT_MULTIPLIER.comment=雲の環境光が当たる面の輝度を増加させます。.
+
+option.CLOUD_SUNSET_AMBIENT_MULTIPLIER=雲の環境光倍率 - 日の出/日の入り
+option.CLOUD_SUNSET_AMBIENT_MULTIPLIER.comment=日の出と日の入りの時間帯に雲の環境光が当たる面の輝度を増加させます。.
 
 option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=雲の環境光倍率 - 夜間
 option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=夜間に雲の環境光が当たる面の輝度を増加させます。.
@@ -2618,6 +2629,9 @@ option.SSS_STRENGTH=サブサーフェス・スキャッタリング
 value.SSS_STRENGTH.0=OFF
 value.SSS_STRENGTH.1=ON
 
+option.SKYLIGHT_SSS=自然光のSSS
+option.SKYLIGHT_SSS.comment=葉、植物、その他の半透明なマテリアルが、それらを通過する自然光によって光るようにします。. 真下から見るときに最も顕著です。. これは「LabPBRの改善」で「サブサーフェス・スキャッタリングサポート」が有効な場合に常にオンになります。. §e[*]§r この設定は「サブサーフェス・スキャッタリング (SSS)」が有効、かつオーバーワールド内でのみ機能します。.
+
 option.PIXEL_WATER=自動生成ピクセル水
 option.PIXEL_WATER.comment=自動生成されたピクセル化された水のテクスチャ。.
 value.PIXEL_WATER.0=OFF
@@ -2652,6 +2666,9 @@ option.DAYLIGHT_STARS.comment=昼間に星を表示します。.
 
 option.FROZEN_TIME=時間停止
 option.FROZEN_TIME.comment=フレーム数に依存したシェーダーのアニメーション効果を停止させます。. 比較用のスクリーンショット撮影に最適です。.
+
+option.USE_SYNCED_TIME=時刻を同期する
+option.USE_SYNCED_TIME.comment=雲、星雲などの機能がゲームティックを使用してプレイヤー間で同期されます。.
 
 option.DARKER_DEPTH_OCEANS=深く暗い海
 option.DARKER_DEPTH_OCEANS.comment=海の深さに応じて光が減少します。.
@@ -2868,7 +2885,8 @@ option.BETTER_LABPBR_POROSITY.comment=雨にさらされたLabPBRマテリアル
 option.BETTER_LABPBR_AO=マテリアルAOサポート
 option.BETTER_LABPBR_AO.comment=LabPBRのノーマルテクスチャに含まれる、マテリアルのアンビエントオクルージョン (AO) に基づいて直接証明を暗くします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
 
-option.BETTER_LABPBR_SSS=サブサーフェス・スキャッタリング
+option.BETTER_LABPBR_SSS=サブサーフェス・スキャッタリング (SSS)
+option.BETTER_LABPBR_SSS.comment=LabPBRの鏡面反射マップに含まれるサブサーフェス・スキャッタリングの値に基づいて、マテリアルが背後から照らされるようにします。. ブロック、半透明のブロック、「エンティティの影」が有効な場合はエンティティ、さらに「完全」に設定されている場合はブロックエンティティ上で動作します。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されていて、「動的な影」が「低」以上に設定されている場合にのみ動作します。.
 
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。.
@@ -3222,3 +3240,6 @@ option.REFLECTIVE_HORSES.comment=子供はみんなキラキラの馬が大好�
 option.MODDED_FOG_SUPPORT=Modの霧のサポート
 option.MODDED_FOG_SUPPORT.comment=Modで追加される霧へのサポートを追加します。. Modが独自の霧を追加しない場合は何も起こりません。.
 
+option.ENTITY_SHADOW_DISTANCE=§4§lエンティティの影の描画距離
+option.ENTITY_SHADOW_DISTANCE.comment=オーバーワールドとジ・エンドでのエンティティの影の描写距離の倍率です。. §c[-]§r デフォルトよりも高い値に設定すると、パフォーマンス (FPS) に比較的大きな影響を与えます。.
+value.ENTITY_SHADOW_DISTANCE.0.125=デフォルト (0.125)
