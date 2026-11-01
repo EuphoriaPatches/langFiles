@@ -1398,6 +1398,8 @@ screen.END_ROD_SETTINGS=End Rod
 screen.END_ROD_SETTINGS.comment=Settings that relate to end rods.
 screen.FOLIAGE_SETTINGS=Foliage
 screen.FOLIAGE_SETTINGS.comment=Settings that relate to foliage.
+screen.SSS_SETTINGS=Subsurface Scattering
+screen.SSS_SETTINGS.comment=Settings that relate to Subsurface Scattering, aka light shining through leaves, plants and other translucent materials.
 screen.PORTAL_SETTINGS=Portal Settings
 screen.PORTAL_SETTINGS.comment=Settings that relate to portals.
 screen.MISC_SETTINGS=Miscellaneous
@@ -2372,6 +2374,8 @@ option.MCBL_INFLUENCE.comment=Controls how much the multi-colored blocklight aff
 
 option.SSS_SNOW_ICE=Snow and Ice SSS
 option.SSS_SNOW_ICE.comment=Adds subsurface scattering to snow and ice blocks.
+option.SSS_HONEYCOMB=Honeycomb Block SSS
+option.SSS_HONEYCOMB.comment=Adds subsurface scattering to honeycomb blocks.
 
 option.BEDROCK_NOISE=Bedrock Noise
 option.BEDROCK_NOISE.comment=Adds a noise effect below bedrock in the Nether and Overworld.
@@ -2631,6 +2635,9 @@ value.SSS_STRENGTH.1=ON
 
 option.SKYLIGHT_SSS=Skylight Subsurface Scatter
 option.SKYLIGHT_SSS.comment=Lets leaves, plants and other translucent materials glow from skylight passing through them, most visible when looking up at them from below. This is always on when "Improved LabPBR" has "Subsurface Scattering Support" enabled. §e[*]§r This setting only works if "Subsurface Scattering" is on and in the Overworld.
+
+option.BLOCKLIGHT_SSS=Blocklight Subsurface Scatter
+option.BLOCKLIGHT_SSS.comment=Lets leaves, plants and other translucent materials glow from block light sources behind them, slightly tinted by the light's color. This is always on when "Improved LabPBR" has "Subsurface Scattering Support" enabled. §e[*]§r This setting only works if "Subsurface Scattering" and "Colored Lighting" are on.
 
 option.PIXEL_WATER=Procedural Pixel Water
 option.PIXEL_WATER.comment=Generated procedural pixelated water texture.
