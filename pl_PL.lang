@@ -1319,6 +1319,7 @@ screen.END_ROD_SETTINGS=Słupek Endu
 screen.END_ROD_SETTINGS.comment=Ustawienia związane ze Słupkiem Endu
 screen.FOLIAGE_SETTINGS=Rośliny
 screen.FOLIAGE_SETTINGS.comment=Ustawienia związane ze roślinami.
+screen.SSS_SETTINGS=Rozpraszanie Podpowierzchniowe (SSS)
 screen.PORTAL_SETTINGS=Portale
 screen.PORTAL_SETTINGS.comment=Ustawienia związane z portalami.
 screen.MISC_SETTINGS=Ogólne

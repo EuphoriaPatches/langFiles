@@ -1398,6 +1398,7 @@ screen.END_ROD_SETTINGS=Enderitová tyč
 screen.END_ROD_SETTINGS.comment=Nastavení týkající se enderitových tyčí.
 screen.FOLIAGE_SETTINGS=Zeleň
 screen.FOLIAGE_SETTINGS.comment=Nastavení týkající se zeleni.
+screen.SSS_SETTINGS=Podpovrchové rozptylování
 screen.PORTAL_SETTINGS=Nastavení portálů
 screen.PORTAL_SETTINGS.comment=Nastavení týkající se portálů.
 screen.MISC_SETTINGS=Ostatní

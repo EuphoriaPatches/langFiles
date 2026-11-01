@@ -1215,6 +1215,7 @@ screen.DIRECTIONAL_LIGHTMAP_NORMALS_SETTINGS=라이트맵 텍스처
 screen.LAVA_SETTINGS=용암
 screen.END_ROD_SETTINGS=엔드 막대기
 screen.FOLIAGE_SETTINGS=나뭇잎
+screen.SSS_SETTINGS=Subsurface Scattering (표면 밑 산광)
 screen.PORTAL_SETTINGS=포탈 설정
 screen.MISC_SETTINGS=기타
 screen.MISC_SETTINGS.comment=나머지 설정들

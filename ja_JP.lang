@@ -1398,6 +1398,7 @@ screen.END_ROD_SETTINGS=エンドロッド
 screen.END_ROD_SETTINGS.comment=エンドロッドに関する設定です。.
 screen.FOLIAGE_SETTINGS=植物
 screen.FOLIAGE_SETTINGS.comment=植物に関する設定です。.
+screen.SSS_SETTINGS=サブサーフェス・スキャッタリング (SSS)
 screen.PORTAL_SETTINGS=ポータルの設定
 screen.PORTAL_SETTINGS.comment=ポータルに関する設定です。.
 screen.MISC_SETTINGS=その他
@@ -2882,11 +2883,14 @@ suffix.BETTER_LABPBR_REFRACTIONS=%
 option.BETTER_LABPBR_POROSITY=ポロシティサポート
 option.BETTER_LABPBR_POROSITY.comment=雨にさらされたLabPBRマテリアルをポロシティ/気孔率に基づいて暗くし、反射のある濡れた光沢を与えます。.
 
+option.BETTER_LABPBR_POM_PUDDLES=POMの水溜まり
+option.BETTER_LABPBR_POM_PUDDLES.comment=雨がPOMのあるブロックの隙間を満たすようにします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている、かつ「視差オクルージョンマッピング (POM)」が有効な場合にのみ動作します。.
+
 option.BETTER_LABPBR_AO=マテリアルAOサポート
 option.BETTER_LABPBR_AO.comment=LabPBRのノーマルテクスチャに含まれる、マテリアルのアンビエントオクルージョン (AO) に基づいて直接証明を暗くします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
 
 option.BETTER_LABPBR_SSS=サブサーフェス・スキャッタリング (SSS)
-option.BETTER_LABPBR_SSS.comment=LabPBRの鏡面反射マップに含まれるサブサーフェス・スキャッタリングの値に基づいて、マテリアルが背後から照らされるようにします。. ブロック、半透明のブロック、「エンティティの影」が有効な場合はエンティティ、さらに「完全」に設定されている場合はブロックエンティティ上で動作します。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されていて、「動的な影」が「低」以上に設定されている場合にのみ動作します。.
+option.BETTER_LABPBR_SSS.comment=LabPBRの鏡面反射マップに含まれるサブサーフェス・スキャッタリングの値に基づいて、マテリアルが背後から照らされるようにします。. ブロック、半透明のブロック、「エンティティの影」が有効な場合はエンティティ、さらに「完全」に設定されている場合はブロックエンティティ上で動作します。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている、かつ「動的な影」が「低」以上に設定されている場合にのみ動作します。.
 
 option.SHADOW_SATURATION=影の彩度
 option.SHADOW_SATURATION.comment=影と光芒の彩度を変更します。. §e[*]§r この設定は「動的な影」が低以上に設定されている場合にのみ機能します。.

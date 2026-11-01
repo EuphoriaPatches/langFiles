@@ -1398,6 +1398,7 @@ screen.END_ROD_SETTINGS=Стержень Энда
 screen.END_ROD_SETTINGS.comment=Параметры стержней Энда.
 screen.FOLIAGE_SETTINGS=Растительность
 screen.FOLIAGE_SETTINGS.comment=Настройки листвы и травы.
+screen.SSS_SETTINGS=Подповерхностное рассеивание
 screen.PORTAL_SETTINGS=Порталы
 screen.PORTAL_SETTINGS.comment=Параметры порталов.
 screen.MISC_SETTINGS=Разное

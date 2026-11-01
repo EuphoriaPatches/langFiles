@@ -1393,6 +1393,7 @@ screen.END_ROD_SETTINGS=Стрижень Енду
 screen.END_ROD_SETTINGS.comment=Налаштування, які стосуються стрижня Енду.
 screen.FOLIAGE_SETTINGS=Рослинність
 screen.FOLIAGE_SETTINGS.comment=Налаштування, які стосуються рослинности.
+screen.SSS_SETTINGS=Підповерхневе розсіювання
 screen.PORTAL_SETTINGS=Портал
 screen.PORTAL_SETTINGS.comment=Налаштування, які стосуються порталу.
 screen.MISC_SETTINGS=Різне

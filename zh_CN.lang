@@ -1393,6 +1393,7 @@ screen.END_ROD_SETTINGS=末地烛
 screen.END_ROD_SETTINGS.comment=与末地烛相关的设置。.
 screen.FOLIAGE_SETTINGS=植被
 screen.FOLIAGE_SETTINGS.comment=与植被相关的设置。.
+screen.SSS_SETTINGS=次表面散射
 screen.PORTAL_SETTINGS=传送门
 screen.PORTAL_SETTINGS.comment=与传送门相关的设置。.
 screen.MISC_SETTINGS=杂项
