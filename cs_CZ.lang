@@ -1398,7 +1398,8 @@ screen.END_ROD_SETTINGS=Enderitová tyč
 screen.END_ROD_SETTINGS.comment=Nastavení týkající se enderitových tyčí.
 screen.FOLIAGE_SETTINGS=Zeleň
 screen.FOLIAGE_SETTINGS.comment=Nastavení týkající se zeleni.
-screen.SSS_SETTINGS=Podpovrchové rozptylování
+screen.SSS_SETTINGS=Podpovrchové rozptylování (SSS)
+screen.SSS_SETTINGS.comment=Nastavení týkající se Podpovrchového rozptylování, neboli pronikání světla skrz listy, rostliny a jiné průsvitné materiály.
 screen.PORTAL_SETTINGS=Nastavení portálů
 screen.PORTAL_SETTINGS.comment=Nastavení týkající se portálů.
 screen.MISC_SETTINGS=Ostatní
@@ -2373,6 +2374,8 @@ option.MCBL_INFLUENCE.comment=Určuje, jak moc bude vícebarevné světlo bloků
 
 option.SSS_SNOW_ICE=SSS sněhu a ledu
 option.SSS_SNOW_ICE.comment=Přidává podpovrchové rozptylování k blokům sněhu a ledu.
+option.SSS_HONEYCOMB=SSS bloku medových pláství
+option.SSS_HONEYCOMB.comment=Přidává podpovrchové rozptylování k blokům medových pláství.
 
 option.BEDROCK_NOISE=Šum podloží
 option.BEDROCK_NOISE.comment=Přidává efekt šumu pod podložím v Netheru a Overworldu.
@@ -2626,12 +2629,15 @@ value.GLITTER_RAIN.2=ZAP - Vždy
 option.HAND_BLOCKLIGHT_FLICKERING=Blikání světla v ruce
 value.HAND_BLOCKLIGHT_FLICKERING.0=VYP
 
-option.SSS_STRENGTH=Podpovrchové rozptylování
+option.SSS_STRENGTH=Podpovrchové rozptylování (SSS)
 value.SSS_STRENGTH.0=VYP
 value.SSS_STRENGTH.1=ZAP
 
 option.SKYLIGHT_SSS=Podpovrchové rozptylování světla oblohy
 option.SKYLIGHT_SSS.comment=Umožňuje svítit listům, rostlinám a jiným průsvitným materiálům, když nimi prochází světlo oblohy, nejvíce viditelné při pohledu zdola. Toto je vždy zapnuté, když má "Vylepšené LabPBR" zapnuté "Podpora podpovrchového rozptylování". §e[*]§r Toto nastavení pouze funguje v Overworldu, když je zapnuté nastavení "Podpovrchové rozptylování".
+
+option.BLOCKLIGHT_SSS=Podpovrchový rozptyl světla bloků
+option.BLOCKLIGHT_SSS.comment=Umožňuje listům, rostlinám a jiným průsvitným materiálům svítit zezadu kvůli blokům zdroje světla za nimi, lehce zbarvené barvou svěla. Toto je vždy zapnuté, když má "Vylepšené LabPBR" zapnuté "Podpora podpovrchového rozptylování". §e[*]§r Toto nastavení pouze funguje, když jsou zapnuté "Podpovrchové rozptylování" a "Barevné osvětlení".
 
 option.PIXEL_WATER=Procedurální pixelovaná voda
 option.PIXEL_WATER.comment=Procedurálně generovaná pixelovaná textura vody.
@@ -2883,10 +2889,13 @@ suffix.BETTER_LABPBR_REFRACTIONS=%
 option.BETTER_LABPBR_POROSITY=Podpora pórovitosti
 option.BETTER_LABPBR_POROSITY.comment=LabPBR materiály, které jsou vystavené dešti budou tmavnout podle jejich pórovitosti a získají odrážlivý mokrý lesk. §e[*]§r Toto nastavení pouze funguje, pokud je "Podpora textur" nastavena na LabPBR
 
+option.BETTER_LABPBR_POM_PUDDLES=MPO dešťové kaluže
+option.BETTER_LABPBR_POM_PUDDLES.comment=Déšť bude vyplňovat díry bloků, které mají MPO §e[*]§r Toto nastavení pouze funguje, pokud je "Podpora textur" nastavena na LabPBR a "Mapování paralaxní okluze" je zapnuto.
+
 option.BETTER_LABPBR_AO=Podpora AO materiálů
 option.BETTER_LABPBR_AO.comment=Ztmaví přímé osvětlení podle Ambient Occlusion materiálu v normálové textuře LabPBR. §e[*]§r Toto nastavení pouze funguje, pokud je "Podpora textur" nastavena na LabPBR
 
-option.BETTER_LABPBR_SSS=Podpovrchové rozptylování
+option.BETTER_LABPBR_SSS=Podpovrchové rozptylování (SSS)
 option.BETTER_LABPBR_SSS.comment=Umožňuje materiálům rozsvítit se zezadu podle hodnoty podpovrchového rozptylování v textuře LabPBR. Funguje na blocích, průsvitných blocích, na entitách, pokud jsou zapnuté "Stíny entit", a na blokových entitách, pokud jsou nastaveny na "Plné". §e[*]§r Toto nastavení pouze funguje, pokud je "Podpora textur" nastavena na LabPBR a "Stíny v reálném čase" jsou nastaveny na Nízké nebo vyšší.
 
 option.SHADOW_SATURATION=Sytost stínů
