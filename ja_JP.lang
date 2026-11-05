@@ -1399,6 +1399,7 @@ screen.END_ROD_SETTINGS.comment=エンドロッドに関する設定です。.
 screen.FOLIAGE_SETTINGS=植物
 screen.FOLIAGE_SETTINGS.comment=植物に関する設定です。.
 screen.SSS_SETTINGS=サブサーフェス・スキャッタリング (SSS)
+screen.SSS_SETTINGS.comment=サブサーフェス・スキャッタリング (葉、植物、その他の半透明なマテリアルから透き通る光) に関する設定です。.
 screen.PORTAL_SETTINGS=ポータルの設定
 screen.PORTAL_SETTINGS.comment=ポータルに関する設定です。.
 screen.MISC_SETTINGS=その他
@@ -2373,6 +2374,8 @@ option.MCBL_INFLUENCE.comment=多色対応色付きブロック光源が、デ�
 
 option.SSS_SNOW_ICE=雪と氷のSSS
 option.SSS_SNOW_ICE.comment=雪や氷ブロックにSSS (サブサーフェス・スキャッタリング) を追加します。.
+option.SSS_HONEYCOMB=ハニカムブロックのSSS
+option.SSS_HONEYCOMB.comment=ハニカムブロックにサブサーフェス・スキャッタリングを追加します。.
 
 option.BEDROCK_NOISE=岩盤ノイズ
 option.BEDROCK_NOISE.comment=ネザーやオーバーワールドで岩盤の下にノイズ効果を追加します。.
@@ -2632,6 +2635,9 @@ value.SSS_STRENGTH.1=ON
 
 option.SKYLIGHT_SSS=自然光のSSS
 option.SKYLIGHT_SSS.comment=葉、植物、その他の半透明なマテリアルが、それらを通過する自然光によって光るようにします。. 真下から見るときに最も顕著です。. これは「LabPBRの改善」で「サブサーフェス・スキャッタリングサポート」が有効な場合に常にオンになります。. §e[*]§r この設定は「サブサーフェス・スキャッタリング (SSS)」が有効、かつオーバーワールド内でのみ機能します。.
+
+option.BLOCKLIGHT_SSS=ブロック光のSSS
+option.BLOCKLIGHT_SSS.comment=葉、植物、その他の半透明なマテリアルが、それらを通過する光源ブロックからの光によって光るようにします。. これは「LabPBRの改善」で「サブサーフェス・スキャッタリングサポート」が有効な場合に常にオンになります。. §e[*]§r この設定は「サブサーフェス・スキャッタリング (SSS)」と「色付き照明」が有効な場合のみ機能します。.
 
 option.PIXEL_WATER=自動生成ピクセル水
 option.PIXEL_WATER.comment=自動生成されたピクセル化された水のテクスチャ。.
