@@ -1214,8 +1214,8 @@ option.COLORED_LIGHT_FOG.comment=Adds volumetric blocklight fog to the scene, mo
 option.COLORED_LIGHT_FOG_I=Light Fog Intensity
 option.COLORED_LIGHT_FOG_I.comment=Determines the brightness of the Colored Light Fog.
 
-option.COLORED_DYNAMIC_LIGHTING=§eColored Dynamic Lighting§r
-option.COLORED_DYNAMIC_LIGHTING.comment=Allows dynamic light sources, like dropped torch items on the ground, to cast colored lighting. §e[*]§r This feature only works if Advanced Color Tracing is on in Performance Settings and your system supports it. §c[-]§r This effect can impact performance.
+option.COLORED_DYNAMIC_LIGHTING=§eColored Dynamic Lighting [*]§r
+option.COLORED_DYNAMIC_LIGHTING.comment=Allows dynamic light sources, like dropped torch items on the ground, to cast colored lighting. §e[*]§r This feature only works if "Advanced Color Tracing" and "Entity Shadows" (for regular entities) are enabled in Performance Settings. §c[-]§r This effect can impact performance.
 
 option.LIGHT_COLOR_MULTS=§eLighting Color Multipliers
 option.LIGHT_COLOR_MULTS.comment=Enables customization of lighting colors that are seen on all surfaces.
