@@ -1214,9 +1214,6 @@ option.COLORED_LIGHT_FOG.comment=夜間や地下で顕著に見られるブロ�
 option.COLORED_LIGHT_FOG_I=光の霧の強度
 option.COLORED_LIGHT_FOG_I.comment=色付きの光の霧の明るさを調整します。.
 
-option.COLORED_DYNAMIC_LIGHTING=§色付き動的照明§r
-option.COLORED_DYNAMIC_LIGHTING.comment=地面に落ちた松明のアイテムなどの動的な光源が色付きの光を放つようにします。. §e[*]§r この機能は「パフォーマンス設定」で高度な色トレーシングが有効、かつシステムが対応している場合にのみ動作します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。.
-
 option.LIGHT_COLOR_MULTS=§eライティングの色倍率
 option.LIGHT_COLOR_MULTS.comment=あらゆる物体の表面に映るライティングの色をカスタマイズできるようにします。.
 

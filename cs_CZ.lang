@@ -1214,9 +1214,6 @@ option.COLORED_LIGHT_FOG.comment=Přidává volumetrickou mlhu k světle bloků,
 option.COLORED_LIGHT_FOG_I=Intenzita mlhy světla
 option.COLORED_LIGHT_FOG_I.comment=Určuje jas Mlhy barevného světla.
 
-option.COLORED_DYNAMIC_LIGHTING=§eBarevné dynamické osvětlení§r
-option.COLORED_DYNAMIC_LIGHTING.comment=Umožňuje zdrojům dynamického světla, jako třeba upuštěné louče na zemi, vrhat barevné osvětlení. §e[*]§r Tato funkce pouze funguje, když je zapnuto Pokročilé trasování barev v Nastavení výkonu a tvůj systém jej podporuje. §c[-]§r Tento efekt může mít dopad na výkon.
-
 option.LIGHT_COLOR_MULTS=§eNásobiče barev osvětlení
 option.LIGHT_COLOR_MULTS.comment=Umožňuje přizpůsobení barev osvětlení, které jsou viditelné na všech površích.
 

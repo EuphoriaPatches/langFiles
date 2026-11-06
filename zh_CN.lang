@@ -1209,9 +1209,6 @@ option.COLORED_LIGHT_FOG.comment=向场景中添加体积方块光雾, 在地�
 option.COLORED_LIGHT_FOG_I=光雾强度
 option.COLORED_LIGHT_FOG_I.comment=调节彩色光雾的亮度。.
 
-option.COLORED_DYNAMIC_LIGHTING=§e彩色动态灯光§r
-option.COLORED_DYNAMIC_LIGHTING.comment=允许动态光源，如地面上投放的火炬，投射彩色照明。. §e[*]§r 此功能仅在高级色彩追踪处于性能设置中且您的系统支持时才能使用。. §c[-]§r 这个效果会影响性能。.
-
 option.LIGHT_COLOR_MULTS=§e照明颜色倍率总开关
 option.LIGHT_COLOR_MULTS.comment=启用对出现在方块和物品表面的照明颜色的自定义功能。.
 
