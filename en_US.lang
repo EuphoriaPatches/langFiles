@@ -407,6 +407,7 @@ option.LIGHTSHAFT_NOON_I=Light Shaft Noon Multiplier
 option.LIGHTSHAFT_SUNSET_I=Light Shaft Sunset Multiplier
 option.LIGHTSHAFT_NIGHT_I=Light Shaft Night Multiplier
 option.LIGHTSHAFT_RAIN_I=Light Shaft Rain Multiplier
+option.LIGHTSHAFT_WATER_I=Light Shaft Underwater Mult
 
 option.LIGHTSHAFT_SUNSET_SATURATION=Light Shaft Sunset Color
 option.LIGHTSHAFT_SUNSET_SATURATION.comment=Adjusts the extra color saturation given to the color of light shafts at sunrise and sunset times. Higher values are going to produce a red-ish orange, while lower values are going to shift it towards yellow.
