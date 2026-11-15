@@ -2669,8 +2669,9 @@ value.SUN_MOON_IPBR.1=Sun Only
 value.SUN_MOON_IPBR.2=Moon Only
 value.SUN_MOON_IPBR.3=Sun and Moon
 
-option.DAYLIGHT_STARS=Daylight Stars
-option.DAYLIGHT_STARS.comment=Enables Stars during the day
+option.DAYLIGHT_STARS_AMOUNT=Daylight Stars
+option.DAYLIGHT_STARS_AMOUNT.comment=How visible stars are during the day. 0% hides them, 100% shows them at full brightness.
+suffix.DAYLIGHT_STARS_AMOUNT=\%
 
 option.FROZEN_TIME=Frozen Time
 option.FROZEN_TIME.comment=Freezes shader animation time, shader effects which rely on frame based animation will be frozen and thus allowing for good comparison screenshots.
