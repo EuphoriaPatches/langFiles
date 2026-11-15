@@ -2496,8 +2496,7 @@ value.SUN_MOON_IPBR.1=Tylko Słońce
 value.SUN_MOON_IPBR.2=Tylko Księżyc
 value.SUN_MOON_IPBR.3=Słońce i Księżyc
 
-option.DAYLIGHT_STARS=Gwiazdy w Dzień
-option.DAYLIGHT_STARS.comment=Włącza gwiazdy podczas dnia.
+option.DAYLIGHT_STARS_AMOUNT=Gwiazdy w Dzień
 
 option.FROZEN_TIME=Zatrzymany Czas
 

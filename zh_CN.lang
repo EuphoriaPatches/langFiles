@@ -2645,8 +2645,7 @@ value.SUN_MOON_IPBR.1=仅太阳
 value.SUN_MOON_IPBR.2=仅月亮
 value.SUN_MOON_IPBR.3=日月
 
-option.DAYLIGHT_STARS=白日繁星
-option.DAYLIGHT_STARS.comment=使星空在白天可见。.
+option.DAYLIGHT_STARS_AMOUNT=白日繁星
 
 option.FROZEN_TIME=冻结时间
 option.FROZEN_TIME.comment=冻结着色器动画时间, 依赖于基于帧的相关着色器效果会被冻结, 便于截图对比效果。.

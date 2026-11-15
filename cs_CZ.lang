@@ -407,6 +407,7 @@ option.LIGHTSHAFT_NOON_I=Násobič paprsků světla v poledne
 option.LIGHTSHAFT_SUNSET_I=Násobič paprsků světla při západu Slunce
 option.LIGHTSHAFT_NIGHT_I=Násobič paprsků světla v noci
 option.LIGHTSHAFT_RAIN_I=Násobič paprsků světla při dešti
+option.LIGHTSHAFT_WATER_I=Násobič paprsků světla pod vodou
 
 option.LIGHTSHAFT_SUNSET_SATURATION=Barva paprsků světla při západu Slunce
 option.LIGHTSHAFT_SUNSET_SATURATION.comment=Upravuje barvu přidávanou paprskům světla při východu a západu Slunce. Vyšší hodnoty změní barvu blíže k červené, zatímco nižší hodnoty blíže ke žluté.
@@ -2637,7 +2638,7 @@ option.SKYLIGHT_SSS=Podpovrchové rozptylování světla oblohy
 option.SKYLIGHT_SSS.comment=Umožňuje svítit listům, rostlinám a jiným průsvitným materiálům, když nimi prochází světlo oblohy, nejvíce viditelné při pohledu zdola. Toto je vždy zapnuté, když má "Vylepšené LabPBR" zapnuté "Podpora podpovrchového rozptylování". §e[*]§r Toto nastavení pouze funguje v Overworldu, když je zapnuté nastavení "Podpovrchové rozptylování".
 
 option.BLOCKLIGHT_SSS=Podpovrchový rozptyl světla bloků
-option.BLOCKLIGHT_SSS.comment=Umožňuje listům, rostlinám a jiným průsvitným materiálům svítit zezadu kvůli blokům zdroje světla za nimi, lehce zbarvené barvou svěla. Toto je vždy zapnuté, když má "Vylepšené LabPBR" zapnuté "Podpora podpovrchového rozptylování". §e[*]§r Toto nastavení pouze funguje, když jsou zapnuté "Podpovrchové rozptylování" a "Barevné osvětlení".
+option.BLOCKLIGHT_SSS.comment=Umožňuje listům, rostlinám a jiným průsvitným materiálům svítit zezadu kvůli blokům zdroje světla za nimi, lehce zbarvené barvou světla. Toto je vždy zapnuté, když má "Vylepšené LabPBR" zapnuté "Podpora podpovrchového rozptylování". §e[*]§r Toto nastavení pouze funguje, když jsou zapnuté "Podpovrchové rozptylování" a "Barevné osvětlení".
 
 option.PIXEL_WATER=Procedurální pixelovaná voda
 option.PIXEL_WATER.comment=Procedurálně generovaná pixelovaná textura vody.
@@ -2668,8 +2669,7 @@ value.SUN_MOON_IPBR.1=Pouze Slunce
 value.SUN_MOON_IPBR.2=Pouze Měsíc
 value.SUN_MOON_IPBR.3=Slunce a Měsíc
 
-option.DAYLIGHT_STARS=Hvězdy ve dne
-option.DAYLIGHT_STARS.comment=Zapne hvězdy během dne
+option.DAYLIGHT_STARS_AMOUNT=Hvězdy ve dne
 
 option.FROZEN_TIME=Zmrazený čas
 option.FROZEN_TIME.comment=Zmrazí čas animace shaderu, takže efekty shaderu, které používají animaci založenou na snímkové frekvenci budou zmrazeny a umožní tak dobré porovnávací snímky obrazovky.

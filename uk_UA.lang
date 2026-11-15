@@ -2645,8 +2645,7 @@ value.SUN_MOON_IPBR.1=Сонце
 value.SUN_MOON_IPBR.2=Місяць
 value.SUN_MOON_IPBR.3=Сонце й Місяць
 
-option.DAYLIGHT_STARS=Денні зірки
-option.DAYLIGHT_STARS.comment=Умикає зірки вдень.
+option.DAYLIGHT_STARS_AMOUNT=Денні зірки
 
 option.FROZEN_TIME=Стоп-час
 option.FROZEN_TIME.comment=Зупиняє час анімації та ефекти шейдерів, які покладаються на анімацію на основі кадрів, будуть зупинені, що дозволить створювати хороші знімки екрана для порівняння.

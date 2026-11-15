@@ -2668,8 +2668,7 @@ value.SUN_MOON_IPBR.1=太陽のみ
 value.SUN_MOON_IPBR.2=月のみ
 value.SUN_MOON_IPBR.3=太陽と月
 
-option.DAYLIGHT_STARS=昼間の星
-option.DAYLIGHT_STARS.comment=昼間に星を表示します。.
+option.DAYLIGHT_STARS_AMOUNT=昼間の星
 
 option.FROZEN_TIME=時間停止
 option.FROZEN_TIME.comment=フレーム数に依存したシェーダーのアニメーション効果を停止させます。. 比較用のスクリーンショット撮影に最適です。.

@@ -2072,8 +2072,7 @@ value.SUN_MOON_IPBR.1=태양만 적용
 value.SUN_MOON_IPBR.2=달만 적용
 value.SUN_MOON_IPBR.3=해와달 적용
 
-option.DAYLIGHT_STARS=낮시간 별 보임
-option.DAYLIGHT_STARS.comment=해가 떠있을때도 별이 보입니다.
+option.DAYLIGHT_STARS_AMOUNT=낮시간 별 보임
 
 option.FROZEN_TIME=시간정지
 

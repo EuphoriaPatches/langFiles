@@ -2668,8 +2668,7 @@ value.SUN_MOON_IPBR.1=Только солнце
 value.SUN_MOON_IPBR.2=Только луна
 value.SUN_MOON_IPBR.3=Солнце и луна
 
-option.DAYLIGHT_STARS=Дневные звёзды
-option.DAYLIGHT_STARS.comment=Показывает звёзды в дневное время.
+option.DAYLIGHT_STARS_AMOUNT=Дневные звёзды
 
 option.FROZEN_TIME=Замёрзшее время
 option.FROZEN_TIME.comment=Замораживает время анимации шейдера. Шейдерные эффекты, основанные на покадровой анимации, будут заморожены, что позволит получить хорошие снимки для сравнения.

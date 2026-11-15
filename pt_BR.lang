@@ -2518,8 +2518,7 @@ value.SUN_MOON_IPBR.1=Apenas Sol
 value.SUN_MOON_IPBR.2=Apenas Lua
 value.SUN_MOON_IPBR.3=Sol e Lua
 
-option.DAYLIGHT_STARS=Estrelas Durante o Dia
-option.DAYLIGHT_STARS.comment=Ativa estrelas durante o dia
+option.DAYLIGHT_STARS_AMOUNT=Estrelas Durante o Dia
 
 option.FROZEN_TIME=Tempo Congelado
 option.FROZEN_TIME.comment=Congela o tempo das animações do shader. Efeitos do shader que dependem de animações baseadas em quadros (frames) ficarão congelados, permitindo capturas de tela ideais para comparação.
