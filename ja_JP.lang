@@ -407,6 +407,7 @@ option.LIGHTSHAFT_NOON_I=光芒 昼間の倍率
 option.LIGHTSHAFT_SUNSET_I=光芒 日の出/日の入りの倍率
 option.LIGHTSHAFT_NIGHT_I=光芒 夜間の倍率
 option.LIGHTSHAFT_RAIN_I=光芒 雨天時の倍率
+option.LIGHTSHAFT_WATER_I=光芒 水中の倍率
 
 option.LIGHTSHAFT_SUNSET_SATURATION=光芒 日の出/日の入りの色
 option.LIGHTSHAFT_SUNSET_SATURATION.comment=日の出と日の入りの時間帯で、光芒に追加される彩度の量を調整します。. 高い値では赤みがかったオレンジに、低い値ではより黄色に近づきます。.
@@ -2669,6 +2670,8 @@ value.SUN_MOON_IPBR.2=月のみ
 value.SUN_MOON_IPBR.3=太陽と月
 
 option.DAYLIGHT_STARS_AMOUNT=昼間の星
+option.DAYLIGHT_STARS_AMOUNT.comment=日中にどのくらい星が見えるかです。. 0%では非表示になり、100%では最大の明るさで表示します。.
+suffix.DAYLIGHT_STARS_AMOUNT=%
 
 option.FROZEN_TIME=時間停止
 option.FROZEN_TIME.comment=フレーム数に依存したシェーダーのアニメーション効果を停止させます。. 比較用のスクリーンショット撮影に最適です。.
