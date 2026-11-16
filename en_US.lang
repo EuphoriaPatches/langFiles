@@ -750,6 +750,9 @@ value.BLOOM_STRENGTH.0.28=150% §c[-]
 value.BLOOM_STRENGTH.0.32=180% §c[-]
 value.BLOOM_STRENGTH.10.00=§cInsane
 
+option.BLOOM_SMOOTHING=Bloom Smoothing §e[*]§r
+option.BLOOM_SMOOTHING.comment=Smooths the bloom changes over a period of time to reduce flickering. §e[*]§r Bloom smoothing can cause TAA-like trailing artifacts.
+
 option.IMAGE_SHARPENING=Image Sharpening
 option.IMAGE_SHARPENING.comment=Makes the image sharper using a filter. §c[-]§r Too much sharpening might cause visual artifacts like aliasing, flickering, noise, and subtle brightness changes.
 value.IMAGE_SHARPENING.0=OFF
