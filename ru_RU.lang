@@ -407,6 +407,7 @@ option.LIGHTSHAFT_NOON_I=Полуденный множитель световы�
 option.LIGHTSHAFT_SUNSET_I=Вечерний множитель световых лучей
 option.LIGHTSHAFT_NIGHT_I=Ночной множитель световых лучей
 option.LIGHTSHAFT_RAIN_I=Дождевой множитель световых лучей
+option.LIGHTSHAFT_WATER_I=Подводн. множ. световых лучей
 
 option.LIGHTSHAFT_SUNSET_SATURATION=Цвет лучей на закате
 option.LIGHTSHAFT_SUNSET_SATURATION.comment=Регулирует дополнительную насыщенность цвета солнечных лучей на рассвете и закате. Более высокие значения дают красновато-оранжевый оттенок, а низкие — смещают цвет в сторону жёлтого.
@@ -749,6 +750,9 @@ value.BLOOM_STRENGTH.0.28=150% §c[-]
 value.BLOOM_STRENGTH.0.32=180% §c[-]
 value.BLOOM_STRENGTH.10.00=§cБезумное
 
+option.BLOOM_SMOOTHING=Сглаживание свечения §e[*]§r
+option.BLOOM_SMOOTHING.comment=Сглаживает изменения уровня свечения в течение определённого периода времени, чтобы снизить мерцание. §e[*]§r Может привести к появлению остаточных артефактов, подобных временному сглаживанию (TAA).
+
 option.IMAGE_SHARPENING=Резкость изображения
 option.IMAGE_SHARPENING.comment=Повышает резкость через фильтр. §c[-]§r Может вызывать артефакты, такие как сглаживание, мерцание, шум и незначительные изменения яркости.
 value.IMAGE_SHARPENING.0=Нет
@@ -774,7 +778,7 @@ value.LENSFLARE_MODE.4=§cСолнце и луна — квадрат
 option.LENSFLARE_I=Яркость бликов
 option.LENSFLARE_I.comment=Регулирует силу эффекта бликов.
 
-option.TAA_DEFINE=§eФильтр TAA§r
+option.TAA_DEFINE=§eВременной фильтр§r
 option.TAA_DEFINE.comment=Включает временное сглаживание (TAA), которое уменьшает зернистость и повышает производительность за счёт снижения количества выборок в тяжёлых эффектах и устраняет ступенчатость при правильных настройках. §c[-]§r: Отключение приведёт к ухудшению производительности и качества эффектов, но при очень низких настройках шейдеров производительность может повыситься.
 value.TAA_DEFINE.-1=§aПо качеству деталей
 value.TAA_DEFINE.0=§cНет [-]
@@ -2669,6 +2673,8 @@ value.SUN_MOON_IPBR.2=Только луна
 value.SUN_MOON_IPBR.3=Солнце и луна
 
 option.DAYLIGHT_STARS_AMOUNT=Дневные звёзды
+option.DAYLIGHT_STARS_AMOUNT.comment=Насколько хорошо днём видны звёзды. Отключены при 0%, видны с полной яркостью при 100%.
+suffix.DAYLIGHT_STARS_AMOUNT=%
 
 option.FROZEN_TIME=Замёрзшее время
 option.FROZEN_TIME.comment=Замораживает время анимации шейдера. Шейдерные эффекты, основанные на покадровой анимации, будут заморожены, что позволит получить хорошие снимки для сравнения.
@@ -2856,13 +2862,8 @@ option.ACT_ORE_INTENSITY=Яркость руд ПЦТ
 option.ACT_ORE_INTENSITY.comment=Настраивает силу свечения руд при «Продвинутой цветовой трассировке».
 value.ACT_ORE_INTENSITY.0.0=Нет
 
-option.ENTITIES_ARE_LIGHT=Сущности как источники света
-
 option.WATER_CAUSTIC_STRENGTH=Интенсивность каустики воды
 option.WATER_CAUSTIC_STRENGTH.comment=Сила эффекта преломления света в воде.
-
-option.ROUGHNESS_MULTIPLIER=Множитель шероховатости
-option.ROUGHNESS_MULTIPLIER.comment=Настройка шероховатости материалов.
 
 option.ROUGHNESS_INTENSITY=Интенсивность шероховатости
 option.ROUGHNESS_INTENSITY.comment=Шероховатость материалов для большего или меньшего блеска.
