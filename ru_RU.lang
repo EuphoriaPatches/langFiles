@@ -1122,9 +1122,9 @@ value.SPECIAL_PORTAL_EFFECT.1=Портал Энда
 value.SPECIAL_PORTAL_EFFECT.2=Портал Незера
 value.SPECIAL_PORTAL_EFFECT.3=Все
 
-option.REFLECTION_RES=§eОтражения с половинным разрешением§r
-option.REFLECTION_RES.comment=Отображает PBR-отражения на блоках (и отражения в мировом пространстве, если они включены) в половинном разрешении для повышения производительности. §c[-]§r В некоторых ситуациях отражения с 'полным' разрешением могут повлиять на производительность гораздо сильнее, чем ожидается. §e[*]§r Эта функция не работает в Optifine.
-value.REFLECTION_RES.1.0=§4§l§n§oПолные
+option.REFLECTION_RES=§eРазрешение отражений§r
+option.REFLECTION_RES.comment=Изменяет разрешение PBR-отражений на блоках (и отражения в мировом пространстве, если они включены) для повышения производительности. §c[-]§r В некоторых ситуациях отражения с 'полным' разрешением могут повлиять на производительность гораздо сильнее, чем ожидается. §e[*]§r Эта функция не работает в Optifine.
+value.REFLECTION_RES.1.0=§4§l§n§oПолное
 value.REFLECTION_RES.0.5=§aНаполовину
 
 option.WORLD_OUTLINE=§eКонтур мира§r
@@ -2864,6 +2864,12 @@ value.ACT_ORE_INTENSITY.0.0=Нет
 
 option.WATER_CAUSTIC_STRENGTH=Интенсивность каустики воды
 option.WATER_CAUSTIC_STRENGTH.comment=Сила эффекта преломления света в воде.
+
+option.REFLECTION_ROUGHNESS_MULT=Множитель шероховатости
+option.REFLECTION_ROUGHNESS_MULT.comment=Управляет степенью шероховатости материалов. Значение выше 1.0 повышает шероховатость, а значение ниже 1.0 делает их более гладкими.
+
+option.REFLECTION_MIRRORNESS=Зеркальность
+option.REFLECTION_MIRRORNESS.comment=Регулирует степень отражения материалов независимо от коэффициента шероховатости. Значения выше 1.0 делают шероховатые поверхности более зеркальными, а ниже 1.0 — более матовыми.
 
 option.ROUGHNESS_INTENSITY=Интенсивность шероховатости
 option.ROUGHNESS_INTENSITY.comment=Шероховатость материалов для большего или меньшего блеска.

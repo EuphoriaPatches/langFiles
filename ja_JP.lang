@@ -750,6 +750,9 @@ value.BLOOM_STRENGTH.0.28=150% §c[-]
 value.BLOOM_STRENGTH.0.32=180% §c[-]
 value.BLOOM_STRENGTH.10.00=§c狂気的
 
+option.BLOOM_SMOOTHING=ブルームのスムージング §e[*]§r
+option.BLOOM_SMOOTHING.comment=時間経過に伴うブルームの変化を滑らかにし、ちらつきを抑えます。. §e[*]§r ブルームのスムージングはTAAに似た軌跡のノイズを発生させる可能性があります。.
+
 option.IMAGE_SHARPENING=画像のシャープ化
 option.IMAGE_SHARPENING.comment=フィルターを使用して画像を鮮明にします。. §c[-]§r シャープ化しすぎると、エイリアシングやちらつき、ノイズ、微妙な明るさの変化などの視覚的な問題が発生する可能性があります。.
 value.IMAGE_SHARPENING.0=OFF
@@ -937,7 +940,7 @@ value.PLAYER_SHADOW.-1=OFF
 value.PLAYER_SHADOW.1=ON
 
 option.LEAF_SHADOW_OPTIMISATION_DEFINE=§e葉の影の最適化§r
-option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=暗いエリアで葉とツタの影を無効にして、パフォーマンスを向上させます。. §c[-]§r 主なデメリットとして、葉を豪華にする一部のリソースパックの使用時にライティングが崩れてしまいます。. §e[*]§r 「細部の品質依存」とは、設定を変更しない限りパフォーマンス設定の「細部の品質」によって自動的に決定されることを意味します。.
+option.LEAF_SHADOW_OPTIMISATION_DEFINE.comment=暗いエリアで葉とツタの影を無効にすることで、パフォーマンスを向上させます。. §c[-]§r 主なデメリットとして、葉を豪華にする一部のリソースパックの使用時にライティングが崩れてしまいます。. §e[*]§r 「細部の品質依存」とは、設定を変更しない限りパフォーマンス設定の「細部の品質」によって自動的に決定されることを意味します。.
 value.LEAF_SHADOW_OPTIMISATION_DEFINE.-1=§a細部の品質依存
 value.LEAF_SHADOW_OPTIMISATION_DEFINE.0=§cOFF
 value.LEAF_SHADOW_OPTIMISATION_DEFINE.1=§aON
@@ -1100,10 +1103,10 @@ option.WAVING_LAVA.comment=溶岩に一定の動きを追加します。. §e[*]
 option.WAVING_LILY_PAD=揺れるスイレンの葉 §c[-]§r
 option.WAVING_LILY_PAD.comment=スイレンの葉やカエルの卵に動きを追加し、水の波の影響をシミュレートします。. §c[-]§r この設定は水没させたブロックに置かれたスイレンの葉を透明にしてしまいます。.
 
-option.WAVING_WATER_VERTEX=揺れる水位
+option.WAVING_WATER_VERTEX=波打つ水面
 option.WAVING_WATER_VERTEX.comment=水の位置に動きを追加し、風をシミュレートします。. §e[*]§r この設定は「水の波の強さ」設定には関連しません。.
 
-option.WATER_NOISE_COLORING=揺れる水位 明るさ
+option.WATER_NOISE_COLORING=波打つ水面の明るさ
 option.WATER_NOISE_COLORING.comment=海に微妙な色のバリエーションを加え、より波打っているように見せます。. §e[*]§r 「細部の品質依存」とは、設定を変更しない限りパフォーマンス設定の「細部の品質」によって自動的に決定されることを意味します。.
 value.WATER_NOISE_COLORING.-1=§a細部の品質依存
 value.WATER_NOISE_COLORING.0=§aOFF
@@ -1215,7 +1218,7 @@ option.COLORED_LIGHT_FOG.comment=夜間や地下で顕著に見られるブロ�
 option.COLORED_LIGHT_FOG_I=光の霧の強度
 option.COLORED_LIGHT_FOG_I.comment=色付きの光の霧の明るさを調整します。.
 
-option.COLORED_DYNAMIC_LIGHTING=§色付き動的照明 [*]§r
+option.COLORED_DYNAMIC_LIGHTING=§e色付き動的照明 [*]§r
 option.COLORED_DYNAMIC_LIGHTING.comment=地面に落ちた松明のアイテムなどの動的な光源が色付きの光を放つようにします。. §e[*]§r この機能は「パフォーマンス設定」で「高度な色トレーシング」と「エンティティの影」 (通常のエンティティ) が有効になっている場合にのみ動作します。. §c[-]§r この効果はパフォーマンスに影響を与える可能性があります。.
 
 option.LIGHT_COLOR_MULTS=§eライティングの色倍率
@@ -1377,7 +1380,7 @@ screen.LIGHT_SETTINGS=光の設定
 screen.BLOCKLIGHT=ブロック光源の設定
 screen.BLOCKLIGHT.comment=ブロック光源の色に関する設定です。.
 screen.COLORED_LIGHT=色付き照明
-screen.SSBL_SETTINGS=スクリーンスペースの色付き照明
+screen.SSBL_SETTINGS=スクリーンスペース色付き照明
 screen.ACT_SETTINGS=高度な色トレーシング (ACT)
 screen.LIGHTMAP_CURVES_SETTINGS=ライトマップカーブ
 screen.OVERLAY_NOISE=オーバーレイノイズ
@@ -1622,22 +1625,22 @@ option.INVERTED_CLOUD_SHADING=雲の陰影の反転
 option.INVERTED_CLOUD_SHADING.comment=雲の陰影効果を反転します。.
 
 option.CLOUD_LIGHT_MULTIPLIER=雲の光倍率 - 昼間
-option.CLOUD_LIGHT_MULTIPLIER.comment=昼間に雲の光が当たる面の輝度を増加させます。.
+option.CLOUD_LIGHT_MULTIPLIER.comment=昼間に雲の光が当たる面の輝度を乗算します。.
 
 option.CLOUD_NIGHT_LIGHT_MULTIPLIER=雲の光倍率 - 夜間
-option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=夜間に雲の光が当たる面の輝度を増加させます。.
+option.CLOUD_NIGHT_LIGHT_MULTIPLIER.comment=夜間に雲の光が当たる面の輝度を乗算します。.
 
 option.CLOUD_SUNSET_LIGHT_MULTIPLIER=雲の光倍率 - 日の出/日の入り
-option.CLOUD_SUNSET_LIGHT_MULTIPLIER.comment=日の出と日の入りの時間帯に雲の光が当たる面の輝度を増加させます。.
+option.CLOUD_SUNSET_LIGHT_MULTIPLIER.comment=日の出と日の入りの時間帯に雲の光が当たる面の輝度を乗算します。.
 
 option.CLOUD_AMBIENT_MULTIPLIER=雲の環境光倍率
-option.CLOUD_AMBIENT_MULTIPLIER.comment=雲の環境光が当たる面の輝度を増加させます。.
+option.CLOUD_AMBIENT_MULTIPLIER.comment=雲の環境光が当たる面の輝度を乗算します。.
 
 option.CLOUD_SUNSET_AMBIENT_MULTIPLIER=雲の環境光倍率 - 日の出/日の入り
-option.CLOUD_SUNSET_AMBIENT_MULTIPLIER.comment=日の出と日の入りの時間帯に雲の環境光が当たる面の輝度を増加させます。.
+option.CLOUD_SUNSET_AMBIENT_MULTIPLIER.comment=日の出と日の入りの時間帯に雲の環境光が当たる面の輝度を乗算します。.
 
 option.CLOUD_NIGHT_AMBIENT_MULTIPLIER=雲の環境光倍率 - 夜間
-option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=夜間に雲の環境光が当たる面の輝度を増加させます。.
+option.CLOUD_NIGHT_AMBIENT_MULTIPLIER.comment=夜間に雲の環境光が当たる面の輝度を乗算します。.
 
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW=雲を90°回転
 option.ROTATE_REIMAGINED_CLOUDS_90_NEW.comment=Reimaginedの雲を90度回転させます。.
@@ -1757,7 +1760,7 @@ option.OW_BEAM_B_NEW=オーバーワールドビーム - 青
 option.END_BEAMS=エンダービーム
 option.END_BEAMS.comment=ジ・エンドに星雲のようなビームを出現させる設定です。.
 option.END_CRYSTAL_VORTEX=エンドクリスタルの渦
-option.END_CRYSTAL_VORTEX.comment=ジ・エンドのエンドクリスタルから上方に向けてエネルギービームを発生させる設定です。. §4[***]§r §cエンティティの影§rが有効になります。. §e[*]§r Irisでのみ動作します。. §e[*]§r MacOSでは動作しません。. 渦の描写距離はComplementaryの「影の描写距離」設定に影響されます。.
+option.END_CRYSTAL_VORTEX.comment=ジ・エンドのエンドクリスタルから上方に向けてエネルギービームを発生させる設定です。. §4[***]§r §cエンティティの影§rが有効になります。. §e[*]§r Irisでのみ動作します。. §e[*]§r MacOSでは動作しません。. 渦の描画距離はComplementaryの「影の描画距離」設定に影響されます。.
 value.END_CRYSTAL_VORTEX.0=OFF
 value.END_CRYSTAL_VORTEX.1=渦
 value.END_CRYSTAL_VORTEX.2=回復ビーム
@@ -2822,9 +2825,9 @@ option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND=手持ち光源で除外
 option.NIGHT_DESATURATION_REMOVE_LIGHTS_IN_HAND.comment=手に持っている光源で彩度低下効果を無効にします。.
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION=暗視で除外
 option.NIGHT_DESATURATION_REMOVE_NIGHT_VISION.comment=暗視効果が有効な間は彩度低下効果を無効にします。.
-option.PURKINJE_RENDER_DISTANCE_FADE=描写距離でフェード
-option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=ネザー 描写距離でフェード
-option.PURKINJE_RENDER_DISTANCE_FADE_END=ジ・エンド 描写距離でフェード
+option.PURKINJE_RENDER_DISTANCE_FADE=描画距離でフェード
+option.PURKINJE_RENDER_DISTANCE_FADE_NETHER=ネザー 描画距離でフェード
+option.PURKINJE_RENDER_DISTANCE_FADE_END=ジ・エンド 描画距離でフェード
 option.NO_PURKINJE_IN_SKYBOX=空の彩度減少無効
 
 option.MOON_PHASE_INF_PURKINJE=月相に応じた暗闇での彩度低下
@@ -2859,13 +2862,14 @@ option.ACT_ORE_INTENSITY=ACT鉱石の強度
 option.ACT_ORE_INTENSITY.comment=鉱石におけるACTの光の強度を変更します。.
 value.ACT_ORE_INTENSITY.0.0=OFF
 
-option.ENTITIES_ARE_LIGHT=光るエンティティ
-
 option.WATER_CAUSTIC_STRENGTH=水のコースティクスの強度
 option.WATER_CAUSTIC_STRENGTH.comment=水のコースティクス効果の強度を変更します。.
 
-option.ROUGHNESS_MULTIPLIER=粗さマスク
-option.ROUGHNESS_MULTIPLIER.comment=マテリアルに粗さ (ラフネス) がある部分を変更します。.
+option.REFLECTION_ROUGHNESS_MULT=ラフネスの倍率
+option.REFLECTION_ROUGHNESS_MULT.comment=マテリアルのラフネスを乗算します。. 1.0以上ではより粗く、1.0以下ではより滑らかになります。.
+
+option.REFLECTION_MIRRORNESS=反射性
+option.REFLECTION_MIRRORNESS.comment=ラフネスの倍率とは独立したマテリアルの反射強度です。. 1.0以上では粗い表面がより鏡のように、1.0以下ではより低反射になります。.
 
 option.ROUGHNESS_INTENSITY=粗さの強度
 option.ROUGHNESS_INTENSITY.comment=マテリアルの粗さ (ラフネス) を変更することで、光沢の度合いを調整します。.
@@ -2895,7 +2899,7 @@ option.BETTER_LABPBR_POM_PUDDLES=POMの水溜まり
 option.BETTER_LABPBR_POM_PUDDLES.comment=雨がPOMのあるブロックの隙間を満たすようにします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている、かつ「視差オクルージョンマッピング (POM)」が有効な場合にのみ動作します。.
 
 option.BETTER_LABPBR_AO=マテリアルAOサポート
-option.BETTER_LABPBR_AO.comment=LabPBRのノーマルテクスチャに含まれる、マテリアルのアンビエントオクルージョン (AO) に基づいて直接証明を暗くします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
+option.BETTER_LABPBR_AO.comment=LabPBRのノーマルテクスチャに含まれる、マテリアルのアンビエントオクルージョン (AO) に基づいて直接照明を暗くします。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている場合にのみ動作します。.
 
 option.BETTER_LABPBR_SSS=サブサーフェス・スキャッタリング (SSS)
 option.BETTER_LABPBR_SSS.comment=LabPBRの鏡面反射マップに含まれるサブサーフェス・スキャッタリングの値に基づいて、マテリアルが背後から照らされるようにします。. ブロック、半透明のブロック、「エンティティの影」が有効な場合はエンティティ、さらに「完全」に設定されている場合はブロックエンティティ上で動作します。. §e[*]§r この設定は「RPサポート」がLabPBRに設定されている、かつ「動的な影」が「低」以上に設定されている場合にのみ動作します。.
@@ -3187,15 +3191,15 @@ value.PIXELATED_SHADOWS_MODE.64=64x固定
 value.PIXELATED_SHADOWS_MODE.128=128x固定
 
 option.PANINI_PROJECTION=パニニ投影
-option.PANINI_PROJECTION.comment=高い視野角を使用している場合に顕著な画面端の歪みを軽減するパニニ投影(Panini Projection)を有効にします。. §e[-]§r 画面の中央が引き伸ばされたように見えたり、全体的にぼやけたように見えたりする可能性があります。.
+option.PANINI_PROJECTION.comment=高い視野角を使用している場合に顕著な、画面端の歪みを軽減するパニニ投影 (Panini Projection) を有効にします。. §e[-]§r 画面の中央が引き伸ばされたように見えたり、全体的にぼやけたように見えたりする可能性があります。.
 value.PANINI_PROJECTION.0=OFF
 
 option.BLACK_HOLE=ブラックホール
-option.BLACK_HOLE.comment=エンドのスカイボックスにブラックホールを追加します。. このスライダーはブラックホールの明るさを変更します。. 位置は「ブラックホールの位置」設定によって制御されます。.
+option.BLACK_HOLE.comment=ジ・エンドのスカイボックスにブラックホールを追加します。. このスライダーはブラックホールの明るさを変更します。. 位置は「ブラックホールの位置」設定によって制御されます。.
 value.BLACK_HOLE.0=OFF
 
 option.BLACK_HOLE_SHAPE=ブラックホールの形状
-option.BLACK_HOLE_SHAPE.comment=ブラックホールの地平線の形状を変更します。.
+option.BLACK_HOLE_SHAPE.comment=ブラックホールの事象の地平線の形状を変更します。.
 value.BLACK_HOLE_SHAPE.0=円形
 value.BLACK_HOLE_SHAPE.1=四角形
 
@@ -3234,10 +3238,10 @@ option.BLACK_HOLE_LONGITUDE=経度
 option.BLACK_HOLE_LONGITUDE.comment=固定モード: 地平線上のブラックホールの水平位置を角度で指定します。.
 
 option.BLACK_HOLE_LATITUDE=緯度
-option.BLACK_HOLE_LATITUDE.comment=固定モード: 地平線に対するブラックホールの上下の位置(高度)を角度で指定します。.
+option.BLACK_HOLE_LATITUDE.comment=固定モード: 地平線に対するブラックホールの上下の位置 (高度) を角度で指定します。.
 
 option.BLACK_HOLE_LOOPS_PER_DAY=一日のループ数
-option.BLACK_HOLE_LOOPS_PER_DAY.comment=ゆっくり移動モード: 現実世界での一日につき、ブラックホールが空を何周するかです。.
+option.BLACK_HOLE_LOOPS_PER_DAY.comment=ゆっくり移動モード: 現実世界での一日につき、ブラックホールが空を何周するかです。. つまりはスピードを変更するようなものです。.
 
 option.BLACK_HOLE_LATITUDE_BIAS=緯度のバイアス
 option.BLACK_HOLE_LATITUDE_BIAS.comment=ブラックホールの緯度方向の偏りを変更し、時間が経過とともに空高く、または低くに現れやすくします。. デフォルトでは、地平線の上側に出やすくするために正のバイアスがかかっています。.
@@ -3253,5 +3257,5 @@ option.MODDED_FOG_SUPPORT=Modの霧のサポート
 option.MODDED_FOG_SUPPORT.comment=Modで追加される霧へのサポートを追加します。. Modが独自の霧を追加しない場合は何も起こりません。.
 
 option.ENTITY_SHADOW_DISTANCE=§4§lエンティティの影の描画距離
-option.ENTITY_SHADOW_DISTANCE.comment=オーバーワールドとジ・エンドでのエンティティの影の描写距離の倍率です。. §c[-]§r デフォルトよりも高い値に設定すると、パフォーマンス (FPS) に比較的大きな影響を与えます。.
+option.ENTITY_SHADOW_DISTANCE.comment=オーバーワールドとジ・エンドでのエンティティの影の描画距離の倍率です。. §c[-]§r デフォルトよりも高い値に設定すると、パフォーマンス (FPS) に比較的大きな影響を与えます。.
 value.ENTITY_SHADOW_DISTANCE.0.125=デフォルト (0.125)
