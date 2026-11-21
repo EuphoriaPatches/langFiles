@@ -331,7 +331,7 @@ value.SSAO_QUALI_DEFINE.2=§e中
 value.SSAO_QUALI_DEFINE.3=§c高
 
 option.ANISOTROPIC_FILTER=纹理过滤
-option.ANISOTROPIC_FILTER.comment=通过各向异性过滤提高 mipmaped 纹理的质量。. §e[*]§r 请确保视频设置中的 Mipmap 级别已设置为最大值 (4) , 否则得不到好的效果。.
+option.ANISOTROPIC_FILTER.comment=通过各向异性过滤提升 Mipmap 纹理质量。. §e[*]§r 请确保视频设置中的 Mipmap 级别为最大值 (4)，否则效果不佳。.
 value.ANISOTROPIC_FILTER.0=§a关
 value.ANISOTROPIC_FILTER.4=§e4x
 value.ANISOTROPIC_FILTER.8=§e8x
