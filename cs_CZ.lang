@@ -750,6 +750,9 @@ value.BLOOM_STRENGTH.0.28=150% §c[-]
 value.BLOOM_STRENGTH.0.32=180% §c[-]
 value.BLOOM_STRENGTH.10.00=§cŠílená
 
+option.BLOOM_SMOOTHING=Vyhlazování rozmazání §e[*]§r
+option.BLOOM_SMOOTHING.comment=Vyhlazuje změny rozmazání světla v čase pro snížení blikání. §e[*]§r Vyhlazování rozmazání může způsobit "loudavé" artefakty podobné TAA.
+
 option.IMAGE_SHARPENING=Ostření obrazu
 option.IMAGE_SHARPENING.comment=Dělá obraz ostřejší použitím filtru. §c[-]§r Až moc ostření může způsobit vizuální artefakty jako aliasing, blikání, šum a jemné změny jasu.
 value.IMAGE_SHARPENING.0=VYP
@@ -2670,6 +2673,8 @@ value.SUN_MOON_IPBR.2=Pouze Měsíc
 value.SUN_MOON_IPBR.3=Slunce a Měsíc
 
 option.DAYLIGHT_STARS_AMOUNT=Hvězdy ve dne
+option.DAYLIGHT_STARS_AMOUNT.comment=Jak moc jsou hvězdy viditelné ve dne. 0% je schová, 100% je ukáže v plném jasu.
+suffix.DAYLIGHT_STARS_AMOUNT=%
 
 option.FROZEN_TIME=Zmrazený čas
 option.FROZEN_TIME.comment=Zmrazí čas animace shaderu, takže efekty shaderu, které používají animaci založenou na snímkové frekvenci budou zmrazeny a umožní tak dobré porovnávací snímky obrazovky.
@@ -2857,13 +2862,14 @@ option.ACT_ORE_INTENSITY=Intenzita ACT rud
 option.ACT_ORE_INTENSITY.comment=Změň intenzitu světla rud Pokročilého trasování barev.
 value.ACT_ORE_INTENSITY.0.0=VYP
 
-option.ENTITIES_ARE_LIGHT=Entity jsou světlo
-
 option.WATER_CAUSTIC_STRENGTH=Síla kaustik vody
 option.WATER_CAUSTIC_STRENGTH.comment=Změň sílu efektu kaustik ve vodě.
 
-option.ROUGHNESS_MULTIPLIER=Maska drsnosti
-option.ROUGHNESS_MULTIPLIER.comment=Změň, kde jsou materiály drsné.
+option.REFLECTION_ROUGHNESS_MULT=Násobič drsnosti
+option.REFLECTION_ROUGHNESS_MULT.comment=Násobí, jak hrubé jsou materiály. Nad 1.0 je drsnější, pod 1.0 je hladší.
+
+option.REFLECTION_MIRRORNESS=Zrcadlovost
+option.REFLECTION_MIRRORNESS.comment=Jak silné odrazy budou mít materiály, nezávisle na násobiči drsnosti. Nad 1.0 budou drsné povrchy více jako zrcadlo, pod 1.0 méně odrážlivé.
 
 option.ROUGHNESS_INTENSITY=Intenzita drsnosti
 option.ROUGHNESS_INTENSITY.comment=Změň drsnost materiálů a udělej je více nebo méně lesklé.
